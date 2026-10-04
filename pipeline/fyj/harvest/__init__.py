@@ -16,6 +16,8 @@ from fyj.http import FyjClient
 from . import (
     arcgis,
     campus_labs,
+    city_volunteer_pages,
+    city_volunteer_portal,
     cultural_fund,
     irs_990n,
     irs_bmf,
@@ -45,4 +47,6 @@ HARVESTERS: dict[str, HarvestFn] = {
     "mummers": mummers.harvest,
     "nss_grottos": nss_grottos.harvest,
     "manual_seeds": manual_seeds.harvest,
+    "city_volunteer_portal": city_volunteer_portal.harvest,
+    "city_volunteer_pages": city_volunteer_pages.harvest,
 }

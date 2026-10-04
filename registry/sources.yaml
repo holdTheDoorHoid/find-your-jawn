@@ -261,3 +261,50 @@
     fuller than the list named in structured-sources.md) plus 33 leads from the 32 numbered
     long-tail-sources.md seed items (one item named two Mummers brigades, split into two leads).
 
+- id: city_volunteer_portal
+  name: City of Philadelphia Volunteer Portal (Galaxy Digital, Community Schools program)
+  owner: City of Philadelphia, Community Schools program, run on the Galaxy Digital platform
+  url: https://communityschools.galaxydigital.com
+  access: html
+  terms: Public pages, no login; robots.txt allows our user agent (only named bots/scrapers are disallowed)
+  attribution: "Data: City of Philadelphia Volunteer Portal"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/city_volunteer_portal.py
+  notes: >
+    Added 2026-10-04 at the owner's request so every City volunteer opportunity is included, not
+    just programs. 22 programs (kind_hint program) and 39 opportunities (kind_hint opportunity).
+    Fetched every listing and detail page at least 2 seconds apart. The "Begins / Registration
+    Closes / Duration / Open Spots" shift table on a need's detail page is server rendered for
+    some opportunities and left for JavaScript to fill for others; we record whatever shift rows
+    are present in extra.shifts and leave it an empty list rather than guessing when the table is
+    JS-only. Description text (Who We Are / What We Do / opportunity Description) stays internal
+    in the `description` field, never published.
+
+- id: city_volunteer_pages
+  name: City of Philadelphia volunteer programs on phila.gov department pages
+  owner: City of Philadelphia, various departments
+  url: https://www.phila.gov/departments/
+  access: html
+  terms: Public pages, no login; robots.txt is a 404 (no file), treated as allow all
+  attribution: "Data: phila.gov"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/city_volunteer_pages.py
+  notes: >
+    Added 2026-10-04 at the owner's request. phila.gov has no usable API (wp-json returns 502)
+    and its sitemap.xml is a stale 2018 file, so this is a keyword guided crawl rather than a
+    full enumeration. https://www.phila.gov/departments/ turned out to be mostly a landing page
+    of broad service categories and elected offices, not a true directory of every department
+    homepage in static HTML, so a generic crawl from it alone finds little; the harvester is
+    seeded with that page plus the specific known pages given in the task (Parks & Rec get
+    involved, PowerUp Tech Corps, the Medical Reserve Corps, OEM volunteering, block captains,
+    Philly Reading Coaches, City Commissioners poll workers, Town Watch Integrated Services, and
+    the Foster Grandparent Program), then follows one hop of links matching volunteer-ish
+    keywords. serve.phila.gov is checked and simply redirects to the Office of Community
+    Empowerment and Opportunity's department page, as expected; it is not counted as a separate
+    program. Two portals named by the coordinator do not resolve and were not harvested:
+    serve.volunteermatch.org (the old Mayor's Volunteer Portal, 2022) and volunteer.phila.gov.
+    The City's Idealist profile (adult education office) lists 0 opportunities and was not
+    harvested for that reason. External, non phila.gov partner links found on these pages (Love
+    Your Park, TreePhilly, and similar) become their own leads with the City page as source_url.
