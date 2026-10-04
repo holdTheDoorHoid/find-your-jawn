@@ -156,3 +156,48 @@
     current month (2026-08 and 2026-09 both 403 as of this harvest; 2026-07 is the newest file
     that exists). Only source that reaches organizations too small to file a real 990.
 
+- id: penn_clubs
+  name: Penn Clubs (Penn Labs student directory, University of Pennsylvania)
+  owner: Penn Labs (student organization), data about University of Pennsylvania student clubs
+  url: https://pennclubs.com/api/clubs/?format=json
+  access: json_api
+  terms: No published terms; public unauthenticated endpoint, treated politely, no robots.txt present
+  attribution: "Data: Penn Clubs (pennclubs.com)"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/penn_clubs.py
+  notes: 479 active clubs. No field states whether a club accepts non-Penn members, so open_to_public_hint is left null throughout rather than guessed from accepting_members, which is about new Penn members, not the public.
+
+- id: engage_drexel
+  name: DragonLink, Drexel University student organizations (Campus Labs Engage)
+  owner: Drexel University, student organizations on the Campus Labs Engage platform
+  url: https://drexel.campuslabs.com/engage/api/discovery/search/organizations
+  access: json_api
+  terms: Campus Labs platform terms apply to the school; endpoint itself would be unauthenticated
+  attribution: "Data: Drexel DragonLink"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/campus_labs.py
+  notes: >
+    BLOCKED, not harvested. drexel.campuslabs.com/robots.txt carries
+    "Disallow: /engage/api/" under "User-agent: *", which covers exactly this endpoint (checked
+    2026-10-04). CLAUDE.md is unconditional about never getting around a robots rule, so this
+    harvester checks robots.txt and refuses rather than fetching anyway, even though the task
+    brief named this exact endpoint. The code is written and unit tested against a saved sample
+    payload (docs/research/scouting/samples/drexel_dragonlink_sample.json) so it is ready if the
+    school ever opens that path; see research/harvest/2026-10-04-official.md.
+
+- id: engage_ccp
+  name: Engage, Community College of Philadelphia student organizations (Campus Labs Engage)
+  owner: Community College of Philadelphia, student organizations on the Campus Labs Engage platform
+  url: https://ccp.campuslabs.com/engage/api/discovery/search/organizations
+  access: json_api
+  terms: Campus Labs platform terms apply to the school; endpoint itself would be unauthenticated
+  attribution: "Data: Community College of Philadelphia Engage"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/campus_labs.py
+  notes: >
+    BLOCKED, not harvested, same reason as engage_drexel: ccp.campuslabs.com/robots.txt also
+    carries "Disallow: /engage/api/" (checked 2026-10-04). See engage_drexel's note.
+
