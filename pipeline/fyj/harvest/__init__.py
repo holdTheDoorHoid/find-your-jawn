@@ -19,6 +19,7 @@ from . import (
     cultural_fund,
     irs_990n,
     irs_bmf,
+    manual_seeds,
     mummers,
     nss_grottos,
     penn_clubs,
@@ -43,4 +44,5 @@ HARVESTERS: dict[str, HarvestFn] = {
     "cultural_fund": cultural_fund.harvest,
     "mummers": mummers.harvest,
     "nss_grottos": nss_grottos.harvest,
+    "manual_seeds": manual_seeds.harvest,
 }

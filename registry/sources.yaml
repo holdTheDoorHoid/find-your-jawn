@@ -246,3 +246,18 @@
     not worked around. Philadelphia Grotto (Media) and Bucks County Grotto (Warrington) are
     flagged extra.philadelphia_area = true as being in the Philadelphia metro area.
 
+- id: manual_seeds
+  name: Hand maintained seed list (Schuylkill Navy clubs and long tail scouting finds)
+  owner: Find Your Jawn project (compiled by hand from boathouserow.org and scouting research)
+  url: data/seeds/manual.yaml
+  access: manual
+  terms: n/a, our own compiled list with source_url per entry
+  attribution: "See each lead's source_url"
+  lead_only: false
+  refresh: manual
+  harvester: pipeline/fyj/harvest/manual_seeds.py
+  notes: >
+    37 entries: 18 Schuylkill Navy member clubs (boathouserow.org/members/, fetched 2026-10-04,
+    fuller than the list named in structured-sources.md) plus 33 leads from the 32 numbered
+    long-tail-sources.md seed items (one item named two Mummers brigades, split into two leads).
+
