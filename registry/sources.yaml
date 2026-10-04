@@ -1,1 +1,310 @@
-[]
+# Sources registry. Format is binding, see docs/DATA_MODEL.md section 1.
+# Every id here has a matching entry in pipeline/fyj/harvest/__init__.py:HARVESTERS.
+
+- id: city_rco
+  name: Registered Community Organizations, Zoning_RCO layer (City of Philadelphia)
+  owner: City of Philadelphia, Department of Planning and Development
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    The current, authoritative RCO boundary dataset (240 records). Carries a named individual's
+    personal email and cell phone as the primary contact, not just an org level address; the
+    owner should decide deliberately before showing that verbatim on the public site. We copy
+    contact fields exactly as published, per owner decision 2026-10-04. Polygon layer; lat/lng is
+    an averaged centroid of the boundary, not a surveyed point.
+
+- id: city_rco_points
+  name: Registered Community Organizations, older RCO_Points layer (City of Philadelphia)
+  owner: City of Philadelphia, Department of Planning and Development
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    An older/parallel point layer (273 records) kept as a cross check against city_rco; some
+    organizations here may have dropped off the current Zoning_RCO list but still meet
+    informally. Same personal contact caveat as city_rco.
+
+- id: city_friends
+  name: PPR Friends Groups (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: 141 records. Love Your Park's own materials claim 130+ groups in its Park Friends Network, a close but not identical count; worth reconciling later.
+
+- id: city_nac
+  name: Neighborhood Advisory Committees (City of Philadelphia)
+  owner: City of Philadelphia
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: Small (24 records) but on target; carries a named coordinator's direct phone and email, same contact caveat as city_rco.
+
+- id: city_gardens
+  name: Registered Community Gardens (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    23 records, the City's formal registered list. The Pennsylvania Horticultural Society
+    separately claims 180+ community gardens citywide; that list is not yet harvested and would
+    be a much larger, complementary source.
+
+- id: city_libraries
+  name: Free Library of Philadelphia branch locations (City of Philadelphia)
+  owner: City of Philadelphia, Free Library of Philadelphia
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Free_Library_Locations/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility, 54 branches. The library's own website
+    (freelibrary.org/locations/) returns HTTP 403 to automated fetches; this ArcGIS layer is the
+    only way we have to get branch addresses. Friends-of-the-library groups per branch are not in
+    this layer and were not found elsewhere this pass.
+
+- id: city_rec
+  name: Philadelphia Parks and Recreation Centers (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Philadelphia_Parks_and_Recreation_Centers/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility, 479 records. This is a broad PPR asset inventory
+    (playgrounds, squares, and land parcels, not only staffed recreation centers), per the
+    scouting report; treat names and types with that in mind before publishing. Polygon layer,
+    lat/lng is an averaged centroid.
+
+- id: city_senior
+  name: Senior centers (City of Philadelphia, PCA_SeniorCenters plus Senior_Sites_PUBLIC_VIEW)
+  owner: City of Philadelphia / Philadelphia Corporation for Aging
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia / Philadelphia Corporation for Aging"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility. Combines two overlapping city layers (PCA_SeniorCenters,
+    26 records, and Senior_Sites_PUBLIC_VIEW, 26 records) into one leads file; native_id is
+    prefixed pca: or sites: to keep them apart since they are not yet reconciled with each other.
+    Two more overlapping layers (Senior_Centers, PHA_Senior_Sites) were seen in the City's catalog
+    but not harvested this pass.
+
+- id: irs_bmf
+  name: IRS Exempt Organizations Business Master File, Pennsylvania extract
+  owner: Internal Revenue Service, SOI Division
+  url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
+  access: csv
+  terms: Public IRS data, free to reuse
+  attribution: "Data: IRS Exempt Organizations Business Master File"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/irs_bmf.py
+  notes: >
+    9,664 Philadelphia (ZIP starting 191) records out of 81,852 statewide, kept unfiltered per
+    the task brief; triage is a later step. Per IRS Publication 5926 (the extract's own dataset
+    guide), this file only ever carries EO status code 01 (unconditional exemption), 02
+    (conditional exemption, no longer issued) or 25 (terminating private foundation status under
+    507(b)(1)(B)); revoked organizations are excluded from the file entirely. That corrects an
+    assumption in docs/research/scouting/structured-sources.md, which guessed the STATUS field
+    tracks revocations; see research/harvest/2026-10-04-official.md.
+
+- id: irs_990n
+  name: IRS Form 990-N e-Postcard bulk file (NCCS mirror)
+  owner: Internal Revenue Service, mirrored by the Urban Institute's National Center for Charitable Statistics
+  url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/<YYYY>-<MM>-E-POSTCARD.csv
+  access: csv
+  terms: Public IRS data, free to reuse
+  attribution: "Data: IRS Form 990-N e-Postcard, via NCCS"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/irs_990n.py
+  notes: >
+    The IRS's own bulk download page blocks automated fetches (Akamai bot protection); we use the
+    NCCS mirror instead. Newest available month is found by HEAD probing backward from the
+    current month (2026-08 and 2026-09 both 403 as of this harvest; 2026-07 is the newest file
+    that exists). Only source that reaches organizations too small to file a real 990.
+
+- id: penn_clubs
+  name: Penn Clubs (Penn Labs student directory, University of Pennsylvania)
+  owner: Penn Labs (student organization), data about University of Pennsylvania student clubs
+  url: https://pennclubs.com/api/clubs/?format=json
+  access: json_api
+  terms: No published terms; public unauthenticated endpoint, treated politely, no robots.txt present
+  attribution: "Data: Penn Clubs (pennclubs.com)"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/penn_clubs.py
+  notes: 479 active clubs. No field states whether a club accepts non-Penn members, so open_to_public_hint is left null throughout rather than guessed from accepting_members, which is about new Penn members, not the public.
+
+- id: engage_drexel
+  name: DragonLink, Drexel University student organizations (Campus Labs Engage)
+  owner: Drexel University, student organizations on the Campus Labs Engage platform
+  url: https://drexel.campuslabs.com/engage/api/discovery/search/organizations
+  access: json_api
+  terms: Campus Labs platform terms apply to the school; endpoint itself would be unauthenticated
+  attribution: "Data: Drexel DragonLink"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/campus_labs.py
+  notes: >
+    BLOCKED, not harvested. drexel.campuslabs.com/robots.txt carries
+    "Disallow: /engage/api/" under "User-agent: *", which covers exactly this endpoint (checked
+    2026-10-04). CLAUDE.md is unconditional about never getting around a robots rule, so this
+    harvester checks robots.txt and refuses rather than fetching anyway, even though the task
+    brief named this exact endpoint. The code is written and unit tested against a saved sample
+    payload (docs/research/scouting/samples/drexel_dragonlink_sample.json) so it is ready if the
+    school ever opens that path; see research/harvest/2026-10-04-official.md.
+
+- id: engage_ccp
+  name: Engage, Community College of Philadelphia student organizations (Campus Labs Engage)
+  owner: Community College of Philadelphia, student organizations on the Campus Labs Engage platform
+  url: https://ccp.campuslabs.com/engage/api/discovery/search/organizations
+  access: json_api
+  terms: Campus Labs platform terms apply to the school; endpoint itself would be unauthenticated
+  attribution: "Data: Community College of Philadelphia Engage"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/campus_labs.py
+  notes: >
+    BLOCKED, not harvested, same reason as engage_drexel: ccp.campuslabs.com/robots.txt also
+    carries "Disallow: /engage/api/" (checked 2026-10-04). See engage_drexel's note.
+
+- id: cultural_fund
+  name: Philadelphia Cultural Fund grantee directory
+  owner: Philadelphia Cultural Fund
+  url: https://philaculturalfund.org/grantee-directory
+  access: html
+  terms: Public page, no login; robots.txt (served from www.philaculturalfund.org) has no Disallow rules
+  attribution: "Data: Philadelphia Cultural Fund grantee directory"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/cultural_fund.py
+  notes: Paginated 25 per page via a Webflow/Finsweet `?2e1ab49c_page=N` query parameter, about 13 pages.
+
+- id: mummers
+  name: Official Mummers Parade lineup
+  owner: Philadelphia Mummers Parade (philadelphiamummersparade.com)
+  url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
+  access: html
+  terms: Public page, no login; robots.txt disallows only WooCommerce/admin paths, not this page
+  attribution: "Data: Philadelphia Mummers Parade official lineup"
+  lead_only: false
+  refresh: after_event
+  harvester: pipeline/fyj/harvest/mummers.py
+  notes: >
+    57 units for the 2026 parade: 1 Fancy, 10 Wench Brigade, 32 Comic Division clubs across 3
+    mother clubs (Landi Comics NYA, Rich Porco's Murray Comic Club, Goodtimers NYA), 14 String
+    Band. The page's own HTML carries some pasted-in Gmail artifacts in the last Comic Division
+    entry; the harvester strips tags to plain text rather than depending on that markup.
+
+- id: nss_grottos
+  name: National Speleological Society, Pennsylvania grotto directory
+  owner: National Speleological Society
+  url: https://caves.org/state/pennsylvania/
+  access: html
+  terms: Public page, no login; robots.txt only blocks SemrushBot
+  attribution: "Data: National Speleological Society"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/nss_grottos.py
+  notes: >
+    10 PA grottos captured from page 1. The page shows "1 2 Next" pagination, but a direct fetch
+    of state/pennsylvania/page/2/ returned the same single grotto already on page 1 rather than
+    new ones (likely an AJAX "load more" the static HTML does not represent). Possible small gap;
+    not worked around. Philadelphia Grotto (Media) and Bucks County Grotto (Warrington) are
+    flagged extra.philadelphia_area = true as being in the Philadelphia metro area.
+
+- id: manual_seeds
+  name: Hand maintained seed list (Schuylkill Navy clubs and long tail scouting finds)
+  owner: Find Your Jawn project (compiled by hand from boathouserow.org and scouting research)
+  url: data/seeds/manual.yaml
+  access: manual
+  terms: n/a, our own compiled list with source_url per entry
+  attribution: "See each lead's source_url"
+  lead_only: false
+  refresh: manual
+  harvester: pipeline/fyj/harvest/manual_seeds.py
+  notes: >
+    37 entries: 18 Schuylkill Navy member clubs (boathouserow.org/members/, fetched 2026-10-04,
+    fuller than the list named in structured-sources.md) plus 33 leads from the 32 numbered
+    long-tail-sources.md seed items (one item named two Mummers brigades, split into two leads).
+
+- id: city_volunteer_portal
+  name: City of Philadelphia Volunteer Portal (Galaxy Digital, Community Schools program)
+  owner: City of Philadelphia, Community Schools program, run on the Galaxy Digital platform
+  url: https://communityschools.galaxydigital.com
+  access: html
+  terms: Public pages, no login; robots.txt allows our user agent (only named bots/scrapers are disallowed)
+  attribution: "Data: City of Philadelphia Volunteer Portal"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/city_volunteer_portal.py
+  notes: >
+    Added 2026-10-04 at the owner's request so every City volunteer opportunity is included, not
+    just programs. 22 programs (kind_hint program) and 39 opportunities (kind_hint opportunity).
+    Fetched every listing and detail page at least 2 seconds apart. The "Begins / Registration
+    Closes / Duration / Open Spots" shift table on a need's detail page is server rendered for
+    some opportunities and left for JavaScript to fill for others; we record whatever shift rows
+    are present in extra.shifts and leave it an empty list rather than guessing when the table is
+    JS-only. Description text (Who We Are / What We Do / opportunity Description) stays internal
+    in the `description` field, never published.
+
+- id: city_volunteer_pages
+  name: City of Philadelphia volunteer programs on phila.gov department pages
+  owner: City of Philadelphia, various departments
+  url: https://www.phila.gov/departments/
+  access: html
+  terms: Public pages, no login; robots.txt is a 404 (no file), treated as allow all
+  attribution: "Data: phila.gov"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/city_volunteer_pages.py
+  notes: >
+    Added 2026-10-04 at the owner's request. phila.gov has no usable API (wp-json returns 502)
+    and its sitemap.xml is a stale 2018 file, so this is a keyword guided crawl rather than a
+    full enumeration. https://www.phila.gov/departments/ turned out to be mostly a landing page
+    of broad service categories and elected offices, not a true directory of every department
+    homepage in static HTML, so a generic crawl from it alone finds little; the harvester is
+    seeded with that page plus the specific known pages given in the task (Parks & Rec get
+    involved, PowerUp Tech Corps, the Medical Reserve Corps, OEM volunteering, block captains,
+    Philly Reading Coaches, City Commissioners poll workers, Town Watch Integrated Services, and
+    the Foster Grandparent Program), then follows one hop of links matching volunteer-ish
+    keywords. serve.phila.gov is checked and simply redirects to the Office of Community
+    Empowerment and Opportunity's department page, as expected; it is not counted as a separate
+    program. Two portals named by the coordinator do not resolve and were not harvested:
+    serve.volunteermatch.org (the old Mayor's Volunteer Portal, 2022) and volunteer.phila.gov.
+    The City's Idealist profile (adult education office) lists 0 opportunities and was not
+    harvested for that reason. External, non phila.gov partner links found on these pages (Love
+    Your Park, TreePhilly, and similar) become their own leads with the City page as source_url.

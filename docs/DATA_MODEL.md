@@ -42,7 +42,7 @@ Unknown values are `null` or empty lists, never invented. Fields:
 | `native_id` | string | the source's own id (EIN, object id, club code, page slug) |
 | `name` | string | name as the source gives it |
 | `aka` | list of strings | other names (dba names, short names, public names) |
-| `kind_hint` | string or null | `nonprofit`, `civic`, `student_org`, `club`, `friends_group`, `garden`, `congregation`, `team`, `parade_unit`, `grantee`, `library_program`, `facility`, `other` |
+| `kind_hint` | string or null | `nonprofit`, `civic`, `student_org`, `club`, `friends_group`, `garden`, `congregation`, `team`, `parade_unit`, `grantee`, `library_program`, `facility`, `program`, `opportunity`, `other` |
 | `description` | string or null | source text, internal only, never published |
 | `website` | string or null | |
 | `email` | string or null | as published |
