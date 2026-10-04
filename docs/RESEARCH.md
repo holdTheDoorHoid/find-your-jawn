@@ -36,7 +36,8 @@ its website and recorded the result.
 
 ## 3. Lanes
 
-Each lane is a different way of finding groups. Independence between lanes matters, because coverage
+Each lane is a different way of finding groups (A to K from the founding plan, L to U added the same
+day for small and obscure groups). Independence between lanes matters, because coverage
 is estimated from their overlap (section 6). Tested endpoints and gotchas are in
 `docs/research/scouting/structured-sources.md` and `long-tail-sources.md`.
 
@@ -107,6 +108,83 @@ Philadelphia Home and School Council, School District volunteer programs.
 **K. People.** GitHub issue forms (suggest a group, I run this group, bulletin board photo), partner
 lists (Join Philly, PHENND, Code for Philly), and owner contributed bulletin board photos transcribed
 by an agent.
+
+**L. The web of groups (script).** Small groups link to each other: "our partners", "friends",
+"resources" and footer links. For every group website we know (thousands from the IRS files and
+harvests), fetch the home page and any partners or links page, collect outbound links to other
+Philadelphia organizations, and queue the new ones as leads. Repeat on each new batch. This
+snowball compounds: every group found points to more.
+
+**M. Fiscal sponsors (scripts and agents).** Many tiny groups have no tax status of their own and
+run as a "project" of a fiscal sponsor, so they never appear in IRS data. Sources: CultureTrust
+Greater Philadelphia's project list (Blue Stoop is one), Fractured Atlas's sponsored project
+directory filtered to Philadelphia, Open Collective collectives located in Philadelphia, and other
+local sponsors found along the way.
+
+**N. Host venues (agents).** Places that host many small groups list them on their calendars or
+tenant directories: William Way LGBT Community Center (dozens of groups meet there), Friends Center
+(a Quaker building full of small nonprofits), the Bok building, settlement houses and community
+centers, food co-op newsletters and boards (Weavers Way, Mariposa), bookstores (book clubs), game
+stores (game nights), yarn shops (knitting circles), bike and running shops (group rides and runs),
+climbing gyms and makerspaces (affinity meetups).
+
+**O. Government paper trails (scripts where possible).** Records that name clubs as a side effect:
+Philadelphia polling places (many are in social clubs, legion posts and civic halls; OpenDataPhilly),
+Pennsylvania Liquor Control Board club licenses (Mummers clubs, ethnic and rowing clubs, fraternal
+lodges and veterans posts hold them; check for a downloadable list), City Council resolutions and
+citations honoring community groups (Legistar, phila.legistar.com, which has a public API), small
+games of chance licenses (check whether lists are public), Philadelphia Housing Authority resident
+councils, Council district office lists of civic groups, and the City's special events permits if
+published.
+
+**P. National chapter and club finders (scripts or agents).** Filter each to Philadelphia: Divine
+Nine graduate chapters and other service sororities and fraternities, Jack and Jill, The Links,
+100 Black Men, Junior League, League of Women Voters, NAACP branches, Rotary, Lions, Kiwanis,
+Optimist, Toastmasters, Elks, Moose, Masons and Prince Hall Masons, Knights of Columbus, Sons of
+Italy, Ancient Order of Hibernians, VFW, American Legion, AMVETS, Scouting (BeAScout) and Girl
+Scouts, 4-H, Sierra Club, Audubon, AMC, Trout Unlimited, Habitat for Humanity, barbershop and Sweet
+Adelines choruses, quilting, sewing and weaving guilds, Urban Sketchers, NMRA model railroad
+divisions, the Society for Creative Anachronism's local barony, mycological and bird clubs, sports
+governing bodies' club finders (youth soccer, Little League, rugby, ultimate, masters swimming,
+fencing, table tennis, pickleball, roller derby, cycling, the Road Runners Club of America), and
+disability community chapters (National Federation of the Blind, Hearing Loss Association, deaf
+clubs, Special Olympics).
+
+**Q. Coalition and network member lists (agents).** Networks publish their members: Philadelphia
+Orchard Project's orchard partners, Neighborhood Gardens Trust gardens, PHS Tree Tenders groups,
+Philadelphia Youth Sports Collaborative members, Police Athletic League centers, Theatre Philadelphia
+and Greater Philadelphia Cultural Alliance members, the Philadelphia Folklore Project's folk arts
+groups, Philadelphia Association of CDCs, food access coalitions, mutual aid and community fridge
+maps, out of school time provider lists.
+
+**R. Congregations (scripts and agents).** Denominational directories are complete and structured:
+the Archdiocese's parish finder, Philadelphia Yearly Meeting (Quaker meetings), the Episcopal Diocese,
+the Presbytery, Lutheran and Methodist conferences, the Jewish Federation's synagogue list, Black
+clergy associations, mosque and temple lists through the Interfaith Center. Parish bulletins posted
+online (many Catholic parishes publish weekly bulletins on parishesonline.com) list ministries,
+senior clubs, sports leagues and groups open to the community.
+
+**S. Open data about places (scripts).** OpenStreetMap (Geofabrik extract; places tagged as clubs,
+community centers, associations, sports clubs, places of worship) and Wikidata (organizations based
+in Philadelphia, good for older clubs and societies).
+
+**T. Events that tiny groups run (agents).** Charity 5Ks and walks on race listing sites (many small
+groups run one race a year), giving day participant lists, community fairs and activities fairs
+(Join Philly's activities fair exhibitors as leads; campus club fair maps), and newsletter archives
+(PHENND's weekly newsletter, Council members' district newsletters, civic association newsletters).
+
+**U. Support groups (agents; shown only on request).** PA 211 (the regional services directory),
+hospital support group calendars (Penn Medicine, Jefferson, Temple Health), NAMI Philadelphia, the
+southeastern Pennsylvania AA intergroup and other recovery fellowships, grief, caregiver and illness
+specific group finders. Link to meeting finders rather than copying meeting lists.
+
+**Campus workaround.** Where a school's robots rules block its club directory API (Drexel, Community
+College), use what the school publishes for people: club fair maps and programs, student government
+lists of recognized organizations and budget allocations, and individual club pages where robots
+rules allow.
+
+**Snowball every contact.** The "I run this group" and "Suggest a group" forms ask which other groups
+we should know about, and tier 2 research records partner organizations named on each group's site.
 
 ## 4. Waves
 
