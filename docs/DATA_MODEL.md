@@ -89,6 +89,7 @@ categories: [outdoors-adventure]        # (req) interest families from data/voca
 interests: [caving, hiking, geology]    # (req) interest tags from the same vocabulary
 motives: [social, understanding, enhancement]   # see vocabulary: values, understanding, social, career, protective, enhancement
 formats: [side_by_side, learn_skill]    # see vocabulary in data/vocab/formats.yaml
+roles: [hands_on, figure_out]           # what you do there: hands_on | figure_out | create | help_teach | lead | organize
 crowd: [all_adults]                     # who is there, see data/vocab/audiences.yaml
 bridging: false                         # true when the group mixes ages, neighborhoods or backgrounds on purpose
 
@@ -205,6 +206,11 @@ Controlled lists live in `data/vocab/`:
 - `formats.yaml`: how people spend time together (side by side, conversation, team play, perform or
   make together, behind the scenes, lead and organize, learn a skill, one off event).
 - `audiences.yaml`: crowd and community labels.
+- `roles.yaml`: the six roles (what you do there), a compact take on the Holland interest types.
+- `scenes.yaml`: the quiz's Saturday morning scenes and "lost track of time" moments, each mapped to
+  interests, roles and formats, with picture credits.
+- `future_selves.yaml`: the "a year from now" statements, each mapped to interests, roles and ways in
+  that move a person toward it.
 - `neighborhoods.yaml`: neighborhood names with planning district, from the City's neighborhood
   boundaries.
 

@@ -15,7 +15,8 @@ park, the library knitting circle, the Philly Grotto).
 It has two front doors:
 
 - **Browse**: the master list of every group, with search, filters and a map.
-- **Match me**: a short quiz (about 12 questions, 3 to 4 minutes) that returns about eight groups,
+- **Match me**: a short quiz (about eleven quick screens, under four minutes, built on how people
+  actually reveal what they like) that returns about eight groups,
   ranked, each with what the group does, why it fits you, and your concrete first step. Most results
   are close fits. Two are deliberate **stretches** that change just one thing about what you would
   normally pick, and one is a **wildcard**, because growth happens one small step outside your comfort
@@ -46,6 +47,8 @@ and back a second and third time (section 4).
 | Stretch default | Balanced: about 8 results, 5 close fits, 2 one step stretches, 1 wildcard. Everyone gets a dial |
 | Events | Groups plus how to show up (when they meet, cost, what a first visit is like). A live events calendar comes later, fed only by calendars groups publish themselves |
 | This session | Plan, public repository with placeholder site, free script harvest of official lists. AI research waves start after the owner reviews this plan |
+| City volunteering (added later the same day) | Include every City of Philadelphia volunteer opportunity: the City's volunteer portal (Community Schools, on Galaxy Digital) and every department's volunteer program on phila.gov |
+| Quiz questions (added later the same day) | Use psychology and efficient questions to get the most accurate picture in the fewest taps: concrete scenes, forced choices, a taste test of real groups, adaptive follow ups, tuned by simulation (DESIGN section 2) |
 
 ## 3. What already exists, and where we fit
 
@@ -73,31 +76,38 @@ The design rules come from the evidence base in `docs/research/scouting/evidence
 cited). In plain terms:
 
 1. **Match on why, not just what.** People stay when a group serves their own reason for coming
-   (meet people, do good, learn, build a career, feel better, have fun). The quiz asks why first.
-2. **Show few, explain each.** About eight results, not fifty. Each one says, in your own answers'
+   (meet people, do good, learn, build a career, feel better, have fun). The quiz asks why, and makes
+   people choose the reason that matters most and least, because everyone rates every good reason
+   highly when asked to rate.
+2. **Ask well.** People describe themselves poorly but recognize what they like instantly. So the
+   quiz asks about concrete moments ("pick the Saturday mornings that sound good"), lets people react
+   to a handful of real groups, asks follow ups only when the answer would change the results, and
+   reads the answers back before showing results. Simulated people tell us which questions earn
+   their place (DESIGN sections 2 and 12).
+3. **Show few, explain each.** About eight results, not fifty. Each one says, in your own answers'
    terms, why it fits. Explanations make people trust and act on suggestions.
-3. **Stretch one step at a time.** A stretch keeps everything familiar except one thing: a new topic
+4. **Stretch one step at a time.** A stretch keeps everything familiar except one thing: a new topic
    in a format you like, a familiar topic with a new crowd, or a deeper role in something you already
    do. Stretches are labeled as stretches and say why we think you might like them anyway. Practical
    limits (cost, schedule, access, safety) are never stretched.
-4. **Make the first step concrete.** Every result ends with one specific action ("Come to the first
+5. **Make the first step concrete.** Every result ends with one specific action ("Come to the first
    Thursday meeting, 7 pm; no sign up needed"). People who decide when and where they will do
    something are far more likely to do it, so the site helps you pick a date and adds it to your
    calendar.
-5. **Lower the first visit fear.** Every group page says what a first visit is like, whether you can
+6. **Lower the first visit fear.** Every group page says what a first visit is like, whether you can
    just show up, what to bring, cost, access, languages, and that feeling unsure the first time is
    normal. That last line is not fluff: brief messages that normalize belonging worries have
    measurable, lasting effects.
-6. **Bring someone.** Being asked is one of the strongest reasons people join, so every result has a
+7. **Bring someone.** Being asked is one of the strongest reasons people join, so every result has a
    one tap "send this to a friend" message.
-7. **Plan for three visits.** Friendships take repeated contact. The site encourages going at least
+8. **Plan for three visits.** Friendships take repeated contact. The site encourages going at least
    three times before deciding, and on your next visit asks how it went, then offers the next rung:
    more like it, a deeper role, or a fix for what got in the way.
-8. **Mix bonding and bridging.** Groups of people like you feel good; groups that mix ages,
+9. **Mix bonding and bridging.** Groups of people like you feel good; groups that mix ages,
    neighborhoods and backgrounds build a city. Results include both and say which is which.
-9. **Favor regular, nearby, low cost places.** Recurring groups close to home (by transit, not by
+10. **Favor regular, nearby, low cost places.** Recurring groups close to home (by transit, not by
    car) build real ties; distance is measured in SEPTA and walking time.
-10. **Barriers are filters, not footnotes.** Cost, schedule (including shift work), wheelchair access,
+11. **Barriers are filters, not footnotes.** Cost, schedule (including shift work), wheelchair access,
     languages, minimum age, Pennsylvania child clearances and background checks are structured fields
     you can filter on, explained in plain words where they matter.
 
@@ -116,7 +126,7 @@ active, newcomer friendly groups (tier 2). Groups that confirm their own listing
 
 | Lane | Finds groups through | Examples |
 |---|---|---|
-| A. Official lists | Government and IRS data | City ArcGIS layers (240 registered community organizations, 141 park Friends groups), IRS master file (9,664 Philadelphia records), IRS e-Postcard (tiny nonprofits under $50,000) |
+| A. Official lists | Government and IRS data | Every City volunteer program (the City's volunteer portal and each department's volunteer pages), City ArcGIS layers (240 registered community organizations, 141 park Friends groups), IRS master file (9,664 Philadelphia records), IRS e-Postcard (tiny nonprofits under $50,000) |
 | B. Campuses | Student group directories | Penn Clubs (479), Drexel (548), Community College (109), then Temple, Jefferson, Saint Joseph's, La Salle and more |
 | C. Parades, festivals, days of service | Who marched, hosted or tabled | Mummers lineup (70 plus clubs), St. Patrick's, Puerto Rican, Lunar New Year, Odunde, Pride, Love Your Park hosts, yearly news recaps |
 | D. Funders | Grantee lists | Philadelphia Cultural Fund (322 grantees), Bread and Roses, Leeway, PHS gardens, Council grants |
@@ -179,7 +189,8 @@ with research from phase 1 onward, using early data.
 **Phase 4, the site** (Opus agents, details in DESIGN.md)
 - M4.1 Site shell: static pages for every group, browse, search, filters.
 - M4.2 Map.
-- M4.3 Matching engine and stretch rules, tested against fixture people (a teen needing 40 hours, a
+- M4.3 Matching engine and stretch rules, with the question simulation that tunes weights and cuts
+  weak questions, tested against fixture people (a teen needing 40 hours, a
   retiree new to Philly, a night shift nurse, a wheelchair user, a grad student who knows nobody, a
   parent of toddlers, someone with court ordered hours, a shy introvert, an extrovert jock).
 - M4.4 Quiz, results and explanations. M4.5 Follow through (plan it, bring someone, saved list,

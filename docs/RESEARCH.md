@@ -40,7 +40,13 @@ Each lane is a different way of finding groups. Independence between lanes matte
 is estimated from their overlap (section 6). Tested endpoints and gotchas are in
 `docs/research/scouting/structured-sources.md` and `long-tail-sources.md`.
 
-**A. Official lists (scripts).** City ArcGIS layers: registered community organizations (240), park
+**A. Official lists (scripts).** Every City of Philadelphia volunteer program: the City's volunteer
+portal (communityschools.galaxydigital.com, the Community Schools program's programs and open
+opportunities) and a crawl of every department's volunteer pages on phila.gov (Parks and
+Recreation, Power Up Tech Corps, Medical Reserve Corps, emergency volunteering, Philly Reading
+Coaches, poll workers, block captains, Town Watch, Foster Grandparents and whatever else the crawl
+finds). The old Mayor's Volunteer Portal (serve.volunteermatch.org) and volunteer.phila.gov no longer
+resolve. City ArcGIS layers: registered community organizations (240), park
 Friends groups (141), neighborhood advisory committees (24), community gardens, libraries, rec
 centers, senior centers. IRS master file for Pennsylvania filtered to 191xx ZIPs (9,664 records).
 IRS e-Postcard filers (organizations under $50,000; the best paper trail for tiny groups). ProPublica
@@ -217,6 +223,9 @@ says the group accepts court ordered community service. Otherwise `unknown`. Nev
   in browse with a label until a recheck finds them gone.
 
 ## 9. Known blocked or restricted sources
+
+Dead City portals (nothing to harvest): serve.volunteermatch.org, volunteer.phila.gov. The City's
+Idealist profile lists no opportunities.
 
 Do not work around these: Reddit (403), South Philly Review (403), Free Library site (403 to
 scripts), Facebook and Instagram (login), MLK Day of Service project list (account), Bryn Mawr Engage
