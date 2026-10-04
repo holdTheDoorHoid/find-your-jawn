@@ -1,1 +1,123 @@
-[]
+# Sources registry. Format is binding, see docs/DATA_MODEL.md section 1.
+# Every id here has a matching entry in pipeline/fyj/harvest/__init__.py:HARVESTERS.
+
+- id: city_rco
+  name: Registered Community Organizations, Zoning_RCO layer (City of Philadelphia)
+  owner: City of Philadelphia, Department of Planning and Development
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    The current, authoritative RCO boundary dataset (240 records). Carries a named individual's
+    personal email and cell phone as the primary contact, not just an org level address; the
+    owner should decide deliberately before showing that verbatim on the public site. We copy
+    contact fields exactly as published, per owner decision 2026-10-04. Polygon layer; lat/lng is
+    an averaged centroid of the boundary, not a surveyed point.
+
+- id: city_rco_points
+  name: Registered Community Organizations, older RCO_Points layer (City of Philadelphia)
+  owner: City of Philadelphia, Department of Planning and Development
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    An older/parallel point layer (273 records) kept as a cross check against city_rco; some
+    organizations here may have dropped off the current Zoning_RCO list but still meet
+    informally. Same personal contact caveat as city_rco.
+
+- id: city_friends
+  name: PPR Friends Groups (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: 141 records. Love Your Park's own materials claim 130+ groups in its Park Friends Network, a close but not identical count; worth reconciling later.
+
+- id: city_nac
+  name: Neighborhood Advisory Committees (City of Philadelphia)
+  owner: City of Philadelphia
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: Small (24 records) but on target; carries a named coordinator's direct phone and email, same contact caveat as city_rco.
+
+- id: city_gardens
+  name: Registered Community Gardens (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    23 records, the City's formal registered list. The Pennsylvania Horticultural Society
+    separately claims 180+ community gardens citywide; that list is not yet harvested and would
+    be a much larger, complementary source.
+
+- id: city_libraries
+  name: Free Library of Philadelphia branch locations (City of Philadelphia)
+  owner: City of Philadelphia, Free Library of Philadelphia
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Free_Library_Locations/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility, 54 branches. The library's own website
+    (freelibrary.org/locations/) returns HTTP 403 to automated fetches; this ArcGIS layer is the
+    only way we have to get branch addresses. Friends-of-the-library groups per branch are not in
+    this layer and were not found elsewhere this pass.
+
+- id: city_rec
+  name: Philadelphia Parks and Recreation Centers (City of Philadelphia)
+  owner: City of Philadelphia, Parks & Recreation
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Philadelphia_Parks_and_Recreation_Centers/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility, 479 records. This is a broad PPR asset inventory
+    (playgrounds, squares, and land parcels, not only staffed recreation centers), per the
+    scouting report; treat names and types with that in mind before publishing. Polygon layer,
+    lat/lng is an averaged centroid.
+
+- id: city_senior
+  name: Senior centers (City of Philadelphia, PCA_SeniorCenters plus Senior_Sites_PUBLIC_VIEW)
+  owner: City of Philadelphia / Philadelphia Corporation for Aging
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia / Philadelphia Corporation for Aging"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/arcgis.py
+  notes: >
+    Facility anchor, kind_hint facility. Combines two overlapping city layers (PCA_SeniorCenters,
+    26 records, and Senior_Sites_PUBLIC_VIEW, 26 records) into one leads file; native_id is
+    prefixed pca: or sites: to keep them apart since they are not yet reconciled with each other.
+    Two more overlapping layers (Senior_Centers, PHA_Senior_Sites) were seen in the City's catalog
+    but not harvested this pass.
+

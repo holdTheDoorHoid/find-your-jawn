@@ -13,6 +13,17 @@ from typing import Any
 
 from fyj.http import FyjClient
 
+from . import arcgis
+
 HarvestFn = Callable[[FyjClient], list[dict[str, Any]]]
 
-HARVESTERS: dict[str, HarvestFn] = {}
+HARVESTERS: dict[str, HarvestFn] = {
+    "city_rco": arcgis.harvest_city_rco,
+    "city_rco_points": arcgis.harvest_city_rco_points,
+    "city_friends": arcgis.harvest_city_friends,
+    "city_nac": arcgis.harvest_city_nac,
+    "city_gardens": arcgis.harvest_city_gardens,
+    "city_libraries": arcgis.harvest_city_libraries,
+    "city_rec": arcgis.harvest_city_rec,
+    "city_senior": arcgis.harvest_city_senior,
+}
