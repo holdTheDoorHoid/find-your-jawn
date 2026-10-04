@@ -22,6 +22,33 @@ External, non phila.gov links that a City volunteer page points to (Love Your Pa
 and similar) become their own leads, with the City page as source_url, per the coordinator's
 instruction. Generic tool and social links (a Google Form, Facebook, etc.) are not treated as
 organizations and are skipped.
+
+Fixed 2026-10-04 after a review of the first real run found noisy leads: a page's own content,
+not the anchor text that pointed to it, decides both its name and whether it becomes a lead at
+all. The one hop keyword match on a referring link's URL or text (above) is deliberately broad,
+since it is only deciding what to fetch next; two problems followed from treating every fetch as
+automatically a good lead. First, some fetched City pages are not volunteer programs at all
+("Concession opportunities" is a business contracting page; "Departments and other agencies" and
+"All events" are index and calendar pages that only exist in the crawl to seed more links,
+matched in the first place because "Philadelphia **Join**s Cities..." contains the substring
+"join"). `_is_volunteer_page` checks the fetched page's own title and body text for a real
+volunteering signal and excludes a short list of index, concession, contracting and job page
+titles outright, regardless of how the referring link matched. Second, an external partner lead
+was named from the referring link's anchor text ("apply online", "national MRC program.",
+literal body text where a link's own text spanned a whole sentence), rather than the partner
+page's own heading; `_resolve_partner_name` now fetches the partner page and names the lead from
+its `<h1>` or `<title>`, falling back to the anchor text only when that fetch fails. Partner
+candidates are also no longer mined off a page that fails `_is_volunteer_page` (that is exactly
+how a U.S. Department of Justice link ended up a lead, from the "Second Chance Month" post), and
+any partner host ending `.gov` or `.mil` is excluded outright: a federal or state reference page
+(the CDC, ASPR, SERVPA, the DOJ) is not a local community or volunteer organization a resident can
+join, whatever its own title says.
+
+One known, accepted change from this fix: serve.phila.gov no longer becomes a lead of its own.
+Its content (the Office of Community Empowerment and Opportunity's landing page) never actually
+describes a way to volunteer, so the new rule correctly drops it; the fact that serve.phila.gov
+redirects there rather than to a distinct volunteer program is still recorded in this file's
+module docstring and in registry/sources.yaml, just not as a noisy "program" lead.
 """
 
 from __future__ import annotations
@@ -133,6 +160,29 @@ _TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 _ENTRY_CONTENT_RE = re.compile(r'<div[^>]*class="[^"]*entry-content[^"]*"', re.S)
 _LINK_RE = re.compile(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', re.S)
 _SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+
+# A page whose own title matches one of these is never a lead, no matter what pointed to it:
+# business concessions and contracting opportunities, job and career postings, and the generic
+# index or calendar pages the crawl only visits to find more links (see module docstring).
+_NOT_A_VOLUNTEER_PAGE_TITLE_RE = re.compile(
+    r"concession|contract(?:ing|or)?|\bjob\b|\bjobs\b|career|employment|"
+    r"departments and other agencies|\ball events\b|request for proposals|\brfp\b|"
+    r"procurement|bid opportunit",
+    re.I,
+)
+
+# A real volunteering signal somewhere in the page's own title or body text (not the referring
+# link's text or URL, which is only used to decide what to fetch next).
+_VOLUNTEER_SIGNAL_RE = re.compile(
+    r"volunteer|become an?\b|sign up to help|join (?:us|the|a )|service hours|"
+    r"get involved|advisory council|friends group|\bcorps\b|poll worker|election board",
+    re.I,
+)
+
+_H1_ANY_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S)
+# A "|" or en/em dash with or without surrounding space, a plain hyphen only when it has space on
+# both sides (so a hyphenated word like "Street-Smart" never splits), or a colon.
+_TITLE_SEPARATOR_RE = re.compile(r"\s*[|–—]\s*|\s+-\s+|\s*:\s*")
 _FACT_KEYWORDS = (
     "age",
     "year old",
@@ -160,6 +210,59 @@ def _page_title(html_text: str) -> str | None:
         first = title_match.group(1).split("|")[0]
         text = strip_tags(first)
         if text:
+            return text
+    return None
+
+
+def _is_volunteer_page(title: str | None, content_text: str | None) -> bool:
+    """Decide from the page's own title and body text, not the link that pointed to it, whether
+    this page actually describes a way to volunteer or join. See the module docstring."""
+    title_text = title or ""
+    if _NOT_A_VOLUNTEER_PAGE_TITLE_RE.search(title_text):
+        return False
+    haystack = f"{title_text} {content_text or ''}"
+    return bool(_VOLUNTEER_SIGNAL_RE.search(haystack))
+
+
+def _domain_stem(host: str) -> str:
+    """The registrable part of a host, lowercased and stripped to letters and digits, so
+    "www.loveyourpark.org" and "TreePhilly" both reduce to a comparable "loveyourpark" or
+    "treephilly" for `_external_page_title`'s organization name check."""
+    label = host.split(".")[0] if host else ""
+    return re.sub(r"[^a-z0-9]", "", label.lower())
+
+
+def _external_page_title(html_text: str, host: str | None = None) -> str | None:
+    """A generic title extractor for partner sites whose markup we don't know, unlike
+    `_page_title`, which relies on phila.gov's own template classes. A partner site's `<title>`
+    usually has one segment that is the organization's own name and another that is a page
+    specific label or tagline, but which position holds the name is not consistent (checked
+    against real partner sites while fixing this harvester: "Volunteer | Love Your Park" and
+    "Home - Independence Blue Cross Broad Street Run" put the name last; "TreePhilly: Making
+    Philadelphia the City of Arborly Love" puts it first). When `host` is given, this prefers
+    whichever segment contains the site's own domain name, which reliably picks out the
+    organization regardless of position; otherwise, or if no segment matches, it falls back to
+    the last segment (true for 3 of the 4 real partner sites checked). Falls back further to a
+    short `<h1>` that reads like a heading rather than a sentence, only when there is no usable
+    `<title>` at all: some partner sites' `<h1>` is a long marketing sentence ("The Independence
+    Blue Cross Broad Street Run 10-Miler has been a proud Philadelphia tradition for 47
+    years."), not a name."""
+    title_match = _TITLE_RE.search(html_text)
+    if title_match:
+        raw = strip_tags(title_match.group(1))
+        if raw:
+            segments = [s.strip() for s in _TITLE_SEPARATOR_RE.split(raw) if s.strip()]
+            if segments:
+                stem = _domain_stem(host) if host else ""
+                if stem:
+                    for segment in segments:
+                        if stem in re.sub(r"[^a-z0-9]", "", segment.lower()):
+                            return segment
+                return segments[-1]
+    h1_match = _H1_ANY_RE.search(html_text)
+    if h1_match:
+        text = strip_tags(h1_match.group(1))
+        if text and len(text) <= 70 and not text.endswith((".", "!", "?")):
             return text
     return None
 
@@ -235,6 +338,31 @@ def _partner_name(text: str, host: str) -> str:
     return host
 
 
+def _is_excluded_partner_domain(host: str) -> bool:
+    if host in EXTERNAL_PARTNER_EXCLUDE_DOMAINS:
+        return True
+    # A federal or state government reference page (the CDC, ASPR, SERVPA, the DOJ) is not a
+    # local community or volunteer organization a resident can join, whatever its own page says.
+    return host.endswith(".gov") or host.endswith(".mil")
+
+
+def _resolve_partner_name(client: FyjClient, href: str, text: str, host: str) -> str:
+    """Name a partner lead from the partner page's own heading, per the module docstring's
+    fix. Falls back to the referring link's anchor text (via `_partner_name`) only if the
+    partner page can't be fetched or has no usable title."""
+    try:
+        resp = client.get_html(href, min_delay=1.0)
+    except RobotsBlocked:
+        pass
+    except (httpx.HTTPStatusError, httpx.TransportError):
+        pass
+    else:
+        fetched = _external_page_title(resp.text, host=host)
+        if fetched:
+            return fetched
+    return _partner_name(text, host)
+
+
 def harvest(client: FyjClient) -> list[dict[str, Any]]:
     queue: list[tuple[str, int]] = [(url, 0) for url in KNOWN_PAGES]
     visited: set[str] = set()
@@ -258,24 +386,27 @@ def harvest(client: FyjClient) -> list[dict[str, Any]]:
 
         content_html = _main_content_html(resp.text)
         content_text = strip_tags(content_html) or ""
+        title = _page_title(resp.text)
+        is_volunteer_page = _is_volunteer_page(title, content_text)
 
-        leads.append(
-            make_lead(
-                source=SOURCE_ID,
-                source_url=url,
-                native_id=_slug_native_id(url),
-                name=_page_title(resp.text) or url,
-                kind_hint="program",
-                description=content_text[:2000] if content_text else None,
-                city="Philadelphia",
-                tags_hint=["City of Philadelphia volunteer program"],
-                extra={
-                    "department": _department_from_url(url),
-                    "facts": _facts(content_text),
-                    "crawl_hop": hop,
-                },
+        if is_volunteer_page:
+            leads.append(
+                make_lead(
+                    source=SOURCE_ID,
+                    source_url=url,
+                    native_id=_slug_native_id(url),
+                    name=title or url,
+                    kind_hint="program",
+                    description=content_text[:2000] if content_text else None,
+                    city="Philadelphia",
+                    tags_hint=["City of Philadelphia volunteer program"],
+                    extra={
+                        "department": _department_from_url(url),
+                        "facts": _facts(content_text),
+                        "crawl_hop": hop,
+                    },
+                )
             )
-        )
 
         host = urlsplit(url).netloc
         for href, text in find_links(content_html, url):
@@ -288,7 +419,13 @@ def harvest(client: FyjClient) -> list[dict[str, Any]]:
                         queued.add(href)
                         queue.append((href, 1))
                 continue
-            if link_host in EXTERNAL_PARTNER_EXCLUDE_DOMAINS:
+            if not is_volunteer_page:
+                # Don't mine partner links off a page that doesn't itself describe a way to
+                # volunteer or join; this is exactly how a U.S. Department of Justice link ended
+                # up a lead, off a "Second Chance Month" post that only matched the one hop crawl
+                # because "Philadelphia Joins Cities..." contains the substring "join".
+                continue
+            if _is_excluded_partner_domain(link_host):
                 continue
             if href in seen_partner_urls:
                 continue
@@ -298,7 +435,7 @@ def harvest(client: FyjClient) -> list[dict[str, Any]]:
                     source=SOURCE_ID,
                     source_url=url,
                     native_id=f"partner:{_slug_native_id(href)}",
-                    name=_partner_name(text, link_host),
+                    name=_resolve_partner_name(client, href, text, link_host),
                     kind_hint="program",
                     website=href,
                     tags_hint=["external partner linked from a City volunteer page"],

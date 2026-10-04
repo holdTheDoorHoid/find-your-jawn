@@ -1,0 +1,547 @@
+# Hand researched inventory of City of Philadelphia volunteer programs, built 2026-10-04 to fix
+# the gaps in the city_volunteer_pages crawl (see research/harvest/2026-10-04-city-programs.md
+# for the full report). Covers every program named in the task brief's checklist plus whatever
+# else turned up while checking phila.gov. Facts only, written in our own words, each with a
+# source URL and the date we saw it, per docs/RESEARCH.md and docs/ETHICS.md.
+#
+# Two top level lists:
+#   programs: active (or apparently active) programs a resident can volunteer with or join.
+#   discontinued: programs that look dead, with the evidence that leads to that conclusion.
+#
+# pipeline/fyj/harvest/city_programs.py turns `programs` into leads (kind_hint "program"); the
+# `discontinued` list is not harvested, it is a research record for the write up and for anyone
+# who revisits this list later.
+#
+# Mural Arts Philadelphia is included once, flagged as a nonprofit partner, link only, per the
+# task: never copy a partner's own text. The School District of Philadelphia entry is flagged
+# "public agency, not City government" per the task, since it has its own elected Board of
+# Education and is not part of the City government this project otherwise covers.
+
+programs:
+  - name: Philly Reading Coaches
+    department: Office of Children and Families, Department of Human Services (Out of School Time)
+    url: http://ost.phila.gov/philly-reading-coaches/
+    signup_url: https://secure.ngpvan.com/00Uw32TZoEm1ZG8EODxCmQ2
+    what: >
+      Pairs a trained volunteer with a K to 3rd grade student for weekly one on one after school
+      reading sessions at an Out of School Time site, October through May.
+    who_can_join: 16 or older (16 to 17 year olds need a parent or guardian waiver); no residency requirement stated
+    commitment: weekly
+    training: "Yes: an orientation plus a Safe Schools mandated reporter training module"
+    clearances: >
+      PA State Criminal Background Check, PA Child Abuse History Clearance, an FBI waiver or
+      fingerprint check, a City Release Waiver (18+) or Parental Release Waiver (16 to 17), and a
+      National Sex Offender Registry check for adults
+    season: "School year, October through May"
+    evidence_date: "2026-10"
+    notes: >
+      A 2023-11-27 phila.gov news post first announced the program, but its own site on the
+      Out of School Time subdomain (ost.phila.gov) is the current, more detailed source: as of
+      this research pass it said it is "now accepting volunteers for the 2026-2027 school year."
+
+  - name: Power Up Tech Corps
+    department: Office of Innovation and Technology
+    url: https://www.phila.gov/services/education-learning/get-help-with-technology/volunteer-for-the-power-up-tech-corps/
+    signup_url: https://phila.formstack.com/forms/oit_power_up_tech_corps_volunteer_program_intake_form
+    what: >
+      Trains volunteers to work as digital skills coaches, lab monitors and classroom aides,
+      helping Philadelphia residents build computer and internet skills at library, Parks and
+      Recreation, and Adult Education sites.
+    who_can_join: 14 or older (14 to 17 year olds need parent or guardian permission); no residency requirement stated
+    commitment: weekly
+    training: "Yes: a 20 minute screening call plus an orientation module"
+    clearances: >
+      PA Criminal History Background Check and PA Child Abuse Clearance for anyone working with
+      youth or at a Parks and Recreation or Free Library site; some sites also want an FBI check,
+      which is waived for Pennsylvania residents of more than 10 consecutive years
+    season: year round, rolling admission
+    evidence_date: "2026-03"
+    notes: >
+      Launched per a 2026-01-29 announcement. As of this research pass the application form was
+      temporarily closed because the program said it was at capacity for volunteers and asked
+      people to check back in a few weeks, so the program itself is active even though new sign
+      ups were paused that day.
+
+  - name: Philadelphia Medical Reserve Corps (PMRC)
+    department: Department of Public Health
+    url: https://www.phila.gov/services/mental-physical-health/volunteer-for-the-philadelphia-medical-reserve-corps-pmrc/
+    signup_url: https://www.serv.pa.gov/agreement.php
+    what: >
+      Registers and trains medical, public health and support volunteers that the Department of
+      Public Health deploys during public health emergencies and large City events.
+    who_can_join: 18 or older; must live in Philadelphia
+    commitment: ongoing
+    training: "Yes: trainings, exercises and real deployment opportunities offered throughout the year"
+    clearances: "A criminal background check; licensed medical volunteers must hold an active, unencumbered license"
+    season: year round
+    evidence_date: "2025-03"
+    notes: >
+      The program page says it currently has over 7,000 members. Also reachable through the
+      Office of Emergency Management's "Volunteering" referral page, which otherwise just links
+      out to independent emergency response organizations rather than running its own corps.
+
+  - name: Town Watch Integrated Services
+    department: Office of Public Safety (Town Watch Integrated Services)
+    url: https://www.phila.gov/departments/town-watch-integrated-services/
+    signup_url: null
+    what: >
+      Trains, equips and certifies neighborhood Town Watch groups that patrol and report on their
+      blocks, and runs Citizens Emergency Response Training (CERT), which teaches groups what to
+      do in a disaster.
+    who_can_join: any resident, through an existing or newly certified Town Watch group
+    commitment: ongoing
+    training: "Yes: TWIS trains and certifies groups, including CERT disaster training"
+    clearances: unknown, not stated on this page
+    season: year round
+    evidence_date: "2026-05"
+    notes: >
+      This is the City's answer to the task's "CERT" checklist item. The Office of Emergency
+      Management's own "Volunteering" page does not run a CERT program itself; CERT is one of
+      TWIS's support programs, alongside Safe Corridors and drug prevention and anti bullying
+      programs. A new group applies with a form linked from this page; an individual resident
+      joins an existing group, not a citywide roster.
+
+  - name: Citizens Police Academy
+    department: Philadelphia Police Department
+    url: https://www.phila.gov/departments/philadelphia-police-department/
+    signup_url: null
+    what: A ten week evening course, run each fall at the Police Academy, that teaches residents how police operate.
+    who_can_join: unknown, not confirmed by a page we could fetch
+    commitment: "Weekly for about 10 weeks, one evening a week, seasonal (fall)"
+    training: n/a, the course is the training
+    clearances: unknown
+    season: fall
+    evidence_date: "2023-08"
+    notes: >
+      We could not find or guess a current standalone phila.gov page with sign up instructions
+      (several likely URLs returned 404). What is known (10 Wednesday evenings, 6:30 to 9:30 pm,
+      contact a named officer at the Police Academy) comes from indexed search result text about
+      a Citizens Police Oversight Commission presentation to an academy class, not a page we read
+      ourselves. Evidence date is weak; worth a phone check before publishing with confidence.
+
+  - name: Police Explorer Cadet Program
+    department: Philadelphia Police Department
+    url: https://www.phila.gov/2024-04-09-its-a-summer-thing-city-unveils-summer-programs-activities-for-children-youth-teens-and-families/
+    signup_url: null
+    what: >
+      A program for teens considering a police career, teaching law enforcement skills through
+      mentoring, classroom instruction and hands on training.
+    who_can_join: "Reported as 14 to 20 years old in indexed search text; not independently confirmed on a page we fetched"
+    commitment: "A two year commitment, per indexed search text"
+    training: "Yes: classroom instruction and hands on training"
+    clearances: unknown
+    season: year round
+    evidence_date: "2024-04"
+    notes: >
+      Contact per search text is Police.Explorers@phila.gov. We tried several guessed URL
+      patterns for a dedicated enrollment page (all 404) and could not confirm one by direct
+      fetch, so the age range and commitment length above carry lower confidence than our other
+      entries; treat them as reported, not verified.
+
+  - name: Fire Explorers
+    department: Philadelphia Fire Department
+    url: https://www.phila.gov/services/working-jobs/city-jobs-and-internships/join-the-fire-department/become-a-fire-explorer/
+    signup_url: null
+    what: >
+      A two year program for teens that teaches firefighting and EMS basics through Saturday
+      training at the Fire Academy and counts toward civil service exam points.
+    who_can_join: "14 to 20 years old, enrolled in at least 9th grade by the program's April start date, parent or guardian consent required if under 18"
+    commitment: "Every other Saturday, 9 am to 5 pm, April through November, for a two year commitment"
+    training: "Yes: classroom instruction and hands on training from local and state agencies"
+    clearances: "None stated; requires good physical health, English literacy, and a signed consent form"
+    season: "Spring through fall (April to November)"
+    evidence_date: "2024-04"
+    notes: >
+      The program's own page has not been updated since 2018, but a 2024-04-09 City summer
+      programs roundup still promotes it, so we treat it as active with that caveat. Contact per
+      the page's application flow is PFDrecruitment@phila.gov.
+
+  - name: Become a block captain
+    department: Department of Sanitation (Philadelphia More Beautiful Committee)
+    url: https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/
+    signup_url: null
+    what: >
+      Lets any resident organize their block, collect signatures from 51 percent of their
+      neighbors on a petition, and then run block cleanups with the Philadelphia More Beautiful
+      Committee.
+    who_can_join: any resident
+    commitment: ongoing
+    training: unknown
+    clearances: none stated
+    season: "Year round (cleanups happen in summer)"
+    evidence_date: "2024-08"
+    notes: "Contact to request a petition is PMBC at (215) 685-3971, or an online form on the same page."
+
+  - name: Philadelphia More Beautiful Committee Clean Block Program
+    department: Department of Sanitation
+    url: https://www.phila.gov/2026-03-19-2026-philadelphia-more-beautiful-committee-pmbc-clean-block-schedule/
+    signup_url: null
+    what: >
+      Each year the Department of Sanitation partners with block captains for organized Saturday
+      cleanups by police district, plus an annual Clean Block Contest with cash prizes for the
+      cleanest blocks.
+    who_can_join: block captains and their neighbors
+    commitment: seasonal
+    training: unknown
+    clearances: none stated
+    season: "Spring and fall; the 2025 contest was judged over three Saturdays in September and October"
+    evidence_date: "2026-07"
+    notes: "The 2024 season reported 9,207 blocks cleaned by 25,877 PMBC volunteers. Works alongside the block captain program above."
+
+  - name: Philly Spring Cleanup
+    department: Office of Clean and Green Initiatives
+    url: https://www.phila.gov/programs/philly-spring-cleanup/
+    signup_url: "https://www.phillyspringcleanup.com"
+    what: >
+      The City's largest single day citywide cleanup, where residents and organizations register
+      a project or sign up to help with an existing one.
+    who_can_join: any resident or organization
+    commitment: one_time
+    training: unknown
+    clearances: none stated
+    season: "Spring (April)"
+    evidence_date: "2026-03"
+    notes: >
+      Since its 2008 launch the event reports 200,000 total volunteers and 11.4 million pounds of
+      trash removed. The 2026 event was held April 11. At the time of this research pass the
+      registration page said registration was closed, which is normal outside the weeks leading
+      up to the annual event, not a sign the program ended.
+
+  - name: Park Friends groups
+    department: Philadelphia Parks and Recreation (Stewardship Office), with Fairmount Park Conservancy
+    url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/park-friends-groups/
+    signup_url: null
+    what: >
+      Connects residents to one of more than 100 community led Friends groups that clean, program
+      and advocate for their local park.
+    who_can_join: any resident
+    commitment: "Varies by group, generally ongoing"
+    training: unknown
+    clearances: none stated
+    season: year round
+    evidence_date: "2023-10"
+    notes: "Contact to connect with a group is the Stewardship Office, (215) 683-3679 or PPRstewardship@phila.gov."
+
+  - name: Recreation Advisory Councils
+    department: Philadelphia Parks and Recreation
+    url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/recreation-advisory-councils/
+    signup_url: null
+    what: >
+      Lets anyone become a voting member of their local rec center's advisory council just by
+      attending one meeting and signing in, with elected officer roles for more involved members.
+    who_can_join: "Any resident; officer roles need to be 18 and meet attendance and participation rules"
+    commitment: monthly
+    training: unknown
+    clearances: none stated
+    season: year round
+    evidence_date: "2024-02"
+    notes: "Connect through the recreation facility closest to you, using the Parks and Rec facility finder."
+
+  - name: Business and individual volunteer opportunities (Parks and Recreation)
+    department: Philadelphia Parks and Recreation
+    url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/
+    signup_url: "https://loveyourpark.org"
+    what: >
+      The general entry point for weeding, planting, trail clearing, rec center after school help
+      and special event volunteering such as the Broad Street Run, outside of a specific Friends
+      group.
+    who_can_join: "Any resident or group; an ongoing rec center or playground role needs background clearances"
+    commitment: monthly
+    training: unknown
+    clearances: "Background clearances required for an ongoing position at a playground or rec center, per PPR's volunteer clearance policy"
+    season: year round
+    evidence_date: "2026-09"
+    notes: >
+      Individuals sign up for the second Saturday of every month at loveyourpark.org; community
+      and corporate groups fill out a Google form on the same page.
+
+  - name: Love Your Park
+    department: Philadelphia Parks and Recreation, with Fairmount Park Conservancy and the Park Friends Network
+    url: https://www.phila.gov/2026-04-07-love-your-park-love-your-city-volunteer-for-love-your-park-week-2026/
+    signup_url: "https://loveyourpark.org"
+    what: >
+      A citywide week of park cleanup and care days each spring, plus a Fall Service Day, run
+      jointly by the City and park partner organizations.
+    who_can_join: any resident
+    commitment: one_time
+    training: unknown
+    clearances: none stated
+    season: "Spring (a week) and one day each fall"
+    evidence_date: "2026-05"
+    notes: "The 2026 Love Your Park Week ran May 9 to 17, across more than 100 Philadelphia parks."
+
+  - name: TreePhilly yard tree giveaways
+    department: Philadelphia Parks and Recreation (Philly Tree Plan)
+    url: https://www.phila.gov/programs/philly-tree-plan/resources/
+    signup_url: null
+    what: The City's free yard tree giveaway program looks for volunteers to help run its spring and fall giveaway events.
+    who_can_join: any resident
+    commitment: event_based
+    training: unknown
+    clearances: none stated
+    season: "Spring and fall giveaway events"
+    evidence_date: "2026-09"
+    notes: >
+      The Philly Tree Plan resources page itself was last updated 2023-02, but the Parks and
+      Recreation volunteering page (lastUpdated 2026-09) still actively promotes TreePhilly
+      giveaway volunteering, so we use that as the better evidence date. The City's own page
+      points residents who want deeper tree care training to the Pennsylvania Horticultural
+      Society's Tree Tenders program; that program belongs to PHS, a nonprofit partner, not the
+      City, so it is not a separate City program entry here.
+
+  - name: Philadelphia Youth Commission
+    department: Office of the Chief Integrity Officer (Boards and Commissions)
+    url: https://www.phila.gov/departments/office-of-the-chief-integrity-officer/boards-and-commissions/advisory-boards-and-commissions/
+    signup_url: null
+    what: >
+      An advisory body of young Philadelphians who comment on City youth policy, help create
+      youth programs and partner with youth organizations.
+    who_can_join: "Youth resident members, appointed; the directory page does not state an age range or a public application form"
+    commitment: monthly
+    training: unknown
+    clearances: unknown
+    season: year round
+    evidence_date: "2026-07"
+    notes: >
+      Listed alongside dozens of other advisory boards and commissions on the same directory
+      page; general questions go to CityBoards@phila.gov. No separate public application page was
+      found this pass.
+
+  - name: City boards and commissions, resident seats
+    department: Office of the Chief Integrity Officer
+    url: https://www.phila.gov/departments/office-of-the-chief-integrity-officer/boards-and-commissions/advisory-boards-and-commissions/
+    signup_url: null
+    what: >
+      A public directory of the City's advisory boards and commissions, for example the Civic
+      Design Review Board, the Housing Advisory Board and the Commission on Faith Based and
+      Interfaith Affairs, most unpaid, that a resident can ask to serve on.
+    who_can_join: "Varies by board; most members are mayor appointed rather than open sign up"
+    commitment: "Varies by board, typically monthly or quarterly meetings"
+    training: unknown
+    clearances: unknown
+    season: year round
+    evidence_date: "2026-07"
+    notes: >
+      This is an index of many boards, not one single program; included because the task
+      specifically asked about resident seats on boards and commissions. Questions go to
+      CityBoards@phila.gov; we found no page describing a general application process beyond that
+      contact.
+
+  - name: Election Board Worker (poll worker)
+    department: Office of the City Commissioners
+    url: https://vote.phila.gov/working-the-polls/become-a-poll-worker/
+    signup_url: null
+    what: >
+      Appointed residents staff the City's 1,703 voting divisions on election day, opening and
+      closing polling places and checking in voters.
+    who_can_join: qualified electors of Philadelphia
+    commitment: one_time
+    training: "Yes: required training before election day"
+    clearances: none stated
+    season: "Each election day"
+    evidence_date: null
+    notes: >
+      Poll workers are paid a stipend (Judges of Election are paid $215 per election day), so this
+      is a paid civic role rather than a pure volunteer shift; included because the task named it
+      by name. The page carried no machine readable "last updated" date, unlike the main
+      phila.gov template.
+
+  - name: Foster Grandparents
+    department: Office of Children and Families, Department of Human Services
+    url: https://www.phila.gov/programs/foster-grandparents/
+    signup_url: null
+    what: >
+      Pays a stipend to income eligible seniors who volunteer 15 to 40 hours a week mentoring
+      children ages 3 to 7 in Philadelphia Pre-K and elementary classrooms, as part of the
+      national AmeriCorps Seniors network.
+    who_can_join: "55 or older, limited income, must live in Philadelphia"
+    commitment: weekly
+    training: "Yes: an information session and an orientation"
+    clearances: "PA Child Abuse History Clearance, PA State Police Criminal Record Check, FBI Criminal History Background Check, and a National Sex Offender public website check"
+    season: year round
+    evidence_date: "2025-02"
+    notes: >
+      Philadelphia's is described on the page as one of the oldest and largest Foster Grandparent
+      programs of its kind. serve.phila.gov, the City's old general volunteer portal address, now
+      redirects to the Office of Community Empowerment and Opportunity's department page rather
+      than to this program; Foster Grandparents itself is run by DHS's Office of Children and
+      Families, not OCEO.
+
+  - name: Serve Philadelphia VISTA Corps
+    department: Office of Community Empowerment and Opportunity
+    url: https://www.phila.gov/2025-09-05-serve-philadelphia-vistas-strengthen-access-and-outreach-at-oia/
+    signup_url: "https://bit.ly/ServeApplication"
+    what: >
+      Places full time AmeriCorps VISTA members for a year of paid, stipend supported national
+      service inside City offices, for example the Office of Immigrant Affairs.
+    who_can_join: unknown, not confirmed on a phila.gov page this pass
+    commitment: ongoing_role
+    training: unknown
+    clearances: unknown
+    season: "Year round; a new VISTA class typically starts late summer"
+    evidence_date: "2026-08"
+    notes: >
+      This is a full time, stipend supported national service year, not a casual volunteer shift.
+      Included because it is the City's own structured "join and serve" program and because the
+      task asked specifically about the Office of Community Empowerment and Opportunity. The
+      Office of Immigrant Affairs itself also occasionally recruits ad hoc legal volunteers (for
+      example "Know Your Rights" presenters) but we found no standing, structured public sign up
+      for that beyond VISTA, so it is not listed as its own entry.
+
+  - name: Adult Education volunteer tutors
+    department: Mayor's Office of Education (Office of Adult Education)
+    url: https://www.phila.gov/programs/adult-education/
+    signup_url: null
+    what: >
+      Trains volunteers to tutor adult learners in reading, math, digital skills or English for
+      speakers of other languages, at one of about 20 myPLACE network providers citywide.
+    who_can_join: unknown, not confirmed on a page we fetched
+    commitment: unknown
+    training: "Yes: a free 10 to 12 hour training before being matched with a learner"
+    clearances: "Unknown in detail; a 'Step-By-Step Guide to Completing Clearances' for Adult Ed volunteers exists on phila.gov but we did not fetch its contents this pass"
+    season: year round
+    evidence_date: "2026-09"
+    notes: "Contact is the hotline (833) 750-5627 or adultedu@phila.gov. A 2022-08-15 post said 86 volunteers completed training in one recent year, with 50 referred to providers."
+
+  - name: Point in Time Count volunteers
+    department: Office of Homeless Services
+    url: https://www.phila.gov/2024-02-27-2024-pit-count-kicks-off-with-hundreds-of-volunteers/
+    signup_url: null
+    what: >
+      Recruits several hundred trained volunteers for one night each January to canvass the city
+      overnight and count and survey people experiencing unsheltered homelessness.
+    who_can_join: any resident
+    commitment: one_time
+    training: "Yes: volunteers are trained the same day or before the count"
+    clearances: none stated
+    season: "Winter (January)"
+    evidence_date: "2024-02"
+    notes: >
+      The count is a federally required annual event, so it almost certainly ran again in January
+      2025 and 2026, but we did not find a newer phila.gov recap post in this research pass; the
+      2024 recap (more than 360 volunteers) is the newest dated evidence we have.
+
+  - name: Volunteer at a prison
+    department: Philadelphia Department of Prisons
+    url: https://www.phila.gov/services/crime-law-justice/prisons-incarcerated-people-and-returning-citizens/volunteer-at-a-prison/
+    signup_url: https://www.phila.gov/documents/philadelphia-prisons-volunteer-form/
+    what: >
+      Trains volunteers to provide educational and spiritual support to people held at one of
+      four Philadelphia Department of Prisons facilities.
+    who_can_join: "21 or older, valid state ID; if formerly incarcerated, must wait six months after release"
+    commitment: ongoing
+    training: "Yes: 16 hours with the PDP training academy"
+    clearances: "A background check, subject to the Commissioner of Prisons' approval"
+    season: year round
+    evidence_date: "2025-04"
+    notes: "A 2024-10-30 post also promoted the program to university students and local residents."
+
+  - name: Soak It Up Adoption
+    department: Philadelphia Water Department
+    url: "https://water.phila.gov/adoption/"
+    signup_url: "https://water.phila.gov/adoption/join-us/"
+    what: >
+      Gives small grants to community organizations that adopt and maintain a rain garden or
+      other green stormwater site the Water Department built in their area.
+    who_can_join: >
+      501(c)(3) organizations with at least one paid staff member (or equivalent) and existing
+      Water Department green infrastructure in their service area; not open to individual
+      residents applying directly
+    commitment: ongoing
+    training: "Yes: a training session and a site tour"
+    clearances: none stated
+    season: year round
+    evidence_date: "2026"
+    notes: >
+      A resident cannot adopt a site alone. The way an individual resident takes part is by
+      joining one of the adopting civic or community groups' cleanup days, not by applying to the
+      Water Department directly. Evidence date is weak (the site's own copyright footer reads
+      "2018 to 2026"); we did not find a more precisely dated page this pass.
+
+  - name: Free Library volunteer opportunities
+    department: Free Library of Philadelphia
+    url: "https://libwww.library.phila.gov/programs/volunteer/opportunities"
+    signup_url: "mailto:volunteer@freelibrary.org"
+    what: >
+      Places volunteers at library branches as computer tutors for older adults, English
+      conversation group facilitators, and after school program leaders for teens.
+    who_can_join: "Varies by role; teen volunteer roles are open to students in grades 7 through 12"
+    commitment: unknown
+    training: unknown
+    clearances: unknown
+    season: year round
+    evidence_date: null
+    notes: >
+      freelibrary.org returns HTTP 403 to automated fetches, and this phila.gov subdomain
+      (libwww.library.phila.gov) timed out on every attempt rather than connecting at all. Per
+      the project's rule never to work around a block, everything in this entry comes from
+      phila.gov indexed search result text, not a page we read ourselves, so treat the details as
+      lower confidence than our other entries. "Friends of the Free Library of Philadelphia" also
+      appears to exist as an organization, mentioned in passing in one search result, but we could
+      not confirm current chapter details this pass.
+
+  - name: School District of Philadelphia classroom volunteers
+    department: "School District of Philadelphia, Family and Community Engagement (FACE). FLAGGED: public agency, not City government"
+    url: "https://www.philasd.org/face/#volunteer"
+    signup_url: null
+    what: >
+      Lets a resident volunteer in a Philadelphia public school classroom after checking with that
+      school and completing a free Pennsylvania Child Abuse History Clearance.
+    who_can_join: any resident willing to complete the required clearance
+    commitment: unknown
+    training: unknown
+    clearances: >
+      Pennsylvania Child Abuse History Clearance (free for volunteers); the page also points to a
+      separate volunteer checklist we did not fetch, which may name further clearances
+    season: year round
+    evidence_date: "2026-10"
+    notes: >
+      The School District of Philadelphia is a separate public agency from the City of
+      Philadelphia government, with its own elected Board of Education; it is not a City
+      department. Included, and flagged, because the task asked for it to be checked.
+
+  - name: Mural Arts Philadelphia volunteering
+    department: "n/a. Mural Arts Philadelphia is an independent nonprofit, not a City department; it is a long time City partner on public art"
+    url: "https://www.muralarts.org/volunteer/"
+    signup_url: "https://www.muralarts.org/volunteer/"
+    what: >
+      An independent nonprofit that runs Philadelphia's public mural and community art programs
+      and recruits volunteers for mural painting days.
+    who_can_join: unknown
+    commitment: unknown
+    training: unknown
+    clearances: unknown
+    season: unknown
+    evidence_date: null
+    notes: >
+      Listed only as a link, per the project's rule to never copy a nonprofit partner's own text
+      and to link, not research, a partner organization in depth. Not counted in the City program
+      total in the harvest report, since it is not City government.
+
+discontinued:
+  - name: Philly Free Streets
+    department: >
+      Described in its own era's posts as a partnership between the City and the Office of Civic
+      Engagement and Volunteer Service ("SERVE"), which no longer appears in the City's current
+      department directory under that name
+    url: "https://www.phila.gov/2019-08-29-philly-free-streets-by-the-numbers/"
+    evidence: >
+      Every phila.gov post we found about Philly Free Streets dates from 2017 to 2019 (the
+      newest, 2019-08-29). Its own event domain, phillyfreestreets.com, no longer belongs to the
+      program: fetched directly on 2026-10-04, it loaded an unrelated commercial gambling page,
+      not anything related to Philly Free Streets.
+    notes: >
+      The event does not appear to have run, or at least has not been promoted on phila.gov,
+      since 2019. Do not link the squatted phillyfreestreets.com domain anywhere on the public
+      site. Recommend treating this as discontinued unless the owner finds newer evidence.
+
+  - name: Mayor's Volunteer Portal (serve.volunteermatch.org) and volunteer.phila.gov
+    department: unknown, historic branding predating the City's current office names
+    url: "https://serve.volunteermatch.org"
+    evidence: >
+      serve.volunteermatch.org does not resolve (DNS failure) and volunteer.phila.gov times out,
+      both confirmed again during this research pass, matching the 2026-10-04 official harvest
+      report.
+    notes: >
+      Already recorded in registry/sources.yaml and research/harvest/2026-10-04-official.md;
+      repeated here only so this file is a complete, self contained City program inventory.

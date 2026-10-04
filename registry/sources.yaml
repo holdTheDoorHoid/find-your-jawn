@@ -308,3 +308,24 @@
     The City's Idealist profile (adult education office) lists 0 opportunities and was not
     harvested for that reason. External, non phila.gov partner links found on these pages (Love
     Your Park, TreePhilly, and similar) become their own leads with the City page as source_url.
+
+- id: city_programs
+  name: Hand researched inventory of City of Philadelphia volunteer programs
+  owner: Find Your Jawn project (compiled by hand from phila.gov and a few City subdomains)
+  url: data/seeds/city_programs.yaml
+  access: manual
+  terms: n/a, our own compiled list with each entry's own source url
+  attribution: "See each lead's source_url"
+  lead_only: false
+  refresh: manual
+  harvester: pipeline/fyj/harvest/city_programs.py
+  notes: >
+    Added 2026-10-04 to fix gaps the city_volunteer_pages keyword crawl could not reach on its
+    own: programs with no page matching the crawl's volunteering keywords, programs on a City
+    subdomain the crawl does not follow (ost.phila.gov, water.phila.gov, vote.phila.gov), and
+    programs whose correct name only shows up on the program's own heading, not in the link text
+    that pointed to it. 27 active programs, plus 2 recorded as discontinued (not harvested) with
+    their evidence, in data/seeds/city_programs.yaml. One entry (Free Library volunteering) is
+    built only from indexed search result text because freelibrary.org returns 403 to scripts and
+    its phila.gov mirror subdomain, libwww.library.phila.gov, timed out on every attempt; neither
+    block was worked around. See research/harvest/2026-10-04-city-programs.md for the full report.
