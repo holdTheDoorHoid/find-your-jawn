@@ -100,9 +100,11 @@ cited). In plain terms:
    measurable, lasting effects.
 7. **Bring someone.** Being asked is one of the strongest reasons people join, so every result has a
    one tap "send this to a friend" message.
-8. **Plan for three visits.** Friendships take repeated contact. The site encourages going at least
-   three times before deciding, and on your next visit asks how it went, then offers the next rung:
-   more like it, a deeper role, or a fix for what got in the way.
+8. **Come back a few times.** Places and faces feel more familiar with every visit, and real
+   friendships take many hours together. The site encourages going back a couple of times before
+   deciding, and on your next visit asks how it went, then offers the next rung: more like it, a
+   deeper role, or a fix for what got in the way. It also says what research shows: first
+   conversations with strangers usually go better than people expect.
 9. **Mix bonding and bridging.** Groups of people like you feel good; groups that mix ages,
    neighborhoods and backgrounds build a city. Results include both and say which is which.
 10. **Favor regular, nearby, low cost places.** Recurring groups close to home (by transit, not by

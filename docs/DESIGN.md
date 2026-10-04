@@ -24,7 +24,8 @@ behind each rule is in `docs/research/scouting/evidence.md`. Field names refer t
 ## 2. The quiz: getting real answers in few taps
 
 The quiz is the heart of the site, so it follows a small set of question rules. The evidence is in
-`docs/research/scouting/evidence.md` and `docs/research/scouting/question-design.md`.
+`docs/research/scouting/evidence.md` and `docs/research/scouting/question-design.md` (all 17 claims
+checked; corrections applied below).
 
 ### 2.1 Question rules
 
@@ -36,25 +37,34 @@ The quiz is the heart of the site, so it follows a small set of question rules. 
    you outdoorsy?"
 3. **Show, don't ask.** People recognize what they like far more easily than they can list it, and
    they often discover a preference only when they see a real option. So the quiz uses concrete
-   scenes (with pictures where we can) and a round of reacting to real groups.
+   scenes and a round of reacting to real groups. Pictures change how people weigh options and can
+   slow some people down, so scenes are piloted both with and without pictures before we commit.
 4. **Make people choose.** Asked to rate reasons for joining, nearly everyone gives "helping others"
    top marks. Asking which reason matters MOST and which matters LEAST gets honest, usable answers.
 5. **Deal breakers apart from wishes.** People narrow choices by first ruling out what cannot work.
    Each practical answer has a lock: locked means never show anything that breaks it; unlocked means
    "prefer".
-6. **Easy and fun first, practical next, sensitive last.** Pictures and daydreams open the quiz;
-   schedule and budget come once people are invested; personal questions are optional, at the end,
-   with a line on why we ask and that answers never leave the device.
-7. **Ask only what matters for you.** After the core questions the quiz picks follow ups by how much
-   each could change your results, and stops as soon as no remaining question could.
-8. **Reflect it back.** Before results, "Here's what we heard" shows the answers as chips the person
-   can fix with one tap. Catching a misread here is cheaper than a wrong result.
-9. **No personality labels.** No "You're an Explorer!" types (vague labels feel accurate to everyone
-   and mean nothing). Only concrete groups and concrete reasons.
-10. **No wrong reasons.** The quiz says plainly that building a resume, needing hours or just getting
+6. **The answers that matter most come while attention is fresh.** Answer quality drops the later a
+   question sits, so after a quick, fun warm up, the deal breakers come second. Optional personal
+   questions come last.
+7. **Privacy notes only where they matter.** A short "this never leaves your device" note sits on the
+   sensitive questions (communities, background checks, support). Putting it on every question makes
+   people more suspicious, not less.
+8. **No order effects.** Options, scenes and taste test cards appear in a shuffled order, so the first
+   option is not favored just for being first.
+9. **Progress that feels quick.** The progress bar moves fast at the start and slows near the end,
+   which keeps more people going than a steady bar.
+10. **Ask only what matters for you.** After the core questions the quiz picks follow ups by how much
+    each could change your results, and stops as soon as no remaining question could.
+11. **Reflect it back.** Before results, "Here's what we heard" shows the answers as chips the person
+    can fix with one tap. Catching a misread here is cheaper than a wrong result.
+12. **No personality labels.** No "You're an Explorer!" types (vague labels feel accurate to everyone
+    and mean nothing). Only concrete groups and concrete reasons.
+13. **No wrong reasons.** The quiz says plainly that building a resume, needing hours or just getting
     out of the house are all good reasons, so people answer honestly.
-11. **Light to answer.** One decision per screen, big tap targets, short words with icons, "skip" and
-    "not sure" everywhere, readable for people still learning English. Target: under four minutes.
+14. **Light to answer.** One decision per screen, big tap targets, short words with icons, plain
+    gestures (no tap twice tricks), "skip" and "not sure" everywhere, readable for people still
+    learning English. Target: under four minutes.
 
 ### 2.2 The flow
 
@@ -62,73 +72,80 @@ The quiz is the heart of the site, so it follows a small set of question rules. 
 · I'm new to Philly · I'm a student (which school) · I'm bringing my kids · I'm looking for a support
 group. These open the paths (section 6). Support groups leave the quiz for their own calm flow.
 
-**Stage 1, picture it (what you like doing and how)**
+**Stage 1, warm up: picture it**
 
 1. **"Pick the Saturday mornings that sound good."** Twelve scene cards, each a concrete moment that
    combines an activity with a way of being with people: pulling weeds with neighbors in a community
    garden; learning lion dance moves; coaching eight year olds at basketball; crawling through a cave
    with a headlamp; a pickup soccer game; talking books over coffee; sorting food pantry donations
    with music on; rehearsing a community play; mapping street trees with an app; running a meeting
-   about your block; fixing bikes; walking shelter dogs. The twelve are chosen to cover every
-   activity type and social setting; if the picks are few or mixed, a second set of eight follows.
+   about your block; fixing bikes; walking shelter dogs. The twelve cover every activity type and
+   social setting; if the picks are few or mixed, a second set of eight follows.
 2. **"When did you last lose track of time?"** Pick moments: making something, solving a puzzle,
    moving my body, outdoors, a long talk, helping someone, performing, organizing a plan, learning
    something new, caring for animals or plants. Optional words of your own, matched to tags.
-3. **"What are you into?"** Interest families as tiles with examples under each ("Outdoors: hiking,
-   caving, kayaking, birding"). Tap once for like, twice for love. Only loved families open up to
-   their specific interests, so nobody wades through 150 tags.
 
-Together these set three signals: interests (topics), **roles** (what you do: hands on, figuring
-things out, creating, helping and teaching, leading, organizing; a compact version of the
-best studied model of what people like to do), and **formats** (side by side, conversation, team,
-making or performing together, behind the scenes, learning a skill).
+**Stage 2, deal breakers (one or two screens, each answer with a lock)**
 
-**Stage 2, why and who**
+3. When you are free (days and parts of the day, or "it changes week to week" for shift workers),
+   how often, how far (walking, SEPTA minutes, anywhere, I drive), budget. Then a short "anything
+   that rules things out?" screen: age range, access needs, languages, school, faith groups (include,
+   exclude, only my tradition), and "I'd rather avoid roles that need a background check" (with the
+   privacy note). Everything here is optional.
 
-4. **"Which reason is MOST like you, and which is LEAST?"** Six reasons on one screen (meet people,
+**Stage 3, what you're into**
+
+4. **"What are you into?"** Interest families as tiles with examples under each ("Outdoors: hiking,
+   caving, kayaking, birding"). Pick any. Then **"Star up to three you love"**, and only starred
+   families open up to their specific interests, so nobody wades through 150 tags.
+
+Stages 1 and 3 together set three signals: interests (topics), **roles** (what you do: hands on,
+figuring things out, creating, helping and teaching, leading, organizing; a compact version of the
+Holland interest types, which also predict satisfaction in leisure), and **formats** (side by side,
+conversation, team, making or performing together, behind the scenes, learning a skill).
+
+**Stage 4, why and who**
+
+5. **"Which reason is MOST like you, and which is LEAST?"** Six reasons on one screen (meet people,
    do something that matters, learn something, build skills for work, get out of my head and feel
    better, feel good about myself). Then the same for the four that remain. Four taps give a nearly
    complete ranking of the six volunteer motives.
-5. **"Who would you like to meet?"** People a lot like me · People different from me · A mix. People
-   around my age, or all ages. Optional: communities you would like to find people from (LGBTQ+, a
-   heritage, a faith, veterans, parents, disability community, sober friendly, a language).
-6. **"Walking into a room of strangers feels..."** five steps from "exciting" to "really hard", with
+6. **"Who would you like to meet?"** People a lot like me · People different from me · A mix. People
+   around my age, or all ages. Optional, with the privacy note: communities you would like to find
+   people from (LGBTQ+, a heritage, a faith, veterans, parents, disability community, sober friendly,
+   a language).
+7. **"Walking into a room of strangers feels..."** five steps from "exciting" to "really hard", with
    "I'd rather bring someone" and preferred group size. Then two quick items on newness: "I like
    trying things I've never done" (agree or not) and "The last time you tried something totally new,
    how did it go?" These tune how big each stretch step is and how much newcomer welcome matters.
-   They never change the default number of stretches (the owner set Balanced as the default);
-   someone who finds newness hard sees a gentle note offering the Gentle setting.
+   Two short items are rough measures, so they only steer these low stakes settings. They never
+   change the default number of stretches (the owner set Balanced as the default); someone who finds
+   newness hard sees a gentle note offering the Gentle setting.
 
-**Stage 3, your future self**
+**Stage 5, your future self**
 
-7. **"A year from now, what would you love to be able to say?"** (pick up to two) I know my neighbors
+8. **"A year from now, what would you love to be able to say?"** (pick up to two) I know my neighbors
    by name · I'm a regular somewhere · I made something with my own hands · I can hold a conversation
    in another language · I helped someone through a hard time · I'm in the best shape in years · I
    spoke up in front of a group · I learned a real skill · I changed something on my block · I have a
    friend I didn't have before. Stretches aim at these, so growth is chosen, not assigned.
 
-**Stage 4, practical (one or two screens, each answer with a lock)**
-
-8. When you are free (days and parts of the day, or "it changes week to week" for shift workers),
-   how often, how far (walking, SEPTA minutes, anywhere, I drive), budget. An optional "anything else
-   we should know?" opens: age range, access needs, languages, school, faith groups (include,
-   exclude, only my tradition), and "I'd rather avoid roles that need a background check".
-
-**Stage 5, the taste test**
+**Stage 6, the taste test**
 
 9. **Six to eight real groups, one tap each: Into it · Maybe · Not for me.** The engine picks cards
-   that teach it the most: strong candidates that differ on whatever it is least sure about, plus one
-   or two probes from further away. "Not for me" asks why with one tap (too far, wrong time, not my
-   thing, too intense, too many people, cost). Each reaction shifts the weights for this person, the
-   way a good friend learns your taste by watching what you light up at.
+   that teach it the most: strong candidates (already within the person's deal breakers) that differ
+   on whatever it is least sure about, plus one or two probes from further away. "Not for me" asks
+   why with one tap (too far, wrong time, not my thing, too intense, too many people, cost). Each
+   reaction shifts the weights for this person, the way a good friend learns your taste by watching
+   what you light up at.
 
-**Stage 6, quick follow ups (zero to three)**
+**Stage 7, quick follow ups (zero to three)**
 
 10. Drawn from a pool (indoors or outdoors in the cold months, competitive or casual, online OK, one
-    time events or ongoing, faith groups OK, kids along) and asked only when the answer would change
-    the top eight. Most people get one or none.
+    time events or ongoing, kids along) and asked only when the answer would change the top eight.
+    Most people get one or none.
 
-**Stage 7, "Here's what we heard"**
+**Stage 8, "Here's what we heard"**
 
 11. A one screen summary as chips ("Meet people · Outdoors and animals · Weekends · Up to 30 minutes
     on SEPTA · Free · Stretch toward: speaking up") that the person can tap to fix. Then results.
@@ -151,7 +168,7 @@ Everything runs in the browser from `groups.json`. It is plain rules, so every r
 
 | Part | Weight | What it measures |
 |---|---|---|
-| Interest | 25% | Topic tiles (loved counts fully, liked 0.6), scene and moment picks, neighbors in the interest graph (0.4) |
+| Interest | 25% | Topic tiles (starred counts fully, picked 0.6), scene and moment picks, neighbors in the interest graph (0.4) |
 | Motive | 20% | Best and worst ranking of the six reasons against what the group offers |
 | Role and format | 15% | What you would do there and how you would be with people, from the scenes and moments |
 | Practical | 15% | Unlocked preferences: schedule overlap, travel time, commitment, group size, cost |
@@ -184,7 +201,7 @@ A stretch changes exactly **one** thing and keeps everything else familiar and p
 Rules:
 - Practical limits are never stretched: cost, schedule, travel, access, age, safety, clearances.
 - Support groups are never stretches. Faith groups are stretches only for people who included faith.
-- Stretches toward the person's future self picks (question 7) are preferred, and the newness answers (question 6) set how far each step goes.
+- Stretches toward the person's future self picks (question 8) are preferred, and the newness answers (question 7) set how far each step goes.
 - Every stretch is labeled and says why: "This is a stretch: it's teaching instead of doing, but it's
   still books, still Tuesday evenings, still close to home."
 
@@ -251,8 +268,9 @@ or ask for removal (GitHub issue forms).
 - **Check in:** on the next visit to the site, "Did you go to the trail crew?" Yes: how was it, then
   the next rung (more like it, a bigger role, or a stretch). Not yet: what got in the way (time,
   nerves, cost, never heard back), then a fix for that reason (a friend invite and the first visit
-  guide for nerves, a similar group for no reply). A gentle note that most people need about three
-  visits before a group feels like theirs.
+  guide for nerves, a similar group for no reply). A gentle, honest note: places and faces feel more
+  familiar with every visit, so it is worth going back a couple of times before deciding; real
+  friendships take many hours together, and that is normal.
 
 ## 8. Your neighborhood
 
