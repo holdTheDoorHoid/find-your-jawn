@@ -201,3 +201,48 @@
     BLOCKED, not harvested, same reason as engage_drexel: ccp.campuslabs.com/robots.txt also
     carries "Disallow: /engage/api/" (checked 2026-10-04). See engage_drexel's note.
 
+- id: cultural_fund
+  name: Philadelphia Cultural Fund grantee directory
+  owner: Philadelphia Cultural Fund
+  url: https://philaculturalfund.org/grantee-directory
+  access: html
+  terms: Public page, no login; robots.txt (served from www.philaculturalfund.org) has no Disallow rules
+  attribution: "Data: Philadelphia Cultural Fund grantee directory"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/cultural_fund.py
+  notes: Paginated 25 per page via a Webflow/Finsweet `?2e1ab49c_page=N` query parameter, about 13 pages.
+
+- id: mummers
+  name: Official Mummers Parade lineup
+  owner: Philadelphia Mummers Parade (philadelphiamummersparade.com)
+  url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
+  access: html
+  terms: Public page, no login; robots.txt disallows only WooCommerce/admin paths, not this page
+  attribution: "Data: Philadelphia Mummers Parade official lineup"
+  lead_only: false
+  refresh: after_event
+  harvester: pipeline/fyj/harvest/mummers.py
+  notes: >
+    57 units for the 2026 parade: 1 Fancy, 10 Wench Brigade, 32 Comic Division clubs across 3
+    mother clubs (Landi Comics NYA, Rich Porco's Murray Comic Club, Goodtimers NYA), 14 String
+    Band. The page's own HTML carries some pasted-in Gmail artifacts in the last Comic Division
+    entry; the harvester strips tags to plain text rather than depending on that markup.
+
+- id: nss_grottos
+  name: National Speleological Society, Pennsylvania grotto directory
+  owner: National Speleological Society
+  url: https://caves.org/state/pennsylvania/
+  access: html
+  terms: Public page, no login; robots.txt only blocks SemrushBot
+  attribution: "Data: National Speleological Society"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/harvest/nss_grottos.py
+  notes: >
+    10 PA grottos captured from page 1. The page shows "1 2 Next" pagination, but a direct fetch
+    of state/pennsylvania/page/2/ returned the same single grotto already on page 1 rather than
+    new ones (likely an AJAX "load more" the static HTML does not represent). Possible small gap;
+    not worked around. Philadelphia Grotto (Media) and Bucks County Grotto (Warrington) are
+    flagged extra.philadelphia_area = true as being in the Philadelphia metro area.
+

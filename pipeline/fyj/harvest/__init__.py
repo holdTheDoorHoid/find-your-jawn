@@ -13,7 +13,16 @@ from typing import Any
 
 from fyj.http import FyjClient
 
-from . import arcgis, campus_labs, irs_990n, irs_bmf, penn_clubs
+from . import (
+    arcgis,
+    campus_labs,
+    cultural_fund,
+    irs_990n,
+    irs_bmf,
+    mummers,
+    nss_grottos,
+    penn_clubs,
+)
 
 HarvestFn = Callable[[FyjClient], list[dict[str, Any]]]
 
@@ -31,4 +40,7 @@ HARVESTERS: dict[str, HarvestFn] = {
     "penn_clubs": penn_clubs.harvest,
     "engage_drexel": campus_labs.harvest_drexel,
     "engage_ccp": campus_labs.harvest_ccp,
+    "cultural_fund": cultural_fund.harvest,
+    "mummers": mummers.harvest,
+    "nss_grottos": nss_grottos.harvest,
 }
