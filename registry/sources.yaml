@@ -121,3 +121,38 @@
     Two more overlapping layers (Senior_Centers, PHA_Senior_Sites) were seen in the City's catalog
     but not harvested this pass.
 
+- id: irs_bmf
+  name: IRS Exempt Organizations Business Master File, Pennsylvania extract
+  owner: Internal Revenue Service, SOI Division
+  url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
+  access: csv
+  terms: Public IRS data, free to reuse
+  attribution: "Data: IRS Exempt Organizations Business Master File"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/irs_bmf.py
+  notes: >
+    9,664 Philadelphia (ZIP starting 191) records out of 81,852 statewide, kept unfiltered per
+    the task brief; triage is a later step. Per IRS Publication 5926 (the extract's own dataset
+    guide), this file only ever carries EO status code 01 (unconditional exemption), 02
+    (conditional exemption, no longer issued) or 25 (terminating private foundation status under
+    507(b)(1)(B)); revoked organizations are excluded from the file entirely. That corrects an
+    assumption in docs/research/scouting/structured-sources.md, which guessed the STATUS field
+    tracks revocations; see research/harvest/2026-10-04-official.md.
+
+- id: irs_990n
+  name: IRS Form 990-N e-Postcard bulk file (NCCS mirror)
+  owner: Internal Revenue Service, mirrored by the Urban Institute's National Center for Charitable Statistics
+  url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/<YYYY>-<MM>-E-POSTCARD.csv
+  access: csv
+  terms: Public IRS data, free to reuse
+  attribution: "Data: IRS Form 990-N e-Postcard, via NCCS"
+  lead_only: false
+  refresh: monthly
+  harvester: pipeline/fyj/harvest/irs_990n.py
+  notes: >
+    The IRS's own bulk download page blocks automated fetches (Akamai bot protection); we use the
+    NCCS mirror instead. Newest available month is found by HEAD probing backward from the
+    current month (2026-08 and 2026-09 both 403 as of this harvest; 2026-07 is the newest file
+    that exists). Only source that reaches organizations too small to file a real 990.
+

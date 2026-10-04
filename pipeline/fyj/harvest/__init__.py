@@ -13,7 +13,7 @@ from typing import Any
 
 from fyj.http import FyjClient
 
-from . import arcgis
+from . import arcgis, irs_990n, irs_bmf
 
 HarvestFn = Callable[[FyjClient], list[dict[str, Any]]]
 
@@ -26,4 +26,6 @@ HARVESTERS: dict[str, HarvestFn] = {
     "city_libraries": arcgis.harvest_city_libraries,
     "city_rec": arcgis.harvest_city_rec,
     "city_senior": arcgis.harvest_city_senior,
+    "irs_bmf": irs_bmf.harvest,
+    "irs_990n": irs_990n.harvest,
 }
