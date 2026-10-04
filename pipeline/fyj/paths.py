@@ -16,6 +16,7 @@ REGISTRY_PATH = ROOT_DIR / "registry" / "sources.yaml"
 LEADS_DIR = ROOT_DIR / "data" / "leads"
 SEEDS_DIR = ROOT_DIR / "data" / "seeds"
 MANUAL_SEEDS_PATH = SEEDS_DIR / "manual.yaml"
+CITY_PROGRAMS_PATH = SEEDS_DIR / "city_programs.yaml"
 
 
 def cache_dir() -> Path:
