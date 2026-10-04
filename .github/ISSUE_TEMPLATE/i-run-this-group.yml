@@ -1,0 +1,32 @@
+name: I run this group
+description: Confirm or update your group's listing and tell newcomers what to expect.
+title: "Organizer: "
+labels: [organizer]
+body:
+  - type: input
+    id: group
+    attributes:
+      label: Group name or link to its page on Find Your Jawn
+    validations:
+      required: true
+  - type: textarea
+    id: first-visit
+    attributes:
+      label: What should a first timer expect?
+      description: Can they just show up? What happens at a first visit? What should they bring?
+  - type: input
+    id: schedule
+    attributes:
+      label: When and where do you meet?
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost
+      options:
+        - Free
+        - A little (dues or small fees)
+        - Paid
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? Minimum age, accessibility, languages spoken, whether you sign service hour forms or accept court ordered hours.

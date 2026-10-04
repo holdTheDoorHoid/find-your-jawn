@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Your Jawn</title>
+<meta name="description" content="Find your people in Philly: a free directory and matching quiz for community groups, volunteering, clubs and teams across Philadelphia. Early preview.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2210%22 y=%2230%22 width=%2280%22 height=%2260%22 rx=%226%22 fill=%22%23b5452b%22/><rect x=%2220%22 y=%2276%22 width=%2260%22 height=%228%22 fill=%22%23f4efe6%22/><rect x=%2228%22 y=%2268%22 width=%2244%22 height=%228%22 fill=%22%23f4efe6%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbf7f1;
+  --surface: #ffffff;
+  --ink: #1f1a17;
+  --muted: #5d534c;
+  --brick: #b5452b;
+  --brick-ink: #ffffff;
+  --marble: #f4efe6;
+  --line: #e6ddd0;
+  --blue: #1b5fa8;
+  --note-bg: #fff4d6;
+  --note-ink: #5a4300;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171412;
+    --surface: #211c19;
+    --ink: #f3ece4;
+    --muted: #bdb1a6;
+    --brick: #e0694d;
+    --brick-ink: #1b1210;
+    --marble: #2b2420;
+    --line: #3a312b;
+    --blue: #7fb2ec;
+    --note-bg: #3a2f12;
+    --note-ink: #f6dc93;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171412; --surface: #211c19; --ink: #f3ece4; --muted: #bdb1a6; --brick: #e0694d;
+  --brick-ink: #1b1210; --marble: #2b2420; --line: #3a312b; --blue: #7fb2ec;
+  --note-bg: #3a2f12; --note-ink: #f6dc93;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 1.0625rem/1.6 "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--blue); }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 16px; }
+.note {
+  background: var(--note-bg); color: var(--note-ink); font-size: .95rem;
+  padding: .6rem 0; border-bottom: 1px solid var(--line);
+}
+header.hero { padding: 3.5rem 0 2rem; }
+h1, h2 { font-family: Fraunces, Georgia, serif; line-height: 1.1; margin: 0 0 .75rem; }
+h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 800; }
+h1 span { color: var(--brick); }
+h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2.5rem; }
+.lede { font-size: 1.2rem; color: var(--muted); max-width: 36rem; }
+.jawn {
+  display: inline-block; margin-top: 1rem; padding: .5rem .8rem; border-radius: 8px;
+  background: var(--marble); border: 1px solid var(--line); font-size: .95rem;
+}
+.jawn b { font-family: Fraunces, Georgia, serif; }
+.doors { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 1.25rem; }
+@media (min-width: 640px) { .doors { grid-template-columns: 1fr 1fr; } }
+.door {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.1rem 1.2rem; border-top: 6px solid var(--brick);
+}
+.door h3 { margin: 0 0 .35rem; font-size: 1.1rem; }
+.door p { margin: 0; color: var(--muted); }
+.steps { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 10px; }
+.steps li {
+  display: grid; grid-template-columns: 2.2rem 1fr; gap: .75rem; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem;
+}
+.steps .n {
+  width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center;
+  background: var(--brick); color: var(--brick-ink); font-weight: 700;
+}
+.cta {
+  display: inline-block; margin-top: 1rem; padding: .75rem 1.1rem; border-radius: 10px;
+  background: var(--brick); color: var(--brick-ink); text-decoration: none; font-weight: 700;
+}
+.cta:focus-visible, a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+footer { margin: 3.5rem 0 2rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+<div class="note"><div class="wrap"><strong>Early preview.</strong> This site is being built in the open. The directory and quiz are not ready yet.</div></div>
+<main class="wrap">
+  <header class="hero">
+    <h1>Find Your <span>Jawn</span></h1>
+    <p class="lede">Find your people in Philly. Volunteering, civic groups, clubs, teams, student groups, cultural groups and the small neighborhood crews you only hear about by word of mouth, all in one place.</p>
+    <p class="jawn"><b>Jawn</b>: Philly for almost anything. Here, it means your thing, your place, your people.</p>
+  </header>
+
+  <h2>Two ways in</h2>
+  <div class="doors">
+    <section class="door">
+      <h3>Match me</h3>
+      <p>Answer about a dozen quick questions. Get a handful of groups that fit you, why each one fits, and exactly how to show up the first time. A couple will be gentle stretches, one small step outside what you would normally pick.</p>
+    </section>
+    <section class="door">
+      <h3>Browse everything</h3>
+      <p>Every group we can find across the city, from the Mummers brigades to the Friends of your local park, with filters for cost, schedule, neighborhood, access and more.</p>
+    </section>
+  </div>
+
+  <h2>What we're doing right now</h2>
+  <ol class="steps">
+    <li><span class="n">1</span><span>Gathering official lists: registered community organizations, park Friends groups, nonprofits, student groups and grant recipients.</span></li>
+    <li><span class="n">2</span><span>Sweeping every neighborhood, interest, parade and festival for the groups those lists miss.</span></li>
+    <li><span class="n">3</span><span>Checking that each group is still active and writing down what a first visit is like.</span></li>
+  </ol>
+
+  <h2>Know a group we should include?</h2>
+  <p>Especially the small ones: the block crew, the knitting circle, the club that marches every New Year's Day. Tell us about it, or tell us about yours.</p>
+  <a class="cta" href="https://github.com/holdTheDoorHoid/find-your-jawn/issues/new/choose">Suggest a group</a>
+
+  <footer>
+    Free, open source, and private: nothing you answer will ever leave your device.
+    <a href="https://github.com/holdTheDoorHoid/find-your-jawn">See the plan and the code on GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>

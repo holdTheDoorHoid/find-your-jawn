@@ -1,0 +1,22 @@
+name: Bulletin board photo
+description: Share a photo of a community bulletin board (library, laundromat, coffee shop, rec center, place of worship).
+title: "Bulletin board: "
+labels: [bulletin-board]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Flyers are how many small groups find people. Drag photos into the box below. Please avoid photos that show people's faces, and do not include flyers with private personal information such as lost pet owners' phone numbers.
+  - type: input
+    id: where
+    attributes:
+      label: Where is the board?
+      placeholder: "For example: Lillian Marrero Library, Kensington"
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
+    validations:
+      required: true

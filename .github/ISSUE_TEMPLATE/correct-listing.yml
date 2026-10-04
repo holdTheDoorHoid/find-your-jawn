@@ -1,0 +1,21 @@
+name: Correct a listing
+description: Something on a group's page is wrong or out of date.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: group
+    attributes:
+      label: Group name or link to its page on Find Your Jawn
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong, and what is right?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where can we confirm the correct information? (optional)

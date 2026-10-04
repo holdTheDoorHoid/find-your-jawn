@@ -1,0 +1,45 @@
+name: Suggest a group
+description: Tell us about a Philly group we should include, big or tiny.
+title: "Suggest: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Small, word of mouth groups are exactly what we are looking for. Only share what is already public or what you have permission to share.
+  - type: input
+    id: name
+    attributes:
+      label: Group name
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What do they do?
+      description: A sentence or two in your own words.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where and when do they meet?
+      placeholder: "For example: Fishtown, first Saturday of the month, 10 am"
+  - type: input
+    id: link
+    attributes:
+      label: Website, social page, or anywhere we can see them
+  - type: dropdown
+    id: relation
+    attributes:
+      label: How do you know them?
+      options:
+        - I run it or help run it
+        - I am a member
+        - I have seen them around
+        - Other
+  - type: textarea
+    id: newcomers
+    attributes:
+      label: Anything a newcomer should know?
+      description: Can people just show up? Does it cost anything? Is it kid friendly or accessible?
