@@ -44,10 +44,20 @@ export default function QuizApp({ dataVersion }: Props) {
   const [support, setSupport] = useState(false);
   const [moved, setMoved] = useState(false);
   const [blocked, setBlocked] = useState(false);
-  const pushed = useRef(0);
+  // Browser history: depth counts the entries this quiz pushed, so Back and Forward both work.
+  const depth = useRef(0);
+  const forwardScreens = useRef<ScreenId[]>([]);
+  const stateRef = useRef(state);
+  stateRef.current = state;
 
   // ---- read what was saved, and load the vocabulary
   useEffect(() => {
+    try {
+      const d = (window.history.state as { d?: unknown } | null)?.d;
+      depth.current = typeof d === 'number' ? d : 0;
+    } catch {
+      depth.current = 0;
+    }
     const found = readState(store.getJSON<unknown>(QUIZ_KEY, null));
     if (found && savedProgress(found)) setSaved(found);
     else if (found) setState(found);
@@ -135,27 +145,52 @@ export default function QuizApp({ dataVersion }: Props) {
   const replaceWith = useCallback((to: ScreenId) => setState((s) => ({ ...s, screen: to })), []);
 
   const goBack = useCallback(() => {
-    setState((s) => {
-      const prev = s.history[s.history.length - 1];
-      if (!prev) return s;
-      return { ...s, screen: prev, history: s.history.slice(0, -1) };
-    });
+    const s = stateRef.current;
+    const prev = s.history[s.history.length - 1];
+    if (!prev) return;
+    forwardScreens.current.push(s.screen);
+    setState({ ...s, screen: prev, history: s.history.slice(0, -1) });
     setMoved(true);
   }, []);
 
+  const goForward = useCallback(() => {
+    const s = stateRef.current;
+    const to = forwardScreens.current.pop();
+    if (!to) return;
+    setState({ ...s, screen: to, history: [...s.history, s.screen] });
+    setMoved(true);
+  }, []);
+
+  const pushEntry = useCallback(() => {
+    forwardScreens.current = [];
+    try {
+      depth.current += 1;
+      window.history.pushState({ fyjQuiz: true, d: depth.current }, '');
+    } catch {
+      // some privacy settings block this; the in-page buttons still work
+      depth.current = Math.max(0, depth.current - 1);
+    }
+  }, []);
+
   const onBackButton = useCallback(() => {
-    if (pushed.current > 0) window.history.back();
+    if (depth.current > 0) window.history.back();
     else goBack();
   }, [goBack]);
 
   useEffect(() => {
-    const onPop = () => {
-      if (pushed.current > 0) pushed.current -= 1;
-      goBack();
+    const onPop = (e: PopStateEvent) => {
+      const d = e.state && typeof (e.state as { d?: unknown }).d === 'number' ? ((e.state as { d: number }).d) : 0;
+      if (d < depth.current) {
+        depth.current = d;
+        goBack();
+      } else if (d > depth.current) {
+        depth.current = d;
+        goForward();
+      }
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
-  }, [goBack]);
+  }, [goBack, goForward]);
 
   const next = useCallback(() => {
     if (!cat) return;
@@ -169,13 +204,8 @@ export default function QuizApp({ dataVersion }: Props) {
       return { ...s, screen: to, history: [...s.history, s.screen] };
     });
     setMoved(true);
-    try {
-      window.history.pushState({ fyjQuiz: 'next' }, '');
-      pushed.current += 1;
-    } catch {
-      // fine
-    }
-  }, [cat]);
+    pushEntry();
+  }, [cat, pushEntry]);
 
   const goTo = useCallback((to: ScreenId) => {
     setState((s) => ({ ...s, screen: to, history: [...s.history, s.screen], tasteIds: [], tasteProbes: [], followIds: null }));
@@ -184,6 +214,7 @@ export default function QuizApp({ dataVersion }: Props) {
 
   const restart = useCallback(() => {
     store.remove(QUIZ_KEY);
+    forwardScreens.current = [];
     setState(newState());
     setSaved(null);
     setSupport(false);
