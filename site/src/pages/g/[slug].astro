@@ -3,10 +3,11 @@ import SaveButton from '../../islands/SaveButton';
 import Base from '../../layouts/Base.astro';
 import { groupBadges, isFaithGroup, schoolName } from '../../lib/badges';
 import { formatDate, formatMonthYear, lastSeenActive } from '../../lib/dates';
-import { loadFullGroup, loadGroups, loadVocab } from '../../lib/data';
+import { loadFamilyCounts, loadFullGroup, loadGroups, loadSources, loadVocab } from '../../lib/data';
 import {
   ageLine,
   communityLabel,
+  dedupeSources,
   dayList,
   fieldLabel,
   freshnessNote,
@@ -21,6 +22,7 @@ import {
 } from '../../lib/group-view';
 import { fill } from '../../lib/inline';
 import { languageName } from '../../lib/language';
+import { hasMeetingPlace, isMailingLocation } from '../../lib/place';
 import { groupIssueLinks } from '../../lib/issues';
 import { absoluteUrl, groupPath, interestPath, withBase } from '../../lib/site';
 import { safeHttpUrl, telHref, titleCase } from '../../lib/text';
@@ -32,7 +34,14 @@ export function getStaticPaths() {
   return groups.map((g) => ({ params: { slug: g.id }, props: { group: loadFullGroup(g.id) } }));
 }
 
-const { group: g } = Astro.props;
+const { group: raw } = Astro.props;
+const g = { ...raw, sources: dedupeSources(raw.sources) };
+const registry = loadSources();
+/** A friendly name for a source: the registry's name for official lists, else the web address. */
+function sourceName(url: string): string {
+  const hit = registry.find((r) => r.url && (url === r.url || url.startsWith(r.url)));
+  return hit ? hit.name : linkLabel(url);
+}
 const vocab = loadVocab();
 const now = new Date();
 
@@ -62,10 +71,11 @@ const faithText = isFaithGroup(g)
 // where
 const locations = g.locations.map((l) => ({
   ...l,
+  mailing: isMailingLocation(l),
   neighborhoodName: l.neighborhood ? (vocab.labels.neighborhoods?.get(l.neighborhood) ?? titleCase(l.neighborhood)) : null,
   districtName: l.planning_district ? districtFor(vocab, l.planning_district).label : null,
 }));
-const hasPlace = locations.some((l) => l.address || l.neighborhoodName || l.districtName);
+const meetingKnown = hasMeetingPlace(g);
 
 // access
 const langs = [...new Set(g.access.languages)].map(languageName);
@@ -76,7 +86,7 @@ const website = safeHttpUrl(c.website);
 const calendar = safeHttpUrl(c.calendar_feed);
 const social = c.social.map((s) => ({ url: safeHttpUrl(s), label: socialLabel(s) })).filter((s) => s.url);
 function srcLine(field: string) {
-  return sourcesFor(g, field).map((s) => ({ url: s.url, label: linkLabel(s.url), seen: sourceSeen(s) }));
+  return sourcesFor(g, field).map((s) => ({ url: s.url, label: sourceName(s.url), seen: sourceSeen(s) }));
 }
 const contactRows = [
   website && { key: 'website', label: t.website, value: { href: website, text: linkLabel(website) }, src: srcLine('contacts.website') },
@@ -98,7 +108,7 @@ if (g.requirements.kids_ok) reqs.push(t.kidsOk);
 const sourceItems = g.sources.map((s) => {
   const when = sourceSeen(s);
   const tail = (when ? `, ${t.sourceSeen} ${when}` : '') + (s.fields.length > 0 ? `. ${t.supports}: ${s.fields.map(fieldLabel).join(', ')}` : '');
-  return { href: safeHttpUrl(s.url), label: linkLabel(s.url), tail };
+  return { href: safeHttpUrl(s.url), label: sourceName(s.url), tail };
 });
 
 // related
@@ -106,8 +116,8 @@ const families = g.categories
   .filter((id) => !vocab.familyById.get(id)?.supportOnly)
   .slice(0, 3)
   .map((id) => ({ id, label: familyLabel(vocab, id) }));
-const { groups: all } = loadGroups();
-const familyCount = (id: string) => all.filter((x) => x.categories.includes(id) && !x.audience.support_group).length;
+const familyCounts = loadFamilyCounts();
+const familyCount = (id: string) => familyCounts[id] ?? 0;
 
 const title = g.name;
 const description = metaDescription(g);
@@ -171,8 +181,10 @@ const description = metaDescription(g);
             <div class="fact-block">
               {l.label && <h3>{l.label}</h3>}
               {l.in_city === false && <p>{t.where.outsideCity}</p>}
+              {l.mailing && <p class="muted">{t.where.mailingNote}</p>}
               <dl class="facts">
                 {l.address && <><dt>{t.where.address}</dt><dd>{l.address}</dd></>}
+                {l.mailing && l.zip && <><dt>{t.where.zip}</dt><dd>{l.zip}</dd></>}
                 {l.neighborhoodName && <><dt>{t.where.neighborhood}</dt><dd>{l.neighborhoodName}</dd></>}
                 {l.districtName && <><dt>{t.where.district}</dt><dd>{l.districtName}</dd></>}
                 {l.transit && <><dt>{t.where.transit}</dt><dd>{l.transit}</dd></>}
@@ -180,7 +192,7 @@ const description = metaDescription(g);
             </div>
           ))
         }
-        {!hasPlace && locations.every((l) => l.in_city !== false) && <p>{t.where.noAddress}</p>}
+        {!meetingKnown && !locations.some((l) => l.in_city === false) && <p>{t.where.noAddress}</p>}
         {g.online_ok && <p>{t.where.online}</p>}
       </section>
 
@@ -291,7 +303,7 @@ const description = metaDescription(g);
                       <span class="src">
                         {
                           sourcesFor(g, 'contacts.social').length > 0
-                            ? sourcesFor(g, 'contacts.social').map((s, i) => <>{i > 0 && '; '}{t.sourceLabel}: <a href={s.url} rel="noopener noreferrer">{linkLabel(s.url)}</a></>)
+                            ? sourcesFor(g, 'contacts.social').map((s, i) => <>{i > 0 && '; '}{t.sourceLabel}: <a href={s.url} rel="noopener noreferrer">{sourceName(s.url)}</a></>)
                             : t.sourceUnknown
                         }
                       </span>

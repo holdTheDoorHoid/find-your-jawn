@@ -53,6 +53,20 @@ export function loadFullGroup(slug: string): Group {
   return slim;
 }
 
+let countsCache: Record<string, number> | null = null;
+
+/** How many browsable groups each interest family has. Worked out once per build. */
+export function loadFamilyCounts(): Record<string, number> {
+  if (countsCache) return countsCache;
+  const counts: Record<string, number> = {};
+  for (const g of loadGroups().groups) {
+    if (g.audience.support_group) continue;
+    for (const c of new Set(g.categories)) counts[c] = (counts[c] ?? 0) + 1;
+  }
+  countsCache = counts;
+  return counts;
+}
+
 let vocabCache: Vocab | null = null;
 
 export function loadVocab(): Vocab {
@@ -80,8 +94,16 @@ export interface SourceEntry {
   leadOnly: boolean;
 }
 
-/** Sources from registry/sources.yaml, for the credits on the About page. */
+let sourcesCache: SourceEntry[] | null = null;
+
+/** Sources from registry/sources.yaml: credits on the About page and names on group pages. */
 export function loadSources(): SourceEntry[] {
+  if (sourcesCache) return sourcesCache;
+  sourcesCache = readSources();
+  return sourcesCache;
+}
+
+function readSources(): SourceEntry[] {
   try {
     const parsed: unknown = parseYaml(fs.readFileSync(REGISTRY, 'utf8'));
     if (!Array.isArray(parsed)) return [];

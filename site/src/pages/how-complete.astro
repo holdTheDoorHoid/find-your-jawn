@@ -41,7 +41,7 @@ const date = formatDate(manifest.built ?? built);
               <table>
                 <caption class="sr-only">{t.byCategory}</caption>
                 <thead>
-                  <tr><th scope="col">{t.tableGroup}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                  <tr><th scope="col">{t.tableInterest}</th><th scope="col" class="num">{t.tableCount}</th></tr>
                 </thead>
                 <tbody>
                   {s.byCategory.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}
@@ -60,7 +60,7 @@ const date = formatDate(manifest.built ?? built);
               <table>
                 <caption>{t.byRegion}</caption>
                 <thead>
-                  <tr><th scope="col">{t.tableGroup}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                  <tr><th scope="col">{t.tablePlace}</th><th scope="col" class="num">{t.tableCount}</th></tr>
                 </thead>
                 <tbody>
                   {s.byRegion.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}
@@ -76,7 +76,7 @@ const date = formatDate(manifest.built ?? built);
               <table>
                 <caption class="sr-only">{t.byDistrict}</caption>
                 <thead>
-                  <tr><th scope="col">{t.tableGroup}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                  <tr><th scope="col">{t.tablePlace}</th><th scope="col" class="num">{t.tableCount}</th></tr>
                 </thead>
                 <tbody>
                   {s.byDistrict.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}

@@ -1,5 +1,6 @@
 import { OTHER_REGION, REGIONS } from './geo';
 import { isBrowsable } from './filters';
+import { placeLocations } from './place';
 import { prettify } from './text';
 import type { Group, Manifest, Vocab } from './types';
 import { districtFor, familyLabel } from './vocab';
@@ -39,7 +40,7 @@ export function summarize(groups: Group[], manifest: Manifest, vocab: Vocab): Co
     for (const c of new Set(g.categories)) catCounts.set(c, (catCounts.get(c) ?? 0) + 1);
     const districts = new Set<string>();
     const regions = new Set<string>();
-    for (const l of g.locations) {
+    for (const l of placeLocations(g)) {
       if (!l.planning_district) continue;
       const d = districtFor(vocab, l.planning_district);
       districts.add(d.id);

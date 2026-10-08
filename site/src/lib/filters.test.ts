@@ -260,3 +260,28 @@ describe('languagesInUse', () => {
     expect(languagesInUse(list)).toEqual(['en', 'es', 'zh']);
   });
 });
+
+describe('mailing addresses', () => {
+  const both = makeGroup({
+    id: 'both',
+    locations: [
+      { label: 'Meeting place', address: '1 Example St', planning_district: 'lower_north' },
+      { label: 'Contact address (City list)', zip: '19133', planning_district: 'upper_north' },
+    ],
+  });
+  const mailOnly = makeGroup({
+    id: 'mail-only',
+    locations: [{ label: 'Mailing address (IRS)', zip: '19133', planning_district: 'upper_north' }],
+  });
+  const idx = buildIndex([both, mailOnly], ctx);
+  const find = (district: string) => applyFilters(idx, { ...emptyFilters(), district }).map((e) => e.g.id);
+
+  it('uses the meeting place, not the mailing address, when a group has both', () => {
+    expect(find('lower-north')).toEqual(['both']);
+    expect(find('upper-north')).toEqual(['mail-only']);
+  });
+
+  it('still places a group that is known only by a mailing ZIP', () => {
+    expect(applyFilters(idx, { ...emptyFilters(), region: 'north' }).map((e) => e.g.id).sort()).toEqual(['both', 'mail-only']);
+  });
+});

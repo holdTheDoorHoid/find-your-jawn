@@ -159,7 +159,9 @@ export default function BrowseApp({ config }: Props) {
     [groups],
   );
 
-  const effectiveSort: SortKey = sort ?? (filters.q.trim() ? 'best' : 'az');
+  // Best match only means something with a search. Without one, fall back to A to Z.
+  const hasQuery = filters.q.trim() !== '';
+  const effectiveSort: SortKey = sort === 'best' && !hasQuery ? 'az' : (sort ?? (hasQuery ? 'best' : 'az'));
 
   const results = useMemo(() => sortGroups(applyFilters(index, filters), effectiveSort, filters.q), [index, filters, effectiveSort]);
 
@@ -246,7 +248,7 @@ export default function BrowseApp({ config }: Props) {
         <div class="sort">
           <label for="browse-sort">{t.sort}</label>
           <select id="browse-sort" value={effectiveSort} onChange={(e) => setSort((e.currentTarget as HTMLSelectElement).value as SortKey)}>
-            {filters.q.trim() && <option value="best">{t.sortBest}</option>}
+            {hasQuery && <option value="best">{t.sortBest}</option>}
             <option value="az">{t.sortAZ}</option>
             <option value="recent">{t.sortRecent}</option>
           </select>

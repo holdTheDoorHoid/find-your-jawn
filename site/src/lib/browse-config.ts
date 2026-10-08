@@ -1,4 +1,5 @@
 import { OTHER_REGION, REGIONS } from './geo';
+import { placeLocations } from './place';
 import { prettify, titleCase } from './text';
 import type { Group, Vocab } from './types';
 import { browsableFamilies, districtFor } from './vocab';
@@ -45,7 +46,7 @@ export function makeBrowseConfig(groups: Group[], vocab: Vocab, built: string): 
   // Districts that appear in the data, grouped by region.
   const byId = new Map<string, BrowseDistrict>();
   for (const g of groups) {
-    for (const loc of g.locations) {
+    for (const loc of placeLocations(g)) {
       if (!loc.planning_district) continue;
       const d = districtFor(vocab, loc.planning_district);
       if (!byId.has(d.id)) byId.set(d.id, { id: d.id, label: d.label, region: d.region });
@@ -70,7 +71,7 @@ export function makeBrowseConfig(groups: Group[], vocab: Vocab, built: string): 
   const places: Record<string, string> = {};
   const hoods = vocab.labels.neighborhoods;
   for (const g of groups) {
-    for (const loc of g.locations) {
+    for (const loc of placeLocations(g)) {
       const n = loc.neighborhood;
       if (n && !places[n]) places[n] = hoods?.get(n) ?? titleCase(n);
     }

@@ -37,7 +37,7 @@ const csp =
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#fbf7f1" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#171412" media="(prefers-color-scheme: dark)" />
-    {noindex && <meta name="robots" content="noindex" />}
+    {(noindex || sample) && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
     <meta property="og:site_name" content={site.name} />

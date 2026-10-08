@@ -14,6 +14,21 @@ export function hasFirstVisitGuide(g: Group): boolean {
   return Boolean(f.what_to_expect || f.first_visit_tips.length > 0 || f.how || f.newcomer_friendliness);
 }
 
+/** One entry per URL: the newest date seen, and every field any of the entries supports. */
+export function dedupeSources(sources: GroupSource[]): GroupSource[] {
+  const byUrl = new Map<string, GroupSource>();
+  for (const s of sources) {
+    const have = byUrl.get(s.url);
+    if (!have) {
+      byUrl.set(s.url, { url: s.url, seen: s.seen, fields: [...s.fields] });
+      continue;
+    }
+    if ((s.seen ?? '') > (have.seen ?? '')) have.seen = s.seen;
+    for (const f of s.fields) if (!have.fields.includes(f)) have.fields.push(f);
+  }
+  return [...byUrl.values()];
+}
+
 /** Sources that back one field. A source that lists "contacts" backs every contacts.* field. */
 export function sourcesFor(g: Group, field: string): GroupSource[] {
   const parent = field.includes('.') ? field.slice(0, field.indexOf('.')) : null;

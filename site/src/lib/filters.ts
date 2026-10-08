@@ -1,6 +1,7 @@
 import { isFaithGroup } from './badges';
 import { DISTRICT_REGION, OTHER_REGION } from './geo';
 import { languageBase } from './language';
+import { placeLocations } from './place';
 import { monthKey } from './dates';
 import { fold, nameKey, slugify } from './text';
 import { DAYS, type CostLevel, type Group } from './types';
@@ -99,7 +100,7 @@ export function buildIndex(groups: Group[], ctx: IndexContext): IndexedGroup[] {
     for (const id of g.categories) parts.push(ctx.labelOf(id));
     const districts: string[] = [];
     const regions: string[] = [];
-    for (const loc of g.locations) {
+    for (const loc of placeLocations(g)) {
       if (loc.neighborhood) parts.push(loc.neighborhood.replace(/[-_]/g, ' '));
       if (loc.planning_district) {
         const d = ctx.district(loc.planning_district);

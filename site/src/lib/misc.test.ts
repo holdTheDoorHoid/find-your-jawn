@@ -6,6 +6,8 @@ import { absoluteUrl, withBase } from './site';
 import { clip, compareNames, hostOf, safeHttpUrl, slugify, telHref } from './text';
 import { groupBadges } from './badges';
 import { makeGroup } from './testing';
+import { languageBase, languageName } from './language';
+import { placeLine } from './place';
 
 describe('inline markup', () => {
   it('turns links and bold into safe HTML', () => {
@@ -121,5 +123,22 @@ describe('badges', () => {
   it('labels student only groups with the school', () => {
     const g = makeGroup({ audience: { open_to: 'students', school: 'penn' } });
     expect(groupBadges(g).map((b) => b.text)).toContain('Students only: Penn');
+  });
+});
+
+describe('languages and places', () => {
+  it('names languages and reduces codes to their base', () => {
+    expect(languageName('es')).toBe('Spanish');
+    expect(languageName('ht')).toBe('Haitian Creole');
+    expect(languageBase('es-MX')).toBe('es');
+    expect(languageBase('ZH_hans')).toBe('zh');
+  });
+
+  it('shows the neighborhood, or online, or nothing', () => {
+    expect(placeLine(makeGroup({ locations: [{ neighborhood: 'mount_airy_east', in_city: true }] }), { mount_airy_east: 'East Mount Airy' })).toBe('East Mount Airy');
+    expect(placeLine(makeGroup({ locations: [{ neighborhood: 'east_falls', in_city: true }] }))).toBe('East Falls');
+    expect(placeLine(makeGroup({ locations: [], online_ok: true }))).toBe('Online');
+    expect(placeLine(makeGroup({ locations: [{ in_city: false }], online_ok: true }))).toBeNull();
+    expect(placeLine(makeGroup({ locations: [] }))).toBeNull();
   });
 });

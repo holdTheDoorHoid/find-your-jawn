@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ageLine, freshnessNote, hasFirstVisitGuide, metaDescription, sourcesFor, tierSentence } from './group-view';
+import { dedupeSources, dayList, ageLine, freshnessNote, hasFirstVisitGuide, metaDescription, sourcesFor, tierSentence } from './group-view';
 import { makeGroup } from './testing';
 
 describe('first visit block', () => {
@@ -64,5 +64,28 @@ describe('small helpers', () => {
     const long = makeGroup({ summary: 'word '.repeat(60) });
     expect(metaDescription(long).length).toBeLessThanOrEqual(156);
     expect(metaDescription(makeGroup({ summary: '' }))).toMatch(/in Philadelphia/);
+  });
+});
+
+describe('days and places', () => {
+  it('lists days in week order with a plain and', () => {
+    expect(dayList(['sun', 'sat'])).toBe('Saturday and Sunday');
+    expect(dayList(['wed', 'mon', 'fri'])).toBe('Monday, Wednesday and Friday');
+    expect(dayList(['tue'])).toBe('Tuesday');
+    expect(dayList([])).toBe('');
+  });
+});
+
+describe('dedupeSources', () => {
+  it('keeps one entry per address with the newest date and all fields', () => {
+    const out = dedupeSources([
+      { url: 'https://example.org/a', seen: '2026-10-04', fields: ['name'] },
+      { url: 'https://example.org/b', seen: '2026-10-01', fields: ['summary'] },
+      { url: 'https://example.org/a', seen: '2026-10-08', fields: ['contacts.email', 'name'] },
+    ]);
+    expect(out).toEqual([
+      { url: 'https://example.org/a', seen: '2026-10-08', fields: ['name', 'contacts.email'] },
+      { url: 'https://example.org/b', seen: '2026-10-01', fields: ['summary'] },
+    ]);
   });
 });
