@@ -7,18 +7,29 @@ leads:
 - irs_990n:231386209
 - irs_bmf:231386209
 ein: '231386209'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A volunteer-run art club in Center City that has supported artists since 1897. It runs weekly
+  drawing and open studio sessions, monthly art shows, and film, music and poetry nights.
+what_you_do: Drop in to a weekly drawing or open studio session for a small fee, or apply to join the
+  club as a member. Artists can also enter its monthly exhibitions.
+kind: club
+categories:
+- arts-crafts
+interests:
+- painting_drawing
+- printmaking
+motives:
+- enhancement
+- social
+formats:
+- side_by_side
+- learn_skill
+roles:
+- hands_on
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -27,26 +38,39 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: 'Sessions run Monday to Saturday, from mornings into evenings. Examples: Tuesday 9:30 am to 12:30
+    pm (clothed portrait model), Thursday 5:30 to 8:30 pm (life model), and Saturday 9:30 am to 12:30
+    pm (croquis with life model). A printmaking open studio runs Saturday 10 am to 2 pm. A Tuesday night
+    Zoom share is also listed.'
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: The Plastic Club
   address: 247 S Camac St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19107'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Life model and costume sessions are $10 each ($9 for members, $7 for students). Still life open
+    studio is $5. Printmaking open studio is $10. The membership cost is not listed.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -60,23 +84,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Read the workshop etiquette guide on the club's site, then come to a Thursday or Saturday open
+    studio. New printmaking participants should contact the club's monitor before they come.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Drawing sessions need no reservation and the club welcomes all artists and interested people,
+    but no beginner class is listed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: http://plasticclub.org
-  email: null
-  phone: null
+  email: info@plasticclub.org
+  phone: (215) 545-9324
   contact_name: Cynthia R Arkin
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://plasticclub.org
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -98,8 +124,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://plasticclub.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - locations
+  - contacts
+  - status
+- url: http://www.plasticclub.org/weekly-workshops
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

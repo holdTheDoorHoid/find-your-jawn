@@ -5,18 +5,29 @@ leads:
 - cultural_fund:district-one-community-education-center-3
 - irs_bmf:237410005
 ein: '237410005'
-summary: null
-what_you_do: null
+summary: An arts space at 3500 Lancaster Ave where artists rehearse, teach and perform. It runs weekly
+  dance classes open to the community and rents space to artists and tenant groups.
+what_you_do: 'Take a dance class at ECR Studio: Funk Sole Fundamentals on Wednesday evenings, a Friday
+  night workshop with Group Motion, Kulu Mele dance on the first Thursday, or West African dance on the
+  first Saturday. Check the Upcoming Events page for performances.'
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- theater-dance-performance
+- culture-language-heritage-groups
+interests:
+- cultural_dance
+- social_dance
+motives:
+- enhancement
+- social
+formats:
+- learn_skill
+roles:
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,16 +36,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: 'Funk Sole Fundamentals: Wednesdays, 6 to 8 pm. Kulu Mele dance: Thursdays at 7 pm, on the first
+    Thursday of the month. Friday night workshop with Group Motion: Fridays at 8 pm. West African dance
+    with Angela Watson: Saturdays at 2 pm, on the first Saturday of the month. No performance dates are
+    listed.'
+  days:
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: ECR Studio
   address: 3500 Lancaster Ave
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
@@ -42,9 +62,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Each class is marked with a dollar sign on the site. Amounts are not shown.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +78,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Pick a class on the Classes page, then call 215.387.1911 or email Programs@cecarts.org to ask about
+    sign-up and prices before the first session.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Classes are listed with days and times, but the page does not say how to sign up or whether drop-ins
+    are welcome.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: http://www.cecarts.org
-  email: null
-  phone: null
+  email: Programs@cecarts.org
+  phone: 215.387.1911
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/CEC-Community-Education-Center-217339404976000
+  - https://www.instagram.com/cecarts
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.cecarts.org
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4
   seen: '2026-10-04'
@@ -87,8 +111,25 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.cecarts.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+  - status
+- url: http://www.cecarts.org/classes
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

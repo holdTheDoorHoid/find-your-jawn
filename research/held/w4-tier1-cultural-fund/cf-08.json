@@ -1,0 +1,212 @@
+{
+ "wave": "w4-tier1-cultural-fund",
+ "agent": "cf-08",
+ "lane": "D",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 49,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://cliveden.org/",
+   "status": 403,
+   "note": "HTTP 403 on fetch. Not retried and not worked around. Record is unknown, low confidence."
+  }
+ ],
+ "notes": "Verdicts: 15 publish, 3 not_a_group (Philadelphia Dance Projects, Variant 6, Agile Rascal Theatre). Publish includes 6 records with unknown or unverified details because the site was empty, JavaScript only, blocked or an admin preview: Public Trust, Warriors of the Wonderful Sound, 2CENTS Inc, Cliveden of the National Trust, plus Three Aksha (dormant, unreliable site). Cultural Fund grantee directory (https://philaculturalfund.org/grantee-directory) is cited as the source for group existence from the batch lead ids; the directory itself was not re-fetched. Grave Gardeners (http://www.gravegardeners.org) was fetched and folded into The Woodlands record as its own volunteer program, so it is not in leads_only. Mentioned but not checked, no URL seen: Miro Dance Theatre (a Three Aksha collaborator), Green Philly and Philly Queer Birders (named on The Woodlands calendar), CultureTrust Greater Philadelphia (sponsor of We Are the Seeds). Fetches used: 49 of 60. Searches: 0 (none allowed for this agent). Budget was not exhausted.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:public-trust-3",
+     "irs_bmf:010754956"
+    ],
+    "group_id": "public-trust",
+    "ein": "010754956",
+    "website": "https://publictrust.org"
+   },
+   "verdict": "publish",
+   "name": "Public Trust",
+   "what_you_do": "Not yet known. The website needs JavaScript and gave us no readable text on three tries, so we could not check its classes, events, or volunteer roles.",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address in IRS listing, not shown on site",
+     "address": "4017 Walnut St",
+     "zip": "19104",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Open publictrust.org in a web browser (it needs JavaScript) to see current programs and how to take part."
+   },
+   "contacts": {
+    "website": "https://publictrust.org",
+    "email": null,
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Listed as publish because it is a Cultural Fund grantee, per the brief for groups we could not research. The site returned only a JavaScript notice on each try (not an HTTP 403). The address comes from our IRS batch, not the site. Needs a manual check in a browser.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:warriors-of-the-wonderful-sound-3",
+     "irs_bmf:061718860"
+    ],
+    "group_id": "warriors-of-the-wonderful-sound",
+    "ein": "061718860",
+    "website": "https://bobbyzankel.net"
+   },
+   "verdict": "publish",
+   "name": "Warriors of the Wonderful Sound",
+   "what_you_do": "Not yet known. The group's website loaded no readable text on our visits, so we could not check its classes, rehearsals, performances, or how to join.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Open bobbyzankel.net in a web browser to look for the group's current events and how to join. The site redirects to a page that has no text for our tools."
+   },
+   "contacts": {
+    "website": "https://bobbyzankel.net",
+    "email": null,
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Listed as publish because it is a Cultural Fund grantee, per the brief for groups we could not research. The site redirects with JavaScript to a page with no readable text, on every try (www and bare domain both tested, and /lander). Nothing about the group is verified. Needs a manual check in a browser.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:2cents-inc",
+     "irs_990n:872641963",
+     "irs_bmf:872641963"
+    ],
+    "group_id": "2cents-inc",
+    "ein": "872641963",
+    "website": "https://philly2cents.org"
+   },
+   "verdict": "publish",
+   "name": "2CENTS Inc",
+   "what_you_do": "Not yet known. The only page we reached was an admin preview with no public description, so we could not check what the group offers or how to join.",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address in IRS listing, not shown on site",
+     "address": "8615 Michener Ave",
+     "zip": "19150",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Look for a public website or social page for 2CENTS Inc, since the page we reached is a private admin preview."
+   },
+   "contacts": {
+    "website": "https://philly2cents.org",
+    "email": null,
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philly2cents.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Listed as publish because it is a Cultural Fund grantee, per the brief for groups we could not research. The site redirects to a preview page that says it is only for admin and links to a privacy policy. That page is not a public description, and it was not shared. Needs a manual check.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:cliveden-of-the-national-trust-inc-3",
+     "irs_bmf:232232675"
+    ],
+    "group_id": "cliveden-of-the-national-trust-inc",
+    "ein": "232232675",
+    "website": "https://cliveden.org/"
+   },
+   "verdict": "publish",
+   "name": "Cliveden of the National Trust",
+   "what_you_do": "Not yet known. The group's website refused our visit (HTTP 403), so we could not check its tours, events, or volunteer options.",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address in IRS listing, not shown on site",
+     "address": "6401 Germantown Ave",
+     "zip": "19144",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Open cliveden.org in a web browser to see current tours, events, and volunteer options."
+   },
+   "contacts": {
+    "website": "https://cliveden.org/",
+    "email": null,
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Blocked: cliveden.org returned HTTP 403 to our fetch. It was not retried or worked around. Listed as publish because it is a Cultural Fund grantee with a Philadelphia address, but nothing about its programs is verified. Needs a manual check. Search budget for this agent is zero, so no search was run.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

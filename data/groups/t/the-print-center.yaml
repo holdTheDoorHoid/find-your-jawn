@@ -5,18 +5,30 @@ leads:
 - cultural_fund:the-print-center-3
 - irs_bmf:230988930
 ein: '230988930'
-summary: null
-what_you_do: null
+summary: A free museum of printmaking and photography in Center City, founded in 1915. It shows changing
+  exhibitions and runs a yearly competition for artists, and paid memberships bring member events and
+  shop discounts.
+what_you_do: Visit the free galleries during open hours, or join one of its exhibition tours (listed for
+  Oct 23 and Nov 13, 2026). Artists can enter The ANNUAL competition. Individual members and up get invitations
+  to members-only events.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- arts-crafts
+interests:
+- printmaking
+- photography
+motives:
+- enhancement
+- understanding
+formats:
+- side_by_side
+- one_off_event
+roles:
+- figure_out
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,16 +37,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Open Tuesday to Saturday, 11 am to 6 pm, with free admission. Exhibition tours are listed for
+    Friday Oct 23, 2026 and Friday Nov 13, 2026, both 5:30 to 6 pm. A tour on Wednesday Oct 7, 2026 at
+    noon has already passed.
+  days:
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: fall
 locations:
-- label: Mailing address (IRS)
+- label: The Print Center
   address: 1614 Latimer St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19103'
   lat: null
   lng: null
@@ -42,9 +63,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Admission to exhibitions and education programs is free. Membership is optional and costs $30
+    (student) to $500 (benefactor) a year. The tour cost is not listed.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +80,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come during open hours, or join the Oct 23 exhibition tour. Call the Center at 215.735.6090 first
+    to confirm the tour cost.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The galleries are free and open to the public with no sign-up. Tours need a listed time.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: http://printcenter.org
   email: null
-  phone: null
+  phone: 215.735.6090
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://printcenter.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -87,8 +110,26 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://printcenter.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - cost
+  - contacts
+- url: https://printcenter.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: https://printcenter.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

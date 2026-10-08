@@ -5,18 +5,34 @@ leads:
 - cultural_fund:the-woodlands-trust-for-historic-preservation-3
 - irs_bmf:311609803
 ein: '311609803'
-summary: null
-what_you_do: null
+summary: A historic cemetery and garden at 4000 Woodland Avenue. It runs public tours, a public events
+  calendar, and volunteer work days where people clean paths, plant and care for trees, and help welcome
+  visitors.
+what_you_do: Book a tour of the mansion and cemetery ($20 a person), join a public event such as a walk
+  or an evening event, or sign up for a clean-up or tree day. The Grave Gardeners program, run by The
+  Woodlands, opens applications each January.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- history-heritage-preservation
+- nature-environment
+interests:
+- historic_site_volunteering
+- walking_tours
+- cemetery_friends
+- tree_tending
+motives:
+- understanding
+- values
+formats:
+- one_off_event
+- team_play
+roles:
+- hands_on
+- help_teach
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +41,38 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Public tours run on weekdays from April through October and last about 1.5 hours. Clean-up work
+    days are on weekends from October to March and on weekday evenings from April to September. Public
+    events are on the calendar.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: The Woodlands (cemetery and Hamilton Mansion)
   address: 4000 Woodland Ave
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Public tours are $20 per person, with a $5 add-on for lunch setup. Some events are for members
+    only, and other event prices vary.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +86,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Request a tour through the online form on the tours page (book at least 2 weeks ahead), or check
+    the volunteer page and join a clean-up work day.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Tours and public events are open to anyone who books or signs up, but the volunteer page does
+    not spell out a general sign-up process.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: http://www.woodlandsphila.org
-  email: null
-  phone: null
+  email: info@woodlandsphila.org
+  phone: 215-386-2181
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/woodlandsphila/
+  - http://www.facebook.com/woodlandsphila
+  - https://www.linkedin.com/company/woodlandsphila
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.woodlandsphila.org/events-calendar
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -87,8 +120,34 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.woodlandsphila.org/events-calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - what_you_do
+- url: https://www.woodlandsphila.org/tours
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - schedule
+  - contacts
+- url: https://www.woodlandsphila.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - commitment
+  - roles
+  - locations
+- url: http://www.woodlandsphila.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

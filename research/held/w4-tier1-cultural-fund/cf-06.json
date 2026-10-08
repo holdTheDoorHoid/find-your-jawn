@@ -1,0 +1,345 @@
+{
+ "wave": "w4-tier1-cultural-fund",
+ "agent": "cf-06",
+ "lane": "D",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 34,
+ "leads_only": [
+  {
+   "name": "Kylin Movement",
+   "url": "https://www.kyld.org",
+   "note": "Named on the KYL Dancers site as the successor platform for mid-career artists; not checked as its own record."
+  },
+  {
+   "name": "Preah Buddha Rangsey Temples",
+   "url": "https://phillykpac.weebly.com",
+   "note": "Named on the Khmer Performing Arts and Culture site as the home of its community space; not checked."
+  },
+  {
+   "name": "Vaudevillian Society",
+   "url": "https://www.1812productions.org/",
+   "note": "Named on the 1812 Productions site as a support program; not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "http://www.artsphere.org",
+   "status": 403,
+   "note": "HTTP 403 to WebFetch (bot check or block). Not bypassed."
+  },
+  {
+   "url": "http://brandywineworkshop.org/",
+   "status": 403,
+   "note": "Reached by a 301 from https://brandywineworkshopandarchives.org/. HTTP 403 to WebFetch. Not bypassed."
+  }
+ ],
+ "notes": "Searches used: 0 (none allowed). Fetches used: 34 of 60. Budget not exhausted. Verdicts: publish 16, not_a_group 1 (Altissimo Arts), hide 1 (KYL Dancers, defunct). Unknown status with low confidence: Termite TV Collective (empty pages on three URL forms), Art Sphere (403), Brandywine (403 on redirect target), Bainbridge House (batch website is a Facebook page, read once, no official site found), Concert Operetta Theater (no content). Usiloquy: batch id ends in -copy and a placeholder data file with that id exists; the record uses the plain name, so check for duplicates on import. Mendelssohn: the site name is Mendelssohn Chorus of Philadelphia, not the batch name. Several batch addresses look like residences (Higher Grounds, Usiloquy, FamFrequency, Bainbridge); none are published here. Per the Cultural Fund rule, unknown records cite the grantee directory as their source.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:termite-tv-collective-3",
+     "irs_990n:233080262",
+     "irs_bmf:233080262"
+    ],
+    "group_id": "termite-tv-collective",
+    "ein": "233080262",
+    "website": "http://www.termite.org"
+   },
+   "verdict": "publish",
+   "name": "Termite TV Collective",
+   "summary": "Listed as a Philadelphia Cultural Fund grantee. Its website returned no readable content on three checks, so what it offers is not yet confirmed.",
+   "what_you_do": "Not confirmed. The website returned no readable content, so how the public takes part is unknown.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Visit the website when it loads to see how to take part."
+   },
+   "contacts": {
+    "website": "http://www.termite.org"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "http://www.termite.org, https://www.termite.org/ and https://termite.org/ all returned an empty page. Recorded as unknown. The name suggests video work, but that is not confirmed, so no category was set. Retry in a browser or on a later run.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:ars-nova-workshop-3",
+     "irs_990n:383714248",
+     "irs_bmf:383714248"
+    ],
+    "group_id": "ars-nova-workshop",
+    "ein": "383714248",
+    "website": "https://www.arsnovaworkshop.org/"
+   },
+   "verdict": "publish",
+   "name": "Ars Nova Workshop",
+   "summary": "A Philadelphia nonprofit that presents new jazz and improvised music at Solar Myth, a listening room and cafe. It has concerts scheduled through December 2026 and offers memberships and volunteer help.",
+   "what_you_do": "Buy a ticket to a concert at Solar Myth, join as a member for ticket discounts and members-only events, or sign up for the volunteer pool to help with mailings and special events.",
+   "kind": "nonprofit",
+   "categories": [
+    "music"
+   ],
+   "motives": [
+    "enhancement"
+   ],
+   "formats": [
+    "one_off_event",
+    "behind_the_scenes"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Concerts at 8 pm unless noted, from October through December 2026, including October 23, October 24, and November 19 to 21. Check the events list for the latest dates."
+   },
+   "locations": [
+    {
+     "label": "Solar Myth (listening room and cafe, in the former Boot & Saddle space)",
+     "in_city": true
+    }
+   ],
+   "cost": {
+    "level": "paid",
+    "text": "Concert tickets vary by show. Memberships are $10, $20, $40, or $150 a month, by tier."
+   },
+   "commitment": "monthly",
+   "first_step": {
+    "how": "Buy a ticket to a Solar Myth concert, or sign up through the short form on the volunteer page to be added to the volunteer pool.",
+    "newcomer_friendliness": 3,
+    "basis": "Concerts are on sale to anyone, and the volunteer sign-up is a short public form."
+   },
+   "contacts": {
+    "website": "https://www.arsnovaworkshop.org/",
+    "email": "membership@arsnovaworkshop.org"
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-10",
+   "sign_of_life_url": "https://www.arsnovaworkshop.org/",
+   "sources": [
+    {
+     "url": "https://www.arsnovaworkshop.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "schedule",
+      "locations",
+      "status",
+      "last_sign_of_life"
+     ]
+    },
+    {
+     "url": "https://www.arsnovaworkshop.org/membership/",
+     "seen": "2026-10-08",
+     "fields": [
+      "cost",
+      "contacts",
+      "what_you_do"
+     ]
+    },
+    {
+     "url": "https://www.arsnovaworkshop.org/volunteer/",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "high",
+   "notes": "The news section is stale: its newest article is from March 2025, though the event listings run to December 2026. The Coltrane 100 program dated September 1, 2026 is the newest dated homepage item. No address or phone is published on the site. Batch address 1901 S 9th St Ste 509 is not used. No exact interest tag fits a jazz concert series, so interests are left empty. Membership tiers, per the membership page: Mars $10, Venus $20, Jupiter $40, Saturn $150 a month.",
+   "_held_reasons": [
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:art-sphere-inc-3",
+     "irs_bmf:232994202"
+    ],
+    "group_id": "art-sphere-inc",
+    "ein": "232994202",
+    "website": "http://www.artsphere.org"
+   },
+   "verdict": "publish",
+   "name": "Art Sphere Inc.",
+   "summary": "Listed as a Philadelphia Cultural Fund grantee. Its website blocked our check, so what it offers is not yet confirmed.",
+   "what_you_do": "Not confirmed. The website blocked our check, so how the public takes part is unknown.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Visit the website in a browser to see how to take part."
+   },
+   "contacts": {
+    "website": "http://www.artsphere.org"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "http://www.artsphere.org returned HTTP 403 to our fetch. Listed under blocked; not bypassed. Batch address 1901 S 9th St Ste 502 is in the same building as Ars Nova Workshop and the Mendelssohn Chorus (suite numbers). A browser check or a later run is needed.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:bainbridge-house-inc-3",
+     "irs_990n:232658098",
+     "irs_bmf:232658098"
+    ],
+    "group_id": "bainbridge-house-inc",
+    "ein": "232658098"
+   },
+   "verdict": "publish",
+   "name": "Bainbridge House, Inc",
+   "summary": "Listed as a Philadelphia Cultural Fund grantee. The only page we found for it is a Facebook page, which shows no official website, so what it does is not yet confirmed.",
+   "what_you_do": "Not confirmed. The only public page found is a Facebook page, and it does not describe the group's programs.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Look for the group's own website or Facebook page to see how to take part."
+   },
+   "contacts": {
+    "social": [
+     "https://www.facebook.com/people/Bainbridge-House-Philadelphia/100064910970849/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website is a Facebook page, which is a lead-only platform. It was read once to look for an official site: the page shows the name Bainbridge House Philadelphia and no official website link. Nothing else was recorded from it. The batch IRS address (1520 Christian St) is not published here. No web search was run because the search budget is zero.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:brandywine-workshop-and-archives-3",
+     "irs_bmf:237374620"
+    ],
+    "group_id": "brandywine-workshop-and-archives",
+    "ein": "237374620",
+    "website": "https://brandywineworkshopandarchives.org/"
+   },
+   "verdict": "publish",
+   "name": "Brandywine Workshop and Archives",
+   "summary": "Listed as a Philadelphia Cultural Fund grantee. Its website redirects to an address that blocked our check, so what it offers is not yet confirmed.",
+   "what_you_do": "Not confirmed. The group's website blocked our check, so how the public takes part is unknown.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Visit the website in a browser to see how to take part."
+   },
+   "contacts": {
+    "website": "https://brandywineworkshopandarchives.org/"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "https://brandywineworkshopandarchives.org/ returns a 301 to http://brandywineworkshop.org/, which returned HTTP 403 to our fetch. Listed under blocked; not bypassed. The batch liveness field (alive, newest 2026-10, checked 2026-10-08) came from another check and is not verified here. A browser check is needed.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:concert-operetta-theater",
+     "irs_990n:510670021",
+     "irs_bmf:510670021"
+    ],
+    "group_id": "concert-operetta-theater",
+    "ein": "510670021",
+    "website": "https://concertoperetta.com"
+   },
+   "verdict": "publish",
+   "name": "Concert Operetta Theater",
+   "summary": "Listed as a Philadelphia Cultural Fund grantee. Its website shows the name and an executive and artistic director, but no events, programs, or contact details, so what it offers is not yet confirmed.",
+   "what_you_do": "Not confirmed. The website lists no performances, classes, or volunteer roles.",
+   "kind": "nonprofit",
+   "first_step": {
+    "how": "Check the website again later for current events, or look for the group in another listing."
+   },
+   "contacts": {
+    "website": "https://concertoperetta.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://concertoperetta.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    },
+    {
+     "url": "https://philaculturalfund.org/grantee-directory",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The homepage has the name, a director's name, an image, and no dates, contact details, or program text. It may be a placeholder or a partial page. Recheck in a browser or on a later run.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}
