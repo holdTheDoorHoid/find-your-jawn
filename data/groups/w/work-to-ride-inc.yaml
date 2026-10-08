@@ -1,49 +1,62 @@
 id: work-to-ride-inc
-name: Work to Ride Inc
+name: Work to Ride
 aka: []
 leads:
 - irs_bmf:232717148
 ein: '232717148'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A free horsemanship program for under-resourced young people in Philadelphia, based at the Chamounix
+  Equestrian Center in Fairmount Park. It runs a summer camp and one-day farm and horse programs for kids.
+what_you_do: Kids learn horsemanship and equine sports; volunteers help with programs at the stables.
+kind: program
+categories:
+- animals
+interests:
+- horses_riding
+- youth_coaching
+motives:
+- values
+- social
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+- help_teach
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 7
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Summer camp for kids 7 to 13; other programs run on a schedule the group announces
   days: []
-  times: []
-  recurring: null
-  season: null
+  times:
+  - daytime
+  recurring: true
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: 98 Chamounix Dr
+- label: Chamounix Equestrian Center, Fairmount Park
+  address: null
   neighborhood: null
-  planning_district: west_park
-  zip: '19131'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: The group calls its riding free for under-resourced youth; camp scholarships are available
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +67,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Email wtr@worktoride.net or call (215) 877-4419; volunteers sign up through the volunteer form
+    (volunteers must be over 14)
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Public contact details and a volunteer form are listed; the group's page does not describe a
+    join process for youth
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://worktoride.net/
+  email: wtr@worktoride.net
+  phone: (215) 877-4419
   contact_name: Lezlie a Hiner
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://worktoride.net/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +97,18 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://worktoride.net/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - audience
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,10 +5,10 @@ leads:
 - irs_bmf:232284089
 - manual_seeds:schuylkill-navy-philadelphia-girls-rowing-club
 ein: '232284089'
-summary: A Schuylkill Navy rowing club with an adult rowing program, a member area and a regatta page
-  on its site.
-what_you_do: Adults can take the club's rowing program. New people start from the How To Join page, which
-  we could not read.
+summary: A women's rowing club on Boathouse Row that trains adult novices in a yearly program and pairs
+  each new rower with a mentor.
+what_you_do: Learn to row on machines and then on the river, pass a skills and safety test, and help with
+  the club's main fundraiser, the Braxton Regatta.
 kind: club
 categories:
 - water-rowing
@@ -18,41 +18,47 @@ motives:
 - social
 - enhancement
 formats:
+- learn_skill
 - team_play
 roles:
 - hands_on
-crowd: []
+- organize
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: A yearly novice training program. An information session for applicants is held once a year in
+    late April. Class dates are not listed.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: spring
 locations:
-- label: Mailing address (IRS)
-  address: 14 Boathouse Row Kelly Drive
+- label: 'Club boathouse, #14 Kelly Drive'
+  address: 14 Kelly Drive
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: Not shown on the page
-commitment: null
+  level: paid
+  text: 'The adult novice program costs $950 in total: $600 in dues and a $350 initiation fee, due on
+    the first day of training.'
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -66,16 +72,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the How To Join page on the club's website.
+  how: Send a letter or email to pgrcmembers14@gmail.com saying why you want to join and what rowing experience
+    you have. Applicants may be invited to the spring information session.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: A How To Join page exists, but the steps and cost were not visible to us.
+  basis: 'Applicants must apply, may be invited to a session, and pay a fixed fee. Physical requirements
+    apply: lift and carry a boat, and be able to swim.'
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.philadelphiagirlsrowingclub.org/
-  email: null
+  website: https://www.philadelphiagirlsrowingclub.org
+  email: pgrcmembers14@gmail.com
   phone: null
   contact_name: Carolyn D Commons
   social: []
@@ -103,6 +111,16 @@ sources:
   - first_step
   - contacts
   - status
+- url: https://www.philadelphiagirlsrowingclub.org/membership/how-to-join
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - audience
+  - contacts
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

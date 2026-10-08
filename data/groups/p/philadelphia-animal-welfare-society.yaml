@@ -1,21 +1,34 @@
 id: philadelphia-animal-welfare-society
-name: Philadelphia Animal Welfare Society
-aka: []
+name: PAWS (Philadelphia Animal Welfare Society)
+aka:
+- Philadelphia Animal Welfare Society
 leads:
 - irs_bmf:263862631
 ein: '263862631'
-summary: null
-what_you_do: null
+summary: A Philadelphia animal rescue with an Old City adoption center and two spay and neuter clinics.
+  Volunteers can help at the shelter, and people can foster animals while they wait for homes.
+what_you_do: Help care for animals at the adoption center, and open your home to foster kittens or other
+  animals until they are adopted.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+interests:
+- shelter_volunteering
+- animal_fostering
+motives:
+- values
+- social
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+- help_teach
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +37,45 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Volunteer shifts and foster placements run through the year; check the volunteer page for current
+    openings
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 100 N 2nd St
+- label: Old City Adoption Center
+  address: 100 N. 2nd Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19106'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Grays Ferry Spay/Neuter and Wellness Clinic
+  address: 2900 Grays Ferry Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19146'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Northeast Spay/Neuter and Wellness Clinic
+  address: 1810 Grant Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19115'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Volunteering and fostering are unpaid; the group asks for donations
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +89,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the Become a Volunteer page or email the foster team to start a foster application
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site has a plain volunteer page and a foster page that explain how to start
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://phillypaws.org/
+  email: foster@phillypaws.org
+  phone: 215-238-9901
   contact_name: Paws
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillypaws.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +114,16 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillypaws.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+  - status
+  - first_step
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

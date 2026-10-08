@@ -5,18 +5,30 @@ leads:
 - irs_990n:463515556
 - irs_bmf:463515556
 ein: '463515556'
-summary: null
-what_you_do: null
+summary: A nonprofit riding club in North Philadelphia that teaches young people to ride and care for
+  horses, with life skills and school support built in. Riding is free for kids and families.
+what_you_do: Learn to ride, groom and care for horses, and take part in club life that centers on school
+  and goals.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+interests:
+- horses_riding
+motives:
+- values
+- social
+- enhancement
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +37,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Riding and stable work happen on a regular weekly schedule set by the club
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 2607-11 West Fletcher Street
+- label: Strawberry Mansion area, North Philadelphia
+  address: null
   neighborhood: null
-  planning_district: north
-  zip: '19132'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 2607 West Fletcher Street
-  neighborhood: null
-  planning_district: north
-  zip: '19132'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Riding is free for kids and families
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -64,26 +67,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill out the member request form on the group's site
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Open to the public through a member request form, and riding is free; the site does not state
+    an age minimum
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: Fletcher Street Urban Riding Club
+  website: https://fsurc.com/
   email: null
   phone: null
   contact_name: Fletcher Street Urban Riding Club
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-07
+sign_of_life_url: https://www.cbsnews.com/amp/news/fletcher-street-urban-riding-club-inspires-kids-philadelphia
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +104,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.cbsnews.com/amp/news/fletcher-street-urban-riding-club-inspires-kids-philadelphia
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://fsurc.com/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,18 +5,27 @@ leads:
 - irs_990n:232721096
 - irs_bmf:232721096
 ein: '232721096'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A photography club founded in 1862 that shows member work in online galleries and holds a yearly
+  salon. Joining is by paid membership.
+what_you_do: Join or renew your membership, post your photographs in the member galleries, and go to club
+  events.
+kind: club
+categories:
+- arts-crafts
+interests:
+- photography
+motives:
+- social
+- enhancement
+formats:
+- side_by_side
+roles:
+- create
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,11 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Member galleries show 2025 and 2026 images and a 2025 salon. The meeting and events pages are
+    linked but did not show dates in the fetched text.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1319 Pine St
@@ -52,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Membership requires paid dues, and the amounts are not shown on the pages fetched.
 commitment: null
 group_size: null
 access:
@@ -67,23 +77,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the join or renew link on the site to apply for membership
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining needs dues and an application, and the meeting schedule was not visible before you join.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://phillyphotosociety.com/
   email: null
   phone: null
   contact_name: Eileen Eckstein
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://phillyphotosociety.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +109,17 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillyphotosociety.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - first_step
+  - status
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
