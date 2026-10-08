@@ -1,26 +1,25 @@
 id: mendelssohn-club-of-philadelphia
-name: Mendelssohn Chorus of Philadelphia
+name: Mendelssohn Choir of Philadelphia
 aka:
 - Mendelssohn Club of Philadelphia
+- Mendelssohn Chorus of Philadelphia
 leads:
 - cultural_fund:mendelssohn-club-of-philadelphia
 - irs_bmf:237121950
 ein: '237121950'
-summary: A Philadelphia choral group founded in 1874. It performs concerts, commissions and premieres
-  new choral works, and holds auditions for singers.
-what_you_do: Audition to join the chorus (the Join Us page lists auditions), apply for the conducting
-  apprenticeship or an internship, or buy tickets to a concert.
+summary: A Philadelphia choir founded in 1874 that gives concerts each season. New singers join by audition
+  and pay a season fee, and the site has an interest form for future auditions.
+what_you_do: Fill out the audition interest form to be considered for a future audition. Singers who are
+  accepted rehearse weekly and pay a season fee.
 kind: nonprofit
 categories:
 - music
 interests:
 - choir_singing
 motives:
-- enhancement
 - social
 formats:
 - perform_make_together
-- one_off_event
 roles:
 - create
 crowd: []
@@ -35,15 +34,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The 2026 to 2027 season opens with Ecstasy / Grief on October 24, 2026, at 4 pm (pre-concert talk
-    at 3:30 pm) at The Church of the Holy Trinity.
-  days: []
-  times: []
+  text: Weekly rehearsals on Wednesday evenings from 7:30 to 10 pm at Settlement Music School, 416 Queen
+    Street. Concerts are listed by date, including one on Oct 24, 2026.
+  days:
+  - wed
+  times:
+  - evening
   recurring: true
   season: null
 locations:
-- label: Chorus office (Space 609)
-  address: 1901 S 9th Street, Space 609
+- label: 'Rehearsals: Settlement Music School'
+  address: 416 Queen Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: 'Concert venue: Church of the Holy Trinity'
+  address: 1904 Walnut Street
+  neighborhood: null
+  planning_district: null
+  zip: '19103'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Office
+  address: 1901 S. 9th Street, Space 609
   neighborhood: null
   planning_district: null
   zip: '19148'
@@ -54,8 +73,8 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Season opener tickets are $15 to $45. Singer fees are not listed on the homepage.
-commitment: null
+  text: Singers pay a season fee, with payment plans and scholarships. Concert tickets are $15 to $45.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -69,24 +88,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the Join Us page for audition details, or buy a ticket to the October 24, 2026 season opener
-    at 4 pm.
-  drop_in: null
+  how: Fill out the audition interest form on the Join Us page
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Joining the chorus needs an audition. Attending a concert is open to anyone with a ticket.
+  basis: Singers must audition and pay a season fee, and the 2026 to 2027 auditions are closed on the
+    page.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: http://www.mcchorus.org
+  website: https://www.mcchorus.org
   email: info@mcchorus.org
-  phone: (267) 494-9950
+  phone: 267-494-9950
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: http://www.mcchorus.org
+sign_of_life_url: https://www.mcchorus.org
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=7
   seen: '2026-10-04'
@@ -111,6 +130,27 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+- url: https://www.mcchorus.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - locations
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://www.mcchorus.org/join-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - commitment
+  - requirements
+- url: https://www.buildingbok.com/directory
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
 confidence: high
 last_checked: '2026-10-08'

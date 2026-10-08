@@ -31,16 +31,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Recurring weekly rides on a published ride calendar at all speeds. Monthly club meeting on the
-    second Wednesday at 6:30 pm, unless noted otherwise.
+  text: Rides run on a published ride calendar on most days of the week, at all speeds. Sunday rides leave
+    at 12 noon from the Azalea Garden entrance behind the Art Museum. The club meets on the second Wednesday
+    of the month at 6:30 pm, unless noted otherwise.
   days:
+  - mon
+  - tue
   - wed
+  - thu
+  - fri
+  - sat
+  - sun
   times:
+  - morning
+  - daytime
   - evening
   recurring: true
   season: null
 locations:
-- label: Roxborough Memorial Hospital (monthly club meeting)
+- label: Roxborough Memorial Hospital, ground floor conference room (monthly club meeting)
   address: 5800 Ridge Ave
   neighborhood: null
   planning_district: null
@@ -52,7 +61,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Group rides are free. Membership dues are not stated.
+  text: Group rides are free. Club membership is $20 a year; student membership is $10 a year.
 commitment: null
 group_size: null
 access:
@@ -64,17 +73,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Helmet (required), a bike in working order, a flat repair kit, a frame pump, a water bottle, and
+    some ID.
 first_step:
-  how: Find a ride on the ride calendar and show up. The club says everyone is welcome. Join the club
-    through its Join BCP link.
+  how: Go to the Sunday noon Sunny Sunday D ride at the Azalea Garden formal entrance, behind the Art
+    Museum. The club calls it a casual ride for people new to group riding. Non-members can ride, and
+    you can join the club later through its Join BCP link.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says everyone is welcome to rides and gives a clear link to join the club.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 5
+  basis: The club runs a beginner class on the second Sunday of the month (March to October) and a casual
+    introductory Sunday ride, and it says non-members are welcome on rides.
+  what_to_expect: Rides are grouped by speed, and the club tells newcomers to start a level below what
+    they expect. Listed times are departure times, so arrive 10 to 15 minutes early. A volunteer ride
+    leader picks the route, and the helmet rule applies on club rides.
+  first_visit_tips:
+  - Wear a helmet. The club requires one.
+  - Bring a flat repair kit, a frame pump, water, and ID.
+  - Arrive 10 to 15 minutes before departure.
+  - Check the ride's meeting spot on the calendar, since spots vary by ride.
 contacts:
   website: https://phillybikeclub.org
   email: null
@@ -82,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://phillybikeclub.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillybikeclub.org/bcpdo/ride/calendar
 sources:
 - url: https://phillybikeclub.org/newbcp
   seen: '2026-10-08'
@@ -95,8 +113,30 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://phillybikeclub.org/bcpdo/ride/class
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - schedule
+- url: https://phillybikeclub.org/bcpdo/register
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://phillybikeclub.org/bcpdo/ride/calendarWeekly
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://phillybikeclub.org/bcpdo/ride/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

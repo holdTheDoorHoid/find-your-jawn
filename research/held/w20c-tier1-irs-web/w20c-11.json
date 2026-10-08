@@ -1,0 +1,149 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-11",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 18,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.villageontheridge.org",
+   "status": 403,
+   "note": "Fetch returned HTTP 403 Forbidden. Not retried or worked around."
+  }
+ ],
+ "notes": "15 groups in batch. Searches: 2 of 2 used (Giving Hope Foundation International, Louise Legacy Lives); both found no matching group page, so neither has a verified site. Fetches: 18 used, budget not exhausted. Fetch errors: Village on the Ridge returned 403 (blocked, listed above). Japanese Assn of Greater Phila has a website that does not resolve (DNS error); no search was left to find its current site. W.B. Saul was published despite the booster-club rule because it is a school parent association with a public meeting and a membership form; flagged in its notes for review. Three publish records have no summary and are held back by design (Village on the Ridge, Giving Hope Foundation International, Japanese Association of Greater Philadelphia). Dormant record: God's Army International Prayer Ministries. Not-a-group: Industrial University of Africa. Out of area: Louise Legacy Lives (conflicting addresses, flagged). Private hide: International Helping Hands Ministries (placeholder site only).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:990569995",
+     "irs_bmf:990569995"
+    ],
+    "group_id": "village-on-the-ridge",
+    "ein": "990569995"
+   },
+   "verdict": "publish",
+   "name": "Village on the Ridge",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the IRS filing (www.villageontheridge.org) returned HTTP 403 Forbidden to the fetch tool. The page could not be read. It was not retried or worked around. No summary, categories or interests were written, so this record is held back. The IRS filing gives a Philadelphia zip (19128). Needs a manual check from a browser or a search by name.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:884116692",
+     "irs_bmf:884116692"
+    ],
+    "group_id": "giving-hope-foundation-international",
+    "ein": "884116692"
+   },
+   "verdict": "publish",
+   "name": "Giving Hope Foundation International",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No usable website. The IRS filing's website field reads as a service description ('Service provider of behavioral and home care services'), which is not a web address. The one search for this name found no page for a Philadelphia group with this name. The closest matches were other Giving Hope and Hope groups in Maryland, York and Philadelphia, none confirmed as this one. The filing's wording suggests a home care business rather than a community group, so the reviewer may move it to not_a_group. No summary, categories or interests written, so this record is held back. IRS address is on South 63rd Street, zip 19142.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863875692",
+     "irs_bmf:863875692"
+    ],
+    "group_id": "industrial-university-of-africa-inc",
+    "ein": "863875692",
+    "website": "https://www.universityafrica.org"
+   },
+   "verdict": "not_a_group",
+   "name": "Industrial University of Africa",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Sells paid distance courses, for example $15 to $45 per course and $15 per credit hour for an MBA. The site is c/o MI&I Partners in Washington, DC. No Philadelphia program or community program is listed. The IRS filing lists a Philadelphia P.O. box. This is a business, so not_a_group. It could also be out_of_area. Not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800201126",
+     "irs_bmf:800201126"
+    ],
+    "group_id": "international-helping-hands-ministries",
+    "ein": "800201126",
+    "website": "https://www.internationalhelpinghands.com"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "International Helping Hands Ministries",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The site shows only the words 'This site is under development.' It has no programs, dates, contact details or way to join. Hidden as private because there is no public way in. Re-check later. If the group launches public programs, run tier 1 again.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232522550",
+     "irs_bmf:232522550"
+    ],
+    "group_id": "japanese-assn-of-greater-phila-inc",
+    "ein": "232522550"
+   },
+   "verdict": "publish",
+   "name": "Japanese Association of Greater Philadelphia",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS filing (WWW.JAGPHILLY.COM) does not resolve (DNS error), so no page could be read. The search budget was spent on other groups, so no search was run for this one. A manual search by name is needed. The name suggests a Japanese heritage association, which is not verified. No summary, categories or interests written, so this record is held back. Legal name Japanese Assn of Greater Phila Inc.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:334082733",
+     "irs_bmf:334082733"
+    ],
+    "group_id": "louise-legacy-lives",
+    "ein": "334082733",
+    "website": "https://louiselegacylives.org"
+   },
+   "verdict": "out_of_area",
+   "name": "Louise Legacy Lives",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The IRS website text had a space in it ('LouiseLegacy Lives.org'). The same name without the space loaded as louiselegacylives.org. The site lists a P.O. Box in Ardmore, PA, describes seniors in home care facilities, and names no Philadelphia service area. The IRS filing lists a Philadelphia address, so the two conflict. Marked out_of_area. Reviewer may change it to publish if Philadelphia service is confirmed. The one search for this name found nothing relevant. The site's phone and email differ from its footer, so none recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

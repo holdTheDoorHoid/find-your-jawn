@@ -6,9 +6,11 @@ leads:
 ein: '231352034'
 summary: A mentoring agency for Philadelphia and six nearby counties in Pennsylvania and New Jersey. Adult
   volunteers, called Bigs, spend regular time with one child through a one-to-one mentoring program.
-what_you_do: 'Bigs take part in one-to-one mentoring through one of several programs: community-based
-  mentoring, site-based mentoring, Beyond School Walls, an LGBTQ+ program, or POWER Up. A visit lasts
-  about two hours, at least twice a month. Bigs must be 21 or older.'
+what_you_do: Bigs take part in one-to-one mentoring through one of several programs. Community-based mentoring
+  means outings with a child who is picked up at home. Site-based mentoring happens at a site. Beyond
+  School Walls is one-on-one time during the school day with mentors from partner companies. The LGBTQ+
+  programs include school groups and Rainbow Bigs. POWER Up is staff-led mentoring in partner schools.
+  A visit lasts about two hours, at least twice a month. Bigs must be 21 or older.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -35,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Visits last about two hours, at least twice a month, for a commitment of a year or more. The site
-    gives both 18 months and one year, so ask for the exact term.
+  text: Visits last about two hours, at least twice a month, for a term of at least one year. The site
+    also mentions 18 months, so ask for the exact term.
   days: []
   times: []
   recurring: true
@@ -78,15 +80,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the short inquiry form on the Be a Big page, then book the virtual interview with a staff
-    member.
+  how: Fill in the short interest form on the Be a Big page, then book the virtual interview with a staff
+    member. The application and background checks come after that.
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The steps are clear (inquiry, virtual interview, application with background checks, then a match),
-    but a person cannot see the program before the interview and application.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The steps are listed clearly, but a person must do an interview, an application and background
+    checks before they can see the program up close.
+  what_to_expect: Your first contact is a short interest form and a virtual interview with a staff member.
+    After the application and background checks, you are matched with a Little, a child aged 7 and up,
+    and begin regular outings of about two hours at least twice a month.
+  first_visit_tips:
+  - If you live outside Philadelphia city, you need a car.
+  - The Philadelphia office is on the 5th floor at 100 North 20th Street.
+  - Call (215) 790-9200 with questions before you fill in the form.
 contacts:
   website: https://independencebigs.org
   email: null
@@ -94,9 +101,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://independencebigs.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://independencebigs.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -122,7 +129,18 @@ sources:
   - first_step
   - requirements.background_check
   - summary
-research_tier: 1
+  - what_to_expect
+  - contacts.phone
+- url: https://independencebigs.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://independencebigs.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,35 +1,55 @@
 id: unorthodox-therapy-inc
-name: Unorthodox Therapy Inc
+name: Unorthodox Therapy
 aka: []
 leads:
 - irs_990n:882435236
 - irs_bmf:882435236
 ein: '882435236'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that offers women affordable, non-clinical support through monthly peer
+  groups for mothers, married women, singles, single mothers, and parents of autistic children. Some groups
+  meet online and some in person.
+what_you_do: Pick the monthly group that fits your life stage, such as motherhood or singles, and sign
+  up through its register link to talk with other women in a supportive circle.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- support-recovery
+- social-meetups
+interests:
+- mental_health_support
+- parenting_support
+- conversation_circles
+motives:
+- values
+- social
+formats:
+- conversation
+roles:
+- figure_out
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
-  text: null
-  days: []
+  text: 'Monthly groups on set days: Motherhood on the first Monday, Marriage on the second Tuesday, Singles
+    on the third Wednesday, Single Mama on the fourth Thursday, and ASD Parenting on the fifth Friday.
+    The dates on the site are listed inconsistently.'
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 701 E Cathedral Rd Ste 45
@@ -40,11 +60,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Most events are $25 or less. Some free healing sessions are offered, capped at 10 people.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +78,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Pick a group on the community page and use its Register link, which goes to the scheduling page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Each group has a published sign up page and the groups are open to women and parents.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.unorthodoxtherapy.org
-  email: null
+  website: https://www.unorthodoxtherapy.org
+  email: info@unorthodoxtherapy.org
   phone: null
   contact_name: MonyChann McCarty
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.unorthodoxtherapy.org/community-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +110,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.unorthodoxtherapy.org/community-1
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://www.unorthodoxtherapy.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,39 +1,54 @@
 id: association-of-islamic-charitable-projects
-name: Association of Islamic Charitable Projects
-aka: []
+name: Association of Islamic Charitable Projects (AICP)
+aka:
+- Association of Islamic Charitable Projects
 leads:
 - irs_bmf:232628749
 ein: '232628749'
-summary: null
-what_you_do: null
-kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A nonprofit at 4431 Walnut Street that runs TIES Islamic schools, full time on weekdays and part
+  time on weekends, and publishes free Islamic articles and audio.
+what_you_do: Read the free articles and audio, look into the weekday full time or weekend part time schools,
+  or donate. The site does not list volunteer programs.
+kind: nonprofit
+categories:
+- faith-community
+- kids-youth-mentoring
+interests:
+- scripture_study
+- faith_youth_programs
+motives:
+- understanding
+- values
+formats:
+- learn_skill
+roles:
+- figure_out
+crowd:
+- kids
+- teens
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: muslim
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekday full time and weekend part time schools. Days and times are on separate school pages that
+    were not read. Dated events on the site have no years.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: AICP
   address: 4431 Walnut St
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
@@ -42,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the homepage
 commitment: null
 group_size: null
 access:
@@ -57,23 +72,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-387-8888 or read the TIES contacts page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site lists schools but not enrollment steps, dates or costs.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: http://www.aicp.org/
+  email: info@aicp.org
+  phone: 215-387-8888
   contact_name: Riad Nachef
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.aicp.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +97,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.aicp.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - status
+  - schedule
+- url: https://pa.cair.com/directory/mosques/eastern/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - lead
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

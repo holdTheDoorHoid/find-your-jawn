@@ -5,45 +5,52 @@ leads:
 - irs_990n:232052455
 - irs_bmf:232052455
 ein: '232052455'
-summary: null
-what_you_do: null
+summary: A United Methodist church in Bridesburg with a Tuesday food pantry for families in the 19137
+  and 19134 ZIP codes and a music ministry.
+what_you_do: Come to the Tuesday pantry during its hours, or call on a Tuesday morning to make an appointment.
+  The site has a schedule page for worship times.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+- hunger-housing-basic-needs
+interests:
+- food_pantry
+- worship_music
+motives:
+- values
+- social
+formats:
+- side_by_side
+- conversation
+roles:
+- hands_on
+crowd:
+- all_ages
+- families
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Food pantry on Tuesdays, 11 am to 2 pm. Register by calling on Tuesday morning.
+  days:
+  - tue
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 2717 Kirkbride St
+- label: Food pantry
+  address: '2717 Kirkbride Street, #19'
   neighborhood: null
-  planning_district: river_wards
-  zip: '19137'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 2717 Kirkbride Street
-  neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19137'
   lat: null
   lng: null
@@ -53,7 +60,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +74,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Call 215-288-7505 on a Tuesday morning to make an appointment, then come to the pantry during its
+    hours
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site says everyone is welcome and gives a phone number and a set morning to register
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://bridesburgmethodist.com
   email: null
-  phone: null
+  phone: 215-288-7505
   contact_name: Anthony Velazquez
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://bridesburgmethodist.com/?page_id=39
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +107,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://bridesburgmethodist.com/?page_id=39
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts.phone
+  - status
+- url: https://www.epaumc.org/food-ministry-map/
+  seen: '2026-10-08'
+  fields:
+  - lead
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

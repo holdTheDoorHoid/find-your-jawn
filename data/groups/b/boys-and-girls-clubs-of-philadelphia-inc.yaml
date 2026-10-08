@@ -7,12 +7,16 @@ ein: '231966756'
 summary: A youth club organization in Philadelphia neighborhoods, offering preschool, after-school and
   teen programs at clubhouses such as Bridesburg, Northeast Frankford, Germantown and Wissahickon.
 what_you_do: Children take part in after-school, preschool and teen activities at a neighborhood clubhouse.
-  The homepage does not say how a child signs up, what membership costs, or how adults volunteer.
+  Programs include Kids Cafe meals, literacy, STEM, sports, and arts. Adults and groups who want to volunteer
+  email the office with their group size, their interest, and the dates they can help.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
+- arts-crafts
 interests:
 - after_school_camps
+- painting_drawing
+- photography
 motives:
 - values
 - social
@@ -33,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: After-school, preschool and teen programs at neighborhood clubhouses. The homepage does not give
-    days or hours.
+  text: After-school, preschool and teen programs run at neighborhood clubhouses. Kids Cafe serves a supper
+    and a snack daily at four clubs. Days and hours for each club are not published, so call the club.
   days: []
   times: []
   recurring: true
@@ -50,37 +54,64 @@ locations:
   in_city: true
   transit: null
 - label: Bridesburg Club
-  address: null
+  address: 2901 Bridge Street, Philadelphia, PA 19137
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19137'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Northeast Frankford Club
-  address: null
+- label: Northeast Frankford Club (Kids Cafe site)
+  address: 1709 Kinsey Street, Philadelphia, PA 19124
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19124'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Ralph J Roberts Club (Germantown)
-  address: null
+- label: Police Officer Lauretha Vaird Club
+  address: 4800 Whitaker Avenue, Philadelphia, PA 19124
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19124'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Wissahickon Club
-  address: null
+- label: Shane Victorino Nicetown Club
+  address: 4001 N Clarissa Street, Philadelphia, PA 19140
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Wayne Avenue Club (Kids Cafe site)
+  address: 4223 Wayne Avenue, Philadelphia, PA 19140
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Wissahickon Club (Kids Cafe site)
+  address: 328 W Coulter Street, Philadelphia, PA 19144
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Germantown Club (Kids Cafe site)
+  address: 25 West Penn Street, Philadelphia, PA 19144
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
   lat: null
   lng: null
   in_city: true
@@ -97,7 +128,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The homepage does not say what membership costs.
+  text: The site does not state a membership fee or say whether membership is free.
 commitment: null
 group_size: null
 access:
@@ -112,15 +143,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Call the office at (215) 735-8818 or email admin@bgcphila.org to ask which club is nearest and
-    how a child signs up.
+  how: Find the club nearest you on the club locations page and call its phone number to ask how a child
+    signs up.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The homepage gives no sign-up steps, so the only way in that is published is a phone call or
-    an email to the office.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists clubs, phone numbers, and a volunteer email, but gives no sign-up steps, fees,
+    or program ages, so the way in is not published.
+  what_to_expect: The site does not describe a first visit. Arts programs such as ImageMakers and the
+    National Fine Arts Exhibit are for Club members ages 6 to 18 and run year-round, and Kids Cafe serves
+    youth ages 5 to 18 who are low-income, at risk, or food insecure.
+  first_visit_tips:
+  - Call the club nearest you before you go, since the site lists no hours for the clubs.
+  - Ask what membership costs and what a child needs to bring to join.
+  - Ask whether your child must be a Club member to take part in an arts program.
 contacts:
   website: https://www.bgcphila.org
   email: admin@bgcphila.org
@@ -149,7 +185,31 @@ sources:
   - status
   - last_sign_of_life
   - requirements.kids_ok
-research_tier: 1
+- url: https://www.bgcphila.org/club-locations/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_step
+- url: https://www.bgcphila.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - contacts
+- url: https://bgcphila.org/kids-cafe/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - schedule
+- url: https://bgcphila.org/arts-and-culture-programs-youth/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

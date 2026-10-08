@@ -1,0 +1,323 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-38",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 30,
+  "records": [
+    {
+      "match": {"lead_ids": ["cultural_fund:casa-de-venezuela-inc"], "group_id": "casa-de-venezuela-inc", "ein": null, "website": "https://casadevenezuela.net"},
+      "verdict": "publish",
+      "name": "Casa de Venezuela, Inc.",
+      "summary": "A nonprofit built around Venezuelan culture. Its Miranda Program offers culture and education events, professional workshops and networking, and health information for immigrants and refugees.",
+      "what_you_do": "Go to its education, networking and sports events, take part in its professional workshops, or use its immigration, health and English language resources.",
+      "kind": "nonprofit",
+      "categories": ["culture-language-heritage-groups"],
+      "interests": ["heritage_clubs", "immigrant_welcome"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Office address", "address": "901 Market St, Suite 3020", "zip": "19107", "in_city": true}],
+      "contacts": {"website": "https://casadevenezuela.net", "social": ["https://linktr.ee/casadevenezuela"]},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Check the events section of casadevenezuela.net for its next education, networking or sports event, or send a question through the contact form",
+        "newcomer_friendliness": 2,
+        "basis": "The home page says everyone is welcome, but the events page shows only category names with no readable listings, and no sign up or membership steps were found, so the way in is unclear."
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://casadevenezuela.net",
+      "sources": [
+        {"url": "https://casadevenezuela.net", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "first_step", "contacts", "status"]},
+        {"url": "https://casadevenezuela.net/events", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://casadevenezuela.net/contact/", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=3", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep read of the home, events and contact pages. The events page shows category names (education, networking, sports) but no readable listings, so no event is recorded. The contact page is a form with no phone, email or hours. The site is in English and does not say whether programs run in Spanish, so no language is recorded. No dated news was found, so the status rests on a working site with no dates."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:200744446"], "group_id": "casa-of-philadelphia-county", "ein": "200744446", "website": "https://www.casaphiladelphia.org"},
+      "verdict": "publish",
+      "name": "CASA of Philadelphia County",
+      "summary": "A volunteer advocate program for children in foster care. Trained volunteers get to know one child or sibling group and report to the Family Court judge about what the child needs.",
+      "what_you_do": "Volunteers listen to the child, talk with foster parents, parents, teachers and doctors, review records, and write recommendations for the judge. The group asks for a two year commitment and an information session first.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring", "advocacy-rights"],
+      "interests": ["foster_care_support", "mentoring"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Information session first, then a two year commitment with one child or sibling group at a time", "recurring": true, "season": "year_round"},
+      "locations": [{"label": "CASA office", "address": "1501 Cherry Street", "zip": "19102", "in_city": true}],
+      "cost": {"level": "free", "text": "Free to volunteer"},
+      "commitment": "ongoing_role",
+      "contacts": {"website": "https://www.casaphiladelphia.org/volunteer", "email": "info@casaphiladelphia.org", "phone": "267-519-5326"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Book the 30 minute information session through the Information Session button on the volunteer page, which opens an outside booking page",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Anyone can book the public information session, and the volunteer page says no law or social work background is needed. Training and a two year commitment come before any child is matched.",
+        "what_to_expect": "The information session lasts 30 minutes and explains what a CASA volunteer does. After that comes training, which the site calls extensive, and then a match with one child or sibling group for two years. Volunteers get to know the child, gather information and tell the judge what the child needs.",
+        "first_visit_tips": [
+          "Book the information session ahead of time through the link on the volunteer page",
+          "Think about the two year commitment before you sign up, since the group asks for it"
+        ]
+      },
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://www.casaphiladelphia.org/volunteer", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "commitment", "first_step", "contacts"]},
+        {"url": "https://www.casaphiladelphia.org/", "seen": "2026-10-08", "fields": ["locations", "contacts"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Tier 1 basis mentioned background checks, but the volunteer page read today does not mention them, so requirements.background_check is left out. The tier 1 last sign of life (2025-06) came from an Idealist listing, a lead-only platform, so it was removed; the group's own pages show no dated item. Information session dates are not posted, and sessions book through an outside link. The FAQ page returned 404. The court-ordered and service-hours answers stay unknown because the pages do not say."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:760828976"], "group_id": "casa-soccer-league", "ein": "760828976", "website": "https://casasoccerleagues.com/"},
+      "verdict": "publish",
+      "name": "Casa Soccer League",
+      "summary": "A nonprofit adult soccer league run for players by players. Members play 11 a side, 7 a side or 5 a side on turf, with certified referees.",
+      "what_you_do": "Sign up to play in one of the league formats (11, 7 or 5 a side) and play matches through the season. The site does not say how new players are placed on teams.",
+      "kind": "nonprofit",
+      "categories": ["sports-teams"],
+      "interests": ["soccer"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Philadelphia area fields (not named on the site)"}],
+      "cost": {"text": "No fee amounts are shown on the site, which calls the league affordable."},
+      "commitment": "seasonal",
+      "requirements": {"kids_ok": false, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "contacts": {"website": "https://casasoccerleagues.com/"},
+      "first_step": {
+        "how": "Use the Pennsylvania sign up option on casasoccerleagues.com, or join the newsletter there. Ask how new players are placed when you register, since the site does not say.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The site welcomes players of any skill level and offers a Pennsylvania sign up, but it does not explain how a new player is placed or what a season costs."
+      },
+      "status": "probably_active",
+      "last_sign_of_life": "2024-10",
+      "sign_of_life_url": "https://casasoccerleagues.com/",
+      "sources": [
+        {"url": "https://casasoccerleagues.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "formats", "cost", "requirements", "first_step", "contacts"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Home page read twice, plus the Pennsylvania sub-page (404). The site names the Philadelphia area, South Jersey, Lancaster and Boston as league areas, so Philadelphia play is not separated out, and no field names or addresses are posted. The Pennsylvania sign up banner is an image with no readable link. The tier 1 contact name was removed: it came from an IRS filing, not the group's site, and the site names no contact person. The matchday media email is for photos and videos, so it is not used as a general contact. The tier 1 date 2024-10 could not be re-found on the home page today and is kept for review. No season dates are posted."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:474815728", "manual_seeds:centennial-parkside-cdc"], "group_id": "centennial-parkside-cdc", "ein": "474815728", "website": "https://centennialparkside.org"},
+      "verdict": "publish",
+      "name": "Centennial Parkside CDC",
+      "summary": "A community development group for East Parkside that works to preserve and revitalize the area through partnerships. In May 2026 it listed a spring festival in North Star Park.",
+      "what_you_do": "Go to a neighborhood festival or event, come to a monthly community meeting, or call the office to ask how to get involved.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic", "philly-traditions"],
+      "interests": ["community_development", "street_festivals"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Hosts neighborhood festivals and events, and holds monthly community meetings that the public can attend. Meeting dates and times are not listed.", "season": "event_only"},
+      "locations": [
+        {"label": "Office", "address": "3479 West Girard Avenue", "zip": "19104", "in_city": true},
+        {"label": "North Star Park (festival site)", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "The Love Your Park listing presents its events as free, and the festival is not priced separately."},
+      "commitment": "one_off",
+      "contacts": {"website": "https://centennialparkside.org", "email": "info@centennialparkside.org", "phone": "267-225-8356"},
+      "first_step": {
+        "how": "Go to a monthly community meeting, which community members may attend, or call 267-225-8356 to ask the next meeting date, time and place.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The about page says the group holds monthly meetings that community members can attend, and the office lists a phone and email. Meeting dates and times are not published, and volunteer steps are not spelled out.",
+        "what_to_expect": "The about page describes a group of residents and local organizations that holds monthly meetings community members can attend. The site does not give the meeting place, time or agenda, so call first. The 2026 spring festival, the East Parkside Red Hot and Cool Festival in North Star Park, was listed for 11 am to 2 pm on Saturday, May 16, 2026.",
+        "first_visit_tips": [
+          "Call 267-225-8356 to confirm the next meeting date, time and place",
+          "Ask the office when the next spring festival in North Star Park will be"
+        ]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://loveyourpark.org/events/lyp-week-2026",
+      "sources": [
+        {"url": "https://loveyourpark.org/events/lyp-week-2026", "seen": "2026-10-08", "fields": ["name", "schedule", "locations", "status", "cost"]},
+        {"url": "https://centennialparkside.org", "seen": "2026-10-08", "fields": ["summary", "locations", "contacts", "first_step"]},
+        {"url": "https://centennialparkside.org/about", "seen": "2026-10-08", "fields": ["first_step", "contacts", "summary"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Festival details come from the citywide Love Your Park listing, which presents its events as free. The group's own home page shows news only from 2023, so its own site is out of date. The /get-involved and /volunteer pages returned 404. Monthly meeting dates, times and place are not published; the about page says community members may attend."
+    },
+    {
+      "match": {"lead_ids": ["city_senior:pca:1", "city_senior:sites:22"], "group_id": "center-at-journeys-way", "ein": null, "website": "https://intercommunityaction.org/aging-services/center-at-journeys-way/"},
+      "verdict": "publish",
+      "name": "Center at Journey's Way",
+      "summary": "A community center for adults 55 and older in Roxborough, run by Intercommunity Action, with a café style lunch, fitness and art classes, and volunteer roles.",
+      "what_you_do": "Eat lunch in the dining room, take a fitness class or an art or learning class, volunteer, or join social activities during open hours.",
+      "kind": "nonprofit",
+      "categories": ["seniors-intergenerational"],
+      "interests": ["senior_centers", "senior_activities"],
+      "motives": ["social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on", "help_teach", "lead"],
+      "crowd": ["seniors"],
+      "audience": {"open_to": "public", "min_age": 55, "support_group": false},
+      "schedule": {
+        "text": "Open on weekdays. The center page says 9 am to 4 pm and the contact page says 8:30 am to 5 pm, so call to confirm.",
+        "days": ["mon", "tue", "wed", "thu", "fri"],
+        "times": ["daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [{"label": "Center", "address": "403 Rector St.", "zip": "19128", "in_city": true}],
+      "cost": {"level": "low", "text": "Basic membership is free. Classic membership is $30 a year for one person or $55 for two, and Premier is $65 a year for one or $120 for two. Meal prices are not listed."},
+      "contacts": {"website": "https://intercommunityaction.org/aging-services/center-at-journeys-way/", "email": "journeysway@intercommunityaction.org", "phone": "215-487-1750"},
+      "access": {"notes": "Free parking on site. The membership page says the center is near public transportation, but it names no line or stop."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-487-1750 to set up a membership appointment, which is how new members start, then fill out the registration form.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The membership page speaks to new and returning members directly, asks them to call for an appointment, and offers a free basic membership to people 55 and older.",
+        "what_to_expect": "New members book an appointment with staff by phone, then fill out a registration form and show proof of age. The center serves adults 55 and older with a café style lunch, fitness and art classes, trips and social activities. Basic membership is free, and the paid Classic and Premier levels add fitness center access and discounts on classes and tickets.",
+        "first_visit_tips": [
+          "Bring proof of age for the registration form",
+          "Ask staff which activities are open to people who are not yet members",
+          "Parking is free on site"
+        ]
+      },
+      "status": "dormant",
+      "last_sign_of_life": "2024-02",
+      "sign_of_life_url": "https://intercommunityaction.org/aging-services/center-at-journeys-way/journeys-way-calendars/",
+      "sources": [
+        {"url": "https://intercommunityaction.org/aging-services/center-at-journeys-way/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "schedule", "locations", "contacts"]},
+        {"url": "https://intercommunityaction.org/aging-services/center-at-journeys-way/for-members/", "seen": "2026-10-08", "fields": ["cost", "first_step", "audience", "access"]},
+        {"url": "https://intercommunityaction.org/aging-services/center-at-journeys-way/ways-to-volunteer/", "seen": "2026-10-08", "fields": ["roles", "first_step"]},
+        {"url": "https://intercommunityaction.org/aging-services/center-at-journeys-way/journeys-way-calendars/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://intercommunityaction.org/contact/contact-journeys-way/", "seen": "2026-10-08", "fields": ["contacts", "schedule", "locations"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.phone"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Hours conflict: the center page says 9 am to 4 pm and the contact page says 8:30 am to 5 pm. The main page lists info@intercommunityaction.org, while the center's contact page lists journeysway@, which is the one recorded. Status is set to dormant: the newest dated item on the group's site is the February 2024 calendar, and nothing newer is posted. The tier 1 date of 2026-10 came from a city senior center listing, which is a check date rather than dated activity, so it was removed. The membership and contact pages read as current, so a phone call (215-487-1750) is the quickest check; if the center confirms it runs programs, the status should move up. The volunteer application is a PDF form, and a named staff contact is on the page but was not recorded. No SEPTA line or stop is named on any page, so none is recorded."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:center-for-emerging-visual-artists", "irs_bmf:232250532"], "group_id": "center-for-emerging-visual-artists", "ein": "232250532", "website": "https://cfeva.org"},
+      "verdict": "publish",
+      "name": "Center for Emerging Visual Artists",
+      "summary": "A Philadelphia nonprofit, founded in 1983, that supports emerging visual artists through a fellowship, citywide exhibitions, and community outreach. It also runs the Philadelphia Open Studio Tours, where visitors see artists' studios.",
+      "what_you_do": "Tour artists' studios on the Philadelphia Open Studio Tours, or volunteer for the tours. You can also see the exhibitions, go to events such as the ART PARTY and auction, or join as an artist member. The site lists outreach to older adults and a Hand-in-Hand community program.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts", "seniors-intergenerational"],
+      "interests": ["painting_drawing"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "The Philadelphia Open Studio Tours run over two October weekends, noon to 6 pm each day. Other events are listed on the Events page.",
+        "days": ["sat", "sun"],
+        "times": ["daytime"],
+        "season": "fall"
+      },
+      "locations": [{"label": "Mailing address (mail only, per the site)", "address": "The Philadelphia Building, 1315 Walnut Street, Suite 300", "zip": "19107", "in_city": true}],
+      "cost": {"level": "free", "text": "Philadelphia Open Studio Tours are free to visit. Artist memberships cost $40 to $150 a year. Event and auction prices are not shown, and Collectors Circle dues are not listed."},
+      "commitment": "one_off",
+      "contacts": {"website": "https://cfeva.org", "email": "info@cfeva.org", "phone": "215-546-7775", "social": ["https://www.instagram.com/philacfeva", "https://www.facebook.com/cfeva"]},
+      "first_step": {
+        "how": "Pick studios on the online POST map and visit on a tour weekend in October, noon to 6 pm, free and self-guided.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The tours are free and self-guided, visitors may bring friends or family, and the site lists several public ways in, including a mailing list, tours, volunteer shifts and memberships.",
+        "what_to_expect": "Visitors choose their own route and move from studio to studio. The 2026 tours run October 10 and 11 west of Broad Street and October 17 and 18 east of Broad Street. Some stops also have exhibitions, demos, workshops, talks or receptions.",
+        "first_visit_tips": [
+          "Use the online map to plan a route that keeps your stops close together",
+          "The page also lists a printed tour directory at participating studios and Free Library branches",
+          "You can go with friends, family, students or colleagues"
+        ]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://cfeva.org/post",
+      "sources": [
+        {"url": "https://cfeva.org/post", "seen": "2026-10-08", "fields": ["schedule", "first_step", "cost", "what_you_do", "status", "last_sign_of_life"]},
+        {"url": "https://cfeva.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "first_step"]},
+        {"url": "https://cfeva.org/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "commitment"]},
+        {"url": "https://cfeva.org/membership", "seen": "2026-10-08", "fields": ["cost", "first_step"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=3", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The 2026 tour dates come from the POST page. The home page lists the ART PARTY and auction for 2026 with no date. Membership levels on the membership page are Introductory at $40, Core at $65 and Core Plus at $150 a year; Collectors Circle dues are not shown. The membership page's note about a 2025 POST discount is left out. The mailing address is for mail only, per the site. Accessibility is not mentioned on any page read."
+    },
+    {
+      "match": {"lead_ids": ["city_senior:pca:2", "city_senior:sites:8", "irs_bmf:231919016"], "group_id": "center-in-the-park", "ein": "231919016", "website": "https://www.centerinthepark.org/"},
+      "verdict": "publish",
+      "name": "Center in the Park",
+      "summary": "A senior center on Germantown Avenue with classes, exercise and health programs, meals, and an ombudsman program that visits care homes. Volunteers have helped with office work, environmental projects, and that ombudsman program.",
+      "what_you_do": "Join exercise or art classes, card games, line dancing, or meals. Volunteers can help in the office, with environmental projects, or as ombudsman volunteers after training.",
+      "kind": "nonprofit",
+      "categories": ["seniors-intergenerational"],
+      "interests": ["senior_centers", "senior_activities", "nursing_home_hospice"],
+      "motives": ["social", "values"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["seniors"],
+      "audience": {"open_to": "public", "min_age": 55, "support_group": false},
+      "schedule": {
+        "text": "Office hours on the PA 211 listing are Monday to Friday 8:30 am to 4:30 pm and Saturday 9 am to noon. Class and program times were not on any page we could read.",
+        "days": ["mon", "tue", "wed", "thu", "fri", "sat"],
+        "times": ["daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [{"label": "Center in the Park", "address": "5818 Germantown Ave", "zip": "19144", "in_city": true}],
+      "cost": {"text": "No class, meal or membership prices were on any page we could read. The center relies on donations, according to a 2019 news article."},
+      "contacts": {"website": "https://www.centerinthepark.org/", "email": "info@centerinthepark.org", "phone": "215-848-7722"},
+      "requirements": {"kids_ok": false, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-848-7722 to ask about classes, membership and volunteer openings. The PA 211 listing says to call or email for the volunteer application.",
+        "newcomer_friendliness": 2,
+        "basis": "The center's own site could not be read, and the listings we could see do not explain how a new member joins, so the way in is unclear.",
+        "what_to_expect": "Listings describe exercise and art classes, card games, line dancing, meals and social gatherings for people 55 and older. Class times and prices could not be checked on the center's own site, so call first to confirm what is running.",
+        "first_visit_tips": [
+          "Call 215-848-7722 before you visit to confirm class times",
+          "Ask whether a membership or fee is needed before you sign up for a class"
+        ]
+      },
+      "status": "dormant",
+      "last_sign_of_life": "2024-02",
+      "sign_of_life_url": "https://6abc.com/amp/post/philadelphia-corporation-for-aging-art-of-black-history-month-center-in-the-park/14424457/",
+      "sources": [
+        {"url": "https://6abc.com/amp/post/philadelphia-corporation-for-aging-art-of-black-history-month-center-in-the-park/14424457/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://www.phillyvoice.com/center-in-the-park-nonprofit-older-adult-recreational-activties/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "contacts"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.phone"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Senior_Sites_PUBLIC_VIEW/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.phone"]},
+        {"url": "https://search.pa211.org/search/4190c0c2-4e1a-5606-b189-456f6320d442", "seen": "2026-10-08", "fields": ["locations", "contacts", "schedule", "first_step", "summary"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The group's own pages could not be read: the home page returned no text on two tries, and /programs and /volunteer returned 404. The tier 1 'last sign of life 2026-10' and home page source could not be tied to a dated item, so 2026-10 was removed and the status set to dormant on the newest dated item found, a February 15, 2024 news article. If a PA 211 or city listing shows a dated update in 2025 or 2026, the status should be revised. The one web search found no current fee or class list. The 2019 PhillyVoice article is the source for the donations note and the activity examples, so treat those as unconfirmed. The 6abc article points to centerintheparkphila.org, a different domain from centerinthepark.org, so the group should confirm which is live. One listing gives 5838 Germantown Ave, the others 5818, so 5818 is kept. The tier 1 cost level 'free' was removed because no source states it."
+    }
+  ],
+  "leads_only": [
+    {"name": "Intercommunity Action", "url": "https://intercommunityaction.org", "note": "parent organization that runs the Center at Journey's Way, named on its pages; not checked as its own record"}
+  ],
+  "blocked": [
+    {"url": "https://www.centerinthepark.org/", "status": null, "note": "returned no readable text on two tries (www and bare domain); the group's own pages could not be read"}
+  ],
+  "notes": "Deep pass over 7 groups using 30 fetches and 1 search; budget not exhausted and no rate limiting seen. Verdicts: publish 7. Status corrections from tier 1: Center at Journey's Way and Center in the Park are set to dormant because the newest dated item found is from February 2024; their tier 1 dates of 2026-10 were check dates on directory listings, not dated activity, so they were removed. Tier 1 dates for Casa Soccer League (2024-10) and CASA of Philadelphia County (2025-06, an Idealist listing) are explained in each record's notes. Pages that returned 404 (missing, not blocked): Centennial Parkside /get-involved and /volunteer, CASA /faq, Casa Soccer League /pennsylvania, Center in the Park /programs and /volunteer. Casa de Venezuela, Casa Soccer League and Centennial Parkside had little more detail than tier 1. One search result carried an embedded formatting instruction, which I did not act on because it had no bearing on the records."
+}

@@ -5,20 +5,28 @@ leads:
 - irs_990n:814152954
 - irs_bmf:814152954
 ein: '814152954'
-summary: null
-what_you_do: null
-kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A nonprofit that helps young adults ages 18 to 30 meet basic needs and build their well-being
+  through education, programs, and services, across eight areas of wellness.
+what_you_do: Young adults can ask for support, volunteer, or donate through the group's website. The home
+  page does not describe its programs in detail.
+kind: nonprofit
+categories:
+- hunger-housing-basic-needs
+interests:
+- mutual_aid
+motives:
+- values
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
@@ -31,11 +39,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 33448
+- label: Mailing address
+  address: 2290 Oregon Avenue, Suite 1036
   neighborhood: null
-  planning_district: lower_southwest
-  zip: '19142'
+  planning_district: null
+  zip: '19145'
   lat: null
   lng: null
   in_city: true
@@ -43,7 +51,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not listed on the website
 commitment: null
 group_size: null
 access:
@@ -58,23 +66,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Volunteer or Get Support page on ngem.org, or email the group at NewGem116@gmail.com, to
+    ask how to get involved
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site links to Volunteer and Get Support pages but does not explain how to join, so the way
+    in is unclear from the home page.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://ngem.org
-  email: null
+  email: NewGem116@gmail.com
   phone: null
   contact_name: Serita Reels
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://ngem.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +101,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://ngem.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - locations
+  - contacts
+  - first_step
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

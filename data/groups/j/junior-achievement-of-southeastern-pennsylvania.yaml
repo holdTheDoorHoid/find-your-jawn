@@ -4,18 +4,28 @@ aka: []
 leads:
 - irs_bmf:231386172
 ein: '231386172'
-summary: null
-what_you_do: null
+summary: A nonprofit that prepares young people for work and money decisions. Adult volunteers help run
+  JA Finance Park, a money simulation in which students play a persona, and the group needs about 20 volunteers
+  a day.
+what_you_do: Volunteer in person or online to guide students through JA Finance Park. The fall 2026 volunteer
+  campaign is listed on the site.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- careers-skills-professional
+- kids-youth-mentoring
+interests:
+- money_skills
+- tutoring
+motives:
+- values
+- career
 formats: []
-roles: []
+roles:
+- help_teach
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +34,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: JA Finance Park volunteer days are listed for fall 2026. The exact dates are not shown on the
+    page.
   days: []
   times: []
   recurring: null
-  season: null
+  season: fall
 locations:
-- label: Mailing address (IRS)
-  address: 1501 Cherry St
+- label: Office, Friends Center (listed as a tenant)
+  address: 1501 Cherry Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19102'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: The page names no fee for volunteers.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the Volunteers page on the site to sign up for a Finance Park day
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The volunteer page explains the role and gives a clear sign-up path, but the site does not say
+    what training is needed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://southeasternpa.ja.org/
   email: null
-  phone: null
+  phone: 267-519-5307
   contact_name: The Organization
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://southeasternpa.ja.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +94,27 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://southeasternpa.ja.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - contacts
+- url: https://southeasternpa.ja.org/volunteer/index
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - commitment
+  - online_ok
+  - first_step
+- url: https://friendscentercorp.org/about/directory-of-tenant-organizations/
+  seen: '2026-10-08'
+  fields:
+  - lead
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

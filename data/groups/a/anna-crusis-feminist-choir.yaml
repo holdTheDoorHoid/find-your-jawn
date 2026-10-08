@@ -42,7 +42,7 @@ schedule:
   days: []
   times: []
   recurring: true
-  season: null
+  season: event_only
 locations:
 - label: Center City, Philadelphia (auditions)
   address: null
@@ -72,7 +72,7 @@ requirements:
   gear: null
 first_step:
   how: Sign up for the annacrusis.org newsletter to get the next audition details, then apply for an audition.
-  drop_in: null
+  drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
   basis: Joining means an audition, and the next round is not posted yet. The site says audition details
@@ -144,6 +144,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - what_you_do
+- url: https://www.annacrusis.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://friendscentercorp.org/about/directory-of-tenant-organizations/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

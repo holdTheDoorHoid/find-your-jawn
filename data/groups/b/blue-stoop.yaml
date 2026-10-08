@@ -20,7 +20,8 @@ formats:
 - learn_skill
 roles:
 - create
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -32,15 +33,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall 2026 classes are on the classes page. Free events are on the events page. The home page shows
-    no set weekly schedule.
+  text: Free Thursdays on the Stoop sessions run on Zoom from 4 to 5 pm, listed through November 2026.
+    Creative Coworking meets on Zoom about every other Wednesday from 3:30 to 5:30 pm. Fall classes are
+    listed on the classes page.
   days:
   - wed
   - thu
   times:
   - daytime
   - evening
-  recurring: false
+  recurring: true
   season: fall
 locations:
 - label: Classes in Philadelphia (address not listed) and online
@@ -54,14 +56,19 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Classes are paid, with financial aid and scholarships. Class prices are not on the home page.
+  level: paid
+  text: Classes are paid. Eligible students get at least 33% off list tuition, and some low-income students
+    in the service area can apply for full scholarships. Free public events are listed on the events page,
+    and Afterpay payment plans are offered at checkout.
 commitment: seasonal
 group_size: null
 access:
-  wheelchair: unknown
-  languages: []
-  notes: null
+  wheelchair: partial
+  languages:
+  - en
+  notes: The class FAQ says classrooms and bathrooms are wheelchair accessible, but the doors have no
+    automatic openers. Zoom classes get automatic captions. Staff try to meet access needs that students
+    share at registration.
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,13 +77,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look at the fall 2026 classes or the events page, ask about financial aid, or join the email list.
-  drop_in: true
-  sign_up_needed: null
+  how: RSVP for a free Thursdays on the Stoop Zoom session listed on the events page, then read the financial
+    aid page before you register for a paid class.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public classes with a listed way to sign up, plus free events.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free public events and Zoom sessions are open to anyone who RSVPs, and the class FAQ says classes
+    suit adults interested in creative writing. The site does not say beginners are welcome.
+  what_to_expect: 'A free Thursdays on the Stoop session runs on Zoom from 4 to 5 pm, and the site asks
+    attendees to follow its online code of conduct. Creative Coworking is quiet writing time: on Zoom
+    your mic stays off during the silent work period. Paid classes typically have 7 to 15 students and
+    need at least 7 to run, and if a class cannot run you get a full refund.'
+  first_visit_tips:
+  - RSVP through the link for the session you want, since most events and Zoom sessions need one.
+  - Check the event page for each venue, because in-person venues differ in access.
+  - Eligible students get at least 33% off list tuition, so ask before you pay for a class.
 contacts:
   website: https://www.bluestoop.org
   email: info@bluestoop.org
@@ -108,6 +123,7 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - access
 - url: https://www.bluestoop.org/
   seen: '2026-10-08'
   fields:
@@ -123,8 +139,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.bluestoop.org/classes
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://www.bluestoop.org/financial-aid
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://www.bluestoop.org/faq-classes
+  seen: '2026-10-08'
+  fields:
+  - access
+  - what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

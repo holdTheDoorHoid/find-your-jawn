@@ -1,0 +1,153 @@
+{
+ "wave": "w21-tier2-deep-b",
+ "agent": "w21-35",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 26,
+ "leads_only": [
+  {
+   "name": "Fairmount Park Conservancy",
+   "url": "https://myphillypark.org",
+   "note": "Named as a partner on the Belmont Plateau Trails Alliance site. Its public site lists Belmont Plateau workdays. Not checked as a record in this run because it is a separate organization outside this batch."
+  },
+  {
+   "name": "The Discovery Center",
+   "url": null,
+   "note": "Named on the Black Spatial Relics upcoming events page as the steward of the Strawberry Mansion Reservoir space used for a 2023 lab. No web address on the page."
+  },
+  {
+   "name": "The Public Trust",
+   "url": null,
+   "note": "Named on the Black Spatial Relics pages as the fiscal sponsor of the project. No web address on the page."
+  }
+ ],
+ "blocked": [],
+ "notes": "All 7 groups in the batch are written as publish records with research_tier 2. Budget: 1 WebSearch (Belmont, the only group whose own site had no further pages) and 26 WebFetch calls of the 42 allowed for this batch. Two pages returned HTTP 404 and were not blocks: belmonttrails.org/about and independencebigs.org/faq. No pages were blocked and no rate limiting was seen. Carried-over corrections: Bicycle Club dues now $20 a year (register page); Ben Franklin newcomer rating 4; Bicycle Coalition newcomer rating 2 (application first); Black Spatial Relics categories and interests changed because the site describes performance work; Big Brothers what_you_do expanded with program details from the programs page. Status moved to active for Ben Franklin, Bicycle Club, Big Brothers and Black Spatial Relics on dated 2026 evidence on each group's own pages. Belmont status is carried over from the city listing and could not be confirmed on the group's own site. Verdict counts: publish 7.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "city_programs:become-a-block-captain",
+     "city_volunteer_pages:services-trash-recycling-city-upkeep-become-a-block-captain"
+    ],
+    "group_id": "become-a-block-captain",
+    "ein": null,
+    "website": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/"
+   },
+   "verdict": "publish",
+   "name": "Become a block captain",
+   "summary": "Any resident can step up as captain of their own block: gather neighbors' signatures on a petition, then organize cleanups of the street alongside the Philadelphia More Beautiful Committee.",
+   "what_you_do": "Captains sweep sidewalks and gutters, plant flowers and street trees, host block parties, and help neighbors keep up with trash and recycling days. They also organize block cleanups with the Philadelphia More Beautiful Committee (PMBC), which can supply tools and cleaning materials.",
+   "kind": "program",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "block_captain",
+    "clean_blocks"
+   ],
+   "motives": [
+    "values",
+    "social"
+   ],
+   "formats": [
+    "lead_organize",
+    "side_by_side"
+   ],
+   "roles": [
+    "organize",
+    "lead"
+   ],
+   "crowd": [
+    "neighbors"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Saturday clean block events run March through August, scheduled by police district. Participating blocks hold three organized cleanups in the summer.",
+    "days": [
+     "sat"
+    ],
+    "times": [],
+    "recurring": true,
+    "season": "year_round"
+   },
+   "cost": {
+    "level": "unknown",
+    "text": "The page lists no fee. PMBC provides cleanup supplies such as trash bags and street brooms."
+   },
+   "commitment": "ongoing_role",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Call PMBC at (215) 685-3971 to ask for a clean block petition, or use its online form. The petition is mailed to you. Collect signatures from 51 percent of the residents on your block, then mail the petition back to PMBC.",
+    "drop_in": false,
+    "sign_up_needed": true,
+    "newcomer_friendliness": 3,
+    "basis": "The page says any resident can be a block captain and gives a clear way in: request a petition, collect signatures, and mail it back.",
+    "what_to_expect": "The first stretch is paperwork. You get a petition in the mail, collect neighbors' signatures, and mail it back, and then a clean block officer contacts you to get started. Once the block is set up, the work is outdoors: summer cleanups with PMBC, plus reminders about trash and recycling days.",
+    "first_visit_tips": [
+     "Count households first: only one adult signature per household counts toward the 51 percent.",
+     "Clean block officers keep Monday to Saturday hours, 7:30 am to 3:30 pm, from March through October, so call then.",
+     "Ask the same number whether your block already has a captain."
+    ]
+   },
+   "contacts": {
+    "website": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/",
+    "phone": "(215) 685-3971"
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-03",
+   "sign_of_life_url": "https://www.phila.gov/programs/philadelphia-more-beautiful-committee/",
+   "sources": [
+    {
+     "url": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "first_step",
+      "contacts.phone",
+      "requirements",
+      "schedule"
+     ]
+    },
+    {
+     "url": "https://www.phila.gov/programs/philadelphia-more-beautiful-committee/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "last_sign_of_life",
+      "schedule",
+      "cost",
+      "first_visit_tips"
+     ]
+    },
+    {
+     "url": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "contacts.website",
+      "summary",
+      "audience",
+      "requirements"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "The March 2026 Block Captain Rally post on the PMBC page sets the sign of life. The page gives no 2026 cleanup dates. The phone number is PMBC's main line; the page says clean block officers have their own numbers by police district.",
+   "_held_reasons": [
+    "own_words: what_you_do shares 8 words in a row with a source: “also organize block cleanups with the philadelphia more”"
+   ]
+  }
+ ]
+}

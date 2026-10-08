@@ -1,25 +1,36 @@
 id: welcoming-center-for-new-pennsylvanians
-name: Welcoming Center for New Pennsylvanians
+name: The Welcoming Center for New Pennsylvanians
 aka: []
 leads:
 - irs_bmf:233001411
 ein: '233001411'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that helps immigrants build jobs, businesses, and English and digital
+  skills. Its programs include English and digital skills classes, work readiness tracks, business courses
+  and the Immigrant Leadership Institute, and it offers translation and interpretation help.
+what_you_do: Join an English or digital skills class, a work readiness track, a business planning course,
+  or the Immigrant Leadership Institute. Translation and interpretation help is available.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- culture-language-heritage-groups
+- careers-skills-professional
+interests:
+- esl_conversation
+- immigrant_welcome
+- entrepreneurs
+motives:
+- career
 formats: []
 roles: []
-crowd: []
+crowd:
+- newcomers
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - immigrants
   faith: null
   partisan: false
   support_group: false
@@ -30,10 +41,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 211 N 13th Street 4th Floor
+- label: Office
+  address: 211 N 13th St, 4th Floor
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19107'
   lat: null
   lng: null
@@ -42,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state costs or eligibility for classes or services.
 commitment: null
 group_size: null
 access:
@@ -57,23 +68,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the English and Digital Skills or Work Readiness page to find a program, then call the office
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Programs are listed, but the site does not say how to enroll or who qualifies.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://welcomingcenter.org
+  email: info@welcomingcenter.org
+  phone: 215-557-2626
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://welcomingcenter.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +92,22 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://welcomingcenter.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+  - locations
+  - contacts
+  - status
+- url: https://www.buildingbok.com/directory
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

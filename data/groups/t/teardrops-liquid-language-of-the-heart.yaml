@@ -5,18 +5,29 @@ leads:
 - irs_990n:843577161
 - irs_bmf:843577161
 ein: '843577161'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A faith-based coaching group that teaches people to treat tears as a signal for change. It offers
+  a short teaching each Tuesday morning and a monthly live women's gathering on Facebook and YouTube.
+what_you_do: Watch or join the live Tuesday teaching or the monthly women's table online, and reach out
+  through the site's contact form to share what is on your heart.
+kind: program
+categories:
+- health-wellness
+- social-meetups
+interests:
+- mental_health_awareness
+- conversation_circles
+motives:
+- enhancement
+- social
+formats:
+- conversation
+roles:
+- figure_out
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,11 +36,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: A teaching every Tuesday at 6:00 AM, and a women's table on the third Thursday of each month at
+    7:00 PM, live on Facebook and YouTube
+  days:
+  - tue
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 8200 Henry Ave Apt J30
@@ -49,11 +65,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: No fee listed on the page
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +83,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Tune in to the next Tuesday morning teaching or the third Thursday women's table, live on Facebook
+    or YouTube
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The sessions are public and live online, and the page does not mention signing up.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: teardrops.online
+  website: https://teardrops.online
   email: null
   phone: null
   contact_name: Patrice Fonville-Thomas
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://teardrops.online
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +117,16 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://teardrops.online
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

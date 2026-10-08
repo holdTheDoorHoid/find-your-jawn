@@ -1,49 +1,59 @@
 id: mahdieh-inc
-name: Mahdieh Inc
+name: Mahdieh
 aka: []
 leads:
 - irs_990n:233029582
 - irs_bmf:233029582
 ein: '233029582'
-summary: null
-what_you_do: null
+summary: A nonprofit Islamic educational center on Haverford Avenue, founded in 2000, that serves Iranian
+  American Muslims. Its Friday night program includes prayers, a lecture and a shared dinner.
+what_you_do: Come to the Friday night program, which starts at 7 pm with prayers, a lecture and dinner.
+  The imam is available in person on Fridays and on special occasions.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+- food-drink
+interests:
+- worship_community
+- congregation_social
+- community_meals
+motives:
+- values
+- social
+formats:
+- side_by_side
+- conversation
+roles:
+- hands_on
+crowd:
+- all_adults
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
-  faith: null
+  community:
+  - heritage:iranian
+  faith: muslim
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The Friday night program starts at 7 pm with the call to prayer and the Maghrib and Isha prayers,
+    then a lecture and dinner. Religious observance dates are posted as all day events with month and
+    day only.
+  days:
+  - fri
+  times:
+  - night
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 6502 Haverford Avenue
-  neighborhood: null
-  planning_district: west_park
-  zip: '19151'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
+- label: Mahdieh
   address: 6502 Haverford Ave
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19151'
   lat: null
   lng: null
@@ -52,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated; the center takes donations through PayPal
 commitment: null
 group_size: null
 access:
@@ -67,23 +77,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to the Friday night program, or email info@mahdieh.org
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site describes the Friday program but does not say how a newcomer should start or whether
+    visitors are welcome.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.mahdieh.org/
+  email: info@mahdieh.org
+  phone: 215-871-7656
   contact_name: Steven Saeed Moazamian
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.mahdieh.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +110,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.mahdieh.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://pa.cair.com/directory/mosques/eastern/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

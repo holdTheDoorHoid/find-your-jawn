@@ -5,18 +5,24 @@ leads:
 - irs_990n:830861340
 - irs_bmf:830861340
 ein: '830861340'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A friends group that hosts community socials and keeps people posted through a mailing list.
+  Its listed 2026 fall social is at a Philadelphia brewery, and people RSVP through a form on the site.
+what_you_do: Come to the socials, RSVP through the site, or sign up for the mailing list to hear about
+  the next event.
+kind: friends_group
+categories:
+- neighborhood-civic
+interests:
+- civic_association
+motives:
+- social
+formats:
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,11 +31,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 2026 fall social at Philadelphia Brewing Company. The site does not give the day or month.
   days: []
   times: []
   recurring: null
-  season: null
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: Po Box 14049
@@ -58,11 +64,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: RSVP for the 2026 fall social with the RSVP form on friendsofbodine.org, and sign up for the mailing
+    list there
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are posted publicly with an RSVP form and a mailing list sign-up, but the site does not
+    say whether events are members only.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -72,9 +80,9 @@ contacts:
   contact_name: David Bungard
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.friendsofbodine.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +98,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.friendsofbodine.org/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - first_step
+- url: https://www.friendsofbodine.org
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

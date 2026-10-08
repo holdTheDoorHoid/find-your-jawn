@@ -1,0 +1,279 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-15",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 16,
+ "leads_only": [
+  {
+   "name": "Delancey Square Town Watch",
+   "url": "https://societyhillfund.org",
+   "note": "named on the Society Hill Fund site as a project it manages money for; no own website seen, not checked"
+  },
+  {
+   "name": "Franklin Lights",
+   "url": "https://societyhillfund.org",
+   "note": "neighborhood historic streetlight project named on the Society Hill Fund site; no own website seen, not checked"
+  },
+  {
+   "name": "Washington Square Plantings and Beautification",
+   "url": "https://societyhillfund.org",
+   "note": "neighborhood planting project named on the Society Hill Fund site; no own website seen, not checked"
+  },
+  {
+   "name": "Penn's Village Aging-in-Place Program",
+   "url": "https://societyhillfund.org",
+   "note": "program named on the Society Hill Fund site; no own website seen, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.stepsafe.org",
+   "status": 403,
+   "note": "access refused on the homepage; not read, not retried"
+  },
+  {
+   "url": "https://www.starsphilly.org",
+   "status": null,
+   "note": "TLS certificate names unrelated betting domains, so the host could not be verified; not read"
+  },
+  {
+   "url": "https://www.sirittenhousesquare.org",
+   "status": null,
+   "note": "DNS lookup failed (host not found)"
+  },
+  {
+   "url": "https://www.blhct.org",
+   "status": null,
+   "note": "DNS lookup failed (host not found)"
+  },
+  {
+   "url": "https://www.StudentswithCancer.org",
+   "status": null,
+   "note": "DNS lookup failed for the www and bare domains"
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch used; 16 WebFetch used of 60. No rate limiting seen. Searches did not confirm STARS or Students With Cancer, and found no site for the Social Security Works Education Fund or Soroptimist, so those records are unknown and need a search pass. Nine records are unknown (verdict publish, held back). Two Masonic and honor-society style groups (Royal Arch Masons, Sigma Theta Tau) are unknown rather than hidden because no page was read for them; reviewers should decide. The romanianculture.us domain is unrelated. The thetasigma.org fetch was a guessed domain and led to an unrelated site. The Sisterly Love /events page returned 404. The STXBP1 news date was read from a summary of the home page. Society Hill Fund leads were not fetched because no own websites were seen. Search-result names (Cancer Support Community Greater Philadelphia, Starfinder, Beat the Streets) were not added as leads.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:363258738",
+     "irs_bmf:363258738"
+    ],
+    "group_id": "romanian-folk-art-museum",
+    "ein": "363258738"
+   },
+   "verdict": "publish",
+   "name": "Romanian Folk Art Museum",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No working site for the museum was found. The domain on the IRS filing (romanianculture.us) leads to an unrelated publication, not the museum, so it is not used as a source. The search budget ran out before this group was looked up. IRS filing address: 1606 Spruce Street, 19103. Needs a search pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:236272504",
+     "irs_bmf:236272504"
+    ],
+    "group_id": "royal-arch-masons-of-pennsylvania",
+    "ein": "236272504"
+   },
+   "verdict": "publish",
+   "name": "Royal Arch Masons of Pennsylvania",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field says Grand Lodge of PA, which is not a web address, so it is treated as missing. No page was read and no search was left. This is a Masonic body. Membership is generally by invitation through a Masonic lodge, from general knowledge and not from a page read here, so a reviewer should decide whether it should be hidden as private. IRS filing address: 1 N Broad St, 19107.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:237533783",
+     "irs_bmf:237533783"
+    ],
+    "group_id": "royal-arch-masons-of-pennsylvania",
+    "ein": "237533783"
+   },
+   "verdict": "duplicate",
+   "name": "Royal Arch Masons of Pennsylvania",
+   "kind": "nonprofit",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch id is royal-arch-masons-of-pennsylvania-19107. Same name, same 1 N Broad St address and same website text as royal-arch-masons-of-pennsylvania, with a different EIN (237533783) and a different contact name on the filing. Marked as a duplicate. A reviewer should confirm whether this is one body or a second filer.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:621092039"
+    ],
+    "group_id": "sigma-theta-tau-inc",
+    "ein": "621092039"
+   },
+   "verdict": "publish",
+   "name": "Sigma Theta Tau",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field names Thomas Jefferson University, which is not a web address, so it is treated as missing. A domain I guessed (thetasigma.org) led to an unrelated site, ThetaSigma Labs, and was not used. No search was left. The name suggests a nursing honor society. If it is one, membership is by invitation and it should be hidden as private. IRS filing address: 901 Walnut Street, 19107.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:010849556"
+    ],
+    "group_id": "smooth-transition",
+    "ein": "010849556"
+   },
+   "verdict": "publish",
+   "name": "Smooth Transition",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The only contacts on the IRS filing are a PO box (pobox8396) and an email address that looks personal, so the email is not recorded as a contact. No public page was found and no search was left. Needs a search pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461500551"
+    ],
+    "group_id": "social-security-works-education-fund",
+    "ein": "461500551"
+   },
+   "verdict": "publish",
+   "name": "Social Security Works Education Fund",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field www.blhct.org did not resolve (DNS lookup failed), so it is treated as missing. No search was left. The name suggests an education fund for Social Security advocacy, which is in scope if it is nonpartisan, so it needs a search pass. IRS filing address: 614 South Street, 19147.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:475320840"
+    ],
+    "group_id": "soroptimist-international-of-the-americas-inc-19103",
+    "ein": "475320840"
+   },
+   "verdict": "publish",
+   "name": "Soroptimist International of the Americas",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field pointed to a domain that did not resolve (DNS lookup failed), so it is treated as missing. No search was left. The domain name suggests a Rittenhouse Square club of this service organization. IRS filing address: 1709 Spruce Street, 19103. Needs a search pass to find the local club's public meetings and how a guest can attend.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:452600587"
+    ],
+    "group_id": "stars-sports-teaching-and-reaching-students",
+    "ein": "452600587"
+   },
+   "verdict": "publish",
+   "name": "STARS: Sports Teaching and Reaching Students",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website www.starsphilly.org could not be read because its TLS certificate names unrelated betting domains, so it is not used. The one search found no Philadelphia program by this name. A different STARS group (a Job Corps volunteer mentoring program) is not the same organization and was not used. The IRS filing address is an apartment unit: 505 S 10th St Apt D, 19147. Needs a search pass or a retry of the site.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800267385"
+    ],
+    "group_id": "step-safe",
+    "ein": "800267385"
+   },
+   "verdict": "publish",
+   "name": "Step Safe",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website www.stepsafe.org returned HTTP 403 (access refused), so it was not read and not retried. It is listed under blocked. No search was left. IRS filing address: 507 Delancey Street, 19106. Needs a manual check or another source.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:454074386"
+    ],
+    "group_id": "students-with-cancer-inc",
+    "ein": "454074386"
+   },
+   "verdict": "publish",
+   "name": "Students With Cancer",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website www.StudentswithCancer.org did not resolve, and neither did the bare domain, so it is treated as missing. The one search for the name found no Philadelphia group by this name. The closest matches are different groups (for example Student Movement Against Cancer, tied to Summit, New Jersey) and were not used. IRS filing address: 201 South 18th Street Suite 1620, 19103. Legal name: Students With Cancer Inc. Needs a search pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

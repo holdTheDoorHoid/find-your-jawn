@@ -1,39 +1,56 @@
 id: masjidullah-incorporated
-name: Masjidullah Incorporated
+name: Masjidullah
 aka: []
 leads:
 - irs_bmf:222525050
 ein: '222525050'
-summary: null
-what_you_do: null
+summary: A mosque on Limekiln Pike with Friday prayer and programs for families. The site also lists health
+  and human services and Ramadan programs, and links to a child care center and a learning institute on
+  their own sites.
+what_you_do: Attend Friday prayer at 1:15 pm, sign up to volunteer through the site, or ask the office
+  about the child care center and the New Medina Institute.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+- kids-youth-mentoring
+interests:
+- worship_community
+- faith_service_projects
+- faith_youth_programs
+motives:
+- values
+- social
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- families
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: muslim
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Friday prayer service at 1:15 pm. Other class and program times are not on the site.
+  days:
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: '7433 Limekiln Pike # 35'
+- label: Masjidullah
+  address: 7401 Limekiln Pike
   neighborhood: null
-  planning_district: upper_north
+  planning_district: null
   zip: '19138'
   lat: null
   lng: null
@@ -57,23 +74,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call the office at 215-621-7800 or email inquiries@masjidullah.org. Membership and volunteer sign-up
+    forms are on the site.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site asks people to sign up for membership or volunteering, and it does not say whether visitors
+    are welcome at Friday prayer.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.masjidullah.org/
+  email: inquiries@masjidullah.org
+  phone: 215-621-7800
   contact_name: Mikal Shabazz
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.masjidullah.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +101,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.masjidullah.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - first_step
+  - status
+- url: https://www.masjidullah.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://pa.cair.com/directory/mosques/eastern/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

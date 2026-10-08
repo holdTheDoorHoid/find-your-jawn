@@ -1,0 +1,138 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-12",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://fc3philly.org",
+   "status": 404,
+   "note": "Bare domain and www both returned 404; two tries, not readable"
+  },
+  {
+   "url": "https://techafrica.org",
+   "status": null,
+   "note": "DNS did not resolve, with or without www; not readable"
+  },
+  {
+   "url": "https://wodoefoundation.com",
+   "status": null,
+   "note": "Returned empty page content on bare domain and www; not readable"
+  },
+  {
+   "url": "https://www.womenofmanyhats.com/news-events",
+   "status": 404,
+   "note": "Guessed events path not found; the site root was read"
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch used, both for the two IRS groups with no web address (Philadelphia Leadership Foundation and Alpha Omega Alpha at Temple). 19 WebFetch used. Three groups could not be read (Family Childcare Coalition, Technology Project for African Schools, Wodoe Foundation): those are status unknown with no summary, so they are held back, and they need a manual check or a search. Verdicts: 12 publish (4 of them unknown and held back), 1 out_of_area, 1 hide, 1 not_a_group. Judgment calls: Moving Brain is treated as a paid service business; Present Truth Ministries is written as The River Church and matched by the batch website; NGEM and Prepared Place are recorded as nonprofit, not congregation, because their sites describe service groups; Sheikh Kafumba is out of area (Liberia); YOURpath is kept as a national online program, flagged in its notes; Alpha Omega Alpha is hidden as private. Eight publish records are probably_active from working sites with no dated items, since copyright footers were not used as evidence. No leads_only items were found with their own website.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:874045840",
+     "irs_bmf:874045840"
+    ],
+    "group_id": "philadelphia-family-childcare-coalition-inc",
+    "ein": "874045840",
+    "website": "https://fc3philly.org"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Family Childcare Coalition",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not read the group's site. fc3philly.org returned HTTP 404 on the bare domain and on www, two tries in all. No search was run for this group because the two searches went to the two groups with no web address. No summary written. Legal name: Philadelphia Family Childcare Coalition Inc. IRS address: Po Box 16821 (19142). Needs a manual check or a search before it can be written up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:222522896",
+     "irs_bmf:222522896"
+    ],
+    "group_id": "philadelphia-leadership-foundation",
+    "ein": "222522896",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Leadership Foundation",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/222522896",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held the text PHILADELPHIA BAPTIST ASSOCIATION, not a web address, so it was treated as missing. The one search found only a ProPublica filing page for the exact name. That filing shows the NTEE category Leadership Development, a Form 990-EZ for the year ending June 2025 (filed Nov 17, 2025), and no program service revenue. No mission, street address, website, or program was found, so no summary was written. A link to the Philadelphia Baptist Association is possible but not verified.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:593837167",
+     "irs_bmf:593837167"
+    ],
+    "group_id": "technology-project-for-african-schools-inc",
+    "ein": "593837167",
+    "website": "https://techafrica.org"
+   },
+   "verdict": "publish",
+   "name": "Technology Project for African Schools",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not read the group's site. The batch website (WWW.TECHAFRICA.ORG) does not resolve, with or without www. No search was run for this group because the two searches went to the two groups with no web address. No summary written. Legal name: Technology Project for African Schools Inc. IRS address: 7311 Lindbergh Blvd (19153). Needs a manual check or a search before it can be written up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:832803495",
+     "irs_bmf:832803495"
+    ],
+    "group_id": "wodoe-foundation",
+    "ein": "832803495",
+    "website": "https://wodoefoundation.com"
+   },
+   "verdict": "publish",
+   "name": "Wodoe Foundation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not read the group's site. The page returned empty content on two tries (wodoefoundation.com and www). No search was run for this group because the two searches went to the two groups with no web address. No summary written. IRS address: 2801 S 65th St (19142). Needs a manual check or a search before it can be written up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

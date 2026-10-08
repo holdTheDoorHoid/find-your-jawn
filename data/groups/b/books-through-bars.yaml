@@ -76,18 +76,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the online volunteer form on the volunteer page, pick an orientation, then join a drop-in
-    session
-  drop_in: true
-  sign_up_needed: null
+  how: Fill in the Individual Volunteer Form on the volunteer page and choose an orientation, then join
+    a drop-in session after you attend it.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 5
-  basis: 'Built-in newcomer path: a required orientation first, then open drop-in sessions'
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Orientation is the built-in first step. After it, drop-in sessions are open to volunteers 18
+    and older, and the form and orientation sign-up are on the volunteer page.
+  what_to_expect: Your first step is an orientation, and you do not come to a drop-in session until you
+    have been oriented. In a session you read letters from people in prison, choose library books that
+    match each request, and pack the packages for mailing. Sessions run Monday and Thursday evenings from
+    6:30 to 8:30 pm and the first Saturday of the month from 11 am to 1 pm, and after about a dozen visits
+    you can ask about letter logging, hosting, fundraising, or library work.
+  first_visit_tips:
+  - Choose an orientation on the volunteer form before you come in.
+  - Masks are required for in-person volunteers. Bring your own or pick one up when you arrive.
+  - The page does not mention parking or transit, so check your route to 4722 Baltimore Ave before you
+    go.
+  - Talk to a host during your visit, or email volunteer@booksthroughbars.org with questions.
 contacts:
   website: https://www.booksthroughbars.org
-  email: null
-  phone: null
+  email: volunteer@booksthroughbars.org
+  phone: (215) 727-8170
   contact_name: null
   social: []
   calendar_feed: null
@@ -117,7 +127,21 @@ sources:
   fields:
   - status
   - contacts
-research_tier: 1
+- url: https://www.booksthroughbars.org/faq
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.booksthroughbars.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.booksthroughbars.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

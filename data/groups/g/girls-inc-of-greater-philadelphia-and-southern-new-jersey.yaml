@@ -1,21 +1,28 @@
 id: girls-inc-of-greater-philadelphia-and-southern-new-jersey
-name: Girls Inc of Greater Philadelphia & Southern New Jersey
+name: Girls Inc. of Greater Philadelphia and Southern New Jersey
 aka: []
 leads:
 - irs_bmf:231607172
 ein: '231607172'
-summary: null
-what_you_do: null
+summary: A nonprofit that helps girls build confidence and leadership skills through programs such as
+  career exploration, science and math, self-defense, money skills and summer camps. Families can enroll
+  a girl through the site.
+what_you_do: Families can use the Enroll a girl link on the Programs page to sign up for a program. Adults
+  can host a career exploration, become an advocate, or join the team.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- kids-youth-mentoring
+interests:
+- after_school_camps
+- youth_leadership
+motives:
+- values
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,16 +31,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Out of school time programs and summer camps are listed on the Programs page without dates. A
+    Serve It Forward Pickleball Classic fundraiser is set for Sunday, November 15, 2026, from 1 to 5 pm
+    at Ballers Social Sports.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1901 S 9th St Ste 602
+- label: Office, Bok building
+  address: 1901 S. 9th St., Suite 602
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19148'
   lat: null
   lng: null
@@ -42,7 +51,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state program fees. The pickleball event is a fundraiser.
 commitment: null
 group_size: null
 access:
@@ -57,23 +66,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the Enroll a girl link on the Programs page
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The enrollment link is clear, but the site does not state age ranges or fees for most programs.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://girlsincpa-nj.org
   email: null
   phone: null
   contact_name: The Organization
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://girlsincpa-nj.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +91,27 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://girlsincpa-nj.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - status
+  - last_sign_of_life
+  - contacts
+- url: https://girlsincpa-nj.org/our-programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - audience
+- url: https://www.buildingbok.com/directory
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

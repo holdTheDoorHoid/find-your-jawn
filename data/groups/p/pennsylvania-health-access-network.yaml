@@ -5,18 +5,24 @@ leads:
 - irs_990n:474876589
 - irs_bmf:474876589
 ein: '474876589'
-summary: null
-what_you_do: null
+summary: A statewide group driven by health care consumers that works to expand and protect affordable
+  health coverage in Pennsylvania. People can get free help with coverage, share their own story, volunteer,
+  or join the advocacy effort.
+what_you_do: Get free help with health coverage through the Get Help page, share your story, volunteer,
+  or take action on coverage issues through the Get Involved page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- health-wellness
+interests:
+- health_outreach
+motives:
+- values
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -31,19 +37,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1501 Cherry St
-  neighborhood: null
-  planning_district: central
-  zip: '19102'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
+- label: Office, Friends Center
   address: 1501 Cherry Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19102'
   lat: null
   lng: null
@@ -51,8 +48,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Coverage help is free, according to the Get Help page.
 commitment: null
 group_size: null
 access:
@@ -67,23 +64,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use Get Help for free coverage assistance, or Volunteer With Us to join
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Free help and volunteer pages are linked from the homepage, but the site lists no events or meetings.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: http://pahealthaccess.org/
+  website: https://pahealthaccess.org/
   email: null
-  phone: null
+  phone: 877-570-3642 (call or text)
   contact_name: Antoinette Kraus
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.pahealthaccess.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +97,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pahealthaccess.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - cost
+  - locations
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://friendscentercorp.org/about/directory-of-tenant-organizations/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

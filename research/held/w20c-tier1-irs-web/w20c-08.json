@@ -1,0 +1,233 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-08",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [
+  {
+   "name": "Philly Advocates",
+   "url": "https://www.idealist.org/en/nonprofit/d322fc72615047ae83727d7502e20332-philly-advocates-philadelphia",
+   "note": "Appeared in search results for the Philadelphia Advocates name. Described there as an information and referral group in the Logan neighborhood. Not checked, and not the same as the IRS group."
+  },
+  {
+   "name": "Philadelphia Association of Community Development Corporations",
+   "url": "https://causes.benevity.org/causes/840-232707112?lang=en",
+   "note": "Appeared in search results as a membership group of community development corporations. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "http://www.scaainc.net",
+   "status": null,
+   "note": "Domain did not resolve on two tries (with and without www)."
+  },
+  {
+   "url": "https://www.peacetownclt.org",
+   "status": null,
+   "note": "Domain did not resolve on two tries (with and without www)."
+  },
+  {
+   "url": "https://www.sgodom.org",
+   "status": null,
+   "note": "Connection refused on two tries. Looks like the site is down, not a bot check."
+  },
+  {
+   "url": "https://www.asattf.org",
+   "status": null,
+   "note": "Page loaded with no text on two tries."
+  },
+  {
+   "url": "https://www.temple.edu/spanpor",
+   "status": 404,
+   "note": "Page not found."
+  }
+ ],
+ "notes": "Both WebSearch calls were spent. One went to Grief Retreat and one to the Philadelphia Advocates name, and neither gave a usable match for the IRS record. Seven records are unknown with no summary and are held back: STEM Academy, Sinoe County Association, Peacetown Commons Land Trust, Society of Spanish and Spanish-American Studies, Philadelphia Advocates for Community Enrichment and Solidarity, Son of God Outreach Ministries, and A Seat at the Table Foundation. Two of these had dead domains and two had no readable page; the rest had no web address. Hidden: Alice Harris Foundation (scholarship and donation only, flagged for owner review) and Grief Retreat (no public way in found). Out of area: Mara-Fiki (workshop in Kenya; Philadelphia address on file only). Published with status probably_active on working sites with no dated activity: Roberto Martinez Foundation, Socks for the Streets, Sergio Foundation. Friends of Bodine is active on a 2026 event. Alliance of Black Social Workers has status unknown because its newest items are 2024 with no month. Service-hours letters and court-ordered status were not inferred for any group. Budget: 2 of 2 searches, 22 fetches.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233074313",
+     "irs_bmf:233074313"
+    ],
+    "group_id": "sinoe-county-association-in-the-americas",
+    "ein": "233074313"
+   },
+   "verdict": "publish",
+   "name": "Sinoe County Association in the Americas",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS record (www.scaainc.net) did not resolve on two tries, with and without www, so it is treated as missing. No search was left to find a new site. The IRS record lists a P.O. Box in 19114. The group's activity was not checked, so no summary is written. Held back until someone checks by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823324115",
+     "irs_bmf:823324115"
+    ],
+    "group_id": "son-of-god-outreach-ministries",
+    "ein": "823324115"
+   },
+   "verdict": "publish",
+   "name": "Son of God Outreach Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS record (WWW.SGODOM.ORG) refused connections on two tries. That looks like the site being down rather than a bot check, so it is listed under blocked. No search was left. The IRS address is 2810 Saxton Rd Apt a, 19114. The group's activity was not read, so no summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:463585458",
+     "irs_bmf:463585458"
+    ],
+    "group_id": "stem-academy-inc",
+    "ein": "463585458"
+   },
+   "verdict": "publish",
+   "name": "STEM Academy",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field on the IRS record holds an accounting firm's name, not a web address, so it is treated as missing. Both searches went to other groups in this batch, so this one was not checked. The IRS address is 12038 Alberta Dr, 19154. Needs a manual look before any summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:994097794",
+     "irs_bmf:994097794"
+    ],
+    "group_id": "a-seat-at-the-table-foundation",
+    "ein": "994097794",
+    "website": "https://asattf.org"
+   },
+   "verdict": "publish",
+   "name": "A Seat at the Table Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned a page with no text on two tries, so nothing could be read. A browser check may be needed. No search was left. The IRS address is 1222 N 27th St, 19121.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:922684089",
+     "irs_bmf:922684089"
+    ],
+    "group_id": "grief-retreat-inc",
+    "ein": "922684089"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Grief Retreat",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field on the IRS record holds an address, not a web address. The one search for this group found only a third-party tax data profile (https://causeiq.com/organizations/grief-retreat,922684089). That profile describes a Philadelphia mental health treatment center with a late 2023 filing. No website, program or public contact was found, so it is hidden as private. Re-check if a public site, program or contact appears. The profile was last updated in April 2024 and may be stale.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:881654099",
+     "irs_bmf:881654099"
+    ],
+    "group_id": "peacetown-commons-land-trust",
+    "ein": "881654099"
+   },
+   "verdict": "publish",
+   "name": "Peacetown Commons Land Trust",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS record (WWW.PEACETOWNCLT.ORG) did not resolve, with or without www, on two tries, so it is treated as missing. No search was left. The IRS address is 2226 W Jefferson St, 19121. The group's activity was not checked, so no summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233009484",
+     "irs_bmf:233009484"
+    ],
+    "group_id": "philadelphia-advocates-for-commun-ity-enrichment-and-solidarity",
+    "ein": "233009484"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Advocates for Community Enrichment and Solidarity",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS name is garbled as 'Commun Ity', and the website field holds a name, not a web address. Searches on the full name and the acronym PACES found no match. The search returned three other groups (Philly Advocates in Logan, the Philadelphia Association of Community Development Corporations, and PA Solidarity Project). None of them is this group, so they are listed as leads only. The IRS address is 1916 N Croskey St, 19121. Held back until checked by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:480835431",
+     "irs_bmf:480835431"
+    ],
+    "group_id": "society-of-spanish-and-spanish-american-studies-incorpora",
+    "ein": "480835431"
+   },
+   "verdict": "publish",
+   "name": "Society of Spanish and Spanish-American Studies",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS record points to a Temple University page (WWW.TEMPLE.EDU/SPANPOR) that returns 404, so it is treated as missing. The IRS name is cut off as 'Incorpora'. The name suggests a scholarly society, but nothing about its meetings, membership or location was confirmed. No search was left. The IRS address is Temple University, Anderson Hall 4th floor, 19122. Held back until checked by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

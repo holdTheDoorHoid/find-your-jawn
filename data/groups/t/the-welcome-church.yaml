@@ -4,21 +4,29 @@ aka: []
 leads:
 - irs_bmf:272863101
 ein: '272863101'
-summary: A Lutheran congregation in Center City with a Tuesday service at its Sansom Street site and a
-  Sunday service on the Benjamin Franklin Parkway. The home page gives no times.
-what_you_do: Come to a service. Use the contact page to ask about times before you go.
+summary: A small worshipping community on the Parkway for people living in poverty, with a Sunday service,
+  a coffee hour after worship, and winter clothing and meal drives.
+what_you_do: Come to Sunday worship on the Parkway, host the coffee hour and walk around after service,
+  help make bag lunches on certain Mondays, or donate winter items.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
+- mutual_aid
+- goods_closets
+- faith_service_projects
 motives:
 - values
 formats:
-- conversation
-roles: []
+- side_by_side
+- perform_make_together
+roles:
+- hands_on
 crowd:
 - neighbors
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -30,20 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tuesday worship at the Sansom Street site and Sunday worship on the Benjamin Franklin Parkway.
-    The home page gives no times.
+  text: Sunday worship on the Parkway. The page does not list a time.
   days:
-  - tue
   - sun
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Sansom Street site
-  address: 2111 Sansom Street
+- label: Worship on the Parkway
+  address: null
   neighborhood: null
   planning_district: null
-  zip: '19103'
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -66,24 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact page or the getting-to-know-us page to ask about service times and where to go.
-  drop_in: null
+  how: Email or call the pastor to ask about volunteering or current needs
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The home page does not say how to join or give service times. The linked pages were not read,
-    so the way in is unclear.
+  newcomer_friendliness: 3
+  basis: The page invites people to worship and to volunteer and gives named contacts, but no visitor
+    details
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: http://www.thewelcomechurch.org/
-  email: null
-  phone: null
-  contact_name: Pastor Violet C Little
-  social: []
+  email: rvschaunel@aol.com
+  phone: 302-463-0542
+  contact_name: Rev. Schaunel Steinnagel
+  social:
+  - https://www.facebook.com/welcomechurchphilly
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.thewelcomechurch.org/
+status: active
+last_sign_of_life: '2026'
+sign_of_life_url: https://presbyphl.org/the-welcome-church/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -104,6 +111,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+- url: https://presbyphl.org/the-welcome-church/
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: low
 last_checked: '2026-10-08'
