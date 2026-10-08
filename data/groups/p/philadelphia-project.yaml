@@ -1,21 +1,31 @@
 id: philadelphia-project
-name: Philadelphia Project
+name: The Philadelphia Project
 aka: []
 leads:
 - irs_bmf:272374218
 ein: '272374218'
-summary: null
-what_you_do: null
+summary: A faith-based nonprofit that runs free home repairs for neighbors in Germantown and Mt. Airy,
+  with volunteers joining short service trips that work on those homes.
+what_you_do: Join a service trip such as a day of service, a blitz weekend or a summer project, or apply
+  for a repair through the Home Repair page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- hunger-housing-basic-needs
+- faith-community
+interests:
+- home_repair
+- faith_service_projects
+motives:
+- values
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +34,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Service trips run through the year, including a summer of service, blitz weekends, spring break
+    and days of service
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 8230 Ridge Ave
+- label: Germantown and Mt. Airy
+  address: null
   neighborhood: null
-  planning_district: lower_northwest
-  zip: '19128'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Repair cost is not stated on the home page
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Read the Home Repair page for how a repair works, and use the Get Involved page to pick a service
+    trip
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Service trips are listed publicly on the site, though the sign-up steps are not spelled out
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://www.thephillyproject.org
   email: null
   phone: null
   contact_name: Raymond Garcia
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.thephillyproject.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +94,17 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.thephillyproject.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - schedule
+  - what_you_do
+  - cost
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

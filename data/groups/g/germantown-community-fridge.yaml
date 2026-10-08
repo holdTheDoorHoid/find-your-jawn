@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:392129245
 ein: '392129245'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A mutual aid project that keeps two sidewalk fridges and pantries in Germantown stocked with
+  free food. Volunteers stock, clean and pick up donations.
+what_you_do: Take food from either fridge, or volunteer to organize, clean, collect donations or shop
+  for groceries.
+kind: network
+categories:
+- hunger-housing-basic-needs
+interests:
+- community_fridge
+- mutual_aid
+motives:
+- values
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Fridges are open to anyone. Hours are not listed on the home page.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 5928 Mccallum St
+- label: Fridge at Armat St
+  address: 20 W Armat St
   neighborhood: null
-  planning_district: upper_northwest
+  planning_district: null
   zip: '19144'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Fridge at High St
+  address: 19 E High St
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +75,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Email the group or use the Get Involved page to volunteer
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Anyone who needs food is welcome, and volunteers are asked to get in touch
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://www.germantowncommunityfridge.com/
+  email: germantownfridge@gmail.com
   phone: null
   contact_name: Shannon Sims
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-09
+sign_of_life_url: https://philly.citycast.fm/food-drink/where-to-find-community-fridges-in-philly
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +100,20 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.germantowncommunityfridge.com/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - volunteer
+  - contacts
+  - summary
+- url: https://philly.citycast.fm/food-drink/where-to-find-community-fridges-in-philly
+  seen: '2026-10-08'
+  fields:
+  - status
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

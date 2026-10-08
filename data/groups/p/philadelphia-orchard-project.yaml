@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:261075823
 ein: '261075823'
-summary: null
-what_you_do: null
+summary: A nonprofit that plants and cares for community orchards across Philadelphia, working with schools,
+  churches, and community gardens. Anyone can help at its open work days.
+what_you_do: Dig, plant, mulch, prune, and weed at orchard work days, and help with workshops and events.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- gardening-greening
+interests:
+- community_orchard
+- urban_farming
+motives:
+- values
+- enhancement
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,31 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Weekly Tuesday work days at the Learning Orchard at The Woodlands, a monthly open orchard afternoon,
+    and seasonal planting days
+  days:
+  - tue
+  - sat
+  times:
+  - morning
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: POP Learning Orchard at The Woodlands
   address: 4000 Woodland Ave
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: No volunteer fee is listed for individuals
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +68,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join the volunteer email list or register for a work day on the events page
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: Work days need no experience, and the site explains how to register
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.phillyorchards.org
+  email: info@phillyorchards.org
+  phone: (215) 724-1247
   contact_name: The Woodlands
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.phillyorchards.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +96,29 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.phillyorchards.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - locations
+  - first_step
+- url: https://www.phillyorchards.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://www.phillyorchards.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://www.phillyorchards.org/orchards/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

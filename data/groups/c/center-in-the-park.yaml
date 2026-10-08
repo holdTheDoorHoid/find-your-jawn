@@ -6,11 +6,11 @@ leads:
 - city_senior:sites:8
 - irs_bmf:231919016
 ein: '231919016'
-summary: Center in the Park is a senior center listed by the City of Philadelphia in the Upper Northwest
-  part of the city, a place where older adults can get together for activities and services. Call ahead
-  for hours.
-what_you_do: Drop in to meet other older adults and join the center's activities.
-kind: program
+summary: A senior community center in Germantown for adults 55 and up, with fitness classes, pottery,
+  a choir, trips, and staff who help with housing and benefits.
+what_you_do: Take fitness, massage, pottery, arts, or choir sessions, join breakfast and lunch, go on
+  day trips, or sign up for benefits and housing counseling.
+kind: nonprofit
 categories:
 - seniors-intergenerational
 interests:
@@ -18,54 +18,49 @@ interests:
 - senior_activities
 motives:
 - social
-- protective
+- enhancement
 formats:
-- conversation
 - side_by_side
 roles:
 - hands_on
-- help_teach
 crowd:
 - seniors
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 55
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Weekday activities; the center posts a calendar of classes and trips
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Senior center
-  address: 5818 Germantown Avenue
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
-  lat: 40.03728764944603
-  lng: -75.17606583595392
-  in_city: true
-  transit: null
-- label: Senior center
+- label: Center
   address: 5818 Germantown Ave.
   neighborhood: null
-  planning_district: upper_northwest
+  planning_district: null
   zip: '19144'
-  lat: 40.037136718360536
-  lng: -75.17631860469058
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free membership for adults 55 and older
 commitment: null
 group_size: null
 access:
@@ -80,23 +75,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Become a Member page or call the center at 215-848-7722
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Membership is free and open to adults 55 and older, with a clear way to sign up; the site does
+    not describe a drop-in policy
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://centerinthepark.org
+  email: info@centerinthepark.org
   phone: 215-848-7722
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
+sign_of_life_url: https://centerinthepark.org
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
   seen: '2026-10-08'
@@ -116,8 +112,20 @@ sources:
   - name
   - locations
   - ein
+- url: https://centerinthepark.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

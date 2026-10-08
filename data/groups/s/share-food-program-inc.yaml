@@ -1,21 +1,30 @@
 id: share-food-program-inc
-name: Share Food Program Inc
-aka: []
+name: Philly Food Rescue
+aka:
+- Share Food Program
 leads:
 - irs_bmf:232360819
 ein: '232360819'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A volunteer driver program run through Share Food Program. Volunteers pick up surplus food from
+  grocers, restaurants and markets and bring it to pantries, shelters, schools and community fridges.
+what_you_do: Claim a pickup in the app, collect the food, deliver it to the matched site, and log the
+  rescue. Each run takes about an hour.
+kind: program
+categories:
+- hunger-housing-basic-needs
+interests:
+- food_rescue
+motives:
+- values
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Rescues are claimed in the app, one time or on a recurring basis, any time that fits
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 2901 W Hunting Park Ave
+- label: Greater Philadelphia area
+  address: null
   neighborhood: null
-  planning_district: lower_northwest
-  zip: '19129'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free to volunteer
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +66,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Download the Philly Food Rescue app, make a profile, turn on notifications and claim a rescue
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Anyone can sign up in the app. Drivers need a license and insurance, and a bike or transit pass
+    works for smaller runs
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.sharefoodprogram.org/philly-food-rescue/what-we-do/
   email: null
-  phone: null
+  phone: (215) 223-2220
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.sharefoodprogram.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +91,24 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.sharefoodprogram.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - contacts
+  - schedule
+  - locations
+- url: https://www.sharefoodprogram.org/get-involved/philly-food-rescue-volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - schedule
+  - summary
+  - what_you_do
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

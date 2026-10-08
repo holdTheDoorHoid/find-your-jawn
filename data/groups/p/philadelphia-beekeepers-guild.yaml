@@ -5,18 +5,28 @@ leads:
 - irs_990n:320306451
 - irs_bmf:320306451
 ein: '320306451'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: Beekeepers and bee lovers who promote sustainable urban beekeeping through monthly meetings,
+  a shared apiary, and a yearly honey festival.
+what_you_do: Come to monthly meetings to learn beekeeping, join the group's work at its apiary, and help
+  with the honey festival.
+kind: club
+categories:
+- gardening-greening
+interests:
+- pollinators_bees
+motives:
+- understanding
+- social
+formats:
+- conversation
+- learn_skill
+roles:
+- figure_out
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,37 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly meetings on the third Thursday at 7 pm
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 1 Awbury Rd
+- label: St. James School (monthly meetings)
+  address: 3217 W Clearfield St
   neighborhood: null
-  planning_district: upper_north
+  planning_district: null
+  zip: '19132'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: The Farm at Awbury (apiary)
+  address: 6336 Ardleigh St
+  neighborhood: null
+  planning_district: null
   zip: '19138'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Membership cost not listed
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +79,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a monthly meeting, or join through the Join Us page or mailing list
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Meetings are open to the public and the site names a clear way to join
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://phillybeekeepers.org/
+  website: https://phillybeekeepers.org
   email: null
   phone: null
   contact_name: Katie Krebs
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://phillybeekeepers.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +111,16 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillybeekeepers.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - status
+  - summary
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

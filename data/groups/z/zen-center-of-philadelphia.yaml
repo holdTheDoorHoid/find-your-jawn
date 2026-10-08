@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:562660059
 ein: '562660059'
-summary: null
-what_you_do: null
-kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A Zen meditation community for everyday people, with sittings in person and on Zoom and a monthly
+  day-long sitting.
+what_you_do: Sit zazen with the group, get instruction as a first-time visitor, and join a monthly day-long
+  sesshin if you want.
+kind: nonprofit
+categories:
+- health-wellness
+interests:
+- meditation_mindfulness
+motives:
+- values
+- enhancement
+formats:
+- learn_skill
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,10 +33,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Sundays 10 am to noon and Wednesdays 7 to 8 pm, in person or online. Weekday mornings 7 to 8 am
+    on Zoom only.
+  days:
+  - sun
+  - wed
+  - mon
+  - tue
+  - thu
+  - fri
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -39,11 +57,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: Donations and membership are invited. No fee amounts are on the home page.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +75,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email zencenterphiladelphia@gmail.com for the Zoom link or to ask about visiting
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The page says beginners are welcome and first-time visitors receive instruction
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://www.zencenterphiladelphia.net/
+  email: zencenterphiladelphia@gmail.com
   phone: null
   contact_name: Patricia a George
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-07
+sign_of_life_url: https://www.zencenterphiladelphia.net/front/updates-events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +100,19 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.zencenterphiladelphia.net/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - contacts
+- url: https://www.zencenterphiladelphia.net/front/updates-events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

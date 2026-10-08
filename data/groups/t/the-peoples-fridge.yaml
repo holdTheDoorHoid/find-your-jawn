@@ -1,21 +1,31 @@
 id: the-peoples-fridge
-name: The Peoples Fridge
+name: The People's Fridge
 aka: []
 leads:
 - irs_bmf:881004328
 ein: '881004328'
-summary: null
-what_you_do: null
+summary: A West Philadelphia food group that runs free pop-up food giveaways and a warehouse that rescues
+  and passes along groceries to community fridges.
+what_you_do: Get free groceries at a pop-up on the 2nd and 4th Saturdays, or help with food rescue and
+  distribution.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- hunger-housing-basic-needs
+interests:
+- food_pantry
+- food_rescue
+motives:
+- values
+- social
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +34,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Free pop-ups on the 2nd and 4th Saturdays of the month, 2 to 4 pm
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 6314 Moylan St
+- label: Cedar Park pop-up
+  address: 50th St and Baltimore Ave
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +69,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Saturday pop-up at Cedar Park. Volunteer contact is through the group's Contact page.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Pop-ups are free and open to neighbors, and the page lists no eligibility rules
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.thepeoplesfridge.org/
   email: null
   phone: null
   contact_name: Parikh
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-01
+sign_of_life_url: https://www.thepeoplesfridge.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +94,16 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thepeoplesfridge.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - status
+  - summary
+  - cost
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

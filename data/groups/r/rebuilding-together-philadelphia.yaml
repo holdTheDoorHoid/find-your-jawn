@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:232549594
 ein: '232549594'
-summary: null
-what_you_do: null
+summary: A nonprofit that makes free home repairs for homeowners who qualify, with a focus on safety,
+  health and energy. Volunteers join neighborhood block builds where many homes are fixed in two days.
+what_you_do: Volunteer on a block build or as an individual or group, or apply for a repair through the
+  Get Repairs page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- hunger-housing-basic-needs
+- neighborhood-civic
+interests:
+- home_repair
+motives:
+- values
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Block builds are two-day volunteer events. The site lists no dated events.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 3001 Stokley St Ste 1
+- label: Office
+  address: 3001 Stokley St, 1st Floor
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Repairs are free for eligible homeowners and tenants
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +66,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Volunteer page on the site to sign up for a block build, or email info@rebuildingphilly.org
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Volunteering is open to all skill levels, per the site
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://rebuildingphilly.org
+  email: info@rebuildingphilly.org
+  phone: (215) 965-0777
   contact_name: Robert B Bellinger Pres
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2024-04
+sign_of_life_url: https://inquirer.com/newsletters/morning/rebuilding-together-philadelphia-free-home-improvement-20240417.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +91,21 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://rebuildingphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+  - first_step
+- url: https://inquirer.com/newsletters/morning/rebuilding-together-philadelphia-free-home-improvement-20240417.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - cost
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
