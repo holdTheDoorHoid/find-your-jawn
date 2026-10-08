@@ -89,6 +89,7 @@ export function StartScreen(p: ScreenProps & { support: boolean; setSupport: (on
         <div class="callout" role="status">
           <h3>{t.start.supportTitle}</h3>
           <p>{t.start.supportText}</p>
+          <PrivacyNote>{t.start.supportPrivacy}</PrivacyNote>
           <p>
             <a class="btn" href={withBase('support/')}>
               {t.start.supportCta}

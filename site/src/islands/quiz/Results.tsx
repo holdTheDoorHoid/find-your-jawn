@@ -100,19 +100,21 @@ export function Results({ groups, cat, places, answers, setAnswers, onEdit, onRe
       </h2>
       <p class="lede">{t.intro}</p>
 
-      <fieldset class="qgroup dial">
-        <legend>{t.dial.label}</legend>
-        <div class="check-row">
-          {(['gentle', 'balanced', 'bold'] as const).map((d) => (
-            <Pill key={d} type="radio" name="dial" checked={answers.dial === d} onChange={(on) => on && setDial(d)}>
-              {t.dial[d]}
-            </Pill>
-          ))}
-        </div>
-        <p class="help" aria-live="polite">
-          {t.dial.help[answers.dial]}
-        </p>
-      </fieldset>
+      {list.length > 0 && (
+        <fieldset class="qgroup dial">
+          <legend>{t.dial.label}</legend>
+          <div class="check-row">
+            {(['gentle', 'balanced', 'bold'] as const).map((d) => (
+              <Pill key={d} type="radio" name="dial" checked={answers.dial === d} onChange={(on) => on && setDial(d)}>
+                {t.dial[d]}
+              </Pill>
+            ))}
+          </div>
+          <p class="help" aria-live="polite">
+            {t.dial.help[answers.dial]}
+          </p>
+        </fieldset>
+      )}
       {needsGentle && (
         <p class="callout">
           {t.dial.gentleNote}{' '}

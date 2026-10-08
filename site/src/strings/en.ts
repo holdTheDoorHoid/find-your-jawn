@@ -878,7 +878,7 @@ export const privacy = {
     },
     { h: 'What stays on your device' },
     {
-      p: 'If you save a group, the site keeps its name in your browser\'s storage. If the match quiz saves your answers, they will live there too. The storage keys all start with "fyj:". We never see them, and they never leave your device.',
+      p: 'If you save a group, the site keeps its name in your browser\'s storage. The match quiz keeps your answers there too, along with any visits you plan and what you tell us about them, so a reload picks up where you left off. The storage keys all start with "fyj:". We never see them, and they never leave your device.',
     },
     {
       p: 'You can wipe all of it any time with the button below, or on the [My list](/my-list/) page.',
@@ -906,7 +906,7 @@ export const privacy = {
 export const ranking = {
   title: 'How ranking works',
   metaDescription:
-    'Plain words on how Find Your Jawn orders groups: no paid placement, how browse is sorted, and how the match quiz will choose, explain and stretch.',
+    'Plain words on how Find Your Jawn orders groups: no paid placement, how browse is sorted, and how the match quiz chooses, explains and stretches.',
   blocks: [
     { h: 'No one can pay for a better spot' },
     {
@@ -918,7 +918,7 @@ export const ranking = {
     },
     { h: 'The match quiz' },
     {
-      p: 'The quiz is not live yet. This is how it will work. It uses plain rules, so every result can be explained. Everything runs in your browser.',
+      p: 'The quiz uses plain rules, so every result can be explained. Everything runs in your browser, and your answers never leave it.',
     },
     { h3: 'Step 1: what is ruled out' },
     {
@@ -930,19 +930,19 @@ export const ranking = {
         'It is not open to you, such as a group only for students at another school, a members only group, or one with a minimum age you do not meet.',
         'It is a support group, unless you asked for support groups.',
         'It is a faith community and you chose to leave those out.',
-        'It breaks an answer you locked, such as cost, schedule, distance, access or background checks.',
+        'It breaks an answer you locked, such as cost, schedule, distance, access or background checks. If a group\'s page does not say, we do not rule it out. We show it after the groups we could check, and say what is not listed.',
         'It does not fit the guide you are using. For court ordered service, only groups with a public source that says they accept those hours are shown.',
       ],
     },
     { h3: 'Step 2: how well it fits' },
     {
-      p: 'Each group that is left gets a score from these parts. The weights are starting values, and we tune them with practice runs. Every change is written down in the project on GitHub.',
+      p: 'Each group that is left gets a score from these parts. When a group\'s page does not say something, that part counts as neutral, not as a no. The weights are starting values, and we tune them with practice runs. Every change is written down in the project on GitHub.',
     },
     {
       ul: [
         '**What you are into** (25 percent): the topics you picked and the moments you liked.',
         '**Why you want to join** (20 percent): whether the group offers the reasons that matter most to you.',
-        '**What you would do there** (15 percent): hands on, figuring things out, making, helping, leading or organizing, and how you like to be with people.',
+        '**What you would do there** (15 percent): hands on, figuring things out, making, helping, leading or organizing, how you like to be with people, and who is in the room.',
         '**Practical fit** (15 percent): your schedule, how far it is, how often, group size and cost, for the things you did not lock.',
         '**Your taste test** (10 percent): groups like the ones you liked, and not like the ones you passed on.',
         '**Welcome for newcomers** (10 percent): rises to 20 percent if you said meeting strangers is hard.',
@@ -952,7 +952,7 @@ export const ranking = {
     },
     { h3: 'Step 3: variety' },
     {
-      p: 'We pick results one at a time. Each time, a group gets a small penalty if we already picked one in the same interest or from the same organization. Eight results should not be eight running clubs.',
+      p: 'We pick results one at a time. Each time, a group gets a small penalty if we already picked one in the same interest or from the same organization, and no more than two results can share one. Eight results should not be eight running clubs.',
     },
     { h3: 'Step 4: we explain' },
     {
@@ -1225,6 +1225,7 @@ export const quiz = {
     },
     supportTitle: 'Support groups have their own calm page',
     supportText: 'Crisis numbers come first there, and there is no quiz. You can still take the quiz for other things.',
+    supportPrivacy: 'Choosing this sends nothing anywhere.',
     supportCta: 'Go to support groups',
     go: "Let's go",
   },
@@ -1630,7 +1631,12 @@ export const plan = {
   reminders: 'The file adds a reminder the day before and another two hours before.',
   close: 'Close',
   fileFailed: 'We could not make the calendar file in this browser. Your plan is still saved.',
-  upcoming: 'Planned: {when}',
+  upcoming: 'Planned for {when}',
+  mineTitle: 'Planned visits',
+  mineEmpty: 'Nothing planned right now.',
+  wentTitle: 'You went',
+  remove: 'Remove',
+  removeLabel: 'Remove the plan to visit {name}',
 };
 
 export const share = {

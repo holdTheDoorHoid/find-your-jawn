@@ -9,7 +9,7 @@ import { store } from '../../lib/storage';
 import type { Group } from '../../lib/types';
 import { matches as tm, quiz as t } from '../../strings/en';
 import * as S from './screens';
-import { nextScreen, needsExtraScenes, newState, progressPercent, QUIZ_KEY, readState, stepNumber, type QuizState, type ScreenId } from './state';
+import { nextScreen, needsExtraScenes, newState, progressPercent, QUIZ_KEY, readState, shuffle, stepNumber, type QuizState, type ScreenId } from './state';
 import { Progress } from './widgets';
 
 // The quiz island: one decision per screen, every question skippable, saved in this browser so a
@@ -40,6 +40,7 @@ export default function QuizApp({ dataVersion }: Props) {
   const [groupsLoad, setGroupsLoad] = useState<Load>('loading');
   const [groupsWanted, setGroupsWanted] = useState(false);
   const [late, setLate] = useState<Late | null>(null);
+  const [lateFailed, setLateFailed] = useState(false);
   const [support, setSupport] = useState(false);
   const [moved, setMoved] = useState(false);
   const [blocked, setBlocked] = useState(false);
@@ -102,15 +103,18 @@ export default function QuizApp({ dataVersion }: Props) {
   useEffect(() => {
     if (!groupsWanted || late) return;
     let cancelled = false;
+    setLateFailed(false);
     import('./late')
       .then((m) => {
         if (!cancelled) setLate(m);
       })
-      .catch(() => undefined);
+      .catch(() => {
+        if (!cancelled) setLateFailed(true);
+      });
     return () => {
       cancelled = true;
     };
-  }, [groupsWanted, late]);
+  }, [groupsWanted, late, attempt]);
 
   // ---- save every change in this browser
   const first = useRef(true);
@@ -197,7 +201,9 @@ export default function QuizApp({ dataVersion }: Props) {
       replaceWith(nextScreen('taste', state.answers, state.extra));
       return;
     }
-    setState((s) => ({ ...s, tasteIds: cards.map((c) => c.group.id), tasteProbes: cards.filter((c) => c.probe).map((c) => c.group.id) }));
+    // The engine puts its strongest pick first. Shuffle, so no card is favored for being first.
+    const order = shuffle(cards, state.seed, 'taste');
+    setState((s) => ({ ...s, tasteIds: order.map((c) => c.group.id), tasteProbes: cards.filter((c) => c.probe).map((c) => c.group.id) }));
     // only when the screen or the data changes
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.screen, cat, groups, late, state.tasteIds.length]);
@@ -286,8 +292,19 @@ export default function QuizApp({ dataVersion }: Props) {
   const percent = progressPercent(screen, a, state.extra);
   const showProgress = screen !== 'results';
 
+  const needsLate = screen === 'taste' || screen === 'follow' || screen === 'heard' || screen === 'results';
+
   let body;
-  switch (screen) {
+  if (needsLate && !late && lateFailed) {
+    body = (
+      <div class="callout" role="alert">
+        <p>{t.loadError}</p>
+        <button type="button" class="btn" onClick={() => setAttempt(attempt + 1)}>
+          {t.retry}
+        </button>
+      </div>
+    );
+  } else switch (screen) {
     case 'start':
       body = <S.StartScreen {...props} support={support} setSupport={setSupport} />;
       break;

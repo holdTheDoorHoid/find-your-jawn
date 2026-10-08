@@ -46,7 +46,7 @@ async function loadSuggestions(plan: PlannedVisit, kind: 'rung' | Obstacle, data
 }
 
 export default function CheckInCard({ dataVersion }: { dataVersion: string }) {
-  const [plans, setPlans] = useState<PlannedVisit[]>([]);
+  const [active, setActive] = useState<PlannedVisit | null>(null);
   const [step, setStep] = useState<Step>('ask');
   const [chosen, setChosen] = useState<Outcome | null>(null);
   const [obstacle, setObstacle] = useState<Obstacle | null>(null);
@@ -55,7 +55,9 @@ export default function CheckInCard({ dataVersion }: { dataVersion: string }) {
   const [gone, setGone] = useState(false);
 
   useEffect(() => {
-    const sync = () => setPlans(readPlans(store));
+    // Pick the visit to ask about once. After it is answered it is no longer "due", but the card stays
+    // until the person closes it, so what happens next is not cut off.
+    const sync = () => setActive((now) => now ?? dueCheckIns(readPlans(store), todayString())[0] ?? null);
     sync();
     window.addEventListener(PLANS_EVENT, sync);
     window.addEventListener('storage', sync);
@@ -65,8 +67,7 @@ export default function CheckInCard({ dataVersion }: { dataVersion: string }) {
     };
   }, []);
 
-  const today = todayString();
-  const due = dueCheckIns(plans, today)[0];
+  const due = active;
   if (!due || gone) return null;
 
   const dismiss = () => {
@@ -198,6 +199,12 @@ export default function CheckInCard({ dataVersion }: { dataVersion: string }) {
   );
 }
 
+/** One short line about why: the stretch sentence for a stretch, the first reason otherwise. */
+function line(r: Result): string {
+  if (r.kind === 'stretch' && r.stretchLine) return r.stretchLine.split(/(?<=\.)\s/)[0] ?? '';
+  return r.why[0] ?? '';
+}
+
 function Ideas({ ideas, loadingText, emptyText, quiz }: { ideas: Suggestion[] | null; loadingText: string; emptyText: string; quiz?: boolean }) {
   if (ideas === null) return <p role="status">{loadingText}</p>;
   if (ideas.length === 0) {
@@ -216,7 +223,7 @@ function Ideas({ ideas, loadingText, emptyText, quiz }: { ideas: Suggestion[] | 
         <li key={`${label}-${result.group.id}`}>
           <strong>{label}: </strong>
           <a href={withBase(groupPath(result.group.id))}>{result.group.name}</a>
-          {result.why[0] ? <span class="help"> {result.why[0]}</span> : null}
+          {line(result) ? <span class="help"> {line(result)}</span> : null}
         </li>
       ))}
     </ul>

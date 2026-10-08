@@ -229,15 +229,17 @@ export function HeardScreen(p: ScreenProps & { cat: Catalog; cfg: QuizConfig; go
           ''
         )}
       </p>
-      <div class="qnav qnav--stack">
-        <button type="button" class="btn" onClick={p.onNext}>
-          {t.heard.go}
-        </button>
-        <button type="button" class="btn btn--quiet" onClick={() => p.goTo('start')}>
+      <p>
+        <button type="button" class="linkish" onClick={() => p.goTo('start')}>
           {t.heard.change}
         </button>
+      </p>
+      <div class="qnav">
         <button type="button" class="btn btn--quiet" onClick={p.onBack}>
           {t.back}
+        </button>
+        <button type="button" class="btn" onClick={p.onNext}>
+          {t.heard.go}
         </button>
       </div>
     </Frame>

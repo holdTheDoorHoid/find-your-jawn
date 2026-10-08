@@ -237,6 +237,11 @@ Controlled lists live in `data/vocab/`:
 - `manifest.json`: build date, counts by status, tier, category and planning district, the number of
   tier 0 groups not yet checked, and the coverage estimates from `research/coverage/`.
 
+The site build (not the pipeline) also writes `data/quiz-config.json` into the built site: the parts of
+`vocab.json` the match quiz needs (scenes, moments, future selves, the interest graph, ways in, motives,
+roles, formats, neighborhoods, languages, faith traditions and communities), in a compact shape. It is
+made by `site/src/lib/quiz-config.ts` and nothing in the pipeline has to produce it.
+
 ## 6. Research records (what research agents hand in)
 
 Research agents never edit group files. Each agent writes one JSON file,
