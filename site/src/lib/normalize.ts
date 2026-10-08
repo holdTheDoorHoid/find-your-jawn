@@ -1,3 +1,4 @@
+import { site } from '../strings/en';
 import type {
   CostLevel,
   Group,
@@ -114,7 +115,7 @@ export function normalizeGroup(raw: unknown): Group {
 
   return {
     id: str(g.id) ?? '',
-    name: str(g.name) ?? 'Unnamed group',
+    name: str(g.name) ?? site.unnamedGroup,
     aka: strList(g.aka),
     summary: str(g.summary) ?? '',
     what_you_do: str(g.what_you_do),

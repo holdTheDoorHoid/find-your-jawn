@@ -12,6 +12,11 @@ interface Props {
 }
 const { families, counts = {}, wide = false, headingLevel = 3 } = Astro.props;
 const Heading = `h${headingLevel}` as 'h2' | 'h3';
+function countText(id: string): string | null {
+  const n = counts[id];
+  if (n === undefined) return null;
+  return n === 0 ? t.countNone : n === 1 ? t.countOne : fill(t.count, { n });
+}
 ---
 
 <ul class={wide ? 'tiles tiles--wide' : 'tiles'}>
@@ -24,7 +29,7 @@ const Heading = `h${headingLevel}` as 'h2' | 'h3';
             <a href={withBase(interestPath(f.id))}>{f.label}</a>
           </Heading>
           {f.blurb && <p>{f.blurb}</p>}
-          {counts[f.id] !== undefined && <p>{counts[f.id] === 0 ? t.countNone : counts[f.id] === 1 ? t.countOne : fill(t.count, { n: counts[f.id] })}</p>}
+          {countText(f.id) && <p>{countText(f.id)}</p>}
         </div>
       </li>
     ))

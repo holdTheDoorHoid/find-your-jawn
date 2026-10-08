@@ -43,12 +43,6 @@ export function clip(text: string, max: number): string {
   return (at > max * 0.6 ? cut.slice(0, at) : cut).replace(/[\s,;:.]+$/, '') + '…';
 }
 
-/** "a, b and c" */
-export function joinList(items: string[]): string {
-  if (items.length <= 1) return items.join('');
-  return items.slice(0, -1).join(', ') + ' and ' + items[items.length - 1];
-}
-
 /** Host name of a URL without "www.", or the input if it cannot be parsed. */
 export function hostOf(url: string): string {
   try {

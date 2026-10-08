@@ -21,29 +21,7 @@ export function sourcesFor(g: Group, field: string): GroupSource[] {
 }
 
 export function fieldLabel(path: string): string {
-  const map: Record<string, string> = {
-    name: 'Name',
-    aka: 'Other names',
-    summary: 'Summary',
-    what_you_do: 'What they do',
-    schedule: 'Schedule',
-    locations: 'Location',
-    cost: 'Cost',
-    contacts: 'Contacts',
-    'contacts.website': 'Website',
-    'contacts.email': 'Email',
-    'contacts.phone': 'Phone',
-    'contacts.contact_name': 'Contact name',
-    'contacts.social': 'Social media',
-    'contacts.calendar_feed': 'Calendar',
-    'audience.school': 'School',
-    'audience.open_to': 'Who can join',
-    'requirements.court_ordered_ok': 'Court ordered hours',
-    'requirements.service_hours_letter': 'Service hour forms',
-    'requirements.act153_clearances': 'Clearances',
-    'access.wheelchair': 'Wheelchair access',
-  };
-  if (map[path]) return map[path];
+  if (t.fields[path]) return t.fields[path];
   const last = path.split('.').pop() ?? path;
   return prettify(last);
 }
@@ -58,13 +36,11 @@ export function tierSentence(g: Group): string {
 
 /** One sentence about how fresh the last sign of life is, only when it needs saying. */
 export function freshnessNote(g: Group, now: Date): string | null {
-  if (g.status === 'probably_active') {
-    return 'We think this group is probably still active, but the newest sign we found is more than a year old.';
-  }
-  if (g.status === 'dormant') return 'This group may have gone quiet. Ask before you go.';
-  if (g.status === 'unknown') return 'We are not sure yet whether this group is still active.';
+  if (g.status === 'probably_active') return t.fresh.probablyActive;
+  if (g.status === 'dormant') return t.fresh.dormant;
+  if (g.status === 'unknown') return t.fresh.unknown;
   const months = monthsSince(g.last_sign_of_life, now);
-  if (months !== null && months > 12) return 'The newest sign of life we found is more than a year old. Ask before you go.';
+  if (months !== null && months > 12) return t.fresh.old;
   return null;
 }
 
@@ -111,15 +87,6 @@ export function sourceSeen(s: GroupSource): string | null {
 }
 
 
-const COMMUNITY: Record<string, string> = {
-  lgbtq: 'LGBTQ+',
-  veterans: 'Veterans',
-  women: 'Women',
-  seniors: 'Older adults',
-  disability: 'People with disabilities',
-  deaf: 'Deaf and hard of hearing',
-};
-
 /**
  * A label for an `audience.community` value. Values are plain ids such as "lgbtq", or carry a
  * prefix: "heritage:irish" and "language:es" (data/vocab/audiences.yaml). `lookup` finds a label in
@@ -127,9 +94,9 @@ const COMMUNITY: Record<string, string> = {
  */
 export function communityLabel(value: string, lookup: (section: string, id: string) => string | undefined = () => undefined): string {
   const [prefix, rest] = value.includes(':') ? (value.split(':', 2) as [string, string]) : ['', value];
-  if (prefix === 'heritage') return `${lookup('heritage', rest) ?? prettify(rest)} heritage`;
-  if (prefix === 'language') return `${languageName(rest)} speakers`;
-  return lookup('community', rest) ?? COMMUNITY[rest] ?? prettify(rest);
+  if (prefix === 'heritage') return fill(t.community.heritage, { name: lookup('heritage', rest) ?? prettify(rest) });
+  if (prefix === 'language') return fill(t.community.language, { name: languageName(rest) });
+  return lookup('community', rest) ?? t.community.names[rest] ?? prettify(rest);
 }
 
 /** "Saturday and Sunday" from ["sat", "sun"], in week order. */
@@ -137,5 +104,5 @@ export function dayList(days: string[]): string {
   const order = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
   const names = order.filter((d) => days.includes(d)).map((d) => labels.dayLong[d] ?? d);
   if (names.length <= 1) return names.join('');
-  return names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1];
+  return names.slice(0, -1).join(', ') + ` ${t.listAnd} ` + names[names.length - 1];
 }

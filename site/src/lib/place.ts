@@ -1,3 +1,4 @@
+import { card } from '../strings/en';
 import { titleCase } from './text';
 import type { Group } from './types';
 
@@ -9,5 +10,5 @@ export function placeLine(g: Group, places: Record<string, string> = {}): string
     if (here.planning_district) return places[here.planning_district] ?? titleCase(here.planning_district);
   }
   if (g.locations.some((l) => !l.in_city)) return null;
-  return g.online_ok ? 'Online' : null;
+  return g.online_ok ? card.online : null;
 }
