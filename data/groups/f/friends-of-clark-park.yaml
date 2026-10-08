@@ -9,21 +9,23 @@ leads:
 - irs_990n:237426386
 - irs_bmf:237426386
 ein: '237426386'
-summary: Neighbors who care for a local park in the University Southwest part of the city meet as Friends
-  of Clark Park, part of the City's network of park Friends groups. It is also a registered community
-  organization, so developers are asked to talk with it about nearby zoning and building plans.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who support Clark Park in West Philadelphia. They push for the park upgrades the City
+  approved, such as nature-based playgrounds and a permanent restroom, and they host events such as Parktoberfest.
+what_you_do: Join as a member or sign up to volunteer through the group's website. Members can also attend
+  board meetings and events such as Parktoberfest.
 kind: friends_group
 categories:
 - nature-environment
+- neighborhood-civic
 interests:
 - friends_of_park
-- park_cleanup
+- community_development
 motives:
 - values
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
 - organize
@@ -40,43 +42,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
+  text: Parktoberfest is Saturday, October 10, 2 to 8 pm. The page does not print the year, but October
+    10 is a Saturday in 2026. Board meeting dates are on a linked page and are not listed on the home
+    page.
+  days:
+  - sat
+  times:
+  - daytime
+  - evening
   recurring: null
-  season: null
+  season: fall
 locations:
-- label: Park
+- label: Clark Park
   address: 4301 Chester Ave
   neighborhood: null
-  planning_district: university_southwest
-  zip: '19104'
-  lat: 39.948988414625404
-  lng: -75.20984944325257
-  in_city: true
-  transit: null
-- label: Meeting place
-  address: 'in-person meetings at the HMS school (4400 Baltimore Ave, Philadelphia, PA 19104 & ZOOM: https://friendsofclarkpark.org/calendar/events-in-clark-park/'
-  neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: P.O. Box 31908, Philadelphia, PA 19104
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19104'
-  lat: 39.94788075606958
-  lng: -75.20985266220464
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Membership and donation amounts are not shown on the page.
 commitment: null
 group_size: null
 access:
@@ -91,11 +80,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Volunteer page (friendsofclarkpark.org/volunteering) to sign up to help, or join at friendsofclarkpark.org/membership
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The membership and volunteer pages are public and say how to join. The site does not say beginners
+    are welcome in so many words.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -103,11 +93,13 @@ contacts:
   email: Info@friendsofclarkpark.org
   phone: '7249546966'
   contact_name: Benjamin Sirolly
-  social: []
+  social:
+  - https://www.facebook.com/groups/friendsofclarkpark
+  - https://www.instagram.com/friendsofclarkpark
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.friendsofclarkpark.org/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -147,6 +139,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://www.friendsofclarkpark.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://www.friendsofclarkpark.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

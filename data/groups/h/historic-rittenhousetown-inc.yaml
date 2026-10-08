@@ -7,25 +7,29 @@ leads:
 - cultural_fund:historic-rittenhousetown-inc
 - irs_bmf:222599559
 ein: '222599559'
-summary: Historic Rittenhousetown is a Friends group for a local park, one of the volunteer groups that
-  look after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: A historic village in the Wissahickon area with a 1707 homestead, several historic houses, an
+  arboretum, and a small museum. Visitors take tours, and volunteers and members help keep the site going.
+what_you_do: Volunteer on site, become a member, take a Saturday tour, or come to the free Second Saturday
+  museum visits.
+kind: nonprofit
 categories:
-- nature-environment
+- history-heritage-preservation
 interests:
-- friends_of_park
-- park_cleanup
+- historic_site_volunteering
+- museum_volunteering
+- preservation_architecture
 motives:
+- understanding
 - values
-- social
 formats:
-- side_by_side
+- behind_the_scenes
+- one_off_event
 roles:
 - hands_on
-- organize
+- help_teach
 crowd:
-- neighbors
+- all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -37,26 +41,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Tours on Saturdays from Memorial Day through Labor Day, 12 to 3 pm, starting on the hour. Free
+    Second Saturday museum visits. Fall Fest from 5 to 8 pm (the event date is not on the page)
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Park
-  address: 6014 Wissahickon Ave
+- label: Historic Rittenhouse Town
+  address: 208 Lincoln Drive
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19144'
-  lat: 40.02973899210316
-  lng: -75.18979831124228
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Tours $10 a person (children under 8 free); Second Saturday museum visits are free; Fall Fest
+    is pay what you can
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,14 +75,15 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Take a Saturday tour from 12 to 3 pm ($10 a person), then ask about volunteering or membership
+    through the Volunteer page on rittenhousetown.org
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Tours and museum visits are open to the public, and the site lists volunteer and membership options
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -100,14 +109,27 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - match
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
   - name
   - locations
   - ein
+- url: https://www.rittenhousetown.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

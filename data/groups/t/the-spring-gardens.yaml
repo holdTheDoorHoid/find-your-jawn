@@ -1,33 +1,37 @@
 id: the-spring-gardens
-name: The Spring Gardeners
+name: The Spring Gardens
 aka:
-- The Spring Gardens
+- The Spring Gardeners
 leads:
 - city_friends:839
 - city_gardens:18
 ein: null
-summary: The Spring Gardeners is a Friends group for a local park, one of the volunteer groups that look
-  after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: A volunteer-run community garden that neighbors started in 1995 in the Spring Garden area. Members
+  grow food and flowers, and the garden also runs cooking workshops, gardening classes, school tours,
+  and bike tours.
+what_you_do: Garden members, who live inside the garden's boundaries, grow a plot. Volunteers sign up
+  through a GivePulse page linked from the site. The garden also hosts events such as a yoga class and
+  food truck nights.
+kind: garden
 categories:
-- nature-environment
+- gardening-greening
+- food-drink
 interests:
-- friends_of_park
-- park_cleanup
+- community_garden
+- urban_farming
+- cooking_baking
 motives:
 - values
-- social
 formats:
 - side_by_side
+- learn_skill
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -36,34 +40,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Events are posted on the events calendar. Recent examples: a yoga class on Sept 28, 2026 (6:30
+    to 7:30 pm) and Parks on Tap, Sept 16 to 20, 2026. Garden hours are not on the site.'
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations:
-- label: Park
+- label: The Spring Gardens
   address: 1828 North St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
-  lat: 39.96638132015015
-  lng: -75.1679735609512
+  lat: null
+  lng: null
   in_city: true
   transit: null
-- label: Garden
-  address: 1832 North St
-  neighborhood: null
-  planning_district: central
-  zip: '19130'
-  lat: 39.96638132015015
-  lng: -75.1679735609512
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
+  text: Membership and class prices are not stated. Donations are accepted.
 commitment: null
 group_size: null
 access:
@@ -78,11 +74,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the waitlist for a garden plot on the site's waitlist page, or sign up to volunteer through
+    the group's GivePulse page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Plots are for residents inside the garden's boundaries and there is a waitlist. Volunteer sign-up
+    is public.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -90,7 +88,9 @@ contacts:
   email: pprstewardship@phila.gov
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/thespringgardenscommunitygarden/
+  - https://www.instagram.com/thespringgardens_phl
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -110,8 +110,23 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+- url: https://www.thespringgardens.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - cost
+  - first_step
+  - contacts
+- url: https://www.thespringgardens.org/events-calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

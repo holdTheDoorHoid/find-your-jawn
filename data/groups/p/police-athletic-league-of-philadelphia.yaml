@@ -4,36 +4,52 @@ aka: []
 leads:
 - irs_bmf:231507837
 ein: '231507837'
-summary: null
-what_you_do: null
+summary: A youth development group with free sports, learning, character-building and cultural programs
+  for kids ages 6 to 18. Its 15 community sites each have an on-duty police officer, and 3 school sites
+  run during the school year.
+what_you_do: Kids take part in free sports, learning and character programs at a site near them. Adults
+  18 and older can volunteer for at least 2 hours per event, and the Programs Department reviews each
+  volunteer request first.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- kids-youth-mentoring
+- sports-teams
+interests:
+- after_school_camps
+- youth_coaching
+motives:
+- values
+- social
+formats:
+- team_play
+- side_by_side
+roles:
+- help_teach
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 6
+  max_age: 18
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Free programs at 15 community sites and 3 school sites during the school year. Hours and site
+    addresses are not on the homepage.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 3068 Belgrade St
+- label: Headquarters
+  address: 3068 Belgrade Street, Philadelphia, PA 19134
   neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19134'
   lat: null
   lng: null
@@ -41,8 +57,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The PAL site says all of its programs are free.
 commitment: null
 group_size: null
 access:
@@ -54,26 +70,29 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Call PAL headquarters at (215) 291-9000 and ask which community site is closest to you.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Programs are free and open to kids 6 to 18, but the site does not list centers or sign-up steps,
+    so the way in is a phone call.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.phillypal.org
   email: null
-  phone: null
+  phone: (215) 291-9000
   contact_name: Erica Vanstone
-  social: []
+  social:
+  - https://www.facebook.com/PALPhiladelphia
+  - https://www.instagram.com/phillypal1947
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.phillypal.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +101,23 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.phillypal.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - cost
+  - contacts
+  - status
+  - audience
+- url: https://www.phillypal.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

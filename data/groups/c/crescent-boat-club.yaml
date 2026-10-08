@@ -5,18 +5,29 @@ leads:
 - irs_bmf:222624241
 - manual_seeds:schuylkill-navy-crescent-boat-club
 ein: '222624241'
-summary: null
-what_you_do: null
+summary: A member-run rowing club at 5 Kelly Drive on Boathouse Row, founded in 1867, that welcomes people
+  with no rowing experience and offers summer coaching at every level.
+what_you_do: Newcomers can start with an inquiry and take summer coaching from novice to sculling development.
+  The club also has junior, under-23 and masters crews. Youth rowers apply through RegattaCentral.
 kind: club
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- water-rowing
+interests:
+- rowing
+- youth_rowing
+motives:
+- social
+- enhancement
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,26 +36,34 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Summer youth sculling programs on the Schuylkill River. The Novice program usually runs Monday
+    to Thursday, 8 to 11 am. The newest dated item is a May 2025 post about the 2025 summer programs.
+    No 2026 dates were found on the pages read.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - morning
+  recurring: true
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: 5 Boathouse Row
+- label: Boathouse
+  address: 5 Kelly Drive, Philadelphia, PA 19130
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Adult member dues are $550 a year. Each summer youth program costs $800, separate from dues. Racing
+    uniforms are not included in the Sculling Development or Junior fees.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -55,26 +74,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Send an inquiry through the form on the Membership page. The page lists membership categories.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club says newcomers can join with no rowing experience and explains how to start by inquiry.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://crescentboatclub.org/
+  email: board@crescentboatclub.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-05
+sign_of_life_url: https://crescentboatclub.org/
 sources:
 - url: https://boathouserow.org/members/
   seen: '2026-10-04'
@@ -86,8 +105,49 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://crescentboatclub.org/?p=172
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - locations
+  - requirements
+  - status
+- url: https://crescentboatclub.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - locations
+  - contacts
+  - what_you_do
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://crescentboatclub.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - requirements
+  - first_step
+- url: https://crescentboatclub.org/youth-rowing/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - interests
+  - contacts
+  - requirements
+  - first_step
+- url: https://crescentboatclub.org/information/news-and-updates/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

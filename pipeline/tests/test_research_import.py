@@ -539,4 +539,19 @@ def test_real_haiku_output_shapes_import_with_the_expected_repairs(layout, vocab
     assert amc["interests"] == ["hiking", "kayaking", "camping", "trail_building"]
     held = json.loads((layout.held_dir("w2") / "p5.json").read_text(encoding="utf-8"))
     (record,) = held["records"]
-    assert "audience.open_to is required to publish" in record["_held_reasons"]
+    assert "interests needs at least one value from the vocabulary" in record["_held_reasons"]
+
+
+def test_missing_open_to_defaults_to_public_or_students(layout, vocab):
+    club = good_record(name="Open Club")
+    del club["audience"]
+    student = good_record(name="Student Club", kind="student_org")
+    student["audience"] = {"school": "penn"}
+    student["contacts"] = {"website": "https://studentclub.example.edu"}
+    write_inbox(layout, "w1", "a1", [club, student])
+    summary = run(layout, vocab)
+    assert (summary.created, summary.held) == (2, 0)
+    store = GroupStore(layout.groups_dir)
+    groups = {store.read(i)["name"]: store.read(i) for i in store.ids()}
+    assert groups["Open Club"]["audience"]["open_to"] == "public"
+    assert groups["Student Club"]["audience"]["open_to"] == "students"

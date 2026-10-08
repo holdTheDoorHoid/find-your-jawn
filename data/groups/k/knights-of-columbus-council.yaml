@@ -1,40 +1,68 @@
 id: knights-of-columbus-council
-name: Knights of Columbus, Council
-aka: []
+name: San Salvador Council 283, Knights of Columbus
+aka:
+- Knights of Columbus, Council
 leads:
 - manual_seeds:knights-of-columbus-council-283
 ein: null
-summary: null
-what_you_do: null
+summary: A Catholic fraternal service club in South Philadelphia that runs food, coat and blood drives
+  and takes part in parish Masses and festivals.
+what_you_do: Help with the council's food and coat collections, give blood at a drive, or come to a public
+  Mass, parade or festival. Membership is a separate path that starts with the site's contact form.
 kind: club
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+- social-meetups
+- hunger-housing-basic-needs
+interests:
+- faith_service_projects
+- fraternal_service_clubs
+- food_pantry
+- goods_closets
+motives:
+- values
+- social
+formats:
+- team_play
+- one_off_event
+roles:
+- hands_on
+- organize
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: catholic
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: No regular meeting night is posted. Drives, Masses and festivals are listed by date. The next
+    listed event is the Columbus Day Mass, parade and festival on Sunday, Oct. 11, 2026.
+  days:
+  - sun
   times: []
-  recurring: null
-  season: null
-locations: []
+  recurring: false
+  season: event_only
+locations:
+- label: St. Paul Parish, South Philadelphia (the address the council page lists)
+  address: 808 S. Hutchinson Street
+  neighborhood: null
+  planning_district: null
+  zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Event fees are not listed, and membership dues are not published on the site.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -48,11 +76,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Go to the Columbus Day Mass, parade and festival on Sunday, Oct. 11, 2026, or use the Join the
+    Knights page on kofc283philly.org to ask about membership.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The public events are open to anyone and the site has a clear way to ask about joining, but membership
+    rules are not published.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -62,17 +92,45 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://kofc283philly.org
 sources:
 - url: https://kofc283philly.org
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
-research_tier: 0
-confidence: null
-last_checked: null
+  - summary
+  - what_you_do
+  - kind
+  - schedule
+  - status
+  - first_step
+  - audience
+- url: https://kofc283philly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule.text
+  - status
+  - last_sign_of_life
+  - contacts.website
+- url: https://kofc283philly.org/joinnow
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience.open_to
+  - contacts
+- url: https://stpaulphilly.org/knights-of-columbus
+  seen: '2026-10-08'
+  fields:
+  - audience.faith
+  - locations
+  - summary
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

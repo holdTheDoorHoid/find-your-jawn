@@ -1,22 +1,35 @@
 id: land-health-institute
-name: Land Health Institute
-aka: []
+name: LandHealth Institute
+aka:
+- Land Health Institute
 leads:
 - irs_bmf:462655132
 - manual_seeds:land-health-institute
 ein: '462655132'
-summary: null
-what_you_do: null
+summary: A West Philadelphia nonprofit that teaches people about nature at outdoor sites, works to revive
+  neglected land and runs a native plant nursery. Volunteers can sign up through the website.
+what_you_do: Sign up to volunteer, join as a member, or come to public events such as the free kayaking
+  day at the Dragon Boat Dock in West Fairmount Park.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- nature-environment
+- science-learning
+interests:
+- habitat_restoration
+- citizen_science
+motives:
+- values
+- understanding
+formats:
+- side_by_side
+- one_off_event
+roles:
+- hands_on
+- help_teach
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +38,38 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Events are posted by date on the group's site. The May 9, 2026 free kayaking day ran 1:30 to 5:30
+    pm, and the group called it the start of its 2026 kayaking season. No other dated program was found.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 658 N 63rd St Unit 12557
+- label: Native Plant Nursery
+  address: 1761 N 49th St
   neighborhood: null
-  planning_district: west_park
-  zip: '19151'
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Dragon Boat Dock, West Fairmount Park (2026 kayaking day)
+  address: 1233 Martin Luther King Jr Dr
+  neighborhood: null
+  planning_district: null
+  zip: '19131'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The May 2026 kayaking day was free, with no tickets on sale. Costs for other programs are not
+    listed.
 commitment: null
 group_size: null
 access:
@@ -55,31 +81,34 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Sign up through the Become a Volunteer page on landhealthinstitute.org, or email info@landhealthinstitute.org
+    to ask about the next volunteer day.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Volunteer sign-up and events are open to the public with a posted way to start, and the kayaking
+    day was open to all ages and skill levels.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://landhealthinstitute.org
+  email: info@landhealthinstitute.org
   phone: null
   contact_name: Scott Quitel
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://landhealthinstitute.org/event-details/love-your-park-week-free-kayaking
 sources:
 - url: https://loveyourpark.org/events/lyp-week-2026
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
+  - status
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -87,8 +116,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://landhealthinstitute.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - locations
+  - contacts
+  - first_step
+- url: https://landhealthinstitute.org/event-details/love-your-park-week-free-kayaking
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - requirements
+  - locations
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

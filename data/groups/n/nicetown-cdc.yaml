@@ -8,24 +8,25 @@ leads:
 - city_rco:257
 - city_rco_points:257
 ein: null
-summary: Neighbors who care for a local park in the North part of the city meet as Nicetown CDC, part
-  of the City's network of park Friends groups. It is also a registered community organization, so developers
-  are asked to talk with it about nearby zoning and building plans.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: A community development group in Nicetown that runs a yearly summer festival with concerts and
+  a Land Care program for parks and gardens. The City lists it as the Friends group for Nicetown Park,
+  but its website does not mention the park.
+what_you_do: Volunteer at the yearly Giveback Community Festival through the sign-in page on the site,
+  or call to ask about the Land Care program.
+kind: nonprofit
 categories:
-- nature-environment
+- neighborhood-civic
+- philly-traditions
 interests:
-- friends_of_park
-- park_cleanup
+- community_development
+- street_festivals
 motives:
 - values
 - social
 formats:
-- side_by_side
+- team_play
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
@@ -39,35 +40,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The 24th Annual Giveback Community Festival and Concerts, August 7 and 8, 2026 (no times listed)
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: summer
 locations:
-- label: Park
-  address: 4301 Germantown Ave
+- label: Nicetown CDC office
+  address: 4414 Germantown Ave, 3rd Floor, Suite A
   neighborhood: null
-  planning_district: north
-  zip: '19140'
-  lat: 40.02000129583265
-  lng: -75.15460839132164
-  in_city: true
-  transit: null
-- label: Office
-  address: 4414 Germantown Ave, 3rd Floor, Suite B
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19140'
-  lat: 40.03063439564222
-  lng: -75.15349892287989
-  in_city: true
-  transit: null
-- label: Meeting place
-  address: 4300 Germantown Avenue, Phila PA 19140-(NTCDC/NAC Office), , Nicetown Court- 4340 Germantown
-    Avenue Phila PA 19140-(Community Room)
-  neighborhood: null
-  planning_district: north
+  planning_district: null
   zip: '19140'
   lat: null
   lng: null
@@ -76,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The page does not say whether the festival charges admission.
 commitment: null
 group_size: null
 access:
@@ -91,19 +73,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up to volunteer for the Giveback Community Festival through the sign-in page on nicetowncdc.org,
+    or call (215) 324-9772 to ask about the Land Care program
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Volunteer sign-up and a phone line are both listed, but the site does not say how newcomers start.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.nicetowncdc.org
   email: info@nicetowncdc.org
-  phone: 215-329-1827
+  phone: (215) 324-9772
   contact_name: Majeedah A. Rashid
-  social: []
+  social:
+  - https://www.instagram.com/nicetowncdc
+  - https://www.facebook.com/profile.php?id=100064500472114
+  - https://twitter.com/nicetowncdc
+  - https://www.youtube.com/channel/UCEYfxfReKmFHheh7RALhPgg
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -134,6 +121,7 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - aka
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -142,6 +130,16 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+- url: https://www.nicetowncdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

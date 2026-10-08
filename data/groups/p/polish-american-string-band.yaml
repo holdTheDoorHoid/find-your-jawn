@@ -5,18 +5,28 @@ leads:
 - irs_bmf:232209552
 - mummers:polish-american-string-band
 ein: '232209552'
-summary: null
-what_you_do: null
+summary: A Mummers string band with a clubhouse on East Westmoreland Street. Its site lists clubhouse
+  hours on Tuesday evenings and has a membership page.
+what_you_do: Play or march with the band in the New Year's Day parade. The membership page did not show
+  sign-up steps when read.
 kind: club
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- philly-traditions
+interests:
+- mummers_string_band
+- mummers_clubhouse
+motives:
+- values
+- social
+formats:
+- team_play
+- perform_make_together
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,16 +35,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Clubhouse hours listed as Tuesdays, 7 to 11 pm. The site does not say what happens then.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 2727 E Westmoreland St
+- label: Clubhouse
+  address: 2727 East Westmoreland Street, Philadelphia, PA 19134
   neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19134'
   lat: null
   lng: null
@@ -43,7 +55,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not published
 commitment: null
 group_size: null
 access:
@@ -58,36 +70,48 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Membership page on polishamericanstringband.com, or email publicity@polishamerican.net
+    to ask about joining.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: A membership page exists, but the details shown do not explain how to sign up.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://polishamericanstringband.com/
+  email: publicity@polishamerican.net
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/polishamerican.stringband
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-01
+sign_of_life_url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
 sources:
 - url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
+  - status
+  - last_sign_of_life
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://polishamericanstringband.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,18 +4,29 @@ aka: []
 leads:
 - irs_bmf:231352034
 ein: '231352034'
-summary: null
-what_you_do: null
+summary: A mentoring agency for Philadelphia and six nearby counties in Pennsylvania and New Jersey. Adult
+  volunteers, called Bigs, spend regular time with one child through a one-to-one mentoring program.
+what_you_do: 'Bigs take part in one-to-one mentoring through one of several programs: community-based
+  mentoring, site-based mentoring, Beyond School Walls, an LGBTQ+ program, or POWER Up. A visit lasts
+  about two hours, at least twice a month. Bigs must be 21 or older.'
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+motives:
+- values
+- social
+formats:
+- side_by_side
+- conversation
+roles:
+- help_teach
+crowd:
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,25 +35,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Visits last about two hours, at least twice a month, for a commitment of a year or more. The site
+    gives both 18 months and one year, so ask for the exact term.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 100 N 20th Street 5th Floor
+- label: Philadelphia office
+  address: 100 North 20th Street, 5th Floor, Philadelphia, PA 19103
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19103'
   lat: null
   lng: null
   in_city: true
   transit: null
+- label: Norristown office
+  address: 530 DeKalb Street, Norristown, PA 19401
+  neighborhood: null
+  planning_district: null
+  zip: '19401'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state a cost for becoming a Big.
 commitment: null
 group_size: null
 access:
@@ -51,29 +72,31 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Fill in the short inquiry form on the Be a Big page, then book the virtual interview with a staff
+    member.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The steps are clear (inquiry, virtual interview, application with background checks, then a match),
+    but a person cannot see the program before the interview and application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://independencebigs.org
   email: null
-  phone: null
+  phone: (215) 790-9200
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://independencebigs.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +104,26 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://independencebigs.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - programs
+  - locations
+  - contacts
+  - status
+  - requirements.background_check
+- url: https://independencebigs.org/be-a-big
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+  - requirements.background_check
+  - summary
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

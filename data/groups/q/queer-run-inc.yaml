@@ -1,59 +1,85 @@
 id: queer-run-inc
-name: Queer Run Inc
+name: Queer Run
 aka: []
 leads:
 - irs_990n:412929720
 - irs_bmf:412929720
 ein: '412929720'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A free run club for LGBTQIA+ runners in Philadelphia, run as a nonprofit. Runners of all paces
+  meet for weekly runs in Center City and Manayunk.
+what_you_do: Run three or four miles with other queer runners at your own pace, starting from a meeting
+  point on a weekly run night.
+kind: club
+categories:
+- running-cycling-fitness
+- social-meetups
+interests:
+- running
+- lgbtq_social
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - lgbtq
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Weekly runs: Mondays at 7 pm from the Center of Rittenhouse Square, Wednesdays at 6 pm from Philadelphia
+    Runner in Manayunk, and Thursdays at 6 am from the southwest corner of Love Park'
+  days:
+  - mon
+  - wed
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1320 S 30th St
+- label: Center of Rittenhouse Square
+  address: null
   neighborhood: null
-  planning_district: south
-  zip: '19146'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1320 S 30th
+- label: Philadelphia Runner, Manayunk
+  address: null
   neighborhood: null
-  planning_district: south
-  zip: '19146'
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Southwest corner of Love Park
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +93,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Show up at a meeting point on a run night. The site also has a Heylo invite link.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: All runs are free and open to all paces, and the site invites people to just show up.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.queerrun.net
-  email: null
+  website: https://queerrun.net
+  email: contact@queerrun.net
   phone: null
   contact_name: Josh Fernandez
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://queerrun.net
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +126,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://queerrun.net
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

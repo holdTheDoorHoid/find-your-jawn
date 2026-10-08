@@ -1,0 +1,44 @@
+{
+ "wave": "w1-tier1-friends",
+ "agent": "friends-09",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 3,
+ "fetches_used": 10,
+ "leads_only": [
+  {
+   "name": "Friends of Elmwood Park",
+   "url": "https://www.phila.gov/2021-11-12-love-your-park-canvassing-at-elmwood/",
+   "note": "Named as a joined group on the City's March 2022 Park Friends page, with a City news page as its link. Not in this batch; not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.nicetowntioga.org",
+   "status": null,
+   "note": "Connection closed on two tries and a TLS certificate check failed on a third. Not a bot check or a 403; retried three times."
+  }
+ ],
+ "notes": "Searches: all 3 used (Winter Street Greenway, Wakefield Park, Stokley Playground); none found the group's own site. Fetches: 10 attempts, 7 succeeded, 3 failed on nicetowntioga.org. Budget was not exhausted on fetches. Records with no web presence beyond the City list: Tip Top, Titan, Trenton and Auburn, Wakefield, Stokley, Triangle, Upper Roxborough, Wissahickon East, and Winter Street Greenway. Searches ran out before these could be checked further, so they are unknown and open for a later pass. Facebook pages were not opened. The City's Park Friends list page is a dynamic map with none of these parks in its text. Dropped with reasons: The Spring Gardens (thespringgardens.org) was fetched: a community garden where membership is limited to residents within Fairmount Ave to Spring Garden St and North Broad St to Pennsylvania Ave, with a waitlist and no dated items. It is not a Friends group in this batch, so no record was written; it was named on the City's March 2022 page. Shofuso Japanese House and Garden and Manayunk Bridge Garden were named on the same City page; the Manayunk friends group is unnamed and has no link, and Shofuso is not a Friends group in this batch. Partners named on the Vernon, Weccacoe, and Wissahickon Neighbors pages are listed in each record's notes with no links captured, so they were not checked.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "city_friends:854"
+    ],
+    "group_id": null,
+    "ein": null,
+    "website": null
+   },
+   "verdict": "duplicate",
+   "name": "Friends of Wissahickon Neighbors Park",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Same park, same address (3901 Terrace St, 19128), and same group name as lead city_friends:850, which holds the full record. This lead's City list email is fonwp-group@wissnca.com, and that email is used in the record for lead 850. The group id is not known, so match.group_id is null and the match is on lead_ids.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "duplicate needs match.group_id (the group that survives)"
+   ]
+  }
+ ]
+}

@@ -6,15 +6,16 @@ leads:
 - city_friends:824
 - irs_bmf:232007694
 ein: '232007694'
-summary: Friends of Rittenhouse Square is a Friends group for a local park, one of the volunteer groups
-  that look after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: A nonprofit that helps look after Rittenhouse Square in Center City. Donors can adopt a bench
+  or sponsor a lawn to help pay for upkeep, and the group runs public events, including a fall craft show
+  and a Halloween family day.
+what_you_do: Volunteer through the group's volunteer page, become a member, adopt a bench, sponsor a lawn,
+  or come to a public event.
 kind: friends_group
 categories:
 - nature-environment
 interests:
 - friends_of_park
-- park_cleanup
 motives:
 - values
 - social
@@ -24,7 +25,7 @@ roles:
 - hands_on
 - organize
 crowd:
-- neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,25 +37,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'October 2026 events are listed: a fall fine craft show on Oct 9 to 11 (11 am to 5 pm) and Halloween
+    Family Fun on Oct 24 (11 am to 2 pm). The events page gives no location or cost for either.'
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations:
-- label: Park
+- label: Rittenhouse Square
   address: 1800 Walnut St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19103'
-  lat: 39.949597136125526
-  lng: -75.1718825821956
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Membership, donation and event costs are not listed.
 commitment: null
 group_size: null
 access:
@@ -66,26 +68,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Go to the Halloween Family Fun on Oct 24 (11 am to 2 pm) or the fall craft show (Oct 9 to 11),
+    or sign up through the volunteer page on the group's website
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Public events are listed with dates, and the group has a public volunteer page
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.friendsofrittenhouse.org
   email: info@friendsofrittenhouse.org
-  phone: null
+  phone: 267-586-5675
   contact_name: Laura Larosa
-  social: []
+  social:
+  - https://www.instagram.com/friendsofrittenhouse
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.friendsofrittenhouse.org/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -101,8 +105,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
+- url: https://www.friendsofrittenhouse.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - first_step
+- url: https://www.friendsofrittenhouse.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - contacts
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

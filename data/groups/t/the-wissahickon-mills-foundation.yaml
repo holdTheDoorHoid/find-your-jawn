@@ -1,22 +1,31 @@
 id: the-wissahickon-mills-foundation
-name: The Wissahickon Mills Foundation
-aka: []
+name: Philadelphia Canoe Club
+aka:
+- The Wissahickon Mills Foundation
 leads:
 - irs_990n:882996144
 - irs_bmf:882996144
 ein: '882996144'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: Paddling club that has taught and promoted paddle sports in Philadelphia since 1905. It runs
+  lessons in kayak, canoe, stand-up paddleboard and pool sessions, plus trips open to the public.
+what_you_do: Take a lesson, join a trip, or come to the monthly club meeting.
+kind: club
+categories:
+- outdoors-adventure
+interests:
+- kayaking
+motives:
+- enhancement
+- social
+formats:
+- learn_skill
+- one_off_event
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +34,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly club meeting on the third Monday at 7:30 pm, with lessons and trips through the year
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Clubhouse
   address: 4900 Ridge Ave
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19128'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 4900 Ridge Avenue
-  neighborhood: null
-  planning_district: lower_northwest
-  zip: '19128'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Lesson and membership prices were not on the pages I read.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for a lesson or trip through the club site, or join its mailing list. Trips, training and
+    events do not require membership.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club runs beginner-level lessons across several paddle types and says trips and training
+    are open to the public without membership.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.philacanoe.org/Wissahickon-Mill-Foundation
-  email: null
+  website: https://philacanoe.org
+  email: admin@philacanoe.org
   phone: null
   contact_name: Griffin P Affel
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://philacanoe.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +104,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://philacanoe.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

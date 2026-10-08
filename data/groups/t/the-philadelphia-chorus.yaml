@@ -5,18 +5,27 @@ leads:
 - irs_990n:236428245
 - irs_bmf:236428245
 ein: '236428245'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A chorus in University City that sings sacred and secular music from many periods. It marks its
+  75th anniversary with a concert on December 5, 2026.
+what_you_do: Book an audition by phone, then rehearse on Monday evenings and sing in the chorus concerts.
+kind: club
+categories:
+- music
+interests:
+- choir_singing
+motives:
+- enhancement
+- social
+formats:
+- perform_make_together
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,17 +34,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Rehearses Monday evenings in University City.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 42735
-  neighborhood: null
-  planning_district: central
-  zip: '19101'
+- label: Rehearsals in University City
+  address: null
+  neighborhood: university_city
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -43,8 +54,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the pages checked
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +69,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Call 215-995-3118 to book an audition. Auditions are held by appointment
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Listed as an auditioned choir, with audition appointments made by phone
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.thephiladelphiachorus.org/
   email: null
-  phone: null
+  phone: 215-995-3118
   contact_name: Susan Shaman
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.thephiladelphiachorus.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +101,20 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thephiladelphiachorus.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - last_sign_of_life
+- url: https://singers.com/groups/Philadelphia+Chorus
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

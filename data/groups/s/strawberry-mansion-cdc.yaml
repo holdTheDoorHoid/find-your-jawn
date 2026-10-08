@@ -1,21 +1,35 @@
 id: strawberry-mansion-cdc
-name: Strawberry Mansion CDC
-aka: []
+name: Strawberry Mansion Community Development Corporation
+aka:
+- Strawberry Mansion CDC
 leads:
 - manual_seeds:strawberry-mansion-cdc
 ein: null
-summary: null
-what_you_do: null
+summary: A Strawberry Mansion neighborhood nonprofit that works on housing repair, historic preservation,
+  and resident programs. It hosts free family events, such as a spring movie night at The Yard.
+what_you_do: Come to free community events, sign up for the newsletter, or use the volunteer page to ask
+  how to help with the group's housing and land care programs.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- neighborhood-civic
+- history-heritage-preservation
+- hunger-housing-basic-needs
+interests:
+- community_development
+- preservation_architecture
+- home_repair
+motives:
+- values
+- social
+formats:
+- one_off_event
 roles: []
-crowd: []
+crowd:
+- families
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,16 +38,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: Free family events such as a movie night on Friday, May 15, 2026, 7 to 10 pm. No recurring schedule
+    is published.
+  days:
+  - fri
+  times:
+  - evening
+  recurring: false
+  season: event_only
+locations:
+- label: The Yard (movie night venue)
+  address: 1515 N 33rd St
+  neighborhood: null
+  planning_district: null
+  zip: '19121'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free
 commitment: null
 group_size: null
 access:
@@ -45,33 +71,52 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Watch the group's site for the next free community event and come along, or email info@strawberrymansioncdc.org
+    to ask how to volunteer.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Free family events are open to the public, and the site lists a volunteer page and an email address
+    for questions.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.strawberrymansioncdc.org
+  email: info@strawberrymansioncdc.org
+  phone: 215-235-7505
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants
 sources:
 - url: https://loveyourpark.org/events/lyp-week-2026
   seen: '2026-10-04'
   fields:
   - name
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+  - audience
+  - crowd
+  - status
+  - last_sign_of_life
+- url: https://www.strawberrymansioncdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

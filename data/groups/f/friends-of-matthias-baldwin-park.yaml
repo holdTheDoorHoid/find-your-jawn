@@ -7,9 +7,10 @@ leads:
 - irs_990n:454446348
 - irs_bmf:454446348
 ein: '454446348'
-summary: Friends of Matthias Baldwin Park is a volunteer Friends group listed by Philadelphia Parks and
-  Recreation for a local park. It brings neighbors together to keep the space clean and lively.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Volunteers who restore and look after Matthias Baldwin Park. They hold a monthly cleanup and
+  member meetings, and they keep an eye on the park's plantings and trees.
+what_you_do: Join a monthly Saturday cleanup, come to the first Thursday member meeting, or become a member
+  through the join page on the group's site.
 kind: friends_group
 categories:
 - nature-environment
@@ -23,7 +24,6 @@ formats:
 - side_by_side
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
@@ -37,26 +37,31 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly cleanup on a Saturday at 10 am (the site gives both the second and third Saturday, so
+    check the date); member meetings on the first Thursday at 7 pm
+  days:
+  - sat
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Matthias Baldwin Park
   address: 429 N 19th St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
-  lat: 39.961593040623804
-  lng: -75.16898785526337
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: The site does not state membership dues or whether events are free.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -70,23 +75,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the next monthly cleanup at 10 am (check the date on baldwinparkphilly.org first), or join
+    through the membership page at baldwinparkphilly.org/join
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site says attending a cleanup is the clearest way to help and links a join page, but it does
+    not say beginners are welcome in particular.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.baldwinparkphilly.org
-  email: pprstewardship@phila.gov
+  email: baldwinparkphilly@gmail.com
   phone: null
   contact_name: Paul Shay
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.baldwinparkphilly.org
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -95,6 +102,7 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - kind
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -110,6 +118,17 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://www.baldwinparkphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts.website
+  - contacts.email
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

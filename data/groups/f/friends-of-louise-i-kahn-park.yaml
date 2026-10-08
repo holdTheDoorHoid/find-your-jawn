@@ -1,13 +1,16 @@
 id: friends-of-louise-i-kahn-park
-name: Friends of Louise I Kahn Park
+name: Friends of Kahn Park
 aka:
 - Louis I Kahn Park
+- Friends of Louise I Kahn Park
 leads:
 - city_friends:787
 ein: null
-summary: Neighbors who care for a local park in the Central part of the city meet as Friends of Louise
-  I Kahn Park, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who help look after Louis I. Kahn Park at 11th and Pine streets. A garden team tends
+  its plants and trees, and the group runs free summer concerts, a children's party, a spring cleanup,
+  and a Halloween pumpkin contest.
+what_you_do: Come to the free concerts and family events, join a park cleanup when one is held, or email
+  the group to ask how to help the garden team.
 kind: friends_group
 categories:
 - nature-environment
@@ -19,11 +22,11 @@ motives:
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
-- organize
 crowd:
-- neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -35,25 +38,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Free summer concerts on Wednesdays at 7:30 pm, plus a children's party, a Love Your Park cleanup
+    in May, and a Halloween pumpkin contest. The events page has the dates.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: summer
 locations:
-- label: Park
+- label: Louis I. Kahn Park
   address: 328 S 11th St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19107'
-  lat: 39.94516003756047
-  lng: -75.16003119824747
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Summer concerts are free. The group asks for donations on its support page.
 commitment: null
 group_size: null
 access:
@@ -68,19 +74,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Email kahnparkphilly@gmail.com to ask about the Halloween pumpkin contest or how to help the garden
+    team
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Free public concerts and events are open to anyone, and the site gives an email address for questions.
+    No membership process is described.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.kahnpark.org
-  email: pprstewardship@phila.gov
+  website: https://kahnpark.org
+  email: kahnparkphilly@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/kahnparkphilly
+  - https://www.facebook.com/kahnpark.phila
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -93,8 +103,24 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+- url: https://kahnpark.org/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://kahnpark.org
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - crowd
+  - summary
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

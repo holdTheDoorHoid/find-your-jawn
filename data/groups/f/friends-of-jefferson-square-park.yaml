@@ -7,24 +7,27 @@ leads:
 - irs_990n:020648355
 - irs_bmf:020648355
 ein: 020648355
-summary: Friends of Jefferson Square Park is a volunteer Friends group listed by Philadelphia Parks and
-  Recreation for a local park. It brings neighbors together to keep the space clean and lively.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who look after Jefferson Square Park on Washington Avenue in Pennsport. They hold a
+  park cleanup on the second Saturday of the month and welcome ideas for the park.
+what_you_do: Join a Saturday cleanup, come to park events such as the October 13, 2026 ribbon cutting
+  for the Washington Avenue connector, or share ideas for the park.
 kind: friends_group
 categories:
 - nature-environment
+- neighborhood-civic
 interests:
-- friends_of_park
 - park_cleanup
+- friends_of_park
 motives:
 - values
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
-- organize
 crowd:
+- all_ages
 - neighbors
 bridging: null
 audience:
@@ -37,26 +40,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Park cleanups on the second Saturday of the month, 9 to 11 am. Listed dates: October 10, 2026
+    and November 14, 2026'
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Jefferson Square Park
   address: 300 Washington Ave
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19147'
-  lat: 39.933604000161246
-  lng: -75.1501745066232
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: No fee listed; the group asks for donations
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -70,23 +76,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Saturday cleanup on October 10, 2026, 9 to 11 am, at 300 Washington Ave, or use the
+    Contact Us page on fojsp.org to ask how to join
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Cleanups are announced publicly and anyone can come, but the site does not describe a welcome
+    for newcomers
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.facebook.com/groups/friendsofjeffersonsquarepark
+  website: https://www.fojsp.org
   email: pprstewardship@phila.gov
   phone: null
   contact_name: Jeb Wood
-  social: []
+  social:
+  - https://www.facebook.com/groups/friendsofjeffersonsquarepark
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.fojsp.org
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -95,6 +104,8 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - match
+  - contacts.social
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -109,8 +120,20 @@ sources:
   - locations
   - contacts.contact_name
   - ein
+- url: https://www.fojsp.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

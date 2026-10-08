@@ -5,15 +5,15 @@ aka:
 leads:
 - city_friends:799
 ein: null
-summary: Neighbors who care for a local park in the Lower Northwest part of the city meet as Friends of
-  McMichael Park, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Volunteers who guide upkeep and improvement work at McMichael Park, working with the City and
+  the Fairmount Park Conservancy. They answer questions by email and share news through a newsletter.
+what_you_do: Help with upkeep and improvement projects. Email the group to ask how to get involved, or
+  sign up for the newsletter on the site.
 kind: friends_group
 categories:
 - nature-environment
 interests:
 - friends_of_park
-- park_cleanup
 motives:
 - values
 - social
@@ -41,19 +41,19 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Park
+- label: McMichael Park
   address: 3201 Midvale Ave
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
-  lat: 40.01810379686471
-  lng: -75.18762191865223
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The page does not state a fee for joining or volunteering. A donation page is optional.
 commitment: null
 group_size: null
 access:
@@ -68,11 +68,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email mcmichaelpark@gmail.com with your question, or sign up for the group's newsletter from mcmichaelpark.org
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site says everyone is welcome and gives an email address and a newsletter sign-up, but it
+    does not describe a regular volunteer schedule.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -80,11 +81,13 @@ contacts:
   email: mcmichaelpark@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/FriendsOfMcmichaelPark
+  - https://www.instagram.com/friendsofmcmichael
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.mcmichaelpark.org/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -93,6 +96,18 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - kind
+- url: https://www.mcmichaelpark.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+  - audience.open_to
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

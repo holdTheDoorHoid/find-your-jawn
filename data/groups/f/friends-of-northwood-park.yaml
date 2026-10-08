@@ -5,23 +5,26 @@ aka:
 leads:
 - city_friends:806
 ein: null
-summary: Friends of Northwood Park is a Friends group for a local park, one of the volunteer groups that
-  look after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Volunteers who care for Northwood Park. They run cleanups, a plant sale fundraiser and an Easter
+  egg hunt, and they host a yoga class in the park on listed dates through the fall.
+what_you_do: Join through the JOIN US form on the site, come to a cleanup or the Volunteer Kick-Off, or
+  take part in the yoga class in the park.
 kind: friends_group
 categories:
 - nature-environment
+- running-cycling-fitness
 interests:
 - friends_of_park
 - park_cleanup
+- yoga_movement
 motives:
 - values
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
@@ -35,25 +38,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Yoga in the Park, 10 to 11 am, on listed dates from May to October; Love Your Park Week cleanup
+    on May 9, 10 am to 12 pm; Volunteer Kick-Off on March 11 (no times). The site gives no year.
   days: []
-  times: []
-  recurring: null
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Northwood Park
   address: 999 Arrott St
   neighborhood: null
-  planning_district: lower_northeast
+  planning_district: null
   zip: '19124'
-  lat: 40.02324551018566
-  lng: -75.09237483137991
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The page does not say whether events are free. The plant sale is a fundraiser.
 commitment: null
 group_size: null
 access:
@@ -68,11 +73,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the JOIN US form on northwoodparkfriends.com, then come to the Volunteer Kick-Off (listed
+    for March 11) or a cleanup
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site lists a kick-off day and a join form, which is a clear start, but it does not say beginners
+    are welcome.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -80,11 +87,13 @@ contacts:
   email: pprstewardship@phila.gov
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/NorthwoodParkFriends
+  - https://www.instagram.com/northwoodparkfriends
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.northwoodparkfriends.com/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -93,6 +102,18 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - kind
+- url: https://www.northwoodparkfriends.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - contacts.social
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

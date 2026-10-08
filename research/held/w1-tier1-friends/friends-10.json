@@ -1,0 +1,179 @@
+{
+ "wave": "w1-tier1-friends",
+ "agent": "friends-10",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 3,
+ "fetches_used": 26,
+ "leads_only": [
+  {
+   "name": "Wynnefield Heights Community Association",
+   "url": "https://wynnefieldheightsca.org",
+   "note": "Listed on the City's Friends list as the website for Friends of Woodside Park, but the site belongs to this community association and never mentions Woodside Park. Checked once. The home page lists a community meeting on September 10, 2026 (Zoom). Possible partner for future research."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.wissinomingpark.org",
+   "status": null,
+   "note": "DNS lookup failed (no such host) on 2026-10-08"
+  },
+  {
+   "url": "https://wissinomingpark.org",
+   "status": null,
+   "note": "DNS lookup failed (no such host) on 2026-10-08"
+  }
+ ],
+ "notes": "Searches: all 3 used, on the three groups with no website (Wister Woods, Womrath Park, Hatfield House). Fetches: 26. Two City-listed websites are unusable: Wissinoming (DNS failure) and Woodside (belongs to a community association). The City list ArcGIS layer and the phila.gov Friends list page did not show entries when fetched, so City facts come from the batch file, not a fresh read. Grottos: 8 of 9 are out of area. Bucks County Grotto is a judgment call (suburban). Philadelphia Grotto is published even though it meets in Media (Delaware County), because its name and monthly meetings are Philadelphia area; its meeting place is a member's home, so the street address is left out. The Philadelphia Grotto New Cavers page is at /new-members/; the /new-cavers/ path returned 404. Budget was not exhausted on fetches.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "city_friends:856"
+    ],
+    "group_id": null
+   },
+   "verdict": "publish",
+   "name": "Wissinoming Park",
+   "summary": "A Friends group for Wissinoming Park in the Northeast, as the City lists it. We could not reach its website or find any recent activity, so we do not yet know what it does.",
+   "what_you_do": "We have not confirmed what this group does. The City's stewardship office can connect you with the group.",
+   "kind": "friends_group",
+   "categories": [
+    "nature-environment"
+   ],
+   "interests": [
+    "friends_of_park"
+   ],
+   "locations": [
+    {
+     "label": "Wissinoming Park",
+     "address": "5801 Frankford Ave",
+     "zip": "19135",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected with this Friends group"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The City list gives https://www.wissinomingpark.org as the group's website. Both that address and https://wissinomingpark.org failed to resolve (DNS lookup failed) on 2026-10-08, so no website is recorded. The City list email is the stewardship office, so it is not used as a group contact. The City list name is Wissinoming Park; the group's own name was not confirmed. The City list entry came from the batch file and was not re-fetched. Search budget went to the groups with no website at all, so this group got no search. Worth re-checking before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "city_friends:858"
+    ],
+    "group_id": null
+   },
+   "verdict": "publish",
+   "name": "Friends of Womrath Park",
+   "summary": "A Friends group for Womrath Park in Frankford, as the City lists it. We could not find its own website, contact details or any recent activity.",
+   "what_you_do": "We have not confirmed what this group does. The City's stewardship office can connect you with the group.",
+   "kind": "friends_group",
+   "categories": [
+    "nature-environment"
+   ],
+   "interests": [
+    "friends_of_park"
+   ],
+   "locations": [
+    {
+     "label": "Womrath Park",
+     "address": "4098 Frankford Ave",
+     "zip": "19124",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected with this Friends group"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "One search found no page or listing for this group. Older news mentions Womrath Park (a 2014 sculpture plan that was dropped, and a February 2019 cleanup), but neither names this group, so neither is used as evidence. One article spells the park Wohlmrath. The phila.gov Friends list page did not show its entries when fetched, so the City list is cited from the batch file only. The City list email is the stewardship office, so it is not used. Check again later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "city_friends:859"
+    ],
+    "group_id": null
+   },
+   "verdict": "publish",
+   "name": "Friends of Woodside Park",
+   "summary": "A Friends group for Woodside Park, as the City lists it. We could not find its own website or any recent activity.",
+   "what_you_do": "We have not confirmed what this group does. The City's stewardship office can connect you with the group.",
+   "kind": "friends_group",
+   "categories": [
+    "nature-environment"
+   ],
+   "interests": [
+    "friends_of_park"
+   ],
+   "locations": [
+    {
+     "label": "Woodside Park",
+     "address": "3918 Conshohocken Ave",
+     "zip": "19131",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected with this Friends group"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The City list gives https://www.wynnefieldheightsca.org as this group's website. That site belongs to the Wynnefield Heights Community Association and never mentions Woodside Park, so it is not recorded as the group's website. The association is listed in leads_only. The City list email is the stewardship office, so it is not used. Search budget went to the groups with no website at all, so this group got only a site check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "city_friends:861"
+    ],
+    "group_id": null
+   },
+   "verdict": "publish",
+   "name": "The Neighbors Garden at Hatfield House",
+   "summary": "A neighbors' garden group that the City lists at the Hatfield House in East Fairmount Park. We could not find its own website or any recent activity.",
+   "what_you_do": "We have not confirmed what this group does.",
+   "kind": "friends_group",
+   "categories": [
+    "gardening-greening"
+   ],
+   "locations": [
+    {
+     "label": "Hatfield House, East Fairmount Park",
+     "address": "1223 N 33rd St",
+     "zip": "19121",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "email": "neighborsgardenphilly@gmail.com"
+   },
+   "first_step": {
+    "how": "Email neighborsgardenphilly@gmail.com, the address the City lists for this group, and ask how to join the garden"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "One search and one 2026 City article about Hatfield House found nothing about a garden group there. The Fairmount Park Conservancy runs the house, and an arts group held events there in past years. Neither is this group, so neither is recorded as a contact. The category gardening-greening comes from the name only. The email comes from the City list alone and was not confirmed on any other page, so check it before relying on it. The City list entry came from the batch file and was not re-fetched.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

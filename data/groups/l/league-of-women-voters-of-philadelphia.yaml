@@ -5,18 +5,28 @@ leads:
 - irs_990n:231268539
 - irs_bmf:231268539
 ein: '231268539'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A nonpartisan group for voter education and voting rights in Philadelphia. It runs public events,
+  such as an Aug 8, 2026 Day of Action for voting rights, and has hosted panels with city council members.
+what_you_do: Go to a public event, or ask the league how to help at a voter registration or voter guide
+  project.
+kind: civic
+categories:
+- neighborhood-civic
+interests:
+- voter_education
+motives:
+- values
+- understanding
+formats:
+- one_off_event
+- conversation
+roles:
+- organize
+- help_teach
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The Aug 8, 2026 Day of Action ran from 10 am at Shissler Recreation Center. No regular meeting
+    schedule was found.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: false
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: 123 S Broad St Ste 2830
+- label: Shissler Recreation Center (Aug 8, 2026 event)
+  address: 1800 Blair Street
   neighborhood: null
-  planning_district: central
-  zip: '19109'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 123 S Broad St Suite 2830
-  neighborhood: null
-  planning_district: central
-  zip: '19109'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -67,11 +71,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Watch for announced public events, and ask the Pennsylvania state league for the local contact,
+    since no local website was found
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Public events are open to anyone, but I could not find a local way to join or a meeting schedule,
+    so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -81,9 +87,9 @@ contacts:
   contact_name: Jasmine Lamb
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://actionnetwork.org/widgets/v6/event/unite-and-rise-for-voting-rights-league-of-women-voters-of-philadelphia-day-of-action
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +106,14 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://actionnetwork.org/widgets/v6/event/unite-and-rise-for-voting-rights-league-of-women-voters-of-philadelphia-day-of-action
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - locations
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

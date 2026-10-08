@@ -4,18 +4,28 @@ aka: []
 leads:
 - irs_bmf:810716680
 ein: '810716680'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A Philadelphia network working to bring more community coaches and youth sports programs to kids.
+  It offers membership, training, and resources for parents, coaches and referees.
+what_you_do: Join as a member, take part in coach training and workshops, or ask how to coach with one
+  of its partner programs.
+kind: network
+categories:
+- sports-teams
+interests:
+- youth_coaching
+motives:
+- values
+- enhancement
+formats:
+- learn_skill
+roles:
+- help_teach
+- organize
+crowd:
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -30,20 +40,20 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1501 Cherry St
+- label: PYSC office
+  address: 1501 Cherry Street
   neighborhood: null
-  planning_district: central
-  zip: '19102'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Membership and coach program costs are not stated
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +67,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the Become a Member page or the general contact page to ask how to coach. The coach sign up
+    steps were not shown.
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: null
-  basis: null
+  basis: The site lists membership, but the coach sign up process was not stated
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pysc.org/
   email: null
   phone: null
   contact_name: Care of Terry Horner
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://pysc.org/philly-wants-more-community-sports-programs-for-kids/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +93,21 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pysc.org/philly-wants-more-community-sports-programs-for-kids/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - roles
+  - status
+  - last_sign_of_life
+- url: https://pysc.org/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

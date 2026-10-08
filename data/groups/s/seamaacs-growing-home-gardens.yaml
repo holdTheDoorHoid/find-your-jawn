@@ -1,19 +1,23 @@
 id: seamaacs-growing-home-gardens
-name: SEAMAACs Growing Home Gardens
+name: SEAMAAC Growing Home Gardens
 aka:
 - Emily Community Garden
+- SEAMAACs Growing Home Gardens
 leads:
 - city_friends:768
 ein: null
-summary: Neighbors who care for a local park in the South part of the city meet as SEAMAACs Growing Home
-  Gardens, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: Community gardens on Emily and Mercy Streets in South Philadelphia, run by SEAMAAC, an immigrant
+  and refugee services nonprofit, with the Neighborhood Gardens Trust. Mostly immigrant and refugee gardeners
+  grow vegetables and familiar foods here. We could not confirm current activity.
+what_you_do: Rent a garden plot and grow food. Ask the gardens office about open plots and the yearly
+  fee before you visit.
+kind: garden
 categories:
-- nature-environment
+- gardening-greening
+- culture-language-heritage-groups
 interests:
-- friends_of_park
-- park_cleanup
+- community_garden
+- urban_farming
 motives:
 - values
 - social
@@ -21,40 +25,51 @@ formats:
 - side_by_side
 roles:
 - hands_on
-- organize
 crowd:
-- neighbors
+- all_adults
+- newcomers
 bridging: null
 audience:
   open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - immigrants
+  - refugees
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Plots are worked through the growing season; no meeting or work-day schedule is published
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Park
-  address: 742 Emily St
+- label: Emily Street garden
+  address: 728-42 Emily St
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19148'
-  lat: 39.92377047129696
-  lng: -75.15907278311508
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Mercy Street garden
+  address: 530-38 Mercy St
+  neighborhood: null
+  planning_district: null
+  zip: '19148'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
   level: null
   text: null
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -68,17 +83,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email gardens@seamaac.org or call (347) 719-1488 to ask about open plots and the yearly fee
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The gardens exist to serve newly arrived immigrants and refugees and publish a contact, but the
+    page gives no joining steps
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: info@seamaac-local
-  phone: null
+  website: https://seamaac.org/community-development/
+  email: gardens@seamaac.org
+  phone: (347) 719-1488
   contact_name: null
   social: []
   calendar_feed: null
@@ -92,8 +108,28 @@ sources:
   - name
   - locations
   - contacts.email
+- url: https://www.ngtrust.org/growing-home
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.email
+  - contacts.phone
+- url: https://seamaac.org/community-development/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+- url: https://elizabethfiedler.com/2020/10/15/s-philly-gardens-spring-to-life/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+- url: https://www.phila.gov/fr/departments/philadelphia-parks-recreation/get-involved/park-friends-groups/park-friends-group-list/
+  seen: '2026-10-08'
+  fields:
+  - match
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

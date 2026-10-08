@@ -1,21 +1,30 @@
 id: play-on-philly
-name: Play on Philly
+name: Play On Philly
 aka: []
 leads:
 - irs_bmf:453754114
 ein: '453754114'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A free music program for Philadelphia students. Kids borrow an orchestral instrument and get
+  lessons and time in ensembles.
+what_you_do: Students take instrument lessons and play in ensembles for about 8 hours a week.
+kind: program
+categories:
+- music
+interests:
+- instrument_lessons
+motives:
+- enhancement
+- values
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+crowd:
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: students
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Instruction and ensemble practice add up to 8 hours each week, as the program describes it. Days
+    and times are not on the pages checked.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 8662
+- label: Music Center at St. Francis de Sales School
+  address: null
   neighborhood: null
-  planning_district: central
-  zip: '19101'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Tuition-free, and the instrument loan is free
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +64,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Start from the program's join page, which links to a family portal
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: A sign up path is listed, but the pages checked do not say how students are chosen or whether
+    seats are limited
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://playonphilly.org/
   email: null
   phone: null
   contact_name: Elizabeth Kubiak
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://playonphilly.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +93,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://playonphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+  - status
+  - audience
+- url: https://arts.blogs.brynmawr.edu/play-on-philly/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - what_you_do
+  - requirements
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -19,7 +19,7 @@ waves:
     lane: A
     kind: script
     command: fyj city-tier1 && fyj import-research w0-city-scripted
-    status: todo
+    status: done
     note: Free. Basic listings for City records (RCOs, rec centers, libraries, senior centers, gardens, City volunteer programs).
 
   - id: w1-tier1-friends
@@ -29,14 +29,14 @@ waves:
     selector: --source city_friends,nss_grottos,manual_seeds --exclude-done
     size: 15
     searches_per_agent: 3
-    status: running
+    status: done
 
   - id: w1-tier1-mummers
     lane: C
     kind: slices
     brief: tier1
     searches_per_agent: 6
-    status: researched
+    status: done
     slices:
       - agent: mummers-comics-wenches
         text: >
@@ -51,12 +51,21 @@ waves:
           Association and the Fancy Brigade Association sites. Many string bands list clubhouses on
           South 2nd Street ("Two Street"); note open rehearsals or recruiting where published.
 
+  - id: w1b-tier1-redo
+    lane: A
+    kind: batches
+    brief: tier1
+    batch_files: research/batches/w1b-tier1-redo/
+    searches_per_agent: 5
+    status: todo
+    note: Records from w1-tier1-friends that came back without sources. The batch file is already written; run one agent on it.
+
   - id: w2-chapters
     lane: P
     kind: slices
     brief: chapters
     searches_per_agent: 8
-    status: researched
+    status: done
     slices:
       - agent: p1-service-clubs
         text: Rotary, Lions, Kiwanis, Optimist, Toastmasters, Junior League of Philadelphia, League of Women Voters of Philadelphia, NAACP Philadelphia branch, Habitat for Humanity Philadelphia.
@@ -81,7 +90,7 @@ waves:
     kind: slices
     brief: discover
     searches_per_agent: 10
-    status: researched
+    status: done
     slices:
     - agent: g-sports-teams
       text: 'Family `sports-teams` (Team sports). Tags: soccer, basketball, softball_baseball, kickball_rec_leagues,

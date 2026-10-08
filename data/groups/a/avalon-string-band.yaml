@@ -5,18 +5,27 @@ leads:
 - irs_bmf:232628201
 - mummers:avalon-string-band
 ein: '232628201'
-summary: null
-what_you_do: null
+summary: A Mummers string band with its address on South 2nd Street, the Two Street area. It welcomes
+  beginners as well as experienced players and marches in the New Year's Day parade.
+what_you_do: Play music, dance, or help as a marshal with the band in the New Year's Day parade. Non-players
+  are welcome.
 kind: club
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- philly-traditions
+interests:
+- mummers_string_band
+motives:
+- values
+- social
+formats:
+- team_play
+- perform_make_together
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,16 +34,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Visitors are invited to stop by on a Tuesday night, per the join page (no time given)
+  days:
+  - tue
+  times:
+  - night
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1538 S 2nd St 40
+- label: Band address (site)
+  address: 1538 to 1540 S. 2nd Street, Philadelphia, PA 19147
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19147'
   lat: null
   lng: null
@@ -43,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not published
 commitment: null
 group_size: null
 access:
@@ -58,28 +69,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Stop by on a Tuesday night, or email avalonstringband1982@gmail.com for the join information PDF
+    linked on the join page.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The join page says the band welcomes beginners, invites visitors to stop by on a Tuesday night,
+    and gives an email for more information.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://avalonstringband.com/
+  email: avalonstringband1982@gmail.com
   phone: null
   contact_name: Kevin Crouch
-  social: []
+  social:
+  - https://facebook.com/avalonstringband
+  - https://instagram.com/avalonstringband
+  - https://youtube.com/channel/UCs6AybPpVqKC14eOzauEcsA
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-01
+sign_of_life_url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
 sources:
 - url: https://philadelphiamummersparade.com/2026-official-parade-lineup/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
+  - status
+  - last_sign_of_life
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -87,8 +105,22 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://avalonstringband.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+- url: https://avalonstringband.com/join-avalon
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

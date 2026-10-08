@@ -7,23 +7,23 @@ leads:
 - irs_bmf:232313587
 - manual_seeds:washington-square-west-civic-association
 ein: '232313587'
-summary: Washington Square West Civic Association is a Registered Community Organization (RCO) in the
-  Central part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The neighborhood civic association for Washington Square West. It co-hosts Love Your Park garden
+  days with Farm Philly, including the May 2026 Open Garden Day at Sartain and Waverly Gardens and at
+  South Street Garden.
+what_you_do: Come help at the Love Your Park open garden days, or meet the association's volunteers there.
+  The park page does not describe the association's regular meetings.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
 interests:
 - civic_association
-- community_development
+- community_garden
 motives:
 - values
 - social
 formats:
-- conversation
-- lead_organize
+- one_off_event
 roles:
 - organize
 - figure_out
@@ -40,14 +40,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
+  text: 'Open Garden Day on Saturday, May 9, 2026: 9 AM to 12 PM at Sartain and Waverly Gardens, and 10
+    AM to 2 PM at South Street Garden'
+  days:
+  - sat
+  times:
+  - morning
+  - daytime
   recurring: null
-  season: null
+  season: event_only
 locations:
-- label: Meeting place
-  address: Zoom only
+- label: Sartain and Waverly Gardens
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
@@ -55,13 +59,13 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: WSWCA, 1100 Walnut Street (Room B113), Philadelphia, PA 19107
+- label: South Street Garden
+  address: null
   neighborhood: null
-  planning_district: central
-  zip: '19107'
-  lat: 39.946359316971595
-  lng: -75.15777096297273
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
@@ -82,11 +86,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Love Your Park open garden day, such as the May 9 event, and ask the volunteers on site
+    how to join the association.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Garden days are public, but the page gives no sign-up step and the association's own website
+    could not be reached.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -101,9 +107,16 @@ last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
 sources:
 - url: https://loveyourpark.org/events/lyp-week-2026
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - status
+  - last_sign_of_life
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
   fields:

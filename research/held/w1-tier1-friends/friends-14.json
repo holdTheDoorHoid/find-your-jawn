@@ -1,0 +1,111 @@
+{
+ "wave": "w1-tier1-friends",
+ "agent": "friends-14",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 3,
+ "fetches_used": 15,
+ "leads_only": [
+  {
+   "name": "Farm Philly",
+   "url": "https://loveyourpark.org/events/lyp-week-2026",
+   "note": "Co-hosts the Washington Square West garden day on the Love Your Park page. No own website found, not checked."
+  },
+  {
+   "name": "Fairmount Park Conservancy",
+   "url": "https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants",
+   "note": "Named as co-organizer of the May 2026 movie night. Own website not identified, not checked."
+  },
+  {
+   "name": "The Yard on John Coltrane Street",
+   "url": "https://loveyourpark.org/events/lyp-week-2026",
+   "note": "Venue named on the Love Your Park page; the group's event page gives a street address instead. Not checked."
+  },
+  {
+   "name": "Goodtimers NYA",
+   "url": "https://philadelphiamummersparade.com/2026-official-parade-lineup/",
+   "note": "Mother club listed for Two Street Stompers on the 2026 lineup. No website found, not checked."
+  },
+  {
+   "name": "Inspiring Connections Outdoors",
+   "url": "https://sierraclub.org/pennsylvania/southeastern/southeastern-pa-outings",
+   "note": "Named in search results as a Sierra Club Philadelphia outreach program. Own website not identified, not checked."
+  },
+  {
+   "name": "Fairmount Food Forest",
+   "url": "https://www.strawberrymansioncdc.org",
+   "note": "Community dinner listed on the Strawberry Mansion CDC home page with no year shown. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://libwww.freelibrary.org/calendar/event/79103",
+   "status": 403,
+   "note": "Free Library event page, HTTP 403. Not retried."
+  },
+  {
+   "url": "https://libwww.freelibrary.org/calendar/",
+   "status": 403,
+   "note": "Free Library calendar, HTTP 403. Not retried."
+  }
+ ],
+ "notes": "Used all 3 WebSearch calls and 15 fetches. Verdicts: 7 publish, 0 hide, 0 not_a_group, 0 duplicate, 0 out_of_area. Both Free Library pages returned 403, so the two library programs are unknown records with low confidence. The Sierra Club group and outings pages loaded empty on every fetch, so that record rests on search result summaries and is low confidence. Meetup and Facebook pages (the Sierra Club outings Meetup, the Women in GIS Meetup) are leads only and were not read. Washington Square West's own website did not resolve. Two Street Stompers has no website of its own. Women in GIS has no page of its own; its national chapters page is the only source. Dropped with reason: the leads_only items have no known website of their own, so none were fetched. No group was marked as a duplicate of another in this batch.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:sisters-interacting-through-stitches"
+    ],
+    "group_id": null,
+    "ein": null,
+    "website": "https://libwww.freelibrary.org/calendar/event/79103"
+   },
+   "verdict": "publish",
+   "name": "Sisters Interacting Through Stitches",
+   "summary": "A Free Library program listed on the library calendar. The library pages were blocked to this research, so what the program involves and when it meets is not confirmed yet.",
+   "kind": "program",
+   "contacts": {
+    "website": "https://libwww.freelibrary.org/calendar/event/79103"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Both Free Library pages (event 79103 and the calendar) returned HTTP 403 and were not retried. Not known whether this is a recurring group or a one-time event. If it turns out to be one time, it should become not_a_group. Re-check from a source that is not blocked.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:south-philadelphia-library-chess-club"
+    ],
+    "group_id": null,
+    "ein": null,
+    "website": "https://libwww.freelibrary.org/calendar/"
+   },
+   "verdict": "publish",
+   "name": "Chess Club at the South Philadelphia Library",
+   "summary": "A chess club listed as a Free Library program at the South Philadelphia branch. The library calendar was blocked to this research, so meeting times and cost are not confirmed yet.",
+   "kind": "program",
+   "categories": [
+    "games-puzzles"
+   ],
+   "interests": [
+    "chess"
+   ],
+   "contacts": {
+    "website": "https://libwww.freelibrary.org/calendar/"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The Free Library calendar returned HTTP 403 and was not retried (see blocked). Not known whether it meets weekly, monthly or only sometimes. Re-check the schedule from a source that is not blocked.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

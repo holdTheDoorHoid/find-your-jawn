@@ -1,0 +1,153 @@
+{
+ "wave": "w1-tier1-friends",
+ "agent": "friends-11",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 3,
+ "fetches_used": 27,
+ "leads_only": [
+  {
+   "name": "Rich Porco's Murray Comic Club",
+   "url": "https://philadelphiamummersparade.com/2026-official-parade-lineup/",
+   "note": "Mother club named on the 2026 official lineup for Golden Slipper NYB. Not checked; no own website found."
+  },
+  {
+   "name": "Gillin Boat Club (Fairmount Park Community Rowing Program)",
+   "url": "https://en.wikipedia.org/wiki/Gillin_Boat_Club",
+   "note": "Named in a search summary as the host of the Fairmount Park community rowing program and as the place BLJ was connected to. Not checked; its own website was not located."
+  },
+  {
+   "name": "Africatown",
+   "url": "https://africatown.org",
+   "note": "Named as a partner on the ACANA site (an email address on that domain). Domain inferred from the email, not verified. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.boathouse.com/blogs/boathouse-blog/blj-community-rowing-creating-diversity-and-inclusion-within-the-sport-of-rowing",
+   "status": 403,
+   "note": "Background post on BLJ Community Rowing. Forbidden. Not retried."
+  },
+  {
+   "url": "https://www.ghasp.org",
+   "status": 403,
+   "note": "Guessed domain for GHASP. Forbidden. May not be the group's site."
+  },
+  {
+   "url": "http://sevenvalleysgrotto.org/",
+   "status": null,
+   "note": "Website given on the NSS listing. Name did not resolve (DNS error)."
+  },
+  {
+   "url": "https://albustan.org",
+   "status": null,
+   "note": "Al-Bustan site. Connection refused on two tries (also tried www)."
+  },
+  {
+   "url": "https://cosacosa.org",
+   "status": null,
+   "note": "COSACOSA site. TLS handshake failure on two tries (also tried www)."
+  },
+  {
+   "url": "https://eastpassyunkopera.org",
+   "status": null,
+   "note": "Guessed domain for East Passyunk Opera Project. Name did not resolve."
+  },
+  {
+   "url": "https://www.eastpassyunkoperaproject.org",
+   "status": null,
+   "note": "Guessed domain for East Passyunk Opera Project. Name did not resolve."
+  }
+ ],
+ "notes": "Batch check: none of the 15 items is a park or playground Friends group, so the stewardship office fallback was not needed. The batch mixes a caving grotto, Cultural Fund arts and culture groups, Mummers, and a rowing club. Verdicts: 14 publish (of which 4 are unknown with minimal records and no sources: Al-Bustan, COSACOSA, East Passyunk, GHASP; CAGE is dormant; AMC 20s and 30s is probably_active with no last_sign_of_life date, which conflicts with the tier 1 rule and is flagged in its notes), 1 out_of_area (Seven Valleys Grotto). Several batch website values were aggregators or wrong: the Cultural Fund calendar and grantee directory, the Love Your Park page for BLJ and Centennial, the Meetup find page for AMC and GHASP, the Mummers lineup for Golden Slipper, and nprdpinc.org (a New York parade group) for APM. Each was replaced with the group's own site where one was reachable. Searches: all 3 used (APM, BLJ, CAGE), so no searches were left for GHASP, COSACOSA, East Passyunk, Al-Bustan or the Golden Slipper club. Fetches: 27 of 60. No contact was made with any group, and nothing was submitted or logged in.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:al-bustan-seeds-of-culture"
+    ],
+    "group_id": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Al-Bustan Seeds of Culture",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No own website could be reached. albustan.org refused the connection on two tries. The Cultural Fund community calendar we opened lists no link or event for this group. No summary, kind, tags, schedule or contacts were set, and no source page names this group, so sources is empty. Retry the site later, or hold until a source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:cosacosa-art-at-large"
+    ],
+    "group_id": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "COSACOSA Art at Large",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No own website could be reached. cosacosa.org failed on two tries with a TLS handshake error. The Cultural Fund grantee directory we opened showed only its first page, which did not include this group. No summary, kind, tags, schedule or contacts were set, and no source page names this group, so sources is empty. Retry the site later and check later pages of the grantee directory.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:east-passyunk-opera-project"
+    ],
+    "group_id": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "East Passyunk Opera Project",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No own website was found. The Cultural Fund community calendar we opened lists no link or event for it. Two guessed domains (eastpassyunkopera.org and eastpassyunkoperaproject.org) did not resolve. No search budget was left. No summary, kind, tags, schedule or contacts were set, and no source page names this group, so sources is empty. Retry with a search later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:ghasp-gothic-horror-association"
+    ],
+    "group_id": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "GHASP! (Gothic Horror Association Southeastern Pennsylvania)",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch lists only a generic Meetup page, which is a lead source and was not read for facts. No own website was known. A guessed domain (ghasp.org) returned HTTP 403, so it is listed under blocked and may not be the group's site anyway. No search budget was left. No summary, kind, tags, schedule or contacts were set, and no source page names this group, so sources is empty. Needs a search or the group's own site to verify.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -5,12 +5,14 @@ aka:
 leads:
 - city_friends:766
 ein: null
-summary: Friends of Gold Star Park is a volunteer Friends group listed by Philadelphia Parks and Recreation
-  for a local park. It brings neighbors together to keep the space clean and lively.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who look after Gold Star Park, a small park on Wharton Street in South Philadelphia.
+  They run programs for kids, families, and dog owners, and they invite new volunteers to help.
+what_you_do: Help run the park's summer programs and its upkeep. The site does not describe volunteer
+  tasks in detail.
 kind: friends_group
 categories:
 - nature-environment
+- neighborhood-civic
 interests:
 - friends_of_park
 - park_cleanup
@@ -23,7 +25,8 @@ roles:
 - hands_on
 - organize
 crowd:
-- neighbors
+- all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -35,25 +38,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Children's, family, and dog-owner programs run through the summer; no dates published
   days: []
   times: []
   recurring: null
-  season: null
+  season: summer
 locations:
-- label: Park
+- label: Gold Star Park
   address: 613 Wharton St
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19147'
-  lat: 39.932905982098895
-  lng: -75.15521411227056
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
+  text: No fee information published
 commitment: null
 group_size: null
 access:
@@ -65,22 +68,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Sign up for the group's newsletter on goldstarpark.org, or message the group through its Facebook
+    page, and ask how to volunteer
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site invites new volunteers and offers a newsletter sign-up, though it publishes no meeting
+    schedule
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://goldstarpark.org/
   email: pprstewardship@phila.gov
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/goldstarpark/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -92,8 +98,23 @@ sources:
   - name
   - locations
   - contacts.email
+- url: http://goldstarpark.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+- url: https://www.phila.gov/fr/departments/philadelphia-parks-recreation/get-involved/park-friends-groups/park-friends-group-list/
+  seen: '2026-10-08'
+  fields:
+  - match
+  - contacts.website
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

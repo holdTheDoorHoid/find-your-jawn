@@ -7,15 +7,16 @@ leads:
 - irs_990n:473603645
 - irs_bmf:473603645
 ein: '473603645'
-summary: Brewerytown Garden is a Friends group for a local park, one of the volunteer groups that look
-  after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: A community garden at 27th and Master streets. Gardeners grow food, the garden runs a farm stand
+  and a composting program, and it holds Sunday events.
+what_you_do: Gardeners share the season's work, at least about half a day a month per household. Plots
+  are full for 2026, and a wait list is open to residents of zip code 19121 and nearby Fairmount.
+kind: garden
 categories:
-- nature-environment
+- gardening-greening
 interests:
-- friends_of_park
-- park_cleanup
+- community_garden
+- urban_farming
 motives:
 - values
 - social
@@ -28,7 +29,7 @@ crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -37,26 +38,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Sunday events are listed on the garden's site. Event times were not found.
+  days:
+  - sun
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Garden
   address: 1341 N 27th St
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19121'
-  lat: 39.977045144257374
-  lng: -75.17968098497292
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: No cost listed.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -70,11 +72,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Put your name on the plot wait list if you live in zip code 19121 or nearby Fairmount (the list
+    is reviewed once a year, when plots are assigned)
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Plots are full and the wait list runs for several seasons, so the way in is a long wait.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -82,7 +85,9 @@ contacts:
   email: brewerytown.garden@gmail.com
   phone: null
   contact_name: Sharon Hildebrand
-  social: []
+  social:
+  - https://www.facebook.com/brewerytowngarden
+  - https://twitter.com/BreweryGarden
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -116,6 +121,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://www.brewerytowngarden.com/join-the-garden
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+  - status
+- url: https://www.brewerytowngarden.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - contacts.social
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

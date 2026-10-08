@@ -534,6 +534,16 @@ def coerce_record(raw: dict[str, Any], vocab: Vocab, today: str | None = None) -
     if tier not in (1, 2):
         out.problems.append(f"research_tier {raw.get('research_tier')!r} must be 1 or 2")
     rec["research_tier"] = tier
+
+    # A publishable record that leaves out who can join defaults to the public (students for a
+    # student group). Agents omit the block when a group simply says "come out" or "email us".
+    if verdict == "publish":
+        audience = rec.get("audience")
+        if not isinstance(audience, dict):
+            audience = rec["audience"] = {}
+        if not audience.get("open_to"):
+            audience["open_to"] = "students" if rec.get("kind") == "student_org" else "public"
+            out.warnings.append(f"audience.open_to missing, defaulted to {audience['open_to']}")
     return out
 
 

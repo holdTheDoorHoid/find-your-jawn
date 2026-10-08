@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:230969420
 ein: '230969420'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A private family country club with a cricket program. Members play cricket as an 11 player team
+  sport, and the club also offers pickleball, fitness and bridge.
+what_you_do: Members play cricket as a team, or take part in the club's other sports and social events.
+kind: club
+categories:
+- sports-teams
+interests:
+- cricket
+- tennis_pickleball
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -30,20 +39,38 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 415 W Willow Grove Ave
+- label: St. Martins Clubhouse
+  address: 415 West Willow Grove Avenue
   neighborhood: null
-  planning_district: upper_northwest
+  planning_district: null
   zip: '19118'
   lat: null
   lng: null
   in_city: true
   transit: null
+- label: Wissahickon Clubhouse
+  address: 6025 West Valley Green Road, Flourtown
+  neighborhood: null
+  planning_district: null
+  zip: '19031'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+- label: Militia Hill Clubhouse
+  address: 401 Stenton Avenue, Fort Washington
+  neighborhood: null
+  planning_district: null
+  zip: '19462'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Membership types and fees are not stated on the site
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +84,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Membership is needed to take part. The site has a Membership page and a Guest Information page,
+    which were not read.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Membership or guest access comes before you can see what cricket is like at the club, and the
+    way in is not clear from the page
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.philacricket.com/
   email: null
-  phone: null
+  phone: 215-247-6001
   contact_name: Linda Cozzi
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.philacricket.com/activities-and-amenities/pickleball
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +111,24 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.philacricket.com/activities-and-amenities/recreation
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+  - first_step
+  - status
+  - interests
+  - cost
+- url: https://www.philacricket.com/activities-and-amenities/pickleball
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

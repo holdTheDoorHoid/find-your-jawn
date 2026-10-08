@@ -4,18 +4,28 @@ aka: []
 leads:
 - irs_bmf:236296972
 ein: '236296972'
-summary: null
-what_you_do: null
+summary: A nonprofit that runs the Philadelphia Folk Festival each August, a Folk School in Roxborough,
+  and concert series. The festival includes song circles, jam sessions, and open mic time.
+what_you_do: Attend the festival and its song circles and jams, come to a concert, or volunteer with the
+  society.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- folk_traditional_music
+- jam_sessions
+motives:
+- social
+- enhancement
+formats:
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +34,41 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The festival runs one weekend each August at Old Pool Farm. Concerts and the Folk School keep
+    their own calendars.
+  days:
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 4959
+- label: Festival site at Old Pool Farm, Upper Salford Township
+  address: null
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+- label: Folk School and offices in Roxborough
+  address: null
+  neighborhood: roxborough
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Festival tickets cost money. Children under 5 enter free with an adult.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +79,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Buy a festival or concert ticket, or volunteer through the society's site
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The festival and concerts are open to anyone with a ticket, but the pages checked do not describe
+    a beginner program
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pfs.org
   email: null
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://pfs.org/category/uncategorized/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +107,21 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pfs.org/category/uncategorized/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - first_step
+- url: https://en.wikipedia.org/wiki/Philadelphia_Folksong_Society
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - formats
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

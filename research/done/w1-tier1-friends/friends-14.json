@@ -1,0 +1,263 @@
+{
+  "wave": "w1-tier1-friends",
+  "agent": "friends-14",
+  "lane": "A",
+  "model": "haiku",
+  "searches_used": 3,
+  "fetches_used": 15,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:sisters-interacting-through-stitches"],
+        "group_id": null,
+        "ein": null,
+        "website": "https://libwww.freelibrary.org/calendar/event/79103"
+      },
+      "verdict": "publish",
+      "name": "Sisters Interacting Through Stitches",
+      "summary": "A Free Library program listed on the library calendar. The library pages were blocked to this research, so what the program involves and when it meets is not confirmed yet.",
+      "kind": "program",
+      "contacts": {
+        "website": "https://libwww.freelibrary.org/calendar/event/79103"
+      },
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Both Free Library pages (event 79103 and the calendar) returned HTTP 403 and were not retried. Not known whether this is a recurring group or a one-time event. If it turns out to be one time, it should become not_a_group. Re-check from a source that is not blocked."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:south-philadelphia-library-chess-club"],
+        "group_id": null,
+        "ein": null,
+        "website": "https://libwww.freelibrary.org/calendar/"
+      },
+      "verdict": "publish",
+      "name": "Chess Club at the South Philadelphia Library",
+      "summary": "A chess club listed as a Free Library program at the South Philadelphia branch. The library calendar was blocked to this research, so meeting times and cost are not confirmed yet.",
+      "kind": "program",
+      "categories": ["games-puzzles"],
+      "interests": ["chess"],
+      "contacts": {
+        "website": "https://libwww.freelibrary.org/calendar/"
+      },
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The Free Library calendar returned HTTP 403 and was not retried (see blocked). Not known whether it meets weekly, monthly or only sometimes. Re-check the schedule from a source that is not blocked."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:southeast-pennsylvania-sierra-club-outings"],
+        "group_id": null,
+        "ein": null,
+        "website": "https://sierraclub.org/pennsylvania/southeastern"
+      },
+      "verdict": "publish",
+      "name": "Southeastern Pennsylvania Group, Sierra Club",
+      "summary": "The Philadelphia area volunteer group of the Sierra Club, covering the city and nearby counties. It leads outdoor trips and conservation work in the region.",
+      "what_you_do": "Join an outing led by a volunteer leader, or fill in the group's volunteer interest form to be connected with a leader.",
+      "kind": "club",
+      "categories": ["outdoors-adventure", "nature-environment"],
+      "interests": ["hiking", "birding", "kayaking"],
+      "motives": ["social", "enhancement"],
+      "formats": ["one_off_event"],
+      "contacts": {
+        "website": "https://sierraclub.org/pennsylvania/southeastern"
+      },
+      "first_step": {
+        "how": "Fill in the Volunteer Interest Form on the group's site to be connected with an outing leader.",
+        "newcomer_friendliness": 2,
+        "basis": "The group's live outings calendar would not load, so it is not clear how a newcomer joins an outing."
+      },
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [
+        {"url": "https://sierraclub.org/pennsylvania/southeastern/southeastern-pa-outings", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "interests", "first_step"]}
+      ],
+      "notes": "The group home page and the outings page both loaded empty on repeated fetches. This record rests on search result summaries of those pages, so treat it as unconfirmed. The search results list a Meetup group and a Facebook page for outings; these are leads only and were not read. The newest dated item seen was a blog post whose web address is dated 2023 July, which is not current evidence. No current outing dates were confirmed."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:strawberry-mansion-cdc"],
+        "group_id": null,
+        "ein": null,
+        "website": "https://www.strawberrymansioncdc.org"
+      },
+      "verdict": "publish",
+      "name": "Strawberry Mansion Community Development Corporation",
+      "summary": "A Strawberry Mansion neighborhood nonprofit that works on housing repair, historic preservation, and resident programs. It hosts free family events, such as a spring movie night at The Yard.",
+      "what_you_do": "Come to free community events, sign up for the newsletter, or use the volunteer page to ask how to help with the group's housing and land care programs.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic", "history-heritage-preservation", "hunger-housing-basic-needs"],
+      "interests": ["community_development", "preservation_architecture", "home_repair"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "crowd": ["families", "neighbors"],
+      "schedule": {
+        "text": "Free family events such as a movie night on Friday, May 15, 2026, 7 to 10 pm. No recurring schedule is published.",
+        "days": ["fri"],
+        "times": ["evening"],
+        "recurring": false,
+        "season": "event_only"
+      },
+      "locations": [
+        {"label": "The Yard (movie night venue)", "address": "1515 N 33rd St", "zip": "19121", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "Free"},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Watch the group's site for the next free community event and come along, or email info@strawberrymansioncdc.org to ask how to volunteer.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Free family events are open to the public, and the site lists a volunteer page and an email address for questions."
+      },
+      "contacts": {
+        "website": "https://www.strawberrymansioncdc.org",
+        "email": "info@strawberrymansioncdc.org",
+        "phone": "215-235-7505"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants",
+      "sources": [
+        {"url": "https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants", "seen": "2026-10-08", "fields": ["schedule", "cost", "locations", "audience", "crowd", "status", "last_sign_of_life"]},
+        {"url": "https://www.strawberrymansioncdc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "first_step"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The group's home page lists no office address, so none is recorded. The Love Your Park page lists the movie night as 7:30 to 10 PM; the group's own event page says 7 to 10 PM, so the event page is used. The event page names the organizers as this group and the Fairmount Park Conservancy. The home page's newest item is a community potluck listed as Sunday, October 18 with no year shown; it is not used as evidence. Movie night registration showed as closed."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:two-street-stompers-nyb-seed"],
+        "group_id": null,
+        "ein": null,
+        "website": null
+      },
+      "verdict": "publish",
+      "name": "Two Street Stompers",
+      "summary": "A comic division Mummers club that marches in the New Year's Day parade. The 2026 official lineup lists it under the Goodtimers NYA mother club.",
+      "what_you_do": "Members march in the New Year's Day parade as part of the comic division. The lineup page does not say what else the club does.",
+      "kind": "club",
+      "categories": ["philly-traditions"],
+      "interests": ["mummers_comic_club", "parade_units"],
+      "motives": ["values", "social"],
+      "formats": ["perform_make_together"],
+      "schedule": {
+        "text": "Marches in the New Year's Day parade, which begins at 9 am at City Hall",
+        "times": ["morning"],
+        "recurring": true,
+        "season": "winter"
+      },
+      "first_step": {
+        "how": "Ask the parade office through its contact form how to reach the club, since the lineup page lists no club contact.",
+        "newcomer_friendliness": 2,
+        "basis": "No club contact or join process is published, so the way in is unclear."
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-01",
+      "sign_of_life_url": "https://philadelphiamummersparade.com/2026-official-parade-lineup/",
+      "sources": [
+        {"url": "https://philadelphiamummersparade.com/2026-official-parade-lineup/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "interests", "schedule", "status", "last_sign_of_life"]},
+        {"url": "https://www.philadelphiamummersparade.com/contact/", "seen": "2026-10-08", "fields": ["first_step"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "No website for the club itself was found. The parade site is the only source. The lineup page does not print a date; it names the 2026 parade, which is the New Year's Day 2026 march, so the sign of life is January 2026. The parade contact page has a form and no club or membership contact. No clubhouse address is on the page, so no location is recorded."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:washington-square-west-civic-association"],
+        "group_id": null,
+        "ein": null,
+        "website": null
+      },
+      "verdict": "publish",
+      "name": "Washington Square West Civic Association",
+      "summary": "The neighborhood civic association for Washington Square West. It co-hosts Love Your Park garden days with Farm Philly, including the May 2026 Open Garden Day at Sartain and Waverly Gardens and at South Street Garden.",
+      "what_you_do": "Come help at the Love Your Park open garden days, or meet the association's volunteers there. The park page does not describe the association's regular meetings.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic", "gardening-greening"],
+      "interests": ["civic_association", "community_garden"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "crowd": ["neighbors"],
+      "schedule": {
+        "text": "Open Garden Day on Saturday, May 9, 2026: 9 AM to 12 PM at Sartain and Waverly Gardens, and 10 AM to 2 PM at South Street Garden",
+        "days": ["sat"],
+        "times": ["morning", "daytime"],
+        "season": "event_only"
+      },
+      "locations": [
+        {"label": "Sartain and Waverly Gardens", "in_city": true},
+        {"label": "South Street Garden", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Come to a Love Your Park open garden day, such as the May 9 event, and ask the volunteers on site how to join the association.",
+        "drop_in": true,
+        "newcomer_friendliness": 2,
+        "basis": "Garden days are public, but the page gives no sign-up step and the association's own website could not be reached."
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://loveyourpark.org/events/lyp-week-2026",
+      "sources": [
+        {"url": "https://loveyourpark.org/events/lyp-week-2026", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "first_step", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The association's own website (www.wswca.org) did not resolve, and the searches found no other official site, so no contact details are recorded. Newest evidence is the 2026 Love Your Park page. Older 2024 news about a board vote and a historic district is not used for status. The page links to a shared document for the garden day with no sign-up details; it was not opened."
+    },
+    {
+      "match": {
+        "lead_ids": ["manual_seeds:women-in-gis-delaware-valley"],
+        "group_id": null,
+        "ein": null,
+        "website": "https://www.womeningis.org/chapters"
+      },
+      "verdict": "publish",
+      "name": "Women in GIS, Delaware Valley chapter",
+      "summary": "The Delaware Valley chapter of Women in GIS, a network for women who work with mapping and location data. The chapter offers networking for its local members and other women in GIS.",
+      "what_you_do": "Meet other women who work in GIS through the chapter's networking. The chapter listing shows no meeting dates.",
+      "kind": "network",
+      "categories": ["careers-skills-professional"],
+      "interests": ["professional_associations"],
+      "motives": ["career", "social"],
+      "formats": ["conversation"],
+      "audience": {"community": ["women"], "min_age": null, "faith": null, "support_group": false},
+      "crowd": ["professionals"],
+      "first_step": {
+        "how": "Use the chapter contact link on the Local Chapters page at womeningis.org to ask about the next networking event.",
+        "newcomer_friendliness": 2,
+        "basis": "No meeting dates or sign-up steps are published; the way in is a contact link to the chapter leads."
+      },
+      "contacts": {
+        "website": "https://www.womeningis.org/chapters"
+      },
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://www.womeningis.org/chapters", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "first_step", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The chapter has no page of its own. Its listing on the national chapters page is a working page with no dates, which is why status is probably_active. The chapter contact is an email address on that page and is not copied here. The page says creating new chapters is paused. The Meetup group under the same name is a lead only and was not read."
+    }
+  ],
+  "leads_only": [
+    {"name": "Farm Philly", "url": "https://loveyourpark.org/events/lyp-week-2026", "note": "Co-hosts the Washington Square West garden day on the Love Your Park page. No own website found, not checked."},
+    {"name": "Fairmount Park Conservancy", "url": "https://www.strawberrymansioncdc.org/event-details/movie-night-at-the-yard-spongebob-squarepants-serching-for-squarepants", "note": "Named as co-organizer of the May 2026 movie night. Own website not identified, not checked."},
+    {"name": "The Yard on John Coltrane Street", "url": "https://loveyourpark.org/events/lyp-week-2026", "note": "Venue named on the Love Your Park page; the group's event page gives a street address instead. Not checked."},
+    {"name": "Goodtimers NYA", "url": "https://philadelphiamummersparade.com/2026-official-parade-lineup/", "note": "Mother club listed for Two Street Stompers on the 2026 lineup. No website found, not checked."},
+    {"name": "Inspiring Connections Outdoors", "url": "https://sierraclub.org/pennsylvania/southeastern/southeastern-pa-outings", "note": "Named in search results as a Sierra Club Philadelphia outreach program. Own website not identified, not checked."},
+    {"name": "Fairmount Food Forest", "url": "https://www.strawberrymansioncdc.org", "note": "Community dinner listed on the Strawberry Mansion CDC home page with no year shown. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://libwww.freelibrary.org/calendar/event/79103", "status": 403, "note": "Free Library event page, HTTP 403. Not retried."},
+    {"url": "https://libwww.freelibrary.org/calendar/", "status": 403, "note": "Free Library calendar, HTTP 403. Not retried."}
+  ],
+  "notes": "Used all 3 WebSearch calls and 15 fetches. Verdicts: 7 publish, 0 hide, 0 not_a_group, 0 duplicate, 0 out_of_area. Both Free Library pages returned 403, so the two library programs are unknown records with low confidence. The Sierra Club group and outings pages loaded empty on every fetch, so that record rests on search result summaries and is low confidence. Meetup and Facebook pages (the Sierra Club outings Meetup, the Women in GIS Meetup) are leads only and were not read. Washington Square West's own website did not resolve. Two Street Stompers has no website of its own. Women in GIS has no page of its own; its national chapters page is the only source. Dropped with reason: the leads_only items have no known website of their own, so none were fetched. No group was marked as a duplicate of another in this batch."
+}

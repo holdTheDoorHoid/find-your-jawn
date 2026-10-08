@@ -7,28 +7,32 @@ leads:
 - irs_990n:262667344
 - irs_bmf:262667344
 ein: '262667344'
-summary: Neighbors who care for a local park in the Central part of the city meet as Friends of Julian
-  Abele Park, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: A nonprofit group for Julian Abele Park, a small park on 22nd Street in Southwest Center City.
+  Members meet about eight times a year, and the group runs a summer concert series.
+what_you_do: Join as a general member for $20 a year, attend the group's meetings, or come to the summer
+  concerts. Voting members must be 18 or older and meet attendance or service rules.
 kind: friends_group
 categories:
 - nature-environment
+- neighborhood-civic
 interests:
 - friends_of_park
-- park_cleanup
+- community_development
 motives:
 - values
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
 - organize
 crowd:
+- all_ages
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -37,26 +41,38 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meets about eight times a year, usually the first Tuesday of the month at 7 pm at SOSNA, 1901
+    Christian Street. Exact dates are not listed. Summer concerts run on Tuesdays, 6 to 8 pm, in 2026
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Julian Abele Park
   address: 923 S 22nd St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19146'
-  lat: 39.94091693804827
-  lng: -75.17931036941873
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Meeting place (SOSNA)
+  address: 1901 Christian St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: $20 a year in dues for general membership; no concert fee is listed
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -70,15 +86,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Pay the $20 yearly dues to join as a general member, then come to a meeting, usually the first
+    Tuesday of the month at 7 pm at SOSNA, 1901 Christian Street. Check the group's contact page for the
+    next date
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining costs $20 a year, and the site does not say whether meetings are open to non-members
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.julianabelepark.org/
+  website: https://julianabelepark.org/
   email: friendsofjulianabele@gmail.com
   phone: null
   contact_name: Philip Frank
@@ -109,6 +127,25 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://julianabelepark.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+- url: https://julianabelepark.org/meetingsmembership/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://julianabelepark.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

@@ -1,21 +1,30 @@
 id: boys-and-girls-clubs-of-philadelphia-inc
-name: Boys & Girls Clubs of Philadelphia Inc
+name: Boys and Girls Clubs of Philadelphia
 aka: []
 leads:
 - irs_bmf:231966756
 ein: '231966756'
-summary: null
-what_you_do: null
+summary: A youth club organization in Philadelphia neighborhoods, offering preschool, after-school and
+  teen programs at clubhouses such as Bridesburg, Northeast Frankford, Germantown and Wissahickon.
+what_you_do: Children take part in after-school, preschool and teen activities at a neighborhood clubhouse.
+  The homepage does not say how a child signs up, what membership costs, or how adults volunteer.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- kids-youth-mentoring
+interests:
+- after_school_camps
+motives:
+- values
+- social
+formats:
+- side_by_side
 roles: []
-crowd: []
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,17 +33,63 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: After-school, preschool and teen programs at neighborhood clubhouses. The homepage does not give
+    days or hours.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1518 Walnut St Ste 712
+- label: Office
+  address: 1518 Walnut St, Suite 712, Philadelphia, PA 19102
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Bridesburg Club
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Northeast Frankford Club
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Ralph J Roberts Club (Germantown)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Wissahickon Club
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Henry Reed Hatfield Outdoor Recreation Complex (Nicetown)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -42,7 +97,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The homepage does not say what membership costs.
 commitment: null
 group_size: null
 access:
@@ -54,26 +109,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Call the office at (215) 735-8818 or email admin@bgcphila.org to ask which club is nearest and
+    how a child signs up.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The homepage gives no sign-up steps, so the only way in that is published is a phone call or
+    an email to the office.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.bgcphila.org
+  email: admin@bgcphila.org
+  phone: (215) 735-8818
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://www.bgcphila.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +138,19 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.bgcphila.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - status
+  - last_sign_of_life
+  - requirements.kids_ok
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

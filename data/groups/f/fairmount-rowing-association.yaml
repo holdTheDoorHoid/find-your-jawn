@@ -5,18 +5,29 @@ leads:
 - irs_bmf:251872643
 - manual_seeds:schuylkill-navy-fairmount-rowing-association
 ein: '251872643'
-summary: null
-what_you_do: null
+summary: A rowing club founded in 1877 at 2 Boathouse Row and known for masters rowing, with a small juniors
+  program, a summer program and a masters regatta.
+what_you_do: Adult masters rowers train and race with the club. The club also runs a small juniors program
+  and a summer rowing program.
 kind: club
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- water-rowing
+interests:
+- rowing
+- youth_rowing
+motives:
+- enhancement
+- social
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,26 +36,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The 2026 summer junior program had an information meeting on June 16 and a parents meeting on
+    June 17, both at 7 pm at the Temple Boathouse. Sessions ran 7 to 9 am from June 18 into late July.
+    2027 dates were not posted on the pages read.
   days: []
-  times: []
-  recurring: null
-  season: null
+  times:
+  - morning
+  recurring: true
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: 2 Kelly Drive
+- label: Boathouse
+  address: 2 Kelly Drive, Fairmount Park, PA 19130
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: The junior page lists no program fees. The membership page still shows 2017 to 2018 dues, so current
+    dues were not found.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -55,26 +70,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Open the Membership page on the club's site to see how to join. The summer rowing program has its
+    own information page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: A Membership page exists, but the cost, age rules and joining steps were not on the page we read.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://fairmountrowing.org/
   email: null
   phone: null
   contact_name: Fred Gerland Treas
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://fairmountrowing.org/junior-rowing-program
 sources:
 - url: https://boathouserow.org/members/
   seen: '2026-10-04'
@@ -87,8 +103,34 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://fairmountrowing.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - status
+  - kind
+  - contacts
+- url: https://fairmountrowing.org/junior-rowing-program
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - crowd
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+  - requirements
+  - what_you_do
+- url: https://fairmountrowing.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

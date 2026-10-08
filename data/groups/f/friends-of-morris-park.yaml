@@ -6,9 +6,10 @@ leads:
 - city_friends:803
 - irs_990n:202288841
 ein: '202288841'
-summary: Friends of Morris Park is a Friends group for a local park, one of the volunteer groups that
-  look after Philadelphia parks and playgrounds. Neighbors can join cleanups and events.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Volunteers who look after Morris Park in Overbrook. They run monthly cleanups that pick up litter
+  and clear illegal dumping, and they hold free community events to bring neighbors into the park.
+what_you_do: Join a monthly cleanup, or come to a free neighborhood event such as the music festival the
+  group held in 2024.
 kind: friends_group
 categories:
 - nature-environment
@@ -20,9 +21,9 @@ motives:
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
@@ -36,26 +37,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Monthly cleanups; the day and time were not in the pages we could read
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Park
+- label: Morris Park
   address: 6600 Sherwood Rd
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19151'
-  lat: 39.977402814239845
-  lng: -75.25838991385382
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: No fee for the cleanups was mentioned. The 2024 festival was free.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -69,11 +70,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected
+    with this Friends group
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: A 2024 article says new people have joined the monthly cleanups, but we found no public sign-up
+    or group contact, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -93,6 +96,8 @@ sources:
   - name
   - locations
   - contacts.email
+  - kind
+  - first_step
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
   fields:
@@ -101,6 +106,17 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://myphillypark.org/park-friends-grants-bring-music-movies-and-more-to-philly-parks/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - formats
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

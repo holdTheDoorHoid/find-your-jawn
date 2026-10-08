@@ -4,46 +4,65 @@ aka: []
 leads:
 - irs_bmf:232841845
 ein: '232841845'
-summary: null
-what_you_do: null
+summary: A volunteer-run group that sends free books to people in prison who write asking for them. Its
+  office is on Baltimore Avenue in West Philadelphia.
+what_you_do: Read request letters, pick library books that fit each request, pack and mail the packages,
+  and help with letter logs, donation drives, and library work. New volunteers start at an orientation.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- books-writing
+- advocacy-rights
+interests:
+- prison_book_programs
+- justice_reform_reentry
+motives:
+- values
+formats:
+- behind_the_scenes
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Drop-in volunteer sessions Monday and Thursday from 6:30 to 8:30 pm, and the first Saturday of
+    the month from 11 am to 1 pm. Group sessions are usually Saturdays, 11 am to 1 pm or 1:30 to 3:30
+    pm, booked in advance.
+  days:
+  - mon
+  - thu
+  - sat
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Books Through Bars office
   address: 4722 Baltimore Ave
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19143'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -52,28 +71,29 @@ access:
 requirements:
   act153_clearances: null
   background_check: null
-  court_ordered_ok: unknown
+  court_ordered_ok: 'yes'
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill out the online volunteer form on the volunteer page, pick an orientation, then join a drop-in
+    session
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 5
+  basis: 'Built-in newcomer path: a required orientation first, then open drop-in sessions'
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.booksthroughbars.org
   email: null
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.booksthroughbars.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +101,24 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.booksthroughbars.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - commitment
+  - requirements.court_ordered_ok
+  - first_step
+  - audience
+- url: https://booksthroughbars.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

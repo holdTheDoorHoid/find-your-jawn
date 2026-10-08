@@ -7,12 +7,14 @@ leads:
 - irs_990n:232901427
 - irs_bmf:232901427
 ein: '232901427'
-summary: Neighbors who care for a local park in the Lower Northwest part of the city meet as Friends of
-  Gorgas Park, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who care for Gorgas Park in Roxborough. They put on park concerts and family events,
+  and they hold spring planting and cleanup days.
+what_you_do: Sign up for a spring planting or cleanup day, help at a family event or concert, or donate
+  to the park.
 kind: friends_group
 categories:
 - nature-environment
+- neighborhood-civic
 interests:
 - friends_of_park
 - park_cleanup
@@ -21,11 +23,12 @@ motives:
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
-- organize
 crowd:
-- neighbors
+- all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -37,26 +40,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Spring planting and cleanup days, and summer concerts; dates are posted each season
   days: []
   times: []
   recurring: null
-  season: null
+  season: event_only
 locations:
-- label: Park
+- label: Gorgas Park
   address: 6424 Ridge Ave
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19128'
-  lat: 40.03645263158894
-  lng: -75.22144370285754
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: No admission or membership fee listed; the site has a donate page
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -70,11 +73,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Watch the Volunteer page on gorgaspark.com for the next spring planting or cleanup day, and register
+    through the link there
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Planting and cleanup days are open to volunteers who sign up on the group's site
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -95,6 +99,7 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - match
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -109,6 +114,18 @@ sources:
   - locations
   - contacts.website
   - ein
+- url: https://www.gorgaspark.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

@@ -6,15 +6,15 @@ leads:
 - city_friends:737
 - city_gardens:10
 ein: null
-summary: Neighbors who care for a local park in the South part of the city meet as Capitolo Community
-  Garden, part of the City's network of park Friends groups.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: A community garden in Capitolo Playground at Tenth and Federal Streets, founded in 2009. It has
+  54 in-ground plots and three raised beds, and members share the garden's upkeep.
+what_you_do: Members keep a plot, attend two workdays and two meetings each year, and take turns on shared
+  chores such as watering the common beds and taking garden trash to the curb.
+kind: garden
 categories:
-- nature-environment
+- gardening-greening
 interests:
-- friends_of_park
-- park_cleanup
+- community_garden
 motives:
 - values
 - social
@@ -22,7 +22,6 @@ formats:
 - side_by_side
 roles:
 - hands_on
-- organize
 crowd:
 - neighbors
 bridging: null
@@ -36,35 +35,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Two workdays and two meetings a year for members. The site does not list dates.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Park
+- label: Capitolo Playground garden
   address: 900 Federal St
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19147'
-  lat: 39.93431737501592
-  lng: -75.16009425447926
-  in_city: true
-  transit: null
-- label: Garden
-  address: 998 Federal St
-  neighborhood: null
-  planning_district: south
-  zip: '19147'
-  lat: 39.93434194450562
-  lng: -75.1601324210545
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: No plot or membership fee is listed on the site.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -78,19 +68,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Join the Waitlist link on the How to Join page, or email capitologarden@gmail.com to ask
+    about the waitlist
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  sign_up_needed: true
+  newcomer_friendliness: 1
+  basis: Membership is open to anyone, but the plot waitlist is typically 3 to 4 years long.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.capitologarden.org/
-  email: pprstewardship@phila.gov
+  email: capitologarden@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/groups/99403363763
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -110,6 +102,21 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+- url: https://www.capitologarden.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - contacts
+- url: https://www.capitologarden.org/how-to-join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule.text
+  - cost
+  - first_step
+  - newcomer_friendliness
+  - commitment
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'
