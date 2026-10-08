@@ -62,11 +62,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the Events page for the next education, networking or sports event
+  how: Check the events section of casadevenezuela.net for its next education, networking or sports event,
+    or send a question through the contact form
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says everyone is welcome and lists its events publicly
+  newcomer_friendliness: 2
+  basis: The home page says everyone is welcome, but the events page shows only category names with no
+    readable listings, and no sign up or membership steps were found, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -74,7 +76,8 @@ contacts:
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://linktr.ee/casadevenezuela
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -94,7 +97,15 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://casadevenezuela.net/events
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://casadevenezuela.net/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

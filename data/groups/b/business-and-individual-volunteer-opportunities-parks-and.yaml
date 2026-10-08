@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: The general entry point for weeding, planting, trail clearing, rec center after school help and
   special event volunteering such as the Broad Street Run, outside of a specific Friends group.
-what_you_do: null
+what_you_do: Pull weeds, plant, clear trails, or help at a rec center or a special event such as the Broad
+  Street Run.
 kind: program
 categories:
 - nature-environment
@@ -33,42 +34,51 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Second Saturday of each month
-  days: []
-  times: []
-  recurring: null
+  text: Second Saturday of each month, starting at 10 am. Each month's workday is in a different park.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
   season: year_round
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free
 commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Some parks have no restrooms, and the Cobbs Creek workday page says so.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Tools and work gloves are provided at some workdays. Bring your own water.
 first_step:
-  how: Use the sign up form at https://loveyourpark.org.
+  how: Register for a Second Saturday workday at loveyourpark.org/volunteer/secondsaturdays, using the
+    sign up link on the event you choose.
   drop_in: null
   sign_up_needed: true
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Clearances: Background clearances required for an ongoing position at a playground
-    or rec center, per PPR''s volunteer clearance policy.'
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The Second Saturdays page says no experience is needed, all are welcome, and each workday has
+    its own sign up link.
+  what_to_expect: A workday starts at 10 am and runs about two hours in a city park. You might plant trees,
+    pull invasive plants, or clean up trash and waterways, and some events supply tools and gloves. Nobody
+    needs experience to join in.
+  first_visit_tips:
+  - Sign up on the event page first, since each month's workday is in a different park.
+  - Bring water, because some parks have no restrooms.
+  - Check the event page before you go, since the Cobbs Creek workday is canceled in heavy rain, thunder,
+    or severe weather.
 contacts:
   website: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/
-  email: null
-  phone: null
+  email: PPRstewardship@phila.gov
+  phone: (215) 683-3640
   contact_name: null
   social: []
   calendar_feed: null
@@ -77,15 +87,31 @@ last_sign_of_life: 2026-09
 sign_of_life_url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/
 sources:
 - url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
-confidence: medium
-last_checked: '2026-10-04'
+  - contacts
+  - first_step
+- url: https://loveyourpark.org/volunteer/secondsaturdays
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - cost
+  - schedule
+  - requirements
+  - access
+- url: https://loveyourpark.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - access
+research_tier: 2
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

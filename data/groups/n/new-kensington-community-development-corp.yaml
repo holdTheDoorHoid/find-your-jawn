@@ -58,7 +58,7 @@ schedule:
   - morning
   - daytime
   recurring: true
-  season: null
+  season: fall
 locations:
 - label: Office
   address: 2771 Ruth St, Suite 1, Philadelphia, PA 19134
@@ -69,12 +69,12 @@ locations:
   lng: -75.10930745971841
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: The group says many services are free. The cost of the gardening club and walk-in hours is not
     stated.
-commitment: null
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -107,7 +107,8 @@ contacts:
   email: bmckinney@nkcdc.org
   phone: 215-427-0350 x113
   contact_name: Bill McKinney
-  social: []
+  social:
+  - https://www.instagram.com/nkcdc
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -159,6 +160,16 @@ sources:
   fields:
   - first_step
   - what_you_do
+- url: https://nkcdc.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - status
+  - first_step
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

@@ -1,22 +1,32 @@
 id: grace-of-miqlat-international-ministries
-name: Grace of Miqlat International Ministries
-aka: []
+name: Grace of Miqlat Ministries
+aka:
+- Grace of Miqlat International Ministries
 leads:
 - irs_990n:271310145
 - irs_bmf:271310145
 ein: '271310145'
-summary: null
-what_you_do: null
+summary: A church that calls itself a place of refuge. It holds worship and Bible study, runs a children's
+  Bible group, and welcomes visitors from the neighborhood.
+what_you_do: Visit for worship, come to the Thursday adult Bible study, or join a Tuesday or Saturday
+  class, online or at Tacony Library.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- faith-community
+interests:
+- worship_community
+- scripture_study
+- faith_youth_programs
+motives:
+- values
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Adult Bible study on Thursdays, 6 to 7 pm. A Tuesday Bible training class, 6 to 7 pm, meets online.
+    Saturday children's classes, 3:30 to 4:30 pm, meet on Zoom at Tacony Library.
+  days:
+  - tue
+  - thu
+  - sat
+  times:
+  - evening
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 17705
+- label: Tacony Library (Saturday children's classes, per the church site)
+  address: null
   neighborhood: null
-  planning_district: north_delaware
-  zip: '19135'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: No fee is listed. The site invites donations to a literacy fund.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +74,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Call 215-780-0633 or email gracemiqlat@live.com to confirm the times, then come in for a visit.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The church says visitors are welcome to come in for a visit and lists its weekly classes with
+    times.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.gracemiqlat.org
-  email: null
-  phone: null
+  website: https://www.gracemiqlat.org/
+  email: gracemiqlat@live.com
+  phone: 215-780-0633
   contact_name: Rev Urell Spain-Bey
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.gracemiqlat.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +108,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.gracemiqlat.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://www.gracemiqlat.org/visit_us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

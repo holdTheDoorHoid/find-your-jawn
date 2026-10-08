@@ -36,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly coding sessions. The group's page names LeetCode Wednesdays; check the Meetup calendar
-    for times and locations.
+  text: Weekly coding sessions, with LeetCode Wednesdays as one regular focus. Times and places are posted
+    on Meetup.
   days:
   - wed
   times: []
@@ -47,7 +47,7 @@ locations: []
 online_ok: false
 cost:
   level: null
-  text: Not stated on the group's site; the site asks for donations and sponsors and lists no ticket price.
+  text: No session fee is listed. The group asks for donations and sponsors.
 commitment: drop_in
 group_size: null
 access:
@@ -60,16 +60,22 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
-  gear: null
+  gear: A laptop
 first_step:
-  how: Join the group's Discord, RSVP on Meetup for the next session, and come with a laptop
+  how: Join the group's Discord and introduce yourself, RSVP for a session on Meetup, and bring a laptop.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The group's own onboarding page gives three steps for new people and welcomes them to weekly
-    sessions
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The onboarding page says no experience is needed and lists three steps for new people. It does
+    not describe a formal orientation or buddy program.
+  what_to_expect: A session is a work time where members code side by side on their own projects, a course,
+    or a shared challenge such as practice problems. Bring a laptop and something to work on. The page
+    suggests introducing yourself to at least one person, and the group also runs workshops, AI paper
+    discussions, and a quarterly hackathon. Sessions need no application, and the page lists no fee.
+  first_visit_tips:
+  - Introduce yourself in the Discord intro channel before the session, so people know who you are.
+  - Bring a laptop and a project or practice problem you want help with.
+  - Check Meetup for the time and place, since the group does not name a fixed weekly venue.
 contacts:
   website: https://www.codephilly.com/
   email: null
@@ -92,11 +98,19 @@ sources:
   - schedule
   - status
   - contacts
+  - cost
 - url: https://www.codephilly.com/onboarding/
   seen: '2026-10-08'
   fields:
   - first_step
-research_tier: 1
+  - what_you_do
+  - requirements
+  - cost
+- url: https://www.codephilly.com/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

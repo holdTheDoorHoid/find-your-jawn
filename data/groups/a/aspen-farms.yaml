@@ -1,5 +1,5 @@
 id: aspen-farms
-name: Spooky Garden
+name: Neighborhood Gardens Trust
 aka:
 - Aspen Farms
 - Bouvier Street Garden
@@ -36,19 +36,22 @@ aka:
 - Viola Street Garden
 - Warrington Community Garden
 - The Water Garden
+- Spooky Garden
 leads: []
 ein: null
-summary: A community garden on North Leithgow Street and North Fourth Street, preserved in 2018. Neighbors
-  can email the garden or message its Facebook page to ask about joining.
-what_you_do: Grow food in an individual plot.
-kind: garden
+summary: A Philadelphia group that supports community gardens. It keeps a garden map so residents can
+  find a garden to join, though many gardens have waiting lists.
+what_you_do: Find a community garden on the garden map, open its More Info section for the best contact,
+  and ask about a plot. Demand is high and many gardens have waitlists. The site does not describe volunteer
+  work days.
+kind: network
 categories:
 - gardening-greening
 interests:
 - community_garden
 motives:
 - values
-- social
+- enhancement
 formats:
 - side_by_side
 roles:
@@ -66,34 +69,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Each garden sets its own days. The site lists no work days or meetings.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Garden
-  address: 1015 N. Leithgow Street
+- label: Office
+  address: 100 N. 20th Street, Suite 405
   neighborhood: null
   planning_district: null
-  zip: '19123'
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Garden
-  address: 1116 N. Fourth Street
-  neighborhood: null
-  planning_district: null
-  zip: '19123'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
+  text: Plot fees not shown
 commitment: ongoing_role
 group_size: null
 access:
@@ -108,17 +102,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email thespookygarden@gmail.com to ask about joining
-  drop_in: null
+  how: Open the garden map on the site, find a garden, and click More Info for its contact; or email ngt@pennhort.org
+    for help
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The page gives no waitlist, open days or volunteer instructions, so the way in is unclear
+  basis: The steps are clear, but many gardens have waitlists
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://ngtrust.org/tulip-street
-  email: thespookygarden@gmail.com
-  phone: null
+  website: https://ngtrust.org/
+  email: ngt@pennhort.org
+  phone: 215-988-1630
   contact_name: null
   social:
   - https://www.facebook.com/bouvier.garden
@@ -134,6 +129,8 @@ contacts:
   - https://www.facebook.com/groups/947823798681931/
   - https://www.facebook.com/pages/Warrington-Community-Garden/233366250112965
   - https://www.facebook.com/SpookyGarden
+  - https://www.facebook.com/ngtrust
+  - https://www.instagram.com/ngtrust/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -150,6 +147,9 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+  - what_you_do
+  - first_step
+  - status
 - url: https://ngtrust.org/bouvier-street
   seen: '2026-10-08'
   fields:
@@ -432,8 +432,14 @@ sources:
   - contacts
   - first_step
   - status
+- url: http://www.ngtrust.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - locations
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

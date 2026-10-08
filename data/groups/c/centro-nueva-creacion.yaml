@@ -1,24 +1,28 @@
 id: centro-nueva-creacion
-name: Centro Nueva Creacion
+name: Centro Nueva Creación
 aka: []
 leads:
 - cultural_fund:centro-nueva-creacion-3
 ein: null
-summary: A nonprofit founded in 1995 that supports young people with after school programs, a summer camp,
-  and arts and photography projects rooted in Latino culture.
-what_you_do: Young people join the after school program or summer camp or take part in the Goodlands photography
-  project. Families can call to ask about enrollment.
+summary: A nonprofit founded in 1995 in the Fairhill area. It runs an after school program for elementary
+  students, a summer camp, and arts and photography projects rooted in Latino culture.
+what_you_do: Elementary students join the weekday after school program for a snack, homework help, and
+  arts projects, or take part in the summer camp or the Goodlands photography project. The summer camp
+  includes breakfast and lunch, swimming, and weekly field trips, and ends with a public show of student
+  work. Families call or email to ask about enrollment.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - arts-crafts
 interests:
 - after_school_camps
+- tutoring
 - photography
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- kids
 bridging: null
 audience:
   open_to: public
@@ -30,16 +34,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: After school runs Monday to Friday, 3 to 6 pm, September through June. The site does not list
+    summer camp dates.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Centro Nueva Creación
+  address: 185 W. Tioga St.
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: low
-  text: The site lists a $95 fee for a semester of after school programming. This may be out of date.
+  text: A sponsorship appeal on the site mentions a $95 fee for a semester of after school. No full fee
+    schedule is posted, so call to confirm. Summer camp cost is not listed.
 commitment: null
 group_size: null
 access:
@@ -51,17 +72,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
   how: Call 215-426-8762 to ask about after school enrollment or summer camp. The site invites visitors
-    to come by Monday to Friday, 7 am to 9 pm.
+    to come by, but it does not explain how to set up a visit.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The page does not explain how enrollment or registration works
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites families to call or visit, but it does not explain how enrollment works, what
+    it costs, or when a new student can start.
+  what_to_expect: The after school program runs 3 to 6 pm on weekdays, September through June, and serves
+    more than 50 elementary students a year. Each afternoon has a healthy snack, 15 minutes of play, about
+    45 minutes of homework help or tutoring, and about 45 minutes of arts projects with teaching artists.
+    The arts projects use poetry, photography, drumming, and dance to explore family traditions and Latino
+    culture. The site does not list a current fee.
+  first_visit_tips:
+  - Call 215-426-8762 before you come, since the site does not explain visits or enrollment steps.
+  - The center is at 185 W. Tioga St., 19140.
 contacts:
   website: https://www.goodlands.org/
   email: null
@@ -87,7 +115,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.goodlands.org/after-school-program
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://www.goodlands.org/summer-camp
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.goodlands.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,524 @@
+{
+ "wave": "w17-coalitions",
+ "agent": "q-cdc-neighborhood",
+ "lane": "Q",
+ "model": "haiku",
+ "searches_used": 3,
+ "fetches_used": 59,
+ "leads_only": [
+  {
+   "name": "Heritage CDC",
+   "url": "https://www.facebook.com/HeritageCommunityDevelopmentCorp/",
+   "note": "PACDC member with a Facebook link only. No own website found. A search result places a Heritage CDC near Amos Playground in North Philadelphia, not Frankford or Kensington. Not verified."
+  },
+  {
+   "name": "HMC Squared Community Association",
+   "url": "https://www.facebook.com/HMC2Community/",
+   "note": "PACDC member with a Facebook link only. No own website found; not checked."
+  },
+  {
+   "name": "Smart Futures CDC",
+   "url": "https://pacdc.org/members-list/",
+   "note": "PACDC member with no website listed; not checked."
+  },
+  {
+   "name": "NewCourtland",
+   "url": "https://www.newcourtland.org/",
+   "note": "PACDC member, not checked: fetch cap reached (59 of 60). Senior services that may have volunteer programs."
+  },
+  {
+   "name": "Episcopal Community Services",
+   "url": "https://www.ecsphilly.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Social services that may have volunteer roles."
+  },
+  {
+   "name": "Urban Affairs Coalition",
+   "url": "http://www.uac.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Civic programs."
+  },
+  {
+   "name": "Urban League of Philadelphia",
+   "url": "https://www.urbanleaguephila.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Civic and youth programs."
+  },
+  {
+   "name": "The Food Trust",
+   "url": "https://www.thefoodtrust.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Food programs that may have community volunteer roles."
+  },
+  {
+   "name": "Friends Rehabilitation Program",
+   "url": "https://friends-frp.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Social services."
+  },
+  {
+   "name": "Catholic Housing and Community Services",
+   "url": "http://chcsphiladelphia.org/",
+   "note": "PACDC member, not checked: fetch cap reached. Housing and tenant services."
+  },
+  {
+   "name": "Arab-American CDC",
+   "url": "https://www.arabamerica.com/business-directory/18990/arab-american-community-development-corporation-of-philadelphia-4/",
+   "note": "PACDC member, not checked: the list links only a business directory entry, not its own site. Fetch cap reached."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://olneycollab.com/",
+   "status": 403,
+   "note": "HTTP 403. Not retried or worked around."
+  },
+  {
+   "url": "http://www.overbrookwestneighbors.com/",
+   "status": 403,
+   "note": "HTTP 403. Not retried or worked around."
+  },
+  {
+   "url": "https://lnpcdc.org/",
+   "status": null,
+   "note": "TLS certificate name mismatch on both the https and http hosts (shared hosting certificate). Not checked."
+  }
+ ],
+ "notes": "Searches: 3 of 3 used. Fetches: 59 of 60 used, including the two PACDC pages. The PACDC members list has about 157 names. Most are banks, lenders, architects, contractors, consultants, hospitals, funders and housing developers with no resident program, so they are not recorded. Records here are neighborhood CDCs, business districts, and volunteer or service groups that name a program a resident can join. Checked and dropped for no joinable program shown: Centennial Parkside CDC (newest dated item 2023), Frankford CDC (only an event calendar), Tacony CDC (newest dated item April 2025, programs page lists none), PassyARC (a sidewalk cleaning program with no join steps), South Kensington Community Partners (no programs listed), MECCA (program names only, no join steps, no dated items), Tioga United (past clean-ups only, office by appointment), Community of Compassion CDC (newest dated item February 2023), Sister Clara Muhammad CDC (no programs), ICPIC New Africa Center CDC (newest dated items 2021), LA21, Old City District, Park to Broad and South Street Headhouse (business services only, no resident volunteer path), WCRP (housing applications only), Impact Services (no programs described), ProjectHOME (volunteer page has no details, only a race registration), Called To Serve CDC (generic volunteer line with no named program; worth revisiting), and TURN Tenant Union Representative Network (hotline and workshops listed, but newest dated item January 2024, so dormant under the date rule; worth a fresh check). Newbold CDC: the listed site redirects to an unrelated domain, which was not followed; a 2014 article describes a Newbold CDC corridor-cleaning program; no current site was found; dropped. WORC (Wynnefield Overbrook Revitalization) redirects to a university home page, not followed; dropped. Empowered CDC and Northwest CLT returned 404 on the homepage; dropped. Heritage CDC: see leads_only. Germantown United CDC: the list's germantownunitedcdc.org returned empty text twice; the working site is germantowncdc.org, found by search. Chestnut Hill: the list calls it Chestnut Hill CDC; its own site is the Chestnut Hill Business District, recorded under that name with the old one as an alias. New Kensington CDC: the www host has a certificate error; the record uses nkcdc.org. Sign-up paths that run through third-party sign-in or registration forms (Nicetown CDC volunteer link, Xiente register links) were not used. Faith: OCCCDA and Esperanza call themselves faith-based without naming a tradition, so audience.faith is 'other'. Undated items: some sites give months or days with no year (Autumn on the Avenue, the Cresheim clean-up, Rebuilding Together block builds, HACE block build and garden dates, NKCDC parent workshops), and these are not dated in the records. OCCCDA status is unknown because its only dated item is a 2021 camp link. Probably_active is used for working sites with no dates (Southwest CDC, Jumpstart Tioga, Rebuilding Together, SEAMAAC, Neighborhood Gardens Trust). A named staff volunteer contact is recorded only for Southwest CDC, as published. Habitat for Humanity and Neighborhood Gardens Trust are included as PACDC members that run volunteer days or garden joining, though they are not neighborhood CDCs. Habitat's ReStore volunteer role is not claimed. The leads_only list holds PACDC members that were not fetched because the budget ran out; they should be checked in a later wave.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": null,
+    "ein": null,
+    "website": "https://mtairycdc.org/"
+   },
+   "verdict": "publish",
+   "name": "Mt. Airy CDC",
+   "summary": "A community development group for Mt. Airy that offers housing counseling and runs neighborhood events. Neighbors can sign up through its volunteer link to help.",
+   "what_you_do": "Sign up through the volunteer link to help with neighborhood events. Current events include Autumn on the Avenue, a trick-or-treat walk at local shops on Germantown Avenue on October 22, and a first-time homebuyer workshop on Thursdays in October 2026.",
+   "kind": "nonprofit",
+   "categories": [
+    "neighborhood-civic",
+    "hunger-housing-basic-needs"
+   ],
+   "interests": [
+    "community_development",
+    "housing_help"
+   ],
+   "motives": [
+    "values",
+    "social"
+   ],
+   "formats": [
+    "side_by_side",
+    "one_off_event"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "neighbors",
+    "families"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "First-time homebuyer workshop on Thursdays October 8, 15 and 22, 2026, 5:30 to 8:30 pm. Autumn on the Avenue on Thursday October 22 (time not shown).",
+    "days": [
+     "thu"
+    ],
+    "times": [
+     "evening"
+    ],
+    "recurring": false,
+    "season": "fall"
+   },
+   "locations": [
+    {
+     "label": "CDC office",
+     "address": "6703 Germantown Avenue, Suite 200",
+     "zip": "19119",
+     "neighborhood": "Mt. Airy",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Workshop cost is not shown"
+   },
+   "commitment": "one_off",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Use the volunteer link on the home page, or sign up on the event page for the homebuyer workshop",
+    "drop_in": false,
+    "newcomer_friendliness": 3,
+    "basis": "Volunteer sign-up and event pages are public and linked from the home page"
+   },
+   "contacts": {
+    "website": "https://mtairycdc.org/",
+    "email": "info@mtairycdc.org",
+    "phone": "215.844.6021",
+    "social": [
+     "https://www.instagram.com/gomtairy",
+     "https://www.facebook.com/MtAiryCDC"
+    ]
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-10",
+   "sign_of_life_url": "https://mtairycdc.org/",
+   "sources": [
+    {
+     "url": "https://mtairycdc.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "schedule",
+      "status",
+      "contacts",
+      "locations",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "high",
+   "notes": "The volunteer and events pages were linked from the home page but not opened. The Autumn on the Avenue year is not written on the page, so that date is not dated here.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Mt. Airy' is unknown"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": null,
+    "ein": null,
+    "website": "https://discovereastfalls.org/"
+   },
+   "verdict": "publish",
+   "name": "East Falls Development Corporation",
+   "aka": [
+    "EFDC"
+   ],
+   "summary": "The development group for East Falls, focused on the Riverfront Business District and Conrad Street. Neighbors can help at the fall East Falls Fest, join its committees, or help the River Landing friends group.",
+   "what_you_do": "Help at the East Falls Fest on Saturday October 17, 2026 (11 am to 5 pm, along Ridge and Midvale), or sign up to volunteer or vend by email. The East Falls River Landing Friends Group looks after the riverfront access site and is reached through its own Facebook page or the group's email.",
+   "kind": "nonprofit",
+   "categories": [
+    "neighborhood-civic",
+    "philly-traditions",
+    "nature-environment"
+   ],
+   "interests": [
+    "community_development",
+    "street_festivals",
+    "river_stewardship"
+   ],
+   "motives": [
+    "values",
+    "social"
+   ],
+   "formats": [
+    "one_off_event",
+    "side_by_side"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "neighbors"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "East Falls Fest on Saturday October 17, 2026, 11 am to 5 pm, along Ridge and Midvale. Committee and friends-group meeting times are not shown.",
+    "days": [
+     "sat"
+    ],
+    "times": [
+     "daytime"
+    ],
+    "recurring": false,
+    "season": "fall"
+   },
+   "locations": [
+    {
+     "label": "Office",
+     "address": "3580 Indian Queen Ln.",
+     "zip": "19129",
+     "neighborhood": "East Falls",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Cost not stated"
+   },
+   "commitment": "seasonal",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Email the group to sign up to volunteer for the fest or to join a committee",
+    "drop_in": null,
+    "newcomer_friendliness": 3,
+    "basis": "Volunteer and vendor sign-up is public with a listed email; committee steps are not shown"
+   },
+   "contacts": {
+    "website": "https://discovereastfalls.org/",
+    "email": "info@eastfallspa.com",
+    "phone": "215-848-8084",
+    "social": [
+     "https://www.instagram.com/discovereastfalls",
+     "https://www.facebook.com/EFDCorp/"
+    ]
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-10",
+   "sign_of_life_url": "https://discovereastfalls.org/fallsfest/",
+   "sources": [
+    {
+     "url": "https://discovereastfalls.org/fallsfest/",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "schedule",
+      "status",
+      "first_step"
+     ]
+    },
+    {
+     "url": "http://www.discovereastfalls.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "locations",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The fest year comes from the event page. The home page's flood-planning item is dated 2022. The fest volunteer contact is a named staff email on the event page; the record uses the general address instead.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'East Falls' is unknown"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": null,
+    "ein": null,
+    "website": "https://www.jumpstarttioga.org/"
+   },
+   "verdict": "publish",
+   "name": "Jumpstart Tioga",
+   "summary": "A group that helps Tioga residents become investors in their own neighborhood through real estate training, mentoring and help with financing.",
+   "what_you_do": "Enroll in the 11th Real Estate Education Course (registration open, no start date shown). The group also offers a training program with mentoring and financing help, and a Facebook group where graduates, mentors and contractors share resources.",
+   "kind": "nonprofit",
+   "categories": [
+    "careers-skills-professional",
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "money_skills",
+    "community_development"
+   ],
+   "motives": [
+    "career",
+    "values"
+   ],
+   "formats": [
+    "learn_skill"
+   ],
+   "roles": [
+    "figure_out"
+   ],
+   "crowd": [
+    "neighbors",
+    "all_adults"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Course registration is open. Start dates and class times are not shown.",
+    "days": [],
+    "times": [],
+    "recurring": null
+   },
+   "locations": [
+    {
+     "label": "Tioga neighborhood",
+     "address": null,
+     "zip": "19140",
+     "neighborhood": "Tioga",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Course price not shown"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Use the course enrollment link on the group's site",
+    "drop_in": false,
+    "newcomer_friendliness": 2,
+    "basis": "Enrollment comes before details; no price, start date or schedule is shown"
+   },
+   "contacts": {
+    "website": "https://www.jumpstarttioga.org/",
+    "social": [
+     "https://www.facebook.com/JumpstartTioga"
+    ]
+   },
+   "status": "probably_active",
+   "sign_of_life_url": "https://www.jumpstarttioga.org/",
+   "sources": [
+    {
+     "url": "https://www.jumpstarttioga.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "status",
+      "contacts",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No dated items, so probably_active because the site works and enrollment is open. Recorded as a training program for residents, not a volunteer group. The enrollment page was not opened.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Tioga' is unknown"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": null,
+    "ein": null,
+    "website": "http://occcda.org/"
+   },
+   "verdict": "publish",
+   "name": "Oxford Circle Christian Community Development Association",
+   "aka": [
+    "OCCCDA"
+   ],
+   "summary": "A faith-based community development group in Oxford Circle. It runs after-school and summer camp, food distribution, adult education, family resource centers and Parents as Teachers, and it welcomes volunteers.",
+   "what_you_do": "Volunteer through the Volunteer Today link for roles working with adults and children, or with other tasks. Programs that may use volunteers include after-school and summer camp, food distribution, adult education and workforce, and Family Resource Centers. Times for each program are not shown.",
+   "kind": "nonprofit",
+   "categories": [
+    "neighborhood-civic",
+    "faith-community",
+    "kids-youth-mentoring"
+   ],
+   "interests": [
+    "community_development",
+    "faith_service_projects",
+    "after_school_camps"
+   ],
+   "motives": [
+    "values"
+   ],
+   "formats": [
+    "side_by_side"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "families",
+    "kids"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": "other",
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Program times are not shown on the site. Volunteer roles are posted through the Volunteer Today link.",
+    "days": [],
+    "times": [],
+    "recurring": null
+   },
+   "locations": [
+    {
+     "label": "Office",
+     "address": "900 E. Howell Street",
+     "zip": "19149",
+     "neighborhood": "Oxford Circle",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Cost not stated"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Use the Volunteer Today link on the group's site, or call (215) 288-8504",
+    "drop_in": null,
+    "newcomer_friendliness": 3,
+    "basis": "Volunteer sign-up is public and a phone line is listed; schedules are not shown"
+   },
+   "contacts": {
+    "website": "http://occcda.org/",
+    "email": "contact@occcda.org",
+    "phone": "(215) 288-8504",
+    "social": [
+     "https://www.facebook.com/occcda/",
+     "https://www.instagram.com/occcda/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "http://occcda.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "locations",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Faith-based (Christian) group. The denomination is not stated, so faith is 'other'. Its only dated item is a link to a 2021 summer camp, which is not a news item, so the status is unknown. Confirm before relying on it.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Oxford Circle' is unknown"
+   ]
+  }
+ ]
+}

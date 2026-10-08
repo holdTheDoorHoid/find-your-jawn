@@ -4,10 +4,12 @@ aka: []
 leads:
 - irs_bmf:237380408
 ein: '237380408'
-summary: A ceramics studio in Kensington with year round classes for beginners through advanced makers,
-  kids summer camps, and free hands on clay sessions for the public. Tuition help is available.
-what_you_do: Take a handbuilding or wheel class, join a workshop or summer camp, or come to a free clay
-  session or a Thursday talk.
+summary: A ceramics studio with classes for beginners through advanced makers, kids' summer camps, free
+  public clay sessions, and a gallery and shop open to visitors. Tuition help and a sliding scale are
+  available.
+what_you_do: Take a handbuilding or wheel class, join a workshop or summer camp, come to a free Hands
+  on Clay session, or visit the gallery and shop. The second Thursday of each month brings extended evening
+  hours, from 5 to 8 pm.
 kind: program
 categories:
 - arts-crafts
@@ -33,12 +35,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Classes run year round. Gallery and shop hours are weekdays 11 am to 5:30 pm and weekends 11 am
-    to 5 pm. There is an evening open house on the second Thursday of each month from 5 to 8 pm, and Clay
-    and Conversations talks run on Thursdays.
+  text: Classes run in terms of 5, 8 or 10 weeks, year round, on weekdays and some weekend mornings. Gallery
+    and shop hours are weekdays 11 am to 5:30 pm and weekends 11 am to 5 pm. Clay and Conversations talks
+    are on Thursdays at 1:30 pm, as scheduled.
   days:
+  - wed
   - thu
   times:
+  - morning
   - evening
   recurring: true
   season: year_round
@@ -55,29 +59,44 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Class prices are not listed. Tuition assistance is available for classes, workshops and summer
-    camps.
+  text: Class prices are not shown on the class list. Tuition assistance for classes, workshops and camps
+    needs a short application. A sliding scale with three options (Community Supported, Standard, or Clay
+    It Forward) needs no application, and you choose what to pay. Payment plans require a $100 non-refundable
+    deposit.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: 'Step-free entry, and an elevator serves all floors. Restrooms are accessible on every floor,
+    and water fountains are accessible on floors 2 to 4. Service dogs are welcome, and guided tours can
+    be arranged ahead to suit needs. Nearest SEPTA: the Market-Frankford Line to Girard station, about
+    a 10 minute walk. Bus 5 stops at 2nd and Girard, about a 6 minute walk, and bus 57 stops at Germantown
+    Avenue and Master Street, about a 3 minute walk.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Clay is bought at the studio's school store, and most adult classes do not supply personal tools.
 first_step:
-  how: Email info@theclaystudio.org or call 215-925-3453 to sign up for a class
-  drop_in: null
-  sign_up_needed: null
+  how: Sign up for a class online on the studio's class page, or call 215-925-3453 extension 106. To try
+    clay first, watch for a free Hands on Clay session, which is open to all ages.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Beginner classes and free public clay sessions are listed, with tuition assistance available.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Beginner classes are listed with online sign up, a waitlist and a sliding scale, and free clay
+    sessions are open to all ages. Classes do not take drop-ins.
+  what_to_expect: Adult classes run in terms of 5, 8 or 10 weeks, and each meets on one weekday for about
+    three hours. In the fall term, Intro to Handbuilding meets Wednesday evenings from 6:30 to 9:30 pm,
+    and Intro to Wheel Throwing meets Wednesday mornings from 10 am to 1 pm. Students buy their clay at
+    the school store.
+  first_visit_tips:
+  - Clay must be bought at the school store, so pick it up there before your first session.
+  - Open studio is only for enrolled students, so you need a class before you can use the studio on your
+    own.
+  - Drop-in visits to classes are not allowed, so sign up for the term before you come.
 contacts:
   website: https://www.theclaystudio.org/
   email: info@theclaystudio.org
@@ -85,9 +104,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.theclaystudio.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.theclaystudio.org/events/public-events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -106,8 +125,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://www.theclaystudio.org/visit
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - access
+- url: https://www.theclaystudio.org/events/public-events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.theclaystudio.org/class-policies
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - requirements
+  - first_visit_tips
+- url: https://public.theclaystudio.org/public/1/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

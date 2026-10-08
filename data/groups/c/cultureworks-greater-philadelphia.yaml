@@ -6,18 +6,22 @@ leads:
 ein: null
 summary: A Center City nonprofit that handles the paperwork for more than 90 creative projects and rents
   affordable desk space to cultural workers.
-what_you_do: Attend a networking or professional development event for cultural leaders, rent a desk in
-  the coworking space, or apply to have your project fiscally sponsored.
+what_you_do: Take a writing course, attend a networking or professional development event for cultural
+  leaders, rent a desk in the coworking space, or apply to have your project fiscally sponsored.
 kind: nonprofit
 categories:
 - careers-skills-professional
+- books-writing
 interests:
 - professional_associations
+- writing_group
+- poetry
 motives:
 - career
 - social
 formats:
 - one_off_event
+- learn_skill
 roles:
 - organize
 crowd:
@@ -33,7 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are posted on the site. No regular schedule is published on the home page.
+  text: Networking events, workshops, and multi-week courses are posted on the events page. No weekly
+    schedule is published.
   days: []
   times: []
   recurring: false
@@ -48,10 +53,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+online_ok: true
 cost:
   level: null
-  text: Desk membership prices are in the member portal, not shown on the home page
+  text: Some events are free, such as the Connect and Dream Together networking event. Most listings do
+    not give a price, and desk membership prices are not shown on the site.
 commitment: drop_in
 group_size: null
 access:
@@ -66,15 +72,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@cultureworksphila.org or sign up for the newsletter, then come to the next networking
-    event
-  drop_in: true
-  sign_up_needed: null
+  how: Pick a networking event or course on the events page and RSVP, or email info@cultureworksphila.org
+    with questions.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Networking events are open to cultural leaders, but fiscal sponsorship needs an application and
-    desk space needs membership
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are listed publicly and some are free, but most listed events need an RSVP or registration.
+    Desk space needs membership and fiscal sponsorship needs an application.
+  what_to_expect: Networking events and mixers bring cultural workers together at CultureWorks on Walnut
+    Street, and some mixers serve light bites and drinks. Courses run for several weeks and need registration
+    ahead of time. Most listings do not state a price, so check the event page before you sign up.
+  first_visit_tips:
+  - Check whether the event is in person (Suite 300 or Suite 320) or on Zoom, since the listings name
+    both.
+  - Register early, because courses close when they fill.
+  - Ask about the price before you register, since most listings do not give one.
 contacts:
   website: https://www.cultureworksphila.org/
   email: info@cultureworksphila.org
@@ -82,9 +94,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.cultureworksphila.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.cultureworksphila.org/events/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4
   seen: '2026-10-04'
@@ -99,8 +111,23 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.cultureworksphila.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_you_do
+  - interests
+  - formats
+  - schedule
+  - cost
+  - online_ok
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

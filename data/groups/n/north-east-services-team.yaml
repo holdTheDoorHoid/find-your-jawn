@@ -5,18 +5,26 @@ leads:
 - irs_990n:814200553
 - irs_bmf:814200553
 ein: '814200553'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
+summary: A group of Northeast Philadelphia organizations that connects neighbors to services. It runs
+  a free produce pickup every Wednesday afternoon at Hamilton Disston School.
+what_you_do: Pick up free produce on Wednesdays, use the resource directory to find services, or ask how
+  to take part through the contact page.
+kind: network
+categories:
+- hunger-housing-basic-needs
+- neighborhood-civic
+interests:
+- food_pantry
+- community_development
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -25,26 +33,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Free produce pickup every Wednesday, 2:30 to 3:30 pm, at Hamilton Disston School
+  days:
+  - wed
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 28450
+- label: Hamilton Disston School (weekly produce pickup)
+  address: null
   neighborhood: null
-  planning_district: north_delaware
-  zip: '19149'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +68,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Go to Hamilton Disston School on a Wednesday between 2:30 and 3:30 pm to pick up produce. For other
+    questions, use the contact form on the group's site.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The weekly pickup is listed as open to residents, and the site describes no sign-up step.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.northeastservicesteam.org
+  website: https://www.northeastservicesteam.org/
   email: null
   phone: null
   contact_name: Emma Wagner
-  social: []
+  social:
+  - https://facebook.com/NESTCOphilly
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.northeastservicesteam.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +103,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.northeastservicesteam.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+- url: https://www.northeastservicesteam.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

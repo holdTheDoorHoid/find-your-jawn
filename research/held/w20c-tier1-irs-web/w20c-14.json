@@ -1,0 +1,99 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-14",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 30,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://dignityofwomanhood.com/",
+   "status": null,
+   "note": "Domain does not resolve (DNS lookup fails for bare and www names)."
+  },
+  {
+   "url": "https://hopeforafrica1.org/",
+   "status": null,
+   "note": "Secure connection fails: the server presents a shared hosting certificate for another domain (bare and www names). Site not readable."
+  }
+ ],
+ "notes": "Budget: both WebSearch calls were used, on Gainesville Urban Farm (no match) and Dignity of Womanhood (no Philadelphia match), so Hope for Africa One CDC got no search. 30 WebFetch calls in total, within the two extra pages per site rule. No rate limiting seen; failures were DNS and TLS errors. Three IRS groups (Dignity of Womanhood, Gainesville Urban Farm, Hope for Africa One CDC) are unknown and held back with no summary, categories or interests. Status method: a working site with no dated item is probably_active, at low confidence; a newest dated item older than 24 months is dormant (Elda Foundation, Pilgrims Vision). Hope and Help Network is out_of_area because its only address is in Abington and the site never names Philadelphia; reverse it if evidence of Philadelphia service turns up. Kidz in Da Hood's Upcoming Events page was linked but not fetched. Grace of Miqlat and Pilgrims Vision are churches with faith left blank where the site gives no denomination. Named but unchecked leads with no URL: Philadelphia ARES (named on the Holmesburg Amateur Radio Club site).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472733688",
+     "irs_bmf:472733688"
+    ],
+    "group_id": "dignity-of-womanhood",
+    "ein": "472733688",
+    "website": "https://dignityofwomanhood.com/"
+   },
+   "verdict": "publish",
+   "name": "Dignity of Womanhood",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Website https://dignityofwomanhood.com/ does not resolve (DNS lookup fails for both the bare and www names). One web search for the exact name plus Philadelphia found no Philadelphia group; the matches were an unrelated event in Connecticut and a podcast. Nothing could be confirmed about activities, so no summary, categories or interests were written. Held back on purpose. Retry with a corrected website or a social media page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:931792939",
+     "irs_bmf:931792939"
+    ],
+    "group_id": "gainesville-urban-farm-inc",
+    "ein": "931792939",
+    "website": "https://www.gvilleurbnfarm.com/"
+   },
+   "verdict": "publish",
+   "name": "Gainesville Urban Farm",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The website https://www.gvilleurbnfarm.com/ shows only the hosting provider's default cPanel page, with no content. One web search for the name plus Philadelphia found no page for this group. No summary, categories or interests were written because nothing about its activities could be confirmed. Held back on purpose. Retry with a corrected website or a social media page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:920686099",
+     "irs_bmf:920686099"
+    ],
+    "group_id": "hope-for-africa-one-cdc",
+    "ein": "920686099",
+    "website": "https://hopeforafrica1.org/"
+   },
+   "verdict": "publish",
+   "name": "Hope for Africa One CDC",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The website hopeforafrica1.org fails the secure connection check: the server presents a certificate for a shared hosting provider rather than this domain (both the bare and www names were tried). The site could not be read, and no web search was spent on this group because the two available searches went to Gainesville Urban Farm and Dignity of Womanhood. No summary, categories or interests were written. Held back on purpose. Retry with a search or a corrected address.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

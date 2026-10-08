@@ -8,8 +8,8 @@ leads:
 ein: '931990449'
 summary: A printmaking studio in Old City with equipment for screen printing, etching, relief printing,
   and book arts. Members share the studio, and the public can visit it on First Fridays.
-what_you_do: Visit the studio on First Fridays (5 to 8 pm), book a visit at other times, follow the open
-  calls for prints, or apply to become a member who uses the studio.
+what_you_do: Visit on First Fridays (5 to 8 pm) or book another visit, learn from a member or get a lesson
+  for a fee, or apply for a studio membership.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -55,8 +55,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership fees are not shown on the pages read
+  level: paid
+  text: Studio membership is $125 a month on a one year commitment. Members who book time as needed pay
+    $12 an hour, plus $15 per screen reclaim and exposure. The cost of a First Friday visit is not listed.
 commitment: monthly
 group_size: null
 access:
@@ -71,15 +72,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: 'Come to the next First Friday open studio, 5 to 8 pm, at 12 N 3rd St, #5, or email byostudio.philly@gmail.com
-    to ask about a visit or membership.'
+  how: 'Come to a First Friday open studio, 5 to 8 pm, at 12 N 3rd St, #5, and ask a member about making
+    your first print. For a visit at another time, email byostudio.philly@gmail.com.'
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site describes First Fridays as open to the public. Membership needs an application, so that
-    route is not open to everyone.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The studio says it is happy to teach newcomers, has a Learn with us section for a first print,
+    and opens First Fridays to the public. There is no set beginner class, and membership needs an application.
+  what_to_expect: First Fridays run 5 to 8 pm. An October 2026 listing describes the evening as an open
+    studio with collaborative making, so you can see the studio in use and join in with others. Visit
+    costs are not listed, and visits at other times need an appointment.
+  first_visit_tips:
+  - For a visit outside First Fridays, email the studio first, since those visits are by appointment.
+  - Check the calendar page before you go, because the events listed there change.
+  - 'The studio is in Old City at 12 N 3rd St, #5. The pages do not give parking or transit details.'
 contacts:
   website: http://www.byoprint.org
   email: byostudio.philly@gmail.com
@@ -88,9 +94,9 @@ contacts:
   social:
   - https://www.instagram.com/byoprint
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.byoprint.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: http://www.byoprint.org/calendar-of-events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=3
   seen: '2026-10-04'
@@ -122,8 +128,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: http://www.byoprint.org/calendar-of-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: http://www.byoprint.org/apply-for-studio-access
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+- url: http://www.byoprint.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - cost
+- url: http://www.byoprint.org/the-studio
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

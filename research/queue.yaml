@@ -288,7 +288,22 @@ waves:
   - {id: w7-campuses, lane: B, kind: slices, brief: campuses, status: todo, note: "Temple, Jefferson, Saint Joseph's, La Salle, Holy Family, Chestnut Hill College, Moore, Curtis, Peirce; Drexel and CCP through public pages only (their APIs are blocked by robots)"}
   - {id: w8-parades-festivals, lane: C, kind: slices, brief: parades, status: todo}
   - {id: w9-funders, lane: D, kind: slices, brief: funders, status: todo}
-  - {id: w10-districts-1, lane: F, kind: slices, brief: districts, status: todo}
+  - id: w10-districts-1
+    lane: F
+    kind: slices
+    brief: districts
+    searches_per_agent: 6
+    status: todo
+    note: "The eight thinnest planning districts first (published groups per district on 2026-10-08 evening: upper far northeast 21, central northeast 24, lower far northeast 29, lower northeast 30, lower southwest 33, north delaware 35, west 36, west park 55)."
+    slices:
+    - {agent: f-upper-far-northeast, text: "Upper Far Northeast: Somerton, Bustleton (north), Byberry, Parkwood, Millbrook, Morrell Park, Torresdale (north), Academy Gardens. Council District 10."}
+    - {agent: f-central-northeast, text: "Central Northeast: Rhawnhurst, Fox Chase, Burholme, Lawndale, Castor Gardens, Oxford Circle (north), Pennypack, Bustleton (south). Council Districts 7, 9 and 10."}
+    - {agent: f-lower-far-northeast, text: "Lower Far Northeast: Holmesburg, Mayfair (east), Torresdale (south), Pennypack Woods, Ashton Woodenbridge, Winchester Park. Council Districts 6 and 10."}
+    - {agent: f-lower-northeast, text: "Lower Northeast: Frankford, Oxford Circle, Summerdale, Northwood, Lawncrest, Crescentville, Castor Gardens (south), Juniata Park. Council Districts 6, 7 and 9."}
+    - {agent: f-north-delaware, text: "North Delaware: Tacony, Wissinoming, Mayfair, Holmesburg (south), Bridesburg, Frankford (east). Council District 6."}
+    - {agent: f-lower-southwest, text: "Lower Southwest: Eastwick, Elmwood Park, Paschall, Kingsessing (south), Penrose, Clearview. Council District 2."}
+    - {agent: f-west, text: "West: Haddington, Cobbs Creek, Carroll Park, Overbrook (south), Walnut Hill, Dunlap, Mill Creek. Council Districts 3 and 4."}
+    - {agent: f-west-park, text: "West Park: Wynnefield, Wynnefield Heights, Parkside, East Parkside, Belmont, Mantua (west). Council District 4."}
   - {id: w10-districts-2, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-1]}
   - {id: w10-districts-3, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-2]}
   - id: w11-host-venues

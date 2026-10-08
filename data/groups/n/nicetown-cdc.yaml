@@ -42,8 +42,11 @@ audience:
   support_group: false
 schedule:
   text: A yearly summer festival with concerts, held over two days in August.
-  days: []
-  times: []
+  days:
+  - sat
+  - sun
+  times:
+  - daytime
   recurring: true
   season: summer
 locations:
@@ -56,11 +59,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: The site does not say whether the festival charges admission.
-commitment: null
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -97,6 +100,7 @@ contacts:
   - https://www.facebook.com/profile.php?id=100064500472114
   - https://twitter.com/nicetowncdc
   - https://www.youtube.com/channel/UCEYfxfReKmFHheh7RALhPgg
+  - https://www.instagram.com/nicetowncdc/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -153,6 +157,16 @@ sources:
   - summary
   - what_you_do
   - contacts
+- url: https://nicetowncdc.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - status
+  - first_step
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

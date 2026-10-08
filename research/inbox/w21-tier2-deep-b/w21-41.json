@@ -1,0 +1,451 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-41",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 0,
+  "fetches_used": 36,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:da-vinci-art-alliance-3", "irs_990n:235138722", "irs_bmf:235138722"],
+        "group_id": "da-vinci-art-alliance",
+        "ein": "235138722",
+        "website": "http://www.davinciartalliance.org"
+      },
+      "verdict": "publish",
+      "name": "Da Vinci Art Alliance",
+      "summary": "An artist group founded in 1931 that runs a gallery on Catharine Street. It holds shows, artist talks, a monthly book club, and workshops, and it offers memberships for artists and supporters.",
+      "what_you_do": "Visit the gallery, come to an opening or an artist talk, join the monthly book club on Zoom, take a workshop such as the Paper and Paste wheat paste class, or join as an artist or supporting member. Volunteers can join one of three committees: marketing and outreach, membership, or building.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts", "books-writing"],
+      "interests": ["book_club"],
+      "motives": ["social", "values"],
+      "formats": ["one_off_event", "conversation"],
+      "roles": ["organize", "create"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Gallery open Fridays and Saturdays, 11 am to 6 pm, with no appointment needed. Wednesday, Thursday and Sunday visits are by appointment, but the footer lists Thursday and Sunday hours, so check the calendar first. The monthly book club meets 4 to 5:30 pm on Zoom.",
+        "days": ["fri", "sat"],
+        "times": ["daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [{"label": "Gallery", "address": "704 Catharine St", "zip": "19147", "in_city": true}],
+      "online_ok": true,
+      "cost": {
+        "level": "low",
+        "text": "Gallery visits and exhibitions are free, and programs are free or by suggested donation. Artist membership is on a sliding scale, from $30 a year or $7.50 a quarter. A supporting membership is also offered, with no price shown on the page."
+      },
+      "commitment": "drop_in",
+      "access": {
+        "wheelchair": "no",
+        "notes": "The gallery is not yet wheelchair accessible, and the group says it is working toward full ADA access by 2027."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come by on a Friday or Saturday between 11 am and 6 pm, no appointment needed. To take part in the book club, join the Zoom discussion (4 to 5:30 pm, monthly).",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 4,
+        "basis": "The membership page says artists at all stages are welcome, with no portfolio review, and the gallery takes weekend visitors without an appointment.",
+        "what_to_expect": "Expect a free walk through the current show. Opening receptions run 5 to 7 pm on the calendar, and the book club is a Zoom discussion where you read the book first.",
+        "first_visit_tips": [
+          "Weekend visits need no appointment. Wednesday, Thursday and Sunday visits need one through the link on the visit page.",
+          "Street parking is free but limited to 2 to 4 hours. Free municipal lots are at 1012 E Passyunk Ave and 701 Clymer Street.",
+          "Read the book ahead of time if you plan to join the Zoom book club.",
+          "Check the calendar or Instagram before you visit, since emergency closures are posted there."
+        ]
+      },
+      "contacts": {
+        "website": "http://www.davinciartalliance.org",
+        "email": "info@davinciartalliance.org",
+        "phone": "267-388-2835"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.davinciartalliance.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "http://www.davinciartalliance.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "first_step", "status", "last_sign_of_life"]},
+        {"url": "https://davinciartalliance.org/visit", "seen": "2026-10-08", "fields": ["schedule", "cost", "access", "first_visit_tips"]},
+        {"url": "https://davinciartalliance.org/become-a-member", "seen": "2026-10-08", "fields": ["summary", "cost", "first_step"]},
+        {"url": "https://davinciartalliance.org/join-a-committee", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://davinciartalliance.org/events", "seen": "2026-10-08", "fields": ["what_you_do", "online_ok"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tier 1 said the group was founded by Italian immigrants and offers mentoring. The /about page returned 404 and no page read this pass says either, so both claims are removed; the record keeps only the 1931 founding year, which the membership page states. Thursday and Sunday hours conflict between the main text and the footer, so the schedule tells visitors to check first. Membership prices come from the membership page. Fetches: 6. Searches: 0."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:dancefusion-inc-3"],
+        "group_id": "dancefusion-inc",
+        "website": "http://gbyedance.org"
+      },
+      "verdict": "publish",
+      "name": "Dancefusion Inc",
+      "summary": "A Philadelphia dance nonprofit with a year round school for children and adults, plus a junior company that trains dancers in ballet, modern, jazz, tap and hip-hop.",
+      "what_you_do": "Take a class at the Gwendolyn Bye Dance Center, or ask about the fusion2 junior company for dancers who want to train and perform.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["dance_company"],
+      "motives": ["enhancement", "social"],
+      "formats": ["learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["kids", "teens", "all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Year-round classes for children and adults. Program A is for ages 3 to 12 and Program B for ages 9 to 18. Class days and times are not written on the site, so ask the studio.",
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Contact address (ask which studio classes use)", "address": "3611 Lancaster Avenue", "zip": "19104", "in_city": true}
+      ],
+      "cost": {
+        "level": "unknown",
+        "text": "Tuition is paid through a Venmo link on the site. The rates are in a schedule image, so ask the studio for the current amount."
+      },
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email mary@gbyedance.org or call 215-222-7633 to ask about class levels and a first class, then sign up with the online registration form linked from the school page.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Classes are open to children and adults, and the school gives an email, a phone number and a registration form. The site does not say whether a trial class is offered.",
+        "first_visit_tips": [
+          "Ask which level and program fits your age before you register.",
+          "Ask whether a trial class is possible, since the site does not say."
+        ]
+      },
+      "contacts": {
+        "website": "http://gbyedance.org",
+        "email": "mary@gbyedance.org",
+        "phone": "215-222-7633",
+        "social": ["https://www.facebook.com/DancefusionPhiladelphia", "https://www.instagram.com/gwendolynbyedance/"]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "http://gbyedance.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "http://gbyedance.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "http://gbyedance.org/gwendolynbyedance", "seen": "2026-10-08", "fields": ["schedule", "requirements", "first_step"]},
+        {"url": "http://gbyedance.org/fusion2", "seen": "2026-10-08", "fields": ["interests", "what_you_do"]},
+        {"url": "http://gbyedance.org/contact", "seen": "2026-10-08", "fields": ["locations", "contacts"]},
+        {"url": "http://gbyedance.org/dance-schedulerates", "seen": "2026-10-08", "fields": ["cost", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The class days, times and tuition amounts are in schedule and rate images that could not be read, so visitors are sent to the studio. The contact page lists 3611 Lancaster Avenue without saying which program meets there, so the location label says to ask. The 2026 to 2027 schedule and rates appear only in file names, so they are not used as dated evidence. No trial class or audition rule is stated. The fusion2 performance history names past venues but gives no dates. Fetches: 6. Searches: 0."
+    },
+    {
+      "match": {
+        "group_id": "dataphilly-data-science-philadelphia",
+        "website": "https://dataphilly.com/"
+      },
+      "verdict": "publish",
+      "name": "DataPhilly (Data Science Philadelphia)",
+      "summary": "A community of data science and analytics people in Philadelphia. It hosts talks, hands-on workshops, and panel discussions on topics such as AI, big data, and statistical modeling, and welcomes beginners.",
+      "what_you_do": "Attend talks and workshops, follow the Meetup group for event notices, and join the Slack workspace to help plan future events.",
+      "kind": "network",
+      "categories": ["making-tech", "science-learning"],
+      "interests": ["digital_skills", "talks_lectures"],
+      "motives": ["career", "understanding"],
+      "formats": ["conversation", "learn_skill"],
+      "roles": ["figure_out", "help_teach"],
+      "crowd": ["professionals", "students", "all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Events are announced on the group's own event pages and on its Meetup page. No regular day or time is given.",
+        "recurring": false,
+        "season": "event_only"
+      },
+      "cost": {"level": "unknown", "text": "The group's site does not say whether events are free or what they cost."},
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Join the DataPhilly Meetup group for event notices, then come to a talk or workshop. The group also has a Slack workspace where members help plan events.",
+        "newcomer_friendliness": 4,
+        "basis": "The home page says the group welcomes people from beginners to experts, and it lists how to join: the Meetup group and the Slack workspace.",
+        "what_to_expect": "Events are talks, hands-on workshops and panel discussions on data topics such as AI and statistics. The group's pages do not say how long an event runs or what it costs.",
+        "first_visit_tips": [
+          "Check the event listing for the time, place and cost, since the group's own pages leave those out."
+        ]
+      },
+      "contacts": {
+        "website": "https://dataphilly.com/",
+        "social": ["https://www.linkedin.com/company/dataphilly", "https://github.com/DataPhilly"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2025-10",
+      "sign_of_life_url": "https://dataphilly.com/docs/events/2025/october",
+      "sources": [
+        {"url": "https://dataphilly.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts"]},
+        {"url": "https://dataphilly.com/docs/join", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://dataphilly.com/docs/events/2025/october", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The newest dated evidence is the October 2025 events page (a Villanova talk on October 22, 2025). The blog holds only template posts from 2019 and 2021, so it is not evidence. Status is active only because October 2025 falls inside the 12 month window; recheck soon. Event prices, venues and sign-up rules are not stated on the group's own pages. The Meetup page was not read, per the lead-source rules. Fetches: 4. Searches: 0."
+    },
+    {
+      "match": {
+        "group_id": "deaf-hearing-communication-centre-dhcc",
+        "website": "https://dhcc.org"
+      },
+      "verdict": "publish",
+      "name": "Deaf-Hearing Communication Centre",
+      "summary": "A center that teaches American Sign Language classes and works for equal communication access across the Philadelphia region. It also holds Deaf community social events, such as a bingo and ASL night.",
+      "what_you_do": "Take an ASL class for kids, teens or adults, practice signing at community socials, or ask about interpreting and access services.",
+      "kind": "nonprofit",
+      "categories": ["culture-language-heritage-groups"],
+      "interests": ["sign_language"],
+      "motives": ["understanding", "values"],
+      "formats": ["learn_skill", "conversation"],
+      "roles": ["figure_out"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["deaf"], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Ten-week ASL courses run in person and on Zoom: adult levels 1 to 4, teen classes for ages 12 to 17, and kids classes for ages 2 to 11. Community socials, such as trivia, bingo, chat nights and coffee meet-ups, are listed through the year.",
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Community Room, Swarthmore (several events)", "address": "630 Fairview Rd", "zip": "19081", "in_city": false}
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "paid",
+        "text": "Adult classes are $200 per ten-week course, teen classes are $100, and kids classes are $75. Textbooks cost extra, and there are no refunds after the first night of class."
+      },
+      "commitment": "seasonal",
+      "access": {
+        "wheelchair": "unknown",
+        "languages": ["en"],
+        "notes": "Classes are taught in ASL by Deaf instructors, and social events are run mainly in ASL. ASL interpreting can be requested for events and services through the site's request form."
+      },
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Register for an adult, teen or kids ASL class through the links on the ASL classes page. Enrollment is first come, first served, and a class needs at least 8 students to run.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The class page describes the courses as non-credit beginner instruction and gives registration links and a contact email. It does not say that no experience is needed.",
+        "what_to_expect": "Adult levels meet for 20 hours in total over ten weeks, taught in ASL by Deaf instructors. Teen classes meet one hour a week and kids classes 30 minutes a week, with in-person and Zoom options.",
+        "first_visit_tips": [
+          "Adult classes are for students 18 and older.",
+          "Online classes need a laptop or desktop computer.",
+          "Textbooks cost extra, and the page lists them separately from tuition.",
+          "A class can be cancelled or combined if enrollment is too low by the deadline."
+        ]
+      },
+      "contacts": {
+        "website": "https://dhcc.org",
+        "email": "Info@dhcc.org",
+        "phone": "610-604-0452"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.dhcc.org/education-programs/asl-classes",
+      "sources": [
+        {"url": "https://dhcc.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "access", "languages", "contacts"]},
+        {"url": "https://www.dhcc.org/education-programs/asl-classes", "seen": "2026-10-08", "fields": ["schedule", "cost", "commitment", "requirements", "first_step", "first_visit_tips", "status", "last_sign_of_life"]},
+        {"url": "https://www.dhcc.org/event-list", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "locations", "status"]},
+        {"url": "https://www.dhcc.org/event-details/bingo-asl-social", "seen": "2026-10-08", "fields": ["access"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The class page gives a registration deadline of October 8, 2026 and no next start date, and it names no class days or times. The main office address is not stated. The event venue is a community room in Swarthmore, Pennsylvania, outside the city, so the location is marked outside the city. At least two socials were held at a Philadelphia venue on Queen Street, so the group does serve the city. Dates are used only where the page writes the year. A text line (610-756-0330) is also published, but the record has one phone field, so it is not stored. Fetches: 5. Searches: 0."
+    },
+    {
+      "match": {
+        "group_id": "delaware-valley-paleontological-society",
+        "website": "https://sites.google.com/site/dvpspaleo/"
+      },
+      "verdict": "publish",
+      "name": "Delaware Valley Paleontological Society",
+      "summary": "Fossil fans who meet most months from September to June, with guest speakers. The society also runs field trips to fossil sites and a yearly Fossil Fair.",
+      "what_you_do": "Go to the monthly talks, join field trips to fossil sites, and take part in the yearly Fossil Fair, which has fossil sales and a children's fossil dig.",
+      "kind": "club",
+      "categories": ["science-learning"],
+      "interests": ["geology_fossils", "natural_history"],
+      "motives": ["understanding", "social"],
+      "formats": ["conversation", "one_off_event"],
+      "roles": ["figure_out"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Fall meetings are on the second Sunday of the month, 3 to 5 pm, in person or on Google Meet. The most recent site schedule names the Edelman Fossil Museum in Mantua, New Jersey.",
+        "days": ["sun"],
+        "times": ["daytime"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Edelman Fossil Museum, Mantua, NJ", "address": "66 Million Mosasaur Way", "zip": "08080", "in_city": false}
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "unknown",
+        "text": "Dues are not listed on the site. Members get a newsletter published ten times a year, from September to June."
+      },
+      "commitment": "monthly",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Open the Contact Us page on the society's site and ask how to attend a meeting. The site lists no email address or phone number.",
+        "newcomer_friendliness": 2,
+        "basis": "The site lists meetings and member benefits, but it does not say whether visitors may attend or how a newcomer starts.",
+        "what_to_expect": "Meetings run about two hours in the afternoon, and the site names guest speakers. The site does not say whether visitors may sit in or what a visit costs.",
+        "first_visit_tips": [
+          "Ask the society whether visitors can attend, since the site does not say.",
+          "The fall meetings are in Mantua, New Jersey, so plan the trip from Philadelphia.",
+          "Check the meeting page before you go, since a September 2026 meeting was cancelled."
+        ]
+      },
+      "contacts": {"website": "https://sites.google.com/site/dvpspaleo/"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://sites.google.com/site/dvpspaleo/home/monthly-meetings",
+      "sources": [
+        {"url": "https://sites.google.com/site/dvpspaleo/home/monthly-meetings", "seen": "2026-10-08", "fields": ["schedule", "locations", "online_ok", "status", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://sites.google.com/site/dvpspaleo/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "first_step", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Two pages on the same site disagree. The home page, which gives no year, says meetings fall on fourth Thursdays at the Academy of Natural Sciences in Philadelphia. The monthly meetings page lists 2026 dates (September 13 cancelled, October 11 and November 18) and says second Sundays at the Edelman Fossil Museum in Mantua, New Jersey. The record follows the dated 2026 page. Judgment call for the reviewer: the meeting place is in New Jersey, so the record is marked outside the city; if the rule is Philadelphia meetings only, change the verdict to out_of_area. Whether visitors may attend is not stated, so open_to public is carried from tier 1 and is unconfirmed. The tier 1 'beginners' claim could not be confirmed and is removed. The Upcoming Events page is empty. Fetches: 6. Searches: 0."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:designphiladelphia"],
+        "group_id": "designphiladelphia",
+        "website": "https://designphiladelphia.org/"
+      },
+      "verdict": "publish",
+      "name": "DesignPhiladelphia",
+      "summary": "A design nonprofit that runs a yearly design festival, exhibitions, school programs and public events so people can see and join in local design.",
+      "what_you_do": "Go to a festival event, exhibition, talk or party, fill in the volunteer survey on the site, or sign up to hear about upcoming events and opportunities.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts", "science-learning"],
+      "interests": ["talks_lectures"],
+      "motives": ["values", "enhancement"],
+      "formats": ["one_off_event"],
+      "roles": ["organize", "help_teach"],
+      "crowd": ["all_ages", "students", "professionals"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "The yearly design festival runs in the fall, with exhibitions, talks, tours and events across the city. Office hours are not stated.",
+        "recurring": true,
+        "season": "fall"
+      },
+      "locations": [
+        {"label": "Office", "address": "320 S. Broad Street, Suite 171", "zip": "19102", "in_city": true}
+      ],
+      "cost": {
+        "level": "unknown",
+        "text": "The site does not list prices for festival events or the Beaux Arts Ball, and it does not say whether joining the community costs anything."
+      },
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Register for a festival event through the festival sign-up link on the site, or fill in the volunteer survey.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The community page says designers and non-designers are both welcome, and festival events are open with a clear sign-up route. The page does not speak to first-timers directly.",
+        "what_to_expect": "Events are exhibitions, talks, symposiums and evening parties at venues around the city, and some event pages list set hours. The site does not say how much events cost.",
+        "first_visit_tips": [
+          "Check each event page for its time, venue and ticket rules before you go.",
+          "Sign up for the community to receive news about events, exhibitions and volunteer chances."
+        ]
+      },
+      "contacts": {
+        "website": "https://designphiladelphia.org/",
+        "email": "info@designphiladelphia.org",
+        "phone": "(215) 569-3186"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://designphiladelphia.org/events",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://designphiladelphia.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "https://designphiladelphia.org/register", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "first_step"]},
+        {"url": "https://designphiladelphia.org/pages/festival", "seen": "2026-10-08", "fields": ["schedule", "first_step", "summary"]},
+        {"url": "https://designphiladelphia.org/events", "seen": "2026-10-08", "fields": ["schedule", "cost", "status", "last_sign_of_life", "sign_of_life_url"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The festival schedule link carries September 30 to October 11, 2026, while the festival page says October 1 to 11, so the record gives only the end date. The tier 1 claim that membership is a free sign-up could not be confirmed, so it is removed. The tier 1 mention of awards was not seen on any page read, so it is removed from the summary. The volunteer survey is hosted on a third-party survey site. The Beaux Arts Ball is listed for October 24, 2026 at Girard College. Fetches: 5. Searches: 0."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:diasporadna-story-center"],
+        "group_id": "diasporadna-story-center",
+        "website": "https://www.diasporadna.org"
+      },
+      "verdict": "publish",
+      "name": "DiasporaDNA Story Center",
+      "summary": "A cultural center at Cherry Street Pier with a large archive of rare books and archival materials. It also helps people research family history and add their own stories to the archive.",
+      "what_you_do": "Visit the archive during open hours. Members can join the Kinkeeping Club for genealogy clinics and family tree help. The group also runs creative art and writing sessions, plus occasional summits and festivals.",
+      "kind": "nonprofit",
+      "categories": ["history-heritage-preservation"],
+      "interests": ["oral_history", "genealogy"],
+      "motives": ["understanding", "values"],
+      "formats": ["behind_the_scenes", "learn_skill"],
+      "roles": ["figure_out"],
+      "crowd": ["families", "kids", "all_ages"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "Open Wednesday to Friday, 12 to 6 pm, and by appointment.",
+        "days": ["wed", "thu", "fri"],
+        "times": ["daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Cherry Street Pier, Suite 13", "address": "121 N Christopher Columbus Blvd, Suite 13", "zip": "19106", "in_city": true}
+      ],
+      "cost": {
+        "level": "low",
+        "text": "The site does not state a visit fee. Membership is billed monthly through Patreon: $2.50 a month for students, $5 for individuals, $7 for families and $10 for the complete plan."
+      },
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Stop by between 12 and 6 pm on a Wednesday, Thursday or Friday to look at the archive, or email info@diasporadna.org before you come to ask about a family history session.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Posted open hours make a first visit easy to plan, but the site does not say how to book a family history session or what a first visit involves.",
+        "what_to_expect": "The archive holds rare books and archival materials, including the Montgomery Collection. The site does not say how long a visit takes, who is usually there, or whether a visit costs anything.",
+        "first_visit_tips": [
+          "Plan around the Wednesday to Friday hours, 12 to 6 pm, or ask about an appointment.",
+          "Email before you come if you want help with family history, because the site gives no booking link for research help."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.diasporadna.org",
+        "email": "info@diasporadna.org"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.diasporadna.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.diasporadna.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "contacts", "status"]},
+        {"url": "https://diasporadna.org/visit", "seen": "2026-10-08", "fields": ["schedule", "locations", "first_step", "access"]},
+        {"url": "https://diasporadna.org/programs", "seen": "2026-10-08", "fields": ["what_you_do", "first_visit_tips"]},
+        {"url": "https://diasporadna.org/join", "seen": "2026-10-08", "fields": ["cost", "what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The visit page gives hours and the address but no booking link, so the record tells visitors to email. The tier 1 claim that programs are booked through the site was not confirmed and is removed. The programs page names a 2026 festival think tank with no month, so it is not used as a sign of life. The Kinkeeping Summit is described as free, but its year is not written, so it is not used. The pages were read at diasporadna.org without the www prefix, and they match the group's own address and email. Fetches: 4. Searches: 0."
+    }
+  ],
+  "leads_only": [],
+  "blocked": [],
+  "notes": "Seven groups, all written as publish. Fetches used: 36 of 60. Searches used: 0 of 1 (none needed, since every group had its own pages). No rate limiting seen. The Da Vinci /about page returned 404. Venues and past hosts named on group sites were not added to leads_only, with reasons: they are event venues, universities, or museums rather than partner community groups, and they were not fetched this pass (Taller Puertorriqueno, Village of Industry and Art, Temple University Center City, Painted Bride Art Center, Philadelphia Youth Dance Festival, Villanova Center for Business Analytics, Academy of Natural Sciences, Edelman Fossil Museum, Pratt Institute, POWER Library). Review flags: (1) Delaware Valley Paleontological Society has conflicting meeting details on its own site, and the record follows the dated 2026 page; its meeting place is in New Jersey, which is a judgment call for the verdict. (2) DataPhilly is active only because its newest evidence is October 2025. (3) DHCC's main office address is not stated, and its community room is in Swarthmore. (4) Dancefusion's class times and tuition are in images that could not be read."
+}

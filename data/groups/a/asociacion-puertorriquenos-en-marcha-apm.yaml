@@ -86,12 +86,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: Head Start preschool is free for income-eligible families. Other program costs are not listed.
     Drug and alcohol treatment is listed as covered for people without insurance.
-commitment: null
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -200,6 +200,19 @@ sources:
   - schedule
   - contacts
   - access
+- url: http://apmphila.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - locations
+  - contacts
+- url: https://www.apmphila.org/get-involved/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

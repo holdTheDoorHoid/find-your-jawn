@@ -69,15 +69,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Join Our Team button on the volunteer page to send the volunteer form, or call or email
-    the center
+  how: Send the volunteer form from the Join Our Team button on the volunteer page, or call or email the
+    center to say what kind of help you would like.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
   basis: The volunteer page welcomes individuals and groups of all ages and skill levels and gives a clear
-    sign-up form, but it does not describe orientation or a set schedule
-  what_to_expect: null
-  first_visit_tips: []
+    form, but it does not describe an orientation or a set schedule.
+  what_to_expect: The page lists garden, grounds, bee, greeter, and event jobs, and asks you to say how
+    you would like to help. It does not say how long a shift lasts, whether there is an orientation, or
+    what to wear, so ask when you make contact.
+  first_visit_tips:
+  - Tell the center the kind of job you want, such as the garden, the greeter desk, or events.
+  - Ask about parking when you call, since the center's site says free onsite parking is offered for its
+    conference center.
 contacts:
   website: https://cranaleith.org
   email: info@cranaleith.org
@@ -85,9 +90,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2025-02
-sign_of_life_url: https://cranaleith.org/volunteer/
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://cranaleith.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -106,12 +111,21 @@ sources:
   - first_step
   - status
   - commitment
+  - requirements.kids_ok
+  - what_to_expect
 - url: https://cranaleith.org
   seen: '2026-10-08'
   fields:
   - locations
   - contacts
-research_tier: 1
+  - first_visit_tips
+- url: https://cranaleith.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

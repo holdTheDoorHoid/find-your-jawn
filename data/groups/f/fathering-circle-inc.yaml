@@ -1,41 +1,52 @@
 id: fathering-circle-inc
-name: Fathering Circle Inc
+name: The Fathering Circle
 aka: []
 leads:
 - irs_990n:861337966
 - irs_bmf:861337966
 ein: '861337966'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A peer support group for men who are raising a young person. Men 17 and older meet every Monday
+  evening to talk with other men in the same position.
+what_you_do: Come to the Monday evening circle and talk with other men who are raising a young person.
+kind: support_group
+categories:
+- support-recovery
+interests:
+- parenting_support
+motives:
+- social
+- understanding
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 17
   max_age: null
-  community: []
+  community:
+  - men
+  - parents
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Peer support circle every Monday, 6 to 7:30 pm
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1600 Hunting Park Avenue
+- label: Philip E. Lindy House (Drexel Dornsife Center)
+  address: 3509 Spring Garden Avenue
   neighborhood: null
-  planning_district: north
-  zip: '19140'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -44,7 +55,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +69,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the contact page on thefatheringcircle.com to ask how to sign up for the Monday circle before
+    you come
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Sessions are for eligible men, and the site does not say how to sign up or what a first visit
+    is like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.thefatheringcircle.com
+  website: https://www.thefatheringcircle.com
   email: null
   phone: null
   contact_name: Eric Marsh
-  social: []
+  social:
+  - https://www.facebook.com/groups/thefatherscircle/
+  - https://www.instagram.com/thefatheringcircle
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://www.thefatheringcircle.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thefatheringcircle.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - audience
+  - commitment
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

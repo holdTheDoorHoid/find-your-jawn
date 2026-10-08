@@ -1,0 +1,164 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-13",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 15,
+ "leads_only": [
+  {
+   "name": "Strawberry Mansion Tennis Association",
+   "url": "http://strawberrymansionlearningcenter.com/",
+   "note": "Named in a board member's bio on the learning center's site as the group that runs youth tennis camps for the center. Its own site was not checked; the url is the page that names it."
+  },
+  {
+   "name": "The Wilma Theater (Accessible Productions Initiative)",
+   "url": "https://www.thefatheringcircle.com",
+   "note": "Named as a community partner on The Fathering Circle's homepage. Its own site was not checked; the url is the page that names it."
+  },
+  {
+   "name": "TUSP First Gen Group (Temple University School of Pharmacy)",
+   "url": "https://pharmacy.temple.edu",
+   "note": "Listed as a November 9, 2026 meeting on the school's events list. The page does not say whether non-members can attend. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.ujimafriends.org",
+   "status": 500,
+   "note": "HTTP 500 on every try, both the www host and the bare domain"
+  }
+ ],
+ "notes": "Budget: both WebSearch calls used (cap reached). 15 WebFetch calls in total. No broad rate limiting was seen. Ujima Friends returned HTTP 500 on every try (see blocked). The batch website for Rho Chi did not resolve, but the school's own site at pharmacy.temple.edu was read. Searches went to Rosebuds Mentoring Program (its website field held the word President) and Battle 4 Children (its website field held an email address). The Society of Ibero-Latin American Medical Professionals had a name in its website field and got no search, so it is held back as unknown. Contact people named on the IRS lists were not published on the group sites and were not recorded. IRS addresses are recorded as locations only where the group's own site printed the same address (Linked Family Services, Delivering Services With Love, Fathering Circle, and the National Alliance of Women Veterans event venue). Verdict counts: publish 13, hide 1, out_of_area 1. Held back (publish with no summary, or status unknown): New Woodstock, Rosebuds, Society of Ibero-Latin American Medical Professionals, Ujima Friends, Battle 4 Children. The Rho Chi hide is a judgment call, explained in its record.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:352932107",
+     "irs_bmf:352932107"
+    ],
+    "group_id": "new-woodstock-civic-association-cdc",
+    "ein": "352932107",
+    "website": "https://thenewwoodstockcivicassociation.com"
+   },
+   "verdict": "publish",
+   "name": "New Woodstock Civic Association CDC",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://thenewwoodstockcivicassociation.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://thenewwoodstockcivicassociation.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary, categories or interests. The homepage says the group supports families and works through outreach, education and service, and an undated photo caption shows volunteers giving toys and coats to children and families. The menu links (Our Programs, Get Involved, Membership, Contact) show no details, the link addresses look like unfinished template pages, and no dates, meeting times, email or phone are printed. No public way in is visible yet, so there is nothing safe to publish. Re-check the Get Involved and Contact pages in a later pass.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:881565445",
+     "irs_bmf:881565445"
+    ],
+    "group_id": "rosebuds-mentoring-program-inc",
+    "ein": "881565445"
+   },
+   "verdict": "publish",
+   "name": "Rosebuds Mentoring Program",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary, categories or interests. The batch website field held the word President, not a web address. One search (Rosebuds Mentoring Program Inc Philadelphia) found no Philadelphia listing under this name. Similar names came up elsewhere (a sorority's Rhosebuds affiliate, Rosebud Clubs run by other chapters, an Erie youth garden group), and none of them is this group. Two Pennsylvania 211 listing links appeared in the results with no names shown; they were not opened and are worth checking in a later pass. Not checked: the Pennsylvania Department of State business search, Candid, and the IRS Tax Exempt search. The IRS address (3615 N 22nd St, 19140) is not confirmed anywhere, so it is not recorded. The name suggests mentoring for girls, but that is from the name only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232662050",
+     "irs_bmf:232662050"
+    ],
+    "group_id": "society-of-ibero-latin-american-medical-professionals",
+    "ein": "232662050"
+   },
+   "verdict": "publish",
+   "name": "Society of Ibero-Latin American Medical Professionals",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary, categories or interests. The batch website field held a name (Pan American Mental Health), not a web address, so there was no page to read. The search budget went to higher priority groups, so this one was not searched. The IRS filing gives an address in Philadelphia zip 19140 (511 W Courtland Street, Suite 14), not confirmed anywhere. Nothing is known about what the society does or whether non-members can take part. Next step: look for the society's own page or its IRS Tax Exempt listing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:872513003",
+     "irs_bmf:872513003"
+    ],
+    "group_id": "ujima-friends-monthly-meeting",
+    "ein": "872513003",
+    "website": "https://www.ujimafriends.org"
+   },
+   "verdict": "publish",
+   "name": "Ujima Friends Monthly Meeting",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary, categories or interests. The website returned HTTP 500 on every try (www host, a retry, and the bare domain), so no page content was read. The name suggests a Quaker (Friends) meeting, but that comes from the name only. The IRS address (1701 West Lehigh Avenue, 19132) is not confirmed. Retry this group in a later pass once the site is back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471845758",
+     "irs_bmf:471845758"
+    ],
+    "group_id": "battle-4-children-charities",
+    "ein": "471845758"
+   },
+   "verdict": "publish",
+   "name": "Battle 4 Children Charities",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary, categories or interests. The batch website field held an email address at a personal internet provider domain, so it was not recorded as the group's own. One search (Battle 4 Children Charities Philadelphia) found no official site. Results say the group began in 2010 as a Battle of the Christian Bands music contest, became a 501(c)(3) in 2015, and is also spelled Battle4Children Charities. The mission (funding trauma therapy for children) and the event details come from a promotional newsletter post (https://anthonycirillo.substack.com/p/coming-up-tomorrow-at-2-pm-eastern-c83) and a local event listing, not from the charity itself, and the posts are undated, so no summary is written. A free fundraiser at a Willow Grove church was listed for a Saturday in February (year not seen), and one listing names a second charity as a co-beneficiary (not checked). Next step: find the charity's own page or its IRS Tax Exempt listing, then decide whether its events are open to the public.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

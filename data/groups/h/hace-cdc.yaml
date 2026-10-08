@@ -41,11 +41,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Summer of Salsa is monthly on the second Friday, 5 to 9 pm, at Fairhill Square (4th and Lehigh).
+    Block build and garden dates are given only as June, with no year.
+  days:
+  - fri
+  times:
+  - evening
+  recurring: true
+  season: summer
 locations:
 - label: Meeting place
   address: Virtual meeting by Zoom; email smonteiro@hacecdc.org to register
@@ -68,8 +71,8 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: Free tax prep for qualifying households is listed; event costs are not shown
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -84,7 +87,7 @@ requirements:
   gear: null
 first_step:
   how: Email Stasia Monteiro at smonteiro@hacecdc.org to register for the next virtual community meeting.
-  drop_in: null
+  drop_in: true
   sign_up_needed: true
   newcomer_friendliness: 3
   basis: Community meetings are open to residents, and the page gives one clear way in, which is to contact
@@ -101,7 +104,9 @@ contacts:
   email: smonteiro@hacecdc.org
   phone: (215) 426-8025 ext. 3011
   contact_name: Stasia Monteiro
-  social: []
+  social:
+  - https://www.facebook.com/HACECDC
+  - https://www.instagram.com/hacecdc
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -140,6 +145,17 @@ sources:
   - status
   - last_sign_of_life
   - contacts.contact_name
+- url: http://hacecdc.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - locations
+  - contacts
+  - first_step
+  - cost
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

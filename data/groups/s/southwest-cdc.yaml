@@ -64,10 +64,10 @@ locations:
   lng: -75.2349512420346
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
+  text: Cost not stated
 commitment: null
 group_size: null
 access:
@@ -129,6 +129,7 @@ sources:
   fields:
   - first_step
   - contacts
+  - what_you_do
 - url: https://southwestcdc.org/services/after-school-program/
   seen: '2026-10-08'
   fields:
@@ -149,6 +150,13 @@ sources:
   fields:
   - summary
   - contacts
+- url: http://www.southwestcdc.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+  - status
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

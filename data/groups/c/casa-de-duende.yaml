@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Supports under-served artists, especially immigrant, Indigenous and LGBTQI+ artists, through
   exhibitions, a bilingual English and Spanish press, and performances.
-what_you_do: Email the artistic director to ask about exhibitions, performances, or the press.
+what_you_do: Send an enquiry through the contact page or email the artistic director about exhibitions,
+  performances, or the press. Public events such as readings are listed on the current programs page.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -14,6 +15,7 @@ categories:
 interests:
 - cultural_exchange
 - zines_media
+- poetry
 motives:
 - values
 - enhancement
@@ -35,12 +37,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No dated events on the home page. Current and upcoming programs are on a linked page that was
-    not read.
+  text: Exhibitions, readings, and performances come and go, and are listed on the current programs page.
+    No regular schedule is published.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
 - label: Office address
   address: 1315 Walnut Street, Suite 300
@@ -54,12 +56,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed.
+  text: Costs are not listed on the pages we read.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -69,23 +73,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email the group or use the contact page to ask about exhibitions, performances or the press.
+  how: Check the Current and Upcoming Programs page for a public event, such as a reading, or send an
+    enquiry to ask how to attend.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: No public events or sign-up route are listed on the home page, so the way in is by contact.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Public readings say everyone is invited and give a date, time, and venue, but no sign up route
+    is printed. Other routes, such as exhibitions, press, and performances, start with an email enquiry.
+  what_to_expect: Events are public readings, exhibitions, and performances, and the press publishes in
+    English and Spanish. The March 2026 anthology reading ran at 5 pm at Samuel S. Fleisher Art Memorial,
+    and the page says everyone is invited. Prices are not printed, so check with the organizers before
+    you go.
+  first_visit_tips:
+  - Confirm the time and place by email before going, since the office lists no visiting hours.
+  - Look for the venue on each event listing, because the office and the events are in different places.
+  - The office is at The Philadelphia Building, 1315 Walnut Street, Suite 300, but ask before you visit.
 contacts:
   website: https://www.casadeduende.com
   email: armandoelduende@casadeduende.com
   phone: null
-  contact_name: null
-  social: []
+  contact_name: David Acosta (Artistic Director)
+  social:
+  - https://www.instagram.com/casadeduende/
+  - https://www.facebook.com/casadeduende
+  - https://vimeo.com/user112918457
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.casadeduende.com
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.casadeduende.com/new-page-2
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=3
   seen: '2026-10-04'
@@ -109,12 +124,33 @@ sources:
   - first_step
   - contacts
   - status
+  - cost
 - url: https://www.cultureworksphila.org/fiscal-sponsorship/fiscally-sponsored-projects
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.casadeduende.com/new-page-2
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+  - schedule
+  - first_step
+  - what_to_expect
+- url: https://www.casadeduende.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+- url: https://www.casadeduende.com/dos-lenguas-press
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - access
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

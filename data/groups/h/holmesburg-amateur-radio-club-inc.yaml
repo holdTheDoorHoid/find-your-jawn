@@ -1,22 +1,32 @@
 id: holmesburg-amateur-radio-club-inc
-name: Holmesburg Amateur Radio Club Inc
+name: Holmesburg Amateur Radio Club
 aka: []
 leads:
 - irs_990n:861340941
 - irs_bmf:861340941
 ein: '861340941'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A ham radio club that meets monthly, runs a weekly radio net, and supports public service radio
+  work for the Philadelphia area.
+what_you_do: Come to a monthly meeting (visitors are welcome), check into the Thursday evening radio net,
+  or ask the club for radio support at a public event.
+kind: club
+categories:
+- making-tech
+- emergency-disaster
+interests:
+- ham_radio
+- emergency_response_teams
+motives:
+- enhancement
+formats:
+- learn_skill
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,11 +35,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly meeting on the third Wednesday at 7:30 pm. Weekly net on Thursdays at 8 pm on 146.685
+    MHz (PL 146.2). No meeting in June or July.
+  days:
+  - wed
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 3341 Sheffield Ave
@@ -42,9 +56,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Meetings and the net appear to be free. Dues are not listed on the site.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a third Wednesday meeting at 7:30 pm (check the club page for the current month), or check
+    into the Thursday 8 pm net on 146.685 MHz.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club says its meetings are open to all and visitors are welcome, and anyone can join the
+    weekly net by radio.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: wm3pen.org
-  email: null
+  website: https://wm3pen.org/
+  email: wm3pen@arrl.net
   phone: null
   contact_name: Bob Josuweit
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://wm3pen.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +107,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://wm3pen.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,7 +7,8 @@ leads:
 ein: '474815728'
 summary: A community development group for East Parkside that works to preserve and revitalize the area
   through partnerships. In May 2026 it listed a spring festival in North Star Park.
-what_you_do: Go to a neighborhood festival or event, or ask the office how to get involved.
+what_you_do: Go to a neighborhood festival or event, come to a monthly community meeting, or call the
+  office to ask how to get involved.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -34,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The 2026 East Parkside spring festival in North Star Park was held on a Saturday in May, 11 am
-    to 2 pm. Office hours are not listed.
+  text: Hosts neighborhood festivals and events, and holds monthly community meetings that the public
+    can attend. Meeting dates and times are not listed.
   days:
   - sat
   times:
@@ -52,7 +53,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: North Star Park (festival)
+- label: North Star Park (festival site)
   address: null
   neighborhood: null
   planning_district: null
@@ -63,8 +64,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The festival cost is not stated.
+  level: free
+  text: The Love Your Park listing presents its events as free, and the festival is not priced separately.
 commitment: one_off
 group_size: null
 access:
@@ -79,15 +80,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Go to the next East Parkside festival in North Star Park, or call the office at 267-225-8356 to
-    ask how to get involved.
-  drop_in: null
+  how: Go to a monthly community meeting, which community members may attend, or call 267-225-8356 to
+    ask the next meeting date, time and place.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Festivals are posted as public events, and the group publishes an involvement page and contact
-    details. Volunteer steps are not spelled out.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The about page says the group holds monthly meetings that community members can attend, and the
+    office lists a phone and email. Meeting dates and times are not published, and volunteer steps are
+    not spelled out.
+  what_to_expect: The about page describes a group of residents and local organizations that holds monthly
+    meetings community members can attend. The site does not give the meeting place, time or agenda, so
+    call first. The 2026 spring festival, the East Parkside Red Hot and Cool Festival in North Star Park,
+    was listed for 11 am to 2 pm on Saturday, May 16, 2026.
+  first_visit_tips:
+  - Call 267-225-8356 to confirm the next meeting date, time and place
+  - Ask the office when the next spring festival in North Star Park will be
 contacts:
   website: https://centennialparkside.org
   email: info@centennialparkside.org
@@ -106,6 +113,7 @@ sources:
   - schedule
   - locations
   - status
+  - cost
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -119,7 +127,13 @@ sources:
   - locations
   - contacts
   - first_step
-research_tier: 1
+- url: https://centennialparkside.org/about
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

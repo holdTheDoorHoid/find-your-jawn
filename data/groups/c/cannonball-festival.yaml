@@ -6,8 +6,9 @@ leads:
 ein: null
 summary: A nonprofit that puts on a yearly festival of circus and performance art in Philadelphia, with
   an open call for performing artists.
-what_you_do: Perform in the festival through the Artist Open Call, see shows and workshops during the
-  festival, or donate or join the mailing list.
+what_you_do: See circus and performance shows during the festival, which are listed in the Philly Fringe
+  lineup filtered for Cannonball. Performers can apply through the Artist Open Call, and visitors can
+  donate or join the mailing list.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -28,11 +29,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Held once a year, with shows across about three weeks.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
 - label: Mailing address (event venues vary)
   address: 7205 Boyer St
@@ -46,7 +47,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Ticket prices are listed on each show's ticket page.
 commitment: null
 group_size: null
 access:
@@ -61,20 +62,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the Plan Your Visit page or the Philadelphia Fringe lineup for the 2026 shows, or apply through
-    the 2026 Artist Open Call if you perform
+  how: Pick a show from the Audience Paths 2026 list or the Philly Fringe lineup filtered for Cannonball,
+    then buy tickets through that show's own ticket page. If you perform, read the Artist Open Call before
+    you apply.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows are public and the open call is open to artists
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows are open to the public and sold through Philly Fringe ticket pages, and the audience guide
+    groups picks for first time Fringe goers. Buying a ticket is the only sign up, so the way in is clear.
+  what_to_expect: The festival runs in weeks, and its audience guide groups the shows by theme. Expect
+    circus and performance art, and note that some shows are for adults only. The festival pages we read
+    do not print exact dates, prices, or access details, so check each show's ticket page.
+  first_visit_tips:
+  - Read each show's age note before you buy, since one listed show is 21 and over and several have adult
+    themes.
+  - Check times and prices on each show's ticket page, because the festival home and visit pages do not
+    print them.
+  - Each venue has its own access page on the festival site, so check it before you go.
 contacts:
   website: http://www.cannonballfestival.org
   email: admin@thealmanac.us
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/cannonballfest/
+  - https://www.facebook.com/cannonballfest
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -94,7 +106,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: http://www.cannonballfestival.org/plan-your-visit
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - locations
+- url: http://www.cannonballfestival.org/audience-paths-2026
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - schedule
+  - requirements
+- url: http://www.cannonballfestival.org/opencall2026
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

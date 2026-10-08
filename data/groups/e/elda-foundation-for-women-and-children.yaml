@@ -5,22 +5,35 @@ leads:
 - irs_990n:851709604
 - irs_bmf:851709604
 ein: '851709604'
-summary: null
-what_you_do: null
+summary: A volunteer-led nonprofit that helps women and children in crisis with food, housing, and safety
+  support in Philadelphia, and sends aid to Liberia.
+what_you_do: Volunteers can help with food distribution, relocation support, social media, admin work,
+  and fundraising, either on site in Philadelphia or from home.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- hunger-housing-basic-needs
+- advocacy-rights
+interests:
+- food_pantry
+- housing_help
+- violence_prevention
+motives:
+- values
+formats:
+- side_by_side
+roles:
+- hands_on
+- organize
+crowd:
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
@@ -40,10 +53,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
+  level: free
+  text: No fee to volunteer is listed on the site. Donations are optional.
 commitment: null
 group_size: null
 access:
@@ -58,23 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 707-260-7808 and ask how to help with food distribution or relocation support in Philadelphia.
+    The site has no sign-up form.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Volunteer roles are listed, but the page gives no sign-up steps and the phone number is the only
+    way in.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.eldafoundation.org/
   email: null
-  phone: null
+  phone: 707-260-7808
   contact_name: Elda Foster
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2024-09
+sign_of_life_url: https://eldafoundation.org/hello-world-2
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://eldafoundation.org/feed
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.eldafoundation.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - contacts
+  - first_step
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

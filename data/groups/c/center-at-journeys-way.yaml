@@ -21,6 +21,8 @@ formats:
 - side_by_side
 roles:
 - hands_on
+- help_teach
+- lead
 crowd:
 - seniors
 bridging: null
@@ -34,7 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekdays, 9 am to 4 pm
+  text: Open on weekdays. The center page says 9 am to 4 pm and the contact page says 8:30 am to 5 pm,
+    so call to confirm.
   days:
   - mon
   - tue
@@ -57,14 +60,16 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Not stated on the page
+  level: low
+  text: Basic membership is free. Classic membership is $30 a year for one person or $55 for two, and
+    Premier is $65 a year for one or $120 for two. Meal prices are not listed.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Free parking on site. The membership page says the center is near public transportation, but
+    it names no line or stop.
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,16 +78,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit any weekday during open hours; no appointment is mentioned
+  how: Call 215-487-1750 to set up a membership appointment, which is how new members start, then fill
+    out the registration form.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone 55 and older can walk in on a weekday; how membership works is not explained
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The membership page speaks to new and returning members directly, asks them to call for an appointment,
+    and offers a free basic membership to people 55 and older.
+  what_to_expect: New members book an appointment with staff by phone, then fill out a registration form
+    and show proof of age. The center serves adults 55 and older with a café style lunch, fitness and
+    art classes, trips and social activities. Basic membership is free, and the paid Classic and Premier
+    levels add fitness center access and discounts on classes and tickets.
+  first_visit_tips:
+  - Bring proof of age for the registration form
+  - Ask staff which activities are open to people who are not yet members
+  - Parking is free on site
 contacts:
   website: https://intercommunityaction.org/aging-services/center-at-journeys-way/
-  email: info@intercommunityaction.org
+  email: journeysway@intercommunityaction.org
   phone: 215-487-1750
   contact_name: null
   social: []
@@ -113,7 +126,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - locations
+- url: https://intercommunityaction.org/aging-services/center-at-journeys-way/for-members/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - audience
+  - access
+- url: https://intercommunityaction.org/aging-services/center-at-journeys-way/ways-to-volunteer/
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - first_step
+- url: https://intercommunityaction.org/aging-services/center-at-journeys-way/journeys-way-calendars/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://intercommunityaction.org/contact/contact-journeys-way/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - schedule
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

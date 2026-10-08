@@ -5,37 +5,51 @@ leads:
 - irs_990n:825271570
 - irs_bmf:825271570
 ein: '825271570'
-summary: null
-what_you_do: null
+summary: Helps parents and caregivers keep their families steady. It offers parenting classes, essential
+  goods, family wellness programs, and a mobile care unit.
+what_you_do: Take a parenting class, ask about the essential goods available to you, or volunteer through
+  the group's volunteer page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- hunger-housing-basic-needs
+- kids-youth-mentoring
+interests:
+- goods_closets
+- parent_playgroups
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - parents
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Office hours: Monday and Thursday 12 to 7 pm, Friday 10 am to 3 pm (program times not listed)'
+  days:
+  - mon
+  - thu
+  - fri
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 2953 N Taney Street
+- label: Office
+  address: 4244 Lancaster Ave Unit 1
   neighborhood: null
-  planning_district: north
-  zip: '19132'
+  planning_district: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
@@ -58,23 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-703-7756 during office hours and ask about the next parenting class and which essential
+    goods you can get
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site lists a phone number and office hours and welcomes parents and caregivers, though it
+    does not describe what a first visit is like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.linkedfamily.org/
-  email: null
-  phone: null
+  email: admin@linkedfamily.org
+  phone: 215-703-7756
   contact_name: Vonee Hill
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.linkedfamily.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +106,19 @@ sources:
   - locations
   - contacts.website
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.linkedfamily.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - audience
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

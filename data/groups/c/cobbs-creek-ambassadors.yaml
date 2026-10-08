@@ -5,10 +5,10 @@ aka:
 leads:
 - city_friends:748
 ein: null
-summary: Volunteers who clean up and care for Cobbs Creek Park. They run registered cleanups, hand out
-  plants, and host a summer festival at Whitby Park.
-what_you_do: Sign up for a cleanup through the group's registration link and meet the crew at the listed
-  spot. Past cleanups collected anywhere from a few bags to 71 bags of litter.
+summary: Volunteers who clean up and care for Cobbs Creek Park. They run registered cleanups by zone,
+  hand out plants, and host a yearly summer festival at Whitby Park.
+what_you_do: Register for a cleanup through the group's Register link, then meet your zone's ambassador
+  at the listed spot. Past cleanups have collected from a few bags up to 71 bags of litter.
 kind: friends_group
 categories:
 - nature-environment
@@ -36,14 +36,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Cleanups are posted on the group's cleanup calendar and open for registration; days and times
-    vary. The summer festival was listed for Saturday, September 12, 2026, 11 am to 3 pm, at Whitby Park.
-  days: []
-  times: []
-  recurring: null
+  text: Each cleanup zone has a monthly cleanup, usually 9 to 11 am on a Saturday or 2 to 4 pm on a Sunday,
+    starting at a set meeting spot. Some zones meet every other month.
+  days:
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Cobbs Creek Park (cleanup spots vary)
+- label: Cobbs Creek Park (cleanup spots vary by zone)
   address: 700 Cobbs Creek Pkwy
   neighborhood: null
   planning_district: null
@@ -55,7 +59,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Cleanup and festival costs are not listed.
+  text: The page does not list a cost for cleanups. The yearly summer festival is described as offering
+    free food and live music, and all are welcome.
 commitment: one_off
 group_size: null
 access:
@@ -70,20 +75,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a cleanup through the Cleanup Registration link on cobbscreekparkambassadors.org,
-    then show up at the listed spot
+  how: Pick your zone on the Schedule and Map page at cobbscreekparkambassadors.org, register for an upcoming
+    cleanup through the Register link, and meet your zone's ambassador at the listed spot. Email CobbsCreekParkAmbassadors@gmail.com
+    with questions.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Cleanups are posted publicly with a registration link, and the group invites volunteers.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: 'The Schedule and Map page says the group loves new volunteers, and it explains how to start:
+    choose a zone, register, and meet the ambassador at the listed spot.'
+  what_to_expect: Each cleanup runs about two hours, usually 9 to 11 am on a Saturday or 2 to 4 pm on
+    a Sunday, and starts at a meeting spot named by cross streets. Each zone has its own ambassador, and
+    the group welcomes new volunteers. The page does not list costs, what to bring, or what the group
+    supplies.
+  first_visit_tips:
+  - Email the zone's ambassador or the group address before you come, since the page does not say what
+    to bring or wear.
+  - Meeting spots are cross streets, such as Upland Street and Cobbs Creek Parkway for zone 14.
+  - The Schedule and Map page links a SEPTA route for each zone, starting from 40th and Spruce.
 contacts:
   website: https://www.cobbscreekparkambassadors.org
-  email: cobbscreekparkambassadors@gmail.com
+  email: CobbsCreekParkAmbassadors@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/cobbscreekambassadors
+  - https://www.facebook.com/groups/406638247484252/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -105,8 +121,26 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+- url: https://cobbscreekparkambassadors.org/join-us/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - first_visit_tips
+- url: https://cobbscreekparkambassadors.org/summer-festival/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - last_sign_of_life
+- url: https://cobbscreekparkambassadors.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -58,8 +58,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The council pages do not state a youth membership fee. Adult volunteer applications carry a fee
-    paid at registration.
+  text: The council pages do not state a youth membership fee. Adult volunteer applications carry a registration
+    fee, and the amount is not stated.
 commitment: null
 group_size: null
 access:
@@ -79,10 +79,17 @@ first_step:
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Families get a clear route to a unit and a phone line to ask. Adult leaders must finish training
-    and Pennsylvania clearances before they start, so they cannot see the role first.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Families get a clear route to a unit and a phone line to ask. Adult leaders finish safeguarding
+    training and Pennsylvania clearances before they take a role, which takes time before a first visit.
+  what_to_expect: Each unit sets its own meeting times, so the first visit depends on the unit you contact.
+    For adult leaders, the first steps are safeguarding training, Pennsylvania clearances, and a registration
+    application with a fee. Clearances are free for most volunteers and valid for five years.
+  first_visit_tips:
+  - Call 610-688-6900 to ask which unit is closest to you before you go.
+  - For an adult role, fingerprints are required unless you have lived in Pennsylvania for 10 or more
+    consecutive years.
+  - Save your safeguarding training certificate as a PDF, since you need its Scouting America ID number
+    later.
 contacts:
   website: https://scoutingphilly.org
   email: helpdesk@scoutingphilly.org
@@ -113,12 +120,23 @@ sources:
   - first_step
   - requirements.act153_clearances
   - requirements.background_check
+  - first_visit_tips
 - url: https://scoutingphilly.org/palaw
   seen: '2026-10-08'
   fields:
   - requirements.act153_clearances
   - requirements.background_check
-research_tier: 1
+- url: https://scoutingphilly.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - first_step
+- url: https://scoutingphilly.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
