@@ -3,10 +3,12 @@ name: Friends Fridge Philly
 aka: []
 leads: []
 ein: null
-summary: A community fridge on West Clearfield Street where neighbors take what they need and leave what
-  they can. Partner sites help keep it stocked.
-what_you_do: Take food or leave food at the fridge, or sign up through the form to help keep it going.
-kind: network
+summary: A free community fridge on West Clearfield Street in the Allegheny West and Nicetown-Tioga area.
+  Anyone can take food from it, and neighbors can leave food or sign up to help stock, cook, drive or
+  clean it.
+what_you_do: Take food you need, leave food you can spare, or sign up on the volunteer form to stock the
+  fridge, make meals, drive food to and from it, or help with upkeep.
+kind: program
 categories:
 - hunger-housing-basic-needs
 interests:
@@ -30,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open to anyone. Hours are not listed on the site.
+  text: The fridge is open to anyone. The site does not list hours or how often the fridge is stocked.
   days: []
   times: []
   recurring: true
@@ -63,13 +65,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the fridge, or sign up through the Google form on the site
+  how: Visit the fridge to take or leave food, or fill in the volunteer sign up form linked from the group's
+    site to help out.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The fridge is open to anyone and volunteers sign up through a public form
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The fridge is open to anyone with no sign up to visit, and volunteers join through a public form.
+    The pages do not describe how long a shift runs.
+  what_to_expect: Visiting means walking up to the fridge to take food or leave food; the site describes
+    no check in. Volunteers do stocking, meal prep (packing containers and making sandwiches), driving
+    food to and from the fridge, and upkeep such as cleaning. The site does not say how long a shift runs.
+  first_visit_tips:
+  - The site does not list hours, so call 215.226.1276 before you go to ask when the fridge is stocked.
+  - The location page gives the address only, with no transit or parking notes, so plan your trip before
+    you go.
 contacts:
   website: https://www.friendsfridgephilly.com/
   email: null
@@ -93,7 +102,27 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://www.friendsfridgephilly.com/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.friendsfridgephilly.com/location
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://www.friendsfridgephilly.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+- url: https://www.friendsfridgephilly.com/our-partners
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,146 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-15",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 21,
+ "leads_only": [
+  {
+   "name": "Liberian Association of Pennsylvania",
+   "url": "https://www.inquirer.com/philly/news/20140716_Southwest_Philly_home_to_Liberian_community.html",
+   "note": "Named in a 2014 Inquirer article seen in search results. Not checked; no own website known."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://zipfoundation.org",
+   "status": null,
+   "note": "Fetch returned no content on two attempts. Not an HTTP status and not a bot check as far as the tool showed."
+  }
+ ],
+ "notes": "Searches: both used, on Academic Helping Hand and Virginia Association of Liberians (website fields were not web addresses). Neither matched a real organization, so both are held back as unknown. Line Officers and Past Commander and Absalom Jones Foundation also have no web address and were not searched because the budget was spent; both are unknown. Zip Foundation: two fetch attempts returned no content, listed under blocked, unknown. Common Cents: identity and Philadelphia location not confirmed (homepage does not name Philadelphia; /about returned 404); low confidence, flagged for review. A.S. Jenks Home and School Association is a close call under the one-school rule, flagged for review. Atonement Lutheran Church (elcota.org) was fetched for the By My Side playgroup address only; it is a congregation outside this batch, so it is not recorded. Esteem Girls, 12 Plus, Fishtown Playschool and VETMOTO join pages were read. No rate limiting seen. Ran out of search budget: yes. Verdict counts: publish 12 (7 with full records, 5 held back as unknown), hide 1, not_a_group 1, out_of_area 1.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471927295",
+     "irs_bmf:471927295"
+    ],
+    "group_id": "virginia-association-of-liberians-in-the-americas",
+    "ein": "471927295"
+   },
+   "verdict": "publish",
+   "name": "Virginia Association of Liberians in the Americas",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held the word PERSONAL, not a web address, so no website was read. One of the two searches found no page for an organization by this name. The closest hit, the Union of Liberian Associations in the Americas, is a separate, Washington DC based umbrella group and was not matched to this record. IRS address 4555 Loring St (19136). Needs an IRS side or local check before it can be classified.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:274341334",
+     "irs_bmf:274341334"
+    ],
+    "group_id": "line-officers-and-past-commander",
+    "ein": "274341334"
+   },
+   "verdict": "publish",
+   "name": "Line Officers and Past Commander",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds a person's name, not a web address, so no website was read. Not searched: both searches were used on other groups. The name suggests a veterans or fraternal post, which may be joinable, so it is a priority for a later search. IRS address 2011 Memphis St (19125).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:923779297",
+     "irs_bmf:923779297"
+    ],
+    "group_id": "zip-foundation",
+    "ein": "923779297",
+    "website": "https://zipfoundation.org"
+   },
+   "verdict": "publish",
+   "name": "Zip Foundation",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website could not be read: two fetch attempts returned no content (not an HTTP status, and no bot check was shown). Not classified. Needs a retry and a check whether it is a public charity running programs or a private grant foundation (a private foundation would be hidden). IRS address is an apartment at 319 E Allen St (19125).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232854039",
+     "irs_bmf:232854039"
+    ],
+    "group_id": "absalom-jones-foundation",
+    "ein": "232854039"
+   },
+   "verdict": "publish",
+   "name": "Absalom Jones Foundation",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds the name of a CPA firm, not a web address, so no website was read. Not searched: both searches were used on other groups. The name suggests a foundation, which may be a private grant or scholarship fund (hidden as private if so). IRS address 1327 S 19th St (19146). Needs one search.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:843267450",
+     "irs_bmf:843267450"
+    ],
+    "group_id": "academic-helping-hand",
+    "ein": "843267450"
+   },
+   "verdict": "publish",
+   "name": "Academic Helping Hand",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds the name, not a web address. One search for the name found no Philadelphia organization by this name. The closest results were the city's Academic Help Center (a Family Court referral program, a different organization, not matched) and several university and school programs. IRS address 2329 S 17th St (19145). Not verified; needs a check of the IRS record or a local contact.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

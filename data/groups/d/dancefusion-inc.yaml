@@ -22,6 +22,7 @@ roles:
 - hands_on
 crowd:
 - kids
+- teens
 - all_adults
 bridging: null
 audience:
@@ -34,16 +35,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Classes run year round for children and adults. Class times are not on the home page.
+  text: Year-round classes for children and adults. Program A is for ages 3 to 12 and Program B for ages
+    9 to 18. Class days and times are not written on the site, so ask the studio.
   days: []
   times: []
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: Contact address (ask which studio classes use)
+  address: 3611 Lancaster Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: Class prices are not published on the home page
+  text: Tuition is paid through a Venmo link on the site. The rates are in a schedule image, so ask the
+    studio for the current amount.
 commitment: null
 group_size: null
 access:
@@ -58,19 +70,25 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Email mary@gbyedance.org or call 215-222-7633 to ask about class levels and a first class
+  how: Email mary@gbyedance.org or call 215-222-7633 to ask about class levels and a first class, then
+    sign up with the online registration form linked from the school page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Classes are open to children and adults and the school publishes a direct contact
+  basis: Classes are open to children and adults, and the school gives an email, a phone number and a
+    registration form. The site does not say whether a trial class is offered.
   what_to_expect: null
-  first_visit_tips: []
+  first_visit_tips:
+  - Ask which level and program fits your age before you register.
+  - Ask whether a trial class is possible, since the site does not say.
 contacts:
   website: http://gbyedance.org
   email: mary@gbyedance.org
   phone: 215-222-7633
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/DancefusionPhiladelphia
+  - https://www.instagram.com/gwendolynbyedance/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -89,8 +107,29 @@ sources:
   - schedule
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: http://gbyedance.org/gwendolynbyedance
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - requirements
+  - first_step
+- url: http://gbyedance.org/fusion2
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - what_you_do
+- url: http://gbyedance.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: http://gbyedance.org/dance-schedulerates
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

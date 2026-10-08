@@ -6,12 +6,11 @@ leads:
 - irs_990n:235138722
 - irs_bmf:235138722
 ein: '235138722'
-summary: An artist collective founded in 1931 by Italian immigrants. It runs a gallery, exhibitions, workshops,
-  a monthly book club, and mentoring for artists. Visitors can see shows, come to openings, and join as
-  members.
-what_you_do: Visit the gallery, come to an opening or the monthly book club, take a workshop such as the
-  Paper and Paste wheat paste class, or join as an artist or supporting member. Volunteers can join a
-  committee.
+summary: An artist group founded in 1931 that runs a gallery on Catharine Street. It holds shows, artist
+  talks, a monthly book club, and workshops, and it offers memberships for artists and supporters.
+what_you_do: 'Visit the gallery, come to an opening or an artist talk, join the monthly book club on Zoom,
+  take a workshop such as the Paper and Paste wheat paste class, or join as an artist or supporting member.
+  Volunteers can join one of three committees: marketing and outreach, membership, or building.'
 kind: nonprofit
 categories:
 - arts-crafts
@@ -39,9 +38,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Gallery open Fridays and Saturdays, 11 am to 6 pm. Wednesday, Thursday, and Sunday visits by appointment.
-    The site footer lists Thursday and Sunday hours, so check before going. The monthly book club meets
-    4 to 5:30 pm, for example October 21 and November 18, 2026.
+  text: Gallery open Fridays and Saturdays, 11 am to 6 pm, with no appointment needed. Wednesday, Thursday
+    and Sunday visits are by appointment, but the footer lists Thursday and Sunday hours, so check the
+    calendar first. The monthly book club meets 4 to 5:30 pm on Zoom.
   days:
   - fri
   - sat
@@ -59,16 +58,19 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: Prices for workshops and openings are not stated on the pages read. Memberships are offered.
+  level: low
+  text: Gallery visits and exhibitions are free, and programs are free or by suggested donation. Artist
+    membership is on a sliding scale, from $30 a year or $7.50 a quarter. A supporting membership is also
+    offered, with no price shown on the page.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'no'
   languages: []
-  notes: null
+  notes: The gallery is not yet wheelchair accessible, and the group says it is working toward full ADA
+    access by 2027.
 requirements:
   act153_clearances: null
   background_check: null
@@ -77,15 +79,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the book club on October 21, 2026 (4 to 5:30 pm) or the opening reception on November 7,
-    2026 (5 to 7 pm). For membership, see the Join our Collective page.
+  how: Come by on a Friday or Saturday between 11 am and 6 pm, no appointment needed. To take part in
+    the book club, join the Zoom discussion (4 to 5:30 pm, monthly).
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Gallery visits and events are public, with a published calendar and membership options. The steps
-    to join the book club or a workshop were not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The membership page says artists at all stages are welcome, with no portfolio review, and the
+    gallery takes weekend visitors without an appointment.
+  what_to_expect: Expect a free walk through the current show. Opening receptions run 5 to 7 pm on the
+    calendar, and the book club is a Zoom discussion where you read the book first.
+  first_visit_tips:
+  - Weekend visits need no appointment. Wednesday, Thursday and Sunday visits need one through the link
+    on the visit page.
+  - Street parking is free but limited to 2 to 4 hours. Free municipal lots are at 1012 E Passyunk Ave
+    and 701 Clymer Street.
+  - Read the book ahead of time if you plan to join the Zoom book club.
+  - Check the calendar or Instagram before you visit, since emergency closures are posted there.
 contacts:
   website: http://www.davinciartalliance.org
   email: info@davinciartalliance.org
@@ -124,7 +133,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://davinciartalliance.org/visit
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - access
+  - first_visit_tips
+- url: https://davinciartalliance.org/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+- url: https://davinciartalliance.org/join-a-committee
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://davinciartalliance.org/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - online_ok
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

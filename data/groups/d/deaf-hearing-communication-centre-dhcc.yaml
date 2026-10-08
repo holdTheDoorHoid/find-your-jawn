@@ -7,8 +7,8 @@ ein: null
 summary: A center that teaches American Sign Language classes and works for equal communication access
   across the Philadelphia region. It also holds Deaf community social events, such as a bingo and ASL
   night.
-what_you_do: Take an ASL class, practice signing at community social events, or ask about interpreting
-  and access services.
+what_you_do: Take an ASL class for kids, teens or adults, practice signing at community socials, or ask
+  about interpreting and access services.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -23,7 +23,7 @@ formats:
 roles:
 - figure_out
 crowd:
-- all_adults
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -36,41 +36,58 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Events are posted with dates but no years. Examples on the site: a Deaf Day at the Philadelphia
-    Zoo on September 20, and a Bingo and ASL Social on November 21. Class times are not on the home page.'
+  text: 'Ten-week ASL courses run in person and on Zoom: adult levels 1 to 4, teen classes for ages 12
+    to 17, and kids classes for ages 2 to 11. Community socials, such as trivia, bingo, chat nights and
+    coffee meet-ups, are listed through the year.'
   days: []
   times: []
-  recurring: false
-  season: event_only
-locations: []
+  recurring: true
+  season: year_round
+locations:
+- label: Community Room, Swarthmore (several events)
+  address: 630 Fairview Rd
+  neighborhood: null
+  planning_district: null
+  zip: '19081'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: true
 cost:
-  level: null
-  text: Not listed on the home page
-commitment: null
+  level: paid
+  text: Adult classes are $200 per ten-week course, teen classes are $100, and kids classes are $75. Textbooks
+    cost extra, and there are no refunds after the first night of class.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages:
   - en
-  notes: ASL interpreters are offered at the zoo event and through the site's interpreter request service.
-    Captioning and wheelchair access are not stated.
+  notes: Classes are taught in ASL by Deaf instructors, and social events are run mainly in ASL. ASL interpreting
+    can be requested for events and services through the site's request form.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email Info@dhcc.org or call 610-604-0452 to ask about the next ASL class or event
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: ASL classes and public events are listed with a published email and phone, though class times
-    and prices are not on the page.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for an adult, teen or kids ASL class through the links on the ASL classes page. Enrollment
+    is first come, first served, and a class needs at least 8 students to run.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The class page describes the courses as non-credit beginner instruction and gives registration
+    links and a contact email. It does not say that no experience is needed.
+  what_to_expect: Adult levels meet for 20 hours in total over ten weeks, taught in ASL by Deaf instructors.
+    Teen classes meet one hour a week and kids classes 30 minutes a week, with in-person and Zoom options.
+  first_visit_tips:
+  - Adult classes are for students 18 and older.
+  - Online classes need a laptop or desktop computer.
+  - Textbooks cost extra, and the page lists them separately from tuition.
+  - A class can be cancelled or combined if enrollment is too low by the deadline.
 contacts:
   website: https://dhcc.org
   email: Info@dhcc.org
@@ -80,7 +97,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://dhcc.org/
+sign_of_life_url: https://www.dhcc.org/education-programs/asl-classes
 sources:
 - url: https://dhcc.org/
   seen: '2026-10-08'
@@ -93,6 +110,7 @@ sources:
   - first_step
   - contacts
   - status
+  - languages
 - url: https://dhcc.org
   seen: '2026-10-08'
   fields:
@@ -101,8 +119,30 @@ sources:
   - schedule
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.dhcc.org/education-programs/asl-classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - commitment
+  - requirements
+  - first_step
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+- url: https://www.dhcc.org/event-list
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - locations
+  - status
+- url: https://www.dhcc.org/event-details/bingo-asl-social
+  seen: '2026-10-08'
+  fields:
+  - access
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,22 +1,36 @@
 id: esteem-girls-inc
-name: Esteem Girls Inc
+name: Esteem Girls
 aka: []
 leads:
 - irs_990n:813969641
 - irs_bmf:813969641
 ein: '813969641'
-summary: null
-what_you_do: null
+summary: A nonprofit that runs hands-on STEM activities for girls in grades 3 to 8, both after school
+  and on Saturdays.
+what_you_do: Girls take part in hands-on science, technology, engineering and math activities with program
+  staff, on weekday afternoons after school and on second Saturdays. Some afterschool pickups are offered
+  from select schools.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- science-learning
+- kids-youth-mentoring
+interests:
+- stem_outreach
+- after_school_camps
+motives:
+- understanding
+- enhancement
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+- figure_out
+crowd:
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +39,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: STEM Afterschool runs Monday to Friday from school dismissal to 6 pm during the 2026 to 2027 school
+    year. STEM Saturday meets on second Saturdays, 10 am to 12 pm, in the same school year.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Esteem Girls office
   address: 602 E Girard Ave
   neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 602 East Girard Avenue
-  neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19125'
   lat: null
   lng: null
@@ -52,8 +67,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Families who qualify for ELRC or CCIS childcare assistance pay $0. The page lists no other tuition.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -64,26 +79,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Fill out the STEM Afterschool or STEM Saturday interest form linked from esteemgirls.org/programs.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Enrollment for grades 3 to 8 is open through a public interest form, and qualifying families
+    pay $0.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.esteemgirls.org
+  website: https://www.esteemgirls.org
   email: null
   phone: null
   contact_name: Renee Harris
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.esteemgirls.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +115,26 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.esteemgirls.org/programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - commitment
+  - requirements
+  - audience
+  - status
+- url: https://www.esteemgirls.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - locations
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

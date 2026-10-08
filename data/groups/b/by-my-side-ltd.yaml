@@ -1,22 +1,32 @@
 id: by-my-side-ltd
-name: By My Side LTD
-aka: []
+name: By My Side Parenting
+aka:
+- By My Side LTD
 leads:
 - irs_990n:232894709
 - irs_bmf:232894709
 ein: '232894709'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A parenting group in Fishtown that runs open playgroups, so families with babies and young children
+  can play, learn and meet other parents.
+what_you_do: Bring your little one to the Monday baby group or the Wednesday and Friday morning playgroup
+  to play and talk with other families. A small donation is suggested.
+kind: program
+categories:
+- kids-youth-mentoring
+interests:
+- parent_playgroups
+motives:
+- social
+- values
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +35,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Baby Group on Mondays, 12 to 1 pm. All-ages Morning Playgroup on Wednesdays and Fridays, 10 to
+    11:30 am.
+  days:
+  - mon
+  - wed
+  - fri
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1747 Tulip St
+- label: Playgroup space in the back building of Atonement Lutheran Church
+  address: 1542 E Montgomery Ave
   neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1747 Tulip Street
-  neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19125'
   lat: null
   lng: null
@@ -51,8 +58,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: A $5 donation is suggested for the morning playgroup. The page does not say whether the baby group
+    has a fee.
 commitment: null
 group_size: null
 access:
@@ -67,23 +75,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to the Wednesday or Friday morning playgroup at 10 am. Use the alley entrance with the white
+    doors and go up the stairs to the playgroup space.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Programs are open to all on posted weekly times, and the page describes no sign-up step.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.bymysideparenting.org
+  website: https://www.bymysideparenting.org
   email: null
   phone: null
   contact_name: Theresa Ramsay
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.bymysideparenting.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +109,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.bymysideparenting.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://www.bymysideparenting.org/where-we-are
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,21 +1,31 @@
 id: teenshop-inc
-name: Teenshop Inc
+name: Teenshop
 aka: []
 leads:
 - irs_990n:232614233
 ein: '232614233'
-summary: null
-what_you_do: null
+summary: A nonprofit that prepares teenage girls for leadership through college prep, mentoring, life-skills
+  workshops and community service. The site has join and volunteer pages and an enrollment form.
+what_you_do: Girls can apply through the enrollment form to join programs such as workshops, college tours
+  and community service. Volunteers can use the volunteer page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+- youth_leadership
+motives:
+- values
+- enhancement
+formats:
+- learn_skill
+- side_by_side
 roles: []
-crowd: []
+crowd:
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -30,11 +40,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1207 Chestnut Street
+- label: Teenshop office
+  address: 3720 Spruce Street, Suite 412
   neighborhood: null
-  planning_district: central
-  zip: '19107'
+  planning_district: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
@@ -42,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -57,23 +67,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill in the enrollment application linked from the site, or use the join page.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Girls join through an enrollment application. The site does not say what a first visit is like
+    or when programs meet.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.teenshop.org
-  email: null
+  website: https://www.teenshop.org
+  email: teens@teenshop.org
   phone: null
   contact_name: Elleanor Jean Hendley
-  social: []
+  social:
+  - https://www.instagram.com/teenshop1985
+  - https://www.facebook.com/teenshop1985
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2020-06
+sign_of_life_url: https://www.teenshop.org
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -83,8 +96,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.teenshop.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+  - locations
+  - status
+- url: https://uac.org/partners/teenshop/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

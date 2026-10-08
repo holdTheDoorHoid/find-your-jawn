@@ -7,8 +7,8 @@ ein: null
 summary: The Latino arts and culture center in North Philadelphia. It presents music, dance, theater,
   film and art from Latin America and the Caribbean, with family and community events.
 what_you_do: Buy a ticket to a dance, music, film or family show, go to a gallery opening, or apply to
-  the open call for artists. Workshops for neighborhood students and families are mentioned, with no sign
-  up details.
+  the open call for artists. The center also runs workshops for neighborhood students and families, and
+  the site gives no sign-up steps for them.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -37,15 +37,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Listed events: October 10 (flamenco, 3 to 5 pm), October 24 (a family dance afternoon, 3 to 5
-    pm), November 7 (rumba, 3 to 5 pm) and November 19 (artist residency talk, 6:30 to 8:30 pm). Year
-    not shown on the page, presumed 2026.'
+  text: No weekly schedule. Shows, films and gallery events are posted on the calendar one at a time,
+    including family events.
   days: []
   times:
   - daytime
   - evening
   recurring: false
-  season: fall
+  season: event_only
 locations:
 - label: Teatro Esperanza
   address: 4261 North 5th Street
@@ -56,32 +55,49 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Free parking lot and theater entrance
+  address: 406 West Bristol Street
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
-  level: null
-  text: Prices are on each event's ticket link, not in the calendar listing
+  level: paid
+  text: Shows and films are ticketed, with prices on each event's ticket link. Season ticket packages
+    are also sold.
 commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Free parking in the Esperanza lot at 406 West Bristol Street. Nearest SEPTA stop: the Route
+    47 bus at 5th and Bristol. Route 53 stops at Hunting Park and 5th, and Route 4 stops at 9th and Hunting
+    Park.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Pick a family or dance event on the calendar and buy a ticket through its link, or write to patronservices@esperanza.us
-    about the workshops
+  how: Buy a ticket to a family or dance show on the calendar through its ticket link.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public events have ticket links and a box office, and the center is open to the community
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are public and sold through ticket links, and the site has a first time guests page. Workshops
+    list only a contact email.
+  what_to_expect: Most people dress smart casual, and jeans are fine. The theater is kept cool, so bring
+    a layer, and tickets are non-refundable. Events listed so far run about two hours.
+  first_visit_tips:
+  - Bring a layer, since the theater is kept at 70 to 74 degrees and can feel cool even in summer.
+  - Check your ticket details at purchase, because tickets are non-refundable.
+  - Park in the free lot at 406 West Bristol Street, or take the Route 47 bus to 5th and Bristol.
+  - Read the House Rules page before you go, since it covers expected behavior.
 contacts:
   website: https://www.esperanzaartscenter.us
   email: patronservices@esperanza.us
@@ -107,7 +123,19 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+  - cost
+- url: https://www.esperanzaartscenter.us/first-time-guests/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_visit_tips
+  - cost
+- url: https://www.esperanzaartscenter.us/getting-here/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

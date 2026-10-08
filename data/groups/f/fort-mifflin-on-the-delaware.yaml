@@ -4,23 +4,23 @@ aka: []
 leads:
 - irs_bmf:222764509
 ein: '222764509'
-summary: A historic fort on the Delaware River in southwest Philadelphia, run by a nonprofit. It offers
-  guided tours, school trips, scout activities and paranormal programs, and it rents its grounds for events.
-what_you_do: The site we read does not describe volunteer roles. Support is through donations and a Join
-  The Fort membership.
+summary: A historic fort on the Delaware River in southwest Philadelphia, run by a nonprofit. It hosts
+  school and scout visits, guided tours, cannon and living history demonstrations, and candlelit ghost
+  tours.
+what_you_do: Visit the fort on an open day, take a tour, bring a school or scout group, or join as a member
+  to support its historic programs and restoration.
 kind: nonprofit
 categories:
 - history-heritage-preservation
 interests:
-- historic_site_volunteering
-- museum_volunteering
+- walking_tours
 motives:
-- values
 - understanding
+- values
 formats:
 - one_off_event
 roles:
-- hands_on
+- figure_out
 crowd:
 - all_ages
 - families
@@ -35,26 +35,37 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A candlelight ghost tour is listed for October 9 at 7 pm. The page does not state the year.
-  days: []
-  times: []
-  recurring: null
+  text: Open to visitors Wednesday to Sunday, 10 am to 4 pm, from March 1 to December 15. Weekend tours
+    run at 11 am and 2 pm, and a cannon demonstration is at 1 pm. From December 15 to March 1 the fort
+    is open only for private events and appointments. School and group tours can be booked in advance,
+    seven days a week.
+  days:
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
+  recurring: true
   season: event_only
 locations:
 - label: Fort Mifflin, at Fort Mifflin Road and Hog Island Road
-  address: null
+  address: 6400 Hog Island Road
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19153'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Admission is not listed. Candlelight tours need timed tickets bought in advance.
-commitment: null
+  level: low
+  text: The 2025 admission prices were $16 for adults, $14 for seniors, $12 for veterans, and $10 for
+    children 6 to 12. Children 5 and under and active duty military with ID are free. Some living history
+    events cost extra. Membership, called Join Us, runs $35 to $275 a year and includes free general admission.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -65,20 +76,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact Us page at fortmifflin.us/contact-us/ to ask about volunteering
-  drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site does not list volunteer roles or how to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come during open hours, Wednesday to Sunday from 10 am to 4 pm between March 1 and December 15,
+    and join a weekend tour at 11 am or 2 pm.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: General admission needs no sign up, and the Join Us membership gives a clear way to join. The
+    site does not describe any volunteer role.
+  what_to_expect: A visit is a walk around a historic fort on the Delaware River, with a shaded riverfront
+    picnic area and free parking. Weekend tours run at 11 am and 2 pm, and a cannon demonstration happens
+    at 1 pm. Some living history events cost extra on top of admission.
+  first_visit_tips:
+  - Parking is free once you follow the signs into the fort.
+  - The site does not describe wheelchair access, so call 856-831-5690 before you come.
+  - Leashed pets are welcome on the grounds, though cannon and musket demonstrations may frighten some
+    animals.
 contacts:
   website: https://www.fortmifflin.us
-  email: null
-  phone: null
+  email: fortmifflininfo@gmail.com
+  phone: 856-831-5690
   contact_name: null
   social: []
   calendar_feed: null
@@ -101,8 +120,29 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
-confidence: low
+- url: https://www.fortmifflin.us/plan-your-visit/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - commitment
+- url: https://www.fortmifflin.us/join-us/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+  - first_step
+- url: https://www.fortmifflin.us/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.fortmifflin.us/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

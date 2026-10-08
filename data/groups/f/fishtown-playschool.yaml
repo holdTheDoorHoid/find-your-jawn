@@ -5,18 +5,28 @@ leads:
 - irs_990n:464081952
 - irs_bmf:464081952
 ein: '464081952'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A cooperatively run playschool in Fishtown where young children learn through play, using ideas
+  from Reggio Emilia, emergent curriculum and Montessori.
+what_you_do: Children attend classes at the playschool and learn through play. Families apply online,
+  and tours are open only to families who have applied.
+kind: program
+categories:
+- kids-youth-mentoring
+interests:
+- parent_playgroups
+motives:
+- values
+- understanding
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- kids
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -31,19 +41,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Playschool
   address: 418 E Girard Ave
   neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1308 E Susquehanna Ave
-  neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19125'
   lat: null
   lng: null
@@ -52,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: A $30 application fee per family. Tuition is not published.
 commitment: null
 group_size: null
 access:
@@ -67,23 +68,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Complete the online application and pay the $30 family fee at jovial.org/fishtown/register, the
+    link from the playschool's apply page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: A submitted application and a fee come before a family can see the school, and classes fill on
+    a first come basis.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.fishtownplayschool.org
-  email: null
+  website: https://www.fishtownplayschool.org
+  email: info@fishtownplayschool.org
   phone: null
   contact_name: Mary Ann Rogan
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.fishtownplayschool.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +102,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.fishtownplayschool.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - locations
+  - contacts
+- url: https://www.fishtownplayschool.org/apply
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - audience
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

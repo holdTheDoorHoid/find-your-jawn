@@ -8,8 +8,8 @@ leads:
 ein: null
 summary: Neighbors who look after Bainbridge Green in Queen Village with the Queen Village Neighbors Association.
   They weed, plant, sweep, and paint the green, often on City Love Your Park days.
-what_you_do: Join a cleanup or planting day, such as the Love Your Park day on Sunday, November 15, 2026.
-  Email the group to be added to the volunteer list.
+what_you_do: Join a cleanup or planting day, often on the City's Love Your Park days. Email the group
+  to be added to the volunteer list.
 kind: friends_group
 categories:
 - nature-environment
@@ -37,12 +37,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Cleanup and planting days fall on Love Your Park dates, for example Saturday, May 16, 2026, and
-    Sunday, November 15, 2026. The group's own page does not give a schedule.
+  text: Cleanup and planting days are held on the City's Love Your Park days, which come in spring and
+    fall. The group publishes no fixed weekly schedule.
   days:
   - sat
   - sun
-  times: []
+  times:
+  - daytime
   recurring: false
   season: event_only
 locations:
@@ -58,7 +59,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free to volunteer. No fees listed.
+  text: Free to volunteer. No fees are listed.
 commitment: one_off
 group_size: null
 access:
@@ -73,13 +74,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email FOBGVolunteers@gmail.com to be added to the volunteer list for the next cleanup
+  how: Email FOBGVolunteers@gmail.com to join the volunteer list, then come to the Love Your Park cleanup
+    at Bainbridge Green on Sunday, November 15, 2026, at noon.
   drop_in: null
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer days are announced publicly, and anyone can ask by email to be added to the list.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Cleanups are public Love Your Park days, and the group says anyone can ask by email to join its
+    volunteer list.
+  what_to_expect: 'Volunteer days are hands-on work on the green: cleaning, planting and painting. The
+    pages do not say how long a day runs or what to bring, so ask by email before you come. Volunteering
+    is free.'
+  first_visit_tips:
+  - Email first to confirm the day and start time, since the group's pages list only the Love Your Park
+    dates.
+  - The QVNA events page at qvna.org/events lists each Love Your Park date with its start time.
+  - Bainbridge Green runs along Bainbridge Street between 3rd and 5th Streets, with seating at the corners.
 contacts:
   website: https://www.qvna.org/friends-of-bainbridge-green
   email: FOBGVolunteers@gmail.com
@@ -90,7 +99,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.qvna.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -115,7 +124,14 @@ sources:
   - status
   - last_sign_of_life
   - schedule
-research_tier: 1
+  - sign_of_life_url
+  - first_step
+  - first_visit_tips
+- url: https://www.qvna.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,332 @@
+{
+ "wave": "w10-districts-1",
+ "agent": "f-central-northeast",
+ "lane": "F",
+ "model": "haiku",
+ "searches_used": 6,
+ "fetches_used": 13,
+ "leads_only": [
+  {
+   "name": "Fox Chase Town Watch and Civic Association",
+   "url": "https://northeasttimes.com/2025/07/13/whats-happening-in-fox-chase/",
+   "note": "Search summaries of Northeast Times notices describe regular second Wednesday meetings in Fox Chase (2025 and March 2026 notices, at American Legion Loudenslager Post 366 on Oxford Avenue). The Northeast Times pages could not be read (403), and no own website was found. Older coverage also calls it the Fox Chase Homeowners Association and Town Watch. Needs a readable source before a record."
+  },
+  {
+   "name": "Rhawnhurst Civic Association",
+   "url": "https://northeasttimes.com/2026/02/08/around-town-81-2/",
+   "note": "Search summary of a February 2026 Northeast Times item says it met at Pelbano Playground, 8101 Bustleton Ave. The page returned 403 to this agent, so this is unverified. No own website found."
+  },
+  {
+   "name": "Friends of Pennypack Park",
+   "url": "https://pennypacktrust.org/about/links/",
+   "note": "Named as a park group on the Pennypack Ecological Restoration Trust links page, with no web link published. Find its own page before writing a record."
+  },
+  {
+   "name": "Friends of Ryerss (Ryerss Museum and Library)",
+   "url": "https://northeasttimes.com/2026/02/13/nominate-ryerss-for-philly-monopoly/",
+   "note": "Named in a Northeast Times item (could not be read) as asking the public for a museum nomination. Not verified. Needs its own page."
+  },
+  {
+   "name": "Take Back Your Neighborhood civic association (Castor Gardens)",
+   "url": "https://northeasttimes.com/2014/10/02/business-group-aims-to-improve-castor-gardens/",
+   "note": "Only coverage found is from 2018 to 2020 (Northeast Times, not readable here). No activity after 2020 found. Probably dormant; check before any record."
+  },
+  {
+   "name": "Northeast Philadelphia Chinese Association (NEPCA)",
+   "url": "https://www.phillymag.com/?p=3500084",
+   "note": "Named in a Philadelphia magazine profile (search summary only; date unclear) as based in Oxford Circle and serving Asian residents. No own website found. Check the group's own page."
+  },
+  {
+   "name": "Oxford Circle Mennonite Church",
+   "url": "https://scribe.org/node/99",
+   "note": "Named in a Scribe Video Center documentary listing (search summary only). Church programs open to neighbors not checked. Needs its own page."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://northeasttimes.com/2026/02/08/around-town-81-2/",
+   "status": 403,
+   "note": "Northeast Times page, bot block. Likely holds Rhawnhurst and Fox Chase notices."
+  },
+  {
+   "url": "https://northeasttimes.com/2026/02/16/around-town-84-2/",
+   "status": 403,
+   "note": "Northeast Times page, bot block."
+  },
+  {
+   "url": "https://philadelphianeighborhoods.com/category/neighborhoods/northeast-philadelphia/oxford-circle",
+   "status": 403,
+   "note": "Neighborhood directory, bot block."
+  },
+  {
+   "url": "https://libwww.freelibrary.org/locations/fox-chase/",
+   "status": 403,
+   "note": "Free Library Fox Chase branch page. The path was my guess under the official library domain, not from a search result. Blocked."
+  },
+  {
+   "url": "https://muralarts.org/?p=9828",
+   "status": 404,
+   "note": "Northeast Passage page from a search result. Page not found, not a block."
+  }
+ ],
+ "notes": "Thin lane. All 6 WebSearch calls are used, so the search budget is spent. 13 fetches used. Northeast Times, the main local source for Rhawnhurst, Fox Chase, Burholme and Lawndale, returned 403 on every page tried, so those neighborhoods rest only on search summaries and appear as leads, not records. Records written: Pennypack Ecological Restoration Trust (Pennypack Park) and Oxford Circle Christian Community Development Association. Burholme Civic Association and Burholme Town Watch: only a 2009 article (read) and a 2014 notice in search; no evidence after 2014; not recorded. Lawndale Civic Association: only a travel aggregator page with generic text; dropped, not recorded. Lawncrest Civic Association appears in results but is a different group outside this slice. Oxford Circle PAL center (Neiheiser Hall, Glading Memorial Presbyterian) appears in a search summary with no readable URL; not recorded. Council District 7, 9 and 10 office lists were not reached: no search budget left and no readable list page. Lawndale is listed as Lower Northeast in one search summary, so check its planning district before assigning it to this slice.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": "pennypack-ecological-restoration-trust",
+    "ein": null,
+    "website": "https://pennypacktrust.org"
+   },
+   "verdict": "publish",
+   "name": "Pennypack Ecological Restoration Trust",
+   "summary": "Stewards of Pennypack Park, a long green corridor in the Northeast. Volunteers pull invasive vines off trees, help with restoration projects alongside staff, and join a Presidents Day service morning each February.",
+   "what_you_do": "Free-A-Tree workdays cut invasive vines off trees on the first Saturday of the month, October through April. Service Day mornings work on an active restoration project with staff. Bring gloves and pruning shears, or borrow theirs.",
+   "kind": "nonprofit",
+   "categories": [
+    "nature-environment"
+   ],
+   "interests": [
+    "tree_tending",
+    "habitat_restoration",
+    "park_cleanup"
+   ],
+   "motives": [
+    "values",
+    "understanding"
+   ],
+   "formats": [
+    "side_by_side",
+    "learn_skill"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Free-A-Tree workdays on the first Saturday of each month, October through April. A Service Day runs around Presidents Day (the 2026 one was Monday, Feb 16, 10 am to 12 pm).",
+    "days": [
+     "sat",
+     "mon"
+    ],
+    "times": [
+     "morning"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Pennypack Park, Philadelphia (trail and restoration work; specific sites vary)",
+     "neighborhood": "Pennypack",
+     "in_city": true
+    },
+    {
+     "label": "Trust headquarters",
+     "address": "2955 Edge Hill Road, Huntingdon Valley, PA 19006",
+     "zip": "19006",
+     "in_city": false
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Not stated on the pages read"
+   },
+   "commitment": "monthly",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Register through the Trust's volunteer sign-up link before the date (Free-A-Tree and Service Day both ask for pre-registration), or call the office at 215.657.0830",
+    "drop_in": false,
+    "newcomer_friendliness": 4,
+    "basis": "The Trust says volunteers learn restoration from staff, says groups and individuals are welcome, and publishes a sign-up link."
+   },
+   "contacts": {
+    "website": "https://pennypacktrust.org",
+    "email": null,
+    "phone": "215.657.0830",
+    "social": []
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-02",
+   "sign_of_life_url": "https://pennypacktrust.org/?p=6546",
+   "sources": [
+    {
+     "url": "https://pennypacktrust.org/?p=20",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "locations",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://pennypacktrust.org/?p=116",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "schedule",
+      "commitment",
+      "requirements",
+      "first_step"
+     ]
+    },
+    {
+     "url": "https://pennypacktrust.org/?p=6546",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "status",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Trust office is in Huntingdon Valley (Montgomery County). Its trails and work sites are in Pennypack Park, which runs into Philadelphia, but some work may be outside city limits, so check before going. The Service Day page gives its start as 10 pm in one spot and 10 am in another; 10 am is used here and should be confirmed. Streamkeepers and ReForesters programs are named on the site but were not read. Cost not stated on the pages read. Friends of Pennypack Park is listed in leads_only.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Pennypack' is unknown"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": "oxford-circle-christian-community-development-association",
+    "ein": null,
+    "website": "https://www.occcda.org"
+   },
+   "verdict": "publish",
+   "name": "Oxford Circle Christian Community Development Association",
+   "summary": "A faith-based nonprofit serving Oxford Circle. It runs an after school and summer camp, adult education and job help, food distribution, and a Wednesday farmers market at Castor Avenue and Hellerman Street.",
+   "what_you_do": "Volunteer with children, adults, or other tasks (the group says it welcomes volunteers), or shop at the Wednesday farmers market. The newsletter carries event news.",
+   "kind": "nonprofit",
+   "categories": [
+    "kids-youth-mentoring",
+    "careers-skills-professional",
+    "hunger-housing-basic-needs",
+    "food-drink"
+   ],
+   "interests": [
+    "after_school_camps",
+    "job_clubs",
+    "food_pantry",
+    "farmers_markets_coops"
+   ],
+   "motives": [
+    "values",
+    "career"
+   ],
+   "formats": [
+    "side_by_side",
+    "learn_skill"
+   ],
+   "roles": [
+    "hands_on",
+    "help_teach"
+   ],
+   "crowd": [
+    "families",
+    "all_adults"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Farmers market on Wednesdays, 11 am to 3 pm, at Hellerman Street and Castor Avenue (per a 2025 market listing; confirm the 2026 season). Camp and class schedules are not posted on the site.",
+    "days": [
+     "wed"
+    ],
+    "times": [
+     "daytime"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Main office",
+     "address": "900 E. Howell Street",
+     "zip": "19149",
+     "in_city": true
+    },
+    {
+     "label": "Castor and Hellerman farmers market",
+     "address": "Hellerman St and Castor Ave",
+     "zip": "19149",
+     "in_city": true,
+     "neighborhood": "Oxford Circle"
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "unknown",
+    "text": "Not stated on the pages read"
+   },
+   "commitment": "drop_in",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Call (215) 288-8504 or email contact@occcda.org, or use the Volunteer Today link on the website. The farmers market is a public Wednesday event.",
+    "drop_in": true,
+    "newcomer_friendliness": 3,
+    "basis": "The market is open to the public and the office lists ways to volunteer, but the sign-up steps for camp and classes are not published."
+   },
+   "contacts": {
+    "website": "https://www.occcda.org",
+    "email": "contact@occcda.org",
+    "phone": "(215) 288-8504",
+    "social": []
+   },
+   "status": "probably_active",
+   "last_sign_of_life": "2025-07",
+   "sign_of_life_url": "https://marketspread.com/market/18267/oxford-circle-farmers-market-at-castor-hellerman/events/73208",
+   "sources": [
+    {
+     "url": "https://www.occcda.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "contacts",
+      "first_step"
+     ]
+    },
+    {
+     "url": "https://marketspread.com/market/18267/oxford-circle-farmers-market-at-castor-hellerman/",
+     "seen": "2026-10-08",
+     "fields": [
+      "locations"
+     ]
+    },
+    {
+     "url": "https://marketspread.com/market/18267/oxford-circle-farmers-market-at-castor-hellerman/events/73208",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "status",
+      "last_sign_of_life"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The group's site lists after school and summer camp, adult education and workforce development, family resource centers, food distribution, Parents as Teachers, and business corridor work, but gives no current dates for them; the newest dated item on the site is a 2021 summer camp. Farmers market hours come from a 2025 market listing and the market page itself gives no hours. The group calls itself Christian and faith-based, but no faith requirement is stated, so the faith field is blank. Northeast Passage (classes for immigrants and refugees) is named in search results as a program here; its Mural Arts page returned 404, so it is not recorded separately. The Exchange thrift shop address was not confirmed from a readable page, so it is not used.",
+   "_held_reasons": [
+    "schema: locations[1].neighborhood 'Oxford Circle' is unknown"
+   ]
+  }
+ ]
+}

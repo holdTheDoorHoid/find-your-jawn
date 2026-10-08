@@ -1,0 +1,100 @@
+{
+  "wave": "w10-districts-1",
+  "agent": "f-upper-far-northeast",
+  "lane": "F",
+  "model": "haiku",
+  "searches_used": 6,
+  "fetches_used": 17,
+  "records": [
+    {
+      "match": {"lead_ids": [], "group_id": "greater-bustleton-civic-league", "ein": null, "website": "https://gbcl.online/"},
+      "verdict": "publish",
+      "name": "Greater Bustleton Civic League",
+      "summary": "A neighborhood civic league for the Bustleton area. It holds a community meeting each month, posts local updates on its website, and takes membership applications.",
+      "what_you_do": "Attend the monthly community meeting in person or on Zoom, or send in the membership application from the website.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association"],
+      "motives": ["values"],
+      "formats": ["conversation"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Community meeting at 7 PM on the fourth Tuesday of each month", "days": ["tue"], "times": ["evening"], "recurring": true},
+      "locations": [{"label": "Community Room, American Heritage Credit Union", "address": "2060 Red Lion Road", "zip": "19115", "in_city": true, "neighborhood": "Bustleton"}],
+      "online_ok": true,
+      "commitment": "monthly",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Come to a monthly meeting in person or on Zoom, or send in the membership application on the website", "newcomer_friendliness": 3, "basis": "Meetings are posted each month with a Zoom option, and the site has a membership form"},
+      "contacts": {"website": "https://gbcl.online/"},
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://gbcl.online/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "online_ok", "first_step", "status"]},
+        {"url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "seen": "2026-10-08", "fields": ["name", "locations"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The site lists the monthly meeting and posts news items with no dates, so status is probably_active (working site, no dates). Open to the public is inferred from meetings being posted with a Zoom link; the site also has a membership form, so a reviewer should check whether meetings are for members only. Mailing address on the City list is PO Box 51523, 19115. The personal contact email on the City list is left out. Humanitarian aid link lists on the site are not recorded."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "friends-of-poquessing-watershed", "ein": null, "website": "https://www.friendsofpoquessing.org"},
+      "verdict": "publish",
+      "name": "Friends of Poquessing Watershed",
+      "summary": "Volunteers who look after Poquessing Creek and the land around it. They run monthly cleanups, bird walks, tree planting, and storm drain marking.",
+      "what_you_do": "Join a cleanup, a bird walk, or a planting day. Ask the group for the next date, since the website does not list dates.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["river_stewardship", "park_cleanup", "habitat_restoration"],
+      "motives": ["values"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Monthly cleanups. Dates are not posted on the website, so ask the group.", "recurring": true},
+      "locations": [{"label": "Poquessing Creek Park", "address": "1217 Stevens Rd", "zip": "19116", "in_city": true}],
+      "commitment": "monthly",
+      "first_step": {"how": "Email or call the group to ask about the next cleanup, or fill in the membership application on the website", "newcomer_friendliness": 3, "basis": "The site has a Get Involved section, a contact form, and a membership application"},
+      "contacts": {"website": "https://www.friendsofpoquessing.org", "email": "dremick@friendsofpoquessing.org", "phone": "215-638-0832"},
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://www.friendsofpoquessing.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "commitment", "first_step", "contacts", "status"]},
+        {"url": "https://loveyourpark.org/park-friends-network", "seen": "2026-10-08", "fields": ["name", "locations"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The site has no dated events, so status is probably_active (working site, no dates). The park address 1217 Stevens Rd comes from the City Love Your Park directory, not the group's own site. No source read gives a neighborhood name, only ZIP 19116, so a reviewer should place it. The group says its watershed runs through Philadelphia, Bucks and Montgomery counties."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "pennypack-ecological-restoration-trust", "ein": null, "website": "https://pennypacktrust.org/"},
+      "verdict": "out_of_area",
+      "name": "Pennypack Ecological Restoration Trust",
+      "summary": "A land trust and nature preserve in Huntingdon Valley, Montgomery County, with volunteer restoration days. It is outside Philadelphia.",
+      "sources": [{"url": "https://pennypacktrust.org/", "seen": "2026-10-08", "fields": ["name", "summary"]}],
+      "research_tier": 1,
+      "confidence": "high",
+      "notes": "Easy to confuse with the City's Pennypack Park groups. The site gives its address as 2955 Edge Hill Road, Huntingdon Valley, PA 19006, and does not mention the City of Philadelphia."
+    }
+  ],
+  "leads_only": [
+    {"name": "Bustleton Neighbors Association", "url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "note": "City RCO list (April 13, 2026): 1027 Welsh Road, 19115. Meets at 9945 President St, 19115. No website listed. Not checked for activity or open meetings. Contact is on the City list and not copied here."},
+    {"name": "Somerton Neighbor's Association", "url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "note": "City RCO list: 15104 Milford, 19116. Meets at 9945 President St, 19115. No website listed. Not checked."},
+    {"name": "Parkwood Area Civic Association", "url": "https://whyy.org/articles/a-brief-update-from-the-parkwood-civic-association", "note": "City RCO list: 3529 Vinton Rd, 19154, meets at 12670 Dunks Ferry Rd, 19154. No website. The only dated evidence read is a WHYY article from 2009 describing monthly meetings. Needs current evidence before a record."},
+    {"name": "Millbrook Civic Association", "url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "note": "City RCO list: 4330 Deerpath Lane, 19154, which is also the meeting place. No website listed. Not checked."},
+    {"name": "Northeast Community Civic Alliance", "url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "note": "City RCO list: 9605 Leon St, 19114. Meets at 9551 Academy Rd, near Academy Gardens. No website listed. Not checked."},
+    {"name": "West Torresdale/Morrell Park Civic Association", "url": "https://www.facebook.com/westtorres", "note": "City RCO list: 3352 Kayford Circle, 19114. Meets in the 8th District Police Station community room, 3100 Red Lion Road, 19114. Facebook page only, not read under the lead rules. Needs its own page or a news source."},
+    {"name": "Bustleton Bengals", "url": "https://northeasttimes.com/2026/04/11/sports-briefs-21/", "note": "Nonprofit youth sports club in Bustleton, founded 1956 (from search results, not read). No own website found. A 2026 sports brief in search results mentions a clothing drive and a wiffle ball tournament at Hayes Playground, 9945 President St. The paper refuses fetches."},
+    {"name": "Byberry Friends Meeting", "url": "https://northeasttimes.com/2019/06/18/around-town-75/", "note": "Meeting house at 3001 Byberry Road. A 2019 Northeast Times notice in search results (not read) says a local history group met there. Own website not known. Not checked."},
+    {"name": "Northeast Philadelphia History Network", "url": "https://northeasttimes.com/2019/06/18/around-town-75/", "note": "Local history group that met at Byberry Friends Meeting in 2019, per search results only. No current evidence found. Not checked."},
+    {"name": "Pennypack Park Trail Advocates", "url": "https://www.facebook.com/PennypackParkTrailAdvocates", "note": "City Love Your Park directory lists this group at Pennypack Park, Rhawn St and Holmehurst Ave (ZIP 19136). Facebook page only, not checked. May belong to another lane."},
+    {"name": "Normandy Civic Association", "url": "https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf", "note": "Outside my slice. City RCO list: 2826 Newberry Rd, 19154, meets at Spin Community and Fitness Center, 10980 Norcom Rd, 19154. Facebook page only. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://sites.google.com/view/somerto", "status": 302, "note": "Somerton Civic Association own site (City list). Redirects to a Google sign-in page, which was not followed. City list gives meeting place Walker Lodge of the I.O.O.F., 1290 Southampton Road, 19116, and a 2026 registration. No record written because the site could not be read."},
+    {"url": "https://easttorresdalecivic.com/", "status": 403, "note": "East Torresdale Civic Association own site (City list, All Saints Episcopal Church, 9601 Frankford Ave, meeting place). Refused. No record written."},
+    {"url": "https://northeasttimes.com/c/community/", "status": 403, "note": "Northeast Times community page. Bot block. An individual article URL was refused too, so the paper is closed to this agent."},
+    {"url": "https://northeasttimes.com/2024/09/22/around-town-343", "status": 403, "note": "Northeast Times column. Refused."},
+    {"url": "https://philadelphianeighborhoods.com/tag/somerton-civic-association/", "status": 403, "note": "Neighborhood blog tag page. Refused on two attempts."},
+    {"url": "https://philadelphianeighborhoods.com/tag/bustleton-bengals/", "status": 403, "note": "Neighborhood blog tag page. Refused."},
+    {"url": "https://libwww.freelibrary.org/", "status": 403, "note": "Free Library homepage. Refused on two attempts, so branch Friends groups for the Upper Northeast were not checked."},
+    {"url": "https://friendsofpennypackpark.org/", "status": null, "note": "Connection refused (not an HTTP status). Site status not checked. A Northeast Times notice in search results (not read) says the group went dormant in March 2020."}
+  ],
+  "notes": "Budget: all 6 WebSearch calls used (cap reached, no more searches). 17 WebFetch calls, plus one Read of the City RCO PDF (the fetch tool could not read its text, so the saved file was read directly). Verdicts: 2 publish, 1 out_of_area. The 20 to 40 target was not reachable. Most candidates in this slice appear only on the City Registered Community Organizations list (April 13, 2026), with no own website or no readable activity, so they went to leads_only, not records. Personal emails from that list were not published, and open-to-public was not stated for groups with no source. Refusals: northeasttimes.com refused every fetch (403), philadelphianeighborhoods.com refused two tag pages (403, retried once), libwww.freelibrary.org refused twice (403), easttorresdalecivic.com refused (403), and friendsofpennypackpark.org refused the connection. These look like bot blocks on specific domains, not one rate-limit wave, so I did not wait longer. Pennypack Environmental Center (8600 Verree Road, a Parks and Recreation facility, per search results) is a city building, not a group, so not recorded. Friends of Pennypack Park: a Northeast Times notice in search results says it went dormant in March 2020. No record until its site or that notice can be read. Byberry: no group with a readable page or City list entry was found in this slice. Academy Gardens: only the Northeast Community Civic Alliance on the City list. Out of this slice, seen on the City list with own websites, not fetched, for another lane: Rhawnhurst Civic Association (rhawnhurstcivicassociation.com), Fox Chase Civic Association (foxchasecivic.org), Friends of Ryerss at Burholme (ryerssmuseum.org), Mayfair Memorial Playground Friends (mayfairmemorialplayground.com). Poquessing Creek Park has no neighborhood name in any source read (ZIP 19116 only). Greater Bustleton Civic League is probably_active only because its site has no dates; its meeting time comes from the site."
+}

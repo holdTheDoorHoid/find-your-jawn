@@ -35,8 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Meets about every two months, and more often during special projects. Days and times were not
-    published.
+  text: Meets about every two months, and more often during special projects. Days and times are not published.
   days: []
   times: []
   recurring: true
@@ -54,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost listed.
+  text: The site does not list a cost.
 commitment: null
 group_size: null
 access:
@@ -69,14 +68,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the QVNA volunteer page (qvna.org/volunteer) or the Friends of Beck Park Facebook group and
-    ask about the next cleanup or meeting
+  how: Fill in the volunteer form on qvna.org/volunteer and ask about the next cleanup or meeting.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The park is public and there is a volunteer form, but the group publishes no meeting days or
+    times and recruits through its Facebook group, so the way in is unclear.
+  what_to_expect: Volunteers take part in park cleanups and beautification work, and the group joins the
+    City's Love Your Park cleanups. Meetings come about every two months, and more often during special
+    projects, but the site gives no days, times or location. The site lists no cost, so ask the group
+    what to expect before you come.
+  first_visit_tips:
+  - Email info@qvna.org, the Queen Village Neighbors Association's general address, to ask for the next
+    meeting or cleanup.
+  - QVNA's mailing address is 709 S 5th Street, if you prefer to write.
+  - Watch the events page at qvna.org/events for Love Your Park dates.
 contacts:
   website: https://www.qvna.org/https/friends-of-beck-park
   email: pprstewardship@phila.gov
@@ -105,7 +111,12 @@ sources:
   - schedule
   - contacts.social
   - status
-research_tier: 1
+- url: https://www.qvna.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

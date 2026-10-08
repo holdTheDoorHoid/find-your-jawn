@@ -1,15 +1,18 @@
 id: district-one-community-education-center
 name: District One Community Education Center
-aka: []
+aka:
+- Community Education Center
+- CEC
 leads:
 - cultural_fund:district-one-community-education-center-3
 - irs_bmf:237410005
 ein: '237410005'
-summary: An arts space at 3500 Lancaster Ave where artists rehearse, teach and perform. It runs weekly
-  dance classes open to the community and rents space to artists and tenant groups.
-what_you_do: 'Take a dance class at ECR Studio: Funk Sole Fundamentals on Wednesday evenings, a Friday
-  night workshop with Group Motion, Kulu Mele dance on the first Thursday, or West African dance on the
-  first Saturday. Check the Upcoming Events page for performances.'
+summary: The Community Education Center is an arts space on Lancaster Avenue where artists rehearse, teach
+  and perform. It runs dance classes open to the public, a regular open mic and a jazz night, and it rents
+  space to artists and tenant groups.
+what_you_do: Take a dance class (Funk Sole on Wednesday evenings, a Friday night workshop, or one of the
+  monthly African dance classes), try the open mic, or visit the Blue Grotto, a basement lamp installation
+  open to the public every second Friday.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -22,6 +25,7 @@ motives:
 - social
 formats:
 - learn_skill
+- perform_make_together
 roles:
 - create
 crowd: []
@@ -36,22 +40,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Funk Sole Fundamentals: Wednesdays, 6 to 8 pm. Kulu Mele dance: Thursdays at 7 pm, on the first
-    Thursday of the month. Friday night workshop with Group Motion: Fridays at 8 pm. West African dance
-    with Angela Watson: Saturdays at 2 pm, on the first Saturday of the month. No performance dates are
-    listed.'
+  text: 'Weekly: Funk Sole Fundamentals on Wednesdays 6 to 8 pm, and a Friday night workshop at 8 pm.
+    Monthly: African dance classes on the first Thursday, first Saturday, second Saturday and fourth Friday.
+    Every second Friday: the Blue Grotto, 6 to 10 pm, and a jazz night. Every other second Sunday: an
+    open mic, 4 to 9 pm.'
   days:
   - wed
   - thu
   - fri
   - sat
+  - sun
   times:
   - daytime
   - evening
   recurring: true
   season: year_round
 locations:
-- label: ECR Studio
+- label: ECR Studio (CEC building)
   address: 3500 Lancaster Ave
   neighborhood: null
   planning_district: null
@@ -63,7 +68,7 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Each class is marked with a dollar sign on the site. Amounts are not shown.
+  text: Dance classes are marked with a dollar sign, but no amounts are listed. Call or email for prices.
 commitment: weekly
 group_size: null
 access:
@@ -78,17 +83,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a class on the Classes page, then call 215.387.1911 or email Programs@cecarts.org to ask about
-    sign-up and prices before the first session.
+  how: Pick a class from the Classes page, then call 215.387.1911 or email Programs@cecarts.org to confirm
+    the start date and the price before your first session.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Classes are listed with days and times, but the page does not say how to sign up or whether drop-ins
-    are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The programs page says all levels are welcome in the dance classes, and the center publishes
+    a phone number and email, but the pages do not say how to sign up or whether drop-ins are allowed.
+  what_to_expect: Funk Sole Fundamentals runs 6 to 8 pm on Wednesdays, about two hours, and the page says
+    all levels are welcome. The building is a working arts space where artists rehearse and perform, so
+    classes share it with other activity. Prices are not shown online, so ask before you come.
+  first_visit_tips:
+  - Call or email ahead to confirm the class, the price and the start date.
+  - The monthly African dance classes run on different weekends from the weekly classes, so check the
+    day on the programs page.
 contacts:
-  website: http://www.cecarts.org
+  website: https://www.cecarts.org
   email: Programs@cecarts.org
   phone: 215.387.1911
   contact_name: null
@@ -96,9 +106,9 @@ contacts:
   - https://www.facebook.com/CEC-Community-Education-Center-217339404976000
   - https://www.instagram.com/cecarts
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.cecarts.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.cecarts.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4
   seen: '2026-10-04'
@@ -128,7 +138,33 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
+- url: https://www.cecarts.org/classes
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - locations
+- url: https://www.cecarts.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://www.cecarts.org/cec-programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+  - contacts
+- url: https://www.cecarts.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

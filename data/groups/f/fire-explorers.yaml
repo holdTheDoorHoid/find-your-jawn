@@ -5,8 +5,9 @@ leads:
 - city_programs:fire-explorers
 ein: null
 summary: A two year program for teens that teaches firefighting and EMS basics through Saturday training
-  at the Fire Academy and counts toward civil service exam points.
-what_you_do: null
+  at the Fire Academy, and members who finish earn points toward civil service exams.
+what_you_do: Train on alternate Saturdays at the Fire Academy in firefighting and EMS basics, and earn
+  community service hours along the way.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -35,16 +36,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Every other Saturday, April through November
-  days: []
-  times: []
-  recurring: null
+  text: Every other Saturday, 9 am to 5 pm, April through November, at the Fire Academy. From December
+    to March, members may be asked to volunteer at some events.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Fire Academy
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The program page does not mention a fee.
 commitment: ongoing_role
 group_size: null
 access:
@@ -56,16 +69,22 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Uniform, kept neat and polished at all times.
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Training: Yes: classroom instruction and hands on training from local and state agencies.'
-  first_visit_tips: []
+  how: Fill out the online interest form linked from the Fire Explorers page on phila.gov.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Teens aged 14 to 20 who are at least in 9th grade by April and who commit to two years fill out
+    an interest form. The way in is clear, but a teen must apply before training.
+  what_to_expect: Explorers meet at the Fire Academy every other Saturday from 9 am to 5 pm, April through
+    November. Training covers firefighting and EMS basics through classroom instruction and hands-on work
+    with local and state agencies. Members also earn community service hours.
+  first_visit_tips:
+  - If you are under 18, a parent or guardian signs a consent form and attends an orientation.
+  - To enroll, bring a copy of your birth certificate and your most recent report card.
+  - 'Plan on the uniform: members must wear it neatly at all times.'
 contacts:
   website: https://www.phila.gov/services/working-jobs/city-jobs-and-internships/join-the-fire-department/become-a-fire-explorer/
   email: null
@@ -78,15 +97,19 @@ last_sign_of_life: 2024-04
 sign_of_life_url: https://www.phila.gov/services/working-jobs/city-jobs-and-internships/join-the-fire-department/become-a-fire-explorer/
 sources:
 - url: https://www.phila.gov/services/working-jobs/city-jobs-and-internships/join-the-fire-department/become-a-fire-explorer/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

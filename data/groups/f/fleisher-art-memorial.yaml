@@ -3,10 +3,12 @@ name: Fleisher Art Memorial
 aka: []
 leads: []
 ein: null
-summary: An art center on Catharine Street with adult classes, youth art programs, a Teen Lounge for teens,
-  and community festivals. Some classes need a membership, and tuition assistance is available.
-what_you_do: Take an adult or youth art class, drop in to the Teen Lounge during the school year, or join
-  as a member to get tuition-free classes and a tuition discount.
+summary: An art center on Catharine Street with adult classes, youth art programs, a free Teen Lounge
+  for teens, and community festivals. Tuition-free classes need a membership, and members get a discount
+  on paid classes.
+what_you_do: Take an adult or youth art class, drop in to the Teen Lounge on Tuesday and Wednesday afternoons
+  during the school year, or join as a member to get into tuition-free classes and a discount on paid
+  ones.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -35,9 +37,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall 2026 term runs September 8 to November 20, 2026, and Winter 2027 runs January 4 to March
-    8, 2027. During term the front desk is open Monday to Thursday 9 am to 9:30 pm, Friday 9 am to 8 pm,
-    and Saturday 9 am to 3:30 pm. Each class meets on the dates in its listing.
+  text: Adult and youth classes run in terms. During term, the front desk is open Monday to Thursday 9
+    am to 9:30 pm, Friday 9 am to 8 pm, and Saturday 9 am to 3:30 pm. The Teen Lounge meets Tuesdays and
+    Wednesdays from 4 to 6 pm during the school year.
   days:
   - mon
   - tue
@@ -63,15 +65,20 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Tuition-based classes set their tuition by length, and studio fees vary by medium. Tuition-free
-    classes need a current membership. Open studio drop-in is $10. Tuition assistance covers tuition only
-    and needs no documents.
+  text: Membership is $65 a year for adults, $50 for seniors 65 and older, and $120 for a household of
+    up to four adults and children. Members get 10 percent off tuition-based classes. Tuition-based classes
+    set tuition by length, studio fees vary by medium, and open studio drop in is $10 for students taking
+    a class in that medium. Tuition assistance covers tuition only.
 commitment: seasonal
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'The main building at 719 Catharine has an elevator, and a lift serves visitors who use mobility
+    devices during open hours. Accessible parking is in the lot and in front of the school entrance on
+    Catharine Street. The 709 Catharine building has no accessible restroom. Nearest SEPTA: the Route
+    47 bus stop at 8th and Christian Streets, about half a block away. For lift help, call the front desk
+    at 215-922-3456 ext. 300.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -80,15 +87,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register online through ProClass, by phone at 215-922-3456 extension 300, or at the front desk.
-    Tuition-free classes need a membership first.
+  how: Register for a class through the online class search, by phone at 215-922-3456 ext. 300, or at
+    the front desk. Paid classes do not need a membership, but tuition-free classes do.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Classes are open to the public with online and phone sign-up. The site calls some classes introductory
-    but does not label most by level.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes are open to the public with online, phone and desk sign up. Some tuition-free classes
+    are labeled introductory, but most classes are not labeled by level.
+  what_to_expect: Each class meets on the dates in its listing, within a term. Tuition depends on class
+    length, and studio and material fees depend on the medium. Tuition assistance covers tuition only,
+    and the site notes that waiting lists form when classes fill.
+  first_visit_tips:
+  - Parking is limited. The student lot across from the main entrance is open only during programming
+    hours, and paid and free city lots are nearby.
+  - Bike racks are along Catharine Street and the lot fence.
+  - If you need the lift, call the front desk first.
 contacts:
   website: https://fleisher.org/
   email: info@fleisher.org
@@ -112,6 +125,7 @@ sources:
   - cost
   - requirements
   - first_step
+  - last_sign_of_life
 - url: https://www.phillymag.com/be-well-philly/pottery-classes-philadelphia/
   seen: '2026-10-08'
   fields:
@@ -124,22 +138,38 @@ sources:
   - schedule
   - cost
   - newcomer_friendliness
+  - what_to_expect
 - url: https://fleisher.org/children-and-youth-programs-2/children-and-youth-programs-2/fall-2026-2/
   seen: '2026-10-08'
   fields:
   - requirements
   - what_you_do
+  - schedule
+  - cost
 - url: https://fleisher.org/contact/
   seen: '2026-10-08'
   fields:
   - contacts
   - locations
   - schedule
+  - access.wheelchair
+  - access.notes
 - url: https://fleisher.org/in-celebration-of-thora-jacobson-1949-2026/
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://fleisher.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_step
+- url: https://fleisher.org/take-a-class/tuition-assistance/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

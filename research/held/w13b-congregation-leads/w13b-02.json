@@ -1,0 +1,54 @@
+{
+ "wave": "w13b-congregation-leads",
+ "agent": "w13b-02",
+ "lane": "R",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 23,
+ "leads_only": [
+  {
+   "name": "Philly Hillel",
+   "url": "https://phillyhillel.org/",
+   "note": "Named as the host of the Jewish Graduate Student Network. Domain taken from the contact email on jewishgrads.org. Not fetched."
+  },
+  {
+   "name": "Jewish Family and Children's Service of Philadelphia",
+   "url": "https://jfcsphilly.org/",
+   "note": "Runs The NORC @ JFCS, which ended September 2025 (recorded as defunct). Named on the Federation page. Not checked for other programs."
+  },
+  {
+   "name": "Drexel Hillel",
+   "url": "https://x.com/DrexelHillel",
+   "note": "X handle named on the Federation impact page. No own website was found, and the Federation short link points to a Federation page, not the group. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "http://www.politzhebrewacademy.org/",
+   "status": 403,
+   "note": "Site returned 403. Day school, not a community group, so not recorded."
+  },
+  {
+   "url": "https://www.lombardcentral.org",
+   "status": null,
+   "note": "Certificate expired, so the page could not be read. Presbytery listing address, per an earlier agent's note: 4201 Powelton Avenue, 19104. Not recorded."
+  }
+ ],
+ "notes": "Input had 14 leads. Results: 8 publish, 2 hide, 2 not_a_group. Searches: 1 of 1 used, on Temple Menorah-Keneseth Chai. Fetches: about 23. Not recorded because no working own site exists: Bethel Presbyterian (own site returns 404; earlier note gives 1900 West York Street, 19132), New River Presbyterian (own site returns 404; earlier note gives 4159 West Girard Avenue, 19104), and Mayfair Presbyterian (domain does not resolve; earlier note gives 3323 Tudor Street, 19136). The Federation Affinity Groups page is an index: its four groups each have a record. Drexel Hillel: the Federation impact page mentions it only in an undated post (6 Oct, no year). The Federation resource page for Temple Menorah-Keneseth Chai does not mention it, so the only source is a 2023 Jewish Exponent article. Abraham Offen Mikvah: the domain now shows an unrelated online gambling-style site, so it is recorded as not_a_group with no website. The earlier note that called JCRC nonpartisan could not be confirmed on the page; please check. Women of Vision uses the word Foundation in its name but is a giving circle, not a private family foundation. The Kollel gives Hebrew-year dates only, so its status is probably_active. Records with status unknown or probably_active rest on undated or old dated items; see each record's notes.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": "abraham-offen-mikvah-northeast-philadelphia",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "not_a_group",
+   "name": "Abraham Offen Mikvah of Northeast Philadelphia",
+   "notes": "The domain northeastmikvah.org no longer serves a mikvah. When checked it showed an unrelated, age-restricted online gambling-style site in Indonesian with several outside domains. Do not link it. Recorded as not_a_group with no website. The domain's control should be checked by the reviewer.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

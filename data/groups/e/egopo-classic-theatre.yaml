@@ -4,10 +4,11 @@ aka: []
 leads:
 - cultural_fund:egopo-classic-theatre
 ein: null
-summary: A Philadelphia theater company that stages its own productions each season, with subscriptions
-  and memberships for people who want to see every show.
-what_you_do: See a show by buying a single ticket or a subscription. Memberships add a drink package and
-  gala tickets. The Volunteer page is linked but does not describe roles.
+summary: A Philadelphia theater company that stages its own productions each season. Single tickets, subscriptions
+  and memberships let people see the season's shows, and volunteers help with productions and public events.
+what_you_do: See a show by buying a single ticket, a subscription or a membership, which adds tickets
+  and a drink package. Volunteers help with productions and public events, and the page lists free concessions
+  and free tickets as perks.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -32,14 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Each season has a few shows with limited runs. Dates are on the site, not in the text we read.
+  text: Each season has a few productions, each with a limited run, and the dates are posted on the website.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Theater
-  address: 317 Dickinson Street
+- label: EgoPo office (not a performance venue)
+  address: 317 Dickinson Street, Unit D
   neighborhood: null
   planning_district: null
   zip: '19147'
@@ -47,10 +48,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Carpenters' Hall (performance venue named on the parking page)
+  address: 320 Chestnut St
+  neighborhood: null
+  planning_district: null
+  zip: '19106'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: paid
-  text: Basic Subscription is $80. Memberships run $150, $300 and $500. Single ticket prices are not listed.
+  text: Basic Subscription $80. Memberships are $150 (Bronze), $300 (Silver) and $500 (Gold). Single-ticket
+    prices are not listed on the site.
 commitment: one_off
 group_size: null
 access:
@@ -65,20 +76,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket for the next show through the site, or start with the $80 Basic Subscription
+  how: Buy a single ticket for a show on the Buy Tickets page of the EgoPo website, or start with the
+    $80 Basic Subscription, which includes one ticket each to three shows.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can buy a ticket to a public show; the group is a professional company, so there is no
-    class or volunteer program on the page
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can buy a ticket to a public show, and volunteers can reach the company through a contact
+    sheet on its site.
+  what_to_expect: A visit is a night at the theater for one of the season's limited runs. Some shows have
+    few tickets, and subscribers get priority on those, so buy early. Memberships start at $80, and single-ticket
+    prices are not listed on the site.
+  first_visit_tips:
+  - For Company, the page says you may bring a blanket, pillows and pajamas, which are optional.
+  - The box office is open Monday to Friday, 10 am to 4 pm, and from 10 am to 2 pm in the week of a performance.
+  - Shows can be held at other venues, so check the venue for each show before you go.
 contacts:
   website: http://egopo.org
   email: info@egopo.org
   phone: (267) 273-1414
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/EgoPo
+  - https://www.instagram.com/egopoclassic/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -99,7 +118,25 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+- url: https://www.egopo.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.egopo.org/parking
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+- url: https://www.egopo.org/box-office
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - first_visit_tips
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

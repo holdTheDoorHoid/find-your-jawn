@@ -33,7 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tuesday afternoon rehearsals, 1 to 2:30 pm, during the fall and spring sessions
+  text: Tuesday afternoon rehearsals, 1 to 2:30 pm, during the fall and spring sessions. Rehearsals run
+    about 90 minutes.
   days:
   - tue
   times:
@@ -52,14 +53,16 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: Sessions are paid programs, and the amount is not on the pages checked. Tuition assistance is
+    available, so ask the office.
 commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Venues are chosen with accessibility in mind, and singers may sit or stand during any rehearsal
+    or performance.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,23 +71,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for the Spring 2027 session when sign-up opens on November 12, 2026 at 12 pm; Fall 2026
+    registration is closed.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The FAQ says singers of all skill levels are welcome with no audition, and anyone can attend
+    the first rehearsal of a season to try singing before registering.
+  what_to_expect: Rehearsals run about 90 minutes and are led by a professional choral conductor, in four-part
+    harmony. Singers may sit or stand during rehearsals and may sit during concerts. Fall concerts are
+    usually in December, and the chorale's concerts are free and open to the public.
+  first_visit_tips:
+  - Come to the first rehearsal of the season to try singing; after the first week, singers must be registered.
+  - Ask about tuition assistance before you register, since the amount is not posted.
+  - Call 301-261-5747 on a weekday for questions. It is the Encore Creativity office in Washington, DC,
+    open 9 am to 5 pm Eastern.
 contacts:
   website: https://encorecreativity.org/group/encore-chorale-of-philadelphia/
   email: null
-  phone: null
+  phone: 301-261-5747
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://encorecreativity.org/ensembles/
+sign_of_life_url: https://encorecreativity.org/register
 sources:
 - url: https://encorecreativity.org/group/encore-chorale-of-philadelphia/
   seen: '2026-10-08'
@@ -99,8 +110,28 @@ sources:
   - status
   - last_sign_of_life
   - audience
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - what_to_expect
+- url: https://encorecreativity.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - cost
+  - access
+- url: https://encorecreativity.org/register
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - last_sign_of_life
+  - status
+  - contacts
+- url: https://encorecreativity.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -9,8 +9,8 @@ ein: '232703821'
 summary: A citywide network of neighborhood park groups, more than 140 of them, that clean up, plant,
   and garden in Philadelphia parks. The Conservancy and the city help run it, and joining a local group
   is the usual way in.
-what_you_do: Join a park friends group near you for regular cleanups and planting, or sign up for the
-  spring Love Your Park Week service days.
+what_you_do: Join a park friends group near you for regular cleanups and planting, or sign up for a monthly
+  city volunteer day or a Love Your Park service weekend.
 kind: network
 categories:
 - nature-environment
@@ -39,10 +39,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Monthly city volunteer days on the second Saturday, at rotating parks. Neighborhood Park Friends
+    groups have their own workdays through the year.
+  days:
+  - sat
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Neighborhood parks across the city
@@ -57,7 +59,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Not stated on the pages checked
+  text: No fee is listed on the pages checked for volunteer days.
 commitment: seasonal
 group_size: null
 access:
@@ -72,15 +74,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Find a park friends group near you through loveyourpark.org, or call 215-988-9334 to ask how to
-    get on a group's list
+  how: Register on loveyourpark.org for a Love Your Park Fall Weekend service day, November 13 to 15,
+    2026.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The network says anyone can learn about a local group by joining a service project, so the way
-    in is public
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can register for a service day or join a city volunteer day, and the volunteer page says
+    staff bring tools and gloves to the city days.
+  what_to_expect: The planting workdays listed run 9 am to noon. On city volunteer days staff bring tools,
+    gloves and expertise, and some events provide tools and gloves. Volunteers are asked to bring their
+    own water bottle.
+  first_visit_tips:
+  - Bring your own water bottle, since the loveyourpark site asks volunteers to bring one.
+  - Check the event listing for tools and gloves, since some events provide them and others do not.
+  - Call 215-988-9334 to ask which park friends group is nearest you and how to get on its list.
 contacts:
   website: https://myphillypark.org
   email: null
@@ -110,11 +117,30 @@ sources:
   - status
   - first_step
   - contacts
+  - last_sign_of_life
 - url: https://www.phila.gov/2024-04-30-park-friends-group-helps-clean-and-green-local-park/
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+- url: https://myphillypark.org/support/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://loveyourpark.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+- url: https://myphillypark.org/events/calendar/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - status
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

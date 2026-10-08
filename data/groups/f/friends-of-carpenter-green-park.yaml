@@ -36,9 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Quarterly meetings. The site lists no meeting dates or times. The park itself is open to the public.
-  days: []
-  times: []
+  text: Green Team volunteer days run on Wednesday evenings, 6:30 to 7:30 pm, from April through October.
+    Quarterly meetings are open to all and held at the park, moving online if it rains.
+  days:
+  - wed
+  times:
+  - evening
   recurring: true
   season: null
 locations:
@@ -69,13 +72,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email carpentergreenpark@gmail.com to get connected, and join for $20 a year
+  how: Come to a Wednesday Green Team volunteer day, 6:30 to 7:30 pm from April through October, or email
+    carpentergreenpark@gmail.com to get connected.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone can join, and the group says to email to get connected. The park itself is open to all.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The group says anyone can join and that all are welcome at its meetings, and it gives an email
+    address for getting connected.
+  what_to_expect: Green Team days are Wednesday evenings from 6:30 to 7:30 pm, April through October,
+    and the page invites people to volunteer in the park. Quarterly meetings are also open to all, held
+    at the park and moving online if it rains. The site lists no fee for volunteer days or meetings; membership
+    is $20 a year if you want to join.
+  first_visit_tips:
+  - Check the upcoming events page for the next quarterly meeting date, since rain moves it online.
+  - Follow the group on Instagram at @carpentergreenpark for the latest updates, as the site suggests.
 contacts:
   website: https://www.carpentergreenpark.com
   email: carpentergreenpark@gmail.com
@@ -87,7 +97,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.carpentergreenpark.com/upcoming-events-1
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -124,7 +134,15 @@ sources:
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.carpentergreenpark.com/upcoming-events-1
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

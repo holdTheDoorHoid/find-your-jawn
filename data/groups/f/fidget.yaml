@@ -4,23 +4,26 @@ aka: []
 leads:
 - cultural_fund:fidget-3
 ein: null
-summary: A Philadelphia arts space called Fidget Space where artists rehearse, hold book club meetings,
-  and run writing and brainstorming workshops. It also runs artist residencies and a bartering program.
-what_you_do: Join a workshop or book club meeting, rent the space for your own practice, or apply for
-  an artist residency or the bartering program.
+summary: Fidget Space is an arts space on North Mascher Street where artists rehearse and perform. It
+  hosts evening shows of experimental music, dance and poetry, plus regular meetups for electronic music
+  makers and free discussions.
+what_you_do: Go to an evening show or a meetup, join a free Fidget Forum talk, rent the space for your
+  own practice, or ask about artist residencies and the bartering program.
 kind: nonprofit
 categories:
-- arts-crafts
-- books-writing
+- music
+- theater-dance-performance
 interests:
-- craft_circle
-- writing_group
+- jam_sessions
+- variety_cabaret
 motives:
 - social
 - enhancement
+- understanding
 formats:
 - conversation
 - perform_make_together
+- one_off_event
 roles:
 - create
 crowd: []
@@ -35,10 +38,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No dates or regular times published on the site
+  text: No fixed weekly schedule. Shows, talks and meetups are listed on the Upcoming page, mostly on
+    evenings.
   days: []
-  times: []
-  recurring: false
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Fidget Space
@@ -52,9 +57,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Not published
-commitment: null
+  level: low
+  text: Many shows ask for a suggested donation, usually $10 to $25, or a sliding scale. Some events are
+    free, and the Fidget Forum talks are listed as free.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -68,13 +74,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@thefidget.org to ask about the next workshop or book club meeting
+  how: Come to a show or meetup on the Upcoming page; many ask for a suggested donation of $10 to $25.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site invites people to join its workshops and book club, and gives a general email for questions
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public shows and meetups are listed with dates, times and prices on the Upcoming page, so a first
+    timer has a clear way to come.
+  what_to_expect: Most listed events run two to four hours and start between 6 and 8 pm. Several are experimental
+    or improvised music sets, and some are talks or club meetups. The Upcoming page gives each event's
+    time and price.
+  first_visit_tips:
+  - Email info@thefidget.org if you want to confirm a date, time or price before you come.
+  - Check the event listing first, since some events are free and others ask for a suggested donation.
 contacts:
   website: http://www.thefidget.org
   email: info@thefidget.org
@@ -83,9 +94,9 @@ contacts:
   social:
   - https://www.instagram.com/thefidget_space
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.thefidget.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: http://www.thefidget.org/upcoming/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4
   seen: '2026-10-04'
@@ -99,8 +110,33 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - what_you_do
+- url: http://www.thefidget.org/upcoming/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - cost
+  - what_to_expect
+  - categories
+  - interests
+- url: http://www.thefidget.org/ongoing-programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: http://www.thefidget.org/writing/
+  seen: '2026-10-08'
+  fields:
+  - interests
+- url: http://www.thefidget.org/food-for-thought-fridays/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -32,8 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Upcoming shows listed: a Black History show in February 2027, a Spring 2027 concert, and a school
-    recital on June 7 (year not shown).'
+  text: No weekly classes are listed. Shows are posted one at a time on the events page.
   days: []
   times: []
   recurring: false
@@ -41,8 +40,9 @@ schedule:
 locations: []
 online_ok: false
 cost:
-  level: null
-  text: No prices published. School recital tickets are sold at the door.
+  level: paid
+  text: Show tickets are sold per performance, usually $20 to $30 in recent listings. No class fees or
+    dues are listed.
 commitment: one_off
 group_size: null
 access:
@@ -54,16 +54,21 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Watch the performances page for the February 2027 show and buy a ticket when it opens
+  how: Buy a ticket for a public show listed on the events page and see the company perform.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows are open to the public, though no classes or membership are listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public shows are listed with dates, times and a ticket link, so a first timer can see the company
+    without joining anything. The page lists no classes or open rehearsals.
+  what_to_expect: Recent shows ran about an hour and a half to two hours. The February Black History program
+    had a discussion after the show. Tickets were bought online ahead of time.
+  first_visit_tips:
+  - Check the events page for the exact date, time and venue before you go, since venues change from show
+    to show.
+  - Buy tickets online ahead of time; school recital tickets are sold at the door.
 contacts:
   website: http://www.eleonedance.org
   email: null
@@ -71,9 +76,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.eleonedance.org
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.eleonedance.org/events/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=4
   seen: '2026-10-04'
@@ -89,7 +94,33 @@ sources:
   - cost
   - contacts
   - status
-research_tier: 1
+- url: https://www.eleonedance.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - cost
+  - requirements
+  - what_to_expect
+- url: https://www.eleonedance.org/black-history-show/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+- url: https://www.eleonedance.org/second-company/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.eleonedance.org/arts-in-education/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.eleonedance.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
