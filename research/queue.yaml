@@ -229,7 +229,16 @@ waves:
     status: done
     progress: "Done 2026-10-08. Third pass (nightly run, four agents at a time, batches of 12): 94 groups tried, 83 merged and 11 held because their sites gave too little to write a record (research/held/w4-tier1-cultural-fund/). Those 11 stay at tier 0 and can be picked up by w19 or a later retry with --exclude-done. Earlier passes: 162 groups in the launch session, 72 in the first nightly pass."
 
-  - {id: w6-tier2-deep-a, lane: tier2, kind: batches, brief: tier2, status: todo, priority_note: "Moved up 2026-10-08: first visit guides and newcomer ratings make quiz results and wildcards much better", note: "First visit guides for the most newcomer friendly tier 1 groups, spread across every family and region"}
+  - id: w6-tier2-deep-a
+    lane: tier2
+    kind: batches
+    brief: tier2
+    selector: --ids-file research/batches/w6-tier2-deep-a-ids.json --tier 1 --target-tier 2 --exclude-done
+    size: 7
+    searches_per_agent: 2
+    status: todo
+    priority_note: "Moved up 2026-10-08: first visit guides and newcomer ratings make quiz results and wildcards much better"
+    note: "First visit guides for the most newcomer friendly tier 1 groups, spread across every family. The ids file holds 56 active, public tier 1 groups with a website, highest newcomer rating first, two or three per interest family (chosen 2026-10-08 by the nightly run)."
   # Later waves (long tail). Briefs for these are written when the wave is first picked up, from
   # docs/RESEARCH.md section 3, following the pattern of the briefs above.
   - {id: w5-platform-leads, lane: E, kind: slices, brief: platform_leads, status: todo, note: "Join Philly list (credit them, leads only) and Meetup topic pages read one at a time, then verify each group from its own page"}
