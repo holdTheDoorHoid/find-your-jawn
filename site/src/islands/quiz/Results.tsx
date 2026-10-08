@@ -49,13 +49,18 @@ export function Results({ groups, cat, places, answers, setAnswers, onEdit, onRe
     const out = computeResults(groups, cat, answers);
     setOutcome(out);
     setList(out.results);
-    setMessage('');
+    setMessage(fill(out.results.length === 1 ? t.updatedOne : t.updated, { n: out.results.length }));
     // `answers` is read, but only `key` and `groups` decide when to recompute
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, groups, cat]);
 
   useEffect(() => {
     heading.current?.focus({ preventScroll: true });
+    try {
+      heading.current?.closest('.quiz')?.scrollIntoView({ block: 'start' });
+    } catch {
+      // older browsers
+    }
   }, []);
 
   useEffect(() => {

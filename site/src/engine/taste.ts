@@ -129,6 +129,9 @@ export const FOLLOW_OPTIONS: Record<FollowId, string[]> = {
 /** A follow up is worth asking only when some answer would change at least this many of the top eight. */
 export const FOLLOW_MIN_CHANGE = 2;
 export const FOLLOW_MAX = 3;
+/** Above this many groups, follow up questions are tried on the best few hundred only. */
+export const FOLLOW_UNIVERSE_OVER = 600;
+export const FOLLOW_UNIVERSE = 300;
 
 export interface FollowPick {
   id: FollowId;
@@ -142,7 +145,19 @@ export interface FollowPick {
  * first, and stop at three. Most people get one or none.
  */
 export function pickFollowUps(groups: Group[], cat: Catalog, answers: Answers, opts: MatchOptions = {}): FollowPick[] {
-  const base = computeResults(groups, cat, answers, opts);
+  let universe = groups;
+  let base = computeResults(universe, cat, answers, opts);
+  if (groups.length > FOLLOW_UNIVERSE_OVER) {
+    // With thousands of groups, only the best few hundred (and the best stretches and wildcards) can
+    // move into the top eight when one soft preference changes. Trying each answer on those alone is
+    // much faster, and gives the same answer in practice.
+    const keep = new Set<string>(base.results.map((r) => r.group.id));
+    for (const s of base.pool.scored.slice(0, FOLLOW_UNIVERSE)) keep.add(s.p.g.id);
+    for (const c of base.stretches.slice(0, 60)) keep.add(c.s.p.g.id);
+    for (const w of base.wildcards.slice(0, 30)) keep.add(w.s.p.g.id);
+    universe = groups.filter((g) => keep.has(g.id));
+    base = computeResults(universe, cat, answers, opts);
+  }
   const baseIds = new Set(base.results.map((r) => r.group.id));
   if (baseIds.size === 0) return [];
   const picks: FollowPick[] = [];
@@ -154,7 +169,7 @@ export function pickFollowUps(groups: Group[], cat: Catalog, answers: Answers, o
     let change = 0;
     for (const value of FOLLOW_OPTIONS[id]) {
       const next: Answers = { ...answers, follow: { ...answers.follow, [id]: value } };
-      const out = computeResults(groups, cat, next, opts);
+      const out = computeResults(universe, cat, next, opts);
       let moved = 0;
       for (const r of out.results) if (!baseIds.has(r.group.id)) moved += 1;
       change = Math.max(change, moved);

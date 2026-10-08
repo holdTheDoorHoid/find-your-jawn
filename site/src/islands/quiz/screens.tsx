@@ -122,12 +122,12 @@ export function HoursScreen(p: ScreenProps) {
         name="hours-age"
         value={ageChoice}
         options={[...[13, 14, 15, 16, 17].map((n) => ({ value: n as number | 'adult', label: String(n) })), { value: 'adult' as const, label: t.hours.age18 }]}
-        onChange={(v) => p.set({ age: v === 'adult' ? undefined : { lo: v, hi: v } })}
+        onChange={(v) => p.set({ age: v === 'adult' ? (a.age && a.age.lo >= 18 ? a.age : undefined) : { lo: v, hi: v } })}
       />
       <Choices
         legend={t.hours.need}
         name="hours-need"
-        value={hours.need ?? (hours.need === undefined && 'form' in hours && hours.form === undefined ? undefined : undefined)}
+        value={hours.need}
         options={HOURS.map((n) => ({ value: n, label: String(n) }))}
         onChange={(v) => p.set({ hours: { ...hours, need: v } })}
       />

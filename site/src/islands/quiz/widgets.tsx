@@ -174,7 +174,8 @@ export function Frame({
     if (!grabFocus) return;
     ref.current?.focus({ preventScroll: true });
     try {
-      ref.current?.scrollIntoView({ block: 'start' });
+      // Bring the top of the quiz (progress bar and heading) into view, not just the heading.
+      (ref.current?.closest('.quiz') ?? ref.current)?.scrollIntoView({ block: 'start' });
     } catch {
       // older browsers
     }

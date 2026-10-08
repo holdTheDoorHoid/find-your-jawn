@@ -1507,6 +1507,8 @@ export const matches = {
   loading: 'Finding your matches...',
   loadError: 'We could not load the groups. Check your connection and try again.',
   thinking: 'Working out your matches...',
+  updated: 'Updated. Showing {n} groups.',
+  updatedOne: 'Updated. Showing 1 group.',
 
   dial: {
     label: 'How adventurous do you feel?',
