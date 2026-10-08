@@ -25,3 +25,14 @@ A company with no class, membership, volunteer or community program is `not_a_gr
 Mummers clubs: record the division (comic, fancy, wench brigade, fancy brigade, string band) in
 `interests` where a tag exists and in `notes`; most recruit members and some hold open rehearsals or
 clubhouse events. The clubhouse address is the location.
+
+Groups from the IRS lists (lead ids starting `irs_990n:` or `irs_bmf:`): the name is the legal name
+in capitals or title case, and the `contacts.website` field was typed by the group on a tax form, so
+it is sometimes an email address, a person's name or a dead domain. If it is not a web address,
+treat the website as missing (record an email address in `contacts.email` only if it is clearly the
+group's own) and use your one search. Many IRS groups are scholarship funds, family charities,
+booster clubs for one school, alumni associations, building funds or groups with no public way in:
+give those `verdict: "hide"` with `hidden_reason: "private"` (or `not_a_group` for a business or a
+building) after one fetch, and move on. Spend your effort on the ones a newcomer could join, attend
+or volunteer with. Use the group's everyday name in `name` (for example "Friends of Clark Park", not
+"FRIENDS OF CLARK PARK INC"), and put the legal name in `notes` when it differs a lot.

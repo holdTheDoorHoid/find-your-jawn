@@ -299,7 +299,64 @@ waves:
   - {id: w16-libraries-rec-schools, lane: J, kind: slices, brief: libraries, status: todo}
   - {id: w17-coalitions, lane: Q, kind: slices, brief: coalitions, status: todo}
   - {id: w18-support-groups, lane: U, kind: slices, brief: support, status: todo}
-  - {id: w19-leads-only-followup, lane: K, kind: batches, brief: tier1, status: todo, note: "Check the leads_only names collected by earlier waves"}
-  - {id: w20-tier1-irs-joinable, lane: A, kind: batches, brief: tier1, status: todo, note: "IRS groups in joinable NTEE codes (sports, recreation, arts, environment, animals, youth, community improvement, fraternal, veterans)"}
-  - {id: w21-tier2-deep-b, lane: tier2, kind: batches, brief: tier2, status: todo, after: [w6-tier2-deep-a]}
+  - id: w19a-leads-own-site
+    lane: K
+    kind: batches
+    brief: leads_followup
+    batch_files: research/batches/w19a-leads-own-site/
+    searches_per_agent: 1
+    status: todo
+    note: "leads_only names up to 2026-10-08 evening that have their own website, after removing names and sites we already have (136 leads, 10 batches)."
+  - id: w19b-leads-platform
+    lane: K
+    kind: batches
+    brief: leads_followup
+    batch_files: research/batches/w19b-leads-platform/
+    searches_per_agent: 6
+    status: todo
+    note: "leads_only names whose only link is a platform page or nothing (129 leads, 13 batches of 10); one search each to find the group's own site."
+  - {id: w20-tier1-irs-joinable, lane: A, kind: batches, brief: tier1, status: todo, note: "IRS groups in joinable NTEE codes WITHOUT a website (needs one search each). Groups with a website went to w20a, w20b and w20c."}
   - {id: guide-quizzo-recheck, lane: guide, kind: slices, brief: quizzo, searches_per_agent: 4, status: todo, note: "Recheck the unconfirmed nights in data/guides/quizzo.yaml from venue or host pages, and read the community Quizzo List spreadsheet named in the Billy Penn guide as a lead only. Import with fyj import-guide quizzo. Rerun every three months; bars change quizzo nights often."}
+
+  # Added 2026-10-08 evening: owner asked for many Haiku agents in parallel until told to stop.
+  - id: w20a-tier1-irs-web
+    lane: A
+    kind: batches
+    brief: tier1
+    batch_files: research/batches/w20a-tier1-irs-web/
+    searches_per_agent: 2
+    status: todo
+    note: "IRS groups that wrote a website on their e-postcard, in joinable NTEE codes (arts, environment, animals, recreation and sports, youth, community improvement, food, housing, crime prevention, disaster). 413 groups, 28 batches of 15. Ids in research/batches/w20a-tier1-irs-web-ids.json."
+  - id: w20b-tier1-irs-web
+    lane: A
+    kind: batches
+    brief: tier1
+    batch_files: research/batches/w20b-tier1-irs-web/
+    searches_per_agent: 2
+    status: todo
+    after: [w20a-tier1-irs-web]
+    note: "IRS e-postcard groups with a website and no NTEE code. 1303 groups, 87 batches of 15."
+  - id: w20c-tier1-irs-web
+    lane: A
+    kind: batches
+    brief: tier1
+    batch_files: research/batches/w20c-tier1-irs-web/
+    searches_per_agent: 2
+    status: todo
+    after: [w20b-tier1-irs-web]
+    note: "IRS groups with a website in the remaining NTEE codes (education, human services, rights, international, science, public benefit, mutual benefit, religion). Philanthropy, hospitals, disease charities, employment, scholarships, cemeteries, insurance and single schools left out. 482 groups, 33 batches of 15."
+  - id: w21-tier2-deep-b
+    lane: tier2
+    kind: batches
+    brief: tier2
+    batch_files: research/batches/w21-tier2-deep-b/
+    searches_per_agent: 1
+    status: todo
+    note: "First visit guides for every other active or probably active public tier 1 group with a website (655 groups, 94 batches of 7). Ids in research/batches/w21-tier2-deep-b-ids.json, active first, then highest newcomer rating, then thinnest family."
+  - id: w3-interests-e
+    lane: G
+    kind: slices
+    brief: discover
+    searches_per_agent: 10
+    status: todo
+    note: "Second sweep of the eight thinnest interest families, told which groups we already have."
