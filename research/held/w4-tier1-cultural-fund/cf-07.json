@@ -3,226 +3,68 @@
  "agent": "cf-07",
  "lane": "D",
  "model": "haiku",
- "searches_used": 0,
- "fetches_used": 40,
+ "searches_used": 1,
+ "fetches_used": 14,
  "leads_only": [],
  "blocked": [
   {
-   "url": "http://www.ollinyoliztlicalmecac.org/events",
-   "status": 403,
-   "note": "Events page blocked (HTTP 403). Not retried."
+   "url": "https://thegalleriesatmoore.org",
+   "status": null,
+   "note": "TLS certificate error on http and https, and the www address closed the connection. Not reached after retries."
   },
   {
-   "url": "https://phillyunnamed.net/about",
-   "status": 403,
-   "note": "About page blocked (HTTP 403). Not retried."
+   "url": "http://www.thecoloredgirlsmusem.com",
+   "status": null,
+   "note": "Host name does not resolve (DNS not found). Likely a typo in the batch URL. The corrected domain thecoloredgirlsmuseum.com was read instead."
   }
  ],
- "notes": "Verdicts: 16 publish, 2 not_a_group. Searches used: 0 (none allowed). Fetches used: 40 of 60. Pages returning 404 (not blocks, not retried): philadelphiastories.org/events, tangotherapyproject.org/classes, journeyarts.org/intercultural-journeys, journeyarts.org/programs. Curio's funder logo links to babawestphilly.org, which redirects to babamag.com, the publication of the Baltimore Avenue Business Association. A business association is out of scope, so it was not added. Places that appear in pages but are not groups and were not checked: Dornsife Community Center (Nichole Canuso workshop venue), Pageant (Al-Bustan venue), Trinity Center for Urban Life and Bartram's Garden (past Journey Arts venues). Batch addresses that the sites did not confirm, so no location was recorded: 1721 S 13th St (MusiCoLab), 1413 (Nichole Canuso, incomplete), 2021 S 11th Stret (Philadelphia Stories, typo), 3500 Lancaster Ave (Beyond the Bars and Dance Iquail, not on site), 2062 S Cecil St (Ollin), 532 S 57th St (Original American Foundation), 815 S 48th St (Curio). The Al-Bustan batch address was out of date and was replaced with the published address. Copyright footers were not counted as evidence. No leads were found that had a checkable website.",
+ "notes": "Budget: 1 of 2 WebSearch calls used. About 14 WebFetch calls, some failed. Verdict counts: 12 publish, 0 hide, 0 not_a_group, 0 duplicate, 0 out_of_area. Two records are minimal and will be held back by the publish rule because they have no summary, tags or sources: The Galleries at Moore (site unreachable) and Theater Encore (no Philadelphia match found). The Colored Girls Museum batch URL needs a fix. CultureWorks is the fiscal sponsor of The Thread, but no URL was confirmed, so it is not listed as a lead. Nothing was filled from Facebook or Instagram.",
  "records": [
   {
    "match": {
     "lead_ids": [
-     "cultural_fund:musicolab-3",
-     "irs_990n:923070182",
-     "irs_bmf:923070182"
+     "cultural_fund:the-galleries-at-moore"
     ],
-    "group_id": "musicolab",
-    "ein": "923070182",
-    "website": "http://musicolab.org"
+    "group_id": "the-galleries-at-moore",
+    "ein": null,
+    "website": "http://thegalleriesatmoore.org"
    },
    "verdict": "publish",
-   "name": "MusiCoLab",
-   "summary": "A Philadelphia group that helps local writers and composers build new musicals, with showcases and readings that audiences can attend.",
-   "what_you_do": "Audiences can join the mailing list and attend showcases and the UP NEXT Spotlight Series. Writers and composers can look at the site's Submissions page to send in their work. Feedback is also collected through a page on the site.",
+   "name": "The Galleries at Moore",
    "kind": "nonprofit",
-   "categories": [
-    "theater-dance-performance"
-   ],
-   "motives": [
-    "enhancement",
-    "career"
-   ],
-   "formats": [
-    "perform_make_together",
-    "one_off_event"
-   ],
-   "roles": [
-    "create"
-   ],
-   "audience": {
-    "open_to": "public",
-    "min_age": null,
-    "community": [],
-    "faith": null,
-    "support_group": false
-   },
-   "schedule": {
-    "text": "Showcases and the UP NEXT Spotlight Series are announced on the site, but the page shows no dates."
-   },
-   "cost": {
-    "level": "unknown",
-    "text": "Not stated on the site."
-   },
-   "requirements": {
-    "court_ordered_ok": "unknown",
-    "service_hours_letter": "unknown"
-   },
-   "first_step": {
-    "how": "Join the mailing list on musicolab.org to hear about the next showcase, or use the Submissions page if you write musicals or songs.",
-    "newcomer_friendliness": 3,
-    "basis": "Showcases are open to audiences and the site gives a clear sign-up and submission path, though no dates are posted."
-   },
-   "contacts": {
-    "website": "http://musicolab.org",
-    "email": null,
-    "phone": null,
-    "social": [
-     "https://www.facebook.com/phillymusicolab",
-     "https://www.instagram.com/phillymusicolab",
-     "https://www.youtube.com/@MusiCoLab"
-    ]
-   },
-   "status": "probably_active",
-   "sources": [
-    {
-     "url": "http://musicolab.org",
-     "seen": "2026-10-08",
-     "fields": [
-      "summary",
-      "what_you_do",
-      "schedule",
-      "status",
-      "first_step",
-      "audience",
-      "contacts"
-     ]
-    },
-    {
-     "url": "http://musicolab.org/contact",
-     "seen": "2026-10-08",
-     "fields": [
-      "contacts"
-     ]
-    }
-   ],
+   "status": "unknown",
    "research_tier": 1,
-   "confidence": "medium",
-   "notes": "Batch address 1721 S 13th St comes from IRS and Cultural Fund lead data and is not shown on the site, so no location is recorded. The contact page has only a form, with no email or phone. No dated events were found; '2025 Workshop Red & Black' is named by year only, so the status is probably_active rather than active. Musical theater development has no exact tag in the vocabulary, so only the theater family is set.",
+   "confidence": "low",
+   "notes": "Not verified. Every attempt failed: http gave a TLS certificate error, https gave the same error, and the www address closed the connection. No summary, tags or sources written. Retry later from a different connection before any record is published.",
    "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
     "interests needs at least one value from the vocabulary"
    ]
   },
   {
    "match": {
     "lead_ids": [
-     "cultural_fund:a-book-a-day-3",
-     "irs_bmf:851277573"
+     "cultural_fund:theater-encore-3"
     ],
-    "group_id": "a-book-a-day",
-    "ein": "851277573",
-    "website": "https://abookadayprogram.com/"
+    "group_id": "theater-encore",
+    "ein": null,
+    "website": null
    },
    "verdict": "publish",
-   "name": "A Book a Day",
-   "summary": "A Philadelphia nonprofit that gives books to children and families, runs family events and a mobile clinic, and runs a children's writing and illustration program.",
-   "what_you_do": "Come to an open family event such as Children's Day or the Freedom to Learn fundraiser, or visit an exhibit at The Study. Volunteers can help on service days. Kids can enter the Philly Writers contests when one is open, though none was open when this was checked.",
+   "name": "Theater Encore",
    "kind": "nonprofit",
    "categories": [
-    "books-writing",
-    "kids-youth-mentoring"
+    "theater-dance-performance"
    ],
-   "motives": [
-    "values",
-    "social"
-   ],
-   "formats": [
-    "one_off_event"
-   ],
-   "roles": [
-    "hands_on"
-   ],
-   "crowd": [
-    "kids",
-    "families"
-   ],
-   "audience": {
-    "open_to": "public",
-    "min_age": null,
-    "community": [],
-    "faith": null,
-    "support_group": false
-   },
-   "schedule": {
-    "text": "Children's Day was Aug 22, 2026 at Parkway Central Library. The Voices Alive! exhibit ran Sept 11 to 21, 2026 at The Study at University City. The Freedom to Learn fundraiser is Thursday, Nov 5, 2026, starting at 6 pm, at The Study.",
-    "days": [
-     "thu"
-    ],
-    "times": [
-     "evening"
-    ],
-    "recurring": false,
-    "season": "event_only"
-   },
-   "locations": [
-    {
-     "label": "Office",
-     "address": "513 S Melville St",
-     "zip": "19143",
-     "in_city": true
-    }
-   ],
-   "cost": {
-    "level": "unknown",
-    "text": "Prices for the fundraiser and other open events are not stated."
-   },
-   "first_step": {
-    "how": "Sign up for the newsletter on abookadayprogram.com, then come to the Freedom to Learn fundraiser at The Study on Thursday, Nov 5, 2026, starting at 6 pm.",
-    "newcomer_friendliness": 3,
-    "basis": "Open events are listed with dates and places, and a newsletter sign-up is offered, so a newcomer can attend without a prior connection."
-   },
-   "contacts": {
-    "website": "https://abookadayprogram.com/",
-    "email": "abookadayprogram@gmail.com",
-    "phone": null,
-    "social": [
-     "https://www.facebook.com/abookadayprogram",
-     "https://www.instagram.com/pickabookaday",
-     "https://www.youtube.com/channel/UCzwHA7HzyaivCCdTe-CteIg"
-    ]
-   },
-   "status": "active",
-   "last_sign_of_life": "2026-09",
-   "sign_of_life_url": "https://abookadayprogram.com/",
-   "sources": [
-    {
-     "url": "https://abookadayprogram.com/",
-     "seen": "2026-10-08",
-     "fields": [
-      "summary",
-      "what_you_do",
-      "schedule",
-      "locations",
-      "cost",
-      "first_step",
-      "contacts",
-      "status",
-      "audience",
-      "crowd"
-     ]
-    },
-    {
-     "url": "https://abookadayprogram.com/philly-writers",
-     "seen": "2026-10-08",
-     "fields": [
-      "what_you_do"
-     ]
-    }
-   ],
+   "status": "unknown",
    "research_tier": 1,
-   "confidence": "high",
-   "notes": "Batch address matches the site. The Philly Writers page gives no dates, ages or sign-up steps. The Jan 19, 2026 MLK Day of Service has passed. The homepage lists a book review published Sept 29, 2026, with a separate update date of Aug 16, 2026. The contact page was not read.",
+   "confidence": "low",
+   "notes": "Not verified. The batch has no website. One WebSearch for the name plus Philadelphia found no Philadelphia theater with this name, only unrelated theaters in Michigan, California and Los Angeles. Possibly a name error in the Cultural Fund list. Check the Cultural Fund entry for a correct name or address before publishing.",
    "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
     "interests needs at least one value from the vocabulary"
    ]
   }

@@ -3,148 +3,294 @@
  "agent": "cf-02",
  "lane": "D",
  "model": "haiku",
- "searches_used": 0,
- "fetches_used": 50,
- "leads_only": [
-  {
-   "name": "Philadelphia Youth Orchestra Music Institute",
-   "url": "https://lyrasociety.org/events/",
-   "note": "Named on the Lyra Society events list as the host of several concerts and showcases. Its own website was not captured, so not checked."
-  },
-  {
-   "name": "The Publick Pleasure",
-   "url": "https://preserveoldswedes.org/events/",
-   "note": "Performing ensemble for the Oct 25, 2026 concert at Gloria Dei. Its own website was not captured, so not checked."
-  },
-  {
-   "name": "Chocolate Ballerina",
-   "url": "https://www.performancegarage.org/classes",
-   "note": "Ballet class provider at Performance Garage. Its own website was not captured, so not checked."
-  },
-  {
-   "name": "Daksha Dance Troupe",
-   "url": "https://www.performancegarage.org/classes",
-   "note": "Bollywood class provider at Performance Garage. Its own website was not captured, so not checked."
-  },
-  {
-   "name": "Nardhana Academy",
-   "url": "https://www.performancegarage.org/classes",
-   "note": "Bharatanatyam class provider at Performance Garage. Its own website was not captured, so not checked."
-  },
-  {
-   "name": "Mister John's Music",
-   "url": "https://www.performancegarage.org/classes",
-   "note": "Early childhood music class provider at Performance Garage. Its own website was not captured, so not checked."
-  }
- ],
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [],
  "blocked": [
   {
-   "url": "https://mutyapdc.org/for-members",
-   "status": 401,
-   "note": "Members-only page; login required. Not attempted."
+   "url": "https://brandywineworkshop.org/",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on fetch. Batch liveness note said 200; not confirmed by us."
+  },
+  {
+   "url": "https://cliveden.org/",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on fetch."
+  },
+  {
+   "url": "https://publictrust.org",
+   "status": null,
+   "note": "Empty page on three tries; /about returned HTTP 404."
+  },
+  {
+   "url": "https://bobbyzankel.net",
+   "status": null,
+   "note": "Empty page on two tries."
+  },
+  {
+   "url": "https://philly2cents.org",
+   "status": null,
+   "note": "Redirects to a hosted page that showed only a staff preview notice."
+  },
+  {
+   "url": "https://www.westparkcutural.org",
+   "status": null,
+   "note": "Domain does not resolve. Batch typo; the working site is westparkcultural.org."
+  },
+  {
+   "url": "https://www.internationalballet.com",
+   "status": null,
+   "note": "Redirects to a parked for-sale page, not a group site. Redirect not followed."
   }
  ],
- "notes": "All 18 batch groups have a record. Verdict counts: publish 13, not_a_group 5 (Fever Dream Repertory, Inis Nua Theatre Company, Irish Heritage Theatre, Lantern Theater Company, Mutya Philippine Dance Company). Searches used: 0 (none allowed). Fetches used: 50 of 60. Not every page was checked: the Gloria Dei, IHT and Liberty City Arts event pages showed partial lists. The Elfreth's old /volunteer link is a 404; the live page is /volunteer-with-us. Lead addresses were handled as follows: Fever Dream's batch address is a residential apartment unit and is not recorded; PAEP's lead address (440 N Broad St) is not on its site and is not recorded; Gloria Dei's church address comes from the lead data only and is flagged in its record. Statuses rest on dated items found on the group's own pages; several records use the month of a listed 2026 event as last_sign_of_life because the page gives no posting date. No budget was exhausted.",
+ "notes": "Used 2 of 2 WebSearch calls and about 19 WebFetch calls. Did not run out of budget. Records: 5 with usable evidence (United Street Art, West Park Cultural Center, Artcinia, Art-Reach, Concert Operetta Theater). 7 unknown records held back (Bainbridge House, Brandywire, Public Trust, Warriors of the Wonderful Sound, 2CENTS, Cliveden, International Ballet Exchange) because no readable group page was found. Retry list for the next run: Brandywire (403), Cliveden (403), Public Trust, Warriors (check Mummers division), 2CENTS (find a public page), Bainbridge House (find a site beyond Facebook). Concert Operetta is the only dormant record. Batch typo fixed for West Park.",
  "records": [
   {
    "match": {
     "lead_ids": [
-     "cultural_fund:orchestra-2001-inc-3",
-     "irs_bmf:232545727"
+     "cultural_fund:bainbridge-house-inc-3",
+     "irs_990n:232658098",
+     "irs_bmf:232658098"
     ],
-    "group_id": "orchestra-2001-inc",
-    "ein": "232545727",
-    "website": "http://www.orchestra2001.org"
+    "group_id": "bainbridge-house-inc",
+    "ein": "232658098",
+    "website": null
    },
    "verdict": "publish",
-   "name": "Orchestra 2001, Inc.",
-   "summary": "An ensemble that plays 20th and 21st century music. Its community work includes free and pay-what-you-wish pop-up concerts at markets and public events.",
-   "what_you_do": "Go to a free pop-up concert or a public concert, sign up for e-news, or ask about volunteering, an internship, or the board through the Support page.",
+   "name": "Bainbridge House, Inc",
    "kind": "nonprofit",
-   "categories": [
-    "music"
-   ],
-   "motives": [
-    "values",
-    "enhancement"
-   ],
-   "formats": [
-    "one_off_event"
-   ],
-   "roles": [
-    "hands_on",
-    "organize"
-   ],
-   "audience": {
-    "open_to": "public",
-    "min_age": null,
-    "community": [],
-    "faith": null,
-    "support_group": false
-   },
-   "schedule": {
-    "text": "Pop-up and public concerts through the year. Recent dated events: Sept 24, 2026 jazz duo at Fairmount Farmers Market, and Oct 3, 2026 Firstival at Eastern State Penitentiary (free, 10 am to 2 pm, with pop-ups 11:30 am to 12:30 pm).",
-    "recurring": true,
-    "season": "event_only",
-    "times": [
-     "daytime"
-    ]
-   },
    "locations": [
     {
-     "label": "Office at Cherry Street Pier",
-     "address": "121 N Columbus Blvd",
-     "zip": "19106",
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "1520 Christian St",
+     "zip": "19146",
      "in_city": true
     }
    ],
-   "cost": {
-    "level": "unknown",
-    "text": "Some events are free or pay-what-you-wish; others are ticketed. Prices vary by event."
-   },
-   "commitment": "one_off",
-   "requirements": {
-    "court_ordered_ok": "unknown",
-    "service_hours_letter": "unknown"
-   },
-   "first_step": {
-    "how": "Go to the next free pop-up concert listed on the events page, or send a volunteer or internship question through the Support page.",
-    "drop_in": true,
-    "newcomer_friendliness": 3,
-    "basis": "Free public concerts need no sign-up, but the site does not describe how volunteers or interns are chosen."
-   },
    "contacts": {
-    "website": "http://www.orchestra2001.org",
-    "email": "info@orchestra2001.org",
-    "phone": "267-687-6243",
     "social": [
-     "https://www.facebook.com/Orchestra2001",
-     "https://www.instagram.com/orchestra_2001/"
+     "https://www.facebook.com/people/Bainbridge-House-Philadelphia/100064910970849/"
     ]
    },
-   "status": "active",
-   "last_sign_of_life": "2026-10",
-   "sign_of_life_url": "http://www.orchestra2001.org",
-   "sources": [
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch lists only a Facebook page, which is a lead source only. One search for the group name and address found no group website. No facts recorded. Held back: no summary, category, audience or sources yet. Retry with the group's name plus its own site, or drop if no public way in is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:brandywine-workshop-and-archives-3",
+     "irs_bmf:237374620"
+    ],
+    "group_id": "brandywine-workshop-and-archives",
+    "ein": "237374620",
+    "website": "https://brandywineworkshopandarchives.org/"
+   },
+   "verdict": "publish",
+   "name": "Brandywine Workshop and Archives",
+   "kind": "nonprofit",
+   "locations": [
     {
-     "url": "http://www.orchestra2001.org",
-     "seen": "2026-10-08",
-     "fields": [
-      "summary",
-      "what_you_do",
-      "schedule",
-      "cost",
-      "locations",
-      "first_step",
-      "contacts",
-      "status"
-     ]
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "730 S Broad St",
+     "zip": "19146",
+     "in_city": true
     }
    ],
+   "contacts": {
+    "website": "https://brandywineworkshopandarchives.org/"
+   },
+   "status": "unknown",
    "research_tier": 1,
-   "confidence": "high",
-   "notes": "The events list includes older 2022 to 2025 items. The Playing the Markets 2025 to 2026 pop-ups are undated. No instrument tag fits the ensemble, so interests are left empty.",
+   "confidence": "low",
+   "notes": "The batch address redirects to brandywineworkshop.org, which returned HTTP 403 Forbidden on our fetch. The batch liveness note (200, dated 2026-10) was not confirmed by us, so no facts are recorded from it. Held back until a readable page is found. Retry later.",
    "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:public-trust-3",
+     "irs_bmf:010754956"
+    ],
+    "group_id": "public-trust",
+    "ein": "010754956",
+    "website": "https://publictrust.org"
+   },
+   "verdict": "publish",
+   "name": "Public Trust",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "4017 Walnut St",
+     "zip": "19104",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://publictrust.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned an empty page on three tries, and /about returned HTTP 404. No facts recorded. Held back: no summary, category or audience yet. Retry later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:warriors-of-the-wonderful-sound-3",
+     "irs_bmf:061718860"
+    ],
+    "group_id": "warriors-of-the-wonderful-sound",
+    "ein": "061718860",
+    "website": "https://bobbyzankel.net"
+   },
+   "verdict": "publish",
+   "name": "Warriors of the Wonderful Sound",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "4723 Cedar Ave",
+     "zip": "19143",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://bobbyzankel.net"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed site returned an empty page on two tries. No facts recorded. The name suggests a Mummers string band; if the page loads, record the division (string band) in notes and the clubhouse address as the location. Held back until then.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:2cents-inc",
+     "irs_990n:872641963",
+     "irs_bmf:872641963"
+    ],
+    "group_id": "2cents-inc",
+    "ein": "872641963",
+    "website": "https://philly2cents.org"
+   },
+   "verdict": "publish",
+   "name": "2CENTS Inc",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "8615 Michener Ave",
+     "zip": "19150",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://philly2cents.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site redirects to a hosted page that showed only a staff preview notice and no public content. No facts recorded. Held back. Look for a public page or social profile, then retry.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:cliveden-of-the-national-trust-inc-3",
+     "irs_bmf:232232675"
+    ],
+    "group_id": "cliveden-of-the-national-trust-inc",
+    "ein": "232232675",
+    "website": "https://cliveden.org/"
+   },
+   "verdict": "publish",
+   "name": "Cliveden of the National Trust Inc",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "6401 Germantown Ave",
+     "zip": "19144",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://cliveden.org/"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned HTTP 403 Forbidden on our fetch and is listed under blocked. No facts recorded. Held back. Retry later from a different path or check for a public tours or events page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:international-ballet-exchange-3",
+     "irs_bmf:232948748"
+    ],
+    "group_id": "international-ballet-exchange",
+    "ein": "232948748",
+    "website": "https://www.internationalballet.com"
+   },
+   "verdict": "publish",
+   "name": "International Ballet Exchange",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on file (not confirmed on a group page)",
+     "address": "38 E School House Ln",
+     "zip": "19144",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://www.internationalballet.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch domain redirects to a parked for-sale page, so it is not a group site. We did not follow that redirect. No facts recorded. Held back. Check for the group's real website or social page, then retry.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
     "interests needs at least one value from the vocabulary"
    ]
   }
