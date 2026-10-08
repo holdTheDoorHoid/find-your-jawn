@@ -4,9 +4,10 @@ aka: []
 leads:
 - cultural_fund:group-motion-multi-media-dance-theater-3
 ein: null
-summary: A dance and movement group that runs workshops, retreats, and projects. Its site has a mailing
-  list and a list of past events.
-what_you_do: Join a movement workshop or retreat, or sign up for the mailing list to hear about new projects.
+summary: A dance and movement group that runs open Friday night workshops, retreats and projects. Dancers
+  and non-dancers are both welcome, and the mailing list announces new workshops.
+what_you_do: Join a Friday night movement workshop with no dance experience needed, or sign up for the
+  mailing list to hear about new workshops and projects.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -21,7 +22,8 @@ formats:
 roles:
 - hands_on
 - create
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -33,17 +35,39 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workshop dates are linked on the site but not shown in the text checked
-  days: []
-  times: []
-  recurring: null
+  text: Friday night workshops are listed one at a time on the Friday Night Workshops page, usually on
+    Friday evenings. Some are on Zoom and some are in person in Philadelphia.
+  days:
+  - fri
+  times:
+  - evening
+  recurring: true
   season: null
-locations: []
-online_ok: null
+locations:
+- label: Community Education Center
+  address: 3500 Lancaster Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Summit Presbyterian Church
+  address: 6757 Greene St (enter on Westview Ave)
+  neighborhood: null
+  planning_district: null
+  zip: '19119'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
-  level: null
-  text: Not published
-commitment: null
+  level: low
+  text: Workshops are $25 each, or $20 for students and seniors. Class cards cost less per workshop. Pay
+    through the PayPal link on the site or in cash in person.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -54,16 +78,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Join the mailing list or email company@groupmotion.org to ask about the next workshop
+  how: Join the mailing list, which gives you the Zoom link for online sessions, then sign up for an upcoming
+    Friday Night Workshop and pay through the PayPal link.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Workshops are listed for the public, and the site offers a mailing list and a contact email
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site says no dance or movement experience is needed and all are welcome, and it spells out
+    how to sign up. Drop-in is not stated.
+  what_to_expect: A workshop starts with a short guided meditation, then moves into movement you do on
+    your own, then group movement and creative exchange. Some sessions have live improvised music. Masks
+    are optional.
+  first_visit_tips:
+  - Wear clothes you can move in.
+  - For a Zoom session, join the mailing list first so you get the link.
+  - For an in-person workshop, pay ahead by PayPal or bring cash.
 contacts:
   website: http://groupmotion.org
   email: company@groupmotion.org
@@ -87,8 +118,25 @@ sources:
   - what_you_do
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://groupmotion.org/friday-night-workshops
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - online_ok
+  - cost
+  - first_step
+  - what_to_expect
+  - requirements
+  - crowd
+  - first_visit_tips
+- url: https://groupmotion.org/workshops
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

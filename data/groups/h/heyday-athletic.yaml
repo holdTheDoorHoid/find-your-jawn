@@ -4,9 +4,10 @@ aka: []
 leads: []
 ein: null
 summary: A company that runs adult sports leagues in the Philadelphia area, including basketball, soccer,
-  kickball, softball, pickleball and tennis. Players join a team or sign up as free agents for a season.
-what_you_do: Sign up for a league as a player or team, or register for a single event, then play organized
-  games.
+  kickball, softball, pickleball and tennis. You can sign up alone, with friends, or as a full team, and
+  solo players are placed on balanced teams.
+what_you_do: Sign up for a league alone, with friends, or as a team, then play organized games. The site
+  also lists pickup games, tournaments and social events.
 kind: program
 categories:
 - sports-teams
@@ -17,6 +18,7 @@ interests:
 - softball_baseball
 - tennis_pickleball
 - football_rugby
+- hockey_roller_derby
 motives:
 - social
 - enhancement
@@ -36,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Seasonal leagues. The site advertises winter league sign ups, and upcoming events run October
-    17 to November 20, 2026. League days and season dates are not stated.
+  text: Adult leagues run in seasons, and the site has a sign-up button for its winter league. League
+    nights and season dates are not stated on the site.
   days: []
   times: []
   recurring: true
@@ -46,8 +48,8 @@ locations: []
 online_ok: false
 cost:
   level: null
-  text: Price not stated on the company's site. A December 2022 Inquirer roundup listed $50 to $100 to
-    join.
+  text: Price is not stated on the site, and fees are taken at sign-up. An older press roundup (December
+    2022) listed $50 to $100 to join, so check the current fee before you register.
 commitment: seasonal
 group_size: null
 access:
@@ -62,13 +64,20 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Use the Join A Winter League or Start Playing button on the site, or register for a single event
+  how: Use the League Finder to pick a league, open its League Details page, and choose Individual. Sign
+    in, sign the waivers, and pay. Staff then place you on a balanced team.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public league sign up with no approval step stated
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can sign up online with no approval step listed, and solo players are placed on teams.
+    The site describes no beginner division and no first-visit welcome, so it does not rate higher.
+  what_to_expect: You pay and sign waivers online, then staff place you on a team by skill, position and
+    player size. Team captains collect payments from their players. The site does not describe the first
+    game night or the venue, so ask through the Contact page before you pay.
+  first_visit_tips:
+  - Choose the group of friends option if you want to be placed with people you know.
+  - Have your payment details and any coupon or gift card ready before checkout.
+  - Ask about the first game night and the venue before you pay, because the site does not list them.
 contacts:
   website: https://heydayathletic.com/
   email: null
@@ -90,11 +99,27 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - what_you_do
 - url: https://www.inquirer.com/philly-tips/join-a-sports-league-philadelphia-new-years-resolution.html
   seen: '2026-10-08'
   fields:
   - cost
-research_tier: 1
+- url: https://heydayathletic.com/philadelphia/
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - what_you_do
+  - first_step
+  - audience
+  - crowd
+- url: https://heydayathletic.com/how-to-sign-up/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - requirements
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

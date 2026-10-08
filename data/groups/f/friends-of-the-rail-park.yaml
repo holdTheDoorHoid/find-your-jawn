@@ -9,8 +9,7 @@ ein: null
 summary: A nonprofit building a three-mile greenway from old rail tracks, in three sections across ten
   neighborhoods from Northern Liberties to Fairmount Park. The park is free and open every day, and volunteers
   help with clean-ups and green-ups.
-what_you_do: Join a volunteer clean-up or green-up, take a tour of the park, or become a member. The October
-  2026 clean-up is Wed Oct 14 and the green-up is Wed Oct 21.
+what_you_do: Join a volunteer clean-up or green-up, book a guided tour, or become a member.
 kind: friends_group
 categories:
 - nature-environment
@@ -39,14 +38,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'The park is open daily, 7 am to 10 pm. Upcoming in 2026: a park tour and a hip hop dance event
-    on Sat Oct 10, the October clean-up on Wed Oct 14, the green-up on Wed Oct 21, and a Furry Friends
-    tour on Sat Oct 24.'
+  text: The park is open every day from 7 am to 10 pm. Volunteers can join clean-ups held monthly, at
+    the park and in the nearby community.
   days:
   - wed
   - sat
   times: []
-  recurring: false
+  recurring: true
   season: null
 locations:
 - label: Noble Street entrance (step-free)
@@ -70,29 +68,44 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free to visit. Membership and donations are optional.
+  text: The park is free to visit, and the self-guided audio tour of Phase One is free too. Guided tour
+    prices and membership amounts are not listed on the site.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
-  languages: []
-  notes: null
+  wheelchair: 'yes'
+  languages:
+  - en
+  - es
+  - zh
+  notes: The Noble Street entrance is step-free, with an ADA-compliant slope up to the far end of the
+    park. The Callowhill Street entrance has stairs only, and the park has no restrooms. In-person tours
+    are in English only.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: For tours, wear comfortable shoes and dress for the weather. Water is recommended.
 first_step:
-  how: Sign up for the Oct 14 volunteer clean-up on the events page (therailpark.org/news-and-events),
-    or book a tour through the site's Book a Tour page.
+  how: Sign up for a volunteer clean-up through GivePulse, or book a public tour with the Book Now button
+    on the Book a Tour page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Clean-ups and tours are listed publicly with dates, and the site gives a way to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteers join monthly clean-ups through GivePulse, and public tours are posted with dates and
+    a Book Now button. Experience and age rules for clean-ups are not stated.
+  what_to_expect: Clean-ups are volunteer work at the park and in the nearby community, held monthly.
+    The site does not say how long they run, what time they start, or what to wear, so ask before you
+    come. Tours are outdoors with a fair amount of walking, so plan for the weather and wear comfortable
+    shoes.
+  first_visit_tips:
+  - Use the Noble Street entrance, which is step-free. The Callowhill Street side is stairs only.
+  - Use a restroom before you arrive, since the park has none.
+  - For tours, bring water and wear comfortable shoes, because the tour is entirely outdoors.
+  - Public tours start at 2700 Pennsylvania Ave and end near 12th and Callowhill. Buses 49, 32, 7, 43
+    and 48 run nearby, and the Broad Street Subway is about 5 minutes on foot from the end point.
 contacts:
   website: https://www.therailpark.org
   email: friends@therailpark.org
@@ -104,7 +117,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.therailpark.org/news-and-events
+sign_of_life_url: https://www.therailpark.org
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=5
   seen: '2026-10-04'
@@ -127,13 +140,39 @@ sources:
   - contacts
   - first_step
   - audience
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://www.therailpark.org/news-and-events
   seen: '2026-10-08'
   fields:
   - schedule
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.therailpark.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.therailpark.org/faqs/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+  - first_visit_tips
+  - requirements
+  - schedule
+  - cost
+  - locations
+- url: https://www.therailpark.org/book-a-tour/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - locations
+  - first_visit_tips
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

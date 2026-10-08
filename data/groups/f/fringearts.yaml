@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Season events and workshops, including October 2026 dates: a movement workshop October 19 to
-    21, and FEASTIVAL on October 28'
+  text: Shows and workshops are listed one at a time on the events and ticket pages. The Philadelphia
+    Fringe Festival is the venue's largest event.
   days: []
   times: []
   recurring: false
@@ -51,14 +51,21 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Ticket prices are set per event on the ticket page, not listed in the text checked
+  level: paid
+  text: Ticket prices are set per show, and standard adult prices are on each ticket page. Most shows
+    have a $15 student and 25-and-under ticket, and FringeACCESS card holders can buy up to four $2 tickets.
+    Membership is $65 or $100 for 12 months, for one or two 20% off tickets per show.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The page says the building is wheelchair accessible and mobility device friendly. The main theater
+    is a steep raked space with a limited number of ground level seats for people who cannot manage stairs.
+    Assistive listening devices are offered for shows with amplified sound. Sensory kits are available
+    on request, with fidget toys, noise canceling headphones, earplugs, and weighted lap blankets. You
+    may step out during a show to a quieter area. Service animals are welcome with advance notice. The
+    page does not mention elevators, accessible restrooms, or ASL or captioned shows.
 requirements:
   act153_clearances: null
   background_check: null
@@ -67,15 +74,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket for an upcoming show, or sign up for the October 19 to 21 movement workshop, or email
-    hello@fringearts.com to ask about volunteering
+  how: Buy a show ticket online at fringearts.com, where sales are open 24 hours a day, or email Volunteer@FringeArts.com
+    if you want to volunteer and are 14 or older.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public shows and workshops are open to anyone who buys a ticket or registers; volunteer details
-    are on the site
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public shows are open to any ticket buyer, and volunteers can sign up by email, but the page
+    does not describe a beginner program or first timer event.
+  what_to_expect: A first visit is usually a ticketed show or a workshop, and the box office opens one
+    hour before showtime. Doors usually open about 30 minutes before the show, and drinks are allowed
+    in the theater. The page does not say how long a show runs, and it does not describe what a volunteer
+    shift involves beyond ushering, greeting, and handing out programs.
+  first_visit_tips:
+  - Have your ticket on your phone or printed. You can also check in at the door with your last name.
+  - Doors usually open about 30 minutes before showtime, so arrive early.
+  - Bring a Student ID if you buy the $15 student ticket.
+  - The entrance is in the middle of the Haas Biergarten, facing Race Street, under the large FringeArts
+    sign.
 contacts:
   website: https://www.fringearts.com
   email: hello@fringearts.com
@@ -101,8 +116,36 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://fringearts.com/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://fringearts.com/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://fringearts.com/accessibility/
+  seen: '2026-10-08'
+  fields:
+  - access
+- url: https://fringearts.com/your-visit/fringearts-faqs/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - cost
+  - first_step
+- url: https://fringearts.com/box-office/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://fringearts.com/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

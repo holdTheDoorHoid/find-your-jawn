@@ -2,12 +2,15 @@ id: friends-of-woodside-park
 name: Friends of Woodside Park
 aka:
 - Woodside Park
+- Wynnefield Heights Community Association
+- Wynnefield Heights Civic Association
 leads:
 - city_friends:859
 ein: null
-summary: Neighbors who look after Woodside Park in Philadelphia. We have not yet found a public page for
-  the group with current activities.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
+summary: Neighbors who look after Woodside Park in Philadelphia. The City lists a Friends group for the
+  park, but we have not found a page that describes its current activities.
+what_you_do: The City lists a Friends group for this park. Ask the City's Parks and Recreation stewardship
+  office how to join its cleanups or other work days.
 kind: friends_group
 categories:
 - nature-environment
@@ -19,6 +22,7 @@ formats:
 - side_by_side
 roles:
 - hands_on
+- organize
 crowd:
 - neighbors
 bridging: null
@@ -32,11 +36,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Community meetings on Zoom each month. The September 2026 meeting was on September 10 from 6:30
+    to 8 pm.
   days: []
-  times: []
-  recurring: null
-  season: null
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Woodside Park
   address: 3918 Conshohocken Ave
@@ -47,11 +53,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: Membership and donations are offered. The membership cost is not stated.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -65,13 +71,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Email pprstewardship@phila.gov, the City's stewardship office, to ask whether the Friends group
+    for Woodside Park is active and how to join.
+  drop_in: true
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: We found no page for the group, so the way in is unclear. The only route we know is an email
+    to the City's stewardship office.
+  what_to_expect: We could not find a page that describes this group's meetings or cleanups, so we cannot
+    say what a first visit is like. Confirm with the stewardship office that the group is active before
+    you plan a visit.
+  first_visit_tips:
+  - The park is at 3918 Conshohocken Ave.
 contacts:
   website: https://www.wynnefieldheightsca.org
   email: pprstewardship@phila.gov
@@ -90,7 +101,26 @@ sources:
   - locations
   - contacts.website
   - contacts.email
-research_tier: 1
+- url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/park-friends-groups/park-friends-group-list/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+- url: https://www.wynnefieldheightsca.org/
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - contacts.website
+  - first_step
+- url: https://www.wynnefieldheightsca.org/event-details-registration/community-meeting
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts.email
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

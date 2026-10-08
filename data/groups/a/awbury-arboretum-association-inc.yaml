@@ -4,6 +4,7 @@ aka:
 - Awbury Arboretum Association, Inc.
 - Awbury Arboretum
 - Awbury Food Forest
+- Awbury Arboretum Association
 leads:
 - cultural_fund:awbury-arboretum-association-inc-3
 - irs_bmf:222614286
@@ -47,7 +48,7 @@ schedule:
   times:
   - morning
   recurring: false
-  season: null
+  season: year_round
 locations:
 - label: Food forest at Awbury Arboretum
   address: 6336 Ardleigh St
@@ -165,11 +166,21 @@ sources:
   fields:
   - contacts.email
   - contacts.phone
+  - first_step
+  - contacts
 - url: https://awbury.org/contact/
   seen: '2026-10-08'
   fields:
   - contacts.phone
   - locations
+- url: https://awbury.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - contacts
+  - cost
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

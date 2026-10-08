@@ -1,22 +1,36 @@
 id: project-short
-name: Project Short
+name: Project SHORT
 aka: []
 leads:
 - irs_990n:850557753
 - irs_bmf:850557753
 ein: '850557753'
-summary: null
-what_you_do: null
+summary: A student-led nonprofit that gives free admissions help to STEM students from under-resourced
+  backgrounds who are applying to medical or graduate school. Each applicant is matched one on one with
+  a graduate student mentor in their field.
+what_you_do: Mentees get at least two rounds of feedback on application materials such as personal statements,
+  plus practice interviews. Mentors are graduate students who give that help in their own field.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- science-learning
+- careers-skills-professional
+interests:
+- stem_outreach
+- skills_volunteering
+motives:
+- career
+- values
+formats:
+- conversation
+- learn_skill
+roles:
+- help_teach
+crowd:
+- students
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: students
   school: null
   min_age: null
   max_age: null
@@ -25,10 +39,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Applications are taken on a rolling basis. The site says events are held regularly but lists no
+    dates.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -49,11 +64,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free, as the site states for its mentoring services.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +82,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Apply as a student or as a mentor through the Apply page on the group's site. Applications are
+    taken on a rolling basis.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: You apply before you are matched, so the way in is clear but starts with an application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.project-short.com/
-  email: null
+  email: contact@project-short.com
   phone: null
   contact_name: Steven Zhou
-  social: []
+  social:
+  - https://www.instagram.com/project.short/?hl=en
+  - https://twitter.com/projectshort?lang=en
+  - https://www.facebook.com/projectSHORT/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.project-short.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +118,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.project-short.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

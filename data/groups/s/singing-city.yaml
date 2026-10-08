@@ -6,10 +6,11 @@ leads:
 - cultural_fund:singing-city-3
 - irs_bmf:231516921
 ein: '231516921'
-summary: An auditioned volunteer choir in Philadelphia that rehearses on Tuesday nights at Friends Center
-  from September through May.
-what_you_do: Sing in weekly Tuesday rehearsals, with occasional all-day Saturday sessions before major
-  performances. Members need to live within about 50 miles of the city.
+summary: A Philadelphia choral group that says it has sung together since 1948. It has an adult choir
+  that rehearses weekly from September through May, and a free youth program called Next Generation for
+  young singers.
+what_you_do: Adults audition for the choir, then rehearse and sing in its concerts. Young singers can
+  join the free weekly youth program.
 kind: nonprofit
 categories:
 - music
@@ -19,15 +20,15 @@ motives:
 - social
 - enhancement
 formats:
-- perform_make_together
 - team_play
+- perform_make_together
 roles:
-- hands_on
+- create
 crowd:
-- all_adults
+- all_ages
 bridging: null
 audience:
-  open_to: invite
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -36,8 +37,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tuesdays 7:20 to 9:50 pm, September through May, at Friends Center on Cherry Street. Occasional
-    all-day Saturday rehearsals before major performances.
+  text: The adult choir rehearses Tuesday evenings, 7:20 to 9:50 pm, at Friends Center from September
+    through May, with occasional Saturday all-day rehearsals before major concerts. The free youth program,
+    Next Generation, meets weekly at Temple Music Prep. The site gives its start as September 12 with
+    no year or weekday.
   days:
   - tue
   times:
@@ -45,14 +48,23 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Friends Center
+- label: Friends Center (adult rehearsals)
   address: 1501 Cherry Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Temple Music Prep (youth program)
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: true
+  in_city: null
   transit: null
 online_ok: null
 cost:
@@ -73,17 +85,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Submit the Audition Request Form on singingcity.org. Auditions are held every August and by appointment
-    during the season, and the page says they are by invitation only.
+  how: 'Youth: sign up for Next Generation through the Temple link on the site. Adults: send the audition
+    request form linked on the audition page. That page says the 2026 to 2027 season was taking tenor
+    and bass singers.'
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: You need an audition request and approval before joining, so it is not open to walk-ins, though
-    the request form is a clear first step.
+  basis: Adult auditions are by invitation after a request form, which closes the adult route to walk-ins.
+    The youth program has open registration.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://singingcity.org/
+  website: https://www.singingcity.org/
   email: info@singingcity.org
   phone: 267-519-5322
   contact_name: null
@@ -128,8 +141,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+- url: https://www.singingcity.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - locations
+  - status
+- url: https://www.singingcity.org/auditions/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

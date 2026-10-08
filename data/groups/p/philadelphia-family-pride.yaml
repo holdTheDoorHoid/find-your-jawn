@@ -5,45 +5,59 @@ leads:
 - irs_990n:233022581
 - irs_bmf:233022581
 ein: '233022581'
-summary: null
-what_you_do: null
+summary: A membership group for LGBTQ+ families in the Philadelphia area. It hosts get-togethers and family
+  events, runs resource fairs, and offers classes for people thinking about becoming parents.
+what_you_do: Come to the informal get-togethers and family events, take a prospective parent class, or
+  join as a member.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- social-meetups
+- kids-youth-mentoring
+interests:
+- lgbtq_social
+- parent_playgroups
+- foster_care_support
+motives:
+- social
+- values
+formats:
+- conversation
+- one_off_event
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - lgbtq
+  - parents
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events and informal get-togethers are posted on the website as they are planned.
   days: []
   times: []
   recurring: null
-  season: null
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 31848
+- label: Greater Philadelphia region (events vary)
+  address: null
   neighborhood: null
-  planning_district: university_southwest
-  zip: '19104'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
-  in_city: true
+  in_city: null
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -58,23 +72,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join as a member, or check the upcoming events on the site and come to one
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Public events and resource pages can be read without signing in, and joining is a clear button
+    on the site. The page does not say which events need membership.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.philadelphiafamilypride.org
+  website: https://www.philadelphiafamilypride.org
   email: null
   phone: null
   contact_name: Marc Berman
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://www.philadelphiafamilypride.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.philadelphiafamilypride.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

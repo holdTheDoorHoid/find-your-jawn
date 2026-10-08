@@ -38,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free summer concerts on Wednesdays at 7:30 pm, plus a children's party, a Love Your Park cleanup
-    in May, and a Halloween pumpkin contest. The events page has the dates.
+  text: Free summer concerts on Wednesdays at 7:30 pm, with rain dates the following Thursday. The group
+    also holds a spring cleanup and family events.
   days:
   - wed
   times:
@@ -71,18 +71,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email kahnparkphilly@gmail.com to ask about the Halloween pumpkin contest or how to help the garden
-    team
+  how: Email kahnparkphilly@gmail.com to ask about the garden team or the next cleanup, then come to a
+    free Wednesday summer concert at 7:30 pm. The 2026 concert series ran through Sept 9, so watch the
+    events page for next summer.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Free public concerts and events are open to anyone, and the site gives an email address for questions.
-    No membership process is described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The free concerts are open to anyone and list no sign-up, and the site gives an email address
+    for questions. No page says newcomers are welcome by name.
+  what_to_expect: Concerts run Wednesday evenings from 7:30 pm and are free, with rain dates the following
+    Thursday. You can buy a raffle ticket during the show, with prizes from local restaurants and merchants,
+    and the money goes to the park's maintenance fund. The site does not say how long a concert lasts
+    or what to bring.
+  first_visit_tips:
+  - Concerts start at 7:30 pm, so arrive a little early to find a spot.
+  - If the forecast is bad, look for the rain date on the following Thursday.
+  - The park is at 11th and Pine streets. The site gives no parking or transit details, so check a transit
+    app before you go.
 contacts:
   website: https://kahnpark.org
   email: kahnparkphilly@gmail.com
@@ -112,6 +120,7 @@ sources:
   - cost
   - status
   - last_sign_of_life
+  - first_step
 - url: https://kahnpark.org
   seen: '2026-10-08'
   fields:
@@ -119,7 +128,14 @@ sources:
   - first_step
   - crowd
   - summary
-research_tier: 1
+  - cost
+  - requirements.kids_ok
+- url: https://kahnpark.org/garden
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

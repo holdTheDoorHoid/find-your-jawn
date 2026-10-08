@@ -1,0 +1,149 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-19",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 21,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://theijss.com",
+   "status": null,
+   "note": "DNS lookup failed (ENOTFOUND) for theijss.com and www.theijss.com on 2026-10-08"
+  },
+  {
+   "url": "https://joansamuels.org",
+   "status": null,
+   "note": "DNS lookup failed (ENOTFOUND) for joansamuels.org and www.joansamuels.org on 2026-10-08"
+  },
+  {
+   "url": "https://learningstationacademy.org",
+   "status": null,
+   "note": "DNS lookup failed (ENOTFOUND) for both the www and bare host on 2026-10-08"
+  }
+ ],
+ "notes": "Verdicts: 6 publish with full records (My Brother's Keeper Cares, New Hope Philly, No More Dysphoria, Ordinarie Heroes, PA ACE Women's Network, Philadelphia Family Pride); 5 publish with status unknown and held back, with no summary, categories or interests (Institute of Jewish Spirituality and Society, Joan Samuels Foundation, Learning Station Academy CDC, Literacy and More Inc, New Beginning in Christ Deliverance Ministry); 1 out_of_area (ICIAM); 3 not_a_group (ILMUNC, Pathfinder Strategic Services, Pennsylvania Sibling Support Network). Searches: 2 of 2 used. One went to Pennsylvania Sibling Support Network (its batch field was a name, not an address; the search led to pssn.org). The other went to Learning Station Academy CDC (no page found). The budget ran out before Joan Samuels, the Institute of Jewish Spirituality and Society, Literacy and More and New Beginning could be searched, so those four stay unknown and need a second pass. Fetches: 21 of 60 used. Checked and dropped: Sibling Leadership Network (siblingleadership.org) is a national network with no Pennsylvania or Philadelphia chapter listed, so it is not a Philadelphia group. Batch fields that are not web addresses were treated as missing: 'Literacy and More Inc.', 'Pennsylvania Sibling Support', and the email address on New Beginning in Christ. Personal contact names from the IRS batch were not recorded. Joan Samuels and the Institute of Jewish Spirituality may be private foundations or nonprofits with no public way in; a reviewer should check before they go live.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:813097220",
+     "irs_bmf:813097220"
+    ],
+    "group_id": "institute-of-jewish-spirituality-and-society",
+    "ein": "813097220"
+   },
+   "verdict": "publish",
+   "name": "Institute of Jewish Spirituality and Society",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website (theijss.com) did not resolve: DNS lookup failed for theijss.com and www.theijss.com on 2026-10-08. No public page was read, so there is no summary, categories or interests, and the record is held back. The two searches went to other groups (Pennsylvania Sibling Support Network and Learning Station Academy), so this name was not searched. IRS address 4032 Spruce Street, 19104 (from the IRS record only). Needs a manual check for a live site before it can be published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:934573107",
+     "irs_bmf:934573107"
+    ],
+    "group_id": "joansamuels-foundation",
+    "ein": "934573107"
+   },
+   "verdict": "publish",
+   "name": "Joan Samuels Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website (JoanSamuels.org) did not resolve: DNS lookup failed for joansamuels.org and www.joansamuels.org on 2026-10-08. Nothing public was read, so there is no summary, categories or interests, and the record is held back. The name suggests a foundation, which may be a private grant-making foundation (out of scope). Check before publishing. Not searched: the search budget was spent on other groups. IRS address 511 S 45th St, 19104 (from the IRS record only).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823728883",
+     "irs_bmf:823728883"
+    ],
+    "group_id": "learning-station-academy-cdc",
+    "ein": "823728883"
+   },
+   "verdict": "publish",
+   "name": "Learning Station Academy CDC",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website (www.learningstationacademy.org) did not resolve: DNS lookup failed on 2026-10-08, with and without www. One search for the name with Philadelphia and CDC found no page for this group, only unrelated child care centers, so nothing public was read. No summary, categories or interests were written, so the record is held back. Batch alias: Learning Station Academy. IRS address 5658 Elmwood Ave, 19143 (from the IRS record only). Needs a manual check for the group's real name and a live site.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:874128196",
+     "irs_bmf:874128196"
+    ],
+    "group_id": "literacy-and-more-inc",
+    "ein": "874128196"
+   },
+   "verdict": "publish",
+   "name": "Literacy and More Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field holds the group's name, not a web address, so it was treated as missing. The search budget went to other groups, so this name was not searched. Nothing public was read, so there is no summary, categories or interests, and the record is held back. IRS address 818 N Union St, 19104 (from the IRS record only). Needs a search for a live site or listing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233052619",
+     "irs_bmf:233052619"
+    ],
+    "group_id": "new-beginning-in-christ-deliverance-ministry",
+    "ein": "233052619"
+   },
+   "verdict": "publish",
+   "name": "New Beginning in Christ Deliverance Ministry",
+   "kind": "congregation",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field holds an email address (a personal-looking AOL address), not a web address. It was treated as missing and not recorded as a contact. The search budget was spent on other groups, so this name was not searched. Nothing public was read, so there is no summary, categories or interests, and the record is held back. IRS address 5433 Baltimore Ave, 19143 (from the IRS record only). Batch alias: New Begining in Christ.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

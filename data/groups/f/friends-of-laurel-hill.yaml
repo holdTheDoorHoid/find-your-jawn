@@ -8,8 +8,8 @@ ein: null
 summary: A nonprofit that helps look after two historic cemeteries, Laurel Hill in Philadelphia and West
   Laurel Hill in Bala Cynwyd. Volunteers help restore monuments and grounds, and the group runs tours
   and events.
-what_you_do: Volunteers help with grounds upkeep, restoration, and the group's education and outreach
-  programs. The cemetery is free to visit every day.
+what_you_do: Volunteers help with events, tour guiding, archive and records work, arboretum plantings
+  and special projects. Volunteers must be 18 or older, and students can arrange internships.
 kind: friends_group
 categories:
 - history-heritage-preservation
@@ -23,6 +23,7 @@ formats:
 - side_by_side
 roles:
 - hands_on
+- help_teach
 crowd:
 - all_ages
 bridging: null
@@ -36,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Gates are open 7 am to 7 pm from spring through fall, and 7 am to 5 pm in winter. The support
-    page we read lists no specific volunteer dates.
+  text: Grounds open 7 am to 7 pm from spring through fall, and 7 am to 5 pm in winter. Volunteers pick
+    the days and mornings or afternoons they can come, and the page lists no set shifts.
   days:
   - mon
   - tue
@@ -51,7 +52,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Laurel Hill Cemetery
+- label: Laurel Hill Cemetery (East)
   address: 3822 Ridge Ave
   neighborhood: null
   planning_district: null
@@ -72,7 +73,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Admission is free every day. The group is supported by donations, memberships and sponsorships.
+  text: Grounds admission is free every day. Friends memberships start at $25 a year for ages 21 to 40,
+    or $50 a year for one person. Private tours are paid, and the tours page lists no public tour price.
 commitment: ongoing_role
 group_size: null
 access:
@@ -87,24 +89,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up on the volunteer page at laurelhillphl.com/support/volunteer
+  how: Start the online volunteer application at laurelhillphl.com/support/volunteer, or email volunteers@laurelhillphl.com
+    to join the list for events and planting days.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Volunteers of all ages and backgrounds are welcome through a public sign-up page, but the page
-    describes no beginner program.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteering needs an online application with a membership step, and the page describes no beginner
+    program. Visitors can walk the grounds free, so a first visit needs no application.
+  what_to_expect: The application asks which areas interest you, such as tour guiding, archives, events
+    or planting, and which days and times you can come. For a first look, walk the grounds during gate
+    hours or join one of the dated public tours on the tours page. The page does not mention an orientation,
+    so ask what a new volunteer is trained to do.
+  first_visit_tips:
+  - 'Check gate hours first: 7 am to 7 pm from spring through fall, and 7 am to 5 pm in winter.'
+  - Laurel Hill East is in Philadelphia at 3822 Ridge Ave, and West Laurel Hill is in Bala Cynwyd, so
+    confirm which cemetery a tour or event is at.
+  - The free audio tour app covers Laurel Hill East and lets you plan a walk on your own.
+  - Questions about tours go to tours@laurelhillphl.com or 215.228.8200.
 contacts:
   website: https://www.laurelhillphl.com
   email: info@laurelhillphl.com
   phone: 610-668-9900
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/laurelhillphl
+  - https://www.instagram.com/laurelhillphl
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.laurelhillphl.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://laurelhillphl.com/plan-your-visit/tours/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=5
   seen: '2026-10-04'
@@ -121,8 +134,44 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://laurelhillphl.com/plan-your-visit/tours/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+  - first_visit_tips
+- url: https://www.laurelhillphl.com/support/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - requirements
+- url: https://www.laurelhillphl.com/support/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://laurelhillphl.com/plan-your-visit/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+  - locations
+- url: https://laurelhillphl.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -6,15 +6,16 @@ leads:
 - city_friends:850
 - city_friends:854
 ein: null
-summary: Neighbors who look after Wissahickon Neighbors Park, a City park in Philadelphia. We have not
-  yet found a public page for the group with current activities.
-what_you_do: Sign up for park volunteer opportunities listed on the civic association's park updates page.
-  The site does not describe specific tasks.
+summary: Neighbors who look after Wissahickon Neighbors Park and its Woodland, a green space in the neighborhood.
+  They meet each month to clean up and restore the Woodland, through the Wissahickon civic association.
+what_you_do: Join the monthly Woodland cleanup on the second Sunday, 10 am to noon. The group also holds
+  park events, such as Love Your Park days and art markets.
 kind: friends_group
 categories:
 - nature-environment
 interests:
 - friends_of_park
+- park_cleanup
 motives:
 - values
 formats:
@@ -34,10 +35,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Woodland cleanups on the second Sunday of each month, 10 am to noon. Civic association neighborhood
+    meetings on the third Thursday of each month, 7 to 8 pm, at Pilgrim Church, 3815 Terrace St.
+  days:
+  - sun
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Wissahickon Neighbors Park
@@ -52,7 +58,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated for the park group. The civic association takes membership and donations.
+  text: The page gives no fee for the cleanups. Civic association membership is $25 a year for an individual,
+    $40 for a household, $100 for a business, and $10 for a senior, student, or low-income member. Membership
+    lets you vote on neighborhood matters.
 commitment: null
 group_size: null
 access:
@@ -67,15 +75,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the civic association's Join page or Contact Us page to ask how to sign up for park volunteer
-    days
-  drop_in: null
+  how: Sign up for the park email list on the civic association's park updates page, then come to the
+    monthly Woodland cleanup on the second Sunday, 10 am to noon.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The way in runs through the civic association's membership, and the site does not say whether
-    dues apply or whether meetings are open to all
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The park updates page gives a fixed monthly time and place for cleanups and does not say membership
+    is needed to volunteer.
+  what_to_expect: A cleanup runs two hours on the second Sunday of the month, at the Woodland, and the
+    page describes it as cleanup and restoration work. The page does not list the tasks or what to bring.
+    The civic association's monthly meeting is on the third Thursday, 7 to 8 pm, at Pilgrim Church, and
+    the page does not say whether non-members can attend.
+  first_visit_tips:
+  - The page calls the cleanup place 'the Woodland,' not the park, so confirm the meeting spot by email
+    first.
+  - Sign up for the email list to get reminders about cleanup days.
 contacts:
   website: https://www.wissnca.com
   email: fonwp-group@wissnca.com
@@ -102,8 +116,27 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
-confidence: low
+  - schedule
+  - cost
+- url: https://wissnca.com/wissahickon-neighbors-park-updates
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://wissnca.com/join-the-wnca
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://wissnca.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

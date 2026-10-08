@@ -9,21 +9,24 @@ leads:
 ein: '222599559'
 summary: A historic village in the Wissahickon area with a 1707 homestead, several historic houses, an
   arboretum, and a small museum. Visitors take tours, and volunteers and members help keep the site going.
-what_you_do: Volunteer on site, become a member, take a Saturday tour, or come to the free Second Saturday
-  museum visits.
+what_you_do: Pull invasive plants on Wednesday morning volunteer days, take a Saturday tour of the homestead,
+  become a member, or come to the free Second Saturday museum visits.
 kind: nonprofit
 categories:
 - history-heritage-preservation
+- nature-environment
 interests:
 - historic_site_volunteering
 - museum_volunteering
 - preservation_architecture
+- habitat_restoration
 motives:
 - understanding
 - values
 formats:
 - behind_the_scenes
 - one_off_event
+- side_by_side
 roles:
 - hands_on
 - help_teach
@@ -41,11 +44,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tours on Saturdays from Memorial Day through Labor Day, 12 to 3 pm, starting on the hour. Free
-    Second Saturday museum visits. Fall Fest from 5 to 8 pm (the event date is not on the page)
+  text: Homestead tours run on select Saturdays from Memorial Day to Labor Day, noon to 3 pm, starting
+    on the hour. Volunteer work days are on Wednesdays, 9 am to noon. Second Saturday museum visits are
+    free.
   days:
+  - wed
   - sat
   times:
+  - morning
   - daytime
   recurring: true
   season: null
@@ -62,8 +68,9 @@ locations:
 online_ok: false
 cost:
   level: low
-  text: Tours $10 a person (children under 8 free); Second Saturday museum visits are free; Fall Fest
-    is pay what you can
+  text: Homestead tours are $10 a person, with children under 8 free, per the home page. The visit page
+    lists pay what you wish for public tours during events. Second Saturday museum visits are free. Private
+    tours are $20 a person, with a $50 minimum for groups of 1 to 3.
 commitment: drop_in
 group_size: null
 access:
@@ -76,20 +83,29 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Clothes for outdoor work, bug repellent, and water. Tools and gloves are provided on volunteer
+    days.
 first_step:
-  how: Take a Saturday tour from 12 to 3 pm ($10 a person), then ask about volunteering or membership
-    through the Volunteer page on rittenhousetown.org
+  how: Take a tour of the 1707 homestead on a select Saturday from noon to 3 pm, starting on the hour.
+    If you want to help, email the volunteer address on the volunteer page to join a Wednesday morning
+    work day.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Tours and museum visits are open to the public, and the site lists volunteer and membership options
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Tours and Second Saturday visits are open to the public, and the volunteer page gives a clear
+    email route for joining a work day.
+  what_to_expect: A public homestead tour runs about 45 minutes and starts on the hour. Wednesday volunteer
+    mornings, 9 am to noon, are outdoor work pulling invasive plants so native species can return across
+    the 20-acre site. Tools and gloves are provided.
+  first_visit_tips:
+  - Arrive 5 to 10 minutes early at the Homestead entrance.
+  - Parking is limited and on site. The main entrance is on Wissahickon Avenue.
+  - Children under 8 go free on tours, according to the home page.
+  - On volunteer mornings, bring water and bug repellent, since the work is outdoors.
 contacts:
   website: https://www.rittenhousetown.org/
   email: information@rittenhousetown.org
-  phone: null
+  phone: (215) 438-5711
   contact_name: null
   social: []
   calendar_feed: null
@@ -128,8 +144,30 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: high
+- url: https://www.rittenhousetown.org/visit/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - locations
+- url: https://www.rittenhousetown.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - requirements
+  - first_step
+- url: https://www.rittenhousetown.org/visit/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.rittenhousetown.org/special-events/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,136 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-17",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [
+  {
+   "name": "Justinian Society of Philadelphia",
+   "url": "https://www.justinian.org/foundation.php",
+   "note": "Parent bar association named on the Justinian Foundation's page (attorneys of Italian ancestry, membership application, 2026 dated events listed). Read on that page only; needs its own record."
+  },
+  {
+   "name": "Covenant House (Kensington)",
+   "url": null,
+   "note": "Named in a 2024 news article as a place Redeemed for a Cause delivered gifts to. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://sisterhood4vets.com",
+   "status": 522,
+   "note": "Origin error on three attempts; Retry-After 120 seconds. No page read."
+  },
+  {
+   "url": "https://www.phillytrib.com/religion/tasker-street-missionary-baptist-revitalizing-through-youth-and-evangelism/article_f27433fe-37c7-5c4d-a9a4-4843baa32f88.html",
+   "status": 429,
+   "note": "Rate limited on two attempts. Article seen only as a search excerpt, so not used for a summary."
+  },
+  {
+   "url": "https://www.redeemedforacause.org",
+   "status": null,
+   "note": "TLS certificate names only bluehost.com, so the fetch tool refused the page (tried with and without www). Not a bot check."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, both on Tasker Street and Redeemed for a Cause. Temple Community and Economic Development Corporation and Al-Hanifiyya Haven were not searched because the cap was reached, so both are unknown with no summary. Sisterhood 4 Vets was unreadable (HTTP 522 three times). Tasker Street's article was rate limited (HTTP 429) on two attempts. Redeemed for a Cause's own website would not load, so its record rests on two CBS Philadelphia news articles (February 2024 and February 2020). Three IRS website fields were not web addresses (an accounting firm, a CPA firm and a stray character), and those were treated as missing. Rate limiting hit one domain at a time, not many. Verdict counts: 12 publish (4 with unknown status and no summary), 1 hide (private), 1 hide (out_of_scope), 1 out_of_area.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461903121",
+     "irs_bmf:461903121"
+    ],
+    "group_id": "sisterhood-4-vets-inc",
+    "ein": "461903121",
+    "website": "https://sisterhood4vets.com"
+   },
+   "verdict": "publish",
+   "name": "Sisterhood 4 Vets",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The group's website returned HTTP 522 (Retry-After 120 seconds) on three attempts spread over the run, so no page was read. Nothing is known beyond the IRS listing (1516 S Cleveland St). Needs a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232444692",
+     "irs_bmf:232444692"
+    ],
+    "group_id": "tasker-street-baptist-church-commun-ity-outreach-corporation",
+    "ein": "232444692",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Tasker Street Baptist Church Community Outreach",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held an accounting firm's name, not a web address, so no site was fetched. One search found an undated Philadelphia Tribune article about Tasker Street Missionary Baptist Church (phillytrib.com, article f27433fe). Its search excerpt names a Community Outreach Corporation with an after-school mentoring and homework program, job-search help by appointment, and a monthly nursing home ministry. The article returned HTTP 429 twice, so no summary was written from it. Identity not confirmed: the article says Missionary Baptist, the IRS says Baptist, and a church directory lists 2010 Tasker Street while the IRS lists 2018 Tasker St. Needs a dated source before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:222559057",
+     "irs_bmf:222559057"
+    ],
+    "group_id": "temple-community-and-economic-development-corporation",
+    "ein": "222559057",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Temple Community and Economic Development Corporation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held a CPA firm's name, not a web address, so no site was fetched. Not searched: the two-search budget was spent on Tasker Street and Redeemed for a Cause. The IRS listing gives 1327 S 19th St, unit 35. Needs a search or a site before any summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:830573396",
+     "irs_bmf:830573396"
+    ],
+    "group_id": "al-hanifiyya-haven",
+    "ein": "830573396",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Al-Hanifiyya Haven",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held a stray character, not a web address, so no site was fetched. Not searched: the two-search budget was spent on Tasker Street and Redeemed for a Cause. IRS listing address: 5512 Belmar Ter.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

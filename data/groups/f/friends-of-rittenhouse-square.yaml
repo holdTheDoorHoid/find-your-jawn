@@ -9,8 +9,9 @@ ein: '232007694'
 summary: A nonprofit that helps look after Rittenhouse Square in Center City. Donors can adopt a bench
   or sponsor a lawn to help pay for upkeep, and the group runs public events, including a fall craft show
   and a Halloween family day.
-what_you_do: Volunteer through the group's volunteer page, become a member, adopt a bench, sponsor a lawn,
-  or come to a public event.
+what_you_do: Sign up through the volunteer form for the Wednesday morning drop-in, where you help with
+  fall garden and leaf work. You can also become a member, adopt a bench, sponsor a lawn, or come to a
+  public event.
 kind: friends_group
 categories:
 - nature-environment
@@ -37,12 +38,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'October 2026 events are listed: a fall fine craft show on Oct 9 to 11 (11 am to 5 pm) and Halloween
-    Family Fun on Oct 24 (11 am to 2 pm). The events page gives no location or cost for either.'
-  days: []
-  times: []
-  recurring: false
-  season: null
+  text: Volunteer drop-in on Wednesdays, 9:30 to 11:30 am at the Guard House, through the end of the fall
+    season. Public events are listed on the events calendar as they are set.
+  days:
+  - wed
+  times:
+  - morning
+  recurring: true
+  season: fall
 locations:
 - label: Rittenhouse Square
   address: 1800 Walnut St
@@ -55,9 +58,11 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership, donation and event costs are not listed.
-commitment: null
+  level: low
+  text: Memberships start at $35 for students and $50 for young friends (ages 21 to 40). Individual is
+    $100, family $250, and a $25 add-on covers a pet. The membership page says non-members can still get
+    involved. Event prices are not listed.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -71,14 +76,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Go to the Halloween Family Fun on Oct 24 (11 am to 2 pm) or the fall craft show (Oct 9 to 11),
-    or sign up through the volunteer page on the group's website
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the Volunteer Registration Form on the group's volunteering page, then come to the Wednesday
+    9:30 am drop-in at the Guard House.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public events are listed with dates, and the group has a public volunteer page
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The group has a public volunteer form and a fixed weekly drop-in, but the page does not say beginners
+    are welcome or that training is given.
+  what_to_expect: The drop-in runs 9:30 to 11:30 am on Wednesdays at the Guard House. You work alongside
+    staff on fall tasks such as gardening, pulling out summer plants, weeding and leaf cleanup. The page
+    does not say what to wear or bring.
+  first_visit_tips:
+  - Complete the Volunteer Registration Form before your first visit, since signup is required.
+  - Meet at the Guard House when the drop-in starts at 9:30 am.
+  - The group lists public events on its calendar, such as a fall craft show and a Halloween family day,
+    if you want a social first visit.
 contacts:
   website: https://www.friendsofrittenhouse.org
   email: info@friendsofrittenhouse.org
@@ -89,7 +101,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.friendsofrittenhouse.org/events/
+sign_of_life_url: https://www.friendsofrittenhouse.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -119,7 +131,24 @@ sources:
   - what_you_do
   - cost
   - contacts
-research_tier: 1
+- url: https://www.friendsofrittenhouse.org/volunteering
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://www.friendsofrittenhouse.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.friendsofrittenhouse.org/join-us
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

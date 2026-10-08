@@ -39,16 +39,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Cleanups and volunteer workdays on weekends, mostly in spring and fall, plus a yearly fundraiser.
-    The latest dated items were a May 16, 2026 cleanup and a May 29, 2026 fundraiser.
+  text: Volunteer workdays run through the year, most on weekends and some on weekday mornings. The group
+    lists its dates on its 2026 workday page, and some dates are still to be announced.
   days:
+  - wed
   - sat
   - sun
   times:
   - morning
-  - evening
   recurring: true
-  season: spring
+  season: year_round
 locations:
 - label: Mermaid Park (usual start point)
   address: 7645 Germantown Ave
@@ -62,9 +62,9 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: No fee is listed for volunteer workdays. Membership has a suggested donation of about $50. Fundraiser
-    tickets start at $40 on a sliding scale.
-commitment: drop_in
+  text: No fee is listed for volunteer workdays. The group suggests a donation of about $50 to join its
+    group.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -76,17 +76,27 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Tools and gloves are provided, and you may bring your own. Clothing and other items are not stated.
 first_step:
-  how: Register for the next volunteer workday using the link posted with that event, or email info@cresheimtrail.org
-    with questions
+  how: Check the Volunteer Workdays 2026 page for the next date, then email info@cresheimtrail.org to
+    ask how to sign up.
   drop_in: true
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Workdays are open to volunteers and the group says how to register for each one, though its site
-    does not describe a general sign up process.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Workdays are open to volunteers of every skill level, and the group gives an email address to
+    ask how to join. The page does not describe a sign-up step, so this is not rated higher.
+  what_to_expect: A workday is outdoor trail work, such as litter pickup, pulling invasive plants, planting
+    trees and shrubs, clearing sightlines, and trail repairs, and the group says there is work for every
+    skill level. Tools and gloves are provided, and you may bring your own. Some workdays start at 9 am,
+    and dates can change.
+  first_visit_tips:
+  - Email info@cresheimtrail.org before a first workday to ask about sign up and the meeting spot, since
+    not every date lists one.
+  - Mermaid Park at 7645 Germantown Ave is the usual start point, but check each date because some list
+    a different meeting place.
+  - Tools and gloves are provided, so you do not need your own, though you may bring them.
+  - Check the workday page for weather cancellations before you travel. The group calls off work only
+    in severe weather.
 contacts:
   website: https://www.cresheimtrail.org
   email: info@cresheimtrail.org
@@ -96,7 +106,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.cresheimtrail.org/volunteer-workdays-2026/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -130,8 +140,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.cresheimtrail.org/volunteer-workdays-2026/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - locations
+  - requirements
+  - cost
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

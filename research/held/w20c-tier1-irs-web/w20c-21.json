@@ -1,0 +1,171 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-21",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 23,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 15 IRS groups in this batch were checked. Verdicts: 9 publish (3 with a summary and status probably_active: Wesley Proctor Ministries, Widows Mite, Blessings Across Borders; 6 unknown and held back: US Federated Foundation, We Never Say Never Association, Womxn Beyond Borders, Grace Canopy Ministries, GW 78 Cares, Queen Mary Ministry USA), 4 out_of_area (BrightAid Foundation, Dialogue Center for Resilience and Empowerment, Liberia Education Project, Prayers Unite the World), 1 not_a_group (Mini Montessori Academy), 1 hide private (Greenberg Home and School Association). Budget: both WebSearch calls used, which hit the cap; 23 fetches used. Unresolvable domains: usfederateddevco.com, gw78cares.com, queenmaryministyusa.org (a corrected spelling also failed). The We Never Say Never domain redirects to an unrelated piano business. Womxn Beyond Borders returned empty pages on all three tries. BrightAid returned only its page title, so its verdict is thin. No 403s, bot checks or rate limiting were seen. Owner decision worth a look: single-school parent associations are hidden under the booster-club rule in the brief.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863757473",
+     "irs_bmf:863757473"
+    ],
+    "group_id": "us-federated-foundation-inc",
+    "ein": "863757473",
+    "website": "https://usfederateddevco.com"
+   },
+   "verdict": "publish",
+   "name": "US Federated Foundation",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://usfederateddevco.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Legal name US Federated Foundation Inc. The website on the IRS list did not resolve on two tries (bare domain and www), and no other public page turned up. No summary, categories or interests were written, so the record is held back. The name suggests a foundation, but its type is unknown, so it was not hidden as private. Needs a manual check before any further research.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:203273681",
+     "irs_bmf:203273681"
+    ],
+    "group_id": "we-never-say-never-association-incorporated",
+    "ein": "203273681",
+    "website": "https://www.weneversaynever.org"
+   },
+   "verdict": "publish",
+   "name": "We Never Say Never Association",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.weneversaynever.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Legal name We Never Say Never Association Incorporated. The website on the IRS list now redirects to a piano lessons business, so that site was not treated as this group's. No other public page was found, so no summary, categories or interests were written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:825134645",
+     "irs_bmf:825134645"
+    ],
+    "group_id": "womxn-beyond-borders-inc",
+    "ein": "825134645",
+    "website": "https://www.womxnbeyondborders.com"
+   },
+   "verdict": "publish",
+   "name": "Womxn Beyond Borders",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.womxnbeyondborders.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned an empty page on three tries (home page, bare domain and /about), so nothing could be read. No summary, categories or interests were written, so the record is held back. Needs a manual visit or a later retry.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821585296",
+     "irs_bmf:821585296"
+    ],
+    "group_id": "grace-canopy-ministries-inc",
+    "ein": "821585296"
+   },
+   "verdict": "publish",
+   "name": "Grace Canopy Ministries",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field on the IRS list held a value that is not a web address, so it was treated as missing. One search for the name with Philadelphia found no page for this ministry. No summary, categories or interests were written, so the record is held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823726439",
+     "irs_bmf:823726439"
+    ],
+    "group_id": "gw-78-cares",
+    "ein": "823726439",
+    "website": "https://gw78cares.com"
+   },
+   "verdict": "publish",
+   "name": "GW 78 Cares",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://gw78cares.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS list did not resolve on two tries (bare domain and www), and no other public page was found. No summary, categories or interests were written, so the record is held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:364608277",
+     "irs_bmf:364608277"
+    ],
+    "group_id": "queen-mary-ministry-usa-inc",
+    "ein": "364608277",
+    "website": "https://queenmaryministyusa.org"
+   },
+   "verdict": "publish",
+   "name": "Queen Mary Ministry USA",
+   "kind": "congregation",
+   "contacts": {
+    "website": "https://queenmaryministyusa.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS list did not resolve on two tries, including a spelling correction (queenmaryministryusa.org). One search for the name with Philadelphia found no page for this ministry. No summary, categories or interests were written, so the record is held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

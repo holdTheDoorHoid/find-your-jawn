@@ -5,17 +5,16 @@ aka:
 leads:
 - city_friends:818
 ein: null
-summary: Volunteers who look after Poquessing Creek and the land around it. They run monthly cleanups,
-  bird walks, tree planting, and storm drain marking.
-what_you_do: Join a cleanup, a bird walk, or a planting day. Ask the group for the next date, since the
-  website does not list dates.
-kind: friends_group
+summary: A volunteer nonprofit that cares for Poquessing Creek across Philadelphia, Bucks and Montgomery
+  counties. It runs monthly creek cleanups.
+what_you_do: Join a creek cleanup when the group posts the next date, and help keep the stream and its
+  banks clean.
+kind: nonprofit
 categories:
 - nature-environment
 interests:
-- river_stewardship
 - park_cleanup
-- habitat_restoration
+- river_stewardship
 motives:
 - values
 formats:
@@ -35,17 +34,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly cleanups. Dates are not posted on the website, so ask the group.
+  text: Cleanups are monthly, and the group posts each month's dates as it sets them. The site lists no
+    standing day, time or meeting place.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Poquessing Creek Park
-  address: 1217 Stevens Rd
+- label: Poquessing Creek watershed (service area)
+  address: null
   neighborhood: null
   planning_district: null
-  zip: '19116'
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -68,16 +68,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email or call the group to ask about the next cleanup, or fill in the membership application on
-    the website
+  how: Call or email the group to ask about the next cleanup. Its events page listed none when we checked.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has a Get Involved section, a contact form, and a membership application
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Membership is by a mailed paper application with a check, and the cleanup pages do not say whether
+    a newcomer can join a cleanup.
+  what_to_expect: The site does not describe a typical cleanup. Work covers both the creek and the land
+    around it, and the group shares photos of past cleanups. The page does not say how long a cleanup
+    lasts, who comes, or what to bring.
+  first_visit_tips:
+  - Call or email before you come, since the group posts each month's dates as it sets them.
+  - Ask what to wear and bring, because the site does not say.
 contacts:
-  website: https://www.friendsofpoquessing.org
+  website: https://friendsofpoquessing.org
   email: dremick@friendsofpoquessing.org
   phone: 215-638-0832
   contact_name: null
@@ -120,7 +124,28 @@ sources:
   fields:
   - name
   - locations
-research_tier: 1
+- url: https://www.friendsofpoquessing.org/cleanups
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.friendsofpoquessing.org/membership-application
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.friendsofpoquessing.org/events-1
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+- url: https://www.friendsofpoquessing.org/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

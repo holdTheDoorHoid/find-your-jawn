@@ -13,7 +13,8 @@ ein: null
 summary: The nonprofit that cares for 11 miles of riverfront parks and trails in Northeast Philadelphia.
   Volunteers clean up the greenway and report dumping or safety problems, and regular volunteers can earn
   Trailblazer status.
-what_you_do: Sign up for a volunteer day, or do a solo cleanup on your own schedule and post about it.
+what_you_do: Sign up on Eventbrite for a volunteer day, or do a solo cleanup on your own schedule and
+  post about it to join the Trailblazer volunteer program.
 kind: nonprofit
 categories:
 - nature-environment
@@ -42,12 +43,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Scheduled volunteer days in 2026, announced by email and on Eventbrite; solo cleanups any time
+  text: Volunteer days are one-off and posted on Eventbrite for 2026. The partnership also runs weekly
+    programs at Borski Park, such as a Sunday sports session and a Tuesday fitness class, listed on its
+    events page. Solo cleanups can be done any time.
   days:
-  - tue
   - sun
-  times: []
-  recurring: false
+  - tue
+  times:
+  - morning
+  recurring: true
   season: year_round
 locations:
 - label: Delaware River greenway, Northeast Philadelphia
@@ -59,10 +63,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Robert A. Borski Jr. Park
+  address: 3101 Orthodox St
+  neighborhood: null
+  planning_district: null
+  zip: '19137'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: The volunteer cost is not stated; some events are free
+  text: The page gives no volunteer fee and says all volunteer supplies are provided. Some listed events,
+    such as Learn to Ride, are free.
 commitment: one_off
 group_size: null
 access:
@@ -75,15 +89,22 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Long pants, sturdy boots or closed-toe shoes, sun protection, and bug spray. Bring a reusable
+    water bottle and a snack.
 first_step:
-  how: Register for a volunteer day on Eventbrite and sign the digital waiver at riverfrontnorth.org/waiver
+  how: Register for a volunteer day on Eventbrite, then sign the digital waiver at https://riverfrontnorth.org/waiver/
+    before you go.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can take part, but each volunteer day needs a registration and a signed waiver
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can volunteer and all ages are welcome, but each day needs an Eventbrite registration
+    and a signed waiver. The page does not say that beginners get extra help.
+  what_to_expect: A volunteer day is a hands-on cleanup of the greenway and parks, and all supplies are
+    provided. The page does not say how long a day lasts. Workdays usually go on through light rain.
+  first_visit_tips:
+  - Bring a printed, signed waiver if you can, since it speeds up check-in. Spare copies are on site.
+  - Wear long pants and sturdy or closed-toe shoes, and bring sun protection and bug spray.
+  - Bring a reusable water bottle and a snack.
 contacts:
   website: https://riverfrontnorth.org
   email: info@riverfrontnorth.org
@@ -96,7 +117,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.riverfrontnorth.org/events/
+sign_of_life_url: https://riverfrontnorth.org/visit/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -146,13 +167,31 @@ sources:
   - first_step
   - contacts
   - status
+  - gear
+  - kids_ok
+  - cost
 - url: https://riverfrontnorth.org/get-involved-donate/trailblazer/
   seen: '2026-10-08'
   fields:
   - summary
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - cost
+- url: https://riverfrontnorth.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+- url: https://riverfrontnorth.org/visit/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

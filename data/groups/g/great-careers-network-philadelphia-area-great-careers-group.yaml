@@ -5,8 +5,8 @@ leads: []
 ein: '821115256'
 summary: A nonprofit career support group for job seekers in the Philadelphia area. It holds expert panels,
   skill workshops and peer meetups, and publishes free career resources.
-what_you_do: Attend expert talks and working sessions, join peer meetups where members share advice, or
-  read the free newsletter.
+what_you_do: Join a free online job seeker session or networking meetup, come to an in-person event in
+  Paoli, or read the free newsletter. Some events ask for a paid membership.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -34,11 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events are listed on the events calendar. Most are online, and a few are in person at a venue
+    in Paoli. Times vary by event.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Main office
   address: 53 Darby Road, Suite F, Paoli, PA 19301
@@ -51,8 +52,9 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Event prices and membership cost are not stated on the homepage
+  level: low
+  text: Some events are free and open to anyone, and the newsletter is free. The events page says RSVP
+    access is limited to paid members. Paid plans are $17 a month, $37 a quarter, or $97 a year.
 commitment: null
 group_size: null
 access:
@@ -67,15 +69,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Subscribe to the free newsletter, or sign up for membership at the membership page, then pick an
-    event from the calendar.
+  how: Pick a free online session on the events calendar and sign up through its Get Tickets button, or
+    subscribe to the free newsletter first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Free newsletter and membership sign-up are listed publicly, but event prices and the peer meetup
-    format are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free online sessions and the newsletter are open to anyone, but some RSVPs need a paid membership
+    and the page does not describe a beginner program.
+  what_to_expect: Most listed sessions last one hour. They bring together people who are looking for work,
+    with talks, job search accountability time and networking. Listed times are in Eastern time.
+  first_visit_tips:
+  - Check the listing for a Get Tickets button or an outside registration link, since some events use
+    a separate sign-up page.
+  - Register early for events with limited tickets.
+  - In-person events are in Paoli, so plan transit or a drive ahead of time.
 contacts:
   website: https://greatcareers.org/
   email: info@greatcareersphl.org
@@ -83,9 +90,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://greatcareers.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://greatcareers.org/events
 sources:
 - url: https://greatcareers.org/
   seen: '2026-10-08'
@@ -94,8 +101,22 @@ sources:
   - what_you_do
   - first_step
   - contacts
-research_tier: 1
-confidence: low
+- url: https://greatcareers.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - locations
+  - online_ok
+  - first_step
+  - cost
+  - schedule
+- url: https://greatcareers.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

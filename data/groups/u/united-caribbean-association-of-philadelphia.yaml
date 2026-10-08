@@ -44,7 +44,7 @@ schedule:
   days: []
   times: []
   recurring: false
-  season: null
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 1112 S 54th St
@@ -57,7 +57,7 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
+  level: low
   text: Pre-registering is free and needs no payment. Band fees and costume costs are not listed on the
     site.
 commitment: seasonal
@@ -97,10 +97,12 @@ contacts:
   social:
   - https://facebook.com/phillycarnival
   - https://instagram.com/ucaphilly
+  - https://www.facebook.com/phillycarnival
+  - https://www.instagram.com/ucaphilly
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philadelphiacarnival.com/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://www.phila.gov/2026-06-23-honoring-caribbean-roots-leaders-reflect-on-heritage-and-community/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -137,6 +139,25 @@ sources:
   fields:
   - contacts
   - first_visit_tips
+- url: https://philadelphiacarnival.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - first_step
+  - contacts
+  - schedule
+- url: https://www.zeffy.com/en-US/ticketing/2026-philly-carnival
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+- url: https://www.phila.gov/2026-06-23-honoring-caribbean-roots-leaders-reflect-on-heritage-and-community/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - summary
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

@@ -35,15 +35,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Love Your Park cleanups each spring and fall. The spring 2026 cleanup was on May 9, 2026, from
-    12 to 2 pm. The fall 2025 cleanup ran 10 am to noon. There is no weekly schedule.
+  text: Love Your Park cleanups in spring and fall. Past ones ran about two hours, from late morning to
+    early afternoon. There is no weekly schedule.
   days: []
-  times: []
+  times:
+  - morning
+  - daytime
   recurring: true
   season: null
 locations:
-- label: Saylor Grove wetland, W Rittenhouse St
-  address: null
+- label: Saylor Grove wetland, at Wissahickon Ave and Rittenhouse St
+  address: 720 W Rittenhouse St
   neighborhood: null
   planning_district: null
   zip: '19144'
@@ -54,7 +56,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Not stated on the site
+  text: Not stated on the site. The spring post says tools and bags are provided.
 commitment: seasonal
 group_size: null
 access:
@@ -69,15 +71,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the next spring or fall Love Your Park cleanup. Follow the group on Facebook for the date,
-    or send a message through the contact form on its blog.
+  how: Come to the next spring or fall Love Your Park cleanup at the wetland. Get the date from the group's
+    Facebook page or news page, or ask through the contact form on its website. The spring 2026 post asked
+    volunteers to register through a GivePulse link.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Cleanups are public events announced on the group's blog and Facebook page, and the blog has
-    a contact form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The group invites neighbors to its cleanups, announces them on its blog and Facebook page, and
+    has a contact form. The posts do not describe a first-timer process.
+  what_to_expect: A cleanup runs about two hours and can include weeding, litter pickup, native plant
+    work, and a plant sale. A bird talk is usually part of the day, and the spring 2026 post says tools
+    and bags are provided, with coffee, water and donuts for volunteers. The posts do not say what to
+    wear or bring.
+  first_visit_tips:
+  - Check the Facebook page or the news page for the next date, since each cleanup is posted separately.
+  - Register through the GivePulse link on the cleanup post if one is offered.
+  - Ask through the website's contact form what to wear and bring, because the posts do not say.
 contacts:
   website: https://friendsofsaylorgrove.wordpress.com/
   email: pprstewardship@phila.gov
@@ -112,7 +121,22 @@ sources:
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+  - sign_of_life_url
+  - schedule
+  - locations
+  - first_step
+  - what_to_expect
+- url: https://friendsofsaylorgrove.wordpress.com/home/contact-the-friends-of-saylor-grove/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://friendsofsaylorgrove.wordpress.com/blog/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -46,7 +46,7 @@ schedule:
   times:
   - evening
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: Meeting place
   address: New Church Down the Way Ministries, 4234 Ogden Street, Philadelphia, PA 19104
@@ -57,11 +57,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Cost is not stated on the site.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -77,8 +77,8 @@ requirements:
 first_step:
   how: Sign up for the association's mailing list at the link on its site, then call or email before the
     first Tuesday to ask whether visitors may attend the meeting.
-  drop_in: null
-  sign_up_needed: null
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 2
   basis: The site gives the meeting time, place and contact details, but says nothing about whether visitors
     may attend or how to join.
@@ -140,6 +140,10 @@ sources:
   - what_you_do
   - schedule
   - contacts
+  - name
+  - locations
+  - status
+  - first_step
 - url: https://westbelmontcivic.org/meeting-information/
   seen: '2026-10-08'
   fields:

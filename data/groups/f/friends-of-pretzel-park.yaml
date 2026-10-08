@@ -7,8 +7,8 @@ leads:
 ein: null
 summary: A nonprofit that cares for Pretzel Park in Manayunk and runs the park's Saturday farmers market
   with volunteers. It also hosts drum circles, concerts and kids' story time.
-what_you_do: Help with park maintenance days, volunteer at the farmers market, or join the email list
-  for news and volunteer calls.
+what_you_do: Help with park maintenance days, volunteer at the farmers market or a concert, or join the
+  email list for news and volunteer calls.
 kind: friends_group
 categories:
 - nature-environment
@@ -40,7 +40,7 @@ audience:
   support_group: false
 schedule:
   text: Farmers market on Saturdays, 10 am to 2 pm, rain or shine. Park events such as drum circles and
-    concerts are posted on the site.
+    concerts are posted on the site as they are set.
   days:
   - sat
   times:
@@ -60,8 +60,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: No admission cost is listed. The group asks for donations.
+  level: free
+  text: No admission charge is listed. The group asks for donations.
 commitment: seasonal
 group_size: null
 access:
@@ -76,14 +76,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the Saturday farmers market to meet the volunteers, or sign up for the group's email list
-    at https://lists.friendsofpretzelpark.org/lists/listinfo/PretzelPark to hear about maintenance days
+  how: Visit the Saturday farmers market, 10 am to 2 pm, to meet the volunteers. To volunteer, use the
+    contact form on the group's volunteer page.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The market is open to visitors, and the group lists a public sign-up for news and volunteer calls
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Saturday market is open to visitors, and volunteers can reach the group through a public
+    contact form. The page does not describe what a first volunteer day looks like.
+  what_to_expect: The Saturday market runs 10 am to 2 pm, rain or shine, with vendors and some events
+    such as live music or a children's story hour. Visitors can browse and listen. The site does not list
+    parking, admission or a plan for first-time volunteers.
+  first_visit_tips:
+  - Dress for the weather, since the market runs rain or shine.
+  - Check the events page first, since music, story time and food trucks show up on only some Saturdays.
+  - Bring cash or a card, since at least one food truck on the listings takes both.
 contacts:
   website: https://www.friendsofpretzelpark.org/
   email: pprstewardship@phila.gov
@@ -95,7 +101,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://www.friendsofpretzelpark.org/events/pretzel-park-farmers-market-2026/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -115,7 +121,24 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+- url: https://www.friendsofpretzelpark.org/maintenance-2/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.friendsofpretzelpark.org/events/pretzel-park-farmers-market-2026/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.friendsofpretzelpark.org/maintenance/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -6,24 +6,28 @@ leads:
 - city_friends:799
 ein: null
 summary: Volunteers who guide upkeep and improvement work at McMichael Park, working with the City and
-  the Fairmount Park Conservancy. They answer questions by email and share news through a newsletter.
-what_you_do: Help with upkeep and improvement projects. Email the group to ask how to get involved, or
-  sign up for the newsletter on the site.
+  the Fairmount Park Conservancy. They run spring and fall cleanups and a few free family events, and
+  they answer questions by email.
+what_you_do: Join a spring or fall Love Your Park cleanup, come to a free movie night in the park, or
+  email the group to ask how to help with upkeep projects.
 kind: friends_group
 categories:
 - nature-environment
 interests:
 - friends_of_park
+- park_cleanup
 motives:
 - values
 - social
 formats:
 - side_by_side
+- one_off_event
 roles:
 - hands_on
 - organize
 crowd:
 - neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -35,11 +39,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Love Your Park cleanups each spring and fall, usually on Saturday mornings from 10 am to noon.
+    The group also holds a few free family events a year, such as outdoor movie nights.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
+  season: event_only
 locations:
 - label: McMichael Park
   address: 3201 Midvale Ave
@@ -52,9 +59,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The page does not state a fee for joining or volunteering. A donation page is optional.
-commitment: null
+  level: free
+  text: Movie nights are listed as free. The site gives no fee to volunteer, and donations are optional.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -65,17 +72,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: A blanket for movie nights. Tools are provided at cleanups.
 first_step:
-  how: Email mcmichaelpark@gmail.com with your question, or sign up for the group's newsletter from mcmichaelpark.org
+  how: Register for the next Love Your Park cleanup on GivePulse (the link is on mcmichaelpark.org/events),
+    or email mcmichaelpark@gmail.com with questions.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site says everyone is welcome and gives an email address and a newsletter sign-up, but it
-    does not describe a regular volunteer schedule.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The home page says everyone is welcome, the cleanups provide tools and link to a sign-up, and
+    an email address answers questions.
+  what_to_expect: 'Cleanups run Saturday mornings from 10 am to noon, and the group provides the tools.
+    The events page strongly encourages signing up ahead of time on GivePulse. Free movie nights are a
+    looser first step: bring a blanket, and no sign-up is mentioned for them.'
+  first_visit_tips:
+  - Register on GivePulse before a cleanup, since the events page strongly encourages it.
+  - Bring a blanket for a movie night.
+  - Check mcmichaelpark.org/events for the next date, since the page lists both past and upcoming events.
 contacts:
   website: https://www.mcmichaelpark.org/
   email: mcmichaelpark@gmail.com
@@ -85,9 +98,9 @@ contacts:
   - https://www.facebook.com/FriendsOfMcmichaelPark
   - https://www.instagram.com/friendsofmcmichael
   calendar_feed: null
-status: probably_active
+status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.mcmichaelpark.org/
+sign_of_life_url: https://www.mcmichaelpark.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -108,8 +121,19 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+  - crowd
+  - first_step.basis
+- url: https://www.mcmichaelpark.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - formats
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

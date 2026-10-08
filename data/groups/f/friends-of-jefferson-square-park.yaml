@@ -9,8 +9,8 @@ leads:
 ein: 020648355
 summary: Neighbors who look after Jefferson Square Park on Washington Avenue in Pennsport. They hold a
   park cleanup on the second Saturday of the month and welcome ideas for the park.
-what_you_do: Join a Saturday cleanup, come to park events such as the October 13, 2026 ribbon cutting
-  for the Washington Avenue connector, or share ideas for the park.
+what_you_do: Join the monthly cleanup to tend the planting beds and pick up litter, come to the park's
+  film nights and holiday lighting, or send in an idea for the park.
 kind: friends_group
 categories:
 - nature-environment
@@ -40,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Park cleanups on the second Saturday of the month, 9 to 11 am. Listed dates: October 10, 2026
-    and November 14, 2026'
+  text: Cleanups on the second Saturday of the month, March through December, weather permitting. The
+    events list shows 9 to 11 am, and the about page says 9 am to noon.
   days:
   - sat
   times:
@@ -60,8 +60,8 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: No fee listed; the group asks for donations
+  level: free
+  text: No fee is listed for cleanups or events. The group asks for donations to care for the park.
 commitment: drop_in
 group_size: null
 access:
@@ -76,26 +76,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Saturday cleanup on October 10, 2026, 9 to 11 am, at 300 Washington Ave, or use the
-    Contact Us page on fojsp.org to ask how to join
+  how: Come to the second Saturday cleanup at 300 Washington Ave, March through December. No sign-up is
+    listed for cleanups.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Cleanups are announced publicly and anyone can come, but the site does not describe a welcome
-    for newcomers
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Cleanups are announced to the public and anyone can come. The site has no first-time welcome
+    or newcomer program, so it does not reach 4.
+  what_to_expect: A cleanup lasts about two to three hours on a Saturday morning, weather permitting.
+    You pick up litter and tend the planting beds alongside neighbors who look after the park. No fee
+    is listed to join, though the group asks for donations.
+  first_visit_tips:
+  - Cleanups run March through December and stop in winter, so check the events page for the next date
+    before you go.
+  - Join the email list or the Facebook group to hear about changes to a date.
+  - If you have a question first, use the contact form on fojsp.org.
 contacts:
-  website: https://www.fojsp.org
+  website: https://fojsp.org
   email: pprstewardship@phila.gov
   phone: null
   contact_name: Jeb Wood
   social:
   - https://www.facebook.com/groups/friendsofjeffersonsquarepark
+  - https://www.facebook.com/JeffersonSquarePark
+  - https://www.instagram.com/jeffersonsquarepark
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.fojsp.org
+sign_of_life_url: https://fojsp.org/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -132,7 +140,34 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://fojsp.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - schedule
+  - status
+- url: https://fojsp.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://fojsp.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://fojsp.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

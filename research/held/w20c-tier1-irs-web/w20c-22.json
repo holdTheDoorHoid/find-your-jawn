@@ -1,0 +1,276 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-22",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 14,
+ "leads_only": [
+  {
+   "name": "Institute of African American Youth",
+   "url": "https://afjcollective.org",
+   "note": "Named as the partner in the Philadelphia Gaming Initiative on afjcollective.org. No URL of its own was found, not checked."
+  },
+  {
+   "name": "Lisa Teagle Brown Foundation",
+   "url": "https://afjcollective.org",
+   "note": "Named as a program of Action for Justice Collective on afjcollective.org. Described as a foundation, so it may be out of scope as a private foundation. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://thereuseitfoudation.org",
+   "status": null,
+   "note": "DNS lookup failed (host not found). Domain as typed on the IRS form."
+  },
+  {
+   "url": "https://www.baaphilly.net",
+   "status": null,
+   "note": "DNS lookup failed. Bare domain baaphilly.net also failed."
+  },
+  {
+   "url": "https://www.coffeecri-sis.org",
+   "status": null,
+   "note": "TLS error: the server did not recognise the hostname."
+  },
+  {
+   "url": "http://www.ufwac.us",
+   "status": null,
+   "note": "Served the raw source of a WordPress index file, not a readable page. Bare domain https://ufwac.us returned the same."
+  }
+ ],
+ "notes": "Budget: WebSearch 2 of 2 used, both on groups with no usable website (African Diaspora Arts Collective, Re Use It Foundation). Neither search found a page under the exact name. Not searched for lack of budget: Sunday School Network International, A Place for Ummi, Aci, Ark of the Covenant Family Ministry, Udac USA International, Best Athletic Association, Continuing Opportunity for Family Education Enrichment. Worldwide Lifeline's own site loads but shows only its name. Fetches: 14 used of 60. No rate limiting seen. Verdicts: all 15 are publish, as the brief asks for unknowns. Five records carry real content: T21 Club (active), Black Science Coalition and Institute (active), Action for Justice Collective (probably_active, no dates), Creating Opportunities for All (probably_active, no dates), Coalition of Black Trade Unionists (dormant, verdict kept as publish for review). The other ten are unknown and held back by the missing summary, categories and interests.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:475384256",
+     "irs_bmf:475384256"
+    ],
+    "group_id": "re-use-it-foundation",
+    "ein": "475384256"
+   },
+   "verdict": "publish",
+   "name": "Re Use It Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The website typed on the IRS form, thereuseitfoudation.org, did not resolve (host not found). One WebSearch for the exact name found no Philadelphia page. IRS list address: 9851 Haldeman Ave, 19115. Next step: look for a working site or a PA charity registry entry before writing a summary. Consider hide (private) if no public way in is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:462770195",
+     "irs_bmf:462770195"
+    ],
+    "group_id": "sunday-school-network-international-inc",
+    "ein": "462770195"
+   },
+   "verdict": "publish",
+   "name": "Sunday School Network International",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. Legal name: Sunday School Network International Inc. The website on the IRS list, Affordable Payroll, is not a web address, so it was treated as missing. No WebSearch budget was left, so this group was not searched. IRS list address: 11502 Bustleton Ave, 19116. Next step: one search for the legal name plus Philadelphia.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461404277",
+     "irs_bmf:461404277"
+    ],
+    "group_id": "udac-usa-international-inc",
+    "ein": "461404277"
+   },
+   "verdict": "publish",
+   "name": "Udac USA International",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website http://www.ufwac.us returned the raw source of a WordPress index file instead of a readable page, and the bare domain did the same. The name and purpose are not confirmed. IRS list address: 231 Nandina St, 19116. No WebSearch budget was left. Next step: one search for the name plus Philadelphia, or retry the site later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:921648542",
+     "irs_bmf:921648542"
+    ],
+    "group_id": "worldwide-lifeline-inc",
+    "ein": "921648542",
+    "website": "https://worldwidelifeline.org/"
+   },
+   "verdict": "publish",
+   "name": "Worldwide Lifeline",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The site at worldwidelifeline.org shows only the name Worldwide Lifeline Inc, with no description, address, programs or contacts. IRS list address: 10604 Cowden St, 19116. No WebSearch budget was left. Next step: one search for the name plus Philadelphia.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:884212516",
+     "irs_bmf:884212516"
+    ],
+    "group_id": "a-place-for-ummi-maternity-care-and-family-services",
+    "ein": "884212516"
+   },
+   "verdict": "publish",
+   "name": "A Place for Ummi",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. Legal name: A Place for Ummi Maternity Care and Family Services. The batch website, a place for ummi, is a name rather than a web address, so it was treated as missing. No WebSearch budget was left. The name suggests a maternity and family services provider rather than a joinable group, so it may be not_a_group or hide once checked. IRS list address: 8549 Michener Ave, 19150.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:311688871",
+     "irs_bmf:311688871"
+    ],
+    "group_id": "aci",
+    "ein": "311688871"
+   },
+   "verdict": "publish",
+   "name": "Aci",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website ACI is not a web address, so it was treated as missing. The name is too short to search reliably and no WebSearch budget was left. IRS list address: 3228 W Xheltenham Ave, 19150, likely a misspelling of Cheltenham, and the same address as Action for Justice Collective. Check whether this is the same group, a sister entity, or a bad record.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:743137863",
+     "irs_bmf:743137863"
+    ],
+    "group_id": "african-diaspora-arts-collective",
+    "ein": "743137863"
+   },
+   "verdict": "publish",
+   "name": "African Diaspora Arts Collective",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website A Sutton-Bey LLC is a company name, so it was treated as missing. One WebSearch for the exact name in Philadelphia found no page under this name. The LLC name suggests it may be a business, which would make it not_a_group; check the IRS record before publishing. IRS list address: 5933 N Warnock St, 19141.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233092470",
+     "irs_bmf:233092470"
+    ],
+    "group_id": "ark-of-the-covenant-family-ministry",
+    "ein": "233092470"
+   },
+   "verdict": "publish",
+   "name": "Ark of the Covenant Family Ministry",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website 9035 is not a web address, so it was treated as missing. No WebSearch budget was left, so the group was not searched. IRS list address: 5924 N Camac St, 19141. Next step: one search for the name plus Camac St.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465164863",
+     "irs_bmf:465164863"
+    ],
+    "group_id": "best-athletic-association",
+    "ein": "465164863"
+   },
+   "verdict": "publish",
+   "name": "Best Athletic Association",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website www.baaphilly.net did not resolve, with or without www. The IRS list address is only 6627 with no street name, so no location was recorded. No WebSearch budget was left. Next step: one search for the name plus Philadelphia 19126.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:201502329",
+     "irs_bmf:201502329"
+    ],
+    "group_id": "continuing-opportunity-for-family-education-enrichment",
+    "ein": "201502329"
+   },
+   "verdict": "publish",
+   "name": "Continuing Opportunity for Family Education Enrichment",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No summary written. The batch website www.coffeecri-sis.org failed the secure connection (the server did not recognise the hostname), so no page was read. The name's initials spell COFFEE, so the typed domain may be misspelled. IRS list address: 6036 N 12th St, 19141. No WebSearch budget was left. Next step: one search for the name plus Philadelphia.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

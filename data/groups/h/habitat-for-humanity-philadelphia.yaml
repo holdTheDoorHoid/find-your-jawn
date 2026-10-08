@@ -5,9 +5,9 @@ leads: []
 ein: null
 summary: A housing nonprofit that builds and repairs homes with volunteers across Philadelphia and runs
   the ReStore. Individuals and groups can volunteer, and the page says all volunteers are welcome.
-what_you_do: Start on the Individual Volunteering page, or join the Young Professionals volunteer network.
-  A 2026 Construction Sprint on October 20 and a Habi Hour on October 29 are listed on the home page.
-  Pope Leo Village, an interfaith effort to build 26 homes, has no sign-up steps shown.
+what_you_do: Build or repair homes on a full-day build shift, sort and stock donations at the ReStore,
+  help in the warehouse, or join the Young Professionals volunteer network. Start with a GivePulse account
+  and the virtual orientation.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -29,19 +29,20 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 16
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Construction Sprint on October 20, 2026, and Habi Hour on October 29 (year shown in the event
-    title). Build-day schedules are not shown on the page.
+  text: Build days run Monday to Friday, 8:30 am to 3:30 pm, as full-day shifts. ReStore volunteer shifts
+    run 10 am to 1 pm or 1 pm to 4 pm, Monday through Sunday.
   days: []
-  times: []
-  recurring: null
-  season: fall
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: Office
   address: 1829 N 19th St
@@ -64,7 +65,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Volunteer cost not stated
+  text: No volunteer fee is mentioned on the site. Bring your own food and water on build days; Habitat
+    provides tools and safety gear.
 commitment: one_off
 group_size: null
 access:
@@ -76,22 +78,30 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: false
+  gear: Sturdy closed-toe shoes. Habitat provides hard hats, safety glasses, earplugs and dust masks on
+    build days.
 first_step:
-  how: Start on the Individual Volunteering page, or call the office Monday to Friday, 9 am to 5 pm
+  how: Create a GivePulse account, complete the required virtual orientation for new volunteers, then
+    book a volunteer day in GivePulse.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The page says all volunteers are welcome and points beginners to an individual volunteering page,
-    though the steps are not spelled out
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The current individuals page lays out the steps, the FAQ says no construction experience is needed
+    because training is on site, and the site welcomes all volunteers.
+  what_to_expect: A build day runs 8:30 am to 3:30 pm, with a safety orientation at 8:30 am, so plan on
+    the full day. You do not need construction experience, and training happens on site. Your task is
+    set when you arrive, because the work depends on the stage of the house, and it can range from demolition
+    to landscaping.
+  first_visit_tips:
+  - Wear sturdy closed-toe shoes and clothes you do not mind getting dirty.
+  - Bring your own water and lunch. The lunch break is one hour.
+  - Volunteers aged 16 and 17 cannot use power tools or work more than 10 feet off the ground.
 contacts:
   website: https://www.habitatphiladelphia.org/
   email: volunteer@habitatphiladelphia.org
   phone: 215-765-6000
-  contact_name: null
+  contact_name: Joe Tatum, Volunteer Manager
   social:
   - https://www.instagram.com/habitatphilly
   calendar_feed: null
@@ -108,19 +118,40 @@ sources:
   - contacts
   - schedule
   - locations
+  - last_sign_of_life
 - url: https://www.habitatphiladelphia.org/volunteer/
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
   - audience
+  - contacts
 - url: https://www.habitatphiladelphia.org/contact/
   seen: '2026-10-08'
   fields:
   - locations
   - contacts
   - schedule
-research_tier: 1
+- url: https://www.habitatphiladelphia.org/individual-volunteers/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+  - requirements
+  - contacts
+  - locations
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.habitatphiladelphia.org/volunteer-faq/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - requirements
+  - first_visit_tips
+  - what_to_expect
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

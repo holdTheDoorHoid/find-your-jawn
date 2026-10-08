@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A makerspace in Kensington where people build and learn with woodworking tools, electronics,
   laser cutters and 3D printers. Anyone can drop in on a Sunday open house to try the space.
-what_you_do: Work on your own projects with shared tools and benches. Members pay a monthly fee and sign
-  a liability waiver before they use the space.
+what_you_do: Work on your own projects with shared tools and benches. Members pay a monthly fee, must
+  be 18 or older, and sign a liability waiver before they use the space.
 kind: nonprofit
 categories:
 - making-tech
@@ -36,12 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open houses on Sundays from 2 to 5 pm. Members can also come in on their own schedule, depending
-    on their plan.
+  text: Sunday open houses run from 2 to 5 pm. Wednesday member nights run from 7 to 10:30 pm and are
+    for members. Basic and Core members have 24-hour access.
   days:
   - sun
+  - wed
   times:
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -57,30 +59,42 @@ locations:
 online_ok: false
 cost:
   level: low
-  text: Light membership is $15 a month (equipment during open houses). Basic is $60 a month with 24-hour
-    access. Core is $120 a month with a personal desk.
+  text: Light membership is $15 a month and includes tool use during open houses. Basic is $60 a month
+    with 24-hour access. Core is $120 a month with a personal desk.
 commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'Accessible entrance through the parking lot on Letterly St or from the Jasper St sidewalk. Call
+    ahead so someone can let you in. The site does not describe access inside the space. Nearest SEPTA:
+    York-Dauphin stop on the Market-Frankford Line (MFL), about a three-minute walk.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Bring your own project materials. The space does not sell supplies.
 first_step:
-  how: Come to a Sunday open house, or email the group to set up a one-on-one tour
+  how: Drop in at a Sunday open house, 2 to 5 pm, to look around. To use the tools, join as a Light member
+    for $15 a month. Or email through the contact page for a one-on-one tour on another day.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says beginners and experienced makers both use the space, and open houses are a set
-    way to try it.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says beginners and experienced makers both use the space. The FAQ advises new members
+    to come in during open hours and learn tools from experienced members, and the group holds occasional
+    Tool-Training Days.
+  what_to_expect: A Sunday open house runs from 2 to 5 pm. Members work on their own projects at shared
+    benches with shared tools, and members can ask someone experienced to teach them a tool. The Light
+    plan is meant as a way to try the space. Ask at the door whether a visit needs a membership, since
+    the visit page and the FAQ describe open houses a little differently.
+  first_visit_tips:
+  - Bring your own project materials, since the space does not sell supplies.
+  - Take the York-Dauphin stop on the Market-Frankford Line, about three minutes away, or use the free
+    street parking on Jasper or Hagert streets.
+  - Ask a member or staff person to teach you a tool before you use it.
+  - Plan to be 18 or older to join, since the group requires it for membership.
 contacts:
   website: https://www.hive76.org/
   email: null
@@ -100,14 +114,23 @@ sources:
   - cost
   - first_step
   - status
+  - last_sign_of_life
 - url: https://www.hive76.org/visit
   seen: '2026-10-08'
   fields:
   - locations
   - schedule
   - first_step
-research_tier: 1
-confidence: high
+  - access
+- url: https://www.hive76.org/faq
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - what_you_do
+  - gear
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,153 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-20",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 18,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "http://upennakpsi.org/",
+   "status": null,
+   "note": "domain did not resolve (DNS error)"
+  },
+  {
+   "url": "https://hopeforphilly.org",
+   "status": null,
+   "note": "fetch failed; the www variant also did not resolve"
+  },
+  {
+   "url": "https://roboracer.ai",
+   "status": null,
+   "note": "home page returned only its title (content loaded by script)"
+  },
+  {
+   "url": "https://roboracer.ai/about",
+   "status": 404,
+   "note": "not found"
+  }
+ ],
+ "notes": "15 groups. Searches: 2 of 2 used, both on the two congregations whose website field was an email address (Righteous Healing found no page; Sanctuary Fellowship led to its own site, sfwcenter.com, which was then fetched). Fetches: 18 calls. Verdict counts: 12 publish (9 with full content, 3 held back as unknown: Righteous Healing Ministries, Roboracer Foundation, Alpha Kappa Psi Epsilon Rho Chapter), 2 not_a_group (STEM Equity Alliance, Studio Ludo), 1 hide (University City Eruv, private). Most statuses are probably_active because the sites show no dated items; copyright footers were not counted as evidence. The Penn AKPsi and Roboracer domains were not searched because the search budget was spent. The eruv old domain redirected to pennocp.org/eruv, which was read as the group's page. Leads not added: Penn Hillel, Meor Penn, and Chabad at Penn (named on the eruv page), Toys for Tots (named on the MLK site), and the Safe House Pantry (named on the Sanctuary site) were named but not checked, and campus, national, or pantry names are left for a later pass. The Idealist listing for Sanctuary was seen only in search and was not used as a fact source.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:371623984",
+     "irs_bmf:371623984"
+    ],
+    "group_id": "righteous-healing-ministries",
+    "ein": "371623984"
+   },
+   "verdict": "publish",
+   "name": "Righteous Healing Ministries",
+   "kind": "congregation",
+   "contacts": {
+    "email": "righteoushm@gmail.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Found only on the IRS record. The website field on the tax form is an email address (righteoushm@gmail.com), recorded as a contact because it carries the group's name, but it is unverified. One search found no web page for this congregation; the hits were other Philadelphia groups and were not used. No services, events, or dates found. The IRS address is 5835 Cedar Avenue, 1st floor, 19143, but no public page confirms it, so it is not written here. Held back until a public page turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:844919131",
+     "irs_bmf:844919131"
+    ],
+    "group_id": "roboracer-foundation",
+    "ein": "844919131",
+    "website": "https://roboracer.ai"
+   },
+   "verdict": "publish",
+   "name": "Roboracer Foundation",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://roboracer.ai"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Also known as the F1tenth Foundation (aka on the IRS record). The home page at roboracer.ai returned only its title, so its content is probably loaded by script; /about returned 404. Nothing was readable, so no summary or categories were written. The IRS address is 47 University Mews, Philadelphia 19104, but no page confirms it. Held back. A later pass could try other page paths.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851133528",
+     "irs_bmf:851133528"
+    ],
+    "group_id": "stem-equity-alliance",
+    "ein": "851133528",
+    "website": "https://www.stemequityalliance.org/"
+   },
+   "verdict": "not_a_group",
+   "name": "STEM Equity Alliance",
+   "kind": "nonprofit",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The site describes work with schools, colleges, and organizations on planning, professional learning for educators, and technical help. It lists no public classes, events, volunteering, or membership; its calls to action are Work with us and Partner with us. Treated as a service provider, not a group a visitor can join. The menu items Teach STEM in PA and Programs and Services were not read. The only date on the page is a 2026 copyright, which is not counted.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:810746306",
+     "irs_bmf:810746306"
+    ],
+    "group_id": "studio-ludo",
+    "ein": "810746306",
+    "website": "https://www.studioludo.org"
+   },
+   "verdict": "not_a_group",
+   "name": "Studio Ludo",
+   "kind": "nonprofit",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The site presents play design and research work, including a playground project in Omaha, Nebraska, with pages for presentations, resources, and press. It lists no classes, events, volunteering, or membership, so it reads as a design and research studio rather than a joinable group. Its Our Resources page is a shared folder, not a way in. The only dated text is a 2025 copyright line, which is not counted.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:231352685",
+     "irs_bmf:231352685"
+    ],
+    "group_id": "trustees-of-the-university-of-pennsylvania",
+    "ein": "231352685",
+    "website": "http://upennakpsi.org/"
+   },
+   "verdict": "publish",
+   "name": "Alpha Kappa Psi, Epsilon Rho Chapter",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Legal name: Trustees of the University of Pennsylvania. Aka on the IRS record: Alpha Kappa Psi Professional Business Fraternity Epsilon Rho Chapter. The website did not resolve (DNS error), so nothing could be read and no summary or categories were written. Both searches were spent on congregations (Righteous Healing, Sanctuary), so this group was not searched. Held back. A later pass with one search could find the chapter's university listing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

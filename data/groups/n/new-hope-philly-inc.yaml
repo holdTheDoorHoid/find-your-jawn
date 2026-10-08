@@ -1,49 +1,55 @@
 id: new-hope-philly-inc
-name: New Hope Philly Inc
+name: New Hope Philly
 aka: []
 leads:
 - irs_990n:471672539
 - irs_bmf:471672539
 ein: '471672539'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A non-denominational Christian church in Southwest Philadelphia. It offers Sunday worship, separate
+  men's and women's Bible studies, and help for people working through addiction.
+what_you_do: Come to Sunday worship, join a men's or women's Bible study, or ask about the addiction support,
+  counseling and GED or other classes offered through the church.
+kind: congregation
+categories:
+- faith-community
+interests:
+- worship_community
+- scripture_study
+motives:
+- values
+- social
+formats:
+- conversation
+roles:
+- figure_out
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Sunday worship at 11 am. Men's Bible study on Tuesdays at 7 pm. Women's Bible study on the first
+    and third Saturdays at 11 am.
+  days:
+  - sun
+  - tue
+  - sat
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 5520 Woodland Avenue
+- label: Church
+  address: 5520 Woodland Ave
   neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: PO Box 19117
-  neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19143'
   lat: null
   lng: null
@@ -52,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No cost listed; the site asks for donations
 commitment: null
 group_size: null
 access:
@@ -67,23 +73,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to Sunday worship at 11 am at 5520 Woodland Ave, or call 267-201-2419 to ask about the Bible
+    studies
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Services and Bible studies are listed publicly, with a phone number to ask about joining.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: http://newhopephilly.com
+  website: https://newhopephilly.com
   email: null
-  phone: null
+  phone: 267-201-2419
   contact_name: Bill Pruitt
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://newhopephilly.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +107,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://newhopephilly.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

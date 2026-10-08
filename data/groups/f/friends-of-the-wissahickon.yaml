@@ -42,12 +42,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public service days are posted on the group's upcoming dates page. A Thursday service day is listed
-    for Oct 8, 2026 and a Saturday planting for Oct 10, 2026. Registration is required.
+  text: Weekly crews work on Wednesday and Sunday mornings. Other service days, including Thursday and
+    Saturday events from 9 am to noon, are posted on the Volunteer Service Days page, and registration
+    is required for each one.
   days:
+  - tue
+  - wed
   - thu
   - sat
-  times: []
+  - sun
+  times:
+  - morning
   recurring: true
   season: year_round
 locations:
@@ -63,30 +68,41 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No cost to volunteer is mentioned on the group's volunteer page.
+  text: The group's pages list no fee to volunteer and no membership amounts.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: Most trails are not wheelchair accessible, and the group suggests Forbidden Drive as an alternative.
+    Valley Green Inn has disabled parking and a drop-off area at its ramps.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Work gloves, sturdy closed shoes, long pants, sun protection, and a reusable water bottle are
+    recommended. The page does not say whether tools are provided.
 first_step:
-  how: Register for a listed service day on the group's volunteer sign-up page. Wear long pants and sturdy
-    shoes, and bring sun protection and a water bottle.
+  how: Pick a service day on the Volunteer Service Days page and click its date to register. The meeting
+    place and details arrive by email before the day.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The group calls its service days the best place to start and says people without experience can
-    join.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: 'Open to the public, with a clear way in: register for any listed service day on the site. The
+    pages read do not say whether beginners are welcome, so this is not rated higher.'
+  what_to_expect: A service day is a morning of hands-on park work, such as trash pickup, removing invasive
+    plants, planting, graffiti removal, and trail fixes, and the tasks change from week to week. The group
+    describes service days as fun and educational, and a chance to meet other park stewards. Listed Thursday
+    and Saturday events run 9 am to noon, and weather cancellations are posted by 8 am.
+  first_visit_tips:
+  - Wear long pants, closed sturdy shoes (no open-toed shoes), and clothes you do not mind getting dirty.
+  - Bring work gloves, sun protection such as a hat and sunscreen, and a reusable water bottle.
+  - Check for a weather cancellation by 8 am on the day. Events are called off for heavy rain or snow,
+    thunder and lightning, or high winds.
+  - Teens 14 to 18 need a parent or guardian to sign the service day waiver form. Children under 14 must
+    come with an adult.
 contacts:
   website: https://fow.org/
   email: miller@fow.org
@@ -96,7 +112,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://fow.org/volunteering/volunteer-signup/
+sign_of_life_url: https://fow.org/news/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -159,7 +175,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://fow.org/volunteering/workinthepark/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+  - schedule
+- url: https://fow.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - access
+- url: https://fow.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

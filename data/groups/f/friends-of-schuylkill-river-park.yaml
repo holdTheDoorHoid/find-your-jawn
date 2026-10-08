@@ -40,11 +40,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer shifts and events are posted on the events page. The fall 2026 tai chi session runs
-    on Tuesdays from Sept 15 to Nov 24, 2026, with times that vary.
+  text: A Sunday farmers market, 9 am to 1 pm, is listed to run weekly through the fall. A fall tai chi
+    class meets on Tuesdays as a 10-class session. Volunteer roles are not on a fixed schedule.
   days:
+  - sun
   - tue
-  times: []
+  times:
+  - morning
+  - daytime
   recurring: true
   season: null
 locations:
@@ -60,13 +63,15 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: No membership fee. Donations are welcome.
+  text: No membership fee, and donations are welcome. Tai chi is sold as a 10-class season pass, and the
+    page does not show its price.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Restrooms are open Saturdays, 10 am to 4 pm, through the Rec Center entrance by the baseball
+    field. A crosswalk at 25th and Delancey gives a safer way into the park.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,14 +80,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for a volunteer shift on the Get Involved page (fsrp.org/get-involved), or sign up for
-    the newsletter on the contact page (fsrp.org/contact).
+  how: Email fsrporg@gmail.com with your interests and availability to ask about a volunteer role, or
+    sign up for the newsletter on the contact page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site invites the public to volunteer, lists its events publicly, and says how to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites the public to volunteer and to join the board, lists its events publicly, and
+    gives an email address and newsletter sign-up. The page does not describe a first shift.
+  what_to_expect: The Sunday farmers market runs 9 am to 1 pm, with vendors selling produce, bread, flowers
+    and more, and dogs are welcome. Tai chi meets on Tuesdays in a fall session that you buy as a pass.
+    The site does not explain how a first volunteer shift works.
+  first_visit_tips:
+  - Email the group with your interests and availability, since the group matches volunteers to them.
+  - Check the events page for current market and class dates before you go, since one listed date does
+    not match 2026.
+  - Dogs are welcome at the Sunday market.
 contacts:
   website: https://www.fsrp.org
   email: fsrporg@gmail.com
@@ -125,14 +137,26 @@ sources:
   - cost
   - contacts
   - first_step
+  - access
 - url: https://www.fsrp.org/events
   seen: '2026-10-08'
   fields:
   - schedule
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: high
+  - sign_of_life_url
+- url: https://www.fsrp.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.fsrp.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
