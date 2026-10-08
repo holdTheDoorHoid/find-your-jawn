@@ -1,0 +1,158 @@
+# Who is at a group and who it is for.
+#
+# Read by: research agents (fill `crowd`, `audience.community`, `audience.faith`, `audience.open_to`
+# and `access.languages` from these lists), the importer (checks every value), the quiz (question 6
+# "Who would you like to meet?", the faith and language screens) and the matching engine.
+#
+# Sections:
+#   crowd       who is usually in the room (a group lists one or more)
+#   open_to     who may join (a group lists exactly one)
+#   community   affinity groups, for people who want to find their own community. Private to the
+#               visitor: the quiz keeps these answers in the browser and never sends them anywhere.
+#   heritage    specific heritages, written in a group file as `heritage:<id>`, for example
+#               `heritage:irish`. The list is a start, not a limit: the importer accepts any new
+#               snake_case id after `heritage:` and flags it for review.
+#   languages   written in a group file as `language:<code>` under `audience.community` when the
+#               group is for speakers of that language, and as the bare code (for example `es`)
+#               in `access.languages` when the group offers service in that language.
+#   faith       faith traditions, the `audience.faith` field. A group names at most one.
+
+version: 1
+
+crowd:
+  - {id: all_ages, label: "All ages", ages: [0, 99], description: "Children, adults and older adults are all welcome in the room."}
+  - {id: all_adults, label: "Adults of any age", ages: [18, 99], description: "Grown ups of every age."}
+  - {id: families, label: "Families with children", ages: [0, 99], description: "Parents and kids come together."}
+  - {id: kids, label: "Kids", ages: [5, 12], description: "Mostly children in elementary school."}
+  - {id: teens, label: "Teens", ages: [13, 18], description: "Mostly young people in middle and high school."}
+  - {id: young_adults, label: "Young adults", ages: [18, 35], description: "Mostly people in their late teens, twenties and early thirties."}
+  - {id: seniors, label: "Older adults", ages: [55, 99], description: "Mostly people 55 and older."}
+  - {id: students, label: "Students", ages: [17, 30], description: "Mostly college and graduate students."}
+  - {id: professionals, label: "Working professionals", ages: [22, 65], description: "Mostly people with jobs in the same field or from nearby offices."}
+  - {id: neighbors, label: "Neighbors", ages: [18, 99], description: "People who live near each other, of many ages."}
+  - {id: newcomers, label: "People new to Philly or new to the country", ages: [18, 99], description: "Many members are new to the city, or the group goes out of its way to welcome them."}
+
+open_to:
+  - {id: public, label: "Open to the public", description: "Anyone who meets the age rule can join."}
+  - {id: students, label: "Students of one school", description: "Only students at the named school can join. Everyone else sees only groups open to the public."}
+  - {id: members, label: "Members only", description: "You must be a member, and membership may have its own rules or dues."}
+  - {id: parents, label: "Parents and caregivers", description: "Meant for parents or guardians of children."}
+  - {id: residents, label: "People who live in the area", description: "Meant for residents of one neighborhood or building."}
+  - {id: invite, label: "By invitation", description: "A member has to invite you."}
+
+community:
+  - {id: lgbtq, label: "LGBTQ+"}
+  - {id: transgender, label: "Trans and nonbinary people"}
+  - {id: women, label: "Women"}
+  - {id: men, label: "Men"}
+  - {id: black, label: "Black community"}
+  - {id: latino, label: "Latino or Hispanic community"}
+  - {id: asian_american, label: "Asian American community"}
+  - {id: native_american, label: "Native American community"}
+  - {id: pacific_islander, label: "Pacific Islander community"}
+  - {id: immigrants, label: "Immigrants"}
+  - {id: refugees, label: "Refugees"}
+  - {id: veterans, label: "Veterans"}
+  - {id: parents, label: "Parents"}
+  - {id: disability, label: "People with disabilities"}
+  - {id: deaf, label: "Deaf and hard of hearing people"}
+  - {id: blind, label: "Blind and low vision people"}
+  - {id: neurodivergent, label: "Neurodivergent people"}
+  - {id: sober, label: "Sober friendly"}
+  - {id: returning_citizens, label: "People coming home from prison"}
+
+heritage:
+  - {id: irish, label: "Irish"}
+  - {id: italian, label: "Italian"}
+  - {id: polish, label: "Polish"}
+  - {id: ukrainian, label: "Ukrainian"}
+  - {id: russian, label: "Russian"}
+  - {id: lithuanian, label: "Lithuanian"}
+  - {id: german, label: "German"}
+  - {id: greek, label: "Greek"}
+  - {id: albanian, label: "Albanian"}
+  - {id: portuguese, label: "Portuguese"}
+  - {id: jewish, label: "Jewish"}
+  - {id: black_american, label: "African American"}
+  - {id: west_african, label: "West African"}
+  - {id: liberian, label: "Liberian"}
+  - {id: nigerian, label: "Nigerian"}
+  - {id: ethiopian, label: "Ethiopian"}
+  - {id: eritrean, label: "Eritrean"}
+  - {id: somali, label: "Somali"}
+  - {id: caribbean, label: "Caribbean"}
+  - {id: jamaican, label: "Jamaican"}
+  - {id: haitian, label: "Haitian"}
+  - {id: puerto_rican, label: "Puerto Rican"}
+  - {id: dominican, label: "Dominican"}
+  - {id: mexican, label: "Mexican"}
+  - {id: cuban, label: "Cuban"}
+  - {id: colombian, label: "Colombian"}
+  - {id: central_american, label: "Central American"}
+  - {id: brazilian, label: "Brazilian"}
+  - {id: chinese, label: "Chinese"}
+  - {id: vietnamese, label: "Vietnamese"}
+  - {id: cambodian, label: "Cambodian"}
+  - {id: korean, label: "Korean"}
+  - {id: japanese, label: "Japanese"}
+  - {id: filipino, label: "Filipino"}
+  - {id: indonesian, label: "Indonesian"}
+  - {id: indian, label: "Indian"}
+  - {id: pakistani, label: "Pakistani"}
+  - {id: bangladeshi, label: "Bangladeshi"}
+  - {id: nepali, label: "Nepali"}
+  - {id: bhutanese, label: "Bhutanese"}
+  - {id: burmese, label: "Burmese"}
+  - {id: arab, label: "Arab"}
+  - {id: iranian, label: "Iranian"}
+  - {id: turkish, label: "Turkish"}
+
+languages:
+  - {code: en, label: "English"}
+  - {code: es, label: "Spanish", native: "Español"}
+  - {code: zh, label: "Chinese (Mandarin)", native: "中文"}
+  - {code: yue, label: "Cantonese", native: "粵語"}
+  - {code: vi, label: "Vietnamese", native: "Tiếng Việt"}
+  - {code: km, label: "Khmer", native: "ខ្មែរ"}
+  - {code: ko, label: "Korean", native: "한국어"}
+  - {code: ja, label: "Japanese", native: "日本語"}
+  - {code: tl, label: "Tagalog", native: "Tagalog"}
+  - {code: id, label: "Indonesian", native: "Bahasa Indonesia"}
+  - {code: hi, label: "Hindi", native: "हिन्दी"}
+  - {code: bn, label: "Bengali", native: "বাংলা"}
+  - {code: ur, label: "Urdu", native: "اردو"}
+  - {code: gu, label: "Gujarati", native: "ગુજરાતી"}
+  - {code: ne, label: "Nepali", native: "नेपाली"}
+  - {code: fa, label: "Persian", native: "فارسی"}
+  - {code: ar, label: "Arabic", native: "العربية"}
+  - {code: tr, label: "Turkish", native: "Türkçe"}
+  - {code: he, label: "Hebrew", native: "עברית"}
+  - {code: ru, label: "Russian", native: "Русский"}
+  - {code: uk, label: "Ukrainian", native: "Українська"}
+  - {code: pl, label: "Polish", native: "Polski"}
+  - {code: it, label: "Italian", native: "Italiano"}
+  - {code: el, label: "Greek", native: "Ελληνικά"}
+  - {code: de, label: "German", native: "Deutsch"}
+  - {code: fr, label: "French", native: "Français"}
+  - {code: pt, label: "Portuguese", native: "Português"}
+  - {code: ht, label: "Haitian Creole", native: "Kreyòl ayisyen"}
+  - {code: am, label: "Amharic", native: "አማርኛ"}
+  - {code: so, label: "Somali", native: "Soomaali"}
+  - {code: sw, label: "Swahili", native: "Kiswahili"}
+  - {code: yo, label: "Yoruba", native: "Yorùbá"}
+  - {code: ase, label: "American Sign Language", native: "ASL"}
+
+faith:
+  - {id: catholic, label: "Catholic", description: "Roman Catholic and Eastern Catholic parishes."}
+  - {id: protestant, label: "Protestant", description: "Baptist, Methodist, Lutheran, Presbyterian, Episcopal, Pentecostal and other Protestant churches."}
+  - {id: black_church, label: "Black church", description: "Historically Black churches, such as AME, Black Baptist and Church of God in Christ."}
+  - {id: orthodox_christian, label: "Orthodox Christian", description: "Greek, Russian, Ukrainian, Ethiopian, Coptic and other Orthodox churches."}
+  - {id: jewish, label: "Jewish", description: "Synagogues and Jewish community groups of every movement."}
+  - {id: muslim, label: "Muslim", description: "Mosques and Muslim community groups."}
+  - {id: buddhist, label: "Buddhist", description: "Buddhist temples and meditation centers."}
+  - {id: hindu, label: "Hindu", description: "Hindu temples and Hindu community groups."}
+  - {id: sikh, label: "Sikh", description: "Gurdwaras and Sikh community groups."}
+  - {id: quaker, label: "Quaker", description: "Meetings of the Religious Society of Friends."}
+  - {id: unitarian, label: "Unitarian Universalist", description: "Unitarian Universalist congregations."}
+  - {id: interfaith, label: "Interfaith", description: "Welcomes people of many traditions, or brings them together."}
+  - {id: other, label: "Another tradition", description: "Any other faith or spiritual tradition."}

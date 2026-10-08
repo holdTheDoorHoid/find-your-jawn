@@ -1,0 +1,108 @@
+# "A year from now, what would you love to be able to say?" (docs/DESIGN.md section 2.2, question 8)
+#
+# Read by: the quiz (the person picks up to two), the matching engine (stretches aim at these: a
+# stretch is preferred when it moves the person toward a pick), and the simulation that tests
+# whether stretches really help.
+#
+# Each statement:
+#   id          stable, snake_case
+#   text        the sentence the visitor sees, first person, plain words
+#   icon        one emoji
+#   interests   tag ids with a weight from 0 to 1 for how strongly that interest moves a person there
+#   roles       role ids that move a person there, strongest first
+#   formats     format ids that move a person there, strongest first
+#   ways_in     way in ids (ways_in.yaml) that move a person there, strongest first
+#   because     one plain sentence the site can use to explain a stretch ("because you said...")
+
+version: 1
+
+future_selves:
+  - id: know_neighbors
+    text: "I know my neighbors by name"
+    icon: "🏡"
+    interests: {block_captain: 1.0, clean_blocks: 0.7, community_garden: 0.8, civic_association: 0.7, street_festivals: 0.6, community_meals: 0.6, town_watch: 0.5, rec_center_council: 0.4}
+    roles: [organize, help_teach, hands_on]
+    formats: [side_by_side, conversation]
+    ways_in: [do_it, lead_it]
+    because: "The same neighbors show up again and again, and someone makes introductions."
+
+  - id: regular_somewhere
+    text: "I'm a regular somewhere"
+    icon: "🔁"
+    interests: {book_club: 0.6, running: 0.6, board_games: 0.6, community_garden: 0.6, jam_sessions: 0.6, library_programs: 0.6, walking_group: 0.5, trivia_nights: 0.5, conversation_circles: 0.5, rec_center_council: 0.3}
+    roles: [help_teach, hands_on]
+    formats: [side_by_side, conversation, team_play]
+    ways_in: [do_it]
+    because: "It meets on a steady schedule, so people start to know your face."
+
+  - id: made_something
+    text: "I made something with my own hands"
+    icon: "🛠️"
+    interests: {woodworking: 1.0, pottery_ceramics: 1.0, fiber_arts: 0.9, painting_drawing: 0.8, makerspace: 0.8, printmaking: 0.7, craft_circle: 0.7, repair_cafe: 0.6, cooking_baking: 0.6}
+    roles: [create, hands_on]
+    formats: [learn_skill, side_by_side]
+    ways_in: [learn_it, do_it]
+    because: "Beginners start with a small project and leave with something real."
+
+  - id: other_language
+    text: "I can hold a conversation in another language"
+    icon: "🗣️"
+    interests: {language_exchange: 1.0, esl_conversation: 0.7, cultural_exchange: 0.7, heritage_schools: 0.6, sign_language: 0.6, heritage_clubs: 0.4, immigrant_welcome: 0.4}
+    roles: [figure_out, help_teach]
+    formats: [conversation, learn_skill]
+    ways_in: [learn_it, do_it]
+    because: "You practice out loud with real people, a little at a time."
+
+  - id: helped_someone
+    text: "I helped someone through a hard time"
+    icon: "🤝"
+    interests: {friendly_visiting: 0.9, mentoring: 0.9, nursing_home_hospice: 0.7, mutual_aid: 0.7, neighbor_errands: 0.7, hospital_volunteering: 0.6, foster_care_support: 0.6, homeless_outreach: 0.6, weather_checks: 0.5, tutoring: 0.5}
+    roles: [help_teach]
+    formats: [conversation, side_by_side]
+    ways_in: [serve_it, teach_it]
+    because: "You spend steady time with one person or family, and training is usually offered."
+
+  - id: best_shape
+    text: "I'm in the best shape in years"
+    icon: "💪"
+    interests: {running: 1.0, group_bike_rides: 0.8, yoga_movement: 0.8, strength_training: 0.8, walking_group: 0.7, martial_arts: 0.7, rowing: 0.7, swimming: 0.6, soccer: 0.6, hiking: 0.6, climbing: 0.5}
+    roles: [hands_on]
+    formats: [team_play, side_by_side, learn_skill]
+    ways_in: [do_it, learn_it]
+    because: "A schedule and a group make it easier to show up, even on a tired day."
+
+  - id: spoke_up
+    text: "I spoke up in front of a group"
+    icon: "📣"
+    interests: {public_speaking: 1.0, improv_comedy: 0.8, storytelling_spoken_word: 0.8, community_theater: 0.6, civic_association: 0.6, street_safety_transit: 0.4, youth_leadership: 0.4, poetry: 0.4}
+    roles: [lead, create]
+    formats: [perform_make_together, lead_organize]
+    ways_in: [do_it, lead_it]
+    because: "You get friendly practice in front of a small group, one step at a time."
+
+  - id: learned_skill
+    text: "I learned a real skill"
+    icon: "🎓"
+    interests: {trades_training: 0.8, first_aid_cpr: 0.8, woodworking: 0.7, coding_software: 0.7, makerspace: 0.7, ham_radio: 0.6, bike_repair: 0.6, home_repair: 0.6, electronics_robotics: 0.6, cooking_baking: 0.6, digital_skills: 0.5}
+    roles: [hands_on, figure_out]
+    formats: [learn_skill]
+    ways_in: [learn_it]
+    because: "Someone who knows the skill teaches it, and you practice with real tools."
+
+  - id: changed_block
+    text: "I changed something on my block"
+    icon: "🏗️"
+    interests: {clean_blocks: 1.0, vacant_lot_greening: 0.9, block_captain: 0.9, community_garden: 0.7, tree_tending: 0.7, civic_association: 0.7, street_safety_transit: 0.7, town_watch: 0.6, community_development: 0.5, mural_public_art: 0.5, tenant_rights: 0.4}
+    roles: [lead, organize, hands_on]
+    formats: [lead_organize, side_by_side]
+    ways_in: [lead_it, serve_it]
+    because: "You work with neighbors on one small change you can see when you walk outside."
+
+  - id: new_friend
+    text: "I have a friend I didn't have before"
+    icon: "👋"
+    interests: {newcomer_meetups: 1.0, conversation_circles: 0.9, book_club: 0.6, board_games: 0.6, kickball_rec_leagues: 0.6, community_meals: 0.6, jam_sessions: 0.5, affinity_social: 0.5, young_adult_social: 0.5, craft_circle: 0.5, language_exchange: 0.4}
+    roles: [help_teach]
+    formats: [conversation, side_by_side, team_play]
+    ways_in: [do_it]
+    because: "You see the same people again, and the group gives you something to talk about."

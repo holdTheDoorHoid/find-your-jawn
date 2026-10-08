@@ -1,0 +1,57 @@
+# How people spend time together at a group.
+#
+# Read by: the quiz scenes (each scene says which formats it shows), the matching engine (role and
+# format score), the research agents (each group lists its formats), and the stretch rules (a
+# stretch keeps the format and changes something else).
+# Ids are fixed. A group usually has two or three formats.
+
+version: 1
+
+formats:
+  - id: side_by_side
+    icon: "🛠️"
+    label: "Side by side"
+    description: "You work or play next to other people on a shared job. Talking is easy but not required."
+    example: "Pulling weeds in a garden, fixing bikes, walking dogs."
+
+  - id: conversation
+    icon: "💬"
+    label: "Talking together"
+    description: "The main thing you do is talk and listen in a small group."
+    example: "A book club, a language practice night, a dinner with new people."
+
+  - id: team_play
+    icon: "⚽"
+    label: "Playing as a team"
+    description: "You play, row or compete with a team, and everyone has a part."
+    example: "Pickup soccer, a kickball league, a rowing crew."
+
+  - id: perform_make_together
+    icon: "🎭"
+    label: "Making or performing together"
+    description: "You rehearse, practice or build something with others so you can share it."
+    example: "A play, a choir, a Mummers band, a mural."
+
+  - id: behind_the_scenes
+    icon: "📋"
+    label: "Behind the scenes"
+    description: "You set up, sort, count, cook or keep things running so others can enjoy them."
+    example: "Sorting food donations, building sets, running a registration table."
+
+  - id: lead_organize
+    icon: "🧭"
+    label: "Leading and organizing"
+    description: "You run meetings, plan events, bring people together or speak up for a group."
+    example: "A block captain, a committee chair, a team captain."
+
+  - id: learn_skill
+    icon: "🎓"
+    label: "Learning a skill"
+    description: "A teacher or an experienced member shows you how, and you practice."
+    example: "A learn to row day, a beginner cave trip, a woodworking class."
+
+  - id: one_off_event
+    icon: "📅"
+    label: "One time events"
+    description: "You show up for one day or one evening, with no long promise."
+    example: "A cleanup day, a festival shift, a workshop."

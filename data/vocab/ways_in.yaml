@@ -1,0 +1,239 @@
+# The five ways in: five different ways to take part in the same interest.
+#
+# Read by: the matching engine (the "same thing, new way in" stretch keeps the interest and changes
+# the way in, DESIGN section 4), the interest pages, and research agents (each group lists the ways
+# in it offers in plain words under what_you_do).
+#
+# `ways` defines the five. `by_family` gives, for every interest family, example tags and a plain
+# sentence for each way in. The tags are ids from interests.yaml. The sentences are what a visitor
+# sees when the site explains a stretch, so they are written for people.
+# The support recovery family is used only by the separate support flow and is never a stretch.
+
+version: 1
+
+ways:
+  - id: do_it
+    icon: "🙌"
+    label: "Do it"
+    description: "Take part as a regular member, player or participant."
+  - id: learn_it
+    icon: "🎓"
+    label: "Learn it"
+    description: "Take a class, a beginner night or a workshop and build the skill."
+  - id: teach_it
+    icon: "🧑‍🏫"
+    label: "Teach it"
+    description: "Share what you know. Coach, lead a session or mentor a beginner."
+  - id: serve_it
+    icon: "🤲"
+    label: "Serve it"
+    description: "Help from the side. Set up, sort, cook, drive or care for the place or the people."
+  - id: lead_it
+    icon: "🧭"
+    label: "Lead it"
+    description: "Take a bigger role. Organize, chair a committee, captain a team or run a project."
+
+by_family:
+
+  outdoors-adventure:
+    do_it: {tags: [hiking, caving, kayaking], example: "Join the weekend hike, cave trip or paddle."}
+    learn_it: {tags: [climbing, camping], example: "Take a beginner climbing night or a camping skills weekend."}
+    teach_it: {tags: [hiking, birding], example: "Lead a slow, friendly hike or a bird walk for beginners."}
+    serve_it: {tags: [camping, hiking], example: "Look after the club's gear closet or drive a carpool to the trailhead."}
+    lead_it: {tags: [caving, hiking], example: "Plan the trip calendar or become a trip leader."}
+
+  nature-environment:
+    do_it: {tags: [park_cleanup, tree_tending], example: "Join a park cleanup or help plant street trees."}
+    learn_it: {tags: [tree_tending, citizen_science], example: "Take a Tree Tender class or walk with a naturalist."}
+    teach_it: {tags: [citizen_science, tree_tending], example: "Show neighbors how to count birds or care for a young tree."}
+    serve_it: {tags: [trail_building, habitat_restoration], example: "Haul mulch, pull invasive plants or fix trail steps."}
+    lead_it: {tags: [friends_of_park, trail_building], example: "Run a work day as a crew leader or help lead a Friends group."}
+
+  gardening-greening:
+    do_it: {tags: [community_garden, vacant_lot_greening], example: "Take a plot or help on the weekly work day."}
+    learn_it: {tags: [garden_club, pollinators_bees], example: "Take a beginner gardening class or a beekeeping course."}
+    teach_it: {tags: [community_garden, urban_farming], example: "Show kids and neighbors how to plant a bed."}
+    serve_it: {tags: [community_orchard, vacant_lot_greening], example: "Water, weed and haul compost on a work day."}
+    lead_it: {tags: [community_garden, vacant_lot_greening], example: "Coordinate the plots or lead a lot greening project."}
+
+  sports-teams:
+    do_it: {tags: [soccer, basketball, kickball_rec_leagues], example: "Sign up for a pickup game or a casual league."}
+    learn_it: {tags: [tennis_pickleball, cricket], example: "Join a beginner clinic or learn night."}
+    teach_it: {tags: [youth_coaching, basketball], example: "Coach a kids team, even if you were never a star."}
+    serve_it: {tags: [softball_baseball, youth_coaching], example: "Keep score, run the snack stand or drive the team van."}
+    lead_it: {tags: [kickball_rec_leagues, soccer], example: "Captain a team or help run the league."}
+
+  running-cycling-fitness:
+    do_it: {tags: [running, group_bike_rides, yoga_movement], example: "Join a weekly run, a group ride or a free class."}
+    learn_it: {tags: [martial_arts, strength_training], example: "Take a beginner class where everyone starts at zero."}
+    teach_it: {tags: [bike_repair, running], example: "Show new riders how to fix a flat, or pace a beginner run group."}
+    serve_it: {tags: [running, bike_repair], example: "Staff a water stop at a race or fix bikes for kids."}
+    lead_it: {tags: [running, group_bike_rides], example: "Lead a weekly run or ride for newcomers."}
+
+  water-rowing:
+    do_it: {tags: [rowing, dragon_boat, swimming], example: "Row, paddle or swim with a regular crew."}
+    learn_it: {tags: [rowing, sailing], example: "Come to a learn to row day on Boathouse Row."}
+    teach_it: {tags: [youth_rowing, swimming], example: "Coach kids on the water or teach a swim class."}
+    serve_it: {tags: [regatta_volunteering, youth_rowing], example: "Help at a regatta weekend or around the boathouse."}
+    lead_it: {tags: [rowing, regatta_volunteering], example: "Join a club committee or run a race day."}
+
+  arts-crafts:
+    do_it: {tags: [painting_drawing, craft_circle, fiber_arts], example: "Join an open studio night or a weekly craft circle."}
+    learn_it: {tags: [pottery_ceramics, printmaking, photography], example: "Take a beginner class in clay, printing or photography."}
+    teach_it: {tags: [painting_drawing, craft_circle], example: "Teach a craft to kids or older neighbors."}
+    serve_it: {tags: [mural_public_art, painting_drawing], example: "Help paint a community mural or hang a gallery show."}
+    lead_it: {tags: [mural_public_art, craft_circle], example: "Organize a mural project or a craft fair."}
+
+  music:
+    do_it: {tags: [choir_singing, jam_sessions, community_band], example: "Sing, jam or play with a community group."}
+    learn_it: {tags: [instrument_lessons, drum_circle], example: "Take beginner lessons or join an open drum circle."}
+    teach_it: {tags: [instrument_lessons, choir_singing], example: "Teach a beginner an instrument or lead a warm up."}
+    serve_it: {tags: [jam_sessions, community_band], example: "Help at concerts with chairs, tickets and sound."}
+    lead_it: {tags: [community_band, choir_singing], example: "Run rehearsals or plan the season."}
+
+  theater-dance-performance:
+    do_it: {tags: [community_theater, social_dance, improv_comedy], example: "Join a cast, a dance night or an improv class."}
+    learn_it: {tags: [dance_company, cultural_dance], example: "Take a beginner dance class, from ballet to lion dance."}
+    teach_it: {tags: [dance_company, community_theater], example: "Teach a class or coach younger performers."}
+    serve_it: {tags: [stage_crew, community_theater], example: "Build sets, sew costumes or usher at the show."}
+    lead_it: {tags: [community_theater, cultural_dance], example: "Direct a show or run a dance group."}
+
+  books-writing:
+    do_it: {tags: [book_club, writing_group, poetry], example: "Join a book club, writing group or poetry night."}
+    learn_it: {tags: [writing_group, zines_media], example: "Take a writing workshop or make your first zine."}
+    teach_it: {tags: [literacy_tutoring, library_programs], example: "Tutor an adult learning to read or lead a story time."}
+    serve_it: {tags: [prison_book_programs, library_programs], example: "Pack books for people in prison or help at a library book sale."}
+    lead_it: {tags: [book_club, writing_group], example: "Run the book club or host the open mic."}
+
+  games-puzzles:
+    do_it: {tags: [board_games, trivia_nights, chess], example: "Come to game night, trivia or a chess meetup."}
+    learn_it: {tags: [tabletop_rpg, chess], example: "Sit in on a beginner game and learn the rules."}
+    teach_it: {tags: [chess, board_games], example: "Teach kids chess or host the beginner table."}
+    serve_it: {tags: [board_games, fandom_cons], example: "Help run game night or staff a convention table."}
+    lead_it: {tags: [tabletop_rpg, trivia_nights], example: "Be the game master or the quiz host."}
+
+  making-tech:
+    do_it: {tags: [woodworking, makerspace, repair_cafe], example: "Use the shop on open nights or fix things at a repair cafe."}
+    learn_it: {tags: [coding_software, electronics_robotics, ham_radio], example: "Take a beginner class in code, circuits or radio."}
+    teach_it: {tags: [digital_skills, electronics_robotics], example: "Help older neighbors with their phones or coach a robotics team."}
+    serve_it: {tags: [repair_cafe, makerspace], example: "Fix things for neighbors for free."}
+    lead_it: {tags: [makerspace, coding_software], example: "Lead a project team or run open shop nights."}
+
+  science-learning:
+    do_it: {tags: [astronomy, natural_history], example: "Join a star party or a collecting trip."}
+    learn_it: {tags: [talks_lectures, adult_learning, astronomy], example: "Go to a talk series or take a class for adults."}
+    teach_it: {tags: [stem_outreach, astronomy], example: "Show kids the moon through a telescope."}
+    serve_it: {tags: [astronomy, stem_outreach], example: "Set up telescopes for a public night or help at a science fair."}
+    lead_it: {tags: [philosophy_discussion, talks_lectures], example: "Host the discussion or book the speakers."}
+
+  history-heritage-preservation:
+    do_it: {tags: [walking_tours, genealogy], example: "Join a history walk or a family history night."}
+    learn_it: {tags: [genealogy, preservation_architecture], example: "Take a class on tracing your family or reading old buildings."}
+    teach_it: {tags: [walking_tours, historic_site_volunteering], example: "Lead tours or school visits at a historic site."}
+    serve_it: {tags: [cemetery_friends, museum_volunteering], example: "Clean old headstones or staff a museum desk."}
+    lead_it: {tags: [oral_history, preservation_architecture], example: "Run an oral history project or lead a campaign to save a building."}
+
+  culture-language-heritage-groups:
+    do_it: {tags: [language_exchange, heritage_clubs], example: "Practice a language or join a heritage club."}
+    learn_it: {tags: [language_exchange, sign_language], example: "Take a language class or learn sign language."}
+    teach_it: {tags: [esl_conversation, heritage_schools], example: "Help new neighbors practice English or teach a heritage language."}
+    serve_it: {tags: [immigrant_welcome, esl_conversation], example: "Greet newcomers, help with paperwork or give rides."}
+    lead_it: {tags: [heritage_clubs, cultural_exchange], example: "Plan the festival or host international students."}
+
+  food-drink:
+    do_it: {tags: [cooking_baking, community_meals, foodie_meetups], example: "Cook, eat and swap recipes with a group."}
+    learn_it: {tags: [cooking_baking, homebrew_wine], example: "Take a beginner cooking class or a home brewing night."}
+    teach_it: {tags: [heritage_cooking, cooking_baking], example: "Teach a family recipe to the group."}
+    serve_it: {tags: [community_meals, farmers_markets_coops], example: "Cook or serve at a community meal or work a co-op shift."}
+    lead_it: {tags: [community_meals, farmers_markets_coops], example: "Organize the potluck or join the co-op committee."}
+
+  animals:
+    do_it: {tags: [shelter_volunteering, dog_owner_groups], example: "Walk shelter dogs or join a dog owners group."}
+    learn_it: {tags: [wildlife_rehab, horses_riding], example: "Take a training to help injured wildlife or learn to ride."}
+    teach_it: {tags: [dog_owner_groups, animal_fostering], example: "Mentor a new foster family or run a puppy class."}
+    serve_it: {tags: [shelter_volunteering, cat_rescue_tnr, animal_fostering], example: "Foster an animal, clean kennels or trap cats for spay and neuter."}
+    lead_it: {tags: [cat_rescue_tnr, shelter_volunteering], example: "Coordinate the fosters or lead a community cat team."}
+
+  neighborhood-civic:
+    do_it: {tags: [block_captain, clean_blocks, town_watch], example: "Help on a clean block day or walk with the town watch."}
+    learn_it: {tags: [civic_association, police_advisory], example: "Go to a meeting to see how your area works."}
+    teach_it: {tags: [block_captain, civic_association], example: "Show new neighbors how to get things done, or train new block captains."}
+    serve_it: {tags: [clean_blocks, rec_center_council], example: "Set up chairs, bring snacks or help a rec center event."}
+    lead_it: {tags: [civic_association, block_captain, rec_center_council], example: "Chair a committee, join the board or become a block captain."}
+
+  advocacy-rights:
+    do_it: {tags: [tenant_rights, street_safety_transit], example: "Join a campaign for safer streets or fair housing."}
+    learn_it: {tags: [immigrant_rights, worker_rights], example: "Take a know your rights workshop."}
+    teach_it: {tags: [tenant_rights, immigrant_rights], example: "Teach neighbors what their rights are."}
+    serve_it: {tags: [justice_reform_reentry, immigrant_rights], example: "Sit in on court hearings, make calls or bring food to a meeting."}
+    lead_it: {tags: [street_safety_transit, tenant_rights], example: "Lead a committee or organize a neighborhood campaign."}
+
+  hunger-housing-basic-needs:
+    do_it: {tags: [food_pantry, community_fridge, mutual_aid], example: "Pack groceries, stock a fridge or answer a mutual aid request."}
+    learn_it: {tags: [home_repair, free_help_clinics], example: "Train to help with home repairs or free tax preparation."}
+    teach_it: {tags: [free_help_clinics, home_repair], example: "Teach a repair skill or explain how benefits work."}
+    serve_it: {tags: [food_rescue, goods_closets, homeless_outreach], example: "Sort donations, rescue food or hand out supplies."}
+    lead_it: {tags: [mutual_aid, community_fridge], example: "Coordinate the shift schedule or start a fridge on your block."}
+
+  kids-youth-mentoring:
+    do_it: {tags: [after_school_camps, scouts_youth_clubs], example: "Help at an after school program or a scout troop."}
+    learn_it: {tags: [mentoring, foster_care_support], example: "Do the training to become a mentor or a child advocate."}
+    teach_it: {tags: [tutoring, mentoring], example: "Tutor a student or mentor a teen."}
+    serve_it: {tags: [school_parent_groups, parent_playgroups], example: "Run the snack table, chaperone or raise money for a school."}
+    lead_it: {tags: [youth_leadership, scouts_youth_clubs], example: "Lead a troop or advise a youth council."}
+
+  seniors-intergenerational:
+    do_it: {tags: [senior_centers, senior_activities], example: "Come to a class, a lunch or a dance at a senior center."}
+    learn_it: {tags: [intergenerational, senior_centers], example: "Take a class where younger and older people learn side by side."}
+    teach_it: {tags: [retiree_corps, intergenerational], example: "Share your work skills with younger people."}
+    serve_it: {tags: [friendly_visiting, neighbor_errands, nursing_home_hospice], example: "Make friendly visits, drive a neighbor or share an afternoon at a nursing home."}
+    lead_it: {tags: [retiree_corps, senior_centers], example: "Lead a club or coordinate volunteers."}
+
+  health-wellness:
+    do_it: {tags: [meditation_mindfulness, tai_chi_qigong], example: "Join a weekly sitting group or a tai chi class."}
+    learn_it: {tags: [doula_birth_support, harm_reduction], example: "Take a training, such as overdose response or birth support."}
+    teach_it: {tags: [tai_chi_qigong, meditation_mindfulness], example: "Lead a group practice once you know the basics."}
+    serve_it: {tags: [hospital_volunteering, health_outreach], example: "Greet patients, help at a health fair or give out information."}
+    lead_it: {tags: [health_outreach, mental_health_awareness], example: "Organize a health fair or an awareness walk."}
+
+  faith-community:
+    do_it: {tags: [worship_community, worship_music], example: "Join a congregation or sing in its choir."}
+    learn_it: {tags: [scripture_study, interfaith], example: "Join a study group or an interfaith conversation."}
+    teach_it: {tags: [faith_youth_programs, scripture_study], example: "Teach a class for kids or lead a study group."}
+    serve_it: {tags: [faith_service_projects, congregation_social], example: "Cook for a supper, run a clothing drive or visit members at home."}
+    lead_it: {tags: [faith_service_projects, interfaith], example: "Chair a service committee or host an interfaith dinner."}
+
+  social-meetups:
+    do_it: {tags: [newcomer_meetups, conversation_circles, young_adult_social], example: "Come to the next meetup and say hello to one person."}
+    learn_it: {tags: [newcomer_meetups, conversation_circles], example: "Try a first night with a host who introduces newcomers."}
+    teach_it: {tags: [newcomer_meetups, veterans_posts], example: "Welcome and mentor people who are newer than you."}
+    serve_it: {tags: [fraternal_service_clubs, veterans_posts], example: "Help with the club's fundraisers and service projects."}
+    lead_it: {tags: [newcomer_meetups, young_adult_social, lgbtq_social], example: "Host a meetup or help run the group."}
+
+  careers-skills-professional:
+    do_it: {tags: [professional_associations, entrepreneurs], example: "Go to the monthly meeting and meet people in your field."}
+    learn_it: {tags: [public_speaking, trades_training, money_skills], example: "Practice speaking, take a trades class or learn money basics."}
+    teach_it: {tags: [job_clubs, skills_volunteering], example: "Coach someone on a resume or a job interview."}
+    serve_it: {tags: [skills_volunteering, job_clubs], example: "Use your work skills to help a small nonprofit for free."}
+    lead_it: {tags: [board_service, professional_associations], example: "Join a nonprofit board or chair a committee."}
+
+  emergency-disaster:
+    do_it: {tags: [emergency_response_teams, volunteer_fire_ems], example: "Join a neighborhood emergency team or a volunteer fire company."}
+    learn_it: {tags: [first_aid_cpr, preparedness_planning], example: "Take a first aid and CPR class or a preparedness workshop."}
+    teach_it: {tags: [first_aid_cpr, preparedness_planning], example: "Teach a CPR class once you are certified."}
+    serve_it: {tags: [disaster_relief, weather_checks], example: "Help after a fire or storm, or check on neighbors in a heat wave."}
+    lead_it: {tags: [emergency_response_teams, preparedness_planning], example: "Coordinate a block's emergency plan or lead a team."}
+
+  philly-traditions:
+    do_it: {tags: [mummers_comic_club, mummers_fancy_brigade, parade_units], example: "March, strut or play in a parade unit."}
+    learn_it: {tags: [mummers_string_band, mummers_fancy_brigade], example: "Come to an open rehearsal and learn a part."}
+    teach_it: {tags: [mummers_string_band, parade_units], example: "Teach beginners an instrument or the strut."}
+    serve_it: {tags: [mummers_clubhouse, street_festivals], example: "Help build floats, sew costumes or work a festival booth."}
+    lead_it: {tags: [mummers_clubhouse, parade_units], example: "Join a club committee or captain a brigade."}
+
+  support-recovery:
+    do_it: {tags: [grief_support, addiction_recovery, caregiver_support], example: "Go to a meeting. You can just listen the first time."}
+    learn_it: {tags: [mental_health_support, chronic_illness_support], example: "Sit in on an open meeting or read about what to expect."}
+    teach_it: {tags: [survivor_support, parenting_support], example: "Share your story as a peer speaker when you feel ready."}
+    serve_it: {tags: [grief_support, addiction_recovery], example: "Set up the room, make the coffee or greet people at the door."}
+    lead_it: {tags: [addiction_recovery, caregiver_support], example: "Train to facilitate a group, if you have been through it yourself."}

@@ -99,7 +99,7 @@ audience:
   school: null                          # for student groups
   min_age: 18
   max_age: null
-  community: []                         # optional affinity, for example [lgbtq], [veterans], [irish_heritage]
+  community: []                         # optional affinity, for example [lgbtq], [veterans], [heritage:irish], [language:es]
   faith: null                           # null, or a tradition such as catholic, muslim, interfaith
   partisan: false                       # must be false to publish
   support_group: false                  # true = shown only when someone asks for support groups
@@ -201,19 +201,25 @@ Every published listing shows "last seen active" from `last_sign_of_life`.
 Controlled lists live in `data/vocab/`:
 
 - `interests.yaml`: interest families and tags, plus an adjacency graph used for stretch picks. Each
-  edge has a type: `same_skill`, `same_crowd`, `same_place`, `same_cause`, `same_topic`.
-- `ways_in.yaml`: for each interest, the five ways in (do it, learn it, teach it, serve it, lead it).
+  edge has a type: `same_skill`, `same_crowd`, `same_place`, `same_cause`, `same_topic`. The
+  `support-recovery` family carries `support_only: true`: it is used only by the separate support flow.
+- `ways_in.yaml`: the five ways in (do it, learn it, teach it, serve it, lead it), with example tags and a
+  plain sentence for each interest family.
 - `motives.yaml`: the six Volunteer Functions Inventory motives with plain language labels.
 - `formats.yaml`: how people spend time together (side by side, conversation, team play, perform or
   make together, behind the scenes, lead and organize, learn a skill, one off event).
-- `audiences.yaml`: crowd and community labels.
+- `audiences.yaml`: crowd, open to, community and faith labels, a starter list of heritages (written
+  `heritage:irish` in `audience.community`) and languages (`language:es` there, bare `es` in
+  `access.languages`).
 - `roles.yaml`: the six roles (what you do there), a compact take on the Holland interest types.
+- `kinds.yaml`: the eleven group kinds with a one line description each.
 - `scenes.yaml`: the quiz's Saturday morning scenes and "lost track of time" moments, each mapped to
   interests, roles and formats, with picture credits.
 - `future_selves.yaml`: the "a year from now" statements, each mapped to interests, roles and ways in
   that move a person toward it.
-- `neighborhoods.yaml`: neighborhood names with planning district, from the City's neighborhood
-  boundaries.
+- `neighborhoods.yaml`: the 18 planning districts, six regions for coverage slices, neighborhood names
+  with their district and region (from the OpenDataPhilly neighborhood boundaries), aliases for
+  broad names, and a ZIP code to district table for groups that only have a ZIP.
 
 ## 5. Site data (built, not committed)
 

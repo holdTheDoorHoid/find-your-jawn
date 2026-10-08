@@ -1,0 +1,326 @@
+# Philadelphia neighborhoods, planning districts, regions and ZIP codes.
+#
+# Read by: the importer (checks every `neighborhood` on a group location), the build (adds
+# `planning_district` to each location, from the neighborhood or else from the ZIP), the coverage
+# estimates (slices by planning district and region), "Your neighborhood" and the neighborhood
+# sweep research agents (one agent per planning district).
+#
+# Sources and how this file was made (2026-10-08):
+#   neighborhoods  OpenDataPhilly "Philadelphia Neighborhoods" (159 areas), Creative Commons
+#                  Attribution 4.0, attribute to Abaca Labs (the set Azavea first published).
+#                  https://github.com/opendataphilly/odp-data-storage/tree/master/philadelphia-neighborhoods
+#   districts      City of Philadelphia "Planning Districts" layer. All 18 names match the City's.
+#   zips           City of Philadelphia "Zipcodes_Poly" layer (48 ZIPs with an area on the map).
+#   Each neighborhood and ZIP was assigned to the planning district it overlaps most (map overlap
+#   computed once with shapely, not at build time). `also_in` lists any other district that holds
+#   at least a fifth of the area. For ZIPs, parks, the airport and industrial land were left out of
+#   the count, so the district shown is where people live.
+#   The six regions are our own grouping of the 18 districts, for coverage slices. Two calls are
+#   judgment: River Wards (Fishtown, Kensington, Port Richmond) sits in North, and North Delaware
+#   (Tacony, Holmesburg, Mayfair) sits in Northeast. Change them in one place, the district rows.
+#   ZIP codes that exist only for PO boxes or single buildings (19160 to 19199) have no area and
+#   are not placed here. A group with one of those uses its street address instead.
+#
+# `residential: false` marks areas where almost nobody lives (the airport, the Navy Yard, large
+# parks, industrial land). Groups can still be located there.
+#
+# Group files use the neighborhood `id` in `locations[].neighborhood`.
+# Ids are stable forever. `aliases` maps names people use for an area that is split into several
+# neighborhoods here (Kensington, Germantown), so the importer can place a group written up under
+# the broader name, and flag it for a person to choose.
+
+version: 1
+
+sources:
+  neighborhoods:
+    name: "Philadelphia Neighborhoods (OpenDataPhilly)"
+    url: "https://github.com/opendataphilly/odp-data-storage/tree/master/philadelphia-neighborhoods"
+    terms: "Creative Commons Attribution 4.0"
+    attribution: "Neighborhood boundaries: Abaca Labs, via OpenDataPhilly"
+    fetched: 2026-10-08
+  planning_districts:
+    name: "Planning Districts (City of Philadelphia)"
+    url: "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Planning_Districts/FeatureServer/0"
+    terms: "City of Philadelphia License (free reuse, as is)"
+    attribution: "Data: City of Philadelphia"
+    fetched: 2026-10-08
+  zip_codes:
+    name: "ZIP Codes (City of Philadelphia)"
+    url: "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Zipcodes_Poly/FeatureServer/0"
+    terms: "City of Philadelphia License (free reuse, as is)"
+    attribution: "Data: City of Philadelphia"
+    fetched: 2026-10-08
+
+regions:
+  - {id: center_city, label: "Center City"}
+  - {id: north, label: "North"}
+  - {id: northeast, label: "Northeast"}
+  - {id: northwest, label: "Northwest"}
+  - {id: south, label: "South"}
+  - {id: west_southwest, label: "West and Southwest"}
+
+planning_districts:
+  - {id: central, label: Central, abbrev: CTR, region: center_city}
+  - {id: central_northeast, label: "Central Northeast", abbrev: CNE, region: northeast}
+  - {id: lower_far_northeast, label: "Lower Far Northeast", abbrev: LFNE, region: northeast}
+  - {id: lower_north, label: "Lower North", abbrev: LNO, region: north}
+  - {id: lower_northeast, label: "Lower Northeast", abbrev: LNE, region: northeast}
+  - {id: lower_northwest, label: "Lower Northwest", abbrev: LNW, region: northwest}
+  - {id: lower_south, label: "Lower South", abbrev: LS, region: south}
+  - {id: lower_southwest, label: "Lower Southwest", abbrev: LSW, region: west_southwest}
+  - {id: north, label: North, abbrev: NOR, region: north}
+  - {id: north_delaware, label: "North Delaware", abbrev: NDEL, region: northeast}
+  - {id: river_wards, label: "River Wards", abbrev: RW, region: north}
+  - {id: south, label: South, abbrev: STH, region: south}
+  - {id: university_southwest, label: "University Southwest", abbrev: USW, region: west_southwest}
+  - {id: upper_far_northeast, label: "Upper Far Northeast", abbrev: UFNE, region: northeast}
+  - {id: upper_north, label: "Upper North", abbrev: UNO, region: north}
+  - {id: upper_northwest, label: "Upper Northwest", abbrev: UNW, region: northwest}
+  - {id: west, label: West, abbrev: WST, region: west_southwest}
+  - {id: west_park, label: "West Park", abbrev: WP, region: west_southwest}
+
+neighborhoods:
+  - {id: academy_gardens, label: "Academy Gardens", district: lower_far_northeast, region: northeast}
+  - {id: airport, label: Airport, district: lower_southwest, region: west_southwest, residential: false}
+  - {id: allegheny_west, label: "Allegheny West", district: north, region: north}
+  - {id: andorra, label: Andorra, district: lower_northwest, region: northwest}
+  - {id: aston_woodbridge, label: Aston-Woodbridge, district: lower_far_northeast, region: northeast}
+  - {id: bartram_village, label: "Bartram Village", district: university_southwest, region: west_southwest}
+  - {id: bella_vista, label: "Bella Vista", district: central, region: center_city, also_in: [south]}
+  - {id: belmont, label: Belmont, district: west, region: west_southwest}
+  - {id: blue_bell_hill, label: "Blue Bell Hill", district: upper_northwest, region: northwest}
+  - {id: brewerytown, label: Brewerytown, district: lower_north, region: north}
+  - {id: bridesburg, label: Bridesburg, district: river_wards, region: north}
+  - {id: burholme, label: Burholme, district: central_northeast, region: northeast}
+  - {id: bustleton, label: Bustleton, district: upper_far_northeast, region: northeast}
+  - {id: byberry, label: Byberry, district: upper_far_northeast, region: northeast}
+  - {id: callowhill, label: Callowhill, district: central, region: center_city}
+  - {id: carroll_park, label: "Carroll Park", district: west, region: west_southwest, also_in: [west_park]}
+  - {id: cedar_park, label: "Cedar Park", district: university_southwest, region: west_southwest}
+  - {id: cedarbrook, label: Cedarbrook, district: upper_north, region: north}
+  - {id: center_city, label: "Center City East", district: central, region: center_city}
+  - {id: chestnut_hill, label: "Chestnut Hill", district: upper_northwest, region: northwest}
+  - {id: chinatown, label: Chinatown, district: central, region: center_city}
+  - {id: clearview, label: Clearview, district: lower_southwest, region: west_southwest}
+  - {id: cobbs_creek, label: "Cobbs Creek", district: west, region: west_southwest}
+  - {id: crescentville, label: Crescentville, district: lower_northeast, region: northeast}
+  - {id: crestmont_farms, label: "Crestmont Farms", district: lower_far_northeast, region: northeast}
+  - {id: dearnley_park, label: "Dearnley Park", district: lower_northwest, region: northwest}
+  - {id: dickinson_narrows, label: "Dickinson Narrows", district: south, region: south}
+  - {id: dunlap, label: Dunlap, district: west, region: west_southwest}
+  - {id: east_falls, label: "East Falls", district: lower_northwest, region: northwest}
+  - {id: east_kensington, label: "East Kensington", district: river_wards, region: north}
+  - {id: east_oak_lane, label: "East Oak Lane", district: upper_north, region: north}
+  - {id: east_park, label: "East Park", district: lower_north, region: north, also_in: [central]}
+  - {id: east_parkside, label: "East Parkside", district: west_park, region: west_southwest}
+  - {id: east_passyunk, label: "East Passyunk", district: south, region: south}
+  - {id: east_poplar, label: "East Poplar", district: central, region: center_city, also_in: [lower_north]}
+  - {id: eastwick, label: Eastwick, district: lower_southwest, region: west_southwest}
+  - {id: elmwood, label: Elmwood, district: lower_southwest, region: west_southwest}
+  - {id: fairhill, label: Fairhill, district: north, region: north}
+  - {id: fairmount, label: Fairmount, district: central, region: center_city, also_in: [lower_north]}
+  - {id: feltonville, label: Feltonville, district: north, region: north}
+  - {id: fern_rock, label: "Fern Rock", district: upper_north, region: north}
+  - {id: fishtown, label: "Fishtown and Lower Kensington", district: river_wards, region: north}
+  - {id: fitler_square, label: "Fitler Square", district: central, region: center_city}
+  - {id: fox_chase, label: "Fox Chase", district: central_northeast, region: northeast}
+  - {id: francisville, label: Francisville, district: central, region: center_city, also_in: [lower_north]}
+  - {id: frankford, label: Frankford, district: lower_northeast, region: northeast, also_in: [river_wards]}
+  - {id: franklin_mills, label: "Franklin Mills", district: lower_far_northeast, region: northeast}
+  - {id: franklinville, label: Franklinville, district: north, region: north}
+  - {id: garden_court, label: "Garden Court", district: university_southwest, region: west_southwest, also_in: [west]}
+  - {id: germantown_east, label: "East Germantown", district: upper_northwest, region: northwest}
+  - {id: germantown_morton, label: "Germantown (Morton)", district: upper_northwest, region: northwest}
+  - {id: germantown_penn_knox, label: "Germantown (Penn Knox)", district: upper_northwest, region: northwest}
+  - {id: germantown_southwest, label: "Southwest Germantown", district: upper_northwest, region: northwest}
+  - {id: germantown_west_cent, label: "West Central Germantown", district: upper_northwest, region: northwest}
+  - {id: germantown_westside, label: "Germantown (Westside)", district: upper_northwest, region: northwest}
+  - {id: germany_hill, label: "Germany Hill", district: lower_northwest, region: northwest}
+  - {id: girard_estates, label: "Girard Estates", district: south, region: south}
+  - {id: glenwood, label: Glenwood, district: north, region: north}
+  - {id: graduate_hospital, label: "Graduate Hospital", district: central, region: center_city}
+  - {id: grays_ferry, label: "Grays Ferry", district: south, region: south}
+  - {id: greenwich, label: Greenwich, district: south, region: south}
+  - {id: haddington, label: Haddington, district: west, region: west_southwest}
+  - {id: harrowgate, label: Harrowgate, district: river_wards, region: north}
+  - {id: hartranft, label: Hartranft, district: lower_north, region: north, also_in: [north]}
+  - {id: haverford_north, label: "Haverford North", district: west, region: west_southwest}
+  - {id: hawthorne, label: Hawthorne, district: central, region: center_city, also_in: [south]}
+  - {id: holmesburg, label: Holmesburg, district: north_delaware, region: northeast}
+  - {id: hunting_park, label: "Hunting Park", district: north, region: north}
+  - {id: industrial, label: Industrial, district: lower_south, region: south, also_in: [lower_southwest], residential: false}
+  - {id: juniata_park, label: "Juniata Park", district: north, region: north}
+  - {id: kingsessing, label: Kingsessing, district: university_southwest, region: west_southwest}
+  - {id: lawndale, label: Lawndale, district: lower_northeast, region: northeast}
+  - {id: lexington_park, label: "Lexington Park", district: central_northeast, region: northeast}
+  - {id: logan, label: Logan, district: upper_north, region: north}
+  - {id: logan_square, label: "Logan Square", district: central, region: center_city}
+  - {id: lower_moyamensing, label: "Lower Moyamensing", district: south, region: south}
+  - {id: ludlow, label: Ludlow, district: lower_north, region: north}
+  - {id: manayunk, label: Manayunk, district: lower_northwest, region: northwest}
+  - {id: mantua, label: Mantua, district: west, region: west_southwest, also_in: [west_park]}
+  - {id: mayfair, label: Mayfair, district: north_delaware, region: northeast}
+  - {id: mcguire, label: McGuire, district: north, region: north}
+  - {id: mechanicsville, label: Mechanicsville, district: lower_far_northeast, region: northeast}
+  - {id: melrose_park_gardens, label: "Melrose Park Gardens", district: upper_north, region: north}
+  - {id: mill_creek, label: "Mill Creek", district: west, region: west_southwest}
+  - {id: millbrook, label: Millbrook, district: lower_far_northeast, region: northeast}
+  - {id: modena, label: Modena, district: lower_far_northeast, region: northeast}
+  - {id: morrell_park, label: "Morrell Park", district: lower_far_northeast, region: northeast}
+  - {id: mount_airy_east, label: "East Mount Airy", district: upper_northwest, region: northwest}
+  - {id: mount_airy_west, label: "West Mount Airy", district: upper_northwest, region: northwest}
+  - {id: navy_yard, label: "Navy Yard", district: lower_south, region: south, residential: false}
+  - {id: newbold, label: Newbold, district: south, region: south}
+  - {id: nicetown, label: Nicetown, district: north, region: north}
+  - {id: normandy_village, label: "Normandy Village", district: lower_far_northeast, region: northeast}
+  - {id: north_central, label: "North Central", district: lower_north, region: north}
+  - {id: northeast_airport, label: "Northeast Philadelphia Airport", district: lower_far_northeast, region: northeast, residential: false}
+  - {id: northern_liberties, label: "Northern Liberties", district: central, region: center_city}
+  - {id: northwood, label: Northwood, district: lower_northeast, region: northeast}
+  - {id: ogontz, label: Ogontz, district: upper_north, region: north}
+  - {id: old_city, label: "Old City", district: central, region: center_city}
+  - {id: old_kensington, label: "Old Kensington", district: lower_north, region: north}
+  - {id: olney, label: Olney, district: upper_north, region: north}
+  - {id: overbrook, label: Overbrook, district: west_park, region: west_southwest, also_in: [west]}
+  - {id: oxford_circle, label: "Oxford Circle", district: central_northeast, region: northeast, also_in: [lower_northeast]}
+  - {id: packer_park, label: "Packer Park", district: lower_south, region: south}
+  - {id: parkwood_manor, label: "Parkwood Manor", district: lower_far_northeast, region: northeast}
+  - {id: paschall, label: Paschall, district: lower_southwest, region: west_southwest}
+  - {id: passyunk_square, label: "Passyunk Square", district: south, region: south}
+  - {id: pennsport, label: Pennsport, district: south, region: south}
+  - {id: pennypack, label: Pennypack, district: lower_far_northeast, region: northeast}
+  - {id: pennypack_park, label: "Pennypack Park", district: central_northeast, region: northeast, residential: false}
+  - {id: pennypack_woods, label: "Pennypack Woods", district: lower_far_northeast, region: northeast}
+  - {id: penrose, label: Penrose, district: lower_southwest, region: west_southwest}
+  - {id: point_breeze, label: "Point Breeze", district: south, region: south}
+  - {id: port_richmond, label: "Port Richmond", district: river_wards, region: north}
+  - {id: powelton, label: Powelton, district: university_southwest, region: west_southwest}
+  - {id: queen_village, label: "Queen Village", district: central, region: center_city, also_in: [south]}
+  - {id: rhawnhurst, label: Rhawnhurst, district: central_northeast, region: northeast}
+  - {id: richmond, label: Richmond, district: river_wards, region: north}
+  - {id: rittenhouse, label: Rittenhouse, district: central, region: center_city}
+  - {id: riverfront, label: Riverfront, district: south, region: south, also_in: [lower_south, central]}
+  - {id: roxborough, label: Roxborough, district: lower_northwest, region: northwest}
+  - {id: roxborough_park, label: "Roxborough Park", district: lower_northwest, region: northwest}
+  - {id: sharswood, label: Sharswood, district: lower_north, region: north}
+  - {id: society_hill, label: "Society Hill", district: central, region: center_city}
+  - {id: somerton, label: Somerton, district: upper_far_northeast, region: northeast}
+  - {id: southwest_schuylkill, label: "Southwest Schuylkill", district: university_southwest, region: west_southwest}
+  - {id: spring_garden, label: "Spring Garden", district: central, region: center_city}
+  - {id: spruce_hill, label: "Spruce Hill", district: university_southwest, region: west_southwest}
+  - {id: stadium_district, label: "Stadium District", district: lower_south, region: south, also_in: [south], residential: false}
+  - {id: stanton, label: Stanton, district: lower_north, region: north}
+  - {id: strawberry_mansion, label: "Strawberry Mansion", district: lower_north, region: north}
+  - {id: summerdale, label: Summerdale, district: lower_northeast, region: northeast}
+  - {id: tacony, label: Tacony, district: north_delaware, region: northeast}
+  - {id: tioga, label: Tioga, district: north, region: north}
+  - {id: torresdale, label: Torresdale, district: north_delaware, region: northeast}
+  - {id: university_city, label: "University City", district: university_southwest, region: west_southwest}
+  - {id: upper_kensington, label: "Upper Kensington", district: north, region: north}
+  - {id: upper_roxborough, label: "Upper Roxborough", district: lower_northwest, region: northwest}
+  - {id: walnut_hill, label: "Walnut Hill", district: university_southwest, region: west_southwest, also_in: [west]}
+  - {id: washington_square, label: "Washington Square West", district: central, region: center_city}
+  - {id: west_kensington, label: "West Kensington", district: lower_north, region: north}
+  - {id: west_oak_lane, label: "West Oak Lane", district: upper_north, region: north}
+  - {id: west_park, label: "West Park", district: west_park, region: west_southwest}
+  - {id: west_parkside, label: "West Parkside", district: west_park, region: west_southwest}
+  - {id: west_passyunk, label: "West Passyunk", district: south, region: south}
+  - {id: west_poplar, label: "West Poplar", district: central, region: center_city}
+  - {id: west_powelton, label: "West Powelton", district: university_southwest, region: west_southwest}
+  - {id: west_torresdale, label: "West Torresdale", district: lower_far_northeast, region: northeast}
+  - {id: whitman, label: Whitman, district: south, region: south}
+  - {id: winchester_park, label: "Winchester Park", district: lower_far_northeast, region: northeast}
+  - {id: wissahickon, label: Wissahickon, district: lower_northwest, region: northwest}
+  - {id: wissahickon_hills, label: "Wissahickon Hills", district: lower_northwest, region: northwest}
+  - {id: wissahickon_park, label: "Wissahickon Park", district: lower_northwest, region: northwest, also_in: [upper_northwest], residential: false}
+  - {id: wissinoming, label: Wissinoming, district: north_delaware, region: northeast, also_in: [lower_northeast]}
+  - {id: wister, label: Wister, district: upper_northwest, region: northwest}
+  - {id: woodland_terrace, label: "Woodland Terrace", district: university_southwest, region: west_southwest}
+  - {id: wynnefield, label: Wynnefield, district: west_park, region: west_southwest}
+  - {id: wynnefield_heights, label: "Wynnefield Heights", district: west_park, region: west_southwest}
+  - {id: yorktown, label: Yorktown, district: lower_north, region: north}
+
+aliases:
+  - {name: "Kensington", covers: [old_kensington, west_kensington, upper_kensington, east_kensington, fishtown]}
+  - {name: "Germantown", covers: [germantown_east, germantown_morton, germantown_penn_knox, germantown_southwest, germantown_westside, germantown_west_cent]}
+  - {name: "Mount Airy", covers: [mount_airy_east, mount_airy_west]}
+  - {name: "Oak Lane", covers: [east_oak_lane, west_oak_lane]}
+  - {name: "Passyunk", covers: [east_passyunk, passyunk_square, west_passyunk]}
+  - {name: "Italian Market", covers: [passyunk_square, bella_vista]}
+  - {name: "Roxborough", covers: [roxborough, upper_roxborough, roxborough_park]}
+  - {name: "Nicetown and Tioga", covers: [nicetown, tioga]}
+  - {name: "Wynnefield", covers: [wynnefield, wynnefield_heights]}
+  - {name: "Parkside", covers: [east_parkside, west_parkside]}
+  - {name: "Powelton Village", covers: [powelton, west_powelton]}
+  - {name: "Poplar", covers: [east_poplar, west_poplar]}
+  - {name: "Wissahickon", covers: [wissahickon, wissahickon_hills, wissahickon_park]}
+  - {name: "Pennypack", covers: [pennypack, pennypack_park, pennypack_woods]}
+  - {name: "Center City", covers: [center_city, rittenhouse, logan_square, washington_square, society_hill, old_city, fitler_square, callowhill, chinatown]}
+  - {name: "Gayborhood", covers: [washington_square]}
+  - {name: "Midtown Village", covers: [washington_square]}
+  - {name: "Southwest Center City", covers: [graduate_hospital]}
+  - {name: "Chinatown North", covers: [callowhill]}
+  - {name: "Olde City", covers: [old_city]}
+  - {name: "NoLibs", covers: [northern_liberties]}
+  - {name: "Brewerytown and Sharswood", covers: [brewerytown, sharswood]}
+  - {name: "University City", covers: [university_city, spruce_hill, powelton, west_powelton]}
+  - {name: "Cedar Park", covers: [cedar_park]}
+  - {name: "Art Museum area", covers: [fairmount, francisville, spring_garden]}
+
+zip_districts:
+  "19102": {district: central, region: center_city}
+  "19103": {district: central, region: center_city}
+  "19104": {district: university_southwest, region: west_southwest, also_in: [west]}
+  "19106": {district: central, region: center_city}
+  "19107": {district: central, region: center_city}
+  "19109": {district: central, region: center_city}
+  "19111": {district: central_northeast, region: northeast, also_in: [lower_northeast]}
+  "19112": {district: lower_south, region: south}
+  "19114": {district: lower_far_northeast, region: northeast, also_in: [north_delaware]}
+  "19115": {district: upper_far_northeast, region: northeast}
+  "19116": {district: upper_far_northeast, region: northeast}
+  "19118": {district: upper_northwest, region: northwest}
+  "19119": {district: upper_northwest, region: northwest}
+  "19120": {district: upper_north, region: north, also_in: [north]}
+  "19121": {district: lower_north, region: north}
+  "19122": {district: lower_north, region: north}
+  "19123": {district: central, region: center_city}
+  "19124": {district: lower_northeast, region: northeast, also_in: [north]}
+  "19125": {district: river_wards, region: north}
+  "19126": {district: upper_north, region: north}
+  "19127": {district: lower_northwest, region: northwest}
+  "19128": {district: lower_northwest, region: northwest}
+  "19129": {district: lower_northwest, region: northwest, also_in: [north]}
+  "19130": {district: central, region: center_city}
+  "19131": {district: west_park, region: west_southwest}
+  "19132": {district: north, region: north, also_in: [lower_north]}
+  "19133": {district: lower_north, region: north, also_in: [north]}
+  "19134": {district: river_wards, region: north, also_in: [north]}
+  "19135": {district: north_delaware, region: northeast}
+  "19136": {district: north_delaware, region: northeast}
+  "19137": {district: river_wards, region: north}
+  "19138": {district: upper_north, region: north, also_in: [upper_northwest]}
+  "19139": {district: west, region: west_southwest}
+  "19140": {district: north, region: north}
+  "19141": {district: upper_north, region: north}
+  "19142": {district: lower_southwest, region: west_southwest}
+  "19143": {district: university_southwest, region: west_southwest, also_in: [west]}
+  "19144": {district: upper_northwest, region: northwest}
+  "19145": {district: south, region: south, also_in: [lower_south]}
+  "19146": {district: south, region: south, also_in: [central]}
+  "19147": {district: central, region: center_city, also_in: [south]}
+  "19148": {district: south, region: south, also_in: [lower_south]}
+  "19149": {district: north_delaware, region: northeast, also_in: [lower_northeast]}
+  "19150": {district: upper_north, region: north}
+  "19151": {district: west_park, region: west_southwest, also_in: [west]}
+  "19152": {district: central_northeast, region: northeast}
+  "19153": {district: lower_southwest, region: west_southwest}
+  "19154": {district: lower_far_northeast, region: northeast, also_in: [upper_far_northeast]}
+
+# ZIP codes that serve Center City addresses but have no area on the City's ZIP map, written from
+# knowledge and marked to check later (source: knowledge, verify later).
+zip_districts_unverified:
+  "19101": {district: central, region: center_city}
+  "19105": {district: central, region: center_city}
+  "19108": {district: central, region: center_city}
+  "19110": {district: central, region: center_city}

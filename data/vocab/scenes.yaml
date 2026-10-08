@@ -1,0 +1,332 @@
+# The quiz's picture cards (docs/DESIGN.md section 2.2, questions 1 and 2).
+#
+# Read by: the quiz (shows the cards, shuffled), the matching engine (turns picks into interest,
+# role and format signals), the simulation that tests the quiz, and whoever finds the pictures.
+#
+# Three sets:
+#   saturday_scenes  the twelve "Pick the Saturday mornings that sound good" cards (question 1)
+#   extra_scenes     eight more, shown when the first picks are few or mixed
+#   moments          ten "When did you last lose track of time?" cards (question 2)
+#
+# Each card:
+#   id            stable, snake_case
+#   text          one short, concrete sentence, plain words, readable by someone learning English
+#   icon          one emoji, used until pictures exist
+#   interests     tag ids from interests.yaml with a weight from 0 to 1 (1 is the heart of the scene)
+#   roles         role ids from roles.yaml, strongest first
+#   formats       format ids from formats.yaml, strongest first
+#   picture       null until we have a photo or drawing (piloted both with and without pictures)
+#   picture_credit  null until we have a picture; then the credit line to show
+#   picture_brief a short note for whoever finds or draws the picture
+# Between them the cards cover every interest family except the support flow, every role and every
+# format (checked by pipeline/tests/test_vocab.py: a family counts as covered when a card gives one
+# of its tags a weight of 0.5 or more).
+
+version: 1
+
+prompts:
+  saturday_scenes: "Pick the Saturday mornings that sound good."
+  moments: "When did you last lose track of time?"
+
+saturday_scenes:
+  - id: scene_garden
+    text: "Pulling weeds in a community garden with your neighbors"
+    icon: "🌱"
+    interests: {community_garden: 1.0, vacant_lot_greening: 0.6, clean_blocks: 0.4, garden_club: 0.3}
+    roles: [hands_on]
+    formats: [side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "Neighbors of different ages kneeling at a raised bed on a sunny morning, gloves and buckets nearby."
+
+  - id: scene_lion_dance
+    text: "Learning lion dance moves with a drum beat"
+    icon: "🦁"
+    interests: {cultural_dance: 1.0, drum_circle: 0.5, heritage_clubs: 0.5, martial_arts: 0.3}
+    roles: [create, hands_on]
+    formats: [learn_skill, perform_make_together]
+    picture: null
+    picture_credit: null
+    picture_brief: "A lion head and a drummer in a community hall, a teacher showing a small group the steps."
+
+  - id: scene_coach_basketball
+    text: "Coaching eight year olds at basketball"
+    icon: "🏀"
+    interests: {youth_coaching: 1.0, basketball: 0.7, mentoring: 0.6, after_school_camps: 0.5}
+    roles: [help_teach, lead]
+    formats: [team_play]
+    picture: null
+    picture_credit: null
+    picture_brief: "A coach kneeling to talk with a huddle of young kids on a rec center court."
+
+  - id: scene_cave
+    text: "Crawling through a cave with a headlamp"
+    icon: "🔦"
+    interests: {caving: 1.0, climbing: 0.5, geology_fossils: 0.5, hiking: 0.4}
+    roles: [hands_on, figure_out]
+    formats: [side_by_side, learn_skill]
+    picture: null
+    picture_credit: null
+    picture_brief: "A small group in helmets and headlamps squeezing through a low, rocky passage."
+
+  - id: scene_pickup_soccer
+    text: "Playing a pickup soccer game in the park"
+    icon: "⚽"
+    interests: {soccer: 1.0, kickball_rec_leagues: 0.5, running: 0.3}
+    roles: [hands_on]
+    formats: [team_play]
+    picture: null
+    picture_credit: null
+    picture_brief: "A mixed group of adults sorting into teams on a grassy field, bags piled by the sideline."
+
+  - id: scene_book_coffee
+    text: "Talking about a good book over coffee"
+    icon: "☕"
+    interests: {book_club: 1.0, conversation_circles: 0.6, library_programs: 0.4, writing_group: 0.3}
+    roles: [figure_out]
+    formats: [conversation]
+    picture: null
+    picture_credit: null
+    picture_brief: "Five people around a small table with paperback books and coffee cups, mid laugh."
+
+  - id: scene_pantry
+    text: "Sorting food pantry donations with music on"
+    icon: "🥫"
+    interests: {food_pantry: 1.0, goods_closets: 0.5, community_fridge: 0.4, mutual_aid: 0.4}
+    roles: [hands_on, organize]
+    formats: [behind_the_scenes, side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "Volunteers at long tables sorting cans and produce into crates, a speaker playing music."
+
+  - id: scene_play
+    text: "Rehearsing a community play"
+    icon: "🎭"
+    interests: {community_theater: 1.0, stage_crew: 0.4, improv_comedy: 0.3, storytelling_spoken_word: 0.2}
+    roles: [create]
+    formats: [perform_make_together]
+    picture: null
+    picture_credit: null
+    picture_brief: "Actors with scripts in hand on a plain stage, a director seated in the front row."
+
+  - id: scene_street_trees
+    text: "Mapping street trees with an app on your phone"
+    icon: "🌳"
+    interests: {tree_tending: 1.0, citizen_science: 0.7, coding_software: 0.4, clean_blocks: 0.2}
+    roles: [figure_out, hands_on]
+    formats: [side_by_side, one_off_event]
+    picture: null
+    picture_credit: null
+    picture_brief: "Two people on a city sidewalk, one holding a phone and one measuring a tree trunk with a tape."
+
+  - id: scene_block_meeting
+    text: "Running a meeting about your block"
+    icon: "🏘️"
+    interests: {block_captain: 1.0, civic_association: 0.8, community_development: 0.4, town_watch: 0.3}
+    roles: [lead, organize]
+    formats: [lead_organize]
+    picture: null
+    picture_credit: null
+    picture_brief: "A neighbor standing with a clipboard at the front of a folding chair circle in a church basement."
+
+  - id: scene_fix_bikes
+    text: "Fixing bikes in a community bike shop"
+    icon: "🚲"
+    interests: {bike_repair: 1.0, repair_cafe: 0.6, makerspace: 0.4, group_bike_rides: 0.3}
+    roles: [hands_on, help_teach]
+    formats: [side_by_side, learn_skill]
+    picture: null
+    picture_credit: null
+    picture_brief: "A teen and an adult bent over a bike on a repair stand, tools laid out on a pegboard wall."
+
+  - id: scene_shelter_dogs
+    text: "Walking shelter dogs"
+    icon: "🐕"
+    interests: {shelter_volunteering: 1.0, dog_owner_groups: 0.4, animal_fostering: 0.4, walking_group: 0.3}
+    roles: [hands_on, help_teach]
+    formats: [side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "A volunteer in a vest walking a happy dog on a leash along a shelter path."
+
+extra_scenes:
+  - id: scene_pottery
+    text: "Making a bowl on a pottery wheel next to new friends"
+    icon: "🏺"
+    interests: {pottery_ceramics: 1.0, craft_circle: 0.5, painting_drawing: 0.4, fiber_arts: 0.3}
+    roles: [create, hands_on]
+    formats: [learn_skill, side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "Clay covered hands shaping a bowl on a wheel, other wheels spinning in the background."
+
+  - id: scene_game_night
+    text: "Playing a board game with people you just met"
+    icon: "🎲"
+    interests: {board_games: 1.0, trivia_nights: 0.5, tabletop_rpg: 0.5, chess: 0.3}
+    roles: [figure_out]
+    formats: [conversation, team_play]
+    picture: null
+    picture_credit: null
+    picture_brief: "A table of strangers leaning over a board game box, someone reading the rules out loud."
+
+  - id: scene_rowing
+    text: "Rowing on the river as the sun comes up"
+    icon: "🚣"
+    interests: {rowing: 1.0, dragon_boat: 0.5, kayaking: 0.4, swimming: 0.3}
+    roles: [hands_on]
+    formats: [team_play, learn_skill]
+    picture: null
+    picture_credit: null
+    picture_brief: "An eight person boat on calm water at dawn, the boathouses of Boathouse Row behind it."
+
+  - id: scene_mummers
+    text: "Practicing with a Mummers string band in a clubhouse"
+    icon: "🎺"
+    interests: {mummers_string_band: 1.0, mummers_clubhouse: 0.6, parade_units: 0.5, community_band: 0.5}
+    roles: [create, hands_on]
+    formats: [perform_make_together, team_play]
+    picture: null
+    picture_credit: null
+    picture_brief: "Banjos, saxophones and glockenspiels in a rehearsal room, sequined costumes hanging on a rack."
+
+  - id: scene_elder_stories
+    text: "Listening to an older neighbor tell stories about the block"
+    icon: "👵"
+    interests: {oral_history: 0.8, friendly_visiting: 0.7, intergenerational: 0.6, genealogy: 0.3}
+    roles: [help_teach, figure_out]
+    formats: [conversation]
+    picture: null
+    picture_credit: null
+    picture_brief: "A young person and an older neighbor on a rowhouse stoop, an old photo album open between them."
+
+  - id: scene_first_aid
+    text: "Learning CPR and first aid with your neighbors"
+    icon: "🩹"
+    interests: {first_aid_cpr: 1.0, emergency_response_teams: 0.6, preparedness_planning: 0.5, health_outreach: 0.5}
+    roles: [hands_on, figure_out]
+    formats: [learn_skill, one_off_event]
+    picture: null
+    picture_credit: null
+    picture_brief: "A circle of adults kneeling by training dummies while an instructor shows hand positions."
+
+  - id: scene_congregation_meal
+    text: "Cooking a big meal in a church, mosque or temple kitchen"
+    icon: "🍲"
+    interests: {faith_service_projects: 1.0, community_meals: 0.8, congregation_social: 0.6, cooking_baking: 0.6, food_pantry: 0.4}
+    roles: [hands_on, organize]
+    formats: [side_by_side, behind_the_scenes]
+    picture: null
+    picture_credit: null
+    picture_brief: "Volunteers in aprons stirring huge pots in a bright community kitchen."
+
+  - id: scene_safe_streets
+    text: "Going door to door with neighbors for a safer street crossing"
+    icon: "🚸"
+    interests: {street_safety_transit: 1.0, civic_association: 0.5, tenant_rights: 0.4, violence_prevention: 0.3}
+    roles: [lead, organize]
+    formats: [lead_organize, one_off_event]
+    picture: null
+    picture_credit: null
+    picture_brief: "Two neighbors with clipboards talking to a resident on a rowhouse step."
+
+moments:
+  - id: moment_make
+    text: "Making something with my hands"
+    icon: "🪚"
+    interests: {woodworking: 0.8, fiber_arts: 0.6, pottery_ceramics: 0.5, repair_cafe: 0.4, painting_drawing: 0.4}
+    roles: [hands_on, create]
+    formats: [side_by_side, learn_skill]
+    picture: null
+    picture_credit: null
+    picture_brief: "Hands sanding a small wooden object on a workbench."
+
+  - id: moment_puzzle
+    text: "Solving a puzzle or a hard problem"
+    icon: "🧩"
+    interests: {puzzles_escape: 1.0, chess: 0.6, coding_software: 0.6, genealogy: 0.3}
+    roles: [figure_out]
+    formats: [side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "A half finished jigsaw puzzle on a table with a mug and a pencil."
+
+  - id: moment_move
+    text: "Moving my body until I forgot everything else"
+    icon: "🏃"
+    interests: {running: 0.8, yoga_movement: 0.7, martial_arts: 0.6, tai_chi_qigong: 0.5, social_dance: 0.4, swimming: 0.4}
+    roles: [hands_on]
+    formats: [side_by_side, team_play]
+    picture: null
+    picture_credit: null
+    picture_brief: "A runner on a river trail at golden hour, motion in the legs."
+
+  - id: moment_outdoors
+    text: "Being outdoors, far from screens"
+    icon: "🌲"
+    interests: {hiking: 1.0, birding: 0.6, kayaking: 0.5, camping: 0.5, park_cleanup: 0.4}
+    roles: [hands_on]
+    formats: [side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "Hikers on a wooded trail along a creek, sun coming through the trees."
+
+  - id: moment_long_talk
+    text: "A long talk that went on for hours"
+    icon: "💬"
+    interests: {conversation_circles: 1.0, philosophy_discussion: 0.6, book_club: 0.4, mentoring: 0.3}
+    roles: [help_teach, figure_out]
+    formats: [conversation]
+    picture: null
+    picture_credit: null
+    picture_brief: "Two friends on a park bench, deep in conversation, a dusk sky behind them."
+
+  - id: moment_helping
+    text: "Helping someone who needed it"
+    icon: "🤲"
+    interests: {mutual_aid: 0.8, neighbor_errands: 0.7, friendly_visiting: 0.7, mentoring: 0.6, tutoring: 0.5}
+    roles: [help_teach, hands_on]
+    formats: [side_by_side, one_off_event]
+    picture: null
+    picture_credit: null
+    picture_brief: "A neighbor carrying grocery bags up the steps for an older neighbor."
+
+  - id: moment_performing
+    text: "Singing, playing or performing for people"
+    icon: "🎤"
+    interests: {choir_singing: 0.8, community_theater: 0.6, improv_comedy: 0.6, jam_sessions: 0.5, storytelling_spoken_word: 0.5}
+    roles: [create]
+    formats: [perform_make_together]
+    picture: null
+    picture_credit: null
+    picture_brief: "A small stage with a microphone, a performer mid song, a warm audience in the dark."
+
+  - id: moment_organizing
+    text: "Planning something so it all came together"
+    icon: "📋"
+    interests: {board_service: 0.8, skills_volunteering: 0.5, civic_association: 0.5, entrepreneurs: 0.4, street_festivals: 0.4}
+    roles: [organize, lead]
+    formats: [lead_organize, behind_the_scenes]
+    picture: null
+    picture_credit: null
+    picture_brief: "A wall calendar and sticky notes, a person with a coffee checking items off a list."
+
+  - id: moment_learning
+    text: "Learning something new that I was curious about"
+    icon: "💡"
+    interests: {adult_learning: 0.8, language_exchange: 0.7, instrument_lessons: 0.6, talks_lectures: 0.6, astronomy: 0.5}
+    roles: [figure_out]
+    formats: [learn_skill]
+    picture: null
+    picture_credit: null
+    picture_brief: "An adult at a classroom desk, notebook open, leaning in toward a teacher at a whiteboard."
+
+  - id: moment_caring
+    text: "Taking care of animals or plants"
+    icon: "🐾"
+    interests: {community_garden: 0.6, shelter_volunteering: 0.6, animal_fostering: 0.5, garden_club: 0.5, pollinators_bees: 0.5}
+    roles: [hands_on, help_teach]
+    formats: [side_by_side]
+    picture: null
+    picture_credit: null
+    picture_brief: "A person watering tomato plants with a cat watching from the fence."
