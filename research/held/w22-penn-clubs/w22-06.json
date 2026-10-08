@@ -1,0 +1,319 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-06",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 37,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "Searches: 0 (none allowed). Fetches: 37 total: 20 Penn Clubs directory entries, 14 club website homepages, 2 redirects followed (cogwell and upenndab), and 1 retry of the Consult For America site at a bare address. No rate limiting seen. HTTP 404 on consultforamericaupenn.com (both addresses) and on djatpenn.com root; these are recorded in the relevant notes, not as blocked. Verdicts: 20 publish, 0 hide, 0 duplicate, 0 not_a_group, 0 out_of_area. Six records are HELD BACK because the directory marks the club INACTIVE and no dated activity within 12 months was found (DAB, Curling, DC Law, DAAP, DJ@Penn, Doctores): their summary, categories and interests are left out per the brief. Counterparts and Collective Success also carry INACTIVE flags, but their own dated 2026 events set status to active, so they are published with that noted. Dormant status set for Cogwell, Computer Science Society and Cricket from dated items in 2018, 2023 and 2024. Directory contacts that look like individuals' personal addresses are left out (Collective Success, DC Law, Dance+Movement Grad Lab, Debate Society), and no student names are recorded. Club-email and hidden-email fields are handled per record. No leads were found that need follow-up.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:the-college-deans-advisory-board"
+    ],
+    "group_id": "college-deans-advisory-board-dab",
+    "website": "https://www.upenndab.com/"
+   },
+   "verdict": "publish",
+   "name": "College Dean's Advisory Board (DAB)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "website": "https://www.upenndab.com/",
+    "email": "dabcochairs@gmail.com",
+    "social": [
+     "https://instagram.com/upenndab"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/the-college-deans-advisory-board/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.upenndab.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads inactive and the entry says the club is not accepting members, so summary, categories and interests are left out per the brief. The application deadline (Sept 3, noon ET) has no year. The site (redirected from upenndab.wixsite.com) shows only a copyright footer and no dated items. To join, the directory links an application form, or a student can email the co-chairs. The directory's application field is the number 4 and is not used.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-curling"
+    ],
+    "group_id": "curling-penn"
+   },
+   "verdict": "publish",
+   "name": "Curling @ Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "email": "penncurling@gmail.com",
+    "social": [
+     "https://instagram.com/penncurling",
+     "https://facebook.com/PennCurling"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-curling/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads INACTIVE even though the entry says active and accepting members, and no dated evidence was found, so summary, categories and interests are left out per the brief. Practices are on Saturdays at the Philadelphia Curling Club, with no time or street address listed. Planned tags for review: sports-teams, with hockey_roller_derby as the closest fit since no curling tag exists. The directory lists 29 members.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:dc-law-club"
+    ],
+    "group_id": "dc-law-club"
+   },
+   "verdict": "publish",
+   "name": "DC Law Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/dc-law-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads inactive, though the record also shows it as active and approved. The entry says the club is not accepting members, and it lists no events, website or join steps, so summary, categories and interests are left out per the brief. Eligibility is listed as the graduate and professional student assembly. The only contact is an individual's Penn address, so it is left out. Leaders named in the entry are not recorded. Planned tags for review: careers-skills-professional, professional_associations.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:descendants-of-afro-americans-at-penn"
+    ],
+    "group_id": "descendants-of-afro-americans-at-penn",
+    "website": "https://linktr.ee/upenndaap"
+   },
+   "verdict": "publish",
+   "name": "Descendants of Afro Americans at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "heritage:black_american"
+    ],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "website": "https://linktr.ee/upenndaap",
+    "email": "upenndaap@gmail.com",
+    "social": [
+     "https://instagram.com/upenndaap/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/descendants-of-afro-americans-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://linktr.ee/upenndaap",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads INACTIVE while the entry says active, so summary, categories and interests are left out per the brief. The club's link page lists an impact report for December 2023 to 2024 with no exact date, which is not recent enough to set status. Join steps are on the link page (an interest form for the general body and a GroupMe group) and are not recorded. The directory's application field is the number 4 and is not used. Directory lists 12 members.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:jacques-edward-thompson"
+    ],
+    "group_id": "dj-penn"
+   },
+   "verdict": "publish",
+   "name": "DJ@Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "website": "https://djatpenn.com",
+    "email": "contact@djatpenn.com",
+    "social": [
+     "https://instagram.com/djatpenn/",
+     "https://linkedin.com/company/djatpenn"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/jacques-edward-thompson/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads INACTIVE although the active flag is set to true, so summary, categories and interests are left out per the brief. The club's website root returned HTTP 404, so the site was not used. The directory shows 208 members and approval for the 2025 to 2026 academic year, which is registration rather than an event or post. Planned tags for review: music, dj_hip_hop.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:doctores-hispanos-del-futuro-penn"
+    ],
+    "group_id": "doctores-hispanos-del-futuro-penn-lmsa"
+   },
+   "verdict": "publish",
+   "name": "Doctores Hispanos Del Futuro @PENN/LMSA+",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "latino"
+    ],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "email": "penn.doctoreshdfuturo@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/doctores-hispanos-del-futuro-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK for review. Directory status reads INACTIVE even though a separate active field is set to true, and the entry has no website, events or join steps. Summary, categories and interests are left out per the brief. The description says the club serves students of Hispanic or Latino descent and also says any Penn student interested in healthcare may join, so the audience needs review. Planned tags for review: careers-skills-professional and culture-language-heritage-groups. Directory lists 13 members and a founding date of December 1, 2023.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

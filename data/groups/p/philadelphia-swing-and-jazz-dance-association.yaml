@@ -55,7 +55,8 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: DJ nights $10 ($7 for students). Band nights $15 ($10 for students). Free for volunteers.
+  text: DJ nights $10 ($7 for students). Band nights $15 ($10 for students). Band night bonus classes
+    add $5 ($3 for students). Free for volunteers.
 commitment: null
 group_size: null
 access:
@@ -68,16 +69,27 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Closed-toe shoes with good grip are recommended, and a spare shirt helps if you sweat. Casual
+    dress is fine.
 first_step:
-  how: Arrive for the 8 pm lesson, which is included with admission
+  how: Arrive at 8 pm on a Thursday for the Lindy 101 beginner lesson, before entry closes at 8:15 pm.
+    No partner is needed.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 5
-  basis: A beginner lesson runs before social dancing every Thursday and is included in the ticket, so
-    newcomers can drop in.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A beginner class, Lindy 101, runs before every Thursday dance, is drop-in each week, and needs
+    no partner or experience.
+  what_to_expect: The beginner hour runs 8 to 9 pm and covers the dance's history, basic steps, and simple
+    turns, starting from the ground up. You can come alone, since lessons rotate partners and you are
+    invited to ask anyone to dance during the social hour. The page suggests taking the beginner lesson
+    three to six times before moving on to the monthly level series.
+  first_visit_tips:
+  - Wear comfortable clothes you can move in, with closed-toe shoes that grip; the page says no sharp
+    heels.
+  - Arrive a few minutes early to stretch, because lesson entry closes at 8:15 pm.
+  - Parking is on the street or in nearby garages; the group's dancers suggest the SpotHero app for cheaper
+    spots.
+  - If money is tight, a pay-it-forward pass is available at the table, and it gets you in free.
 contacts:
   website: https://www.jazzattackswings.com/
   email: null
@@ -86,8 +98,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-01
-sign_of_life_url: https://www.jazzattackswings.com/
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.jazzattackswings.com/its-always-lindy-2026
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,7 +126,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.jazzattackswings.com/classes
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - cost
+- url: https://www.jazzattackswings.com/faq
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_visit_tips
+  - first_step
+- url: https://www.jazzattackswings.com/its-always-lindy-2026
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

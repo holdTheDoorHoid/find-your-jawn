@@ -8,9 +8,9 @@ leads:
 ein: '236432435'
 summary: A nonprofit that presents classical guitar concerts, a festival, and a competition in Philadelphia
   and Newtown, PA. It also runs a guitar ensemble and hosts guitar salons.
-what_you_do: Buy tickets for the concert season, or go to a guitar salon, the festival, or the competition.
-  The site also lists a Concert Ensemble, a guitar orchestra you can join, but the page gives no audition
-  or join details.
+what_you_do: Buy tickets for the concert season, or drop in on a free Sunday guitar salon, where members
+  play short pieces for listeners. Intermediate and advanced players of any age can apply to the Concert
+  Ensemble, a guitar orchestra for PCGS members, after an audition.
 kind: nonprofit
 categories:
 - music
@@ -36,10 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concert season for 2026 to 2027, with dates from November 7 and 8, 2026 through March 2027. Times
-    are not shown on the home page.
-  days: []
-  times: []
+  text: Guitar salons are held on Sundays during the concert season, starting at 1:30 pm. Concerts run
+    on weekends from November to March. The Concert Ensemble rehearses on Sundays from 11 am to 1 pm,
+    usually twice a month.
+  days:
+  - sun
+  times:
+  - morning
+  - daytime
   recurring: true
   season: event_only
 locations:
@@ -52,10 +56,30 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Guitar salons and most Concert Ensemble rehearsals (Settlement Music School)
+  address: 416 Queen St
+  neighborhood: null
+  planning_district: null
+  zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Some Concert Ensemble rehearsals (NotSoLatin)
+  address: 1440 W Ritner St
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: No prices on the home page; ticket and membership prices are on linked pages
+  level: paid
+  text: Guitar salons are free, and listeners are welcome. Concert tickets are sold separately, and prices
+    are not on the home page. The Concert Ensemble fee is $300 per player for the season, and PCGS Professional
+    members are exempt.
 commitment: one_off
 group_size: null
 access:
@@ -67,16 +91,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Buy a ticket to the November 7 or 8, 2026 concert, or sign up for the mailing list for the season
+  how: Come to a free guitar salon on a Sunday afternoon (it starts at 1:30 pm at Settlement Music School,
+    416 Queen St), or buy a ticket to a Sunday concert.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Concerts are sold to the public, with dates and ticket links on the group's own site
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: Salons are free, listeners are welcome, and the page says some players are performing for the
+    first time. Players sign up with a short form at least 24 hours ahead, which is a clear way in. The
+    Concert Ensemble is for intermediate and advanced players only.
+  what_to_expect: A salon is an informal Sunday afternoon session where members play short pieces, up
+    to 10 minutes each, for a listening audience. Some players are trying a piece out for the first time,
+    and some come to get feedback. The salon is free and in person, and the concert that follows at 3
+    pm needs a ticket.
+  first_visit_tips:
+  - The salon is free, but the concert after it needs a separate ticket.
+  - If you want to play, fill out the performer form at least 24 hours before the salon, or announce your
+    piece on the day.
+  - Questions about salons go to the board members who run them, whose contact details are on the salon
+    page.
 contacts:
   website: https://www.phillyguitar.org
   email: info@phillyguitar.com
@@ -86,7 +121,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.phillyguitar.org
+sign_of_life_url: https://www.phillyguitar.org/guitar-salons/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=8
   seen: '2026-10-04'
@@ -119,7 +154,25 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
+- url: https://www.phillyguitar.org/guitar-orchestra/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - requirements.kids_ok
+- url: https://www.phillyguitar.org/guitar-salons/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

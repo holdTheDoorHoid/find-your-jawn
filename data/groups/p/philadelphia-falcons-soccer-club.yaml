@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: A soccer club in Philadelphia whose members are mostly LGBTQIA+ players. It runs weekly indoor
   and outdoor pickup games, leagues and tournaments, and welcomes anyone who wants to play.
-what_you_do: Join the club, then play weekly pickup games, a league or a tournament.
+what_you_do: Play a weekly pickup game, which non-members can try once, then join the club to keep playing.
+  The club also runs leagues and tournaments.
 kind: club
 categories:
 - sports-teams
@@ -33,16 +34,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly indoor and outdoor pickup games. Days and times are not stated on the page.
-  days: []
-  times: []
+  text: Weekly outdoor pickup games are on Mondays from 6:30 to 8:30 pm at Chew Playground. Indoor futsal
+    pickup runs too, but the site gives no schedule for it. The club posts seasonal changes on its pickup
+    page.
+  days:
+  - mon
+  times:
+  - evening
   recurring: true
   season: null
-locations: []
+locations:
+- label: Chew Playground (outdoor pickup)
+  address: 1800 Washington Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19146'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: Membership cost not stated. A scholarship application is offered.
+  text: Pickup is free, and non-members can join one. Membership is needed to keep playing, and its fee
+    is not listed on the pages checked. A scholarship application is offered.
 commitment: ongoing_role
 group_size: null
 access:
@@ -55,26 +70,34 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
-  gear: null
+  gear: A light shirt and a dark shirt, plus water. Cleats are recommended for outdoor play, and indoor
+    shoes are required for indoor futsal.
 first_step:
-  how: Sign up through the Membership page on the club's LeagueApps site. Non-members sign a waiver.
-  drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A public membership page, a scholarship option and a waiver for non-members; no newcomer program
-    is stated
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to a Monday pickup at Chew Playground (6:30 to 8:30 pm) as a guest, sign the non-member waiver,
+    then register for a membership on the club's LeagueApps site to keep playing.
+  drop_in: true
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The pickup page says all skill levels are welcome, non-members can try one session, and it explains
+    how to register after that.
+  what_to_expect: Pickup is an outdoor game on a grass field, and all skill levels are welcome. Bring
+    a light shirt and a dark shirt plus water, and wear cleats outdoors. The page does not say how many
+    players attend or how teams are formed.
+  first_visit_tips:
+  - Bring a light shirt and a dark shirt, plus water.
+  - Wear cleats for the outdoor game, and indoor shoes if you come to futsal.
+  - Non-members sign a waiver, which is linked from the Play menu on the club's site.
+  - Email sportingactivities@phillyfalcons.org with questions before you come.
 contacts:
   website: http://www.phillyfalcons.org/
-  email: null
+  email: sportingactivities@phillyfalcons.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.phillyfalcons.org/
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://phillyfalcons.leagueapps.com/pages/Pickup
 sources:
 - url: http://www.phillyfalcons.org/
   seen: '2026-10-08'
@@ -84,8 +107,30 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: low
+- url: https://phillyfalcons.leagueapps.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+  - requirements
+- url: https://phillyfalcons.leagueapps.com/pages/Pickup
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - requirements
+  - cost
+  - status
+  - last_sign_of_life
+  - contacts
+- url: https://phillyfalcons.leagueapps.com/pages/FalconsCalendar
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

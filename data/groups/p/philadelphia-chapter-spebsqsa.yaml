@@ -7,8 +7,8 @@ leads:
 ein: null
 summary: Philadelphia's lower-voice a cappella chorus. Singers rehearse each week, perform in concerts,
   and take part in chapter quartet contests.
-what_you_do: Audition to join the chorus and sing at weekly Tuesday rehearsals. Visitors can watch the
-  group's recordings or attend a performance.
+what_you_do: Audition year-round to join the chorus and sing at weekly Tuesday rehearsals. Prospective
+  singers can visit a rehearsal first, and the events page lists concerts and showcases.
 kind: club
 categories:
 - music
@@ -35,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly rehearsals on Tuesdays at 7:15 pm at the Philadelphia Ethical Society.
+  text: Weekly rehearsals on Tuesdays, 7:15 to 9:45 pm, at the Philadelphia Ethical Society on Rittenhouse
+    Square. Some 2026 rehearsals moved to other venues, so check the events page before you go.
   days:
   - tue
   times:
@@ -44,10 +45,10 @@ schedule:
   season: year_round
 locations:
 - label: Philadelphia Ethical Society (rehearsals)
-  address: null
+  address: 1906 Rittenhouse Square
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
@@ -55,13 +56,15 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No dues or rehearsal fees are published.
+  text: The site does not list dues, audition fees, or visitor fees.
 commitment: weekly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: An ADA ramp is at the building's rear, addressed 1909 Manning St, and a stair lift serves the
+    main theater floor. The site does not describe access to the second-floor community room used on some
+    second Tuesdays.
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,23 +73,33 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Look for the audition notice on the site, or use the contact page to ask about the next audition.
+  how: Fill in the guest registration form on the Visit page, then come to a Tuesday rehearsal. When you
+    are ready, audition through the Audition page.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Joining needs an audition, and the site does not say what the process is like before that
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site invites prospective singers to a rehearsal, says you can audition on a first visit,
+    and says sheet music reading is not required.
+  what_to_expect: 'A rehearsal runs from 7:15 to 9:45 pm on Tuesdays at the Philadelphia Ethical Society,
+    and visitors are invited after they register. The audition has three short parts: singing a memorized
+    section of a provided song on a voice part you choose, singing up to 30 seconds of any song a cappella,
+    and learning a simple barbershop tag with others.'
+  first_visit_tips:
+  - Audition materials are in a linked folder, so you can prepare at your own pace.
+  - On the second Tuesday of the month, rehearsal starts in the second-floor community room and moves
+    to the main floor at about 8:15 pm.
+  - Some metered street spots are free after set hours, and many are free after 6:30 pm; evening lots
+    run about $13 to $24.
 contacts:
   website: https://www.rittenhousesound.org/
-  email: null
+  email: rittenhousesound@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.rittenhousesound.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.rittenhousesound.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=8
   seen: '2026-10-04'
@@ -100,8 +113,31 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.rittenhousesound.org/audition
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - contacts.email
+- url: https://www.rittenhousesound.org/visit
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - locations
+  - access
+  - cost
+  - first_visit_tips
+- url: https://www.rittenhousesound.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

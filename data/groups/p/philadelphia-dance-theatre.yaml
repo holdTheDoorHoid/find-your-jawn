@@ -8,8 +8,8 @@ ein: '233011020'
 summary: A classical ballet school and performing company in Mount Airy, founded in 1998. Its training
   runs from preschool through adult classes, and its company dances an annual Nutcracker and a spring
   new-works show.
-what_you_do: Enroll in ballet classes for ages 3 and up, take the free trial class first, join the tuition-free
-  boys' program, or come to the company's Nutcracker and spring shows.
+what_you_do: Take the free trial class, then enroll in ballet classes for ages 3 and up. Boys who take
+  ballet can join the tuition-free boys' program, or come to the company's Nutcracker and spring shows.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -37,9 +37,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Ballet classes run through the school year (fall classes started September 12, 2026); Nutcracker
-    auditions were held in late September and early October; the company performs A Philadelphia Nutcracker
-    each December and a spring new-works show
+  text: 'Ballet classes run through the school year in four divisions: preschool (ages 3 to 6), primary
+    (ages 7 to 12), pre-professional (ages 13 to 18), and adult (18 and up). Class times are posted as
+    an image on the class schedule page, so call the studio to read them. The company performs A Philadelphia
+    Nutcracker each December and a spring new-works show.'
   days: []
   times: []
   recurring: true
@@ -56,9 +57,11 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: The first class is free, siblings get 15 percent off family tuition, and the boys' program is
-    tuition-free. Tuition prices are not listed on the site.
+  level: paid
+  text: The first class is free. Monthly tuition runs from $95 for pre-ballet to $475 for the top levels,
+    billed over nine months from September to May, plus a $50 registration fee per student each year.
+    Siblings get 15 percent off family tuition. Boys in the tuition-free program pay no tuition when they
+    meet its weekly class minimums, but they still pay the $50 registration fee.
 commitment: weekly
 group_size: null
 access:
@@ -73,15 +76,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Fill in the class recommendation form on the site, take the free trial class, then register through
-    the studio's Dance StudioPro portal
+  how: Fill out the trial class form on the website to get a class recommendation, take the free trial
+    class, then get placed in a level and register through the studio's Dance StudioPro portal.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site has a free first class and a set path for newcomers (form, trial class, placement),
-    and classes are open to the public.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'The studio has a set path for newcomers: a free first class, a recommendation form, and faculty
+    placement. Classes are open to the public, and the site explains each step.'
+  what_to_expect: The free trial class lets a dancer try the studio while faculty choose the right level
+    and classes. Afterward, faculty suggest a schedule, and you register online through the studio's portal.
+    Classes are grouped into preschool, primary, pre-professional, and adult divisions.
+  first_visit_tips:
+  - Fill in the trial class form before you come, since it starts the class recommendation.
+  - Check the dress code page before the trial class, and contact the office about anything the site does
+    not cover.
+  - Parking and transit are not listed on the site, so ask the office before your first visit.
 contacts:
   website: https://www.philadancetheatre.org/
   email: info@philadancetheatre.org
@@ -91,7 +100,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.philadancetheatre.org/
+sign_of_life_url: https://www.philadancetheatre.org/class-schedule
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=8
   seen: '2026-10-04'
@@ -117,8 +126,31 @@ sources:
   - locations
   - contacts
   - requirements
-research_tier: 1
-confidence: medium
+  - audience
+  - requirements.kids_ok
+- url: https://www.philadancetheatre.org/trial-class
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_to_expect
+- url: https://www.philadancetheatre.org/tuition-classes
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.philadancetheatre.org/pdt-boys-tuition-free-program
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+- url: https://www.philadancetheatre.org/class-schedule
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

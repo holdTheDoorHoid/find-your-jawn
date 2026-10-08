@@ -62,8 +62,9 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: $15 for non-members, $10 for members, and $9 for full-time students with ID. Fees are collected
-    by monitors after the first twenty minutes.
+  text: $15 for non-members, $10 for members, and $9 for full-time students with ID. Monitors collect
+    the fee after the first twenty minutes, so bring cash. Membership is $175 a year, or $90 a year for
+    members under 35.
 commitment: drop_in
 group_size: null
 access:
@@ -76,16 +77,22 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Bring your own art supplies; the club provides chairs, tables and easels. Only odorless solvents
+    are allowed, and you must take them with you.
 first_step:
-  how: Come to any session. No sign up is needed, and non-members can attend.
+  how: Come to any weekly open studio session with your own supplies and cash for the fee. No sign up
+    is needed.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Drop in with no sign up and no membership needed, though the page does not describe a beginner
-    program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open studio sessions take walk-ins with no advance registration, and non-members may attend.
+    The page does not describe a beginner program.
+  what_to_expect: Each session runs three hours. Most sessions use a nude model, and the Thursday afternoon
+    session uses a costumed model. Tipping the models is encouraged.
+  first_visit_tips:
+  - Bring your own supplies and cash, since monitors collect the fee after the first twenty minutes.
+  - Check sketchclub.org before you go, because sessions close on holidays and during bad weather.
+  - Turpentine is not allowed; only odorless solvents are, and you must take them with you.
 contacts:
   website: https://sketchclub.org/
   email: info@sketchclub.org
@@ -93,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://sketchclub.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://sketchclub.org/firstfriday/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -115,7 +122,22 @@ sources:
   - contacts
   - status
   - audience
-research_tier: 1
+  - what_to_expect
+  - requirements
+- url: https://sketchclub.org/sample-page/join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://sketchclub.org/urban-sketch-class-2/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://sketchclub.org/firstfriday/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

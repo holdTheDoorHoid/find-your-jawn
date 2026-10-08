@@ -4,15 +4,23 @@ aka: []
 leads:
 - penn_clubs:penn-cricket-club
 ein: null
-summary: null
-what_you_do: null
+summary: A student-run cricket club at Penn that practices twice a week at Penn Park. Members play for
+  fun and for competition.
+what_you_do: Come to a Monday or Thursday evening practice, then join the club's WhatsApp group for updates.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+interests:
+- cricket
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +32,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practice on Mondays, 6:00 to 7:30 pm, and Thursdays, 5:15 to 7:30 pm, at Ellen Vagelos Field in
+    Penn Park.
+  days:
+  - mon
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: Ellen Vagelos Field
+- label: Ellen Vagelos Field, Penn Park
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +69,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to a practice, then join the club's WhatsApp group for updates. The directory marks an application
+    as required, so ask the club first.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory marks an application as required, though the club's own steps start with attending
+    practice.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://upenncricketclub.wordpress.com/
   email: Hidden
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/penncricket/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-07
+sign_of_life_url: https://upenncricketclub.wordpress.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +96,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-cricket-club/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - commitment
+  - first_step
+- url: https://upenncricketclub.wordpress.com/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

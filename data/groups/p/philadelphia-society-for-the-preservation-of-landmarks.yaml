@@ -34,7 +34,7 @@ audience:
   open_to: public
   school: null
   min_age: 12
-  max_age: null
+  max_age: 18
   community: []
   faith: null
   partisan: false
@@ -47,7 +47,17 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: PhilaLandmarks office (Grumblethorpe street address not on the page)
+- label: Grumblethorpe, the historic house the group helps care for (the page does not say where meetings
+    are held)
+  address: 5267 Germantown Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: PhilaLandmarks administration office
   address: 321 S. 4th Street
   neighborhood: null
   planning_district: null
@@ -59,7 +69,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No prices listed for tours, memberships or rentals on the page
+  text: The page lists no participation fee and invites optional donations.
 commitment: monthly
 group_size: null
 access:
@@ -71,16 +81,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email gyv@philalandmarks.org through the Contact GYVs link
+  how: Email gyv@philalandmarks.org to ask about the next second-Saturday meeting, its start time, and
+    where it meets.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The page gives a clear contact and no application, but does not say what a first meeting is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The page gives a direct email and describes no application, though it does not say what a first
+    meeting is like.
+  what_to_expect: The group meets once a month on a Saturday, September through May, and teens decide
+    and run their own projects with adult mentors. Past work includes garden cleanups, food preservation,
+    baking, beekeeping and helping at family events. The page does not say how long a meeting lasts or
+    what time it starts.
+  first_visit_tips:
+  - Ask by email for the start time and meeting place before you come, since the page lists neither.
+  - The Grumblethorpe house is open to visitors on second Saturdays, May through October, from noon to
+    4 pm, so you can see the place first.
+  - Teens 14 and up can ask about the paid summer Youth Farmstand job, which the page calls a common next
+    step.
 contacts:
   website: https://www.philalandmarks.org/gyvs
   email: gyv@philalandmarks.org
@@ -136,11 +156,19 @@ sources:
   - first_step
   - contacts
   - status
+  - requirements
 - url: https://www.philalandmarks.org/grumblethorpe
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+  - summary
+- url: https://www.philalandmarks.org/contact-visit
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+  - first_visit_tips
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

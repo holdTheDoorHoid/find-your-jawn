@@ -1,0 +1,481 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-02",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 46,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 20 clubs were read through the Penn Clubs directory endpoint, one fetch each. One extra fetch of each club's own website was made where the entry linked one (13 sites). Two site fetches followed a 301 redirect (Access Engineering and Aerospace Club), and the Alpha Omega Epsilon site returned an empty page twice, so it gave no evidence. Statuses: active 4 (AI@Penn, Allied Scholars, Alpha Kappa Alpha, Alzheimer's Buddies), probably_active 6 (ACM SIGGRAPH, AMHS, Aerial Robotics, Aerospace Club, Alpha Kappa Delta Phi, Alpha Kappa Psi), dormant 1 (Admissions Dean's Advisory Board), unknown 9 (215Records, Access Engineering, Active Minds, Adventist Students for Christ, Advocates for Neurodiversity, African Student Association, AI Society at Penn, Albanian Society, Alpha Omega Epsilon). Unknown records have no summary, categories or interests, so they are held back. Several directory labels read INACTIVE or UNDER REVIEW while the entry or club site has dated 2026 items; those are flagged in each record's notes. Individual students' names and personal emails were not recorded (Admissions board, Adventist, Aerospace sub team leads, Alpha Kappa Delta Phi rush chairs). Zoom, Facebook invite and listserv links were not copied. Searches used: 0. Fetches used: 46 of 60.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:215records"
+    ],
+    "group_id": "215records"
+   },
+   "verdict": "publish",
+   "name": "215Records",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Email info@215records.com or send a direct message on Instagram to ask how to get involved"
+   },
+   "contacts": {
+    "email": "info@215records.com",
+    "social": [
+     "https://instagram.com/215_records/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/215records/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is UNDER REVIEW, not ACTIVE, and the entry has no dated events or posts. Its only date is a registration notice for the 2025 to 2026 academic year, which is not activity, so status is unknown and the summary is held back. Internal summary for the next pass: a student record label that gives members production, release, and distribution experience, and says it has supported two artists. The club has no website. Its Instagram was not used as a source.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:access-engineering"
+    ],
+    "group_id": "access-engineering",
+    "website": "https://accessengineering.engineering.upenn.edu/"
+   },
+   "verdict": "publish",
+   "name": "Access Engineering",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Watch for the club application the page says is coming for Fall 2026",
+    "newcomer_friendliness": 2,
+    "basis": "The page says a club application is coming, so joining needs an application."
+   },
+   "contacts": {
+    "website": "https://accessengineering.engineering.upenn.edu/",
+    "email": "acceng@engineering.upenn.edu",
+    "social": [
+     "https://facebook.com/PennAccess",
+     "https://instagram.com/upennacceng/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/access-engineering/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    },
+    {
+     "url": "https://accessengineering.engineering.upenn.edu/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is INACTIVE (the active flag is true). The club site, reached through a 301 redirect from accessengineering.seas.upenn.edu, describes free weekend engineering lessons for Philadelphia public high school students and lists Fall 2025 in person sessions, but gives no month. Held back as unknown because the label and the undated Fall 2025 items do not clear the active bar. Penn undergraduates volunteer, and the site has an Apply to Teach page. Summary for the next pass: a free, student-run engineering enrichment program for Philadelphia public high school students, run by Penn undergraduates.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:active-minds"
+    ],
+    "group_id": "active-minds"
+   },
+   "verdict": "publish",
+   "name": "Active Minds",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Email activemindspenn@gmail.com with your name and class year"
+   },
+   "contacts": {
+    "email": "activemindspenn@gmail.com",
+    "social": [
+     "https://instagram.com/activemindspenn/",
+     "https://facebook.com/activemindspenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/active-minds/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is UNDER REVIEW and the entry lists no dated events or posts. Its only dated link is a 2022 email sign up form, which is too old to count as activity. Held back as unknown. Internal summary for the next pass: a student mental health awareness, education, and advocacy group, part of a national network of Active Minds chapters. The entry says an application is required, but the how to join text is only an email, so that needs a check. The club has no website.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:adventist-students-for-christ"
+    ],
+    "group_id": "adventist-students-for-christ"
+   },
+   "verdict": "publish",
+   "name": "Adventist Students for Christ",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": "protestant",
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Attend a Friday evening Bible study or hangout, as described on the directory entry"
+   },
+   "contacts": {
+    "social": [
+     "https://facebook.com/adventistsatupenn/",
+     "https://instagram.com/penn_asc/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/adventist-students-for-christ/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is INACTIVE. The entry has Friday 7 to 8 PM meetings, plans for 2025 to 2026, and a Fall 2025 location marked TBD, but no dated post or event, so it is held back as unknown. The only email on the entry is an individual student's Penn address, so it is not recorded. Social links were not used as sources because those platforms are leads only. Faith is taken from the entry's own description of a Seventh-day Adventist Christian group.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:advocates-for-neurodiversity-and"
+    ],
+    "group_id": "advocates-for-neurodiversity-and"
+   },
+   "verdict": "publish",
+   "name": "Advocates for Neurodiversity (AND)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "neurodivergent"
+    ],
+    "faith": null,
+    "support_group": false
+   },
+   "locations": [
+    {
+     "label": "Marks Family Center in McNeil Building",
+     "address": "Marks Family Center in McNeil Building, University of Pennsylvania",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Email advocates.nd@gmail.com or follow the club's Instagram account"
+   },
+   "contacts": {
+    "email": "advocates.nd@gmail.com",
+    "social": [
+     "https://instagram.com/and.upenn/",
+     "https://twitter.com/and.upenn"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/advocates-for-neurodiversity-and/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "audience",
+      "locations",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is INACTIVE, with the active and accepting flags both true. No dated items, no website, and no membership steps on the entry. The entry says an application is required but leaves the membership details blank. Held back as unknown. Internal summary for the next pass: a student community for neurodivergent culture and advocacy that says all neurotypes are welcome. The Facebook link on the entry was not used.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-african-students-association"
+    ],
+    "group_id": "african-student-association-at-penn"
+   },
+   "verdict": "publish",
+   "name": "African Student Association at Penn (PASA)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Email pennpasa@gmail.com to join the listserv, and follow the Instagram account for event updates"
+   },
+   "contacts": {
+    "email": "pennpasa@gmail.com",
+    "social": [
+     "https://instagram.com/pasa_penn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-african-students-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is INACTIVE, with the active flag true. No dated items and no website. Held back as unknown. The entry says it welcomes anyone interested, not only African students, but it does not clearly say people outside Penn may join, so open_to stays students until checked. The entry also flags an application as required, while the how to join text is only a listserv email. Listserv sign up form link on the entry was not used.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:aisociety"
+    ],
+    "group_id": "ai-society-at-penn"
+   },
+   "verdict": "publish",
+   "name": "AI Society at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Join the listserv once it is set up. The directory says the sign up link is still to be added."
+   },
+   "contacts": {
+    "email": "aisocietyatpenn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/aisociety/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is PRELIMINARY, which is not one of the usual labels. No dated items, no website, no social links, and no listserv link yet. Held back as unknown. Internal summary for the next pass: a group that explores how AI can be used responsibly and creatively, especially in education, and runs seminars, workshops, and collaborative projects. The entry says it is open to students, educators, and experts from all Penn schools.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:albanian-association-at-penn"
+    ],
+    "group_id": "albanian-society-at-penn"
+   },
+   "verdict": "publish",
+   "name": "Albanian Society at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "heritage:albanian"
+    ],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Join through the QR code on the club's Instagram page. Membership is open year round."
+   },
+   "contacts": {
+    "email": "pennalbaniansociety@gmail.com",
+    "social": [
+     "https://instagram.com/penn_albanian_society/",
+     "https://facebook.com/pennalbaniansociety",
+     "https://linkedin.com/company/penn-albanian-society/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/albanian-association-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "audience",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is missing (null). The entry has no dated events or posts and the club has no website, only social links, which were not used as sources. Held back as unknown. The entry describes guest speakers, charity work for Albania, and yearly board elections, but none of it is dated. Internal summary for the next pass: a club that shares Albanian culture, food, and history with the campus and builds community among Albanian students.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:aoe"
+    ],
+    "group_id": "alpha-omega-epsilon"
+   },
+   "verdict": "publish",
+   "name": "Alpha Omega Epsilon",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Recruitment details are posted on the club's Instagram, per the directory entry. Sophomores and juniors are taken in the fall, and all classes in the spring."
+   },
+   "contacts": {
+    "website": "https://upennalphaomegaepsilon.com",
+    "email": "upenn.aoe@gmail.com",
+    "social": [
+     "https://instagram.com/a.o.e.upenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/aoe/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory label is UNDER REVIEW, accepting members is false, and the entry has no dated events. The club site returned an empty page on two tries, so there is no site evidence and no record was made from it. Held back as unknown. Internal summary for the next pass: a social and professional sorority that supports women and gender minorities in engineering and the technical sciences, with semester activities such as a formal, date nights, professional headshots, and philanthropy events. The entry says membership is open to the Penn community, especially undergraduate gender minority students in STEM. Community tags were left out until that wording is checked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

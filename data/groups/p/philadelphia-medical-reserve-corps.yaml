@@ -5,9 +5,10 @@ leads: []
 ein: null
 summary: A city volunteer unit that helps during public health emergencies, disasters, and big public
   events such as the marathon. You do not need a medical background to join.
-what_you_do: Register online, pass a background check, attend an orientation, then take trainings and
-  get called for deployments when needed. Medical volunteers give screenings, medicines, or vaccines;
-  others answer phones, do data entry, or interpret.
+what_you_do: Register online with the state, pass a background check, and attend an orientation, which
+  is strongly encouraged before any deployment. Then take trainings and get called for deployments when
+  needed. Medical volunteers give screenings, medicines, or vaccines; others answer phones, do data entry,
+  or interpret.
 kind: program
 categories:
 - emergency-disaster
@@ -34,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Deployments are called as needed. The city asks each volunteer to do at least one training, exercise,
-    or deployment a year.
+  text: Deployments are called as needed. The city encourages volunteers to join at least one training,
+    exercise, or deployment each year.
   days: []
   times: []
   recurring: true
@@ -62,27 +63,37 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
   gear: null
 first_step:
-  how: Register online through the state volunteer sign-up site (linked from the city page), pass the
-    background check, then attend an in-person or virtual orientation
+  how: Register on the state volunteer site (serv.pa.gov), choose Philadelphia MRC, and pass the background
+    check before you attend orientation.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone 18 or older can apply online and the city publishes the steps, though a background check
-    comes first
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Open to adults 18 and up, but you apply, pass a background check, and get accepted before orientation,
+    so you see the work only after approval.
+  what_to_expect: Acceptance can take a few days or weeks after you apply, since the background check
+    runs first. Orientation is held one or two times a year, in person or online, and it is strongly encouraged
+    before any deployment. After that you are invited to trainings, exercises, and real deployments as
+    they come up, so the work varies.
+  first_visit_tips:
+  - Use your legal first and last name exactly as on your birth certificate or photo ID, because the check
+    matches it.
+  - Have your date of birth and your occupation ready for the online form.
+  - Watch your email, since acceptance and training notices come that way.
 contacts:
   website: https://phila.gov/programs/philadelphia-medical-reserve-corps-pmrc
   email: mrc@phila.gov
   phone: (215) 629-6634
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/PHLHealthPrepare/
+  - https://twitter.com/PHLHlthPrepare
+  - https://www.linkedin.com/company/philadelphia-medical-reserve-corps/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -97,13 +108,26 @@ sources:
   - first_step
   - contacts
   - commitment
+  - locations
+  - cost
+  - status
 - url: https://hip.phila.gov/emergency-response/volunteer-opportunities/
   seen: '2026-10-08'
   fields:
   - first_step
   - schedule
   - contacts
-research_tier: 1
+- url: https://www.phila.gov/services/mental-physical-health/volunteer-for-the-philadelphia-medical-reserve-corps-pmrc/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - requirements
+  - audience
+  - schedule
+  - commitment
+  - summary
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -8,9 +8,9 @@ ein: '922921308'
 summary: A nonprofit that runs a yearly film festival and year-round screenings and talks about Asian
   American, Native Hawaiian and Pacific Islander stories. Volunteers help run the festival and the year-round
   work.
-what_you_do: Volunteer for festival shifts or on a year-round committee (sponsorship, marketing, programming,
-  guest services or volunteer coordination) through the sign-up form on its site. Or attend a fall screening
-  or talk.
+what_you_do: Volunteer for festival shifts or on a year-round staff committee (sponsorship, marketing,
+  programming, guest services or volunteer coordination) through the inquiry form on its site. Or attend
+  a screening or talk.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -39,10 +39,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Fall 2026 events: a restored 1982 film screening on Sunday Oct 11, 4 to 6 pm; a People''s Cinema
-    Club screening on Tuesday Oct 20, 6:30 to 9:30 pm at Village of Industry and Art; and an author talk
-    on Tuesday Oct 20, 7 to 9 pm at the Free Library''s Central Library on Vine Street. The 11-day festival
-    runs each year, and its 2026 dates are not listed.'
+  text: Screenings and talks run through the year, with a yearly 11-day film festival. Staff volunteers
+    plan the work on year-round committees.
   days:
   - sun
   - tue
@@ -64,8 +62,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Prices for the October events are not listed. Festival volunteers get a shirt and a free ticket
-    to a paid event for each shift. Donations are welcome.
+  text: Event prices are not listed on the site. Each volunteer shift earns a shirt and one free ticket
+    to a paid event, and food is provided. Donations are welcome.
 commitment: seasonal
 group_size: null
 access:
@@ -80,23 +78,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer sign-up form on the site, or attend the Oct 11 screening and ask about volunteering.
+  how: Send an inquiry through the volunteer form on paaff.org/volunteer, or ask about volunteering at
+    a screening or talk.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The volunteer page says no film background is needed and gives a sign-up form for newcomers.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page says film experience is not required and gives an inquiry form to start, so
+    it explicitly welcomes newcomers.
+  what_to_expect: Festival volunteers help with programming and screenings during the 11-day festival,
+    and staff volunteers join committees that plan the work year-round, such as sponsorship, marketing,
+    programming, guest services or volunteer coordination. The site does not say how long a shift runs
+    or how many people it needs, so ask in your inquiry.
+  first_visit_tips:
+  - 'Say which role you want in your inquiry: a festival shift or a year-round committee.'
+  - Ask about shift length before you commit, since the site does not give it.
+  - Each shift earns a volunteer shirt, one free ticket to a paid event, and food.
 contacts:
   website: https://www.paaff.org
   email: info@paaff.org
   phone: (610) 742-0582
   contact_name: null
   social: []
-  calendar_feed: null
+  calendar_feed: https://paaff.org/events/list/?ical=1
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://paaff.org/
+sign_of_life_url: https://paaff.org/events/list/?shortcode=2e77545e
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=8
   seen: '2026-10-04'
@@ -128,7 +134,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://paaff.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - cost
+- url: https://paaff.org/events/list/?shortcode=2e77545e
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - contacts.calendar_feed
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

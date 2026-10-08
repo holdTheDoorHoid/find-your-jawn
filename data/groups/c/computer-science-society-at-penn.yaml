@@ -4,15 +4,27 @@ aka: []
 leads:
 - penn_clubs:css
 ein: null
-summary: null
-what_you_do: null
+summary: The computer science student society at Penn, founded in 1991. It runs social events, interview
+  prep panels, and hackjams for CS students.
+what_you_do: Request membership on the club page, join the mailing list, and come to late-night social
+  events, interview prep panels, and hackjams.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- making-tech
+- careers-skills-professional
+interests:
+- coding_software
+- job_clubs
+motives:
+- social
+- career
+formats:
+- conversation
+- one_off_event
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,31 +60,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Request membership on the club's page on the Penn Clubs site, or sign up for the mailing list.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club says general membership needs no application, though the directory's application field
+    says one is required.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://css.cis.upenn.edu/
   email: penncss@engineering.upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/penncss/
+  - https://facebook.com/penncss/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2018-09
+sign_of_life_url: https://css.cis.upenn.edu/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/css/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://css.cis.upenn.edu/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

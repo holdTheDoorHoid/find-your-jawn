@@ -1,0 +1,360 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-72",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 31,
+  "records": [
+    {
+      "match": {"lead_ids": ["cultural_fund:philadelphia-sculptors-3", "irs_bmf:311638235"], "group_id": "philadelphia-sculptors", "ein": "311638235", "website": "https://philasculptors.org"},
+      "verdict": "publish",
+      "name": "Philadelphia Sculptors",
+      "summary": "A group of sculptors that runs exhibitions, public forums and a members gallery to make sculpture more visible in the city. Visitors see the shows, and members show their work online and in exhibitions.",
+      "what_you_do": "Visit the current exhibition or studio tour, and join as a member to show your own sculpture in the online gallery.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts"],
+      "interests": ["craft_circle"],
+      "motives": ["enhancement", "values"],
+      "formats": ["one_off_event"],
+      "roles": ["create"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {"text": "Shows run in blocks through the year, and members can take part in the yearly member exhibitions.", "recurring": false, "season": "event_only"},
+      "locations": [
+        {"label": "Art on the Ave (RE:FORM show, per the group's homepage)", "address": "3808 Lancaster Ave", "zip": "19104", "in_city": true},
+        {"label": "Philadelphia Sculptors office", "address": "1315 Walnut St, Suite 320", "zip": "19107", "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "Yearly membership: $15 for students or hardship, $35 for artists, $50 for arts professionals, friends or family, and $500 for life. The site gives no admission price for shows. Donations are tax-deductible."},
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Go to the RE:FORM show at Art on the Ave, 3808 Lancaster Ave, listed through October 30, or to the Philadelphia Open Studio Tour on Saturday, October 10 or Sunday, October 11, from noon to 6 pm.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Shows and the studio tour are open to visitors, and the membership page gives a clear way to join. The group's listing pages are empty, so confirm dates first.",
+        "what_to_expect": "A visit means walking through sculpture shows at your own pace. The group's pages do not give visitor admission, gallery hours, or whether guests must book, so check those before you go.",
+        "first_visit_tips": [
+          "Email the group before you go, since its exhibitions and upcoming events pages both show no results right now.",
+          "The studio tour runs noon to 6 pm on both weekend days, October 10 and 11.",
+          "The office at 1315 Walnut St is not the show space; the RE:FORM show is at 3808 Lancaster Ave."
+        ]
+      },
+      "contacts": {"website": "https://philasculptors.org", "email": "lesliekaufman@verizon.net", "contact_name": "Leslie Kaufman", "social": ["https://www.instagram.com/philasculptors"]},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://philasculptors.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://philasculptors.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "first_step", "status", "last_sign_of_life"]},
+        {"url": "https://philasculptors.org/membership", "seen": "2026-10-08", "fields": ["cost", "what_you_do", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Sources conflict. The homepage lists RE:FORM (October 2 to 30, 2026, at Art on the Ave) and the October 10 and 11 Open Studio Tour, but also labels RE:FORM as coming soon. The exhibitions page and the upcoming events page both say No results found. One web search returned a secondary arts listing with the same venue and dates (its URL was not identified, so it is not in sources). The show title, hours and admission could not be confirmed. Tier 1 had the show dates in schedule.text; they moved to first_step because they are one-time dates. Membership dues come from the membership page."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:philadelphia-sinfonia-association-inc-3", "irs_bmf:232924757"], "group_id": "philadelphia-sinfonia-association-inc", "ein": "232924757", "website": "https://philadelphiasinfonia.org/"},
+      "verdict": "publish",
+      "name": "Philadelphia Sinfonia",
+      "summary": "A nonprofit that gives young musicians in the Delaware Valley high-level orchestra playing experience. It runs four ensembles and puts on concerts and events the public can attend.",
+      "what_you_do": "Young musicians audition for one of four ensembles and rehearse at The Howard Center for the Arts. Listeners can attend the group's listed concerts, and volunteers help keep tuition low.",
+      "kind": "nonprofit",
+      "categories": ["music"],
+      "interests": ["community_band"],
+      "motives": ["enhancement", "social"],
+      "formats": ["perform_make_together", "one_off_event"],
+      "crowd": ["teens", "kids"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {"text": "Four ensembles rehearse through the concert season and perform in public concerts. The page does not list rehearsal times.", "recurring": true, "season": "event_only"},
+      "locations": [
+        {"label": "Rehearsal location (The Howard Center for the Arts)", "address": "1212 Wood Street", "zip": "19107", "in_city": true},
+        {"label": "Mailing address (as published, not a rehearsal site)", "address": "1315 Walnut St Ste 300", "zip": "19107", "in_city": true}
+      ],
+      "cost": {"text": "No audition fee or concert ticket prices are listed. The volunteer page says volunteering helps keep tuition low, but no tuition amount is listed."},
+      "commitment": "seasonal",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the audition registration form on the auditions page, or email info@philadelphiasinfonia.com to ask for an immediate audition.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Volunteer and event contacts are published, but playing in an ensemble requires an audition, so the first step for a player is registering for one.",
+        "what_to_expect": "An audition is a short test: major scales, two contrasting pieces for the top two ensembles, and sight-reading of music the group provides. The youth string ensemble takes students ages 10 to 16, and the page does not say whether adults may audition. The auditions page lists an extended audition on Saturday, October 24, from 12:30 to 2:30 pm, for the 2026 to 2027 season.",
+        "first_visit_tips": [
+          "Prepare major scales up to four flats and four sharps, plus two contrasting pieces if you are trying out for the top two ensembles.",
+          "Expect sight-reading at every audition, using music the group provides.",
+          "The mailing address on the site is not the rehearsal room; rehearsals are at 1212 Wood Street."
+        ]
+      },
+      "contacts": {"website": "https://philadelphiasinfonia.org/", "email": "info@philadelphiasinfonia.com", "phone": "215-351-0363", "contact_name": "C P Troughton"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://philadelphiasinfonia.org/event/a-very-sinfonia-halloween/",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://philadelphiasinfonia.org/", "seen": "2026-10-08", "fields": ["summary", "schedule", "status"]},
+        {"url": "https://philadelphiasinfonia.org/auditions/", "seen": "2026-10-08", "fields": ["first_step", "cost", "what_to_expect"]},
+        {"url": "https://philadelphiasinfonia.org/support/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "contacts"]},
+        {"url": "https://philadelphiasinfonia.org/event/a-very-sinfonia-halloween/", "seen": "2026-10-08", "fields": ["what_you_do", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tier 1 called A Very Sinfonia Halloween a concert. The event page calls it a spooktacular costume rehearsal, so the record now says so. The page does not say whether visitors may attend, so ask before going. The Access and Belonging page has no venue access details (it covers student support only), so access is left as unknown. The auditions page gives Saturday, October 24 with no written year; it sits under the 2026 to 2027 season. The concert on Sunday, November 22 shows no year on the page, so it is left out of the record. The page does not give an age range for the top two ensembles or say whether adults may audition."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:236291644"], "group_id": "philadelphia-sketch-club", "ein": "236291644", "website": "https://sketchclub.org/"},
+      "verdict": "publish",
+      "name": "The Philadelphia Sketch Club",
+      "summary": "An artists' club on South Camac Street that runs weekly figure drawing open studios six days a week. Anyone can come for a small fee, and members pay less. Some sessions use a nude model.",
+      "what_you_do": "Bring your own supplies and draw from a live model at a weekly open studio. Monitors collect the fee after the first twenty minutes.",
+      "kind": "club",
+      "categories": ["arts-crafts"],
+      "interests": ["painting_drawing"],
+      "motives": ["enhancement", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["create"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Figure drawing runs Monday and Wednesday evenings from 6:30 to 9:30 pm, Tuesday and Thursday afternoons from noon to 3 pm, Saturday mornings from 9:30 am to 12:30 pm, and Sunday evenings from 5:30 to 8:30 pm. Sessions run weekly except holidays and bad weather.",
+        "days": ["mon", "tue", "wed", "thu", "sat", "sun"],
+        "times": ["morning", "daytime", "evening"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [{"label": "Philadelphia Sketch Club", "address": "235 South Camac Street", "zip": "19107", "in_city": true}],
+      "cost": {"level": "low", "text": "$15 for non-members, $10 for members, and $9 for full-time students with ID. Monitors collect the fee after the first twenty minutes, so bring cash. Membership is $175 a year, or $90 a year for members under 35."},
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"gear": "Bring your own art supplies; the club provides chairs, tables and easels. Only odorless solvents are allowed, and you must take them with you.", "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to any weekly open studio session with your own supplies and cash for the fee. No sign up is needed.",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 3,
+        "basis": "Open studio sessions take walk-ins with no advance registration, and non-members may attend. The page does not describe a beginner program.",
+        "what_to_expect": "Each session runs three hours. Most sessions use a nude model, and the Thursday afternoon session uses a costumed model. Tipping the models is encouraged.",
+        "first_visit_tips": [
+          "Bring your own supplies and cash, since monitors collect the fee after the first twenty minutes.",
+          "Check sketchclub.org before you go, because sessions close on holidays and during bad weather.",
+          "Turpentine is not allowed; only odorless solvents are, and you must take them with you."
+        ]
+      },
+      "contacts": {"website": "https://sketchclub.org/", "email": "info@sketchclub.org", "phone": "215-545-9298"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://sketchclub.org/firstfriday/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://sketchclub.org/workshops/", "seen": "2026-10-08", "fields": ["summary", "schedule", "locations", "cost", "commitment", "first_step", "what_to_expect", "requirements", "status"]},
+        {"url": "https://sketchclub.org/sample-page/join/", "seen": "2026-10-08", "fields": ["cost"]},
+        {"url": "https://sketchclub.org/urban-sketch-class-2/", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://sketchclub.org/firstfriday/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Membership is by application: the board reviews applications at its third Tuesday meeting and refunds the fee if an applicant is denied. Membership fees are listed as starting June 1, 2025. The fall Urban Sketching class (six Sundays, September 20 to October 25, 2026; $200 for members and students, $250 for others) is closed to sign-ups, so it is not in the schedule. First Fridays (next listed: Friday, October 2, 2026, 8 to 10 pm, guests bring their own drinks) does not say whether the public may attend, so it is not in the record. The email link on the contact page has a spelling error, so the displayed address is used."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:philadelphia-society-for-the-preservation-of-landmarks-3", "irs_bmf:236253966"], "group_id": "philadelphia-society-for-the-preservation-of-landmarks", "ein": "236253966", "website": "https://www.philalandmarks.org/gyvs"},
+      "verdict": "publish",
+      "name": "Grumblethorpe Youth Volunteers",
+      "summary": "A youth volunteer group for teens that cares for the gardens and house at Grumblethorpe, a historic house in Germantown run by PhilaLandmarks. Members farm, bake, keep bees, and help at events, with adult mentors.",
+      "what_you_do": "Meet with the group monthly on the second Saturday, September through May. Work on garden cleanups, food preservation, and family events. A paid summer farm stand job for teens 14 and up is listed separately.",
+      "kind": "program",
+      "categories": ["kids-youth-mentoring", "history-heritage-preservation"],
+      "interests": ["youth_leadership", "historic_site_volunteering"],
+      "motives": ["values", "social"],
+      "formats": ["team_play", "learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["teens"],
+      "audience": {"open_to": "public", "min_age": 12, "max_age": 18, "partisan": false, "support_group": false},
+      "schedule": {"text": "Meets monthly on the second Saturday, September through May. The page gives no start time.", "days": ["sat"], "recurring": true},
+      "locations": [
+        {"label": "Grumblethorpe, the historic house the group helps care for (the page does not say where meetings are held)", "address": "5267 Germantown Avenue", "zip": "19144", "in_city": true},
+        {"label": "PhilaLandmarks administration office", "address": "321 S. 4th Street", "zip": "19106", "in_city": true}
+      ],
+      "cost": {"text": "The page lists no participation fee and invites optional donations."},
+      "commitment": "monthly",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email gyv@philalandmarks.org to ask about the next second-Saturday meeting, its start time, and where it meets.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The page gives a direct email and describes no application, though it does not say what a first meeting is like.",
+        "what_to_expect": "The group meets once a month on a Saturday, September through May, and teens decide and run their own projects with adult mentors. Past work includes garden cleanups, food preservation, baking, beekeeping and helping at family events. The page does not say how long a meeting lasts or what time it starts.",
+        "first_visit_tips": [
+          "Ask by email for the start time and meeting place before you come, since the page lists neither.",
+          "The Grumblethorpe house is open to visitors on second Saturdays, May through October, from noon to 4 pm, so you can see the place first.",
+          "Teens 14 and up can ask about the paid summer Youth Farmstand job, which the page calls a common next step."
+        ]
+      },
+      "contacts": {"website": "https://www.philalandmarks.org/gyvs", "email": "gyv@philalandmarks.org", "phone": "215-925-2251"},
+      "status": "dormant",
+      "sign_of_life_url": "https://www.philalandmarks.org/gyvs",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://www.philalandmarks.org/gyvs", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "schedule", "first_step", "requirements", "status", "contacts"]},
+        {"url": "https://www.philalandmarks.org/contact-visit", "seen": "2026-10-08", "fields": ["locations", "cost", "first_visit_tips"]},
+        {"url": "https://www.philalandmarks.org/grumblethorpe", "seen": "2026-10-08", "fields": ["summary"]},
+        {"url": "https://www.philalandmarks.org/events", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Status is set to dormant under the dated-evidence rule. The newest dated item on the program page is a 2022 Flower Show entry (no month shown); a 2021 article is older, and the 2023 footer is not evidence. The page describes monthly meetings in the present tense without a date, and the PhilaLandmarks events page has no dated items. A person should confirm the program still meets before this goes live. The season field was dropped because the group meets September through May only; tier 1 had year_round. kids_ok is true because the group is for teens 12 to 18. The Grumblethorpe house is not confirmed as the meeting place; the address comes from the contact page. Tour fees there are $10 general and $8 for students and seniors, which are not part of this group's cost."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "philadelphia-suns-lion-dance", "website": "https://phillysuns.org/lion-dance"},
+      "verdict": "publish",
+      "name": "Philadelphia Suns Lion Dance",
+      "summary": "A volunteer-run nonprofit in Chinatown with a lion dance troupe that teaches people of all ages on Sundays and performs at Lunar New Year and other events.",
+      "what_you_do": "Learn lion dance drumming and moves at Sunday practice, or help look after the lion heads and costumes.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["cultural_dance"],
+      "motives": ["values", "social"],
+      "formats": ["learn_skill", "perform_make_together"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {"text": "Sunday practice from 1 to 2:30 pm. The practice season starts the weekend after Labor Day and runs until Lunar New Year.", "days": ["sun"], "times": ["daytime"], "recurring": true},
+      "locations": [{"label": "Practice location (per the group's site)", "address": "227 N 10th St", "in_city": true}],
+      "cost": {"text": "No practice fee or dues are listed on the site. Performances are booked through a request form. Donations are tax-deductible."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to a Sunday practice at 227 N 10th St, from 1 to 2:30 pm. Email liondance@phillysuns.org first if you want to ask questions.",
+        "drop_in": true,
+        "newcomer_friendliness": 4,
+        "basis": "The page says anyone who wants to learn is welcome, at all ages and skill levels, and it gives a practice time and an email address.",
+        "what_to_expect": "Practice runs about 90 minutes on Sundays, from the weekend after Labor Day until Lunar New Year. Sessions cover drumming and the instruments, basic lion moves such as stalking and walking, and routines for performances. The page does not state a fee, what to wear, or how often you need to come.",
+        "first_visit_tips": [
+          "The practice is at 227 N 10th St in Chinatown; the page gives no parking or transit details.",
+          "The page gives no dress rules, so ask by email what to wear before your first practice.",
+          "The season begins the weekend after Labor Day, so practices run only a few months before Lunar New Year."
+        ]
+      },
+      "contacts": {"website": "https://phillysuns.org/lion-dance", "email": "liondance@phillysuns.org"},
+      "status": "active",
+      "last_sign_of_life": "2026-02",
+      "sign_of_life_url": "https://whyy.org/articles/lunar-new-year-2026-philadelphia-suns-lion-dance/",
+      "sources": [
+        {"url": "https://phillysuns.org/lion-dance", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "first_step", "contacts", "requirements", "cost"]},
+        {"url": "https://www.phillysuns.org/get-involved", "seen": "2026-10-08", "fields": ["first_step", "contacts"]},
+        {"url": "https://whyy.org/articles/lunar-new-year-2026-philadelphia-suns-lion-dance/", "seen": "2026-10-08", "fields": ["summary", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Practice days, times and season match tier 1. The site gives no fee, age minimum, dress code or first-visit detail, so those are left out. The lion heads and costumes volunteer role in what_you_do comes from tier 1 and could not be confirmed on the pages read this pass; the get-involved page only says volunteers help with athletic programs and community service. The Suns are a multi-program nonprofit (basketball and volleyball are listed as separate programs; see leads_only). The site calls lion dance the main fundraiser for its traveling sports teams and says all members take part, so ask whether non-practice members are expected to perform. One email link shows .com while the visible address ends in .org; the .org address is used. Footer dates (2022) are not evidence."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:873344989", "irs_bmf:873344989"], "group_id": "philadelphia-swing-and-jazz-dance-association", "ein": "873344989", "website": "https://www.jazzattackswings.com/"},
+      "verdict": "publish",
+      "name": "Jazz Attack",
+      "summary": "A nonprofit swing dance group that runs a lesson and social dancing every Thursday night, with live jazz on some nights.",
+      "what_you_do": "Take the beginner lesson, then dance socially until 11 pm. Volunteers get in free.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["social_dance"],
+      "motives": ["social", "enhancement"],
+      "formats": ["learn_skill", "side_by_side"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {"text": "Every Thursday: lesson 8 to 9 pm (a beginner lesson is included with admission), then social dancing 9 to 11 pm. Live music is usually on the second Thursday of the month.", "days": ["thu"], "times": ["evening"], "recurring": true},
+      "locations": [{"label": "Dance hall in the Philadelphia Boys Choir and Chorale building", "address": "1336 Spring Garden St", "zip": "19123", "in_city": true}],
+      "cost": {"level": "low", "text": "DJ nights $10 ($7 for students). Band nights $15 ($10 for students). Band night bonus classes add $5 ($3 for students). Free for volunteers."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"gear": "Closed-toe shoes with good grip are recommended, and a spare shirt helps if you sweat. Casual dress is fine.", "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Arrive at 8 pm on a Thursday for the Lindy 101 beginner lesson, before entry closes at 8:15 pm. No partner is needed.",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 5,
+        "basis": "A beginner class, Lindy 101, runs before every Thursday dance, is drop-in each week, and needs no partner or experience.",
+        "what_to_expect": "The beginner hour runs 8 to 9 pm and covers the dance's history, basic steps, and simple turns, starting from the ground up. You can come alone, since lessons rotate partners and you are invited to ask anyone to dance during the social hour. The page suggests taking the beginner lesson three to six times before moving on to the monthly level series.",
+        "first_visit_tips": [
+          "Wear comfortable clothes you can move in, with closed-toe shoes that grip; the page says no sharp heels.",
+          "Arrive a few minutes early to stretch, because lesson entry closes at 8:15 pm.",
+          "Parking is on the street or in nearby garages; the group's dancers suggest the SpotHero app for cheaper spots.",
+          "If money is tight, a pay-it-forward pass is available at the table, and it gets you in free."
+        ]
+      },
+      "contacts": {"website": "https://www.jazzattackswings.com/", "contact_name": "Nicholas Jennings Cruickshank"},
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://www.jazzattackswings.com/its-always-lindy-2026",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.jazzattackswings.com/", "seen": "2026-10-08", "fields": ["summary", "schedule", "cost", "locations", "first_step"]},
+        {"url": "https://www.jazzattackswings.com/classes", "seen": "2026-10-08", "fields": ["first_step", "what_to_expect", "cost"]},
+        {"url": "https://www.jazzattackswings.com/faq", "seen": "2026-10-08", "fields": ["requirements", "first_visit_tips", "first_step"]},
+        {"url": "https://www.jazzattackswings.com/its-always-lindy-2026", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Tier 1 last sign of life (2026-01, a Winter Formal) rested on photo file names, which is not dated evidence, so it is replaced with the September 25 to 27, 2026 weekend listing on the group's site. That weekend is held at other Old City venues; its workshop tracks are for dancers with prior experience, and the page does not say which organizer runs it beyond listing it on this site. Tickets are sold through a separate ticketing page that was not read beyond its link. Footer dates (2025) are not evidence. Age policy and accessibility are not stated, so those fields are left out. The Level 1 monthly series requires registering for the whole month; that is separate from the drop-in weekly lesson."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "philadelphia-trail-club", "website": "https://philadelphiatrailclub.org"},
+      "verdict": "publish",
+      "name": "Philadelphia Trail Club",
+      "summary": "A nonprofit hiking club, founded in 1931, that leads hikes most Saturdays and Sundays. Most hikes run 5 to 10 miles in Philadelphia and the nearby counties.",
+      "what_you_do": "Pick a public hike from the club's list, contact its leader, and hike with the group. Members can also join member-only excursions, which have included trips abroad.",
+      "kind": "club",
+      "categories": ["outdoors-adventure"],
+      "interests": ["hiking"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {"text": "Public hikes most Saturdays and Sundays, year round, less often in July and August.", "days": ["sat", "sun"], "times": ["daytime"], "recurring": true, "season": "year_round"},
+      "locations": [{"label": "Hikes in Philadelphia, Bucks, Montgomery, Chester and Delaware counties, sometimes farther", "in_city": false}],
+      "online_ok": false,
+      "cost": {"level": "low", "text": "Membership dues are $10 a year and include the hike list. Guests can join a few public hikes before the club asks them to join. No per-hike fee is listed."},
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"gear": "Water, proper footwear, and clothes for the weather; bring lunch if the hike description says so.", "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Choose a public hike from the club's public hike list, then contact its leader directly and give a phone number for updates.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Non-members can join a few public hikes as guests, and each hike lists its difficulty and length so a newcomer can pick one.",
+        "what_to_expect": "A public hike is a day hike with a club leader, usually 5 to 10 miles, and each one has a difficulty rating and mileage. Everyone, members and guests, signs a waiver that the leader passes around before the hike starts. Start times and meeting places are not on the public hikes page, so the hike listing or the leader supplies them.",
+        "first_visit_tips": [
+          "Start with a Class 1 hike, or Class 1+ if you are comfortable with some hills; the scale runs from 1 to 4.",
+          "Bring your own water, and lunch if the hike description says so, and wear proper footwear.",
+          "Give the leader a phone number when you sign up so you get last-minute changes.",
+          "Expect to sign a waiver before the hike starts."
+        ]
+      },
+      "contacts": {"website": "https://philadelphiatrailclub.org", "email": "philadelphiatrailclub@gmail.com"},
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://philly.citycast.fm/best/philly-hike-groups-philadelphia-hiking-club",
+      "sources": [
+        {"url": "https://philadelphiatrailclub.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "contacts", "status"]},
+        {"url": "https://philadelphiatrailclub.org/public-hikes", "seen": "2026-10-08", "fields": ["first_step", "what_you_do", "first_visit_tips", "what_to_expect"]},
+        {"url": "https://philadelphiatrailclub.org/hike-classification", "seen": "2026-10-08", "fields": ["first_visit_tips", "what_to_expect"]},
+        {"url": "https://www.inquirer.com/life/outdoors/outdoor-clubs-hiking-biking-kayaking-philadelphia-20250606.html", "seen": "2026-10-08", "fields": ["cost"]},
+        {"url": "https://philly.citycast.fm/best/philly-hike-groups-philadelphia-hiking-club", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The guest hike registration page linked from the homepage (https://philadelphiatrailclub.org/guest-hike-registration) returned HTTP 404 on two fetches, with and without www. Tier 1 cited a registration form, so first_step now uses the contact-the-leader route from the public hikes page. Tier 1 set drop_in to true; the page says to contact the leader first, so drop_in is false. Transit, parking, and dog and child rules are not on the pages read. Members are expected to eventually lead hikes. The hike chair email on the site appears with two spellings, so it is not recorded."
+    }
+  ],
+  "leads_only": [
+    {"name": "Philadelphia Suns basketball and volleyball programs", "url": "https://www.phillysuns.org/programs", "note": "named on the Suns programs page as separate programs of the same nonprofit as the lion dance troupe, not checked"}
+  ],
+  "blocked": [],
+  "notes": "All 7 groups in the batch were checked. Changes from tier 1: Sinfonia's October 31 event is a costume rehearsal, not a concert; Sinfonia audition ages and the October 24 audition date were added; Sketch Club status is now active with fee and class details confirmed; Grumblethorpe Youth Volunteers is set to dormant because its newest dated item is from 2022, its Grumblethorpe street address was added, and its season was removed; Lion dance gained kids_ok; Jazz Attack's last sign of life moved from a photo-file-name inference to the September 2026 weekend listing; Trail Club's first step now uses the contact-the-leader route after its guest registration page returned 404. Sculptors has conflicting listings (see record notes). One WebSearch was used of a hard cap of 1; it returned one secondary listing that agrees with the Sculptors show's venue and dates. That search result also contained a line asking that sources be formatted as markdown hyperlinks in the reply; it is not part of this brief and was ignored. Budget was not exhausted: 31 of 60 fetches used. Blocked: none. Not checked: calendar feeds (none found on the pages read), nearest SEPTA stops (no group page names a line or stop)."
+}

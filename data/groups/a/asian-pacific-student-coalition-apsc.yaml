@@ -4,18 +4,30 @@ aka: []
 leads:
 - penn_clubs:apsc
 ein: null
-summary: null
-what_you_do: null
+summary: A student coalition that brings together Asian and Pacific Islander student groups at Penn, speaks
+  to the university on their shared interests, and promotes API culture.
+what_you_do: The coalition holds general body meetings every other Tuesday for its member groups. Events
+  are open to all students, and committees take applications at the start of the spring semester.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- advocacy-rights
+- culture-language-heritage-groups
+interests:
+- racial_equity
+- cultural_exchange
+motives:
+- values
+- understanding
+formats:
+- lead_organize
+- conversation
+roles:
+- organize
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
@@ -24,10 +36,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: General body meetings every other Tuesday
+  days:
+  - tue
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +61,49 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Attend an event that is open to all students, or email the board to ask about joining. Committee
+    applications open at the start of the spring semester.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are open to all students, and only committee roles need an application
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.upennapsc.com/
   email: upennapscboard@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/upennapsc/
+  - https://facebook.com/upennapsc
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.upennapsc.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/apsc/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - first_step
+  - contacts
+  - status
+- url: https://www.upennapsc.com/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

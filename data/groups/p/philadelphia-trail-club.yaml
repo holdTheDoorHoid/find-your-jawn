@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A nonprofit hiking club, founded in 1931, that leads hikes most Saturdays and Sundays. Most hikes
   run 5 to 10 miles in Philadelphia and the nearby counties.
-what_you_do: Join a leader on a day hike, sign up as a guest for a public hike, or go on the member only
-  excursions.
+what_you_do: Pick a public hike from the club's list, contact its leader, and hike with the group. Members
+  can also join member-only excursions, which have included trips abroad.
 kind: club
 categories:
 - outdoors-adventure
@@ -32,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public hikes most Saturdays and Sundays, year round, less often in July and August
+  text: Public hikes most Saturdays and Sundays, year round, less often in July and August.
   days:
   - sat
   - sun
@@ -53,7 +53,8 @@ locations:
 online_ok: false
 cost:
   level: low
-  text: Membership dues are $10 a year. The site does not state a fee for public hikes.
+  text: Membership dues are $10 a year and include the hike list. Guests can join a few public hikes before
+    the club asks them to join. No per-hike fee is listed.
 commitment: drop_in
 group_size: null
 access:
@@ -66,16 +67,26 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Water, proper footwear, and clothes for the weather; bring lunch if the hike description says
+    so.
 first_step:
-  how: Use the non-member hike registration form on the club site, or email the club to ask about the
-    next public hike
-  drop_in: true
-  sign_up_needed: null
+  how: Choose a public hike from the club's public hike list, then contact its leader directly and give
+    a phone number for updates.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Non-members are welcome on public hikes, and the site links a guest registration form
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Non-members can join a few public hikes as guests, and each hike lists its difficulty and length
+    so a newcomer can pick one.
+  what_to_expect: A public hike is a day hike with a club leader, usually 5 to 10 miles, and each one
+    has a difficulty rating and mileage. Everyone, members and guests, signs a waiver that the leader
+    passes around before the hike starts. Start times and meeting places are not on the public hikes page,
+    so the hike listing or the leader supplies them.
+  first_visit_tips:
+  - Start with a Class 1 hike, or Class 1+ if you are comfortable with some hills; the scale runs from
+    1 to 4.
+  - Bring your own water, and lunch if the hike description says so, and wear proper footwear.
+  - Give the leader a phone number when you sign up so you get last-minute changes.
+  - Expect to sign a waiver before the hike starts.
 contacts:
   website: https://philadelphiatrailclub.org
   email: philadelphiatrailclub@gmail.com
@@ -115,7 +126,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://philadelphiatrailclub.org/public-hikes
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - first_visit_tips
+  - what_to_expect
+- url: https://philadelphiatrailclub.org/hike-classification
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - what_to_expect
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

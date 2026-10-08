@@ -4,15 +4,24 @@ aka: []
 leads:
 - penn_clubs:penn-golf-club
 ein: null
-summary: null
-what_you_do: null
+summary: A relaxed, social golf group for Penn undergraduate and graduate students. Members get season
+  updates by email and play golf together for fun.
+what_you_do: Join the email list for the season, attend the info sessions, and play with other members.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+interests:
+- kickball_rec_leagues
+motives:
+- social
+- enhancement
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,12 +33,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
+  text: Season info sessions. The most recent listed was Wednesday, January 28, 7 to 8 pm, in Huntsman
+    260.
+  days:
+  - wed
+  times:
+  - evening
   recurring: null
-  season: null
-locations: []
+  season: event_only
+locations:
+- label: Huntsman 260
+  address: Huntsman Hall, room 260
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,11 +69,11 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the interest form to join the email list, and follow the club on Instagram.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory marks an application as required and does not describe the process.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -60,19 +81,32 @@ contacts:
   email: pennclubgolfinfo@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennclubgolf/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-01
+sign_of_life_url: https://pennclubs.com/api/clubs/penn-golf-club/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-golf-club/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

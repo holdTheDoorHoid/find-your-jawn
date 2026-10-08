@@ -4,9 +4,11 @@ aka: []
 leads:
 - city_programs:philadelphia-more-beautiful-committee-clean-block-program
 ein: null
-summary: Each year the Department of Sanitation partners with block captains for organized Saturday cleanups
-  by police district, plus an annual Clean Block Contest with cash prizes for the cleanest blocks.
-what_you_do: null
+summary: Block captains and the city's More Beautiful Committee organize Saturday cleanups by police district
+  each spring and summer, working with the Department of Sanitation. A yearly Clean Block Contest judges
+  a set of registered blocks, and every contest block receives cash.
+what_you_do: Join your block's Saturday cleanup and bag the litter for pickup, or ask PMBC for a block
+  captain petition, which needs signatures from 51% of the residents on your block, one adult per household.
 kind: program
 categories:
 - neighborhood-civic
@@ -25,7 +27,7 @@ crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -34,12 +36,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Saturday cleanups in spring and fall
-  days: []
+  text: Saturday cleanups by police district, held each year between March and August. Your block captain
+    sets the date with the clean block officer for your police district.
+  days:
+  - sat
   times: []
-  recurring: null
-  season: null
-locations: []
+  recurring: true
+  season: spring
+locations:
+- label: PMBC office
+  address: 2601 W. Glenwood Ave.
+  neighborhood: null
+  planning_district: null
+  zip: '19121'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -58,34 +71,62 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call PMBC at (215) 685-3971 to find out whether your block has a captain and when your police district's
+    Saturday is.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Residents join through their block captain, and PMBC publishes a phone line to find one, so the
+    way in is clear but needs a call first.
+  what_to_expect: A cleanup is a Saturday on your block, run by your block captain with the clean block
+    officer for your police district. PMBC can provide tools, supplies, and street cleaning help, and
+    residents pick up litter and bag it for pickup. The site does not give a start time or how long the
+    cleanup takes.
+  first_visit_tips:
+  - Bag the litter and set the bags at either end of the block for pickup.
+  - Do not sweep trash or dirt into storm drains, and keep cars off the street while you work.
+  - Bulk or household trash is not collected on cleanup Saturdays, so keep it out of the bags.
 contacts:
   website: https://www.phila.gov/2026-03-19-2026-philadelphia-more-beautiful-committee-pmbc-clean-block-schedule/
   email: null
-  phone: null
+  phone: (215) 685-3971
   contact_name: null
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-07
-sign_of_life_url: https://www.phila.gov/2026-03-19-2026-philadelphia-more-beautiful-committee-pmbc-clean-block-schedule/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.phila.gov/2026-10-02-philadelphia-more-beautiful-committee-pmbc-hosts-2026-clean-block-contest/
 sources:
 - url: https://www.phila.gov/2026-03-19-2026-philadelphia-more-beautiful-committee-pmbc-clean-block-schedule/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
-confidence: medium
-last_checked: '2026-10-04'
+  - schedule
+  - what_you_do
+  - first_step
+- url: https://www.phila.gov/2026-10-02-philadelphia-more-beautiful-committee-pmbc-hosts-2026-clean-block-contest/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - last_sign_of_life
+- url: https://www.phila.gov/programs/philadelphia-more-beautiful-committee/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - schedule
+- url: https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

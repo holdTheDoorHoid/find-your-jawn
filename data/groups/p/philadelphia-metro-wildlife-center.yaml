@@ -4,9 +4,9 @@ aka: []
 leads: []
 ein: null
 summary: A licensed wildlife rehabilitation center that takes in injured and orphaned wild animals from
-  the Philadelphia region. Its volunteers do much of the daily feeding and cleaning.
-what_you_do: Feed, wash and clean up after wild animals, and help with the center's education work such
-  as its wildlife ambassador program.
+  Philadelphia and nearby counties. Its volunteers do much of the daily feeding and cleaning.
+what_you_do: Prepare food, feed the animals, clean cages, and wash dishes and laundry on a regular weekly
+  shift. Some volunteers help clinic staff with animal care.
 kind: nonprofit
 categories:
 - animals
@@ -20,29 +20,29 @@ formats:
 - team_play
 roles:
 - hands_on
-- help_teach
 crowd:
 - all_adults
-- teens
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Animal care runs every day, so volunteer shifts are set with staff
+  text: Volunteers take one four-hour shift a week in a fixed time slot, all year round. The center is
+    open daily from 9 am to 5 pm.
   days: []
-  times: []
+  times:
+  - daytime
   recurring: true
   season: year_round
 locations:
-- label: Philadelphia Metro Wildlife Center
-  address: 2815 Township Line Road
+- label: Center
+  address: 2815 Township Line Road, Norristown
   neighborhood: null
   planning_district: null
   zip: '19403'
@@ -53,7 +53,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Volunteering is unpaid
+  text: Volunteering is unpaid, and there is no fee to bring in an animal
 commitment: ongoing_role
 group_size: null
 access:
@@ -65,22 +65,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Call 267-416-9453 and ask about volunteering; injured wildlife must be discussed with staff by
-    phone before bringing it in
+  how: Fill out the volunteer interest form on the center's Volunteer page, or call (267) 416-9453 to
+    ask about volunteering and the wait-list.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The center takes volunteers and is reachable by phone; the group's own page does not spell out
-    a volunteer process
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers apply through an interest form and go on a wait-list because the center is at capacity,
+    and the page gives no timeline.
+  what_to_expect: 'Volunteers are adults, 18 and older, who take a regular four-hour shift each week all
+    year. The work is mostly care: preparing food, feeding, cleaning cages, dishes, and laundry, with
+    some help for clinic staff. Visits are by appointment only, so call before you come.'
+  first_visit_tips:
+  - Call (267) 416-9453 or email info@phillywildlife.org before you visit, since admission is by appointment.
+  - Ask about the wait-list and shift times when you call, because the site does not give either.
+  - Call staff before you bring in any injured or orphaned animal, since the center asks for a call first.
 contacts:
   website: https://www.phillywildlife.org
-  email: null
-  phone: 267-416-9453
+  email: info@phillywildlife.org
+  phone: (267) 416-9453
   contact_name: null
   social: []
   calendar_feed: null
@@ -95,11 +100,31 @@ sources:
   - locations
   - contacts
   - status
+  - first_step
+  - first_visit_tips
 - url: https://www.sierraclub.org/pennsylvania/blog/2024/02/philly-metro-wildlife-center
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+- url: https://www.phillywildlife.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - audience
+  - commitment
+  - schedule
+  - requirements
+- url: https://www.phillywildlife.org/faq
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - first_step
+- url: https://www.phillywildlife.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

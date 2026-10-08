@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:alzheimers-buddies
 ein: null
-summary: null
-what_you_do: null
+summary: Penn students who are paired with a nursing home resident living with dementia and spend about
+  an hour with them each week.
+what_you_do: Visit your buddy weekly at West Park Nursing Home or at Atria, for about an hour. Members
+  also join reflection meetings, guest lectures, and fundraisers, with breaks during fall and spring break.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- seniors-intergenerational
+interests:
+- friendly_visiting
+- nursing_home_hospice
+motives:
+- values
+- social
+formats:
+- conversation
+roles:
+- hands_on
+crowd:
+- students
+- seniors
 bridging: null
 audience:
   open_to: students
@@ -24,17 +35,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly buddy visits of about an hour, plus bimonthly reflection meetings.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +59,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Apply through the Fall 2026 application form linked on the club's Penn Clubs page
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining needs an application, so the first step is a form and not a drop in.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://www.alzbuddies.org/
   email: upenn@alzbuddies.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/upennalzbuddies/
+  - https://facebook.com/pennalzheimersbuddies
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubs.com/api/clubs/alzheimers-buddies/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/alzheimers-buddies/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - commitment
+  - first_step
+  - contacts
+  - status
+- url: http://www.alzbuddies.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

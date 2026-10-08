@@ -1,0 +1,292 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-04",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 43,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.pennbsl.com/",
+   "status": null,
+   "note": "Host name did not resolve (DNS lookup failed) when fetched. Not retried."
+  }
+ ],
+ "notes": "Read all 20 clubs from their Penn Clubs directory entries and checked each club's own website once where one is listed. Two sites redirected and were followed once (barsorg.com and bmes.seas.upenn.edu). Result: 14 records are publishable and 6 are held back as status unknown: Bangla Society, Beekeeping Club, BioArt Lab, Bioethics Society, BGSA and Black Student League. The six are held because the directory status reads INACTIVE and no dated activity was found on a club site. Directory status words such as UNDER REVIEW and PRELIMINARY were read as registration state, not activity, so clubs with the directory active flag and no dated item are probably_active. Active on dated evidence: Ballet at Penn (show dated April 2026 on its site), Beyond Arrests (posts dated November 2025, read from web addresses), Blockchain at Penn (March 27 and 28, 2026 event weekend), Body Empowerment (Fall 2026 recruitment, year only). Probably active on a dated 2024 post: Black Graduate and Professional Student Assembly (post dates read from web addresses). The Black Student League website did not resolve and was not retried. Personal emails and phone numbers of officers on directory entries and club sites were not recorded. Directory emails that look like individual Penn addresses were left out. The Bulgarian Society directory Instagram link uses an account name that does not match the club, so it was left out. Linktree pages (Bangla Society, BlackGen Capital, BioArt Lab) were not read because they are link lists. No WebSearch was used. Fetches: 43, under the cap of 60. No rate limiting was seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-bangladeshi-student-association"
+    ],
+    "group_id": "bangla-society",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bangla Society",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "community": [
+     "heritage:bangladeshi"
+    ],
+    "support_group": false
+   },
+   "contacts": {
+    "email": "upennbsa@gmail.com",
+    "social": [
+     "https://instagram.com/pennbangla/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-bangladeshi-student-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status reads INACTIVE, with 24 members and no events or dated items. Held back as unknown until a dated item or a working club site shows activity. The club's linktree page was not read because it is a link list, not a club site.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-beekeeping"
+    ],
+    "group_id": "beekeeping-club",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Beekeeping Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "support_group": false
+   },
+   "contacts": {
+    "email": "thebeekeepingclub@gmail.com",
+    "social": [
+     "https://instagram.com/pennbeekeeping/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-beekeeping/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status reads INACTIVE, although its active flag is true and it lists 157 members. No dated events and no club website, so held back as unknown. Co-president contacts on the directory are individual student addresses and were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pennatomy"
+    ],
+    "group_id": "bioart-lab-at-penn",
+    "ein": null,
+    "website": "https://www.bioartpenn.org/"
+   },
+   "verdict": "publish",
+   "name": "BioArt Lab at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.bioartpenn.org/",
+    "email": "pennbioart@gmail.com",
+    "social": [
+     "https://instagram.com/bioartpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/pennatomy/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.bioartpenn.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status reads INACTIVE (active flag true, 35 members). The club site has no dated events or posts. Its only date is a page publish stamp of October 6, 2026, which the reader identified as page metadata, so it was not used as evidence. Held back as unknown. The exposition date is not stated. A person may want to recheck that stamp.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-bioethics-society"
+    ],
+    "group_id": "bioethics-society-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bioethics Society at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "support_group": false
+   },
+   "contacts": {
+    "social": [
+     "https://www.instagram.com/pennbioethicsociety"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-bioethics-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status reads INACTIVE. The directory text says the club is active as of Fall 2026, but that is a directory claim, not a dated post, and the events list is empty. No club website. Held back as unknown. Directory contacts that look like individual Penn addresses were not recorded. The application flag conflicts with the description, so check before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:bgsa"
+    ],
+    "group_id": "biomedical-graduate-student-association-bgsa",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Biomedical Graduate Student Association (BGSA)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "support_group": false
+   },
+   "contacts": {
+    "email": "bgsa@pennmedicine.upenn.edu"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/bgsa/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory says the club is active, but its status reads INACTIVE, and it says the club is not accepting members. No website and no dated items. Held back as unknown. The directory describes membership as limited to students in the Biomedical Graduate Studies program.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-bsl"
+    ],
+    "group_id": "black-student-league",
+    "ein": null,
+    "website": "https://www.pennbsl.com/"
+   },
+   "verdict": "publish",
+   "name": "Black Student League",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.pennbsl.com/",
+    "email": "pennbsl@gmail.com",
+    "social": [
+     "https://instagram.com/pennbsl/",
+     "https://facebook.com/PennBSL/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-bsl/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status reads INACTIVE, though it marks the club as accepting members. The club website did not resolve when checked (host not found), so there is no dated evidence. Held back as unknown. Recheck the website and the directory before publishing. Directory says an application is required, and the how to get involved field is empty.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

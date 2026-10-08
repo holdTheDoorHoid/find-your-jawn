@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:chess
 ein: null
-summary: null
-what_you_do: null
+summary: A student-run chess club for every level, from casual players to tournament competitors. It runs
+  tournaments and workshops and sends players to national college and Inter-Ivy events.
+what_you_do: Play casually or in tournaments, take part in workshops, and join the email list or GroupMe
+  to hear about meetings.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- games-puzzles
+interests:
+- chess
+motives:
+- social
+- enhancement
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -30,14 +40,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
+- label: Benjamin Franklin Room
   address: Benjamin Franklin Room, Houston Hall
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,7 +67,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the email list or GroupMe linked from the club's website. The directory says an application
+    is required, but the club's own site does not explain one, so ask the club first.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -65,15 +76,16 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://upennchessclub.com/
   email: upennchessclub@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennchess/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://upennchessclub.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +93,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/chess/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+  - locations
+  - first_step
+  - status
+- url: https://upennchessclub.com/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

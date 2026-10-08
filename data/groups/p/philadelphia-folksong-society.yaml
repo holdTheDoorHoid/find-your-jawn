@@ -6,8 +6,8 @@ leads:
 ein: '236296972'
 summary: A nonprofit that runs the Philadelphia Folk Festival each August, a Folk School in Roxborough,
   and concert series. The festival includes song circles, jam sessions, and open mic time.
-what_you_do: Attend the festival and its song circles and jams, come to a concert, or volunteer with the
-  society.
+what_you_do: Buy a day pass or camping ticket for the festival, go to a concert, or volunteer for a festival
+  committee. A volunteer ticket also counts as your registration.
 kind: nonprofit
 categories:
 - music
@@ -19,6 +19,7 @@ motives:
 - enhancement
 formats:
 - perform_make_together
+- one_off_event
 roles:
 - hands_on
 crowd:
@@ -34,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The festival runs one weekend each August at Old Pool Farm. Concerts and the Folk School keep
-    their own calendars.
+  text: The Philadelphia Folk Festival runs one weekend each August, Friday through Sunday, at Old Pool
+    Farm. Concerts and the Folk School keep their own calendars.
   days:
   - fri
   - sat
@@ -47,10 +48,10 @@ schedule:
   season: summer
 locations:
 - label: Festival site at Old Pool Farm, Upper Salford Township
-  address: null
+  address: 1323 Salford Station Road, Harleysville, PA 19438
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19438'
   lat: null
   lng: null
   in_city: false
@@ -67,13 +68,15 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Festival tickets cost money. Children under 5 enter free with an adult.
+  text: Festival tickets cost money, with day passes, camping packages, and a VIP package. Society members
+    get discounted festival tickets. Children under 5 enter free with an adult.
 commitment: seasonal
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: ADA camping sites and ADA parking are inside the camping gate. A golf-cart shuttle (TramCart)
+    runs on the concert and camping grounds. The ground is rough because the site is temporary.
 requirements:
   act153_clearances: null
   background_check: null
@@ -82,14 +85,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Buy a festival or concert ticket, or volunteer through the society's site
+  how: Buy a day pass or concert ticket on the festival's tickets page, or sign up to volunteer through
+    the volunteers page.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The festival and concerts are open to anyone with a ticket, but the pages checked do not describe
-    a beginner program
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The festival and concerts are open to anyone with a ticket, and volunteer committees name jobs
+    for first-timers. The pages checked describe no beginner program.
+  what_to_expect: The festival is an outdoor, multi-day event with music on seven stages from 11 am into
+    the evening, plus camping, crafts, food, and family activities. You can attend for a single day. Camping
+    has its own arrival days and a wristband to enter, and a golf-cart shuttle runs on the grounds.
+  first_visit_tips:
+  - Read the parking and camping pages before you go, since the site is temporary and the ground is rough.
+  - Pets are not allowed, except licensed or registered service dogs.
+  - The FAQ says amplified instruments and drumming are not allowed.
+  - Camping ticket holders get staggered entry days, so check your ticket before you travel.
 contacts:
   website: https://pfs.org
   email: null
@@ -99,7 +109,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-08
-sign_of_life_url: https://pfs.org/category/uncategorized/
+sign_of_life_url: https://folkfest.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +130,33 @@ sources:
   - summary
   - locations
   - formats
-research_tier: 1
+- url: https://folkfest.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://folkfest.org/faqs/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - access
+- url: https://folkfest.org/volunteers/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - basis
+- url: https://pfs.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:pcc
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn student group that helps college and high school students manage money and work toward
+  financial independence. It is a chapter of a national nonprofit.
+what_you_do: Join a committee to run workshops and make educational resources during the fall and spring
+  recruitment periods, or sign up for the general listserv to hear about events.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- careers-skills-professional
+interests:
+- money_skills
+motives:
+- values
+- career
+formats:
+- lead_organize
+- learn_skill
+roles:
+- organize
+- help_teach
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +35,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Committee recruitment runs in the fall and spring. Meeting times are not listed.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +59,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Click the Apply button on the Penn Clubs page during fall or spring recruitment to join a committee.
+    To join as a general member, sign up through the club's listserv.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Committee seats need an application during recruitment, and general members join by listserv.
+    The directory says the club is not currently accepting members.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://penn.commoncents.org
   email: penn@commoncents.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/penncommoncents
+  - https://www.linkedin.com/company/commoncentsinitiative
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://penn.commoncents.org
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/pcc/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://penn.commoncents.org
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

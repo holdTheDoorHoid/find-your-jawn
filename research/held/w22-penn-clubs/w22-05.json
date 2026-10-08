@@ -1,0 +1,447 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-05",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 33,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.penn.museum/learn/penn-students/clio-society",
+   "status": 404,
+   "note": "Club page linked from the Penn Clubs entry returned not found; not read."
+  },
+  {
+   "url": "https://www.christianunion.org/ministries/universities/penn",
+   "status": 404,
+   "note": "Ministry page linked from the Penn Clubs entry returned not found; not read."
+  },
+  {
+   "url": "http://www.citysteppenn.org/",
+   "status": null,
+   "note": "Domain did not resolve; the bare domain https://citysteppenn.org also did not resolve. Not read."
+  }
+ ],
+ "notes": "Ran all 20 clubs in the batch. 33 WebFetch calls (20 directory entries, 1 status re-check, 12 club-website fetches and retries), 0 WebSearch. All 20 records are verdict publish. Status came from the newest dated item I could read: 1 active (Club Golf, January 2026 info session); 7 probably_active (working site or directory active flag with no dated item, or a 2026 mention without a date: Chess, Calligraphy, PCDC, CSA, Climate Ventures, Clio Society, Club Gymnastics); 4 unknown with summary kept (Check All, Cheese Club, Classics Board, Club Baseball); 8 unknown with summary left out per the inactive rule, so they are held back (Business Industry Trends, Chinese Language and Culture Club, CSSAP, Chinese Theater, Christian Union Martus, CityStep, Climbing Club, Club Field Hockey). Reviewer should look first at Climbing Club (its links page hints at Fall 2026 activity) and Club Field Hockey (site shows only 2024 labels). Personal student names and emails on the directory were not recorded (Cheese Club, Christian Union, Classics Board co-chairs, Club Baseball contacts). Blocked or unreadable: Clio Society site (404), Christian Union site (404), CityStep site (domain did not resolve). Golf and gymnastics have no matching vocabulary tag, so the nearest tags were used. The batch lead text for Check All reads Multiracial Student Coalition; the directory name was used. Budget: 33 of 60 fetches, 0 of 0 searches. Not finished early.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:business-industry-trends-bit"
+    ],
+    "group_id": "business-industry-trends"
+   },
+   "verdict": "publish",
+   "name": "Business Industry Trends",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Sign up on the group's mailing list form, linked from its Penn Clubs entry. Committee teams take applications at the start of each fall and spring semester."
+   },
+   "contacts": {
+    "email": "BusinessIndustryTrends@gmail.com"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/business-industry-trends-bit/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory says the club is not accepting members and its status is under review, so under the inactive rule the summary, categories and interests are left out and the record is held back. The directory description was not used. The mailing list link was not opened.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:chinese-language-and-culture-club"
+    ],
+    "group_id": "chinese-language-and-culture-club"
+   },
+   "verdict": "publish",
+   "name": "Chinese Language and Culture Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Fill out the Google form to join the mailing list, or join the GroupMe chat."
+   },
+   "contacts": {
+    "website": "https://sites.google.com/view/upennclc/home",
+    "email": "clc.upenn@gmail.com",
+    "social": [
+     "https://instagram.com/upennclc/"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/chinese-language-and-culture-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "first_step"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/view/upennclc/home",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, though its active flag is true (conflict). The club's own site loads but has no dated posts, only a Page updated label with no date. Its separate events page was not read. Under the inactive rule the summary, categories and interests are left out, so the record is held back. A reviewer should re-check if a dated item appears.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:chinese-students-and-scholars-association-at-penn-cssap"
+    ],
+    "group_id": "chinese-students-and-scholars-association-at-penn-cssap"
+   },
+   "verdict": "publish",
+   "name": "Chinese Students and Scholars Association at Penn (CSSAP)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "The directory points to the club's WeChat official account for updates. It does not say how to join."
+   },
+   "contacts": {
+    "email": "cssaporg@gmail.com",
+    "social": [
+     "https://instagram.com/cssap/"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/chinese-students-and-scholars-association-at-penn-cssap/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE and accepting members is no. The application field has the value 4, which is unclear, so no newcomer rating is given. No website is listed. Summary, categories and interests are left out under the inactive rule.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-chinese-theater"
+    ],
+    "group_id": "chinese-theater-at-penn"
+   },
+   "verdict": "publish",
+   "name": "Chinese Theater at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "The directory says more details will be posted on Instagram and on the club's WeChat official account. It does not describe how to join."
+   },
+   "contacts": {
+    "email": "pennchinesetheater@gmail.com",
+    "social": [
+     "https://instagram.com/pennchinesetheater/",
+     "https://facebook.com/PennChineseTheater",
+     "https://youtube.com/user/PennChineseTheater"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-chinese-theater/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE while accepting members is yes (conflict). The application field has the value 2, which is unclear. Summary, categories and interests are left out under the inactive rule. No website is listed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:christian-union-at-penn-formerly-pennfa"
+    ],
+    "group_id": "christian-union-martus"
+   },
+   "verdict": "publish",
+   "name": "Christian Union Martus",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Fill out the interest form and join the club's Slack workspace, both linked from its Penn Clubs entry.",
+    "newcomer_friendliness": 2,
+    "basis": "The directory marks an application as required."
+   },
+   "contacts": {
+    "social": [
+     "https://instagram.com/cu_martus/"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/christian-union-at-penn-formerly-pennfa/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE while accepting members is yes (conflict). The club's listed site (christianunion.org) returned a 404 and was not read. The personal contact address on the directory is not recorded. Summary, categories and interests are left out under the inactive rule.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:citystep"
+    ],
+    "group_id": "citystep"
+   },
+   "verdict": "publish",
+   "name": "CityStep",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Fill out the interest form linked from the directory. The directory lists open auditions each September and February.",
+    "newcomer_friendliness": 2,
+    "basis": "Auditions each fall and spring are the stated way in."
+   },
+   "contacts": {
+    "email": "citystepboard@gmail.com",
+    "social": [
+     "https://instagram.com/citysteppenn/"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/citystep/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE while accepting members is yes (conflict). The club's listed site did not resolve (tried the www and bare domains), so it was not read. Summary, categories and interests are left out under the inactive rule.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:climbing"
+    ],
+    "group_id": "climbing-club"
+   },
+   "verdict": "publish",
+   "name": "Climbing Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "locations": [
+    {
+     "label": "Pottruck Climbing Wall",
+     "address": "Penn Campus Recreation, Pottruck Climbing Wall",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Go to the weekly meetings on Tuesdays and Thursdays, 8:30 to 10:30 pm, at the Pottruck Climbing Wall, or sign up through the club's form."
+   },
+   "contacts": {
+    "website": "https://linktr.ee/upennclimbingclub",
+    "email": "climbingclub.upenn@gmail.com",
+    "social": [
+     "https://instagram.com/upenn.climbingclub/"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/climbing/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "locations",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://linktr.ee/upennclimbingclub",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE while accepting members is yes, so the summary is left out and the record is held back. The club's links page shows an undated Sept 19 social (no year) and labels for a Fall 2026 trip pass form and a 2026 to 2027 mailing list. Those are not full dates, so they were not used as evidence. A reviewer may want to re-check this group first.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-club-field-hockey"
+    ],
+    "group_id": "club-field-hockey-at-penn"
+   },
+   "verdict": "publish",
+   "name": "Club Field Hockey at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Email the club to ask about joining. The directory says all skill levels are welcome, from beginners to former varsity players."
+   },
+   "contacts": {
+    "website": "http://pennclubfieldhockey.weebly.com",
+    "email": "pennclubfieldhockey@gmail.com",
+    "social": [
+     "https://instagram.com/pennclubfieldhockey"
+    ]
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-club-field-hockey/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "http://pennclubfieldhockey.weebly.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, though its approval note says it registered for 2025 to 2026 and the active flag is true. The club's site shows only Fall 2024 and Spring 2024 labels. Status is left unknown and the summary is left out under the inactive rule. A reviewer may decide this one is dormant once they confirm.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

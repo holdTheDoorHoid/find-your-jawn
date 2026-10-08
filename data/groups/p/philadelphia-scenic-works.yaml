@@ -4,10 +4,11 @@ aka: []
 leads:
 - cultural_fund:philadelphia-scenic-works-3
 ein: null
-summary: A nonprofit scene shop that builds sets and scenery for arts groups, and trains people who want
-  backstage careers. It runs a free High School Tech Theatre Club.
-what_you_do: Join the free High School Tech Theatre Club, take training in backstage work, or join the
-  mailing list to hear about openings.
+summary: A nonprofit scene shop that builds sets and scenery for arts groups and trains people who want
+  backstage careers. It runs a free High School Tech Theatre Club and free one-day skills workshops for
+  the public.
+what_you_do: Join the free High School Tech Theatre Club on Wednesdays, take a free one-day skills workshop,
+  or join the mailing list to hear about apprenticeships and openings.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -35,17 +36,37 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The High School Tech Theatre Club is described as back, with a sign-up form. Meeting times are
-    not listed.
-  days: []
-  times: []
-  recurring: null
+  text: The High School Tech Theatre Club meets on Wednesdays from 4:30 to 5:45 pm during each school
+    term. Skills workshops and apprenticeships come up on their own schedule.
+  days:
+  - wed
+  times:
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: High School Tech Theatre Club (InterAct Theatre at The Drake)
+  address: 302 S. Hicks Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Shop and office (Yeadon)
+  address: 546 Penn Street, Yeadon, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: The High School Tech Theatre Club is free. Other training costs are not listed.
+  text: The High School Tech Theatre Club and the public skills workshops are free.
 commitment: null
 group_size: null
 access:
@@ -57,20 +78,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Fill out the High School Tech Theatre Club sign-up form on the site.
+  how: Fill out the High School Tech Theatre Club sign-up form linked from the top of the group's website.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The club is free and has a public sign-up form
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The club page says no experience is required and gives a sign-up form, and the club is free.
+  what_to_expect: The club meets on Wednesdays for about an hour and a quarter during each school term,
+    at InterAct Theatre at The Drake. You learn tech theatre skills such as scenery, props, stage management,
+    lighting, sound, and costumes. The club is free, and the page says no experience is needed.
+  first_visit_tips:
+  - Sign up through the form before the term starts, since the page does not list session dates.
+  - The club meets at 302 S. Hicks Street, not at the Yeadon shop.
+  - Send questions to the general email address on the contact page.
 contacts:
   website: http://www.philadelphiascenicworks.org
-  email: null
-  phone: null
+  email: info@philadelphiascenicworks.org
+  phone: (215) 560-8105
   contact_name: null
   social: []
   calendar_feed: null
@@ -83,6 +109,7 @@ sources:
   fields:
   - name
   - contacts.website
+  - contacts
 - url: http://www.philadelphiascenicworks.org
   seen: '2026-10-08'
   fields:
@@ -90,7 +117,26 @@ sources:
   - what_you_do
   - cost
   - status
-research_tier: 1
+- url: http://www.philadelphiascenicworks.org/education-%26-workforce
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - schedule
+  - first_step
+  - locations
+- url: http://www.philadelphiascenicworks.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: http://www.philadelphiascenicworks.org/join-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

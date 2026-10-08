@@ -4,10 +4,11 @@ aka: []
 leads:
 - irs_bmf:272374218
 ein: '272374218'
-summary: A faith-based nonprofit that runs free home repairs for neighbors in Germantown and Mt. Airy,
-  with volunteers joining short service trips that work on those homes.
-what_you_do: Join a service trip such as a day of service, a blitz weekend or a summer project, or apply
-  for a repair through the Home Repair page.
+summary: A faith-based nonprofit that runs free home repairs for homeowners in several Northwest Philadelphia
+  ZIP codes, including Germantown and Mt. Airy. Volunteers join short service trips, and volunteer teams
+  do most of the repair work.
+what_you_do: Sign up for a service trip such as a day of service, a blitz weekend, or a summer of service,
+  or apply for a repair through the Home Repair page if you own and live in an eligible home.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -34,14 +35,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Service trips run through the year, including a summer of service, blitz weekends, spring break
-    and days of service
+  text: Service trips run through the year, including a summer of service, blitz weekends, spring break,
+    and days of service. Most home construction happens in summer.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Germantown and Mt. Airy
+- label: Office
+  address: 8230 Ridge Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19128'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Home repair area (Northwest Philadelphia ZIP codes)
   address: null
   neighborhood: null
   planning_district: null
@@ -53,7 +63,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Repair cost is not stated on the home page
+  text: Homeowner repairs are free. The site does not say what volunteer trips cost.
 commitment: one_off
 group_size: null
 access:
@@ -65,17 +75,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Read the Home Repair page for how a repair works, and use the Get Involved page to pick a service
-    trip
-  drop_in: null
-  sign_up_needed: null
+  how: Use the 'Tell Me More' inquiry form on the service trips page to ask about a day of service or
+    a summer trip that fits your group.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Service trips are listed publicly on the site, though the sign-up steps are not spelled out
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Trips are listed publicly and open to groups of many kinds, and the inquiry form is the way in,
+    but the page does not say what skills are needed or what happens after the inquiry.
+  what_to_expect: A trip lasts from one day to a full week, and groups can be small, corporate, family,
+    or intergenerational. Volunteers work on home repairs, church projects, children's programs, or service
+    at food banks and shelters, and each trip includes an evening worship session. The site does not say
+    what trips cost or where groups stay.
+  first_visit_tips:
+  - 'Pick a trip that fits your age: a day of service is open to all ages, summer trips and blitz weekends
+    are mostly for grades 6 to 12, and spring break is for college students.'
+  - Ask the office what a trip costs and where people sleep, since the site does not say.
+  - For a home repair, check the eligibility list on the Home Repair page before you apply.
 contacts:
   website: http://www.thephillyproject.org
   email: null
@@ -103,8 +121,30 @@ sources:
   - what_you_do
   - cost
   - status
-research_tier: 1
-confidence: low
+- url: http://www.thephillyproject.org/home-repair
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - locations
+- url: http://www.thephillyproject.org/service-trips
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - requirements
+  - what_you_do
+  - first_step
+- url: http://www.thephillyproject.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+- url: http://www.thephillyproject.org/contact-general
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

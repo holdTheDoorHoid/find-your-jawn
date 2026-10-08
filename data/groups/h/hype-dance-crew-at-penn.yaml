@@ -4,15 +4,23 @@ aka: []
 leads:
 - penn_clubs:penn-hype
 ein: null
-summary: null
-what_you_do: null
+summary: A co-ed dance crew at Penn that mixes hip hop with jazz funk, contemporary, and other styles.
+  New dancers join through auditions the club announces.
+what_you_do: Members learn choreography in several styles and dance together as a team.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- theater-dance-performance
+interests:
+- dance_company
+motives:
+- enhancement
+- social
+formats:
+- perform_make_together
+roles:
+- create
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,31 +56,49 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the interest form on the club's website to hear about upcoming auditions
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: New dancers join through auditions, so the way in is an audition after the interest form
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://hypedancecrew.com/
   email: hypegboard@googlegroups.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennhype/
+  - https://facebook.com/pennhype/
+  - https://youtube.com/user/PennHype
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://hypedancecrew.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-hype/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - audience
+  - first_step
+  - contacts
+  - status
+- url: https://hypedancecrew.com/#home-section
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

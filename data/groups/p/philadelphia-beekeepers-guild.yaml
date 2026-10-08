@@ -8,7 +8,7 @@ ein: '320306451'
 summary: Beekeepers and bee lovers who promote sustainable urban beekeeping through monthly meetings,
   a shared apiary, and a yearly honey festival.
 what_you_do: Come to monthly meetings to learn beekeeping, join the group's work at its apiary, and help
-  with the honey festival.
+  with the honey festival. Free virtual Bee Chats also run on some first Tuesdays.
 kind: club
 categories:
 - gardening-greening
@@ -35,9 +35,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly meetings on the third Thursday at 7 pm
+  text: Monthly guild meeting on the third Thursday at 7 pm, usually listed as hybrid, plus a free virtual
+    Bee Chat on some first Tuesdays.
   days:
   - thu
+  - tue
   times:
   - evening
   recurring: true
@@ -61,10 +63,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+online_ok: true
 cost:
-  level: null
-  text: Membership cost not listed
+  level: low
+  text: Events are listed as free. Membership dues run from $15 to $100 a year, with lifetime options
+    of $250 and $500.
 commitment: monthly
 group_size: null
 access:
@@ -79,23 +82,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a monthly meeting, or join through the Join Us page or mailing list
+  how: Come to the third Thursday guild meeting at St. James School, or join the free virtual Bee Chat
+    on a first Tuesday.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Meetings are open to the public and the site names a clear way to join
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Meetings and Bee Chats are listed as free and public, with a clear membership page, but the site
+    does not say beginners are welcome.
+  what_to_expect: Monthly meetings run from 7 to 9 pm on the third Thursday at St. James School, and many
+    are listed as hybrid so you can join online. Some meetings have a named speaker, and the Bee Chat
+    is a free virtual evening on some first Tuesdays. The classes page listed no events when checked on
+    2026-10-08, so a beginner class is not scheduled right now.
+  first_visit_tips:
+  - Use the RSVP link on the event listing, since each meeting has one.
+  - Check the listing for whether you can join online, because meetings are listed as hybrid.
+  - Arrive for the 7 pm start, since listings run until 9 pm.
 contacts:
   website: https://phillybeekeepers.org
   email: null
   phone: null
   contact_name: Katie Krebs
   social: []
-  calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://phillybeekeepers.org
+  calendar_feed: https://phillybeekeepers.org/ec_events/list/?ical=1
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillybeekeepers.org/ec_events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -119,8 +130,31 @@ sources:
   - first_step
   - status
   - summary
-research_tier: 1
-confidence: medium
+- url: https://phillybeekeepers.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://phillybeekeepers.org/series/guild-monthly-meeting-third-thursday/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://phillybeekeepers.org/ec_events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - online_ok
+  - status
+  - last_sign_of_life
+  - contacts.calendar_feed
+- url: https://phillybeekeepers.org/ec_events/category/general-sponsored-events/classes/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:counterparts
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's all-gender a cappella group, founded in 1981. It sings a mix of pop and jazz and performs
+  in a spring show.
+what_you_do: Audition through the club's audition page, fill in the interest form for updates, then rehearse
+  and perform in the spring show.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- choir_singing
+motives:
+- social
+- enhancement
+formats:
+- perform_make_together
+- team_play
+roles:
+- create
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +34,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Spring Show held March 27 and 28, 2026, per the club's website. Rehearsal times are not listed.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +58,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the audition page on the club's website and fill in the interest form to get updates.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining goes through auditions, so the way in is not open to everyone at once.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.penncounterparts.com
   email: penncounterparts@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/penncounterparts/
+  - https://facebook.com/PennCounterparts
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.penncounterparts.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/counterparts/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.penncounterparts.com
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

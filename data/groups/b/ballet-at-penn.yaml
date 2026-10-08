@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:penn-ballet
 ein: null
-summary: null
-what_you_do: null
+summary: A ballet group for Penn students at any skill level. It offers free weekly open classes and an
+  audition-based company that rehearses each semester for a show.
+what_you_do: Take a free open class each week, or audition for the Performance Company and rehearse for
+  its semester show. Email the club to get on its list.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- theater-dance-performance
+interests:
+- dance_company
+motives:
+- enhancement
+- social
+formats:
+- learn_skill
+- perform_make_together
+roles:
+- hands_on
+- create
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,17 +35,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Free open classes each week, and a Performance Company show each semester.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Weekly open classes are free. Performance Company costs are not stated.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +59,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a free weekly open class. To join the Performance Company, audition for it each semester.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Open classes are free and welcome any level, but the company needs an audition.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.pennballetcompany.com/
   email: pennballet10@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/upennballet/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.pennballetcompany.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-ballet/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - commitment
+  - contacts
+  - audience
+- url: https://www.pennballetcompany.com/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

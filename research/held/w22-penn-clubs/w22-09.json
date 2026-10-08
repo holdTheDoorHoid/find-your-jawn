@@ -1,0 +1,598 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-09",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 41,
+ "leads_only": [
+  {
+   "name": "University City Hospitality Coalition",
+   "url": null,
+   "note": "Named in the Hillel Soup Kitchen directory entry as the network that runs soup kitchens across Philadelphia. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://upenn.hack4impact.org/",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on the chapter website. The Hack4Impact record uses the directory entry only and is marked low confidence."
+  }
+ ],
+ "notes": "All 20 clubs were read through the public clubs API entry (WebFetch, no WebSearch used). The directory status was re-checked for every club because the first pass did not capture it for all of them. Twelve clubs carry an INACTIVE status name (the active flag is true for most of them, a conflict), so they are held back as unknown with no summary, categories or interests, per the brief. The other 8 are written in full: Guatemala Health Initiative is active from its own site (2026 dates); Grupo Quisqueyano, Hack4Impact, Hawaii Club, Hearts for the Homeless Penn (status PRELIMINARY), Hillel Soup Kitchen, Hype Dance Crew and iFGLI are probably_active from the directory flag with no dated item. All 20 directory entries have empty event lists, so no active status rests on a directory event. The application_required values (1, 3, 4) are not explained in the entries and were not used as evidence. Club websites read once each: Guatemala Health Initiative, Hype Dance Crew (home page only), Hyperloop, Impact Investing, and Hack4Impact (403). The IPDGA website was not fetched because its listing is held back. Personal names and personal emails in the entries were not recorded. Searches used 0 of 0. Fetches used 41 of 60. No rate limiting was seen. Records written 20, verdicts publish 20 (8 full, 12 held back as unknown).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:health-of-african-immigrants-program-haip"
+    ],
+    "group_id": "health-of-african-immigrants-program-at-the-univ-of-pennsylvania",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Health of African Immigrants Program at the Univ. of Pennsylvania",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "haipphilly@gmail.com",
+    "social": [
+     "https://instagram.com/haipphilly/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/health-of-african-immigrants-program-haip/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The directory description says the group studies the health needs of African immigrants in Southwest Philadelphia, for internal reference. No club website. Member names in the entry were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:heart-health-penn"
+    ],
+    "group_id": "heart-health-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Heart Health @ Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "hearthealthpenn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/heart-health-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The entry links an application form with a deadline of 9/19 (no year given). No club website.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:hindu-yuva-at-upenn"
+    ],
+    "group_id": "hindu-yuva-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Hindu YUVA at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "pennhinduyuva@gmail.com",
+    "social": [
+     "https://instagram.com/pennhinduyuva/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/hindu-yuva-at-upenn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. No club website.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:hong-kong-student-association"
+    ],
+    "group_id": "hong-kong-student-association-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Hong Kong Student Association at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "hksa.upenn@gmail.com",
+    "social": [
+     "https://facebook.com/hksaupenn",
+     "https://instagram.com/pennhksa"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/hong-kong-student-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. No club website is listed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:upenn-hosa-future-health-professionals"
+    ],
+    "group_id": "hosa-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "HOSA @ Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "uofpennhosa@gmail.com",
+    "social": [
+     "https://instagram.com/upennhosa/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/upenn-hosa-future-health-professionals/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The website field points to the national HOSA site, not the Penn chapter's own site, so it was not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:hyperloop-at-penn"
+    ],
+    "group_id": "hyperloop-at-penn",
+    "ein": null,
+    "website": "https://pennhyperloop.org"
+   },
+   "verdict": "publish",
+   "name": "Hyperloop at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "team@pennhyperloop.org",
+    "website": "https://pennhyperloop.org"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/hyperloop-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The club's own site (read once) lists a 2025 main event result, a 2024 mini-event result, and a 2025-26 season, with no month given. That conflicts with the directory flag, so a reviewer should decide whether the flag is stale and then write the record.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:immigration-and-asylum-law-club"
+    ],
+    "group_id": "immigration-and-asylum-law-club",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Immigration and Asylum Law Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "ialcpenn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/immigration-and-asylum-law-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. No club website or social link is listed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-impact-investing"
+    ],
+    "group_id": "impact-investing-at-penn",
+    "ein": null,
+    "website": "https://www.penniiimpactinvesting.com/"
+   },
+   "verdict": "publish",
+   "name": "Impact Investing at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "pennimpactinvesting@gmail.com",
+    "website": "https://www.penniiimpactinvesting.com/",
+    "social": [
+     "https://instagram.com/impactinvestingatpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-impact-investing/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://www.penniiimpactinvesting.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting), and accepting_members is false. Held back as unknown per the brief: no summary, categories or interests written. The directory how-to text points to an interest form for the Fall 2026 application cycle, which may be fresh evidence. The club's own home page has no dated 2025 or 2026 items; its Events page was not read.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-india-association"
+    ],
+    "group_id": "indian-association-at-penn-iap",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Indian Association at Penn (IAP)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "indianassociationatpenn@gmail.com",
+    "social": [
+     "https://instagram.com/indiaatpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-india-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The directory lists a membership Google Form, which was not recorded. The officer names in the entry were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:Penncasila"
+    ],
+    "group_id": "indonesian-student-association-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Indonesian Student Association at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "indonesiansatpenn@gmail.com",
+    "social": [
+     "https://instagram.com/penncasila/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/Penncasila/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The directory lists the club under the older name Penncasila. No club website.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:ipdga"
+    ],
+    "group_id": "integrated-product-design-student-graduate-association-ipdga",
+    "ein": null,
+    "website": "https://ipd.me.upenn.edu"
+   },
+   "verdict": "publish",
+   "name": "Integrated Product Design Student Graduate Association (IPDGA)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://ipd.me.upenn.edu"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/ipdga/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The club's own website was not fetched because inactive listings are held back. Per the directory, membership is limited to current students in the Integrated Product Design program. The only email in the entry is an individual's, so none was recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:international-student-athletes-association"
+    ],
+    "group_id": "international-student-athlete-association",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "International Student-Athlete Association",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "social": [
+     "https://instagram.com/isaa_upenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/international-student-athletes-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "audience",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory status is INACTIVE, while the active flag is true (conflicting). Held back as unknown per the brief: no summary, categories or interests written. The club email field reads Hidden, and the only contact is an individual's address, which was not recorded. No club website.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -4,37 +4,58 @@ aka: []
 leads:
 - penn_clubs:asian-baptist-student-koinonia-for-undergraduates
 ein: null
-summary: null
-what_you_do: null
+summary: A Christian fellowship at Penn that meets on Friday nights to study the Bible, share a meal,
+  and build friendships.
+what_you_do: Join the Friday night Bible study, which includes food and fellowship. The group says everyone
+  is welcome at these gatherings. Email the club to ask about the next one.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- scripture_study
+- congregation_social
+motives:
+- values
+- social
+formats:
+- conversation
+roles:
+- figure_out
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Fridays at 7 pm in the Ben Franklin Room, Houston Hall
+  days:
+  - fri
+  times:
+  - evening
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Ben Franklin Room, Houston Hall
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +69,49 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Friday night gathering, or email the club to ask about the next one
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The group says everyone is welcome at Friday gatherings, though the directory also flags an application
+    that the site does not describe
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://penn.absk.org/
   email: johnkims@sas.upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennabsk/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://penn.absk.org/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/asian-baptist-student-koinonia-for-undergraduates/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - status
+  - contacts
+- url: https://penn.absk.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - audience
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

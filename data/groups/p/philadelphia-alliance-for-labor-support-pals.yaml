@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A nonprofit that gives free doula support during labor to people who could not otherwise get
   it, and offers subsidized doula training.
-what_you_do: Trained volunteer doulas support families through labor and birth. Newer doulas take the
-  subsidized training.
+what_you_do: Trained volunteer doulas support families through labor and birth. People who want to become
+  doulas can join the subsidized training waitlist.
 kind: nonprofit
 categories:
 - health-wellness
@@ -32,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Doula training is offered twice a year. Dates are not on the website.
+  text: Subsidized doula trainings run about twice a year, with a waitlist. The site lists no start dates.
   days: []
   times: []
   recurring: true
@@ -41,8 +41,9 @@ locations: []
 online_ok: null
 cost:
   level: low
-  text: Doula support is free to families. Training is subsidized.
-commitment: null
+  text: Doula support is free for families who could not otherwise get doula care. Training is subsidized,
+    and the site does not say what students pay.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -56,14 +57,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer with PALS or Become a Doula links on palsdoulas.com
-  drop_in: null
-  sign_up_needed: null
+  how: Join the training waitlist through the form on the Become a Doula page. If you already hold a doula
+    training certificate, use the Volunteer with PALS sign-up form instead.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Volunteering needs trained doula status or training, and the page does not say what the steps
-    are
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteers need a doula training certificate before they sign up, and training is limited with
+    a long waitlist, so a newcomer cannot try the work first.
+  what_to_expect: Volunteer doulas are on call from two weeks before to two weeks after a client's due
+    date, take prenatal clients, and pick up hospital on-call shifts of 6, 8 or 12 hours from a shared
+    calendar. Each client has a consent form, and each birth needs a birth record form afterward.
+  first_visit_tips:
+  - Have a photo of your doula training certificate ready, since the volunteer form asks for one.
+  - A mentorship sign-up form exists for mentors and mentees, and the site calls it optional.
+  - The site strongly encourages a hospital orientation, but does not say it is required.
 contacts:
   website: https://palsdoulas.com/
   email: null
@@ -83,8 +90,22 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
-confidence: low
+- url: https://palsdoulas.com/volunteer-with-pals/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - commitment
+- url: https://palsdoulas.com/become-a-doula/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - cost
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

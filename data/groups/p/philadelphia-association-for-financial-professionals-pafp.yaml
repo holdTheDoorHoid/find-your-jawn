@@ -4,8 +4,8 @@ aka: []
 leads: []
 ein: null
 summary: A professional association for treasury, finance and accounting workers in the Philadelphia area.
-  It holds monthly educational events and a yearly conference.
-what_you_do: Attend a monthly lunch and learn or conference, network with finance professionals, or join
+  It holds monthly meetings and lunch and learns, plus a learning day and seasonal member events.
+what_you_do: Attend a monthly meeting or lunch and learn, network with finance professionals, or join
   as a member.
 kind: network
 categories:
@@ -33,14 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Monthly educational events. Next listed: a virtual lunch and learn on October 22, 2026, noon
-    to 1 pm.'
+  text: Monthly meetings and lunch and learns, held both virtually and in person, plus a learning day
+    and seasonal events for members.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Association office (Delaware Valley events)
+- label: Association office
   address: '1950 Butler Pike, #234, Conshohocken, PA 19428'
   neighborhood: null
   planning_district: null
@@ -51,8 +51,10 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Event and membership prices are not listed on the page.
+  level: paid
+  text: Membership is $195, or $350 with the Learning Day. Members pay $175 to $195 for the Learning Day
+    alone, and non-members pay $225 to $250. Education, retired and in-transition people pay no fee but
+    volunteer for the association. Events outside a membership level have an extra registration fee.
 commitment: null
 group_size: null
 access:
@@ -67,13 +69,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Register for a Monthly Meeting link, or the online membership application.
+  how: Register for a lunch and learn through the registration link on the events page, or start a membership
+    application with the Join Now link.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Events have public registration links and membership is open to students and individuals.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events have public registration links and membership is open to individuals, students, and retired
+    or in-transition people, but the site does not say whether non-members can join the monthly meetings.
+  what_to_expect: Sessions are educational talks for finance, treasury and accounting people, with time
+    to network. Meetings run both virtually and in person, and members get discounted registration and
+    access to member-only events.
+  first_visit_tips:
+  - Check the registration page for the price before you sign up, because the site does not list event
+    prices.
+  - The session listed on the events page is virtual, so you can attend from home.
+  - The only street address on the site is the Conshohocken office, which is outside the city.
 contacts:
   website: https://www.phillyafp.com/
   email: null
@@ -83,7 +93,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.phillyafp.com/
+sign_of_life_url: https://www.phillyafp.com/events-list
 sources:
 - url: https://www.phillyafp.com/
   seen: '2026-10-08'
@@ -93,8 +103,21 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.phillyafp.com/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://www.phillyafp.com/events-list
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

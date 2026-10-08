@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:biomedical-engineering-society-bmes
 ein: null
-summary: null
-what_you_do: null
+summary: The undergraduate professional society for students in Penn's bioengineering program. It links
+  students with faculty and runs social nights, career talks and networking events.
+what_you_do: Come to the society's social and career events, and sign up for its list. When recruiting
+  opens, apply through the join form.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- careers-skills-professional
+interests:
+- professional_associations
+motives:
+- career
+- social
+formats:
+- conversation
+- one_off_event
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,31 +58,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the society's application form to join, and watch for its undergraduate events.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site links an application to join, and it does not say whether events are open to all.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://bmes.engineering.upenn.edu/
   email: pennbmes@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennbmes/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://bmes.engineering.upenn.edu/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://bmes.engineering.upenn.edu/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+- url: https://pennclubs.com/api/clubs/biomedical-engineering-society-bmes/?format=json
+  seen: '2026-10-08'
+  fields:
+  - name
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

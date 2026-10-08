@@ -7,8 +7,9 @@ leads:
 ein: null
 summary: The Philadelphia chapter of the Gaelic Athletic Association. Its site covers Gaelic football,
   hurling and camogie, and it has a youth page for young players.
-what_you_do: Play on a Gaelic football, hurling or camogie team, join the youth program, or ask the group
-  how to try the sport. Team and youth details sit on the group's Teams and Youth GAA pages.
+what_you_do: Play Gaelic football, hurling or camogie with one of the clubs on the Teams page, or sign
+  a young player up through the youth program, which runs through five youth clubs. The group's pages
+  do not describe trial sessions, so ask a club or an officer how to start.
 kind: team
 categories:
 - sports-teams
@@ -39,8 +40,7 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Limerick Field Complex, Pottstown, PA (a field the group lists; the Pottstown location comes
-    from a public search result, not the group's site)
+- label: Limerick Field Complex, Pottstown, PA (listed as the group's headquarters)
   address: null
   neighborhood: null
   planning_district: null
@@ -52,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No fees are published on the site.
+  text: No fees are published on the group's site, so ask each club.
 commitment: null
 group_size: null
 access:
@@ -67,25 +67,32 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact Us page on philadelphiagaa.com, or message the group through its Facebook or Instagram
-    accounts, to ask about a trial session or the youth program.
+  how: Email the group's public relations officer at the address on the Contact Us page to ask which club
+    to try first, or contact a club from the Teams page directly.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site has team and youth pages, but no trial, learn-to-play or sign-up details appear in the
-    text that could be read, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists clubs and officer emails but names no trial or beginner session, so the way in
+    is unclear.
+  what_to_expect: The group's pages do not say when or where a team trains, what it costs, or whether
+    beginners can try a session. Each team on the Teams page links to its own club website or Facebook
+    page, so ask that club what a first session looks like.
+  first_visit_tips:
+  - Check the club's own page or Facebook for practice times, since the group's pages do not list them.
+  - Ask whether the club lends equipment to new players, because the group's pages do not say.
+  - For a young player, the youth page names five youth clubs, and each has its own link.
 contacts:
   website: https://philadelphiagaa.com
-  email: null
+  email: pro.philadelphia.usa@gaa.ie
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/Philadelphia-GAA-340549722293/
+  - https://www.instagram.com/philadelphiagaa/
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philadelphiagaa.com
+last_sign_of_life: '2025'
+sign_of_life_url: https://www.philadelphiagaa.com/contact-us
 sources:
 - url: https://phillyparade.com
   seen: '2026-10-04'
@@ -104,7 +111,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
+- url: https://www.philadelphiagaa.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - last_sign_of_life
+  - status
+- url: https://www.philadelphiagaa.com/teams
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.philadelphiagaa.com/phila-gaa-youth
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
