@@ -1,0 +1,54 @@
+---
+import { formatMonthYear } from '../lib/dates';
+import { costLabel, formatStart, pickSource, placeLine, type GuideEntry } from '../lib/guides';
+import { fill } from '../lib/inline';
+import { issueUrl } from '../lib/issues';
+import { absoluteUrl } from '../lib/site';
+import { hostOf } from '../lib/text';
+import { quizzo as t } from '../strings/en';
+
+interface Props {
+  entry: GuideEntry;
+  /** host names of the guide's lead sources, so the Source link goes to the venue or host */
+  leads: Set<string>;
+  /** the part of the city this night is in, for the page filter */
+  region: string;
+}
+
+const { entry, leads, region } = Astro.props;
+const time = formatStart(entry.start);
+const cost = costLabel(entry);
+const age = entry.age === 'unknown' ? undefined : t.card.age[entry.age];
+const source = pickSource(entry, leads);
+const site = source ? hostOf(source.url) : undefined;
+const checked = formatMonthYear(entry.lastChecked ?? source?.seen);
+const place = placeLine(entry);
+const pageUrl = absoluteUrl(`guides/quizzo/#${entry.id}`);
+const fixUrl = issueUrl('correct-listing.yml', { group: `${entry.venue}, ${t.days[entry.day]?.plural ?? entry.day} (${pageUrl})` }, `${entry.venue} quizzo`);
+---
+
+<li id={entry.id} data-day={entry.day} data-region={region}>
+  <article class="qcard">
+    <h3>{entry.venue}</h3>
+    {place && <p class="qplace">{place}</p>}
+    <ul class="badges" aria-label={t.card.quickFacts}>
+      <li><span class="badge badge--info">{time ? fill(t.card.starts, { time }) : t.card.timeUnknown}</span></li>
+      {cost && <li><span class={`badge badge--${cost.tone}`}>{cost.text}</span></li>}
+      {entry.teamSize && <li><span class="badge badge--info">{entry.teamSize}</span></li>}
+      {age && <li><span class="badge badge--note">{age}</span></li>}
+    </ul>
+    {entry.host && <p class="qhost">{fill(t.card.host, { name: entry.host })}</p>}
+    {entry.notes && <p class="qnote">{entry.notes}</p>}
+    <p class="qmeta">
+      {checked && <span>{fill(t.card.checked, { month: checked })}</span>}
+      {
+        source && site && (
+          <a href={source.url} rel="noopener noreferrer" aria-label={fill(t.card.sourceLabel, { venue: entry.venue, site })}>
+            {fill(t.card.source, { site })}
+          </a>
+        )
+      }
+      <a href={fixUrl} rel="noopener noreferrer" aria-label={fill(t.card.fixLabel, { venue: entry.venue })}>{t.card.fix}</a>
+    </p>
+  </article>
+</li>

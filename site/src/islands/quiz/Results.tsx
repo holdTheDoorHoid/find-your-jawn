@@ -3,6 +3,7 @@ import type { Catalog } from '../../engine/catalog';
 import { loosen } from '../../engine/filters';
 import { computeResults, moreResults, replacementFor, type Outcome } from '../../engine/select';
 import type { Answers, BlockerKey, Dial, NotWhy, Result } from '../../engine/types';
+import { showQuizzoLine } from '../../lib/guides';
 import { fill } from '../../lib/inline';
 import { withBase } from '../../lib/site';
 import { plainName } from '../../lib/text';
@@ -156,6 +157,13 @@ export function Results({ groups, cat, places, answers, setAnswers, onEdit, onRe
             passed > 0 && <p class="help">{t.moreNone}</p>
           )}
         </div>
+      )}
+
+      {showQuizzoLine(answers) && (
+        <p class="help also-try">
+          {t.alsoTry.lead} <a href={withBase('guides/quizzo/')}>{t.alsoTry.link}</a>
+          {t.alsoTry.rest}
+        </p>
       )}
 
       <div class="results-foot">

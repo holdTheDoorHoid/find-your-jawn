@@ -1,0 +1,185 @@
+---
+import QuizzoNight from '../../components/QuizzoNight.astro';
+import Prose from '../../components/Prose.astro';
+import Base from '../../layouts/Base.astro';
+import { loadGuide, loadVocab } from '../../lib/data';
+import { byDay, leadHosts, listSeparator, regionIdOf, regionOptions } from '../../lib/guides';
+import { fill } from '../../lib/inline';
+import { issueUrl } from '../../lib/issues';
+import { absoluteUrl, withBase } from '../../lib/site';
+import { paths, quizzo as t } from '../../strings/en';
+
+const guide = loadGuide('quizzo');
+const vocab = loadVocab();
+const hosts = leadHosts(guide);
+const days = byDay(guide.entries);
+const regions = regionOptions(guide.entries, vocab);
+const total = guide.entries.length;
+const title = guide.title ?? t.title;
+const countText = (n: number) => (n === 1 ? t.countOne : fill(t.count, { n }));
+const honest =
+  guide.leadSources.length === 0
+    ? t.credit.honestNoLeads
+    : fill(t.credit.honest, { them: guide.leadSources.length === 1 ? t.credit.themOne : t.credit.themMany });
+const suggestUrl = issueUrl('suggest-group.yml', { what: t.suggest.addWhat }, t.suggest.addTitle);
+const correctUrl = issueUrl('correct-listing.yml', { group: absoluteUrl('guides/quizzo/') }, title);
+const removeUrl = issueUrl('remove-details.yml', { group: absoluteUrl('guides/quizzo/') }, title);
+---
+
+<Base title={title} description={t.metaDescription} path="guides/quizzo/">
+  <div class="page">
+    <div class="wrap">
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="lede">{t.lede}</p>
+
+      <div class="callout credit" role="note" aria-labelledby="credit-title">
+        <p><strong id="credit-title">{t.credit.title}.</strong></p>
+        {
+          guide.leadSources.length > 0 ? (
+            <p>{t.credit.leadsFrom}{' '}{guide.leadSources.map((lead, i) => <Fragment>{listSeparator(i, guide.leadSources.length)}<a href={lead.url} rel="noopener noreferrer">{lead.name}</a></Fragment>)}{'. '}{honest}</p>
+          ) : (
+            <p>{honest}</p>
+          )
+        }
+      </div>
+
+      <Prose blocks={t.intro} />
+
+      <section class="group-section" aria-labelledby="nights-title">
+        <h2 id="nights-title">{t.listTitle}</h2>
+        {total > 0 && <p>{t.listIntro}</p>}
+        {total > 0 && <p class="muted">{total === 1 ? t.totalLineOne : fill(t.totalLine, { n: total })}</p>}
+
+        {
+          total > 0 ? (
+            <>
+              <nav aria-label={t.jumpLabel}>
+                <ul class="day-nav">
+                  {
+                    days.map((d) => (
+                      <li data-nav={d.day}>
+                        <a href={`#${d.day}`}>
+                          {t.days[d.day]?.short ?? d.day} <span class="n" data-count={d.day}>{d.entries.length}</span>
+                        </a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </nav>
+
+              {
+                regions.length > 1 && (
+                  <div class="qfilter" id="quizzo-filter" hidden>
+                    <label for="quizzo-region">{t.filter.label}</label>
+                    <select id="quizzo-region">
+                      <option value="all">{t.filter.all}</option>
+                      {regions.map((r) => <option value={r.id}>{`${r.label} (${r.count})`}</option>)}
+                    </select>
+                  </div>
+                )
+              }
+              <p
+                class="help"
+                id="quizzo-status"
+                role="status"
+                data-one={t.filter.showingOne}
+                data-many={t.filter.showing}
+                data-none={t.filter.none}
+              >
+              </p>
+
+              <div id="quizzo-list" data-count-one={t.countOne} data-count-many={t.count}>
+                {
+                  days.map((d) => (
+                    <section class="qday" id={d.day} data-section={d.day} aria-labelledby={`h-${d.day}`}>
+                      <h2 id={`h-${d.day}`}>
+                        {t.days[d.day]?.plural ?? d.day} <span class="qcount" data-count-text={d.day}>{countText(d.entries.length)}</span>
+                      </h2>
+                      <ul class="qlist">
+                        {d.entries.map((e) => <QuizzoNight entry={e} leads={hosts} region={regionIdOf(e, vocab)} />)}
+                      </ul>
+                    </section>
+                  ))
+                }
+              </div>
+            </>
+          ) : (
+            <div class="empty">
+              <h3>{t.empty.title}</h3>
+              <p>{t.empty.text}</p>
+            </div>
+          )
+        }
+      </section>
+
+      <section class="group-section" aria-labelledby="suggest-title">
+        <h2 id="suggest-title">{t.suggest.title}</h2>
+        <p>{t.suggest.text}</p>
+        <div class="btn-row">
+          <a class="btn" href={suggestUrl} rel="noopener noreferrer">{t.suggest.add}</a>
+          <a class="btn btn--secondary" href={correctUrl} rel="noopener noreferrer">{t.suggest.correct}</a>
+        </div>
+        <p class="help"><a href={removeUrl} rel="noopener noreferrer">{t.suggest.remove}</a></p>
+      </section>
+
+      <section class="group-section" aria-labelledby="more-title">
+        <h2 id="more-title">{t.more.title}</h2>
+        <ul>
+          <li><a href={withBase('i/games-puzzles/')}>{t.more.games}</a>: {t.more.gamesText}</li>
+          <li><a href={withBase(`paths/${paths.newToPhilly.slug}/`)}>{t.more.newcomer}</a>: {t.more.newcomerText}</li>
+          <li><a href={withBase('match/')}>{t.more.match}</a>: {t.more.matchText}</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<script>
+  // Progressive enhancement: with JavaScript, a "Part of the city" menu hides the nights that are
+  // elsewhere. Without it, every night shows and the day links still work.
+  import { visibleCounts } from '../../lib/guides';
+
+  const filter = document.getElementById('quizzo-filter');
+  const select = document.getElementById('quizzo-region') as HTMLSelectElement | null;
+  const list = document.getElementById('quizzo-list');
+  const status = document.getElementById('quizzo-status');
+
+  if (filter && select && list && status) {
+    filter.hidden = false;
+    const cards = Array.from(list.querySelectorAll<HTMLElement>('li[data-day]'));
+    const items = cards.map((el) => ({ day: el.dataset.day ?? '', region: el.dataset.region ?? '' }));
+
+    const apply = () => {
+      const region = select.value;
+      const { total, perDay } = visibleCounts(items, region);
+      cards.forEach((el, i) => {
+        el.hidden = region !== 'all' && items[i]!.region !== region;
+      });
+      list.querySelectorAll<HTMLElement>('[data-section]').forEach((section) => {
+        const n = perDay[section.dataset.section ?? ''] ?? 0;
+        section.hidden = n === 0;
+        const count = section.querySelector<HTMLElement>('[data-count-text]');
+        if (count) {
+          count.textContent = n === 1 ? (list.dataset.countOne ?? '') : (list.dataset.countMany ?? '').replace('{n}', String(n));
+        }
+      });
+      document.querySelectorAll<HTMLElement>('[data-nav]').forEach((li) => {
+        const n = perDay[li.dataset.nav ?? ''] ?? 0;
+        li.hidden = n === 0;
+        const badge = li.querySelector<HTMLElement>('[data-count]');
+        if (badge) badge.textContent = String(n);
+      });
+      status.textContent =
+        region === 'all'
+          ? ''
+          : total === 0
+            ? (status.dataset.none ?? '')
+            : total === 1
+              ? (status.dataset.one ?? '')
+              : (status.dataset.many ?? '').replace('{n}', String(total));
+    };
+    select.addEventListener('change', apply);
+    apply();
+  }
+</script>

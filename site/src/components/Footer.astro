@@ -2,7 +2,7 @@
 import { suggestGroupUrl } from '../lib/issues';
 import { REPO_URL, withBase } from '../lib/site';
 import { footer } from '../strings/en';
-import { paths } from '../strings/en';
+import { paths, quizzo } from '../strings/en';
 
 const explore = [
   { href: withBase('about/'), label: footer.about },
@@ -10,6 +10,7 @@ const explore = [
   { href: withBase(`paths/${paths.courtOrdered.slug}/`), label: paths.courtOrdered.navTitle },
   { href: withBase(`paths/${paths.families.slug}/`), label: paths.families.navTitle },
   { href: withBase(`paths/${paths.newToPhilly.slug}/`), label: paths.newToPhilly.navTitle },
+  { href: withBase(`guides/${quizzo.slug}/`), label: quizzo.navTitle },
   { href: withBase('i/'), label: footer.interests },
   { href: withBase('how-ranking-works/'), label: footer.ranking },
   { href: withBase('how-complete/'), label: footer.complete },

@@ -994,4 +994,42 @@ const manifest = {
 };
 fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 
+// guide lists (DATA_MODEL section 9): made up quizzo nights, so the guide page has something to show
+const night = (venue, day, start, district, extra = {}) => ({
+  id: `${venue.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${day}`,
+  venue,
+  day,
+  start,
+  planning_district: district,
+  cost: 'unknown',
+  age: 'unknown',
+  status: 'confirmed',
+  sources: [{ url: `https://example.org/${venue.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/events`, seen: '2026-10-08', fields: ['day', 'start'] }],
+  last_checked: '2026-10-08',
+  ...extra,
+});
+const quizzoNights = [
+  night('Example Tavern', 'mon', '19:30', 'central', { address: '100 Example St', neighborhood: 'Rittenhouse', cost: 'free', cost_text: 'Free to play', age: '21_plus', team_size: 'Up to 6 players', host: 'Made Up Quizzo Co', notes: 'Prizes are bar gift cards. Walk ins can join a table.' }),
+  night('Sample Brewing Company', 'tue', '20:00', 'river_wards', { address: '200 Sample Ave', zip: '19125', neighborhood: 'Fishtown', cost: 'free', age: '21_plus', notes: 'Themed rounds once a month.' }),
+  night('Pretend Pub', 'tue', '19:00', 'south', { address: '300 Pretend Rd', neighborhood: 'Passyunk', cost: 'paid', cost_text: '$5 per team', team_size: 'Teams of 2 to 5', host: 'Fictional Trivia Hosts' }),
+  night('Fake Falls Taproom', 'wed', '19:30', 'lower_northwest', { address: '400 Fake Falls Ln', neighborhood: 'East Falls', cost: 'free', age: 'all_ages', notes: 'Families are welcome before 8 pm.' }),
+  night('Nowhere Special Bar', 'wed', null, null, { neighborhood: 'South Philly', notes: 'The venue lists the night but not the time.' }),
+  night('Imaginary Alehouse', 'thu', '20:30', 'upper_north', { address: '500 Imaginary Blvd', neighborhood: 'Mount Airy', cost: 'free', team_size: 'Up to 4 players' }),
+  night('Test Tap Room', 'thu', '12:00', 'west', { address: '600 Test Way', neighborhood: 'University City', age: 'all_ages', host: 'Test Quiz League' }),
+  night('Placeholder Lounge', 'sun', '18:30', 'central', { address: '700 Placeholder Pl', neighborhood: 'Old City', cost: 'free', notes: 'A relaxed Sunday night with a bar menu.' }),
+];
+fs.mkdirSync(path.join(outDir, 'guides'), { recursive: true });
+fs.writeFileSync(
+  path.join(outDir, 'guides', 'quizzo.json'),
+  JSON.stringify({
+    guide: 'quizzo',
+    title: 'Quizzo nights',
+    updated: BUILT,
+    built: BUILT,
+    lead_sources: [{ name: 'Billy Penn: Philly quizzo guide (August 2026)', url: 'https://billypenn.com/2026/08/10/philly-quizzo-history-guide/' }],
+    count: quizzoNights.length,
+    entries: quizzoNights.map((n) => Object.fromEntries(Object.entries(n).filter(([, v]) => v !== null && v !== undefined))),
+  }) + '\n',
+);
+
 console.log(`Wrote ${all.length} groups to ${outDir}`);
