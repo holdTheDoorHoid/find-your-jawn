@@ -159,3 +159,390 @@ def test_no_dashes_as_punctuation(path):
         body = re.sub(r"^\s*#\s*", "", body)
         assert " - " not in body, f"{path.name}:{number} spaced hyphen: {line!r}"
         assert " -- " not in body and not body.endswith(" -"), f"{path.name}:{number}"
+
+
+# ---------------------------------------------------------------- small id lists
+
+
+@pytest.fixture(scope="module")
+def tag_ids(interests):
+    return {t["id"] for f in interests["families"] for t in f["tags"]}
+
+
+@pytest.fixture(scope="module")
+def family_ids(interests):
+    return {f["id"] for f in interests["families"]}
+
+
+@pytest.fixture(scope="module")
+def role_ids():
+    return {r["id"] for r in load("roles")["roles"]}
+
+
+@pytest.fixture(scope="module")
+def format_ids():
+    return {f["id"] for f in load("formats")["formats"]}
+
+
+def ids_of(rows, key="id"):
+    return [row[key] for row in rows]
+
+
+def test_every_file_has_a_version():
+    for name in (
+        "interests",
+        "ways_in",
+        "motives",
+        "formats",
+        "roles",
+        "audiences",
+        "kinds",
+        "scenes",
+        "future_selves",
+        "neighborhoods",
+    ):
+        assert load(name)["version"] == 1, name
+
+
+def test_motives_are_the_six():
+    motives = load("motives")["motives"]
+    assert ids_of(motives) == [
+        "values",
+        "understanding",
+        "social",
+        "career",
+        "protective",
+        "enhancement",
+    ]
+    labels = {m["id"]: m["label"] for m in motives}
+    assert labels["social"] == "Meet people"
+    assert labels["values"] == "Do something that matters"
+    assert labels["understanding"] == "Learn something"
+    assert labels["career"] == "Build skills for work"
+    assert labels["protective"] == "Get out of my head and feel better"
+    assert labels["enhancement"] == "Feel good about myself"
+    for m in motives:
+        assert m["description"].strip(), m["id"]
+
+
+def test_formats_are_the_eight():
+    formats = load("formats")["formats"]
+    assert sorted(ids_of(formats)) == sorted(
+        [
+            "side_by_side",
+            "conversation",
+            "team_play",
+            "perform_make_together",
+            "behind_the_scenes",
+            "lead_organize",
+            "learn_skill",
+            "one_off_event",
+        ]
+    )
+    for f in formats:
+        assert f["label"].strip() and f["description"].strip(), f["id"]
+
+
+def test_roles_are_the_six_and_echo_holland():
+    roles = load("roles")["roles"]
+    assert sorted(ids_of(roles)) == sorted(
+        ["hands_on", "figure_out", "create", "help_teach", "lead", "organize"]
+    )
+    holland = {r["holland"] for r in roles}
+    assert holland == {
+        "Realistic",
+        "Investigative",
+        "Artistic",
+        "Social",
+        "Enterprising",
+        "Conventional",
+    }
+
+
+def test_kinds_match_the_data_model():
+    kinds = load("kinds")["kinds"]
+    assert sorted(ids_of(kinds)) == sorted(
+        [
+            "nonprofit",
+            "civic",
+            "club",
+            "team",
+            "student_org",
+            "congregation",
+            "friends_group",
+            "garden",
+            "program",
+            "network",
+            "support_group",
+        ]
+    )
+    for k in kinds:
+        assert k["label"].strip() and k["description"].strip(), k["id"]
+
+
+# ---------------------------------------------------------------- audiences
+
+
+def test_audiences_ids_unique_and_complete():
+    a = load("audiences")
+    for section in ("crowd", "open_to", "community", "heritage", "faith"):
+        ids = ids_of(a[section])
+        assert len(ids) == len(set(ids)), section
+        for i in ids:
+            assert SNAKE.match(i), (section, i)
+    codes = ids_of(a["languages"], "code")
+    assert len(codes) == len(set(codes))
+    assert {"en", "es", "zh", "vi", "ar", "ase"} <= set(codes)
+    assert {
+        "all_adults",
+        "all_ages",
+        "families",
+        "teens",
+        "young_adults",
+        "seniors",
+        "students",
+        "professionals",
+    } <= set(ids_of(a["crowd"]))
+    assert {
+        "lgbtq",
+        "women",
+        "men",
+        "black",
+        "latino",
+        "asian_american",
+        "immigrants",
+        "veterans",
+        "parents",
+        "disability",
+        "deaf",
+        "blind",
+        "sober",
+    } <= set(ids_of(a["community"]))
+    assert set(ids_of(a["faith"])) >= {
+        "catholic",
+        "protestant",
+        "black_church",
+        "orthodox_christian",
+        "jewish",
+        "muslim",
+        "buddhist",
+        "hindu",
+        "sikh",
+        "quaker",
+        "unitarian",
+        "interfaith",
+        "other",
+    }
+    assert set(ids_of(a["open_to"])) == {
+        "public",
+        "students",
+        "members",
+        "parents",
+        "residents",
+        "invite",
+    }
+    for c in a["crowd"]:
+        lo, hi = c["ages"]
+        assert 0 <= lo < hi <= 99, c["id"]
+
+
+# ---------------------------------------------------------------- ways in
+
+
+def test_ways_in_cover_every_family_and_resolve(family_ids, tag_ids):
+    data = load("ways_in")
+    way_ids = ids_of(data["ways"])
+    assert way_ids == ["do_it", "learn_it", "teach_it", "serve_it", "lead_it"]
+    assert set(data["by_family"]) == family_ids
+    for fam, entries in data["by_family"].items():
+        assert set(entries) == set(way_ids), fam
+        for way, entry in entries.items():
+            assert entry["tags"], (fam, way)
+            for tag in entry["tags"]:
+                assert tag in tag_ids, (fam, way, tag)
+            assert isinstance(entry["example"], str) and entry["example"].strip(), (fam, way)
+
+
+# ---------------------------------------------------------------- scenes
+
+
+SCENE_SETS = ("saturday_scenes", "extra_scenes", "moments")
+
+
+@pytest.fixture(scope="module")
+def all_cards():
+    data = load("scenes")
+    return [card for name in SCENE_SETS for card in data[name]]
+
+
+def test_scene_counts_and_ids():
+    data = load("scenes")
+    assert len(data["saturday_scenes"]) == 12
+    assert len(data["extra_scenes"]) == 8
+    assert len(data["moments"]) == 10
+    ids = [c["id"] for name in SCENE_SETS for c in data[name]]
+    assert len(ids) == len(set(ids))
+    for i in ids:
+        assert SNAKE.match(i), i
+
+
+def test_scene_fields_and_references(all_cards, tag_ids, role_ids, format_ids, interests):
+    support_tags = {
+        t["id"] for f in interests["families"] if f.get("support_only") for t in f["tags"]
+    }
+    for card in all_cards:
+        cid = card["id"]
+        assert card["text"].strip() and len(card["text"].split()) <= 14, cid
+        assert card["icon"].strip(), cid
+        assert card["picture"] is None and card["picture_credit"] is None, cid
+        assert card["picture_brief"].strip(), cid
+        assert card["interests"], cid
+        for tag, weight in card["interests"].items():
+            assert tag in tag_ids, (cid, tag)
+            assert tag not in support_tags, (cid, tag)
+            assert 0 < weight <= 1, (cid, tag, weight)
+        assert card["roles"] and set(card["roles"]) <= role_ids, cid
+        assert card["formats"] and set(card["formats"]) <= format_ids, cid
+
+
+def test_scenes_cover_every_family_role_and_format(
+    all_cards, interests, tag_family, role_ids, format_ids
+):
+    covered = set()
+    for card in all_cards:
+        for tag, weight in card["interests"].items():
+            if weight >= 0.5:
+                covered.add(tag_family[tag])
+    needed = {f["id"] for f in interests["families"] if not f.get("support_only")}
+    assert needed - covered == set(), needed - covered
+    assert role_ids - {r for c in all_cards for r in c["roles"]} == set()
+    assert format_ids - {f for c in all_cards for f in c["formats"]} == set()
+
+
+def test_each_base_set_is_varied(interests, tag_family):
+    """The first twelve alone should reach a good spread of families, not just a few."""
+    data = load("scenes")
+    fams = {
+        tag_family[tag]
+        for card in data["saturday_scenes"]
+        for tag, weight in card["interests"].items()
+        if weight >= 0.5
+    }
+    assert len(fams) >= 14, sorted(fams)
+
+
+# ---------------------------------------------------------------- future selves
+
+
+def test_future_selves(tag_ids, role_ids, format_ids):
+    selves = load("future_selves")["future_selves"]
+    assert len(selves) == 10
+    way_ids = set(ids_of(load("ways_in")["ways"]))
+    ids = ids_of(selves)
+    assert len(ids) == len(set(ids))
+    for s in selves:
+        sid = s["id"]
+        assert SNAKE.match(sid), sid
+        assert s["text"].strip() and s["icon"].strip() and s["because"].strip(), sid
+        assert len(s["interests"]) >= 5, sid
+        for tag, weight in s["interests"].items():
+            assert tag in tag_ids, (sid, tag)
+            assert 0 < weight <= 1, (sid, tag)
+        assert s["roles"] and set(s["roles"]) <= role_ids, sid
+        assert s["formats"] and set(s["formats"]) <= format_ids, sid
+        assert s["ways_in"] and set(s["ways_in"]) <= way_ids, sid
+
+
+# ---------------------------------------------------------------- neighborhoods
+
+
+PLANNING_DISTRICTS = {
+    "Central",
+    "Central Northeast",
+    "Lower Far Northeast",
+    "Lower North",
+    "Lower Northeast",
+    "Lower Northwest",
+    "Lower South",
+    "Lower Southwest",
+    "North",
+    "North Delaware",
+    "River Wards",
+    "South",
+    "University Southwest",
+    "Upper Far Northeast",
+    "Upper North",
+    "Upper Northwest",
+    "West",
+    "West Park",
+}
+
+
+def test_planning_districts_and_regions():
+    data = load("neighborhoods")
+    assert {d["label"] for d in data["planning_districts"]} == PLANNING_DISTRICTS
+    assert len(data["planning_districts"]) == 18
+    assert [r["label"] for r in data["regions"]] == [
+        "Center City",
+        "North",
+        "Northeast",
+        "Northwest",
+        "South",
+        "West and Southwest",
+    ]
+    region_ids = set(ids_of(data["regions"]))
+    for d in data["planning_districts"]:
+        assert d["region"] in region_ids, d
+
+
+def test_neighborhoods_resolve():
+    data = load("neighborhoods")
+    districts = {d["id"]: d for d in data["planning_districts"]}
+    regions = set(ids_of(data["regions"]))
+    ids = ids_of(data["neighborhoods"])
+    assert len(ids) == len(set(ids))
+    assert len(ids) >= 140
+    for n in data["neighborhoods"]:
+        assert SNAKE.match(n["id"]), n["id"]
+        assert n["label"].strip(), n["id"]
+        assert n["district"] in districts, n
+        assert n["region"] in regions, n
+        assert n["region"] == districts[n["district"]]["region"], n
+        for other in n.get("also_in", []):
+            assert other in districts and other != n["district"], n
+    # every planning district holds at least one neighborhood
+    used = {n["district"] for n in data["neighborhoods"]}
+    assert used == set(districts)
+    for expected in ("fishtown", "rittenhouse", "manayunk", "chestnut_hill", "kingsessing"):
+        assert expected in ids
+
+
+def test_aliases_resolve():
+    data = load("neighborhoods")
+    ids = set(ids_of(data["neighborhoods"]))
+    names = [a["name"] for a in data["aliases"]]
+    assert len(names) == len(set(names))
+    for alias in data["aliases"]:
+        assert alias["covers"], alias
+        assert set(alias["covers"]) <= ids, alias
+
+
+def test_zip_table():
+    data = load("neighborhoods")
+    districts = {d["id"]: d for d in data["planning_districts"]}
+    for table in ("zip_districts", "zip_districts_unverified"):
+        for zip_code, row in data[table].items():
+            assert re.fullmatch(r"191\d\d", str(zip_code)), zip_code
+            assert row["district"] in districts, (zip_code, row)
+            assert row["region"] == districts[row["district"]]["region"], (zip_code, row)
+            for other in row.get("also_in", []):
+                assert other in districts, (zip_code, other)
+    assert not set(data["zip_districts"]) & set(data["zip_districts_unverified"])
+    # the central ZIPs and a few well known ones land where a Philadelphian expects
+    assert data["zip_districts"]["19103"]["district"] == "central"
+    assert data["zip_districts"]["19147"]["region"] in ("center_city", "south")
+    assert data["zip_districts"]["19146"]["region"] == "south"
+    assert data["zip_districts"]["19104"]["region"] == "west_southwest"
+    assert data["zip_districts"]["19118"]["region"] == "northwest"
+    assert data["zip_districts"]["19149"]["region"] == "northeast"
+    assert len(data["zip_districts"]) >= 45
