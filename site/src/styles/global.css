@@ -2146,13 +2146,14 @@ input[type='time'] {
 .qmeta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0 1rem;
   margin: 0.4rem 0 0;
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-.qmeta a {
+.qmeta > * {
   display: inline-block;
   padding: 0.3rem 0;
 }
