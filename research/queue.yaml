@@ -241,7 +241,49 @@ waves:
     note: "First visit guides for the most newcomer friendly tier 1 groups, spread across every family. The ids file holds 56 active, public tier 1 groups with a website, highest newcomer rating first, two or three per interest family (chosen 2026-10-08 by the nightly run)."
   # Later waves (long tail). Briefs for these are written when the wave is first picked up, from
   # docs/RESEARCH.md section 3, following the pattern of the briefs above.
-  - {id: w5-platform-leads, lane: E, kind: slices, brief: platform_leads, status: todo, note: "Join Philly list (credit them, leads only) and Meetup topic pages read one at a time, then verify each group from its own page"}
+  - id: w5-platform-leads
+    lane: E
+    kind: slices
+    brief: platform_leads
+    searches_per_agent: 8
+    status: todo
+    note: "Join Philly list (credit them, leads only) and Meetup topic pages read one at a time, then verify each group from its own page"
+    slices:
+    - agent: e-joinphilly
+      text: 'Join Philly (https://joinphilly.org/). Read its public organization or opportunity listing pages one
+        at a time (at most 12 pages). Collect organizations that offer recurring volunteering or membership open
+        to the public, then verify each from its own site. Credit Join Philly in notes for every lead.'
+    - agent: e-meetup-outdoors-fitness
+      text: 'Meetup topic pages for Philadelphia, PA: hiking, outdoors, running, cycling, climbing, kayaking, yoga,
+        fitness, team sports. Start at https://www.meetup.com/find/?location=us--pa--philadelphia and topic pages
+        such as https://www.meetup.com/topics/hiking/us/pa/philadelphia/.'
+    - agent: e-meetup-social-games
+      text: 'Meetup topic pages for Philadelphia, PA: social, new in town, board games, tabletop RPG, trivia,
+        LGBTQ, singles, over 40 and over 50 social, sober social. Start at topic pages such as
+        https://www.meetup.com/topics/boardgames/us/pa/philadelphia/.'
+    - agent: e-meetup-culture-language
+      text: 'Meetup topic pages for Philadelphia, PA: language exchange, conversation practice (Spanish, French,
+        German, Japanese, Chinese, ASL), international and immigrant social groups, book clubs, writing groups,
+        philosophy discussion. Start at topic pages such as https://www.meetup.com/topics/language-exchange/us/pa/philadelphia/.'
+    - agent: e-meetup-tech-careers-making
+      text: 'Meetup topic pages for Philadelphia, PA: software and coding user groups, data and AI meetups, women
+        in tech, makers and hardware, photography, entrepreneurs, public speaking. Start at topic pages such as
+        https://www.meetup.com/topics/softwaredev/us/pa/philadelphia/. Many tech groups also list on
+        https://technical.ly/ (not a platform; usable as a source).'
+    - agent: e-meetup-arts-music-wellness
+      text: 'Meetup topic pages for Philadelphia, PA: music jams and choirs, drawing and sketching, crafts and
+        knitting, dance, improv, meditation, parents and families, volunteering and community service. Start at
+        topic pages such as https://www.meetup.com/topics/meditation/us/pa/philadelphia/.'
+    - agent: e-eventbrite-givepulse
+      text: 'Eventbrite and GivePulse, Philadelphia. Look for ORGANIZERS that run recurring free or low cost
+        community events (monthly cleanups, volunteer days, community workshops, group walks), not one off
+        events. Start at https://www.eventbrite.com/d/pa--philadelphia/community/ and
+        https://www.givepulse.com/ public group pages for Philadelphia. Read organizer pages one at a time.'
+    - agent: e-idealist
+      text: 'Idealist organization pages for Philadelphia nonprofits with ongoing volunteer roles. Start at
+        https://www.idealist.org/en/volunteer?locale=en&areasOfFocus=&q=&searchMode=true&locationString=Philadelphia%2C+PA
+        and read organization pages one at a time. Skip job postings and one time roles; we want organizations
+        with recurring volunteering anyone can join.'
   - {id: w7-campuses, lane: B, kind: slices, brief: campuses, status: todo, note: "Temple, Jefferson, Saint Joseph's, La Salle, Holy Family, Chestnut Hill College, Moore, Curtis, Peirce; Drexel and CCP through public pages only (their APIs are blocked by robots)"}
   - {id: w8-parades-festivals, lane: C, kind: slices, brief: parades, status: todo}
   - {id: w9-funders, lane: D, kind: slices, brief: funders, status: todo}
