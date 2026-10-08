@@ -1,0 +1,134 @@
+---
+import Base from '../layouts/Base.astro';
+import { summarize } from '../lib/coverage';
+import { formatDate } from '../lib/dates';
+import { loadGroups, loadManifest, loadVocab } from '../lib/data';
+import { suggestGroupUrl } from '../lib/issues';
+import { complete as t } from '../strings/en';
+
+const { groups, built } = loadGroups();
+const manifest = loadManifest();
+const s = summarize(groups, manifest, loadVocab());
+const fmt = (n: number) => n.toLocaleString('en-US');
+const date = formatDate(manifest.built ?? built);
+---
+
+<Base title={t.title} description={t.metaDescription} path="how-complete/">
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.title}</h1>
+      <p class="lede">{t.lede}</p>
+      <p class="callout">{t.floorNote}</p>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <p class="stat">{fmt(s.total)}</p>
+          <p class="label">{t.totalLabel}</p>
+          {date && <p>{t.builtLabel} {date}</p>}
+        </div>
+        <div class="stat-card">
+          <p class="stat">{s.tier0Unchecked !== null ? fmt(s.tier0Unchecked) : '?'}</p>
+          <p class="label">{t.uncheckedLabel}</p>
+          <p>{s.tier0Unchecked !== null ? t.uncheckedHelp : t.uncheckedUnknown}</p>
+        </div>
+      </div>
+
+      <section aria-labelledby="by-interest">
+        <h2 id="by-interest">{t.byCategory}</h2>
+        {
+          s.byCategory.length > 0 && (
+            <div class="table-wrap">
+              <table>
+                <caption class="sr-only">{t.byCategory}</caption>
+                <thead>
+                  <tr><th scope="col">{t.tableInterest}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                </thead>
+                <tbody>
+                  {s.byCategory.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+      </section>
+
+      <section aria-labelledby="by-place">
+        <h2 id="by-place">{t.byDistrict}</h2>
+        {
+          s.byRegion.length > 0 && (
+            <div class="table-wrap">
+              <table>
+                <caption>{t.byRegion}</caption>
+                <thead>
+                  <tr><th scope="col">{t.tablePlace}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                </thead>
+                <tbody>
+                  {s.byRegion.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}
+                  {s.noPlace > 0 && <tr><th scope="row">{t.noPlace}</th><td class="num">{fmt(s.noPlace)}</td></tr>}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+        {
+          s.byDistrict.length > 0 && (
+            <div class="table-wrap">
+              <table>
+                <caption class="sr-only">{t.byDistrict}</caption>
+                <thead>
+                  <tr><th scope="col">{t.tablePlace}</th><th scope="col" class="num">{t.tableCount}</th></tr>
+                </thead>
+                <tbody>
+                  {s.byDistrict.map((r) => <tr><th scope="row">{r.label}</th><td class="num">{fmt(r.count)}</td></tr>)}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+      </section>
+
+      <section aria-labelledby="coverage-title">
+        <h2 id="coverage-title">{t.coverageTitle}</h2>
+        <p class="prose">{t.coverageIntro}</p>
+        {
+          manifest.coverage.length > 0 ? (
+            <div class="table-wrap">
+              <table>
+                <caption class="sr-only">{t.coverageTitle}</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">{t.coverageSlice}</th>
+                    <th scope="col" class="num">{t.coverageFound}</th>
+                    <th scope="col" class="num">{t.coverageEstimate}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    manifest.coverage.map((r) => (
+                      <tr>
+                        <th scope="row">{r.slice}{r.note ? <span class="help"> {r.note}</span> : null}</th>
+                        <td class="num">{r.found !== undefined ? fmt(r.found) : ''}</td>
+                        <td class="num">
+                          {r.estimate !== undefined ? fmt(r.estimate) : ''}
+                          {r.low !== undefined && r.high !== undefined ? ` (${fmt(r.low)} to ${fmt(r.high)})` : ''}
+                        </td>
+                      </tr>
+                    ))
+                  }
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <p>{t.coverageNone}</p>
+          )
+        }
+      </section>
+
+      <section aria-labelledby="gaps-title">
+        <h2 id="gaps-title">{t.nextTitle}</h2>
+        <p>{t.nextText}</p>
+        <a class="btn" href={suggestGroupUrl()} rel="noopener noreferrer">{t.nextCta}</a>
+      </section>
+    </div>
+  </div>
+</Base>

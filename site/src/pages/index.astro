@@ -1,0 +1,88 @@
+---
+import InterestTiles from '../components/InterestTiles.astro';
+import { isBrowsable } from '../lib/filters';
+import { loadGroups, loadVocab } from '../lib/data';
+import { browsableFamilies } from '../lib/vocab';
+import { fill } from '../lib/inline';
+import { suggestGroupUrl } from '../lib/issues';
+import { withBase } from '../lib/site';
+import Base from '../layouts/Base.astro';
+import { home, paths, site } from '../strings/en';
+
+const { groups } = loadGroups();
+const vocab = loadVocab();
+const browsable = groups.filter(isBrowsable);
+const counts: Record<string, number> = {};
+for (const g of browsable) for (const c of g.categories) counts[c] = (counts[c] ?? 0) + 1;
+const families = browsableFamilies(vocab).filter((f) => (counts[f.id] ?? 0) > 0);
+
+const guides = [paths.serviceHours, paths.courtOrdered, paths.families, paths.newToPhilly];
+---
+
+<Base title={`${site.name}: ${site.tagline}`} fullTitle description={site.description} path="">
+  <div class="page">
+    <div class="wrap-wide">
+      <section class="hero">
+        <h1>Find Your <span>Jawn</span></h1>
+        <p class="lede">{home.heroLede}</p>
+        <p class="jawn-line"><b>{site.jawnLead}</b>: {site.jawnText}</p>
+      </section>
+
+      <section aria-labelledby="doors-title">
+        <h2 id="doors-title" class="sr-only">{home.doorsTitle}</h2>
+        <div class="doors">
+          <div class="door">
+            <h2>{home.match.title}</h2>
+            <p><span class="badge badge--note">{home.match.status}</span></p>
+            <p>{home.match.text}</p>
+            <a class="btn" href={withBase('match/')}>{home.match.cta}</a>
+          </div>
+          <div class="door">
+            <h2>{home.browse.title}</h2>
+            <p>{home.browse.text}</p>
+            <p class="count">{fill(home.browse.countLine, { n: browsable.length.toLocaleString('en-US') })}</p>
+            <a class="btn" href={withBase('browse/')}>{home.browse.cta}</a>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="paths-title">
+        <h2 id="paths-title">{home.pathsTitle}</h2>
+        <ul class="tiles">
+          {
+            guides.map((p) => (
+              <li>
+                <div class="tile">
+                  <h3><a href={withBase(`paths/${p.slug}/`)}>{p.title}</a></h3>
+                  <p>{p.summary}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      {
+        families.length > 0 && (
+          <section aria-labelledby="interests-title">
+            <h2 id="interests-title">{home.interestsTitle}</h2>
+            <InterestTiles families={families} counts={counts} wide />
+            <p><a href={withBase('i/')}>{home.interestsAll}</a></p>
+          </section>
+        )
+      }
+
+      <section class="quiet-box" aria-labelledby="support-title">
+        <h2 id="support-title">{home.supportTitle}</h2>
+        <p>{home.supportText}</p>
+        <p><a href={withBase('support/')}>{home.supportCta}</a></p>
+      </section>
+
+      <section aria-labelledby="suggest-title">
+        <h2 id="suggest-title">{home.suggestTitle}</h2>
+        <p class="prose">{home.suggestText}</p>
+        <a class="btn btn--secondary" href={suggestGroupUrl()} rel="noopener noreferrer">{home.suggestCta}</a>
+      </section>
+    </div>
+  </div>
+</Base>

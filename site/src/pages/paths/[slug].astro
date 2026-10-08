@@ -1,0 +1,98 @@
+---
+import { GroupList } from '../../components/GroupCard';
+import Prose from '../../components/Prose.astro';
+import Base from '../../layouts/Base.astro';
+import { makeBrowseConfig } from '../../lib/browse-config';
+import { loadGroups, loadVocab } from '../../lib/data';
+import { fill } from '../../lib/inline';
+import { suggestGroupUrl } from '../../lib/issues';
+import { courtOrdered, families, newToPhilly, PATH_CAP, serviceHours, type Capped } from '../../lib/paths';
+import { withBase } from '../../lib/site';
+import { paths as t } from '../../strings/en';
+
+export function getStaticPaths() {
+  return [t.serviceHours, t.courtOrdered, t.families, t.newToPhilly].map((g) => ({ params: { slug: g.slug } }));
+}
+
+const GUIDES = [t.serviceHours, t.courtOrdered, t.families, t.newToPhilly];
+
+const { slug } = Astro.params;
+const guide = GUIDES.find((g) => g.slug === slug)!;
+const { groups, built } = loadGroups();
+const places = makeBrowseConfig(groups, loadVocab(), built).places;
+
+interface Section {
+  id: string;
+  title: string;
+  intro?: string;
+  empty: string;
+  list: Capped;
+  browse?: string;
+}
+
+let sections: Section[] = [];
+if (slug === t.serviceHours.slug) {
+  const r = serviceHours(groups);
+  sections = [
+    { id: 'forms', title: t.serviceHours.listFormsTitle, empty: t.serviceHours.listFormsEmpty, list: r.forms, browse: 'browse/?hours=1' },
+    { id: 'teens', title: t.serviceHours.listTeensTitle, intro: t.serviceHours.listTeensIntro, empty: t.serviceHours.listTeensEmpty, list: r.teens },
+  ];
+} else if (slug === t.courtOrdered.slug) {
+  sections = [{ id: 'court', title: t.courtOrdered.listTitle, empty: t.courtOrdered.listEmpty, list: courtOrdered(groups), browse: 'browse/?court=1' }];
+} else if (slug === t.families.slug) {
+  sections = [{ id: 'kids', title: t.families.listTitle, empty: t.families.listEmpty, list: families(groups), browse: 'browse/?kids=1' }];
+} else {
+  const r = newToPhilly(groups);
+  sections = [
+    { id: 'welcoming', title: t.newToPhilly.listWelcomingTitle, empty: t.newToPhilly.listWelcomingEmpty, list: r.welcoming, browse: 'browse/?newcomers=1' },
+    { id: 'neighbors', title: t.newToPhilly.listNeighborsTitle, empty: t.newToPhilly.listNeighborsEmpty, list: r.neighbors, browse: 'browse/?kind=civic' },
+  ];
+}
+const others = GUIDES.filter((g) => g.slug !== slug);
+---
+
+<Base title={guide.title} description={guide.metaDescription} path={`paths/${guide.slug}/`}>
+  <div class="page">
+    <div class="wrap">
+      <p class="eyebrow">{t.title}</p>
+      <h1>{guide.title}</h1>
+      <p class="lede">{guide.lede}</p>
+
+      <Prose blocks={guide.guide} />
+
+      {
+        sections.map((s) => (
+          <section class="group-section" aria-labelledby={`sec-${s.id}`}>
+            <h2 id={`sec-${s.id}`}>{s.title}</h2>
+            {s.intro && <p class="muted">{s.intro}</p>}
+            {
+              s.list.items.length > 0 ? (
+                <>
+                  <p class="help">{s.list.total === 1 ? t.listCountOne : fill(t.listCount, { n: s.list.total })}</p>
+                  <GroupList groups={s.list.items} places={places} />
+                  {s.list.total > s.list.items.length && <p class="help">{fill(t.capNote, { n: PATH_CAP })}</p>}
+                  {s.browse && <p><a href={withBase(s.browse)}>{fill(t.more, { n: s.list.total })}</a></p>}
+                </>
+              ) : (
+                <div class="empty">
+                  <p>{s.empty}</p>
+                  <div class="btn-row">
+                    <a class="btn" href={withBase('browse/')}>{t.seeBrowse}</a>
+                    <a class="btn btn--secondary" href={suggestGroupUrl()} rel="noopener noreferrer">{t.suggest}</a>
+                  </div>
+                </div>
+              )
+            }
+          </section>
+        ))
+      }
+
+      <section class="group-section" aria-labelledby="other-guides">
+        <h2 id="other-guides">{t.moreGuides}</h2>
+        <ul>
+          {others.map((g) => <li><a href={withBase(`paths/${g.slug}/`)}>{g.title}</a>: {g.summary}</li>)}
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>

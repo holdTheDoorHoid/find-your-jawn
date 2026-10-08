@@ -1,0 +1,31 @@
+{
+  "name": "find-your-jawn-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "prepare-data": "node scripts/prepare-data.mjs",
+    "dev": "npm run prepare-data && astro dev",
+    "build": "npm run prepare-data && node scripts/clean.mjs && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "fixtures": "node fixtures/make-fixtures.mjs"
+  },
+  "dependencies": {
+    "@astrojs/preact": "6.0.5",
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.3.4",
+    "preact": "10.29.8"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "24.13.6",
+    "typescript": "6.0.3",
+    "vitest": "4.1.11",
+    "yaml": "2.9.1"
+  }
+}

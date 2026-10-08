@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/site';
+import { notFound as t } from '../strings/en';
+---
+
+<Base title={t.title} path="404.html" noindex>
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.title}</h1>
+      <p class="lede">{t.text}</p>
+      <div class="btn-row">
+        <a class="btn" href={withBase('')}>{t.home}</a>
+        <a class="btn btn--secondary" href={withBase('browse/')}>{t.browse}</a>
+      </div>
+    </div>
+  </div>
+</Base>

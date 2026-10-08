@@ -1,0 +1,33 @@
+---
+import { suggestGroupUrl } from '../lib/issues';
+import { REPO_URL, withBase } from '../lib/site';
+import { footer } from '../strings/en';
+import { paths } from '../strings/en';
+
+const explore = [
+  { href: withBase('about/'), label: footer.about },
+  { href: withBase(`paths/${paths.serviceHours.slug}/`), label: paths.serviceHours.navTitle },
+  { href: withBase(`paths/${paths.courtOrdered.slug}/`), label: paths.courtOrdered.navTitle },
+  { href: withBase(`paths/${paths.families.slug}/`), label: paths.families.navTitle },
+  { href: withBase(`paths/${paths.newToPhilly.slug}/`), label: paths.newToPhilly.navTitle },
+  { href: withBase('i/'), label: footer.interests },
+  { href: withBase('how-ranking-works/'), label: footer.ranking },
+  { href: withBase('how-complete/'), label: footer.complete },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <ul>
+      <li><a href={withBase('about/#sources')}>{footer.sources}</a></li>
+      <li><a href={REPO_URL} rel="noopener noreferrer">{footer.github}</a></li>
+      <li><a href={suggestGroupUrl()} rel="noopener noreferrer">{footer.suggest}</a></li>
+      <li><a href={withBase('privacy/')}>{footer.privacy}</a></li>
+    </ul>
+    <p class="footer-label" id="footer-explore">{footer.exploreLabel}</p>
+    <ul aria-labelledby="footer-explore">
+      {explore.map((e) => <li><a href={e.href}>{e.label}</a></li>)}
+    </ul>
+    <p class="footer-line">{footer.line}</p>
+  </div>
+</footer>

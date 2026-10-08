@@ -1,0 +1,100 @@
+---
+import Prose from '../components/Prose.astro';
+import Base from '../layouts/Base.astro';
+import { loadSources, type SourceEntry } from '../lib/data';
+import { safeHttpUrl } from '../lib/text';
+import { about as t } from '../strings/en';
+
+const sources = loadSources();
+const handMade = t.sourceHandMade;
+
+// Many registry URLs are data endpoints (an API or a CSV). Only link to pages a person can read.
+function pageLink(url: string): string | null {
+  const href = safeHttpUrl(url);
+  if (!href) return null;
+  return /\/(rest|api)\/|\.(csv|json|ya?ml)(\?|$)|[?&]format=/i.test(href) ? null : href;
+}
+
+// One credit line per attribution. Sources with no real attribution go under a plain heading.
+function creditOf(s: SourceEntry): string {
+  return !s.attribution || /^see /i.test(s.attribution) ? handMade : s.attribution;
+}
+const open = sources.filter((s) => !s.leadOnly);
+const leadOnly = sources.filter((s) => s.leadOnly);
+function group(list: SourceEntry[]) {
+  const map = new Map<string, SourceEntry[]>();
+  for (const s of list) {
+    const key = creditOf(s);
+    map.set(key, [...(map.get(key) ?? []), s]);
+  }
+  return [...map.entries()].sort((a, b) => (a[0] === handMade ? 1 : b[0] === handMade ? -1 : a[0] < b[0] ? -1 : 1));
+}
+const credits = group(open);
+---
+
+<Base title={t.title} description={t.metaDescription} path="about/">
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.title}</h1>
+      <Prose blocks={t.blocks} />
+
+      <section id="sources" class="group-section" aria-labelledby="sources-title">
+        <h2 id="sources-title">{t.sourcesTitle}</h2>
+        <p class="prose">{t.sourcesIntro}</p>
+        {
+          credits.length === 0 ? (
+            <p>{t.sourceNone}</p>
+          ) : (
+            <>
+              <h3>{t.sourcesCredits}</h3>
+              <ul>
+                {
+                  credits.map(([credit, list]) => (
+                    <li>
+                      <strong>{credit}</strong>
+                      <ul>
+                        {
+                          list.map((s) => {
+                            const href = pageLink(s.url);
+                            return (
+                              <li>
+                                {s.name}
+                                {s.owner ? ` (${t.sourceOwner} ${s.owner})` : ''}
+                                {href && <> <a href={href} rel="noopener noreferrer">{t.sourceVisit}</a></>}
+                              </li>
+                            );
+                          })
+                        }
+                      </ul>
+                    </li>
+                  ))
+                }
+              </ul>
+            </>
+          )
+        }
+        {
+          leadOnly.length > 0 && (
+            <>
+              <h3>{t.sourcesLeadOnly}</h3>
+              <p>{t.sourcesLeadOnlyText}</p>
+              <ul>
+                {
+                  leadOnly.map((s) => {
+                    const href = pageLink(s.url);
+                    return (
+                      <li>
+                        {s.name}
+                        {href && <> <a href={href} rel="noopener noreferrer">{t.sourceVisit}</a></>}
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+            </>
+          )
+        }
+      </section>
+    </div>
+  </div>
+</Base>

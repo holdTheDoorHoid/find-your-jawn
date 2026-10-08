@@ -1,0 +1,68 @@
+---
+import { GroupList } from '../../components/GroupCard';
+import Base from '../../layouts/Base.astro';
+import { makeBrowseConfig } from '../../lib/browse-config';
+import { loadGroups, loadVocab } from '../../lib/data';
+import { isBrowsable } from '../../lib/filters';
+import { fill } from '../../lib/inline';
+import { suggestGroupUrl } from '../../lib/issues';
+import { interestPath, withBase } from '../../lib/site';
+import { compareNames, prettify } from '../../lib/text';
+import { browsableFamilies } from '../../lib/vocab';
+import type { InterestFamily } from '../../lib/types';
+import { interests as t } from '../../strings/en';
+
+export function getStaticPaths() {
+  const vocab = loadVocab();
+  const { groups } = loadGroups();
+  // Support only families (support and recovery) have no interest page: those groups live on /support/.
+  const families: InterestFamily[] = [...browsableFamilies(vocab)];
+  // A family named only in the data still gets a page, so links from group pages never break.
+  for (const g of groups) {
+    for (const id of g.categories) {
+      if (!vocab.familyById.has(id) && !families.some((f) => f.id === id)) families.push({ id, label: prettify(id), tags: [] });
+    }
+  }
+  return families.map((family) => ({ params: { family: family.id }, props: { family } }));
+}
+
+const { family } = Astro.props;
+const { groups, built } = loadGroups();
+const vocab = loadVocab();
+const list = groups.filter((g) => isBrowsable(g) && g.categories.includes(family.id)).sort((a, b) => compareNames(a.name, b.name));
+const places = makeBrowseConfig(list, vocab, built).places;
+const title = fill(t.pageTitle, { family: family.label });
+const countText = list.length === 0 ? t.countNone : list.length === 1 ? t.countOne : fill(t.count, { n: list.length });
+const tagNames = family.tags.map((x) => x.label.toLowerCase());
+---
+
+<Base title={title} description={fill(t.metaDescription, { family: family.label, n: list.length })} path={interestPath(family.id)}>
+  <div class="page">
+    <div class="wrap">
+      <p class="crumbs"><a href={withBase('i/')}>&larr; {t.allInterests}</a></p>
+      <h1>
+        {family.icon && <span aria-hidden="true">{family.icon} </span>}{title}
+      </h1>
+      {family.blurb && <p class="lede">{family.blurb}</p>}
+      <p><strong>{countText}</strong></p>
+      {
+        list.length > 0 ? (
+          <>
+            <p><a href={withBase(`browse/?fam=${encodeURIComponent(family.id)}`)}>{t.refine}</a></p>
+            <GroupList groups={list} places={places} headingLevel={2} />
+          </>
+        ) : (
+          <div class="empty">
+            <p>{t.empty}</p>
+            <p>{t.emptyActions}</p>
+            <div class="btn-row">
+              <a class="btn" href={withBase('browse/')}>{t.browseAll}</a>
+              <a class="btn btn--secondary" href={suggestGroupUrl()} rel="noopener noreferrer">{t.suggest}</a>
+            </div>
+          </div>
+        )
+      }
+      {tagNames.length > 0 && <p class="muted">{fill(t.includes, { list: tagNames.join(', ') })}</p>}
+    </div>
+  </div>
+</Base>

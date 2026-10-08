@@ -1,0 +1,98 @@
+---
+import { GroupList } from '../components/GroupCard';
+import Base from '../layouts/Base.astro';
+import { makeBrowseConfig } from '../lib/browse-config';
+import { loadGroups, loadVocab } from '../lib/data';
+import { suggestGroupUrl } from '../lib/issues';
+import { compareNames } from '../lib/text';
+import { support as t } from '../strings/en';
+
+const { groups, built } = loadGroups();
+const list = groups.filter((g) => g.audience.support_group).sort((a, b) => compareNames(a.name, b.name));
+const places = makeBrowseConfig(list, loadVocab(), built).places;
+const c = t.crisis;
+---
+
+<Base title={t.title} description={t.metaDescription} path="support/" calm>
+  <div class="page">
+    <div class="wrap-wide">
+      <h1>{t.title}</h1>
+      <p class="lede">{t.lede}</p>
+
+      <section aria-labelledby="crisis-title">
+        <h2 id="crisis-title">{t.crisisTitle}</h2>
+        <p>{t.crisisIntro}</p>
+        <div class="crisis-grid">
+          <article class="crisis" aria-labelledby="c-988">
+            <h3 id="c-988">{c.lifeline.title}</h3>
+            <p class="number">{c.lifeline.name}</p>
+            <p>{c.lifeline.what}</p>
+            <div class="btn-row">
+              <a class="btn" href={c.lifeline.tel}>{c.lifeline.call}</a>
+              <a class="btn btn--secondary" href={c.lifeline.sms}>{c.lifeline.text}</a>
+            </div>
+            <p>
+              <a href={c.lifeline.chatUrl} rel="noopener noreferrer">{c.lifeline.chat}</a>
+              {' · '}
+              <a href={c.lifeline.spanishUrl} rel="noopener noreferrer" lang="es" hreflang="es">{c.lifeline.spanish}</a>
+            </p>
+          </article>
+          <article class="crisis" aria-labelledby="c-911">
+            <h3 id="c-911">{c.emergency.title}</h3>
+            <p class="number">{c.emergency.name}</p>
+            <p>{c.emergency.what}</p>
+            <div class="btn-row">
+              <a class="btn" href={c.emergency.tel}>{c.emergency.call}</a>
+            </div>
+          </article>
+          <article class="crisis" aria-labelledby="c-philly">
+            <h3 id="c-philly">{c.philly.title}</h3>
+            <p class="number">{c.philly.name}</p>
+            <p>{c.philly.what}</p>
+            <div class="btn-row">
+              <a class="btn" href={c.philly.tel}>{c.philly.call}</a>
+            </div>
+            <p><a href={c.philly.sourceUrl} rel="noopener noreferrer">{c.philly.sourceLabel}</a></p>
+          </article>
+        </div>
+        <p><strong>{c.notSure}</strong></p>
+      </section>
+
+      <section aria-labelledby="topics-title">
+        <h2 id="topics-title">{t.topicsTitle}</h2>
+        <p class="prose">{t.topicsIntro}</p>
+        <ul class="topic-list">
+          {
+            t.topics.map((topic) => (
+              <li>
+                <div class="topic">
+                  <h3>{topic.title}</h3>
+                  <p>{topic.text}</p>
+                  <a href={topic.url} rel="noopener noreferrer">{topic.link}</a>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="help">{t.externalNote}</p>
+      </section>
+
+      <section aria-labelledby="groups-title">
+        <h2 id="groups-title">{t.groupsTitle}</h2>
+        {
+          list.length > 0 ? (
+            <>
+              <p class="prose">{t.groupsIntro}</p>
+              <GroupList groups={list} places={places} two />
+            </>
+          ) : (
+            <p class="prose">{t.groupsEmpty}</p>
+          )
+        }
+        <p><a href={suggestGroupUrl()} rel="noopener noreferrer">{t.suggest}</a></p>
+      </section>
+
+      <p class="callout">{t.privacy}</p>
+    </div>
+  </div>
+</Base>

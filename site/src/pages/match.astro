@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/site';
+import { match as t, paths } from '../strings/en';
+---
+
+<Base title={t.title} description={t.metaDescription} path="match/">
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.heading}</h1>
+      <p class="lede">{t.lede}</p>
+
+      <!-- QUIZ MOUNT. The quiz island (src/islands/quiz/) replaces the placeholder below with
+           <QuizApp client:only="preact" ... />. See src/islands/quiz/README.md. -->
+      <section id="quiz-root" aria-label={t.mountLabel}>
+        <ul>
+          {t.points.map((p) => <li>{p}</li>)}
+        </ul>
+      </section>
+
+      <h2>{t.meanwhile}</h2>
+      <ul>
+        <li><a href={withBase('browse/')}>{t.browse}</a></li>
+        {[paths.serviceHours, paths.courtOrdered, paths.families, paths.newToPhilly].map((g) => <li><a href={withBase(`paths/${g.slug}/`)}>{g.title}</a></li>)}
+        <li><a href={withBase('how-ranking-works/')}>{t.how}</a></li>
+      </ul>
+    </div>
+  </div>
+</Base>
