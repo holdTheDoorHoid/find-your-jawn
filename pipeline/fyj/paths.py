@@ -86,6 +86,13 @@ class Layout:
         return self.geo_dir / "planning_districts.geojson"
 
     @property
+    def guides_dir(self) -> Path:
+        return self.root / "data" / "guides"
+
+    def guide_path(self, guide: str) -> Path:
+        return self.guides_dir / f"{guide}.yaml"
+
+    @property
     def seeds_dir(self) -> Path:
         return self.root / "data" / "seeds"
 
@@ -120,6 +127,10 @@ class Layout:
     @property
     def site_data_dir(self) -> Path:
         return self.root / "site" / "public" / "data"
+
+    @property
+    def site_guides_dir(self) -> Path:
+        return self.site_data_dir / "guides"
 
 
 def default_layout() -> Layout:

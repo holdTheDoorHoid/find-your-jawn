@@ -1,7 +1,8 @@
 """`fyj build`: write site/public/data/ from the groups that pass the publish checks.
 
 DATA_MODEL section 5. Only visible groups at research tier 1 or higher that pass `fyj check` are
-published. The output is rebuilt from scratch each time and is never committed.
+published. The output is rebuilt from scratch each time and is never committed. Guide lists
+(section 9) are written beside the groups, confirmed entries only.
 """
 
 from __future__ import annotations
@@ -11,11 +12,12 @@ import datetime as _dt
 import json
 import shutil
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 from fyj.checks import CheckReport, load_blocklist, run_checks, write_report
 from fyj.groupfile import MAILING_LABELS, GroupStore, _plain
+from fyj.guides import GuideBuild, build_guides
 from fyj.paths import Layout
 from fyj.vocab import Vocab
 
@@ -138,6 +140,7 @@ class BuildResult:
     published: int
     report: CheckReport
     path: str
+    guides: dict[str, GuideBuild] = field(default_factory=dict)
 
 
 def build_site_data(
@@ -218,7 +221,8 @@ def build_site_data(
     (out_dir / "manifest.json").write_text(
         json.dumps(manifest, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"
     )
-    return BuildResult(published=len(compact), report=report, path=str(out_dir))
+    guides = build_guides(layout, today=today)
+    return BuildResult(published=len(compact), report=report, path=str(out_dir), guides=guides)
 
 
 def _latest_coverage(layout: Layout) -> Any:
