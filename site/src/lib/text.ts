@@ -84,3 +84,15 @@ export function escapeHtml(s: string): string {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
+
+const SMALL = new Set(['and', 'of', 'the', 'in', 'on', 'at', 'to']);
+
+/** "mount-airy" gives "Mount Airy". For place ids with no label in the vocabulary. */
+export function titleCase(id: string): string {
+  return id
+    .replace(/[-_]+/g, ' ')
+    .trim()
+    .split(' ')
+    .map((w, i) => (i > 0 && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(' ');
+}

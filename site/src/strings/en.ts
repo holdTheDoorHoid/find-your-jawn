@@ -202,6 +202,7 @@ export const badges = {
 };
 
 export const card = {
+  quickFacts: 'Quick facts',
   lastSeen: 'Last seen active',
   noDate: 'Last active date not known yet',
   tierBasic: 'Basic listing',
@@ -315,7 +316,12 @@ export const group = {
     notRecurring: 'Does not meet on a regular schedule.',
     unknown: 'We do not know the schedule yet. Ask the group.',
   },
+  quickFacts: 'Quick facts',
+  outOfFive: '{n} out of 5',
   who: {
+    labelOpen: 'Open to',
+    labelAges: 'Ages',
+    labelFaith: 'Faith',
     minAge: 'Ages {n} and up',
     maxAge: 'Up to age {n}',
     ages: 'Ages {min} to {max}',
@@ -341,6 +347,7 @@ export const browse = {
   loadError: 'We could not load the group list. Please check your connection and try again.',
   retry: 'Try again',
   noscript: 'Browsing needs JavaScript. Without it, you can still use the interest pages and the guides.',
+  resultsHeading: 'Results',
   searchLabel: 'Search',
   searchPlaceholder: 'Try "garden", "chess" or "Fishtown"',
   filters: 'Filters',
@@ -424,6 +431,9 @@ export const interests = {
   countNone: 'No groups yet',
   empty: 'We have not checked any groups in this interest yet. The list grows every week.',
   emptyActions: 'You can browse every group, or tell us about one we are missing.',
+  browseAll: 'Browse every group',
+  suggest: 'Suggest a group',
+  includes: 'Includes: {list}.',
   refine: 'Narrow these down by cost, days and more',
   allInterests: 'All interests',
 };
@@ -434,6 +444,7 @@ export const paths = {
   listCountOne: '1 group',
   more: 'See all {n} in browse',
   capNote: 'We show the {n} that fit best here. Browse has the rest.',
+  moreGuides: 'More guides',
   seeBrowse: 'Browse every group',
   suggest: 'Know a group that belongs here? Suggest it.',
   askFirst: 'Always confirm with the group before you count on it.',
@@ -576,12 +587,14 @@ export const support = {
   crisisIntro: 'These lines are open all day and night.',
   crisis: {
     emergency: {
+      title: 'Emergency',
       name: '911',
       what: 'For an emergency: someone is in danger, hurt, or about to be.',
       call: 'Call 911',
       tel: 'tel:911',
     },
     lifeline: {
+      title: '988 Suicide and Crisis Lifeline',
       name: '988',
       what: 'The 988 Suicide and Crisis Lifeline. Call or text 988 to talk with someone about suicide, a mental health crisis, or a substance use crisis. You can also chat online.',
       call: 'Call 988',
@@ -594,6 +607,7 @@ export const support = {
       spanishUrl: 'https://988lifeline.org/es/',
     },
     philly: {
+      title: 'Philadelphia crisis line',
       name: '215-686-4420',
       what: 'The Philadelphia suicide prevention and crisis intervention line, run by the City\'s Department of Behavioral Health and Intellectual disAbility Services. It is answered every day, all day and night.',
       call: 'Call 215-686-4420',
@@ -806,6 +820,8 @@ export const about = {
   sourcesLeadOnly: 'Used only to find groups',
   sourcesLeadOnlyText: 'The terms of these sources do not allow us to reuse their text. We use them only to find group names, then check each group on its own pages.',
   sourceOwner: 'From',
+  sourceHandMade: 'Compiled by our team from public pages',
+  sourceVisit: 'Visit',
   sourceNone: 'The source list is not available in this copy of the site.',
 };
 

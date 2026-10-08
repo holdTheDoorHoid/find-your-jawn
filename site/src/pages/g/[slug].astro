@@ -1,0 +1,354 @@
+---
+import SaveButton from '../../islands/SaveButton';
+import Base from '../../layouts/Base.astro';
+import { groupBadges, isFaithGroup, schoolName } from '../../lib/badges';
+import { formatDate, formatMonthYear, lastSeenActive } from '../../lib/dates';
+import { loadFullGroup, loadGroups, loadVocab } from '../../lib/data';
+import {
+  ageLine,
+  communityLabel,
+  dayList,
+  fieldLabel,
+  freshnessNote,
+  hasFirstVisitGuide,
+  linkLabel,
+  metaDescription,
+  newcomerLabel,
+  socialLabel,
+  sourceSeen,
+  sourcesFor,
+  tierSentence,
+} from '../../lib/group-view';
+import { fill } from '../../lib/inline';
+import { languageName } from '../../lib/language';
+import { groupIssueLinks } from '../../lib/issues';
+import { absoluteUrl, groupPath, interestPath, withBase } from '../../lib/site';
+import { hostOf, safeHttpUrl, telHref, titleCase } from '../../lib/text';
+import { districtFor, familyLabel, labelFor } from '../../lib/vocab';
+import { group as t, labels } from '../../strings/en';
+
+export function getStaticPaths() {
+  const { groups } = loadGroups();
+  return groups.map((g) => ({ params: { slug: g.id }, props: { group: loadFullGroup(g.id) } }));
+}
+
+const { group: g } = Astro.props;
+const vocab = loadVocab();
+const now = new Date();
+
+const kindLabel = labels.kind[g.kind] ?? labelFor(vocab, 'kinds', g.kind);
+const badges = groupBadges(g, { max: 12 });
+const issues = groupIssueLinks(g.name, absoluteUrl(groupPath(g.id)));
+const seen = lastSeenActive(g.last_sign_of_life);
+const stale = freshnessNote(g, now);
+const guide = hasFirstVisitGuide(g);
+const ages = ageLine(g);
+const nf = g.first_step.newcomer_friendliness;
+
+// who
+const openTo = g.audience.open_to;
+const openText =
+  openTo === 'students' && g.audience.school
+    ? fill(t.who.school, { school: schoolName(g.audience.school) })
+    : (labels.openTo[openTo] ?? titleCase(openTo));
+const communities = g.audience.community.map((c) => communityLabel(c, vocab.labels.audiences?.get(c)));
+const crowd = g.crowd.map((c) => labelFor(vocab, 'audiences', c));
+const faithText = isFaithGroup(g)
+  ? g.audience.faith
+    ? fill(t.who.faith, { faith: labels.faith[g.audience.faith] ?? titleCase(g.audience.faith) })
+    : t.who.faithPlain
+  : null;
+
+// where
+const locations = g.locations.map((l) => ({
+  ...l,
+  neighborhoodName: l.neighborhood ? (vocab.labels.neighborhoods?.get(l.neighborhood) ?? titleCase(l.neighborhood)) : null,
+  districtName: l.planning_district ? districtFor(vocab, l.planning_district).label : null,
+}));
+const hasPlace = locations.some((l) => l.address || l.neighborhoodName || l.districtName);
+
+// access
+const langs = [...new Set(g.access.languages)].map(languageName);
+
+// contacts
+const c = g.contacts;
+const website = safeHttpUrl(c.website);
+const calendar = safeHttpUrl(c.calendar_feed);
+const social = c.social.map((s) => ({ url: safeHttpUrl(s), label: socialLabel(s) })).filter((s) => s.url);
+function srcLine(field: string) {
+  return sourcesFor(g, field).map((s) => ({ url: s.url, label: linkLabel(s.url), seen: sourceSeen(s) }));
+}
+const contactRows = [
+  website && { key: 'website', label: t.website, value: { href: website, text: linkLabel(website) }, src: srcLine('contacts.website') },
+  c.email && { key: 'email', label: t.email, value: { href: `mailto:${c.email}`, text: c.email }, src: srcLine('contacts.email') },
+  c.phone && { key: 'phone', label: t.phone, value: { href: telHref(c.phone), text: c.phone }, src: srcLine('contacts.phone') },
+  c.contact_name && { key: 'name', label: t.contactName, value: { href: null, text: c.contact_name }, src: srcLine('contacts.contact_name') },
+  calendar && { key: 'calendar', label: t.calendar, value: { href: calendar, text: linkLabel(calendar) }, src: srcLine('contacts.calendar_feed') },
+].filter(Boolean) as { key: string; label: string; value: { href: string | null; text: string }; src: { url: string; label: string; seen: string | null }[] }[];
+
+// requirements
+const reqs: string[] = [];
+if (g.requirements.background_check) reqs.push(t.backgroundCheck);
+if (g.requirements.court_ordered_ok === 'yes') reqs.push(t.courtYes);
+if (g.requirements.court_ordered_ok === 'no') reqs.push(t.courtNo);
+if (g.requirements.service_hours_letter === 'yes') reqs.push(t.hoursYes);
+if (g.requirements.service_hours_letter === 'no') reqs.push(t.hoursNo);
+if (g.requirements.kids_ok) reqs.push(t.kidsOk);
+
+// related
+const families = g.categories.slice(0, 3).map((id) => ({ id, label: familyLabel(vocab, id) }));
+const { groups: all } = loadGroups();
+const familyCount = (id: string) => all.filter((x) => x.categories.includes(id) && !x.audience.support_group).length;
+
+const title = g.name;
+const description = metaDescription(g);
+---
+
+<Base title={title} description={description} path={groupPath(g.id)} ogType="article">
+  <div class="page">
+    <div class="wrap">
+      <p class="crumbs"><a href={withBase('browse/')}>&larr; {t.breadcrumbBrowse}</a></p>
+
+      <header class="group-head">
+        <p class="kind">{kindLabel}</p>
+        <h1>{g.name}</h1>
+        {g.aka.length > 0 && <p class="muted">{t.alsoCalled}: {g.aka.join(', ')}</p>}
+        <p class="summary">{g.summary}</p>
+        {
+          badges.length > 0 && (
+            <ul class="badges" aria-label={t.quickFacts}>
+              {badges.map((b) => <li><span class={`badge badge--${b.tone}`}>{b.text}</span></li>)}
+            </ul>
+          )
+        }
+        <div class="group-actions">
+          <SaveButton client:load id={g.id} />
+        </div>
+      </header>
+
+      {
+        g.what_you_do && (
+          <section class="group-section" aria-labelledby="what">
+            <h2 id="what">{t.whatTheyDo}</h2>
+            <p>{g.what_you_do}</p>
+          </section>
+        )
+      }
+
+      <section class="group-section" aria-labelledby="who">
+        <h2 id="who">{t.whoFor}</h2>
+        <dl class="facts">
+          <dt>{t.who.labelOpen}</dt>
+          <dd>{openText}</dd>
+          {ages && <><dt>{t.who.labelAges}</dt><dd>{ages}</dd></>}
+          {communities.length > 0 && <><dt>{t.who.community}</dt><dd>{communities.join(', ')}</dd></>}
+          {faithText && <><dt>{t.who.labelFaith}</dt><dd>{faithText}</dd></>}
+          {crowd.length > 0 && <><dt>{t.who.crowd}</dt><dd>{crowd.join(', ')}</dd></>}
+        </dl>
+        {g.bridging && <p>{t.who.bridging}</p>}
+      </section>
+
+      <section class="group-section" aria-labelledby="when">
+        <h2 id="when">{t.whenWhere}</h2>
+        {g.schedule.text ? <p>{g.schedule.text}</p> : <p>{t.when.unknown}</p>}
+        <dl class="facts">
+          {g.schedule.days.length > 0 && <><dt>{t.when.days}</dt><dd>{dayList(g.schedule.days)}</dd></>}
+          {g.schedule.times.length > 0 && <><dt>{t.when.times}</dt><dd>{g.schedule.times.map((x) => labels.time[x] ?? titleCase(x)).join(', ')}</dd></>}
+          {g.schedule.season && g.schedule.season !== 'year_round' && <><dt>{t.season}</dt><dd>{labels.season[g.schedule.season] ?? titleCase(g.schedule.season)}</dd></>}
+        </dl>
+        {g.schedule.recurring === false && <p>{t.when.notRecurring}</p>}
+        {
+          locations.map((l) => (
+            <div class="fact-block">
+              {l.label && <h3>{l.label}</h3>}
+              {l.in_city === false && <p>{t.where.outsideCity}</p>}
+              <dl class="facts">
+                {l.address && <><dt>{t.where.address}</dt><dd>{l.address}</dd></>}
+                {l.neighborhoodName && <><dt>{t.where.neighborhood}</dt><dd>{l.neighborhoodName}</dd></>}
+                {l.districtName && <><dt>{t.where.district}</dt><dd>{l.districtName}</dd></>}
+                {l.transit && <><dt>{t.where.transit}</dt><dd>{l.transit}</dd></>}
+              </dl>
+            </div>
+          ))
+        }
+        {!hasPlace && locations.every((l) => l.in_city !== false) && <p>{t.where.noAddress}</p>}
+        {g.online_ok && <p>{t.where.online}</p>}
+      </section>
+
+      {
+        guide ? (
+          <section class="first-visit" aria-labelledby="first">
+            <h2 id="first">{t.firstVisit}</h2>
+            <p class="reassure">{t.firstVisitNormal}</p>
+            {g.first_step.how && <p><strong>{t.firstStep}:</strong> {g.first_step.how}.</p>}
+            {
+              (g.first_step.drop_in !== undefined || g.first_step.sign_up_needed !== undefined) && (
+                <p>
+                  {g.first_step.drop_in === true ? t.dropInYes : g.first_step.drop_in === false ? t.dropInNo : ''}
+                  {' '}
+                  {g.first_step.sign_up_needed === true ? t.signUpYes : g.first_step.sign_up_needed === false ? t.signUpNo : ''}
+                </p>
+              )
+            }
+            {g.first_step.what_to_expect && <><h3>{t.whatToExpect}</h3><p>{g.first_step.what_to_expect}</p></>}
+            {g.first_step.first_visit_tips.length > 0 && <><h3>{t.tips}</h3><ul>{g.first_step.first_visit_tips.map((x) => <li>{x}</li>)}</ul></>}
+            {
+              nf && (
+                <>
+                  <h3>{t.newcomerRating}</h3>
+                  <p><strong>{newcomerLabel(nf)}</strong> ({fill(t.outOfFive, { n: nf })}).{g.first_step.basis ? ` ${t.newcomerWhy}: ${g.first_step.basis}.` : ''}</p>
+                </>
+              )
+            }
+          </section>
+        ) : (
+          <section class="group-section" aria-labelledby="known">
+            <h2 id="known">{t.knownSoFar}</h2>
+            {g.first_step.how && <p><strong>{t.firstStep}:</strong> {g.first_step.how}.</p>}
+            <p>{t.knownSoFarNote}</p>
+          </section>
+        )
+      }
+
+      <section class="group-section" aria-labelledby="cost">
+        <h2 id="cost">{t.costCommit}</h2>
+        <dl class="facts">
+          <dt>{t.cost}</dt>
+          <dd>{labels.cost[g.cost.level] ?? g.cost.level}{g.cost.text ? `. ${g.cost.text}` : ''}</dd>
+          {g.commitment && <><dt>{t.commitment}</dt><dd>{labels.commitment[g.commitment] ?? titleCase(g.commitment)}</dd></>}
+          {g.group_size && <><dt>{t.groupSize}</dt><dd>{labels.groupSize[g.group_size] ?? titleCase(g.group_size)}</dd></>}
+        </dl>
+      </section>
+
+      <section class="group-section" aria-labelledby="access">
+        <h2 id="access">{t.access}</h2>
+        <dl class="facts">
+          <dt>{t.wheelchair}</dt>
+          <dd>{labels.wheelchair[g.access.wheelchair]}</dd>
+          <dt>{t.languages}</dt>
+          <dd>{langs.length > 0 ? langs.join(', ') : t.languagesUnknown}</dd>
+          {g.access.notes && <><dt>{t.accessNotes}</dt><dd>{g.access.notes}</dd></>}
+        </dl>
+      </section>
+
+      <section class="group-section" aria-labelledby="reqs">
+        <h2 id="reqs">{t.requirements}</h2>
+        {
+          g.requirements.act153_clearances && (
+            <div class="callout">
+              <p><strong>{t.clearancesTitle}</strong></p>
+              <p>{t.clearancesText}</p>
+              <p><a href={t.clearancesUrl} rel="noopener noreferrer">{t.clearancesLink}</a></p>
+            </div>
+          )
+        }
+        {reqs.length > 0 && <ul>{reqs.map((x) => <li>{x}</li>)}</ul>}
+        {g.requirements.gear && <p><strong>{t.gear}:</strong> {g.requirements.gear}</p>}
+        {reqs.length === 0 && !g.requirements.act153_clearances && !g.requirements.gear && <p>{t.requirementsNone}</p>}
+      </section>
+
+      <section class="group-section" aria-labelledby="contacts">
+        <h2 id="contacts">{t.contacts}</h2>
+        {
+          contactRows.length > 0 || social.length > 0 ? (
+            <>
+              <p class="muted">{t.contactsNote}</p>
+              <ul class="contact-list">
+                {
+                  contactRows.map((r) => (
+                    <li>
+                      <strong>{r.label}:</strong>{' '}
+                      {r.value.href ? <a href={r.value.href} rel={r.value.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{r.value.text}</a> : r.value.text}
+                      <span class="src">
+                        {
+                          r.src.length > 0
+                            ? r.src.map((s, i) => (
+                                <>
+                                  {i > 0 && '; '}
+                                  {t.sourceLabel}: <a href={s.url} rel="noopener noreferrer">{s.label}</a>{s.seen ? `, ${t.sourceSeen} ${s.seen}` : ''}
+                                </>
+                              ))
+                            : t.sourceUnknown
+                        }
+                      </span>
+                    </li>
+                  ))
+                }
+                {
+                  social.length > 0 && (
+                    <li>
+                      <strong>{t.social}:</strong>{' '}
+                      {social.map((s, i) => <>{i > 0 && ', '}<a href={s.url!} rel="noopener noreferrer">{s.label}</a></>)}
+                      <span class="src">
+                        {
+                          sourcesFor(g, 'contacts.social').length > 0
+                            ? sourcesFor(g, 'contacts.social').map((s, i) => <>{i > 0 && '; '}{t.sourceLabel}: <a href={s.url} rel="noopener noreferrer">{linkLabel(s.url)}</a></>)
+                            : t.sourceUnknown
+                        }
+                      </span>
+                    </li>
+                  )
+                }
+              </ul>
+            </>
+          ) : (
+            <p>{t.contactsNone}</p>
+          )
+        }
+      </section>
+
+      <section class="group-section" aria-labelledby="sources">
+        <h2 id="sources">{t.sources}</h2>
+        <p class="tier-line">{tierSentence(g)}</p>
+        <dl class="facts">
+          {seen && <><dt>{t.signOfLife}</dt><dd>{formatMonthYear(g.last_sign_of_life)}{g.sign_of_life_url && safeHttpUrl(g.sign_of_life_url) ? <> (<a href={safeHttpUrl(g.sign_of_life_url)!} rel="noopener noreferrer">{t.signOfLifeLink}</a>)</> : null}</dd></>}
+          {g.last_checked && <><dt>{t.lastChecked}</dt><dd>{formatDate(g.last_checked)}</dd></>}
+          <dt>{t.statusLabel}</dt>
+          <dd>{labels.status[g.status] ?? g.status}</dd>
+          {g.confidence && <><dt>{t.confidence}</dt><dd>{titleCase(g.confidence)}</dd></>}
+        </dl>
+        {stale && <p>{stale}</p>}
+        {
+          g.sources.length > 0 && (
+            <ul class="source-list">
+              {
+                g.sources.map((s) => {
+                  const href = safeHttpUrl(s.url);
+                  const when = sourceSeen(s);
+                  return (
+                    <li>
+                      {href ? <a href={href} rel="noopener noreferrer">{linkLabel(s.url)}</a> : hostOf(s.url)}
+                      {when ? `, ${t.sourceSeen} ${when}` : ''}
+                      {s.fields.length > 0 ? `. ${t.supports}: ${s.fields.map(fieldLabel).join(', ')}` : ''}
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          )
+        }
+      </section>
+
+      <section class="group-section" aria-labelledby="fix">
+        <h2 id="fix">{t.fixTitle}</h2>
+        <p class="muted">{t.fixIntro}</p>
+        <ul class="issue-links">
+          <li><a href={issues.correct} rel="noopener noreferrer"><strong>{t.correct}</strong><span>{t.correctHelp}</span></a></li>
+          <li><a href={issues.iRun} rel="noopener noreferrer"><strong>{t.iRun}</strong><span>{t.iRunHelp}</span></a></li>
+          <li><a href={issues.remove} rel="noopener noreferrer"><strong>{t.remove}</strong><span>{t.removeHelp}</span></a></li>
+        </ul>
+      </section>
+
+      {
+        families.length > 0 && (
+          <section class="group-section" aria-labelledby="more">
+            <h2 id="more">{t.moreInFamily}</h2>
+            <ul>
+              {families.map((f) => <li><a href={withBase(interestPath(f.id))}>{fill(t.seeAllIn, { family: f.label })}</a> ({familyCount(f.id)})</li>)}
+            </ul>
+          </section>
+        )
+      }
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,30 @@
+---
+import { withBase } from '../lib/site';
+import { nav, site } from '../strings/en';
+
+const here = Astro.url.pathname;
+const items = [
+  { href: withBase('match/'), label: nav.match },
+  { href: withBase('browse/'), label: nav.browse },
+  { href: withBase('support/'), label: nav.support },
+  { href: withBase('my-list/'), label: nav.myList },
+];
+const isHere = (href: string) => here === href || here === href.replace(/\/$/, '');
+---
+
+<header class="site-header">
+  <div class="wrap-wide">
+    <a class="wordmark" href={withBase('')} aria-label={site.homeLabel}>Find Your<span>Jawn</span></a>
+    <nav class="main-nav" aria-label={nav.label}>
+      <ul>
+        {
+          items.map((i) => (
+            <li>
+              <a href={i.href} aria-current={isHere(i.href) ? 'page' : undefined}>{i.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

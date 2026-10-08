@@ -1,0 +1,26 @@
+---
+import InterestTiles from '../../components/InterestTiles.astro';
+import Base from '../../layouts/Base.astro';
+import { loadGroups, loadVocab } from '../../lib/data';
+import { isBrowsable } from '../../lib/filters';
+import { prettify } from '../../lib/text';
+import type { InterestFamily } from '../../lib/types';
+import { interests as t } from '../../strings/en';
+
+const { groups } = loadGroups();
+const vocab = loadVocab();
+const counts: Record<string, number> = {};
+for (const g of groups) if (isBrowsable(g)) for (const c of g.categories) counts[c] = (counts[c] ?? 0) + 1;
+const families: InterestFamily[] = [...vocab.families];
+for (const id of Object.keys(counts)) if (!families.some((f) => f.id === id)) families.push({ id, label: prettify(id), tags: [] });
+---
+
+<Base title={t.indexTitle} description={t.metaIndex} path="i/">
+  <div class="page">
+    <div class="wrap-wide">
+      <h1>{t.indexTitle}</h1>
+      <p class="lede">{t.indexIntro}</p>
+      <InterestTiles families={families} counts={counts} wide />
+    </div>
+  </div>
+</Base>

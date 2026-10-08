@@ -1,0 +1,23 @@
+---
+import BrowseApp from '../islands/BrowseApp';
+import Base from '../layouts/Base.astro';
+import { makeBrowseConfig } from '../lib/browse-config';
+import { loadGroups, loadVocab } from '../lib/data';
+import { browse as t } from '../strings/en';
+
+const { groups, built } = loadGroups();
+const config = makeBrowseConfig(groups, loadVocab(), built);
+---
+
+<Base title={t.title} description={t.metaDescription} path="browse/">
+  <div class="page">
+    <div class="wrap-wide">
+      <h1>{t.title}</h1>
+      <p class="lede">{t.intro}</p>
+      <BrowseApp client:only="preact" config={config}>
+        <p slot="fallback" role="status">{t.loading}</p>
+      </BrowseApp>
+      <noscript><p class="callout">{t.noscript}</p></noscript>
+    </div>
+  </div>
+</Base>

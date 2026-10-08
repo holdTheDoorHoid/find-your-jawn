@@ -1,0 +1,14 @@
+---
+import Prose from '../components/Prose.astro';
+import Base from '../layouts/Base.astro';
+import { ranking as t } from '../strings/en';
+---
+
+<Base title={t.title} description={t.metaDescription} path="how-ranking-works/">
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.title}</h1>
+      <Prose blocks={t.blocks} />
+    </div>
+  </div>
+</Base>

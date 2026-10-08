@@ -1,0 +1,18 @@
+---
+import Prose from '../components/Prose.astro';
+import ForgetPanel from '../islands/ForgetPanel';
+import Base from '../layouts/Base.astro';
+import { privacy as t } from '../strings/en';
+---
+
+<Base title={t.title} description={t.metaDescription} path="privacy/">
+  <div class="page">
+    <div class="wrap">
+      <h1>{t.title}</h1>
+      <Prose blocks={t.blocks} />
+      <section class="tools">
+        <ForgetPanel client:load heading={t.forgetTitle} />
+      </section>
+    </div>
+  </div>
+</Base>

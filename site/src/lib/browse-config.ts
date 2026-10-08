@@ -1,5 +1,5 @@
 import { OTHER_REGION, REGIONS } from './geo';
-import { prettify } from './text';
+import { prettify, titleCase } from './text';
 import type { Group, Vocab } from './types';
 import { districtFor } from './vocab';
 
@@ -29,6 +29,8 @@ export interface BrowseConfig {
   regions: BrowseRegion[];
   /** id to label for families and for interest tags that appear in the data, for search */
   labels: Record<string, string>;
+  /** neighborhood id to name, for the line under a card's title */
+  places: Record<string, string>;
   dataVersion: string;
   built: string;
 }
@@ -64,6 +66,15 @@ export function makeBrowseConfig(groups: Group[], vocab: Vocab, built: string): 
   for (const f of families) labels[f.id] = f.label;
   for (const g of groups) for (const id of g.interests) if (!labels[id]) labels[id] = vocab.tagLabels.get(id) ?? prettify(id);
 
-  return { families, regions, labels, dataVersion: built, built };
+  const places: Record<string, string> = {};
+  const hoods = vocab.labels.neighborhoods;
+  for (const g of groups) {
+    for (const loc of g.locations) {
+      const n = loc.neighborhood;
+      if (n && !places[n]) places[n] = hoods?.get(n) ?? titleCase(n);
+    }
+  }
+
+  return { families, regions, labels, places, dataVersion: built, built };
 }
 

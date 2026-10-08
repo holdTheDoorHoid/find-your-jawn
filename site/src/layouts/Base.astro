@@ -1,0 +1,77 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { loadManifest } from '../lib/data';
+import { absoluteUrl, basePath, withBase } from '../lib/site';
+import { notice, site } from '../strings/en';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** site path of this page, for the canonical link, like "browse/" */
+  path: string;
+  /** a full title, used as is (the home page) */
+  fullTitle?: boolean;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  /** the calmer colors used by the support pages */
+  calm?: boolean;
+}
+
+const { title, description = site.description, path, fullTitle = false, ogType = 'website', noindex = false, calm = false } = Astro.props;
+const pageTitle = fullTitle ? title : `${title} | ${site.name}`;
+const canonical = absoluteUrl(path);
+const sample = loadManifest().fixture;
+const base = basePath();
+const csp =
+  "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbf7f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171412" media="(prefers-color-scheme: dark)" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    {import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content={csp} />}
+  </head>
+  <body class={calm ? 'calm' : undefined} data-base={base}>
+    <a class="skip-link" href="#main">{site.skipLink}</a>
+    {
+      sample && (
+        <div class="notice notice--sample" role="note">
+          <div class="wrap-wide">
+            <p><strong>{notice.fixtureTitle}</strong> {notice.fixtureText}</p>
+          </div>
+        </div>
+      )
+    }
+    <div class="notice" role="note">
+      <div class="wrap-wide">
+        <p><strong>{notice.title}</strong> {notice.text}</p>
+      </div>
+    </div>
+    <Header />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+import { withBase, interestPath } from '../lib/site';
+import type { InterestFamily } from '../lib/types';
+
+interface Props {
+  families: InterestFamily[];
+  counts?: Record<string, number>;
+  wide?: boolean;
+}
+const { families, counts = {}, wide = false } = Astro.props;
+---
+
+<ul class={wide ? 'tiles tiles--wide' : 'tiles'}>
+  {
+    families.map((f) => (
+      <li>
+        <div class="tile">
+          <h3>
+            {f.icon && <span class="icon" aria-hidden="true">{f.icon}</span>}
+            <a href={withBase(interestPath(f.id))}>{f.label}</a>
+          </h3>
+          {f.blurb && <p>{f.blurb}</p>}
+          {counts[f.id] !== undefined && <p>{counts[f.id] === 1 ? '1 group' : `${counts[f.id]} groups`}</p>}
+        </div>
+      </li>
+    ))
+  }
+</ul>
