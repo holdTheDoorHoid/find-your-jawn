@@ -1,0 +1,15 @@
+planning_districts:
+  - {id: lower_north, label: "Lower North"}
+  - {id: central, label: Central}
+  - {id: west, label: West}
+neighborhoods:
+  - {id: fairmount, label: Fairmount, district: lower_north}
+  - {id: university_city, label: "University City", district: west}
+  - {id: center_city, label: "Center City East", district: central}
+zip_districts:
+  "19130": {district: lower_north, region: north}
+  "19104": {district: west, region: west_southwest}
+  "19103": {district: central, region: center_city}
+  "19102": {district: central, region: center_city}
+zip_districts_unverified:
+  "19101": {district: central}

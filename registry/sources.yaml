@@ -329,3 +329,20 @@
     built only from indexed search result text because freelibrary.org returns 403 to scripts and
     its phila.gov mirror subdomain, libwww.library.phila.gov, timed out on every attempt; neither
     block was worked around. See research/harvest/2026-10-04-city-programs.md for the full report.
+
+- id: planning_districts
+  name: Planning Districts (City of Philadelphia)
+  owner: City of Philadelphia, Philadelphia City Planning Commission
+  url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Planning_Districts/FeatureServer/0
+  access: arcgis_rest
+  terms: City of Philadelphia License (free reuse, as is)
+  attribution: "Data: City of Philadelphia"
+  lead_only: false
+  refresh: yearly
+  harvester: pipeline/fyj/geo.py
+  notes: >
+    Reference data, not a leads source: the 18 planning district polygons (requested as GeoJSON
+    in WGS84), used to give every group location a planning district by point in polygon. The raw
+    download stays in $FYJ_CACHE; a copy simplified to five decimals (about 1 meter) is committed
+    at data/geo/planning_districts.geojson. `fyj districts --fetch` rebuilds it. It has no leads
+    file and no entry in fyj.harvest.HARVESTERS (see REFERENCE_SOURCES there).

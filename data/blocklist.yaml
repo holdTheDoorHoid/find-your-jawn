@@ -1,0 +1,19 @@
+# Removal list (docs/ETHICS.md and docs/DATA_MODEL.md section 7 item 7).
+#
+# Anything listed here is never published and never brought back by a harvest or by the merge
+# step. Add an entry when a group or a person asks to be removed (through the GitHub issue form)
+# or when a field must be suppressed everywhere. Every list may stay empty.
+#
+#   groups:  group ids (the file name without .yaml). The group is held back from the site.
+#   leads:   lead ids (for example irs_bmf:123456789). `fyj merge` will not turn them into groups.
+#   eins:    nine digit EINs. Any group or lead with this EIN is treated as listed.
+#   domains: website domains without www (example.org). Same effect as eins.
+#   fields:  values to remove from published output, for example
+#              - {group: some-group-id, field: contacts.phone, value: "215-555-0100",
+#                 reason: removal_request}
+#            Use group: "*" to suppress a value (a personal email, say) on every group.
+groups: []
+leads: []
+eins: []
+domains: []
+fields: []

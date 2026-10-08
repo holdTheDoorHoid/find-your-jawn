@@ -29,6 +29,10 @@ There are three layers:
   notes: Primary contact is often a named person with a personal email and phone.
 ```
 
+A registry entry can also describe reference data that is not a source of leads (planning district
+polygons, id `planning_districts`). It has no harvester function and no leads file; the ids listed in
+`fyj.harvest.REFERENCE_SOURCES` are the ones allowed to be missing from `fyj.harvest.HARVESTERS`.
+
 ## 2. Leads
 
 One JSON object per line in `data/leads/<source id>.jsonl`, sorted by `lead_id` so diffs stay small.
@@ -74,6 +78,13 @@ One YAML file per real group at `data/groups/<first character of slug>/<slug>.ya
 lowercase ASCII words joined by hyphens, for example `philadelphia-grotto`. Fields marked (req) must
 be present before a group is published.
 
+File rules (`pipeline/fyj/groupfile.py`): keys are written in exactly the order below, every key is
+present, and nulls are kept so the shape is visible. A slug is assigned once and never changes. When a
+name's slug is taken, the neighborhood is added, then the ZIP, then a number. Every write batch holds an
+exclusive `fcntl` lock on `data/groups/.lock`. A boolean fact the pipeline does not know is `null`, not
+`false` (for example `background_check`, `kids_ok`, `online_ok`, `bridging`); the site treats a missing
+value as unknown.
+
 ```yaml
 id: philadelphia-grotto                 # (req) equals the slug
 name: Philadelphia Grotto               # (req)
@@ -115,6 +126,7 @@ locations:
   - label: Monthly meeting
     address: null
     neighborhood: null                  # from data/vocab/neighborhoods.yaml
+    planning_district: null             # derived by the pipeline: point in polygon, else the ZIP map
     zip: null
     lat: null
     lng: null
@@ -176,6 +188,10 @@ hidden: false
 hidden_reason: null                      # out_of_scope | partisan | defunct | duplicate | private | removal_request
 ```
 
+Location labels `Mailing address (IRS)` and `Contact address (City list)` mark an address that is on
+file but may be somebody's home, not a meeting place. The build publishes only the ZIP for those
+(ETHICS: no home addresses that are not the group's published meeting place).
+
 ### Status rules
 
 - `active`: dated evidence (event, post, meeting notice, filing, news) within the last 12 months.
@@ -186,6 +202,22 @@ hidden_reason: null                      # out_of_scope | partisan | defunct | d
 - `unknown`: no evidence either way yet.
 
 Every published listing shows "last seen active" from `last_sign_of_life`.
+
+How the date, the status and the URL fit together (the importer enforces this, so what is published
+never claims more than the evidence):
+
+- `last_sign_of_life` is `YYYY-MM`. When an agent can only give a year it is stored as `YYYY`; the site
+  shows it as the year alone. A bare year counts as January of that year when its age is judged, so it
+  never looks newer than it is. A full date is cut to its month. A date in the future (a planned event)
+  is set to the current month.
+- `active` needs a dated `last_sign_of_life` no more than 12 months old, and a `sign_of_life_url`.
+- `probably_active` may have no date (a working site with nothing dated on it) but needs the URL of that
+  site. The site shows such a group as "seen online, no date".
+- `unknown` carries no date. `dormant` and `defunct` need no URL.
+- The importer repairs instead of holding: an `active` record with no date or an old date is lowered to
+  what the date supports; an `unknown` record that has a date takes the status the date supports; a
+  missing `sign_of_life_url` is taken from the website or first source the record cites. Each repair is
+  listed in `research/held/<wave>/_warnings.json`.
 
 ### Research tiers
 
@@ -229,8 +261,8 @@ Controlled lists live in `data/vocab/`:
 - `groups.json`: `{"built": "<ISO date>", "count": n, "groups": [...]}`. Each entry is the group record
   of section 3 with these fields removed: `leads`, `sources`, `ein`, `contacts`, `first_step.basis`,
   `first_step.what_to_expect`, `first_step.first_visit_tips`, `access.notes`, `requirements.gear`,
-  and `planning_district` added to each location (from the neighborhood vocabulary or the ZIP).
-  Null values, empty lists and empty objects are omitted to keep the file small. The quiz, results
+  and `planning_district` on each location (the stored value, else the neighborhood vocabulary's, else
+  the ZIP map). Mailing address locations lose their street address and coordinates. Null values, empty lists and empty objects are omitted to keep the file small. The quiz, results
   and browse load this file.
 - `groups/<slug>.json`: the full record for the group page, everything in section 3 except `leads`.
 - `vocab.json`: every vocabulary file merged, keyed by file name (`interests`, `motives`, ...).
@@ -257,23 +289,37 @@ Each entry in `records` is a group record (section 3) holding only the fields th
 establish, plus:
 
 - `match` (req): how the importer finds the group: `{"lead_ids": [], "group_id": null, "ein": null,
-  "website": null}`. Waves over known leads always give `lead_ids`. Discovery waves give what they
-  have; the importer matches by group id, then EIN, then website domain, then normalized name plus
-  ZIP, and otherwise creates a new group.
+  "website": null}`. Waves over known leads always give `lead_ids`; they may run before `fyj merge`
+  has assigned group ids, so `lead_ids` must work on their own. Discovery waves give what they
+  have. The importer matches in this order: `match.group_id`, then `match.lead_ids` (any group whose
+  `leads` list contains one of them), then EIN, then website domain (ignoring `www` and any path;
+  platform domains such as facebook.com never match), then normalized name plus ZIP. Otherwise it
+  creates a new group. Research beats triage: a `publish` record whose lead ids were rejected in
+  `data/triage.jsonl` still creates the group, and the import summary counts it.
 - `verdict` (req): `publish`, `hide` (with `hidden_reason`), `not_a_group`, `duplicate` (with
   `match.group_id` of the survivor) or `out_of_area`.
 - `sources` (req): `[{url, seen, fields}]`, so every fact can be traced.
-- `research_tier`: 1 or 2. Tier 1 records must carry `status`, `last_sign_of_life` (or null with
-  status `unknown`) and `sign_of_life_url`.
+- `research_tier`: 1 or 2. Tier 1 records must carry `status`; `last_sign_of_life` and
+  `sign_of_life_url` follow the rules under Status rules in section 3. A `match.group_id` that is not a
+  group on disk is ignored (agents sometimes invent one): matching falls through to the lead ids, EIN,
+  website and name plus ZIP, and a new group always gets a slug the pipeline generates.
 
 Anything absent stays unknown; never guess. Text fields (`summary`, `what_you_do`, `schedule.text`,
 `cost.text`, everything under `first_step`) are written in our own words.
 
 `fyj import-research <wave>` validates each file, merges passing records into group files under the
-file lock (research values win over harvested values; a newer research tier wins over an older one;
-contacts merge without dropping a published source), moves failing records to
-`research/held/<wave>/<agent>.json` with the reasons, and archives the processed inbox file to
-`research/done/<wave>/`.
+file lock (research values win over harvested values; a newer research tier wins over an older one,
+and a lower tier record only fills empty fields; lists such as `leads`, `aka`, `sources` and
+`contacts.social` are only added to, so a published source is never dropped; the newest dated sign of
+life wins together with its URL), moves failing records to `research/held/<wave>/<agent>.json` with the
+reasons in a `_held_reasons` list on each record (so a repaired file can be dropped back into the inbox),
+and archives the processed inbox file to `research/done/<wave>/`. It runs the section 7 checks on the
+merged result before writing, so an own words, scope or claims failure holds the record. Small slips
+are repaired rather than held: a string where a list belongs, `"unknown"` or `"n/a"` for null, a missing
+optional block, a vocabulary word that is a synonym (matched through the tags' `aka` lists), and dashes
+used as punctuation (rewritten to commas, number ranges to "to"). A value that is not in the
+vocabulary is dropped with a note in `research/held/<wave>/_warnings.json`, except `kind`, which holds
+the record. A record with no `research_tier` is taken as tier 1.
 
 ## 7. Automatic publish checks
 
@@ -284,7 +330,8 @@ the site (not deleted) and listed in the check report with its reasons:
 2. Sources: every published group has at least one source with a URL and a date seen.
 3. Own words: no run of 8 or more consecutive words in `summary`, `what_you_do`, `schedule.text`,
    `cost.text` or `first_step` text is shared with any lead description merged into the group (and,
-   when a cached copy exists, with the text of its cited source pages).
+   when a cached copy exists, with the text of its cited source pages). A cached page is the plain
+   text of the page at `$FYJ_CACHE/pages/<sha1 of the URL>.txt`, written by `fyj liveness`.
 4. No dashes as punctuation in our text: no em dash, no en dash, no spaced hyphen. The importer
    rewrites the obvious cases to a comma before checking.
 5. Scope: no partisan name patterns (ward committee, Democratic or Republican committee or club,
@@ -292,4 +339,40 @@ the site (not deleted) and listed in the check report with its reasons:
    carry `audience.support_group: true`.
 6. Claims need sources: `court_ordered_ok: yes` and `service_hours_letter: yes` need a source whose
    `fields` list names them.
-7. Removals: nothing in `data/blocklist.yaml` (group ids, or field values to suppress) is published.
+7. Removals: nothing in `data/blocklist.yaml` is published. The file has five lists, any of which may
+   be empty: `groups` (group ids, held back), `leads` (lead ids that `fyj merge` and the importer will
+   not turn into groups), `eins` and `domains` (any group or lead with that EIN or website domain is
+   treated as listed), and `fields` (`{group, field, value, reason}` entries whose values are removed
+   from the built site data; `group: "*"` applies to every group).
+
+`fyj check` writes `research/checks/latest.json` (counts, the ids that passed, and each held group with
+its reasons) and exits nonzero only for internal errors, never because groups were held. Only groups
+that are visible and at tier 1 or higher are checked; tier 0 groups are counted.
+
+## 8. Files the pipeline writes besides groups and leads
+
+- `data/triage.jsonl`: written by `fyj merge`, one line per lead that did not become a group:
+  `{"lead_id", "decision": "reject", "reason", "detail"}`, sorted by lead id. Reasons: `private_foundation`
+  (IRS foundation code 02, 03 or 04), `never_joinable` (IRS subsections for credit unions, insurance,
+  pension and employee benefit funds, cemetery companies, title holding corporations and black lung
+  trusts), `condo_association`, `homeowners_association`, `cemetery`, `scholarship_fund`, `trust`,
+  `church_building_corporation`, `partisan` (ward committees, Democratic or Republican groups, PACs,
+  campaigns), `not_a_group` (a single volunteer shift, or a park, playground or pool in the Parks and
+  Recreation inventory), `terminated` (an e-Postcard filer that told the IRS it terminated and is not in
+  the master file) and `blocklist`. A lead that a research record later turned into a group (research
+  beats triage) is not listed again. Congregations are never rejected.
+- `data/geo/planning_districts.geojson`: the City's 18 planning district polygons, coordinates rounded to
+  five decimals, `properties` holding only `name` and `abbrev`. `fyj districts` places every location
+  by point in polygon and falls back to the ZIP map in `data/vocab/neighborhoods.yaml`.
+- `data/liveness.jsonl`: written by `fyj liveness`, one line per group website, sorted by group id:
+  `{"group_id", "url", "checked_at", "http_status", "final_url", "newest_date" (YYYY-MM or null),
+  "evidence_url", "verdict" (alive | dead | blocked | unknown), "note"}`. `dead` means the address does
+  not resolve, the home page is gone (404 or 410), or the domain is parked or a gambling page. `blocked`
+  means robots.txt, a 401, 403 or 429, or a bot check; we never get around those. `unknown` means a
+  timeout, a server error, or a website box that does not hold a web address. Visible page text
+  (plain text, 50 KB cap) is cached at `$FYJ_CACHE/pages/<sha1 of the URL>.txt` for the own words check.
+- `research/checks/latest.json`: written by `fyj check` and `fyj build` (section 7).
+- `research/batches/<wave>/<nn>.json`: written by `fyj batches`, each a list of compact group dicts for
+  one research agent: `id`, `name`, `aka`, `kind`, `ein`, `address`, `zip`, `planning_district`,
+  `research_tier`, `lead_ids` (put these in `match.lead_ids`), `contacts`, `lead_descriptions` (internal,
+  trimmed to 600 characters, never to be copied) and `liveness` when the checker has run.

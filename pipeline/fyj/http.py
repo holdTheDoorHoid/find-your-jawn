@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import time
 import urllib.robotparser
+from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -24,6 +25,17 @@ DEFAULT_BACKOFF_SECONDS = 1.5
 HTML_MIN_DELAY_SECONDS = 1.0
 
 
+@dataclass
+class CappedResponse:
+    """A page read up to a size limit: the status, the URL after redirects, and the text."""
+
+    status_code: int
+    url: str
+    headers: dict[str, str]
+    text: str
+    truncated: bool
+
+
 class RobotsBlocked(RuntimeError):
     """Raised when a fetch is disallowed by robots.txt. Harvesters should catch this,
     report it, and move on rather than working around it."""
@@ -37,11 +49,15 @@ class FyjClient:
         user_agent: str = USER_AGENT,
         cache_root: Path | None = None,
         timeout: float = DEFAULT_TIMEOUT,
+        transport: httpx.BaseTransport | None = None,
     ) -> None:
         self.user_agent = user_agent
         self.cache_root = cache_root or cache_dir()
         self._client = httpx.Client(
-            headers={"User-Agent": user_agent}, timeout=timeout, follow_redirects=True
+            headers={"User-Agent": user_agent},
+            timeout=timeout,
+            follow_redirects=True,
+            transport=transport,
         )
         self._last_request_at: dict[str, float] = {}
         self._robots_cache: dict[str, urllib.robotparser.RobotFileParser] = {}
@@ -146,6 +162,35 @@ class FyjClient:
         resp = self.get(url, params=params)
         resp.raise_for_status()
         return resp
+
+    def get_capped(self, url: str, *, max_bytes: int = 1_500_000) -> CappedResponse:
+        """One GET with redirects followed, reading at most `max_bytes` of the body. No retries,
+        no status check: the caller decides what a 403 or a 404 means. robots.txt and the polite
+        delay are the caller's job (see robots_allowed and polite_delay)."""
+        headers = {"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5"}
+        with self._client.stream("GET", url, headers=headers) as resp:
+            chunks: list[bytes] = []
+            size = 0
+            truncated = False
+            for chunk in resp.iter_bytes():
+                chunks.append(chunk)
+                size += len(chunk)
+                if size >= max_bytes:
+                    truncated = True
+                    break
+            body = b"".join(chunks)[:max_bytes]
+            encoding = resp.encoding or "utf-8"
+            try:
+                text = body.decode(encoding, errors="replace")
+            except LookupError:
+                text = body.decode("utf-8", errors="replace")
+            return CappedResponse(
+                status_code=resp.status_code,
+                url=str(resp.url),
+                headers={k.lower(): v for k, v in resp.headers.items()},
+                text=text,
+                truncated=truncated,
+            )
 
     # -- caching for large downloads -------------------------------------------------------
 

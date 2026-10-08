@@ -1,0 +1,56 @@
+# Small stand in for data/vocab/interests.yaml, used only by the tests.
+families:
+  - id: outdoors-adventure
+    label: Outdoors and adventure
+    tags:
+      - {id: caving, label: Caving, aka: [spelunking, cave exploring]}
+      - {id: hiking, label: Hiking, aka: [trail walking]}
+      - {id: geology, label: Geology}
+      - {id: kayaking, label: Kayaking, aka: [paddling, canoeing]}
+      - {id: camping, label: Camping}
+  - id: nature-environment
+    label: Nature and environment
+    tags:
+      - {id: trail_building, label: Trail building, aka: [trail work]}
+  - id: neighborhood-civic
+    label: Neighborhood and civic life
+    tags:
+      - {id: civic_engagement, label: Civic engagement, aka: [civics, community organizing]}
+      - {id: neighborhood_association, label: Neighborhood association, aka: [civic association]}
+      - {id: town_watch, label: Town watch}
+      - {id: volunteering, label: Volunteering, aka: [service, community service]}
+  - id: gardening-greening
+    label: Gardening and greening
+    tags:
+      - {id: community_gardening, label: Community gardening, aka: [community garden]}
+      - {id: park_stewardship, label: Park stewardship, aka: [park cleanup, friends of the park]}
+      - {id: tree_care, label: Tree care, aka: [trees]}
+  - id: kids-youth-mentoring
+    label: Kids, youth and mentoring
+    tags:
+      - {id: tutoring, label: Tutoring, aka: [reading coach]}
+      - {id: youth_programs, label: Youth programs, aka: [after school]}
+  - id: philly-traditions
+    label: Philly traditions
+    tags:
+      - {id: parades, label: Parades, aka: [mummers]}
+  - id: books-learning
+    label: Books and learning
+    tags:
+      - {id: reading, label: Reading, aka: [book club]}
+      - {id: library_programs, label: Library programs, aka: [library]}
+  - id: sports-fitness
+    label: Sports and fitness
+    tags:
+      - {id: recreation_leagues, label: Recreation leagues, aka: [rec league, rec center]}
+  - id: seniors-aging
+    label: Older adults
+    tags:
+      - {id: senior_programs, label: Senior programs, aka: [senior center]}
+  - id: support-recovery
+    label: Support and recovery
+    support_only: true
+    tags:
+      - {id: recovery_meetings, label: Recovery meetings}
+edges:
+  - {from: caving, to: hiking, type: same_place}

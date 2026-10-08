@@ -28,6 +28,10 @@ from . import (
     penn_clubs,
 )
 
+# Registry entries that feed reference data rather than leads. They have no harvester function and
+# no leads file; fyj.geo reads planning_districts.
+REFERENCE_SOURCES = {"planning_districts"}
+
 HarvestFn = Callable[[FyjClient], list[dict[str, Any]]]
 
 HARVESTERS: dict[str, HarvestFn] = {
