@@ -7,9 +7,9 @@ leads:
 ein: '237179598'
 summary: Philanthropic partner to Independence National Historical Park. It raises money for restoration
   and public projects, runs public talks, movie nights and tours, and uses volunteers for tours and events.
-what_you_do: Lead free summer Twilight Tours, help staff events such as the Pops on Independence concert
-  and the annual meeting, or help in the office. The public can attend talks, movie nights, Halloween
-  events and tours.
+what_you_do: Lead free Twilight Tours in summer, help staff events such as the Pops on Independence concert,
+  July 4 activities, and the annual meeting, or help in the office. The public can attend talks, movie
+  nights, Halloween events, and tours.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -40,13 +40,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Twilight Tours run daily in the summer. Public events are listed by date on the events page, including
-    a speaker series, Movies on the Mall, and Halloween events in October and November.
-  days: []
-  times: []
+  text: Twilight Tours run every day in summer, from Memorial Day weekend to the end of September, at
+    5:15 pm, with a second 6 pm tour Thursday to Sunday. Talks, movie nights, and holiday events are listed
+    by date on the events page.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - evening
   recurring: true
   season: event_only
 locations:
+- label: Twilight Tours meeting point
+  address: Next to the Liberty Bell Center viewing window, across from Independence Hall, near Chestnut
+    Street, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 143 S 3rd St
   neighborhood: null
@@ -59,8 +78,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The volunteer page says the summer tours are free for visitors and locals. Other event prices
-    are not listed.
+  text: Twilight Tours are free. The events page does not list prices for other events, and some ask for
+    a registration or RSVP.
 commitment: seasonal
 group_size: null
 access:
@@ -75,15 +94,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the volunteer form on the Volunteering page, or call 215-861-4971 or email attn@inht.org
-    to ask about tour guide or event roles.
-  drop_in: false
+  how: Join a free Twilight Tour, which needs no reservation. Meet next to the Liberty Bell Center viewing
+    window, across from Independence Hall, near Chestnut Street.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The Trust says it will email interested volunteers when openings come up, but it does not say
-    who can volunteer or what training is given.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Twilight Tours are free, need no reservation, and are open to visitors and locals. Volunteer
+    roles need an email or form, and the page does not say what training is given or who may volunteer.
+  what_to_expect: A Twilight Tour is about an hour on foot, led by a local guide who designs the route
+    and theme, past sites such as Independence Hall and the Liberty Bell. Tours start at 5:15 pm each
+    day, with a 6 pm tour too on Thursday to Sunday. Volunteers help lead tours, staff events, or do office
+    work, and the page does not describe training.
+  first_visit_tips:
+  - Arrive a few minutes early to find the group by the Liberty Bell Center viewing window.
+  - Check the Twilight Tours page for the current season, since the tours run only for part of the year.
+  - To ask about volunteer roles, email attn@inht.org or call 215-861-4971.
 contacts:
   website: https://www.inht.org
   email: attn@inht.org
@@ -93,8 +118,8 @@ contacts:
   - https://www.instagram.com/IndeHistoricalTrust/
   - https://www.facebook.com/IndeHistoricalTrust
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://inht.org/events-and-programs/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=5
@@ -114,6 +139,9 @@ sources:
   fields:
   - schedule
   - status
+  - cost
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://inht.org/volunteering/
   seen: '2026-10-08'
   fields:
@@ -125,8 +153,18 @@ sources:
   fields:
   - summary
   - contacts
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://inht.org/twilight-tours/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

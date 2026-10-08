@@ -10,8 +10,9 @@ ein: '542078385'
 summary: Callowhill Neighborhood Association is one of the community organizations registered with the
   City to review nearby zoning and building proposals in the Central part of the city. Neighbors can follow
   what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+what_you_do: Pay yearly dues to join, then get neighborhood emails about zoning, public meetings, and
+  events. The group reviews nearby zoning and building proposals and shares its view with the City and
+  developers.
 kind: civic
 categories:
 - neighborhood-civic
@@ -66,8 +67,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: 'Yearly dues: $30 individual, $15 associate for people who live or work outside the neighborhood,
+    and $60 corporate. Pay online or by check.'
 commitment: null
 group_size: null
 access:
@@ -82,19 +84,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the neighborhood emails on callowhill.org, then ask the group for the next meeting
+    date before you pay dues.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Membership is open and the dues are listed, but the site does not say when meetings happen or
+    what members do, so you must pay or ask before you can see what it is like.
+  what_to_expect: The site does not describe meetings, volunteer roles, or events. You join by paying
+    yearly dues online or by check, and you can sign up for neighborhood emails about zoning, public meetings,
+    and events. Ask the group for the next meeting date before you pay.
+  first_visit_tips:
+  - Ask the group where and when meetings are held, since the site does not say.
+  - If you pay by check, make it out to the association and note on the memo line that it is for annual
+    dues.
 contacts:
   website: https://www.callowhill.org
-  email: sarahmceneaney@me.com
+  email: callowhill@gmail.com
   phone: '2156204647'
   contact_name: Sarah McEneaney
-  social: []
+  social:
+  - https://www.instagram.com/callowhillneighborhood/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -132,7 +142,28 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://www.callowhill.org
+  seen: '2026-10-08'
+  fields:
+  - contacts.social
+  - status
+- url: https://www.callowhill.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://www.callowhill.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - locations
+- url: https://www.callowhill.org/copy-of-meeting-minutes
+  seen: '2026-10-08'
+  fields:
+  - status
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

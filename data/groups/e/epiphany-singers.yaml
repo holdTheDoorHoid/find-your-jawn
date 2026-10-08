@@ -5,18 +5,29 @@ leads:
 - irs_990n:994782027
 - irs_bmf:994782027
 ein: '994782027'
-summary: null
-what_you_do: null
+summary: A non-profit choir of young adults in Philadelphia that sings traditional and modern choral music.
+  Singers join through an audition, and the choir holds Open Sing-Ins where people can sing with the group
+  for a day.
+what_you_do: Sing in the choir after an audition, or come to an Open Sing-In to try it for a day. Concerts
+  are open to the public, and tickets are sold for some of them.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- choir_singing
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- perform_make_together
+roles:
+- create
+crowd:
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,17 +36,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Auditions, Open Sing-Ins, and concerts each have a dated event page on the site. Rehearsal days
+    and times are not published.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1153 S 8th St
+- label: Mailing address
+  address: 1153 South 8th Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Concert and Open Sing-In venue
+  address: 1723 Race St (Cathedral Basilica of Saints Peter and Paul)
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -43,7 +64,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Concert ticket prices and the Open Sing-In fee are not shown on the site.
 commitment: null
 group_size: null
 access:
@@ -58,23 +79,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the audition page on their website to sign up for the next audition or Open Sing-In.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Open Sing-Ins let people sing with the choir for a day and are listed publicly, but ongoing membership
+    is by audition.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.epiphanysingers.org/
-  email: null
+  website: https://www.epiphanysingers.org
+  email: epiphanysingersphila@gmail.com
   phone: null
   contact_name: Danielle Molan
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.epiphanysingers.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +113,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.epiphanysingers.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - audience
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

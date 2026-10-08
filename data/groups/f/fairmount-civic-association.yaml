@@ -8,9 +8,11 @@ leads:
 - irs_990n:842327539
 - irs_bmf:842327539
 ein: '842327539'
-summary: If you care about what gets built near you, Fairmount Civic Association is a City registered
-  community organization in the Central part of the city that hears about zoning and development proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: The neighborhood group for Fairmount. It shares local news, follows zoning and development plans,
+  and hosts community events such as Neighbors Nights and a fall stoop sale.
+what_you_do: Members meet monthly to talk over zoning and development. Committees cover activities, crime
+  and safety, education, neighborhood cleanups, membership, parking and transportation, and zoning. Membership
+  dues are $15 a year for one adult.
 kind: civic
 categories:
 - neighborhood-civic
@@ -39,14 +41,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General meetings are held on the last Thursday of the month. A social starts at 7 pm and the meeting
+    at 7:30 pm, at The City School, 860 N. 24th St. The 2026 schedule has no meetings in July, August,
+    or November.
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: The City School 860 N. 24th St Philadelphia, PA 19130
+- label: Monthly meeting place
+  address: The City School, 860 N. 24th St., Philadelphia, PA 19130
   neighborhood: null
   planning_district: central
   zip: '19130'
@@ -54,20 +60,21 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
+- label: Mailing address (City list)
   address: P.O. Box 56326, Philadelphia, PA 19130
   neighborhood: null
   planning_district: central
   zip: '19130'
-  lat: 39.97181097207147
-  lng: -75.18061809222604
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Annual dues are $15 for one adult or $20 for a household. Seniors 65 and older pay $5 alone, $10
+    for two seniors in a household, or $17 for a household with one senior. The site lists no free membership.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -81,16 +88,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the newsletter on the FCA site to get the link and details for the next monthly meeting,
+    then come to the meeting on the last Thursday at 7 pm at The City School, 860 N. 24th St.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The FAQ suggests joining is the way to take part in meetings and events, and dues are $15 or
+    more. The page does not say whether non-members can attend. The newsletter gives the meeting link,
+    which is a clear first step.
+  what_to_expect: Meetings open with a social at 7 pm, and the business meeting starts at 7:30 pm. Members
+    can vote at monthly meetings if their membership is valid the day before. The group reviews zoning
+    and development plans in the area, and the page does not say whether a non-member can speak.
+  first_visit_tips:
+  - Sign up for the newsletter first, since meeting links go to subscribers.
+  - Pay dues by the day before a meeting if you want to vote there; paying at the meeting does not make
+    you eligible for that meeting.
+  - Arrive by 7 pm if you want the social before the business meeting.
 contacts:
-  website: www.fairmountcivicassociation.org
-  email: zoning@Fairmountcivicassociation.org
+  website: https://fairmountcivicassociation.org
+  email: board@fairmountcivicassociation.org
   phone: '2152366530'
   contact_name: Teresa M Hoberg
   social: []
@@ -130,8 +146,35 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://fairmountcivicassociation.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts
+- url: https://fairmountcivicassociation.org/become-a-member/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - commitment
+  - first_step
+  - first_visit_tips
+- url: https://fairmountcivicassociation.org/fca-committees/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts.email
+- url: https://fairmountcivicassociation.org/faqs-and-links/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - newcomer_friendliness
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

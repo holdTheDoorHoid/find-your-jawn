@@ -1,0 +1,169 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-001",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 14,
+ "leads_only": [
+  {
+   "name": "Liberty Resources",
+   "url": null,
+   "note": "Named as the partner for the Express Yourself program on the Autistic Art Coalition site (aacophilly.org). The page gives no link, so it was not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.aslgvp.org/",
+   "status": null,
+   "note": "Fetch returned only the bare domain name and no page text, on two tries. Not an HTTP error, but nothing could be read."
+  }
+ ],
+ "notes": "Batch file: the brief names 001.json, but the batch folder holds 01.json, which has 15 groups. No 001.json exists, so 01.json was used. Searches: 2 of 2, both spent on groups with no usable website (Beyond 80 Ways and Apawthecarey); neither search returned a matching page. Fetches: 14 of 60. No rate limiting was seen. Unchecked for lack of search budget: 1616 Latimer Fund, Basil and Becky Educational Foundation, and Cathedral Park Builders; each has a next step in its record. Adaptive Foundation's site also mentions Adaptive Intelligence, not checked. Verdict counts: publish 11 (5 checked, 6 unknown), hide 1, out_of_area 1, not_a_group 2.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852592534",
+     "irs_bmf:852592534"
+    ],
+    "group_id": "1616-latimer-fund",
+    "ein": "852592534",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "1616 Latimer Fund",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No web address on record. The tax-form website field holds a personal Gmail address and the contact is a private person, so neither is recorded. Nothing public was read, so nothing is known about what the fund does or whether anyone can join. The name suggests a small fund, which would be hidden as private if confirmed. Not searched: both search calls went to groups with a likely public way in. Next step: one search for the fund name.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472459996",
+     "irs_bmf:472459996"
+    ],
+    "group_id": "american-state-legislators-for-gun-violence-prevention-inc",
+    "ein": "472459996",
+    "website": "https://www.aslgvp.org/"
+   },
+   "verdict": "publish",
+   "name": "American State Legislators for Gun Violence Prevention",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Legal name American State Legislators for Gun Violence Prevention Inc. The site returned only its bare domain name, with no page text, on two tries. The batch address is in Philadelphia, but the name suggests a national network of state legislators. Nothing was confirmed about membership, activities, or whether it serves Philadelphia. Next step: retry the site later; if it is a national legislator network, it may be out_of_area.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:991926695",
+     "irs_bmf:991926695"
+    ],
+    "group_id": "apawthecarey",
+    "ein": "991926695",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Apawthecarey",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The tax-form website field reads VETERINARIAN, which is not a web address, so there is no site to check. One search for the name found no matching page. The batch address is 1510 Melon St in Philadelphia. The purpose of the group is unknown from what was read. Next step: search again with a corrected spelling or the street address.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461077632",
+     "irs_bmf:461077632"
+    ],
+    "group_id": "basil-and-becky-educational-foundation",
+    "ein": "461077632",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Basil and Becky Educational Foundation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The tax-form website field holds the group's own name, not a web address, so there is no site to check. Nothing public was read. The name suggests an education or scholarship fund, which would be hidden as private if confirmed. The contact on the tax form is a private person, so not recorded. Not searched: the search budget was spent. Next step: one search for the name.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:273075559",
+     "irs_bmf:273075559"
+    ],
+    "group_id": "beyond-80-ways-inc",
+    "ein": "273075559",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Beyond 80 Ways",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website, WWW.BEYOND80WAYS.COM, did not resolve. Both the www and bare domains failed on fetch, and one search for the name with Philadelphia found no matching page. The tax-form contact is a company name at a Center City address. The group's purpose is unknown from what was read. Next step: search again with the legal name Beyond 80 Ways Inc, or look up the address.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:384202301",
+     "irs_bmf:384202301"
+    ],
+    "group_id": "cathedral-park-builders-inc",
+    "ein": "384202301",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Cathedral Park Builders",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The tax-form website field reads Cathedral Park CDC, which is a name, not a web address. That suggests a community development group, but nothing was read to confirm it. The batch gives only a PO box in zip 19101, so there is no street address. Not searched: the search budget was spent. Next step: one search for Cathedral Park CDC in Philadelphia.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

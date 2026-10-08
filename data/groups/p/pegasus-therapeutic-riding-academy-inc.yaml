@@ -1,25 +1,38 @@
 id: pegasus-therapeutic-riding-academy-inc
-name: Pegasus Therapeutic Riding Academy Inc
+name: Pegasus Therapeutic Riding Academy
 aka: []
 leads:
 - irs_bmf:232241291
 ein: '232241291'
-summary: null
-what_you_do: null
+summary: A nonprofit riding center on Bustleton Avenue in Northeast Philadelphia. It offers therapeutic
+  horseback riding for people with disabilities, plus autism, adult, first responder and 4-H programs.
+what_you_do: Riders take weekly lessons and equine-assisted learning classes. Volunteers help with riders
+  and horses, but volunteer roles were not confirmed from a readable page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+- sports-teams
+interests:
+- horses_riding
+- adaptive_sports
+motives:
+- values
+- enhancement
+formats:
+- learn_skill
+roles:
+- hands_on
+crowd:
+- kids
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - disability
   faith: null
   partisan: false
   support_group: false
@@ -30,11 +43,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 8297 Bustleton Ave
+- label: Pegasus Therapeutic Riding Academy
+  address: 8297 Bustleton Avenue
   neighborhood: null
-  planning_district: central_northeast
-  zip: '19152'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -54,7 +67,7 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
   how: null
@@ -71,9 +84,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-09
+sign_of_life_url: https://www.phila.gov/2022-10-14-six-places-to-see-and-interact-with-horses-in-philadelphia
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +94,18 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.phila.gov/2022-10-14-six-places-to-see-and-interact-with-horses-in-philadelphia
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - status
+  - last_sign_of_life
+  - audience
+  - interests
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

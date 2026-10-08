@@ -8,15 +8,16 @@ leads:
 ein: '872494214'
 summary: A nonprofit that uses writing to help children become creative and critical thinkers. It offers
   free one-on-one coaching for young writers, a drop-in writing night, and classroom help for teachers.
-what_you_do: Young writers can get free one-on-one coaching (matched to a coach who knows their genre,
-  with sign-ups reopening in January 2027), or drop in on Friday Night Writes (Fridays 4 to 6 pm, online
-  or in person at Gutmann College House). Families can also buy a writing activity book for $9.95 and
-  try it at home.
+what_you_do: Young writers can get free one-on-one coaching (matched to a coach who knows their genre;
+  sign-ups reopen in January 2027), or drop in on Friday Night Writes (Fridays 4 to 6 pm, online or in
+  person at Gutmann College House). Families can also buy a writing activity book for $9.95 and try it
+  at home.
 kind: nonprofit
 categories:
 - books-writing
 - kids-youth-mentoring
 interests:
+- writing_group
 - literacy_tutoring
 motives:
 - enhancement
@@ -39,9 +40,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Friday Night Writes is a drop-in on Fridays, 4 to 6 pm, starting September 25 in the fall (year
-    not stated on the page). Cosmic Coaching meets weekly for eight weeks, with times set between the
-    coach and the writer.
+  text: Friday Night Writes is a drop-in on Fridays from 4 to 6 pm during the fall term, online or in
+    person. Cosmic Coaching is one session a week for eight weeks, at a time the coach and writer agree
+    on.
   days:
   - fri
   times:
@@ -49,6 +50,15 @@ schedule:
   recurring: true
   season: fall
 locations:
+- label: Friday Night Writes, in person (when offered)
+  address: Gutmann College House, 211 S. 40th St., Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 1500 Chestnut St 2177
   neighborhood: null
@@ -61,8 +71,8 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Cosmic Coaching is free. The cost of Friday Night Writes is not listed.
-commitment: null
+  text: Cosmic Coaching is free. The page does not list a cost for Friday Night Writes.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -73,18 +83,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Reserve a virtual slot for Friday Night Writes through the Google Form linked on the Cosmic Writers
-    site. Cosmic Coaching sign-ups are closed for fall 2026 and return in January 2027.
+  how: Reserve a virtual slot for Friday Night Writes with the sign-up form on the Cosmic Writers site
+    when the program is running, or go in person to Gutmann College House, 211 S. 40th St. Coaching sign-ups
+    are closed for fall 2026 and reopen in January 2027.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Friday Night Writes is open to young writers with a simple slot reservation. Coaching is closed
-    until the new term.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Friday Night Writes is a public drop-in with a simple slot reservation for virtual visits. The
+    page does not describe a welcome for first timers. Coaching is closed until the new term.
+  what_to_expect: Friday Night Writes runs from 4 to 6 pm on Fridays during the fall. You can get feedback
+    on your writing, including college essays and entries for the Scholastic Art and Writing Awards. Visits
+    happen online or in person at Gutmann College House, and the page does not give a price.
+  first_visit_tips:
+  - Reserve a virtual slot ahead of time with the form on the site.
+  - Bring a piece of writing you want feedback on.
+  - You can drop in on Friday Night Writes even if you already work with a Cosmic Coach.
 contacts:
   website: https://cosmicwriters.org
   email: info@cosmicwriters.org
@@ -92,9 +108,9 @@ contacts:
   contact_name: Rowana Miller
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://cosmicwriters.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://cosmicwriters.org/cosmic-coaching
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=3
   seen: '2026-10-04'
@@ -130,8 +146,15 @@ sources:
   - schedule
   - cost
   - first_step
-research_tier: 1
-confidence: medium
+  - commitment
+  - first_visit_tips
+  - requirements.kids_ok
+  - locations
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

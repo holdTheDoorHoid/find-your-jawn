@@ -5,36 +5,55 @@ leads:
 - irs_990n:992151249
 - irs_bmf:992151249
 ein: '992151249'
-summary: null
-what_you_do: null
+summary: An autistic-led group that runs free art classes, exhibitions, and community events for autistic,
+  neurodivergent, and disabled artists in the Delaware Valley.
+what_you_do: Take a free art class, show work at an exhibition, or come to a community event such as the
+  Community Paint Day or The Infinity Ball. Ask about volunteer roles through the mailing list.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- arts-crafts
+interests:
+- painting_drawing
+motives:
+- enhancement
+- social
+formats:
+- learn_skill
+- one_off_event
+roles:
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - neurodivergent
+  - disability
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: 'Published hours: Monday noon to 5 pm, Tuesday 3:30 to 8 pm, Thursday 11 am to 5 pm, Friday noon
+    to 5 pm, Saturday by appointment. Express Yourself meets Thursdays 1 to 2:30 pm, run with Liberty
+    Resources; its meeting place is not published.'
+  days:
+  - mon
+  - tue
+  - thu
+  - fri
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 112 North 8th Street Suite 206
+- label: Address as published
+  address: 112 North 8th Street, Suite 206
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19107'
   lat: null
   lng: null
@@ -42,8 +61,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Classes are free for eligible artists in the Delaware Valley. Donations are accepted. Infinity
+    Ball ticket prices are not shown.
 commitment: null
 group_size: null
 access:
@@ -58,23 +78,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the mailing list on aacophilly.org, or call the hotline at 215-934-2116 to ask about the next
+    free class.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The page says no experience is needed for the free classes and gives a mailing list and a phone
+    line to start.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.AACOPhilly.org
+  website: https://aacophilly.org/
   email: null
-  phone: null
+  phone: 215-934-2116
   contact_name: Colleen R Ott
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://aacophilly.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +112,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://aacophilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - categories
+  - interests
+  - audience
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

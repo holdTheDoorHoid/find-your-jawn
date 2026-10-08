@@ -1,0 +1,170 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-003",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 20,
+ "leads_only": [
+  {
+   "name": "Chestnut Hill Conservancy",
+   "url": "https://weconservepa.org/groups/chestnut-hill-conservancy/",
+   "note": "Surfaced in the Germantown Conservancy search as the closest name match. A different land trust. Not checked and not merged."
+  },
+  {
+   "name": "Historic Germantown",
+   "url": "https://www.idealist.org/en/nonprofit/97290c80686a46b1a090cfba24ca95ba-historic-germantown-philadelphia",
+   "note": "Partnership of Germantown historic sites, seen in search only. Idealist is a lead-only source, so this was not read in depth."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://orkneyparkproject.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS lookup failed), with and without www."
+  },
+  {
+   "url": "https://germantownconservancy.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS lookup failed)."
+  },
+  {
+   "url": "https://girardgarden.com",
+   "status": null,
+   "note": "Page returns only a script placeholder with no text on the bare and www addresses."
+  },
+  {
+   "url": "https://www.historicalsocietyedpa.com",
+   "status": null,
+   "note": "Returns only the page title on the www and bare addresses."
+  },
+  {
+   "url": "https://www.oriannahill.org/",
+   "status": null,
+   "note": "Returns empty content. Not confirmed as the Friends of Orianna Hill Park site."
+  }
+ ],
+ "notes": "Input file: the brief named 003.json, but the batch for this agent is 03.json (15 groups, all ids confirmed in the wave ids list). Searches: 2 of 2 used. Searches went to Friends of Orianna Hill Park (no website) and Germantown Conservancy (dead domain). Friends of Orkney Park has a dead domain and got no search, so it is unknown. Five records are unknown (publish, low confidence) with no summary, so they are held back: Orianna Hill, Orkney Park, Germantown Conservancy, Girard Garden, and the Historical Society of the Eastern District federal court. Girard Garden and the Historical Society render no readable text, so they need a manual look or a page that renders scripts. Hannah Callowhill Stage is a podcast blog about a building dig, so not_a_group. Historians of British Art is a national society with no Philadelphia presence on its site, so out_of_area. Friends of the South Street Police Mini-Station: newest explicit dated item is October 2024, on the 24 month edge. Name and address differences from the IRS list are recorded in each record's notes. Budget: 20 fetches used of 60; no rate limiting seen. Not done: Germantown Conservancy www variant, and contact pages for Global Water Alliance and Historians of British Art.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232991978",
+     "irs_bmf:232991978"
+    ],
+    "group_id": "friends-of-orianna-hill-park",
+    "ein": "232991978",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Friends of Orianna Hill Park",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No website found. The batch website field held a name, not a web address. One search found a GuideStar profile with the same EIN and the same address as the IRS list. That profile lists no mission and no programs. The site oriannahill.org loaded with empty content, so it was not used. Next step: check the city Park Friends group list on phila.gov for registration, and look for a live page for the group. Whether the group still runs park activities is not verified.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821202013",
+     "irs_bmf:821202013"
+    ],
+    "group_id": "friends-of-orkney-park-inc",
+    "ein": "821202013",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Friends of Orkney Park",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website orkneyparkproject.org does not resolve, with or without www. No search was left for this group after the budget went to the two groups with no working site, so it was not searched by name. Needs one search by name in the next wave. IRS list gives the name Friends of Orkney Park Inc at 852 N Lawrence St.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:264245108",
+     "irs_bmf:264245108"
+    ],
+    "group_id": "germantown-conservancy-inc",
+    "ein": "264245108",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Germantown Conservancy",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website GermantownConservancy.org does not resolve. One search by name found no organization called Germantown Conservancy in Philadelphia. Similar names seen in search, not merged: Chestnut Hill Conservancy, Historic Germantown, Germantown Historical Society. The IRS list gives a PO box with a 19105 zip, which is not a Germantown zip, so verify the group before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863670023",
+     "irs_bmf:863670023"
+    ],
+    "group_id": "girardgardeninc",
+    "ein": "863670023",
+    "website": "https://girardgarden.com"
+   },
+   "verdict": "publish",
+   "name": "Girard Garden",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned only a script placeholder with no text on both the bare and www addresses, so no content was read. Needs a manual look or a page that renders scripts. IRS list name is Girardgardeninc, at 2003 W Girard Ave.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:222537728",
+     "irs_bmf:222537728"
+    ],
+    "group_id": "hist-soc-of-the-united-states-dist-court-for-the-eastern-dist-of",
+    "ein": "222537728",
+    "website": "https://www.historicalsocietyedpa.com"
+   },
+   "verdict": "publish",
+   "name": "Historical Society of the United States District Court for the Eastern District of Pennsylvania",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Both the www and bare domains returned only the page title, so no description, dates or contacts could be read. Whether it is open to the public is unknown. Needs a manual check or a search in the next wave. IRS list name is abbreviated: Hist Soc of the United States Dist Court for the Eastern Dist of PA.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

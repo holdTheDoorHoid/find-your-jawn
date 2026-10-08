@@ -291,13 +291,59 @@ waves:
   - {id: w10-districts-1, lane: F, kind: slices, brief: districts, status: todo}
   - {id: w10-districts-2, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-1]}
   - {id: w10-districts-3, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-2]}
-  - {id: w11-host-venues, lane: N, kind: slices, brief: host_venues, status: todo}
-  - {id: w12-fiscal-sponsors, lane: M, kind: slices, brief: fiscal_sponsors, status: todo}
+  - id: w11-host-venues
+    lane: N
+    kind: slices
+    brief: lists
+    searches_per_agent: 3
+    status: todo
+    slices:
+    - agent: n-william-way
+      text: 'William Way LGBT Community Center (https://www.waygay.org/): its own peer groups and programs, and the outside community groups that meet there (calendar, "groups that meet here", community programs pages). Many small LGBTQ social, support, arts and sports groups meet at William Way. Support and recovery groups get audience.support_group true.'
+    - agent: n-friends-center-bok
+      text: 'Buildings full of small nonprofits and makers: Friends Center (https://www.friendscentercorp.org/, tenant list), the Bok building (https://www.buildingbok.com/, tenants), Crane Arts, and the Lutheran Settlement House and Norris Square Neighborhood Project program pages. Keep groups with a public program; skip businesses and offices with no way in.'
+    - agent: n-community-centers
+      text: 'Community centers and cultural centers that host classes, clubs and volunteers: Taller Puertorriqueno (https://tallerpr.org/), Asian Arts Initiative (https://asianartsinitiative.org/), The Village of Arts and Humanities (https://villagearts.org/), Mt. Airy Learning Tree (https://mtairylearningtree.org/, record its volunteer and member side, not each class), Center in the Park (https://www.centerinthepark.org/), Smith Memorial Playground, and Fleisher Art Memorial (https://fleisher.org/). Record each center once, plus any clubs that meet there with their own name and page.'
+    - agent: n-bookstores-yarn-games
+      text: 'Shops that host recurring free groups: independent bookstores with book clubs or writing groups (Uncle Bobbie''s, Harriett''s Bookshop, Head House Books, Big Blue Marble, Brickbat Books, A Novel Idea, Philly AIDS Thrift at Giovanni''s Room, Bindlestiff Books), yarn shops with knitting or crochet circles, game stores with open game nights, and comic shops with clubs. The GROUP is the recurring club or circle (kind club or program), named after the shop if it has no other name. Skip shops whose events are one off or ticketed readings only.'
+    - agent: n-bike-run-climb
+      text: 'Shops and gyms that run free recurring group activities: bike shops with weekly group rides, running stores with weekly group runs (Philadelphia Runner and others), climbing gyms with affinity meetups (queer climb nights, women climb nights, BIPOC climb nights), yoga studios with community or donation classes, skate parks with programs. The GROUP is the recurring ride, run or meetup. Record cost when the gym charges a day pass.'
+    - agent: n-coops-alliances
+      text: 'Cooperatives and their member groups and committees: the Philadelphia Area Cooperative Alliance member list (https://pacaphilly.coop/), Weavers Way committees and working member program, Mariposa Food Co-op, South Philly Food Co-op, Kensington Community Food Co-op, worker and housing co-ops with public events, credit unions with volunteer boards only if there is a public way in.'
+  - id: w12-fiscal-sponsors
+    lane: M
+    kind: slices
+    brief: lists
+    searches_per_agent: 4
+    status: todo
+    slices:
+    - agent: m-culturetrust
+      text: 'CultureTrust Greater Philadelphia (https://culturetrust.org/), its list or directory of fiscally sponsored projects. Read every project page it links; many are tiny arts, youth, food and neighborhood projects with no tax status of their own. Keep the ones with a public way in.'
+    - agent: m-open-collective-fractured-atlas
+      text: 'Open Collective collectives based in Philadelphia (start at https://opencollective.com/search?query=philadelphia, read at most 6 search pages) and Fractured Atlas fiscally sponsored artists and projects in Philadelphia (public directory pages only). Keep community groups, mutual aid, clubs and volunteer projects; skip one person creative projects.'
+    - agent: m-local-sponsors
+      text: 'Other fiscal sponsors that serve Philadelphia groups. Use searches to find their public project lists (for example Bread and Roses Community Fund partners, Philadelphia Activities Fund, Allied fiscal sponsors of neighborhood projects, Public Health Management Corporation projects, The Philadelphia Foundation fiscal sponsorship, Urban Affairs Coalition partners). Urban Affairs Coalition (https://uac.org/) sponsors many small community programs: start there.'
   - {id: w13-congregations, lane: R, kind: slices, brief: congregations, status: todo}
   - {id: w14-community-media, lane: H, kind: slices, brief: media, status: todo}
   - {id: w15-faith-mutual-aid-immigrant, lane: I, kind: slices, brief: mutual_aid, status: todo}
   - {id: w16-libraries-rec-schools, lane: J, kind: slices, brief: libraries, status: todo}
-  - {id: w17-coalitions, lane: Q, kind: slices, brief: coalitions, status: todo}
+  - id: w17-coalitions
+    lane: Q
+    kind: slices
+    brief: lists
+    searches_per_agent: 3
+    status: todo
+    slices:
+    - agent: q-orchards-gardens-trees
+      text: 'Philadelphia Orchard Project orchard partners (https://www.phillyorchards.org/), Neighborhood Gardens Trust gardens (https://ngtrust.org/), PHS Tree Tenders neighborhood groups and PHS community garden network (https://phsonline.org/), and Farm Philly (Parks and Recreation). Each garden or orchard group that welcomes volunteers or members is a record.'
+    - agent: q-youth-sports-ost
+      text: 'Philadelphia Youth Sports Collaborative member organizations (https://www.pysc.org/), Philadelphia out of school time providers that take volunteers, and youth sports leagues listed by Parks and Recreation. Record each organization, with volunteer coach roles where published.'
+    - agent: q-arts-networks
+      text: 'Theatre Philadelphia member companies (https://theatrephiladelphia.org/), Greater Philadelphia Cultural Alliance members (https://www.philaculture.org/), Philadelphia Folklore Project folk arts groups (https://www.folkloreproject.org/), and community choirs and orchestras in their lists. Keep groups with a public way in (auditions open to community members, volunteers, classes, ushers). Cultural Fund groups were done in another wave; spend little effort on big institutions.'
+    - agent: q-cdc-neighborhood
+      text: 'Philadelphia Association of Community Development Corporations members (https://pacdc.org/), main street and business district groups with volunteer committees, and neighborhood network hubs. Record CDCs only when they run a program residents can join (volunteer days, resident committees, clean ups, community gardens).'
+    - agent: q-food-access
+      text: 'Food access networks: community fridge maps for Philadelphia, Philly Food Rescue, Share Food Program partner pantries that publish volunteer shifts, the Coalition Against Hunger, and mutual aid directories. Pantries and fridges that take volunteers are records (family hunger-housing-basic-needs). Philabundance and SHARE locators need a browser: skip those tools, use their public partner pages only.'
   - {id: w18-support-groups, lane: U, kind: slices, brief: support, status: todo}
   - id: w19a-leads-own-site
     lane: K
@@ -360,3 +406,20 @@ waves:
     searches_per_agent: 10
     status: todo
     note: "Second sweep of the eight thinnest interest families, told which groups we already have."
+    slices:
+    - agent: g2-games-puzzles
+      text: 'Second sweep of games-puzzles: chess and scholastic chess, Go, duplicate bridge, Scrabble, Mahjong, game store league nights, pinball, puzzle hunts, game developer meetups, fan conventions that recruit volunteers, library and rec center game clubs. Told the six groups we already have.'
+    - agent: g2-food-drink
+      text: 'Second sweep of food-drink: food co-ops with member workers, homebrew and winemaking clubs, Slow Food, farmers market volunteers, nonprofit community kitchens and cooking classes, community suppers, heritage cooking, food festival crews. Told the eight groups we already have.'
+    - agent: g2-animals
+      text: 'Second sweep of animals: smaller rescues with fosters and volunteers, trap neuter return groups, dog park associations, therapy dog programs, pet food banks, pet bird clubs, nature center animal care, kids riding programs. Told the ten groups we already have.'
+    - agent: g2-making-tech
+      text: 'Second sweep of making-tech: language and tech user groups (Python, JavaScript, Ruby, data, security), women and BIPOC in tech groups, FIRST robotics teams that take mentors, ham radio clubs and emergency radio, car and motorcycle clubs with public meets, woodworking guilds, digital literacy volunteering, community wireless. Told the seventeen groups we already have.'
+    - agent: g2-outdoors-adventure
+      text: 'Second sweep of outdoors-adventure: affinity hiking groups (Outdoor Afro, Latino Outdoors, Black Girls Hike, queer outdoor groups), orienteering, geocaching, fishing clubs, free boating programs (Bartram''s Garden, Hidden River), camping and backpacking clubs, trail crews, birding clubs beyond Audubon. Told the seventeen groups we already have.'
+    - agent: g2-science-learning
+      text: 'Second sweep of science-learning: amateur astronomy clubs, museum volunteer programs (Franklin Institute, Academy of Natural Sciences, Penn Museum, Mutter Museum), Science on Tap and Nerd Nite style talk series, philosophy cafes, skeptics and humanist talks, citizen science projects, STEM outreach volunteering. Told the eighteen groups we already have.'
+    - agent: g2-faith-community
+      text: 'Second sweep of faith-community: service programs and community meals at congregations of every tradition open to all (gurdwara langar, mosque food drives, synagogue young adult groups, Quaker meetings, Buddhist and Hindu temple volunteers, Black church community programs, Catholic young adult groups), interfaith service days. Told the thirteen groups we already have.'
+    - agent: g2-emergency-disaster
+      text: 'Second sweep of emergency-disaster: CERT teams and Ready Philadelphia, Salvation Army emergency services volunteers, ARES and SKYWARN weather spotters, Team Rubicon, Stop the Bleed and CPR trainings run by community groups, disaster relief volunteering, block level preparedness. Told the seven groups we already have.'

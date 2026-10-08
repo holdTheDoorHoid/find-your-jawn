@@ -6,7 +6,8 @@ leads:
 ein: '232674634'
 summary: A slow pitch softball league for LGBTQIA+ players and their allies. Divisions run from recreational
   to competitive, and the league offers new player clinics and social events.
-what_you_do: Register for a season, get placed on a team in your division, and play weekly games.
+what_you_do: Register for a season, get placed in a division that matches your skill level, and join a
+  team. Each team has its own manager, and jerseys cost extra.
 kind: club
 categories:
 - sports-teams
@@ -34,10 +35,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Play runs in seasons, including a fall season and a regular season.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -49,10 +50,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: 'Fall Ball field: FDR Park'
+  address: Broad Street and Pattison Avenue, Philadelphia, PA 19145
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
-  level: null
-  text: Registration cost not stated on the site
+  level: low
+  text: Player fee of about $65 covers league play, field upkeep, and umpires. Jerseys cost extra.
 commitment: seasonal
 group_size: null
 access:
@@ -67,25 +77,34 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Register for 2026 Fall Ball on the league's registration page, or email join@cblsl.org to ask about
-    next season
+  how: Register for the current season on the league's registration page, or email join@cblsl.org to ask
+    which division fits you.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site welcomes players of all abilities, from beginners to competitive, and runs new player
-    clinics
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The league says all skill levels are welcome, from beginners to advanced players, and it runs
+    new player clinics, though the site gives no clinic dates. You can register online or email to ask
+    how to start.
+  what_to_expect: You sign up for a season, pay a player fee of about $65, and get placed on a team in
+    a division that fits your skill level. The fee covers league play, field upkeep, and umpires, and
+    jerseys cost extra. The site does not describe what a first game or practice is like, so ask the league
+    before your first game.
+  first_visit_tips:
+  - Ask join@cblsl.org which division fits your skill level before you register.
+  - Plan to buy your own jersey, which costs extra and is set by your team manager.
+  - Fall Ball games are at FDR Park, entered from Pattison Avenue just west of Broad Street.
 contacts:
   website: https://cblsl.org/
   email: join@cblsl.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/playcblsl/
+  - https://www.instagram.com/cblslphl/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://cblsl.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://cblsl.leagueapps.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -103,7 +122,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - contacts.website
+- url: https://cblsl.leagueapps.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.social
+- url: https://cblsl.leagueapps.com/pages/about-the-league
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - audience
+  - first_step.basis
+  - what_you_do
+- url: https://cblsl.leagueapps.com/pages/fields
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

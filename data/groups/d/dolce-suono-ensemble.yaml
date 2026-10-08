@@ -9,8 +9,8 @@ leads:
 ein: '204451286'
 summary: A chamber music group that puts on concerts in Philadelphia, tours, and commissions new pieces.
   Audiences come to the concert series, and the group also runs community partnerships.
-what_you_do: Buy a ticket to a concert on the home series, or come to one of the composer and young artist
-  events.
+what_you_do: Buy a ticket to one of the Sunday 3 pm concerts in the home series, or follow the young composer
+  competitions and online lecture series. Single tickets are $30 general or $10 student.
 kind: nonprofit
 categories:
 - music
@@ -33,13 +33,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Home concert series in Philadelphia. The site lists a June 14, 2026 concert and announces a 2026
-    to 2027 season, with dates not shown on the page.
-  days: []
-  times: []
+  text: Home concerts are Sunday afternoons at 3 pm at Trinity at 22nd, four concerts per season. The
+    2026 to 2027 season has concerts in October, December, February, and June.
+  days:
+  - sun
+  times:
+  - daytime
   recurring: true
-  season: year_round
+  season: event_only
 locations:
+- label: Home concerts (Trinity at 22nd)
+  address: 2212 Spruce Street, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 135 N 22nd St
   neighborhood: null
@@ -51,8 +62,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Ticket prices not listed on the page
+  level: paid
+  text: Single concerts are $30 general or $10 student. A subscription to all four concerts is $120 general
+    or $40 student.
 commitment: one_off
 group_size: null
 access:
@@ -67,13 +79,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to the next home concert listed on the Concerts and Tickets page at dolcesuono.com
-  drop_in: true
+  how: Buy a single ticket for any Sunday 3 pm concert on the events page, using the PayPal link for that
+    concert. The next one is October 11, 2026.
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts are public and ticketed, so anyone can attend
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts are open to the public and sold by ticket. The page does not mention a welcome for first
+    timers, a newcomer event, or sales at the door.
+  what_to_expect: A concert is a Sunday afternoon performance at Trinity at 22nd, 2212 Spruce Street,
+    starting at 3 pm. At least one concert in June 2026 was followed by a reception. The page does not
+    say how long a concert lasts.
+  first_visit_tips:
+  - Buy your ticket online ahead of time through the concert's PayPal link.
+  - If you plan to come more than once, a subscription to all four concerts is $120 general or $40 student.
 contacts:
   website: http://www.dolcesuono.com
   email: null
@@ -113,8 +131,24 @@ sources:
   - cost
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://dolcesuono.com/tickets/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://dolcesuono.com/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,21 +1,31 @@
 id: peoples-kitchen-philly
-name: Peoples Kitchen Philly
+name: The People's Kitchen
 aka: []
 leads:
 - irs_bmf:883061531
 ein: '883061531'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A community kitchen at 1149 South 9th Street that cooks free meals for people in need and runs
+  a community fridge. A 2023 news report described daily volunteer kitchen shifts.
+what_you_do: A 2023 news report said kitchen volunteers unload deliveries, cook, and hand out meals beside
+  a trained chef. The group's website lists office help, garden plot care, and special-event help for
+  group and corporate volunteers.
+kind: program
+categories:
+- food-drink
+interests:
+- community_meals
+motives:
+- values
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,25 +34,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: A 2023 news report said meals were served from 10 to 11 am every day. The current meal schedule
+    is not shown on the website.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1149 S 9th St
+- label: Kitchen
+  address: 1149 South 9th Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19147'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
+  level: free
+  text: Meals are free
 commitment: null
 group_size: null
 access:
@@ -57,23 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the group or use the Get Involved page on its website
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: A public volunteer page and email address; the site does not say whether volunteer openings exist
+    now
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://www.peopleskitchenphilly.com
+  email: peopleskitchenphilly@gmail.com
   phone: null
   contact_name: Alethia Erwin
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-01
+sign_of_life_url: https://www.phillyvoice.com/peoples-kitchen-volunteers-meals-food-insecurity-hunger/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +94,24 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.peopleskitchenphilly.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+  - first_step
+- url: https://www.phillyvoice.com/peoples-kitchen-volunteers-meals-food-insecurity-hunger/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

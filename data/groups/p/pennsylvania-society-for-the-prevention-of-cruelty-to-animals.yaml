@@ -1,23 +1,35 @@
 id: pennsylvania-society-for-the-prevention-of-cruelty-to-animals
-name: Pennsylvania Society for the Prevention of Cruelty to Animals
-aka: []
+name: Pennsylvania SPCA (PSPCA)
+aka:
+- Pennsylvania Society for the Prevention of Cruelty to Animals
 leads:
 - irs_bmf:231352269
 ein: '231352269'
-summary: null
-what_you_do: null
+summary: A large animal shelter and rescue with a Philadelphia headquarters on Erie Avenue. It places
+  animals in foster homes and welcomes adult volunteers for animal care, adoption events and special events.
+what_you_do: Volunteers socialize dogs and cats, help at adoption and special events, or support office
+  work. Foster homes care for animals until they are adopted, and the shelter provides food, supplies
+  and vet care at no cost.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+interests:
+- shelter_volunteering
+- animal_fostering
+motives:
+- values
+- social
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
@@ -30,10 +42,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 350 E Erie Ave
+- label: Philadelphia headquarters
+  address: 350 E. Erie Avenue
   neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19134'
   lat: null
   lng: null
@@ -54,26 +66,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: null
+  how: Pick a location on the volunteer page and apply online through Volgistics. Volunteers must be 18
+    or older and able to work with minimal supervision once trained.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The public page explains how to apply and lists several roles, but it does not describe the training
+    length or time commitment.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://www.pspca.org
+  email: foster@pspca.org
   phone: null
   contact_name: Finance Department
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.pspca.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +96,27 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pspca.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - last_sign_of_life
+  - contacts
+- url: https://pspca.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - locations
+  - first_step
+- url: https://pspca.org/foster/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
