@@ -4,18 +4,30 @@ aka: []
 leads:
 - penn_clubs:student-planning-association
 ein: null
-summary: null
-what_you_do: null
+summary: The official student group for planning and urban affairs students at Penn. It runs professional
+  development, social events, and a place to share planning resources.
+what_you_do: Come to the group's events, which are open to the public, or join as a university student
+  to take part in its work.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- careers-skills-professional
+- neighborhood-civic
+interests:
+- professional_associations
+- community_development
+motives:
+- career
+- social
+formats:
+- conversation
+- one_off_event
+roles:
+- figure_out
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
@@ -30,14 +42,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
-  address: Myerson Hall
+- label: Meyerson Hall
+  address: 210 South 34th Street
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19104'
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Go to a public event first, or email the group to ask how to become a member
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are open to the public and membership is open to any university student, though the page
+    does not say how to sign up
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.design.upenn.edu/resources/student-planning-association
   email: des-spa-upenn@upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/penn_spa/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.design.upenn.edu/resources/student-planning-association
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +95,23 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/student-planning-association/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+  - contacts
+  - status
+- url: https://www.design.upenn.edu/resources/student-planning-association
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

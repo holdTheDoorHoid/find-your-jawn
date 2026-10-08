@@ -4,18 +4,30 @@ aka: []
 leads:
 - penn_clubs:the-christian-association
 ein: null
-summary: null
-what_you_do: null
+summary: An ecumenical Christian campus ministry for students. It offers weekly meals and discussion,
+  service projects, and faith conversations, and it welcomes people of any religious background.
+what_you_do: Come to the Wednesday dinner and discussion, the monthly Night Church gathering, or another
+  weekly group.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- worship_community
+- congregation_social
+- faith_service_projects
+motives:
+- values
+- social
+formats:
+- conversation
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
@@ -24,20 +36,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Wednesday dinner and discussion, 6:30 to 8 pm, starting in early September 2026
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: fall
 locations:
-- label: Address
-  address: Varies based on activity, our weekly meeting is at SPARC
+- label: Club address
+  address: 3637 Chestnut St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19104'
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,23 +71,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Wednesday dinner or join the mailing list on the group's site
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The group says it welcomes every person regardless of religious background and lists a simple
+    way to start
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://upennca.org/
   email: upennca@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/upennca
+  - https://instagram.com/upennca/
+  - https://linkedin.com/company/the-christian-association-at-the-university-of-pennsylvania
+  - https://youtube.com/@ChristianAssociation
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://upennca.org/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +100,23 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://upennca.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - status
+  - contacts
+- url: https://pennclubs.com/api/clubs/the-christian-association/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

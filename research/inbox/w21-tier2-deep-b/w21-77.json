@@ -4,7 +4,7 @@
   "lane": "tier2",
   "model": "haiku",
   "searches_used": 0,
-  "fetches_used": 6,
+  "fetches_used": 15,
   "records": [
     {
       "match": {"lead_ids": [], "group_id": "phillyhikingbeauties", "ein": null, "website": "https://phillyhikingbeauties.com"},
@@ -53,9 +53,101 @@
       "research_tier": 2,
       "confidence": "medium",
       "notes": "The /join address returns 404; the Join Us page is at /contact and shows only a Sign up now button and an Instagram link. No dues or fees are stated anywhere on the site. The youth program is for girls in the Delaware County area, with priority to Upper Darby residents, and no ages are stated. Its program page says the facilitators have background clearances and CPR and behavioral science certifications; this is about the youth program staff, not adult hikers, so requirements.background_check is left out."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:pig-iron-theatre-company-3", "irs_bmf:133874192"], "group_id": "pig-iron-theatre-company", "ein": "133874192", "website": "https://www.pigiron.org/"},
+      "verdict": "publish",
+      "name": "Pig Iron Theatre Company",
+      "summary": "A Philadelphia theater ensemble that makes new performance work, trains performers at its own school, and rents its studios to other artists.",
+      "what_you_do": "Take training through Pig Iron School, come to a student showing or a public show, or attend the Lecoq Symposium or the yearly benefit. The company also lists jobs and internships.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater"],
+      "motives": ["enhancement", "career"],
+      "formats": ["learn_skill", "one_off_event"],
+      "roles": ["create"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Workshops run as short multi-day sessions. Shows and student showings are listed by date on the company website, and class times are not shown on the pages read.", "days": [], "times": [], "recurring": false, "season": "event_only"},
+      "locations": [{"label": "Company mailing address (confirmed on the contact page)", "address": "1417 N 2nd St", "zip": "19122", "in_city": true}],
+      "cost": {"level": null, "text": "No prices were shown for classes or tickets on the pages read."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Go to a student showing on the school events page to see the work first, or pick a beginner workshop such as Intro to Clown from the school page and use its apply link.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Workshops are open to the public with a learn more and apply link, and the company lists beginner classes, but the pages read do not give prices, age rules or the steps after applying.",
+        "what_to_expect": "Workshops are short, multi-day sessions taught by company faculty, such as Emmanuelle Delpech for Intro to Clown and Neutral Mask. Classes use movement, improvised scenes and physical games, so expect to move and play with others. The pages read did not give tuition, daily hours or class size, so ask the school before you sign up.",
+        "first_visit_tips": [
+          "Read the workshop description on the school page to check that it is for beginners.",
+          "Ask about tuition and daily hours before you apply, since the pages do not list them.",
+          "Wear clothes you can move in, since the classes are physical.",
+          "Call the company at 215-425-1100 if the apply page leaves questions open."
+        ]
+      },
+      "contacts": {"website": "https://www.pigiron.org/", "phone": "215-425-1100", "contact_name": "Daniel Rothenberg"},
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://pigiron.org/",
+      "sources": [
+        {"url": "https://pigiron.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "status"]},
+        {"url": "https://pigiron.org/school/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "what_to_expect"]},
+        {"url": "https://pigiron.org/school/events/", "seen": "2026-10-08", "fields": ["schedule", "first_step"]},
+        {"url": "https://pigiron.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts", "locations"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The accessibility statement page returned only navigation text in the fetch, so no access facts are recorded and access is left out. The email address is behind a protected script and is not recorded. Student showing dates (Oct 6 to 7, Nov 4 to 5, Nov 19 to 20, Dec 12, Dec 17) appear on the school events page without years written beside them, so they are not used as dated evidence. The newest dated items are the Lecoq Symposium (Sept 20, 2026) and A Day Celebrating Dito (Sept 27, 2026), which set last_sign_of_life. The Rowan University MFA is a graduate program and is not treated as a first step; its page gives an early 2025 start that conflicts with the 2026 listings, so it was not used."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:playpenn-inc-3"], "group_id": "playpenn-inc", "ein": null, "website": "http://www.playpenn.org"},
+      "verdict": "publish",
+      "name": "PlayPenn",
+      "summary": "A Philadelphia group that helps writers develop new plays through classes, workshops, and a yearly new play conference.",
+      "what_you_do": "Take a class for playwrights and theater makers, apply for an artistic program, or go to a public event.",
+      "kind": "nonprofit",
+      "categories": ["books-writing"],
+      "interests": ["writing_group"],
+      "motives": ["enhancement", "career"],
+      "formats": ["learn_skill", "conversation"],
+      "roles": ["create"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Classes are offered each fall, and most are held online. The group also runs a yearly New Play Development Conference.", "days": [], "times": [], "recurring": true, "season": "fall"},
+      "locations": [{"label": "Philadelphia (mailing address on site)", "address": null, "zip": null, "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "paid", "text": "Classes are paid, with listed prices from $320 to $480 per course. A partial scholarship and payment plans are available."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a class on the Upcoming Classes page and press its Register link. For a payment plan, email classes@playpenn.org; for the PlayPenn Access Scholarship, use the linked application form.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The classes page welcomes theatre makers of all experience levels, and each class has a Register link. No auditions or applications are listed for classes, though one course is named as advanced.",
+        "what_to_expect": "Classes are paid online courses on playwriting and stage craft, with a start date and a Register link for each course. The pages read did not give class length, weekly times, or how many people are in a class.",
+        "first_visit_tips": [
+          "Check the Register page for each class's level, length and times, since the class list does not show them.",
+          "Read the refund policy and ask about a payment plan before you pay.",
+          "Most classes are online, so plan on a quiet place to work and a reliable internet connection.",
+          "Call PlayPenn at 267-807-8234 with questions before you register."
+        ]
+      },
+      "contacts": {"website": "http://www.playpenn.org", "email": "mail@playpenn.org", "phone": "267-807-8234"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.playpenn.org/classes",
+      "sources": [
+        {"url": "http://www.playpenn.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]},
+        {"url": "http://www.playpenn.org/classes", "seen": "2026-10-08", "fields": ["schedule", "cost", "online_ok", "first_step", "status"]},
+        {"url": "http://www.playpenn.org/events", "seen": "2026-10-08", "fields": ["summary", "what_you_do"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Class start dates (Oct 1 to 9) and event dates (July and August) appear without years on the page. The 2026 in last_sign_of_life comes from the Fall 2026 semester wording on the classes page, so confidence is medium. Free playwriting workshops for teens and for adults were listed for late July; they are one-time, so they are not in the schedule or cost. The advanced playwriting class is the only course whose name suggests a higher level, and no level is stated for the others. Payment plan requests go to classes@playpenn.org. Street address is not on the pages read."
     }
   ],
   "leads_only": [],
   "blocked": [],
-  "notes": "Work in progress: group 1 of 7 complete."
+  "notes": "Work in progress: groups 1 to 3 of 7 complete."
 }

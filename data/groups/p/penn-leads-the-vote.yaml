@@ -4,15 +4,27 @@ aka: []
 leads:
 - penn_clubs:penn-leads-the-vote
 ein: null
-summary: null
-what_you_do: null
+summary: A nonpartisan, student-run voter program open to the whole university. It helps people register,
+  check their registration and get ready to vote, and it encourages year-round involvement in local, state
+  and national issues.
+what_you_do: Volunteer at registration tables and election events on campus, or apply for one of the program's
+  paid jobs. Sign up for election reminders to hear about deadlines.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- neighborhood-civic
+interests:
+- voter_education
+motives:
+- values
+- career
+formats:
+- one_off_event
+- side_by_side
+roles:
+- hands_on
+- organize
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +36,36 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Runs registration tabling on Locust Walk around the 2026 election dates, including September 15,
+    October 19 and November 3
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: fall
 locations:
-- label: Address
-  address: Netter Center
+- label: Locust Walk
+  address: Locust Walk, University of Pennsylvania
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
+  transit: null
+- label: Netter Center
+  address: Netter Center, University of Pennsylvania
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +79,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up through the volunteer page, or email or send an Instagram message with questions
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Anyone can volunteer regardless of voter status or time available, though the directory flags
+    an application for the paid job route
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://vote.upenn.edu
   email: pennvotes@upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/Pennvotes
+  - https://facebook.com/PennVotes
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://vote.upenn.edu
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +106,23 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://vote.upenn.edu
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - locations
+- url: https://pennclubs.com/api/clubs/penn-leads-the-vote/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - summary
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

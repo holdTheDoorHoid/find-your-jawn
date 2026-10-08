@@ -1,0 +1,151 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-15",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 36,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://pennsargam.my.canva.site/",
+   "status": 404,
+   "note": "Not found. The club's own site is gone, so only the directory entry was used for Penn Sargam."
+  }
+ ],
+ "notes": "All 20 clubs in the batch were checked. Each got a directory fetch from the Penn Clubs API, and each club's own linked site was fetched once where one existed. 36 fetches used, 0 WebSearch calls, no rate limiting seen. Two records are held back on purpose (Penn Sailing Team and PennSori A Cappella): the directory marks both inactive, so under the inactive rule their status is unknown and no summary, categories or interests were written. Penn Sailing's own site shows Oct 2026 competitions, so a reviewer should decide whether to promote it. Personal emails, phone numbers and named officer contacts were left out of every record. Newcomer scores of 2 were given where the directory marks an application or audition as required, and the scores of 3 where the club's own site describes an open way in. Verdicts: 20 publish (2 of them held back by status unknown), 0 hide, 0 other. Status counts: 3 active (Penn Singers, PennYo, People for Immigrant Rights), 15 probably_active, 2 unknown (Penn Sailing and PennSori, both held back). Summaries were written in plain words, not copied from the sites.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-sailing"
+    ],
+    "group_id": "penn-sailing-team",
+    "website": "https://www.pennsailingteam.org/"
+   },
+   "verdict": "publish",
+   "name": "Penn Sailing Team",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "schedule": {
+    "text": "Practices on Tuesday, Thursday and Friday, from about 3:30 to 7:15 pm",
+    "days": [
+     "tue",
+     "thu",
+     "fri"
+    ],
+    "times": [
+     "daytime",
+     "evening"
+    ],
+    "recurring": true
+   },
+   "commitment": "weekly",
+   "first_step": {
+    "how": "Email the team through its website to ask about joining. Beginners can join if they can commit to the whole season and there is room.",
+    "newcomer_friendliness": 2,
+    "basis": "The directory says the team is not taking members now. The way in is an email, and newcomers are accepted only with space."
+   },
+   "contacts": {
+    "website": "https://www.pennsailingteam.org/",
+    "social": [
+     "https://instagram.com/pennsailing/",
+     "https://facebook.com/PennSailing/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-sailing/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "schedule",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.pennsailingteam.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK ON PURPOSE. The directory marks this club inactive and not accepting members, so under the inactive rule status is unknown and no summary, categories or interests were written. But the team's own site lists competitions dated Oct 10 to Oct 31, 2026, plus Spring 2026 rankings. A reviewer should confirm with the team and, if the directory flag is stale, promote this to active and add a summary, categories (water-rowing) and interest (sailing). The coach's personal university address on the directory and the team site was left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pennsori"
+    ],
+    "group_id": "pennsori-a-cappella",
+    "website": "https://pennsori.net"
+   },
+   "verdict": "publish",
+   "name": "PennSori A Cappella",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://pennsori.net",
+    "email": "pennsoriboard@pennsori.com",
+    "social": [
+     "https://instagram.com/pennsori",
+     "https://facebook.com/pennsori/",
+     "https://youtube.com/pennsori"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/pennsori/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://pennsori.net",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "HELD BACK ON PURPOSE. The directory page marks the club INACTIVE even though its accepting-members field says yes. The club's own site shows no dated news, events or recruiting notice, so status is unknown and no summary, categories or interests were written. A reviewer should confirm with the club, or drop the record. The site describes the group as a K-pop fusion a cappella group, while the directory says Korean and American.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

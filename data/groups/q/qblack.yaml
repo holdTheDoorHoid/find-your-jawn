@@ -4,22 +4,35 @@ aka: []
 leads:
 - penn_clubs:qblack
 ein: null
-summary: null
-what_you_do: null
+summary: A student collective for Black students who are queer or part of the LGBTQ+ community. It offers
+  a comfortable place to socialize, plus sex education and relaxed programs to unwind.
+what_you_do: Join close social gatherings and programs on sex education and wellbeing. The club says it
+  is open to all students.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- social-meetups
+interests:
+- lgbtq_social
+- affinity_social
+motives:
+- social
+- values
+formats:
+- conversation
+- one_off_event
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
   school: penn
   min_age: null
   max_age: null
-  community: []
+  community:
+  - lgbtq
+  - black
   faith: null
   partisan: false
   support_group: false
@@ -30,14 +43,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
-  address: Penn LGBT Center
+- label: Penn LGBT Center (listed address)
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,11 +70,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Follow the club on Instagram or email to ask how to join. The directory marks an application as
+    required.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory marks an application as required, and the page does not describe how to join, so
+    the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -69,11 +84,12 @@ contacts:
   email: qblack.upenn@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/qblack.upenn
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubs.com/api/clubs/qblack/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +97,17 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/qblack/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - status
+  - locations
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

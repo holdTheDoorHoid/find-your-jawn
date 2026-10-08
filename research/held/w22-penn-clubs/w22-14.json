@@ -1,0 +1,130 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-14",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 35,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://repository.upenn.edu/phr",
+   "status": 403,
+   "note": "Journal archive returned HTTP 403; not read, no bypass attempted (Penn History Review record)"
+  },
+  {
+   "url": "https://penncycling.org",
+   "status": null,
+   "note": "Domain did not resolve (DNS failure) when checked; Penn Cycling record relies on the directory entry only"
+  }
+ ],
+ "notes": "Searches: 0 (none allowed by brief). Fetches: 35 of 60 allowed. All 20 Penn Clubs entries were read through the directory endpoint and then, where the entry linked a working site, through one site fetch each. The fetch tool summarizes pages, so unclear application flags were recorded as unknown or as the nearest newcomer score, with the reason in basis. Verdicts: 18 publish, 2 hide (both Penn Carey Law clubs with no public way in, hidden as out_of_scope). Of the 18 publish verdicts, 2 are held back for missing summary, categories and interests as the brief directs: Penn Carey Law Tennis Club (directory says inactive, no website) and Penn for Refugee Empowerment (directory says inactive, no dated items). Two redirects were followed (Penn for Youth Debate domain to WordPress; Penn Band join page to the university groups site). Penn Dhamaka's audition year is inferred from a 2025 to 2026 season label. Penn International Impact Consulting's directory and recruiting page disagree on class years. Penn History Review is a university journal rather than a community group.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-carey-law-tennis-club"
+    ],
+    "group_id": "penn-carey-law-tennis-club"
+   },
+   "verdict": "publish",
+   "name": "Penn Carey Law Tennis Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Email the club's listed address to ask about joining",
+    "newcomer_friendliness": 2,
+    "basis": "The directory lists an application as required, and the club's own page gives no other way in"
+   },
+   "contacts": {
+    "email": "penncareylawtennis@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-carey-law-tennis-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "status",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as the brief directs: the directory marks the club inactive while also showing it accepting members, and there is no website, social link or dated item. Summary, categories and interests are left out until activity is confirmed. The club's own description was not used for that reason.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-undergraduates-for-refugee-empowerment"
+    ],
+    "group_id": "penn-for-refugee-empowerment",
+    "website": "https://penn-empowers.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Penn for Refugee Empowerment",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Fill out the interest form to join the email list, and join the group's GroupMe for updates",
+    "newcomer_friendliness": 2,
+    "basis": "The directory lists an application as required, so a new member may need to apply first"
+   },
+   "contacts": {
+    "website": "https://penn-empowers.weebly.com/",
+    "email": "pennempowers@gmail.com",
+    "social": [
+     "https://instagram.com/upennforrefugees"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://penn-empowers.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-undergraduates-for-refugee-empowerment/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as the brief directs: the directory labels the club inactive, and the group's website shows no dated events or posts. Summary, categories and interests are left out until a dated item or confirmation of activity turns up. The site mentions an events page that was not in the fetched text.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

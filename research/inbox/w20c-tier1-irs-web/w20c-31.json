@@ -1,0 +1,401 @@
+{
+  "wave": "w20c-tier1-irs-web",
+  "agent": "w20c-31",
+  "lane": "A",
+  "model": "haiku",
+  "searches_used": 2,
+  "fetches_used": 17,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["irs_990n:932206324", "irs_bmf:932206324"],
+        "group_id": "christian-resources-and-development",
+        "ein": "932206324",
+        "website": "https://www.crdonline.org"
+      },
+      "verdict": "publish",
+      "name": "Christian Resources and Development",
+      "kind": "nonprofit",
+      "locations": [
+        {"label": "Address on IRS filing (not on the website)", "address": "4701 Lancaster Ave", "zip": "19131", "in_city": true}
+      ],
+      "contacts": {
+        "website": "https://www.crdonline.org",
+        "email": "info@crdonline.org"
+      },
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "Website is a placeholder that says it is being rebuilt (one fetch, page loaded). The only published items are the email info@crdonline.org, a CRD/CSC Store link, and a Current Class List link hosted on onrealm.org. The page does not say what the group does, so there is no summary, category or interest. Address and zip come from the IRS filing in the batch. The contact name from the batch was left out. Recheck when the site is back up; the class list may explain the group."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:993682124", "irs_bmf:993682124"],
+        "group_id": "commonwealth-citizens-council-incorporated",
+        "ein": "993682124"
+      },
+      "verdict": "publish",
+      "name": "Commonwealth Citizens Council",
+      "kind": "nonprofit",
+      "locations": [
+        {"label": "Address on IRS filing (not verified on a website)", "address": "1730 N 71st St", "zip": "19151", "in_city": true}
+      ],
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "No web address on file: the website field in the batch holds the legal name. Not searched, because both searches went to other groups. Address comes from the IRS filing in the batch. Needs a web address or a search before it can be judged."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:352401401", "irs_bmf:352401401"],
+        "group_id": "community-health-and-gardens-inc",
+        "ein": "352401401",
+        "website": "https://chgphilly.org"
+      },
+      "verdict": "publish",
+      "name": "Community Health and Gardens",
+      "summary": "A Philadelphia health group that runs a community garden where neighbors grow vegetables, with a focus on healthy eating and exercise.",
+      "what_you_do": "Grow vegetables in the community garden. The site also lists one-off events such as a harvest day, a fun fair, and a first aid class, but it does not say how to sign up for them.",
+      "kind": "garden",
+      "categories": ["gardening-greening", "health-wellness"],
+      "interests": ["community_garden", "health_outreach"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "one_off_event"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "No regular garden hours are published. The site lists one-off events, but the event list shows no year and no times."},
+      "locations": [
+        {"label": "Address on IRS filing (garden site not named on the website)", "address": "1252 N 57th St", "zip": "19131", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Use the Contact Us page on chgphilly.org to ask how to join the garden and when it is open",
+        "newcomer_friendliness": 3,
+        "basis": "The site invites visitors to join the community garden and points to a contact page, but gives no sign-up steps or hours."
+      },
+      "contacts": {"website": "https://chgphilly.org"},
+      "status": "dormant",
+      "last_sign_of_life": "2024-06",
+      "sign_of_life_url": "https://chgphilly.org/blog",
+      "sources": [
+        {"url": "https://chgphilly.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]},
+        {"url": "https://chgphilly.org/blog", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://chgphilly.org/events", "seen": "2026-10-08", "fields": ["what_you_do"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Homepage, events and blog pages read. The newest blog post is dated June 19, 2024, so status is dormant. The events list (eight events, August to December) shows weekday and month but no year, so it is not used for status. The footer year (2022) and the social icons, which link to Wix rather than the group, are not recorded. Garden hours and sign-up steps are not on the site. The address is from the IRS filing in the batch, and the garden may be at another site. Staff should confirm the garden is still running before this goes live."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:923225357", "irs_bmf:923225357"],
+        "group_id": "constantinian-order-royal-commission-for-the-united-states-f",
+        "ein": "923225357",
+        "website": "https://constantinianorder.us"
+      },
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Constantinian Order Royal Commission for the United States",
+      "notes": "The batch website field was malformed ('https: constantinianorder.us'). The site at constantinianorder.us loaded (one fetch). It is the US commission of a dynastic chivalric order, run as an informational website. The page does not describe membership, gives no route in beyond an email to the secretary, and names no Philadelphia activity. The IRS address is a Philadelphia address, so a reviewer may prefer out_of_area after checking. Hidden as a private membership body for now."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:832626390", "irs_bmf:832626390"],
+        "group_id": "donna-marie-foundation",
+        "ein": "832626390"
+      },
+      "verdict": "publish",
+      "name": "Donna Marie Foundation",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "No web address on file: the website field holds the name, not an address. Not searched, because both searches went to other groups. The name says foundation. If it is a private foundation it is out of scope (hide, private), so check before publishing. The IRS address is not published here because it may be a home."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:821307326", "irs_bmf:821307326"],
+        "group_id": "family-affairs-international",
+        "ein": "821307326"
+      },
+      "verdict": "publish",
+      "name": "Family Affairs International",
+      "kind": "nonprofit",
+      "locations": [
+        {"label": "Address on IRS filing (not verified on a website)", "address": "1133 N 63rd St", "zip": "19151", "in_city": true}
+      ],
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "No web address on file: the website field holds the name. Not searched, because both searches went to other groups. Needs a web address or a search before it can be judged."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:842384240", "irs_bmf:842384240"],
+        "group_id": "fellowship-of-women-clergy",
+        "ein": "842384240",
+        "website": "https://www.fellowshipofwomenclergy.org"
+      },
+      "verdict": "publish",
+      "name": "Fellowship of Women Clergy",
+      "summary": "A Christian network based in Philadelphia that supports women in ministry with leadership training and peer support.",
+      "what_you_do": "Join the monthly online gatherings or the in-person gatherings in Philadelphia, which are held quarterly, and sign up for the mailing list to hear about them.",
+      "kind": "network",
+      "categories": ["faith-community", "careers-skills-professional"],
+      "interests": ["congregation_social", "professional_associations"],
+      "motives": ["values", "career"],
+      "formats": ["conversation"],
+      "roles": ["figure_out"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["women"], "faith": null, "support_group": false},
+      "schedule": {
+        "text": "An online gathering every month and an in-person gathering every quarter in Philadelphia. Dates are posted on the group's upcoming gatherings page.",
+        "recurring": true,
+        "season": "year_round"
+      },
+      "online_ok": true,
+      "commitment": "monthly",
+      "first_step": {
+        "how": "RSVP for the next gathering using the form on fellowshipofwomenclergy.org, then sign up for the mailing list",
+        "newcomer_friendliness": 3,
+        "basis": "Gatherings are announced publicly with an RSVP form, though the page does not say whether women who are not clergy may attend."
+      },
+      "contacts": {
+        "website": "https://www.fellowshipofwomenclergy.org",
+        "email": "info@fellowshipofwomenclergy.org"
+      },
+      "status": "probably_active",
+      "research_tier": 1,
+      "confidence": "medium",
+      "sources": [
+        {"url": "https://www.fellowshipofwomenclergy.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "online_ok", "commitment", "first_step", "contacts", "status"]}
+      ],
+      "notes": "Homepage read on the www form (the bare domain timed out twice). No dated events or news on the homepage, so status is probably_active (working site, no dates). The Upcoming Gatherings and mailing list pages were linked but not read. The Charity ID printed on the page (84-2384240) matches the IRS EIN. Facebook, Instagram and YouTube are named on the site but no links were recorded. Volunteer roles are not described."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:854160875", "irs_bmf:854160875"],
+        "group_id": "gifted-scholars-leadership-program",
+        "ein": "854160875",
+        "website": "https://giftedscholars.org"
+      },
+      "verdict": "publish",
+      "name": "Gifted Scholars Leadership Program",
+      "summary": "A nonprofit that supports girls of color through mentoring and scholarships, from middle school through graduate school. It is also planning a residential learning community for girls in foster care or facing homelessness.",
+      "what_you_do": "Girls can apply for the scholarships. Adults can volunteer on the advisory committee for the planned leadership academy, in fields such as education, child welfare, mental health, law, finance, and fundraising.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["mentoring", "youth_leadership"],
+      "motives": ["values", "career"],
+      "formats": ["lead_organize"],
+      "roles": ["organize"],
+      "crowd": ["kids", "teens", "young_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "first_step": {
+        "how": "Message the group on Instagram to ask about joining the advisory committee, or check the scholarships page for the next application",
+        "newcomer_friendliness": 2,
+        "basis": "Scholarships need an application, and the volunteer role starts with a message, so the way in is not fully open."
+      },
+      "contacts": {
+        "website": "https://giftedscholars.org",
+        "social": ["https://www.instagram.com/giftedscholars"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-07",
+      "sign_of_life_url": "https://giftedscholars.org",
+      "sources": [
+        {"url": "https://giftedscholars.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life", "first_step", "contacts", "audience"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Homepage read (one fetch). The newest dated item is a scholarship deadline of July 17, 2026, so last_sign_of_life uses the month of that deadline, not a post date. 2026 winners were announced (no month given). The Howley ASPIRE nurse program is promoted on the site, but the page does not say this group runs it, so it is not recorded here (see leads_only). No phone or email is published. The Instagram link is built from the handle @giftedscholars printed on the site. Community tags are empty because no tag covers girls of color. The IRS address (7474 Rhoads St) is not published because the site shows no address."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:851122771", "irs_bmf:851122771"],
+        "group_id": "good-shepherd-community-church-inc",
+        "ein": "851122771",
+        "website": "https://goodshepherdccinc.com"
+      },
+      "verdict": "publish",
+      "name": "Good Shepherd Community Church",
+      "summary": "A church that does community outreach, with a stated focus on food needs and support for youth and seniors.",
+      "what_you_do": "Attend worship and take part in the church's outreach and service work. The website does not list specific programs or service times.",
+      "kind": "congregation",
+      "categories": ["faith-community"],
+      "interests": ["worship_community", "faith_service_projects"],
+      "motives": ["values", "social"],
+      "formats": ["conversation"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [
+        {"label": "Address on IRS filing (not on the website)", "address": "5417 Woodcrest Ave", "zip": "19131", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Sign up with the email box on the homepage for news, since the site does not yet list service times or a working contact link",
+        "newcomer_friendliness": 2,
+        "basis": "The Contact Us link goes nowhere and no service times are listed, so the way in is unclear."
+      },
+      "contacts": {"website": "https://goodshepherdccinc.com"},
+      "status": "probably_active",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [
+        {"url": "https://goodshepherdccinc.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "first_step", "contacts"]}
+      ],
+      "notes": "Homepage only (one fetch). No dated items; the footer year is not used as evidence, so status is probably_active (working site, no dates). The Contact Us link points to '#'. The mission text seems to be missing a word, so the site looks unfinished. Denomination is not stated, so faith is left empty. The address comes from the IRS filing in the batch, not the site. Check service times before publishing."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:393776754", "irs_bmf:393776754"],
+        "group_id": "goodies-and-growth-enrichment-center",
+        "ein": "393776754"
+      },
+      "verdict": "publish",
+      "name": "Goodies & Growth Enrichment Center",
+      "kind": "nonprofit",
+      "locations": [
+        {"label": "Address on IRS filing (not verified on a website)", "address": "1334 N 57th St", "zip": "19131", "in_city": true}
+      ],
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "The website in the batch (www.ggecenter.com) does not resolve: the lookup failed on both the www and bare forms. One search for the exact name found no listing. The results were other enrichment centers in Philadelphia, which are not this group and are not used. The contact name from the batch was left out. Needs a working web address or another search before it can be judged."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:852274954", "irs_bmf:852274954"],
+        "group_id": "growing-leading-optimistic-women",
+        "ein": "852274954"
+      },
+      "verdict": "publish",
+      "name": "Growing Leading Optimistic Women",
+      "kind": "nonprofit",
+      "locations": [
+        {"label": "Address on IRS filing (not verified on a website)", "address": "5425 W Berks St", "zip": "19131", "in_city": true}
+      ],
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "The website in the batch (www.weareglowing.org) returns HTTP 404 on the homepage, with and without www. One search for the exact name found nothing in Philadelphia. The results were other GLOW programs elsewhere (Atlanta, a campus program, NMAC), which are not used. The contact name from the batch was left out. Needs a working web address or another search before it can be judged."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:800520702", "irs_bmf:800520702"],
+        "group_id": "i-can-ministry-inc",
+        "ein": "800520702",
+        "website": "https://icanministryinc.org"
+      },
+      "verdict": "publish",
+      "name": "I Can Ministry",
+      "summary": "A Philadelphia ministry that runs education, wealth-building workshops, and spiritual development programs for families facing hard times.",
+      "what_you_do": "The site lists three program areas but does not describe them or give dates. Call the ministry to ask how to take part.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional", "faith-community"],
+      "interests": ["money_skills", "faith_service_projects"],
+      "motives": ["values", "career"],
+      "formats": ["learn_skill"],
+      "roles": ["figure_out"],
+      "crowd": ["families"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [
+        {"label": "Office (as published on the website)", "address": "3600 Conshohocken Avenue, Unit 1101", "zip": "19131", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Call 215.922.1899 and ask which workshop or program is running now",
+        "newcomer_friendliness": 2,
+        "basis": "The site lists programs but no dates or sign-up steps, and its newest dated item is from 2009."
+      },
+      "contacts": {
+        "website": "https://icanministryinc.org",
+        "phone": "215.922.1899"
+      },
+      "status": "dormant",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [
+        {"url": "https://icanministryinc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "locations", "first_step", "contacts"]}
+      ],
+      "notes": "Homepage only (one fetch). The newest dated item is the Cyber Village senior housing project, completed in 2009 (year only, no month), so status is dormant and no last_sign_of_life is recorded. The footer year is not used as evidence. The only email on the site is a personal-looking free-mail address, so it is left out."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:861797875", "irs_bmf:861797875"],
+        "group_id": "kipp-philadelphia-octavius-catto-charter-school",
+        "ein": "861797875",
+        "website": "https://www.kippphiladelphia.org"
+      },
+      "verdict": "not_a_group",
+      "name": "KIPP Philadelphia Octavius Catto Charter School",
+      "notes": "A public charter school in the KIPP Philadelphia network (the homepage lists eight schools plus KIPP Forward, a counseling program for students). Joining means enrolling in a school, not a community group. The homepage listed no community programs, parent groups, volunteer roles or public events open to outside families. Not published. Homepage only was read, so a sub-page could still list a parent or volunteer group."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:223532087", "irs_bmf:223532087"],
+        "group_id": "kwj-community-outreach",
+        "ein": "223532087",
+        "website": "https://www.ceo1.org"
+      },
+      "verdict": "publish",
+      "name": "Community Empowerment Organization (CEO)",
+      "summary": "A Philadelphia group that helps families build self-sufficiency. Its youth program, running since 1997, works to keep students in school, and it runs a 2026 voter engagement effort.",
+      "what_you_do": "Volunteers can reach out through the site's Volunteer link to help with the youth program or the voter work. The site lists no meeting times or event dates.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic", "kids-youth-mentoring"],
+      "interests": ["voter_education", "youth_leadership"],
+      "motives": ["values", "social"],
+      "formats": ["lead_organize"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["families", "teens"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "first_step": {
+        "how": "Email info@ceo1.org or use the Volunteer link on ceo1.org to ask how to help",
+        "newcomer_friendliness": 3,
+        "basis": "The site gives a plain contact route for volunteers, though it lists no schedule or sign-up steps."
+      },
+      "contacts": {
+        "website": "https://www.ceo1.org",
+        "email": "info@ceo1.org",
+        "phone": "(267) 422-2512"
+      },
+      "status": "active",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [
+        {"url": "https://www.ceo1.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "first_step", "contacts"]}
+      ],
+      "notes": "The website ceo1.org belongs to the Community Empowerment Organization (CEO). The IRS filing under the name KWJ Community Outreach lists this website and the same contact name as the book author on the site, so this record treats them as one group. Please confirm before publishing. The IRS address is an apartment unit on City Avenue, probably a home, so no location is published. The only 2026 evidence is a menu item, 'Voter Engagement 2026', with no month or details, so last_sign_of_life is left out. A second contact email (a free-mail address), PayPal details, the book, and the legal fund are not recorded."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:473130783", "irs_bmf:473130783"],
+        "group_id": "life-career-inc",
+        "ein": "473130783"
+      },
+      "verdict": "publish",
+      "name": "Life Career Inc",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "sources": [],
+      "notes": "No web address on file: the website field holds the name. The IRS address is a PO Box, not a meeting place, so no location is published. Not searched, because both searches went to other groups. Needs a web address or a search before it can be judged."
+    }
+  ],
+  "leads_only": [
+    {
+      "name": "Howley ASPIRE Nurse Scholars Program at HUP",
+      "url": "https://giftedscholars.org",
+      "note": "Promoted on the Gifted Scholars homepage with a 2027 cohort application open. The page does not say who runs it, and its own program page was not found. Not checked."
+    }
+  ],
+  "blocked": [],
+  "notes": "Searches: both used (Goodies & Growth Enrichment Center; Growing Leading Optimistic Women). Neither found a Philadelphia listing for the exact name. Fetches: 17 used, 11 read. Failures: Fellowship of Women Clergy bare domain timed out twice (the www form worked); ggecenter.com and www.ggecenter.com do not resolve; weareglowing.org returns HTTP 404 on both forms. No 403s, bot checks or paywalls, so blocked is empty. Four IRS groups have only a name in the website field and were not searched (budget spent): Commonwealth Citizens Council, Donna Marie Foundation, Family Affairs International, Life Career Inc. They are unknown records with no summary. Donna Marie Foundation's name suggests a foundation; check whether it is out of scope before publishing. Process slip: one call to a Docs tool, which this agent is not allowed to use, was refused with no effect and no data written. Verdicts: publish 13, hide 1, not_a_group 1. The KWJ/CEO identity link is an inference from a shared website and contact name; please confirm. Community Health and Gardens is dormant on its own blog dates (June 2024)."
+}

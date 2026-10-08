@@ -4,15 +4,24 @@ aka: []
 leads:
 - penn_clubs:penn-club-squash
 ein: null
-summary: null
-what_you_do: null
+summary: A student squash team at Penn that is open to all levels, including people who have never played.
+  It plays matches through the semester and holds regular practices at the Penn Squash Center.
+what_you_do: Join optional practices and matches. The club runs a recreational team for beginners and
+  a competitive women's team.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+interests:
+- tennis_pickleball
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +33,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Optional practices on Monday, Wednesday, Thursday and Friday from 6:30 to 8 pm at the Penn Squash
+    Center, plus matches through the semester
+  days:
+  - mon
+  - wed
+  - thu
+  - fri
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: Penn Squash Center
+- label: Penn Squash Center
+  address: Penn Squash Center, University of Pennsylvania
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the pages checked
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the interest form linked on the club's site, or email the club
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory flags an application and the site mentions fall tryouts, though the club welcomes
+    people who have never played
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennclubsquash2018.wixsite.com/pennclubsquash
   email: pennclubsquash2018@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennclubsquash
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubsquash2018.wixsite.com/pennclubsquash
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +98,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubsquash2018.wixsite.com/pennclubsquash
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+- url: https://pennclubs.com/api/clubs/penn-club-squash/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

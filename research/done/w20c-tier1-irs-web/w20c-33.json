@@ -1,0 +1,50 @@
+{
+  "wave": "w20c-tier1-irs-web",
+  "agent": "w20c-33",
+  "lane": "A",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 2,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["irs_990n:300098083", "irs_bmf:300098083"],
+        "group_id": "women-in-the-life-association",
+        "ein": "300098083"
+      },
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Women in the Life Association",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "IRS-only lead. The website field on the tax form is a name, not a web address, so there was no site to fetch. One search for the exact name found no matching group (results were Women In Bio, a national network, and Women In Transition, a different group), so no public presence was found. The filed address is an apartment unit and the contact is a person, so this looks like a private filer with no public way in. Not verified as a public group."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:843156650", "irs_bmf:843156650"],
+        "group_id": "y-math-inc",
+        "ein": "843156650",
+        "website": "https://ymath.org"
+      },
+      "verdict": "not_a_group",
+      "name": "Y-Math",
+      "status": "probably_active",
+      "contacts": {
+        "website": "https://ymath.org",
+        "phone": "(215) 410-8867",
+        "social": []
+      },
+      "sources": [
+        {"url": "https://ymath.org", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://ymath.org/how-it-works", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "IRS lists this as Y-Math Inc, a small nonprofit filer (990-N). The website (2 pages read) is a tutoring service: a free math assessment, then a learning plan for students in grades 3 to 8, plus a donate link. No public sessions, groups, volunteer roles or pricing were found. Treated as a tutoring service a family enrolls in, not a joinable community group, so not_a_group. No dated news or events; status is probably_active because the site works but shows no dates. The only date on the site is a copyright footer, so no last_sign_of_life is recorded."
+    }
+  ],
+  "leads_only": [],
+  "blocked": [],
+  "notes": "Batch had two IRS-sourced groups. Women in the Life Association: website field is a name, not a URL, so one search was used and nothing public was found; hidden as private. Y-Math Inc: a tutoring service with a working site, not a community group; recorded as not_a_group. The second search was not needed. No blocks, no rate limiting, no leads from either site. Budget not exhausted: 1 of 2 searches, 2 fetches."
+}

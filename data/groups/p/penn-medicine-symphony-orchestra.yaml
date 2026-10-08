@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:penn-med-symphony-orchestra
 ein: null
-summary: null
-what_you_do: null
+summary: An orchestra for people who study or work in health care, with players at every skill level.
+  It rehearses and performs as a community music group.
+what_you_do: Play in the orchestra. String players need no audition, and some wind sections may need a
+  short video audition. The join page says healthcare workers, including physicians, nurses and hospital
+  staff, can join.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
+- professionals
 bridging: null
 audience:
   open_to: students
@@ -48,31 +59,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the interest form on the orchestra's join page. Strings can start without an audition.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Strings need no audition and all skill levels are welcome, but some wind sections may need a
+    short video audition.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: Hidden
+  website: https://www.pennmedsymphony.com
+  email: pennmedsymphony@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.pennmedsymphony.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-med-symphony-orchestra/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - first_step
+  - audience
+- url: https://www.pennmedsymphony.com/join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:soundworks
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's student tap dance group. Members choreograph their own tap shows, mixing rhythm tap with
+  Broadway, hip hop and jazz styles.
+what_you_do: Members learn and perform in the group's two shows a year. New members join through the audition
+  process.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- theater-dance-performance
+interests:
+- dance_company
+motives:
+- enhancement
+- social
+formats:
+- perform_make_together
+roles:
+- create
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,12 +34,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: Two shows a year. The spring show ran April 24 and 25, 2026 at 7:30 pm and 8:30 pm.
+  days:
+  - fri
+  - sat
+  times:
+  - evening
+  recurring: true
+  season: spring
+locations:
+- label: Harold Prince Theater, Annenberg Center for the Performing Arts
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +70,44 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Watch the Auditions page on the group's site, or email the group for audition details.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining needs an audition, and the site does not yet give audition dates.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://soundworkstapfactory.webnode.page/
   email: soundworkstap@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: http://soundworkstapfactory.webnode.page/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/soundworks/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - contacts
+- url: http://soundworkstapfactory.webnode.page/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:penn-band
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's large student band, with close to a hundred members who play at Penn football and most
+  basketball games. Members also travel to some away games and take part in campus events and community
+  outreach.
+what_you_do: Rehearse each week, play at games and campus events, and join social nights, road trips and
+  section get-togethers. Members also get free seats at sports games.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +35,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekly rehearsals on Monday evenings (6 to 8 pm) and Wednesday evenings (8:30 to 10:30 pm) at
+    the Platt Center
+  days:
+  - mon
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: Platt Student Performing Arts House
+- label: Platt Student Performing Arts House
+  address: Platt Student Performing Arts House, Penn campus
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the pages checked; membership is described as all-inclusive
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +72,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the First Rehearsal or any Monday rehearsal, or fill out the interest form; no audition
+    or application is needed
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The group says no audition, application or instrument test is needed, and that it is never too
+    late to join
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://groups.universitylife.upenn.edu/pennband/
   email: join@pennband.net
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/pennband/
+  - https://facebook.com/universityofpennsylvaniaband/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://groups.universitylife.upenn.edu/pennband/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +100,24 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://groups.universitylife.upenn.edu/pennband/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - status
+- url: https://groups.universitylife.upenn.edu/pennband/join
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+- url: https://pennclubs.com/api/clubs/penn-band/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

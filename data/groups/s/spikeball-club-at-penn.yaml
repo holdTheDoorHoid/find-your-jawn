@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:university-of-pennsylvania-roundnet-club
 ein: null
-summary: null
-what_you_do: null
+summary: A student group that teaches roundnet, a fast net game played with a small ball. Members play
+  together at weekly hit-arounds for every skill level.
+what_you_do: Players come to the Wednesday hit-arounds, 7:30 to 9:30 pm, and can join the group chat for
+  updates.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+interests:
+- tennis_pickleball
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+- help_teach
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekly hit-arounds on Wednesdays, 7:30 to 9:30 pm.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +60,44 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to a Wednesday hit-around, and join the group chat for updates.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club says hit-arounds are open to players of all skill levels.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://upennroundnetclub.wixsite.com/penn-roundnet-club
   email: upennroundnetclub@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://upennroundnetclub.wixsite.com/penn-roundnet-club
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/university-of-pennsylvania-roundnet-club/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - status
+  - contacts
+- url: https://upennroundnetclub.wixsite.com/penn-roundnet-club
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

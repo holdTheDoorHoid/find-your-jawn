@@ -4,15 +4,27 @@ aka: []
 leads:
 - penn_clubs:tedxpenn
 ein: null
-summary: null
-what_you_do: null
+summary: A student-run group that puts on a large TEDx conference at Penn.
+what_you_do: Join one of five teams (speakers and content, operations, design, marketing, or finance),
+  or nominate a speaker through the group's form.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- science-learning
+- careers-skills-professional
+interests:
+- talks_lectures
+- public_speaking
+motives:
+- enhancement
+- career
+formats:
+- lead_organize
+- team_play
+roles:
+- organize
+- create
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,31 +60,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Attend an information session, then apply through the form for one of the five teams
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining takes an information session and an application, and the directory marks the group as
+    not accepting members
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.tedxpenn.org
   email: tedxpenn@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/tedxpenn/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.tedxpenn.org
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/tedxpenn/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.tedxpenn.org
+  seen: '2026-10-08'
+  fields:
+  - status
+  - what_you_do
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

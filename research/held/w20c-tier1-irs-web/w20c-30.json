@@ -1,0 +1,334 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-30",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.transientthenextstep.com",
+   "status": null,
+   "note": "DNS lookup failed for both www and bare domain; site unreachable"
+  },
+  {
+   "url": "https://www.anewspiritbehavioralhealthfoundation.org",
+   "status": null,
+   "note": "DNS lookup failed for both www and bare domain; site unreachable"
+  },
+  {
+   "url": "https://beyoutifulbrowngirlproject.squarespace.com/",
+   "status": 404,
+   "note": "old site address that the batch domain redirects to; page not found"
+  },
+  {
+   "url": "https://www.awealthofwomen.org",
+   "status": 301,
+   "note": "redirects to mastersteel.net, a domain with no link to this group; redirect not followed"
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, cap reached. Fetches: 22. Verdicts: 13 publish, 1 hide (private), 1 out_of_area. Eight groups remain unknown for want of a search (Roses Clubhouse, Transient the Next Step, Virtuous Woman Ministries, Women's Interest Never Stops, A New Spirit, A Wealth of Women, Boldly Exceptional, Chaveirim); a later pass with search budget could check them. The Pillar of Hope search found no match. Its results named other Philadelphia groups (The Hope Center, HopePHL, House of Hope) that are unrelated to this batch, so they were not added as leads. Redirects followed: Yah'weh's Temple (same organization, new domain) and A.D.E. (domain to Google Sites). Tax filings (Form 990) were noted but not counted as dated activity. Addresses deliberately not recorded for Moder Patshala (home-based program, possibly a private home), Together We Can Change (meals made in a home kitchen), and A.D.E. and Be Resilient Jamaica (apartment addresses). Owner should decide whether any of these may be published. Person names from batch contact fields (officers, preparers, tax-form contacts) were not recorded. The Together We Can Change Upcoming Events and Calendar pages were linked but not read.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:850528990",
+     "irs_bmf:850528990"
+    ],
+    "group_id": "pillar-of-hope-family-resource-center",
+    "ein": "850528990"
+   },
+   "verdict": "publish",
+   "name": "Pillar of Hope Family Resource Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/850528990",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "No website found. The batch website field holds an EIN, not a web address. The one search for the exact name found no match; the results were other Philadelphia family centers, not this group. ProPublica lists it in Philadelphia under family services, with no mission text and no Form 990 financial data. The batch contact name is a private person's name from a tax form and is not recorded. Needs a phone number or web address from a later pass (for example a sponsoring church or the 211 directory) before it can be described. Held back: no summary, categories or interests.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:873725150",
+     "irs_bmf:873725150"
+    ],
+    "group_id": "roses-clubhouse-incorporated",
+    "ein": "873725150"
+   },
+   "verdict": "publish",
+   "name": "Roses Clubhouse",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/873725150",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The batch website field holds a list of names, not a web address, so it was treated as missing. No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3) with tax status from April 2022, under specialized education, with no mission text and no Form 990 financial data. The word clubhouse could point to a mental health or youth program; unverified. The batch contact name is a private person's name and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:854256754",
+     "irs_bmf:854256754"
+    ],
+    "group_id": "transient-the-next-step",
+    "ein": "854256754"
+   },
+   "verdict": "publish",
+   "name": "Transient the Next Step",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/854256754",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The batch website TRANSIENTTHENEXTSTEP.COM did not resolve, with or without www (DNS lookup failed). No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3) with tax status from March 2021, with no mission text and no Form 990 financial data. The batch contact name is a private person's name and is not recorded. Held back: no summary. Retry the domain in a later pass; the web address may have changed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461656489",
+     "irs_bmf:461656489"
+    ],
+    "group_id": "virtuous-woman-ministries",
+    "ein": "461656489"
+   },
+   "verdict": "publish",
+   "name": "Virtuous Woman Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/461656489",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The batch website field holds the group's name, not a web address. No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3), under family violence shelters and services, with no mission text and no Form 990 financial data. The name suggests a faith or women's support ministry; unverified. The batch contact name is a private person's name and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:824479349",
+     "irs_bmf:824479349"
+    ],
+    "group_id": "womens-interest-never-stops-empowerment-ministry",
+    "ein": "824479349"
+   },
+   "verdict": "publish",
+   "name": "Women's Interest Never Stops Empowerment Ministry",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/824479349",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "No website. The batch website field holds an email address on a general mail domain. It is not recorded as a contact because it is not clearly the group's own, though its prefix matches the group's name, so a later pass could verify it. ProPublica lists Philadelphia, a 501(c)(3), under religion-related Protestant spiritual development, with no mission text and no Form 990 financial data. No search was left in the budget. The batch contact name is a private person's name and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:850940282",
+     "irs_bmf:850940282"
+    ],
+    "group_id": "a-new-spirit-behavioral-health-services-foundation",
+    "ein": "850940282"
+   },
+   "verdict": "publish",
+   "name": "A New Spirit Behavioral Health Services Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/850940282",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The batch website ANEWSPIRITBEHAVIORALHEALTHFOUNDATION.ORG did not resolve, with or without www. No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3) in a mental health crisis intervention category, with a Form 990-EZ for fiscal 2024 showing revenue of $79,449, but no mission text. The word Foundation in the name means it could be a private foundation (out of scope) or a service provider. Not settled, so held for review. The batch contact name is an accounting firm and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465124466",
+     "irs_bmf:465124466"
+    ],
+    "group_id": "a-wealth-of-women",
+    "ein": "465124466"
+   },
+   "verdict": "publish",
+   "name": "A Wealth of Women",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/465124466",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The batch website www.awealthofwomen.org now redirects to mastersteel.net, a domain with no link to this group. That redirect was not followed, so the group's own site is treated as lost. No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3), with a Form 990-EZ for fiscal 2025 (filed May 2026) showing revenue of $98,072, but no mission text. The filing suggests the group still operates, but a tax filing is not a dated activity item, so status stays unknown. The IRS address is an apartment and is not recorded. The batch contact name is a private person's name and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:921731224",
+     "irs_bmf:921731224"
+    ],
+    "group_id": "boldly-exceptional-youth-project-inc",
+    "ein": "921731224"
+   },
+   "verdict": "publish",
+   "name": "Boldly Exceptional Youth Project",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/921731224",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "kind"
+     ]
+    }
+   ],
+   "notes": "Also known as Beyoutiful Brown Girl Project (batch aka). The batch website www.beyoutifulbrowngirlproject.org redirects to a Squarespace address that returns 404, and the bare domain redirects to the same dead address. No search was left in the budget. ProPublica lists Philadelphia, a 501(c)(3) with tax status from January 2024, under educational services, with no mission text and no Form 990 financial data. The batch contact name is a private person's name and is not recorded. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:871086282",
+     "irs_bmf:871086282"
+    ],
+    "group_id": "chaveirim-of-philadelphia-inc",
+    "ein": "871086282",
+    "website": "https://philadelphiachaveirim.org/"
+   },
+   "verdict": "publish",
+   "name": "Chaveirim of Philadelphia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://philadelphiachaveirim.org/",
+    "phone": "855-742-4876"
+   },
+   "sources": [
+    {
+     "url": "https://philadelphiachaveirim.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/871086282",
+     "seen": "2026-10-08",
+     "fields": [
+      "kind"
+     ]
+    }
+   ],
+   "notes": "The group's site names the organization and shows a phone number under Need help, but does not describe its work, and shows no dated items (only a 2024 copyright). ProPublica lists Philadelphia, a 501(c)(3), under travelers' aid, with a fiscal 2024 Form 990-EZ showing $0 revenue. That suggests little or no activity in 2024, but it is not proof. The phone is listed under the Need help heading, so it may be a help line rather than a volunteer line. Held back: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

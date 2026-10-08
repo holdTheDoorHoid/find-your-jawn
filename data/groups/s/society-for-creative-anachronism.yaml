@@ -4,18 +4,33 @@ aka: []
 leads:
 - penn_clubs:society-for-creative-anachronism
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's student chapter of a volunteer group that recreates crafts, music, dance and combat from
+  before the 1600s. Members practice these skills and show them at events and demonstrations.
+what_you_do: Members meet for period dance practice, craft nights and workshops. Guests without a PennCard
+  are asked to RSVP to the chatelaine the Friday before an event.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- history-heritage-preservation
+- arts-crafts
+- theater-dance-performance
+interests:
+- craft_circle
+- cultural_dance
+motives:
+- understanding
+- social
+formats:
+- perform_make_together
+- learn_skill
+roles:
+- hands_on
+- create
+crowd:
+- students
+- all_adults
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
@@ -24,12 +39,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events are listed on the chapter site. A European dance practice is listed for Monday, Oct 12,
+    2026, 7 to 9 pm.
   days: []
-  times: []
+  times:
+  - evening
   recurring: null
   season: null
-locations: []
+locations:
+- label: Varies by event
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +74,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the chatelaine or use the contact page on the chapter site, then come to a listed event.
+    Guests without a PennCard should RSVP first.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The chapter site names the chatelaine as the first contact for newcomers and lists events publicly.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://ivyeinrust.eastkingdom.org
   email: chatelaine@ivyeinrust.eastkingdom.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://ivyeinrust.eastkingdom.org
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/society-for-creative-anachronism/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - audience
+  - first_step
+  - contacts
+- url: https://ivyeinrust.eastkingdom.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+  - first_step
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

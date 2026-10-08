@@ -4,15 +4,23 @@ aka: []
 leads:
 - penn_clubs:spec
 ein: null
-summary: null
-what_you_do: null
+summary: Penn Student Government's events branch. It runs eight committees that plan campus social events,
+  concerts, films and speaker nights for students.
+what_you_do: Students join one of the committees to help plan events. The SPEC site says committees need
+  no application and students can join at any point in the semester.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- social-meetups
+interests:
+- young_adult_social
+motives:
+- social
+formats:
+- lead_organize
+roles:
+- organize
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,12 +32,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: A SPEC-wide info session is listed for Fall 2026 after the club fair, day not given. Each committee
+    holds its own meetings.
   days: []
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Penn campus
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +66,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Pick a committee on the SPEC site, join its listserv or email its directors, then come to a general
+    meeting.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The SPEC site says committees are application free and students can join at any point in the
+    semester.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://specatpenn.squarespace.com/ourcommittees
   email: exec@specevents.net
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://specatpenn.squarespace.com/ourcommittees
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/spec/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - schedule
+- url: https://specatpenn.squarespace.com/ourcommittees
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

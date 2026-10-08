@@ -1,0 +1,427 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-18",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 38,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "20 clubs, all read from the Penn Clubs API, with each club's own listed website checked. Two club pages returned HTTP 404 (SPEC Pop Up and SPEC-TRUM); those are noted on the records, not counted as blocked. Two old hosts redirected to new ones (SHPE to upennshpe.com, Soundworks to soundworkstapfactory.webnode.page) and the new hosts were read. Ten entries carry an INACTIVE flag in the directory and are held back as unknown with no summary, per the brief's rule for inactive entries: Sound Politicks, South Asia Society, South Asian Women's Space, Sparks Dance Company, SPEC Connaissance, SPEC Film Society, SPEC Jazz & Grooves, SPEC Pop Up, SPEC Sound and SPEC-TRUM. Several of those show some dated items on their own pages (SPEC Connaissance lists a 2025 to 2026 speaker season, SPEC Jazz & Grooves says shows are open to the public), so the owner may want to rule on the INACTIVE flag. Status counts: 5 active, 3 probably_active, 1 dormant, 1 unknown with a summary (SEAC), 10 unknown and held back. No student's personal name, phone or personal email was recorded; presidents' names were left out. Searches used: 0. Fetch calls used: 38, including 2 redirect hops.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sound-politicks"
+    ],
+    "group_id": "sound-politicks",
+    "website": "https://soundpoliticks.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Sound Politicks",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://soundpoliticks.weebly.com/",
+    "email": "upenn.soundpoliticks@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sound-politicks/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://soundpoliticks.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true), per the brief's rule for inactive entries. The site shows no dated items. The club is an undergraduate political science journal, which is not a partisan group. The directory lists applications released each fall, which was not verified on the site.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:south-asia-society"
+    ],
+    "group_id": "south-asia-society"
+   },
+   "verdict": "publish",
+   "name": "South Asia Society",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "sasboard@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/south-asia-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true). Newest badges reference the Spring 2022 SAC fair and no events are listed. No club website is listed; the entry links Instagram, Facebook and a Linktree, which were not read under the lead rules.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:south-asian-womens-space"
+    ],
+    "group_id": "south-asian-womens-space"
+   },
+   "verdict": "publish",
+   "name": "South Asian Women's Space",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "pennsouthasianwomensspace@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/south-asian-womens-space/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE. The newest badge references the Fall 2021 SAC fair and no events are listed. No club website is listed; the entry links Facebook and Instagram only, which were not read under the lead rules.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sparks-dance-company"
+    ],
+    "group_id": "sparks-dance-company",
+    "website": "https://sites.google.com/view/sparksdancecompany/home"
+   },
+   "verdict": "publish",
+   "name": "Sparks Dance Company",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://sites.google.com/view/sparksdancecompany/home",
+    "email": "president.sparksdancecompany@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sparks-dance-company/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/view/sparksdancecompany/home",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true, 12 members listed). The club site has an audition and interest form page but no dated items. Founded 1989 per the directory. The newest dated evidence is SAC fair badges from 2021 and 2022. The club's site may be worth a re-check if the directory status changes.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-connaissance"
+    ],
+    "group_id": "spec-connaissance",
+    "website": "https://specevents.net/connaissance/"
+   },
+   "verdict": "publish",
+   "name": "SPEC Connaissance",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://specevents.net/connaissance/",
+    "email": "conndirs@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-connaissance/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "schedule"
+     ]
+    },
+    {
+     "url": "https://specevents.net/connaissance/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true). The club site lists speaker seasons from 2019 to 2026, with the 2025 to 2026 season the most recent and no month. General meetings are Tuesdays 9 to 10 pm per the directory. The application field conflicts with the text, which says no application is needed. Non-Penn attendance is not stated. Worth a second look if the directory status is cleared.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-film-society"
+    ],
+    "group_id": "spec-film-society",
+    "website": "https://specevents.net/film/"
+   },
+   "verdict": "publish",
+   "name": "SPEC Film Society",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://specevents.net/film/",
+    "email": "filmdirs@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-film-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://specevents.net/film/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE. The club site has no dated items, and it describes the listserv as being for Penn students. Non-Penn attendance is not stated. The directory's application field conflicts with the text, which says no application is needed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-jazz-grooves"
+    ],
+    "group_id": "spec-jazz-and-grooves",
+    "website": "https://specatpenn.squarespace.com/jazz-and-grooves"
+   },
+   "verdict": "publish",
+   "name": "SPEC Jazz & Grooves",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "public",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://specatpenn.squarespace.com/jazz-and-grooves",
+    "email": "jazzdirs@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-jazz-grooves/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://specatpenn.squarespace.com/jazz-and-grooves",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true). The club site has no dated items. Its shows are open to the general public, so the audience is public. The directory's application field is set but no process is described.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-pop-up"
+    ],
+    "group_id": "spec-pop-up"
+   },
+   "verdict": "publish",
+   "name": "SPEC Pop Up",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "popup@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-pop-up/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true). The club page the directory links, specevents.net/pop-up, returned HTTP 404 when fetched, so no site facts are recorded. The website is left out for that reason.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-sound"
+    ],
+    "group_id": "spec-sound"
+   },
+   "verdict": "publish",
+   "name": "SPEC Sound",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "sound@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-sound/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE, which may conflict with its accepting-members flag. No website is listed (Facebook and Instagram only, not read under the lead rules). The directory text says no application or experience is needed and training runs each semester; not recorded as facts because the entry is inactive.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-to-represent-undergraduate-minorities-spec-trum"
+    ],
+    "group_id": "spec-to-represent-undergraduate-minorities-spec-trum"
+   },
+   "verdict": "publish",
+   "name": "SPEC To Represent Undergraduate Minorities (SPEC-TRUM)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "spectrumdirs@specevents.net"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-to-represent-undergraduate-minorities-spec-trum/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory status reads INACTIVE (the active flag is set to true). The club page the directory links, specevents.net/trum, returned HTTP 404 when fetched, so no site facts are recorded. Directory says the club is open to all Penn students.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

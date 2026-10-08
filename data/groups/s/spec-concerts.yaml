@@ -4,18 +4,30 @@ aka: []
 leads:
 - penn_clubs:spec-concerts
 ein: null
-summary: null
-what_you_do: null
+summary: The SPEC committee that books and runs Penn's annual Spring Fling concert each April. Members
+  plan the show, work on marketing and event details, and help with the concert.
+what_you_do: Students join the Concerts Committee through its listserv or general meetings. The April
+  concert is for Penn students and community members, so people outside Penn can attend.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+- social-meetups
+interests:
+- jam_sessions
+- young_adult_social
+motives:
+- social
+- career
+formats:
+- lead_organize
+- one_off_event
+roles:
+- organize
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: public
   school: penn
   min_age: null
   max_age: null
@@ -24,12 +36,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The Spring Fling concert is held each April. The committee holds weekly or biweekly general meetings.
   days: []
   times: []
-  recurring: null
-  season: null
-locations: []
+  recurring: true
+  season: spring
+locations:
+- label: Penn campus
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +69,44 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the Concerts Committee listserv or email the committee, then come to a general meeting.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The committee is open to students of all years, and the site describes no application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.specevents.net/spring-fling-concerts/get-involved
   email: concerts@specevents.net
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.specevents.net/spring-fling-concerts/get-involved
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/spec-concerts/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - first_step
+  - schedule
+- url: https://www.specevents.net/spring-fling-concerts/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

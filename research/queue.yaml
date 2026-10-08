@@ -293,7 +293,7 @@ waves:
     kind: slices
     brief: districts
     searches_per_agent: 6
-    status: todo
+    status: done
     note: "The eight thinnest planning districts first (published groups per district on 2026-10-08 evening: upper far northeast 21, central northeast 24, lower far northeast 29, lower northeast 30, lower southwest 33, north delaware 35, west 36, west park 55)."
     slices:
     - {agent: f-upper-far-northeast, text: "Upper Far Northeast: Somerton, Bustleton (north), Byberry, Parkwood, Millbrook, Morrell Park, Torresdale (north), Academy Gardens. Council District 10."}
@@ -311,7 +311,7 @@ waves:
     kind: slices
     brief: lists
     searches_per_agent: 3
-    status: todo
+    status: done
     slices:
     - agent: n-william-way
       text: 'William Way LGBT Community Center (https://www.waygay.org/): its own peer groups and programs, and the outside community groups that meet there (calendar, "groups that meet here", community programs pages). Many small LGBTQ social, support, arts and sports groups meet at William Way. Support and recovery groups get audience.support_group true.'
@@ -330,7 +330,7 @@ waves:
     kind: slices
     brief: lists
     searches_per_agent: 4
-    status: todo
+    status: done
     slices:
     - agent: m-culturetrust
       text: 'CultureTrust Greater Philadelphia (https://culturetrust.org/), its list or directory of fiscally sponsored projects. Read every project page it links; many are tiny arts, youth, food and neighborhood projects with no tax status of their own. Keep the ones with a public way in.'
@@ -343,7 +343,7 @@ waves:
     kind: slices
     brief: lists
     searches_per_agent: 3
-    status: todo
+    status: done
     slices:
     - agent: r-quaker-meetings
       text: 'Philadelphia Yearly Meeting (https://www.pym.org/) list of monthly meetings: every Quaker meeting that meets in the City of Philadelphia, with its worship time, First Day school, and committees or service work open to visitors. Also Friends Center (1501 Cherry St) programs open to the public.'
@@ -367,7 +367,7 @@ waves:
     kind: slices
     brief: lists
     searches_per_agent: 3
-    status: todo
+    status: done
     slices:
     - agent: q-orchards-gardens-trees
       text: 'Philadelphia Orchard Project orchard partners (https://www.phillyorchards.org/), Neighborhood Gardens Trust gardens (https://ngtrust.org/), PHS Tree Tenders neighborhood groups and PHS community garden network (https://phsonline.org/), and Farm Philly (Parks and Recreation). Each garden or orchard group that welcomes volunteers or members is a record.'
@@ -384,7 +384,7 @@ waves:
     kind: slices
     brief: lists
     searches_per_agent: 3
-    status: todo
+    status: done
     slices:
     - agent: u-recovery
       text: 'Recovery support in Philadelphia: the Southeastern Pennsylvania Intergroup of Alcoholics Anonymous (one record linking its meeting finder), Narcotics Anonymous Philadelphia area service, Al-Anon and Alateen in Philadelphia, SMART Recovery meetings in the city, recovery community organizations (PRO-ACT and others) with peer groups and drop in centers, and sober social groups. One record per organization; never copy meeting lists.'
@@ -398,7 +398,7 @@ waves:
     brief: leads_followup
     batch_files: research/batches/w19a-leads-own-site/
     searches_per_agent: 1
-    status: todo
+    status: held
     note: "leads_only names up to 2026-10-08 evening that have their own website, after removing names and sites we already have (136 leads, 10 batches)."
   - id: w19b-leads-platform
     lane: K
@@ -418,7 +418,7 @@ waves:
     brief: tier1
     batch_files: research/batches/w20a-tier1-irs-web/
     searches_per_agent: 2
-    status: todo
+    status: done
     note: "IRS groups that wrote a website on their e-postcard, in joinable NTEE codes (arts, environment, animals, recreation and sports, youth, community improvement, food, housing, crime prevention, disaster). 413 groups, 28 batches of 15. Ids in research/batches/w20a-tier1-irs-web-ids.json."
   - id: w20b-tier1-irs-web
     lane: A
@@ -451,7 +451,7 @@ waves:
     kind: slices
     brief: discover
     searches_per_agent: 10
-    status: todo
+    status: done
     note: "Second sweep of the eight thinnest interest families, told which groups we already have."
     slices:
     - agent: g2-games-puzzles
@@ -470,3 +470,16 @@ waves:
       text: 'Second sweep of faith-community: service programs and community meals at congregations of every tradition open to all (gurdwara langar, mosque food drives, synagogue young adult groups, Quaker meetings, Buddhist and Hindu temple volunteers, Black church community programs, Catholic young adult groups), interfaith service days. Told the thirteen groups we already have.'
     - agent: g2-emergency-disaster
       text: 'Second sweep of emergency-disaster: CERT teams and Ready Philadelphia, Salvation Army emergency services volunteers, ARES and SKYWARN weather spotters, Team Rubicon, Stop the Bleed and CPR trainings run by community groups, disaster relief volunteering, block level preparedness. Told the seven groups we already have.'
+  # Added during the evening push (2026-10-08). Status as of about 7:50 pm.
+  - {id: w12b-cultureworks-rest, lane: M, kind: batches, brief: leads_followup, status: done}
+  - {id: w13b-congregation-leads, lane: R, kind: batches, brief: leads_followup, status: done}
+  - {id: w17b-arts-alliance-names, lane: Q, kind: batches, brief: leads_followup, status: done}
+  - {id: w19c-leads-tonight, lane: K, kind: batches, brief: leads_followup, status: held, note: "Batches 01 to 03 run (about 1 group per 15 leads); 04 and 05 not run."}
+  - id: w22-penn-clubs
+    lane: B
+    kind: batches
+    brief: penn_clubs
+    batch_files: research/batches/w22-penn-clubs/
+    searches_per_agent: 0
+    status: running
+    note: "476 Penn Clubs entries, 24 batches of 20, all launched 2026-10-08 evening. About half are marked INACTIVE in the directory and were held back; the brief was changed midway so a club's own dated activity outweighs that flag. Follow up: recheck held Penn clubs that link their own site."

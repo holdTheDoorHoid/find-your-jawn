@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:society-of-hispanic-professional-engineers
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn chapter of a national group that supports Hispanic students and their allies in STEM.
+  It runs social events, service projects and career-building events.
+what_you_do: Members attend monthly general body meetings and take part in socials, service work and career
+  events. Meetings are open to any year and major.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- careers-skills-professional
+- science-learning
+interests:
+- professional_associations
+- stem_outreach
+motives:
+- career
+- social
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,12 +35,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Monthly general body meetings in the evening. Upcoming dates listed: a social on Oct 16, 2026,
+    a meeting on Oct 20, 2026, and a convention on Oct 28 to 31, 2026. Locations are posted later.'
   days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  times:
+  - evening
+  recurring: true
+  season: year_round
+locations:
+- label: Penn campus, location posted per event
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +70,44 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the join link on the chapter site or email the chapter, then come to a general body meeting.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Meetings are open to any year and major, and the site says you do not need to be an engineering
+    major or Hispanic to join.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.upennshpe.com/
   email: shpe@engineering.upenn.edu
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.upennshpe.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/society-of-hispanic-professional-engineers/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - contacts
+- url: https://www.upennshpe.com/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
