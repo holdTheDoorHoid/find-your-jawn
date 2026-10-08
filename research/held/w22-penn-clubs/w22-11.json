@@ -1,0 +1,415 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-11",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 43,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "Batch of 20 Penn clubs, read from the Penn Clubs directory API (one fetch each), plus 10 club websites where the entry linked one, plus 13 re-reads of the directory status fields. Result: 20 records. 11 publish with status (1 active, 10 probably_active). 8 held back as status unknown because the directory status reads INACTIVE: Kurdish Students, La Unidad Latina, Langfitt, Latin and Ballroom Dance, Latinx Coalition, Latter-day Saint Student Association, Medical Volunteers for Prevention, MENA. 1 hidden: MECS at Penn, no public way in. The directory status UNDER REVIEW is an approval state, not an activity flag, so clubs with the active flag set and no dated item are probably_active. Latin and Ballroom Dance and MENA have current-looking evidence on their own pages (Fall 2026 lessons and an October 10, 2026 competition; Fall 2026 membership), and Medical Volunteers lists an open FA26 application, so the reviewer should check those statuses first. The Latinx Coalition's newest dated site item is from 2022, so if it stays inactive it should be dormant. Years are used only where the page writes one. Numeric application_required values were not treated as definitive; records rely on the page text. Langfitt's listed email looks personal and was omitted. Matriculate's national site does not mention Penn. Searches used: 0. Fetches used: 43 of 60. No blocked pages, no rate limiting.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:kurdish-students-at-penn"
+    ],
+    "group_id": "kurdish-students-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Kurdish Students at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": []
+   },
+   "contacts": {
+    "email": "upennkurds@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/kurdish-students-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "application_required",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status field reads INACTIVE even though its active flag is true, so status is unknown and no summary or tags are written. Founded 2025-03-21 with 9 members listed. Directory says the club is not accepting members and that an application is required. No website, events or social links. Reviewer: publish once the club confirms it is active.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:la-unidad-latina-lambda-upsilon-lambda-fraternity-inc-delta-chapter"
+    ],
+    "group_id": "la-unidad-latina-lambda-upsilon-lambda-fraternity-incorporated",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated (Devastating Delta Chapter)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": [
+     "latino",
+     "men"
+    ]
+   },
+   "first_step": {
+    "how": "Fill out the chapter interest form. A current member gets in touch afterward."
+   },
+   "contacts": {
+    "email": "lul.devastatingdelta@gmail.com",
+    "website": "https://www.launidadlatina.org/",
+    "social": [
+     "https://instagram.com/lul_devastatingdelta/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/la-unidad-latina-lambda-upsilon-lambda-fraternity-inc-delta-chapter/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.launidadlatina.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "audience",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status reads INACTIVE, although accepting_members is true. The website is the national fraternity site. It names a 2026 national convention with no exact dates and shows no chapter events, so it is not evidence that this chapter is active. The national site addresses men, so community includes men; confirm before publishing. Directory application value is unclear.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:langfitt"
+    ],
+    "group_id": "langfitt-neurosurgical-society",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Langfitt Neurosurgical Society",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": []
+   },
+   "first_step": {
+    "how": "Attend a society meeting or event. The membership text on the directory page says no prior experience is needed."
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/langfitt/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status reads inactive (12 members listed). The membership text says Penn medical students join by attending meetings, but the accepting_members field says no and the application field says yes, which conflict. The contact email on the listing looks like a personal address, so it is omitted. Reviewer: confirm status and a club contact before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-latin-and-ballroom-dance-plbd"
+    ],
+    "group_id": "latin-and-ballroom-dance-lbd-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Latin and Ballroom Dance (LBD) at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": []
+   },
+   "first_step": {
+    "how": "Come to the club's table at the activities fair, or email to ask about joining. The club's page also has a mailing list form for new members."
+   },
+   "contacts": {
+    "email": "pennlatinballroom@gmail.com",
+    "website": "https://groups.universitylife.upenn.edu/ballroom/",
+    "social": [
+     "https://instagram.com/pennlatinballroom_dance"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-latin-and-ballroom-dance-plbd/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join"
+     ]
+    },
+    {
+     "url": "https://groups.universitylife.upenn.edu/ballroom/",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "events",
+      "how_to_join",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive-entry rule: directory status reads INACTIVE although the active flag is true. For the reviewer: the club's own page looks current. It has Fall 2026 updates and welcomes new members for Fall 2026, a beginner-friendly ballroom competition called UPenn Prelude on October 10, 2026, and weekly lessons: Sundays at Weightman Hall from 11 am to 3 pm by level, and Sunday and Wednesday evening practice at the Annenberg Dance Studio from 6 to 8 pm. If the reviewer agrees the directory status is stale, rerun with status active and these times as schedule.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:latinx"
+    ],
+    "group_id": "latinx-coalition",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Latinx Coalition",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": [
+     "latino"
+    ]
+   },
+   "first_step": {
+    "how": "Sign up for the weekly community newsletter linked from the club's website."
+   },
+   "contacts": {
+    "email": "latinxcopenn@gmail.com",
+    "website": "https://www.upennlc.com/",
+    "social": [
+     "https://instagram.com/lc_upenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/latinx/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join"
+     ]
+    },
+    {
+     "url": "https://www.upennlc.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "events",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status reads inactive, while the same listing also shows active. Accepting members says no. The board is elected each fall with terms starting in spring. The club site's newest dated item is a 2022 photo caption, and the 2023 footer is not activity evidence. If the status stays inactive, the right status is dormant (newest evidence older than 24 months), not active. Umbrella group for Latinx student organizations at Penn. Directory application value is unclear.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:latter-day-saint-student-association"
+    ],
+    "group_id": "latter-day-saint-student-association",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Latter-day Saint Student Association",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": [],
+    "faith": "other"
+   },
+   "first_step": {
+    "how": "Email the club to ask about activities. The directory says everyone is welcome to attend."
+   },
+   "contacts": {
+    "email": "upennldssa@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/latter-day-saint-student-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status reads INACTIVE (12 members listed). Faith is set to other because the vocabulary has no id for this church. The directory says everyone is welcome to activities, but no event dates or website are listed, so open_to stays students until confirmed. Reviewer: confirm status before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:medical-volunteers-for-prevention"
+    ],
+    "group_id": "medical-volunteers-for-prevention",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Medical Volunteers for Prevention",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": []
+   },
+   "first_step": {
+    "how": "Apply through the FA26 application form, which is reviewed on a rolling basis."
+   },
+   "contacts": {
+    "email": "medvforp@gmail.com",
+    "website": "https://medvp.weebly.com/",
+    "social": [
+     "https://instagram.com/pennmvps/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/medical-volunteers-for-prevention/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://medvp.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status field reads INACTIVE, although the same listing shows active and accepting members. The FA26 application is open on the listing, so the status needs checking soon. If the club confirms it is active, the record can be completed as a prevention volunteering group focused on older adults and on people who find health insurance hard to navigate. The club site lists no dated items. Directory application value 4 is unclear.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:mena-undergraduate-pre-law-society"
+    ],
+    "group_id": "mena-undergraduate-pre-law-society",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "MENA Undergraduate Pre-Law Society",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "community": []
+   },
+   "first_step": {
+    "how": "Email upennmenals@gmail.com with questions or to say you are interested. The listing says the club is taking members and some board roles for Fall 2026."
+   },
+   "contacts": {
+    "email": "upennmenals@gmail.com",
+    "social": [
+     "https://instagram.com/pennmenals/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/mena-undergraduate-pre-law-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "how_to_join",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: directory status reads INACTIVE on recheck, while the same listing also shows active and accepting members. The listing says the club is taking members and some board roles for Fall 2026, which suggests it is current. Reviewer: confirm the status, then complete the record. Meeting location is to be announced. No website and no events listed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:muslim-students-association
 ein: null
-summary: null
-what_you_do: null
+summary: A student group for Muslim undergraduate and graduate students at Penn. It supports their personal,
+  social, and spiritual lives, and anyone is welcome at its events.
+what_you_do: Come to events, join the newsletter or WhatsApp group, or stop by the club space on South
+  37th Street.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- worship_community
+motives:
+- values
+- social
+formats:
+- conversation
+- one_off_event
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -20,7 +30,7 @@ audience:
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: muslim
   partisan: false
   support_group: false
 schedule:
@@ -29,12 +39,21 @@ schedule:
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Club space on South 37th Street
+  address: 118 South 37th Street
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +67,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the New Students page or sign up for the newsletter on the club site, or visit the space in
+    person
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club site has a New Students page and a newsletter sign-up, and the directory says anyone
+    is welcome at events
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennmsa.com/
   email: board@pennmsa.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennmsa.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/muslim-students-association/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - status
+- url: https://pennmsa.com/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - locations
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

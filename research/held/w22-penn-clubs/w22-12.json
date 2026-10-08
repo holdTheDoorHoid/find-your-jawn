@@ -1,0 +1,140 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-12",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 31,
+ "leads_only": [
+  {
+   "name": "SHPE (Society of Hispanic Professional Engineers)",
+   "url": "https://nsbe.seas.upenn.edu",
+   "note": "named as an event partner on the NSBE club site, Penn chapter not checked"
+  }
+ ],
+ "blocked": [],
+ "notes": "Searches 0 of 0. Fetches 31: 20 directory entries (pennclubs.com API) and 11 club websites, one each where the entry linked a site. No rate limiting, no blocks, no 403s. Verdicts: 20 publish, 0 hide. Status: 3 active, 9 probably_active, 3 dormant, 5 unknown. Held back because the directory marks them INACTIVE and no summary, categories or interests were written: MELSA, MECHA, MLSA. Models@Penn (UNDER REVIEW) and Music Business at Penn (not accepting, no dated item) are kept with status unknown and a reviewer may choose to hold them. Dormant statuses for Men's Ultimate Frisbee, NAACP and Natives at Penn come only from old dated items on their own club pages while the directory lists them as accepting members; these need a human check. Personal-looking student emails in the directory (Ice Hockey, MMA, MLSA) were not recorded. Directory application flags are numeric and unexplained, so only written text was used for newcomer ratings. Several tags are nearest fits (lacrosse, ultimate, music business, pre-med, Models@Penn); each is explained in the record's notes. The fetch tool summarizes pages, so exact wording is the summary's and was kept to the fields listed.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:melsa"
+    ],
+    "group_id": "middle-eastern-law-student-association-melsa",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Middle Eastern Law Student Association (MELSA)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/melsa/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory entry is marked INACTIVE, so summary, categories and interests are left out and the record is held back. The directory email differs from the batch value ('Hidden'), so no contact is recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:mecha-de-penn"
+    ],
+    "group_id": "movimiento-estudiantil-chicano-de-aztlan-mecha-de-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Movimiento Estudiantil Chicano de Aztlan (MEChA de Penn)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "mecha.de.penn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/mecha-de-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory marks the club INACTIVE while the accepting flag is set. Summary, categories and interests are left out so the record is held back until someone confirms the group is running.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:1st-year-at-penn"
+    ],
+    "group_id": "muslim-law-students-association-mlsa",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Muslim Law Students Association (MLSA)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": "muslim",
+    "support_group": false
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/1st-year-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Directory marks the club INACTIVE even though its accepting flag is set, so summary, categories and interests are left out and the record is held back. The batch lead id penn_clubs:1st-year-at-penn returned this club's entry. The directory lists individual student emails, which were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

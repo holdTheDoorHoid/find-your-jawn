@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:matriculate
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn chapter of a national group. Penn students guide high school students with strong grades
+  but limited means through college applications, working with them online.
+what_you_do: Advisors take on up to four high schoolers each. Leadership roles are open to members of
+  every class year.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+motives:
+- values
+- career
+formats:
+- conversation
+roles:
+- help_teach
+- lead
+crowd:
+- students
+- teens
 bridging: null
 audience:
   open_to: students
@@ -30,7 +41,7 @@ schedule:
   recurring: null
   season: null
 locations: []
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -48,31 +59,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the club's Airtable interest form. The national process then includes an interview with
+    a student leader and recruitment events.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Members go through an application, an interview, and training before they advise.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://www.matriculate.org/apply
   email: Hidden
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennmatriculate
+  - https://facebook.com/pennmatriculate
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.matriculate.org/apply
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/matriculate/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+- url: http://www.matriculate.org/apply
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

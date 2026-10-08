@@ -1,18 +1,31 @@
 id: first-generation-investors-penn-chapter
-name: First Generation Investors - Penn Chapter
+name: First Generation Investors, Penn Chapter
 aka: []
 leads:
 - penn_clubs:first-generation-investors-upenn-chapter
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn student chapter of a national nonprofit that tutors Philadelphia high school students
+  in money skills and investing, and helps them make a final investment plan.
+what_you_do: Tutor high school students on Fridays at 11 am, help them learn about investing, and guide
+  them through a final investment plan. Apply through the chapter's form, or email with questions.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- careers-skills-professional
+- kids-youth-mentoring
+interests:
+- money_skills
+- tutoring
+motives:
+- values
+- career
+formats:
+- side_by_side
+- learn_skill
+roles:
+- help_teach
+crowd:
+- students
+- teens
 bridging: null
 audience:
   open_to: students
@@ -24,10 +37,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekly tutoring on Fridays, 11 am to 12 pm, as listed in the directory (no year given)
+  days:
+  - fri
+  times:
+  - morning
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +63,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the chapter's application form, linked from its Penn Clubs page, or email the chapter
+    with questions. The last round listed is Fall 2025.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: An application form comes first, and the directory marks the group as not accepting members.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://firstgenerationinvestors.com
   email: fgipenn@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/fgipenn
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://firstgenerationinvestors.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/first-generation-investors-upenn-chapter/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+- url: https://firstgenerationinvestors.com
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

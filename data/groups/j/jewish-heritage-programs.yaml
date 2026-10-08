@@ -5,15 +5,23 @@ leads:
 - irs_bmf:133780385
 - penn_clubs:jewish-heritage-programs
 ein: '133780385'
-summary: null
-what_you_do: null
+summary: A student-run group, linked to Chabad at Penn, that offers service projects, mentoring, and Jewish
+  learning. It aims at students who do not usually take part in Jewish campus life.
+what_you_do: Join service projects, mentoring, and Jewish learning led by fellow students.
 kind: student_org
-categories: []
-interests: []
-motives: []
+categories:
+- faith-community
+- kids-youth-mentoring
+interests:
+- faith_service_projects
+- mentoring
+motives:
+- values
+- social
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -31,14 +39,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
+- label: Listed address
   address: 4032 Spruce Street
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -58,23 +66,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Ask how to join through the group's website or its listserv. The Penn Clubs entry lists an application.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The Penn Clubs entry lists an application, and no open event is listed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: emily@jhp.org
+  website: https://jhp.org
+  email: Jhppenn@googlegroups.com
   phone: null
   contact_name: Iris Leon
-  social: []
+  social:
+  - https://instagram.com/Jhpenn/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://jhp.org
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -89,8 +98,23 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/jewish-heritage-programs/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - interests
+  - audience
+  - first_step
+  - contacts
+  - status
+- url: https://jhp.org
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

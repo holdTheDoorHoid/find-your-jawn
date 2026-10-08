@@ -22,8 +22,12 @@ Your batch lists Penn student clubs from the Penn Clubs directory (lead ids star
      `choir_singing`, consulting clubs are `careers-skills-professional`, cultural associations are
      `culture-language-heritage-groups`).
    - `match.group_id` is the batch `id`; `match.lead_ids` are the batch `lead_ids`.
-3. A club whose entry is empty or inactive: still write a record with `status: "unknown"` and leave
-   out summary, categories and interests, so it is held back.
+3. A club whose entry is empty or marked INACTIVE: check its own site if the entry links one. If
+   that site shows dated activity within the last 12 months (fall 2026 recruiting, a 2026 event),
+   the club is active: write a full record. Only when nothing current is found, write a record with
+   `status: "unknown"` and leave out summary, categories and interests, so it is held back. The
+   directory's status field (UNDER REVIEW, PRELIMINARY, FULL, INACTIVE) is a registration state,
+   not proof either way.
 
 Never record a student's personal name, phone or personal email. A club email on the directory is
 fine. Spend about the same effort on each club.

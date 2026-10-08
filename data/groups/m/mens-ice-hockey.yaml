@@ -4,15 +4,23 @@ aka: []
 leads:
 - penn_clubs:mens-ice-hockey
 ein: null
-summary: null
-what_you_do: null
+summary: A men's club hockey team that plays other colleges in the tri-state area in the ACHA Division
+  2 conference. Members practice twice a week and play weekend games.
+what_you_do: Try out for the team, practice twice a week, and play weekend conference games.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+interests:
+- hockey_roller_derby
+motives:
+- enhancement
+- social
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +32,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Practices twice a week and weekend games during the season
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: winter
 locations:
-- label: Address
+- label: Class of 1923 Arena
   address: Class of 1923 Arena
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +65,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Watch the team's Instagram for tryout schedules and attend a tryout
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory indicates tryouts are part of joining, and the tryout dates are only posted on
+    Instagram
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.pennquakershockey.com
   email: reagano@sas.upenn.edu
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2024-11
+sign_of_life_url: https://www.pennquakershockey.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +90,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/mens-ice-hockey/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+- url: https://www.pennquakershockey.com
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

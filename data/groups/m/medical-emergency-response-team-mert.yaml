@@ -4,15 +4,28 @@ aka: []
 leads:
 - penn_clubs:medical-emergency-response-team-mert
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's student-run emergency medical service. Members give pre-hospital care with campus police
+  and the Philadelphia Fire Department, and the team teaches medical skills to students and the wider
+  community.
+what_you_do: Members work shifts (24 hours a month), attend weekly general body meetings, and keep their
+  certifications current.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- emergency-disaster
+interests:
+- volunteer_fire_ems
+- first_aid_cpr
+motives:
+- values
+- career
+formats:
+- team_play
+- learn_skill
+roles:
+- hands_on
+- help_teach
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,17 +37,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly general body meetings, plus 24 hours of shifts a month for members
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +61,48 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Attend an information session, then fill out the interest form to get an application. The fall
+    2026 application window closed in September.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Requires an information session, an application, interviews, and either EMT certification or
+    an EMT class.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://pennmert.org/
   email: membership@pennmert.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/UPennMERT/
+  - https://instagram.com/pennmert/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://pennclubs.com/api/clubs/medical-emergency-response-team-mert/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/medical-emergency-response-team-mert/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://pennmert.org/join-mert/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - commitment
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

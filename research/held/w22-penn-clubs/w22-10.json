@@ -1,0 +1,334 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-10",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 36,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 20 clubs in batch 10 were read from the Penn Clubs API entry, and each club website linked there was fetched once, with a few re-checks: 36 fetches and 0 searches (none were needed). Verdicts: 20 publish, 0 hide, 0 not_a_group, 0 duplicate, 0 out_of_area. Statuses: 4 active (IVCF, John Marshall, Keynotes, KDSAP), 10 probably_active (IV Graduate, JHP, JUBA, JSA, Istmo y Vos, Judo, Karate, Kendo, Kesem, KAP), 2 dormant (iNtuitons, JHealth), 4 unknown (Kite and Key, K-PEnSA, KoGSA, KSA). Held back (no summary, categories or interests): iNtuitons under the brief rule for INACTIVE entries, and the four unknowns, which show INACTIVE directory status against an active flag with no current content on their sites. Judgment calls for the owner: IVCF active rests on a regional conference registration dated October 2025 on the chapter Linktree; KDSAP active rests on a 2025 to 2026 school year recap; iNtuitons is dormant from a Spring 2024 season, which the brief would otherwise hold as unknown. KDSAP site calendar entries for Oct 10 and Nov 7, 2026 are labeled sample data and were not used. Personal names and personal-looking emails on the directory were left out for IVCF, JHP and JHealth. Chabad at Penn is named by JHP but has no URL in the data, so it is not listed as a lead. No pages were blocked, and no rate limiting was seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:intuitions"
+    ],
+    "group_id": "intuitons-experimental-theatre",
+    "ein": null,
+    "website": "https://intuitons-theatre.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "iNtuitons Experimental Theatre",
+   "kind": "student_org",
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Audition for a cast role or interview for a crew role. The group holds these three times a year, in fall, winter, and spring.",
+    "newcomer_friendliness": 2,
+    "basis": "An audition or interview comes first. Penn Clubs marks the group INACTIVE, so the current way in may not be running."
+   },
+   "contacts": {
+    "website": "https://intuitons-theatre.weebly.com/",
+    "email": "intuiton@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/intuitons/",
+     "https://facebook.com/iNtuitons"
+    ]
+   },
+   "status": "dormant",
+   "sign_of_life_url": "https://intuitons-theatre.weebly.com/",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/intuitions/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://intuitons-theatre.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "sign_of_life_url"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back on purpose. Penn Clubs status reads INACTIVE while its active flag says true, so summary, categories and interests are left out under the inactive rule. The club site's newest dated item is the Spring 2024 season (no month given), older than 24 months, so status is dormant. Owner may decide whether dormant groups should show. Application flag value 3 is not explained. Undated site items include a TBA show and an Alternative Theater Festival with no year.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:kite-and-key"
+    ],
+    "group_id": "kite-and-key-society",
+    "ein": null,
+    "website": "https://kiteandkeysociety.com"
+   },
+   "verdict": "publish",
+   "name": "Kite and Key Society",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "The Penn Clubs entry says applications for the Fall 2026 training class open on the first day of classes.",
+    "newcomer_friendliness": 2,
+    "basis": "An application and a training class are needed, but the directory marks the group INACTIVE and not accepting members, so this may not be current."
+   },
+   "contacts": {
+    "website": "https://kiteandkeysociety.com",
+    "email": "kiteandkeypenn@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/kiteandkeysociety/",
+     "https://facebook.com/KiteAndKeySociety/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/kite-and-key/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://kiteandkeysociety.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back on purpose. Penn Clubs shows status INACTIVE and not accepting members, but its text advertises a Fall 2026 training class. The club's own site has history only and no current content, so summary, categories and interests are left out until someone confirms the group is running. Penn Clubs describes it as a civic engagement group founded in 1924 that gives campus tours and runs prospective student programs, which is the basis for a summary if confirmed. The application flag value 4 is not explained.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:korea-penn-engineers-and-scientists-association"
+    ],
+    "group_id": "korea-penn-engineers-and-scientists-association",
+    "ein": null,
+    "website": "https://k-pensa.org/"
+   },
+   "verdict": "publish",
+   "name": "Korea-Penn Engineers and Scientists Association",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Email the board or message the group on Instagram. The directory lists an application.",
+    "newcomer_friendliness": 2,
+    "basis": "The directory lists an application, and the status conflict means the way in may not be current."
+   },
+   "contacts": {
+    "website": "https://k-pensa.org/",
+    "email": "pensaboard@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/kpensa_upenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/korea-penn-engineers-and-scientists-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://k-pensa.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back on purpose. Penn Clubs shows status INACTIVE while its active flag says true. The club's site returned only its title, with no dated items. Linktree and Instagram are lead sources and were not read. The directory does not say whether non-Penn students may join, so the summary, categories and interests are left out until status is confirmed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:korean-graduate-students-association"
+    ],
+    "group_id": "korean-graduate-students-association-kogsa-at-penn",
+    "ein": null,
+    "website": "https://kogsa.qshop.ai/"
+   },
+   "verdict": "publish",
+   "name": "Korean Graduate Students Association (KoGSA) at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "heritage:korean"
+    ],
+    "faith": null,
+    "support_group": false
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "contacts": {
+    "website": "https://kogsa.qshop.ai/",
+    "email": "upennrecruiting@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/upennkogsa/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/korean-graduate-students-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "audience",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://kogsa.qshop.ai/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back on purpose. Penn Clubs shows status INACTIVE while its active flag says true. The How to get involved field is blank, and the club's site returned only its name, with no dated items. The group is listed as graduate. The directory does not say whether non-Penn students may join, and the first step is not described.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-ksa"
+    ],
+    "group_id": "korean-student-association-at-penn-ksa",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Korean Student Association at Penn (KSA)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [
+     "heritage:korean"
+    ],
+    "faith": null,
+    "support_group": false
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Sign up as a member to join the listserv, which gives access to event information. Events are posted on Instagram and by listserv email.",
+    "newcomer_friendliness": 3,
+    "basis": "Everyone is welcome at events, and membership is a simple sign up, though the directory flags an application."
+   },
+   "contacts": {
+    "email": "pennksa@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/pennksa/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-ksa/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "audience",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back on purpose. Penn Clubs shows status INACTIVE while its active flag says true, and is_ghost is true. No website and no dated items were found. The directory says the group hosts several events a month, but gives no dates, so it is not used as evidence. The Instagram page and the listserv sign up link are lead sources and were not read. Summary, categories and interests are left out until status is confirmed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

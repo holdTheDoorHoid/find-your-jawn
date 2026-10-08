@@ -4,15 +4,27 @@ aka: []
 leads:
 - penn_clubs:penn-outdoors
 ein: null
-summary: null
-what_you_do: null
+summary: A student club for hikers, climbers, bikers, and anyone else who loves the outdoors. It plans
+  trips, builds outdoor skills, and meets weekly to talk over past trips and plan new ones.
+what_you_do: Come to the weekly general meeting, join a trip the club is planning, or join its group chat
+  for spur of the moment outings.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- outdoors-adventure
+interests:
+- hiking
+- climbing
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- one_off_event
+roles:
+- hands_on
+- organize
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,17 +36,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: General meetings on Wednesdays at 9 pm, plus trips planned in the club's group chat
+  days:
+  - wed
+  times:
+  - night
+  recurring: true
+  season: event_only
+locations:
+- label: Annenberg Plaza
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +71,48 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join the listserv through the club's Google form to get weekly emails, then come to a Wednesday
+    general meeting
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club says it is open to anyone in the Penn community, with a listserv sign-up and weekly
+    meetings, and the entry describes no application
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennoutdoors.weebly.com/
   email: pennoutdoors@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/penn_outdoors/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennoutdoors.weebly.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/penn-outdoors/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://pennoutdoors.weebly.com/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,15 +4,28 @@ aka: []
 leads:
 - penn_clubs:matsci-makerspace
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn student group that runs monthly hands-on workshops introducing the Penn community to materials
+  science. Past workshops have covered glass, candles, paper, and metal casting.
+what_you_do: Come to a workshop, or join the board to help plan and run them. Board membership is open
+  to students of any year.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- making-tech
+- science-learning
+interests:
+- makerspace
+- stem_outreach
+motives:
+- understanding
+- enhancement
+formats:
+- learn_skill
+- perform_make_together
+roles:
+- hands_on
+- create
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,20 +37,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Monthly workshops; the page lists no dates
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: LRSM Room 7
+- label: LRSM Room 7
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,23 +70,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the listserv to hear about workshops. Board applications are separate and use the Fall 2026
+    form.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Workshops are open to Penn students who join the listserv. Board roles need an application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://sites.google.com/view/matscimakerspace/
   email: msemaker@engineering.upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/matscimakerspace/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://sites.google.com/view/matscimakerspace/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +96,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/matsci-makerspace/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - locations
+- url: https://sites.google.com/view/matscimakerspace/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

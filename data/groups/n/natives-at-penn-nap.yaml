@@ -4,22 +4,35 @@ aka: []
 leads:
 - penn_clubs:natives-at-penn
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn community for Native American, Native Hawaiian, Alaska Native, and Indigenous students,
+  with room for staff, alumni, and allies. It raises awareness of Indigenous culture and history on campus.
+what_you_do: Take part in events such as the annual powwow and Indigenous Peoples' Day, and register as
+  a member.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- culture-language-heritage-groups
+interests:
+- heritage_clubs
+- cultural_exchange
+motives:
+- understanding
+- values
+- social
+formats:
+- one_off_event
+- conversation
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
   school: penn
   min_age: null
   max_age: null
-  community: []
+  community:
+  - native_american
   faith: null
   partisan: false
   support_group: false
@@ -30,20 +43,20 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
-  address: Greenfield Intercultural Center (3708 Chestnut Street) or 204 in ARCH
+- label: Greenfield Intercultural Center (or room 204 in ARCH)
+  address: 3708 Chestnut Street
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +70,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Register as a club member on Penn Clubs, then fill out the member registration form linked from
+    the club's page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club says it is open to everyone, and the only step described is a member registration form
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://groups.universitylife.upenn.edu/natives/
   email: nativesatpenn@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-06
+sign_of_life_url: https://groups.universitylife.upenn.edu/natives/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +95,21 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/natives-at-penn/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - locations
+- url: https://groups.universitylife.upenn.edu/natives/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,18 +4,28 @@ aka: []
 leads:
 - penn_clubs:netter-center-student-advisory-board
 ein: null
-summary: null
-what_you_do: null
+summary: A board of Penn students who advise the Netter Center, a university center that works with West
+  Philadelphia on community problems.
+what_you_do: Board members help the center connect with Penn groups and departments, and they weigh in
+  on its programs.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- neighborhood-civic
+interests:
+- community_development
+motives:
+- values
+- career
+formats:
+- lead_organize
+roles:
+- lead
+- organize
+crowd:
+- students
 bridging: null
 audience:
-  open_to: students
+  open_to: invite
   school: penn
   min_age: null
   max_age: null
@@ -30,7 +40,7 @@ schedule:
   recurring: null
   season: null
 locations: []
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: null
@@ -48,31 +58,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Membership is by staff selection, not an open application. Students usually come to the board after
+    taking a Penn community service course (called ABCS) or joining a Netter service program.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 1
+  basis: The directory says the board is not accepting members, and staff choose its members
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.nettercenter.upenn.edu/get-involved/student-engagement-opportunities
   email: nettercenter@upenn.edu
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.nettercenter.upenn.edu/get-involved/student-engagement-opportunities
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/netter-center-student-advisory-board/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - online_ok
+  - status
+  - contacts
+- url: https://www.nettercenter.upenn.edu/about-center/advisory-boards/student-advisory-board
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

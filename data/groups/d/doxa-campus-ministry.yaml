@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:doxa-campus-ministry
 ein: null
-summary: null
-what_you_do: null
+summary: A Christian student ministry for Penn undergraduates that meets for Bible study, prayer, worship,
+  and friendship. It is the college group of Redemption City Church.
+what_you_do: Join a Bible study, come to prayer and worship gatherings, and take part in events with other
+  students. Reach out by email or Instagram to ask how to get started.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- worship_community
+- scripture_study
+motives:
+- values
+- social
+formats:
+- conversation
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,13 +35,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Sunday gatherings and Bible study at Penn and Temple; the page gives no times
+  days:
+  - sun
   times: []
   recurring: null
   season: null
 locations: []
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: null
@@ -48,31 +60,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the ministry or send a message on Instagram to ask how to join a Bible study or a gathering.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Open to any student who wants to take part, with several ways to reach out.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://redemptioncityphilly.com/doxa
   email: doxacampusministry@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/doxaphilly
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://redemptioncityphilly.com/doxa
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/doxa-campus-ministry/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+  - status
+- url: https://redemptioncityphilly.com/doxa
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

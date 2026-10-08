@@ -1,0 +1,440 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-07",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 46,
+ "leads_only": [
+  {
+   "name": "Redemption City Church",
+   "url": "https://redemptioncityphilly.com",
+   "note": "Parent church named on the Doxa Campus Ministry directory entry and site; not checked as a group"
+  }
+ ],
+ "blocked": [],
+ "notes": "Lane B, 20 clubs from the Penn Clubs directory. 12 records are publishable and 8 are held back (status unknown, no summary, categories or interests). Held back because the directory status field reads INACTIVE even though its active flag is true: DREAM at Penn, Effective Altruism at Penn, Engineering Deans' Advisory Board (EDAB), Entrepreneurship Club, Environmental Group at Penn (PEG), Faces of Black Penn, FGLI Podcast, FIMRC at Penn. Please confirm these before any of them publish. The batch id education-consulting-at-penn is served by Penn Clubs under the code penn-education-consulting; the batch code returned HTTP 404, so the record uses the working code. Engineers Without Borders' listed site (pennewb.square.site) returned HTTP 404; it is not listed as a contact. Club contact emails that look like one student's own address (Drone Club, DREAM, Entrepreneurship, Every Nation, Fine Arts) were left out, and a named contact's phone number on the Every Nation entry was not recorded. Status evidence: ECP has a Spring 2026 recruiting deadline (January 30, 2026) so it is active; F-Word's newest post is dated 2025/10/04 in its web address (active by the month rule, on the edge); Doxa's site shows a College Fall Retreat 2026 (year only). Most others are probably_active from the directory active flag or a working site with no dated items. The directory uses unlabeled application codes (1, 4, 5), so an application is only stated where the entry says so. Freedom Church, the partner church named on the Every Nation site, was not checked. No Instagram, Facebook or Meetup pages were read. Budget: 0 of 0 WebSearch, 46 of 60 fetches. No rate limiting or 403 responses seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:the-dream-program"
+    ],
+    "group_id": "dream-at-penn",
+    "ein": null,
+    "website": "https://www.dreamprogram.org/village-mentoring"
+   },
+   "verdict": "publish",
+   "name": "DREAM at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.dreamprogram.org/village-mentoring",
+    "social": [
+     "https://instagram.com/dream.penn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/the-dream-program/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience"
+     ]
+    },
+    {
+     "url": "https://www.dreamprogram.org/village-mentoring",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true), and the entry says not accepting members, while its text describes a rolling recruiting round with an online application and one informal interview. The chapter site shows no dated items. Two club contact emails were left out because they look like individual student addresses.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-effective-altruism"
+    ],
+    "group_id": "effective-altruism-at-penn",
+    "ein": null,
+    "website": "https://www.eapenn.org/"
+   },
+   "verdict": "publish",
+   "name": "Effective Altruism at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.eapenn.org/",
+    "email": "upenneffectivealtruism@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/penneffectivealtruism/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-effective-altruism/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.eapenn.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory's top-level flag is active, but its status field reads INACTIVE. The group's site shows no dated items. The directory entry links a fellowship application with a February 18, 2026 deadline, which would be dated activity if the status field is wrong. Confirm the status before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:edab"
+    ],
+    "group_id": "engineering-deans-advisory-board-edab",
+    "ein": null,
+    "website": "https://www.edabpenn.com/"
+   },
+   "verdict": "publish",
+   "name": "Engineering Deans' Advisory Board (EDAB)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.edabpenn.com/",
+    "email": "edab@engineering.upenn.edu",
+    "phone": null,
+    "social": [
+     "https://instagram.com/edabpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/edab/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.edabpenn.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true). The board's site has no dated items and says applications open in the fall, with no year or date. The directory lists 24 members.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:entrepreneurship-club"
+    ],
+    "group_id": "entrepreneurship-club",
+    "ein": null,
+    "website": "https://whartonentrepreneurship.com/"
+   },
+   "verdict": "publish",
+   "name": "Entrepreneurship Club",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://whartonentrepreneurship.com/",
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/entrepreneurship-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience"
+     ]
+    },
+    {
+     "url": "https://whartonentrepreneurship.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true). The directory describes the club as for Wharton MBA students. The club's site has a sponsorship note for the 2025 to 2026 year but no dated events. The directory's contact email looks like an individual's address, so it was left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-environmental-group"
+    ],
+    "group_id": "environmental-group-at-penn-peg",
+    "ein": null,
+    "website": "https://pennenvironmentalgroup.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Environmental Group at Penn (PEG)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://pennenvironmentalgroup.weebly.com/",
+    "email": "pennvironmentalgroup@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/pennenvironmentalgroup",
+     "https://facebook.com/PennEnvironmentalGroup"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-environmental-group/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://pennenvironmentalgroup.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true), though it lists 134 members, a listserv and an application form. The group's site shows no dated items. Confirm the status before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:faces-of-black-penn"
+    ],
+    "group_id": "faces-of-black-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Faces of Black Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "editor@facesofblackpenn.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/facesofblackpenn_"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/faces-of-black-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads inactive, though the active flag is set. The directory entry has no website, and the Instagram page is a lead-only platform, so it was not read. The directory lists no dated events.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:fgli-podcast"
+    ],
+    "group_id": "fgli-podcast",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "FGLI Podcast",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "thefglipodcast@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/fglipodcast"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/fgli-podcast/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true). No website and no dated events. The Instagram page is a lead-only platform and was not read.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-fimrc"
+    ],
+    "group_id": "fimrc-at-penn",
+    "ein": null,
+    "website": "https://pennfimrc.wixsite.com/website"
+   },
+   "verdict": "publish",
+   "name": "FIMRC at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://pennfimrc.wixsite.com/website",
+    "email": "fimrcatpenn@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/upennfimrc",
+     "https://facebook.com/pennfimrc"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-fimrc/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://pennfimrc.wixsite.com/website",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads INACTIVE (active flag is true). The directory lists 45 members and an application deadline of September 25 with no year. The chapter's site has committee sign-up forms but no dated items. The site lists a different contact address (fimrcpenn@gmail.com) that was not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

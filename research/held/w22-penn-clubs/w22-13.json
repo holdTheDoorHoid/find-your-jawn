@@ -1,0 +1,470 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-13",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 29,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 20 clubs were checked through the Penn Clubs directory API (20 fetches), and 9 club websites were read (9 fetches). Searches used: 0. No pages were blocked. Verdicts: 20 publish, 0 hide, 0 duplicate. Eleven records are ready to go live with status probably_active or active: Nepali Student Association, Netter Center Student Advisory Board, Neuroscience Society, Nursing and Healthcare Management, Nursing Students for Global Health, Nutrition and Advocacy Partners, Off The Beat, Outdoors Club, Pan-Asian Dance Troupe, Paraguayans at Penn, and Pediatric Childhood Cancer Coalition. Nine records are held back with status unknown and no summary, because the directory status reads INACTIVE while the active flag is true: Neurotech, Nigerians at Penn, NEST, OSO Penn, Onda Latina, Onyx, PAGSA, Pen to Paper, and PAGE. Most directory entries have empty events lists, so few clubs have dated evidence. Only Pan-Asian Dance Troupe has a dated item (fall 2026 auditions listed for August 30 and 31, 2026), which makes it the only active status. The Netter Center and NHCM student boards are appointed and not accepting members: they are published with newcomer friendliness 1 and open_to invite, and the owner may prefer to hide them as private. Personal-looking emails were not recorded (OSO Penn, the Paraguayans officer, and the Off The Beat advisor). Several entries show UNDER REVIEW or PRELIMINARY status with active and approved set to true; these were treated as active listings with no dated item, which is probably_active. The PAGSA site mentions Campaign for Working Families as a volunteer opportunity with no link, so it was not added to leads_only.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:nutrition-education-service-team-nest"
+    ],
+    "group_id": "nutrition-education-service-team-nest-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Nutrition Education Service Team (NEST) at Penn",
+   "contacts": {
+    "website": null,
+    "email": "nest.upenn@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/nest.upenn/"
+    ]
+   },
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/nutrition-education-service-team-nest/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active and approved set to true, so per the brief the summary, categories and interests are left out. Once the status is confirmed, the entry text says no application is needed and that the club will contact members at the start of Fall 2026 about its first general meeting and volunteer events, which could support a summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:neurotechpenn-nap"
+    ],
+    "group_id": "neurotech-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Neurotech@Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": null,
+    "email": "penn.neurotech@gmail.com",
+    "phone": null,
+    "social": [
+     "https://www.linkedin.com/company/penn-neurotech"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/neurotechpenn-nap/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The entry lists 85 members, a founding date in September 2025, and a WhatsApp group invite as the way in. Confirm the status with the club before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:nap"
+    ],
+    "group_id": "nigerians-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Nigerians at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": null,
+    "email": "nigeriansatpenn1960@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/nigeriansatpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/nap/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "audience"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The entry says membership is open to everyone, not only Nigerian students, and lists 73 members with several sign-up routes. Once the status is confirmed, it can be published from the entry text.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:osaphilly"
+    ],
+    "group_id": "omani-student-organization-at-penn-oso-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Omani Student Organization at Penn (OSO Penn)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": null,
+    "email": null,
+    "phone": null,
+    "social": [
+     "https://instagram.com/oso.philly/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/osaphilly/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The directory marks accepting members as false and lists 10 members. The directory email looks like an individual's address, so it was not recorded. The directory lists the club's address as Fisher Bennett Hall.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:onda-latina"
+    ],
+    "group_id": "onda-latina",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Onda Latina",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": null,
+    "email": "ondaboard@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/_ondalatina/",
+     "https://facebook.com/Onda-Latina-39837470010/",
+     "https://youtube.com/ondalatina"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/onda-latina/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The entry describes a dance group founded in 1996 with 28 members that also takes auditionees from Philadelphia-area universities, and it lists no events. Confirm the status before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:onyx-senior-honor-society"
+    ],
+    "group_id": "onyx-senior-honor-society",
+    "ein": null,
+    "website": "https://www.onyxseniorhonorsociety.com/"
+   },
+   "verdict": "publish",
+   "name": "Onyx Senior Honor Society",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.onyxseniorhonorsociety.com/",
+    "email": "onyxseniorhonorsociety@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/onyx_penn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/onyx-senior-honor-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.onyxseniorhonorsociety.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active and accepting members set to true, so the summary, categories and interests are left out. The club site names 2026 board initiatives and a 2026 fundraising campaign but shows no dated events and no way to join. The membership route is not stated, so confirm before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pan-asian-american-graduate-student-association"
+    ],
+    "group_id": "pan-asian-graduate-student-association",
+    "ein": null,
+    "website": "https://www.pagsa.org"
+   },
+   "verdict": "publish",
+   "name": "Pan Asian Graduate Student Association (PAGSA)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.pagsa.org",
+    "email": "board@pagsa.org",
+    "phone": null,
+    "social": [
+     "https://instagram.com/upennpagsa"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/pan-asian-american-graduate-student-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.pagsa.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The club site has posts with no year shown, including a welcome back reception on Oct. 1. The directory says it is open to Asian graduate students at Penn. A reviewer may publish once the status or the year is confirmed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-to-paper"
+    ],
+    "group_id": "pen-to-paper",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Pen to Paper",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": null,
+    "email": "penntopaper23@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/pen2paper.27/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-to-paper/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The entry says it meets at Kelly Writers House, supports students from marginalized backgrounds, and has an interest form. No events or website are listed. Confirm the status before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:page"
+    ],
+    "group_id": "penn-association-for-gender-equity-page",
+    "ein": null,
+    "website": "https://penngenderequity.my.canva.site/page"
+   },
+   "verdict": "publish",
+   "name": "Penn Association for Gender Equity (PAGE)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false,
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://penngenderequity.my.canva.site/page",
+    "email": "contact.pagechair@gmail.com",
+    "phone": null,
+    "social": [
+     "https://instagram.com/penngenderequity",
+     "https://facebook.com/penngenderequity"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/page/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://penngenderequity.my.canva.site/page",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: the directory status reads INACTIVE, which conflicts with active set to true, so the summary, categories and interests are left out. The club's site page returned only a title, so no dated items were found. The entry lists monthly general body meetings, a fall discussion group for first-years, and an interest form, with no dates. Confirm before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

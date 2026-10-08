@@ -1,0 +1,134 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-29",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 16,
+ "leads_only": [
+  {
+   "name": "Joshua Generation",
+   "url": "https://www.ywamphiladelphia.org",
+   "note": "Named on the Youth With a Mission Greater Philadelphia site as an arts-based evangelism group linked to an external site. The target URL was not recorded and the group was not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://wofah.org",
+   "status": null,
+   "note": "Loaded with no page text on two fetches (with and without www). An empty page, not a bot block."
+  },
+  {
+   "url": "https://insbridgingthegap.org",
+   "status": null,
+   "note": "Loaded with no page text on two fetches (bare domain and www). An empty page, not a bot block."
+  }
+ ],
+ "notes": "All 15 batch groups have a record: 13 publish, 1 hide, 1 out_of_area. Two WebSearch calls were used, both on the two groups with no web address (Do Moore Good and Imani Star Development); neither search found a page for its group, so both are held back with status unknown and no summary. Women of Faith and Hope and Ins-Bridging the Gap returned empty pages on repeated fetches; both are held back with no summary. Continuous Acts events page was checked: its Philadelphia items are from 2018 and 2019 only. No 403, bot checks or paywalls were seen. Records use the everyday name; legal names are in notes. Fetch budget was not exhausted (16 of 60).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232910411",
+     "irs_bmf:232910411"
+    ],
+    "group_id": "women-of-faith-and-hope",
+    "ein": "232910411",
+    "website": "https://www.wofah.org"
+   },
+   "verdict": "publish",
+   "name": "Women of Faith and Hope",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.wofah.org"
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "wofah.org loaded with no page text on two fetches (with and without www), and no search budget was left, so nothing could be verified. Held back: no summary, categories or interests. IRS address 6001 Germantown Ave, 19144, not published on a page we could read. Recheck the site or find another public source before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:562572253",
+     "irs_bmf:562572253"
+    ],
+    "group_id": "do-moore-good",
+    "ein": "562572253"
+   },
+   "verdict": "publish",
+   "name": "Do Moore Good",
+   "kind": "nonprofit",
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held the name, not a web address, so it was treated as missing. The one search for this name and Sansom Street found no page for this group. A Moore family foundation with a similar name appeared in the results (mooregood.org, based in Brooklyn), but it is a different organization and was not used. IRS address 4642 Sansom St, 19139, not published anywhere we could read. Held back: no summary, categories or interests.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:421541838",
+     "irs_bmf:421541838"
+    ],
+    "group_id": "imani-star-development-inc",
+    "ein": "421541838"
+   },
+   "verdict": "publish",
+   "name": "Imani Star Development",
+   "kind": "nonprofit",
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held the name, not a web address, so it was treated as missing. The one search for the name found no page for this organization. Results were other Imani groups (Imani Community Development Corporation, Imani Village in Wilmington, Delaware, and a Philadelphia housing listing), none tied to this EIN, so none are used. IRS address 148 S 60th Street, 19139, not published anywhere we could read. Held back: no summary, categories or interests.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:862060246",
+     "irs_bmf:862060246"
+    ],
+    "group_id": "ins-bridging-the-gap",
+    "ein": "862060246",
+    "website": "https://insbridgingthegap.org"
+   },
+   "verdict": "publish",
+   "name": "Ins-Bridging the Gap",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://insbridgingthegap.org"
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site loaded with no page text on two fetches (bare domain and www). No search budget was left for this group, so nothing could be verified. Held back: no summary, categories or interests. IRS address 41 S 54th St, 19139. Recheck the site before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

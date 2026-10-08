@@ -1,0 +1,398 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-08",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 45,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://full-measure.org",
+   "status": null,
+   "note": "Connection closed on two attempts (socket closed error). Not a bot check. Full Measure's record uses the directory only."
+  }
+ ],
+ "notes": "No WebSearch used; 45 WebFetch calls: 20 directory reads, a second targeted pass of 20 directory status reads (the first pass left status out, and the two reads disagree on a few flags), 4 club website reads (Freaks, Gamma, GAPSA, Full Measure) and one retry. Budget not exhausted. Ten records are held as unknown because the directory marks them INACTIVE, per brief: Future Black Men in White Coats, GameDay, German Society, Ghana Graduate Society, PGELA, GRC, GlobeMed, Government and Politics Association, Graduate Consulting Club, and Grey Matters. Ten publish with active or probably_active status: Flag Football, Freaks of the Beat (its site lists Rhythmic Damage XIX on Nov 21, 2026), Fuerza, Full Measure, Gamma (directory says not accepting new members, so newcomer 1), Ghanaians at Penn, Global AI Alliance, GAPSA, Graduate Student Hiking Club, and Grandpas@Penn. Most directory-only statuses rest on the active flag with no dated items, so confidence is low. Heritage tag is the closest match, since Ghanaian is not in the vocabulary. Government and Politics Association needs a scope check before it goes live: it describes itself as all-partisan discussion.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:future-black-men-in-white-coats"
+    ],
+    "group_id": "future-black-men-in-white-coats-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Future Black Men in White Coats at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "upennfbmwc@gmail.com",
+    "social": [
+     "https://instagram.com/Upenn_fbmwc/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/future-black-men-in-white-coats/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Per brief, status is unknown and summary, categories and interests are left out until the status is settled.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-game-day"
+    ],
+    "group_id": "gameday-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "GameDay at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "penngameday@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-game-day/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE. The active flag reads true in one read and false in another. Per brief, status is unknown and summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-german-society"
+    ],
+    "group_id": "german-society-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "German Society at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://sites.google.com/view/penn-german-society/home",
+    "email": "penngermansociety@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-german-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Per brief, status is unknown and summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:ghana-grad-society"
+    ],
+    "group_id": "ghana-graduate-society",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Ghana Graduate Society",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "email": "ghanaclubpenn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/ghana-grad-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, and the active flag reads false in one read. Per brief, status is unknown and summary, categories and interests are left out. Not the same group as Ghanaians at Penn.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-esg-leadership-association"
+    ],
+    "group_id": "global-esg-leadership-association-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Global ESG Leadership Association at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.gela-ngo.org/global-esg-leadership-association",
+    "email": "pgela2024@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-esg-leadership-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Per brief, status is unknown and summary, categories and interests are left out. The website listed is an outside organization page, not checked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:global-research-and-consulting"
+    ],
+    "group_id": "global-research-and-consulting-grc",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Global Research and Consulting (GRC)",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.grcglobalgroup.com/",
+    "email": "wharton@grcglobalgroup.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/global-research-and-consulting/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Directory also says the club is not accepting members and that joining needs an application and interview. Per brief, status is unknown and summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:globemed-at-penn"
+    ],
+    "group_id": "globemed-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "GlobeMed at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://globemedpenn.wixsite.com/globemedpenn",
+    "email": "upenn@globemed.org"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/globemed-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory shows both active true and status INACTIVE, so current status is unclear. Per brief, status is unknown and summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:government-politics-association"
+    ],
+    "group_id": "government-and-politics-association",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Government and Politics Association",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.penngpa.com",
+    "email": "penngpa@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/government-politics-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Per brief, status is unknown and summary, categories and interests are left out. Scope check needed before this goes live: the club describes itself as all-partisan discussion and education, and some of its branches take applications.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-graduate-consulting-club"
+    ],
+    "group_id": "graduate-consulting-club-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Graduate Consulting Club at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://www.penngraduateconsultingclub.com/",
+    "email": "pgcc.comm@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-graduate-consulting-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads INACTIVE, although the active flag reads true. Per brief, status is unknown and summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-grey-matters"
+    ],
+    "group_id": "grey-matters-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Grey Matters at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn"
+   },
+   "contacts": {
+    "website": "https://greymattersjournalpenn.com/"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-grey-matters/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held. Directory status reads Inactive. Per brief, status is unknown and summary, categories and interests are left out. The directory's contact address is an individual's university address, so it is not recorded; the club's website is listed instead.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}
