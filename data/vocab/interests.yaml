@@ -1,0 +1,1063 @@
+# Interest families and tags for Find Your Jawn.
+#
+# A family is a tile in the quiz ("What are you into?"). A tag is one specific interest under a
+# family. Groups carry families in `categories` and tags in `interests` (docs/DATA_MODEL.md).
+#
+# Rules for editing this file:
+# - Family ids (kebab-case) and tag ids (snake_case) are stable forever once committed. Change a
+#   label freely; never change an id. To retire a tag, leave it here and stop using it.
+# - `aka` lists words a research agent might write. The importer maps them to the tag.
+# - `edges` is the adjacency graph behind "one step sideways" stretches (docs/DESIGN.md section 4).
+#   Edge types: same_skill, same_crowd, same_place, same_cause, same_topic.
+# - The family `support-recovery` has `support_only: true`. It is used only by the separate support
+#   flow. It is never shown in the quiz tiles and never offered as a stretch.
+
+version: 1
+
+families:
+
+  - id: outdoors-adventure
+    label: "Outdoors and adventure"
+    examples: "hiking, caving, kayaking, birding"
+    icon: "🥾"
+    tags:
+      - {id: hiking, label: "Hiking and trail walks", aka: [trail walking, rambling, hiking club, day hikes, nature hikes]}
+      - {id: caving, label: "Caving", aka: [spelunking, grotto, cave exploring, cave rescue, karst]}
+      - {id: climbing, label: "Rock climbing", aka: [bouldering, climbing gym, indoor climbing, top rope, rope work, rappelling]}
+      - {id: kayaking, label: "Kayaking and canoeing", aka: [canoe, paddling, paddleboarding, stand up paddle, flatwater paddling, whitewater]}
+      - {id: birding, label: "Birding", aka: [bird watching, birdwatching, bird walks, Audubon, bird count, raptor watch]}
+      - {id: camping, label: "Camping and outdoor skills", aka: [backpacking, campouts, bushcraft, wilderness skills, survival skills, fishing, angling]}
+
+  - id: nature-environment
+    label: "Nature and environment"
+    examples: "trail crews, park cleanups, tree tenders, creek and river care"
+    icon: "🌳"
+    tags:
+      - {id: trail_building, label: "Trail building and upkeep", aka: [trail crew, trail work, trail stewards, trail maintenance, trail days, volunteer trail crew]}
+      - {id: park_cleanup, label: "Park cleanups", aka: [litter pickup, cleanup day, love your park, park service day, plogging, trash pickup in parks]}
+      - {id: friends_of_park, label: "Friends of a park", aka: [park friends, friends group, friends of the park, parks committee, park volunteers, park stewards, conservancy]}
+      - {id: tree_tending, label: "Street trees and tree tenders", aka: [tree tenders, tree planting, street trees, urban forestry, tree care, tree tender training, tree inventory]}
+      - {id: river_stewardship, label: "Rivers, creeks and watersheds", aka: [watershed, creek cleanup, river cleanup, Schuylkill, Delaware River, Wissahickon, stream monitoring, waterfront stewards]}
+      - {id: habitat_restoration, label: "Restoring wild habitat", aka: [invasive plants, invasive removal, ivy pull, native planting, land trust, meadow restoration, wildlife habitat, conservation]}
+      - {id: citizen_science, label: "Community science", aka: [bioblitz, iNaturalist, nature counts, water monitoring, nature walks, naturalist, nature education, environmental education, citizen scientist]}
+      - {id: climate_action, label: "Climate and clean energy", aka: [sustainability, green energy, solar co op, climate group, zero waste, recycling, composting, environmental justice, clean air]}
+
+  - id: gardening-greening
+    label: "Gardens and greening"
+    examples: "community gardens, vacant lot gardens, orchards, bees"
+    icon: "🌱"
+    tags:
+      - {id: community_garden, label: "Community gardens", aka: [garden plot, neighborhood garden, urban garden, shared garden, school garden, youth garden, composting garden]}
+      - {id: urban_farming, label: "Urban farms and farm stands", aka: [market garden, urban agriculture, CSA, farm stand, city farm, food growing, backyard chickens]}
+      - {id: vacant_lot_greening, label: "Greening vacant lots", aka: [lot cleanup, lot stabilization, pocket park, greening, rain garden, rain barrel, green stormwater, side yard]}
+      - {id: community_orchard, label: "Orchards and fruit trees", aka: [community orchard, fruit trees, orchard, fruit tree planting, apple trees, fig trees, gleaning fruit]}
+      - {id: pollinators_bees, label: "Bees and pollinators", aka: [beekeeping, bees, apiary, pollinator garden, butterfly garden, native bees, hive]}
+      - {id: garden_club, label: "Garden clubs and plant swaps", aka: [plant swap, seed swap, plant sale, flower show, horticulture, master gardener, houseplants, gardening group]}
+
+  - id: sports-teams
+    label: "Team sports"
+    examples: "soccer, basketball, softball, kickball"
+    icon: "⚽"
+    tags:
+      - {id: soccer, label: "Soccer", aka: [football pickup, futsal, soccer league, pickup soccer, indoor soccer, soccer club]}
+      - {id: basketball, label: "Basketball", aka: [pickup basketball, hoops, rec league basketball, street ball, basketball league, three on three]}
+      - {id: softball_baseball, label: "Softball and baseball", aka: [softball league, little league, whiffle ball, wiffle ball, slow pitch, baseball club, stickball]}
+      - {id: kickball_rec_leagues, label: "Kickball and rec leagues", aka: [adult rec league, social sports, dodgeball, volleyball, ultimate frisbee, flag football leagues, bowling league, social league]}
+      - {id: football_rugby, label: "Football and rugby", aka: [flag football, tackle football, rugby club, touch football, semi pro football, rugby union]}
+      - {id: tennis_pickleball, label: "Tennis and pickleball", aka: [pickleball, tennis club, racquet sports, badminton, table tennis, ping pong, squash]}
+      - {id: hockey_roller_derby, label: "Hockey, skating and roller derby", aka: [ice hockey, street hockey, roller derby, roller skating, skateboarding, skate park, figure skating, rollerblading]}
+      - {id: cricket, label: "Cricket", aka: [cricket club, cricket league, T20, cricket pitch, cricket team]}
+      - {id: youth_coaching, label: "Coaching youth sports", aka: [coach, little league coach, youth league volunteer, assistant coach, youth soccer coach, team parent]}
+      - {id: adaptive_sports, label: "Adaptive and disability sports", aka: [wheelchair basketball, Special Olympics, blind sports, sled hockey, paralympic, unified sports, sports for veterans]}
+      - {id: sports_fans, label: "Sports fans and watch parties", aka: [Eagles fan club, Phillies fans, Sixers fans, Flyers fans, Union supporters, supporters group, watch party, tailgate]}
+
+  - id: running-cycling-fitness
+    label: "Running, cycling and fitness"
+    examples: "run clubs, group rides, bike repair, yoga, martial arts"
+    icon: "🏃"
+    tags:
+      - {id: running, label: "Running clubs", aka: [run club, 5K, 10K, marathon training, jogging, track club, trail running, parkrun, race volunteering]}
+      - {id: walking_group, label: "Walking groups", aka: [walk club, power walking, stroller walks, mall walking, walking club, step challenge, morning walks]}
+      - {id: group_bike_rides, label: "Group bike rides", aka: [bike ride, cycling club, critical mass, century ride, mountain biking, bike club, ride leader, cyclocross]}
+      - {id: bike_repair, label: "Bike repair and bike shops", aka: [bike kitchen, bike co op, earn a bike, community bike shop, bike mechanic, bicycle repair, bike library]}
+      - {id: yoga_movement, label: "Yoga and movement classes", aka: [yoga, pilates, barre, community yoga, free yoga, fitness classes, park fitness, zumba]}
+      - {id: strength_training, label: "Strength and gym groups", aka: [weightlifting, powerlifting, crossfit, calisthenics, boot camp, outdoor workout, lifting club, kettlebell]}
+      - {id: martial_arts, label: "Martial arts and boxing", aka: [karate, judo, jiu jitsu, taekwondo, boxing, kickboxing, capoeira, fencing, kung fu, aikido]}
+
+  - id: water-rowing
+    label: "Water and rowing"
+    examples: "rowing, dragon boat, sailing, swimming"
+    icon: "🚣"
+    tags:
+      - {id: rowing, label: "Rowing and sculling", aka: [crew, sculling, Boathouse Row, learn to row, masters rowing, rowing club, indoor rowing, erg]}
+      - {id: youth_rowing, label: "Youth and school rowing", aka: [scholastic crew, high school crew, junior rowing, city rowing, kids rowing, youth crew]}
+      - {id: dragon_boat, label: "Dragon boat paddling", aka: [dragon boating, dragon boat team, dragon boat festival, paddling team, drummer and paddlers]}
+      - {id: sailing, label: "Sailing", aka: [yacht club, sailboat, regatta racing, sailing school, boating, small boat sailing, dinghy]}
+      - {id: swimming, label: "Swimming and water polo", aka: [swim team, masters swim, lap swim, water polo, open water swimming, learn to swim, lifeguard, water aerobics]}
+      - {id: regatta_volunteering, label: "Boathouse and regatta volunteering", aka: [Dad Vail, regatta volunteer, boathouse volunteer, Schuylkill Navy, race day crew, boat building, wooden boats, boat shop]}
+
+  - id: arts-crafts
+    label: "Arts and crafts"
+    examples: "painting, pottery, knitting, photography, printmaking"
+    icon: "🎨"
+    tags:
+      - {id: painting_drawing, label: "Painting and drawing", aka: [sketching, life drawing, watercolor, art class, open studio, figure drawing, urban sketchers, art club]}
+      - {id: pottery_ceramics, label: "Pottery and ceramics", aka: [clay, kiln, wheel throwing, ceramics studio, hand building, glaze, pottery class]}
+      - {id: fiber_arts, label: "Knitting, sewing and fiber arts", aka: [knit, crochet, yarn, quilting, embroidery, textiles, weaving, folk crafts, cosplay sewing]}
+      - {id: mural_public_art, label: "Murals and public art", aka: [mural arts, street art, mosaics, graffiti, public art project, community mural, art in the park]}
+      - {id: photography, label: "Photography", aka: [camera club, darkroom, photo walk, film photography, photo club, photographers meetup]}
+      - {id: film_video, label: "Film and video", aka: [filmmaking, cinema club, movie screening, film society, film club, video production, documentary, film festival volunteering]}
+      - {id: printmaking, label: "Printmaking and book arts", aka: [screen printing, letterpress, linocut, block printing, bookbinding, paper arts, risograph, silkscreen]}
+      - {id: craft_circle, label: "Craft nights and makers circles", aka: [crafting, craft club, craft night, sip and paint, stitch and bitch, makers market, jewelry making, glass, metalwork, folk art]}
+
+  - id: music
+    label: "Music"
+    examples: "choirs, bands, drum circles, open mics"
+    icon: "🎵"
+    tags:
+      - {id: choir_singing, label: "Choirs and singing groups", aka: [chorus, glee club, a cappella, community choir, gospel choir, sing along, singing circle, barbershop]}
+      - {id: community_band, label: "Bands and orchestras", aka: [concert band, brass band, marching band, wind ensemble, orchestra, jazz band, community orchestra, drumline band]}
+      - {id: jam_sessions, label: "Jam sessions and open mics", aka: [open mic, bluegrass jam, irish session, songwriters circle, music jam, acoustic jam, open stage]}
+      - {id: drum_circle, label: "Drumming and percussion", aka: [drumming, drumline, samba, batucada, hand drums, percussion group, taiko, djembe]}
+      - {id: instrument_lessons, label: "Learning an instrument", aka: [guitar lessons, piano lessons, ukulele, music school, music lessons, community music school, beginner band, music class]}
+      - {id: dj_hip_hop, label: "DJing, hip hop and beat making", aka: [dj, rap, cypher, emcee, beatmaking, music production, synth, electronic music, producer]}
+      - {id: folk_traditional_music, label: "Folk and traditional music", aka: [contra music, old time, celtic music, folk society, bluegrass, fiddle, irish music, world music, concert listening, record club]}
+
+  - id: theater-dance-performance
+    label: "Theater, dance and performance"
+    examples: "community theater, improv, ballroom, lion dance"
+    icon: "🎭"
+    tags:
+      - {id: community_theater, label: "Community theater", aka: [play, drama club, little theatre, stage acting, rehearsal, musical theater, theater company, amateur theater]}
+      - {id: improv_comedy, label: "Improv and comedy", aka: [stand up, sketch comedy, comedy open mic, comedy night, improv class, comedy workshop, clowning]}
+      - {id: social_dance, label: "Social dancing", aka: [ballroom, salsa, swing, contra dance, line dancing, tango, bachata, square dance, partner dancing]}
+      - {id: dance_company, label: "Dance companies and classes", aka: [ballet, modern dance, hip hop dance, tap, dance team, step team, dance class, jazz dance]}
+      - {id: cultural_dance, label: "Cultural and folk dance", aka: [lion dance, dragon dance, bomba, Irish step dance, Bharatanatyam, folkloric dance, African dance, Polish dance, Bhangra]}
+      - {id: stage_crew, label: "Backstage and front of house", aka: [tech crew, stagehand, costumes, set building, lighting, props, usher, box office volunteer, sound crew]}
+      - {id: storytelling_spoken_word, label: "Storytelling and spoken word", aka: [story slam, The Moth, poetry slam, storytelling night, spoken word night, story circle]}
+      - {id: variety_cabaret, label: "Variety, drag and circus shows", aka: [drag shows, cabaret, burlesque, variety show, circus arts, aerial, juggling, fire spinning, puppetry, puppets]}
+
+  - id: books-writing
+    label: "Books and writing"
+    examples: "book clubs, poetry, zines, literacy tutoring"
+    icon: "📚"
+    tags:
+      - {id: book_club, label: "Book clubs", aka: [reading group, book discussion, book swap, silent book club, reading circle, classics club, mystery book club]}
+      - {id: writing_group, label: "Writing groups", aka: [writers workshop, fiction writing, memoir, creative writing, critique group, writing circle, write together, NaNoWriMo]}
+      - {id: poetry, label: "Poetry", aka: [poetry reading, poets, poetry workshop, open mic poetry, poetry society, haiku]}
+      - {id: zines_media, label: "Zines, small presses and community media", aka: [zine, small press, independent publishing, comics, graphic novels, community radio, podcast, local news, newsletter, citizen reporter]}
+      - {id: literacy_tutoring, label: "Reading and literacy tutoring", aka: [adult literacy, reading tutor, reading buddy, read aloud, story time volunteer, reading partners, literacy volunteer]}
+      - {id: prison_book_programs, label: "Books for people in prison", aka: [Books Through Bars, prison books, prison library, book packing, prisoner book project, books to prisoners]}
+      - {id: library_programs, label: "Library programs and Friends of the Library", aka: [library volunteer, friends of the free library, branch library, story time, library events, little free library, book sale, library friends]}
+
+  - id: games-puzzles
+    label: "Games and puzzles"
+    examples: "board games, chess, trivia, Dungeons and Dragons"
+    icon: "🎲"
+    tags:
+      - {id: board_games, label: "Board and card games", aka: [game night, tabletop, card games, Catan, boardgame cafe, mahjong, mah jongg, bridge, pinochle, canasta, bingo]}
+      - {id: chess, label: "Chess and strategy games", aka: [chess club, chess in the park, go club, checkers, scrabble, backgammon, chess tournament]}
+      - {id: tabletop_rpg, label: "Role playing games", aka: [Dungeons and Dragons, D and D, TTRPG, pathfinder, roleplay, adventure league, tabletop roleplaying]}
+      - {id: trivia_nights, label: "Trivia and pub games", aka: [pub quiz, quiz league, trivia night, quiz night, darts league, pool league, cornhole, bocce, shuffleboard]}
+      - {id: puzzles_escape, label: "Puzzles and escape rooms", aka: [jigsaw, crossword, puzzle hunt, escape room, brain teasers, mystery hunt, scavenger hunt, riddles]}
+      - {id: video_games, label: "Video games and esports", aka: [gaming, LAN party, esports team, Smash, retro games, game dev, arcade, gamers meetup]}
+      - {id: fandom_cons, label: "Fan clubs and conventions", aka: [sci fi, fantasy, comic con, cosplay, anime club, fan club, Trekkies, magic the gathering, card game league, miniatures, warhammer, trading cards]}
+
+  - id: making-tech
+    label: "Making and tech"
+    examples: "woodworking, makerspaces, coding, ham radio"
+    icon: "🔧"
+    tags:
+      - {id: woodworking, label: "Woodworking", aka: [furniture, wood shop, carpentry, cabinet making, wood turning, joinery, workshop, shop class]}
+      - {id: makerspace, label: "Makerspaces and tool libraries", aka: [hackerspace, fab lab, 3D printing, laser cutter, maker, tool library, soldering, community workshop, metal shop]}
+      - {id: electronics_robotics, label: "Electronics and robotics", aka: [Arduino, Raspberry Pi, robot club, FIRST robotics, hardware hacking, drones, model rockets, RC cars, model trains]}
+      - {id: coding_software, label: "Coding and software", aka: [programming, hackathon, Code for Philly, civic tech, web development, python, open source, data science, mapping, OpenStreetMap, mapathon]}
+      - {id: repair_cafe, label: "Repair cafes and fixing things", aka: [fix it clinic, appliance repair, mending, repair workshop, restart party, repair volunteers, upcycling]}
+      - {id: cars_motorcycles, label: "Cars and motorcycles", aka: [car club, car show, motorcycle club, auto repair, hot rod, bike night, riding club, classic cars, garage night]}
+      - {id: ham_radio, label: "Ham radio", aka: [amateur radio, ARES, RACES, shortwave, repeater, radio club, field day, Skywarn]}
+      - {id: digital_skills, label: "Digital skills and tech help", aka: [digital literacy, computer classes, tech tutoring, computer refurbishing, device donations, computer help, tech help for seniors, device giveaway]}
+
+  - id: science-learning
+    label: "Science and learning"
+    examples: "astronomy, geology, lectures, big idea talks"
+    icon: "🔭"
+    tags:
+      - {id: astronomy, label: "Astronomy and stargazing", aka: [telescope, star party, planetarium, amateur astronomers, night sky, observatory, stargazing, eclipse]}
+      - {id: geology_fossils, label: "Rocks, minerals and fossils", aka: [mineral club, rockhounding, paleontology, gem and mineral, geology, fossil hunting, lapidary]}
+      - {id: natural_history, label: "Natural history and collecting", aka: [entomology, insects, shells, herpetology, mushrooms, mycology, nature society, botany, mushroom club, field guide]}
+      - {id: talks_lectures, label: "Lectures and talk series", aka: [speaker series, science cafe, lecture, ideas festival, nerd nite, science pub, pint of science, public lecture, geek night]}
+      - {id: philosophy_discussion, label: "Philosophy and big idea discussions", aka: [philosophy cafe, discussion group, great books, debate, ethics, Socrates cafe, current events discussion, think tank]}
+      - {id: stem_outreach, label: "Science and math outreach", aka: [science fair judge, STEM mentor, science volunteer, science museum educator, STEM, math circle, science teaching, science festival]}
+      - {id: adult_learning, label: "Adult learning and classes", aka: [adult education, night classes, lifelong learning, GED prep, continuing ed, learning circle, study group, community classes, skill share]}
+
+  - id: history-heritage-preservation
+    label: "History and preservation"
+    examples: "historic sites, walking tours, family history, old buildings"
+    icon: "🏛️"
+    tags:
+      - {id: historic_site_volunteering, label: "Historic sites and house museums", aka: [historic house, Independence Park, living history, reenactment, reenactor, Revolutionary War, colonial, civil war, historic site volunteer, historic mansion]}
+      - {id: walking_tours, label: "Walking tours and city history", aka: [history tour, tour guide, heritage trail, ghost tour, bike tour, neighborhood tour, city walks]}
+      - {id: genealogy, label: "Genealogy and family history", aka: [family tree, ancestry, roots, family history, genealogical society, DNA ancestry, research your family]}
+      - {id: oral_history, label: "Oral history and local archives", aka: [neighborhood history, archive, memory project, historical society, history project, digitization, local history, storytelling project, history club]}
+      - {id: preservation_architecture, label: "Historic preservation and architecture", aka: [preservation alliance, architecture, historic district, landmarks, restoration, urbanism, architecture tours, Open House Philly, urban planning]}
+      - {id: cemetery_friends, label: "Friends of historic cemeteries", aka: [cemetery cleanup, grave restoration, Laurel Hill, Mount Moriah, headstone cleaning, cemetery friends, burial ground]}
+      - {id: museum_volunteering, label: "Museum and gallery volunteering", aka: [docent, museum volunteer, gallery volunteer, art museum volunteer, science museum volunteer, museum guide, curator volunteer]}
+
+  - id: culture-language-heritage-groups
+    label: "Cultures and languages"
+    examples: "language practice, heritage clubs, cultural exchange, welcoming newcomers"
+    icon: "🌍"
+    tags:
+      - {id: language_exchange, label: "Language exchange and practice", aka: [conversation club, language meetup, Spanish practice, French table, polyglot, language cafe, tandem, language learning group, interpreting, translating]}
+      - {id: esl_conversation, label: "English classes and conversation", aka: [ESL, English tutoring, English conversation, newcomer English class, English practice, English as a second language]}
+      - {id: heritage_clubs, label: "Heritage clubs and hometown associations", aka: [ethnic club, nationality association, cultural association, hometown club, cultural center, cultural society, heritage society, landsmen]}
+      - {id: heritage_schools, label: "Heritage language and culture schools", aka: [Saturday school, Chinese school, Greek school, Armenian school, Korean school, heritage language, culture school, Hebrew school]}
+      - {id: immigrant_welcome, label: "Welcoming immigrants and refugees", aka: [refugee support, newcomer welcome, immigrant services, resettlement, citizenship class, refugee, welcome team, naturalization]}
+      - {id: sign_language, label: "Sign language and Deaf community", aka: [ASL, American Sign Language, deaf club, deaf social, signing, sign language class, Deaf culture, deaf events]}
+      - {id: cultural_exchange, label: "Cultural exchange and international friends", aka: [international students, host family, global friends, pen pals, world affairs, sister cities, international club, friendship city]}
+
+  - id: food-drink
+    label: "Food and drink"
+    examples: "cooking, potlucks, home brewing, food co-ops"
+    icon: "🍲"
+    tags:
+      - {id: cooking_baking, label: "Cooking and baking together", aka: [cooking club, baking, kitchen, chef, cooking class, bread baking, sourdough, canning, pickling, fermenting, kombucha]}
+      - {id: community_meals, label: "Community meals and potlucks", aka: [potluck, community dinner, supper club, neighborhood dinner, block party food, shared meal, soup night, dinner with neighbors]}
+      - {id: homebrew_wine, label: "Home brewing, beer and wine", aka: [homebrew, beer club, mead, wine tasting, cider, distilling, craft beer, brew club, tasting group]}
+      - {id: farmers_markets_coops, label: "Farmers markets and food co-ops", aka: [farm market, food coop, market volunteer, Weavers Way, Mariposa, co op, farmers market]}
+      - {id: foodie_meetups, label: "Food adventures and tasting groups", aka: [foodie, restaurant club, dining out, dumpling crawl, restaurant meetup, pop up, coffee club, tea tasting, food tour]}
+      - {id: heritage_cooking, label: "Heritage and family recipes", aka: [ethnic cuisine, family recipes, tamales, pierogi, dumplings, cultural cooking, grandma recipes, traditional cooking]}
+
+  - id: animals
+    label: "Animals"
+    examples: "shelter dogs, cat rescue, wildlife, horses"
+    icon: "🐕"
+    tags:
+      - {id: shelter_volunteering, label: "Animal shelters and pet help", aka: [ACCT Philly, PAWS, animal shelter volunteer, dog walker, kennel, pet pantry, spay neuter, shelter dogs, therapy dogs, therapy animals]}
+      - {id: cat_rescue_tnr, label: "Cat rescue and community cats", aka: [cat foster, trap neuter return, TNR, community cats, feral cat, kitten foster, cat cafe, cat rescue]}
+      - {id: animal_fostering, label: "Fostering animals", aka: [foster dogs, foster kittens, puppy raiser, guide dog puppy raising, foster home, rescue transport, dog foster]}
+      - {id: wildlife_rehab, label: "Wildlife rescue and rehab", aka: [wildlife center, injured birds, raptor, bird rescue, turtle rescue, window collision, wildlife volunteer, animal rehab]}
+      - {id: dog_owner_groups, label: "Dog parks and dog owner groups", aka: [dog park, dog meetup, puppy playdate, dog owners, breed club, dog training club, dog walking group, dog friends]}
+      - {id: horses_riding, label: "Horses and riding", aka: [equestrian, stable, riding lessons, mounted patrol, horse rescue, therapeutic riding, urban riding, horse barn]}
+      - {id: pet_birds_hobbies, label: "Pigeons, birds, fish and reptile keeping", aka: [pigeon flying, racing pigeons, poultry club, aviary, parrot club, fish club, reptile expo, herp society, aquarium society]}
+      - {id: zoo_volunteering, label: "Zoo and aquarium volunteering", aka: [Philadelphia Zoo, zookeeper volunteer, aquarium, Adventure Aquarium, zoo teen volunteer, zoo docent, zoo friends]}
+
+  - id: neighborhood-civic
+    label: "Neighborhood and civic life"
+    examples: "town watch, block captains, civic associations, rec center councils"
+    icon: "🏘️"
+    tags:
+      - {id: civic_association, label: "Neighborhood civic associations", aka: [RCO, registered community organization, community association, neighbors association, community council, zoning meeting, civic, community meeting, neighborhood association, public meetings]}
+      - {id: town_watch, label: "Town watch and block watch", aka: [crime watch, neighborhood watch, citizens on patrol, safety patrol, walking patrol, town watch integrated services, block watch, community patrol]}
+      - {id: block_captain, label: "Block captains and block parties", aka: [block captain, block club, block party, block organizing, block association, street captain, block leader, block meeting]}
+      - {id: clean_blocks, label: "Clean blocks and litter crews", aka: [Clean and Green, Philly Spruce Up, block clean, trash pickup, litter cleanup, beautification, clean block, planters, neighborhood cleanup]}
+      - {id: rec_center_council, label: "Rec center councils and Friends groups", aka: [rec council, recreation center friends, advisory council, rec center volunteers, rec center, playground friends, parks and rec volunteers, pool friends]}
+      - {id: police_advisory, label: "Police district advisory councils", aka: [PDAC, district advisory council, police community meeting, community relations, police district meeting, district council, community policing]}
+      - {id: community_development, label: "Community development and main streets", aka: [CDC, main street, business improvement district, corridor, neighborhood development, special services district, community land trust, neighborhood revitalization]}
+      - {id: voter_education, label: "Nonpartisan voter and civic help", aka: [voter registration, League of Women Voters, poll worker, election protection, civics, voter guide, nonpartisan, voter education, census outreach, participatory budgeting]}
+
+  - id: advocacy-rights
+    label: "Advocacy and rights"
+    examples: "tenants, safe streets, immigrant rights, disability access"
+    icon: "✊"
+    tags:
+      - {id: tenant_rights, label: "Tenant and housing rights", aka: [tenant union, renters, eviction defense, housing counseling, tenant organizing, fair housing, rent, renters rights]}
+      - {id: street_safety_transit, label: "Safe streets and transit", aka: [Vision Zero, bike coalition, transit riders, SEPTA riders, pedestrian safety, bike lanes, slow zone, transit advocacy, safe routes]}
+      - {id: immigrant_rights, label: "Immigrant rights", aka: [immigration legal, sanctuary, rapid response, know your rights, accompaniment, immigrant legal help, immigrant defense]}
+      - {id: disability_rights, label: "Disability rights and access", aka: [accessibility advocacy, ADA, independent living, self advocacy, mobility access, disability justice, accessible city]}
+      - {id: racial_equity, label: "Racial equity", aka: [anti racism, equity, restorative justice, racial justice, community accountability, equity work, dialogue on race, dismantling racism]}
+      - {id: womens_lgbtq_rights, label: "Women's and LGBTQ+ rights", aka: [feminism, reproductive access, domestic violence advocacy, women's rights, gender justice, trans rights, queer advocacy, Pride, equality]}
+      - {id: worker_rights, label: "Worker rights", aka: [labor union, workers center, labor history, organizing, worker cooperative, union, wage theft, workers rights]}
+      - {id: justice_reform_reentry, label: "Justice reform and reentry", aka: [reentry, prison reform, bail fund, court watch, returning citizens, criminal justice, expungement, decarceration]}
+      - {id: violence_prevention, label: "Violence prevention and peace", aka: [gun violence, peace, violence interrupters, community violence intervention, mothers in charge, safe corridors, anti violence, peace walk]}
+      - {id: civil_liberties_privacy, label: "Privacy and civil liberties", aka: [surveillance, civil liberties, EFF, open government, FOIA, transparency, ACLU, digital rights, privacy]}
+
+  - id: hunger-housing-basic-needs
+    label: "Food, housing and basic needs"
+    examples: "food pantries, community fridges, mutual aid, home repair"
+    icon: "🥫"
+    tags:
+      - {id: food_pantry, label: "Food pantries and meal programs", aka: [soup kitchen, pantry, food bank, hot meals, meal service, Philabundance, SHARE, church pantry, food cupboard, free meals]}
+      - {id: community_fridge, label: "Community fridges", aka: [free fridge, public fridge, little free pantry, community pantry, free food, solidarity fridge, fridge stocking]}
+      - {id: mutual_aid, label: "Mutual aid", aka: [mutual aid network, neighbors helping neighbors, buy nothing, free stuff, community care, solidarity, covid mutual aid, mutual aid group]}
+      - {id: food_rescue, label: "Food rescue and gleaning", aka: [gleaning, surplus food, food waste, Food Not Bombs, farm gleaning, rescue, produce rescue, food recovery]}
+      - {id: housing_help, label: "Housing and shelter help", aka: [homeless shelter, supportive housing, housing nonprofit, Habitat, Project HOME, rapid rehousing, transitional housing, shelter volunteer]}
+      - {id: homeless_outreach, label: "Street outreach and drop in centers", aka: [homeless outreach, street outreach, warming center, day center, hospitality, hygiene kits, outreach team, drop in center]}
+      - {id: goods_closets, label: "Clothing and goods closets", aka: [clothing drive, coat drive, diaper bank, free store, furniture bank, baby supplies, school supply drive, donations sorting, clothing closet]}
+      - {id: home_repair, label: "Home repair and weatherization", aka: [Habitat for Humanity, Rebuilding Together, ramp building, weatherization, fix up, handyman, home repair volunteers, accessibility ramps]}
+      - {id: free_help_clinics, label: "Free tax, benefits and legal help", aka: [VITA, tax prep, benefits enrollment, financial counseling, free tax, benefit screening, legal aid, pro bono clinic, legal clinic, expungement clinic]}
+
+  - id: kids-youth-mentoring
+    label: "Kids and youth"
+    examples: "mentoring, tutoring, scouts, after school, parent groups"
+    icon: "🧒"
+    tags:
+      - {id: mentoring, label: "Mentoring", aka: [big brother, big sister, mentor, youth mentor, role model, big buddy, peer mentor, career mentoring, adult mentor]}
+      - {id: tutoring, label: "Tutoring and homework help", aka: [homework help, after school help, academic coaching, math tutor, test prep, reading help, study buddy]}
+      - {id: after_school_camps, label: "After school and summer programs", aka: [afterschool, out of school time, OST, youth center, boys and girls club, rec center kids, youth program, day camp, summer youth, camp counselor, summer jobs]}
+      - {id: scouts_youth_clubs, label: "Scouts and youth clubs", aka: [Girl Scouts, Boy Scouts, 4H, Girls Inc, youth club, scout troop, Pathfinders, sea cadets, scouting]}
+      - {id: youth_leadership, label: "Teen leadership and youth voice", aka: [youth council, youth board, teen advisory, youth organizing, student leadership, junior leaders, youth commission, teen council]}
+      - {id: school_parent_groups, label: "School and parent groups", aka: [PTA, PTO, Home and School Association, school volunteer, parent teacher group, school friends group, parent council, education advocacy, school board]}
+      - {id: parent_playgroups, label: "Playgroups and parent meetups", aka: [moms group, dads group, playgroup, parent meetup, mommy and me, stroller group, parent circle, family outings, toddler group, family fun]}
+      - {id: foster_care_support, label: "Foster care and kinship help", aka: [foster parent, CASA, court appointed special advocate, kinship care, adoption, foster youth, child advocate]}
+
+  - id: seniors-intergenerational
+    label: "Older adults and all ages together"
+    examples: "senior centers, friendly visits, intergenerational projects, rides and errands"
+    icon: "👵"
+    tags:
+      - {id: senior_centers, label: "Senior centers and clubs", aka: [older adult center, 55 plus club, seniors group, active adults, Philadelphia Corporation for Aging, PCA, senior club, golden age club]}
+      - {id: friendly_visiting, label: "Friendly visits and phone calls", aka: [friendly visitor, phone buddy, companion, check in call, visit homebound, pen pal seniors, adopt a grandparent, phone friends]}
+      - {id: intergenerational, label: "Programs for all ages together", aka: [grandfriends, foster grandparents, senior companion, Experience Corps, mix of ages, elders and youth, cross generation, intergenerational]}
+      - {id: retiree_corps, label: "Retiree volunteer corps", aka: [RSVP, SCORE, Senior Corps, retired professionals, encore, volunteer corps, second act, retired volunteers, aging advocacy, AARP]}
+      - {id: senior_activities, label: "Senior fitness and social dances", aka: [senior exercise, silver sneakers, senior dance, tea dance, aqua aerobics, seniors walking, senior fitness, older adult classes]}
+      - {id: nursing_home_hospice, label: "Nursing home and hospice volunteering", aka: [nursing home, hospice, assisted living, memory care, Alzheimer's, long term care, memory cafe, hospice volunteer]}
+      - {id: neighbor_errands, label: "Rides and errands for neighbors", aka: [ride share volunteer, grocery delivery, meals on wheels, shopping help, errand running, snow shoveling, neighbor help, rides to appointments]}
+
+  - id: health-wellness
+    label: "Health and wellness"
+    examples: "meditation, tai chi, health fairs, hospital volunteering"
+    icon: "🧘"
+    tags:
+      - {id: meditation_mindfulness, label: "Meditation and mindfulness", aka: [meditation group, sitting group, mindfulness, breathwork, zen, sangha, quiet time, mindful living]}
+      - {id: tai_chi_qigong, label: "Tai chi and qigong", aka: [tai chi, qi gong, taiji, gentle movement, chair yoga, balance class, gentle exercise]}
+      - {id: health_outreach, label: "Health fairs and screenings", aka: [health fair, free clinic, screenings, blood pressure checks, vaccination clinic, community health worker, health outreach, blood drive, blood donation, nutrition class, healthy eating]}
+      - {id: hospital_volunteering, label: "Hospital and clinic volunteering", aka: [hospital volunteer, patient escort, hospital greeter, children's hospital volunteer, clinic volunteer, Ronald McDonald House, hospital auxiliary, patient visitor]}
+      - {id: mental_health_awareness, label: "Mental health awareness", aka: [NAMI walk, mental health first aid, mental health education, suicide prevention walk, peer wellness, wellness center, stigma reduction, wellness workshop]}
+      - {id: harm_reduction, label: "Harm reduction and overdose response", aka: [naloxone training, Narcan, syringe services, overdose prevention, harm reduction volunteer, safe supply, drug checking, overdose response]}
+      - {id: doula_birth_support, label: "Birth and postpartum helpers", aka: [doula, breastfeeding, birth support, midwife, postpartum, maternal health, birth worker, lactation support]}
+
+  - id: faith-community
+    label: "Faith and spiritual community"
+    examples: "worship, service projects, interfaith dialogue, study groups"
+    icon: "⛪"
+    tags:
+      - {id: worship_community, label: "Worship communities", aka: [church, synagogue, mosque, temple, gurdwara, meetinghouse, parish, congregation, worship service, prayer community]}
+      - {id: faith_service_projects, label: "Faith based service projects", aka: [church volunteers, mission trip, outreach ministry, social action committee, tikkun olam, sadaqah, seva, zakat, congregation volunteer day, community outreach, prison ministry, visiting ministry]}
+      - {id: interfaith, label: "Interfaith dialogue and cooperation", aka: [multifaith, faith dialogue, Interfaith Center, religious literacy, shared prayer, faith leaders, interreligious, faith coalition]}
+      - {id: scripture_study, label: "Scripture and spiritual study groups", aka: [bible study, Torah study, Quran study, Sunday school, Dharma talk, text study, prayer group, spiritual study, small group, Bible]}
+      - {id: worship_music, label: "Worship music and choirs", aka: [church choir, praise band, cantor, worship team, organist, sacred music, kirtan, chant, handbell]}
+      - {id: faith_youth_programs, label: "Faith youth groups", aka: [youth group, confirmation class, Sunday school teacher, teen ministry, bar mitzvah class, madrasa, religious school, youth ministry]}
+      - {id: humanist_spiritual, label: "Humanist and spiritual communities", aka: [Unitarian, ethical culture, secular humanist, spiritual but not religious, atheist group, freethinkers, humanist group, spiritual circle]}
+      - {id: congregation_social, label: "Congregation suppers and socials", aka: [church supper, fish fry, parish festival, community breakfast, potluck at church, congregation social, fellowship hall]}
+
+  - id: social-meetups
+    label: "Meetups and making friends"
+    examples: "newcomer meetups, LGBTQ+ socials, twenties and thirties clubs, veterans posts"
+    icon: "👋"
+    tags:
+      - {id: newcomer_meetups, label: "Meetups for people new to Philly", aka: [new in town, transplants, new to Philly, welcome, expat, new neighbor, relocation social, friend finding, make friends, new in the city]}
+      - {id: conversation_circles, label: "Conversation circles and dinners with strangers", aka: [dinner with strangers, conversation cafe, talk circle, deep talks, friend dates, listening circle, mingle, walk and talk, discussion dinner]}
+      - {id: young_adult_social, label: "Social clubs for twenties and thirties", aka: [young professionals, twenty somethings, social club, happy hour, supper club for twenties, friend group, social leagues, young adults group]}
+      - {id: singles_dating, label: "Singles and dating events", aka: [speed dating, singles group, dating events, meet a partner, matchmaking, dating, singles mixer]}
+      - {id: lgbtq_social, label: "LGBTQ+ social groups", aka: [queer social, gay sports, lesbian group, trans social, queer book club, pride group, queer meetup, rainbow, LGBT, gay social club]}
+      - {id: affinity_social, label: "Affinity social groups", aka: [Black professionals, Latino social, Asian American social club, culture social club, identity based social group, women's circle, girls night, men's group, men's circle, alumni association, alumni chapter]}
+      - {id: neurodivergent_social, label: "Neurodivergent and disability friendly socials", aka: [autism social, ADHD meetup, sensory friendly, neurodiverse, adult autism group, disability social, blind social, accessible social]}
+      - {id: sober_social, label: "Sober friendly social events", aka: [alcohol free, sober curious, dry events, mocktail, sober meetup, no alcohol, sober sports club, alcohol free social]}
+      - {id: veterans_posts, label: "Veterans groups and posts", aka: [VFW, American Legion, veterans, vets, veteran peer, military families, Team Rubicon, Vietnam Veterans, Marine Corps League, veterans service organization]}
+      - {id: fraternal_service_clubs, label: "Lodges and service clubs", aka: [Elks, Moose, Masons, Knights of Columbus, Odd Fellows, Rotary, Lions club, Kiwanis, Eagles, Shriners, Sons of Italy, Hibernians, fraternal order, lodge]}
+
+  - id: careers-skills-professional
+    label: "Careers and skills"
+    examples: "job clubs, public speaking, skills volunteering, board service"
+    icon: "💼"
+    tags:
+      - {id: job_clubs, label: "Job clubs and career help", aka: [job search, resume help, career coaching, job fair, workforce, career center, networking for jobs, interview practice]}
+      - {id: public_speaking, label: "Public speaking and debate", aka: [Toastmasters, speech club, debate team, speaker practice, communication skills, speaking practice, debate club, confidence speaking]}
+      - {id: professional_associations, label: "Professional associations", aka: [industry group, chapter, trade association, networking group, young professionals association, professional society, SHRM, AIGA, AIA]}
+      - {id: board_service, label: "Board and committee service", aka: [nonprofit board, board member, advisory board, committee, young nonprofit professionals, board matching, trustee, board training]}
+      - {id: skills_volunteering, label: "Skills volunteering and pro bono", aka: [pro bono, skilled volunteer, volunteer consulting, design for good, nonprofit tech help, accounting volunteer, marketing volunteer, legal volunteers, interpreter volunteer, translator volunteer]}
+      - {id: entrepreneurs, label: "Small business and entrepreneurs", aka: [startup, small business owners, founders, side hustle, business incubator, coworking, vendors, freelancers, freelancer group]}
+      - {id: trades_training, label: "Trades and job training", aka: [apprenticeship, trade school, vocational, GED, CDL, pre apprenticeship, job training, coding bootcamp, culinary training, workforce training]}
+      - {id: money_skills, label: "Money skills and financial literacy", aka: [budgeting class, credit counseling, financial coaching, saving circle, lending circle, investing club, homebuyer class, credit union, money management]}
+
+  - id: emergency-disaster
+    label: "Emergency and disaster help"
+    examples: "CERT teams, Red Cross, first aid, volunteer fire companies"
+    icon: "🚨"
+    tags:
+      - {id: emergency_response_teams, label: "Community emergency response teams", aka: [CERT, emergency response team, Ready Philly, preparedness team, disaster team, neighborhood emergency, Medical Reserve Corps, MRC]}
+      - {id: disaster_relief, label: "Disaster relief volunteers", aka: [Red Cross, disaster action team, fire response, home fire campaign, smoke alarm install, flood response, storm cleanup, disaster shelter]}
+      - {id: first_aid_cpr, label: "First aid and CPR", aka: [CPR, AED, stop the bleed, first aid class, emergency medical training, Narcan training, medical first responder, CPR class]}
+      - {id: volunteer_fire_ems, label: "Volunteer fire and ambulance companies", aka: [volunteer firefighter, fire company, EMT, ambulance corps, junior firefighter, rescue squad, fire police, auxiliary]}
+      - {id: preparedness_planning, label: "Preparedness classes and planning", aka: [disaster preparedness, go bag, emergency planning, preparedness fair, resilience hub, neighborhood preparedness, emergency kit]}
+      - {id: weather_checks, label: "Heat and cold checks on neighbors", aka: [heat wave check, wellness check, code blue, warming center volunteer, cooling center, extreme weather volunteer, snow shoveling for neighbors]}
+      - {id: search_rescue, label: "Search and rescue", aka: [SAR, mountain rescue, wilderness rescue, K9 search, ground search, missing persons search, cave rescue team]}
+
+  - id: philly-traditions
+    label: "Philly traditions"
+    examples: "Mummers, parades, festivals, street fairs"
+    icon: "🎺"
+    tags:
+      - {id: mummers_string_band, label: "Mummers string bands", aka: [string band, banjo, Mummers band, Mummers music, Mummers glockenspiel, saxophone and banjo, Mummers musicians]}
+      - {id: mummers_fancy_brigade, label: "Mummers fancy brigades", aka: [fancy brigade, fancy division, Mummers fancy, Mummers costume, Mummers float, Fancy Brigades, Mummers props]}
+      - {id: mummers_comic_club, label: "Mummers comic clubs", aka: [comic division, comic brigade, wench brigade, Mummers comic, Mummers satire, comic club, Mummers strutting, strut]}
+      - {id: mummers_clubhouse, label: "Mummers clubs and clubhouses", aka: [New Year's Association, NYA, Two Street, clubhouse, Mummers club, shooters association, South Philly Mummers club, Mummers volunteers, New Year's shooters]}
+      - {id: parade_units, label: "Parade groups and float building", aka: [parade float, Thanksgiving Day parade, marching units, float builders, flag corps, drill team, majorettes, color guard, St. Patrick's parade, Puerto Rican parade, Pulaski parade, parade volunteers]}
+      - {id: street_festivals, label: "Street festivals and neighborhood fairs", aka: [festival volunteer, street fair, block festival, Odunde, Italian Market Festival, community festival, festival crew, neighborhood events, porch fest, tree lighting, seasonal traditions, holiday lights, Welcome America]}
+
+  - id: support-recovery
+    label: "Support and recovery"
+    examples: "grief, recovery, caregiving, mental health"
+    icon: "🤝"
+    support_only: true
+    tags:
+      - {id: grief_support, label: "Grief and loss support", aka: [bereavement, widowed, loss of a child, grief group, GriefShare, suicide loss survivors, widow support]}
+      - {id: addiction_recovery, label: "Recovery from addiction", aka: [AA, NA, Alcoholics Anonymous, Narcotics Anonymous, SMART Recovery, recovery meeting, sobriety, twelve step, Al Anon, Celebrate Recovery, recovery community, gambling recovery]}
+      - {id: caregiver_support, label: "Caregiver support", aka: [caregivers, family caregivers, caring for a parent, dementia caregiver, respite, parents of children with special needs, family members support]}
+      - {id: mental_health_support, label: "Mental health support groups", aka: [depression support, anxiety support, peer support, NAMI support group, DBSA, bipolar support, peer specialist, eating disorder support, hearing voices]}
+      - {id: chronic_illness_support, label: "Chronic illness and disability support", aka: [cancer support, diabetes group, MS support, long covid, chronic pain, illness support group, patient group, HIV support, rare disease]}
+      - {id: parenting_support, label: "Parent support", aka: [postpartum support, new parents support, single parents, parents of teens, parent peer support, mom support, dads support]}
+      - {id: lgbtq_support, label: "LGBTQ+ support groups", aka: [trans support, coming out support, queer peer support, gender support, PFLAG, LGBTQ peer support]}
+      - {id: survivor_support, label: "Survivor support", aka: [domestic violence survivors, sexual assault survivors, abuse survivors, trauma support, crime victims, peer survivors, survivors group]}
+
+# Adjacency graph for "one step sideways" stretches. Edges are undirected: `from` and `to` can be
+# read either way. `type` says why the two interests are neighbors:
+#   same_skill  the skills carry over (chess to puzzles, rowing to dragon boat)
+#   same_crowd  the same kind of people turn up (kickball to young adult socials)
+#   same_place  the same spots or buildings (hiking to trail building, book club to library programs)
+#   same_cause  the same cause or purpose (community fridge to mutual aid)
+#   same_topic  the same subject matter (birding to citizen science)
+edges:
+  # Outdoors and adventure
+  - {from: hiking, to: trail_building, type: same_place}
+  - {from: hiking, to: walking_group, type: same_skill}
+  - {from: hiking, to: camping, type: same_crowd}
+  - {from: hiking, to: birding, type: same_place}
+  - {from: hiking, to: friends_of_park, type: same_place}
+  - {from: hiking, to: geology_fossils, type: same_place}
+  - {from: hiking, to: search_rescue, type: same_crowd}
+  - {from: caving, to: climbing, type: same_skill}
+  - {from: caving, to: geology_fossils, type: same_topic}
+  - {from: caving, to: search_rescue, type: same_skill}
+  - {from: caving, to: hiking, type: same_crowd}
+  - {from: climbing, to: strength_training, type: same_skill}
+  - {from: climbing, to: search_rescue, type: same_skill}
+  - {from: climbing, to: martial_arts, type: same_crowd}
+  - {from: kayaking, to: rowing, type: same_place}
+  - {from: kayaking, to: river_stewardship, type: same_place}
+  - {from: kayaking, to: dragon_boat, type: same_skill}
+  - {from: kayaking, to: sailing, type: same_place}
+  - {from: birding, to: citizen_science, type: same_topic}
+  - {from: birding, to: habitat_restoration, type: same_cause}
+  - {from: birding, to: wildlife_rehab, type: same_cause}
+  - {from: birding, to: photography, type: same_crowd}
+  - {from: birding, to: natural_history, type: same_topic}
+  - {from: camping, to: scouts_youth_clubs, type: same_crowd}
+  - {from: camping, to: preparedness_planning, type: same_skill}
+  - {from: camping, to: astronomy, type: same_place}
+
+  # Nature and environment
+  - {from: trail_building, to: habitat_restoration, type: same_skill}
+  - {from: trail_building, to: home_repair, type: same_skill}
+  - {from: trail_building, to: friends_of_park, type: same_place}
+  - {from: park_cleanup, to: friends_of_park, type: same_place}
+  - {from: park_cleanup, to: clean_blocks, type: same_skill}
+  - {from: park_cleanup, to: river_stewardship, type: same_cause}
+  - {from: park_cleanup, to: running, type: same_crowd}
+  - {from: park_cleanup, to: cemetery_friends, type: same_skill}
+  - {from: friends_of_park, to: rec_center_council, type: same_place}
+  - {from: friends_of_park, to: community_garden, type: same_place}
+  - {from: friends_of_park, to: civic_association, type: same_crowd}
+  - {from: friends_of_park, to: cemetery_friends, type: same_place}
+  - {from: friends_of_park, to: dog_owner_groups, type: same_place}
+  - {from: tree_tending, to: community_garden, type: same_skill}
+  - {from: tree_tending, to: citizen_science, type: same_skill}
+  - {from: tree_tending, to: clean_blocks, type: same_place}
+  - {from: tree_tending, to: habitat_restoration, type: same_skill}
+  - {from: tree_tending, to: community_orchard, type: same_skill}
+  - {from: river_stewardship, to: rowing, type: same_place}
+  - {from: river_stewardship, to: habitat_restoration, type: same_cause}
+  - {from: river_stewardship, to: climate_action, type: same_cause}
+  - {from: habitat_restoration, to: pollinators_bees, type: same_cause}
+  - {from: habitat_restoration, to: natural_history, type: same_topic}
+  - {from: citizen_science, to: astronomy, type: same_topic}
+  - {from: citizen_science, to: natural_history, type: same_topic}
+  - {from: citizen_science, to: stem_outreach, type: same_topic}
+  - {from: citizen_science, to: coding_software, type: same_skill}
+  - {from: climate_action, to: street_safety_transit, type: same_cause}
+  - {from: climate_action, to: community_garden, type: same_cause}
+  - {from: climate_action, to: preparedness_planning, type: same_cause}
+  - {from: climate_action, to: repair_cafe, type: same_cause}
+
+  # Gardens and greening
+  - {from: community_garden, to: urban_farming, type: same_skill}
+  - {from: community_garden, to: food_pantry, type: same_cause}
+  - {from: community_garden, to: clean_blocks, type: same_place}
+  - {from: community_garden, to: garden_club, type: same_crowd}
+  - {from: community_garden, to: intergenerational, type: same_place}
+  - {from: urban_farming, to: farmers_markets_coops, type: same_topic}
+  - {from: urban_farming, to: food_rescue, type: same_cause}
+  - {from: urban_farming, to: cooking_baking, type: same_topic}
+  - {from: urban_farming, to: pet_birds_hobbies, type: same_place}
+  - {from: vacant_lot_greening, to: clean_blocks, type: same_place}
+  - {from: vacant_lot_greening, to: community_development, type: same_cause}
+  - {from: vacant_lot_greening, to: community_garden, type: same_place}
+  - {from: vacant_lot_greening, to: mural_public_art, type: same_place}
+  - {from: community_orchard, to: cooking_baking, type: same_topic}
+  - {from: community_orchard, to: food_rescue, type: same_cause}
+  - {from: pollinators_bees, to: garden_club, type: same_topic}
+  - {from: pollinators_bees, to: natural_history, type: same_topic}
+  - {from: garden_club, to: senior_activities, type: same_crowd}
+  - {from: garden_club, to: craft_circle, type: same_crowd}
+  - {from: garden_club, to: farmers_markets_coops, type: same_crowd}
+
+  # Team sports
+  - {from: soccer, to: basketball, type: same_crowd}
+  - {from: soccer, to: youth_coaching, type: same_skill}
+  - {from: soccer, to: sports_fans, type: same_topic}
+  - {from: soccer, to: kickball_rec_leagues, type: same_crowd}
+  - {from: soccer, to: after_school_camps, type: same_place}
+  - {from: soccer, to: immigrant_welcome, type: same_crowd}
+  - {from: basketball, to: youth_coaching, type: same_skill}
+  - {from: basketball, to: rec_center_council, type: same_place}
+  - {from: basketball, to: adaptive_sports, type: same_skill}
+  - {from: basketball, to: after_school_camps, type: same_place}
+  - {from: softball_baseball, to: kickball_rec_leagues, type: same_skill}
+  - {from: softball_baseball, to: sports_fans, type: same_topic}
+  - {from: softball_baseball, to: youth_coaching, type: same_skill}
+  - {from: softball_baseball, to: cricket, type: same_skill}
+  - {from: softball_baseball, to: rec_center_council, type: same_place}
+  - {from: kickball_rec_leagues, to: young_adult_social, type: same_crowd}
+  - {from: kickball_rec_leagues, to: newcomer_meetups, type: same_crowd}
+  - {from: kickball_rec_leagues, to: lgbtq_social, type: same_crowd}
+  - {from: football_rugby, to: hockey_roller_derby, type: same_skill}
+  - {from: football_rugby, to: sports_fans, type: same_topic}
+  - {from: football_rugby, to: martial_arts, type: same_skill}
+  - {from: tennis_pickleball, to: senior_activities, type: same_crowd}
+  - {from: tennis_pickleball, to: kickball_rec_leagues, type: same_crowd}
+  - {from: tennis_pickleball, to: young_adult_social, type: same_crowd}
+  - {from: hockey_roller_derby, to: lgbtq_social, type: same_crowd}
+  - {from: hockey_roller_derby, to: variety_cabaret, type: same_crowd}
+  - {from: cricket, to: heritage_clubs, type: same_crowd}
+  - {from: cricket, to: immigrant_welcome, type: same_crowd}
+  - {from: youth_coaching, to: mentoring, type: same_cause}
+  - {from: youth_coaching, to: after_school_camps, type: same_place}
+  - {from: adaptive_sports, to: disability_rights, type: same_cause}
+  - {from: adaptive_sports, to: veterans_posts, type: same_crowd}
+  - {from: adaptive_sports, to: neurodivergent_social, type: same_crowd}
+  - {from: sports_fans, to: trivia_nights, type: same_crowd}
+  - {from: sports_fans, to: street_festivals, type: same_crowd}
+
+  # Running, cycling and fitness
+  - {from: running, to: walking_group, type: same_skill}
+  - {from: running, to: group_bike_rides, type: same_crowd}
+  - {from: running, to: newcomer_meetups, type: same_crowd}
+  - {from: running, to: sober_social, type: same_crowd}
+  - {from: walking_group, to: senior_activities, type: same_crowd}
+  - {from: walking_group, to: walking_tours, type: same_skill}
+  - {from: walking_group, to: conversation_circles, type: same_crowd}
+  - {from: walking_group, to: town_watch, type: same_skill}
+  - {from: walking_group, to: mental_health_awareness, type: same_cause}
+  - {from: group_bike_rides, to: bike_repair, type: same_crowd}
+  - {from: group_bike_rides, to: street_safety_transit, type: same_cause}
+  - {from: group_bike_rides, to: cars_motorcycles, type: same_topic}
+  - {from: bike_repair, to: repair_cafe, type: same_skill}
+  - {from: bike_repair, to: after_school_camps, type: same_cause}
+  - {from: bike_repair, to: makerspace, type: same_place}
+  - {from: yoga_movement, to: meditation_mindfulness, type: same_crowd}
+  - {from: yoga_movement, to: tai_chi_qigong, type: same_skill}
+  - {from: yoga_movement, to: dance_company, type: same_skill}
+  - {from: strength_training, to: martial_arts, type: same_crowd}
+  - {from: martial_arts, to: cultural_dance, type: same_skill}
+  - {from: martial_arts, to: after_school_camps, type: same_crowd}
+  - {from: martial_arts, to: tai_chi_qigong, type: same_skill}
+
+  # Water and rowing
+  - {from: rowing, to: youth_rowing, type: same_topic}
+  - {from: rowing, to: swimming, type: same_crowd}
+  - {from: rowing, to: regatta_volunteering, type: same_place}
+  - {from: rowing, to: dragon_boat, type: same_skill}
+  - {from: youth_rowing, to: mentoring, type: same_cause}
+  - {from: youth_rowing, to: after_school_camps, type: same_crowd}
+  - {from: dragon_boat, to: cultural_dance, type: same_crowd}
+  - {from: dragon_boat, to: street_festivals, type: same_place}
+  - {from: sailing, to: regatta_volunteering, type: same_place}
+  - {from: sailing, to: astronomy, type: same_skill}
+  - {from: swimming, to: first_aid_cpr, type: same_skill}
+  - {from: swimming, to: adaptive_sports, type: same_crowd}
+  - {from: swimming, to: senior_activities, type: same_crowd}
+  - {from: regatta_volunteering, to: street_festivals, type: same_skill}
+  - {from: regatta_volunteering, to: stage_crew, type: same_skill}
+  - {from: regatta_volunteering, to: woodworking, type: same_skill}
+
+  # Arts and crafts
+  - {from: painting_drawing, to: mural_public_art, type: same_skill}
+  - {from: painting_drawing, to: printmaking, type: same_skill}
+  - {from: painting_drawing, to: senior_activities, type: same_crowd}
+  - {from: painting_drawing, to: museum_volunteering, type: same_topic}
+  - {from: pottery_ceramics, to: craft_circle, type: same_crowd}
+  - {from: pottery_ceramics, to: makerspace, type: same_place}
+  - {from: pottery_ceramics, to: woodworking, type: same_skill}
+  - {from: fiber_arts, to: craft_circle, type: same_crowd}
+  - {from: fiber_arts, to: goods_closets, type: same_cause}
+  - {from: fiber_arts, to: senior_centers, type: same_crowd}
+  - {from: fiber_arts, to: printmaking, type: same_skill}
+  - {from: fiber_arts, to: repair_cafe, type: same_skill}
+  - {from: mural_public_art, to: community_development, type: same_cause}
+  - {from: mural_public_art, to: violence_prevention, type: same_cause}
+  - {from: photography, to: film_video, type: same_skill}
+  - {from: photography, to: oral_history, type: same_skill}
+  - {from: photography, to: preservation_architecture, type: same_crowd}
+  - {from: film_video, to: zines_media, type: same_skill}
+  - {from: film_video, to: community_theater, type: same_skill}
+  - {from: film_video, to: fandom_cons, type: same_crowd}
+  - {from: film_video, to: oral_history, type: same_skill}
+  - {from: printmaking, to: zines_media, type: same_skill}
+  - {from: craft_circle, to: newcomer_meetups, type: same_crowd}
+  - {from: craft_circle, to: entrepreneurs, type: same_crowd}
+
+  # Music
+  - {from: choir_singing, to: worship_music, type: same_skill}
+  - {from: choir_singing, to: nursing_home_hospice, type: same_place}
+  - {from: choir_singing, to: senior_centers, type: same_crowd}
+  - {from: choir_singing, to: community_theater, type: same_crowd}
+  - {from: community_band, to: parade_units, type: same_place}
+  - {from: community_band, to: mummers_string_band, type: same_skill}
+  - {from: community_band, to: instrument_lessons, type: same_skill}
+  - {from: jam_sessions, to: folk_traditional_music, type: same_crowd}
+  - {from: jam_sessions, to: storytelling_spoken_word, type: same_place}
+  - {from: jam_sessions, to: improv_comedy, type: same_place}
+  - {from: drum_circle, to: cultural_dance, type: same_crowd}
+  - {from: drum_circle, to: mummers_string_band, type: same_skill}
+  - {from: drum_circle, to: street_festivals, type: same_place}
+  - {from: instrument_lessons, to: mentoring, type: same_cause}
+  - {from: instrument_lessons, to: after_school_camps, type: same_crowd}
+  - {from: instrument_lessons, to: adult_learning, type: same_topic}
+  - {from: dj_hip_hop, to: poetry, type: same_crowd}
+  - {from: dj_hip_hop, to: social_dance, type: same_crowd}
+  - {from: dj_hip_hop, to: electronics_robotics, type: same_skill}
+  - {from: folk_traditional_music, to: social_dance, type: same_crowd}
+  - {from: folk_traditional_music, to: heritage_clubs, type: same_topic}
+  - {from: folk_traditional_music, to: mummers_string_band, type: same_topic}
+
+  # Theater, dance and performance
+  - {from: community_theater, to: stage_crew, type: same_place}
+  - {from: community_theater, to: improv_comedy, type: same_skill}
+  - {from: community_theater, to: public_speaking, type: same_skill}
+  - {from: improv_comedy, to: public_speaking, type: same_skill}
+  - {from: improv_comedy, to: storytelling_spoken_word, type: same_skill}
+  - {from: improv_comedy, to: trivia_nights, type: same_crowd}
+  - {from: improv_comedy, to: tabletop_rpg, type: same_skill}
+  - {from: social_dance, to: dance_company, type: same_skill}
+  - {from: social_dance, to: singles_dating, type: same_crowd}
+  - {from: social_dance, to: senior_activities, type: same_crowd}
+  - {from: dance_company, to: cultural_dance, type: same_skill}
+  - {from: dance_company, to: after_school_camps, type: same_crowd}
+  - {from: cultural_dance, to: heritage_clubs, type: same_topic}
+  - {from: cultural_dance, to: parade_units, type: same_place}
+  - {from: cultural_dance, to: street_festivals, type: same_place}
+  - {from: cultural_dance, to: heritage_schools, type: same_crowd}
+  - {from: stage_crew, to: woodworking, type: same_skill}
+  - {from: stage_crew, to: fiber_arts, type: same_skill}
+  - {from: stage_crew, to: street_festivals, type: same_skill}
+  - {from: storytelling_spoken_word, to: poetry, type: same_topic}
+  - {from: storytelling_spoken_word, to: oral_history, type: same_skill}
+  - {from: storytelling_spoken_word, to: writing_group, type: same_skill}
+  - {from: storytelling_spoken_word, to: public_speaking, type: same_skill}
+  - {from: variety_cabaret, to: lgbtq_social, type: same_crowd}
+  - {from: variety_cabaret, to: mummers_comic_club, type: same_topic}
+
+  # Books and writing
+  - {from: book_club, to: literacy_tutoring, type: same_topic}
+  - {from: book_club, to: library_programs, type: same_place}
+  - {from: book_club, to: conversation_circles, type: same_crowd}
+  - {from: book_club, to: writing_group, type: same_crowd}
+  - {from: book_club, to: philosophy_discussion, type: same_crowd}
+  - {from: writing_group, to: poetry, type: same_skill}
+  - {from: writing_group, to: zines_media, type: same_skill}
+  - {from: writing_group, to: tabletop_rpg, type: same_skill}
+  - {from: poetry, to: library_programs, type: same_place}
+  - {from: zines_media, to: civil_liberties_privacy, type: same_topic}
+  - {from: zines_media, to: prison_book_programs, type: same_topic}
+  - {from: literacy_tutoring, to: tutoring, type: same_skill}
+  - {from: literacy_tutoring, to: esl_conversation, type: same_skill}
+  - {from: literacy_tutoring, to: library_programs, type: same_place}
+  - {from: literacy_tutoring, to: prison_book_programs, type: same_cause}
+  - {from: prison_book_programs, to: justice_reform_reentry, type: same_cause}
+  - {from: prison_book_programs, to: mutual_aid, type: same_crowd}
+  - {from: library_programs, to: digital_skills, type: same_place}
+  - {from: library_programs, to: after_school_camps, type: same_place}
+  - {from: library_programs, to: parent_playgroups, type: same_place}
+  - {from: library_programs, to: rec_center_council, type: same_cause}
+  - {from: library_programs, to: genealogy, type: same_place}
+
+  # Games and puzzles
+  - {from: board_games, to: senior_activities, type: same_crowd}
+  - {from: board_games, to: conversation_circles, type: same_crowd}
+  - {from: board_games, to: tabletop_rpg, type: same_crowd}
+  - {from: board_games, to: neurodivergent_social, type: same_crowd}
+  - {from: chess, to: puzzles_escape, type: same_skill}
+  - {from: chess, to: after_school_camps, type: same_crowd}
+  - {from: chess, to: coding_software, type: same_crowd}
+  - {from: tabletop_rpg, to: fandom_cons, type: same_crowd}
+  - {from: trivia_nights, to: young_adult_social, type: same_crowd}
+  - {from: trivia_nights, to: talks_lectures, type: same_topic}
+  - {from: trivia_nights, to: homebrew_wine, type: same_place}
+  - {from: puzzles_escape, to: coding_software, type: same_skill}
+  - {from: puzzles_escape, to: genealogy, type: same_skill}
+  - {from: video_games, to: coding_software, type: same_skill}
+  - {from: video_games, to: fandom_cons, type: same_crowd}
+  - {from: video_games, to: neurodivergent_social, type: same_crowd}
+  - {from: fandom_cons, to: fiber_arts, type: same_skill}
+
+  # Making and tech
+  - {from: woodworking, to: makerspace, type: same_place}
+  - {from: woodworking, to: home_repair, type: same_skill}
+  - {from: woodworking, to: trades_training, type: same_skill}
+  - {from: woodworking, to: preservation_architecture, type: same_skill}
+  - {from: makerspace, to: electronics_robotics, type: same_place}
+  - {from: makerspace, to: repair_cafe, type: same_place}
+  - {from: makerspace, to: entrepreneurs, type: same_crowd}
+  - {from: makerspace, to: civil_liberties_privacy, type: same_crowd}
+  - {from: electronics_robotics, to: ham_radio, type: same_skill}
+  - {from: electronics_robotics, to: stem_outreach, type: same_cause}
+  - {from: electronics_robotics, to: after_school_camps, type: same_crowd}
+  - {from: coding_software, to: digital_skills, type: same_skill}
+  - {from: coding_software, to: civil_liberties_privacy, type: same_crowd}
+  - {from: coding_software, to: skills_volunteering, type: same_skill}
+  - {from: repair_cafe, to: mutual_aid, type: same_cause}
+  - {from: cars_motorcycles, to: trades_training, type: same_skill}
+  - {from: cars_motorcycles, to: veterans_posts, type: same_crowd}
+  - {from: ham_radio, to: preparedness_planning, type: same_cause}
+  - {from: ham_radio, to: emergency_response_teams, type: same_cause}
+  - {from: ham_radio, to: astronomy, type: same_crowd}
+  - {from: digital_skills, to: senior_centers, type: same_crowd}
+  - {from: digital_skills, to: job_clubs, type: same_cause}
+  - {from: digital_skills, to: intergenerational, type: same_crowd}
+
+  # Science and learning
+  - {from: astronomy, to: geology_fossils, type: same_crowd}
+  - {from: astronomy, to: talks_lectures, type: same_topic}
+  - {from: astronomy, to: stem_outreach, type: same_cause}
+  - {from: geology_fossils, to: natural_history, type: same_topic}
+  - {from: geology_fossils, to: museum_volunteering, type: same_place}
+  - {from: natural_history, to: museum_volunteering, type: same_place}
+  - {from: natural_history, to: pet_birds_hobbies, type: same_topic}
+  - {from: talks_lectures, to: philosophy_discussion, type: same_crowd}
+  - {from: talks_lectures, to: adult_learning, type: same_topic}
+  - {from: talks_lectures, to: museum_volunteering, type: same_place}
+  - {from: talks_lectures, to: preservation_architecture, type: same_topic}
+  - {from: philosophy_discussion, to: conversation_circles, type: same_crowd}
+  - {from: philosophy_discussion, to: humanist_spiritual, type: same_topic}
+  - {from: philosophy_discussion, to: interfaith, type: same_topic}
+  - {from: stem_outreach, to: tutoring, type: same_skill}
+  - {from: stem_outreach, to: mentoring, type: same_cause}
+  - {from: stem_outreach, to: museum_volunteering, type: same_place}
+  - {from: adult_learning, to: esl_conversation, type: same_cause}
+  - {from: adult_learning, to: trades_training, type: same_topic}
+  - {from: adult_learning, to: senior_centers, type: same_crowd}
+  - {from: adult_learning, to: language_exchange, type: same_topic}
+
+  # History and preservation
+  - {from: historic_site_volunteering, to: walking_tours, type: same_place}
+  - {from: historic_site_volunteering, to: museum_volunteering, type: same_place}
+  - {from: historic_site_volunteering, to: preservation_architecture, type: same_cause}
+  - {from: historic_site_volunteering, to: cemetery_friends, type: same_place}
+  - {from: historic_site_volunteering, to: retiree_corps, type: same_crowd}
+  - {from: historic_site_volunteering, to: youth_leadership, type: same_crowd}
+  - {from: walking_tours, to: preservation_architecture, type: same_topic}
+  - {from: walking_tours, to: newcomer_meetups, type: same_crowd}
+  - {from: walking_tours, to: public_speaking, type: same_skill}
+  - {from: walking_tours, to: cemetery_friends, type: same_place}
+  - {from: genealogy, to: oral_history, type: same_skill}
+  - {from: genealogy, to: heritage_clubs, type: same_crowd}
+  - {from: oral_history, to: intergenerational, type: same_crowd}
+  - {from: oral_history, to: senior_centers, type: same_crowd}
+  - {from: preservation_architecture, to: community_development, type: same_cause}
+  - {from: preservation_architecture, to: civic_association, type: same_crowd}
+  - {from: cemetery_friends, to: genealogy, type: same_crowd}
+  - {from: museum_volunteering, to: retiree_corps, type: same_crowd}
+
+  # Cultures and languages
+  - {from: language_exchange, to: esl_conversation, type: same_topic}
+  - {from: language_exchange, to: newcomer_meetups, type: same_crowd}
+  - {from: language_exchange, to: conversation_circles, type: same_crowd}
+  - {from: language_exchange, to: cultural_exchange, type: same_topic}
+  - {from: language_exchange, to: heritage_schools, type: same_topic}
+  - {from: language_exchange, to: sign_language, type: same_skill}
+  - {from: esl_conversation, to: immigrant_welcome, type: same_cause}
+  - {from: esl_conversation, to: library_programs, type: same_place}
+  - {from: heritage_clubs, to: heritage_cooking, type: same_topic}
+  - {from: heritage_clubs, to: street_festivals, type: same_place}
+  - {from: heritage_clubs, to: worship_community, type: same_crowd}
+  - {from: heritage_schools, to: after_school_camps, type: same_crowd}
+  - {from: heritage_schools, to: worship_community, type: same_place}
+  - {from: heritage_schools, to: faith_youth_programs, type: same_crowd}
+  - {from: immigrant_welcome, to: immigrant_rights, type: same_cause}
+  - {from: immigrant_welcome, to: mutual_aid, type: same_cause}
+  - {from: immigrant_welcome, to: newcomer_meetups, type: same_crowd}
+  - {from: sign_language, to: disability_rights, type: same_cause}
+  - {from: sign_language, to: skills_volunteering, type: same_skill}
+  - {from: cultural_exchange, to: immigrant_welcome, type: same_crowd}
+  - {from: cultural_exchange, to: foodie_meetups, type: same_crowd}
+  - {from: cultural_exchange, to: newcomer_meetups, type: same_crowd}
+  - {from: cultural_exchange, to: interfaith, type: same_topic}
+
+  # Food and drink
+  - {from: cooking_baking, to: community_meals, type: same_skill}
+  - {from: cooking_baking, to: food_pantry, type: same_skill}
+  - {from: cooking_baking, to: heritage_cooking, type: same_topic}
+  - {from: cooking_baking, to: trades_training, type: same_skill}
+  - {from: community_meals, to: food_pantry, type: same_cause}
+  - {from: community_meals, to: congregation_social, type: same_place}
+  - {from: community_meals, to: block_captain, type: same_crowd}
+  - {from: community_meals, to: newcomer_meetups, type: same_crowd}
+  - {from: homebrew_wine, to: young_adult_social, type: same_crowd}
+  - {from: homebrew_wine, to: cooking_baking, type: same_skill}
+  - {from: homebrew_wine, to: fraternal_service_clubs, type: same_place}
+  - {from: farmers_markets_coops, to: community_development, type: same_cause}
+  - {from: farmers_markets_coops, to: civic_association, type: same_place}
+  - {from: foodie_meetups, to: young_adult_social, type: same_crowd}
+  - {from: foodie_meetups, to: heritage_cooking, type: same_topic}
+  - {from: foodie_meetups, to: singles_dating, type: same_crowd}
+  - {from: heritage_cooking, to: immigrant_welcome, type: same_crowd}
+  - {from: heritage_cooking, to: intergenerational, type: same_crowd}
+
+  # Animals
+  - {from: shelter_volunteering, to: cat_rescue_tnr, type: same_place}
+  - {from: shelter_volunteering, to: animal_fostering, type: same_cause}
+  - {from: shelter_volunteering, to: dog_owner_groups, type: same_crowd}
+  - {from: shelter_volunteering, to: hospital_volunteering, type: same_skill}
+  - {from: cat_rescue_tnr, to: block_captain, type: same_place}
+  - {from: cat_rescue_tnr, to: mutual_aid, type: same_cause}
+  - {from: animal_fostering, to: foster_care_support, type: same_skill}
+  - {from: wildlife_rehab, to: natural_history, type: same_topic}
+  - {from: wildlife_rehab, to: first_aid_cpr, type: same_skill}
+  - {from: dog_owner_groups, to: walking_group, type: same_crowd}
+  - {from: dog_owner_groups, to: newcomer_meetups, type: same_crowd}
+  - {from: horses_riding, to: adaptive_sports, type: same_cause}
+  - {from: horses_riding, to: after_school_camps, type: same_crowd}
+  - {from: horses_riding, to: mentoring, type: same_cause}
+  - {from: horses_riding, to: hiking, type: same_place}
+  - {from: pet_birds_hobbies, to: fraternal_service_clubs, type: same_crowd}
+  - {from: zoo_volunteering, to: museum_volunteering, type: same_skill}
+  - {from: zoo_volunteering, to: youth_leadership, type: same_crowd}
+  - {from: zoo_volunteering, to: walking_tours, type: same_skill}
+  - {from: zoo_volunteering, to: natural_history, type: same_topic}
+
+  # Neighborhood and civic life
+  - {from: civic_association, to: block_captain, type: same_crowd}
+  - {from: civic_association, to: community_development, type: same_cause}
+  - {from: civic_association, to: police_advisory, type: same_crowd}
+  - {from: civic_association, to: voter_education, type: same_cause}
+  - {from: civic_association, to: rec_center_council, type: same_crowd}
+  - {from: civic_association, to: tenant_rights, type: same_cause}
+  - {from: town_watch, to: block_captain, type: same_crowd}
+  - {from: town_watch, to: police_advisory, type: same_cause}
+  - {from: town_watch, to: violence_prevention, type: same_cause}
+  - {from: town_watch, to: weather_checks, type: same_crowd}
+  - {from: block_captain, to: clean_blocks, type: same_place}
+  - {from: block_captain, to: neighbor_errands, type: same_cause}
+  - {from: block_captain, to: mutual_aid, type: same_cause}
+  - {from: block_captain, to: street_festivals, type: same_crowd}
+  - {from: clean_blocks, to: goods_closets, type: same_crowd}
+  - {from: rec_center_council, to: after_school_camps, type: same_place}
+  - {from: rec_center_council, to: senior_activities, type: same_place}
+  - {from: police_advisory, to: justice_reform_reentry, type: same_topic}
+  - {from: police_advisory, to: civil_liberties_privacy, type: same_topic}
+  - {from: community_development, to: housing_help, type: same_cause}
+  - {from: community_development, to: tenant_rights, type: same_cause}
+  - {from: community_development, to: entrepreneurs, type: same_cause}
+  - {from: voter_education, to: youth_leadership, type: same_crowd}
+  - {from: voter_education, to: talks_lectures, type: same_topic}
+  - {from: voter_education, to: library_programs, type: same_place}
+
+  # Advocacy and rights
+  - {from: tenant_rights, to: housing_help, type: same_cause}
+  - {from: tenant_rights, to: free_help_clinics, type: same_cause}
+  - {from: street_safety_transit, to: walking_group, type: same_crowd}
+  - {from: street_safety_transit, to: disability_rights, type: same_cause}
+  - {from: immigrant_rights, to: free_help_clinics, type: same_cause}
+  - {from: immigrant_rights, to: racial_equity, type: same_cause}
+  - {from: immigrant_rights, to: worker_rights, type: same_cause}
+  - {from: disability_rights, to: neurodivergent_social, type: same_crowd}
+  - {from: racial_equity, to: interfaith, type: same_cause}
+  - {from: racial_equity, to: justice_reform_reentry, type: same_cause}
+  - {from: racial_equity, to: oral_history, type: same_topic}
+  - {from: racial_equity, to: conversation_circles, type: same_topic}
+  - {from: womens_lgbtq_rights, to: lgbtq_social, type: same_crowd}
+  - {from: womens_lgbtq_rights, to: doula_birth_support, type: same_cause}
+  - {from: worker_rights, to: job_clubs, type: same_cause}
+  - {from: worker_rights, to: trades_training, type: same_crowd}
+  - {from: worker_rights, to: mutual_aid, type: same_cause}
+  - {from: justice_reform_reentry, to: violence_prevention, type: same_cause}
+  - {from: justice_reform_reentry, to: job_clubs, type: same_cause}
+  - {from: justice_reform_reentry, to: faith_service_projects, type: same_cause}
+  - {from: violence_prevention, to: mentoring, type: same_cause}
+  - {from: violence_prevention, to: youth_leadership, type: same_cause}
+  - {from: violence_prevention, to: after_school_camps, type: same_cause}
+  - {from: civil_liberties_privacy, to: ham_radio, type: same_crowd}
+
+  # Food, housing and basic needs
+  - {from: food_pantry, to: community_fridge, type: same_cause}
+  - {from: food_pantry, to: food_rescue, type: same_cause}
+  - {from: food_pantry, to: faith_service_projects, type: same_place}
+  - {from: food_pantry, to: neighbor_errands, type: same_cause}
+  - {from: community_fridge, to: mutual_aid, type: same_cause}
+  - {from: community_fridge, to: block_captain, type: same_place}
+  - {from: community_fridge, to: community_garden, type: same_cause}
+  - {from: food_rescue, to: farmers_markets_coops, type: same_place}
+  - {from: food_rescue, to: cooking_baking, type: same_skill}
+  - {from: mutual_aid, to: goods_closets, type: same_cause}
+  - {from: mutual_aid, to: neighbor_errands, type: same_cause}
+  - {from: housing_help, to: homeless_outreach, type: same_cause}
+  - {from: housing_help, to: home_repair, type: same_cause}
+  - {from: housing_help, to: free_help_clinics, type: same_cause}
+  - {from: homeless_outreach, to: faith_service_projects, type: same_cause}
+  - {from: homeless_outreach, to: harm_reduction, type: same_cause}
+  - {from: homeless_outreach, to: goods_closets, type: same_cause}
+  - {from: homeless_outreach, to: weather_checks, type: same_cause}
+  - {from: goods_closets, to: faith_service_projects, type: same_place}
+  - {from: goods_closets, to: school_parent_groups, type: same_cause}
+  - {from: home_repair, to: trades_training, type: same_skill}
+  - {from: home_repair, to: neighbor_errands, type: same_cause}
+  - {from: home_repair, to: disaster_relief, type: same_skill}
+  - {from: free_help_clinics, to: skills_volunteering, type: same_skill}
+  - {from: free_help_clinics, to: money_skills, type: same_topic}
+
+  # Kids and youth
+  - {from: mentoring, to: tutoring, type: same_cause}
+  - {from: mentoring, to: job_clubs, type: same_skill}
+  - {from: mentoring, to: youth_leadership, type: same_crowd}
+  - {from: mentoring, to: retiree_corps, type: same_crowd}
+  - {from: tutoring, to: school_parent_groups, type: same_place}
+  - {from: tutoring, to: after_school_camps, type: same_place}
+  - {from: after_school_camps, to: scouts_youth_clubs, type: same_crowd}
+  - {from: scouts_youth_clubs, to: first_aid_cpr, type: same_skill}
+  - {from: scouts_youth_clubs, to: faith_youth_programs, type: same_crowd}
+  - {from: youth_leadership, to: public_speaking, type: same_skill}
+  - {from: youth_leadership, to: climate_action, type: same_cause}
+  - {from: school_parent_groups, to: parent_playgroups, type: same_crowd}
+  - {from: school_parent_groups, to: civic_association, type: same_crowd}
+  - {from: parent_playgroups, to: newcomer_meetups, type: same_crowd}
+  - {from: parent_playgroups, to: doula_birth_support, type: same_crowd}
+  - {from: foster_care_support, to: mentoring, type: same_cause}
+  - {from: foster_care_support, to: goods_closets, type: same_cause}
+
+  # Older adults and all ages together
+  - {from: senior_centers, to: senior_activities, type: same_place}
+  - {from: senior_centers, to: friendly_visiting, type: same_cause}
+  - {from: senior_centers, to: intergenerational, type: same_crowd}
+  - {from: friendly_visiting, to: nursing_home_hospice, type: same_cause}
+  - {from: friendly_visiting, to: neighbor_errands, type: same_cause}
+  - {from: friendly_visiting, to: faith_service_projects, type: same_cause}
+  - {from: friendly_visiting, to: weather_checks, type: same_cause}
+  - {from: intergenerational, to: mentoring, type: same_cause}
+  - {from: intergenerational, to: tutoring, type: same_cause}
+  - {from: retiree_corps, to: skills_volunteering, type: same_skill}
+  - {from: retiree_corps, to: board_service, type: same_skill}
+  - {from: retiree_corps, to: tutoring, type: same_cause}
+  - {from: senior_activities, to: tai_chi_qigong, type: same_crowd}
+  - {from: nursing_home_hospice, to: hospital_volunteering, type: same_place}
+  - {from: neighbor_errands, to: weather_checks, type: same_cause}
+
+  # Health and wellness
+  - {from: meditation_mindfulness, to: humanist_spiritual, type: same_crowd}
+  - {from: meditation_mindfulness, to: mental_health_awareness, type: same_cause}
+  - {from: tai_chi_qigong, to: heritage_clubs, type: same_topic}
+  - {from: health_outreach, to: hospital_volunteering, type: same_place}
+  - {from: health_outreach, to: free_help_clinics, type: same_cause}
+  - {from: health_outreach, to: harm_reduction, type: same_cause}
+  - {from: health_outreach, to: senior_centers, type: same_place}
+  - {from: health_outreach, to: first_aid_cpr, type: same_skill}
+  - {from: hospital_volunteering, to: first_aid_cpr, type: same_skill}
+  - {from: hospital_volunteering, to: doula_birth_support, type: same_place}
+  - {from: harm_reduction, to: first_aid_cpr, type: same_skill}
+
+  # Faith and spiritual community
+  - {from: worship_community, to: congregation_social, type: same_place}
+  - {from: worship_community, to: worship_music, type: same_place}
+  - {from: worship_community, to: scripture_study, type: same_crowd}
+  - {from: worship_community, to: faith_service_projects, type: same_place}
+  - {from: faith_service_projects, to: interfaith, type: same_crowd}
+  - {from: interfaith, to: immigrant_welcome, type: same_cause}
+  - {from: scripture_study, to: book_club, type: same_crowd}
+  - {from: scripture_study, to: adult_learning, type: same_topic}
+  - {from: worship_music, to: instrument_lessons, type: same_skill}
+  - {from: faith_youth_programs, to: mentoring, type: same_cause}
+  - {from: faith_youth_programs, to: after_school_camps, type: same_place}
+  - {from: humanist_spiritual, to: conversation_circles, type: same_crowd}
+  - {from: congregation_social, to: street_festivals, type: same_place}
+  - {from: congregation_social, to: fraternal_service_clubs, type: same_crowd}
+
+  # Meetups and making friends
+  - {from: newcomer_meetups, to: conversation_circles, type: same_crowd}
+  - {from: newcomer_meetups, to: young_adult_social, type: same_crowd}
+  - {from: young_adult_social, to: singles_dating, type: same_crowd}
+  - {from: young_adult_social, to: professional_associations, type: same_crowd}
+  - {from: conversation_circles, to: intergenerational, type: same_crowd}
+  - {from: singles_dating, to: lgbtq_social, type: same_crowd}
+  - {from: lgbtq_social, to: affinity_social, type: same_crowd}
+  - {from: affinity_social, to: professional_associations, type: same_crowd}
+  - {from: affinity_social, to: heritage_clubs, type: same_crowd}
+  - {from: neurodivergent_social, to: conversation_circles, type: same_crowd}
+  - {from: sober_social, to: young_adult_social, type: same_crowd}
+  - {from: sober_social, to: board_games, type: same_crowd}
+  - {from: veterans_posts, to: fraternal_service_clubs, type: same_crowd}
+  - {from: veterans_posts, to: parade_units, type: same_place}
+  - {from: veterans_posts, to: disaster_relief, type: same_skill}
+  - {from: fraternal_service_clubs, to: parade_units, type: same_place}
+  - {from: fraternal_service_clubs, to: civic_association, type: same_cause}
+  - {from: fraternal_service_clubs, to: mummers_clubhouse, type: same_crowd}
+
+  # Careers and skills
+  - {from: job_clubs, to: trades_training, type: same_cause}
+  - {from: job_clubs, to: professional_associations, type: same_crowd}
+  - {from: job_clubs, to: money_skills, type: same_cause}
+  - {from: job_clubs, to: public_speaking, type: same_skill}
+  - {from: professional_associations, to: board_service, type: same_crowd}
+  - {from: professional_associations, to: entrepreneurs, type: same_crowd}
+  - {from: board_service, to: skills_volunteering, type: same_skill}
+  - {from: board_service, to: civic_association, type: same_crowd}
+  - {from: board_service, to: community_development, type: same_cause}
+  - {from: entrepreneurs, to: cooking_baking, type: same_crowd}
+  - {from: money_skills, to: entrepreneurs, type: same_topic}
+  - {from: money_skills, to: mutual_aid, type: same_cause}
+
+  # Emergency and disaster help
+  - {from: emergency_response_teams, to: disaster_relief, type: same_cause}
+  - {from: emergency_response_teams, to: first_aid_cpr, type: same_skill}
+  - {from: emergency_response_teams, to: preparedness_planning, type: same_topic}
+  - {from: emergency_response_teams, to: block_captain, type: same_place}
+  - {from: disaster_relief, to: mutual_aid, type: same_cause}
+  - {from: first_aid_cpr, to: volunteer_fire_ems, type: same_skill}
+  - {from: volunteer_fire_ems, to: search_rescue, type: same_skill}
+  - {from: volunteer_fire_ems, to: fraternal_service_clubs, type: same_crowd}
+  - {from: volunteer_fire_ems, to: parade_units, type: same_place}
+  - {from: preparedness_planning, to: block_captain, type: same_place}
+  - {from: preparedness_planning, to: civic_association, type: same_place}
+
+  # Philly traditions
+  - {from: mummers_string_band, to: mummers_fancy_brigade, type: same_crowd}
+  - {from: mummers_string_band, to: mummers_comic_club, type: same_crowd}
+  - {from: mummers_string_band, to: mummers_clubhouse, type: same_place}
+  - {from: mummers_fancy_brigade, to: fiber_arts, type: same_skill}
+  - {from: mummers_fancy_brigade, to: stage_crew, type: same_skill}
+  - {from: mummers_fancy_brigade, to: dance_company, type: same_skill}
+  - {from: mummers_fancy_brigade, to: woodworking, type: same_skill}
+  - {from: mummers_fancy_brigade, to: mummers_clubhouse, type: same_place}
+  - {from: mummers_comic_club, to: improv_comedy, type: same_skill}
+  - {from: mummers_comic_club, to: mummers_clubhouse, type: same_place}
+  - {from: mummers_clubhouse, to: community_meals, type: same_place}
+  - {from: parade_units, to: street_festivals, type: same_place}
+  - {from: parade_units, to: mummers_clubhouse, type: same_crowd}
+  - {from: street_festivals, to: civic_association, type: same_crowd}
+  - {from: street_festivals, to: community_development, type: same_cause}
+  - {from: street_festivals, to: foodie_meetups, type: same_place}
+
+  # Support and recovery (the separate support flow; the site never offers these as stretches)
+  - {from: grief_support, to: caregiver_support, type: same_crowd}
+  - {from: grief_support, to: survivor_support, type: same_crowd}
+  - {from: grief_support, to: nursing_home_hospice, type: same_cause}
+  - {from: addiction_recovery, to: mental_health_support, type: same_crowd}
+  - {from: addiction_recovery, to: harm_reduction, type: same_cause}
+  - {from: caregiver_support, to: parenting_support, type: same_crowd}
+  - {from: caregiver_support, to: chronic_illness_support, type: same_crowd}
+  - {from: mental_health_support, to: chronic_illness_support, type: same_crowd}
+  - {from: mental_health_support, to: mental_health_awareness, type: same_topic}
+  - {from: parenting_support, to: doula_birth_support, type: same_cause}
+  - {from: lgbtq_support, to: lgbtq_social, type: same_crowd}
+  - {from: lgbtq_support, to: mental_health_support, type: same_crowd}
+  - {from: survivor_support, to: mental_health_support, type: same_crowd}
+  - {from: survivor_support, to: womens_lgbtq_rights, type: same_cause}
