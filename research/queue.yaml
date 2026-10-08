@@ -29,14 +29,14 @@ waves:
     selector: --source city_friends,nss_grottos,manual_seeds --exclude-done
     size: 15
     searches_per_agent: 3
-    status: todo
+    status: running
 
   - id: w1-tier1-mummers
     lane: C
     kind: slices
     brief: tier1
     searches_per_agent: 6
-    status: running
+    status: researched
     slices:
       - agent: mummers-comics-wenches
         text: >
@@ -81,7 +81,7 @@ waves:
     kind: slices
     brief: discover
     searches_per_agent: 10
-    status: running
+    status: researched
     slices:
     - agent: g-sports-teams
       text: 'Family `sports-teams` (Team sports). Tags: soccer, basketball, softball_baseball, kickball_rec_leagues,
