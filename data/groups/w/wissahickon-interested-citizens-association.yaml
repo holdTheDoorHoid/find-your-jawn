@@ -10,8 +10,9 @@ ein: '222313124'
 summary: Wissahickon Interested Citizens Association is one of the community organizations registered
   with the City to review nearby zoning and building proposals in the Lower Northwest part of the city.
   Neighbors can follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+what_you_do: Members follow zoning and building proposals, send neighborhood concerns to the association,
+  and join committees on parks, schools and beautification. The group also runs summer events such as
+  movie nights and music in the park.
 kind: civic
 categories:
 - neighborhood-civic
@@ -40,11 +41,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: General membership meetings on the second Wednesday of each month, 7 to 8 pm, on Zoom. There is
+    no meeting in August.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
   address: Virtual via Zoom
@@ -64,11 +68,12 @@ locations:
   lng: -75.20428643106139
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Membership dues are $15 a year for one person or $25 for a household. Memberships run through
+    the calendar year.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -82,13 +87,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register in advance on the meetings page for the next Zoom general membership meeting, the second
+    Wednesday at 7 pm.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: 'Meetings are open to the public and the site says all are welcome, with a clear way in: register
+    in advance to get the Zoom login.'
+  what_to_expect: A meeting runs about an hour on Zoom, from 7 to 8 pm. Agendas list committee reports
+    and other business, such as proposed bylaw updates. Joining costs $15 a year for one person or $25
+    for a household, and members can vote starting one month after they join.
+  first_visit_tips:
+  - Register on the meetings page ahead of time to get the Zoom login details.
+  - Members must live inside the association's boundaries and be over 18, so check the boundaries on the
+    membership page first.
+  - Voting starts one month after you join, so join before a meeting if you want a say.
 contacts:
   website: http://wissahickon.us/
   email: president@wissahickon.us
@@ -98,7 +111,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://wissahickon.us/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -131,8 +144,37 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://wissahickon.us/association/meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - commitment
+  - online_ok
+  - first_step
+  - audience
+- url: https://wissahickon.us/association/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - commitment
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://wissahickon.us/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+- url: https://wissahickon.us/calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

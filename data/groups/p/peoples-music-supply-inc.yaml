@@ -1,22 +1,31 @@
 id: peoples-music-supply-inc
-name: Peoples Music Supply Inc
+name: People's Music Supply
 aka: []
 leads:
 - irs_990n:994102018
 - irs_bmf:994102018
 ein: '994102018'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit built around collective improvised music. It runs open improvisation
+  labs, a concert series and monthly events, and it hosts members' shows at local venues.
+what_you_do: Musicians can join the open improvisation labs, held on Tuesday evenings. Listeners can attend
+  the concerts and events, which each link to a registration page.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- music
+interests:
+- jam_sessions
+motives:
+- enhancement
+- social
+formats:
+- perform_make_together
+- one_off_event
+roles:
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,11 +34,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Open Improvisation Labs on Tuesday evenings at 7 pm, and World to Come concerts on Wednesdays
+    at 5:30 pm, running through October and November 2026. Other events run to December 2026.
+  days:
+  - tue
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1543 S Mole St
@@ -52,8 +65,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not listed on the events page
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,11 +80,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Register for the Open Improvisation Lab at The Living Signal on Tuesday, Oct 13 at 7 pm, using
+    the More info link on the group's events page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are posted publicly with registration links, but the page does not say whether the labs
+    suit beginners
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -81,9 +96,9 @@ contacts:
   contact_name: Aaron Pond
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.peoplesmusicsupply.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +115,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.peoplesmusicsupply.org/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.peoplesmusicsupply.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

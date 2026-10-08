@@ -1,0 +1,176 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-17",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 21,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.phillysolidarity.com",
+   "status": null,
+   "note": "Domain does not resolve; the bare domain phillysolidarity.com also does not resolve"
+  },
+  {
+   "url": "https://www.straycatreliefund.org",
+   "status": null,
+   "note": "IRS list spelling does not resolve; the group's real site straycatrelieffund.org was used instead"
+  },
+  {
+   "url": "https://southphillyboxinggym.com",
+   "status": null,
+   "note": "Two fetches returned empty page text with no error reported"
+  }
+ ],
+ "notes": "Batch w20a-17: 15 groups in the input. Verdicts: 13 publish (7 with dated evidence or a working page, 6 unknown and held back), 2 out_of_area. Searches: 2 of 2 used (SEYAA and Stray Cat Relief Fund); the cap is reached, so Philly Solidarity, Resident Action Committee II, Soul Food CDC, Succor Inc and Vitamin D Productions got no search and stay unknown. Fetches: 21 of 60; the fetch budget was not reached. Borderline calls for the owner: W.O.R.X. (only 2026 event is in Bucks County), Pennsylvania Association of Naturopathic Physicians (statewide trade association, dormant), Women Matter Alliance (no Philadelphia link on its site), and Unitas Ensemble (Boston orchestra with a Philadelphia IRS address, possibly a name collision). IRS list problems: the Stray Cat Relief Fund website is misspelled; the Philly Solidarity website does not resolve; Soul Food, Resident Action Committee II, Succor and Vitamin D list text or a zip code instead of a web address; the South Philly Boxing Gym site returned empty text. The Institute for Cultural Partnerships is named on the W.O.R.X. page and was not checked (no link). The unknown records have no summary, category or source because nothing was read, so the publish rules hold them back.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:872385897",
+     "irs_bmf:872385897"
+    ],
+    "group_id": "philly-solidarity-inc",
+    "ein": "872385897",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Philly Solidarity",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked in full. The website on the IRS list is www.phillysolidarity.com, which does not resolve (tried with and without www). No search budget was left after the two searches used on other groups. IRS list address: Po Box 37325, 19148. Contact name on the IRS list not recorded. Needs a search or a manual check. No summary, category or source is recorded because nothing was read, so the record is held back until those exist.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:813797366",
+     "irs_bmf:813797366"
+    ],
+    "group_id": "resident-action-committee-ii",
+    "ein": "813797366",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Resident Action Committee II",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked. The website field on the IRS list reads 'Resident action committee ll', which is text, not a web address. No search budget was left. IRS list address: 1539 S Patton St, 19146. Contact name on the IRS list not recorded. Needs a search or a manual check. Held back until a page is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:043789595",
+     "irs_bmf:043789595"
+    ],
+    "group_id": "soul-food-community-development-corporation-inc",
+    "ein": "043789595",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Soul Food Community Development Corporation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked. The website field on the IRS list is the zip code 19146, not a web address. No search budget was left. IRS list address: 2341 Wharton St, 19146. Contact name on the IRS list not recorded. Needs a search or a manual check. Held back until a page is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:412352905",
+     "irs_bmf:412352905"
+    ],
+    "group_id": "south-philly-boxing-gym",
+    "ein": "412352905",
+    "website": "https://southphillyboxinggym.com"
+   },
+   "verdict": "publish",
+   "name": "South Philly Boxing Gym",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://southphillyboxinggym.com"
+   },
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website (listed as Southphillyboxinggym.com) returned empty page text on two fetches, with no error reported. No facts recorded. IRS list address: 38 Jackson St, 19148. Needs a retry in a browser or a manual check. Held back until the site or another public page can be read.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:208597485",
+     "irs_bmf:208597485"
+    ],
+    "group_id": "succor-inc",
+    "ein": "208597485",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Succor",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked. The website field on the IRS list is 'succorinc2007@instagram', an Instagram handle, not a web address. It was not opened, per the Instagram rule. No search budget was left. IRS list address: 2612 S 9th St, 19148. Needs a search or a manual check. Held back until a page is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:141984618",
+     "irs_bmf:141984618"
+    ],
+    "group_id": "vitamin-d-productions-inc",
+    "ein": "141984618",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Vitamin D Productions",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked. The website field on the IRS list is the text 'Vitamin D Productions', not a web address. No search budget was left. IRS list address: 2616 Wilder St, 19146. Contact name on the IRS list not recorded. Needs a search or a manual check. Held back until a page is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -1,22 +1,35 @@
 id: simply-music-incorporated
-name: Simply Music Incorporated
+name: Simply Music
 aka: []
 leads:
 - irs_990n:263284218
 - irs_bmf:263284218
 ein: '263284218'
-summary: null
-what_you_do: null
+summary: A Philadelphia music nonprofit for children and teens. It offers in-person and online music classes,
+  plus recitals, workshops and student CD releases.
+what_you_do: Take a music class in person on a Tuesday or Wednesday afternoon, or online. Ask the studio
+  how to enroll, and come to workshops and recitals.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+- kids-youth-mentoring
+interests:
+- instrument_lessons
+motives:
+- enhancement
+- values
+formats:
+- learn_skill
+- perform_make_together
+roles:
+- create
+- figure_out
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +38,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: In-person classes on Tuesday and Wednesday, 12 to 7 pm, as listed on the site. Event months are
+    listed but no full dates are written.
+  days:
+  - tue
+  - wed
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -40,7 +58,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -58,23 +76,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the contact form on simplymusicinc.com, or call (267) 701-2359, to ask about enrolling in a
+    Tuesday or Wednesday class
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Classes and recitals are listed, but the site does not explain how to sign up, what classes cost,
+    or who they are for, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: Simplymusicinc.com
-  email: null
-  phone: null
+  website: https://simplymusicinc.com
+  email: Simplymusic1@verizon.net
+  phone: (267) 701-2359
   contact_name: Doris J Hall James
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://simplymusicinc.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +111,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://simplymusicinc.com/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - first_step
+  - status
+- url: https://simplymusicinc.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - audience
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

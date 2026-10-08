@@ -6,17 +6,20 @@ leads:
 - city_rco_points:269
 - irs_bmf:232952060
 ein: '232952060'
-summary: Nueva Esperanza Housing and Economic Development is one of the community organizations registered
-  with the City to review nearby zoning and building proposals in the North part of the city. Neighbors
-  can follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Nueva Esperanza is a faith-based nonprofit in the Hunting Park area that runs charter schools,
+  a college branch, job training, housing counseling, immigration legal help, and arts and music classes.
+  It is also a City registered community organization for reviewing zoning and building plans in the North
+  part of the city.
+what_you_do: Use one of its programs, such as housing counseling, workforce training, immigration legal
+  help, or arts and music classes, or attend its community events and outreach.
 kind: civic
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
 interests:
 - civic_association
 - community_development
+- housing_help
 motives:
 - values
 - social
@@ -81,19 +84,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (215) 324-0746 or visit 4261 North 5th Street and ask which community meetings or programs
+    fit you.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site lists programs and events and says to call or visit, but it does not say how to join
+    the neighborhood meetings or volunteer.
+  what_to_expect: The site does not describe a community meeting, volunteer shift, or class schedule,
+    so ask at the office what is running. Its neighborhood work includes door to door outreach, daily
+    street cleaning on the commercial corridor, tree planting, food outreach, and community fairs. The
+    page does not say how long a first visit takes or what it costs.
+  first_visit_tips:
+  - Ask whether the community meetings are open to residents or mainly to business owners.
+  - The office is at 4261 North 5th Street, Philadelphia, PA 19140.
 contacts:
   website: https://www.esperanza.us/
   email: rco@esperanza.us
-  phone: '2153242542'
+  phone: 215-324-0746
   contact_name: Rafael Álvarez Febo
-  social: []
+  social:
+  - https://www.facebook.com/Esperanzausa/
+  - https://www.instagram.com/esperanza_us/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -123,7 +135,29 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://www.esperanza.us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step.how
+  - contacts.phone
+  - contacts.social
+- url: https://www.esperanza.us/mediacenter/esperanza-in-the-news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.esperanza.us/neighborhood-revitalization/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.what_to_expect
+- url: https://www.esperanza.us/action/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

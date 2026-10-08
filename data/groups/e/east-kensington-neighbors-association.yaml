@@ -7,17 +7,22 @@ leads:
 - irs_990n:450542864
 - irs_bmf:450542864
 ein: '450542864'
-summary: East Kensington Neighbors Association is one of the community organizations registered with the
-  City to review nearby zoning and building proposals in the River Wards part of the city. Neighbors can
-  follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: East Kensington neighbors who meet once a month to share concerns and run committees for cleanups,
+  greening, youth programs, historic preservation, and zoning. A member can join a committee or simply
+  come to the monthly meeting.
+what_you_do: Join a committee (cleanups and community affairs, greening, youth and education, historic
+  preservation, zoning, or green space), or come to the monthly meeting to raise concerns and hear updates.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- vacant_lot_greening
+- preservation_architecture
 motives:
 - values
 - social
@@ -27,6 +32,7 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -40,14 +46,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General membership meeting on the 3rd Monday of the month at 7 pm. Zoning meeting on the 2nd Wednesday
+    at 7 pm. No meetings in August.
+  days:
+  - mon
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 2440 Frankford Ave, Philadelphia, PA 19125
+- label: Monthly general meeting (usually upstairs)
+  address: Philadelphia Brewing Company
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Group office
+  address: 2439 Amber Street, Philadelphia, PA 19125
   neighborhood: null
   planning_district: river_wards
   zip: '19125'
@@ -55,7 +74,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
+- label: City registered address
   address: 2440 Frankford Ave, Philadelphia, PA 19125
   neighborhood: null
   planning_district: river_wards
@@ -64,16 +83,17 @@ locations:
   lng: -75.12769176912384
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Meetings are open to all with no membership fee.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The monthly meeting is also livestreamed on Zoom. Joining online needs a short registration and
+    an address or business in the East Kensington boundaries.
 requirements:
   act153_clearances: null
   background_check: null
@@ -82,23 +102,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the monthly general meeting on the 3rd Monday at 7 pm, and say you are new, since the agenda
+    opens by welcoming new residents. To ask first, email info@ekna.org.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The meeting agenda starts by welcoming new residents, the meeting is open to all with no fee,
+    and the group's pages say how to attend.
+  what_to_expect: The general meeting starts at 7 pm and the community calendar lists it ending around
+    8:30 pm. The agenda opens with a welcome to new residents, then officer reports, cleanup and greening
+    news, a quarterly crime report from the local police precinct, and an open forum for neighbors. There
+    is no membership fee to attend.
+  first_visit_tips:
+  - Arrive a few minutes before 7 pm to find a seat.
+  - Say you are new when you arrive, since the agenda welcomes new residents.
+  - To join by Zoom, register ahead and have proof of an East Kensington address or business.
+  - There is no meeting in August, so plan around that.
 contacts:
   website: https://www.ekna.org/
   email: president@ekna.org
-  phone: '2676011366'
+  phone: 267-601-1366
   contact_name: John Theobald
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://nkcdc.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -131,8 +160,39 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.ekna.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.website
+- url: https://www.ekna.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step
+- url: https://www.ekna.org/monthly-meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://www.ekna.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - access.notes
+- url: https://nkcdc.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

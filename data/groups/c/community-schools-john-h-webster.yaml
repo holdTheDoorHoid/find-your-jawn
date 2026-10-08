@@ -4,16 +4,19 @@ aka: []
 leads:
 - city_volunteer_portal:186404
 ein: null
-summary: John H. Webster is one of the City's Community Schools, where volunteers help with after school
-  and family programs. Open shifts are listed on the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+summary: John H. Webster Elementary is a kindergarten to 5th grade school on Frankford Avenue and part
+  of the City's Community Schools program. Volunteers help hand out groceries to families each week and
+  support school events now and then.
+what_you_do: Help hand out groceries to students and families, or lend a hand with school events.
 kind: program
 categories:
 - kids-youth-mentoring
+- hunger-housing-basic-needs
 interests:
 - after_school_camps
 - tutoring
 - mentoring
+- food_pantry
 motives:
 - values
 - protective
@@ -25,6 +28,7 @@ roles:
 - hands_on
 crowd:
 - kids
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,14 +40,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Grocery distribution to students and families each week, plus school events now and then
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: School
-  address: 3400 Frankford Ave Philadelphia , PA 19134
+  address: 3400 Frankford Ave, Philadelphia, PA 19134
   neighborhood: null
   planning_district: river_wards
   zip: '19134'
@@ -69,16 +73,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check;
-    Volunteer City Release Waiver.'
-  first_visit_tips: []
+  how: Complete the clearances listed on the City's volunteer portal, then sign up there for an open grocery
+    or events shift.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: A first shift needs several school and state clearances, so the way in is paperwork first. The
+    school's own site describes no volunteer route.
+  what_to_expect: Volunteers must finish the clearances before their first shift, so the first step is
+    paperwork rather than a visit. The listing does not say how long a shift lasts.
+  first_visit_tips:
+  - Start the clearances early, since they must be finished before any shift.
+  - Ask the Community Schools office which opening is current before you sign up.
 contacts:
   website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186404
   email: Madeline.Cerulli@phila.gov
@@ -98,7 +104,18 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - summary
+  - what_you_do
+  - schedule
+  - requirements
+  - first_step
+  - last_sign_of_life
+- url: https://webster.philasd.org/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.phone
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

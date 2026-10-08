@@ -5,18 +5,30 @@ leads:
 - irs_990n:851382903
 - irs_bmf:851382903
 ein: '851382903'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A neighborhood group in Northeast Philadelphia that runs a town watch and helps residents, including
+  immigrant and limited-English speakers, find local resources. It also holds information meetings on
+  local programs and laws.
+what_you_do: Take part in the town watch, come to an information meeting, or ask for help connecting with
+  local services.
+kind: civic
+categories:
+- neighborhood-civic
+- culture-language-heritage-groups
+interests:
+- town_watch
+- immigrant_welcome
+motives:
+- protective
+- values
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- neighbors
+- newcomers
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -52,7 +64,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -67,23 +79,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (844) 533-3362 to ask about the next town watch or information meeting
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: A public phone number and a stated focus on welcoming residents, though the site posts no meeting
+    schedule.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: WWW.NEPHILA.ORG
+  website: https://www.nephila.org
   email: null
-  phone: null
+  phone: (844) 533-3362
   contact_name: Roman Zhukov
-  social: []
+  social:
+  - https://www.facebook.com/groups/nephila
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.nephila.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +113,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.nephila.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - categories
+  - interests
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

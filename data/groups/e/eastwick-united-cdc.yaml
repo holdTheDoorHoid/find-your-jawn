@@ -7,11 +7,12 @@ leads:
 - irs_990n:863954786
 - irs_bmf:863954786
 ein: '863954786'
-summary: Eastwick United CDC is a Registered Community Organization (RCO) in the Lower Southwest part
-  of the city. The City asks developers to talk with RCOs about nearby zoning and building plans, so this
-  is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Eastwick United CDC is a group of Eastwick residents working on local issues such as flooding,
+  the Amazon warehouse on Elmwood Avenue, and the Hilco refinery cleanup. It is also a City-registered
+  community organization. Its website lists no upcoming meetings, and its newest dated news is from April
+  2022.
+what_you_do: Review local issues, such as proposed developments and flooding, and join the discussion
+  on the group's issue pages.
 kind: civic
 categories:
 - neighborhood-civic
@@ -47,7 +48,7 @@ schedule:
   season: null
 locations:
 - label: Meeting place
-  address: Virtual; https://us06web.zoom.us/j/8051982788?pwd=UmJsUmdLdnA0dUlUM2hSQjRPdkVWUT09
+  address: Virtual (Zoom)
   neighborhood: null
   planning_district: null
   zip: null
@@ -56,7 +57,7 @@ locations:
   in_city: true
   transit: null
 - label: Contact address (City list)
-  address: PO Box 33422 Philadelphia, PA 19153
+  address: PO Box 33422, Philadelphia, PA 19153
   neighborhood: null
   planning_district: lower_southwest
   zip: '19153'
@@ -82,13 +83,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Send a question through the contact form on eastwickunited.org to ask for the next community meeting
+    date and Zoom link.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site lists no upcoming meetings, events or volunteer roles, and its only listed way in is
+    a contact form, so the way to join is unclear.
+  what_to_expect: The last meeting listed on the site, in 2021, ran an hour on Zoom in the evening and
+    let neighbors meet the board of directors. No current date is posted, so ask before you plan to attend.
+  first_visit_tips:
+  - Ask through the contact form for the next meeting date.
+  - Read the issue pages on flooding, the Amazon warehouse and the airport expansion to see what the group
+    is working on.
 contacts:
   website: https://eastwickunited.org/
   email: tpickett@eastwickunited.org
@@ -131,7 +138,25 @@ sources:
   - locations
   - contacts.website
   - ein
-research_tier: 1
+- url: https://eastwickunited.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://eastwickunited.org/event/eastwick-community-monthly-meeting/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - locations
+- url: https://eastwickunited.org/issues/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

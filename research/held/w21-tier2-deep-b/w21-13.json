@@ -1,0 +1,325 @@
+{
+ "wave": "w21-tier2-deep-b",
+ "agent": "w21-13",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 17,
+ "leads_only": [
+  {
+   "name": "Tacony Residents Group",
+   "url": "https://sites.google.com/view/taconycivicassociation",
+   "note": "named on the Tacony Civic Association site as offering text notifications through a QR code; not checked"
+  },
+  {
+   "name": "Neighborhood Community Action Center",
+   "url": "https://sites.google.com/view/taconycivicassociation",
+   "note": "listed as a program on the Tacony Civic Association site; unclear whether it is a separate group; not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://northeasttimes.com/2023/12/06/around-town-303/",
+   "status": 403,
+   "note": "HTTP 403 on fetch, not retried; seen only as a search result, not read"
+  },
+  {
+   "url": "https://northeasttimes.com/2025/06/07/around-town-10-2/",
+   "status": 403,
+   "note": "HTTP 403 on fetch, not retried; seen only as a search result, not read"
+  }
+ ],
+ "notes": "Batch 13, seven groups. Own sites read: Mayfair BID, Tacony CDC, Tacony Civic (taconycivic.org redirects to its Google Sites page, which I followed), and Upper Holmesburg. Holme Circle, Holmesburg, and Mayfair Civic list only Facebook pages, which I did not read under the lead only rule, so those three records are thin and confidence is low. Status changes from tier 1 (active): Tacony CDC and Mayfair BID to probably_active (newest dated items April 2025); Tacony Civic and Upper Holmesburg to probably_active (working sites with no dated items); Holme Circle, Holmesburg, and Mayfair Civic to unknown (no dated evidence I could read). Tier 1 last_sign_of_life 2026-10 values came from City list seen dates, not dated posts, so none were carried. Tacony CDC kind changed to nonprofit: its site calls it a community development corporation, while the City list calls it a Neighborhood Advisory Committee. Tacony Civic publishes taconycivicassociation@gmail.com, but contacts.email still holds the City list address tcazoning@gmail.com for the orchestrator to choose. Budget: 1 of 1 WebSearch used; 17 WebFetch calls, including one 404 on a guessed URL, one redirect followed, and two HTTP 403 responses from northeasttimes.com (not retried).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "city_rco:243",
+     "city_rco_points:243"
+    ],
+    "group_id": "mayfair-business-improvement-district-bid",
+    "website": "https://mayfairphilly.com/"
+   },
+   "verdict": "publish",
+   "name": "Mayfair Business Improvement District (BID)",
+   "summary": "The business improvement district for shops along Frankford and Cottman avenues in Mayfair. It runs the Third Thursday Night Market and other public events, and promotes local businesses.",
+   "what_you_do": "Runs public events, promotes the businesses in the district, and has worked on storefront grants and avenue improvements (per its 2019 report).",
+   "kind": "civic",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "community_development"
+   ],
+   "motives": [
+    "values",
+    "social"
+   ],
+   "formats": [
+    "conversation",
+    "lead_organize"
+   ],
+   "roles": [
+    "organize",
+    "figure_out"
+   ],
+   "crowd": [
+    "neighbors"
+   ],
+   "audience": {
+    "open_to": "public",
+    "partisan": false,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Third Thursday Night Market on the third Thursday of the market season, 6 to 9:30 pm, at Frankford and Cottman avenues.",
+    "days": [
+     "thu"
+    ],
+    "times": [
+     "evening"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Office",
+     "address": "2990 St. Vincent St., 2nd Floor, Philadelphia, PA 19149",
+     "planning_district": "north_delaware",
+     "zip": "19149",
+     "lat": 40.0329588430855,
+     "lng": -75.0486063347821,
+     "in_city": true
+    },
+    {
+     "label": "Third Thursday Night Market",
+     "address": "Frankford Avenue and Cottman Avenue, Philadelphia, PA",
+     "neighborhood": "Mayfair",
+     "in_city": true
+    }
+   ],
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "access": {
+    "wheelchair": "unknown"
+   },
+   "first_step": {
+    "how": "Walk over to a Third Thursday Night Market at Frankford and Cottman avenues, 6 to 9:30 pm. Sign up for the BID newsletter on its homepage if you want the season's dates.",
+    "drop_in": true,
+    "newcomer_friendliness": 3,
+    "basis": "Public evening market with a set time and place on the homepage. The site lists no volunteer or membership path, so attending the market is the clear way in.",
+    "what_to_expect": "The Third Thursday Night Market is a public evening event from 6 to 9:30 pm at Frankford and Cottman avenues, held on the third Thursday of the season. The homepage does not state an admission cost or ask visitors to register. Plan to walk the avenue and stop at the shops along it.",
+    "first_visit_tips": [
+     "Check the homepage for the current season's market dates, since the dates on the page carry no year.",
+     "Call or email the BID (contact details are on the homepage) to ask how neighbors can take part."
+    ]
+   },
+   "contacts": {
+    "website": "https://mayfairphilly.com/",
+    "email": "donny@mayfairbid.org",
+    "phone": "2675384668",
+    "contact_name": "Donny Smith"
+   },
+   "status": "probably_active",
+   "last_sign_of_life": "2025-04",
+   "sign_of_life_url": "https://mayfairphilly.com/news/",
+   "sources": [
+    {
+     "url": "https://mayfairphilly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "schedule",
+      "locations",
+      "first_step",
+      "contacts.website",
+      "contacts.email",
+      "contacts.phone"
+     ]
+    },
+    {
+     "url": "https://mayfairphilly.com/news/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "last_sign_of_life",
+      "sign_of_life_url",
+      "contacts.contact_name",
+      "first_step.how"
+     ]
+    },
+    {
+     "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "locations"
+     ]
+    },
+    {
+     "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "Re-scoped: this is a business improvement district, not a civic association, so the civic_association tag was removed and the summary was rewritten from the group's own site. The site does not discuss zoning; the City list still registers it as a community organization. Market dates on the homepage have no year, so the schedule text carries none. Status probably_active: the newest dated item is the news item of April 2, 2025. The homepage's 'for 2026' mention of the sculpture return has no month and was not used. The market location has no zip on the page. Cost is not stated, so it is left at tier 1 (unknown). A guessed URL (/whats-happening-mayfair/) returned 404; that is a dead link, not a block.",
+   "_held_reasons": [
+    "schema: locations[1].neighborhood 'Mayfair' is unknown"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "city_nac:20"
+    ],
+    "group_id": "tacony-cdc",
+    "website": "https://visittacony.com"
+   },
+   "verdict": "publish",
+   "name": "Tacony CDC",
+   "summary": "Tacony CDC is the community development corporation for the Tacony neighborhood. It works on the Torresdale Avenue storefronts, helps people open businesses, works on parks and trails such as the Disston Park Trail, and hosts community events such as Third Thursdays.",
+   "what_you_do": "Works with Torresdale Avenue storefronts and local shops, helps people open a business, and promotes parks, trails and local history. Hosts community events, including the monthly Third Thursdays gathering.",
+   "kind": "nonprofit",
+   "categories": [
+    "neighborhood-civic",
+    "history-heritage-preservation"
+   ],
+   "interests": [
+    "community_development",
+    "preservation_architecture"
+   ],
+   "motives": [
+    "values",
+    "social"
+   ],
+   "formats": [
+    "conversation",
+    "lead_organize"
+   ],
+   "roles": [
+    "organize",
+    "figure_out"
+   ],
+   "crowd": [
+    "neighbors",
+    "families"
+   ],
+   "audience": {
+    "open_to": "public",
+    "partisan": false,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Third Thursdays: a community gathering on the third Thursday of each month, 6 to 9 pm, with family activities, food, produce and live music.",
+    "days": [
+     "thu"
+    ],
+    "times": [
+     "evening"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Office",
+     "address": "4819 Longshore Ave, Unit C",
+     "planning_district": "north_delaware",
+     "zip": "19135",
+     "lat": 40.01996587757979,
+     "lng": -75.04787626665829,
+     "in_city": true
+    },
+    {
+     "label": "Third Thursdays",
+     "address": "Costello Boxing Gym, 6846 Torresdale Avenue",
+     "neighborhood": "Tacony",
+     "in_city": true
+    }
+   ],
+   "requirements": {
+    "kids_ok": true,
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "access": {
+    "wheelchair": "unknown"
+   },
+   "first_step": {
+    "how": "Come to a Third Thursdays gathering at Costello Boxing Gym, 6846 Torresdale Avenue, on the third Thursday evening, 6 to 9 pm.",
+    "drop_in": true,
+    "newcomer_friendliness": 3,
+    "basis": "Open community gathering with a set monthly date, time and place on the CDC events page. The page describes no volunteer or membership path, so attending is the clear way in.",
+    "what_to_expect": "Third Thursdays runs from 6 to 9 pm on the third Thursday of the month at Costello Boxing Gym on Torresdale Avenue. The events page describes family activities, food, produce and live music, so expect families among the crowd. The page does not state a cost, so ask the CDC before you come if cost matters.",
+    "first_visit_tips": [
+     "Bring the family, since the events page lists family activities.",
+     "Check the CDC Facebook page for the current month, because the site points there for current dates.",
+     "Ask the CDC office about cost and access before you come, since the site does not say."
+    ]
+   },
+   "contacts": {
+    "website": "https://visittacony.com",
+    "email": "director@taconycdc.org",
+    "phone": "2672762586",
+    "contact_name": "Xhulio Binjaku"
+   },
+   "status": "probably_active",
+   "last_sign_of_life": "2025-04",
+   "sign_of_life_url": "https://visittacony.com/blog/",
+   "sources": [
+    {
+     "url": "https://visittacony.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "interests",
+      "contacts.website",
+      "contacts.email",
+      "contacts.phone",
+      "contacts.contact_name"
+     ]
+    },
+    {
+     "url": "https://visittacony.com/events/",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "locations",
+      "first_step"
+     ]
+    },
+    {
+     "url": "https://visittacony.com/blog/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "last_sign_of_life",
+      "sign_of_life_url"
+     ]
+    },
+    {
+     "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "locations"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "The City list calls this a Neighborhood Advisory Committee (city_nac:20). The group's own site calls itself a community development corporation, so the summary was rewritten and kind changed from civic to nonprofit. Status probably_active: the newest dated item on its site is the April 29, 2025 blog post. The Third Thursdays start date is printed with no year and was not used. The gym's zip is not on the page, so it is left out. Office zip and coordinates are kept from tier 1. The site lists no membership fees and no volunteer page; donations only.",
+   "_held_reasons": [
+    "schema: locations[1].neighborhood 'Tacony' is unknown"
+   ]
+  }
+ ]
+}

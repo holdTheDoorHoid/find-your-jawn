@@ -8,18 +8,23 @@ leads:
 - irs_990n:233101958
 - irs_bmf:233101958
 ein: '233101958'
-summary: Tioga United, Inc. serves as a Neighborhood Advisory Committee for the City of Philadelphia,
-  linking residents in the North part of the city to services and giving them a voice. It is also a registered
-  community organization, so developers are asked to talk with it about nearby zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: Tioga United is a community organization in the Tioga area of North Philadelphia that serves
+  as the neighborhood's Neighborhood Advisory Committee and links residents to City services. Its office
+  helps neighbors with foreclosure, rent, benefits, and property questions, by appointment.
+what_you_do: Call to set up an appointment at the office at 1539 W. Venango Street for help with foreclosure,
+  rent, benefits, job training, small business start-up, blight, zoning, and property tax questions. You
+  can also share what you like and want changed in the area.
 kind: civic
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
 interests:
 - community_development
 - civic_association
+- housing_help
 motives:
 - values
+- protective
 - social
 formats:
 - conversation
@@ -40,10 +45,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Office open Monday to Friday, 9 am to 5 pm, by appointment only; call ahead.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -91,19 +102,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call (267) 639-6912 on a weekday between 9 am and 5 pm to book a visit at 1539 W. Venango Street.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Any neighbor is invited to call or email for an appointment, which is a clear way in, but the
+    site lists no regular meetings or volunteer steps.
+  what_to_expect: The office is open by appointment only, so you call ahead on a weekday to set a time.
+    Staff can help with foreclosure, rent, emergency housing information, benefits, job training, small
+    business start-up, blight, and zoning questions. The page does not give a cost or say how long a visit
+    takes.
+  first_visit_tips:
+  - Call ahead, since walk-in visits are not listed as welcome.
+  - Ask whether the Zoom informational meetings have a date, because the site mentions them without a
+    schedule or link.
 contacts:
-  website: tu-nac.org
-  email: info@tiogaunitednac.org
+  website: https://tu-nac.org
+  email: Tiogaunited@hotmail.com
   phone: 267-639-6912
   contact_name: David Smith
-  social: []
+  social:
+  - https://facebook.com/tiogaunited19140
+  - https://twitter.com/tiogaunited
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -149,7 +169,28 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://tu-nac.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - contacts.social
+- url: https://tu-nac.org/join-us
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.drop_in
+  - first_step.sign_up_needed
+  - first_step.newcomer_friendliness
+  - contacts.email
+- url: https://tu-nac.org/press
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

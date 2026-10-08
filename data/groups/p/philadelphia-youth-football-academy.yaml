@@ -5,18 +5,28 @@ leads:
 - irs_990n:884052435
 - irs_bmf:884052435
 ein: '884052435'
-summary: null
-what_you_do: null
+summary: A youth sports and mentoring program for Philadelphia kids, aimed at youth from low-income families,
+  with flag football, a girls program, a summer camp and a community league.
+what_you_do: Kids can play flag football, join the girls program, attend summer camp or join the community
+  league. The site also lists academic enrichment, career exploration and health programs.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- sports-teams
+- kids-youth-mentoring
+interests:
+- football_rugby
+- mentoring
+motives:
+- values
+formats:
+- team_play
 roles: []
-crowd: []
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The after-school and summer camp program runs yearly. Schedules for the other programs are not
+    shown on the pages read.
   days: []
   times: []
   recurring: null
@@ -67,23 +78,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Open the Programs page on pyfa215.org and follow the Flag Football or Girls Program link for sign-up
+    details
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Programs are listed, but the pages read do not give sign-up steps, age ranges or dates.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.pyfa215.org
+  website: https://www.pyfa215.org
   email: null
   phone: null
   contact_name: Eugene Pough
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.pyfa215.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +112,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pyfa215.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - status
+- url: https://www.pyfa215.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

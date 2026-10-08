@@ -3,22 +3,23 @@ name: Fleisher Art Memorial
 aka: []
 leads: []
 ein: null
-summary: An art center in Bella Vista where adults take fall and winter art classes and kids and teens
-  join youth programs. It also holds open community events such as a Day of the Dead celebration and a
-  cultural market.
-what_you_do: Sign up for a term class or workshop, bring a child to a youth program, or come to a community
-  festival.
-kind: program
+summary: An art center on Catharine Street with adult classes, youth art programs, a Teen Lounge for teens,
+  and community festivals. Some classes need a membership, and tuition assistance is available.
+what_you_do: Take an adult or youth art class, drop in to the Teen Lounge during the school year, or join
+  as a member to get tuition-free classes and a tuition discount.
+kind: nonprofit
 categories:
 - arts-crafts
 interests:
-- pottery_ceramics
 - painting_drawing
+- pottery_ceramics
+- printmaking
 motives:
 - enhancement
 - social
 formats:
 - learn_skill
+- perform_make_together
 roles:
 - create
 crowd:
@@ -34,15 +35,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Adult classes run in a fall term (Fall 2026) and a winter term (Winter 2027). A Young Artist Program
-    runs in fall 2026 for kids, and a Teen Lounge runs 2026 to 2027.
-  days: []
-  times: []
+  text: Fall 2026 term runs September 8 to November 20, 2026, and Winter 2027 runs January 4 to March
+    8, 2027. During term the front desk is open Monday to Thursday 9 am to 9:30 pm, Friday 9 am to 8 pm,
+    and Saturday 9 am to 3:30 pm. Each class meets on the dates in its listing.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Fleisher Art Memorial
-  address: 719 Catharine Street
+  address: 719 Catharine St
   neighborhood: null
   planning_district: null
   zip: '19147'
@@ -52,9 +62,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class fees are not listed on the site. Tuition assistance is offered, and donations and memberships
-    are accepted.
+  level: paid
+  text: Tuition-based classes set their tuition by length, and studio fees vary by medium. Tuition-free
+    classes need a current membership. Open studio drop-in is $10. Tuition assistance covers tuition only
+    and needs no documents.
 commitment: seasonal
 group_size: null
 access:
@@ -69,20 +80,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Browse the class listings and register through the registration site linked from fleisher.org
+  how: Register online through ProClass, by phone at 215-922-3456 extension 300, or at the front desk.
+    Tuition-free classes need a membership first.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Classes are open to the public with an online sign up, but skill levels and fees are not spelled
-    out on the site.
+  basis: Classes are open to the public with online and phone sign-up. The site calls some classes introductory
+    but does not label most by level.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://fleisher.org/
-  email: null
-  phone: null
+  email: info@fleisher.org
+  phone: 215-922-3456
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/FleisherArt
+  - https://instagram.com/fleisherart/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -102,8 +116,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - interests
+- url: https://fleisher.org/adult-education/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+  - cost
+  - newcomer_friendliness
+- url: https://fleisher.org/children-and-youth-programs-2/children-and-youth-programs-2/fall-2026-2/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - what_you_do
+- url: https://fleisher.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - schedule
+- url: https://fleisher.org/in-celebration-of-thora-jacobson-1949-2026/
+  seen: '2026-10-08'
+  fields:
+  - status
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

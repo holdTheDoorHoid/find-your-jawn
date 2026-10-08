@@ -7,17 +7,24 @@ leads:
 - city_rco:255
 - city_rco_points:255
 ein: null
-summary: A community organization named by the City as a Neighborhood Advisory Committee, New Kensington
-  CDC connects neighbors in the River Wards part of the city with City services and a say in local priorities.
-  It is also a registered community organization, so developers are asked to talk with it about nearby
-  zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
-kind: civic
+summary: New Kensington CDC is a community-based nonprofit that helps neighbors with housing counseling
+  and home repairs, small business help, and health and gardening programs. It also works with the City
+  on local priorities and is a registered community organization for zoning talks.
+what_you_do: Get help with housing or a small business, join the Saturday gardening club, or sign up as
+  a Community Connector to build skills and connect with a wider network.
+kind: nonprofit
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
+- gardening-greening
+- health-wellness
 interests:
 - community_development
 - civic_association
+- housing_help
+- home_repair
+- garden_club
+- health_outreach
 motives:
 - values
 - social
@@ -27,8 +34,10 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -40,14 +49,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekend Gardening Club on Saturdays, 10 am to noon, for adults. Cure Violence Kensington walk-in
+    hours on Fridays, 2 to 4 pm.
+  days:
+  - fri
+  - sat
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Office
-  address: 2771 Ruth St, Suite 1
+  address: 2771 Ruth St, Suite 1, Philadelphia, PA 19134
   neighborhood: null
   planning_district: river_wards
   zip: '19134'
@@ -55,28 +69,11 @@ locations:
   lng: -75.10930745971841
   in_city: true
   transit: null
-- label: Meeting place
-  address: 2771 Ruth St., Philadelphia, PA 19125
-  neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
-  address: 2771 Ruth St., Philadelphia, PA 19125
-  neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: 39.98279477206958
-  lng: -75.11345467119037
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The group says many services are free. The cost of the gardening club and walk-in hours is not
+    stated.
 commitment: null
 group_size: null
 access:
@@ -91,15 +88,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Saturday Weekend Gardening Club at 10 am. The group's pages do not give the place or
+    cost, so call 215-427-0350 first to confirm.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Friday hours are a walk-in space, and the group lists a phone, email and text line. The gardening
+    club is for adults building skills, but its listing gives no sign-up step.
+  what_to_expect: The Saturday gardening club runs 10 am to noon for adults who want to build gardening
+    skills and share what they know. Friday walk-in hours run 2 to 4 pm, and you can drop by without an
+    appointment. Neither listing gives the place or cost, so ask first.
+  first_visit_tips:
+  - Call 215-427-0350 or email info@nkcdc.org to confirm the place for the gardening club.
+  - Text the word NKCDC to 833-901-2072 to get event alerts.
+  - Wear clothes you can get dirty if you plan to garden.
 contacts:
-  website: nkcdc.org
+  website: https://nkcdc.org
   email: bmckinney@nkcdc.org
   phone: 215-427-0350 x113
   contact_name: Bill McKinney
@@ -107,7 +111,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+sign_of_life_url: https://nkcdc.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -135,8 +139,28 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://nkcdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - locations
+  - contacts.website
+- url: https://nkcdc.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://nkcdc.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

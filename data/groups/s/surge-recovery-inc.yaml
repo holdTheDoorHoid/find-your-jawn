@@ -1,35 +1,53 @@
 id: surge-recovery-inc
-name: Surge Recovery Inc
+name: Surge Recovery
 aka: []
 leads:
 - irs_990n:812387073
 - irs_bmf:812387073
 ein: '812387073'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A recovery house network for men in Philadelphia who are working through alcohol and drug addiction.
+  Residents live on site for a 90-day stay and can take job training, GED and college prep classes, and
+  outpatient therapy.
+what_you_do: Live in the residential program, take the classes and job training it offers, and use its
+  health and outpatient services. Alumni can stay connected through the program's alumni services.
+kind: program
+categories:
+- hunger-housing-basic-needs
+- careers-skills-professional
+interests:
+- housing_help
+- trades_training
+motives:
+- enhancement
+formats:
+- learn_skill
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
-  community: []
+  community:
+  - men
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Residential program with a 90-day stay. Office hours Monday to Thursday, 10 am to 6 pm, and Friday,
+    10 am to 3 pm. Education classes run twice a week, three hours each time.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 644 S 60th St
@@ -52,7 +70,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -67,23 +85,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call the office on a weekday between 10 am and 6 pm to ask about the intake process
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Admission is limited to men over 18 and starts with an intake step, so there is no simple walk
+    in.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.surgerecovery.org
-  email: null
+  website: https://www.surgerecovery.org
+  email: surgerecovery1712@gmail.com
   phone: null
   contact_name: Martin Boyd
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.surgerecovery.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +118,18 @@ sources:
   - locations
   - contacts.website
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.surgerecovery.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - requirements
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,116 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-19",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 20,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://m4hphilly.org",
+   "status": null,
+   "note": "Domain did not resolve (ENOTFOUND), with or without www."
+  },
+  {
+   "url": "https://publictrust.org",
+   "status": null,
+   "note": "Returned no readable content on two tries (publictrust.org and www.publictrust.org)."
+  }
+ ],
+ "notes": "Verdicts: 13 publish, 2 not_a_group. Two IRS groups had a name in the website field (Philadelphia Artists in Residence and Reach Community Impact) and each got its one WebSearch; neither search found a matching organization, so both are unverified records held for a manual check. Muslims 4 Humanity's domain did not resolve and no search was left, so it was not checked. Public Trust returned empty pages twice. Dormant by the 24 month rule: Motivated Community Resource Center (newest dated item May 2024), Promise Zone Research Connection (December 2023) and Retired Tails (Summer 2024). The owner may want to review these before they show as active. Event-page 404s: momyourbusiness.com/events, motivatedcrc.org/events, rebelz.club/events. Budget: 2 of 2 WebSearch calls used; 20 fetches used. Process note: I made one call to a Claude Docs guide tool by mistake. It returned only a menu, created nothing, and was not used again.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:811758000",
+     "irs_bmf:811758000"
+    ],
+    "group_id": "muslims-4-humanity",
+    "ein": "811758000"
+   },
+   "verdict": "publish",
+   "name": "Muslims 4 Humanity",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website, www.M4HPhilly.org, did not resolve, with or without www (ENOTFOUND). Treated as a dead domain. This wave's two WebSearch calls were spent on the two IRS groups whose website field was a name, so this group was not searched. Next wave should search it by name and by EIN 811758000. Nothing was read, so no summary was written. Batch address is 1031 S 60th Street Suite B, 19143.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:993622997",
+     "irs_bmf:993622997"
+    ],
+    "group_id": "philadelphia-artists-in-residence-inc",
+    "ein": "993622997"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Artists in Residence",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a name, not a web address, so it was treated as missing. One WebSearch found no page for an organization by this name with a residency at Baltimore Avenue. The results were unrelated residency programs. IRS name is Philadelphia Artists in Residence Inc, address 4740 Baltimore Ave, 19143. Needs a search by EIN or a manual check before it can be described. Nothing was read, so no summary was written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:public-trust-3",
+     "irs_bmf:010754956"
+    ],
+    "group_id": "public-trust",
+    "ein": "010754956"
+   },
+   "verdict": "publish",
+   "name": "Public Trust",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website returned no readable content on two tries (publictrust.org and www.publictrust.org), so nothing was recorded from the site. Cultural Fund lead. The IRS record address is 4017 Walnut St, 19104. Needs a retry or a manual look before it can be described. Nothing was read, so no summary was written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852443182",
+     "irs_bmf:852443182"
+    ],
+    "group_id": "reach-community-impact-inc",
+    "ein": "852443182"
+   },
+   "verdict": "publish",
+   "name": "Reach Community Impact",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a name, not a web address, so it was treated as missing. One WebSearch found no page for an organization by this name at Cedar Avenue. The close name matches (a Portland, Oregon housing group, a university research program, and an unrelated Impact Community Inc) are different organizations and were not recorded. IRS address is 4939 Cedar Ave, 19143. Needs a search by EIN or a manual check. Nothing was read, so no summary was written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

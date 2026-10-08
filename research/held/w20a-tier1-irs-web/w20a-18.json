@@ -1,0 +1,149 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-18",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 28,
+ "leads_only": [
+  {
+   "name": "The Fortress of the Arts",
+   "url": "https://philadelphianeighborhoods.com/tag/the-fortress-of-the-arts",
+   "note": "North Philadelphia art collective in 2010 to 2011 coverage. It may or may not be the same group as Fortress Arts Academy. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.hack4impact.org",
+   "status": 403,
+   "note": "HTTP 403 on every attempt; page not read."
+  }
+ ],
+ "notes": "Budget: both WebSearch calls used (cap reached), 28 of 60 fetches used. Verdicts: publish 13 (9 with full records; 4 are unknown placeholders with no summary, so the pipeline will hold them back), out_of_area 1 (Green Book), not_a_group 1 (John Graves Productions). Fetch failures: arce-pa (connection closed on all 3 tries, www and bare host) and erfoundation19.com (empty page on all 3 tries, www and bare host). Both are recorded as unknown, not invented. 404s: fortressarts.org (both hosts), a guessed terrencelgore.com/workshop path, and a guessed letscircleup.org/contact path. Bria Young's website does not resolve (DNS failure), so one search was used; the 6abc Safe Summer article is dated June 11, 2022, which makes the group dormant. Green Book: the batch's liveness block said newest_date 2026-05 from sitemap.xml; I did not verify that and used the March 2026 date seen on the page. Chloe's Way's newest date is a March 31, 2026 scholarship deadline. Several IRS groups have apartment addresses, so only zips are published for them. All summaries were written in our own words.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:203776760",
+     "irs_bmf:203776760"
+    ],
+    "group_id": "american-research-center-in-egypt-pennsylvania-chapter-arce-pa",
+    "ein": "203776760",
+    "website": "https://www.arce-pa.org"
+   },
+   "verdict": "publish",
+   "name": "American Research Center in Egypt, Pennsylvania Chapter",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.arce-pa.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.arce.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "notes": "The chapter site (www.arce-pa.org and arce-pa.org) closed the connection on every try (3 attempts), so nothing was read there. The national ARCE site lists an 'ARCE-PA' lecture dated Oct 10 with no year and no venue, which suggests the chapter runs public lectures; the national page does not spell out 'PA'. No summary written: the group needs a direct check before it is shown. IRS name: American Research Center in Egypt Pennsylvania Chapter Arce PA. Searches: none spent on this group (both used on other groups).",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851341831",
+     "irs_bmf:851341831"
+    ],
+    "group_id": "er-foundation",
+    "ein": "851341831",
+    "website": "https://www.erfoundation19.com"
+   },
+   "verdict": "publish",
+   "name": "ER Foundation",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.erfoundation19.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned an empty page on every try (www and bare domain, 3 attempts), so nothing was read and no facts are recorded. No summary written. The word 'Foundation' may mean a grantmaker, so confirm it is not a private foundation before the group is shown. Retry later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:822671423",
+     "irs_bmf:822671423"
+    ],
+    "group_id": "fortress-arts-academy",
+    "ein": "822671423",
+    "website": "https://fortressarts.org"
+   },
+   "verdict": "publish",
+   "name": "Fortress Arts Academy",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://fortressarts.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.resist.org/grantees/fortress-arts-academy",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "notes": "fortressarts.org and www.fortressarts.org both return HTTP 404, so the site may have moved or closed. One search used. A RESIST grantee directory listing places the group in Philadelphia with music and arts education and community development work; that is the only current description found, and it is not a dated sign of life. Older 2010 to 2011 coverage describes a North Philadelphia art collective called The Fortress of the Arts, which may or may not be the same group. Not confirmed, so it is in leads_only. No summary written.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:810790890",
+     "irs_bmf:810790890"
+    ],
+    "group_id": "hack4impact",
+    "ein": "810790890",
+    "website": "https://www.hack4impact.org"
+   },
+   "verdict": "publish",
+   "name": "Hack4impact",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.hack4impact.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "www.hack4impact.org returned HTTP 403 on every attempt, so the page was not read and no facts are recorded. Listed in blocked. The IRS address is 121 S 41st Street, Philadelphia (not published here). Needs a manual check or another public source before it is shown.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

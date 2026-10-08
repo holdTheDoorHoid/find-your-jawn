@@ -7,25 +7,31 @@ leads:
 - irs_990n:222505256
 - irs_bmf:222505256
 ein: '222505256'
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the North Delaware part of the city, Tacony Civic Association gives neighbors a place to hear about
-  projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Tacony Civic Association is a neighborhood membership group in Tacony. It holds general membership
+  meetings several times a year and lists local projects that neighbors can join, such as the Disston
+  Park and Community Garden, a yard sale, and Hometown Hero banners. The City also registers it as a community
+  organization to be consulted on nearby zoning and development.
+what_you_do: Members meet at general membership meetings, and the group lists projects neighbors can take
+  part in, including the Disston Park and Community Garden, a yard sale, and Hometown Hero banners.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
 interests:
 - civic_association
 - community_development
+- community_garden
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -39,13 +45,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General membership meetings on the second Wednesday of the month at 7 pm, held in January, March,
+    May, September and November. The meeting room is announced in the newsletter and on the website.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Meeting place (City list)
   address: Tacony Free Library, 6742 Torresdale Ave., Philadelphia, PA 19135
   neighborhood: null
   planning_district: north_delaware
@@ -54,7 +63,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
+- label: Mailing address (City list)
   address: P.O. Box 8979, Philadelphia, PA 19135
   neighborhood: null
   planning_district: north_delaware
@@ -81,13 +90,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email taconycivicassociation@gmail.com to ask which room the next general membership meeting is
+    in, then come on the second Wednesday at 7 pm.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: A membership form is posted, but the site gives no dues and does not say whether visitors may
+    attend meetings, so the way in is unclear.
+  what_to_expect: The site describes the general membership meetings but not what happens at them, how
+    long they run, or who attends. Membership is through a form on the site, and no dues amount is stated.
+    Ask the association before your first meeting.
+  first_visit_tips:
+  - Ask whether visitors are welcome at general membership meetings before you come.
+  - Watch the newsletter or the website for the meeting room, since the site says it is announced there.
+  - Read the membership form on the site to see the dues before you join.
 contacts:
   website: https://www.taconycivic.org
   email: tcazoning@gmail.com
@@ -131,7 +147,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://sites.google.com/view/taconycivicassociation
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+- url: https://sites.google.com/view/taconycivicassociation/membership
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://sites.google.com/view/taconycivicassociation/calendar-and-events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

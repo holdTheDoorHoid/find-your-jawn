@@ -1,0 +1,83 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-16",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 24,
+ "leads_only": [
+  {
+   "name": "William Leo Hansberry Society",
+   "url": "https://www.nilevalleycollective.org",
+   "note": "recommended on the Nile Valley Collective site as an organization of scholars of African descent, not checked; probably national and may not serve Philadelphia"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.bottleunderground.com",
+   "status": null,
+   "note": "TLS handshake failed on three attempts (www host, bare domain, trailing slash); site not readable"
+  },
+  {
+   "url": "https://historyfirsthand.org",
+   "status": null,
+   "note": "DNS lookup fails, the domain does not resolve"
+  },
+  {
+   "url": "https://mantuatheaterproject.com",
+   "status": null,
+   "note": "TLS certificate names a different host; group's own site not readable, facts taken from the Drexel partner page instead"
+  }
+ ],
+ "notes": "Batch held 15 groups, not 16. Every group got at least one fetch of its own site. Liveness data from the batch was used as a starting point and checked: Athletic Base Ball's sitemap lastmod 2026-05-18 is confirmed (not an event, so probably_active); History First Hand's domain does not resolve. Two WebSearch calls were used (both of the 2 allowed): Bottle Underground (no matching Philadelphia group found, so held back without summary) and Mantua Theater Project (led to the Drexel partner page, which was read). Four groups are hidden as private: Barefoot Artists, Black Starr Inc (the tax-form website is a disaster relief site whose name does not match the legal name, so it was not treated as this group's own), Louise Nevelson Foundation, and Nile Valley Collective. Erehwon Ensemble is out of area (Kingston, NY). No rate limiting was seen; the errors were per site (TLS and DNS). Budget: 24 fetches of 60, 2 searches of 2.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852643893",
+     "irs_bmf:852643893"
+    ],
+    "group_id": "bottle-underground-inc",
+    "ein": "852643893",
+    "website": "https://www.bottleunderground.com"
+   },
+   "verdict": "publish",
+   "name": "Bottle Underground",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary or category could be confirmed. The website returned a TLS handshake error on three attempts (www host, bare domain, and trailing slash). One search for Bottle Underground Philadelphia found no venue or group by that name. IRS legal name: Bottle Underground Inc. IRS address 1901 S 9th Street, not confirmed. Needs a manual check of what the group does before any record goes live.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:261450169",
+     "irs_bmf:261450169"
+    ],
+    "group_id": "history-first-hand-inc",
+    "ein": "261450169",
+    "website": "https://historyfirsthand.org"
+   },
+   "verdict": "publish",
+   "name": "History First Hand",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: could not confirm what the group does. The website does not resolve (DNS lookup fails), which matches the earlier liveness check. Not searched: the WebSearch budget was spent on Bottle Underground and Mantua. IRS legal name: History First Hand Inc. IRS address 213 Pierce St. Worth one search on the legal name to see whether the group has moved or closed. If it has closed, change the verdict to hide with hidden_reason defunct.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

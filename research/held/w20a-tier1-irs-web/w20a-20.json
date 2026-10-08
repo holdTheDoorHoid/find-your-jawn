@@ -1,0 +1,202 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-20",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [
+  {
+   "name": "Muslim Youth Association",
+   "url": "https://alimah.org",
+   "note": "named on the Alimah Scouts site as an affiliation; not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://philly2cents.org",
+   "status": 302,
+   "note": "redirects to an admin-only preview page; not used"
+  },
+  {
+   "url": "https://www.sojpinc.org",
+   "status": null,
+   "note": "domain did not resolve on two tries"
+  },
+  {
+   "url": "https://techcore2.org",
+   "status": null,
+   "note": "connection refused on two tries; www variant did not resolve"
+  },
+  {
+   "url": "https://bobbyzankel.net",
+   "status": null,
+   "note": "loaded with no text on two tries"
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used; 25 WebFetch calls used (some failed). Searches went to Warriors of the Wonderful Sound (no public page found) and 2CENTS (only a third party directory match; no address match). Not searched for lack of budget: UPenn Alumni Club (website field was Yelp), The Rescue Ranger (site is a template, so hidden), Sojp Inc and Techcore2 (dead domains, so unknown records). Records with no summary (Sojp, Techcore2, Warriors, 2CENTS) are tried-but-unknown and will be held back by the required-field rule. Flagged for owner review: Workers Revolutionary Collective (self-described openly political, kept under the nonpartisan rule); Alimah Scouts (out_of_area, provisional, Jenkintown address on its own site). Probably_active with low confidence where the site works but shows no dates, zero counters, or empty listings: NE Phila Connected, Luv-N-Bunns, Workers Revolutionary Collective, Bringing Everybody Together. No mass refusals or rate limiting seen. Not used as evidence anywhere: 2025, 2026, and 2035 copyright footers.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851057176",
+     "irs_bmf:851057176"
+    ],
+    "group_id": "sojp-inc",
+    "ein": "851057176",
+    "website": "https://www.sojpinc.org"
+   },
+   "verdict": "publish",
+   "name": "Sojp Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not confirm anything about this group. The website www.sojpinc.org did not resolve on two tries (sojpinc.org too). No other public source was found, and the search budget went to higher priority groups. Kept as a tried record with no summary, so it will not go live. Purpose and way in unknown.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823954589",
+     "irs_bmf:823954589"
+    ],
+    "group_id": "techcore2-nonprofit",
+    "ein": "823954589",
+    "website": "techcore2.org"
+   },
+   "verdict": "publish",
+   "name": "Techcore2 Nonprofit",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not reach the site. techcore2.org refused the connection on two tries and www.techcore2.org did not resolve. No other public source was found, and the search budget went to higher priority groups. Kept as a tried record with no summary, so it will not go live. Purpose and way in unknown. Re-check when the site is back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232881623",
+     "irs_bmf:232881623"
+    ],
+    "group_id": "university-of-pennsylvania-alumni-club-of-philadelphia-inc",
+    "ein": "232881623",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "University of Pennsylvania Alumni Club of Philadelphia",
+   "kind": "club",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Alumni association, hidden under the alumni association rule. The IRS record lists Yelp as its website, which is not a web address, so no site was checked. One search was not used because the budget went to higher priority groups.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:warriors-of-the-wonderful-sound-3",
+     "irs_bmf:061718860"
+    ],
+    "group_id": "warriors-of-the-wonderful-sound",
+    "ein": "061718860",
+    "website": "https://bobbyzankel.net"
+   },
+   "verdict": "publish",
+   "name": "Warriors of the Wonderful Sound",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Cultural Fund lead. The batch website is a personal domain, and it loaded with no text on two tries. One search by name found no public page for the group. A search of the string band database page we could read showed no band rows, so that is not a real check. The name suggests a music or string band, but nothing confirms the division, so no category is set. IRS address 4723 Cedar Ave, 19143 is not confirmed. Kept as a tried record with no summary, so it will not go live until a public page turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:392281979",
+     "irs_bmf:392281979"
+    ],
+    "group_id": "the-rescue-ranger-limited",
+    "ein": "392281979",
+    "website": "https://www.therescueranger.com"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "The Rescue Ranger",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website is an unfinished template: it says Under Construction, its copyright reads 2035, its footer shows template placeholder details, and its address is in San Francisco. No program, event, or contact tied to this group could be confirmed, so it is hidden for no public way in. Re-check if a real site appears. Search budget was not used on this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:2cents-inc",
+     "irs_990n:872641963",
+     "irs_bmf:872641963"
+    ],
+    "group_id": "2cents-inc",
+    "ein": "872641963",
+    "website": "https://philly2cents.org"
+   },
+   "verdict": "publish",
+   "name": "2CENTS",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Cultural Fund lead. The public site address redirects to a page marked admin only, so its content was not used. A third party nonprofit directory describes the group as an arts, culture, and humanities nonprofit; that directory was not used as a source for any record field. One search found no match for the IRS street address 8615 Michener Ave. No public programs, classes, or contacts were confirmed. Kept as a tried record with no summary, so it will not go live. Re-check when a public site is up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:020752233",
+     "irs_bmf:020752233"
+    ],
+    "group_id": "alimah-scouts-inc",
+    "ein": "020752233",
+    "website": "https://alimah.org"
+   },
+   "verdict": "out_of_area",
+   "name": "Alimah Scouts",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "PROVISIONAL. The group's own site gives its address as 93 Old York Road, Jenkintown, PA 19046, which is outside Philadelphia. The IRS record lists 6414 N Camac St, 19126, in Philadelphia. Nothing on the site shows a Philadelphia meeting place or program, so verdict is out_of_area. Owner may want to reconsider if a Philadelphia program turns up. The site says it is affiliated with the Muslim Youth Association. Newest text date on the site is a 2018 footer; a 2020 COVID policy and a flyer whose file name includes 2024 are the only other year hints. Search budget was not used on this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

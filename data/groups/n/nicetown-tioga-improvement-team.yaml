@@ -5,11 +5,12 @@ leads:
 - city_rco:258
 - city_rco_points:258
 ein: null
-summary: Nicetown-Tioga Improvement Team is one of the community organizations registered with the City
-  to review nearby zoning and building proposals in the North part of the city. Neighbors can follow what
-  is planned and speak up.
+summary: Nicetown-Tioga Improvement Team is a neighborhood group, formed in 1998, that works as an umbrella
+  for more than 50 local groups and block captains. Its monthly meeting is where neighbors hear about
+  zoning and building plans and talk about housing, schools and jobs.
 what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+  view with the City and developers. They also join free community events, such as school supply giveaways
+  and movie nights.
 kind: civic
 categories:
 - neighborhood-civic
@@ -38,10 +39,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly meeting on the third Tuesday at 6 pm, September through June
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -62,7 +65,7 @@ locations:
   lng: -75.14652148463674
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -80,13 +83,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Join the monthly meeting on the third Tuesday at 6 pm on Zoom; the current link is on the group's
+    meetings page.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The membership page says everyone is welcome at meetings and the meetings page gives a fixed
+    time, but neither speaks to newcomers directly.
+  what_to_expect: Meetings run on Zoom, and the agenda is posted on the meetings page once it is set,
+    though some months list it as to be announced. The group reviews nearby zoning and development plans
+    and hosts public meetings for some projects. Residents who come regularly can join committee talks
+    or sign up to help with a program. The page does not say how long a meeting lasts or what it costs.
+  first_visit_tips:
+  - Check the meetings page for the current Zoom link before the meeting, since the links on the site
+    differ.
+  - Camera use is optional on Zoom, and the page also lists a phone dial-in.
+  - Expect the talk to center on zoning and building plans, the group's main work.
 contacts:
   website: https://nicetowntioga.weebly.com/
   email: nicetowntioga@gmail.com
@@ -96,7 +108,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://nicetowntioga.weebly.com/meetings.html
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -115,8 +127,38 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://nicetowntioga.weebly.com/
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - what_you_do
+  - contacts.website
+- url: https://nicetowntioga.weebly.com/meetings.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://nicetowntioga.weebly.com/membership.html
+  seen: '2026-10-08'
+  fields:
+  - audience.open_to
+  - first_step.drop_in
+  - first_step.sign_up_needed
+  - first_step.newcomer_friendliness
+  - first_step.basis
+- url: https://nicetowntioga.weebly.com/projects.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

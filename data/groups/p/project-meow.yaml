@@ -1,22 +1,31 @@
 id: project-meow
-name: Project Meow
+name: Project MEOW
 aka: []
 leads:
 - irs_990n:364835126
 - irs_bmf:364835126
 ein: '364835126'
-summary: null
-what_you_do: null
+summary: An all-volunteer cat rescue in West Philadelphia. It trap, neuters and returns community cats,
+  cares for kittens and sick cats, and fosters and adopts out friendly cats.
+what_you_do: Volunteer, foster a cat or kitten, help a community cat caretaker, or adopt from the adoptable
+  cats listed on the site.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+interests:
+- cat_rescue_tnr
+- animal_fostering
+motives:
+- values
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -31,20 +40,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 801 S 48th St
+- label: West Philadelphia
+  address: null
   neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 801 South 48th Street
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -67,23 +67,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Volunteer with us link on projectmeow.org, or fill out the Volunteer Application on the
+    site
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The volunteer page and application are public and no membership or dues are needed. The site
+    lists no orientation dates.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.projectmeow.org
+  website: https://www.projectmeow.org
   email: null
   phone: null
   contact_name: Calvary Center for Culture and Co
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.projectmeow.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +102,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.projectmeow.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - categories
+  - interests
+  - audience
+  - locations
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
