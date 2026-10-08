@@ -23,8 +23,11 @@ A visitor will read what you write and decide whether to show up. Accuracy beats
    public page says so, and list that page in `sources` with the field name in `fields`.
 6. **No dashes as punctuation** in anything you write: no em dash, no en dash, no " - ". Use a comma,
    a colon, parentheses, or a new sentence. Ranges: "9 to 11 am", "ages 8 to 12".
-7. **Stay in budget.** Your brief states how many WebSearch calls you may make. Prefer WebFetch on
-   URLs you already have. Stop searching when you hit the budget, and say so in `notes`.
+7. **Stay in budget, but use it.** Your brief states how many WebSearch calls you may make; that
+   cap is hard. WebFetch is cheap: you may use up to 60 fetches. **Do not finish early.** Before you
+   finish, every `leads_only` item that has its own website (not Meetup, Facebook or Instagram) must
+   be fetched and turned into a record (or dropped with a reason in `notes`). A run that ends with
+   many unchecked leads that had working websites is incomplete.
 8. **Write your file early and often.** Write the output file after your first few groups, then
    rewrite it as you go, so nothing is lost if you are interrupted. Do not use git.
 
