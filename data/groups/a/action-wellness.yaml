@@ -1,13 +1,14 @@
 id: action-wellness
-name: Action Wellness
-aka: []
+name: Action Wellness Buddy Program
+aka:
+- Action Wellness
 leads:
 - irs_bmf:232446355
 ein: '232446355'
-summary: A Philadelphia nonprofit with a Buddy Program that volunteers can join to offer one-to-one support
-  to people with a chronic illness.
-what_you_do: Apply to become a buddy, then offer one-to-one support and friendship to people the program
-  serves.
+summary: Trained volunteers called buddies offer friendship, emotional support and some help with everyday
+  tasks to people living with HIV, matched one to one with a client.
+what_you_do: Visit or call a matched client on a regular basis, offer companionship, and help with small
+  daily tasks. Buddies take part in monthly support meetings with other buddies.
 kind: nonprofit
 categories:
 - health-wellness
@@ -26,7 +27,7 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
@@ -48,11 +49,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -63,27 +64,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Use the Apply Now page on the website, or call the office
-  drop_in: null
+  how: Complete the volunteer application linked as Apply Now on the site, then attend a volunteer orientation
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The Buddy Program takes an application, and the website does not explain what a buddy does day
-    to day
+  basis: A public application and orientation come before any match, so the way in is clear but not drop
+    in
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://actionwellness.org/
+  website: https://www.actionwellness.org
   email: null
   phone: 215-981-0088
   contact_name: Mary Evelyn Torres
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://actionwellness.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.actionwellness.org/volunteer/buddy-program/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,6 +101,21 @@ sources:
   - contacts
   - first_step
   - status
+- url: https://www.actionwellness.org/volunteer/buddy-program/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - contacts
+- url: https://www.actionwellness.org/programs/buddy-program/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+  - audience
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

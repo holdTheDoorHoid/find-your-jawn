@@ -3,10 +3,10 @@ name: Philadelphia Trail Club
 aka: []
 leads: []
 ein: null
-summary: A hiking club founded in 1931 that leads hikes most weekends in Philadelphia and nearby counties,
-  from easy walks to strenuous outings. Non-members can join public hikes.
-what_you_do: Join a led hike, check its difficulty rating, and over time members can train to lead hikes
-  themselves. The club also supports trail maintenance and outdoor education.
+summary: A nonprofit hiking club, founded in 1931, that leads hikes most Saturdays and Sundays. Most hikes
+  run 5 to 10 miles in Philadelphia and the nearby counties.
+what_you_do: Join a leader on a day hike, sign up as a guest for a public hike, or go on the member only
+  excursions.
 kind: club
 categories:
 - outdoors-adventure
@@ -16,7 +16,7 @@ motives:
 - social
 - enhancement
 formats:
-- side_by_side
+- team_play
 roles:
 - hands_on
 crowd:
@@ -32,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Hikes most weekends, less often in July and August. Each hike has a published difficulty level.
+  text: Public hikes most Saturdays and Sundays, year round, less often in July and August
   days:
   - sat
   - sun
@@ -40,11 +40,20 @@ schedule:
   - daytime
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: Hikes in Philadelphia, Bucks, Montgomery, Chester and Delaware counties, sometimes farther
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: false
 cost:
   level: low
-  text: Club membership is $10 a year. Non-members can attend public hikes after registering as a guest.
+  text: Membership dues are $10 a year. The site does not state a fee for public hikes.
 commitment: drop_in
 group_size: null
 access:
@@ -59,25 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a public hike from the hike list and register as a guest through the non-member registration
-    page
+  how: Use the non-member hike registration form on the club site, or email the club to ask about the
+    next public hike
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The club says non-members can attend public hikes, and its hikes range from very easy to strenuous,
-    so a newcomer can choose one that fits.
+  newcomer_friendliness: 3
+  basis: Non-members are welcome on public hikes, and the site links a guest registration form
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://philadelphiatrailclub.org/
+  website: https://philadelphiatrailclub.org
   email: philadelphiatrailclub@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philadelphiatrailclub.org/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://philly.citycast.fm/best/philly-hike-groups-philadelphia-hiking-club
 sources:
 - url: https://philadelphiatrailclub.org/
   seen: '2026-10-08'
@@ -93,8 +101,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - cost
+- url: https://philadelphiatrailclub.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+- url: https://philly.citycast.fm/best/philly-hike-groups-philadelphia-hiking-club
+  seen: '2026-10-08'
+  fields:
+  - status
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
