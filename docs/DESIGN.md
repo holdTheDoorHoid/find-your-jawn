@@ -15,6 +15,7 @@ behind each rule is in `docs/research/scouting/evidence.md`. Field names refer t
 | Browse | Search, filters, list and map views |
 | Interest pages | One static page per interest family ("Caving, climbing and hiking in Philly") |
 | Paths | Service hours (school), court ordered service, families with kids, new to Philly |
+| Guides | Pages for useful things that are not groups. First: Quizzo nights (`/guides/quizzo/`), Philly's bar trivia nights by day of the week, from `data/guides/` (DATA_MODEL section 9). Linked from the home page, the Games and puzzles interest page, New to Philly, the footer and, as one small line, the quiz results |
 | Support groups | A separate, calm entry point with crisis numbers first |
 | Your neighborhood | Type an address, see the civic groups that cover it |
 | My list | Saved groups, planned visits, check ins (stored only in this browser) |

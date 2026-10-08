@@ -17,11 +17,14 @@ def _count_records(folder) -> tuple[int, Counter]:
             data = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             continue
-        items = data if isinstance(data, list) else (data.get("records") or [])
+        # research records carry a verdict; guide entries (DATA_MODEL section 9) a status
+        items = data
+        if isinstance(data, dict):
+            items = data.get("records") or data.get("entries") or []
         for item in items:
             if isinstance(item, dict):
                 records += 1
-                verdicts[str(item.get("verdict") or "?")] += 1
+                verdicts[str(item.get("verdict") or item.get("status") or "?")] += 1
     return records, verdicts
 
 

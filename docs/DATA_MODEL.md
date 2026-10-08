@@ -268,6 +268,10 @@ Controlled lists live in `data/vocab/`:
 - `vocab.json`: every vocabulary file merged, keyed by file name (`interests`, `motives`, ...).
 - `manifest.json`: build date, counts by status, tier, category and planning district, the number of
   tier 0 groups not yet checked, and the coverage estimates from `research/coverage/`.
+- `guides/<guide>.json`: one file per guide list (section 9), written even when no entry is
+  confirmed yet: `{"guide", "title", "updated", "built", "lead_sources": [{name, url}], "count",
+  "entries": [...]}`. The entries are the guide file's `confirmed` ones only, in week order (Monday
+  first, then start time), with null values and empty lists left out.
 
 The site build (not the pipeline) also writes `data/quiz-config.json` into the built site: the parts of
 `vocab.json` the match quiz needs (scenes, moments, future selves, the interest graph, ways in, motives,
@@ -419,6 +423,40 @@ entries:
 Only `confirmed` entries are shown. `unconfirmed` entries stay in the file so a later wave can check
 them. Research agents write `research/inbox/guide-<guide>/<agent>.json` as
 `{"wave", "agent", "guide", "model", "searches_used", "fetches_used", "entries": [...], "blocked": [...], "notes"}`;
-`fyj import-guide <guide>` merges them (dedupe by venue and day; a confirmed entry beats an
-unconfirmed one; newer `last_checked` wins), applies the dash rule, and archives the inbox files to
-`research/done/guide-<guide>/`.
+`fyj import-guide <guide>` merges them (`--dry-run` reports and writes nothing). The guide file must
+already exist, with its header and an empty `entries` list: the owner decides the title and the lead
+sources, never the importer.
+
+What the importer does, in order:
+
+1. **Repairs small slips.** A day written "Tuesday", "Tues." or "tuesdays" becomes `tue`. A time written
+   "8 pm", "8:30 p.m.", "8-10pm" or "2000" becomes `20:00`; a time that could be morning or evening
+   ("8:00" with no am or pm) is left `null` with a note, never guessed. `cost` and `age` accept
+   plain words ("no cover", "21 and over"); a cost written as "$5 per person" becomes `paid` and the
+   words become `cost_text`. A bare web address gets `https://`. `"unknown"`, `"n/a"` and the like mean
+   `null`. A ZIP keeps its first five digits. Dashes used as punctuation in `venue`, `host`,
+   `team_size`, `cost_text` and `notes` are rewritten (commas; ranges become "to"). `last_checked`
+   defaults to the newest `seen` date.
+2. **Holds what it cannot guess.** An entry with no `venue`, no single `day`, no source with both a web
+   address and a `seen` date, or no `status` of `confirmed` or `unconfirmed` goes to
+   `research/held/guide-<guide>/<agent>.json` with `_held_reasons`. A venue that runs two nights needs
+   two entries.
+3. **Keeps `confirmed` honest.** An entry marked `confirmed` whose only sources are lead pages (the
+   guide's own `lead_sources`, or Meetup, Eventbrite, Facebook, Instagram and the other lead only
+   platforms of CLAUDE.md) is kept as `unconfirmed`, and the summary says how many.
+4. **Fills the place.** `planning_district` comes from the ZIP through the vocabulary's ZIP table, else
+   from the neighborhood (a broad name such as "Center City" counts only when every neighborhood it
+   covers is in one district). `neighborhood` keeps the wording the venue or host uses.
+5. **Merges.** Two reports are the same night when the normalized venue name and the day match and
+   neither the ZIP nor the street address differs (a chain with two locations is two venues). A
+   confirmed entry beats an unconfirmed one; among equals the newer `last_checked` wins, and a tie
+   goes to the incoming one. Gaps in the winner are filled from the loser only when both have the same
+   status, so a fact that only a lead claimed never joins a confirmed entry. Sources from both are
+   kept. The `id` is the venue slug plus the day and never changes (a second venue with the same slug
+   gets its ZIP in the slug).
+6. **Writes** the file under a lock (`data/guides/.lock`), entries in week order, and archives the
+   inbox files to `research/done/guide-<guide>/`.
+
+`fyj build` writes the confirmed entries to `site/public/data/guides/<guide>.json` (section 5). An
+entry id listed under `groups` in `data/blocklist.yaml` is left out, which is how a venue's removal
+request is honored.

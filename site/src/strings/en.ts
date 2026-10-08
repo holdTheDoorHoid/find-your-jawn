@@ -483,6 +483,11 @@ export const interests = {
   includes: 'Includes: {list}.',
   refine: 'Narrow these down by cost, days and more',
   allInterests: 'All interests',
+  /** A guide worth knowing about, shown on the interest page it belongs to. Markup as in the file header. */
+  guideCallouts: {
+    'games-puzzles':
+      'Looking for trivia? [Quizzo nights](/guides/quizzo/) lists weekly bar trivia across the city, by night of the week.',
+  } as Record<string, string>,
 };
 
 export const paths = {
@@ -616,12 +621,112 @@ export const paths = {
       {
         p: 'First chats with strangers usually go better than people expect. Most groups are happy to see someone new.',
       },
+      {
+        p: 'Want an easy first regular thing? Try a [quizzo night](/guides/quizzo/). It is bar trivia in the same place every week, so you keep seeing the same friendly faces.',
+      },
     ] as Block[],
     listWelcomingTitle: 'Groups that are very welcoming to newcomers',
     listWelcomingEmpty:
       'We have not rated groups for how welcoming they are yet. That comes with our closer checks.',
     listNeighborsTitle: 'Meet your neighbors: civic groups, libraries and walking groups',
     listNeighborsEmpty: 'We have not found civic, library or walking groups yet.',
+  },
+};
+
+// The Quizzo nights guide page (/guides/quizzo/). The list itself comes from data/guides/quizzo.yaml.
+export const quizzo = {
+  slug: 'quizzo',
+  title: 'Quizzo nights',
+  navTitle: 'Quizzo nights',
+  eyebrow: 'Guide',
+  summary: 'Weekly bar trivia in the same place on the same night, the easy way to become a regular.',
+  metaDescription:
+    'Weekly quizzo (bar trivia) nights in Philadelphia, by night of the week, with start times, hosts, cost, team size and age rules, each checked against the venue or the quiz host.',
+  lede: 'Quizzo is what Philadelphia calls pub trivia. A host reads out questions, teams of friends and strangers write down their answers, and the best table wins, usually a bar gift card. It happens in the same bar on the same night every week.',
+  intro: [
+    { h: 'Why it is a good way in' },
+    {
+      p: 'The same bar, the same night, every week. Go three or four times and the host, the bartender and the other teams start to know your face. That is how a newcomer turns into a regular. You do not have to be a trivia whiz. A table where everyone knows one odd thing is hard to beat.',
+    },
+    { h: 'Coming on your own, or as a pair' },
+    {
+      p: 'You do not need a team before you walk in. Get there a little early, tell the host you are on your own, and ask to be placed with a team. Most hosts are glad to do it. Or bring one friend and start a team of two. Pick a silly team name and sit near other tables so people can wave you over. Some bars cap a team at six, so check the team size on each night.',
+    },
+    { h: 'Cost, prizes and ages' },
+    {
+      p: 'Most quizzo nights are free to play. Prizes are often bar gift cards, so winning means another night out. Plan to order food or drinks and tip your server, since that is how the bar pays for the night. A few nights charge a small fee, and we say so when we know. Most of these bars are 21 and over. A few welcome all ages, and we say so when the venue does. If a night does not list an age rule, ask the bar before you go.',
+    },
+  ] as Block[],
+  credit: {
+    title: 'Where these nights came from',
+    leadsFrom: 'Many of these leads came from',
+    honest: 'We list only nights we could confirm from the venue or the quiz host, so check {them} for more.',
+    honestNoLeads: 'We list only nights we could confirm from the venue or the quiz host.',
+    themOne: 'it',
+    themMany: 'them',
+    and: 'and',
+  },
+  listTitle: 'The nights',
+  listIntro:
+    'Start times are when the questions begin, so get there 20 or 30 minutes early for a table. Bars change nights now and then, so use the Source link if you are making a special trip.',
+  jumpLabel: 'Jump to a night of the week',
+  days: {
+    mon: { short: 'Mon', plural: 'Mondays' },
+    tue: { short: 'Tue', plural: 'Tuesdays' },
+    wed: { short: 'Wed', plural: 'Wednesdays' },
+    thu: { short: 'Thu', plural: 'Thursdays' },
+    fri: { short: 'Fri', plural: 'Fridays' },
+    sat: { short: 'Sat', plural: 'Saturdays' },
+    sun: { short: 'Sun', plural: 'Sundays' },
+  } as Record<string, { short: string; plural: string }>,
+  count: '{n} nights',
+  countOne: '1 night',
+  totalLine: '{n} confirmed nights so far, and more every week.',
+  totalLineOne: '1 confirmed night so far, and more every week.',
+  filter: {
+    label: 'Part of the city',
+    all: 'Anywhere in the city',
+    other: 'Area not listed',
+    showing: 'Showing {n} nights.',
+    showingOne: 'Showing 1 night.',
+    none: 'No confirmed nights in this part of the city yet. Try another part, or suggest one below.',
+  },
+  time: { am: 'am', pm: 'pm', noon: 'noon', midnight: 'midnight' },
+  card: {
+    quickFacts: 'Quick facts',
+    starts: 'Starts {time}',
+    timeUnknown: 'Time not listed',
+    host: 'Host: {name}',
+    free: 'Free',
+    paid: 'Paid',
+    age: { '21_plus': '21 and over', all_ages: 'All ages' } as Record<string, string>,
+    checked: 'Checked {month}',
+    source: 'Source: {site}',
+    sourceLabel: 'Source for {venue}: {site}',
+    fix: 'Suggest a fix',
+    fixLabel: 'Suggest a fix for {venue}',
+  },
+  empty: {
+    title: 'No confirmed nights yet',
+    text: 'We list a night only after we have seen it on the venue\'s own page or the quiz host\'s schedule, so this list starts small and grows every week. Know a night we should check? Tell us.',
+  },
+  suggest: {
+    title: 'Know a quizzo night, or spot a mistake?',
+    text: 'Bars change nights, hosts and prizes all the time. Tell us about a night we are missing, or what is out of date, and we will check it against the venue.',
+    add: 'Suggest a quizzo night',
+    addTitle: 'Quizzo night',
+    addWhat: 'A weekly quizzo night. Which bar, which night of the week, and what time?',
+    correct: 'Report a correction',
+    remove: 'Run a bar or host a quiz and want a night changed or taken down? Tell us.',
+  },
+  more: {
+    title: 'More ways in',
+    games: 'Games and puzzles groups',
+    gamesText: 'trivia leagues, board game nights and chess clubs',
+    newcomer: 'New to Philly',
+    newcomerText: 'a short guide to feeling at home',
+    match: 'Match me',
+    matchText: 'a few quick questions, then groups picked for you',
   },
 };
 
@@ -1513,6 +1618,8 @@ export const quiz = {
 // ---------------------------------------------------------------- the results page
 
 export const matches = {
+  /** One small line under the results for people who might enjoy a quizzo night. */
+  alsoTry: { lead: 'Also try:', link: 'Quizzo nights', rest: ', a weekly bar trivia night near you.' },
   title: 'Your matches',
   intro: 'These groups fit what you told us, and each one says why. Nothing you answered leaves this device.',
   loading: 'Finding your matches...',

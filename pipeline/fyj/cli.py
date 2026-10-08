@@ -2,6 +2,7 @@
 
 Harvest: fyj harvest <source id> | fyj harvest all | fyj leads stats
 Groups:  fyj merge | fyj districts | fyj import-research <wave> | fyj check | fyj build
+Guides:  fyj import-guide <guide>
          fyj inbox-stats | fyj city-tier1 | fyj liveness | fyj batches <wave>
 """
 
@@ -132,6 +133,22 @@ def cmd_import_research(args: argparse.Namespace) -> None:
         print(f"no inbox for wave {args.wave} at {layout.inbox_dir(args.wave)}", file=sys.stderr)
         raise SystemExit(2)
     summary = import_wave(layout, args.wave, vocab, dry_run=args.dry_run)
+    if args.dry_run:
+        print("(dry run, nothing written)")
+    print("\n".join(summary.lines()))
+
+
+def cmd_import_guide(args: argparse.Namespace) -> None:
+    from fyj.guides import guide_name_ok, import_guide
+
+    layout, vocab = _layout_and_vocab()
+    if not guide_name_ok(args.guide):
+        print(f"not a guide name: {args.guide}", file=sys.stderr)
+        raise SystemExit(2)
+    if not layout.guide_path(args.guide).exists():
+        print(f"no guide file at {layout.guide_path(args.guide)}", file=sys.stderr)
+        raise SystemExit(2)
+    summary = import_guide(layout, args.guide, vocab, dry_run=args.dry_run)
     if args.dry_run:
         print("(dry run, nothing written)")
     print("\n".join(summary.lines()))
@@ -275,6 +292,13 @@ def cmd_build(_args: argparse.Namespace) -> None:
     result = build_site_data(layout, vocab)
     print(format_report(result.report))
     print(f"published {result.published} group(s) to {result.path}")
+    for name, built in sorted(result.guides.items()):
+        print(
+            f"guide {name}: {built.published} confirmed night(s) published "
+            f"({built.unconfirmed} unconfirmed stay in the file)"
+            + (f", {built.skipped} skipped as incomplete" if built.skipped else "")
+            + (f", {built.blocked} on the removal list" if built.blocked else "")
+        )
 
 
 def cmd_inbox_stats(_args: argparse.Namespace) -> None:
@@ -305,6 +329,14 @@ def build_parser() -> argparse.ArgumentParser:
     import_parser.add_argument("wave")
     import_parser.add_argument("--dry-run", action="store_true", help="report only, write nothing")
     import_parser.set_defaults(func=cmd_import_research)
+
+    guide_parser = sub.add_parser(
+        "import-guide",
+        help="validate entries in research/inbox/guide-<guide>/ and merge them into the guide",
+    )
+    guide_parser.add_argument("guide", help="a guide name, such as quizzo")
+    guide_parser.add_argument("--dry-run", action="store_true", help="report only, write nothing")
+    guide_parser.set_defaults(func=cmd_import_guide)
 
     merge_parser = sub.add_parser(
         "merge", help="triage leads and turn the rest into tier 0 group files"

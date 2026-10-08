@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse as parseYaml } from 'yaml';
+import { normalizeGuide, type Guide } from './guides';
 import { emptyManifest, normalizeManifest } from './manifest';
 import { normalizeGroup, normalizeGroupsFile, obj, str } from './normalize';
 import { slugify } from './text';
@@ -13,6 +14,7 @@ import { emptyVocab, normalizeVocab } from './vocab';
 const SITE_ROOT = process.cwd();
 const DATA_DIR = path.resolve(SITE_ROOT, 'public/data');
 const REGISTRY = path.resolve(SITE_ROOT, '../registry/sources.yaml');
+const GUIDES_SOURCE_DIR = path.resolve(SITE_ROOT, '../data/guides');
 
 function readJson(file: string): unknown {
   try {
@@ -91,6 +93,32 @@ export function loadManifest(): Manifest {
   const raw = readJson(path.join(DATA_DIR, 'manifest.json'));
   manifestCache = raw ? normalizeManifest(raw) : emptyManifest();
   return manifestCache;
+}
+
+const guideCache = new Map<string, Guide>();
+
+/**
+ * A guide list (DATA_MODEL section 9) from public/data/guides/<name>.json, which `fyj build` writes
+ * with the confirmed entries only. When that file is missing (data built before guides existed), the
+ * header of data/guides/<name>.yaml still gives the title and the lead sources, with no entries, so
+ * the page builds and shows its empty state. Never throws.
+ */
+export function loadGuide(name: string): Guide {
+  const cached = guideCache.get(name);
+  if (cached) return cached;
+  let guide: Guide | undefined;
+  const raw = readJson(path.join(DATA_DIR, 'guides', `${name}.json`));
+  if (raw) guide = normalizeGuide(raw, name);
+  if (!guide) {
+    try {
+      const header = obj(parseYaml(fs.readFileSync(path.join(GUIDES_SOURCE_DIR, `${name}.yaml`), 'utf8')));
+      guide = normalizeGuide({ ...header, entries: [] }, name);
+    } catch {
+      guide = normalizeGuide({}, name);
+    }
+  }
+  guideCache.set(name, guide);
+  return guide;
 }
 
 export interface SourceEntry {
