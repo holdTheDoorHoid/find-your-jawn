@@ -1,0 +1,65 @@
+# The kinds of group, the `kind` field on every group file (docs/DATA_MODEL.md section 3).
+#
+# Read by: the importer (checks the value), research agents (choose one kind per group), and the
+# site (kind labels on group cards, filters, and the rule that students only groups and support
+# groups are treated differently).
+# Pick the kind that fits best. A group has exactly one kind. Lead records have a wider list of
+# hints (`kind_hint`); the research step turns each hint into one of these eleven.
+
+version: 1
+
+kinds:
+  - id: nonprofit
+    label: "Nonprofit"
+    description: "A registered charity or nonprofit with a board or staff. It often welcomes volunteers."
+    examples: "Food pantry, youth mentoring charity, rowing program for kids."
+
+  - id: civic
+    label: "Neighborhood or civic group"
+    description: "Neighbors who meet about their area, like a civic association, town watch or block group."
+    examples: "Civic association, town watch, rec center advisory council."
+
+  - id: club
+    label: "Club"
+    description: "People who share a hobby or interest and meet because they want to."
+    examples: "Caving club, chess club, Mummers string band, run club."
+
+  - id: team
+    label: "Team or league"
+    description: "A group that plays, races or competes together."
+    examples: "Softball team, kickball league, rowing crew, cricket club."
+
+  - id: student_org
+    label: "Student group"
+    description: "A club run by students at a school, college or university. Often open only to that school."
+    examples: "Penn or Drexel clubs, Community College clubs."
+
+  - id: congregation
+    label: "Faith community"
+    description: "A church, synagogue, mosque, temple or other worship community, with its service work and groups."
+    examples: "Parish, mosque, meeting of Friends, Buddhist temple."
+
+  - id: friends_group
+    label: "Friends group"
+    description: "Volunteers who look after one park, library, rec center or other public place."
+    examples: "Friends of a park, Friends of a library branch."
+
+  - id: garden
+    label: "Garden"
+    description: "A community garden, urban farm or greening project."
+    examples: "Community garden, vacant lot garden, school garden."
+
+  - id: program
+    label: "Program"
+    description: "An activity run by an institution, such as a library, a rec center, a museum or the City."
+    examples: "Library knitting circle, rec center class, City volunteer program."
+
+  - id: network
+    label: "Network or meetup"
+    description: "A looser group that connects by chat, newsletter or events without a formal organization."
+    examples: "Mutual aid group, meetup group, community fridge network."
+
+  - id: support_group
+    label: "Support group"
+    description: "People who share a hard experience, such as grief or recovery, and help each other. Shown only when someone asks for support groups."
+    examples: "Grief group, recovery meeting, caregiver circle."
