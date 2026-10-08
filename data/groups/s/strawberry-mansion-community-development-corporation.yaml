@@ -8,11 +8,11 @@ leads:
 - city_rco_points:345
 - irs_bmf:550900527
 ein: '550900527'
-summary: Strawberry Mansion Neighborhood Action Center is a Neighborhood Advisory Committee listed by
-  the City of Philadelphia, a local community organization that works with the City on services and priorities
-  in the Lower North part of the city. It is also a registered community organization, so developers are
-  asked to talk with it about nearby zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: Strawberry Mansion CDC is a neighborhood nonprofit, founded in 2004, that works on home repair,
+  neighborhood land care, and job help for young adults. Its Neighborhood Action Center is also listed
+  by the City as a local advisory group for the Lower North area.
+what_you_do: Help with phone or in-person outreach, event tabling, or grant writing, or take part in the
+  monthly Zoom call on local work.
 kind: civic
 categories:
 - neighborhood-civic
@@ -41,10 +41,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Monthly Call to Action meeting on Zoom, 6 to 7:30 pm.
   days: []
-  times: []
-  recurring: null
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -74,7 +75,7 @@ locations:
   lng: -75.1801486158076
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -92,13 +93,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join the monthly Call to Action meeting on Zoom, 6 to 7:30 pm, through the link on the event page,
+    and use the RSVP button if you plan to come.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The monthly meeting is open to the community on Zoom, and the volunteer form is public. No page
+    says newcomers are welcome by name.
+  what_to_expect: The monthly call focuses on the Outdoor Leadership Program run with Philadelphia Outward
+    Bound School. It is aimed at anyone who wants to join the conversation about the neighborhood, and
+    the event page does not mention a fee. If you want to volunteer instead, the online form lets you
+    pick phone outreach, in-person outreach, event tabling, or grant writing, and the group then contacts
+    you.
+  first_visit_tips:
+  - Open the event page before the call to get the Zoom link and the RSVP button.
+  - Plan for an evening, since the call runs 6 to 7:30 pm.
+  - Check the Events page for one time gatherings such as community dinners.
+  - To volunteer, fill in the online form on the Volunteer page and name the areas that interest you.
 contacts:
   website: strawberrymansioncdc.org
   email: LenoraJacksonevans@strawberrymansionnac.org
@@ -108,7 +119,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+sign_of_life_url: https://www.strawberrymansioncdc.org/event-details/smcdc-monthly-call-to-action-meeting-reminder-2
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -143,7 +154,36 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://www.strawberrymansioncdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.strawberrymansioncdc.org/event-details/smcdc-monthly-call-to-action-meeting-reminder-2
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step.how
+  - first_step.drop_in
+  - first_step.what_to_expect
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.strawberrymansioncdc.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_visit_tips
+- url: https://www.strawberrymansioncdc.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.what_to_expect
+- url: https://www.strawberrymansioncdc.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,50 +1,63 @@
 id: maas-presents
-name: Maas Presents
-aka: []
+name: MAAS Building
+aka:
+- Maas Presents
 leads:
 - irs_990n:992085783
 - irs_bmf:992085783
 ein: '992085783'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: An arts venue in North Philadelphia that runs the MAAS Presents concert series, rents its spaces,
+  and runs resident artist and community programs. The public can attend shows, take classes, and perform
+  there.
+what_you_do: Buy tickets to a MAAS Presents show, or sign up for the newsletter. To take a class, perform,
+  or rehearse at the venue, check the Rates page.
+kind: program
+categories:
+- theater-dance-performance
+interests:
+- variety_cabaret
+motives:
+- values
+- social
+formats:
+- one_off_event
+roles:
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - lgbtq
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Concerts and events are posted on the site. Listed dates include October 22 and October 25, 2026,
+    and a MAAS Presents show on December 9, 2026.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 1320 N 5th St
+- label: MAAS Building
+  address: 1325 N Randolph St
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19122'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Ticket prices vary by show and were not shown on the page. Rental and class rates are on the Rates
+    page.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Pick an upcoming show on the site, such as the October 22 or October 25 events, and buy a ticket.
+    To take a class or perform, check the Rates page.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Public events are listed for anyone to attend, and the site invites people to perform or take
+    classes.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: maasbuilding.com
+  website: https://maasbuilding.com
   email: null
   phone: null
   contact_name: Benjamin Riesman
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://maasbuilding.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://maasbuilding.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - audience
+  - status
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

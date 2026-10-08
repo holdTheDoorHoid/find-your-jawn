@@ -6,28 +6,32 @@ leads:
 - city_rco_points:317
 - irs_bmf:232705347
 ein: '232705347'
-summary: Roxborough Development Corporation is a Registered Community Organization (RCO) in the Lower
-  Northwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The Roxborough development group that runs and promotes public neighborhood events, such as the
+  Roxtoberfest street festival, and keeps a local news and events page and business directory. The City
+  also lists it as a registered community organization.
+what_you_do: The group runs and promotes public events, including the fall Roxtoberfest street festival,
+  and its events page lists a monthly still life drawing workshop. Local businesses and makers can become
+  vendors or sponsors, and the site invites people to sign up for its newsletter.
 kind: civic
 categories:
 - neighborhood-civic
+- philly-traditions
 interests:
 - civic_association
 - community_development
+- street_festivals
 motives:
 - values
 - social
 formats:
 - conversation
-- lead_organize
+- one_off_event
 roles:
 - organize
 - figure_out
 crowd:
 - neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -39,13 +43,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Roxtoberfest is a yearly street festival on Ridge Avenue each fall, and the events page lists
+    a monthly still life drawing workshop.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: fall
 locations:
-- label: Meeting place
+- label: Office
   address: 6120 Ridge Avenue, Philadelphia, PA 19128
   neighborhood: null
   planning_district: lower_northwest
@@ -67,7 +72,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -81,23 +86,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the newsletter on the group's site, then come to a public event such as Roxtoberfest,
+    held on Ridge Avenue each fall.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Festivals and workshops listed on the site are open to the public, and the site invites people
+    to sign up for its newsletter. The site does not describe membership or resident meetings.
+  what_to_expect: The 2026 Roxtoberfest ran noon to 6 pm on Ridge Avenue, with live music on three stages,
+    beer gardens, food, a dog costume parade and a wellness village with health screenings. The site calls
+    it a community and family festival and says it draws more than 10,000 visitors. The site does not
+    say whether admission is free.
+  first_visit_tips:
+  - Many listings give only a date, so check the events page close to the day for the time and place.
+  - Email info@roxboroughpa.com with questions about cost or tickets before a workshop or event.
+  - If you run a business or make things to sell, ask about vendor and sponsor spots by email; the site
+    sends those questions to a named staff member.
 contacts:
-  website: https://www.Roxboroughpa.com
-  email: JACQUELINE@ROXBOROUGHPA.COM
+  website: https://www.roxboroughpa.com
+  email: info@roxboroughpa.com
   phone: '2155082358'
   contact_name: Jacqueline Cusack
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.roxboroughpa.com
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -122,7 +136,24 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
+- url: https://www.roxboroughpa.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.email
+  - contacts.phone
+  - first_step.how
+- url: https://www.roxboroughpa.com/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.what_to_expect
+  - first_step.newcomer_friendliness
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -4,10 +4,10 @@ aka: []
 leads:
 - city_rco:313
 ein: null
-summary: If you care about what gets built near you, Rhawnhurst Civic Association is a City registered
-  community organization in the Central Northeast part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: The neighborhood civic group for Rhawnhurst. Its monthly meeting brings police community relations
+  reports, updates from elected officials' offices, and talk about local zoning issues.
+what_you_do: Members attend the monthly meeting, follow local zoning issues, and can help on committees.
+  The group also asks for volunteers to help plan projects, coordinate work, and direct its grant funds.
 kind: civic
 categories:
 - neighborhood-civic
@@ -36,10 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Regular monthly meeting on the third Wednesday at 7 pm at Pelbano Playground, 8101 Bustleton Avenue.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -63,8 +65,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Members pay dues to stay in good standing. The amount is not stated on the website; the by-laws
+    or application may list it.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -78,13 +81,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email Rhawnhurstcivic@aol.com or call 215.439.9074 to ask whether non-members can attend the next
+    monthly meeting, held on the third Wednesday at 7 pm at Pelbano Playground. To join, print the membership
+    application from the website.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Joining needs a residency check, an application and dues. The site does not say whether non-members
+    can come to meetings, so the way in is unclear.
+  what_to_expect: The meeting is monthly and in person at Pelbano Playground, and the calendar entries
+    run from 7 to 8 pm. The agenda posted for the October 21, 2026 meeting includes police community relations
+    reports, updates from elected officials' offices, and local zoning. Members must pay dues and attend
+    at least three meetings a year to stay in good standing.
+  first_visit_tips:
+  - Confirm the date before you go, since one calendar entry is titled 'March Membership Meeting' but
+    is dated October 21, 2026.
+  - Membership is for residents inside the Rhawnhurst boundary who are at least 18.
+  - Ask whether guests may sit in, since the site does not say.
+  - The page does not say how to return the application, so ask the group before you send it.
 contacts:
   website: www.rhawnhurstcivicassociation.com
   email: Rhawnhurstcivic@aol.com
@@ -94,7 +108,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.rhawnhurstcivicassociation.com/calendar-and-events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -105,7 +119,32 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://www.rhawnhurstcivicassociation.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+- url: https://www.rhawnhurstcivicassociation.com/membership-application
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+  - commitment
+- url: https://www.rhawnhurstcivicassociation.com/calendar-and-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - first_step
+- url: https://www.rhawnhurstcivicassociation.com/committees-and-volunteers
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

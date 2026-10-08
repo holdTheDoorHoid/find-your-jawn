@@ -1,26 +1,36 @@
 id: chinese-american-chamber-of-commerce-corp
-name: Chinese American Chamber of Commerce Corp
+name: Chinese American Chamber of Commerce
 aka: []
 leads:
 - irs_990n:332616101
 - irs_bmf:332616101
 ein: '332616101'
-summary: null
-what_you_do: null
+summary: A nonprofit that helps Chinese Americans with business. It runs business education workshops,
+  networking events and grant-writing help, and holds a yearly awards program.
+what_you_do: Attend a business workshop or networking event listed on the events page, or look at the
+  membership levels and apply to join.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- careers-skills-professional
+interests:
+- professional_associations
+- entrepreneurs
+motives:
+- career
+- social
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- professionals
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - heritage:chinese
   faith: null
   partisan: false
   support_group: false
@@ -52,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Membership fees are not published on the pages read
 commitment: null
 group_size: null
 access:
@@ -67,23 +77,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Check the events page at caccc.us for the next workshop or networking event, or fill in the membership
+    application
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Membership pages exist, but the site does not say whether workshops and networking events are
+    open to people who are not members
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: CACCC.us
-  email: null
-  phone: null
+  website: https://caccc.us
+  email: info@caccc.us
+  phone: 1-215-259-3038
   contact_name: Matt Zhang
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://caccc.us/sitemap.xml
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +111,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://caccc.us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - audience
+  - cost
+  - first_step
+  - contacts
+- url: https://caccc.us/sitemap.xml
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

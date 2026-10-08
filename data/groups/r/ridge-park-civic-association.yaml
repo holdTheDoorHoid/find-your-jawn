@@ -6,25 +6,34 @@ leads:
 - irs_990n:232925287
 - irs_bmf:232925287
 ein: '232925287'
-summary: If you care about what gets built near you, Ridge Park Civic Association is a City registered
-  community organization in the Lower Northwest part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: A volunteer-run, non-partisan community group for the Roxborough and Manayunk area since 1995.
+  It reviews zoning requests, plants street trees, organizes neighborhood cleanups, and supports historic
+  preservation.
+what_you_do: Members come to quarterly meetings, where developers and officials sometimes present, and
+  volunteers join cleanups in Germany Hill, plant trees through the Pennsylvania Horticultural Society's
+  program, or help the preservation committee.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- park_cleanup
+- tree_tending
+- preservation_architecture
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -38,11 +47,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Quarterly general meetings, usually on the second Tuesday of March, June, September and December
+    at 7 pm, held in person or on Zoom. Cleanups run through the year.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
   address: Online via Zoom
@@ -62,11 +74,12 @@ locations:
   lng: -75.22900540838816
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Annual dues are $15 for one person, $25 for a household, $10 for one person age 65 and over, $15
+    for a household age 65 and over, and $65 for a business.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -80,13 +93,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Stop by a neighborhood cleanup in Germany Hill. The volunteer page says anyone can join cleanups,
+    weekly or occasionally.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The volunteer page says a first-timer can arrive at a cleanup without registering first, and
+    the homepage invites new neighbors to join, volunteer or get involved. The site describes no separate
+    newcomer program.
+  what_to_expect: Cleanups remove trash and debris in Germany Hill and nearby areas, working with the
+    Roxborough Manayunk Conservancy and Ivy Ridge Green, and they happen through the year. Quarterly meetings
+    are open to members and guests, and recent ones were held both in person and on Zoom. Dues can be
+    paid in person at a meeting or through PayPal.
+  first_visit_tips:
+  - The cleanup schedule link on the volunteer page is labeled 2020, so ask the group which cleanup is
+    next before you go.
+  - Recent quarterly meetings were held in person and on Zoom, so check which format the next one uses.
+  - If you want to help with historic preservation, contact the preservation committee first, since the
+    page asks people to reach out before joining.
 contacts:
   website: https://ridgeparkcivic.org/
   email: mgschleifer2@verizon.net
@@ -122,8 +146,36 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://ridgeparkcivic.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step.how
+- url: https://ridgeparkcivic.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://ridgeparkcivic.org/get-involved/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+  - online_ok
+  - first_step.what_to_expect
+- url: https://ridgeparkcivic.org/get-involved/volunteering/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.newcomer_friendliness
+  - first_step.basis
+- url: https://ridgeparkcivic.org/news-events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

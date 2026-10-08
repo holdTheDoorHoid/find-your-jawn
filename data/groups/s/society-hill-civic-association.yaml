@@ -6,16 +6,19 @@ leads:
 - city_rco_points:320
 - irs_bmf:236446186
 ein: '236446186'
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the Central part of the city, Society Hill Civic Association gives neighbors a place to hear about
-  projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: A volunteer group that works to keep Society Hill clean, safe and historically intact. It speaks
+  up on zoning and development, runs neighborhood clean-up and tree programs, and keeps residents informed
+  with a weekly update and a bi-monthly paper.
+what_you_do: Members follow zoning and development plans and attend the association's meetings. Neighbors
+  can volunteer on committees. Clean and Beautiful organizes spring and fall clean-up days and tree and
+  sidewalk subsidies, and Safe and Sound handles traffic, trash and crime concerns.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- clean_blocks
 motives:
 - values
 - social
@@ -38,15 +41,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Board meetings are held monthly in the evening, and community meetings are held quarterly at Pennsylvania
+    Hospital's Zubrow Auditorium at 800 Spruce Street. Some board meetings are held at the Physick House
+    instead.
   days: []
-  times: []
-  recurring: null
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: Pennsylvania Hospital (Zubrow Auditorium), 800 Spruce Street, Philadelphia, PA 19107 , , Unless
-    another location is specified for a particular meeting.
+- label: Community meetings
+  address: Pennsylvania Hospital (Zubrow Auditorium), 800 Spruce Street, Philadelphia, PA 19107
   neighborhood: null
   planning_district: central
   zip: '19107'
@@ -54,7 +59,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
+- label: Mailing address (City list)
   address: PO Box 63503, Philadelphia, PA 19147
   neighborhood: null
   planning_district: central
@@ -65,8 +70,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Yearly membership dues run from $40 for seniors or students and $50 for a basic household, up
+    to $1,000 at the top giving level.
 commitment: null
 group_size: null
 access:
@@ -81,23 +87,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email info@societyhillcivic.org to ask about the next community meeting or to be matched with a
+    committee chair, or send a message through the contact form on the site.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site does not say whether non-members can attend meetings. Its clearest ways in are an email
+    to the association or a yearly membership.
+  what_to_expect: Community meetings are held in the evening at Pennsylvania Hospital's Zubrow Auditorium,
+    and board meetings are held in the evening as well. The site does not say whether non-members can
+    attend, so ask first. Committees cover zoning, safety, clean-up and membership work, and the association
+    will refer a volunteer to a committee chair.
+  first_visit_tips:
+  - Email the association before you come to ask whether non-members can attend.
+  - Check the calendar before a board meeting, since some are held at the Physick House.
+  - Membership dues are paid yearly, so ask which level fits before you join.
 contacts:
   website: https://societyhillcivic.org
-  email: pboni@bonilaw.com
-  phone: '2153562583'
-  contact_name: Paul Boni
-  social: []
+  email: info@societyhillcivic.org
+  phone: 215-629-1288
+  contact_name: Robert Kramer (president)
+  social:
+  - https://www.facebook.com/societyhillcivic
+  - https://www.instagram.com/societyhillcivic/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://societyhillcivic.org/whats-happening/calendar/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -122,8 +138,35 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
-confidence: medium
+- url: https://societyhillcivic.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://societyhillcivic.org/whats-happening/calendar/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - locations
+- url: https://societyhillcivic.org/join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://societyhillcivic.org/what-we-do/shca-committees/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://societyhillcivic.org/contact-shca/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

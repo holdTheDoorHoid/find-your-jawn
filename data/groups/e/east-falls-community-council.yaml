@@ -5,16 +5,18 @@ leads:
 - city_rco:169
 - irs_bmf:232476516
 ein: '232476516'
-summary: If you care about what gets built near you, East Falls Community Council is a City registered
-  community organization in the Lower Northwest part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: An all-volunteer nonprofit, incorporated in 1975, that speaks for East Falls residents on zoning,
+  development and neighborhood issues. It meets monthly and holds open forums, such as a candidates night
+  before local elections.
+what_you_do: Members follow zoning and development plans in East Falls and talk them over at the monthly
+  meeting. Membership also brings a weekly events email, and only members vote at meetings.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- voter_education
 motives:
 - values
 - social
@@ -37,14 +39,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Monthly council meetings on the second Monday of each month, open to all East Falls neighbors.
+  days:
+  - mon
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
-  address: East Falls Presbyterian Church, 3800 Vaux Street, Philadelphia. PA. 19129
+  address: East Falls Presbyterian Church, 3800 Vaux Street, Philadelphia, PA 19129
   neighborhood: null
   planning_district: lower_northwest
   zip: '19129'
@@ -63,9 +66,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Member dues are $10 a year and supporting dues are $25. Higher donor levels are named after offices
+    and run from $50 to $500.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -79,19 +83,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the next monthly meeting on the second Monday, or to the October 12, 2026 candidates night,
+    which the site says is open to all. Join as a member through the online form if you want to vote.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The site says council meetings are open to all East Falls neighbors and links an online membership
+    form. It does not describe a newcomer welcome.
+  what_to_expect: Meetings take place once a month on the second Monday, and any neighbor can sit in.
+    Only current members vote, and member dues start at $10 a year. The October 2026 meeting is a candidates
+    night where candidates or their representatives answer questions.
+  first_visit_tips:
+  - The site's listing for October 12, 2026 gives a 7 pm start but no room, so email info@eastfallscommunity.org
+    to ask where it is held.
+  - Membership is joined through an online form linked from the Join Us button, and the group's P.O. Box
+    is on the site for mail.
 contacts:
-  website: https://www.facebook.com/EastFallsCC/
-  email: hilary.j.langer@gmail.com
+  website: https://eastfallscommunity.org
+  email: info@eastfallscommunity.org
   phone: '2156034279'
   contact_name: Hilary Langer
-  social: []
+  social:
+  - https://www.facebook.com/EastFallsCC/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -113,8 +126,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://eastfallscommunity.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.website
+  - contacts.email
+  - first_step.what_to_expect
+- url: https://eastfallscommunity.org/memberships/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step.how
+  - schedule
+  - first_step.newcomer_friendliness
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

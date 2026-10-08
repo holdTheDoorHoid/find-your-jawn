@@ -1,0 +1,201 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-14",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://philadelphiacommunitycorps.org",
+   "status": 403,
+   "note": "Forbidden. Not read and not retried."
+  },
+  {
+   "url": "https://philadelphianeighborhoods.com/?p=194138",
+   "status": 403,
+   "note": "Mayfair neighborhood profile seen in search results. Not read."
+  },
+  {
+   "url": "https://northeasttimes.com/2016/05/25/mayfair-civic-association-celebrates-homecoming",
+   "status": 403,
+   "note": "Mayfair 2016 news item seen in search results. Not read; date taken from the web address only."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch used (Mayfair Civic Association; Global United FC Foundation). 19 WebFetch used, no rate limiting seen. Not searched because the budget was spent: Philadelphia Association of Former Gang Members & Friends, Bijte E Shqipes, Philadelphia Community Corps, Re-Entry Connect Organization, Relentlessly You, Titus Group. Those six are minimal records (status unknown, low confidence) with no sources, so they are held back until a later run searches them. Dead or odd sites: bijteeshqipes.us and thereentryuconnect.org do not resolve (DNS, with and without www); globalunited215.com returns 404 at both forms; mayfaircivicassociation.com now shows unrelated product content. Vacetime's privacy notice names the group differently ('Cacetime Foundation'), flagged in its record. Search results also mention a US nonprofit called Global FC that supports immigrant and refugee youth through soccer. Its location is unconfirmed and no URL was captured, so it was not checked and is not in leads_only. Verdict counts: publish 15, hide 0, other 0. Records with at least one source (held-back risk low): 8. Records held back for missing sources or summary: 7 (Philadelphia Association, Mayfair, Bijte, Philadelphia Community Corps, Re-Entry Connect, Relentlessly You, Titus Group).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:371633797",
+     "irs_bmf:371633797"
+    ],
+    "group_id": "philidelphia-association-of-former-gang-members-and-friends",
+    "ein": "371633797",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Association of Former Gang Members & Friends",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not checked. The only web contact in the IRS-derived data is an email address on a Yahoo account, which is not recorded as the group's own. No search was run because the search budget went to other groups. The batch name spells it 'Philidelphia'; the everyday spelling is used here. Address in the IRS-derived data: 1601 W Veango St, 19140. Needs one search in a later run.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:271356753",
+     "irs_bmf:271356753"
+    ],
+    "group_id": "civic-association-of-mayfair",
+    "ein": "271356753",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Mayfair Civic Association",
+   "summary": "A neighborhood civic association for Mayfair in Northeast Philadelphia.",
+   "kind": "civic",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "civic_association"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website (mayfaircivicassociation.com) now shows an unrelated product article, so it is not recorded as the group's site. The one search found older local news (2012 to 2016, judged from web addresses) and a meeting place at 2990 St. Vincent St, which matches the IRS-derived address. The news article and neighborhood profile pages returned HTTP 403 and were not read, so no current status or meeting details are recorded. Sources disagree on meeting frequency (monthly in one, bi-monthly in another). Held back until current activity is checked.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:743067217",
+     "irs_bmf:743067217"
+    ],
+    "group_id": "bijte-e-shqipes",
+    "ein": "743067217",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bijte E Shqipes",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS-derived website (www.bijteeshqipes.us) does not resolve, with or without www (DNS not found), so no site could be read. No search was run because the search budget went to other groups. Address in the IRS-derived data: 3322 Willits Road, 19136. Needs one search in a later run to find a live page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:274576805",
+     "irs_bmf:274576805"
+    ],
+    "group_id": "philadelphia-community-corps",
+    "ein": "274576805",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Community Corps",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS-derived website (philadelphiacommunitycorps.org) returned HTTP 403 Forbidden, so it was not read and is listed under blocked. It was not retried or worked around. No search was run because the search budget went to other groups. Address in the IRS-derived data: 5200 Unruh Ave J, 19135. Needs one search in a later run.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:393134727",
+     "irs_bmf:393134727"
+    ],
+    "group_id": "re-entry-connect-organization",
+    "ein": "393134727",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Re-Entry Connect Organization",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS-derived website (www.thereentryuconnect.org) does not resolve, with or without www (DNS not found), so no site could be read. The name suggests a re-entry program, but that is not confirmed. No search was run because the search budget went to other groups. Address in the IRS-derived data: 4412 Decatur St, 19136.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:871507501",
+     "irs_bmf:871507501"
+    ],
+    "group_id": "relentlessly-you-inc",
+    "ein": "871507501",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Relentlessly You",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds a name ('Relentlessly You Inc.'), not a web address, so no site could be read. No search was run because the search budget went to other groups. Legal name: Relentlessly You Inc. Address in the IRS-derived data: 6264 Cottage St, 19135. Needs one search in a later run.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:331503786",
+     "irs_bmf:331503786"
+    ],
+    "group_id": "titus-group-inc",
+    "ein": "331503786",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Titus Group",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds a name ('TITUS GROUP INC'), not a web address, so no site could be read. The name is generic, so confirm it is a Philadelphia community group before any detail is published. Address in the IRS-derived data: 6908 State Rd, 19135. No search was run because the search budget went to other groups.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

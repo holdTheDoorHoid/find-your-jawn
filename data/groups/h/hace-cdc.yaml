@@ -1,13 +1,18 @@
 id: hace-cdc
 name: HACE CDC
-aka: []
+aka:
+- Hispanic Assn. of Contractors and Entreprenuers
 leads:
+- city_nac:9
 - city_rco:212
 - city_rco_points:212
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the North part of the city, HACE CDC gives neighbors a place to hear about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: HACE CDC is the registered community organization for part of Fairhill and St. Hugh. It holds
+  public virtual meetings where residents hear about development projects that need zoning changes, and
+  they can weigh in before the city decides.
+what_you_do: Go to the virtual community meetings, ask questions about zoning and development plans, and
+  share your view. The group sends a summary letter to the city before the Zoning Board of Adjustment
+  hearing.
 kind: civic
 categories:
 - neighborhood-civic
@@ -43,7 +48,7 @@ schedule:
   season: null
 locations:
 - label: Meeting place
-  address: Zoom; please email smonteiro@hacecdc.org to register
+  address: Virtual meeting by Zoom; email smonteiro@hacecdc.org to register
   neighborhood: null
   planning_district: null
   zip: null
@@ -51,8 +56,8 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 167 W. Allegheny Avenue Suite 200, Philadelphia, PA 19140
+- label: Main office
+  address: 167 W. Allegheny Avenue, Suite 200, Philadelphia, PA 19140
   neighborhood: null
   planning_district: north
   zip: '19140'
@@ -60,7 +65,7 @@ locations:
   lng: -75.13409661262314
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -78,17 +83,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email Stasia Monteiro at smonteiro@hacecdc.org to register for the next virtual community meeting.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Community meetings are open to residents, and the page gives one clear way in, which is to contact
+    the program director. The page does not say who can become a member.
+  what_to_expect: 'A first visit is a virtual meeting where a project is presented and residents discuss
+    it. The page describes a set order: a preliminary meeting with the applicant, a community meeting,
+    a committee vote, then a summary letter to the city. It does not say how long meetings run or whether
+    anything costs money.'
+  first_visit_tips:
+  - Email the program director first to get the meeting link and the date.
+  - Test your audio and camera before the call starts.
 contacts:
   website: https://www.hacecdc.org/services/registered-community-organization/
   email: smonteiro@hacecdc.org
-  phone: '2154268025'
+  phone: (215) 426-8025 ext. 3011
   contact_name: Stasia Monteiro
   social: []
   calendar_feed: null
@@ -113,7 +124,23 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://www.hacecdc.org/services/registered-community-organization/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step.how
+  - first_step.what_to_expect
+  - online_ok
+  - contacts.contact_name
+  - contacts.phone
+- url: https://www.hacecdc.org
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - contacts.contact_name
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

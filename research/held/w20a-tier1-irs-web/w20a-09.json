@@ -1,0 +1,181 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-09",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 18,
+ "leads_only": [
+  {
+   "name": "Kerala Association of Delaware Valley",
+   "url": "https://causes.benevity.org/causes/840-830898411",
+   "note": "Named in the search results for the Malayalee Association. Described as a West Chester, PA cultural group. Its own website was not found and it was not checked; the link is a giving-platform page, not the group's site."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.younginvolvedphila.org/",
+   "status": null,
+   "note": "TLS certificate error on both www and bare host (certificate names a hosting provider); page not readable"
+  },
+  {
+   "url": "https://ryersmuseum.org/",
+   "status": null,
+   "note": "Domain does not resolve (www and bare host both tried)"
+  },
+  {
+   "url": "https://bmccphilly.org/",
+   "status": null,
+   "note": "Domain does not resolve; the batch liveness check also marked it dead"
+  },
+  {
+   "url": "https://northeasttimes.com/2011/09/14/the-show-must-go-on/",
+   "status": 403,
+   "note": "HTTP 403 on fetch; only the search summary was seen, and nothing from it is recorded as a fact"
+  }
+ ],
+ "notes": "Budget: WebSearch 2 of 2 used, both on groups with no usable website (Malayalee Association and Ghostlight Players). Wise Values has no web address and got no search, so it is unknown. WebFetch 18 used. Repairs: www prefix removed for Women in Healthcare (the bare philadelphia subdomain works); httpa typo fixed to https for IBOA; bare names given https. Unknown records (Wise Values, Young Involved, Black Male Community Council, Friends of Ryerss, Ghostlight, Malayalee) have no summary, categories or sources and are held back on purpose. Woodcrest is a housing developer marked not_a_group; the owner should decide. HaMishmar HaAtik is marked out_of_area because its public work is in Bucks and Montgomery counties. Delaware Valley Fly Fishers meets in Bucks County and is marked in_city false. No rate limiting seen; the only failures were DNS, TLS and one 403.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:922608729",
+     "irs_bmf:922608729"
+    ],
+    "group_id": "wise-values",
+    "ein": "922608729"
+   },
+   "verdict": "publish",
+   "name": "Wise Values",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field holds the group name, not a web address, so no site was read. The two searches went to the Malayalee Association and Ghostlight Players, which also lacked usable websites. No summary, categories or sources recorded, so this record is held back until a public page turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:200469854",
+     "irs_bmf:200469854"
+    ],
+    "group_id": "young-involved-philadelphia",
+    "ein": "200469854",
+    "website": "https://www.younginvolvedphila.org"
+   },
+   "verdict": "publish",
+   "name": "Young Involved Philadelphia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website is www.younginvolvedphila.org. Both the www and bare hosts return a TLS certificate error (the certificate names a hosting provider), so the site could not be read. The search budget was spent. No summary, categories or sources recorded; held back until a readable page or a contact turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:833531816",
+     "irs_bmf:833531816"
+    ],
+    "group_id": "black-male-community-council-of-philadelphia",
+    "ein": "833531816",
+    "website": "https://bmccphilly.org"
+   },
+   "verdict": "publish",
+   "name": "Black Male Community Council of Philadelphia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site domain does not resolve; the batch liveness check agreed. The search budget was spent, so no name search was run. No summary, categories or sources recorded; held back until a working page or contact turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232775459",
+     "irs_bmf:232775459"
+    ],
+    "group_id": "friends-of-ryerss-library-and-museum",
+    "ein": "232775459",
+    "website": "https://www.ryersmuseum.org"
+   },
+   "verdict": "publish",
+   "name": "Friends of Ryerss Library and Museum",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Neither www.ryersmuseum.org nor ryersmuseum.org resolves, and the search budget was spent. The name points to a friends group for the Ryers library and museum on Central Avenue, taken from the IRS name and address only, not verified. No summary, categories or sources recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:452525181",
+     "irs_bmf:452525181"
+    ],
+    "group_id": "ghostlight-players",
+    "ein": "452525181"
+   },
+   "verdict": "publish",
+   "name": "Ghostlight Players",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website is a name, not a web address. One search result was a September 2011 Northeast Times article about a Philadelphia company called Ghostlight Players, founded by an Ed Flores (the batch contact is Edward Flores Jr). That article returned HTTP 403, so only the search summary was seen and nothing from it is recorded as a fact. A 2023 Volume One article in the same results is about a Menomonie, Wisconsin group and was excluded. No current sign of life found; held back for a human check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232755023",
+     "irs_bmf:232755023"
+    ],
+    "group_id": "malayalee-association-of-greater-philadelphia",
+    "ein": "232755023"
+   },
+   "verdict": "publish",
+   "name": "Malayalee Association of Greater Philadelphia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website is the word YES, not a web address, so no site was read. The one search found only a Historical Society of Pennsylvania catalog entry naming the association as publisher of an English-language journal, with no years. That shows the name has been used publicly but says nothing about current activity. Kerala Association of Delaware Valley is a separate group in the results (see leads_only). No summary, categories or sources recorded; held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

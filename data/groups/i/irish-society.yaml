@@ -1,50 +1,53 @@
 id: irish-society
-name: Irish Society
+name: The Irish Society of Philadelphia
 aka: []
 leads:
 - irs_990n:232014661
 - irs_bmf:232014661
 ein: '232014661'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A Philadelphia group that keeps Irish heritage alive through banquets, meetups and other events.
+  Members and friends gather for the calendar of events, including a yearly Christmas party.
+what_you_do: Attend a calendar event such as a banquet or meetup, or apply for membership through the
+  site.
+kind: club
+categories:
+- culture-language-heritage-groups
+interests:
+- heritage_clubs
+motives:
+- values
+- social
+formats:
+- conversation
+- one_off_event
 roles: []
-crowd: []
+crowd:
+- all_adults
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - heritage:irish
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events are listed on the group's calendar. The newest dated event on the site is the 2026 Annual
+    Christmas Party on December 18, 2026, at the Ashburner Inn.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 12800 Townsend Rd
+- label: Ashburner Inn (event venue)
+  address: 8400 Torresdale Ave
   neighborhood: null
-  planning_district: lower_far_northeast
-  zip: '19154'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 325 Chestnut Street 200
-  neighborhood: null
-  planning_district: central
-  zip: '19106'
+  planning_district: null
+  zip: '19136'
   lat: null
   lng: null
   in_city: true
@@ -52,8 +55,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Membership dues and event prices were not shown on the page.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +70,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Check the calendar for an event, then use the Contact link on the site to ask about attending.
+    The Apply Now link starts membership.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Calendar events are listed for the public, though the site does not say whether non-members can
+    attend.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: WWW.THEIRISHSOCIETY.COM
+  website: https://www.theirishsociety.com
   email: null
   phone: null
   contact_name: Joseph Cleary
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.theirishsociety.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +104,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.theirishsociety.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - audience
+  - first_step
+  - status
+  - contacts
+  - cost
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

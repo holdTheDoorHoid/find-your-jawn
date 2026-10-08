@@ -1,22 +1,28 @@
 id: meraki-animal-sanctuary-inc
-name: Meraki Animal Sanctuary Inc
+name: Meraki Animal Sanctuary
 aka: []
 leads:
 - irs_990n:822629747
 - irs_bmf:822629747
 ein: '822629747'
-summary: null
-what_you_do: null
+summary: A registered nonprofit animal sanctuary that cares for animals in need until they can go to permanent
+  homes. Volunteers can foster cats, including mother cats and kittens, through its foster program.
+what_you_do: Foster a cat or a litter in your home, with a starter kit from the sanctuary, or adopt through
+  the Adopt page. You can also donate supplies or money for vet visits. The site does not describe general
+  volunteer shifts.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- animals
+interests:
+- animal_fostering
+motives:
+- values
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -52,7 +58,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no fees for fostering. It asks for donations and says fosters receive a starter
+    kit.
 commitment: null
 group_size: null
 access:
@@ -67,23 +74,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Start the Foster Care Application on merakianimalsanctuary.com/foster-care
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Fostering starts with an application, though the site says even one litter or one stray cat helps
+    and offers help with questions
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.merakianimalsanctuary.com
-  email: null
+  website: https://www.merakianimalsanctuary.com
+  email: merakianimalsanctuary@gmail.com
   phone: null
   contact_name: Kimberly Criniti
-  social: []
+  social:
+  - http://www.facebook.com/MerakiAnimalSanctuary/
+  - http://instagram.com/merakianimalsanctuary
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.merakianimalsanctuary.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +110,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.merakianimalsanctuary.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - status
+- url: https://www.merakianimalsanctuary.com/foster-care
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

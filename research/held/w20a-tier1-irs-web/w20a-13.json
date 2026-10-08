@@ -1,0 +1,195 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-13",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [
+  {
+   "name": "Kensington Soccer Club",
+   "url": "https://www.tpr.org/2026-07-06/in-philly-neighborhood-known-for-drug-crime-soccer-club-offers-kids-hope",
+   "note": "Named in a 2026 public radio story that came up in the search for Friends of Kensington Ravens Youth. Not checked, and not confirmed as related to that group."
+  },
+  {
+   "name": "Philadelphia Youth Sports Collaborative",
+   "url": "https://www.idealist.org/en/nonprofit/65de9d33831241a7982ee5c46af1a9c5-philadelphia-youth-sports-collaborative-philadelphia",
+   "note": "A collaborative of youth sports programs, named in search results. Idealist is a lead-only site. Not checked."
+  },
+  {
+   "name": "Police Athletic League of Philadelphia",
+   "url": "https://impala.digital/public/profiles/23-1507837/programs",
+   "note": "Named in search results for Mid-City Youth Athletic Association. Aggregator page only. Not checked and not confirmed as related."
+  }
+ ],
+ "blocked": [],
+ "notes": "Budget: 2 of 2 WebSearch calls used, both on the two youth sports groups with no web address (Friends of Kensington Ravens Youth and Mid-City Youth Athletic Association). Neither search found the group under its name. 22 WebFetch calls in total. No rate limiting or bot checks were seen. Curv's web address did not resolve (DNS error). Guided Path's site returned HTTP 404 on both spellings. Neither is a block, so neither is listed under blocked. Seven records are unknown with low confidence and no categories or sources, because no page was read. The pipeline will hold them back: Curv, Ek Alumni & Collegiate Foundation, Friends of Kensington Ravens Youth, Good Lands Trust, Guided Path Youth Services, Handz Off and Mid-City Youth Athletic Association. Two of these names (Ek Alumni and Good Lands Trust) look like private foundations or trusts and may need to be hidden as private after a human check. Trinity Kristen is a paid dance school with public classes, kept as publish; see its notes for the owner decision. Verdict counts: publish 15, hide 0, not_a_group 0, duplicate 0, out_of_area 0. Status counts: active 2, probably_active 6, unknown 7.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:273334433",
+     "irs_bmf:273334433"
+    ],
+    "group_id": "curv",
+    "ein": "273334433"
+   },
+   "verdict": "publish",
+   "name": "Curv",
+   "summary": "A Philadelphia nonprofit listed in IRS records. We could not reach its website, so what it does and how to join are not yet known.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website in our data (curvingurbanrampantviolence.center) did not resolve: the fetch failed with a DNS lookup error. This is not a block, and the spelling was not retried. No search was left, because both went to the two youth sports groups with no web address. The domain name suggests a violence prevention focus, but no live page confirms it, so no categories are set. Next step: find a working web address or a search result under the legal name.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:832304795"
+    ],
+    "group_id": "mid-city-youth-athletic-association-inc",
+    "ein": "832304795"
+   },
+   "verdict": "publish",
+   "name": "Mid-City Youth Athletic Association",
+   "summary": "A youth athletic group listed in IRS records, with a North Philadelphia address. We could not find a public page for it, so what it offers is still unknown.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held the group's name, not a web address. One search for 'Mid-City Youth Athletic Association Philadelphia' found no page for this group. Similar names came up but are different groups, not merged: Mid-Cities Youth Sports Association (Arlington, Texas), Philadelphia Athletics Youth Sports Association (PAYSA), Rhawnhurst Athletic Association, Parkwood Youth Organization and Overbrook Monarch Athletic Association. The search budget is used up. Next step: a human check of the IRS record, or a search under the legal name with the 2911 West Wishart Street address.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:923686613",
+     "irs_bmf:923686613"
+    ],
+    "group_id": "ek-alumni-and-collegiate-foundation",
+    "ein": "923686613"
+   },
+   "verdict": "publish",
+   "name": "Ek Alumni & Collegiate Foundation",
+   "summary": "A nonprofit foundation with a North Philadelphia address, listed in IRS records. We have not yet confirmed what it does or whether anyone can join.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held a group name, not a web address ('Epsilon Kappa Alumni and Collegiate Foundation'). No search was left, so it was not looked up. The name suggests an alumni foundation, which our rules usually hide as private. Nothing read so far confirms that, so it is not marked private here. A human check should decide before this record goes live. No categories or sources are set.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:332226343",
+     "irs_bmf:332226343"
+    ],
+    "group_id": "friends-of-kensington-ravens-youth-inc",
+    "ein": "332226343"
+   },
+   "verdict": "publish",
+   "name": "Friends of Kensington Ravens Youth",
+   "summary": "A youth group listed in IRS records with a Kensington address. We could not find a public page for it, so what it does is still unknown.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held the name 'Kensington Ravens Youth Inc', not a web address. One search for 'Kensington Ravens Youth Philadelphia' found no page for this group. The results named other Kensington youth sports groups, which are not confirmed as related and are listed in leads_only: Kensington Soccer Club (named in a 2026 public radio story) and a Kensington high school football team. The search budget is used up. Next step: a search under the legal name, or a human check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863661221",
+     "irs_bmf:863661221"
+    ],
+    "group_id": "good-lands-trust",
+    "ein": "863661221"
+   },
+   "verdict": "publish",
+   "name": "Good Lands Trust",
+   "summary": "A nonprofit trust listed in IRS records, with a North Philadelphia address. We have not found what it does, so the record is unverified.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held 'Porrata Doria LLC', which is a company name, not a web address. No search was left. The word trust suggests a private or family trust, which our rules usually hide; this was not checked, so it is not marked private. A human check should decide before this record goes live. No categories or sources are set.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:881831507",
+     "irs_bmf:881831507"
+    ],
+    "group_id": "guided-path-youth-services",
+    "ein": "881831507",
+    "website": "https://www.guidedpathyouth.org"
+   },
+   "verdict": "publish",
+   "name": "Guided Path Youth Services",
+   "summary": "A nonprofit with youth services in its name, listed in IRS records with a Germantown Avenue address. Its website did not load, so what it does is still unverified.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site's home page returned HTTP 404 on both https://www.guidedpathyouth.org and https://guidedpathyouth.org. A 404 is not a block (no 403 and no bot check), so the site is not listed under blocked. No search was left. Recheck the site later or find a working web address. No categories or sources are set.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:825316698",
+     "irs_bmf:825316698"
+    ],
+    "group_id": "handz-off-inc",
+    "ein": "825316698"
+   },
+   "verdict": "publish",
+   "name": "Handz Off",
+   "summary": "A Philadelphia nonprofit listed in IRS records. Our data links only to its Instagram page, so what it does is not yet confirmed.",
+   "kind": "nonprofit",
+   "contacts": {
+    "social": [
+     "https://www.instagram.com/handzoff_ibelieveyou/"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held an Instagram link, not a website. Per the brief, the Instagram page was not read; the link is recorded in contacts.social only. No search was left. No categories or sources are set. Next step: one search under the legal name Handz Off Inc with Philadelphia, or a human check of the Instagram link.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -7,15 +7,18 @@ leads:
 ein: '232818595'
 summary: A volunteer nonprofit in Chinatown that runs youth basketball and volleyball, a lion dance troupe,
   a tech team, scholarships and college visits.
-what_you_do: Young people can take part in sports, lion dance and education programs. Volunteers help
-  with athletic programs, community service, lion head repairs and leadership roles.
+what_you_do: Young people can take part in basketball, volleyball, lion dance and tech programs. Volunteers
+  help with athletic programs, community service, lion head repairs and leadership roles, and the volunteer
+  page lists roles such as youth basketball assistant coach, event coordinator and graphic designer.
 kind: nonprofit
 categories:
 - theater-dance-performance
 - kids-youth-mentoring
+- sports-teams
 interests:
 - cultural_dance
 - mentoring
+- youth_coaching
 motives:
 - values
 - social
@@ -40,12 +43,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Lion dances at Lunar New Year parades in Chinatown in February, and performances booked year-round
-    for events
-  days: []
-  times: []
+  text: Lion dances at Lunar New Year parades in Chinatown in February, performances booked year-round
+    for events, and youth basketball assistant coaching on Saturday mornings in season.
+  days:
+  - sat
+  times:
+  - morning
   recurring: true
-  season: winter
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1018 Winter St
@@ -74,18 +79,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Go to phillysuns.org/get-involved and use the Join or Volunteer link, or watch the lion dance at
-    the Chinatown Lunar New Year parade
+  how: Fill out the short volunteer survey linked from the Volunteer button on phillysuns.org, or email
+    volunteer@phillysuns.org with questions. Youth coaches also complete onboarding and paperwork.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Open to anyone according to the site, but the page gives no sign-up steps, age range or contact
-    email
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The volunteer page gives a short survey and an email address, which is a clear way in. It does
+    not say how a young person joins a team, so it is not rated higher.
+  what_to_expect: One easy first step is to watch a lion dance at a public event, such as the Lunar New
+    Year parade in Chinatown in February. Volunteer roles run about 5 to 10 hours a month, or 3 hours
+    on Saturday mornings for youth basketball coaches during the season. The site lists no fee to take
+    part, and donations go to programs and scholarships.
+  first_visit_tips:
+  - Ask which clearances a youth coach needs, since the page says only that clearances are required.
+  - Email volunteer@phillysuns.org before you come, since no phone number is listed.
+  - Check the news page for the date of the next Lunar New Year parade.
 contacts:
   website: https://phillysuns.org
-  email: null
+  email: volunteer@phillysuns.org
   phone: null
   contact_name: Harry Leong
   social: []
@@ -118,11 +129,26 @@ sources:
   - summary
   - what_you_do
   - contacts
+  - cost
 - url: https://phillysuns.org/get-involved
   seen: '2026-10-08'
   fields:
   - first_step
-research_tier: 1
+  - cost
+  - contacts.website
+- url: https://phillysuns.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts.email
+  - schedule
+  - what_you_do
+  - commitment
+- url: https://phillysuns.org/news
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

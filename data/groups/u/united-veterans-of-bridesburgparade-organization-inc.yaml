@@ -1,23 +1,32 @@
 id: united-veterans-of-bridesburgparade-organization-inc
-name: United Veterans of Bridesburgparade Organization Inc
+name: United Veterans of Bridesburg
 aka:
 - United Veterans of Bridesburg Parade Organization Inc
+- United Veterans of Bridesburgparade Organization Inc
 leads:
 - irs_990n:204137497
 - irs_bmf:204137497
 ein: '204137497'
-summary: null
-what_you_do: null
+summary: The group that runs the Bridesburg Memorial Day Parade, a long-running parade in Bridesburg that
+  dates back to 1946. It also holds a Memorial 5K and 1 Mile Honor Walk that raises money for the parade.
+what_you_do: Watch the Memorial Day parade, or sign up for the Memorial 5K and 1 Mile Honor Walk. How
+  to help run the parade was not found in the sources read.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- philly-traditions
+interests:
+- parade_units
+- street_festivals
+motives:
+- values
+- social
+formats:
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -26,16 +35,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: The parade runs each Memorial Day. The 2025 Memorial 5K and 1 Mile Honor Walk was on Saturday,
+    May 17, 2025.
+  days:
+  - mon
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: spring
 locations:
-- label: Mailing address (IRS)
-  address: 2613 Ash St
+- label: Bridesburg Recreation Center (5K start and finish)
+  address: 4601 Richmond St
   neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19137'
   lat: null
   lng: null
@@ -44,7 +55,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No race fee was shown on the 2025 listing page that was read
 commitment: null
 group_size: null
 access:
@@ -59,11 +70,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Go watch the Memorial Day parade, or register for the Memorial 5K and 1 Mile Honor Walk, which
+    is held on a Saturday in May
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The parade and the race are open to the public; how to join the organizing group was not found
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -73,9 +85,9 @@ contacts:
   contact_name: Gary Roman
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-05
+sign_of_life_url: https://findtherun.com/race/71059/2025-bridesburg-memorial-day-5k-and-1-mile-honor-walk
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -92,8 +104,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://findtherun.com/race/71059/2025-bridesburg-memorial-day-5k-and-1-mile-honor-walk
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

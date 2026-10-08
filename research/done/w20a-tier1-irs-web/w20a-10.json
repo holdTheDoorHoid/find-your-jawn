@@ -3,8 +3,8 @@
   "agent": "w20a-10",
   "lane": "A",
   "model": "haiku",
-  "searches_used": 0,
-  "fetches_used": 19,
+  "searches_used": 2,
+  "fetches_used": 21,
   "records": [
     {
       "match": {"lead_ids": ["irs_990n:271204443", "irs_bmf:271204443"], "group_id": "camp-jamison-corporation", "ein": "271204443", "website": "https://www.campjamison.org"},
@@ -98,7 +98,7 @@
       "status": "unknown",
       "research_tier": 1,
       "confidence": "low",
-      "notes": "Not verified. Both www.adderleyfoundation.org and adderleyfoundation.org returned HTTP 404. The name suggests a foundation, and private foundations are out of scope, so this needs a check before it is shown. Not searched because the search budget went to groups with no working site."
+      "notes": "Not verified. Both www.adderleyfoundation.org and adderleyfoundation.org returned HTTP 404. The name suggests a foundation, and private foundations are out of scope, so this needs a check before it is shown. Not searched: the two searches went to National Reentry and Generation Music."
     },
     {
       "match": {"lead_ids": ["irs_990n:920626858", "irs_bmf:920626858"], "group_id": "alpha-pi-of-alpha-epsilon-pi", "ein": "920626858", "website": null},
@@ -166,13 +166,50 @@
       "notes": "IRS legal name Block by Block Community. The Train Tracks post does not print the year. The 2026 Clean-Off banner and the Saturday, October 10 date both point to 2026. The contact page is blockbyblockphilly.org/contact. Donations go through PayPal and are not recorded here."
     },
     {
-      "match": {"lead_ids": ["irs_990n:301365271", "irs_bmf:301365271"], "group_id": "generation-music", "ein": "301365271", "website": null},
+      "match": {"lead_ids": ["irs_990n:863858693", "irs_bmf:863858693"], "group_id": "charlies-army-animal-rescue", "ein": "863858693", "website": "https://charliesarmy.com"},
+      "verdict": "publish",
+      "name": "Charlie's Army Animal Rescue",
+      "summary": "A small Philadelphia rescue that takes in stray and abandoned cats and kittens, gets them medical care, and finds them homes. It depends on foster homes, adopters and donors.",
+      "what_you_do": "Foster a cat or kitten until it is ready for adoption, help with transport, or donate. You can also adopt an animal from the rescue.",
+      "kind": "nonprofit",
+      "categories": ["animals"],
+      "interests": ["cat_rescue_tnr", "animal_fostering"],
+      "motives": ["values"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "cost": {"level": "unknown", "text": "Adoption fees, donation amounts and volunteer requirements were not shown on the page."},
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Use the Volunteer link on charliesarmy.com to ask about fostering or transport, since the site lists those roles.", "drop_in": false, "newcomer_friendliness": 3, "basis": "The site lists volunteer roles and a clear Volunteer link, though it does not explain the Apply link or what the rescue requires."},
+      "contacts": {"website": "https://charliesarmy.com", "social": ["https://www.facebook.com/charliesarmyanimalrescue", "https://www.instagram.com/charlies__army"]},
+      "status": "probably_active",
+      "sources": [{"url": "https://charliesarmy.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts", "status", "cost"]}],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The site shows no dated items, so status is probably_active on the working-site rule. The IRS filing address is an apartment, so it is not published. Facebook and Instagram handles were taken from the site."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:301365271", "irs_bmf:301365271"], "group_id": "generation-music", "ein": "301365271", "website": "https://www.generationmusic.art"},
       "verdict": "publish",
       "name": "Generation Music",
+      "summary": "A Philadelphia nonprofit that gives free music classes and workshops to students with little access to music. It was started in 2018 by two friends and is run in a youth-driven way.",
+      "what_you_do": "Students take free music classes and workshops, and the group's volunteers and staff help run them. The listing does not explain how to volunteer or enroll.",
+      "kind": "nonprofit",
+      "categories": ["music"],
+      "interests": ["instrument_lessons"],
+      "motives": ["values", "understanding"],
+      "formats": ["learn_skill"],
+      "crowd": ["students"],
+      "audience": {"open_to": "students", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "cost": {"level": "free", "text": "All programs are free, according to the listing."},
+      "first_step": {"how": "Email info@generationmusic.art to ask about the next free class or workshop. The listing does not say how students enroll.", "drop_in": false, "newcomer_friendliness": 2, "basis": "Programs are free, but the listing does not say how to enroll, so the way in is unclear."},
+      "contacts": {"website": "https://www.generationmusic.art", "email": "info@generationmusic.art"},
       "status": "unknown",
+      "sources": [{"url": "https://generocity.org/organization/generation-music/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "cost", "first_step", "contacts"]}],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "Not verified. www.generationmusic.art and generationmusic.art both returned HTTP 404. A search was attempted at the end of the run; see the batch notes for the result."
+      "notes": "The group's own website returned HTTP 404 at both addresses, so its details come from a Generocity listing, a public directory. The listing's executive director matches the IRS contact name. The only item found is a 2024 annual report with no posting date shown, so the status is unknown. The instrument_lessons tag is the closest fit for classroom music education. The IRS filing address is an apartment and is not published."
     },
     {
       "match": {"lead_ids": ["irs_990n:884205203", "irs_bmf:884205203"], "group_id": "helping-hands-nonprofit-organi", "ein": "884205203", "website": null},
@@ -231,13 +268,16 @@
       "notes": "Not verified. The typed website www.pcbe.org:8080 returned a TLS error, and https://www.pcbe.org refused the connection. Not searched because the search budget was spent. The name suggests a business or professional group, which may be members only or out of scope. Check before it is shown."
     },
     {
-      "match": {"lead_ids": ["irs_990n:923430833", "irs_bmf:923430833"], "group_id": "national-reentry-workforce-collaborative", "ein": "923430833", "website": null},
-      "verdict": "publish",
+      "match": {"lead_ids": ["irs_990n:923430833", "irs_bmf:923430833"], "group_id": "national-reentry-workforce-collaborative", "ein": "923430833", "website": "https://thenrwc.org"},
+      "verdict": "out_of_area",
       "name": "National Reentry Workforce Collaborative",
-      "status": "unknown",
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://thenrwc.org",
       "research_tier": 1,
-      "confidence": "low",
-      "notes": "Not verified yet. The IRS list's website field was the group's name, not an address. A search is being run for it; see the batch notes."
+      "confidence": "medium",
+      "sources": [{"url": "https://thenrwc.org", "seen": "2026-10-08", "fields": ["verdict", "status"]}],
+      "notes": "A national network of reentry workforce providers, advocates and employers, with members in many cities. The IRS list's website field was the group's name, so the site was found by search and then read directly. The newest item is a certification notice posted October 8, 2026, and its 2026 conference is in New Orleans (October 20 to 23). The Philadelphia tie is a private mailbox on the IRS filing and a 2023 conference held in Philadelphia. No Philadelphia program or event was found, so the verdict is out_of_area. Revisit if a Philadelphia program is confirmed."
     },
     {
       "match": {"lead_ids": ["irs_990n:462713196", "irs_bmf:462713196"], "group_id": "ferasha-films-inc", "ein": "462713196", "website": "https://www.ferashafilms.com"},
@@ -276,5 +316,5 @@
     {"url": "https://www.pcbe.org:8080", "status": "tls_error", "note": "TLS version error on port 8080"},
     {"url": "https://www.pcbe.org", "status": "unreachable", "note": "connection refused on 443"}
   ],
-  "notes": "IN PROGRESS. Batch has 15 groups, not 10. Two searches are reserved for National Reentry and Generation Music."
+  "notes": "The batch held 15 groups, not 10. Used both searches (National Reentry, Generation Music) and 21 fetches. Four groups were not searched because the budget ran out: Adderley Foundation, Alpha Pi of Alpha Epsilon Pi, Helping Hands Nonprofit Organization, and Philadelphia Council for Business Economics. Their records are placeholders (verdict publish, status unknown, low confidence, no summary), so the publish step should hold them back until a re-run supplies the required fields. Needs a second look: Ferasha Films and Generation Music, both with unknown status. Dead or unreachable addresses are listed in blocked. No 403s, bot checks or rate limiting were seen. National Reentry is out_of_area, not a Philadelphia program."
 }

@@ -5,18 +5,36 @@ leads:
 - irs_990n:850979344
 - irs_bmf:850979344
 ein: '850979344'
-summary: null
-what_you_do: null
+summary: A South Philadelphia nonprofit that helps youth and families get outdoors. It runs free boating
+  and family fishing days at FDR Park, a youth dragon boat team, environmental leadership classes, and
+  park and waterway greening work.
+what_you_do: Come to free boating on a Saturday or family fishing on a Wednesday at FDR Park. Youth can
+  join the dragon boat team, the leadership program or greening work through the website.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- outdoors-adventure
+- water-rowing
+- nature-environment
+interests:
+- kayaking
+- dragon_boat
+- river_stewardship
+motives:
+- values
+- enhancement
+- social
+formats:
+- learn_skill
+- side_by_side
+- team_play
+roles:
+- hands_on
+- help_teach
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +43,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Free Community Boating Days on Saturdays, 10 am to 1:30 pm, March 21 to Oct 17, 2026. Free Family
+    Fishing on Wednesdays, 4 to 6:30 pm, April 22 to Aug 5 and Sept 16 to Oct 28, 2026. Youth programs
+    run on their own schedules.
+  days:
+  - sat
+  - wed
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1211 Fitzgerald St
+- label: FDR Park lakes, boathouse area
+  address: Broad St and Pattison Ave
   neighborhood: null
-  planning_district: south
-  zip: '19148'
+  planning_district: null
+  zip: '19145'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -55,26 +79,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Show up on a Saturday for boating or a Wednesday for fishing at FDR Park. No sign-up is needed
+    for those days. Youth programs use the youth application on the website.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 5
+  basis: Boating days need no experience, no sign-up and include boats and instruction. Children must
+    come with a guardian.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.discoverypathways.org/
   email: null
-  phone: null
+  phone: 215-219-3007
   contact_name: Adam J Forbes
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.discoverypathways.org/fdr-boating-and-fishing/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +117,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.discoverypathways.org/fdr-boating-and-fishing/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - requirements
+  - status
+  - last_sign_of_life
+- url: https://www.discoverypathways.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

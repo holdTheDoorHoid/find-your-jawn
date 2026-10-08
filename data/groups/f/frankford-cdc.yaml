@@ -6,11 +6,11 @@ leads:
 - city_rco:189
 - city_rco_points:189
 ein: null
-summary: Frankford CDC is a Neighborhood Advisory Committee listed by the City of Philadelphia, a local
-  community organization that works with the City on services and priorities in the Lower Northeast part
-  of the city. It is also a registered community organization, so developers are asked to talk with it
-  about nearby zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: Frankford CDC is a community development group in Lower Northeast Philadelphia. It works on small
+  business help, affordable and workforce housing, job programs, and keeping vacant lots and corridors
+  clean. The City also lists it as a neighborhood advisory group.
+what_you_do: The group runs business, housing, workforce, and public space programs in Lower Northeast.
+  The site does not list volunteer roles.
 kind: civic
 categories:
 - neighborhood-civic
@@ -90,13 +90,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (215) 743-6580 or send a message through the contact form on frankfordcdc.org, and ask how
+    to hear about upcoming workshops and volunteer needs.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site lists a phone line, a contact form, and a newsletter, but no meetings, volunteer roles,
+    or visiting hours, so the way in is unclear.
+  what_to_expect: The site does not list a regular meeting, volunteer shift, or visiting hours, so a first
+    step is a call or a message. Its events calendar showed no events for October 2026 when we checked.
+    The group runs business, housing, workforce, and public space programs, and its office is on the second
+    floor of the Daral Building. The site does not mention a fee for these services.
+  first_visit_tips:
+  - Call ahead or send a message first, since no visiting hours are posted.
+  - The office is on the second floor of the Daral Building, 4667 to 4669 Paul Street, Philadelphia 19124.
+  - Ask whether a business, housing, or job program fits what you need.
+  - Sign up for the newsletter to hear about workshops and events.
 contacts:
   website: frankfordcdc.org
   email: kwashington.fcdc@gmail.com
@@ -133,7 +142,32 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://frankfordcdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://frankfordcdc.org/event-directory/
+  seen: '2026-10-08'
+  fields:
+  - first_step.what_to_expect
+- url: https://frankfordcdc.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step.how
+  - first_visit_tips
+  - contacts.phone
+- url: https://frankfordcdc.org/in-the-community/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.what_to_expect
+- url: https://frankfordcdc.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

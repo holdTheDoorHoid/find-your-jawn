@@ -1,22 +1,32 @@
 id: friends-of-crease-street-garden
-name: Friends of Crease Street Garden
-aka: []
+name: Crease Street Garden
+aka:
+- Friends of Crease Street Garden
 leads:
 - irs_990n:462752618
 - irs_bmf:462752618
 ein: '462752618'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: Neighbors who garden on Crease Street and hold work days. The Trust page shows a work day photo,
+  but no date.
+what_you_do: Join a work day, when the garden holds one.
+kind: garden
+categories:
+- gardening-greening
+interests:
+- community_garden
+motives:
+- values
+- social
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +35,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Garden workdays are announced through the mailing list. No workday dates are shown on the site.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1223 Crease St
+- label: Garden
+  address: 1236-1238 Crease St
   neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1223 Crease Street
-  neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Joining the mailing list is free. Reserving the garden is free for up to 25 guests in 3-hour slots,
+    and donations are welcome.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email friendsofcreasestgarden@gmail.com to ask about joining or the next work day
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The page gives no waitlist or open days, so the way in is unclear
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://creasestreetgarden.org/
-  email: null
+  website: https://creasestreetgarden.org
+  email: friendsofcreasestgarden@gmail.com
   phone: null
   contact_name: Randal Cowles
-  social: []
+  social:
+  - https://www.facebook.com/creasestreetgarden
+  - https://www.instagram.com/crease19125
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-03
+sign_of_life_url: https://creasestreetgarden.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +103,33 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://creasestreetgarden.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://ngtrust.org/crease-street
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+  - first_step
+  - status
+- url: https://ngtrust.org/gardens/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

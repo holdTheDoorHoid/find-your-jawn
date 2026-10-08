@@ -6,13 +6,17 @@ leads:
 ein: null
 summary: A Community School partnership between the City, the School District and neighbors, Paul L. Dunbar
   welcomes volunteers through the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Read one on one with an elementary student through the Philly Reading Coaches program. The
+  volunteer listing said reading coaches were the only role being recruited at the school when it was
+  read on 2026-10-08.
 kind: program
 categories:
 - kids-youth-mentoring
+- books-writing
 interests:
 - after_school_camps
 - tutoring
+- literacy_tutoring
 - mentoring
 motives:
 - values
@@ -43,9 +47,9 @@ schedule:
   season: null
 locations:
 - label: School
-  address: 1750 N. 12th St Philadelphia , PA 19122
+  address: 1750 N. 12th St, Philadelphia, PA 19122
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19122'
   lat: null
   lng: null
@@ -69,17 +73,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the school's community program contact to ask about current reading coach openings and the
+    next training date.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Reading coaches make a weekly commitment, and neither the volunteer listing nor the city page
+    we could read gives a start date or training steps, so the way in is not clear.
+  what_to_expect: Reading coaches sit one on one with a student in grades K to 3 for at least an hour
+    a week, after school. The city's November 2023 program page says no experience is needed and volunteers
+    must be 16 or older, though the current cycle may differ. Ask the school contact for the current checks,
+    training, and session times before you commit.
+  first_visit_tips:
+  - Confirm the current checks and training with the school contact before you sign up.
+  - Plan for a regular weekly hour, since the role asks for steady attendance.
+  - Ask which days and hours your session would be before you commit.
 contacts:
   website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186407
   email: Madeline.Cerulli@phila.gov
-  phone: (215) 834-6277
+  phone: '2158346277'
   contact_name: null
   social: []
   calendar_feed: null
@@ -95,8 +107,16 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - first_step
+  - status
+- url: https://www.phila.gov/2023-11-27-we-need-you-become-a-philly-reading-coach/
+  seen: '2026-10-08'
+  fields:
+  - first_step.what_to_expect
+  - first_step.basis
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

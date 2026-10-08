@@ -1,36 +1,49 @@
 id: american-center-for-chinese-students-inc
-name: American Center for Chinese Students Inc
+name: American Center for Asian Students
 aka:
-- American Center for Asian Students
+- American Center for Chinese Students Inc
 leads:
 - irs_990n:833971660
 - irs_bmf:833971660
 ein: '833971660'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A nonprofit that supports Asian American students on college campuses with career fairs, cultural
+  events and networking. Its events have been held in Philadelphia, though the site does not list a local
+  office or chapter.
+what_you_do: Attend a career fair, cultural event or networking program, or contact the group to ask how
+  students join.
+kind: student_org
+categories:
+- culture-language-heritage-groups
+interests:
+- cultural_exchange
+motives:
+- understanding
+- social
+- career
+formats:
+- one_off_event
 roles: []
-crowd: []
+crowd:
+- students
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: students
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - asian_american
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events are posted by date. The newest dated event on the site is a spring 2025 career fair on
+    April 18, 2025.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 2105 N 12th St
@@ -44,8 +57,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Event prices were not shown on the page.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -59,23 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Use the Contact Us page on asianstudents.org to ask how students join and whether a Philadelphia
+    event is coming up.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site invites students to join but does not explain how membership works, so the way in is
+    unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: HTTPS://ASIANSTUDENTS.ORG/ABOUT/
+  website: https://asianstudents.org
   email: null
   phone: null
   contact_name: Holly Meng
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-04
+sign_of_life_url: https://asianstudents.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -92,8 +107,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://asianstudents.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - contacts
+  - audience
+- url: https://asianstudents.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

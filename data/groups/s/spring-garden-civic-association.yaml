@@ -5,23 +5,29 @@ leads:
 - city_rco:340
 - city_rco_points:340
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the Central part of the city, Spring Garden Civic Association gives neighbors a place to hear about
-  projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: A nonprofit that has served the Spring Garden neighborhood for nearly 60 years. It hosts community
+  meetings and social events, follows zoning and history matters, and runs a Block Captains network that
+  organizes a monthly neighborhood clean-up.
+what_you_do: Become a Block Captain to keep neighbors informed and invite them to the monthly Sweep Up
+  Saturday clean-up, or join the association as a member. Members get the directory, newsletters, zoning
+  information and local business discounts.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- block_captain
+- clean_blocks
 motives:
 - values
 - social
 formats:
+- side_by_side
 - conversation
 - lead_organize
 roles:
+- hands_on
 - organize
 - figure_out
 crowd:
@@ -37,24 +43,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Sweep Up Saturday clean-up on the first Saturday of each month, 10 am to noon, followed by a social
+    gathering at Fairmount Tavern.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: St. Andrew Church Hall, SW corner of 19th and North Streets, Phildelphia PA 19130, , Other
-    meetting sites are occasionally also used, and the location provided in the meeting notice
-  neighborhood: null
-  planning_district: central
-  zip: '19130'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
-  address: 601 N. 17th St. 1st Floor, Phila., PA 19130
+- label: Office
+  address: 601 N. 17th Street, 1st Floor Storefront, Philadelphia, PA 19130
   neighborhood: null
   planning_district: central
   zip: '19130'
@@ -62,11 +61,21 @@ locations:
   lng: -75.16889520772791
   in_city: true
   transit: null
+- label: Meeting place (City list)
+  address: St. Andrew Church Hall, SW corner of 19th and North Streets, Philadelphia, PA 19130
+  neighborhood: null
+  planning_district: central
+  zip: '19130'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: 'Yearly membership: $25 for an individual, $15 for a senior or limited-income member, $40 for
+    a family of up to four, and $50 for a business. Some plans renew automatically.'
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -80,23 +89,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the monthly Sweep Up Saturday clean-up on the first Saturday, 10 am to noon, or use the
+    Join link on the Block Captains page to sign up as a Block Captain.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The clean-up is a public monthly event that Block Captains invite neighbors to join, and Block
+    Captain sign-up is a web form. The page does not tie the clean-up to membership, which costs $15 to
+    $50 a year.
+  what_to_expect: Sweep Up Saturday runs from 10 am to noon on the first Saturday of the month. Volunteers
+    pick up trash and leaves on the block, then gather for a social stop at Fairmount Tavern. Block Captains
+    also keep neighbors informed and share news about the association.
+  first_visit_tips:
+  - The office is a storefront at 601 N. 17th Street, 1st Floor, if you want to stop by in person.
+  - Email sgcaphilly@gmail.com or call 215-236-7334 to find out which Block Captain covers your block.
+  - Plan for the clean-up to run 10 am to noon, with the social gathering afterward at Fairmount Tavern.
 contacts:
-  website: www.sgcaphilly.com
-  email: pfreeland2@aol.com
-  phone: '2158020334'
+  website: http://www.sgcaphilly.com
+  email: sgcaphilly@gmail.com
+  phone: 215-236-7334
   contact_name: Patricia Freeland
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: http://www.sgcaphilly.com/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -115,8 +132,34 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: http://www.sgcaphilly.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - contacts
+- url: http://www.sgcaphilly.com/join
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: http://www.sgcaphilly.com/Block-Captains
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+  - interests
+- url: http://www.sgcaphilly.com/page-18081
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

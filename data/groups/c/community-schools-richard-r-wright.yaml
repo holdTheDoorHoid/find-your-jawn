@@ -4,27 +4,27 @@ aka: []
 leads:
 - city_volunteer_portal:186399
 ein: null
-summary: Richard R. Wright is one of the City's Community Schools, where volunteers help with after school
-  and family programs. Open shifts are listed on the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+summary: Richard R. Wright School is one of the City's Community Schools. Volunteers help hand out groceries,
+  work the on-site food pantry, and support school events such as resource fairs.
+what_you_do: Help hand out weekly groceries to students and families, work the on-site food pantry, and
+  help at school events.
 kind: program
 categories:
+- hunger-housing-basic-needs
 - kids-youth-mentoring
 interests:
-- after_school_camps
-- tutoring
-- mentoring
+- food_pantry
+- school_parent_groups
 motives:
 - values
 - protective
 formats:
 - side_by_side
-- conversation
 roles:
-- help_teach
 - hands_on
 crowd:
 - kids
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,14 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly grocery distribution to students and families, according to the city volunteer listing.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: School
-  address: 2201 N. 28th St Philadelphia , PA 19132
+  address: 2201 N 28th St, Philadelphia, PA 19132
   neighborhood: null
   planning_district: north
   zip: '19132'
@@ -60,7 +60,8 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Translation and accessibility accommodations can be requested for school events through the district's
+    accommodations form.
 requirements:
   act153_clearances: true
   background_check: true
@@ -69,22 +70,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the district volunteer sign-up linked from the school site, or call (215) 400-7030 to ask the
+    Community School Coordinator about the next grocery or pantry shift.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check;
-    Volunteer City Release Waiver.'
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The school invites families to volunteer and links to the district form, but the volunteer listing
+    asks for clearances and a city release before a first shift, so the way in takes paperwork.
+  what_to_expect: The school site invites families to volunteer and links to the district's sign-up page.
+    The volunteer listing asks for district and state clearances and a city release form, so plan for
+    paperwork before a first shift. Shifts cover weekly groceries, the on-site food pantry, and school
+    events, and neither source gives shift length.
+  first_visit_tips:
+  - Ask the school which clearances you need before the first shift.
+  - Call the school to ask where to check in on your first day.
 contacts:
-  website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186399
+  website: https://wright.philasd.org/
   email: Madeline.Cerulli@phila.gov
   phone: (215) 834-6277
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/rwrightschool
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -98,7 +104,25 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - what_you_do
+  - requirements.act153_clearances
+  - requirements.background_check
+  - schedule.text
+- url: https://wright.philasd.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step.how
+  - first_step.what_to_expect
+  - access.notes
+  - contacts.social
+  - status
+  - last_sign_of_life
+- url: https://www.phila.gov/programs/community-schools/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

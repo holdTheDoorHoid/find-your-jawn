@@ -1,0 +1,88 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-12",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [
+  {
+   "name": "21st Ward Veterans Association",
+   "url": "https://www.rmwhs.org",
+   "note": "named on the RMWHS site for a September 11 vigil and a veterans tribute; no own website shown on the page read; not checked"
+  },
+  {
+   "name": "Roxborough Contenders",
+   "url": "https://www.roxrigrun.org",
+   "note": "named as a co-host of the Nov 7, 2026 Toys for Tots show on the Ridge Runners site; no URL shown; not checked"
+  },
+  {
+   "name": "Fast Track Motor Sports and Universal Motor Sports",
+   "url": "https://www.roxrigrun.org",
+   "note": "named as co-hosts of the same show; likely businesses; not checked"
+  },
+  {
+   "name": "C2L-PHL",
+   "url": "https://www.guidingstars2014.org",
+   "note": "a menu item on the Guiding Stars site with no details shown; not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://opac.hsp.org/Record/ead-3056/Details",
+   "status": 403,
+   "note": "Historical Society of Pennsylvania catalog record for Roxborough Turners records; HTTP 403 when fetched, so not read"
+  }
+ ],
+ "notes": "17 records: 12 publish, 4 out_of_area, 1 hide (private). Both WebSearch calls were used on the two IRS groups without a usable website (Roxborough Turners and Anns Helping Hand). About 22 fetches, including one 403. Roxborough Male Chorus and 21st Ward 4th of July Association were added as records because the RMWHS site named them as leads with their own websites (rule 7). Roxborough Turners and Anns Helping Hand are publish records with status unknown and no categories or sources, so they will be held back until a public source turns up. Wissahickon Sustainability Council is hidden as private and the owner may want to review that call. Guiding Stars has Foundation in its legal name but runs its own programs; treated as an operating nonprofit. Searches are fully spent; no budget was left for further lookups.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:231036847",
+     "irs_bmf:231036847"
+    ],
+    "group_id": "roxborough-turners",
+    "ein": "231036847",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Roxborough Turners",
+   "summary": "We could not find a current public page for this club, so what it does today is not yet known.",
+   "kind": "club",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held 9139, which is not a web address, so it was treated as missing. One search for Roxborough Turners Philadelphia returned only historical archive records and no current site, events or contact. A search summary of a Historical Society of Pennsylvania catalog record mentioned a 2004 note saying the club was active at 418 Leverington Ave. That catalog page returned HTTP 403 when fetched, so the note is unverified and is not used as a sign of life. The name and search summary point to a German gymnastics heritage club (Turnverein tradition); categories are left blank until a public source confirms it. Held back on purpose: no public source yet, so no categories, audience or sources. The EIN appears in IRS 990-N filings, which does not count as activity under our rules. The contact name on the IRS list is not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465004985",
+     "irs_bmf:465004985"
+    ],
+    "group_id": "anns-helping-hand",
+    "ein": "465004985",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Anns Helping Hand",
+   "summary": "We could not find a public page for this group, so what it does is not yet known.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a name, not a web address, so it was treated as missing. One search for Anns Helping Hand Philadelphia found no Philadelphia group by that name. The results were other organizations: Helping Hand Rescue Mission (610 N 6th St, a different group), an Illinois group called Ann's Helping Hands, and a Philadelphia turkey drive named Helping Hands. None is linked to this record. Held back on purpose: no categories, audience or sources. The IRS list gives 2559 S Hobson St, 19142; not published here because it is unconfirmed. The contact name on the IRS list is not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

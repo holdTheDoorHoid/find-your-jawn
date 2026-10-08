@@ -1,0 +1,151 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-15",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 28,
+ "leads_only": [
+  {
+   "name": "The Weaving Circle",
+   "url": "https://pafibershed.org",
+   "note": "named as co-host of Philly Fiber Fest on pafibershed.org, not checked"
+  },
+  {
+   "name": "Neighborhood Gardens Trust",
+   "url": "https://creasestreetgarden.org/",
+   "note": "named on the Crease Street Garden site as the trust behind community gardens, not checked"
+  },
+  {
+   "name": "YEAH Philly",
+   "url": "https://phillydaily.com/feature/double-trellis-food-initiative-doubling-down-on-hunger/",
+   "note": "named as culinary training partner in a PhillyDaily feature, not checked"
+  },
+  {
+   "name": "VFW Post 2",
+   "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/",
+   "note": "named as a founder of United Veterans of Bridesburg in a 2012 article, not checked"
+  },
+  {
+   "name": "American Legion Post 821",
+   "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/",
+   "note": "named as a founder of United Veterans of Bridesburg in a 2012 article, not checked"
+  },
+  {
+   "name": "Penn Treaty SSD",
+   "url": "https://www.harriettsbook.club",
+   "note": "named in the Harriett's Bookclub site footer as a sponsor, what it is was not checked"
+  }
+ ],
+ "blocked": [],
+ "notes": "Searches: 2 of 2 used, both on United Veterans of Bridesburg and Double Trellis, so the budget is spent. Fetches: about 28. No 403, bot check or rate limit was seen. Broken or odd sites: doubletrellis.org returns 404 on the root and on /volunteer; fit2dream.org and vbcgiving.org do not resolve; handsacrossphiladelphia.org has an expired certificate; anonymousbodies.org shows Coming Soon only. Redirects followed: arcadiacommons.org to arcadiacommons.us, and arthropodafoundation.org to arthropoda.org. Four records are unknown with no sources and will be held back: Anonymous Bodies, Fit 2 Dream, Hands Across Philadelphia and Veterans Villages. Two are hidden: Anna-Maria Moggio competition (private, entry only) and Arthropoda Foundation (research grant-maker, out of scope). Judgment calls for the owner: Antigravity Performance Project is published as dormant with no public way in beyond a newsletter; Harriett's Bookclub open_to public is judged from its public newsletter sign-up; the Moggio competition is hidden as private rather than out_of_area; PhillyDaily shows an unlabeled May 15, 2026 stamp next to a September 4, 2024 date, which was not used for Double Trellis status. Legal names that differ from everyday names are in each record's notes. Personal contact names on the batch file were not copied into any record.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:261752138",
+     "irs_bmf:261752138"
+    ],
+    "group_id": "anonymous-bodies",
+    "ein": "261752138",
+    "website": "https://www.anonymousbodies.org"
+   },
+   "verdict": "publish",
+   "name": "Anonymous Bodies",
+   "summary": "This group's website shows only a Coming Soon page, so what it offers is not yet known.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.anonymousbodies.org"
+   },
+   "sources": [
+    {
+     "url": "https://www.anonymousbodies.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returns a Coming Soon placeholder on both the www and bare domain, both checked. No programs, dates, address or contacts are shown. The IRS filing address is 1113 E Montgomery Ave, 19125, not recorded as a location. No search was left, so no outside source was checked. Held back (no categories, interests or audience) until a live page or public listing is found.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:393865743",
+     "irs_bmf:393865743"
+    ],
+    "group_id": "fit-2-dream",
+    "ein": "393865743",
+    "website": "https://fit2dream.org"
+   },
+   "verdict": "publish",
+   "name": "Fit 2 Dream",
+   "summary": "We could not reach this group's website, so what it does is not yet confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The address fit2dream.org does not resolve (DNS not found), so nothing could be read. The IRS filing address is an apartment unit, so it is not treated as a meeting place and is not recorded. No search was left after the other groups. Held back (no categories, audience or sources) until a working site or other public source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471583875",
+     "irs_bmf:471583875"
+    ],
+    "group_id": "hands-across-philadelphia-inc",
+    "ein": "471583875",
+    "website": "https://www.handsacrossphiladelphia.org/"
+   },
+   "verdict": "publish",
+   "name": "Hands Across Philadelphia",
+   "summary": "We could not read this group's website, so what it does is not yet confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The HTTPS certificate for the site has expired on both the www and bare domain, so the page could not be read. This is a broken certificate, not a bot check or a 403, so it is not listed under blocked. No search was left after the other groups. Held back until the site can be read or another public source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851590783",
+     "irs_bmf:851590783"
+    ],
+    "group_id": "veterans-villages-inc",
+    "ein": "851590783",
+    "website": "https://www.VBCGiving.org"
+   },
+   "verdict": "publish",
+   "name": "Veterans Villages",
+   "summary": "We could not reach this group's website, so what it does is not yet confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website name www.VBCGiving.org and the bare vbcgiving.org both fail DNS lookup, so nothing could be read. The IRS record also lists the name MMC Community Foundation Inc and a P.O. box address only (not recorded). The website name suggests a giving or foundation vehicle, which would be out of scope if confirmed, but that is not verified. No search was left. Held back (no categories, audience or sources) until the owner or a later agent confirms what it is.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -13,8 +13,11 @@ what_you_do: Attend a monthly talk or tour, take a continuing education course, 
 kind: network
 categories:
 - careers-skills-professional
+- science-learning
 interests:
 - professional_associations
+- talks_lectures
+- stem_outreach
 motives:
 - career
 - enhancement
@@ -36,26 +39,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly meetings, tours and courses. Listed dates run from September 2026 through May 2027. The
-    page does not give a regular meeting day.
+  text: Monthly chapter talks, plus tours and continuing education courses across the chapter year. The
+    page gives no fixed meeting day.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1947 N 12th St
+- label: Chapter mailing address (c/o Temple University Civil Engineering)
+  address: 1947 N 12th St, Philadelphia, PA 19122
   neighborhood: null
-  planning_district: lower_north
-  zip: '19122'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1947 North 12th Street
-  neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19122'
   lat: null
   lng: null
@@ -63,9 +57,9 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Online professional development courses are $5 per PDH. The Engineers' Week banquet was $70. Separate
-    chapter meeting fees are not stated.
+  level: low
+  text: Online continuing education courses cost $5 per professional development hour. Some recorded talks
+    are free to watch. The page gives no fee for monthly talks.
 commitment: null
 group_size: null
 access:
@@ -80,23 +74,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look at the programs on the chapter site and the membership page, then attend a listed event or
-    course.
+  how: Email the chapter's meeting reservation address to hold a seat at the next monthly talk, or watch
+    a free recorded talk first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site says courses are offered to members and non-members, and recordings are free to view.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Courses are offered to non-members and recorded talks are free to watch, but the page does not
+    say whether non-members can attend the monthly talks, so the rating stops short of 4.
+  what_to_expect: Monthly talks are presentations by working engineers on a single topic, and the October
+    talk is listed for 7 to 8 pm. The chapter serves licensed professional engineers, so expect a room
+    of engineers, and it also runs site tours and short courses. Online courses cost $5 per professional
+    development hour, and some recorded talks are free to watch first, while the page gives no fee for
+    monthly talks.
+  first_visit_tips:
+  - Email the reservation address before a talk to hold a seat.
+  - Watch a free recorded talk first if you want to see the format.
+  - Check the event list for the meeting place, since the page does not give one for the October talk.
 contacts:
   website: https://www.pspe-philly.org/
-  email: null
-  phone: null
+  email: treasurer@pspe-philly.org
+  phone: '4842220173'
   contact_name: Linda Douthwaite
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.pspe-philly.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -122,8 +124,23 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - online_ok
+  - newcomer_friendliness
+  - last_sign_of_life
+- url: https://www.pspe-philly.org/membership/pspe-membership.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.pspe-philly.org/contactus/contactus.html
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - locations
+  - first_step.sign_up_needed
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

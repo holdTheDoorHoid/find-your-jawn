@@ -47,7 +47,7 @@ locations:
 - label: Meeting place
   address: West Kensington Ministry 2140 N Hancock Street, Philadelphia, PA 19122
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19122'
   lat: null
   lng: null
@@ -56,10 +56,10 @@ locations:
 - label: Contact address (City list)
   address: 147 W Susquehanna Avenue, Philadelphia, PA 19133
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19133'
-  lat: 39.9819132906953
-  lng: -75.13595452066012
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
@@ -80,7 +80,7 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the group's contact address to ask when the next meeting is and where it meets.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -88,13 +88,13 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.nscanphilly.org
+  website: https://www.nscanphilly.org
   email: contact@nscanphilly.org
   phone: '2565045534'
   contact_name: Nilda L. Pimentel
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
 sources:
@@ -107,6 +107,8 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+  - first_step
+  - status
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -115,8 +117,12 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.nscanphilly.org
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

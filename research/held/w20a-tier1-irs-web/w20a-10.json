@@ -1,0 +1,156 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-10",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 21,
+ "leads_only": [
+  {
+   "name": "Associated Polish Home",
+   "url": "https://www.polishpeoplesuniversity.org",
+   "note": "named as the lecture venue on the Polish People's University site, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.adderleyfoundation.org",
+   "status": 404,
+   "note": "dead address, both forms tried"
+  },
+  {
+   "url": "https://adderleyfoundation.org",
+   "status": 404,
+   "note": "dead address, bare domain"
+  },
+  {
+   "url": "https://www.generationmusic.art",
+   "status": 404,
+   "note": "dead address, both forms tried"
+  },
+  {
+   "url": "https://generationmusic.art",
+   "status": 404,
+   "note": "dead address, bare domain"
+  },
+  {
+   "url": "https://helpinghandsnonprofitorganization.com",
+   "status": 404,
+   "note": "dead address, bare domain"
+  },
+  {
+   "url": "https://www.helpinghandsnonprofitorganization.com",
+   "status": 404,
+   "note": "dead address, www"
+  },
+  {
+   "url": "https://www.pcbe.org:8080",
+   "status": "tls_error",
+   "note": "TLS version error on port 8080"
+  },
+  {
+   "url": "https://www.pcbe.org",
+   "status": "unreachable",
+   "note": "connection refused on 443"
+  }
+ ],
+ "notes": "The batch held 15 groups, not 10. Used both searches (National Reentry, Generation Music) and 21 fetches. Four groups were not searched because the budget ran out: Adderley Foundation, Alpha Pi of Alpha Epsilon Pi, Helping Hands Nonprofit Organization, and Philadelphia Council for Business Economics. Their records are placeholders (verdict publish, status unknown, low confidence, no summary), so the publish step should hold them back until a re-run supplies the required fields. Needs a second look: Ferasha Films and Generation Music, both with unknown status. Dead or unreachable addresses are listed in blocked. No 403s, bot checks or rate limiting were seen. National Reentry is out_of_area, not a Philadelphia program.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852519091",
+     "irs_bmf:852519091"
+    ],
+    "group_id": "adderley-foundation",
+    "ein": "852519091",
+    "website": "https://www.adderleyfoundation.org"
+   },
+   "verdict": "publish",
+   "name": "Adderley Foundation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not verified. Both www.adderleyfoundation.org and adderleyfoundation.org returned HTTP 404. The name suggests a foundation, and private foundations are out of scope, so this needs a check before it is shown. Not searched: the two searches went to National Reentry and Generation Music.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:920626858",
+     "irs_bmf:920626858"
+    ],
+    "group_id": "alpha-pi-of-alpha-epsilon-pi",
+    "ein": "920626858",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Alpha Pi of Alpha Epsilon Pi",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not verified. The IRS list's website field was 'Alpha Pi', which is a name and not an address. Not searched because the search budget was spent. The name suggests a Greek-letter fraternity chapter, which may be members only. Check before it is shown.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:884205203",
+     "irs_bmf:884205203"
+    ],
+    "group_id": "helping-hands-nonprofit-organi",
+    "ein": "884205203",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Helping Hands Nonprofit Organization",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not verified. The typed website Helpinghandsnonprofitorganization.com returned HTTP 404 at both the bare and www addresses. The name is generic and the search budget was spent, so no public page was found. Check before it is shown.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:333759153",
+     "irs_bmf:333759153"
+    ],
+    "group_id": "philadelphia-council-for-business-economics",
+    "ein": "333759153",
+    "website": "https://www.pcbe.org:8080"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Council for Business Economics",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Not verified. The typed website www.pcbe.org:8080 returned a TLS error, and https://www.pcbe.org refused the connection. Not searched because the search budget was spent. The name suggests a business or professional group, which may be members only or out of scope. Check before it is shown.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

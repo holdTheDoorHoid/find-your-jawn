@@ -5,11 +5,11 @@ leads:
 - city_rco:364
 - city_rco_points:364
 ein: null
-summary: Upper Roxborough Civic Association is a Registered Community Organization (RCO) in the Lower
-  Northwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The volunteer civic association for Upper Roxborough and a registered community organization.
+  It meets every second Wednesday at Roxborough Church, and new neighbors are welcome to come to a meeting
+  and get to know the board.
+what_you_do: Neighbors meet with the board to talk over neighborhood matters, pay dues of $25 per household
+  or $50 per business, and volunteer, especially on fundraising, events and technology.
 kind: civic
 categories:
 - neighborhood-civic
@@ -38,16 +38,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meets every second Wednesday at 6:30 pm at Roxborough Church, with no meetings in July or August
+    unless a pressing issue comes up.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Meeting place (Roxborough Church)
   address: 8230 Ridge Ave, Philadelphia, PA 19128
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19128'
   lat: null
   lng: null
@@ -64,9 +67,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Household dues are $25 a year and business dues are $50 a year. Dues can be paid at a meeting
+    or arranged by email.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -80,13 +84,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to a meeting at Roxborough Church, 8230 Ridge Ave, at 6:30 pm and introduce yourself to the
+    board.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The homepage says a new neighbor can come to a meeting and get to know the board, and it gives
+    the meeting day, time and place.
+  what_to_expect: Meetings are held at Roxborough Church on Ridge Avenue at 6:30 pm, and the board is
+    introduced on the homepage. Dues of $25 a household or $50 a business can be paid at a meeting. The
+    site does not say how long meetings run or whether they can be joined online.
+  first_visit_tips:
+  - The site has no calendar, so email the group to confirm the next meeting date before you go.
+  - Membership applications use an online form linked from the homepage.
+  - Dues can be paid at a meeting, or you can email to arrange another way to pay.
 contacts:
   website: https://www.urca19128.com/
   email: urca19128@gmail.com
@@ -94,7 +105,7 @@ contacts:
   contact_name: Theresa Kehler
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
 sources:
@@ -115,7 +126,29 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://www.urca19128.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - first_step.how
+  - first_step.basis
+  - first_step.newcomer_friendliness
+  - status
+- url: https://www.urca19128.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - notes
+- url: https://www.urca19128.com/events/
+  seen: '2026-10-08'
+  fields:
+  - notes
+- url: https://www.urca19128.com/news-and-updates/
+  seen: '2026-10-08'
+  fields:
+  - notes
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

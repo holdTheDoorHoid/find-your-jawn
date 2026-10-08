@@ -5,25 +5,31 @@ leads:
 - city_rco:311
 - city_rco_points:311
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the Lower Northwest part of the city, Residents of Shawmont Valley Association gives neighbors a
-  place to hear about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: A neighborhood association for upper Roxborough, founded in 1980, that works to protect local
+  greenways, waterways and the watershed and speaks up on zoning and quality of life. Members meet a few
+  times a year and help with a spring street cleanup.
+what_you_do: Members attend meetings and vote on the association's positions, follow watershed and gully
+  projects with partner groups, and turn out for the spring street cleanup on Shawmont Avenue.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- river_stewardship
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -37,14 +43,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Meets semi-regularly and as needed for zoning matters. A Spring Street Cleanup on Shawmont Avenue
+    is held each April on a Saturday morning.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
+  season: spring
 locations:
-- label: Meeting place
-  address: 8230 Ridge Avenue Philadelphia, PA 19128
+- label: Meeting place (Roxborough Presbyterian Church)
+  address: 8230 Ridge Avenue, Philadelphia, PA 19128
   neighborhood: null
   planning_district: lower_northwest
   zip: '19128'
@@ -63,9 +72,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Dues are $10 for one person or $15 for a two-person household.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -79,20 +88,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the site's low-volume email updates, then come to the next Spring Street Cleanup on
+    Shawmont Avenue, where it meets Minerva.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site does not say whether non-members can come to meetings, and membership comes with $10
+    to $15 in dues. The email list and the spring cleanup are the only clear ways in.
+  what_to_expect: The spring cleanup gathers on Shawmont Avenue on a Saturday morning in April, and past
+    ones started at 9 or 10 am. Meetings happen semi-regularly and as needed, and recent ones were held
+    at Roxborough Presbyterian Church on Ridge Avenue. Members can attend meetings and vote, and dues
+    can be paid in cash or by check.
+  first_visit_tips:
+  - The events page still lists an April 11, 2026 cleanup as upcoming, so email the group to confirm the
+    next date.
+  - Email the group before a first meeting to ask whether non-members can attend.
+  - Subscribe to the site's email list or RSS feed to hear about meetings.
 contacts:
   website: https://shawmontvalley.rco.community
   email: shawmontvalley@gmail.com
   phone: '2152752529'
   contact_name: Aaron Couch
   social: []
-  calendar_feed: null
+  calendar_feed: https://shawmontvalley.rco.community/feed.xml
 status: active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
@@ -114,7 +132,31 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://shawmontvalley.rco.community
+  seen: '2026-10-08'
+  fields:
+  - contacts.calendar_feed
+  - first_step.how
+- url: https://shawmontvalley.rco.community/join
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step.newcomer_friendliness
+- url: https://shawmontvalley.rco.community/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step.what_to_expect
+- url: https://shawmontvalley.rco.community/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.contact_name
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

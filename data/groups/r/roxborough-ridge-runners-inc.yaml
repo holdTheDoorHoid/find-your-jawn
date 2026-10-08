@@ -1,22 +1,31 @@
 id: roxborough-ridge-runners-inc
-name: Roxborough Ridge Runners Inc
+name: Roxborough Ridge Runners
 aka: []
 leads:
 - irs_990n:202358591
 - irs_bmf:202358591
 ein: '202358591'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A car club serving Roxborough and nearby neighborhoods, with summer cruise nights and car shows
+  open to all makes and models, plus monthly member meetings.
+what_you_do: Bring your car or come to look at others at a Thursday cruise night or a spring or fall show.
+  Monthly meetings share car maintenance tips and plan community projects.
+kind: club
+categories:
+- making-tech
+interests:
+- cars_motorcycles
+motives:
+- social
+- enhancement
+formats:
+- side_by_side
+- one_off_event
+roles:
+- figure_out
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +34,31 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Summer cruise nights on Thursdays from April to November, weather permitting, starting around
+    5 pm; monthly membership meetings on the second Wednesday at 7 pm; a spring show on May 16, 2026 and
+    a Toys for Tots show on Nov 7, 2026
+  days:
+  - thu
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 104 Rector St
+- label: Adam Kowalski Post (monthly meetings)
+  address: 504 Hermit St
   neighborhood: null
-  planning_district: lower_northwest
-  zip: '19127'
+  planning_district: null
+  zip: '19128'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 104 Rector Street
+- label: Ivy Ridge Shopping Center (summer cruise nights)
+  address: null
   neighborhood: null
-  planning_district: lower_northwest
-  zip: '19127'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -52,8 +66,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: No cost stated for cruises or shows; membership terms not found
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +81,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Thursday cruise night at Ivy Ridge Shopping Center, where no sign-up is mentioned, or
+    to the second Wednesday meeting at 7 pm at Adam Kowalski Post, 504 Hermit St
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site mentions no registration for cruises or shows, so a newcomer can simply come along;
+    membership details were not found.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.roxrigrun.org
-  email: null
+  website: https://www.roxrigrun.org
+  email: chris@roxrigrun.org
   phone: null
   contact_name: Donald Shields
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://www.roxrigrun.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +116,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.roxrigrun.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+  - cost
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

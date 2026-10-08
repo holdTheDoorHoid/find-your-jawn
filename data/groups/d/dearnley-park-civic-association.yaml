@@ -4,11 +4,11 @@ aka: []
 leads:
 - city_rco:164
 ein: null
-summary: Dearnley Park Civic Association is one of the community organizations registered with the City
-  to review nearby zoning and building proposals in the Lower Northwest part of the city. Neighbors can
-  follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Dearnley Park neighbors who meet on Zoom to review zoning board requests and city projects, such
+  as a water main replacement, and speak up for the area. The group has also talked about cleanup projects
+  with a neighboring association.
+what_you_do: Members review zoning board applications and city construction projects at quarterly Zoom
+  meetings and vote on the group's position. Officers are elected to two-year terms.
 kind: civic
 categories:
 - neighborhood-civic
@@ -37,11 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Quarterly meetings on Zoom at 7 pm, held on a Tuesday, Wednesday or Thursday.
+  days:
+  - tue
+  - wed
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
   address: Zoom
@@ -61,11 +65,12 @@ locations:
   lng: -75.24172295946256
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Household membership is $20 a year and business membership is $50 a year. The site lists no fee
+    to attend meetings.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -79,23 +84,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Join the next quarterly Zoom meeting at 7 pm using the link on the homepage. The site lists October
+    14, 2026 as the next meeting, with a zoning board request on the agenda.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The homepage says any resident may join the Zoom meetings through the posted link, and no sign-up
+    is described. Membership is for people who live or run a business in Dearnley Park.
+  what_to_expect: Meetings are online at 7 pm and follow a set agenda, such as a zoning board review and
+    a water department project on the Ridge Avenue corridor. Members vote on the group's position and
+    elect officers every two years. The site lists no fee to attend, and household dues are $20 a year
+    if you choose to join.
+  first_visit_tips:
+  - Confirm the date by email first, because the homepage lists both September 30 and October 14, 2026
+    as the next meeting.
+  - Membership is for residents or business owners of Dearnley Park, and dues are paid by check or money
+    order to the treasurer.
+  - Have the Zoom link from the homepage ready before 7 pm.
 contacts:
   website: https://dearnleyparkcivic.org
   email: dearnleyparkcivic@gmail.com
-  phone: '2672250914'
+  phone: '2672417476'
   contact_name: Dorothy French
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://dearnleyparkcivic.org
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -105,7 +120,33 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://dearnleyparkcivic.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - cost
+  - first_step
+  - contacts.phone
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://dearnleyparkcivic.org/services/
+  seen: '2026-10-08'
+  fields:
+  - notes
+- url: https://dearnleyparkcivic.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://dearnleyparkcivic.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - contacts.email
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

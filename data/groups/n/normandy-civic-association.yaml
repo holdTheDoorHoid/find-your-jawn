@@ -46,7 +46,7 @@ locations:
 - label: Meeting place
   address: Spin Community and Fitness Center 10980 Norcom Rd, Philadelphia, PA 19154
   neighborhood: null
-  planning_district: lower_far_northeast
+  planning_district: null
   zip: '19154'
   lat: null
   lng: null
@@ -55,10 +55,10 @@ locations:
 - label: Contact address (City list)
   address: 2826 Newberry Rd, Philadelphia, PA 19154
   neighborhood: null
-  planning_district: lower_far_northeast
+  planning_district: null
   zip: '19154'
-  lat: 40.098311513952254
-  lng: -75.00064400437202
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
@@ -79,7 +79,7 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the group's contact address to ask when the next meeting is and how to attend.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -93,7 +93,7 @@ contacts:
   contact_name: Autumn Zavislak
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
 sources:
@@ -106,6 +106,8 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+  - first_step
+  - status
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -114,8 +116,8 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

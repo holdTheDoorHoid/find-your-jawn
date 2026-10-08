@@ -8,11 +8,12 @@ leads:
 - irs_990n:020685211
 - irs_bmf:020685211
 ein: 020685211
-summary: Brewerytown Sharswood Community Civic Association is one of the community organizations registered
-  with the City to review nearby zoning and building proposals in the Lower North part of the city. Neighbors
-  can follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Neighbors in Brewerytown and Sharswood who review zoning requests for nearby building projects.
+  Each month they hold a Zoom meeting where residents hear from applicants and vote, then they send the
+  Zoning Board of Adjustment their position.
+what_you_do: The zoning committee reviews building projects between 19th and 33rd streets, from Cecil
+  B. Moore Avenue south to Girard Avenue, hears from applicants, and sends the Zoning Board of Adjustment
+  its position. Residents who register can comment and vote on each request.
 kind: civic
 categories:
 - neighborhood-civic
@@ -41,14 +42,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Public community zoning meetings are on Zoom on the third Thursday of each month, 6:30 to 8:30
+    pm. The zoning subcommittee meets the first Tuesday of each month.
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
-  address: Zoom
+  address: Online meetings (Zoom)
   neighborhood: null
   planning_district: null
   zip: null
@@ -59,17 +63,17 @@ locations:
 - label: Contact address (City list)
   address: 3000 "D" W Master St, Philadelphia, PA 19121
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19121'
-  lat: 39.97738814151563
-  lng: -75.1746327142696
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -83,13 +87,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Register in advance for the next Zoom community zoning meeting, using the web form, email, or phone
+    number on the zoning page, then join on the third Thursday evening.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The zoning page says any neighbor can register to attend and comment, with three ways to sign
+    up, but it does not say newcomers are specially welcomed.
+  what_to_expect: The community meeting runs on Zoom from 6:30 to 8:30 pm. Applicants present a project,
+    and registered neighbors can ask questions or comment for up to two minutes each. Each registered
+    person gets one vote per project, and any vote made after the session ends does not count.
+  first_visit_tips:
+  - Register ahead using the web form, email, or phone number on the zoning page.
+  - Have your name, phone number, and address ready, since the sign-up asks for them.
+  - Keep comments short, because each one is limited to two minutes.
+  - If you join by phone, you will get voting instructions during the meeting.
 contacts:
   website: https://www.brewerytownsharswood.org
   email: brew.sharsnas@gmail.com
@@ -99,7 +111,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://brewerytownsharswood.org/what-we-do/zoning/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -132,7 +144,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://brewerytownsharswood.org/what-we-do/zoning/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - commitment
+  - first_step
+  - status
+- url: https://brewerytownsharswood.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+- url: https://brewerytownsharswood.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts.email
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -4,9 +4,10 @@ aka: []
 leads:
 - city_gardens:13
 ein: null
-summary: Schuylkill River Park Community Garden is a City registered community garden in the Central part
-  of the city. Neighbors garden side by side, and the garden is the place to ask about joining.
-what_you_do: Garden alongside neighbors and help with workdays.
+summary: Neighbors who garden side by side near 25th and Spruce, with about 70 plots, a shared flower
+  border by the park, and some of the harvest given to local food programs.
+what_you_do: Lease a plot for a year at a time, for up to six years, and grow plants of your choice. Gardeners
+  attend three work days each season and help care for the shared flower border along the park.
 kind: garden
 categories:
 - gardening-greening
@@ -24,7 +25,7 @@ crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -33,10 +34,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The steering committee usually meets on the first Monday of the month at 7 pm, at the Markward
+    Recreation Center. Gardeners also help with work days in spring, summer and fall.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Garden
@@ -52,7 +56,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -66,23 +70,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: If you live in the Center City Residents' Association area, email the garden at srpcg@srpcg.org
+    with your name, address and phone to enter the March plot lottery. To meet gardeners first, volunteer
+    at a seasonal work day.
+  drop_in: true
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Volunteers can join the seasonal work days and the steering committee meetings, and the garden
+    gives a clear email route to a plot. Plots need residence in the Center City Residents' Association
+    area, and most plots go to association members.
+  what_to_expect: A first visit is usually a seasonal work day, which ran from 9 am to noon in 2026, where
+    you help with shared areas and meet gardeners. The site lists new gardener orientation sessions in
+    April. It does not list plot fees or dues, so ask the garden about costs before you apply.
+  first_visit_tips:
+  - Check that you live in the Center City Residents' Association area before you apply for a plot.
+  - Work days in 2026 fell on Saturdays from 9 am to noon, so plan a morning.
+  - The steering committee meets at the Markward Recreation Center, usually on the first Monday at 7 pm,
+    and volunteers are welcome to attend.
+  - Email srpcg@srpcg.org or call the voicemail line at 215-867-9435 before you come.
 contacts:
   website: http://www.srpcg.org/
   email: srpcg@srpcg.org
-  phone: null
+  phone: 215-867-9435
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0
+sign_of_life_url: http://www.srpcg.org/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0
   seen: '2026-10-08'
@@ -91,8 +106,33 @@ sources:
   - locations
   - contacts.website
   - contacts.email
-research_tier: 1
-confidence: medium
+- url: http://www.srpcg.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+- url: http://www.srpcg.org/plots.html
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+- url: http://www.srpcg.org/sc.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_visit_tips
+- url: http://www.srpcg.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

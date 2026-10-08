@@ -5,10 +5,10 @@ leads:
 - irs_990n:271610125
 - irs_bmf:271610125
 ein: '271610125'
-summary: A Jewish community in Philadelphia for people in their 20s and 30s. It runs social events such
-  as caramel apple making, frame drumming, and holiday and Shabbat gatherings.
-what_you_do: Sign up for a calendar event, such as a cooking night or a drumming session, and meet other
-  young adults.
+summary: A Jewish social community for people ages 21 to 40 in Philadelphia. Its gatherings include a
+  monthly game night, Shabbat dinners, brunches, and hands-on sessions such as cooking or frame drumming.
+what_you_do: Pick an event on the calendar, such as game night, a brunch, or a cooking session, and meet
+  other young adults. Some events are free and some have a ticket.
 kind: club
 categories:
 - faith-community
@@ -29,18 +29,18 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 21
+  max_age: 40
   community: []
   faith: jewish
   partisan: false
   support_group: false
 schedule:
-  text: Events through the month. Listed dates include Caramel Apple Making on Thursday, October 15, 2026
-    (6:30 to 8:30 pm) and Frame Drumming on Wednesday, October 21, 2026 (7 to 8:30 pm).
+  text: A monthly Game Night on Wednesday evenings and a monthly Shabbat dinner on Friday evenings, plus
+    other events on the events calendar.
   days:
   - wed
-  - thu
+  - fri
   times:
   - evening
   recurring: true
@@ -67,29 +67,42 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Event prices not listed on the home page. An optional sustainer gift of $12 a month is offered.
+  text: Some events are free and others are ticketed, with a general price and a higher true cost price
+    that helps keep events accessible. An optional sustainer gift of $12 a month is offered. The group
+    is not a membership organization and lists no dues.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: Some events are tagged ADA accessible, and events held in private homes may not be physically
+    accessible. ASL interpreters and live captioning (CART) are provided on request if asked for two weeks
+    ahead at info@tribe12.org. The team will discuss lighting or sound on request. Attendees may bring
+    their own items such as earplugs or fidget tools.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Choose an event on the events calendar and register. Some events are marked space limited.
+  how: Choose a monthly event on the events calendar, such as the Wednesday Game Night, and sign up on
+    its event page. Some events are space limited.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Single events are open to registration on a public calendar, but the page does not say newcomers
-    are especially welcome
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The FAQ says anyone ages 21 to 40 can join a tribe at any time, that tribes are drop-in, and
+    that people who are just exploring are welcome. It also names a contact form to meet staff.
+  what_to_expect: Most calendar entries run about two hours and take place in person, indoors. Some are
+    small, such as the monthly game night at The Board and Brew, which is capped at about 10 people. Some
+    events are free and others are ticketed, and because tribes are drop-in you can come to one event
+    and see how it feels.
+  first_visit_tips:
+  - Check the event page for the exact address, since many calendar entries do not list a venue.
+  - Cancel at least 48 hours ahead for a full refund.
+  - Ask info@tribe12.org at least two weeks ahead if you need an ASL interpreter or live captioning.
+  - Give notice at least 48 hours ahead about food allergies or kosher needs.
 contacts:
   website: https://tribe12.org/
   email: yo@tribe12.org
@@ -99,7 +112,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://tribe12.org/
+sign_of_life_url: https://tribe12.org/experiences/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -123,8 +136,30 @@ sources:
   - cost
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - first_step
+- url: https://tribe12.org/about/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - cost
+  - commitment
+  - requirements
+  - contacts.email
+- url: https://tribe12.org/accessibility/
+  seen: '2026-10-08'
+  fields:
+  - access
+- url: https://tribe12.org/experiences/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

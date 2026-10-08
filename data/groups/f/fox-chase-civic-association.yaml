@@ -6,17 +6,18 @@ leads:
 - irs_990n:421616932
 - irs_bmf:421616932
 ein: '421616932'
-summary: Fox Chase Civic Association is a Registered Community Organization (RCO) in the Central Northeast
-  part of the city. The City asks developers to talk with RCOs about nearby zoning and building plans,
-  so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The neighborhood civic group for Fox Chase. It meets monthly with the Fox Chase Town Watch, reviews
+  zoning and building proposals near the neighborhood, and works with local police and elected officials.
+what_you_do: Neighbors come to the monthly meeting to voice concerns, learn what is new, and meet local
+  police and elected officials. Residents can join as dues-paying members, and neighbors can send questions
+  about zoning notices to the group.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- town_watch
 motives:
 - values
 - social
@@ -39,10 +40,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly meeting on the second Wednesday at 7:30 pm at Loudenslager Post 366, 7976 Oxford Ave,
+    held with the Fox Chase Town Watch. There are no meetings in August or December.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -65,9 +69,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Membership dues are $10 a year. The site lists no fee for attending a meeting.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -81,13 +85,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the second Wednesday meeting at 7:30 pm at Loudenslager Post 366, 7976 Oxford Ave. If you
+    live inside the membership area in the by-laws, you can join as a member for $10 a year.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Neighbors can attend the open monthly meeting, and membership is a small, clear step. The site
+    does not use newcomer language, so it is rated 3.
+  what_to_expect: The monthly meeting is in person at the American Legion post and starts at 7:30 pm,
+    held with the Town Watch. The site says you can voice concerns, learn what is new, and meet local
+    police, state and city representatives. Membership dues are $10 a year and are for residents inside
+    the area set by the by-laws.
+  first_visit_tips:
+  - Check the meeting dates on the home page first, since there are no meetings in August or December.
+  - Watch for orange notices posted outside nearby homes or businesses; they warn of projects that need
+    a zoning variance, and the site explains how to read them.
+  - Confirm the group's email address before you write, since the site lists two different addresses.
+  - Each household can have up to two members.
 contacts:
   website: www.foxchasecivic.org
   email: foxchasecivic@gmail.com
@@ -97,7 +111,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.foxchasecivic.org/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -122,8 +136,31 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.foxchasecivic.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - first_step
+- url: https://www.foxchasecivic.org/membership-information
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - audience
+- url: https://www.foxchasecivic.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.foxchasecivic.org/goals-and-zoning-matters
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
