@@ -1,7 +1,8 @@
 # Research waves still to run, highest priority first.
 #
 # The orchestrator (the launch week session, then the nightly scheduled run) takes the first wave
-# whose status is todo and whose `after` waves are done, checks research/budget.yaml against the
+# whose status is todo and whose `after` waves are done (statuses: todo, running, researched = agents
+# finished but not yet imported, done, held), checks research/budget.yaml against the
 # usage meter, runs it with Haiku agents, imports, checks, publishes, logs, and marks it done.
 #
 # kind: batches = `fyj batches <id> <selector> --size <size>`, one agent per batch file, brief
@@ -35,7 +36,7 @@ waves:
     kind: slices
     brief: tier1
     searches_per_agent: 6
-    status: todo
+    status: running
     slices:
       - agent: mummers-comics-wenches
         text: >
@@ -55,7 +56,7 @@ waves:
     kind: slices
     brief: chapters
     searches_per_agent: 8
-    status: todo
+    status: researched
     slices:
       - agent: p1-service-clubs
         text: Rotary, Lions, Kiwanis, Optimist, Toastmasters, Junior League of Philadelphia, League of Women Voters of Philadelphia, NAACP Philadelphia branch, Habitat for Humanity Philadelphia.
@@ -80,7 +81,7 @@ waves:
     kind: slices
     brief: discover
     searches_per_agent: 10
-    status: todo
+    status: running
     slices:
     - agent: g-sports-teams
       text: 'Family `sports-teams` (Team sports). Tags: soccer, basketball, softball_baseball, kickball_rec_leagues,
