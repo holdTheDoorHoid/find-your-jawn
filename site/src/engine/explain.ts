@@ -13,7 +13,8 @@ import type { NoteKey, PartName, Result, ResultKind, TravelMode } from './types'
 // Explanations (DESIGN section 3): built from the two or three parts that contributed most, in the
 // person's own terms, in plain words. No scores, no mystery.
 
-const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+/** Lower the first letter, but never the word "I". */
+const lower = (s: string) => (/^I(?=[\s'\u2019])/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
 
 function listWords(items: string[]): string {
   if (items.length <= 1) return items[0] ?? '';

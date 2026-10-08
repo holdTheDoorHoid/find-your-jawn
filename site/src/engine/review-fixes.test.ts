@@ -247,3 +247,11 @@ describe('quiz answers that were saved but unused', () => {
     expect(settled.answers.newSince).toBe('years');
   });
 });
+
+describe('sentences that quote what the person picked', () => {
+  it('keep the word I a capital letter', () => {
+    const a = answers({ dial: 'bold', future: ['know_neighbors', 'spoke_up'], scenes: ['scene_pickup_soccer', 'scene_coach_basketball', 'scene_rowing'], motives: { m1: 'social', l1: 'career' }, strangers: 2, newness: 5 });
+    const text = run(a).results.map((r) => r.stretchLine ?? '').join(' ');
+    expect(text).not.toMatch(/\bi (know|spoke|learned|made|helped|have|changed|can|'m)\b/);
+  });
+});
