@@ -1,0 +1,143 @@
+# Research waves still to run, highest priority first.
+#
+# The orchestrator (the launch week session, then the nightly scheduled run) takes the first wave
+# whose status is todo and whose `after` waves are done, checks research/budget.yaml against the
+# usage meter, runs it with Haiku agents, imports, checks, publishes, logs, and marks it done.
+#
+# kind: batches = `fyj batches <id> <selector> --size <size>`, one agent per batch file, brief
+#       research/briefs/<brief>.md
+#       slices  = one agent per slice listed, brief research/briefs/<brief>.md, slice text pasted
+#                 into the agent prompt
+#       script  = a pipeline command, no agents
+# searches_per_agent is a hard cap given to each agent. About 200 WebSearch calls are available per
+# session, so a run never starts a wave whose agents x searches would exceed what is left.
+# max_agents_per_run lets a big batch wave be split across several nightly runs.
+
+waves:
+  - id: w0-city-scripted
+    lane: A
+    kind: script
+    command: fyj city-tier1 && fyj import-research w0-city-scripted
+    status: todo
+    note: Free. Basic listings for City records (RCOs, rec centers, libraries, senior centers, gardens, City volunteer programs).
+
+  - id: w1-tier1-friends
+    lane: A
+    kind: batches
+    brief: tier1
+    selector: --source city_friends,nss_grottos,manual_seeds --exclude-done
+    size: 15
+    searches_per_agent: 3
+    status: todo
+
+  - id: w1-tier1-mummers
+    lane: C
+    kind: slices
+    brief: tier1
+    searches_per_agent: 6
+    status: todo
+    slices:
+      - agent: mummers-comics-wenches
+        text: >
+          Batch: every group from `fyj batches` selector --source mummers whose division is Comic or
+          Wench Brigade (see the lineup page https://philadelphiamummersparade.com/2026-official-parade-lineup/).
+          Start from the parade site and each association's own site (Comic Division, Wench Brigade
+          Association) before searching. Record clubhouse addresses where published.
+      - agent: mummers-fancy-strings
+        text: >
+          Batch: every group from `fyj batches` selector --source mummers whose division is Fancy,
+          Fancy Brigade or String Band. Start from the parade site, the Philadelphia String Band
+          Association and the Fancy Brigade Association sites. Many string bands list clubhouses on
+          South 2nd Street ("Two Street"); note open rehearsals or recruiting where published.
+
+  - id: w2-chapters
+    lane: P
+    kind: slices
+    brief: chapters
+    searches_per_agent: 8
+    status: todo
+    slices:
+      - agent: p1-service-clubs
+        text: Rotary, Lions, Kiwanis, Optimist, Toastmasters, Junior League of Philadelphia, League of Women Voters of Philadelphia, NAACP Philadelphia branch, Habitat for Humanity Philadelphia.
+      - agent: p2-fraternal-veterans
+        text: Elks lodges, Loyal Order of Moose, Masonic lodges and Prince Hall Masons, Knights of Columbus councils, Order Sons and Daughters of Italy lodges, Ancient Order of Hibernians divisions, VFW posts, American Legion posts, AMVETS posts.
+      - agent: p3-black-service-social
+        text: Divine Nine graduate chapters in Philadelphia (Alpha Phi Alpha, Alpha Kappa Alpha, Kappa Alpha Psi, Omega Psi Phi, Delta Sigma Theta, Phi Beta Sigma, Zeta Phi Beta, Sigma Gamma Rho, Iota Phi Theta), Jack and Jill of America Philadelphia chapter, The Links Philadelphia chapters, 100 Black Men of Philadelphia, National Council of Negro Women sections.
+      - agent: p4-youth
+        text: Scouting America units (via the Cradle of Liberty Council), Girl Scouts of Eastern Pennsylvania (Philadelphia service units and volunteer roles), Philadelphia 4-H (Penn State Extension), Big Brothers Big Sisters Independence, Boys and Girls Clubs of Philadelphia, Police Athletic League centers, Little League districts in Philadelphia, youth soccer clubs (EPYSA), CYO sports.
+      - agent: p5-outdoors-nature
+        text: Sierra Club Southeastern Pennsylvania Group, Audubon chapters serving Philadelphia, AMC Delaware Valley Chapter, Trout Unlimited chapters, Eastern Pennsylvania Mushroom Club, Delaware Valley Ornithological Club, Batona Hiking Club, Wissahickon Trails, Philadelphia Canoe Club, Philly Tree Tenders (PHS) groups.
+      - agent: p6-arts-guilds
+        text: Barbershop Harmony Society and Sweet Adelines choruses near Philadelphia, quilting, sewing, weaving and embroidery guilds, Urban Sketchers Philadelphia, NMRA model railroad divisions (Philadelphia area), the Society for Creative Anachronism barony covering Philadelphia, community choirs and orchestras listed by Chorus America or the League of American Orchestras.
+      - agent: p7-sports-bodies
+        text: Road Runners Club of America member clubs in Philadelphia, USA Rugby clubs (men, women, mixed ability), USA Ultimate and the Philadelphia Area Disc Alliance, US Masters Swimming clubs, USA Fencing clubs, table tennis clubs, USA Pickleball places and clubs, Women's Flat Track Derby Association leagues, USA Cycling and local cycling clubs, Schuylkill Navy rowing clubs and learn to row programs, cricket clubs.
+      - agent: p8-disability-deaf-blind
+        text: National Federation of the Blind of Pennsylvania Philadelphia chapter, Hearing Loss Association of America Philadelphia chapter, deaf clubs and Deaf community organizations in Philadelphia, Special Olympics Pennsylvania Philadelphia, adaptive sports (Philadelphia Adaptive Sports, Achilles International Philadelphia, adaptive rowing and climbing), Arc of Philadelphia, disability self advocacy groups.
+
+  # Lane G interest sweeps. Family ids are filled in from data/vocab/interests.yaml once it lands.
+  - id: w3-interests-a
+    lane: G
+    kind: slices
+    brief: discover
+    searches_per_agent: 10
+    status: todo
+    slices: []
+
+  - id: w3-interests-b
+    lane: G
+    kind: slices
+    brief: discover
+    searches_per_agent: 10
+    status: todo
+    after: [w3-interests-a]
+    slices: []
+
+  - id: w3-interests-c
+    lane: G
+    kind: slices
+    brief: discover
+    searches_per_agent: 10
+    status: todo
+    after: [w3-interests-b]
+    slices: []
+
+  - id: w3-interests-d
+    lane: G
+    kind: slices
+    brief: discover
+    searches_per_agent: 10
+    status: todo
+    after: [w3-interests-c]
+    slices: []
+
+  - id: w4-tier1-cultural-fund
+    lane: D
+    kind: batches
+    brief: tier1
+    selector: --source cultural_fund --exclude-done
+    size: 18
+    searches_per_agent: 2
+    max_agents_per_run: 9
+    status: todo
+
+  # Later waves (long tail). Briefs for these are written when the wave is first picked up, from
+  # docs/RESEARCH.md section 3, following the pattern of the briefs above.
+  - {id: w5-platform-leads, lane: E, kind: slices, brief: platform_leads, status: todo, note: "Join Philly list (credit them, leads only) and Meetup topic pages read one at a time, then verify each group from its own page"}
+  - {id: w6-tier2-deep-a, lane: tier2, kind: batches, brief: tier2, status: todo, note: "First visit guides for the most newcomer friendly tier 1 groups, spread across every family and region"}
+  - {id: w7-campuses, lane: B, kind: slices, brief: campuses, status: todo, note: "Temple, Jefferson, Saint Joseph's, La Salle, Holy Family, Chestnut Hill College, Moore, Curtis, Peirce; Drexel and CCP through public pages only (their APIs are blocked by robots)"}
+  - {id: w8-parades-festivals, lane: C, kind: slices, brief: parades, status: todo}
+  - {id: w9-funders, lane: D, kind: slices, brief: funders, status: todo}
+  - {id: w10-districts-1, lane: F, kind: slices, brief: districts, status: todo}
+  - {id: w10-districts-2, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-1]}
+  - {id: w10-districts-3, lane: F, kind: slices, brief: districts, status: todo, after: [w10-districts-2]}
+  - {id: w11-host-venues, lane: N, kind: slices, brief: host_venues, status: todo}
+  - {id: w12-fiscal-sponsors, lane: M, kind: slices, brief: fiscal_sponsors, status: todo}
+  - {id: w13-congregations, lane: R, kind: slices, brief: congregations, status: todo}
+  - {id: w14-community-media, lane: H, kind: slices, brief: media, status: todo}
+  - {id: w15-faith-mutual-aid-immigrant, lane: I, kind: slices, brief: mutual_aid, status: todo}
+  - {id: w16-libraries-rec-schools, lane: J, kind: slices, brief: libraries, status: todo}
+  - {id: w17-coalitions, lane: Q, kind: slices, brief: coalitions, status: todo}
+  - {id: w18-support-groups, lane: U, kind: slices, brief: support, status: todo}
+  - {id: w19-leads-only-followup, lane: K, kind: batches, brief: tier1, status: todo, note: "Check the leads_only names collected by earlier waves"}
+  - {id: w20-tier1-irs-joinable, lane: A, kind: batches, brief: tier1, status: todo, note: "IRS groups in joinable NTEE codes (sports, recreation, arts, environment, animals, youth, community improvement, fraternal, veterans)"}
+  - {id: w21-tier2-deep-b, lane: tier2, kind: batches, brief: tier2, status: todo, after: [w6-tier2-deep-a]}
