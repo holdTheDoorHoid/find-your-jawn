@@ -1,24 +1,35 @@
 id: septa-youth-advisory-council
-name: Septa Youth Advisory Council
+name: SEPTA Youth Advisory Council
 aka: []
 leads:
 - irs_990n:474069303
 - irs_bmf:474069303
 ein: '474069303'
-summary: null
-what_you_do: null
+summary: A nonprofit of young transit riders in Southeastern Pennsylvania. Members give feedback to SEPTA,
+  educate riders, and push for student transit passes on campuses.
+what_you_do: Apply online to join. Members give SEPTA input, table on college campuses, track transit
+  laws and run trainings, such as a UPass training.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- advocacy-rights
+- kids-youth-mentoring
+interests:
+- street_safety_transit
+- youth_leadership
+motives:
+- values
+- career
+formats:
+- team_play
+roles:
+- organize
+crowd:
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
@@ -31,10 +42,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1234 Market St FL 10
+- label: Office
+  address: 1234 Market St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19107'
   lat: null
   lng: null
@@ -58,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Create an account on septayac.org, then complete the application on the Apply page. Questions go
+    to contact@septayac.org.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Members apply online, and selection runs on a rolling basis with earlier applicants first, so
+    the way in needs an application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: septayac.org
-  email: null
+  website: https://septayac.org
+  email: contact@septayac.org
   phone: null
   contact_name: Thomas Pyle
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://septayac.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +103,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://septayac.org/apply/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - contacts
+- url: https://septayac.org/events/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+- url: https://septayac.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

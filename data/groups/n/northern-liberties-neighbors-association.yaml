@@ -6,26 +6,31 @@ leads:
 - city_rco_points:267
 - irs_bmf:232189035
 ein: '232189035'
-summary: Northern Liberties Neighbors Association is a Registered Community Organization (RCO) in the
-  Central part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Neighbors who look after Liberty Lands, the community-owned park, and keep watch on zoning and
+  building plans in Northern Liberties. They also run clean-ups, park music and movie nights, and walk-in
+  office hours.
+what_you_do: Join a committee such as Liberty Lands, Zoning or Education, help at a Sunday garden shift
+  or a neighborhood clean-up, or bring an idea to office hours.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- community_garden
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -39,14 +44,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Community Office Hours on the first and second Saturdays, 10 am to noon, and third Thursdays,
+    5:30 to 7 pm. Garden volunteer mornings at Liberty Lands are listed on Sundays from 9 am to noon.
+  days:
+  - sat
+  - thu
+  - sun
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 700 N. 3rd St. , Philadelphia, Pa 19123
+- label: NLNA Community Center
+  address: 700 N 3rd Street, at the corner of Fairmount
   neighborhood: null
   planning_district: central
   zip: '19123'
@@ -54,19 +65,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 700 N. 3rd St. , Philadelphia, Pa 19123
-  neighborhood: null
-  planning_district: central
-  zip: '19123'
-  lat: 39.96387175635852
-  lng: -75.13980117308583
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no membership dues or meeting fees. Community Center rental costs are not listed.
 commitment: null
 group_size: null
 access:
@@ -81,15 +83,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Stop by Community Office Hours to meet board members and share ideas. Or join a Sunday garden shift
+    at Liberty Lands from 9 am to noon, or a neighborhood clean-up listed on the calendar.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: Office hours, general meetings and committees are open to the public and the calendar gives dates,
+    but the site does not describe how a first-time volunteer is welcomed.
+  what_to_expect: Office hours are a walk-in chance to meet board members and talk about neighborhood
+    ideas. Committee meetings are in the evening at the Community Center; the calendar lists the Liberty
+    Lands and Education committees at 7 to 8 pm, and the Zoning Committee can also be joined on Zoom.
+    The site lists no fee for the garden shifts or clean-ups.
+  first_visit_tips:
+  - Check the calendar before you go, since times and rooms change.
+  - Use the contact form on the website to ask about volunteer projects.
 contacts:
-  website: https://www.Nlna.org
+  website: https://www.nlna.org
   email: larryfreedman@comcast.net
   phone: '2159131939'
   contact_name: Larry Freedman
@@ -97,7 +106,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.nlna.org/calendar
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -123,8 +132,33 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.nlna.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.nlna.org/community-center
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+- url: https://www.nlna.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.nlna.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

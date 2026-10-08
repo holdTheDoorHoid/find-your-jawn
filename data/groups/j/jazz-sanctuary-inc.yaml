@@ -1,22 +1,32 @@
 id: jazz-sanctuary-inc
-name: Jazz Sanctuary Inc
+name: The Jazz Sanctuary
 aka: []
 leads:
 - irs_990n:275382996
 - irs_bmf:275382996
 ein: '275382996'
-summary: null
-what_you_do: null
+summary: A jazz charity serving the Philadelphia region. It holds public concerts at churches and venues
+  and runs Sanctuary Jam and a Jazz Master Class for music students.
+what_you_do: Go to a public concert on the schedule. Music students can join Sanctuary Jam or the Jazz
+  Master Class. The site does not list volunteer roles, so ask the group about volunteering.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- music
+interests:
+- jam_sessions
+- instrument_lessons
+motives:
+- social
+- enhancement
+formats:
+- perform_make_together
+- learn_skill
+roles:
+- create
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Public and charitable concerts are listed by date on the schedule page, which was updated September
+    28, 2026. Listed dates are October 8, October 22 and October 26. Event times are not published.
   days: []
   times: []
   recurring: null
@@ -67,23 +78,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Pick a concert on the schedule page and go, or email music@thejazzsanctuary.com to ask about joining
+    Sanctuary Jam or the Jazz Master Class.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Concerts on the schedule are public, and an email address for the music programs is published.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.thejazzsanctuary.com
-  email: null
+  website: https://www.thejazzsanctuary.com
+  email: music@thejazzsanctuary.com
   phone: null
   contact_name: Alan Segal
-  social: []
+  social:
+  - https://www.facebook.com/pages/The-Jazz-Sanctuary-Inc/260098427361346
+  - https://www.youtube.com/channel/UCcpaxTNemwWrlQrBU59uYeA
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.thejazzsanctuary.com/schedule-of-events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +114,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thejazzsanctuary.com/schedule-of-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://www.thejazzsanctuary.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

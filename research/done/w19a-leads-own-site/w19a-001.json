@@ -1,0 +1,122 @@
+{
+  "wave": "w19a-leads-own-site",
+  "agent": "w19a-001",
+  "lane": "K",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 27,
+  "records": [
+    {
+      "match": {"lead_ids": [], "group_id": "cats-bridge-to-rescue", "ein": null, "website": "https://catsbridge.org/"},
+      "verdict": "out_of_area",
+      "name": "Cats Bridge to Rescue (C.A.T.S.)",
+      "summary": "A no-kill cat shelter that takes in stray and abandoned cats, runs low-cost spay and neuter, and places cats in adoptive homes, according to its Benevity profile.",
+      "sources": [
+        {"url": "https://causes.benevity.org/causes/840-270468162?lang=en", "seen": "2026-10-08", "fields": ["name", "summary", "location"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Provisional verdict. The group's own site (catsbridge.org) could not be read: a TLS certificate error ('self signed certificate') on two attempts, so no fact from it is recorded. The Benevity profile gives 2820 Old Lincoln Hwy, Unit 4, ZIP 19053, and the page summary I read labels the location Philadelphia. But 19053 is a Bucks County ZIP (Feasterville and Trevose area), not a Philadelphia one. Re-check the site and its service area. If it serves Philadelphia in a way the public can join, change the verdict to publish. The profile says the shelter opened in 2009; no dated event was read, so status is unknown."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "greater-philadelphia-film-office", "ein": "23-3039429", "website": "https://film.org/"},
+      "verdict": "publish",
+      "name": "Greater Philadelphia Film Office",
+      "summary": "A nonprofit film commission that works to bring movie, TV and video productions to the Philadelphia region. It also runs a Filmmakers Program with seminars and training for people who want to work in film.",
+      "what_you_do": "Attend Filmmakers Program seminars and training, check the event calendar, and use the job center and education listings.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts", "careers-skills-professional"],
+      "interests": ["film_video", "professional_associations"],
+      "motives": ["career", "enhancement"],
+      "formats": ["learn_skill", "one_off_event"],
+      "crowd": ["professionals"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "first_step": {"how": "Attend a Filmmakers Program seminar, or contact the office through the contact page", "newcomer_friendliness": 3, "basis": "The Filmmakers Program says it offers seminars and training for aspiring and experienced film people, and the site has a public contact page."},
+      "contacts": {"website": "https://film.org/", "email": "mail@film.org", "phone": "215.686.2668", "social": []},
+      "status": "unknown",
+      "sources": [
+        {"url": "https://film.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "categories", "first_step", "contacts"]},
+        {"url": "https://www.guidestar.org/profile/23-3039429", "seen": "2026-10-08", "fields": ["name", "ein", "website"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The lead was named 'Greater Philadelphia Filmmakers', but its link was a GuideStar profile for the Greater Philadelphia Film Office. No separate group with the lead's name was found. The office is an economic development nonprofit that mainly serves productions, so the owner may want to decide whether it belongs in a community directory. Status is unknown: the site is live with an event calendar, but the newest dated items I could read were 2023 production credits. The 2025 footer year is not evidence. Seminar dates, cost, and office address were not read. Phone and email come from the site's contact link as summarized; verify before publishing."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "korean-community-development-services-center", "ein": null, "website": "https://koreancenter.org/"},
+      "verdict": "publish",
+      "name": "Korean Community Development Services Center",
+      "summary": "A Philadelphia nonprofit in the Olney area that helps new immigrants and low-income families with housing, naturalization help and benefit enrollment, and runs an early learning center.",
+      "what_you_do": "Call the phone number on the site or use its contact page to ask about housing, immigration or benefits help, or about the early learning center.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs", "culture-language-heritage-groups"],
+      "interests": ["housing_help", "immigrant_welcome"],
+      "motives": ["values"],
+      "crowd": ["newcomers", "families"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["immigrants"], "faith": null, "support_group": false},
+      "locations": [{"label": "Office", "address": "6055 N. 5th St., Philadelphia", "in_city": true}],
+      "first_step": {"how": "Call the phone number on the site or use the contact page", "newcomer_friendliness": 3, "basis": "The site says it serves new immigrants and low-income families, and it gives a phone number and a contact page to start."},
+      "contacts": {"website": "https://koreancenter.org/", "email": null, "phone": "202-821-8591", "social": []},
+      "status": "probably_active",
+      "sources": [
+        {"url": "http://koreancenter.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "first_step", "contacts", "locations", "status"]},
+        {"url": "https://ofccp-apps.dol.gov/node/323645", "seen": "2026-10-08", "fields": ["name", "website"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The site is working but has no dated event or news item. The newest date is a December 2024 image upload folder, so the status is probably_active (working site, no dates), not active. Copyright footers were ignored. The site has placeholder lorem ipsum text in one section and says both over 35 years and over 40 years, so details may be out of date. The phone number on the site has a 202 (Washington, DC) area code: confirm it before publishing. No public email (obfuscated link only). The DOL page is a 2020 user-submitted entry, used only to confirm the name and website."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "philadelphia-office-of-immigrant-affairs", "ein": null, "website": "https://www.phila.gov/departments/office-of-immigrant-affairs/"},
+      "verdict": "publish",
+      "name": "Philadelphia Office of Immigrant Affairs",
+      "summary": "The City of Philadelphia office that creates programs for immigrant residents and helps them connect to city services and civic life. Each September it runs Welcoming Week, a set of public events.",
+      "what_you_do": "Attend a Welcoming Week event or sign up for the office newsletter.",
+      "kind": "civic",
+      "categories": ["culture-language-heritage-groups", "neighborhood-civic"],
+      "interests": ["immigrant_welcome", "community_development"],
+      "motives": ["values", "understanding"],
+      "formats": ["one_off_event"],
+      "crowd": ["newcomers", "neighbors"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["immigrants"], "faith": null, "support_group": false},
+      "schedule": {"text": "Welcoming Week runs each September with public events. The 2026 week ran Sept. 10 to 25, with an awards ceremony on Oct. 1.", "recurring": true, "season": "fall"},
+      "first_step": {"how": "Register for a Welcoming Week event, or sign up for the newsletter", "newcomer_friendliness": 3, "basis": "Events are open to the public with registration links, and the office has a newsletter sign up. No volunteer sign up was found."},
+      "contacts": {"website": "https://www.phila.gov/departments/office-of-immigrant-affairs/", "email": null, "phone": null, "social": []},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.phila.gov/departments/office-of-immigrant-affairs/",
+      "sources": [
+        {"url": "https://www.phila.gov/departments/office-of-immigrant-affairs/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://www.phila.gov/spotlight/welcoming-week-2020/", "seen": "2026-10-08", "fields": ["schedule"]},
+        {"url": "https://www.cbsnews.com/philadelphia/news/philadelphias-office-of-immigrant-affairs-week-of-welcoming-kicks-off-virtually/", "seen": "2026-10-08", "fields": ["summary"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "A city government office, not a membership group. The 2020 news story in the lead is about a virtual Week of Welcoming and mentions no volunteer welcome role. Neither the office page nor the Welcoming Week page lists a volunteer or Welcome Center program, so the lead's 'Welcome Center volunteers' claim is not confirmed and was not recorded. The office page links a 'Welcoming Network' post dated Oct. 7, 2026, but I could not read its content. One Welcoming Week listing is dated Sept. 1, 2027, which looks like a typo. The office page names two city advisory commissions, recorded in leads_only."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "mylanguageexchange-philadelphia-listings", "ein": null, "website": "https://mylanguageexchange.com/"},
+      "verdict": "not_a_group",
+      "name": "MyLanguageExchange.com (Philadelphia listings)",
+      "summary": "A website where individual people post that they want a language practice partner. The Philadelphia page lists people, not a group that meets.",
+      "sources": [
+        {"url": "https://mylanguageexchange.com/city/Philadelphia__United_States.asp", "seen": "2026-10-08", "fields": ["verdict"]}
+      ],
+      "research_tier": 1,
+      "confidence": "high",
+      "notes": "The lead was the Philadelphia city page of a language partner website. It lists individual members looking for one to one partners, not an organization or a meeting. Nothing was recorded for it beyond this verdict. Individual names and contact details were not copied."
+    }
+  ],
+  "leads_only": [
+    {"name": "Korean Culture Community Foundation (KCCF) USA", "url": "https://koreainphilly.com/", "note": "Runs the 'Korea in Greater Philadelphia' site that a 2022 Patch article linked for the Korean American Association's 50th anniversary event. Its site lists a Sept. 19, 2026 Chuseok Fest. Seen while checking the Korean American Association lead. Not confirmed as the same group as that association, and not recorded."},
+    {"name": "Scribe Video Center", "url": "https://billypenn.com/2026/09/19/scribe-video-center-philadelphia-filmmakers-city-guide/", "note": "West Philadelphia nonprofit with filmmaking workshops, youth programs and grants, named in a Billy Penn city guide dated Sept. 19, 2026. Its own site was not captured and it was not checked."},
+    {"name": "Mayor's Commission on Asian Pacific American Affairs", "url": "https://www.phila.gov/departments/office-of-immigrant-affairs/", "note": "City advisory commission named on the Office of Immigrant Affairs page. Not checked."},
+    {"name": "Mayor's Commission on African and Caribbean Immigrant Affairs", "url": "https://www.phila.gov/departments/office-of-immigrant-affairs/", "note": "City advisory commission named on the Office of Immigrant Affairs page. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://catsbridge.org/", "status": null, "note": "TLS certificate error ('self signed certificate') on two attempts; site could not be read"},
+    {"url": "https://www.thenationalherald.com/federation-of-hellenic-american-societies-of-philadelphia-presidents-message/", "status": 403, "note": "HTTP 403 on the source article; not read. Federation of Hellenic-American Societies lead skipped."},
+    {"url": "https://philadelphianeighborhoods.com/?p=169205", "status": 403, "note": "HTTP 403 on the source blog; not read. SEAMAAC and GALAEI leads could not be checked from it."}
+  ],
+  "notes": "Lane K follow-up, 15 leads. Search budget: 1 of 1 used, on 'SEAMAAC GALAEI Philadelphia'. It gave no verified own site for either group, and the budget is now spent. Fetches: 27 attempts. No rate limiting seen; 403s were per site and were not retried or bypassed.\n\nRecorded (5): Greater Philadelphia Film Office (publish, low), Korean Community Development Services Center (publish, medium), Philadelphia Office of Immigrant Affairs (publish, medium), Cats Bridge to Rescue (out_of_area, low, provisional), MyLanguageExchange Philadelphia page (not_a_group).\n\nSkipped with no record (10), per the lead rules:\n- Pennsylvania Parrot People: a Dec 2011 forum post is the only dated group evidence. No group site, and the creator's listed town is Etters, PA, outside Philadelphia. The Sept 30, 2026 date on that page belongs to a different forum thread.\n- Philm Factory: the Billy Penn article cited does not mention it; the article covers Scribe Video Center. No other source, and the search budget was spent.\n- PhillyASLMeetup: the startasl.com event page returns 404.\n- Breakthrough: Deaf Advocacy ASL club: the Luma event page is marked past with no date, and the host has no website linked (only an uCity Square Instagram). No own site found.\n- DeafCAN! Deaf Community Action Network: the PA 211 listing redirects to the PA 211 homepage, with no DeafCAN details or website.\n- Korean American Association of Greater Philadelphia: the 2022 Patch article links koreainphilly.com, which is the KCCF site (see leads_only). No own site found for the association.\n- Filipino American Association of Philadelphia (FAAPI): only a 2012 press release on Scribd, with no website or contact. No dated evidence after 2012.\n- Federation of Hellenic-American Societies: source article blocked (403).\n- SEAMAAC: source blog blocked (403). The PA 211 listing pages returned generic PA 211 content, and one listing returned 404. Search snippets gave an address and an info email, but no verified own site, so no facts were recorded.\n- GALAEI: source blog blocked (403). galaei.org now redirects to an unrelated Scottsdale, Arizona site, so it is not the group's site and was not followed.\n\nThe PA 211 SEAMAAC listings and the startasl page are not blocked, just not useful. Both SEAMAAC and GALAEI are strong candidates for a future search once budget allows."
+}

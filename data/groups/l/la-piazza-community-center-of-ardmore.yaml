@@ -1,6 +1,7 @@
 id: la-piazza-community-center-of-ardmore
-name: La Piazza Community Center of Ardmore
-aka: []
+name: Common Space Ardmore
+aka:
+- La Piazza Community Center of Ardmore
 leads:
 - irs_990n:823078926
 - irs_bmf:823078926
@@ -31,23 +32,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 313 S 12th Street
+- label: Office (per the group's site)
+  address: 25 Rittenhouse Pl
   neighborhood: null
-  planning_district: central
-  zip: '19107'
+  planning_district: null
+  zip: '19003'
   lat: null
   lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 313 S 12th St
-  neighborhood: null
-  planning_district: central
-  zip: '19107'
-  lat: null
-  lng: null
-  in_city: true
+  in_city: false
   transit: null
 online_ok: null
 cost:
@@ -81,9 +73,9 @@ contacts:
   contact_name: Amy McCann
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.commonspaceardmore.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +91,13 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+- url: https://www.commonspaceardmore.org
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

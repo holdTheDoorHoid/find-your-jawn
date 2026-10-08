@@ -48,7 +48,9 @@ Not "A vibrant community dedicated to..."
 - `dormant`: newest evidence older than 24 months.
 - `defunct`: dissolved, merged or announced closed (verdict `hide`, hidden_reason `defunct`).
 - `unknown`: you could not find evidence either way.
-Copyright footers ("© 2026") are NOT evidence. `last_sign_of_life` is "YYYY-MM" of that evidence;
+Copyright footers ("© 2026") are NOT evidence. **Never move a date to another year:** a page about Welcoming Week 2020 is evidence for 2020
+only. Write the year the page itself gives, and never put this year on a date you did not see written
+with this year. `last_sign_of_life` is "YYYY-MM" of that evidence;
 `sign_of_life_url` is where you saw it.
 
 ## Newcomer friendliness (only if the evidence supports it, else leave it out)

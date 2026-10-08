@@ -1,0 +1,163 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-06",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [
+  {
+   "name": "PAWS (Philadelphia Animal Welfare Society)",
+   "url": "https://phillypaws.org",
+   "note": "Named in a search result about Philadelphia trap-neuter-return work. Not checked. Possibly a useful partner for the Community Cats record."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://ngobase.org/profile/79217",
+   "status": 403,
+   "note": "Third-party directory listing for the Philadelphia Community Cats Council. Server returned 403. Not retried and not read."
+  },
+  {
+   "url": "https://www.phillycats.org",
+   "status": null,
+   "note": "Returned an empty page on two fetches, including a retry with a trailing slash. Not an HTTP error, but the content could not be read."
+  },
+  {
+   "url": "https://www.philadelphia2026.com",
+   "status": null,
+   "note": "Connection refused. Looks like a parked or lapsed domain. Nothing was read."
+  },
+  {
+   "url": "https://www.pvco.org",
+   "status": 307,
+   "note": "Redirects to a domain-for-sale page. Treated as a dead website. The redirect target was not read as group content."
+  },
+  {
+   "url": "https://www.phillystartupleaders.org",
+   "status": null,
+   "note": "Host name does not resolve, with or without the www prefix."
+  }
+ ],
+ "notes": "Batch of 15 IRS groups (lead ids irs_990n and irs_bmf). Verdicts: publish 15 (of which 5 are minimal unknown records to be held back: Community Cats, Dramatists Center, Independence Awards, Soccer 2026, Philly Startup Leaders; and Virtuosi is publish with status dormant). Hide 0, not_a_group 0, duplicate 0, out_of_area 0. Searches used 2 of 2 (hard cap reached). Fetches used 19 of 60. Search budget ran out before Dramatists Center, Independence Awards, Soccer 2026 and Philly Startup Leaders could be searched; their websites were unusable (an email address, a name, a dead domain, a host that does not resolve). Two fetches returned blank pages and one directory returned 403, which is listed under blocked. No rate-limit wave was seen; the failures were isolated DNS, connection and empty-page errors. Personal emails and apartment-style IRS street addresses were not recorded. The Crosstown record needs a human look at the candidate flyer on its meeting notice. The Virtuosi record needs a decision on whether a dormant group stays published.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:770682888",
+     "irs_bmf:770682888"
+    ],
+    "group_id": "philadelphia-community-cats-council",
+    "ein": "770682888",
+    "website": "https://www.phillycats.org"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Community Cats Council",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tier 1 check could not confirm what this group does. The website on the IRS filing (www.phillycats.org) returned an empty page on two fetches. A third-party directory listing that the search surfaced returned HTTP 403 when opened, so it was not read. One search gave only third-party listings and no official site or dated news. Needs a retry of the site or a human check. No summary, categories or interests were written, so this record should be held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232756989",
+     "irs_bmf:232756989"
+    ],
+    "group_id": "philadelphia-dramatists-center",
+    "ein": "232756989"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Dramatists Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tier 1 check not finished. The website on the IRS filing is an email address, not a web page, so it was not recorded. That address is not clearly the group's own, so it was not recorded as the group's email either. The IRS street address is an apartment number and was not recorded. No search was left in this run, because both searches went to Community Cats and the Virtuosi orchestra. The group needs a search or a second look before it can be written up. No summary was written, so this record should be held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821834514",
+     "irs_bmf:821834514"
+    ],
+    "group_id": "philadelphia-independence-awards",
+    "ein": "821834514"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Independence Awards",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tier 1 check not finished. The website field on the IRS filing holds a name, not a web address, so there was nothing to fetch. No search was left in this run. The IRS street address is an apartment and was not recorded. The name suggests an awards program, which is not confirmed. No summary was written, so this record should be held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852780565",
+     "irs_bmf:852780565"
+    ],
+    "group_id": "philadelphia-soccer-2026",
+    "ein": "852780565",
+    "website": "https://www.philadelphia2026.com"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Soccer 2026",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tier 1 check not finished. The website on the IRS filing refused the connection, which looks like a parked or lapsed domain, so nothing was read. No search was left in this run. The name points to 2026 soccer, possibly a tournament or host effort that may have ended. Not verified. No summary was written, so this record should be held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:900452647",
+     "irs_bmf:900452647"
+    ],
+    "group_id": "philly-startup-leaders-inc",
+    "ein": "900452647",
+    "website": "https://www.phillystartupleaders.org"
+   },
+   "verdict": "publish",
+   "name": "Philly Startup Leaders",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tier 1 check not finished. The website on the IRS filing does not resolve, with or without the www prefix, so nothing was read. No search was left in this run. The name suggests a startup or entrepreneur group, which would be a business-facing program. Not confirmed. No summary was written, so this record should be held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

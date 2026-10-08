@@ -1,0 +1,186 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-05",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 16,
+ "leads_only": [
+  {
+   "name": "Pen & Pencil Club",
+   "url": "https://pandpfoundation.wixsite.com/home",
+   "note": "Named on the P&P Foundation site as the building the foundation runs from. Its own site was not found or checked."
+  },
+  {
+   "name": "Settlement Music School (Germantown branch)",
+   "url": "https://njchamberorchestra.org/",
+   "note": "Named on the New Jersey Chamber Orchestra site as its concert venue. The URL is the page that names it; the school's own site was not found or checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.phillyabj.org",
+   "status": 301,
+   "note": "Redirects to bola16ikan.com, a domain unrelated to the chapter. Not followed."
+  },
+  {
+   "url": "https://phillyabj.org",
+   "status": 301,
+   "note": "Same redirect to bola16ikan.com. Not followed."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, both on IRS groups whose website field was not a web address. Newfound RiseUp Fund: no page found. Park House Guides: a visitor directory listing and a mention of a museum volunteer program; the museum homepage did not mention the program. Fetches: 16. Olde English Dart League: oedl.net redirects to a placeholder site (testing.oedl.org), which was read as the group's own site. Philadelphia Association of Black Journalists: phillyabj.org redirects to an unrelated domain; not followed (see blocked). No rate limiting seen. Four publish records have no summary and will be held back until someone reads the page in a browser: north-philly-lady-rams, olde-english-dart-league-of-philadelphia, park-house-guides-at-the-philadelphia-museum-of-art, philadelphia-association-of-black-journalists. Decisions to check: P&P Foundation (private foundation rule), New Jersey Chamber Orchestra (community_band used as the closest tag for a professional orchestra), Philadelphia Area Concierge Association (holiday date weekday conflicts with the year, so status unknown), One River Alliance (published on the public festival alone). Out of area: Norah Anena Foundation (programs in Uganda), Pennsylvania Wrestling Club (practices in Sewell, NJ). Hidden as private: Newfound RiseUp Fund. The search budget is fully used; no searches remain for follow-ups.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:854284101",
+     "irs_bmf:854284101"
+    ],
+    "group_id": "newfound-riseup-fund",
+    "ein": "854284101"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Newfound RiseUp Fund",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field reads 'Newfound RiseUp Fund', which is a name, not a web address, so it was treated as missing. One search on the name found no page for this fund. It appears to be a fund with no public way in, so it is hidden as private. The search hits were other Philadelphia programs (Rise Up Philly at Jefferson, the 1Philadelphia Incline Fund), which are not this group. Change to publish if a public page for this fund turns up. IRS address: 1435 Walnut St, Suite 500, Philadelphia 19102.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:392333997",
+     "irs_bmf:392333997"
+    ],
+    "group_id": "north-philly-lady-rams",
+    "ein": "392333997",
+    "website": "https://ladyrams.my.canva.site/"
+   },
+   "verdict": "publish",
+   "name": "North Philly Lady Rams",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://ladyrams.my.canva.site/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The team's Canva site loaded only its name in the check, with no description, schedule, dates or contact details, so no summary is written. Without a summary, kind and categories this record is held back from the site until someone reads the page in a browser. The batch link carried tracking parameters; the clean address is recorded. Whether this is a women's, youth or adult team is not established. IRS address: 1500 Chestnut St, Suite 2, PMB 1026, Philadelphia 19102.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232755731",
+     "irs_bmf:232755731"
+    ],
+    "group_id": "olde-english-dart-league-of-philadelphia",
+    "ein": "232755731",
+    "website": "https://www.oedl.net"
+   },
+   "verdict": "publish",
+   "name": "Olde English Dart League of Philadelphia",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.oedl.net"
+   },
+   "sources": [
+    {
+     "url": "https://testing.oedl.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "www.oedl.net redirects to a New Site Coming Soon placeholder (testing.oedl.org). The placeholder names no area, join process, night, address or fees, and has no dated item; the only date is an image upload folder. It links to a DartConnect league page, a stats page, a Google Drive folder and a Facebook page, none of which were read. The batch contact name is a bar name, so the league may meet there, but that is not confirmed. Held back from the site until the current league page or a contact is confirmed. IRS address: 611 S 3rd St, Philadelphia 19147.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800790131",
+     "irs_bmf:800790131"
+    ],
+    "group_id": "park-house-guides-at-the-philadelphia-museum-of-art",
+    "ein": "800790131"
+   },
+   "verdict": "publish",
+   "name": "Park House Guides (Philadelphia Museum of Art)",
+   "status": "unknown",
+   "contacts": {
+    "phone": "215-684-7926"
+   },
+   "sources": [
+    {
+     "url": "https://explorepahistory.com/attraction.php%3Fid=1-B-701.html",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.philamuseum.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field reads 'phila', which is not a web address, so it was treated as missing. One search found a visitor directory listing (PO Box 7646, Philadelphia 19101; phone 215-684-7926) that describes guided tours of seven restored 18th-century Park houses by museum-trained guides. The same search mentioned a museum volunteer listing for a Park and House Guide Program, but that listing was not read at its source. The museum homepage checked did not mention the program. No dated evidence found, so status is unknown. Held back from the site until someone confirms on philamuseum.org that the program is current and how volunteers join. The phone number comes from the directory, not the museum.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232094500",
+     "irs_bmf:232094500"
+    ],
+    "group_id": "philadelphia-association-of-black-journalists",
+    "ein": "232094500"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Association of Black Journalists",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Both www.phillyabj.org and phillyabj.org return a 301 redirect to bola16ikan.com, a domain that does not match the chapter's name. The redirect was not followed because it is not the group's own site, and the batch website is not recorded here for that reason. No current activity was found. The NABJ Philadelphia chapter page says the chapter formed in 2023 after this group left the national NABJ; that is not evidence of current status. Held back from the site until a real page or contact is confirmed. IRS address: 30 S 15th Street, Philadelphia 19102.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

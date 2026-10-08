@@ -4,22 +4,32 @@ aka: []
 leads:
 - irs_bmf:232303766
 ein: '232303766'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit in the Olney area that helps new immigrants and low-income families
+  with housing, naturalization help and benefit enrollment, and runs an early learning center.
+what_you_do: Call the phone number on the site or use its contact page to ask about housing, immigration
+  or benefits help, or about the early learning center.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- hunger-housing-basic-needs
+- culture-language-heritage-groups
+interests:
+- housing_help
+- immigrant_welcome
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- newcomers
+- families
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - immigrants
   faith: null
   partisan: false
   support_group: false
@@ -30,11 +40,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 6055 N 5th St
+- label: Office
+  address: 6055 N. 5th St., Philadelphia
   neighborhood: null
-  planning_district: upper_north
-  zip: '19120'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -57,23 +67,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call the phone number on the site or use the contact page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site says it serves new immigrants and low-income families, and it gives a phone number and
+    a contact page to start.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://koreancenter.org/
   email: null
-  phone: null
+  phone: 202-821-8591
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://koreancenter.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +92,23 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://koreancenter.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+  - locations
+  - status
+- url: https://ofccp-apps.dol.gov/node/323645
+  seen: '2026-10-08'
+  fields:
+  - name
+  - website
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

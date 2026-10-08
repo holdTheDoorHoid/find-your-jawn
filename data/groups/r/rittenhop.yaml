@@ -5,18 +5,27 @@ leads:
 - irs_990n:932809180
 - irs_bmf:932809180
 ein: '932809180'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: Free outdoor swing dancing every Sunday afternoon in Rittenhouse Square, with jam sessions, jazz
+  events and a holiday party.
+what_you_do: Come dance the Sunday swing, or bring a horn to a jam session. The group also runs jazz events
+  and a jazz crawl.
+kind: program
+categories:
+- theater-dance-performance
+- music
+interests:
+- social_dance
+- jam_sessions
+motives:
+- social
+formats:
+- side_by_side
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +34,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Sundays, 1 to 3:30 pm, rain or shine. Jam sessions and special dates are posted on the site, and
+    weather or venue changes go out on Discord.
+  days:
+  - sun
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 1310 S 9th St
+- label: Rittenhouse Square (usually the southwest corner, by the bench with the goat statue)
+  address: 1800 Walnut St
   neighborhood: null
-  planning_district: central
-  zip: '19147'
+  planning_district: null
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free. The site also takes donations to pay live bands.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +70,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Go to Rittenhouse Square on a Sunday between 1 and 3:30 pm, look for the bench with the goat statue
+    in the southwest corner, and join in.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Free and open to anyone who shows up. The site does not say whether lessons or dance experience
+    are needed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.rittenhop.org
+  website: https://www.rittenhop.org
   email: null
   phone: null
   contact_name: Christian Muniz
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.rittenhop.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +104,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.rittenhop.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

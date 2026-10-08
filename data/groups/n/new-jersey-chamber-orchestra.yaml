@@ -5,18 +5,24 @@ leads:
 - irs_990n:990966723
 - irs_bmf:990966723
 ein: '990966723'
-summary: null
-what_you_do: null
+summary: A professional nonprofit orchestra based in New Jersey that also plays concerts in Philadelphia,
+  including at the Settlement Music School's Germantown branch. It also does school outreach.
+what_you_do: Come to a concert, buying a ticket through the site, or give to the orchestra. The site does
+  not describe auditions or other ways to play with the group.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- enhancement
+formats:
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +31,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Concerts are listed by date on the website. The latest upcoming one listed was a Saturday evening
+    concert at 8 pm on March 14, 2026.
+  days:
+  - sat
+  times:
+  - evening
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 805 S Warnock St
+- label: 'Concert venue: Settlement Music School Germantown Branch'
+  address: 6128 Germantown Ave
   neighborhood: null
-  planning_district: central
-  zip: '19147'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 805 South Warnock Street
-  neighborhood: null
-  planning_district: central
-  zip: '19147'
+  planning_district: null
+  zip: '19144'
   lat: null
   lng: null
   in_city: true
@@ -52,8 +52,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Ticket prices not listed on the pages read
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,7 +67,7 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Buy a ticket for the next concert through the link on njchamberorchestra.org
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -76,14 +76,14 @@ first_step:
   first_visit_tips: []
 contacts:
   website: https://njchamberorchestra.org/
-  email: null
-  phone: null
+  email: contact@njchamberorchestra.org
+  phone: +1 856-259-3890
   contact_name: Thomas Hong
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://njchamberorchestra.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +100,17 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://njchamberorchestra.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - cost
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

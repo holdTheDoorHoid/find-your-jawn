@@ -6,11 +6,11 @@ leads:
 - city_rco:296
 - city_rco_points:296
 ein: null
-summary: A community organization named by the City as a Neighborhood Advisory Committee, Philadelphia
-  Chinatown Development Corp. connects neighbors in the Central part of the city with City services and
-  a say in local priorities. It is also a registered community organization, so developers are asked to
-  talk with it about nearby zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: The community development group for Chinatown. It builds affordable housing, offers housing counseling
+  and help getting benefits, runs the Crane Community Center, and hosts events such as the Night Market.
+  The City also names it a Neighborhood Advisory Committee, which links residents to City programs.
+what_you_do: Volunteer at neighborhood events, join or use the programs at Crane Community Center, or
+  ask the Neighborhood Advisory Committee about City help with housing, energy bills, jobs and youth programs.
 kind: civic
 categories:
 - neighborhood-civic
@@ -26,8 +26,10 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
+- seniors
 bridging: null
 audience:
   open_to: public
@@ -39,10 +41,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Senior morning sports at Crane Community Center on Mondays, Wednesdays and Fridays, 10:30 am to
+    12:30 pm, for people 65 and older.
+  days:
+  - mon
+  - wed
+  - fri
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -52,16 +59,6 @@ locations:
   zip: '19107'
   lat: 39.959556501044624
   lng: -75.1554825901206
-  in_city: true
-  transit: null
-- label: Meeting place
-  address: 'Microsoft Teams Link, Meeting ID: 248 106 323 606 4, Passcode: 4ak3Px32, , , Otherwise: 301-305
-    North 9th Street, Philadelphia, PA 19107 or 1001 Vine Street, Philadelphia, PA 19107'
-  neighborhood: null
-  planning_district: central
-  zip: '19107'
-  lat: null
-  lng: null
   in_city: true
   transit: null
 - label: Contact address (City list)
@@ -75,8 +72,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Crane Community Center membership is $80 a year and gives 50 percent off community sessions. Senior
+    morning sports cost $3 a session for people 65 and older, with no membership needed.
 commitment: null
 group_size: null
 access:
@@ -91,23 +89,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the PCDC newsletter and say you want to volunteer, or email info@chinatown-pcdc.org.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The Get Involved page says volunteer requests go out to the newsletter list and gives an email
+    and a phone line. Senior sports are open to anyone 65 and older for a small fee.
+  what_to_expect: Volunteer jobs are tied to PCDC events and are mostly one time. Senior morning sports
+    run three mornings a week at Crane Community Center for $3 a session.
+  first_visit_tips:
+  - Call 215-922-6156 before you come, since the pages checked do not list office hours.
+  - Check the events page for dates, because at least one summer event moved to a new day.
+  - The PCDC office is at 301-305 North 9th Street. The Crane Community Center street address is not on
+    the pages checked.
 contacts:
-  website: chinatown-pcdc.org
+  website: https://chinatown-pcdc.org
   email: jchin@chinatown-pcdc.org
-  phone: 215-922-2156
+  phone: 215-922-6156
   contact_name: John Chin
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+sign_of_life_url: https://chinatown-pcdc.org/save-the-date-for-night-market-october-8-2026/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -135,8 +139,38 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://chinatown-pcdc.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - status
+- url: https://chinatown-pcdc.org/crane-community-center-story/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - schedule
+  - first_step
+- url: https://chinatown-pcdc.org/news-and-events/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://chinatown-pcdc.org/category/pcdc-latest-stories/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://chinatown-pcdc.org/what-we-do/neighborhood-advisory-committee/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

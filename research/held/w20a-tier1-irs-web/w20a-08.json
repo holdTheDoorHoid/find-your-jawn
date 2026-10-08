@@ -1,0 +1,88 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-08",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 30,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.theatrexp.org",
+   "status": null,
+   "note": "certificate expired on the apex, www and /about pages, so the site could not be read"
+  },
+  {
+   "url": "https://theatrephiladelphia.org/whats-on-stage/theatre-companies/theatrexpphiladelphia-inc",
+   "status": 403,
+   "note": "directory listing for TheatreXP refused the fetch"
+  },
+  {
+   "url": "https://www.unitedweheal.com",
+   "status": 302,
+   "note": "socket closed on two tries, then redirects to a domain sale page; the group's own site appears gone"
+  },
+  {
+   "url": "https://www.pa4wnlab.org/get-involved",
+   "status": 404,
+   "note": "Get Involved page not found"
+  }
+ ],
+ "notes": "All 15 batch groups were attempted. Searches: 2 of 2 used, both on groups with unusable websites (US-Ghana Chamber of Commerce, TheatreXP). Fetches: about 30 of 60 used. Verdicts: 10 publish (2 of them minimal, TheatreXP and United We Heal, which have no summary or sources and will be held back), 4 hide (3 private foundations or trusts and 1 PA4WN Lab, a foundation with no public way in), 1 out_of_area (The Rescue Express). Search budget ran out before United We Heal could be searched by name. Dropped rather than listed as leads: the four 2026 grantees named on sprucefoundation.org (no URLs captured, none guessed). The Krimson Foundation page returned only a stub. The Evoluer House is dormant on dated evidence only, although its programs page is current-looking, so it needs a human check. No record was made from a page I could not read, and no URL was guessed except the corrected chamber domain, which redirected to the chamber's own site.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:883040470",
+     "irs_bmf:883040470"
+    ],
+    "group_id": "theatrexpphiladelphia-inc",
+    "ein": "883040470",
+    "website": "https://theatrexp.org"
+   },
+   "verdict": "publish",
+   "name": "TheatreXP Philadelphia",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://theatrexp.org"
+   },
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not read the group's site. https://theatrexp.org, https://www.theatrexp.org and its /about page all return an expired certificate. The Theatre Philadelphia directory listing for the group returned 403 when read. One search snippet (not a page read) described a Philadelphia nonprofit theatre company formed in 2010 to develop original plays, and gave theatrexp.org as its site. No dated activity was confirmed, so status is unknown. What a visitor can do (attend, take a class, volunteer) is not established. Retry later with the site or the directory page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:991061251",
+     "irs_bmf:991061251"
+    ],
+    "group_id": "united-we-heal-film-festival-inc",
+    "ein": "991061251",
+    "website": "https://www.unitedweheal.com"
+   },
+   "verdict": "publish",
+   "name": "United We Heal Film Festival",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.unitedweheal.com"
+   },
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website https://www.unitedweheal.com failed to load on two tries (socket closed), and on a later try it redirected to a domain sale page, so the group's own site appears to be gone. Both searches were used up on groups with unusable sites, so no other source was found. Nothing about events, dates or how to take part is established. A later agent should search for the festival by name. This record is intentionally incomplete and will be held back until someone can confirm it.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

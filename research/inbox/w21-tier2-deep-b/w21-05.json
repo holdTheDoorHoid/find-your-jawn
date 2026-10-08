@@ -1,0 +1,385 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-05",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 34,
+  "records": [
+    {
+      "match": {"lead_ids": ["city_rco:455"], "group_id": "rivers-edge-community-association", "ein": null, "website": "https://www.recaphilly.com"},
+      "verdict": "publish",
+      "name": "River's Edge Community Association",
+      "summary": "One of the neighborhood groups the City has registered to review nearby zoning and building proposals in the Central part of the city. Neighbors can follow what is planned and speak up.",
+      "what_you_do": "Neighbors come together to review nearby building and zoning proposals and share the group's view with the City and developers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Meeting place (City list)", "address": "Pier 3 Condominium Association (Member or RECA), 3 N Christopher Columbus Blvd, Philadelphia, PA 19106", "zip": "19106", "planning_district": "central", "lat": 39.95349512376859, "lng": -75.13969418726377, "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call or email the contact listed with the City to ask where and when the next zoning meeting is held."
+      },
+      "contacts": {"website": "www.recaphilly.com", "email": "john@solareamerica.com", "phone": "215-888-6755", "contact_name": "John Scorsone"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Not a tier 2 pass. Both www.recaphilly.com and recaphilly.com returned a TLS self-signed certificate error, so the site was not read and nothing was bypassed. Tier 1 values carried over unchanged, with research_tier left at 1. A web search found no RECA page or meeting notice. The City list gives a condominium association building (Pier 3) as the meeting place. Check whether RECA is an open neighborhood group or a building association, because condo associations are out of scope. Publish kept from tier 1 until that is checked."
+    },
+    {
+      "match": {"lead_ids": ["city_gardens:13"], "group_id": "schuylkill-river-park-community-garden", "ein": null, "website": "http://www.srpcg.org/"},
+      "verdict": "publish",
+      "name": "Schuylkill River Park Community Garden",
+      "summary": "Neighbors who garden side by side near 25th and Spruce, with about 70 plots, a shared flower border by the park, and some of the harvest given to local food programs.",
+      "what_you_do": "Lease a plot for a year at a time, for up to six years, and grow plants of your choice. Gardeners attend three work days each season and help care for the shared flower border along the park.",
+      "kind": "garden",
+      "categories": ["gardening-greening"],
+      "interests": ["community_garden"],
+      "motives": ["values", "social", "enhancement"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "residents", "support_group": false},
+      "schedule": {
+        "text": "The steering committee usually meets on the first Monday of the month at 7 pm, at the Markward Recreation Center. Gardeners also help with work days in spring, summer and fall.",
+        "days": ["mon"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Garden", "address": "300 S 25th St", "zip": "19103", "planning_district": "central", "lat": 39.94938038812712, "lng": -75.18153932261511, "in_city": true}
+      ],
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "If you live in the Center City Residents' Association area, email the garden at srpcg@srpcg.org with your name, address and phone to enter the March plot lottery. To meet gardeners first, volunteer at a seasonal work day.",
+        "drop_in": true,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Volunteers can join the seasonal work days and the steering committee meetings, and the garden gives a clear email route to a plot. Plots need residence in the Center City Residents' Association area, and most plots go to association members.",
+        "what_to_expect": "A first visit is usually a seasonal work day, which ran from 9 am to noon in 2026, where you help with shared areas and meet gardeners. The site lists new gardener orientation sessions in April. It does not list plot fees or dues, so ask the garden about costs before you apply.",
+        "first_visit_tips": [
+          "Check that you live in the Center City Residents' Association area before you apply for a plot.",
+          "Work days in 2026 fell on Saturdays from 9 am to noon, so plan a morning.",
+          "The steering committee meets at the Markward Recreation Center, usually on the first Monday at 7 pm, and volunteers are welcome to attend.",
+          "Email srpcg@srpcg.org or call the voicemail line at 215-867-9435 before you come."
+        ]
+      },
+      "contacts": {"website": "http://www.srpcg.org/", "email": "srpcg@srpcg.org", "phone": "215-867-9435"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.srpcg.org/",
+      "sources": [
+        {"url": "http://www.srpcg.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "first_step", "what_to_expect", "first_visit_tips", "status", "last_sign_of_life"]},
+        {"url": "http://www.srpcg.org/plots.html", "seen": "2026-10-08", "fields": ["audience", "first_step"]},
+        {"url": "http://www.srpcg.org/sc.html", "seen": "2026-10-08", "fields": ["schedule", "first_visit_tips"]},
+        {"url": "http://www.srpcg.org/contact.html", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tier 1 had the audience open to the public. The plots page says gardeners must live in the Center City Residents' Association area, so open_to is now residents. Plot fees and dues are in a PDF that the steering committee page links, and that PDF was not read. The contact page also lists a waiting list address (srpcginfo@srpcg.org), but the plots page routes waiting list questions to the association, so it is not listed here. Whether neighbors who are not gardeners may attend steering committee meetings is not stated; current gardeners may attend as observers."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:320", "city_rco_points:320", "irs_bmf:236446186"], "group_id": "society-hill-civic-association", "ein": "236446186", "website": "https://societyhillcivic.org"},
+      "verdict": "publish",
+      "name": "Society Hill Civic Association",
+      "summary": "A volunteer group that works to keep Society Hill clean, safe and historically intact. It speaks up on zoning and development, runs neighborhood clean-up and tree programs, and keeps residents informed with a weekly update and a bi-monthly paper.",
+      "what_you_do": "Members follow zoning and development plans and attend the association's meetings. Neighbors can volunteer on committees. Clean and Beautiful organizes spring and fall clean-up days and tree and sidewalk subsidies, and Safe and Sound handles traffic, trash and crime concerns.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development", "clean_blocks"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Board meetings are held monthly in the evening, and community meetings are held quarterly at Pennsylvania Hospital's Zubrow Auditorium at 800 Spruce Street. Some board meetings are held at the Physick House instead.",
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Community meetings", "address": "Pennsylvania Hospital (Zubrow Auditorium), 800 Spruce Street, Philadelphia, PA 19107", "zip": "19107", "planning_district": "central", "in_city": true},
+        {"label": "Mailing address (City list)", "address": "PO Box 63503, Philadelphia, PA 19147", "zip": "19147", "planning_district": "central", "lat": 39.94371865609763, "lng": -75.14705651003774, "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "Yearly membership dues run from $40 for seniors or students and $50 for a basic household, up to $1,000 at the top giving level."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email info@societyhillcivic.org to ask about the next community meeting or to be matched with a committee chair, or send a message through the contact form on the site.",
+        "newcomer_friendliness": 2,
+        "basis": "The site does not say whether non-members can attend meetings. Its clearest ways in are an email to the association or a yearly membership.",
+        "what_to_expect": "Community meetings are held in the evening at Pennsylvania Hospital's Zubrow Auditorium, and board meetings are held in the evening as well. The site does not say whether non-members can attend, so ask first. Committees cover zoning, safety, clean-up and membership work, and the association will refer a volunteer to a committee chair.",
+        "first_visit_tips": [
+          "Email the association before you come to ask whether non-members can attend.",
+          "Check the calendar before a board meeting, since some are held at the Physick House.",
+          "Membership dues are paid yearly, so ask which level fits before you join."
+        ]
+      },
+      "contacts": {
+        "website": "https://societyhillcivic.org",
+        "email": "info@societyhillcivic.org",
+        "phone": "215-629-1288",
+        "contact_name": "Robert Kramer (president)",
+        "social": ["https://www.facebook.com/societyhillcivic", "https://www.instagram.com/societyhillcivic/"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://societyhillcivic.org/whats-happening/calendar/",
+      "sources": [
+        {"url": "https://societyhillcivic.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do"]},
+        {"url": "https://societyhillcivic.org/whats-happening/calendar/", "seen": "2026-10-08", "fields": ["schedule", "status", "last_sign_of_life", "locations"]},
+        {"url": "https://societyhillcivic.org/join/", "seen": "2026-10-08", "fields": ["cost", "first_step"]},
+        {"url": "https://societyhillcivic.org/what-we-do/shca-committees/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "first_visit_tips"]},
+        {"url": "https://societyhillcivic.org/contact-shca/", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Contacts replaced with the group's own published details from its contact page (phone 215-629-1288, info@ address, president Robert Kramer). The City list values (Paul Boni, pboni@bonilaw.com, 215-356-2583) are no longer on the group's site. Whether non-members can attend meetings is not stated, so open_to stays public from tier 1 and newcomer_friendliness is 2. The Physick House, used for some board meetings, has no address recorded here. Clean-up interest added because of the Clean and Beautiful committee."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:331"], "group_id": "south-street-headhouse-district", "ein": null, "website": "https://southstreet.com/"},
+      "verdict": "publish",
+      "name": "South Street Headhouse District",
+      "summary": "The organization that promotes the shops and businesses of the South Street district. It runs public events such as trivia, yoga and gallery nights, and supports painted electrical boxes and banner art.",
+      "what_you_do": "Attend a public event on the district calendar, sign up for its newsletter, or submit a business event or apply to vend. The site does not list members, open meetings or volunteer roles.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Weekly events repeat on most weeknights: quiz and trivia nights, Tuesday evening yoga at 6 pm, and Wednesday bingo at 7 pm, mostly at local shops, bars and cafes.",
+        "days": ["mon", "tue", "wed", "thu"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Address on City list", "address": "407 South St, Philadelphia, PA 19147", "zip": "19147", "planning_district": "central", "in_city": true},
+        {"label": "Mailing address (City list)", "address": "PO Box 63675, Philadelphia, PA 19147", "zip": "19147", "planning_district": "central", "lat": 39.941168311830275, "lng": -75.15153346378487, "in_city": true}
+      ],
+      "commitment": "drop_in",
+      "access": {"notes": "Nearest SEPTA: 2nd Street Station on the L (Market-Frankford Line) at 2nd and Market, about a 10 to 15 minute walk to South Street. Route 57 runs along 3rd and 4th Streets."},
+      "first_step": {
+        "how": "Go to a public event on the district calendar, such as Tuesday evening yoga at 6 pm, or sign up for the district newsletter.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The events calendar lists public events with times and venues, and the site does not ask for membership or an application to attend them.",
+        "what_to_expect": "A first visit is usually a public event at a local shop, bar or gallery, such as a yoga class or a trivia night. Most event listings show a time and place but not a price, so check the event page before you go. The site lists no open meetings, members or volunteer shifts for the organization itself.",
+        "first_visit_tips": [
+          "Check each event page for a price, since most listings do not show one.",
+          "Take the L to 2nd Street Station and walk about 10 to 15 minutes, or ride Route 57 along 3rd or 4th Street.",
+          "Many garages and lots nearby charge by the hour, so transit may be easier."
+        ]
+      },
+      "contacts": {"website": "https://southstreet.com/", "email": "info@southstreet.com", "phone": "215-413-3713", "contact_name": "Eleanor Ingersoll"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://southstreet.com/events-calendar/",
+      "sources": [
+        {"url": "https://southstreet.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts"]},
+        {"url": "https://southstreet.com/events-calendar/", "seen": "2026-10-08", "fields": ["schedule", "first_step", "first_visit_tips", "status", "last_sign_of_life"]},
+        {"url": "https://southstreet.com/transportation/", "seen": "2026-10-08", "fields": ["access", "first_visit_tips"]},
+        {"url": "https://southstreet.com/purpose/", "seen": "2026-10-08", "fields": ["summary", "what_you_do"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Tier 1 summary and what_you_do described RCO zoning review, which the group's own pages never mention, so both were rewritten. The purpose page calls the group a locally directed municipal authority set up in 1993 to add to City services such as public safety and sanitation. It names no members, meetings or volunteer roles, so the public way in is its events. Kept as publish because it runs public events and public art, but the owner may decide whether a city-chartered district authority belongs in a groups directory. Roles were removed because the tier 1 defaults (organize, figure out) do not describe this group. Tier 1 interests kept, though civic_association is a loose fit."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:340", "city_rco_points:340"], "group_id": "spring-garden-civic-association", "ein": null, "website": "http://www.sgcaphilly.com"},
+      "verdict": "publish",
+      "name": "Spring Garden Civic Association",
+      "summary": "A nonprofit that has served the Spring Garden neighborhood for nearly 60 years. It hosts community meetings and social events, follows zoning and history matters, and runs a Block Captains network that organizes a monthly neighborhood clean-up.",
+      "what_you_do": "Become a Block Captain to keep neighbors informed and invite them to the monthly Sweep Up Saturday clean-up, or join the association as a member. Members get the directory, newsletters, zoning information and local business discounts.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development", "block_captain", "clean_blocks"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "conversation", "lead_organize"],
+      "roles": ["hands_on", "organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Sweep Up Saturday clean-up on the first Saturday of each month, 10 am to noon, followed by a social gathering at Fairmount Tavern.",
+        "days": ["sat"],
+        "times": ["morning"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Office", "address": "601 N. 17th Street, 1st Floor Storefront, Philadelphia, PA 19130", "zip": "19130", "planning_district": "central", "lat": 39.96550327663597, "lng": -75.16889520772791, "in_city": true},
+        {"label": "Meeting place (City list)", "address": "St. Andrew Church Hall, SW corner of 19th and North Streets, Philadelphia, PA 19130", "zip": "19130", "planning_district": "central", "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "Yearly membership: $25 for an individual, $15 for a senior or limited-income member, $40 for a family of up to four, and $50 for a business. Some plans renew automatically."},
+      "commitment": "monthly",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to the monthly Sweep Up Saturday clean-up on the first Saturday, 10 am to noon, or use the Join link on the Block Captains page to sign up as a Block Captain.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The clean-up is a public monthly event that Block Captains invite neighbors to join, and Block Captain sign-up is a web form. The page does not tie the clean-up to membership, which costs $15 to $50 a year.",
+        "what_to_expect": "Sweep Up Saturday runs from 10 am to noon on the first Saturday of the month. Volunteers pick up trash and leaves on the block, then gather for a social stop at Fairmount Tavern. Block Captains also keep neighbors informed and share news about the association.",
+        "first_visit_tips": [
+          "The office is a storefront at 601 N. 17th Street, 1st Floor, if you want to stop by in person.",
+          "Email sgcaphilly@gmail.com or call 215-236-7334 to find out which Block Captain covers your block.",
+          "Plan for the clean-up to run 10 am to noon, with the social gathering afterward at Fairmount Tavern."
+        ]
+      },
+      "contacts": {"website": "http://www.sgcaphilly.com", "email": "sgcaphilly@gmail.com", "phone": "215-236-7334", "contact_name": "Patricia Freeland"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.sgcaphilly.com/",
+      "sources": [
+        {"url": "http://www.sgcaphilly.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life", "contacts"]},
+        {"url": "http://www.sgcaphilly.com/join", "seen": "2026-10-08", "fields": ["cost", "what_you_do"]},
+        {"url": "http://www.sgcaphilly.com/Block-Captains", "seen": "2026-10-08", "fields": ["schedule", "first_step", "first_visit_tips", "what_to_expect", "interests"]},
+        {"url": "http://www.sgcaphilly.com/page-18081", "seen": "2026-10-08", "fields": ["summary", "locations"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Summary and what_you_do rewritten from the group's own pages, because tier 1 described only the City zoning list role. Contacts replaced with the group's published phone and email (215-236-7334, sgcaphilly@gmail.com). The City list values (215-802-0334, pfreeland2@aol.com) differ. The contact name Patricia Freeland still comes from the City list, since the group's site names no one. Area covered, per the Block Captains page: Broad Street to Pennsylvania Avenue, along the Spring Garden and Fairmount corridors. Whether non-members may attend board or community meetings is not stated. https://sgcaphilly.com returned TLS handshake errors on every https path tried, so these pages were read over http://www.sgcaphilly.com. Seven fetch calls were used for this group, of which four were successful reads."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:tempesta-di-mare-inc-3", "irs_bmf:233013869"], "group_id": "tempesta-di-mare-inc", "ein": "233013869", "website": "http://www.tempestadimare.org"},
+      "verdict": "publish",
+      "name": "Tempesta di Mare, Inc.",
+      "summary": "A Philadelphia baroque orchestra that plays music from about 300 years ago, makes new performing editions, and researches works that were forgotten. Audiences attend a season of recitals and full orchestra concerts.",
+      "what_you_do": "Buy a ticket to a recital or orchestra concert. Adults under 40 can get a discount on a season pass through the group's Young Friends program, which also invites members to events where they can meet the musicians.",
+      "kind": "nonprofit",
+      "categories": ["music"],
+      "interests": ["community_band"],
+      "motives": ["enhancement", "understanding"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Runs a season of recitals and full orchestra concerts each year, currently from fall into winter. Concert dates change from season to season and are listed on the group's site.",
+        "recurring": true,
+        "season": "fall"
+      },
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "1034 Carpenter St, Philadelphia, PA 19147", "zip": "19147", "planning_district": "central", "in_city": true}
+      ],
+      "cost": {"level": "paid", "text": "For the 2026 to 2027 season, recitals are $35 and concerts are $40 to $60, with fees included. Full-time students with ID and youth under 17 are admitted free. Adults under 40 get 40% off a season pass with the Young Friends code on the site."},
+      "commitment": "one_off",
+      "access": {"wheelchair": "yes", "notes": "The accessibility page says all venues offer a basic level of mobility access, including for wheelchair users, but venue details are not on that page. ASL interpretation is offered at select performances, so ask for the list of upcoming ASL events. Details vary by event, so check the icons on each event page. Eligible low-income households and households with disabilities can buy $2 general admission tickets through the ACCESS program."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Buy a single ticket for an upcoming recital or concert through the ticket link on tempestadimare.org, or call 215-755-8776.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Anyone can buy a ticket online, by phone or at the door, so the way in is clear. The site does not describe a welcome for newcomers at concerts, so the rating is 3 rather than higher.",
+        "what_to_expect": "Concerts are performed by a baroque orchestra that plays without a conductor, as was common when this music was new. Single tickets cannot be refunded or exchanged, while season pass tickets can be exchanged for other performances, subject to availability. The Baroque Music 101 guide on the site explains the era, instruments and composers in plain words, so you can read it before a first concert.",
+        "first_visit_tips": [
+          "Single tickets cannot be refunded or exchanged, so check the date before you buy.",
+          "Youth under 17 and full-time students with ID get free admission, so bring ID.",
+          "Call 215-755-8776 or email info@tempestadimare.org about seating or ASL before you buy, since accessibility details vary by event.",
+          "Season pass buyers under 40 bring ID to the door for the Young Friends discount."
+        ]
+      },
+      "contacts": {"website": "http://www.tempestadimare.org", "email": "info@tempestadimare.org", "phone": "215-755-8776", "contact_name": "Rachel Romean"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.tempestadimare.org/concerts-events/ticket-and-subscription-info/",
+      "sources": [
+        {"url": "http://www.tempestadimare.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "status", "last_sign_of_life", "contacts"]},
+        {"url": "https://www.tempestadimare.org/concerts-events/ticket-and-subscription-info/", "seen": "2026-10-08", "fields": ["cost", "first_step", "first_visit_tips", "commitment"]},
+        {"url": "https://www.tempestadimare.org/concerts-events/young-friends/", "seen": "2026-10-08", "fields": ["what_you_do", "cost"]},
+        {"url": "https://www.tempestadimare.org/about/venue-logistics/accessibility/", "seen": "2026-10-08", "fields": ["access", "contacts"]},
+        {"url": "https://www.tempestadimare.org/concerts-events/baroque-orchestra-101/", "seen": "2026-10-08", "fields": ["what_to_expect"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tier 1 listed specific concert dates in schedule.text. These were removed as one time dates, and they remain on the site. The tier 1 contact name 'Na' looked like a data error and was replaced with Rachel Romean, who the site names as the Young Friends liaison and accessibility contact. The concert venues are not named on the pages read, so the only location is the IRS mailing address, which is an office address rather than a venue. community_band is the closest tag for an orchestra, because the vocabulary has no classical concert tag, so the owner may want one added. Prices are for the 2026 to 2027 season and include fees. Baroque Music 101 is an introductory guide on the site, not a class. Wheelchair is set to yes because the page says all venues offer basic mobility access."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:the-best-day-of-my-life-so-far-3", "irs_990n:461224786", "irs_bmf:461224786"], "group_id": "the-best-day-of-my-life-so-far", "ein": "461224786", "website": "https://bestdayofmylifesofar.org/"},
+      "verdict": "publish",
+      "name": "The Best Day of My Life So Far",
+      "summary": "A nonprofit that uses storytelling to ease loneliness and isolation, mostly among older adults. Storytelling groups meet at partner sites, and the group also trains youth and professionals in the same storytelling approach.",
+      "what_you_do": "Older adults and volunteers meet in storytelling groups at partner sites. Anyone can listen to an older adult and share the story on the group's site. Students can take part in the four-week Grand Camp program, which a school or group applies to run.",
+      "kind": "nonprofit",
+      "categories": ["seniors-intergenerational", "theater-dance-performance"],
+      "interests": ["intergenerational", "storytelling_spoken_word"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "perform_make_together"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["seniors", "all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Storytelling groups run in 8-week sets at partner sites, and the site does not publish fixed meeting days or times. Grand Camp is a four-week program of about 35 minutes a week, with four start dates a year that follow the school calendar.",
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "1717 Arch Street, Philadelphia, PA 19103", "zip": "19103", "planning_district": "central", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "Storytelling groups are free for participants, and partner organizations pay a yearly fee to run them. Grand Camp costs the school or group $500 for a program of 10 students, usually raised through fundraising."},
+      "commitment": "seasonal",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the volunteer form on the Get Involved page of the group's site.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Storytelling groups run through partner organizations, and the site does not say how an individual can join one directly. The volunteer form is the clearest public way in, so the rating is 2.",
+        "what_to_expect": "A first step is usually the volunteer form or a story listening session with an older adult. The group's guide says a spoken story usually takes 10 to 15 minutes. Storytelling groups meet at partner sites such as senior living communities and senior centers, and the site does not list meeting times, so ask the partner site when its group meets.",
+        "first_visit_tips": [
+          "Ask the partner site whether its storytelling group is open to people from outside the building.",
+          "Use the group's free listening guide before you talk with an older adult, then submit the story on the Share a Story page.",
+          "Students who want Grand Camp need their school or group to apply, with the form due two months before the start date."
+        ]
+      },
+      "contacts": {
+        "website": "https://bestdayofmylifesofar.org/",
+        "email": "info@bestdayofmylifesofar.org",
+        "phone": "267-908-6922",
+        "contact_name": "William Hussey",
+        "social": ["https://instagram.com/bestdayofmylifesofar/", "https://www.facebook.com/pages/The-Best-Day-of-My-Life-So-Far/188367173155"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://www.bestdayofmylifesofar.org/updates",
+      "sources": [
+        {"url": "https://bestdayofmylifesofar.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]},
+        {"url": "https://bestdayofmylifesofar.org/grandcamp", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "cost", "first_visit_tips"]},
+        {"url": "https://bestdayofmylifesofar.org/sitesandevents", "seen": "2026-10-08", "fields": ["what_you_do", "what_to_expect"]},
+        {"url": "https://bestdayofmylifesofar.org/popup", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://bestdayofmylifesofar.org/shareastory", "seen": "2026-10-08", "fields": ["first_step", "first_visit_tips", "what_to_expect"]},
+        {"url": "https://www.bestdayofmylifesofar.org/getinvolved", "seen": "2026-10-08", "fields": ["first_step", "what_you_do", "contacts"]},
+        {"url": "https://www.bestdayofmylifesofar.org/storytelling", "seen": "2026-10-08", "fields": ["schedule", "cost", "first_step", "audience"]},
+        {"url": "https://www.bestdayofmylifesofar.org/updates", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Grand Camp: a school or group applies by a deadline two months before the start date, and the program costs $500 for 10 students. Tier 1 said only that it runs without dates. Storytelling groups are at partner sites, mostly senior living providers and senior centers. The site does not say whether they are open to people outside those sites, so open_to stays public from tier 1 and newcomer_friendliness stays at 2. Story Pop-Up Events are paid for by the hosting organization, and the site lists no upcoming pop-up dates, so they are not a regular public program. The volunteer form and the Share a Story page are the public way in."
+    }
+  ],
+  "leads_only": [
+    {"name": "Center City Residents' Association", "url": "https://centercityresidents.org", "note": "Named on the Schuylkill River Park garden's site as the association that leases the garden land, runs the plot waiting list and sets plot eligibility. Fetched once: a neighborhood association for Center City West since 1947, with resident and business membership through a linked form, a community calendar and posted board minutes, and no regular meeting schedule stated. Not made into a record in this pass."},
+    {"name": "Friends of Schuylkill River Park", "url": "https://fsrp.org", "note": "Linked from the Schuylkill River Park garden's site as a partner. Fetched once: a volunteer-supported group with a board and volunteer shifts. Its newest dated item is a May 2024 volunteer day, so its activity needs checking before any record. Not made into a record in this pass."}
+  ],
+  "blocked": [
+    {"url": "https://www.recaphilly.com", "status": "tls_error", "note": "TLS self-signed certificate error on www and on the bare domain. Not bypassed; no page read. Tier 1 values kept."}
+  ],
+  "notes": "7 records written: 6 full tier 2 passes and 1 partial (River's Edge, research_tier 1, because its site could not be read). Verdicts: publish 7, hide 0, not_a_group 0, duplicate 0, out_of_area 0. Owner decisions to check: (1) South Street Headhouse District is a city-chartered district authority with no membership or meetings; kept as publish because it runs public events and public art. (2) River's Edge may be a building association at the Pier 3 condo address; if so it is out of scope. (3) Tempesta uses community_band, the closest tag for an orchestra. Material corrections to tier 1: Schuylkill River Park audience is now residents; South Street and Spring Garden summaries rewritten from the groups' own pages; Society Hill and Spring Garden contacts replaced with the groups' published details; Tempesta's contact name 'Na' replaced and its dated concert list removed; Best Day's Grand Camp cost and route added. Fetch errors: sgcaphilly.com returned TLS handshake errors on https for /join, /Block-Captains and /page-18081; those pages were read over http://www.sgcaphilly.com. Fetch total 34 calls (5 errors: 2 River's Edge, 3 Spring Garden https). Rule 7 leads: Center City Residents' Association and Friends of Schuylkill River Park were fetched once each and kept in leads_only as future research, since the tier 2 brief sends partner groups there. Other partner names without a URL are noted only: Spring Garden Civic Development Corporation (office host for Spring Garden), Art-Reach ACCESS (Tempesta discount program) and Philadelphia Senior Center (runs the original Best Day storytelling group per the group's site). Searches: 1 of 1 used, for River's Edge; it found nothing relevant. Budget was not exhausted; no group was skipped."
+}

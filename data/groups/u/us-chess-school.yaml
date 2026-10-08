@@ -5,18 +5,29 @@ leads:
 - irs_990n:463570936
 - irs_bmf:463570936
 ein: '463570936'
-summary: null
-what_you_do: null
+summary: A nonprofit that gives free chess training to talented young players through camps. Camps run
+  online year round and in person in some cities, with coaches who are grandmasters and international
+  masters.
+what_you_do: Players apply for an online or in person camp and are invited based on rating, experience
+  and fit. Online camps run on weekends. The next one is an online fall camp on October 24 and 25, 2026,
+  and its applications are not yet open.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- games-puzzles
+interests:
+- chess
+motives:
+- enhancement
+formats:
+- learn_skill
+- one_off_event
+roles:
+- figure_out
+crowd:
+- students
 bridging: null
 audience:
-  open_to: null
+  open_to: invite
   school: null
   min_age: null
   max_age: null
@@ -25,11 +36,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: 'Online camps run on weekends through the year. Upcoming: Fall 2026 on October 24 and 25, Winter
+    2027 on February 6 and 7 (girls only), and Spring 2027 on May 22 and 23. In person camps are held
+    in major cities, and none are scheduled.'
+  days:
+  - sat
+  - sun
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1336 Cypress St
@@ -40,11 +55,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: The site says the training is provided free of charge.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +73,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Watch the online camp page for the Fall 2026 application window, which the site lists as not yet
+    open, then send an application with your chess experience, rating and interests.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Camps are free, but a rating based application decides who is invited, so the way in is clear
+    but selective.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.uschessschool.com
+  website: https://www.uschessschool.com
   email: null
   phone: null
   contact_name: Greg Shahade
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.uschessschool.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +108,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.uschessschool.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

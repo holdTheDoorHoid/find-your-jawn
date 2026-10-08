@@ -6,28 +6,34 @@ leads:
 - city_rco_points:309
 - irs_bmf:232025152
 ein: '232025152'
-summary: Queen Village Neighbors Association is one of the community organizations registered with the
-  City to review nearby zoning and building proposals in the Central part of the city. Neighbors can follow
-  what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The neighborhood association for Queen Village, founded in 1969. It follows nearby zoning and
+  building plans through a zoning committee, organizes Friends of park groups for cleanups and planting
+  days, and publishes a quarterly newsletter.
+what_you_do: Join a zoning meeting, help a Friends of park group with a cleanup or planting, volunteer
+  with QV Tree Tenders, or come to a neighborhood event.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
 interests:
 - civic_association
 - community_development
+- park_cleanup
+- tree_tending
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -39,24 +45,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The zoning committee meets on Zoom in the evening. The events page lists a zoning meeting most
+    months, usually on a Wednesday. Park cleanups and planting days are listed on the events page as they
+    come up.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Office
   address: 709 S. 5th Street, First Floor, Philadelphia, PA 19147
-  neighborhood: null
-  planning_district: central
-  zip: '19147'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
-  address: '709 S. 5th Street, First Floor, Philadelphia, PA 19147, , Mailing address: PO Box 63763 Philadelphia,
-    PA 19147'
   neighborhood: null
   planning_district: central
   zip: '19147'
@@ -64,10 +64,20 @@ locations:
   lng: -75.14706146950734
   in_city: true
   transit: null
+- label: Mailing address (City list)
+  address: PO Box 63763, Philadelphia, PA 19147
+  neighborhood: null
+  planning_district: null
+  zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Zoning meetings and park days are free. Some neighborhood events charge tickets, so check the
+    price on the listing.
 commitment: null
 group_size: null
 access:
@@ -82,23 +92,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Sign up for the weekly newsletter on the site, then join a park cleanup or planting day from the
+    events page.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Park days and zoning meetings are listed as public, and volunteering can be as small as an hour.
+    The site describes no newcomer program.
+  what_to_expect: A park day is usually two to three hours of cleanup or planting with neighbors, often
+    run by a Friends of park group. Zoning meetings are evening calls on Zoom where the committee reviews
+    a nearby project, and neighbors can give input.
+  first_visit_tips:
+  - Check the events page close to the date, since times and places are posted there.
+  - For zoning questions, email info@qvna.org and put 'Zoning Page' in the subject line.
+  - Park days happen at parks the Friends of groups look after, such as Weccacoe Playground, Mario Lanza
+    Park and Bainbridge Green.
+  - Some neighborhood events charge tickets, so check the price before you go.
 contacts:
   website: https://www.qvna.org
   email: sam@qvna.org
-  phone: '2153390975'
+  phone: 215-339-0975
   contact_name: Samantha Thompson
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.qvna.org/events
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -124,8 +143,39 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.qvna.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - status
+- url: https://www.qvna.org/zoning
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://www.qvna.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.qvna.org/board-meeting-minutes
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.qvna.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,75 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-07",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 23,
+ "leads_only": [
+  {
+   "name": "Jazz Attack",
+   "url": "https://www.rittenhop.org",
+   "note": "Named in a Rittenhop post as a dance team with a recital at the Arch Street Meeting House; no own site seen, not checked"
+  },
+  {
+   "name": "Old Pine Community Center",
+   "url": "https://www.skilladelphia.org",
+   "note": "Named on Skilladelphia's site as its partner and as host of a 3-on-3 event; no own website identified, not checked"
+  },
+  {
+   "name": "Seger Park Advisory Council",
+   "url": "https://segerdogpark.org",
+   "note": "Named in the batch as the website for the Seger Park Dog Owners Association record, which is not a web address; no own page found, not checked"
+  }
+ ],
+ "blocked": [],
+ "notes": "Searches: 2 of 2 used. Fetches: 23 used of 60. Verdicts: publish 12, not_a_group 2, hide 1. Three batch websites were not web addresses: Responsible Preservation (an attorney's name), Seger Park Dog Owners ('Seger Park Advisory Council') and Slavaart ('PHP'). Responsible Preservation was not searched, so it is held as publish with unknown status and no source. Slavaart: one search found no page, so it is held the same way. Seger Park Dog Owners: the search surfaced segerdogpark.org, which is the group's own site and was read. Seger Park Tennis Club is publish, but its site says operations are suspended; recommend holding it back. Two records (Responsible Preservation, Slavaart) lack summary and source and will not go live. Dated items come from group-owned pages only. One guessed domain (mission1st.org) returned an empty page; the batch domain was used instead. No pages were blocked and no rate limiting occurred. Leads: the three leads_only items have no own URL recorded, so they were not fetched; Old Pine Community Center's own website should be found on the next pass.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:455559812",
+     "irs_bmf:455559812"
+    ],
+    "group_id": "responsible-preservation-inc",
+    "ein": "455559812"
+   },
+   "verdict": "publish",
+   "name": "Responsible Preservation Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held an attorney's name, not a web address. This group was not searched, because the two searches went to groups with a better chance of a public page. Nothing is known about what it does or how to join, so no summary, categories or first step are written. Held back until a public page is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:932993516",
+     "irs_bmf:932993516"
+    ],
+    "group_id": "slavaart",
+    "ein": "932993516"
+   },
+   "verdict": "publish",
+   "name": "Slavaart",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field held 'PHP', not a web address. One search for the name found no page about this group. Nothing is known about what it does or how to join, so no summary, categories or first step are written. Held back until a public page is found. The IRS address on file is not verified.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

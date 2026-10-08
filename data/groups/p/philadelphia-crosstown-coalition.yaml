@@ -5,18 +5,28 @@ leads:
 - irs_990n:465096770
 - irs_bmf:465096770
 ein: '465096770'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A nonpartisan coalition of community groups, mostly registered neighborhood organizations, that
+  works on zoning, affordable housing and property tax issues.
+what_you_do: Member groups send delegates to the meetings, join the zoning and land use, affordable housing
+  or tax committees, and help elect the board each year.
+kind: civic
+categories:
+- neighborhood-civic
+interests:
+- community_development
+motives:
+- values
+- understanding
+formats:
+- conversation
+- lead_organize
+roles:
+- figure_out
+- organize
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,17 +35,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meetings are listed for the fourth Monday of most months, September through June, at 6:30 pm,
+    at changing locations. The site also says meetings are held about six times a year.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 200 Locust St Apt 5B
+- label: Meeting place (changes; a recent one was String Theory School)
+  address: 1600 Vine St
   neighborhood: null
-  planning_district: central
-  zip: '19106'
+  planning_district: null
+  zip: '19102'
   lat: null
   lng: null
   in_city: true
@@ -43,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Member dues are charged; the amount is not published.
 commitment: null
 group_size: null
 access:
@@ -58,23 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Groups thinking about joining can attend a meeting as guests. Questions can go to the contact on
+    the website.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Guests can attend, but voting membership is for dues-paying community groups, and the way in
+    for individuals is not described.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.philacrosstown.org
+  website: https://www.philacrosstown.org
   email: null
   phone: null
   contact_name: Stephen Huntington
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.philacrosstown.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.philacrosstown.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - audience
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

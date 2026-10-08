@@ -1,0 +1,213 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-04",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.honorthyneighbor.org/",
+   "status": 500,
+   "note": "HTTP 500 on two tries, 2026-10-08"
+  },
+  {
+   "url": "https://integrityclique.org",
+   "status": null,
+   "note": "domain does not resolve (DNS not found)"
+  },
+  {
+   "url": "https://www.letsseeifwecanhelp.org",
+   "status": null,
+   "note": "returned only the word Home on www and bare domain"
+  },
+  {
+   "url": "https://www.livecarephilly.org",
+   "status": null,
+   "note": "returned only the page title on www and bare domain"
+  },
+  {
+   "url": "https://www.themonstermilers.org/",
+   "status": null,
+   "note": "returned only the domain name on two URL forms"
+  }
+ ],
+ "notes": "Batch of 15 IRS-listed groups. Verdicts: 10 publish, 3 hide, 2 out_of_area. Four publish records (Honor Thy Neighbor, Lets See If We Can Help, Live CarePhilly, Monster Milers) could not be read at all: their websites returned a 500 error or only a title, a domain name or the word Home, so they have no summary, categories or interests and will be held back until someone checks them by hand. Both searches went to Integrity Clique and Kitchen Cred; neither turned up a public presence, so both are hidden as no public way in. Honor Thy Neighbor was retried once and still returned HTTP 500. A guessed events address on keealliance.org returned 404. No rate limiting seen. Searches used 2 of 2 (cap reached). Fetches used 22 of 60.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:813092975",
+     "irs_bmf:813092975"
+    ],
+    "group_id": "honor-thy-neighbor",
+    "ein": "813092975",
+    "website": "https://www.honorthyneighbor.org/"
+   },
+   "verdict": "publish",
+   "name": "Honor Thy Neighbor",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.honorthyneighbor.org/"
+   },
+   "sources": [
+    {
+     "url": "https://www.honorthyneighbor.org/",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "Website returned HTTP 500 on two tries (2026-10-08, one retry after a pause). No readable summary, activity, date or contact, so no summary, categories or interests were written. Name and address come from the IRS list only (1617 Parrish St, 19130). Retry the site later before judging. Held back until a person checks it.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472387134",
+     "irs_bmf:472387134"
+    ],
+    "group_id": "integrity-clique",
+    "ein": "472387134",
+    "website": "https://integrityclique.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Integrity Clique",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Filing website IntegrityClique.org does not resolve (DNS not found, 2026-10-08). One search for the name with Philadelphia found no public presence. Hidden as having no public way in. Filing address is 1735 Market Street. Reopen if a working site or public listing appears.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:460853966",
+     "irs_bmf:460853966"
+    ],
+    "group_id": "kitchen-cred-inc",
+    "ein": "460853966",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Kitchen Cred",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field on the filing holds a congregation's name, not a web address. One search for the name with Philadelphia found no public presence. Filing address is an apartment unit. Hidden as having no public way in. Reopen if a working site or public listing appears.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:261991318",
+     "irs_bmf:261991318"
+    ],
+    "group_id": "lets-see-if-we-can-help-inc",
+    "ein": "261991318",
+    "website": "https://www.letsseeifwecanhelp.org"
+   },
+   "verdict": "publish",
+   "name": "Lets See If We Can Help",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.letsseeifwecanhelp.org"
+   },
+   "sources": [
+    {
+     "url": "https://www.letsseeifwecanhelp.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "Tried twice (www and bare domain) on 2026-10-08. Both returned only the word Home, so there is no readable summary, activity, date or contact. Name is from the IRS list; nothing about the group is confirmed. No summary, categories or interests were written. Held back until a person checks the site by hand.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:333550988",
+     "irs_bmf:333550988"
+    ],
+    "group_id": "live-carephilly",
+    "ein": "333550988",
+    "website": "https://www.livecarephilly.org"
+   },
+   "verdict": "publish",
+   "name": "Live CarePhilly",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.livecarephilly.org"
+   },
+   "sources": [
+    {
+     "url": "https://www.livecarephilly.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "Tried twice (www and bare domain) on 2026-10-08. Both returned only the page title, so there is no readable summary, activity, date or contact. Filing address is 1238 Callowhill St, Suite 304 (19123). No summary, categories or interests were written. Held back until a person checks the site by hand.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:454119892",
+     "irs_bmf:454119892"
+    ],
+    "group_id": "monster-milers",
+    "ein": "454119892",
+    "website": "https://www.themonstermilers.org/"
+   },
+   "verdict": "publish",
+   "name": "Monster Milers",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.themonstermilers.org/"
+   },
+   "sources": [
+    {
+     "url": "https://www.themonstermilers.org/",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "Tried twice (www and bare domain) on 2026-10-08. Both returned only the domain name, so there is no readable summary, activity, date or contact. Filing lists a PO box in 19147, not used. No summary, categories or interests were written. Held back until a person checks the site by hand.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

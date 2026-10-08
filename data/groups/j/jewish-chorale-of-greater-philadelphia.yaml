@@ -7,10 +7,10 @@ leads:
 - irs_990n:522388442
 - irs_bmf:522388442
 ein: '522388442'
-summary: A nonprofit choir that sings the full range of Jewish choral music for audiences in the region.
-  Singers join through an audition, and the choir performs concerts through its season.
-what_you_do: Audition to sing in the choir, or attend one of its concerts. Auditions for the 2026 to 2027
-  season are open to prospective members.
+summary: A choir in the Philadelphia region that sings Jewish choral music. You join by audition, and
+  the choir gives concerts through its season.
+what_you_do: Audition to sing in the choir, or come to one of its concerts. Auditions for the 2026 to
+  2027 season are open to prospective singers.
 kind: nonprofit
 categories:
 - music
@@ -50,19 +50,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: Pob 22494
-  neighborhood: null
-  planning_district: central
-  zip: '19110'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: Audition and membership costs are not shown on the site.
+  text: The site does not show audition or membership costs.
 commitment: seasonal
 group_size: null
 access:
@@ -77,15 +68,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email manager@nashirah.org to book an audition for the 2026 to 2027 season, in person or online.
-    Arrive at least 15 minutes early; sight-reading, tonal memory, rhythm, vocal range and tone are checked.
+  how: Email manager@nashirah.org to book an audition for the 2026 to 2027 season. Auditions are by appointment,
+    in person or online.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Joining requires an audition booked by appointment, and the site does not describe a beginner
-    route or who may audition.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: You must audition by appointment before joining, and the site does not say who may audition or
+    describe a beginner route.
+  what_to_expect: Staff email you to confirm an audition time, which can be in person or online. The audition
+    checks sight-reading, tonal memory, rhythm, vocal range, and how even your tone is. The site does
+    not give the audition length, fees, or rehearsal times, so ask when you book.
+  first_visit_tips:
+  - Arrive at least 15 minutes before your confirmed time.
+  - Ask about rehearsal days, fees, and membership terms when you email, since the site does not list
+    them.
 contacts:
   website: https://nashirahphila.wordpress.com/
   email: manager@nashirah.org
@@ -96,9 +92,9 @@ contacts:
   - https://www.facebook.com/nashirah.philadelphia
   - https://www.instagram.com/nashirah.philadelphia/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://nashirahphila.wordpress.com/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://nashirahphila.wordpress.com/performance/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=6
   seen: '2026-10-04'
@@ -132,8 +128,25 @@ sources:
   fields:
   - first_step
   - requirements
-research_tier: 1
-confidence: medium
+  - what_to_expect
+  - first_visit_tips
+- url: https://nashirahphila.wordpress.com/about-nashirah/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: https://nashirahphila.wordpress.com/performance/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+- url: https://nashirahphila.wordpress.com/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

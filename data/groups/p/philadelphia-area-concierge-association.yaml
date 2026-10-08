@@ -5,18 +5,25 @@ leads:
 - irs_990n:232839783
 - irs_bmf:232839783
 ein: '232839783'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A professional group for concierges across the Philadelphia region. It holds social meetings,
+  such as a holiday gathering, and works to build friendship and professional skills among its members.
+what_you_do: Join as a member, then come to the social meetings. RSVP through the website for an event.
+kind: network
+categories:
+- careers-skills-professional
+interests:
+- professional_associations
+motives:
+- career
+- social
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- professionals
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,17 +32,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Social meetings on the chapter calendar. The holiday social was listed for December 5 at 5:30
+    pm; the year is unclear (see notes).
   days: []
-  times: []
-  recurring: null
-  season: null
+  times:
+  - evening
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 59525
+- label: City Winery (holiday social venue listed on the site)
+  address: 990 Filbert St
   neighborhood: null
-  planning_district: central
-  zip: '19102'
+  planning_district: null
+  zip: '19107'
   lat: null
   lng: null
   in_city: true
@@ -43,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Dues not listed on the site
 commitment: null
 group_size: null
 access:
@@ -58,15 +67,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Become A Member link on philadelphiaconcierge.org, then RSVP through the site for the next
+    social meeting
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Membership is the main way in and dues are not listed; social events need an RSVP
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: philadelphiaconcierge.org
+  website: https://philadelphiaconcierge.org/
   email: null
   phone: null
   contact_name: Fran Nachman
@@ -91,8 +101,15 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://philadelphiaconcierge.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - first_step
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

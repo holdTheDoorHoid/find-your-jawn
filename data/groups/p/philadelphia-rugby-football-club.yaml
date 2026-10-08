@@ -6,9 +6,10 @@ leads:
 - irs_990n:232946264
 - irs_bmf:232946264
 ein: '232946264'
-summary: A rugby club founded in 1976 that was historically a women's club and now welcomes players of
-  any gender identity. It fields Division I and Division III 15s teams and summer sevens teams.
-what_you_do: Play 15s or summer sevens at a level that fits your experience.
+summary: A rugby club founded in 1976 that began as a women's club and now welcomes players of any gender
+  identity. It fields Division I and Division III 15s teams and a summer sevens program.
+what_you_do: Train at Tuesday and Thursday evening practices, play 15s in the fall and spring or summer
+  sevens, and work a few stadium game day shifts each season.
 kind: club
 categories:
 - sports-teams
@@ -34,26 +35,40 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practice on Tuesdays and Thursdays from about 7:30 pm at Scanlon Rec Center in Philadelphia. Weather
+    or field problems can move a practice, and the club gives notice.
+  days:
+  - tue
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
   address: Po Box 8034
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19101'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Practice field
+  address: Scanlon Rec Center, 1099 E Venango St, Philadelphia, PA 19134
+  neighborhood: null
+  planning_district: null
+  zip: '19134'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Dues not stated on the site
-commitment: null
+  level: paid
+  text: Returning 15s players pay $125 a season, and new players and students pay $100, with a $50 social
+    option. USA Rugby registration adds $76.50 a year. Payment plans go through the treasurer.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -65,16 +80,24 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: A mouth guard and cleats (soccer cleats are fine). Match days also need the club's black socks
+    and plain black shorts.
 first_step:
-  how: Email recruiting@philadelphiarugby.org
+  how: Email recruiting@philadelphiarugby.org to say you want to join, since the site sends interested
+    players there.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The club says players of all experience levels are welcome and gives a recruiting email. Tryouts
-    and open practice are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The FAQ says no experience is needed and the club welcomes every skill level. The practice page
+    sends interested players to a recruiting email. No beginner session or open practice is listed.
+  what_to_expect: Practices run about two hours on Tuesday and Thursday evenings, and the club trains
+    players at all levels. Expect a season fee, a USA Rugby registration before your first match, and
+    a few stadium shifts over the season.
+  first_visit_tips:
+  - Bring a mouth guard and cleats; soccer cleats are fine.
+  - Ask the treasurer about a payment plan before you pay the full season fee.
+  - Practice is at Scanlon Rec Center, 1099 E Venango St, Philadelphia, PA 19134.
+  - Weather or field problems can move practice to another spot, and the club gives notice.
 contacts:
   website: https://philadelphiarugby.org/
   email: recruiting@philadelphiarugby.org
@@ -82,9 +105,9 @@ contacts:
   contact_name: Organization
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philadelphiarugby.org/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://philadelphiarugby.org/play-7s
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -109,8 +132,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://philadelphiarugby.org/play-15s
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: https://philadelphiarugby.org/schedule-15s
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+- url: https://philadelphiarugby.org/faq
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_step
+  - first_visit_tips
+- url: https://philadelphiarugby.org/play-7s
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - cost
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
