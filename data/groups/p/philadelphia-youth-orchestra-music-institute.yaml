@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: The music school of the Philadelphia Youth Orchestra. It gives music education to young players
   through auditioned ensembles and lessons.
-what_you_do: Audition for a youth ensemble or study an instrument with the institute. Anyone can attend
-  the public concerts or sign up for the newsletter.
+what_you_do: Audition for one of the youth ensembles, or try a summer camp. You can also study an instrument
+  with the institute. Anyone can attend the public concerts or sign up for the newsletter.
 kind: nonprofit
 categories:
 - music
@@ -37,14 +37,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concerts are listed at Kimmel Center venues and the Please Touch Museum. A youth jazz orchestra
-    performs December 5, 2026 at 2 pm at the Please Touch Museum. The program schedule is not on the page.
-  days: []
-  times: []
-  recurring: false
-  season: event_only
+  text: The flagship orchestra rehearses on Saturday mornings, 8:30 am to noon, from mid-September to
+    early June. Other ensembles keep their own calendars, and concerts are posted on the events page.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
+  season: year_round
 locations:
-- label: 240 South 20th Street
+- label: Walter R. Garrison Center
   address: 240 South 20th Street
   neighborhood: null
   planning_district: null
@@ -55,8 +57,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Tuition, audition and ticket prices are not published on the page read.
+  level: paid
+  text: Flagship orchestra tuition is $2,195 a year for the 2026 to 2027 season. A $550 deposit is due
+    at registration, after the audition, and is not refundable. Financial aid is available after the audition
+    for students who show need.
 commitment: null
 group_size: null
 access:
@@ -71,13 +75,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Open the auditions page on the site and contact the institute to ask about the next audition date.
+  how: Pick an ensemble on the auditions page, submit the online audition form with your preferred date
+    and time, then wait for the office to confirm your appointment.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Ensembles need auditions and the page does not say how enrollment works
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Every ensemble starts with an audition booked by appointment, and registration comes only after
+    the audition.
+  what_to_expect: Expect an online form, then an audition booked by appointment. The flagship orchestra
+    asks for scales, a solo of your choice and orchestral excerpts for your instrument. Its Saturday rehearsals
+    run 8:30 am to noon, and the season's tuition is $2,195.
+  first_visit_tips:
+  - Practice the required scales, a solo of your choice, and the orchestral excerpts for your instrument
+    before your audition.
+  - 'Check the age range first: the flagship orchestra takes ages 15 to 22, and the Philadelphia Young
+    Artists Orchestra takes ages 13 to 18.'
+  - Ask the office about financial aid, which comes after the audition for students who show need.
+  - Check whether a concert needs a museum ticket; the jazz orchestra's Please Touch Museum show does.
 contacts:
   website: https://www.pyomusic.org
   email: info@pyomusic.org
@@ -85,9 +99,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.pyomusic.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://pyomusic.org/events/12-05-26-pyjo/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9
   seen: '2026-10-04'
@@ -103,8 +117,44 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://pyomusic.org/auditions-2/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - status
+- url: https://pyomusic.org/ensembles/philadelphia-youth-orchestra/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+  - requirements
+  - first_step
+- url: https://pyomusic.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - locations
+- url: https://pyomusic.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://pyomusic.org/events/12-05-26-pyjo/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - cost
+- url: https://pyomusic.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

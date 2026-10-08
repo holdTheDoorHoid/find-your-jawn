@@ -1,0 +1,282 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-24",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 27,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://mp.weixin.qq.com/s/CwxFPk3h1V7LJ_OswJd_XA",
+   "status": null,
+   "note": "Verification step shown instead of the article; not bypassed. Linked from the Zen Society directory entry."
+  }
+ ],
+ "notes": "Searches used: 0 (none allowed). Fetches used: 27 (16 directory entries, 10 club sites or redirects, 1 article). Penn Clubs application_required codes (1 to 5) are unexplained, so newcomer friendliness uses each club's own join text instead. Held back as unknown: Wharton Women, Women's Club Lacrosse, Women's Club Soccer (no current evidence). Two sites redirected (venus-ultimate.com to www.venus-ultimate.com, and the volleyball wixsite to upennclubvolleyball.wixsite.com); the redirects were followed. No rate limiting seen. Personal names, phones and personal emails were left out. Statuses: 5 active, 8 probably_active, 3 unknown. Stayed within the fetch budget.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-women"
+    ],
+    "group_id": "wharton-women",
+    "ein": null,
+    "website": "http://www.whartonwomen-penn.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Women",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "http://www.whartonwomen-penn.com/",
+    "email": "whwomen.admin@gmail.com",
+    "social": [
+     "https://instagram.com/whartonwomen/",
+     "https://linkedin.com/company/whartonwomen/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-women/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "http://www.whartonwomen-penn.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown: the directory says INACTIVE (its active flag says true) and accepting_members is false. The club site shows no dated news, events or meetings; its only years appear in page labels, which are not dated activity. Re-check before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:women-in-life-sciences-wils"
+    ],
+    "group_id": "women-in-life-sciences-wils",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Women in Life Sciences (WILS)",
+   "summary": "An undergraduate group for Penn students who want life science careers outside medical school, with a focus on the experiences of women. Members get career advice from alumni and professionals and build social and professional connections.",
+   "what_you_do": "Members attend meetings and events with alumni and professionals. Any student can sign up through the interest form.",
+   "kind": "student_org",
+   "categories": [
+    "careers-skills-professional"
+   ],
+   "interests": [
+    "professional_associations"
+   ],
+   "motives": [
+    "career",
+    "social"
+   ],
+   "formats": [
+    "conversation"
+   ],
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "first_step": {
+    "how": "Fill out the club's interest form. The club says it will contact people about upcoming meetings and events.",
+    "newcomer_friendliness": 3,
+    "basis": "Any student can sign up through the interest form, and the listing describes no application."
+   },
+   "contacts": {
+    "email": "upenn.wilsciences@gmail.com"
+   },
+   "status": "probably_active",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/women-in-life-sciences-wils/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "first_step",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website is listed. Directory status is UNDER REVIEW, while its approved flag is true. The listing's application code is 1, but its join text describes only an interest form, so newcomer friendliness is 3.",
+   "_held_reasons": [
+    "own_words: summary shares 8 words in a row with a source: “medical school with a focus on the experiences”"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:womens-club-lacrosse"
+    ],
+    "group_id": "womens-club-lacrosse",
+    "ein": null,
+    "website": "https://pennclubwlax.wixsite.com/clublacrosse"
+   },
+   "verdict": "publish",
+   "name": "Women's Club Lacrosse",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://pennclubwlax.wixsite.com/clublacrosse",
+    "email": "pennclubwlax@gmail.com",
+    "social": [
+     "https://instagram.com/upennclublax/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/womens-club-lacrosse/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://pennclubwlax.wixsite.com/clublacrosse",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown. Directory status is INACTIVE (active flag true) and accepting_members is true; joining is by email to get on the listserv. The club site has no dated items; its only year is a copyright footer, which is not evidence. The site and directory give different Instagram handles. Directory member emails are personal and were left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pwrfc"
+    ],
+    "group_id": "womens-club-rugby",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Women's Club Rugby",
+   "summary": "A student-run rugby team at Penn that competes in the National Collegiate Rugby conference in the fall and spring. Players do not need experience to join.",
+   "what_you_do": "Players practice with the team, play in the National Collegiate Rugby conference, and take part in the team's social life. Any Penn undergraduate or graduate student can come to a practice to try it out.",
+   "kind": "student_org",
+   "categories": [
+    "sports-teams"
+   ],
+   "interests": [
+    "football_rugby"
+   ],
+   "motives": [
+    "social",
+    "enhancement"
+   ],
+   "formats": [
+    "team_play"
+   ],
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "first_step": {
+    "how": "Email the club, message it on Instagram, or come to any practice.",
+    "newcomer_friendliness": 4,
+    "basis": "The club says new players are always welcome with no experience needed, and it explains how to start."
+   },
+   "contacts": {
+    "email": "upennwrfc@gmail.com",
+    "social": [
+     "https://instagram.com/upennrugby"
+    ]
+   },
+   "status": "probably_active",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/pwrfc/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "first_step",
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. Directory status is UNDER REVIEW. The listing is current but has no dated item. No gender restriction is stated in the text, so none is recorded.",
+   "_held_reasons": [
+    "own_words: summary shares 8 words in a row with a source: “that competes in the national collegiate rugby conference”"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-womens-club-soccer"
+    ],
+    "group_id": "womens-club-soccer-at-penn",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Women’s Club Soccer at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "social": [
+     "https://instagram.com/upennwclubsoccer/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-womens-club-soccer/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "accepting_members"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back as unknown. Directory status is INACTIVE (active flag true) and accepting_members is false, so the listing says it is not taking new members. The club has no website; its only public page is an Instagram account, which is a lead source and was not read. The directory email is hidden, so no email is recorded. The directory's undefeated-last-year claim is undated and was not used.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

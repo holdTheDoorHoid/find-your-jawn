@@ -1,0 +1,301 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-21",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 34,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.chem.upenn.edu/undergraduate/penn-undergraduate-chemistry-society-pucs",
+   "status": 403,
+   "note": "The society's own page refused access (HTTP 403). Not retried."
+  },
+  {
+   "url": "https://www.wealthmanagementclubatpenn.com",
+   "status": null,
+   "note": "Domain did not resolve (DNS lookup failed). Not retried."
+  }
+ ],
+ "notes": "Penn Clubs batch of 20 entries. Each was read through the public directory endpoint, plus one club website where the entry linked one (34 fetches, 0 searches, budget was 0). Held back with no summary under the inactive rule: umoja, united-minorities-council-umc, volunteer-income-tax-assistance (VITA), wastewise-at-penn, we-can-swim. Hidden: upstream (no public way in). Five entries carry an INACTIVE status flag that conflicts with their active flag, and that conflict drives most holds. Undated directory items and the 2021 SAC Fair badges were not used as dated evidence. One directory contact was an individual's Penn email and was left out. The main question for review: VITA shows a Fall 2026 application in an entry flagged INACTIVE, so it was held rather than published. Leads only: none found; the entries named no partner groups.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:umoja"
+    ],
+    "group_id": "umoja",
+    "ein": null,
+    "website": "https://www.umojaupenn.com/"
+   },
+   "verdict": "publish",
+   "name": "UMOJA",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.umojaupenn.com/",
+    "email": "up.umoja@gmail.com",
+    "social": [
+     "https://instagram.com/umoja_penn/",
+     "https://linkedin.com/company/upenn-umoja/posts/?feedView=all"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/umoja/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.umojaupenn.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive rule. The directory status reads INACTIVE while its active flag is true, and the club's own site shows no dated items. The directory says programming is open to the Penn community. A person should confirm the current status before this is published.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:united-minorities-council"
+    ],
+    "group_id": "united-minorities-council-umc",
+    "ein": null,
+    "website": "https://upennumc.squarespace.com/"
+   },
+   "verdict": "publish",
+   "name": "United Minorities Council (UMC)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://upennumc.squarespace.com/",
+    "email": "unitedminoritiescouncil@gmail.com",
+    "phone": "(215) 898-3358",
+    "social": [
+     "https://instagram.com/upennumc",
+     "https://facebook.com/upennumc/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/united-minorities-council/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://upennumc.squarespace.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive rule. The directory status reads INACTIVE while its active flag is true, and the club's site has no dated items. Its copyright year and a 2025 image file name are not evidence. The directory says the club is not accepting members. Monthly general meetings are described as open to anyone, but the club's page does not say whether that includes non-Penn people.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:upstream"
+    ],
+    "group_id": "upstream",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "out_of_scope",
+   "name": "Upstream",
+   "kind": "student_org",
+   "notes": "Hidden because the directory gives no public way in. The contact email is hidden, and there is no website, Instagram, listserv or how-to-join text, even though the directory says accepting members is true. Re-check if a public contact appears. Directory founding date is 2025-10-07.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:campaign-for-working-families-at-penn"
+    ],
+    "group_id": "volunteer-income-tax-assistance-at-penn-vita-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Volunteer Income Tax Assistance at Penn (VITA @ Penn)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "vita.at.penn@gmail.com",
+    "social": [
+     "https://instagram.com/vita.at.penn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/campaign-for-working-families-at-penn/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive rule. The directory status reads INACTIVE while its active flag is true. The same entry describes a Fall 2026 application due September 18, 2026, which conflicts with the INACTIVE flag. A person should confirm whether the group is running this year before it is published. The club has no website of its own.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-wastewise-pww"
+    ],
+    "group_id": "wastewise-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "WasteWise at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "pennwastewise@gmail.com",
+    "social": [
+     "https://instagram.com/wastewiseatpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-wastewise-pww/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive rule. The directory status reads INACTIVE while its active flag is true, and the directory lists no dated items. The batch lead text for this club is only 'I.', so the directory entry itself was used. Membership is limited to Penn students, according to the directory.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:we-can-swim"
+    ],
+    "group_id": "we-can-swim",
+    "ein": null,
+    "website": "http://wecanswim.org"
+   },
+   "verdict": "publish",
+   "name": "We Can Swim!",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "http://wecanswim.org",
+    "email": "wecanswimupenn@gmail.com",
+    "social": [
+     "https://instagram.com/wecanswimupenn",
+     "https://facebook.com/WeCanSwim/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/we-can-swim/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "http://wecanswim.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back under the inactive rule. The directory status reads INACTIVE while its active flag is true, and the directory says the club is accepting members. The club's own site lists no dated lessons or posts, so nothing confirms or denies current activity. Its registration and volunteer forms were not followed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

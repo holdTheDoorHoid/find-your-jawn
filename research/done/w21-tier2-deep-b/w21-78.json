@@ -1,0 +1,432 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-78",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 24,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:power-of-paint-art-academy-management", "irs_990n:833125705", "irs_bmf:833125705"],
+        "group_id": "power-of-paint-art-academy-and-management",
+        "ein": "833125705",
+        "website": "https://popartacademy.org"
+      },
+      "verdict": "publish",
+      "name": "Power of Paint Art Academy and Management",
+      "summary": "A nonprofit art academy that teaches children to paint in multi-week workshops and books paint parties for birthdays and other events. It describes its teaching as trauma-informed arts education.",
+      "what_you_do": "Sign a child up for a multi-week painting workshop (you pay to reserve a spot), book a paint party, or apply to volunteer through the online form on the volunteer page, which asks whether you are willing to submit to a background check.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts"],
+      "interests": ["painting_drawing"],
+      "motives": ["enhancement", "values"],
+      "formats": ["learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Children's painting workshops run in 2-hour sessions. The 5-week course lists 10 sessions and the 10-week course lists 20. Days and start times are not on the site.",
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Art academy (address from the IRS listing, not shown on the site)", "address": "4919 Pentridge St", "zip": "19143", "in_city": true}
+      ],
+      "cost": {
+        "level": "paid",
+        "text": "Children's workshops are $650 for the 5-week course and $1,300 for the 10-week course, paid in advance to reserve a spot. Paint party prices are not listed on the site."
+      },
+      "contacts": {
+        "website": "https://popartacademy.org",
+        "email": "help@popartacademy.org",
+        "phone": "(215) 948-9417",
+        "contact_name": "Teisha Brown",
+        "social": ["https://www.instagram.com/popartacademy215", "https://www.x.com/POP_ArtAcademy"]
+      },
+      "requirements": {
+        "background_check": true,
+        "kids_ok": true,
+        "court_ordered_ok": "unknown",
+        "service_hours_letter": "unknown"
+      },
+      "first_step": {
+        "how": "Email help@popartacademy.org or use the contact form to ask about the next children's workshop and whether adults can join. To volunteer, use the application form on the volunteer page.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The children's workshops are described as suited to beginners and can be reserved online, but the site does not say whether adults can join, so the way in for adults is unclear.",
+        "what_to_expect": "Each session runs about 2 hours, and the courses are built for new artists and for people coming back to art after a break. Students learn art history and the basics, and they work with acrylic, watercolor and oil on canvas. The course is paid in advance to reserve a spot, at $650 for the 5-week course or $1,300 for the 10-week course.",
+        "first_visit_tips": ["Ask about adult spots and session times when you email, since the site does not list them."]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://popartacademy.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://popartacademy.org", "seen": "2026-10-08", "fields": ["contacts", "what_you_do"]},
+        {"url": "https://popartacademy.org/art-classes-%26-workshops", "seen": "2026-10-08", "fields": ["schedule", "cost", "audience", "first_step", "what_to_expect"]},
+        {"url": "https://popartacademy.org/paint-parties", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://popartacademy.org/volunteer-opportunities", "seen": "2026-10-08", "fields": ["requirements", "first_step", "what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The volunteer page reads like a general hiring page: no specific openings and no dated listings. The studio street address comes from the IRS listing, not the site. The course titles say 5 and 10 weeks, but the descriptions give 10 and 20 sessions, so both are written as the site describes them. Paint party length, price and ages are not on the site, and the paint parties page only says what the events are for."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:power-street-theatre-3"],
+        "group_id": "power-street-theatre",
+        "website": "https://www.powerstreettheatre.com"
+      },
+      "verdict": "publish",
+      "name": "Power Street Theatre Company",
+      "summary": "A West Philadelphia arts group that runs a free monthly Sunday open mic, a free community happy hour, free bilingual adult acting courses, and a new-play reading series that asks for donations.",
+      "what_you_do": "Take a free adult acting course (open to ages 18 and up, taught in English and Spanish), step up to the mic or watch at the Sunday open mic, or come to a free happy hour. RSVP on Eventbrite for events.",
+      "kind": "program",
+      "categories": ["theater-dance-performance"],
+      "interests": ["storytelling_spoken_word", "community_theater"],
+      "motives": ["social", "enhancement"],
+      "formats": ["learn_skill", "perform_make_together"],
+      "roles": ["create"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "The Souletri Sunday open mic runs monthly on Sundays at 2 pm at Two Locals Brewing Co. Latin Social happy hours run about once a month in the evening. Land and Body adult courses run seasonally, depending on funding.",
+        "days": ["sun"],
+        "times": ["daytime"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Two Locals Brewing Co., 37th and Market streets", "in_city": true},
+        {"label": "The Lawn, 37th and Filbert streets", "in_city": true}
+      ],
+      "cost": {
+        "level": "free",
+        "text": "The Land and Body courses, the Sunday open mic and Latin Social are free, with an RSVP for events. PlayTime readings ask for donations that pay the artists."
+      },
+      "contacts": {
+        "website": "https://www.powerstreettheatre.com",
+        "email": "info@powerstreettheatre.com",
+        "social": ["https://www.facebook.com/PowerStreetTheatre", "https://www.instagram.com/powerstreettheatre", "https://www.youtube.com/@powerstreettheatre"]
+      },
+      "requirements": {
+        "court_ordered_ok": "unknown",
+        "service_hours_letter": "unknown"
+      },
+      "first_step": {
+        "how": "Watch the Land and Body page and the newsletter for the next adult course, since spots go first come, first served. For the Sunday open mic, RSVP free on Eventbrite and come to watch or step up to the mic.",
+        "drop_in": true,
+        "newcomer_friendliness": 4,
+        "basis": "The adult courses say no experience is needed, and the open mic lets anyone just watch. The site says how to hear about the next course and how to RSVP for events.",
+        "what_to_expect": "The open mic starts at 2 pm at Two Locals Brewing Co. Artists and fans make up the crowd, and you can step up to the mic or simply watch. Adult Land and Body courses are free, but you must attend every session, with one absence allowed if the teaching artist is told ahead of time.",
+        "first_visit_tips": [
+          "The open mic is at Two Locals Brewing Co., on 37th and Market streets.",
+          "Latin Social happy hours have been held at The Lawn, at 37th and Filbert streets, so check the RSVP listing for the place.",
+          "Plan to attend every session of a Land and Body course, since one absence is allowed only with advance notice to the teaching artist."
+        ]
+      },
+      "access": {
+        "languages": ["en", "es"],
+        "notes": "Adult courses are described as bilingual. The program started in 2019 with classes in English and Spanish."
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.powerstreettheatre.com/what-is-souletri",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.powerstreettheatre.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts.social", "locations", "status"]},
+        {"url": "https://www.powerstreettheatre.com/what-is-souletri", "seen": "2026-10-08", "fields": ["schedule", "cost", "first_step", "what_to_expect", "locations", "last_sign_of_life", "status"]},
+        {"url": "https://www.powerstreettheatre.com/landandbody", "seen": "2026-10-08", "fields": ["audience", "cost", "first_step", "what_to_expect", "access", "schedule"]},
+        {"url": "https://www.powerstreettheatre.com/playtime", "seen": "2026-10-08", "fields": ["summary", "cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Dated listings (October to December) appear only in last_sign_of_life, not in schedule text. The Land and Body student showcase has no date or place yet. PlayTime details (ages, length, sign-up) are not on the site. One Souletri listing shows a different performer name on the page than on its RSVP link, so no performer names are recorded here."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_programs:power-up-tech-corps"],
+        "group_id": "power-up-tech-corps",
+        "website": "https://www.phila.gov/services/education-learning/get-help-with-technology/volunteer-for-the-power-up-tech-corps/"
+      },
+      "verdict": "publish",
+      "name": "Power Up Tech Corps",
+      "summary": "A City of Philadelphia volunteer program that helps residents build online skills, like applying for jobs online and getting in touch with family. Volunteers work in libraries, rec center computer labs and community sites.",
+      "what_you_do": "Monitor a computer lab, help a City Digital Navigator in a class, or teach a lesson from the city's digital skills curriculum. No advanced tech skills are needed, because training is provided.",
+      "kind": "program",
+      "categories": ["making-tech"],
+      "interests": ["digital_skills"],
+      "motives": ["values", "understanding"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "min_age": 14, "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Volunteers commit to at least one hour a week for four months or one school semester. Placements are set with a site supervisor.",
+        "recurring": true,
+        "season": "year_round"
+      },
+      "commitment": "ongoing_role",
+      "contacts": {
+        "website": "https://www.phila.gov/services/education-learning/get-help-with-technology/volunteer-for-the-power-up-tech-corps/",
+        "email": "digital.equity@phila.gov"
+      },
+      "requirements": {
+        "act153_clearances": true,
+        "background_check": true,
+        "court_ordered_ok": "unknown",
+        "service_hours_letter": "unknown"
+      },
+      "first_step": {
+        "how": "Check the program page for the volunteer application, which is closed for now because volunteer spots are full. When it reopens, fill it in and take the 20-minute screening call. Questions about reopening can go to digital.equity@phila.gov.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "A volunteer application, a 20-minute screening call and background checks come first, and the application is closed with no reopening date.",
+        "what_to_expect": "Before any placement you take a 20-minute screening call that matches you to a role. You then submit the background checks and complete an orientation that is offered regularly through Teams. Last, you meet your site supervisor, confirm your schedule, and finish any site or city training your role needs.",
+        "first_visit_tips": [
+          "If you are 14 to 17, you need a parent or guardian's permission.",
+          "Some partner sites also ask for an FBI check. Pennsylvania residents who have lived here more than 10 consecutive years can ask for it to be waived.",
+          "Watch the program page for the reopening date, since the page gives none."
+        ]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-03",
+      "sign_of_life_url": "https://www.phila.gov/services/education-learning/get-help-with-technology/volunteer-for-the-power-up-tech-corps/",
+      "sources": [
+        {"url": "https://www.phila.gov/services/education-learning/get-help-with-technology/volunteer-for-the-power-up-tech-corps/", "seen": "2026-10-08", "fields": ["name", "contacts.website", "contacts.email", "summary", "audience", "requirements", "what_you_do", "schedule", "commitment", "first_step", "first_visit_tips"]},
+        {"url": "https://www.phila.gov/2026-01-29-powering-up-philly-new-volunteer-program-launches-to-boost-digital-literacy-across-the-city/", "seen": "2026-10-08", "fields": ["summary", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The application is closed at capacity with no reopening date, as of today's read of the program page. The page does not use the words Act 153. The clearances set here are the PA Criminal History Background Check and the PA Child Abuse Clearance, which the page names for youth work and Parks and Recreation or Free Library sites, so act153_clearances is true on that basis. last_sign_of_life and its URL are carried over from tier 1 (2026-03) because the program page read today shows no date."
+    },
+    {
+      "match": {
+        "group_id": "powers-park-conservancy",
+        "lead_ids": ["city_friends:819"],
+        "website": "https://www.facebook.com/powersparkconservancy"
+      },
+      "verdict": "publish",
+      "name": "Powers Park Conservancy",
+      "summary": "A neighbor-run group that formed in 2013 to keep Colonel Thomas J. Powers Park in Port Richmond safe, clean and welcoming. The most recent activity we could date is from 2018, and current activity could not be confirmed.",
+      "what_you_do": "Past volunteer days painted park furniture and trash cans, planted bulbs and helped run events such as a dog costume parade and movie nights. Current work days could not be confirmed, so ask the group before you plan a visit.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["friends_of_park", "park_cleanup"],
+      "motives": ["values"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Powers Park", "address": "2987 Almond St", "zip": "19134", "in_city": true}
+      ],
+      "contacts": {
+        "website": "https://www.facebook.com/powersparkconservancy",
+        "email": "powersparkconservancy@gmail.com",
+        "social": ["https://www.facebook.com/powersparkconservancy"]
+      },
+      "first_step": {
+        "how": "Email powersparkconservancy@gmail.com and ask whether the group has current work days or events. Its Facebook page is the other listed contact.",
+        "newcomer_friendliness": 2,
+        "basis": "Past volunteer days were open to volunteers who registered online, but no current way to join was found, and the page that describes the group does not say how to become a member.",
+        "what_to_expect": "In 2018 the group joined the city's Love Your Park service day, a short 10 to 11 am shift. Volunteers painted furniture and trash cans and planted bulbs. Current volunteer times could not be confirmed, so ask the group before you plan a visit."
+      },
+      "status": "dormant",
+      "last_sign_of_life": "2018-05",
+      "sign_of_life_url": "https://myphillypark.org/powers-park-port-richmond/",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts"]},
+        {"url": "https://myphillypark.org/powers-park-port-richmond/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "status", "last_sign_of_life", "first_step", "what_to_expect"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Status changed from tier 1 active to dormant. The tier 1 active status rested on a city registry entry (ArcGIS) that carries no activity date. The newest dated group activity found is a May 2018 volunteer day on myphillypark.org, and a web search turned up only 2017 and 2018 items. The Facebook page was not read because Facebook is a lead-only platform. The stewardship office email named in tier 1 was not rechecked, so it is not used here. Current work days, membership and any 2019 or later events could not be confirmed. The Love Your Park program (loveyourpark.org) is a citywide service day run by the city, not a group, so it was not added as a lead."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:practice-space-3"],
+        "group_id": "practice-space",
+        "website": "http://www.practicespacecollective.org"
+      },
+      "verdict": "publish",
+      "name": "Practice Space Collective",
+      "summary": "A theater collective that makes plays, a podcast and performance projects about social and economic change, including stories from Philadelphia schools. It also runs creative workshops and storytelling circles for organizations.",
+      "what_you_do": "Organizations, workplaces and schools book its creative workshops, storytelling circles, or a live performance of its piece about collective action. The group also makes a podcast with Philadelphia students and educators.",
+      "kind": "network",
+      "categories": ["theater-dance-performance"],
+      "interests": ["storytelling_spoken_word"],
+      "motives": ["values", "understanding"],
+      "formats": ["perform_make_together", "conversation"],
+      "roles": ["create"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "invite", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Workshops, StoryCircles and performances are arranged with each organization. No public calendar is listed."
+      },
+      "cost": {
+        "level": "unknown",
+        "text": "No fees are listed. Ask through the contact form."
+      },
+      "contacts": {
+        "website": "http://www.practicespacecollective.org"
+      },
+      "first_step": {
+        "how": "Use the contact form on the Contact page to ask whether a workshop, StoryCircle or performance can be arranged for your group, and whether individuals can take part.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 1,
+        "basis": "Offerings are booked by invitation from organizations, workplaces and schools, and the site describes no public class, audition or membership for individuals.",
+        "what_to_expect": "A workshop uses theater and storytelling methods to build relationships or plan together. A StoryCircle is a facilitated gathering where members share their stories in a relaxed way. The live performance is hosted by a school or arts venue and can include a talkback with the audience afterward."
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "http://www.practicespacecollective.org",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "http://www.practicespacecollective.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status"]},
+        {"url": "https://practicespacecollective.org/offerings/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "schedule", "cost", "first_step", "what_to_expect"]},
+        {"url": "https://practicespacecollective.org/contact/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://practicespacecollective.org/projects/", "seen": "2026-10-08", "fields": ["summary", "what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Rated 1 because offerings are booked by invitation from organizations, workplaces and schools, so an individual cannot join. Kept as publish so the directory shows it is a real Philadelphia theater collective, but it could be hidden as private if the owner reads 'no public way in' strictly. No dates or fees are on the site, and the projects page gives no dates for the education podcast or play. The contact form is the only route shown, so no email or phone is recorded."
+    },
+    {
+      "match": {
+        "group_id": "preservation-alliance-for-greater-philadelphia",
+        "lead_ids": ["cultural_fund:preservation-alliance-for-greater-philadelphia-3", "irs_bmf:232106589"],
+        "ein": "232106589",
+        "website": "https://preservationalliance.com"
+      },
+      "verdict": "publish",
+      "name": "Preservation Alliance for Greater Philadelphia",
+      "summary": "A nonprofit that works to protect Philadelphia's old buildings and neighborhoods. Its volunteer guides lead walking tours on weekends from May into November, each one covering a different part of the city.",
+      "what_you_do": "Buy a ticket for a walking tour, usually led by a volunteer guide, or train to become a volunteer guide. Guides attend training and pass a written certification exam.",
+      "kind": "nonprofit",
+      "categories": ["history-heritage-preservation"],
+      "interests": ["walking_tours", "preservation_architecture"],
+      "motives": ["understanding", "values"],
+      "formats": ["conversation"],
+      "roles": ["help_teach"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Volunteer-led walking tours, usually Saturdays at 10 am and Sundays at 2 pm, May through October, with a few more tours in November.",
+        "days": ["sat", "sun"],
+        "times": ["morning", "daytime"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Neighborhood walking tours (meeting point listed on each tour; a few tours are in nearby suburbs or Camden, NJ)", "in_city": true}
+      ],
+      "cost": {
+        "level": "paid",
+        "text": "Public tours are listed at $18 each, bought online in advance. Private tours need a $200 deposit for up to 10 people, plus $20 for each extra person. Students, children 18 and under, and Art-Reach or PA ACCESS card holders can ask about discounts."
+      },
+      "commitment": "drop_in",
+      "contacts": {
+        "website": "https://preservationalliance.com",
+        "email": "info@preservationalliance.com",
+        "phone": "215-546-1146"
+      },
+      "first_step": {
+        "how": "Open the upcoming tours page, choose a tour, and click Register to buy a ticket in advance. To ask about becoming a guide, email info@preservationalliance.com or call 215-546-1146.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Public tours are open to anyone who buys a ticket in advance, and each listing has a Register button. Becoming a guide takes training and a written exam, so that path is less open.",
+        "what_to_expect": "A public tour usually runs 1.5 to 2 hours, rain or shine. A volunteer guide leads the group and talks through a headset, and you hear through an earpiece or through your own wired headphones. Bring water and wear comfortable clothing.",
+        "first_visit_tips": [
+          "Check the meeting spot on the tour's listing before you go, since it changes from tour to tour.",
+          "Bring wired headphones with a standard headphone jack if you want your own. Bluetooth headphones and Apple's own headphone jack do not work with the tour audio.",
+          "Dress for the weather, because tours run rain or shine."
+        ]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://preservationalliance.com/walking-tours/",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://preservationalliance.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "contacts", "status", "first_step"]},
+        {"url": "https://preservationalliance.com/walking-tours/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "status", "first_step", "contacts"]},
+        {"url": "https://preservationalliance.givecloud.co/programs-and-events/neighborhood-walking-tours", "seen": "2026-10-08", "fields": ["schedule", "cost", "locations"]},
+        {"url": "https://preservationalliance.com/explore-historic-philadelphia/become-a-guide/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tour listings on the upcoming tours page show dates with no year, so the 2026 reading tier 1 gave for the fall listings (October to November 2026) is not visible on the pages read today. last_sign_of_life and its URL are kept as tier 1 had them, pending a recheck. Three of the 11 listed tours are outside Philadelphia (Camden NJ, Central Bryn Mawr, and Beechwood in Haverford Township). Tier 1 said drop-in was true; corrected to false because tickets are bought in advance only. The Become a Guide page names a coordinator, but its email link points to a different address from the one in its text, so this record uses the general office address. The Association of Philadelphia Tour Guides runs the written exam, but the page gives no link for it. The Resources for Guides page is password protected and was not entered. Art-Reach, linked from the tours page, was checked and dropped as a lead: it runs a discount card and webinars for disabled patrons and arts staff, not a group people join."
+    },
+    {
+      "match": {
+        "group_id": "prevention-point-philadelphia",
+        "website": "https://ppponline.org/"
+      },
+      "verdict": "publish",
+      "name": "Prevention Point Philadelphia",
+      "summary": "A nonprofit that serves people who are homeless or who use drugs. It runs a weekday drop-in center, a mobile unit called Wellness on Wheels, HIV prevention, medical and behavioral health services, and a clinic for opioid treatment.",
+      "what_you_do": "Stop by the weekday drop-in center for coffee, case management, mail, clothing and hygiene items, and referrals. You can also use its medical and behavioral health services, or volunteer or intern through its volunteer program.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs", "health-wellness"],
+      "interests": ["free_help_clinics", "homeless_outreach", "harm_reduction"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "The drop-in center is open Monday to Friday, 9:30 am to 4 pm. The group does not offer volunteer opportunities on weekends.",
+        "days": ["mon", "tue", "wed", "thu", "fri"],
+        "times": ["morning", "daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Main address (from the contact page)", "address": "2913-2915 Kensington Ave", "zip": "19134", "in_city": true}
+      ],
+      "contacts": {
+        "website": "https://ppponline.org/",
+        "email": "acason@ppponline.org",
+        "phone": "215-634-5272",
+        "social": [
+          "https://www.facebook.com/preventionpointphiladelphia",
+          "https://www.linkedin.com/company/prevention-point-philadelphia",
+          "https://www.instagram.com/preventionpointphiladelphia/",
+          "https://bsky.app/profile/ppponline.org"
+        ]
+      },
+      "commitment": "drop_in",
+      "access": {
+        "notes": "Nearest SEPTA stop: the Market-Frankford Line, Somerset stop, as the contact page directs. The entrance is on Monmouth Street."
+      },
+      "first_step": {
+        "how": "Walk in to the drop-in center on a weekday between 9:30 am and 4 pm, or email the drop-in coordinator, Amira Cason, at acason@ppponline.org to ask about current services and any ID or sign-up needs.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The drop-in center is open to the public on weekdays, and the group says it welcomes people of all backgrounds without judgment. The site gives a named coordinator to contact.",
+        "what_to_expect": "The drop-in center is open Monday to Friday, 9:30 am to 4 pm, and the group says it aims to be free of judgment. Services include case management, mail, coffee, clothing and hygiene items, and drug and alcohol referrals. Ask the coordinator ahead of time whether you need any ID or sign-up before your first visit.",
+        "first_visit_tips": [
+          "Come on a weekday between 9:30 am and 4 pm, since the drop-in center is open Monday to Friday.",
+          "Take the Market-Frankford Line to the Somerset stop, as the contact page suggests, and use the entrance on Monmouth Street.",
+          "Email the coordinator before a first visit to ask what to bring and whether ID is needed."
+        ]
+      },
+      "status": "probably_active",
+      "last_sign_of_life": "2025-01",
+      "sign_of_life_url": "https://inquirer.com/life/donate-volunteer-mutual-aid-organizations-philadelphia-20250114.html",
+      "sources": [
+        {"url": "https://ppponline.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "interests", "contacts", "status", "contacts.social"]},
+        {"url": "https://ppponline.org/about-us/contact-us", "seen": "2026-10-08", "fields": ["contacts", "locations", "first_step", "access.notes"]},
+        {"url": "https://ppponline.org/services/drop-center", "seen": "2026-10-08", "fields": ["schedule", "summary", "what_you_do", "what_to_expect", "first_step", "contacts.email"]},
+        {"url": "https://ppponline.org/services/community-engagement-and-volunteer-services", "seen": "2026-10-08", "fields": ["what_you_do", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The tier 1 summary mentioned HIV and hepatitis testing and wound care. Those services did not appear on the pages read today, so the summary now lists only what those pages show. Drop-in hours come from the drop-in center page. The drop-in center has no separate street address on the pages read, so the contact page address is recorded as the main address. The mobile unit has no schedule on the site. The group offers no weekend volunteer shifts, and no volunteer application process is described on the pages read."
+    }
+  ],
+  "leads_only": [],
+  "blocked": [],
+  "notes": "Seven records, all verdict publish. Searches: 1 of 1 used. Fetches: 24 used of the 60 cap. One fetch was a mistake: I called a made-up placeholder domain by accident, it failed on DNS, and nothing from it is used. Not read: the Facebook pages (lead-only platform), and the password-protected Resources for Guides page at Preservation Alliance, which I did not try to enter. Art-Reach was checked as a lead and dropped (see the Preservation Alliance record notes). Changes from tier 1 that a reviewer should look at: Powers Park status moved from active to dormant, because no dated activity after May 2018 was found; Preservation Alliance drop-in corrected to false; Practice Space audience set to invite with newcomer rating 1, because its offerings are booked by organizations, and it could be hidden as private if the owner reads the rule strictly; Prevention Point summary corrected to services the pages show; Power Street Theatre summary and first step corrected (PlayTime asks for donations, and the Land and Body courses are the adult program). Association of Philadelphia Tour Guides and the Love Your Park city program are named on pages in this batch but have no link I could record as a lead, so they are not in leads_only."
+}

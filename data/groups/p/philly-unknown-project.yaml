@@ -14,10 +14,12 @@ kind: nonprofit
 categories:
 - hunger-housing-basic-needs
 - health-wellness
+- gardening-greening
 interests:
 - homeless_outreach
 - goods_closets
 - harm_reduction
+- community_garden
 motives:
 - values
 formats:
@@ -37,7 +39,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No days or hours are listed. Volunteers arrange shifts by email.
+  text: No days or hours are published. Volunteers arrange shifts by email. The Ruth Street Garden also
+    hosts community events, such as scout sessions and compost giveaways.
   days: []
   times: []
   recurring: false
@@ -55,7 +58,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free to volunteer
+  text: Free to volunteer. Donations are welcome through the group's donation page.
 commitment: drop_in
 group_size: null
 access:
@@ -70,23 +73,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the 'Become A Volunteer Today' link on the site, which opens an email to phillyunknownproject@gmail.com
+  how: Email phillyunknownproject@gmail.com with Volunteer Interest as the subject, and ask about the
+    next shift.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: A public volunteer email; the page lists roles but no schedule, training or first-shift steps
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A public volunteer email is listed and the roles are described, but the site gives no schedule,
+    training or first shift steps.
+  what_to_expect: You help with street outreach or pack compassion bags, and some volunteers help at the
+    hub or with the Ruth Street Garden. You arrange a shift by email first. Volunteering costs nothing.
+  first_visit_tips:
+  - Use Volunteer Interest as the subject line of your email.
+  - The site gives no hub hours, so ask about times before you go to D Street and Indiana.
 contacts:
-  website: https://phillyunknownproject.org
+  website: https://phillyunknownproject.org/
   email: phillyunknownproject@gmail.com
   phone: null
   contact_name: Britt Carpenter
-  social: []
+  social:
+  - https://www.instagram.com/phillyunknown.project/
+  - https://www.facebook.com/PhillyUnknown
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2025-01
-sign_of_life_url: https://inquirer.com/life/donate-volunteer-mutual-aid-organizations-philadelphia-20250114.html
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://billypenn.com/2025/11/06/ruth-street-garden-philly-unknown-nkcdc/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -110,11 +120,18 @@ sources:
   - locations
   - contacts
   - first_step
+  - schedule
 - url: https://inquirer.com/life/donate-volunteer-mutual-aid-organizations-philadelphia-20250114.html
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://billypenn.com/2025/11/06/ruth-street-garden-philly-unknown-nkcdc/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

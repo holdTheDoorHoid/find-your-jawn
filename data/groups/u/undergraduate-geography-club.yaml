@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:geography
 ein: null
-summary: null
-what_you_do: null
+summary: A GeoGuessr and geography club for Penn undergraduates. Members learn to identify places from
+  visual clues, play ranked games, and compete against other universities in a collegiate league.
+what_you_do: Come to weekly meetings and casual GeoGuessr sessions, or try out for the competitive team,
+  which practices and joins the Collegiate GeoGuessr League. Competing is optional.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- games-puzzles
+interests:
+- video_games
+- puzzles_escape
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- figure_out
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,17 +34,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: General body meetings weekly on Mondays at 7 pm, starting September 14, in Huntsman Hall room
+    365 (listed under Fall 2026)
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
+  season: fall
+locations:
+- label: Huntsman Hall (JMHH), room 365
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -48,31 +70,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Sign up with the club's listserv form or email the club, then come to a meeting or casual session.
+    No experience is needed.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 5
+  basis: The club runs an orientation session for new students and says casual sessions are open to everyone.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://ugcpenn.vercel.app/
   email: ugcatpenn@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/ugcpenn/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://ugcpenn.vercel.app/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://ugcpenn.vercel.app/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://pennclubs.com/api/clubs/geography/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

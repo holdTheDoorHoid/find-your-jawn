@@ -7,9 +7,9 @@ leads:
 ein: '232156232'
 summary: A nonprofit that runs youth choirs for boys, girls and a combined group, along with instrument
   and music classes. Its choirs hold public concerts across the year.
-what_you_do: Audition for one of the choirs for the 2026 to 2027 season (each choir has its own audition
-  page). You can also join the Find Your Instrument program or the private lessons and musicianship classes,
-  or attend a public concert.
+what_you_do: 'Audition for one of the three choirs: the Philadelphia Boys Choir and Chorale, the Philadelphia
+  Girls Choir, or the Commonwealth Youth Choir. Each has its own audition booking page for the 2026 to
+  2027 season. You can also take private lessons or musicianship classes, or attend a public concert.'
 kind: nonprofit
 categories:
 - music
@@ -30,16 +30,15 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 6
+  max_age: 18
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: 'Listed events: a Concert in Costume on Saturday, October 24, 2026, 3 to 4 pm; a Select Singers
-    performance in Scranton on Sunday, November 8, 2026, 3 to 5 pm; and a fundraiser on Friday, November
-    20, 2026, 7 to 9:30 pm. The year comes from flyer images and the 2026 to 2027 audition text.'
+  text: Choirs hold auditions each season and then place singers in age-based ensembles. Semesters end
+    with a joint concert for family and friends, and the choirs perform in public through the year.
   days:
   - fri
   - sat
@@ -47,10 +46,10 @@ schedule:
   times:
   - daytime
   - evening
-  recurring: false
+  recurring: true
   season: event_only
 locations:
-- label: Choir building (address from the batch record, not on this site)
+- label: Philadelphia Boys Choir and Girls Choir audition site, also the mailing address
   address: 1336 Spring Garden St
   neighborhood: null
   planning_district: null
@@ -59,10 +58,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Commonwealth Youth Choir audition site
+  address: 8855 Germantown Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19118'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Tuition and fees are not listed on the site
+  text: The pages reviewed list no tuition, fees, or audition charge.
 commitment: null
 group_size: null
 access:
@@ -74,22 +82,30 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
   how: Open the audition page for the choir that fits your child, linked from the Auditions menu, and
-    book an audition for the 2026 to 2027 season
-  drop_in: null
-  sign_up_needed: null
+    book an audition for the 2026 to 2027 season.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Joining a choir takes an audition, so you learn what the choir is like only after auditioning.
+  basis: Joining a choir takes an audition, so families learn what a choir is like only after auditioning.
     Auditions are open for the 2026 to 2027 season.
-  what_to_expect: null
-  first_visit_tips: []
+  what_to_expect: Each choir has its own audition booking page, and the auditions landing page does not
+    say how long an audition lasts or what to prepare. The girls choir places singers in ensembles by
+    age and skill after the audition, so a child joins a group that fits their level. Public concerts
+    are a way to hear the choirs first.
+  first_visit_tips:
+  - 'Book at the right audition site: the boys and girls choirs audition at 1336 Spring Garden Street,
+    and the Commonwealth Youth Choir at 8855 Germantown Avenue.'
+  - Find Your Instrument is run with partner schools, so ask your child's music teacher about it rather
+    than signing up directly.
+  - Call 215-222-3500 or email info@pycemusic.org to ask about tuition, since the pages do not list it.
 contacts:
   website: https://pycemusic.org
-  email: null
-  phone: null
+  email: info@pycemusic.org
+  phone: 215-222-3500
   contact_name: The Organization
   social: []
   calendar_feed: null
@@ -119,7 +135,37 @@ sources:
   - status
   - first_step
   - audience
-research_tier: 1
+  - last_sign_of_life
+- url: https://pycemusic.org/auditions/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - locations
+  - first_step
+  - first_visit_tips
+- url: https://pycemusic.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - schedule
+  - what_you_do
+- url: https://pycemusic.org/find-your-instrument/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+- url: https://pycemusic.org/phillygirlschoir/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - cost
+- url: https://pycemusic.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

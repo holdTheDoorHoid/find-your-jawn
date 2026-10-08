@@ -1,0 +1,203 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-20",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 34,
+ "leads_only": [
+  {
+   "name": "The Quaker Notes",
+   "url": "https://pennclubs.com",
+   "note": "Named as the sister group of The Pennchants in the Pennchants directory entry. Not checked. The URL is the directory root because the group's own page was not identified."
+  },
+  {
+   "name": "Penn Student Government",
+   "url": "https://pennclubs.com",
+   "note": "Named as the parent body of SCUE in the SCUE directory entry. Not checked. The URL is the directory root because the group's own page was not identified."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://penngleeclub.com",
+   "status": 403,
+   "note": "Club website returned HTTP 403. Not read; the Glee Club record rests on the directory entry alone."
+  },
+  {
+   "url": "https://shorturl.at/tt6XO",
+   "status": 403,
+   "note": "Short link to the Wharton AgriBusiness Club website returned HTTP 403. Not read."
+  }
+ ],
+ "notes": "Processed all 20 Penn Clubs entries and fetched 14 club websites (34 fetches, 0 WebSearch calls). Verdicts: 20 publish, 0 hide, 0 not_a_group, 0 duplicate, 0 out_of_area. Three records are held back as status unknown, with summary, categories and interests left out: The Italian Club at Penn, The Undergraduate Law Journal at Penn, and The Petey Greene Program at Penn. In each, the directory's status field reads INACTIVE and no dated evidence on the group's own pages settles it. Status otherwise follows the newest dated item found on the club's own site or the directory; season-only or year-only notices are noted per record. For many clubs the directory's application field is an unlabeled number, so newcomer ratings rely on the descriptions. Christian groups have faith left empty because the vocabulary has no general Christian id. One directory weekday (Sunday, September 7, 2026) is wrong, so weekdays were left out. No personal names, phone numbers or personal emails were recorded. Instagram, Facebook, Telegram, GroupMe and Linktree pages were not read (leads only). No rate limiting was seen. The two HTTP 403 sites were not retried.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-italian-club"
+    ],
+    "group_id": "the-italian-club-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "The Italian Club at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "community": [],
+    "support_group": false,
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Join the general mailing list through the sign-up form linked in the directory listing.",
+    "newcomer_friendliness": 3,
+    "basis": "The club is open to any level of Italian, including none, and the mailing list is open to join."
+   },
+   "contacts": {
+    "email": "pennitalianclub@gmail.com",
+    "social": [
+     "https://instagram.com/italianclub.penn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-italian-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "audience",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory's active flag is true but its status field reads INACTIVE, and no dated items were found, so the status cannot be settled. Summary, categories and interests are left out until the club confirms it is running. The directory's application field is set with no details. The sign-up form link is not copied.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:petey-greene"
+    ],
+    "group_id": "the-petey-greene-program-at-penn",
+    "ein": null,
+    "website": "https://www.peteygreene.org/philadelphia"
+   },
+   "verdict": "publish",
+   "name": "The Petey Greene Program at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "community": [],
+    "support_group": false,
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Come to the first general body meeting listed in the directory, or email the group. The directory says an application is required.",
+    "newcomer_friendliness": 2,
+    "basis": "The directory says an application is required, and no audition is mentioned."
+   },
+   "contacts": {
+    "website": "https://www.peteygreene.org/philadelphia",
+    "email": "UPennPGP@peteygreene.org",
+    "social": [
+     "https://instagram.com/pgpatpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/petey-greene/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.peteygreene.org/philadelphia",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory's active flag is true but its status field reads INACTIVE. The parent program's Philadelphia page has stories dated up to October 7, 2026 and says the Philadelphia program has run since spring 2015, but it does not describe the Penn chapter, so the chapter's status is unconfirmed. Summary, categories and interests are left out until it is confirmed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pulj"
+    ],
+    "group_id": "the-undergraduate-law-journal-at-penn",
+    "ein": null,
+    "website": "http://www.pulj.org"
+   },
+   "verdict": "publish",
+   "name": "The Undergraduate Law Journal at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "community": [],
+    "support_group": false,
+    "school": "penn"
+   },
+   "first_step": {
+    "how": "Join the mailing list through the Google Form linked in the directory listing. The journal says application information will be shared there.",
+    "newcomer_friendliness": 2,
+    "basis": "Joining appears to go through an application, though the entry does not describe it."
+   },
+   "contacts": {
+    "website": "http://www.pulj.org",
+    "email": "pennulj@gmail.com",
+    "social": [
+     "https://linkedin.com/company/penn-undergraduate-law-journal"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "http://www.pulj.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts.website",
+      "status"
+     ]
+    },
+    {
+     "url": "https://pennclubs.com/api/clubs/pulj/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory's active flag is true but its status field reads INACTIVE. The journal's site says submissions are open for its 24th issue, but the page gives no year, so it is not dated evidence. Confirm before publishing. Summary, categories and interests are left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

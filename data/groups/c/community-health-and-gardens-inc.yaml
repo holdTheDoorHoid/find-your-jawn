@@ -1,22 +1,34 @@
 id: community-health-and-gardens-inc
-name: Community Health and Gardens Inc
+name: Community Health and Gardens
 aka: []
 leads:
 - irs_990n:352401401
 - irs_bmf:352401401
 ein: '352401401'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A Philadelphia health group that runs a community garden where neighbors grow vegetables, with
+  a focus on healthy eating and exercise.
+what_you_do: Grow vegetables in the community garden. The site also lists one-off events such as a harvest
+  day, a fun fair, and a first aid class, but it does not say how to sign up for them.
+kind: garden
+categories:
+- gardening-greening
+- health-wellness
+interests:
+- community_garden
+- health_outreach
+motives:
+- values
+- social
+formats:
+- side_by_side
+- one_off_event
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +37,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: No regular garden hours are published. The site lists one-off events, but the event list shows
+    no year and no times.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Address on IRS filing (garden site not named on the website)
   address: 1252 N 57th St
   neighborhood: null
-  planning_district: west_park
-  zip: '19131'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1252 N 57th Street
-  neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19131'
   lat: null
   lng: null
@@ -67,23 +71,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Contact Us page on chgphilly.org to ask how to join the garden and when it is open
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site invites visitors to join the community garden and points to a contact page, but gives
+    no sign-up steps or hours.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: CHGphilly.org
+  website: https://chgphilly.org
   email: null
   phone: null
   contact_name: Beverly Giles
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2024-06
+sign_of_life_url: https://chgphilly.org/blog
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +104,23 @@ sources:
   - locations
   - contacts.website
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://chgphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+- url: https://chgphilly.org/blog
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://chgphilly.org/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

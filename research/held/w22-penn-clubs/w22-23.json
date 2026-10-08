@@ -1,0 +1,414 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-23",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 45,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.penngrowth.org/",
+   "status": 404,
+   "note": "HTTP 404 on www and bare domain, and on the listserv page. Dead link, not a bot block; site unreadable."
+  },
+  {
+   "url": "http://wurec.info/",
+   "status": 404,
+   "note": "HTTP 404 on http and https. Dead link, not a bot block; site unreadable."
+  },
+  {
+   "url": "https://whartonuss.com/",
+   "status": null,
+   "note": "TLS certificate error (unable to get local issuer certificate) on https and http. Page unreadable."
+  }
+ ],
+ "notes": "Searches used: 0. Fetches used: 45 (20 directory entries and 25 club websites). No rate limiting seen. All 20 entries are verdict publish; none were hidden, duplicated or out of area. Status counts: active 1, probably_active 8, unknown 11. Eight clubs are marked INACTIVE in their directory entries (Retail, Aerospace, Consulting WUCC, Real Estate WUREC, Sports Business, WUPP, Future of Cities, Wellness Board). Per the brief they were written as unknown records with no summary, so they are held back. Two of them have club sites that show newer dated activity: the Aerospace site lists a February 2026 event and the Future of Cities site lists a February 20, 2026 conference. The orchestrator should decide whether to lift the inactive flag for those two. Three full records have status unknown and will show as unknown: WUEC, Growth Equity and USS. Unreadable sites: Growth Equity (HTTP 404 on every URL tried), WUREC (HTTP 404) and USS (TLS certificate error); these are listed under blocked as dead or unreadable, not as bot blocks. Wharton Together's directory email looks like a personal Gmail address, so it was not recorded. Wellness Board co-chair names and emails were not recorded. The Finance club site uses F26 for Fall 2026; that reading is the basis for last_sign_of_life 2026-09. Directory facts came through WebFetch's summarizer, not raw JSON, so exact dates, emails and URLs deserve a spot check before publishing. Future of Cities is an annual conference run by graduate students; after review it may be better as not_a_group or as a separate entry.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-retail-club"
+    ],
+    "group_id": "wharton-retail-club",
+    "website": "https://groups.wharton.upenn.edu/wrc/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Retail Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://groups.wharton.upenn.edu/wrc/",
+    "email": "uwhartonretail@gmail.com",
+    "social": [
+     "https://instagram.com/wharton.retail"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-retail-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://groups.wharton.upenn.edu/wrc/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members, so no summary, categories or interests were written. The club site has no dated items and does not say whether it takes members. The directory's only dated mentions are Spring and Fall 2021 fair badges, so the club is likely dormant.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wuac"
+    ],
+    "group_id": "wharton-undergraduate-aerospace-club",
+    "website": "https://wuac.pages.dev"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Aerospace Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://wuac.pages.dev",
+    "email": "aerospace@wharton.upenn.edu",
+    "social": [
+     "https://instagram.com/wuacpenn/",
+     "https://linkedin.com/company/wuac"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wuac/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://wuac.pages.dev",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members. The club's own site lists a February 2026 event (a symposium it co-sponsored) and a 2025 fireside chat, so the club may be active. The orchestrator should decide whether to lift the inactive flag. The site says general body meetings are open to all Penn undergraduates.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wucc"
+    ],
+    "group_id": "wharton-undergraduate-consulting-club-wucc",
+    "website": "https://wuccpenn.org"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Consulting Club (WUCC)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://wuccpenn.org",
+    "email": "wucc.consulting@gmail.com",
+    "social": [
+     "https://instagram.com/wuccpenn/",
+     "https://linkedin.com/company/wharton-undergraduate-consulting-club"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wucc/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://wuccpenn.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members. The club site has no dated items. It says all Penn undergraduates may sign up for general body events, and that applications go through Penn Clubs.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-undergraduate-real-estate-club"
+    ],
+    "group_id": "wharton-undergraduate-real-estate-club",
+    "website": "http://wurec.info/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Real Estate Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "http://wurec.info/",
+    "email": "ask.wurec@gmail.com",
+    "social": [
+     "https://facebook.com/wurec",
+     "https://instagram.com/wurec_/",
+     "https://twitter.com/WUREC"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-undergraduate-real-estate-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members. The club website returned HTTP 404 on both http and https, so it was not read. The directory names committee application windows in the fall and spring but gives no dates.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sports-business"
+    ],
+    "group_id": "wharton-undergraduate-sports-business-club",
+    "website": "https://wusbc.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Sports Business Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://wusbc.weebly.com/",
+    "email": "usbcupenn@gmail.com",
+    "social": [
+     "https://instagram.com/usbc.upenn/",
+     "https://twitter.com/WhartonUSBC"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sports-business/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://wusbc.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members. The club site's newest dated item is a Fall 2024 recruitment timeline shown only as an image with no readable month, so the club cannot be placed with confidence inside 24 months. The club was founded in March 2005. The directory notes registration with Student Affairs for the 2025 to 2026 academic year; that is an administrative note, not an event, so it was not used for status.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wupp"
+    ],
+    "group_id": "wharton-undergraduates-in-public-policy",
+    "website": "https://wupp.org"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduates in Public Policy",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://wupp.org",
+    "email": "pennwupp@gmail.com",
+    "social": [
+     "https://instagram.com/pennwupp/"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wupp/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://wupp.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members, and says applications are expected to reopen in Fall 2026. The club site has no full dates, only the years 2023 to 2025 in case competition references.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-future-of-cities-conference"
+    ],
+    "group_id": "wharton-weitzman-future-of-cities-forum",
+    "website": "https://www.whartonfuturecities.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton-Weitzman Future of Cities Forum",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "public"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.whartonfuturecities.com/"
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-future-of-cities-conference/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://www.whartonfuturecities.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory shows both an active flag and an INACTIVE status, so the entry is treated as inactive. The forum site lists one annual conference, on February 20, 2026, at The Study in University City, with tickets sold through an external link. The directory says the forum is run by graduate students, so the verdict (group versus one-time event) may need review. The directory's contact email is hidden and was not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-wellness-board"
+    ],
+    "group_id": "wharton-wellness-board",
+    "website": "https://groups.wharton.upenn.edu/wwb/home/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Wellness Board",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "contacts": {
+    "website": "https://groups.wharton.upenn.edu/wwb/home/",
+    "email": "whartonwellness@wharton.upenn.edu",
+    "social": [
+     "https://instagram.com/wharton_wellness/"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-wellness-board/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://groups.wharton.upenn.edu/wwb/home/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back per brief: the directory entry is marked INACTIVE and not accepting members. The club site has no dated items. Co-chair names and personal addresses in the directory were deliberately not recorded, and the directory's co-chair email link points to a different address than its listed club contact.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

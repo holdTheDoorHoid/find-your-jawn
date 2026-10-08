@@ -1,0 +1,437 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-22",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 38,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 20 Penn clubs in this batch were read from the pennclubs.com public API. Each club's own website was fetched once where the entry linked one (17 fetches). Retries: the Wellness site redirected once to its wordpress address and that was followed; the WIBEC site failed with a connection reset on two attempts and was not retried further. Blank or unrelated pages: the West Philly Swingers site, the Wharton Hedge Fund Club site and the Wharton Muslims in Business group page returned no usable content. No rate limiting was seen. Records held back (no summary, categories or interests, status unknown) because the directory entry is marked INACTIVE or conflicts with its active flag: Wellness Student Coalition, West Philadelphia Sanctuary, WAAG, WASA, Alumni Connections Council, Wharton Crew Team, Wharton Energy Conference, Wharton Graduate Association, Wharton Muslims in Business. Four of these (Wellness, Energy Conference, WAAG, Sanctuary) have current-looking evidence on their own sites or in the directory text, so the orchestrator should decide whether to promote them. Hedge Fund Club is marked dormant on 2021 evidence only. WIBEC is published with status unknown. Personal names, phone numbers and personal emails were left out, including officer and advisor contacts. Searches used: 0.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-wellness"
+    ],
+    "group_id": "wellness-student-coalition",
+    "ein": null,
+    "website": "https://upennwellness.com/"
+   },
+   "verdict": "publish",
+   "name": "Wellness Student Coalition",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://upennwellness.com/",
+    "email": "pennwellness@gmail.com",
+    "social": [
+     "https://instagram.com/pennwellness/",
+     "https://facebook.com/PennWellness"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-wellness/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry shows INACTIVE, which conflicts with its active flag, so no summary, categories or interests were written. Promote on review. The club site (upennwellness.com, which redirects to upennwellness.wordpress.com) is working and lists Wellness Week 2026 and eight constituent groups, so this is probably a live umbrella group. No dated item with a month was found, so no sign of life is recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:west-philadelphia-sanctuary"
+    ],
+    "group_id": "west-philadelphia-sanctuary",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "West Philadelphia Sanctuary",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "westphillysanctuary@gmail.com",
+    "social": [
+     "https://instagram.com/westphillysanctuary",
+     "https://linkedin.com/company/west-philadelphia-sanctuary"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/west-philadelphia-sanctuary/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry is marked inactive, though it says the group accepts members and lists an interest form. The entry names a 2024 Projects for Progress win and a 2026 Hassenfeld Winner award, and describes weekly programs at The Rotunda and Walnut Street West Library. No club website is linked and no dated program item was found, so review before publishing. Audience is set to public because the entry describes free, welcoming community spaces; check this too.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:waag"
+    ],
+    "group_id": "wharton-actuarial-and-accounting-group",
+    "ein": null,
+    "website": "https://groups.wharton.upenn.edu/WAAG/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Actuarial & Accounting Group (WAAG)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://groups.wharton.upenn.edu/WAAG/",
+    "email": "waag.penn@gmail.com",
+    "social": [
+     "https://instagram.com/wharton.waag",
+     "https://linkedin.com/company/whartonaccounting"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/waag/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory shows the club as both active and inactive. The club site (groups.wharton.upenn.edu/WAAG) has a Join link and no dated items; its 2026 copyright line is not counted as evidence. The directory says recruiting happens in fall and spring through an application, but the site says there is no application process, so the way in needs checking. Officer emails on the site were left out.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-africa-students-association-wasa"
+    ],
+    "group_id": "wharton-africa-students-association-wasa",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Wharton Africa Students Association (WASA)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "wasa_wabf@wharton.upenn.edu",
+    "social": [
+     "https://instagram.com/wharton_africa"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-africa-students-association-wasa/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry is marked inactive, even though it also says the club is accepting members. It says an application is required and gives no meeting details. No website, listserv or dated item was found.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-alumni-relations-council"
+    ],
+    "group_id": "wharton-alumni-connections-council",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Wharton Alumni Connections Council",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "waccouncil@wharton.upenn.edu",
+    "social": [
+     "https://instagram.com/waccupenn/"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-alumni-relations-council/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry is marked inactive and not accepting members. Per the entry, it is open only to Wharton freshmen, is a four-year commitment, and takes applications through Penn Clubs. The only date is a 2021 badge with no full date. No website was linked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:graduate-rowing-and-crew-team"
+    ],
+    "group_id": "wharton-crew-team",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Wharton Crew Team",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "locations": [
+    {
+     "label": "Boathouse",
+     "address": "2 Boathouse Row",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "email": "rowforwharton@gmail.com",
+    "social": [
+     "https://facebook.com/wharton.crew",
+     "https://instagram.com/whartoncrewteam/"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/graduate-rowing-and-crew-team/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "locations"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory shows an INACTIVE status that conflicts with its active flag. The entry says it is a graduate rowing team open to Penn graduate students and is accepting members for fall, with novice rowers welcome. The only date is a 2021 badge. Confirm with the club by email before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-energy-conference"
+    ],
+    "group_id": "wharton-energy-conference",
+    "ein": null,
+    "website": "https://whartonenergyclub.org/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Energy Conference",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://whartonenergyclub.org/"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-energy-conference/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory marks the entry inactive, though it shows 11 members and says the club accepts members. Decide on review. The club's own site shows a 2026 Wharton Energy and Climate conference on October 30, 2026 at Convene, with tickets through Eventbrite. The site names the organizer as the Wharton Energy and Climate Club, an independent student-led group, which may be a different entry. The conference is an annual event, so the verdict could be group or not_a_group. The directory email is hidden.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-graduate-association"
+    ],
+    "group_id": "wharton-graduate-association",
+    "ein": null,
+    "website": "https://www.the-wga.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Graduate Association",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.the-wga.com/",
+    "email": "the.wharton.wga@gmail.com"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-graduate-association/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry is marked inactive and not accepting members. The club's own site describes a student government for Wharton's graduate program, with membership automatic for Wharton MBA students, but its only dated items are 2021 event photos (Red and Blue Ball, August 31 and September 1, 2021). Review whether this is a government body that should be dormant rather than publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-muslims-in-business"
+    ],
+    "group_id": "wharton-muslims-in-business",
+    "ein": null,
+    "website": "https://groups.wharton.upenn.edu/Muslim/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Muslims in Business",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://groups.wharton.upenn.edu/Muslim/",
+    "social": [
+     "https://instagram.com/whartonmuslims/"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-muslims-in-business/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts",
+      "audience"
+     ]
+    }
+   ],
+   "notes": "Held back: the directory entry is marked inactive and not accepting members. The entry says students with any level of connection to Islam or Muslim communities can join, including the curious, but gives no joining steps, meeting details or recruitment dates. The club's group page returned an unrelated page when read, so no site evidence was used. The directory email is hidden.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

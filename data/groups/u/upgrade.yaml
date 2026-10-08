@@ -1,18 +1,30 @@
 id: upgrade
-name: Upgrade
+name: UPGRADE
 aka: []
 leads:
 - penn_clubs:upgrade
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's game development club. Members make a club game each semester, host game jams and workshops,
+  and bring in speakers from the games industry.
+what_you_do: Join the Discord, come to Saturday meetings, and drop in on office hours or work sessions.
+  You do not need experience or an application to start.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- making-tech
+- games-puzzles
+interests:
+- coding_software
+- video_games
+motives:
+- enhancement
+- social
+formats:
+- team_play
+roles:
+- create
+- figure_out
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,20 +36,34 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Saturday meetings from 2 to 5 pm in Towne 217, and office hours on Wednesdays at 8 pm in Levine
+    057
+  days:
+  - sat
+  - wed
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: JMHH, usually room 355
+- label: Towne 217 (Saturday meetings)
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
+  transit: null
+- label: Levine 057 (office hours)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,23 +83,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join the Discord, then come to a Saturday meeting or office hours. Students meet in person, and
+    new members join at the start of each semester.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club's site says no experience and no applications are needed, and the Discord is open at
+    any time.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.pennupgrade.com/
   email: pennupgrade@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://discord.gg/wPyhsyuTQ6
+  - https://instagram.com/pennupgrade/
+  - https://github.com/pennupgrade
+  - https://youtube.com/@pennupgrade
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-02
+sign_of_life_url: https://www.pennupgrade.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +113,24 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/upgrade/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://www.pennupgrade.com/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - last_sign_of_life
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

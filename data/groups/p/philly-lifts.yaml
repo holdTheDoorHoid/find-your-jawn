@@ -3,10 +3,12 @@ name: Philly LIFTS
 aka: []
 leads: []
 ein: null
-summary: A City of Philadelphia program that links families affected by substance use to support groups,
-  recovery help, doula referrals, and free overdose prevention training.
-what_you_do: Families get referrals and support groups. Community events and overdose prevention training
-  are open to all families, not only those enrolled.
+summary: A City of Philadelphia program that connects families affected by substance use, including families
+  of babies born with withdrawal symptoms, to support groups, recovery help, doula referrals and overdose
+  prevention training.
+what_you_do: Families get referrals for food, baby supplies, clothing, housing and job help, plus support
+  groups and recovery services. Community giveaways and celebrations are open to all families, not only
+  people enrolled.
 kind: program
 categories:
 - health-wellness
@@ -35,17 +37,18 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Support groups and events are listed on the program's events page. The program page gives no days
-    or times.
+  text: Community events are listed on the program's events calendar. The city's online overdose reversal
+    training runs monthly at noon, with registration through a Zoom link.
   days: []
-  times: []
-  recurring: null
+  times:
+  - daytime
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
   level: null
-  text: The page does not say whether services cost money
+  text: The program pages do not say whether services cost money.
 commitment: null
 group_size: null
 access:
@@ -60,25 +63,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the new mothers' support group contact at (215) 776-4406, or complete the intake surveys linked
-    on the page for mental health support
+  how: Fill out the Philly LIFTS interest form linked from the services page, or call Carla Calabrese
+    at (215) 776-4406 about the new mothers' support group.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: A public city program with named staff to call, though it does not describe how a first meeting
-    works
-  what_to_expect: null
+  basis: A public city program with named staff and an interest form for families, though the pages do
+    not describe what a first meeting is like.
+  what_to_expect: Your first step is a form or a phone call with program staff, who connect families to
+    referrals and support groups. The new mothers' support group is described as a safe, non-judgmental
+    space.
   first_visit_tips: []
 contacts:
   website: https://www.phila.gov/programs/substance-use-prevention-and-harm-reduction/our-work/philly-lifts/
   email: carla.calabrese@phila.gov
   phone: (215) 776-4406
-  contact_name: null
+  contact_name: Carla Calabrese
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.phila.gov/programs/substance-use-prevention-and-harm-reduction/our-work/philly-lifts/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.substanceusephilly.com/events
 sources:
 - url: https://www.phila.gov/programs/substance-use-prevention-and-harm-reduction/our-work/philly-lifts/
   seen: '2026-10-08'
@@ -89,7 +94,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: http://www.substanceusephilly.com/phillylifts
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://www.substanceusephilly.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

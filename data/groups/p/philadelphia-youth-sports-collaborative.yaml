@@ -7,8 +7,9 @@ ein: '810716680'
 summary: A network of more than 170 youth sports programs across Philadelphia. It trains coaches and referees,
   shares safety guidance, and helps families find a sports program near home. It also works with the city
   on accessible recreation.
-what_you_do: Families can use the Find A Provider list to locate a program. Coaches and referees can use
-  the training and resources pages. Community groups can apply to become members and take part in trainings.
+what_you_do: Families can search the member map by sport, then contact a program from its own website.
+  Coaches, staff and volunteers from member groups can take free trainings (email membership@pysc.org).
+  Groups can apply to join the network for free through its Apply Now form.
 kind: network
 categories:
 - sports-teams
@@ -55,9 +56,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Youth sports provider fees vary by program. Costs for PYSC trainings and events are not stated
-    on the pages read.
+  level: free
+  text: Searching the member map and joining the network are free. Trainings are free for coaches, staff
+    and volunteers of member groups. Each sports program sets its own fees.
 commitment: ongoing_role
 group_size: null
 access:
@@ -72,15 +73,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Find A Provider link to find a youth sports program near you, or sign up for the email
-    newsletter for trainings and events.
+  how: Open the Find A Provider member map, pick a sport tab, and contact a program from its own website.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Families can search the provider list directly, and public events and a newsletter sign-up are
-    listed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Families can search the member list and contact programs with no sign up, and the trainings ask
+    for a simple email to join.
+  what_to_expect: The member map lists programs by sport and links to each program's own website. It does
+    not show addresses, schedules, ages or fees, so families check each program before signing up. Coaches
+    and volunteers can join free trainings on topics such as first aid, mandated reporting and trauma
+    informed coaching.
+  first_visit_tips:
+  - Choose a sport tab first, since the map filters by sport only.
+  - Check each program's own website for ages, schedule and fees.
+  - The city's Program Locator covers city run recreation by age, activity, location and season.
 contacts:
   website: https://www.pysc.org
   email: info@pysc.org
@@ -136,7 +142,30 @@ sources:
   fields:
   - schedule
   - cost
-research_tier: 1
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - locations
+  - contacts
+- url: https://pysc.org/member-services/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+  - summary
+- url: https://pysc.org/training-and-workshops/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_you_do
+- url: https://pysc.org/parent-resources/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

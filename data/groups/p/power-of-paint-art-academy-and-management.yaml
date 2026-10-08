@@ -6,11 +6,11 @@ leads:
 - irs_990n:833125705
 - irs_bmf:833125705
 ein: '833125705'
-summary: A nonprofit art academy that teaches painting to children in paid workshops and runs paint parties.
-  It describes its approach as trauma-informed arts education for young people and their communities.
+summary: A nonprofit art academy that teaches children to paint in multi-week workshops and books paint
+  parties for birthdays and other events. It describes its teaching as trauma-informed arts education.
 what_you_do: Sign a child up for a multi-week painting workshop (you pay to reserve a spot), book a paint
-  party, or apply to volunteer through the online form on the volunteer page. The volunteer form includes
-  a background check.
+  party, or apply to volunteer through the online form on the volunteer page, which asks whether you are
+  willing to submit to a background check.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -36,14 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Multi-week children's workshops. The site's course descriptions give 10 sessions for the 5-week
-    course and 20 sessions for the 10-week course, each 2 hours. Dates and times are not on the site.
+  text: Children's painting workshops run in 2-hour sessions. The 5-week course lists 10 sessions and
+    the 10-week course lists 20. Days and start times are not on the site.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Art academy (address from IRS listing, not shown on site)
+- label: Art academy (address from the IRS listing, not shown on the site)
   address: 4919 Pentridge St
   neighborhood: null
   planning_district: null
@@ -55,8 +55,8 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Children's workshops are listed at $650 (5-week) and $1,300 (10-week), paid to reserve. Paint
-    party prices are not listed.
+  text: Children's workshops are $650 for the 5-week course and $1,300 for the 10-week course, paid in
+    advance to reserve a spot. Paint party prices are not listed on the site.
 commitment: null
 group_size: null
 access:
@@ -65,22 +65,25 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Email help@popartacademy.org or use the contact form on the site to ask about the next children's
-    workshop and whether adults can join. For volunteering, use the application form linked from the volunteer
-    page.
+  how: Email help@popartacademy.org or use the contact form to ask about the next children's workshop
+    and whether adults can join. To volunteer, use the application form on the volunteer page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Workshops can be reserved online and volunteer applications are open, but the site does not say
-    whether adults can join or whether drop-ins are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The children's workshops are described as suited to beginners and can be reserved online, but
+    the site does not say whether adults can join, so the way in for adults is unclear.
+  what_to_expect: Each session runs about 2 hours, and the courses are built for new artists and for people
+    coming back to art after a break. Students learn art history and the basics, and they work with acrylic,
+    watercolor and oil on canvas. The course is paid in advance to reserve a spot, at $650 for the 5-week
+    course or $1,300 for the 10-week course.
+  first_visit_tips:
+  - Ask about adult spots and session times when you email, since the site does not list them.
 contacts:
   website: https://popartacademy.org
   email: help@popartacademy.org
@@ -120,6 +123,7 @@ sources:
   - summary
   - status
   - contacts
+  - what_you_do
 - url: https://popartacademy.org/art-classes-%26-workshops
   seen: '2026-10-08'
   fields:
@@ -127,12 +131,19 @@ sources:
   - schedule
   - cost
   - first_step
+  - audience
+  - what_to_expect
 - url: https://popartacademy.org/volunteer-opportunities
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
-research_tier: 1
+  - requirements
+- url: https://popartacademy.org/paint-parties
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

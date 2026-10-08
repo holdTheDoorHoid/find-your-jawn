@@ -6,10 +6,10 @@ leads:
 - irs_bmf:232106589
 ein: '232106589'
 summary: A nonprofit that works to protect Philadelphia's old buildings and neighborhoods. Its volunteer
-  guides lead weekend walking tours from May through November, each one covering a different part of the
-  city.
-what_you_do: Guides lead tours that last 1.5 to 2 hours, rain or shine. Experienced volunteers from many
-  backgrounds serve as guides, and the site links a Become a Guide page.
+  guides lead walking tours on weekends from May into November, each one covering a different part of
+  the city.
+what_you_do: Buy a ticket for a walking tour, usually led by a volunteer guide, or train to become a volunteer
+  guide. Guides attend training and pass a written certification exam.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -36,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer-led tours on weekends from May through November. Saturday tours usually start at 10
-    am and Sunday tours at 2 pm. Fall listings run October 3 to November 15, 2026.
+  text: Volunteer-led walking tours, usually Saturdays at 10 am and Sundays at 2 pm, May through October,
+    with a few more tours in November.
   days:
   - sat
   - sun
@@ -47,7 +47,8 @@ schedule:
   recurring: true
   season: fall
 locations:
-- label: Neighborhood walking tours (meeting points vary by tour)
+- label: Neighborhood walking tours (meeting point listed on each tour; a few tours are in nearby suburbs
+    or Camden, NJ)
   address: null
   neighborhood: null
   planning_district: null
@@ -59,9 +60,9 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: Tickets are bought online in advance, and public ticket prices are not shown on the page we checked.
-    Private tours need a $200 deposit for up to 10 people, and students and ACCESS card holders can ask
-    for discounts on regular tours.
+  text: Public tours are listed at $18 each, bought online in advance. Private tours need a $200 deposit
+    for up to 10 people, plus $20 for each extra person. Students, children 18 and under, and Art-Reach
+    or PA ACCESS card holders can ask about discounts.
 commitment: drop_in
 group_size: null
 access:
@@ -76,15 +77,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket for a listed tour, or email info@preservationalliance.com to ask about becoming a
-    guide
-  drop_in: true
-  sign_up_needed: null
+  how: Open the upcoming tours page, choose a tour, and click Register to buy a ticket in advance. To
+    ask about becoming a guide, email info@preservationalliance.com or call 215-546-1146.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public tours are open to anyone who buys a ticket. The guide path is mentioned but not explained
-    in detail.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public tours are open to anyone who buys a ticket in advance, and each listing has a Register
+    button. Becoming a guide takes training and a written exam, so that path is less open.
+  what_to_expect: A public tour usually runs 1.5 to 2 hours, rain or shine. A volunteer guide leads the
+    group and talks through a headset, and you hear through an earpiece or through your own wired headphones.
+    Bring water and wear comfortable clothing.
+  first_visit_tips:
+  - Check the meeting spot on the tour's listing before you go, since it changes from tour to tour.
+  - Bring wired headphones with a standard headphone jack if you want your own. Bluetooth headphones and
+    Apple's own headphone jack do not work with the tour audio.
+  - Dress for the weather, because tours run rain or shine.
 contacts:
   website: https://preservationalliance.com
   email: info@preservationalliance.com
@@ -128,7 +135,18 @@ sources:
   - status
   - first_step
   - contacts
-research_tier: 1
+- url: https://preservationalliance.givecloud.co/programs-and-events/neighborhood-walking-tours
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+- url: https://preservationalliance.com/explore-historic-philadelphia/become-a-guide/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

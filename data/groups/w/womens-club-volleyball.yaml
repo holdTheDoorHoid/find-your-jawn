@@ -4,13 +4,21 @@ aka: []
 leads:
 - penn_clubs:womens-club-volleyball
 ein: null
-summary: null
-what_you_do: null
+summary: A competitive volleyball club for Penn undergraduate and graduate women who played at the varsity
+  or club level in high school. Players practice about two or three times a week, play in tournaments,
+  and go to a national tournament in April.
+what_you_do: The season runs from September to May with two or three 2-hour practices a week and several
+  tournaments.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- sports-teams
+interests:
+- kickball_rec_leagues
+motives:
+- enhancement
+- social
+formats:
+- team_play
 roles: []
 crowd: []
 bridging: null
@@ -19,17 +27,28 @@ audience:
   school: penn
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Season from September to May with a national tournament in April. Tryouts were listed for early
+    September, with no exact day given.
   days: []
   times: []
-  recurring: null
-  season: null
-locations: []
+  recurring: true
+  season: fall
+locations:
+- label: Club address listed on its website
+  address: 235 S. 33rd Street, Philadelphia, PA 19104
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +67,47 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the club's sign-up form for updates and tryout information, or email the club.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Tryouts and a callback are required, and the club is built for players with prior varsity or
+    club experience.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://upennclubvolleyball.wixsite.com/upennwomensclubvball
   email: upennwcvb@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennwomensclubvball/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://upennclubvolleyball.wixsite.com/upennwomensclubvball
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://upennclubvolleyball.wixsite.com/upennwomensclubvball
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - what_you_do
+  - locations
+- url: https://pennclubs.com/api/clubs/womens-club-volleyball/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - audience
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

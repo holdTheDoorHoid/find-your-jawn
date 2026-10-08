@@ -6,13 +6,13 @@ leads:
 ein: null
 summary: A volunteer-run dance collective that offers affordable weekly classes for adult dancers at every
   level.
-what_you_do: Take a weekly class from the class schedule, teach a class, or get involved by emailing the
-  group.
+what_you_do: Take a weekly class (contemporary, floorwork, multimedia movement or a workshop series),
+  pay what you can when you register, or ask about teaching a class. Email the group to get involved.
 kind: club
 categories:
 - theater-dance-performance
 interests:
-- social_dance
+- dance_company
 motives:
 - enhancement
 - social
@@ -35,39 +35,75 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly classes. The current calendar runs October 8 to 24, 2026, with the full schedule on the
-    class schedule page.
-  days: []
-  times: []
+  text: 'Weekly classes: Mondays 7 to 8:30 pm and Wednesdays 10 to 11:30 am at Mascher Space, and Thursdays
+    7 to 8:30 pm and Saturdays 11 am to 12:30 pm at & Space. Each class runs 90 minutes.'
+  days:
+  - mon
+  - wed
+  - thu
+  - sat
+  times:
+  - morning
+  - evening
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: '& Space'
+  address: 1021 Hamilton Street, Floor 3
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Mascher Space
+  address: 1170 South Broad Street
+  neighborhood: null
+  planning_district: null
+  zip: '19146'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: low
-  text: The group describes its classes as affordable. Prices are not listed on the page read.
+  text: Pay what you can. Each class offers a price from $0 to $20, and no one is turned away for lack
+    of funds. Floorwork suggests $15 to $20. An optional $1 donation covers card fees. Payments are not
+    refundable, but you can email before class to move a payment to another class.
 commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site asks people with access needs to email the group before class.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
-  gear: null
+  gear: Floorwork classes ask for long sleeves and pants, with knee pads recommended. Masks are optional
+    for most classes.
 first_step:
-  how: Pick a class on the class schedule page and go. Email the group to ask about prices and where classes
-    meet.
+  how: Pick a class on the class schedule page, register online ahead of time, and choose the amount you
+    can pay when you sign up.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Classes are for dancers of all levels and the schedule is posted publicly
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says classes take everyone from absolute beginner up, a levels guide points beginners
+    to the beginner class, and the site explains how to register online.
+  what_to_expect: The classes are contemporary, experimental or floorwork based, and most run 90 minutes.
+    The collective is artist led, and the schedule lists levels such as all levels, beginner intermediate
+    or intermediate. The Pixelations workshop needs no movement experience.
+  first_visit_tips:
+  - Wear long sleeves and pants for floorwork classes, and consider knee pads, which the site recommends.
+  - Classes meet at & Space, 1021 Hamilton Street, third floor (some listings say room 302), or at Mascher
+    Space, 1170 South Broad Street.
+  - Email phillydanceshare@gmail.com before class to move a payment to another class or to ask about access
+    needs.
+  - Masks are optional for most classes.
 contacts:
   website: https://phillydanceshare.com
   email: phillydanceshare@gmail.com
@@ -77,7 +113,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://phillydanceshare.com
+sign_of_life_url: https://phillydanceshare.com/class-schedule
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9
   seen: '2026-10-04'
@@ -94,7 +130,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://phillydanceshare.com/take-class-1
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - locations
+  - schedule
+  - gear
+  - what_you_do
+  - access
+- url: https://phillydanceshare.com/class-schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://phillydanceshare.com/levels
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -6,8 +6,9 @@ ein: null
 summary: A yearly parade and street festival on the Ben Franklin Parkway that honors veterans. Veterans
   started it about 12 years ago, and bands, groups and organizations can apply to march in it or run a
   table at the festival.
-what_you_do: Groups march in the parade or staff a festival table. Anyone can come watch the parade and
-  visit the festival.
+what_you_do: Groups and organizations apply through one online form to march in the parade, run a festival
+  table, or both. The approved participant page also names individual veterans as possible registrants.
+  Anyone can come watch the parade and visit the festival.
 kind: civic
 categories:
 - philly-traditions
@@ -37,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Parade starts at noon on Sunday, November 8, 2026, on the Ben Franklin Parkway and ends at the
-    Eakins Oval festival
+  text: Held once a year in the fall, on a Sunday. The parade starts around noon on the Ben Franklin Parkway
+    and ends at Eakins Oval, where the festival follows.
   days:
   - sun
   times:
@@ -58,7 +59,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: The parade site does not list a fee for watching. It does not state a fee for marching either.
+  text: The parade and festival pages do not list a fee to watch, to march, or to run a table.
 commitment: one_off
 group_size: null
 access:
@@ -73,15 +74,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply online through the parade's application form, linked from the parade website. Approved groups
-    get staging details from a separate page.
-  drop_in: false
+  how: Come watch the parade on the Ben Franklin Parkway at noon, or apply online by October 21, 2026
+    to march or run a festival table.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Watching is open to anyone and groups can apply through a posted online form, though approval
-    is not guaranteed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Watching is open to anyone with no sign-up, and marching or running a table needs an application
+    that the organizers approve.
+  what_to_expect: Watching means finding a spot along the Ben Franklin Parkway for the noon start. The
+    parade ends at Eakins Oval, where the festival ran from 12:30 to 3:30 pm in 2026. Approved groups
+    get their own staging times, and marchers are asked to arrive between 10:30 and 11 am.
+  first_visit_tips:
+  - The parade is televised on Channel 6 if you would rather watch from home.
+  - Approved groups should follow their own staging times, which differ by vehicle type.
+  - Send questions about an application to the contact named on the approved participant page, since the
+    site has no phone number.
 contacts:
   website: https://www.phillyveteransparade.org/
   email: null
@@ -101,7 +108,30 @@ sources:
   - first_step
   - status
   - contacts
-research_tier: 1
+- url: https://www.phillyveteransparade.org/parade-festival/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.phillyveteransparade.org/information-for-approved-parade-participants/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+  - schedule
+- url: https://www.phillyveteransparade.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+- url: https://www.phillyveteransparade.org/its-not-too-late-be-a-part-of-the-parade/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - status
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

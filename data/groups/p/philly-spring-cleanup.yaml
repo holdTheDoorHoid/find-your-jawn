@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: The City's largest single day citywide cleanup, where residents and organizations register a
   project or sign up to help with an existing one.
-what_you_do: null
+what_you_do: On cleanup day, volunteers clear litter, sweep sidewalks, wipe off graffiti, touch up benches,
+  and put bulbs in the ground.
 kind: program
 categories:
 - nature-environment
@@ -38,13 +39,14 @@ schedule:
   text: One day each April
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: spring
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free to volunteer. Donations are optional and help buy tools for the day, such as brooms, gloves,
+    and bags.
 commitment: one_off
 group_size: null
 access:
@@ -59,16 +61,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the sign up form at https://www.phillyspringcleanup.com.
+  how: Email phillyspringcleanup@phila.gov to ask when registration reopens. Once it is open, register
+    as a volunteer or sign up a cleanup project on the city's Spring Cleanup page.
   drop_in: null
   sign_up_needed: true
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Anyone can take part and the city lists an email for questions, but registration was closed on
+    the city page when it was checked.
+  what_to_expect: Volunteers join a cleanup project, either one they register or one that already exists.
+    Donations pay for the tools and bags used on the day, and taking part is free.
+  first_visit_tips:
+  - Watch the city page for when sign ups open, since they were closed when checked.
 contacts:
   website: https://www.phila.gov/programs/philly-spring-cleanup/
-  email: null
+  email: phillyspringcleanup@phila.gov
   phone: null
   contact_name: null
   social: []
@@ -78,15 +84,24 @@ last_sign_of_life: 2026-03
 sign_of_life_url: https://www.phila.gov/programs/philly-spring-cleanup/
 sources:
 - url: https://www.phila.gov/programs/philly-spring-cleanup/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
+  - schedule
+  - what_you_do
+  - first_step
+  - cost
+  - contacts
+- url: https://officeofcleanandgreen.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

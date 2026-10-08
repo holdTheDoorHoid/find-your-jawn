@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:pensapenn
 ein: null
-summary: null
-what_you_do: null
+summary: A student-run Christian club at Penn for people who want to learn about Jesus and grow in faith.
+  It holds Bible studies, prayer meetings, and outreach, and it welcomes members who are new to the faith.
+what_you_do: Come to a Bible study, prayer meeting, or outreach event, and follow the club on Instagram
+  for dates.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- scripture_study
+- worship_community
+motives:
+- values
+- social
+formats:
+- conversation
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,11 +59,11 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Follow the club on Instagram for announcements, then come to a Bible study or prayer meeting.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The club welcomes anyone interested in learning about Jesus, and its events are announced publicly.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -60,19 +71,31 @@ contacts:
   email: pennpensa@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/thegloryguild/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubs.com/api/clubs/pensapenn/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/pensapenn/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - interests
+  - audience
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -3,15 +3,20 @@ name: Prevention Point Philadelphia
 aka: []
 leads: []
 ein: null
-summary: A nonprofit that works with people who are homeless or use drugs. It offers HIV and hepatitis
-  testing and treatment, wound care, a drop-in center, and a mobile health unit.
-what_you_do: Get testing, treatment or wound care, visit the drop-in center, or volunteer and intern.
+summary: A nonprofit that serves people who are homeless or who use drugs. It runs a weekday drop-in center,
+  a mobile unit called Wellness on Wheels, HIV prevention, medical and behavioral health services, and
+  a clinic for opioid treatment.
+what_you_do: Stop by the weekday drop-in center for coffee, case management, mail, clothing and hygiene
+  items, and referrals. You can also use its medical and behavioral health services, or volunteer or intern
+  through its volunteer program.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
+- health-wellness
 interests:
 - free_help_clinics
 - homeless_outreach
+- harm_reduction
 motives:
 - values
 - protective
@@ -33,17 +38,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Drop-in center and mobile unit. Hours are not listed on the home page.
-  days: []
-  times: []
+  text: The drop-in center is open Monday to Friday, 9:30 am to 4 pm. The group does not offer volunteer
+    opportunities on weekends.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
   recurring: true
   season: year_round
 locations:
-- label: Drop-in center and mobile unit
-  address: null
+- label: Main address (from the contact page)
+  address: 2913-2915 Kensington Ave
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19134'
   lat: null
   lng: null
   in_city: true
@@ -57,7 +70,8 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA stop: the Market-Frankford Line, Somerset stop, as the contact page directs. The
+    entrance is on Monmouth Street.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -66,19 +80,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the drop-in center, or use the Contact Us page for current hours and services
-  drop_in: null
+  how: Walk in to the drop-in center on a weekday between 9:30 am and 4 pm, or email the drop-in coordinator,
+    Amira Cason, at acason@ppponline.org to ask about current services and any ID or sign-up needs.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Services are public, and the home page points to a contact page and a volunteer page
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The drop-in center is open to the public on weekdays, and the group says it welcomes people of
+    all backgrounds without judgment. The site gives a named coordinator to contact.
+  what_to_expect: The drop-in center is open Monday to Friday, 9:30 am to 4 pm, and the group says it
+    aims to be free of judgment. Services include case management, mail, coffee, clothing and hygiene
+    items, and drug and alcohol referrals. Ask the coordinator ahead of time whether you need any ID or
+    sign-up before your first visit.
+  first_visit_tips:
+  - Come on a weekday between 9:30 am and 4 pm, since the drop-in center is open Monday to Friday.
+  - Take the Market-Frankford Line to the Somerset stop, as the contact page suggests, and use the entrance
+    on Monmouth Street.
+  - Email the coordinator before a first visit to ask what to bring and whether ID is needed.
 contacts:
   website: https://ppponline.org/
-  email: null
-  phone: null
+  email: acason@ppponline.org
+  phone: 215-634-5272
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/preventionpointphiladelphia
+  - https://www.linkedin.com/company/prevention-point-philadelphia
+  - https://www.instagram.com/preventionpointphiladelphia/
+  - https://bsky.app/profile/ppponline.org
   calendar_feed: null
 status: probably_active
 last_sign_of_life: 2025-01
@@ -92,7 +119,29 @@ sources:
   - interests
   - contacts
   - status
-research_tier: 1
+  - contacts.social
+- url: https://ppponline.org/about-us/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+  - access.notes
+- url: https://ppponline.org/services/drop-center
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - summary
+  - what_you_do
+  - what_to_expect
+  - first_step
+  - contacts.email
+- url: https://ppponline.org/services/community-engagement-and-volunteer-services
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

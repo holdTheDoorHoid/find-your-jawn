@@ -4,13 +4,20 @@ aka: []
 leads:
 - penn_clubs:womens-club-basketball
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's women's club basketball team for students who want to keep playing in college. The team
+  plays other collegiate club teams, travels to tournaments, and holds fundraisers and social events.
+what_you_do: Players compete against other collegiate club teams and travel to tournaments. Tryouts are
+  mandatory each season.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- sports-teams
+interests:
+- basketball
+motives:
+- enhancement
+- social
+formats:
+- team_play
 roles: []
 crowd: []
 bridging: null
@@ -24,12 +31,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: Mandatory tryouts for the 2026 to 2027 season were listed for Sunday, September 27 (4:00 to 5:30
+    pm) and Monday, September 28 (8:30 to 10:00 am).
+  days:
+  - sun
+  - mon
+  times:
+  - morning
+  - daytime
+  recurring: true
+  season: fall
+locations:
+- label: Pottruck
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: John R. Rockwell Gymnasium
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,11 +78,11 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the club to ask about the 2026 to 2027 season and any tryout still open. Tryouts are mandatory.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Mandatory tryouts are required before you join.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -60,19 +90,31 @@ contacts:
   email: pennclubwbb@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennclubwbb/
+  - https://facebook.com/upennclubbasketball/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://pennclubs.com/api/clubs/womens-club-basketball/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/womens-club-basketball/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - status
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

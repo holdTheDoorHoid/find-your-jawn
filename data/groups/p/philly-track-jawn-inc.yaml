@@ -33,8 +33,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free track workouts on Tuesdays at 7 pm at the Temple University Sports Complex. Thursday 6 pm
-    session also listed. Weekend run and walk times are not stated.
+  text: Free track workouts on Tuesdays at 7 pm at the Temple University Sports Complex. The group also
+    runs Thursday track and road sessions and weekly weekend runs and walks led by coaches. The site does
+    not list the times for those.
   days:
   - tue
   - thu
@@ -55,7 +56,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free for the weekly Tuesday track workouts. Weekend cost not stated.
+  text: Joining is free and the Tuesday track workouts are free. Donations are optional. The site does
+    not state the cost of weekend runs and walks.
 commitment: null
 group_size: null
 access:
@@ -70,23 +72,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the Sign Up Here form linked on the site
+  how: Fill in the free Sign Up form on the group's site, then come to the Tuesday 7 pm track workout
+    at the Temple University Sports Complex.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to all with sessions for different fitness levels, and a clear sign up form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open to anyone through a free sign up form, and sessions are set up for different fitness levels,
+    but the site does not say beginners are specifically welcome.
+  what_to_expect: The Tuesday workout is free and starts at 7 pm at the Temple University Sports Complex.
+    Certified coaches lead it and adjust the work for different fitness levels, so you can go at your
+    own pace. The club's Strava page describes pace groups, so you can join a group near your own speed.
+  first_visit_tips:
+  - Fill in the sign up form first, since the group asks people to do so for planning.
+  - Weekend run and walk times are not listed on the site, so ask the group before you plan a weekend
+    visit.
 contacts:
   website: https://sites.google.com/phillytrackjawn.org/2025/home
   email: null
   phone: null
   contact_name: Michael Shipp
-  social: []
+  social:
+  - https://www.instagram.com/phillytrackjawn/
+  - https://www.strava.com/clubs/phillytrackjawn
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://sites.google.com/phillytrackjawn.org/2025/home
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://linktr.ee/Phillytrackjawn
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -105,7 +116,21 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - what_you_do
+  - contacts
+- url: https://linktr.ee/Phillytrackjawn
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - schedule
+  - status
+- url: https://www.strava.com/clubs/phillytrackjawn
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

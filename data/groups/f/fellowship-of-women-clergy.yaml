@@ -5,31 +5,44 @@ leads:
 - irs_990n:842384240
 - irs_bmf:842384240
 ein: '842384240'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A Christian network based in Philadelphia that supports women in ministry with leadership training
+  and peer support.
+what_you_do: Join the monthly online gatherings or the in-person gatherings in Philadelphia, which are
+  held quarterly, and sign up for the mailing list to hear about them.
+kind: network
+categories:
+- faith-community
+- careers-skills-professional
+interests:
+- congregation_social
+- professional_associations
+motives:
+- values
+- career
+formats:
+- conversation
+roles:
+- figure_out
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: An online gathering every month and an in-person gathering every quarter in Philadelphia. Dates
+    are posted on the group's upcoming gatherings page.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: Po Box 28958
@@ -40,11 +53,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: RSVP for the next gathering using the form on fellowshipofwomenclergy.org, then sign up for the
+    mailing list
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Gatherings are announced publicly with an RSVP form, though the page does not say whether women
+    who are not clergy may attend.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: fellowshipofwomenclergy.org
-  email: null
+  website: https://www.fellowshipofwomenclergy.org
+  email: info@fellowshipofwomenclergy.org
   phone: null
   contact_name: Kimberlee Johnson
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.fellowshipofwomenclergy.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.fellowshipofwomenclergy.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - commitment
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,13 +4,21 @@ aka: []
 leads:
 - penn_clubs:womens-club-ultimate-frisbee
 ein: null
-summary: null
-what_you_do: null
+summary: Venus is Penn's women's ultimate frisbee team, open to women and others who identify as women.
+  No experience is needed to join, and the team has competed at the D1 College Nationals in several years,
+  including 2024 and 2025.
+what_you_do: The team practices on Tuesday and Thursday nights at Franklin Field and on Sundays from 4:30
+  to 6:30 pm at the Penn Park turf fields. Members also go to tournaments and social events.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- sports-teams
+interests:
+- kickball_rec_leagues
+motives:
+- social
+- enhancement
+formats:
+- team_play
 roles: []
 crowd: []
 bridging: null
@@ -19,17 +27,42 @@ audience:
   school: penn
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practices Tuesday and Thursday nights, 9 to 11 pm, at Franklin Field, and Sundays, 4:30 to 6:30
+    pm, on the Penn Park turf fields.
+  days:
+  - tue
+  - thu
+  - sun
+  times:
+  - evening
+  - night
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Franklin Field
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Penn Park turf fields
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +81,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the captains with questions and ask to join the team's Slack channel. You can also sign up
+    for the listserv through the club's site.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club says no experience is needed and tells newcomers how to start.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://www.venus-ultimate.com/
   email: venuscaptains@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/venusultimatefrisbee/
+  - https://facebook.com/VenusUltimate/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.venus-ultimate.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.venus-ultimate.com/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - summary
+- url: https://pennclubs.com/api/clubs/womens-club-ultimate-frisbee/?format=json
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

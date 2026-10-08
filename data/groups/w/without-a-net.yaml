@@ -4,13 +4,21 @@ aka: []
 leads:
 - penn_clubs:without-a-net
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's improv comedy troupe, open to undergraduates. The group performs long and short form improv
+  and puts on a spring comedy run each year.
+what_you_do: Members train in workshops several times a year, audition in the fall, and perform in the
+  spring comedy run.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- theater-dance-performance
+interests:
+- improv_comedy
+motives:
+- enhancement
+- social
+formats:
+- perform_make_together
+- team_play
 roles: []
 crowd: []
 bridging: null
@@ -24,12 +32,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: 'Spring comedy run: shows March 19 to 21 at 8 pm at Houston Hall (Class of ''49 Theater). Members
+    are usually taken on in the fall, a few weeks after new student orientation.'
+  days:
+  - thu
+  - fri
+  - sat
+  times:
+  - evening
+  recurring: true
+  season: spring
+locations:
+- label: Houston Hall, Class of '49 Theater
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -48,31 +70,46 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Audition in the fall. Follow the club's Instagram for audition details.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Members are chosen through auditions, so you audition before you can join.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennwithoutanet.wixsite.com/home
   email: penn.withoutanet@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/upenn_withoutanet
+  - https://facebook.com/upennwithoutanet/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://pennwithoutanet.wixsite.com/home
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennwithoutanet.wixsite.com/home
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - locations
+  - contacts
+- url: https://pennclubs.com/api/clubs/without-a-net/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -18,7 +18,10 @@ formats:
 - team_play
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
+- teens
+- kids
 bridging: null
 audience:
   open_to: public
@@ -30,17 +33,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: An eight week adult new skater bootcamp starts on a Sunday afternoon. Officiating training happens
+    at Wednesday night scrimmages.
+  days:
+  - sun
+  - wed
+  times:
+  - daytime
+  - night
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Hockey Dek (new skater bootcamp)
+  address: 1440 Wallingford Rd, Springfield, PA 19064
+  neighborhood: null
+  planning_district: null
+  zip: '19064'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: No dues or fees are shown on the site
-commitment: null
+  level: low
+  text: Volunteering and non-skating officiating cost nothing. The eight week adult bootcamp is $60, paid
+    at registration and not refundable. Skating officials buy their own gear and pay for annual insurance.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -52,27 +70,34 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: The bootcamp has a gear check in week one. The page does not list the gear to bring.
 first_step:
-  how: 'Pick a path on the site: the Cheeseskates New Skater Program, the officiating crew, volunteering,
-    or the juniors form'
+  how: Register for the next eight week new skater bootcamp through the league's sign up form, or email
+    prdcheeseskates@gmail.com with questions. To volunteer, email the Member at Large at prdmemberatlarge@gmail.com.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site names a new skater program and volunteer and officiating roles. Tryouts and dates are
-    not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a bootcamp for adults with no skating skills, says how to register, and lists volunteer
+    and officiating roles that take people with no experience.
+  what_to_expect: The adult bootcamp meets for eight weekly sessions and starts on a Sunday afternoon.
+    You practice stopping, learning to fall safely, weaving, crossovers, and backward skating, and the
+    last session is a review with a fun dance. Expect a gear check in week one and a $60 fee paid up front.
+  first_visit_tips:
+  - Plan to sign the league and rink waivers.
+  - Spots are limited, so register early.
+  - Allow travel time, since the bootcamp is in Springfield, PA, outside the city.
 contacts:
   website: https://phillyrollerderby.com/
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/phillyrollerderby
+  - https://facebook.com/phillyrollerderby/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://phillyrollerderby.com/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillyrollerderby.com/cheeseskates-new-skater-program/
 sources:
 - url: https://phillyrollerderby.com/
   seen: '2026-10-08'
@@ -82,12 +107,39 @@ sources:
   - requirements
   - first_step
   - status
+  - contacts
 - url: https://wftda.com/wftda-leagues/philly-roller-derby/
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
-confidence: medium
+- url: https://phillyrollerderby.com/cheeseskates-new-skater-program/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - cost
+  - requirements
+  - locations
+  - status
+- url: https://phillyrollerderby.com/join/volunteers/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://phillyrollerderby.com/join/officiating-crew/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - schedule
+- url: https://phillyrollerderby.com/juniors/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - audience
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

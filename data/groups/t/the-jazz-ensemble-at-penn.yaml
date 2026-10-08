@@ -4,15 +4,24 @@ aka: []
 leads:
 - penn_clubs:penn-jazz-ensemble
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's student-led big band, formed in 1973. Members play jazz together and have shared the stage
+  with well-known jazz musicians, and the band gives a show near the end of each semester.
+what_you_do: Audition to join the band, rehearse with the group, and play in the end of semester show.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- enhancement
+- social
+formats:
+- team_play
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +33,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: A show near the end of each semester; the band's website is selling tickets for its Fall 2026
+    shows
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -48,31 +58,50 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for an audition through the audition link on the band's website or in the directory listing.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Members join by audition.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://penn-jazz.com
   email: info.pennjazz@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/pennjazz
+  - https://facebook.com/PennJazz
+  - https://youtube.com/channel/UCTIaFKIbC6Nb0jk0srSFiyA
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://penn-jazz.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://penn-jazz.com
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - first_step
+  - sign_of_life_url
+- url: https://pennclubs.com/api/clubs/penn-jazz-ensemble/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+  - audience
+  - contacts
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
