@@ -1,35 +1,46 @@
 id: parents-of-murdered-children-inc
-name: Parents of Murdered Children Inc
-aka: []
+name: Central Philadelphia Chapter of Parents of Murdered Children
+aka:
+- Parents of Murdered Children Inc
 leads:
 - irs_990n:372066918
 - irs_bmf:372066918
 ein: '372066918'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A Philadelphia chapter of a national group for families and friends of people killed by violence,
+  offering emotional support, education and advocacy.
+what_you_do: Families and friends of people killed by violence can take part in the chapter's monthly
+  support meeting, or contact the chapter leaders for the current meeting link.
+kind: support_group
+categories:
+- support-recovery
+interests:
+- grief_support
+- survivor_support
+motives:
+- understanding
+formats:
+- conversation
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly support meeting on the third Thursday at 7 pm by Zoom, as the chapter page describes.
+    The page points people to its leaders for the current details.
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1226 Wagner Ave
@@ -49,7 +60,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -67,23 +78,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call the chapter at 267-586-1778 and ask about the monthly Zoom support meeting
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The chapter page says to contact its leaders for meeting details, so the way in is not clearly
+    public.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: WWW.POMC.ORG
+  website: https://www.pomc.org/chapters/the-central-philadelphia-chapter-of-pomc/
   email: null
-  phone: null
+  phone: 267-586-1778
   contact_name: Rev Leroy West
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2021-05
+sign_of_life_url: https://www.pomc.org/chapters/the-central-philadelphia-chapter-of-pomc/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +112,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pomc.org/chapters/the-central-philadelphia-chapter-of-pomc/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://www.pomc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,25 +4,28 @@ aka: []
 leads:
 - irs_bmf:810716680
 ein: '810716680'
-summary: A network that works with community sports providers and public agencies to make youth sports
-  programs available across Philadelphia. Families can search for a youth sports provider, and adults
-  can find coach and referee resources.
-what_you_do: Parents can use Find A Provider to locate a youth sports program. Adults interested in coaching
-  or refereeing can use the coach and referee resources page.
+summary: A network of more than 170 youth sports programs across Philadelphia. It trains coaches and referees,
+  shares safety guidance, and helps families find a sports program near home. It also works with the city
+  on accessible recreation.
+what_you_do: Families can use the Find A Provider list to locate a program. Coaches and referees can use
+  the training and resources pages. Community groups can apply to become members and take part in trainings.
 kind: network
 categories:
 - sports-teams
 interests:
 - youth_coaching
+- adaptive_sports
 motives:
+- social
 - values
 formats:
-- learn_skill
+- team_play
 roles:
 - help_teach
 - organize
 crowd:
 - kids
+- families
 bridging: null
 audience:
   open_to: public
@@ -34,18 +37,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site links a monthly calendar of events and trainings, but the text I read listed no dated
-    events.
+  text: Events and trainings are posted on the events calendar with their own dates. Check the calendar
+    for the current list.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: PYSC office
+- label: Office
   address: 1501 Cherry Street
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19102'
   lat: null
   lng: null
   in_city: true
@@ -53,7 +56,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Program costs depend on each provider and are not stated on this site.
+  text: Youth sports provider fees vary by program. Costs for PYSC trainings and events are not stated
+    on the pages read.
 commitment: ongoing_role
 group_size: null
 access:
@@ -68,24 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use Find A Provider on the site to find a program near you
+  how: Use the Find A Provider link to find a youth sports program near you, or sign up for the email
+    newsletter for trainings and events.
   drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site points families to providers rather than running its own sign-up, so the way in depends
-    on each provider.
+  newcomer_friendliness: 3
+  basis: Families can search the provider list directly, and public events and a newsletter sign-up are
+    listed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.pysc.org
   email: info@pysc.org
-  phone: 267-519-5337
+  phone: 267.519.5337
   contact_name: Care of Terry Horner
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
-sign_of_life_url: https://pysc.org/philly-wants-more-community-sports-programs-for-kids/
+last_sign_of_life: 2026-07
+sign_of_life_url: https://pysc.org/news/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,8 +125,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+- url: https://pysc.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - summary
+- url: https://pysc.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
 research_tier: 1
-confidence: low
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A fridge and pantry under the awning at a site on Stenton Avenue in Mt. Airy. Anyone can take
   items for free, with no sign-up or income check.
-what_you_do: Take what you need for your household, or volunteer your time and skills at the pantry. The
-  group also offers nutrition education for classes and groups.
+what_you_do: Take food and hygiene supplies for yourself, your family, pets, friends or neighbors, or
+  volunteer your time at the pantry. The group also offers nutrition education for classes and groups.
 kind: network
 categories:
 - hunger-housing-basic-needs
@@ -33,7 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Come by when your schedule allows. No set hours are listed.
+  text: No set hours are listed. Come by when your schedule allows, since stock changes day to day with
+    donations.
   days: []
   times: []
   recurring: true
@@ -66,14 +67,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the awning on Stenton Avenue. No registration is needed. To volunteer, use the Get Involved
-    page.
+  how: Come to the covered awning between the two entrance doors that face Stenton Avenue. No registration
+    is needed. To volunteer, use the Get Involved page.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: No registration and no income check, and the site lists a clear way to volunteer
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can take items with no registration and no income check, and the site lists a clear way
+    to volunteer.
+  what_to_expect: Visit the covered awning, where two fridges and two pantries hold food and hygiene supplies
+    that you can take for free. Stock changes day to day with donations, so a particular item may be gone
+    when you arrive. Groups or students can contact the pantry to arrange a session on healthy eating
+    and food preparation.
+  first_visit_tips:
+  - Street parking on Stenton Avenue is limited, and the active driveway is not for parking.
+  - The site asks visitors to be careful when opening doors on Stenton Avenue.
 contacts:
   website: https://mtairyeats.org/
   email: MACFP@mtairyeats.org
@@ -92,11 +99,17 @@ sources:
   - requirements
   - contacts
   - volunteer
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - first_visit_tips
 - url: https://philly.citycast.fm/food-drink/where-to-find-community-fridges-in-philly
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

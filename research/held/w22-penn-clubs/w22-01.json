@@ -1,0 +1,306 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-01",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 34,
+ "leads_only": [
+  {
+   "name": "Bloomers Comedy Writing",
+   "url": "https://www.pennhillel.org/",
+   "note": "listed as a Hillel event for a comedy writing group; may be its own group; not checked"
+  },
+  {
+   "name": "Penn for Israel (PIPAC)",
+   "url": "https://www.pennhillel.org/",
+   "note": "listed as a Hillel event for a student advocacy meeting; check against the scope rules before any research; not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://hibiscus-turquoise-crzx.squarespace.com",
+   "status": 404,
+   "note": "the club website named in the directory returned not found; no content read"
+  },
+  {
+   "url": "https://pennwaterpolo.com/",
+   "status": null,
+   "note": "domain did not resolve (DNS error) in this run; retried not attempted"
+  }
+ ],
+ "notes": "All 20 batch clubs were checked on their pennclubs directory entry. 14 club websites were also fetched. Six clubs have no website of their own (AIAS, Ethics Bowl, Sudanese, QuakerBots, Shea, Wharton Outdoors). No bot checks, paywalls, 403s or rate limits were seen. No Instagram, Facebook or LinkedIn page was read. Outcome: 15 records carry summaries and are publishable (7 active, 3 probably_active, 5 unknown). 5 records are held back with status unknown and no summary, categories or interests: Nonprofit Connect, QuakerBots, Women in Physics, The Accountability Initiative, and 180 Degrees Consulting, because the directory marks them inactive or not accepting and their sites show no dated activity. No street addresses are recorded: batch addresses did not appear on any page I read, so the pipeline can add them after a check. The Accountability Initiative batch address looks residential. Personal names and emails are left out: the Symphony conductor, the Newman staff address, the Daily Pennsylvanian's Wharton staff address, and the batch contact_name fields. Application flags conflict with some sites (Newman, Hillel, Rangoli, and the Daily Pennsylvanian's accepting-members flag is off while its site links an interest form); newcomer ratings follow the site where it is explicit and the basis line says so. Closest-fit tags: community_band for the Penn Symphony Orchestra, swimming for Men's Water Polo, hiking for Wharton Outdoors Club (activity inferred from the name). Heritage ids: none for Sudanese; South Asian groups have no single heritage id, so community is empty for Rangoli.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:nonprofit-connect"
+    ],
+    "group_id": "nonprofit-connect",
+    "ein": null,
+    "website": "https://nonprofit-connect.square.site/"
+   },
+   "verdict": "publish",
+   "name": "Nonprofit Connect",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Complete the online written application linked on the directory entry. The deadline was September 14, with no year shown.",
+    "newcomer_friendliness": 2,
+    "basis": "A written application is required."
+   },
+   "contacts": {
+    "website": "https://nonprofit-connect.square.site/",
+    "email": "nonprofitconnectnetter@gmail.com",
+    "social": [
+     "https://instagram.com/nonprofit_connect/",
+     "https://linkedin.com/company/nonprofitconnectnetter"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/nonprofit-connect/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://nonprofit-connect.square.site/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory status field reads inactive (its active flag is set to true), and the club website shows only a title and menu with no facts. Summary, categories and interests are left out until the status is checked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:quakerbots"
+    ],
+    "group_id": "quakerbots",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "QuakerBots",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "email": "quakerbots-club@engineering.upenn.edu",
+    "social": [
+     "https://instagram.com/pennquakerbots/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/quakerbots/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory says the club is not accepting members, lists no dated events, and has no club website. Joining runs through an email list form. Summary, categories and interests are left out until the status is checked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:women-in-physics"
+    ],
+    "group_id": "women-in-physics",
+    "ein": null,
+    "website": "https://womeninphysicsupenn.substack.com/"
+   },
+   "verdict": "publish",
+   "name": "Women in Physics",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://womeninphysicsupenn.substack.com/",
+    "email": "penn.wip@gmail.com",
+    "social": [
+     "https://instagram.com/pennwip/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/women-in-physics/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://womeninphysicsupenn.substack.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory marks the club inactive, though its active flag is set. The newsletter page shows no dated posts, and the only launch reference is relative (launched a year ago, no date). Summary, categories and interests are left out until the status is checked.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_bmf:990442537",
+     "penn_clubs:the-accountability-initiative"
+    ],
+    "group_id": "the-accountability-initiative",
+    "ein": "990442537",
+    "website": "https://www.taiadvocates.org"
+   },
+   "verdict": "publish",
+   "name": "The Accountability Initiative",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.taiadvocates.org",
+    "email": "taiupenn@gmail.com",
+    "social": [
+     "https://instagram.com/taiupenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/the-accountability-initiative/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.taiadvocates.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory marks the listing inactive while saying it is accepting members, and the website has no dated posts (its 2026 footer is not evidence). The batch address looks like a home address, so no location was recorded. Check before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:180-degrees-consulting"
+    ],
+    "group_id": "180-degrees-consulting",
+    "ein": null,
+    "website": "https://www.180dc.org/branches/UPenn"
+   },
+   "verdict": "publish",
+   "name": "180 Degrees Consulting",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "contacts": {
+    "website": "https://www.180dc.org/branches/UPenn",
+    "email": "upenn@180dc.org",
+    "social": [
+     "https://facebook.com/penn180dc/",
+     "https://instagram.com/180dcupenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/180-degrees-consulting/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.180dc.org/branches/UPenn",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. The directory marks the listing inactive and says the club is not accepting members. The branch page lists no dated projects and no recruiting dates. Recruiting runs through a listserv form on the club's link page, which was not followed.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

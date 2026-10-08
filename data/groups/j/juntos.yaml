@@ -4,15 +4,21 @@ aka: []
 leads:
 - irs_bmf:010769538
 ein: 010769538
-summary: A community-led group of Latine immigrants in South Philadelphia that fights for workers, parents,
-  youth and immigrant families. It runs youth leadership, immigrant justice and community care programs.
-what_you_do: Attend a volunteer orientation, help with community programs, or join the youth leadership
-  program. The site also lists a volunteer link under Get Involved.
+summary: A community led group in South Philadelphia, made up of Latine immigrants, that works for the
+  rights of workers, parents, youth and immigrant families. It runs youth leadership, immigrant justice
+  and community care programs, plus food and diaper pickups.
+what_you_do: Fill in the Volunteer Interest Form to offer skills or time, or join the volunteer network
+  that goes with people to court dates and immigration check ins. Young people can attend the Wednesday
+  Fuerza youth meeting, and families can pick up food and diapers on Thursdays.
 kind: nonprofit
 categories:
 - advocacy-rights
+- kids-youth-mentoring
+- hunger-housing-basic-needs
 interests:
 - immigrant_rights
+- youth_leadership
+- food_pantry
 motives:
 - values
 - protective
@@ -38,13 +44,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Youth leadership (Fuerza) meets on Wednesdays at 4 pm. Food and diaper pickup runs on Thursdays
+    from noon to 2 pm. The office is open Monday to Friday, 10 am to 6 pm.
+  days:
+  - wed
+  - thu
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Office
+- label: Office, Fuerza meetings and food pickup
   address: 600 Washington Ave
   neighborhood: null
   planning_district: null
@@ -56,7 +66,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free
+  text: The site lists no fee to join, volunteer or attend the youth meetings. Donations are accepted.
 commitment: ongoing_role
 group_size: null
 access:
@@ -71,14 +81,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer link under Get Involved, or call (215) 218-9079
+  how: Fill in the Volunteer Interest Form on the Get Involved page. Youth can instead come to the Wednesday
+    4 pm Fuerza meeting at 600 Washington Ave.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The group is open to the public and gives a way to contact them, but the page does not say what
-    a first volunteer shift involves.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: 'The volunteer form works as a directory: the group says it cannot work with everyone at once
+    and will contact people when a role fits. Youth can attend the open weekly meeting, but adults have
+    no clear first step.'
+  what_to_expect: Adults who fill in the form wait to be contacted when a role fits, since the group cannot
+    take everyone at once. Youth who come to Fuerza join a weekly group that looks at education, labor
+    and immigration from a youth view. The site does not describe a first shift, how long it lasts, or
+    any training.
+  first_visit_tips:
+  - Call 215-218-9079, extension 3, to ask about Fuerza before you come.
+  - Fuerza meets on the 2nd floor of the Saigon Maxim Shopping Center at 600 Washington Ave.
+  - Food and diaper pickup runs Thursdays from noon to 2 pm at the same address.
+  - The office is open Monday to Friday, 10 am to 6 pm.
 contacts:
   website: https://vamosjuntos.org
   email: info@vamosjuntos.org
@@ -87,8 +106,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://vamosjuntos.org
+last_sign_of_life: 2025-07
+sign_of_life_url: https://vamosjuntos.org/community-care
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -105,7 +124,23 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://vamosjuntos.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://vamosjuntos.org/programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://vamosjuntos.org/community-care
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

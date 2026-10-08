@@ -1,22 +1,33 @@
 id: live-to-serve-foundation
-name: Live to Serve Foundation
-aka: []
+name: Live to Serve
+aka:
+- Live to Serve Foundation
 leads:
 - irs_990n:800858432
 - irs_bmf:800858432
 ein: '800858432'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that helps low-income neighbors with everyday needs such as food, back
+  to school supplies and footwear, and runs volunteer service days.
+what_you_do: Sign up to serve on a service project, such as the Hope Lodge volunteer evenings in Cheltenham,
+  or offer a skill such as photography, social media, website help or grant writing.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+categories:
+- hunger-housing-basic-needs
+- careers-skills-professional
+interests:
+- goods_closets
+- skills_volunteering
+motives:
+- values
+formats:
+- side_by_side
+- one_off_event
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +36,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Service projects and events are announced on the group's site as they come up. The Hope Lodge
+    volunteer evenings are listed on Tuesdays from 5 to 8 pm in September and October, with no year written
+    on the page.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address (IRS)
+- label: Address on the group's site
   address: 5009 Rosehill St
   neighborhood: null
-  planning_district: upper_north
-  zip: '19120'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 5009 Rosehill Street
-  neighborhood: null
-  planning_district: upper_north
+  planning_district: null
   zip: '19120'
   lat: null
   lng: null
@@ -51,9 +57,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Volunteering is free. Donations are optional.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +73,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the Sign up to serve form on the group's website with your name, phone, email and a short
+    message
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site has a public volunteer sign-up form and lists specific service events, so the way in
+    is clear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.livetoservepa.com
+  website: https://live2servepa.com
   email: null
-  phone: null
+  phone: 267-585-4457
   contact_name: Leonard Jay Kennedy
-  social: []
+  social:
+  - https://www.facebook.com/livetoservePA/
+  - https://www.instagram.com/livetoservepa/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://live2servepa.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +110,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://live2servepa.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - commitment
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

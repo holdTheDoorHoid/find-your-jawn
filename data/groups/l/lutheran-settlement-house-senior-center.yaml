@@ -4,10 +4,12 @@ aka: []
 leads:
 - city_senior:pca:6
 ein: null
-summary: A senior center for adults 55 and older run by Lutheran Settlement House on Frankford Avenue.
-  The website does not list specific programs or hours, so call to ask what is running.
-what_you_do: The center describes itself as a place to grow, learn, and look after one another. Ask staff
-  which classes or meals are running.
+summary: A senior center for adults 55 and older at Lutheran Settlement House in Fishtown, with more than
+  20 weekly classes and activities such as fitness, art, line dancing and card games. Most classes need
+  no sign-up.
+what_you_do: Join a weekly class such as Enhance Fitness, chair yoga, art or card hour, or come to a monthly
+  community dinner. Staff can help with benefits and community resources, and members volunteer at the
+  food pantry.
 kind: program
 categories:
 - seniors-intergenerational
@@ -33,13 +35,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: More than 20 weekly classes and activities on weekdays, mostly in the morning and early afternoon.
+    Enhance Fitness meets Mondays and Fridays, chair yoga on Wednesdays, and card game hour on Tuesdays.
+    Call to confirm the current week.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Lutheran Settlement House
+- label: Lutheran Settlement House (Fishtown office)
   address: 1340 Frankford Ave.
   neighborhood: null
   planning_district: null
@@ -50,8 +61,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Not stated on the page
+  level: low
+  text: Music therapy and the Spanish class are free. The $5 Bingo asks for a $5 contribution, and Morning
+    Bingo asks you to bring your own coins and bills. Fees for most other classes are not listed on the
+    site.
 commitment: null
 group_size: null
 access:
@@ -66,23 +79,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the general line at 215-426-8610 to ask how to enroll
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Enrollment and drop-in rules are not explained on the page
-  what_to_expect: null
-  first_visit_tips: []
+  how: Walk in to a weekday class such as Enhance Fitness, chair yoga, art or card hour. Most need no
+    registration. For the $5 Bingo or the Spanish class, register first by calling 215-426-8610 ext. 1206.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: Most classes are drop-in for adults 55 and older with no sign-up, but the site does not say it
+    welcomes beginners in particular.
+  what_to_expect: Listed classes run about an hour, such as Enhance Fitness from 9:30 to 10:30 am. Most
+    are drop-in, and some activities, like the monthly community dinners, Mat Yoga and the Spanish class,
+    are open to the wider community.
+  first_visit_tips:
+  - Call 215-426-8610 to confirm the week's classes, since the site lists event times only.
+  - For the $5 Bingo, bring $5 and register first with the activities coordinator at ext. 1206.
+  - For Morning Bingo, bring your own coins and bills.
 contacts:
   website: https://lutheransettlement.org
-  email: null
+  email: lsantodomingo@lshphilly.org
   phone: 215-426-8610
-  contact_name: null
+  contact_name: Lynn Santo Domingo (older adults contact)
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
+sign_of_life_url: https://lutheransettlement.org/lsh-services/senior-services/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PCA_SeniorCenters/FeatureServer/0
   seen: '2026-10-08'
@@ -99,8 +119,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - locations
+- url: https://lutheransettlement.org/lsh-services/senior-services/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+- url: https://lutheransettlement.org/lsh-programs/senior-center/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://lutheransettlement.org/lsh-programs/senior-activities/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,10 +5,10 @@ leads:
 - cultural_fund:liberty-city-arts
 - irs_bmf:934569805
 ein: '934569805'
-summary: An artist-run opera group in Philadelphia. The homepage says it offers free vocal training and
-  performance chances for Philadelphia-rooted artists, and it puts on public shows and cabarets.
-what_you_do: Attend a public opera or cabaret event, or ask about free vocal training and performance
-  chances for Philadelphia artists through the Contact Us page.
+summary: A grassroots opera group in Philadelphia. It offers free vocal training to singers, puts on public
+  opera and cabaret shows, and gives artists chances to perform.
+what_you_do: Go to a public opera or cabaret show, or send a message through the Contact Us page to ask
+  about the free vocal training and performance chances for artists.
 kind: nonprofit
 categories:
 - music
@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'September 2026 shows: Never Land (Sept 10 and 12) and My Place of Clear Water (Sept 15 and 22).
-    No vocal training schedule is published.'
+  text: Public opera and cabaret shows are separate events, listed on the Upcoming Events page. No vocal
+    training schedule is published.
   days: []
   times:
   - evening
@@ -66,8 +66,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Ticket prices are not shown on the upcoming events page. The site mentions complimentary artist
-    tickets for artists.
+  text: Ticket prices are not shown on the upcoming events page. The site mentions complimentary tickets
+    for artists.
 commitment: one_off
 group_size: null
 access:
@@ -82,15 +82,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Ask about free vocal training or performance chances through the Contact Us page at libertycityarts.org,
-    or buy a ticket to the next event on the Upcoming Events page.
+  how: Send a message through the Contact Us page and choose 'Become a Liberty City Artist'. The form
+    asks for a resume, your voice type or instrument, and a link to a recent recording.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Training is described as free, but the site gives no schedule, eligibility rules or sign-up steps,
-    so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The home page describes the vocal training as free, but the site gives no schedule or class steps,
+    and the way in is an inquiry form that asks for a resume and a recording.
+  what_to_expect: The public shows are ticketed evening performances at venues such as The Latvian Society
+    and Trinity@22. The site does not describe a training class format, so ask through the form how training
+    works before you plan around it.
+  first_visit_tips:
+  - The events page does not show prices, so open each show's Read more page before you go.
+  - The events list shows only September 2026 shows, which have passed, so check the page for new dates.
+  - Artists can ask about complimentary tickets through the contact form.
 contacts:
   website: https://libertycityarts.org/
   email: null
@@ -128,11 +133,19 @@ sources:
   fields:
   - what_you_do
   - first_step
+  - cost
 - url: https://libertycityarts.org/
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+  - what_you_do
+  - first_step
+- url: https://libertycityarts.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

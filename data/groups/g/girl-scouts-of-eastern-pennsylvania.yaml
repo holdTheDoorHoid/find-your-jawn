@@ -5,9 +5,9 @@ leads: []
 ein: null
 summary: The Girl Scout council for Philadelphia and eight nearby counties. Girls join troops, and adults
   lead a troop, help one, or take council roles such as committee member or awards mentor.
-what_you_do: Girls join a troop, which meets at times and places its leaders set. Adults can start a troop,
-  help an existing troop with skills, the cookie program or chaperoning, share first aid or outdoor skills,
-  join a council committee, or mentor girls working toward the Silver and Gold Awards. Adult volunteers
+what_you_do: Girls join a troop, or register as an individual member if no troop fits. Adults can start
+  a troop, help an existing troop with skills, the cookie program or chaperoning, share first aid or outdoor
+  skills, join a council committee, or mentor girls working toward the Silver and Gold Awards. Adult volunteers
   must be 18 or older.
 kind: nonprofit
 categories:
@@ -34,15 +34,15 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 5
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Each troop sets its own meeting times and place, so ask the troop leader. The council's home page
-    lists events by date.
+  text: Every troop chooses its own meeting time and place, so ask the troop leader or compare troops
+    with the Find a Troop search on the council site.
   days: []
   times: []
   recurring: true
@@ -59,8 +59,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The council lists a membership fee, but the pages read do not state an amount.
+  level: low
+  text: Girl members pay $25 a year and adult members pay $30 a year. The membership year runs from October
+    1 to September 30.
 commitment: null
 group_size: null
 access:
@@ -68,25 +69,31 @@ access:
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Fill in the volunteer interest form on gsep.org, or call 215-564-2030 to ask about a troop near
-    you.
+  how: Use the Find a Troop search on gsep.org to get a list of troops near you, or fill in the volunteer
+    interest form. Adults who want to lead a troop can start with the leader interest form.
   drop_in: null
   sign_up_needed: true
-  newcomer_friendliness: 3
-  basis: Anyone can ask through the public interest form, and the council says it will follow up. It does
-    not describe a beginner program or a first visit, so you cannot see a troop before you join.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: A girl pays the yearly membership and joins a troop before she sees a meeting, and the site does
+    not say whether a visit is allowed. Adult volunteers must clear state checks before a role is approved.
+  what_to_expect: Girls join a troop after paying the yearly membership, and each troop sets its own meeting
+    times and place. Adult volunteers complete a state compliance packet (police, child abuse and FBI
+    checks) and two online courses before a role is approved.
+  first_visit_tips:
+  - Ask the troop leader whether a girl can visit one meeting before joining.
+  - Adult volunteers have 30 days after choosing a role to finish the compliance steps.
+  - Gather the 3 to 4 compliance documents before starting, since partial submissions cause delays.
+  - Compliance questions go to memberservices@gsep.org with 'Compliance' in the subject line.
 contacts:
   website: https://www.gsep.org
-  email: null
+  email: memberservices@gsep.org
   phone: 215-564-2030
   contact_name: null
   social: []
@@ -107,6 +114,7 @@ sources:
   - schedule
   - status
   - last_sign_of_life
+  - contacts
 - url: https://search.pa211.org/search/1f51f308-4ac4-53a9-b8ba-42d789a8c1cb
   seen: '2026-10-08'
   fields:
@@ -115,7 +123,30 @@ sources:
   - contacts
   - what_you_do
   - requirements.kids_ok
-research_tier: 1
+- url: https://www.gsep.org/en/get-involved/join.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - audience
+  - first_step
+  - last_sign_of_life
+- url: https://www.gsep.org/en/get-involved/join/find-a-troop.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.gsep.org/en/get-involved/become-a-volunteer/clearances.html
+  seen: '2026-10-08'
+  fields:
+  - requirements.act153_clearances
+  - requirements.background_check
+  - first_visit_tips
+- url: https://www.gsep.org/en/get-involved/become-a-volunteer/become-a-troop-volunteer.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

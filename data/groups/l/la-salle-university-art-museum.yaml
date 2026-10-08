@@ -4,10 +4,10 @@ aka: []
 leads:
 - cultural_fund:la-salle-university-art-museum-3
 ein: null
-summary: The art museum of La Salle University. It serves the general public and offers school gallery
-  lessons, guided tours and outreach.
-what_you_do: Visit the galleries, join a gallery lesson or guided tour, or come to a museum event. The
-  page lists no volunteer roles.
+summary: The art museum of La Salle University. It is open to the public during the school term and offers
+  free gallery lessons for school groups.
+what_you_do: Visit the galleries when the museum is open, or join a free gallery lesson if you come with
+  a school group. The site lists no volunteer roles.
 kind: program
 categories:
 - arts-crafts
@@ -28,16 +28,31 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Open Monday to Thursday, 10 am to 4 pm, while the university is in session. Outside the academic
+    term, visits are by appointment.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Lower level of Hayman Hall, La Salle University
+  address: 20th Street and Olney Avenue
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Admission is not listed on the museum's hours page. School gallery lessons are free.
 commitment: null
 group_size: null
 access:
@@ -52,18 +67,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the Gallery Tours and Events and Activities pages on the museum site for times and how to
-    book
-  drop_in: null
+  how: Visit Monday to Thursday, 10 am to 4 pm, during the school term, or email artmuseum@lasalle.edu
+    to book a visit outside the term.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Public tours and lessons are listed, but the details were not readable on this check, so the
-    way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The museum lists open hours and an email for visits and bookings, and it is open to the public.
+    The site does not describe beginner programs or tours.
+  what_to_expect: A visit is a walk through the galleries during open hours. School groups in grades K
+    to 12 can book a free themed gallery lesson for up to 35 students, with one adult for every 5 students
+    in grades K to 5 and one for every 10 students in grades 6 to 12. The hours page does not list an
+    admission price, so ask before you go if cost matters.
+  first_visit_tips:
+  - The museum is in the lower level of Hayman Hall. Turn onto 20th Street at the campus guardhouse and
+    ask the guard for directions.
+  - Parking is assigned on arrival, as space allows.
+  - Email artmuseum@lasalle.edu before any visit outside the term, since the museum then opens by appointment.
 contacts:
   website: https://artcollection.lasalle.edu/
-  email: null
+  email: artmuseum@lasalle.edu
   phone: null
   contact_name: null
   social: []
@@ -84,8 +106,29 @@ sources:
   - what_you_do
   - first_step
   - status
-research_tier: 1
-confidence: low
+  - contacts
+- url: https://artcollection.lasalle.edu/kiosk/hours.htm
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://artcollection.lasalle.edu/kiosk/gallery_lessons.htm
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - cost
+  - first_step
+- url: https://artcollection.lasalle.edu/kiosk/directions.htm
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

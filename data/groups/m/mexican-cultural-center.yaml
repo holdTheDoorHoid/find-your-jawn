@@ -6,7 +6,7 @@ leads:
 - irs_bmf:232772596
 ein: '232772596'
 summary: A nonprofit that shares Mexican heritage with Philadelphians through festivals, Day of the Dead
-  events, programs and workshops. Its events are open to everyone, and volunteers can sign up through
+  events, programs and workshops. Many events are open to the public, and volunteers can sign up through
   a form.
 what_you_do: Attend a public festival or Day of the Dead event, join as a member, or fill out the volunteer
   form to help at events.
@@ -24,7 +24,8 @@ formats:
 - learn_skill
 roles:
 - hands_on
-crowd: []
+crowd:
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,12 +37,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events through the year. Mexican Independence Day Festival on Sept 13, 2026, 2 to 7 pm at RiverRink
-    Summerfest. Day of the Dead at the Penn Museum on Oct 24, 2026, 1 to 4 pm.
+  text: Events are held through the year, with no fixed weekly schedule. The events page lists each date,
+    time and place.
   days: []
   times:
   - daytime
-  recurring: true
+  - evening
+  recurring: false
   season: event_only
 locations:
 - label: Mexican Cultural Center office
@@ -55,9 +57,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The Mexican Independence Day Festival is listed as free. Other event prices are not shown; membership,
-    donations and sponsorships are offered.
+  level: low
+  text: Yearly membership is $35 for students and seniors, $60 for an individual, and $100 for a couple.
+    Event prices are not listed on the events page.
 commitment: one_off
 group_size: null
 access:
@@ -69,18 +71,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Fill out the volunteer form on the website, or attend the Day of the Dead event at the Penn Museum
-    on Oct 24, 2026 from 1 to 4 pm.
+  how: Attend the Day of the Dead family event at the Penn Museum on Oct 24, 2026, from 1 to 4 pm, or
+    check the events page for the next public event.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events are open to the public and the volunteer form is a clear way in, but the site describes
-    no beginner or newcomer route.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are public, the site describes some as free and family friendly, and volunteers apply
+    through a form. The site describes no beginner or newcomer route.
+  what_to_expect: Events run a few hours, and several are described as family friendly. The Day of the
+    Dead event has family crafts like flower making and an altar contest where attendees vote. Event prices
+    are not listed on the events page, so check before you go.
+  first_visit_tips:
+  - Check the events page for each event's date, time and place, since some items are still listed as
+    to be determined.
+  - The big events run for several hours, so plan for an afternoon.
+  - To volunteer, use the volunteer form; you must be 18 or older.
 contacts:
   website: http://www.mexicanculturalcenter.org
   email: null
@@ -112,6 +120,9 @@ sources:
   - schedule
   - cost
   - status
+  - last_sign_of_life
+  - first_step
+  - what_to_expect
 - url: http://www.mexicanculturalcenter.org
   seen: '2026-10-08'
   fields:
@@ -120,7 +131,17 @@ sources:
   - locations
   - first_step
   - contacts
-research_tier: 1
+- url: https://mexicanculturalcenter.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_visit_tips
+  - first_step
+- url: https://mexicanculturalcenter.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

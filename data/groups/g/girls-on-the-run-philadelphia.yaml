@@ -6,8 +6,9 @@ leads:
 ein: '461274689'
 summary: A seasonal running program for girls in 3rd to 8th grade that builds social, emotional, and physical
   skills through running and group talks, led by trained volunteer coaches.
-what_you_do: Girls join a 3rd to 5th grade team or a 6th to 8th grade team for a season. Volunteers can
-  coach, help at the 5K, or sign up through the volunteer page.
+what_you_do: Girls join a 3rd to 5th grade team or a 6th to 8th grade team for a 10-week season that ends
+  in a 5K. Adults coach a team, high school students can serve as junior coaches, and volunteers can help
+  at the 5K or with one-time and project work.
 kind: nonprofit
 categories:
 - running-cycling-fitness
@@ -37,13 +38,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Team lessons each season, ending in a 5K. Days and times are not stated on the site.
+  text: Each season runs about 10 weeks with two practices a week and ends with a 5K. Team sites set their
+    own practice days and times.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Organization office (team sites not listed on the site)
+- label: Program office
   address: 40 W Evergreen Ave, Suite 104
   neighborhood: null
   planning_district: null
@@ -54,9 +56,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The registration fee is not on the home page. The group says donations help make sure no girl
-    is turned away for money reasons.
+  level: paid
+  text: Registration is $225 per girl each season. Families with household income under $100,000 a year
+    can apply for a reduced fee, and a two-payment plan is offered. The fee covers a shirt, a water bottle,
+    practice snacks, lesson materials, 5K entry and a finisher's medal.
 commitment: seasonal
 group_size: null
 access:
@@ -65,19 +68,28 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: 'Nothing needed from girls: shoes and running clothes can be provided if a girl needs them.'
 first_step:
-  how: Use the coach and volunteer pages linked from the site.
+  how: Apply through the coach sign-up link on the program's coach page, or sign up on the volunteer page
+    to help at the 5K.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Separate coach and volunteer pages are linked, but the sign-up steps are not on the home page.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: No running experience is needed to coach, and the 5K volunteer sign-up is open to anyone. Coaches
+    must finish training and a background check before the season, and the site does not describe a visit
+    first.
+  what_to_expect: Coaches lead 90-minute practices twice a week for about 10 weeks, usually in the late
+    afternoon, using materials the program supplies. Before the season, coaches complete about 3.5 hours
+    of online training and about 3 hours of in-person training with program staff.
+  first_visit_tips:
+  - Plan for about 3 hours a week of practice time, plus the 5K day.
+  - At least one coach per team needs CPR certification, and the program can help arrange it.
+  - Team sites are not named on the program pages, so check the locations page for where teams meet.
+  - Junior coaches are high school students who help the coaches and serve as role models.
 contacts:
   website: https://www.gotrphiladelphia.org/
   email: alyssa.cepin@gotrphiladelphia.org
@@ -85,9 +97,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://gotrphiladelphia.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.gotrphiladelphia.org/3rd-5th-grade-program-details
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,11 +126,43 @@ sources:
   - cost
   - first_step
   - status
+  - contacts
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.gotrphiladelphia.org/3rd-5th-grade-program-details
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - requirements.gear
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.gotrphiladelphia.org/6th-8th-grade-program-details
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+- url: https://www.gotrphiladelphia.org/coach
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements.background_check
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.gotrphiladelphia.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.gotrphiladelphia.org/locations
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -7,18 +7,22 @@ ein: null
 summary: A media organization that makes news, films and podcasts with a focus on Black and Latin American
   communities. Its news sections are in English, Spanish and Portuguese, and community members can pitch
   story ideas.
-what_you_do: Volunteer to help with stories, pitch a story idea, attend a seasonal community pitch meeting,
-  or sign up for the monthly newsletter.
+what_you_do: Volunteer to help with stories, pitch a story idea, attend a community pitch meeting, or
+  sign up for the monthly newsletter. You can also come to community events such as a Spanish-language
+  film club and a monthly Afro-Latin dance lesson and social.
 kind: program
 categories:
 - books-writing
 - arts-crafts
+- theater-dance-performance
 interests:
 - zines_media
 - film_video
+- social_dance
 motives:
 - values
 - understanding
+- social
 formats:
 - behind_the_scenes
 - conversation
@@ -40,14 +44,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Community pitch meetings are held seasonally and linked from the events page. Dates are not shown
-    on the page.
-  days: []
-  times: []
+  text: A Spanish-language film club meets most Tuesdays, 6 to 7 pm. A monthly dance lesson and social
+    runs on Sundays at FDR Park, 12 to 4 pm. Community pitch meetings are held each season.
+  days:
+  - tue
+  - sun
+  times:
+  - evening
+  - daytime
   recurring: true
-  season: fall
+  season: year_round
 locations:
-- label: FDR Park (Queer Afro Latin Dance)
+- label: Mercado Latino at FDR Park (dance lesson and social)
   address: null
   neighborhood: null
   planning_district: null
@@ -58,8 +66,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: No fees are listed for volunteering, pitch meetings or the newsletter. Donations are optional.
+  level: free
+  text: The dance social is free with no RSVP. No fee is listed for volunteering, pitch meetings or the
+    newsletter, and donations are optional.
 commitment: drop_in
 group_size: null
 access:
@@ -74,14 +83,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email production@intimedia.org to offer help or pitch a story, or sign up for the monthly newsletter
-  drop_in: false
+  how: Come to the monthly Sunday dance lesson and social at the Mercado Latino at FDR Park, or email
+    production@intimedia.org to offer help or pitch a story.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The page names volunteering and open community pitch meetings as ways in, and gives an email
-    address.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The dance is free with no RSVP, and the site gives an email address for volunteering and story
+    pitches. The site describes no training for new volunteers.
+  what_to_expect: The monthly Sunday dance starts with a one-hour lesson, then becomes a social until
+    4 pm, and it is free with no RSVP. The site says the dance is open to LGBTQ+ people. Community pitch
+    meetings are held each season and are open to everyone.
+  first_visit_tips:
+  - Ask the group for the exact meeting spot at the Mercado Latino at FDR Park, since the events page
+    gives no street address.
+  - Email production@intimedia.org to offer a story idea; the site does not describe what a pitch should
+    include.
 contacts:
   website: https://www.intimedia.org/
   email: production@intimedia.org
@@ -91,7 +107,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.intimedia.org
+sign_of_life_url: https://www.intimedia.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=6
   seen: '2026-10-04'
@@ -124,7 +140,15 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
+- url: https://www.intimedia.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - status
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

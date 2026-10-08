@@ -86,7 +86,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2025-12
-sign_of_life_url: https://www.keealliance.org
+sign_of_life_url: https://keealliance.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -112,8 +112,17 @@ sources:
   - first_step
   - contacts
   - status
+- url: https://keealliance.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://keealliance.org/upcoming-keea-events/
+  seen: '2026-10-08'
+  fields:
+  - status
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'
-hidden: false
-hidden_reason: null
+hidden: true
+hidden_reason: out_of_scope

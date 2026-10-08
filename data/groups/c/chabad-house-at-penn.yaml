@@ -5,15 +5,21 @@ leads:
 - irs_bmf:412850178
 - penn_clubs:chabad-house-at-penn
 ein: '412850178'
-summary: null
-what_you_do: null
+summary: A Jewish campus center at Penn that hosts Shabbat dinners, holiday events, and a weekly newsletter
+  for students.
+what_you_do: Come to Shabbat dinners and holiday programs, or sign up for the weekly student newsletter
+  and event updates.
 kind: student_org
-categories: []
-interests: []
+categories:
+- faith-community
+interests:
+- worship_community
+- congregation_social
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -67,23 +73,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up on the website for the weekly student newsletter, or text the club's bot to get event updates
+    and RSVP.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are open to students with a simple sign-up. The directory's application flag refers to
+    the student board, not to general membership.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://ChabadatPenn.com
   email: info@lubavitchhouse.com
   phone: null
   contact_name: Levi Haskelevich
-  social: []
+  social:
+  - https://facebook.com/lubavitchhouse
+  - https://instagram.com/chabadatpenn/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://ChabadatPenn.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -98,8 +108,21 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://ChabadatPenn.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://pennclubs.com/api/clubs/chabad-house-at-penn/?format=json
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,8 +7,8 @@ ein: null
 summary: A Philadelphia nonprofit cinema that shows repertory, nonfiction, experimental and international
   films and works to restore important older films. Anyone can buy a ticket to a screening, and members
   pay less.
-what_you_do: Buy a ticket to a listed screening, join as a member, or donate. Screenings are listed on
-  the events page.
+what_you_do: Buy a ticket to a listed screening at the box office or online through Ticketleap. Members
+  pay $5 per ticket, and yearly memberships start at $60 for students and $75 for individuals.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -32,8 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Screenings are listed by month and day, mostly on Sundays and Wednesdays in October. The page
-    shows no year.
+  text: Screenings are listed on the events page, usually on Sundays and Wednesdays.
   days:
   - sun
   - wed
@@ -53,14 +52,18 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: General admission is $14. Students and seniors pay $12, members pay $5, and ACCESS tickets are
-    $2 (up to 4 tickets).
+  text: General admission is $14. Students and seniors pay $12, members pay $5 per ticket, and ACCESS
+    tickets are $2 (up to 4 tickets) with a PA ACCESS, EBT or Art-Reach ACCESS card and a photo ID. Yearly
+    memberships start at $60 (student) and $75 (individual).
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: 'The BOK building has ADA entrances at 821 Dudley Street (the visitor entrance) and on Mifflin
+    Street near 9th Street. The page does not describe seating or elevators inside Bok Auditorium. Nearest
+    SEPTA: Broad Street Line, Tasker-Morris or Snyder stop, about a 10 minute walk. Buses 45, 47, 47M,
+    29 and 79 also run nearby.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,13 +72,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket for a listed screening, or join as a member for lower prices
+  how: Buy a ticket for a listed screening at the box office or online, or join as a member for $5 tickets.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public screenings are open to anyone with a ticket, and membership is described on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public screenings are open to anyone with a ticket, and the site lists membership options with
+    prices.
+  what_to_expect: A screening is shown in Bok Auditorium inside the BOK building on South 9th Street.
+    Many films are repertory, nonfiction, experimental or international titles that the site says are
+    not otherwise screened in the city. General tickets are $14, with lower prices for students, seniors,
+    members and ACCESS card holders.
+  first_visit_tips:
+  - Use the visitor entrance at 821 Dudley Street, which is an ADA entrance.
+  - Bring a photo ID if you use the ACCESS discount, along with your PA ACCESS, EBT or Art-Reach ACCESS
+    card.
+  - Street parking is hard to find, so take the Broad Street Line, a bus or a ride share. Ride share drop-off
+    is marked Bok at 1901 S 9th Street.
+  - Bike parking is on the 9th Street sidewalk, and an Indego bike share kiosk is at 8th and Mifflin Streets.
 contacts:
   website: https://www.lightboxfilmcenter.org
   email: info@lightboxfilmcenter.org
@@ -85,7 +98,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.lightboxfilmcenter.org/
+sign_of_life_url: https://www.lightboxfilmcenter.org/events/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=6
   seen: '2026-10-04'
@@ -102,6 +115,8 @@ sources:
   - first_step
   - contacts
   - status
+  - what_you_do
+  - access
 - url: https://www.lightboxfilmcenter.org
   seen: '2026-10-08'
   fields:
@@ -116,8 +131,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.lightboxfilmcenter.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+  - first_step
+- url: https://www.lightboxfilmcenter.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,234 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-23",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 16,
+ "leads_only": [
+  {
+   "name": "Moms Bonded By Grief Botanical Garden of Healing",
+   "url": "https://www.inquirer.com/opinion/gun-violence-moms-bonded-by-grief-garden-healing-terrez-mccleary-20241118.html",
+   "note": "Named in search results as a memorial garden at 51st Street and Woodland Avenue in Southwest Philadelphia, linked to a 2024 Inquirer article. Not checked against the group's own page."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://libwww.freelibrary.org/calendar/?id=172011",
+   "status": 403,
+   "note": "Friends of Oak Lane Library meeting listing. HTTP 403, not read."
+  },
+  {
+   "url": "https://libwww.freelibrary.org/locations/oak-lane-library",
+   "status": 403,
+   "note": "Oak Lane Library branch page. HTTP 403, not read."
+  },
+  {
+   "url": "https://www.intheeyesofgrievingmothers.org",
+   "status": null,
+   "note": "Domain derived from the IRS list website field. TLS certificate expired, not read."
+  },
+  {
+   "url": "https://GenerationRestored.org",
+   "status": null,
+   "note": "Website from the IRS list. DNS lookup failed."
+  },
+  {
+   "url": "https://www.esthercares.org",
+   "status": null,
+   "note": "Guessed from the group name. DNS lookup failed."
+  },
+  {
+   "url": "https://www.futurepathforfutureleaders.org",
+   "status": null,
+   "note": "Guessed from the group name. DNS lookup failed."
+  }
+ ],
+ "notes": "Searches: both used, on In the Eyes of Grieving Mothers and on the Oak Lane Friends group. The other IRS groups with no web address (Damirs, Entrepreneurs of America, Esthercares, Future Path, House of Wisdom-Chrida) got no search, so they are held as unknown with no summary. Generations Restored has a dead domain and is also held. Friends 4 Life is held as out_of_area for review because its current address is outside Philadelphia. Hands Elevated publishes its events-page dates, which come from link addresses. Every IRS address that is a home or apartment, or that the site does not show, is left out. The Free Library pages returned 403, so the Oak Lane Friends record stays held until verified. No rate limiting was seen on other domains. Records with status unknown and no summary are held back by design. Ran out of search budget before finishing the no-address IRS groups; this is the main gap.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:815143108",
+     "irs_bmf:815143108"
+    ],
+    "group_id": "damirs-relief-network-foundation",
+    "ein": "815143108"
+   },
+   "verdict": "publish",
+   "name": "Damirs Relief Network Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field holds RESET HOMECARE GA LLC, a business name, not a web address, so no website was used. It may be a home care business rather than a community group, but that is not confirmed. No search was left for this group. IRS list address (6274 N 15th St, 19141) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:830510130",
+     "irs_bmf:830510130"
+    ],
+    "group_id": "entrepreneurs-of-america-inc",
+    "ein": "830510130"
+   },
+   "verdict": "publish",
+   "name": "Entrepreneurs of America",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field holds an email address at a personal Yahoo account, not a web address, and it is not clearly the group's own, so it was not recorded. The IRS list contact is a private person and is not published. No search was left for this group. IRS list address (8012 Hollis St, 19150) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:853014892",
+     "irs_bmf:853014892"
+    ],
+    "group_id": "esthercares-inc",
+    "ein": "853014892"
+   },
+   "verdict": "publish",
+   "name": "Esthercares",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field holds a street address (4519 Vankirk Street), not a web address. A guessed domain (esthercares.org) did not resolve. No search was left for this group. IRS list address (4606 Boudinot St, 19120) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232123857",
+     "irs_bmf:232123857"
+    ],
+    "group_id": "friends-of-the-free-library-of-philadelphia-inc-19126",
+    "ein": null
+   },
+   "verdict": "publish",
+   "name": "Friends of the Oak Lane Library",
+   "kind": "friends_group",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list name is Friends of the Free Library of Philadelphia Inc, at 6614 N 12th St, which is the Oak Lane Library address. Search results (snippets only, not pages I could open) describe a separate 501(c)(3) called Friends of the Oak Lane Library that meets monthly and welcomes adults. The Free Library calendar page and the Oak Lane branch page both returned HTTP 403 to my fetch, so nothing from them is recorded. The IRS EIN is not confirmed as this group's. The search snippet also listed an email address that was not verified on a readable page. Verify on a readable page before publishing. No summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863079902",
+     "irs_bmf:863079902"
+    ],
+    "group_id": "future-path-for-future-leaders-inc",
+    "ein": "863079902"
+   },
+   "verdict": "publish",
+   "name": "Future Path for Future Leaders",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field holds the group's name, not a web address. A guessed domain (futurepathforfutureleaders.org) did not resolve. No search was left for this group. IRS list address (1951 Laveer St, 19141) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:473640123",
+     "irs_bmf:473640123"
+    ],
+    "group_id": "generations-restored-youth-and-community-center-inc",
+    "ein": "473640123"
+   },
+   "verdict": "publish",
+   "name": "Generations Restored Youth and Community Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS list website (GenerationRestored.org) does not resolve: the DNS lookup failed on 2026-10-08. No other web address was found, and no search was left for this group. IRS legal name is Generations Restored Youth and Community Center Inc. IRS list address (7700 Ogontz Ave, 19150) not published. Needs a reviewer to find a working web presence before it can go live.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821763155",
+     "irs_bmf:821763155"
+    ],
+    "group_id": "house-of-wisdom-chrida",
+    "ein": "821763155"
+   },
+   "verdict": "publish",
+   "name": "House of Wisdom-Chrida",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field holds Woods Servics, not a web address. No search was left for this group. IRS list address (533 W Duncannon Ave, 19120) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:474727132",
+     "irs_bmf:474727132"
+    ],
+    "group_id": "in-the-eyes-of-grieving-mothers",
+    "ein": "474727132"
+   },
+   "verdict": "publish",
+   "name": "In the Eyes of Grieving Mothers",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS list website field reads In The Eyes of Grieving Mothers.org, which is not a web address. The domain it points to (intheeyesofgrievingmothers.org) returned an expired certificate, so nothing on it was read. Search result snippets (not pages I could open) describe a Philadelphia area group for grieving mothers founded by Tanisha Palmer, with a related podcast. The snippets show no current meetings, dates or contact details. One of the two searches went to this group. IRS list address (7631 Rugby St, 19150) not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

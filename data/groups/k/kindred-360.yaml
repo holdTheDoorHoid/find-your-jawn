@@ -5,31 +5,47 @@ leads:
 - irs_990n:990481852
 - irs_bmf:990481852
 ein: '990481852'
-summary: null
-what_you_do: null
+summary: A nonprofit that runs virtual support groups and webinars for Black parents and caregivers, with
+  an online library of webinars, workouts and mindfulness tools.
+what_you_do: Sign up for a virtual support group or webinar, or become a free Changemaker member to use
+  the online library.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- support-recovery
+- health-wellness
+interests:
+- parenting_support
+- caregiver_support
+- meditation_mindfulness
+motives:
+- social
+- understanding
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - black
+  - parents
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
-  text: null
+  text: 'Virtual support groups and webinars. The support groups page gives one dated session: a doula
+    and birth worker group on October 28, 2026 at 7 pm Eastern. Most other groups are listed as coming
+    soon, with no day or time.'
   days: []
-  times: []
+  times:
+  - evening
   recurring: null
-  season: null
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 5114 N Broad St
@@ -49,10 +65,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: The Changemaker membership is free. Support group costs are not stated.
 commitment: null
 group_size: null
 access:
@@ -67,23 +83,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Click Sign Up on kindred360.org to request a virtual support group, or join the free Changemaker
+    membership to use the online library
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Support groups and the library are listed on the public site with a clear sign-up step, though
+    most groups are marked coming soon.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.kindred360.org
-  email: null
+  website: https://www.kindred360.org
+  email: changemaker@kindred360.org
   phone: null
   contact_name: Tiffani Simmons
-  social: []
+  social:
+  - https://www.facebook.com/61555633715953
+  - https://www.facebook.com/groups/602877619421615
+  - https://www.linkedin.com/company/kindred-360
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.kindred360.org/support-groups
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +120,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.kindred360.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - kind
+  - audience
+- url: https://www.kindred360.org/support-groups
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -3,10 +3,12 @@ name: Kensington Soccer Club
 aka: []
 leads: []
 ein: null
-summary: A soccer club founded in 2010 in Kensington, which says its programs are offered regardless of
-  ability to pay.
-what_you_do: The club links a program directory and a volunteer page from its home page, along with a
-  calendar and news archive.
+summary: A soccer club founded in 2010 in Kensington. It runs recreational seasons for beginners, free
+  after school soccer at partner schools, a book reading program, and competitive teams for youth, teens
+  and adults.
+what_you_do: Players can join a recreational season or the after school program. Volunteers can coach,
+  referee, help at club events or with the book program, or join the communications and fundraising working
+  groups.
 kind: club
 categories:
 - sports-teams
@@ -18,8 +20,12 @@ formats:
 - team_play
 roles:
 - help_teach
+- organize
+- hands_on
 crowd:
 - kids
+- teens
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -31,11 +37,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Seasons run through the year. The fall beginner program meets on weekday late afternoons and evenings
+    and on Saturday mornings at Casiano Field and Hissey Playground. KSC PREP, for high school students,
+    meets Mondays, Wednesdays and Thursdays from 4 to 8 pm during its season at the Community Center at
+    Visitation.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - sat
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Club office, 3400 J St., Room G4
   address: 3400 J St., Room G4
@@ -46,10 +62,21 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Community Center at Visitation
+  address: 2646 Kensington Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19125'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: low
-  text: The club says its programs are offered regardless of ability to pay. Fees are not listed.
+  text: 'Some programs are free: the after school program at partner schools and the S.A.V.E. book program.
+    The club says it offers programs regardless of ability to pay, and most program pages do not list
+    fees.'
 commitment: seasonal
 group_size: null
 access:
@@ -64,13 +91,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the program directory or the volunteer page linked from the home page.
+  how: Open the program directory at kensingtonsoccer.org/programs, pick a program, and use its registration
+    link or email the club about it.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Links to programs and volunteering are present, but the sign-up steps are not on the home page.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The program directory gives a registration link or a contact email for most programs, and the
+    fall beginner program is open to new players. Most programs do not list fees, so ask before you sign
+    up.
+  what_to_expect: The fall beginner program runs 10 weeks and focuses on skills, fun, fitness and healthy
+    habits. Sessions are on weekdays and on Saturday mornings at Casiano Field and Hissey Playground.
+    The 2026 fall session started in September, so ask the club when the next session opens.
+  first_visit_tips:
+  - Check the program page for the field, day and time before you come.
+  - Ask about fees before you register, since most program pages do not list them.
+  - If you want to help instead of play, email volunteer@kensingtonsoccer.org.
 contacts:
   website: https://www.kensingtonsoccer.org/
   email: kensingtonsoccerclub@gmail.com
@@ -78,9 +113,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://kensingtonsoccer.org/
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.kensingtonsoccer.org/programs
 sources:
 - url: https://kensingtonsoccer.org/
   seen: '2026-10-08'
@@ -109,8 +144,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.kensingtonsoccer.org/programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,11 +5,13 @@ leads:
 - cultural_fund:jazz-bridge-project
 - irs_bmf:760820953
 ein: '760820953'
-summary: Helps Jazz and Blues musicians in the Philadelphia area who are in money, health or housing trouble,
-  with a social worker and emergency grants. It also hosts free neighborhood concerts played by local
-  jazz musicians.
-what_you_do: Musicians in crisis can ask for help through the group. Anyone can attend the free neighborhood
-  concerts or give a donation.
+summary: Helps jazz and blues musicians in the Philadelphia area who are in money, health or housing trouble,
+  with a social worker and small grants. It also books local musicians for public concerts, many of them
+  free park shows in Philadelphia.
+what_you_do: 'Musicians can call the office, which aims to return calls within 24 hours, or fill in the
+  request form for help with money, health or housing. Anyone can attend a concert: many park shows are
+  free, and some ticketed shows let students in free. Volunteers can join individual or group projects,
+  and donations are accepted.'
 kind: nonprofit
 categories:
 - music
@@ -34,8 +36,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Free neighborhood concerts: Nov 19, 2026 in Collingswood, Dec 2, 2026 in Cheltenham, Mar 4, 2027
-    in Collingswood, May 5, 2027 in Cheltenham, and May 6, 2027 in Collingswood.'
+  text: Concerts run through most of the year. Free park shows in Philadelphia run in summer and early
+    fall, and ticketed shows run in Cheltenham and Collingswood from fall through spring. Check the events
+    page for dates.
   days: []
   times: []
   recurring: true
@@ -52,8 +55,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: free
-  text: Concerts are free to attend. Donations are accepted.
+  level: low
+  text: Many Philadelphia park concerts are free. Ticketed shows in Cheltenham and Collingswood cost $20
+    in advance or $25 at the door, and some list students as free. Donations are accepted.
 commitment: one_off
 group_size: null
 access:
@@ -68,14 +72,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a free concert, such as the Dec 2, 2026 show in Cheltenham, or email info@jazzbridge.org
-    if you are a musician who needs help
+  how: Come to a free park show listed on the events page, or buy a ticket for a Cheltenham or Collingswood
+    show through that event's Get Tickets link.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts are free and public; musician help is requested by contacting the group
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The shows are public, the events page explains how to attend, and many park shows have free admission.
+    Musician help has a phone line and a request form, so that path is clear too.
+  what_to_expect: Most park shows run about an hour and a half, hosted by a local jazz or blues musician
+    who invites the audience to take part. Many are free and outdoors in Philadelphia parks. The ticketed
+    shows at the Cheltenham Center for the Arts and the Collingswood Community Center run about 7:30 to
+    9 pm.
+  first_visit_tips:
+  - Check the events page for the start time and whether a ticket is needed before you go.
+  - Ticketed shows list $20 in advance and $25 at the door, and some say students are free.
+  - The office is at 6703 Germantown Ave, Suite 200. Call 215-517-8337 before you visit.
 contacts:
   website: https://www.jazzbridge.org
   email: info@jazzbridge.org
@@ -85,7 +96,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.jazzbridge.org
+sign_of_life_url: https://www.jazzbridge.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=6
   seen: '2026-10-04'
@@ -110,8 +121,26 @@ sources:
   - locations
   - status
   - first_step
-research_tier: 1
-confidence: medium
+- url: https://www.jazzbridge.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.jazzbridge.org/request-assistance
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.jazzbridge.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

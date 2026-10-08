@@ -5,9 +5,11 @@ leads:
 - city_programs:love-your-park
 - city_volunteer_pages:partner:loveyourpark:home
 ein: null
-summary: A citywide week of park cleanup and care days each spring, plus a Fall Service Day, run jointly
-  by the City and park partner organizations.
-what_you_do: null
+summary: A citywide volunteer program for Philadelphia's parks, with cleanup days each spring and a Fall
+  Weekend of service each fall. The Fairmount Park Conservancy and Philadelphia Parks & Recreation run
+  it with park partner groups.
+what_you_do: Pick a cleanup, trail or planting day from the events list. Individuals can get a solo cleanup
+  kit, and groups can join a park friends group, start one, or organize their own event.
 kind: program
 categories:
 - nature-environment
@@ -35,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A week each spring and a service day each fall
+  text: A citywide week of park cleanups each spring and a volunteer weekend each fall. Smaller work days
+    are listed on the events page, often on Saturday mornings.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -59,23 +62,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the sign up form at https://loveyourpark.org.
+  how: Choose a work day from the events list at loveyourpark.org. Where the listing says to register,
+    use its Learn More link. Individuals can also ask for a solo cleanup kit.
   drop_in: null
   sign_up_needed: true
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Anyone can take part, and each work day lists a time and meeting spot, but some listings need
+    registration first.
+  what_to_expect: Work days usually run about two hours, such as 10 am to noon. Volunteers pick up trash,
+    clear trails, weed, mulch and restore native plants. Tools and gloves are provided at some sites,
+    and both individuals and groups can take part.
+  first_visit_tips:
+  - Bring your own water bottle, since the site asks volunteers to bring one.
+  - Some listings give only a park name, so allow time to find the meeting spot before the work day starts.
+  - Some events are cancelled in heavy rain, thunder or severe weather, so check the listing before you
+    go.
 contacts:
-  website: https://www.phila.gov/2026-04-07-love-your-park-love-your-city-volunteer-for-love-your-park-week-2026/
-  email: null
-  phone: null
+  website: https://loveyourpark.org
+  email: info@myphillypark.org
+  phone: 215-988-9334
   contact_name: null
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-05
-sign_of_life_url: https://www.phila.gov/2026-04-07-love-your-park-love-your-city-volunteer-for-love-your-park-week-2026/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://loveyourpark.org
 sources:
 - url: https://www.phila.gov/2026-04-07-love-your-park-love-your-city-volunteer-for-love-your-park-week-2026/
   seen: '2026-10-04'
@@ -85,13 +96,35 @@ sources:
   - summary
   - audience
   - requirements
+  - schedule
 - url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/
   seen: '2026-10-04'
   fields:
   - name
   - contacts.website
-research_tier: 1
+- url: https://loveyourpark.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+- url: https://loveyourpark.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://loveyourpark.org/events/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

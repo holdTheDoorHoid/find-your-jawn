@@ -215,10 +215,20 @@
       "notes": "Newest dated event is October 20, 2024 (a collaboration with PHPPA), which is within 24 months, so probably_active sits close to the line. The site does not state a city or street. IRS record gives 105 Wentz St, 19120; not entered as a location because the group's own site does not publish it. Newsletter form notes that it still needs a storage setting, so it may not work. The site says non-binary communities; no tag exists for that, so the closest community tags are used. No regular schedule is published."
     },
     {
+      "match": {"lead_ids": ["irs_990n:871323204", "irs_bmf:871323204"], "group_id": "pull-people-uplfting-living-lives", "ein": "871323204"},
+      "verdict": "publish",
+      "name": "P.U.L.L. People Uplifting Living Lives",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Batch website field holds a name, not a web address, so no site was read. No search budget was left. IRS record: 441 W Champlost St Apt a, 19120, which is an apartment address and may be a private residence; contact Lisa M Taylor (not verified). The batch name is misspelled ('Uplfting'); the name used here follows the group's initials as written in the batch. Needs one search in a later pass before any location is entered."
+    },
+    {
       "match": {"lead_ids": ["irs_990n:811846181", "irs_bmf:811846181"], "group_id": "royal-spoil-academy-of-beauty-and-wellness", "ein": "811846181", "website": "https://www.theroyalspoil.org"},
       "verdict": "publish",
       "name": "Royal Spoil Academy of Beauty & Wellness",
-      "summary": "Gives beauty and hygiene bags to girls and young women in shelters and youth programs, working with shelters and partner groups to do so.",
+      "summary": "Gives beauty and hygiene bags to girls and young women in shelters and other programs, working with shelters and beauty and wellness partners.",
       "what_you_do": "Volunteer, partner with the group, or donate. The site invites people to get in touch to join the team.",
       "kind": "nonprofit",
       "categories": ["hunger-housing-basic-needs"],
@@ -247,5 +257,5 @@
     {"url": "https://libertyevangelicalchurch.org", "status": null, "note": "Domain did not resolve (ENOTFOUND), listed as the Liberty Evangelical website"},
     {"url": "https://ssmullenenterprisesllc.com", "status": null, "note": "Domain did not resolve (ENOTFOUND), listed as the Philly I AM website; an LLC domain, not the group's own site"}
   ],
-  "notes": "Batch of 15 IRS-list groups. Searches: 2, both spent on Liberty Evangelical and Kingdom Empowerment; neither search found a page for those congregations, so they are unknown. Fetches: 14, of which 3 domains did not resolve. Nine groups had no usable web address (the website field held a name or 'Wawa') and were not searched because the 2-search cap was reached; they are unknown and will be held back until a later pass with search budget. Verdicts: 6 records with content (Kindred 360, Live to Serve, Central Philadelphia POMC chapter, Prevention Meets Fashion, One Accord, Royal Spoil) and 9 unknown records held back. Status: active 1, probably_active 3, dormant 1, unknown 10. Process note: I made one call to a tool outside my allowed list (mcp__Claude_Browser__preview_list, a read-only listing that returned no tabs and changed nothing). I did not use any other such tool. Nothing was written outside the output file."
+  "notes": "Batch of 15 IRS-list groups, 15 records written. Searches: 2, both spent on Liberty Evangelical and Kingdom Empowerment; neither search found a page for those congregations, so they are unknown. Fetches: 14, of which 3 domains did not resolve. Seven groups had no usable web address (the website field held a name, or 'Wawa', or an LLC domain that did not resolve) and were not searched because the 2-search cap was reached; they are unknown and need a later pass with search budget. Verdicts: publish 15, hide 0, other 0. Of the 15, 5 are complete (Kindred 360, Live to Serve, Central Philadelphia POMC chapter, Prevention Meets Fashion, Royal Spoil). One Accord has a site but no program focus, and the other 9 have no summary, so those 10 are held back by design. Status: active 1, probably_active 3, dormant 1, unknown 10. Process note: I made one call to a tool outside my allowed list (mcp__Claude_Browser__preview_list, a read-only listing that returned no tabs and changed nothing). I did not use any other such tool. Nothing was written outside the output file."
 }

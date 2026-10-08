@@ -4,15 +4,22 @@ aka: []
 leads:
 - penn_clubs:penn-catholic-newman-community
 ein: null
-summary: null
-what_you_do: null
+summary: The Catholic campus center for Penn students, with weekly Bible study, Newman dinners, and a
+  path into the Catholic Church for students who want to join.
+what_you_do: Come to weekly Bible study or a Newman dinner, join a small group, or ask the center about
+  becoming Catholic.
 kind: student_org
-categories: []
-interests: []
+categories:
+- faith-community
+interests:
+- worship_community
+- scripture_study
+- congregation_social
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +31,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly Bible study and weekly Newman dinners. The website gives no days or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Address
@@ -57,23 +64,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Start on the center's welcome page for newcomers, then come to a dinner, Bible study, or small
+    group.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The center has a welcome page for newcomers and says students can come to its events. The directory
+    marks an application, which the website does not describe.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://newman.upenn.edu/
   email: mgokie@saintsaj.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/penncatholic
+  - https://instagram.com/penncatholic
+  - https://twitter.com/penncatholic
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://newman.upenn.edu/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +93,21 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://newman.upenn.edu/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+- url: https://pennclubs.com/api/clubs/penn-catholic-newman-community/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

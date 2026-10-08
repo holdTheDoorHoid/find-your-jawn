@@ -5,8 +5,8 @@ leads:
 - irs_990n:231268539
 - irs_bmf:231268539
 ein: '231268539'
-summary: A voting rights group that works on voter education and registration in Philadelphia. Members
-  staff tables at public events and sign up volunteers for shifts.
+summary: A nonpartisan voting rights group that works on voter education and registration in Philadelphia.
+  Members staff tables at public events and sign up volunteers for shifts.
 what_you_do: Staff voter information tables, sign up for election-day and voting-rights events, and join
   with partner groups on public actions.
 kind: civic
@@ -36,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public events are posted as they come up. The most recent one found was a Day of Action on Aug
-    8, 2026, at Shissler Recreation Center in Fishtown, with tabling shifts for voting rights.
+  text: Voter education tables and public actions are posted on the chapter's event listings as they come
+    up. No regular meeting schedule is listed on the site.
   days:
   - sat
   times:
@@ -72,17 +72,24 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Sign up for an upcoming tabling shift on the event page, or ask the chapter how to join its committees
+  how: Email info@lwvphilly.org or membership@lwvphilly.org to ask about the next tabling shift or public
+    event, since the events page listed no upcoming events on this check. To join, use the Join button
+    on the website, which opens the chapter's membership portal.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Event shifts are posted publicly, but the chapter's membership and meeting process could not
-    be confirmed
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Public events are open to anyone and tabling shifts are open to volunteers who sign up, and the
+    chapter lists public email addresses. Membership dues and the join steps are on a portal the site
+    does not describe.
+  what_to_expect: A first shift is usually a table at a public event, where you hand out voter information
+    and help people with voter registration. The site does not say how long a shift lasts or whether training
+    comes first. Membership is a separate step through the join portal, and the site does not list dues.
+  first_visit_tips:
+  - Ask the chapter whether a short training comes before your first shift.
+  - Confirm the date, time and venue on the event listing before you go.
 contacts:
   website: www.lwvphilly.org
-  email: null
+  email: info@lwvphilly.org
   phone: null
   contact_name: Jasmine Lamb
   social: []
@@ -114,8 +121,26 @@ sources:
   - locations
   - summary
   - first_step
-research_tier: 1
-confidence: low
+  - last_sign_of_life
+- url: https://www.lwvphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://lwvphilly.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://lwvphilly.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

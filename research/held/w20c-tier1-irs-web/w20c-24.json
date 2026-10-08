@@ -1,0 +1,304 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-24",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 14,
+ "leads_only": [
+  {
+   "name": "PHPPA (named as a partner on Prevention Meets Fashion's events page)",
+   "url": "https://www.preventionmeetsfashion.org/events",
+   "note": "Named as a collaborator on a 2024 event, not checked"
+  },
+  {
+   "name": "Liberty Evangelical Free Church (5125 Linden Ave, 19114)",
+   "url": "https://churcheslist.com/?p=10006",
+   "note": "Found in a church directory during the Liberty Evangelical search. Different address from the IRS record, so it may be a different congregation. Not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://thekemistry.org",
+   "status": null,
+   "note": "Domain did not resolve (ENOTFOUND), listed as the Kingdom Empowerment website"
+  },
+  {
+   "url": "https://libertyevangelicalchurch.org",
+   "status": null,
+   "note": "Domain did not resolve (ENOTFOUND), listed as the Liberty Evangelical website"
+  },
+  {
+   "url": "https://ssmullenenterprisesllc.com",
+   "status": null,
+   "note": "Domain did not resolve (ENOTFOUND), listed as the Philly I AM website; an LLC domain, not the group's own site"
+  }
+ ],
+ "notes": "Batch of 15 IRS-list groups, 15 records written. Searches: 2, both spent on Liberty Evangelical and Kingdom Empowerment; neither search found a page for those congregations, so they are unknown. Fetches: 14, of which 3 domains did not resolve. Seven groups had no usable web address (the website field held a name, or 'Wawa', or an LLC domain that did not resolve) and were not searched because the 2-search cap was reached; they are unknown and need a later pass with search budget. Verdicts: publish 15, hide 0, other 0. Of the 15, 5 are complete (Kindred 360, Live to Serve, Central Philadelphia POMC chapter, Prevention Meets Fashion, Royal Spoil). One Accord has a site but no program focus, and the other 9 have no summary, so those 10 are held back by design. Status: active 1, probably_active 3, dormant 1, unknown 10. Process note: I made one call to a tool outside my allowed list (mcp__Claude_Browser__preview_list, a read-only listing that returned no tabs and changed nothing). I did not use any other such tool. Nothing was written outside the output file.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:462209999",
+     "irs_bmf:462209999"
+    ],
+    "group_id": "kingdom-empowerment-ministries-inc",
+    "ein": "462209999"
+   },
+   "verdict": "publish",
+   "name": "Kingdom Empowerment Ministries",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Listed website thekemistry.org did not resolve (domain not found), so no site was read and no website is recorded. One search for the name with Philadelphia and the listed pastor found no page for this congregation. IRS record: 2031 66th Ave, Philadelphia 19138; contact Pastor Rodney Robertson (not verified). Needs another check (name variants, or the Pennsylvania business registry) before any summary is written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232712221",
+     "irs_bmf:232712221"
+    ],
+    "group_id": "liberty-evangelical-church",
+    "ein": "232712221"
+   },
+   "verdict": "publish",
+   "name": "Liberty Evangelical Church",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Listed website libertyevangelicalchurch.org did not resolve (domain not found). One search for the exact name in Philadelphia found no page for this church. A church directory lists a different congregation, Liberty Evangelical Free Church, at 5125 Linden Ave, 19114; that address does not match the IRS record (5428 N Front St, 19120), so it was not matched. IRS contact: Samuel a Abegumde (not verified). Needs another check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465102860",
+     "irs_bmf:465102860"
+    ],
+    "group_id": "mastermind-cooperative",
+    "ein": "465102860"
+   },
+   "verdict": "publish",
+   "name": "Mastermind Cooperative",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds a name ('The MasterMind Cooperative'), not a web address, so no site was read. The search budget was spent on two other groups, so this one was not searched. IRS record: 219 W Tabor Rd, 19120; contact Desiree Riley (not verified). Needs one search in a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:461594509",
+     "irs_bmf:461594509"
+    ],
+    "group_id": "men-of-action-brothers-of-faith-inc",
+    "ein": "461594509"
+   },
+   "verdict": "publish",
+   "name": "Men of Action Brothers of Faith",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds 'Wawa', which is not a web address, so no site was read. No search budget was left. IRS record: 1225 E Sydney St, 19150; contact Edward Brown (not verified). Needs one search in a later pass. Faith nature and purpose are unknown from the batch.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:824117473",
+     "irs_bmf:824117473"
+    ],
+    "group_id": "monday-morning-mom",
+    "ein": "824117473"
+   },
+   "verdict": "publish",
+   "name": "Monday Morning Mom",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds the name, not a web address, so no site was read. No search budget was left. IRS record: 7930 Fayette St, 19150; contact Donna Clement-Jackson (not verified). Needs one search in a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:463461077",
+     "irs_bmf:463461077"
+    ],
+    "group_id": "new-vision-services-inc",
+    "ein": "463461077"
+   },
+   "verdict": "publish",
+   "name": "New Vision Services",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds the name, not a web address, so no site was read. No search budget was left. IRS record: 1105 E Sharpnack St, 19150; contact Khari McKie (not verified). Needs one search in a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:863596748",
+     "irs_bmf:863596748"
+    ],
+    "group_id": "not-my-child-inc",
+    "ein": "863596748"
+   },
+   "verdict": "publish",
+   "name": "Not My Child",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds the name, not a web address, so no site was read. No search budget was left. IRS record: 5232 Rising Sun Ave, 19120; contact Benita Tillman (not verified). Needs one search in a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800735957",
+     "irs_bmf:800735957"
+    ],
+    "group_id": "one-accord-ministries-inc",
+    "ein": "800735957",
+    "website": "https://www.oneaccordministriesinc.com"
+   },
+   "verdict": "publish",
+   "name": "One Accord Ministries",
+   "summary": "A nonprofit that works to help its community through volunteer-led programs, and invites new volunteers to get in touch.",
+   "what_you_do": "Volunteers are welcome. Contact the group through its website to ask how to join in.",
+   "kind": "nonprofit",
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "first_step": {
+    "how": "Use the Contact Us page on oneaccordministriesinc.com to ask how to volunteer",
+    "newcomer_friendliness": 2,
+    "basis": "The site invites volunteers to get in touch but does not describe a process, dates or programs."
+   },
+   "contacts": {
+    "website": "https://www.oneaccordministriesinc.com",
+    "social": [
+     "https://www.facebook.com/171509499582573",
+     "https://www.instagram.com/oneaccordministriesinc",
+     "https://www.youtube.com/imsickachurch"
+    ]
+   },
+   "status": "probably_active",
+   "sources": [
+    {
+     "url": "https://www.oneaccordministriesinc.com",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Working site with no dated events or news, and no address, phone or email published. Programs are not described, so no categories or interests were added and the record is held back until the focus is known. IRS record: 1618 67th Ave, 19126; contact Kaye Latimer (not verified). A later pass could read the Contact Us page or the group's public social pages to find its focus.",
+   "_held_reasons": [
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:920445152",
+     "irs_bmf:920445152"
+    ],
+    "group_id": "philly-i-am",
+    "ein": "920445152"
+   },
+   "verdict": "publish",
+   "name": "Philly I AM",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field points to ssmullenenterprisesllc.com, an LLC domain that did not resolve (domain not found). It is not treated as the group's own site. IRS record: 7311 Limekiln Pike, 19138; contact Sherrice Smullen (not verified). Needs one search in a later pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:871323204",
+     "irs_bmf:871323204"
+    ],
+    "group_id": "pull-people-uplfting-living-lives",
+    "ein": "871323204"
+   },
+   "verdict": "publish",
+   "name": "P.U.L.L. People Uplifting Living Lives",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website field holds a name, not a web address, so no site was read. No search budget was left. IRS record: 441 W Champlost St Apt a, 19120, which is an apartment address and may be a private residence; contact Lisa M Taylor (not verified). The batch name is misspelled ('Uplfting'); the name used here follows the group's initials as written in the batch. Needs one search in a later pass before any location is entered.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

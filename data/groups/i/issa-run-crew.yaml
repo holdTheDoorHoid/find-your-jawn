@@ -31,8 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Monday Night Therapy: meet at 5:45 pm, run at 6 pm. Track Thursday at Temple Sports Complex,
-    start time not stated. Saturday run starts at 8 am from Lloyd Hall.'
+  text: Monday Night Therapy meets at 5:45 pm for an easy 3.1 mile run at 6 pm. Track Thursday at Temple
+    Sports Complex starts at 6:30 pm. The Saturday Coffee and Donuts run starts at 8 am from Lloyd Hall.
   days:
   - mon
   - thu
@@ -73,8 +73,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site
-commitment: null
+  text: The site does not list dues or a fee for the runs.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -88,14 +88,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Show up at a run. The site says to just show up.
+  how: Show up at Monday Night Therapy at Whole Foods, 2101 Pennsylvania Ave, by 5:45 pm. No sign up is
+    needed.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all paces are welcome and gives the meeting spots, though it describes no sign
-    up steps.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The FAQ says anyone can come, speed does not matter, and there is no sign up. The group welcomes
+    slower runners but names no beginner program, so this is a 4, not a 5.
+  what_to_expect: Monday's run is an easy 3.1 miles at a group pace. Thursday is a track session at Temple,
+    with paces that vary, and Saturday runs start at 8 am from Lloyd Hall with coffee and donuts afterward.
+    The site does not list a cost, and no sign up is needed.
+  first_visit_tips:
+  - Meet at Whole Foods, 2101 Pennsylvania Ave, by 5:45 pm for the Monday run that starts at 6 pm.
+  - Thursday track sessions meet at the Temple Sports Complex, 1300 Master St. The run starts at 6:30
+    pm.
+  - Saturday runs start at 8 am at Lloyd Hall, 1 Boathouse Row.
+  - The site does not say what to wear or bring, or give parking or transit, so email the group before
+    your first run.
 contacts:
   website: https://issaruncrew.com
   email: info@issaruncrew.com
@@ -116,7 +125,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - what_you_do
+- url: https://issaruncrew.com/faqs
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - commitment
+- url: https://issaruncrew.com/schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

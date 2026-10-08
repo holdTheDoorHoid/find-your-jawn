@@ -5,9 +5,10 @@ leads:
 - cultural_fund:ministry-of-awe
 ein: null
 summary: An immersive art space in a former bank building on 3rd Street, where visitors walk through rooms
-  of art. You buy a timed ticket to visit, and the group also offers a membership and a mailing list.
-what_you_do: Visit the art rooms during open hours with a timed ticket. Join the mailing list or the membership
-  to support the space.
+  of art and performers respond to them. You book a timed ticket to visit, and you can join the mailing
+  list or support the space.
+what_you_do: Visit during open hours with a timed ticket. Join the mailing list to hear what is coming,
+  or use the Join and Support page to support the space.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -35,8 +36,7 @@ audience:
   support_group: false
 schedule:
   text: Open Wednesday and Thursday 11 am to 6 pm, Friday 11 am to 10 pm, Saturday 11 am to 9 pm, Sunday
-    10 am to 6 pm, closed Monday and Tuesday. The visit page says events begin September 1 with no year
-    given.
+    10 am to 6 pm, closed Monday and Tuesday. Entry is by timed slot.
   days:
   - wed
   - thu
@@ -61,14 +61,17 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: Ticketed. Prices are not listed on the visit page. Children's tickets exist; children under 2
-    are free.
+  text: Ticketed entry. Prices are not listed on the visit page. Children's tickets exist, and children
+    under 2 are free.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'Service animals are welcome. The building is described as ADA compliant, but the two visitor
+    pages disagree on elevators: one says every level except the basement, and the other says only floors
+    one to four, with no elevator to the basement or fifth floor. Some areas have steps, uneven floors
+    and low lighting. Nearest SEPTA stop, per the visitor guide: Market-Frankford Line, 2nd Street station.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -77,18 +80,26 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Buy a timed entry ticket through the BUY TICKETS link on moaphilly.org, and book ahead to skip
-    the wait
+  how: Buy a timed entry ticket online through the ticket link on moaphilly.org. Booking ahead cuts the
+    wait, and walk-up entry depends on availability.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to the public with tickets sold online; walk-up entry depends on availability
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open to the public with online timed tickets, and the visit page says the experience is designed
+    for all ages. Walk-up entry depends on availability.
+  what_to_expect: Plan for 90 minutes to 2 hours, with no time limit. Staff greet you about 10 minutes
+    before your slot, explain the house guidelines, and then you explore the six stories on your own,
+    with performers who respond to what you do. Wear comfortable shoes, and expect steps, uneven floors
+    and low lighting in some areas.
+  first_visit_tips:
+  - Wear comfortable shoes, since the building has many levels and some uneven areas.
+  - Leave large bags, backpacks and strollers at home. Lockers are available.
+  - Street parking is limited. Nearby garages are listed, and SpotHero or meterUP can reserve a space.
+  - Empty water bottles are fine, and there are refill stations inside.
 contacts:
   website: https://moaphilly.org
-  email: null
-  phone: null
+  email: info@moaphilly.org
+  phone: 215-792-6857
   contact_name: null
   social: []
   calendar_feed: null
@@ -109,6 +120,7 @@ sources:
   - cost
   - first_step
   - contacts
+  - status
 - url: https://moaphilly.org/visit
   seen: '2026-10-08'
   fields:
@@ -116,7 +128,17 @@ sources:
   - cost
   - first_step
   - locations
-research_tier: 1
+  - access
+  - requirements
+- url: https://moaphilly.org/know-before-you-go
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_visit_tips
+  - access
+  - contacts
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,7 +5,9 @@ leads: []
 ein: null
 summary: An online matching tool where professionals volunteer their skills for local nonprofits. Typical
   projects include marketing plans, websites and graphic design.
-what_you_do: Create a skills profile, look at nonprofit projects, and agree to a match with an organization.
+what_you_do: Create a volunteer profile, then take a one hour strategy call with a nonprofit or agree
+  to a set project such as a website, graphic design or copywriting. Nonprofits post their needs, and
+  both sides decide whether the match fits.
 kind: program
 categories:
 - careers-skills-professional
@@ -50,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Free for nonprofits. The site does not state a volunteer cost.
+  text: Nonprofits get the help at no cost. The page does not mention any fee for volunteers.
 commitment: null
 group_size: null
 access:
@@ -65,14 +67,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer link on the Key Skills Hub page to create a skills profile.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Professionals at any career stage can sign up, and the site describes a mutual match before any
-    work starts.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Click Get Started Today on the volunteer page to create a skills profile, then choose a one hour
+    strategy call or a set project.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: You need a profile before you can be matched, and the page does not say whether you can browse
+    projects first. A retiree guide and a partner program for hands on volunteering are listed, so there
+    are other paths too.
+  what_to_expect: Expect an online profile first. A match can be a one hour strategy call, or a set project
+    such as a website, graphic design or copywriting. Both sides decide whether the fit works, and the
+    page does not say how long a full project takes.
+  first_visit_tips:
+  - Have a short description of your skills and the areas you care about ready for your profile.
+  - Retirees can find separate guidance on the site.
+  - If you want hands on volunteering rather than skills work, the page names RSVP as a partner that offers
+    tutoring and food security work.
 contacts:
   website: https://www.philafound.org/engaging-volunteers/
   email: null
@@ -91,8 +101,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - what_you_do
+- url: https://www.philafound.org/engaging-volunteers/individuals/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.philafound.org/key-skills-hub-volunteer-portal/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

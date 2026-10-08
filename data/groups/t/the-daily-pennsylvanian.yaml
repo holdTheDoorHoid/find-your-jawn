@@ -5,15 +5,20 @@ leads:
 - irs_bmf:222546201
 - penn_clubs:the-daily-pennsylvanian
 ein: '222546201'
-summary: null
-what_you_do: null
+summary: Penn's independent student newspaper, run by students. It publishes campus news, opinion, sports,
+  and features.
+what_you_do: Write, report, or edit for the paper, or send an opinion piece through its submissions page.
 kind: student_org
-categories: []
-interests: []
+categories:
+- books-writing
+interests:
+- zines_media
+- writing_group
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -67,23 +72,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the paper's interest form, reached through the join link on its website.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Any interested student can fill in the interest form, and the site states no application.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.thedp.com
   email: baca@wharton.upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/dailypenn
+  - https://instagram.com/dailypenn/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.thedp.com
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -97,8 +104,21 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thedp.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://pennclubs.com/api/clubs/the-daily-pennsylvanian/?format=json
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

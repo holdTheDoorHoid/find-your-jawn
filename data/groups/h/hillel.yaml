@@ -4,15 +4,21 @@ aka: []
 leads:
 - penn_clubs:penn-hillel
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's Jewish campus center, offering morning prayer services, Shabbat dinners, and programs
+  open to Penn students of any background.
+what_you_do: Join a prayer service, come to a Shabbat dinner, or take part in a student program. Sign
+  up for the weekly newsletter to hear what is coming up.
 kind: student_org
-categories: []
-interests: []
+categories:
+- faith-community
+interests:
+- worship_community
+- congregation_social
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,10 +30,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events are listed by date on the website. A weekly Shabbat dinner is mentioned with no day or
+    time given.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Address
@@ -57,23 +64,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the weekly newsletter or RSVP for an event. You can also reach the team through the
+    contact page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are open by RSVP and the club welcomes all Penn students. The directory also marks an
+    application, which the website does not describe.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.pennhillel.org/
   email: pennhillel@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/pennhillel
+  - https://instagram.com/pennhillel/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.pennhillel.org/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +92,23 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pennhillel.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://pennclubs.com/api/clubs/penn-hillel/?format=json
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - audience
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

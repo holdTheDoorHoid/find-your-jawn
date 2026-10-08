@@ -4,15 +4,19 @@ aka: []
 leads:
 - penn_clubs:mens-water-polo
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's men's water polo team. For fall 2026 it practices on Tuesday and Thursday evenings and
+  on Sunday afternoons.
+what_you_do: Train and play water polo as a member of the team.
 kind: student_org
-categories: []
-interests: []
+categories:
+- water-rowing
+interests:
+- swimming
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,11 +28,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: 'Fall 2026 practices: Tuesday evenings, Thursday evenings, and Sunday afternoons.'
+  days:
+  - tue
+  - thu
+  - sun
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: fall
 locations:
 - label: Address
   address: Pottruck Health and Fitness Center, 3701 Walnut St, Philadelphia, PA 19104
@@ -57,23 +66,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the team, or message it on Instagram, to ask about joining.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The directory lists an application as required.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennwaterpolo.com/
   email: upennclubwaterpolo@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/UPennMensWaterPolo
+  - https://instagram.com/pennwaterpolo/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennwaterpolo.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +92,17 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/mens-water-polo/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

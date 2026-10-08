@@ -5,18 +5,28 @@ leads:
 - irs_990n:261425627
 - irs_bmf:261425627
 ein: '261425627'
-summary: null
-what_you_do: null
+summary: A congregation with Sunday school, Sunday worship, and weeknight services. It says everyone is
+  welcome, including people who do not have a church home.
+what_you_do: Attend a Sunday or weeknight service, join Sunday school, or send a prayer request through
+  the form on the website. The site lists no volunteer program.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- worship_community
+- faith_youth_programs
+motives:
+- values
+- social
+formats:
+- side_by_side
+roles:
+- figure_out
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,11 +35,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Sunday school at 10 am (April to September) or 11 am (October to March). Sunday service at 11
+    am (April to September) or 12 pm (October to March). Weeknight services on Wednesday at 7:30 pm, Thursday
+    at 7 pm, and Friday at 6 pm. Communion is the first Sunday of each month.
+  days:
+  - sun
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 1980 Church Ln
@@ -43,7 +61,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no fee. It accepts donations through a Cash App link.
 commitment: null
 group_size: null
 access:
@@ -58,23 +76,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Sunday service, or call (267) 297-7179 to ask about times
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site says all are welcome, including people without a church home, and lists service times.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.jesusnpowermin.org/
-  email: null
-  phone: null
+  email: info@JesusnPowerMin.org
+  phone: (267) 297-7179
   contact_name: Lawrence Williams
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.jesusnpowermin.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +108,17 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.jesusnpowermin.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

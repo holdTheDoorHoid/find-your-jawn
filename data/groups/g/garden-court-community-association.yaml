@@ -13,8 +13,9 @@ ein: null
 summary: A registered community association for the Garden Court neighborhood in West Philadelphia, active
   since the mid-1950s on neighborhood problems, housing and local gardens. Its news includes park cleanups,
   a school garden donation, and plant and vegetable giveaways.
-what_you_do: Join or renew membership through the site, use the Get Involved page to find a way to help,
-  or come to the annual meeting and neighborhood events.
+what_you_do: Join or renew your membership, sign up for a park cleanup or plant giveaway, or serve on
+  a committee such as greening, public safety, or communications. Members vote in board elections at the
+  June annual meeting.
 kind: civic
 categories:
 - neighborhood-civic
@@ -42,13 +43,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site lists an annual meeting on a Saturday in June, 1:30 to 3:30 pm, without a year. Other
-    events are posted on the site.
+  text: Neighborhood cleanups and plant giveaways have been held in spring. The annual meeting is on a
+    Saturday in June, 1:30 to 3:30 pm.
   days:
   - sat
   times:
   - daytime
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Park (Garden Court)
@@ -62,8 +63,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The membership amount is not shown on the page we read.
+  level: low
+  text: Yearly dues are $10 for an individual, $15 per family, and $35 for a business, per a June 2026
+    local news post. The association's own pages do not list amounts.
 commitment: null
 group_size: null
 access:
@@ -76,23 +78,31 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: 'None needed: gloves and tools are supplied at cleanups.'
 first_step:
-  how: Use the Join or Renew link on the group's site, or email info@gardencourtca.org to ask about the
-    next meeting or cleanup
+  how: Sign up through the registration link on the next park cleanup post, or email membership@gardencourtca.org
+    to ask how to join.
   drop_in: null
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a public way to join and a Get Involved page, but it does not describe steps for
-    volunteering.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Cleanups and the annual meeting are public, and the membership committee answers questions by
+    email. The site does not say whether people from outside the area can join.
+  what_to_expect: A cleanup lasts about two hours on a Saturday afternoon, with paths cleared, leaves
+    and litter picked up, and flowers planted at Barkan Park. Organizers provide gloves, tools, and refreshments.
+    The June 2026 annual meeting was free, with food and drinks, speakers, and board votes.
+  first_visit_tips:
+  - Gloves and tools are provided, so there is nothing to buy.
+  - Cleanups run 2 to 4 pm on a Saturday, so plan for that afternoon.
+  - The June 2026 annual meeting was held at West Philadelphia Mennonite Fellowship, 123 South 51st Street,
+    1:30 to 3:30 pm.
+  - Check the news page for the next cleanup date, since posts show months but not years.
 contacts:
   website: https://www.gardencourtca.org
   email: info@gardencourtca.org
   phone: '2155199350'
   contact_name: Kenneth Jacobs
-  social: []
+  social:
+  - https://www.facebook.com/GCCAPhila/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -138,7 +148,48 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://www.gardencourtca.org/membership
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - contacts.email
+- url: https://www.gardencourtca.org/get-involved-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+- url: https://www.gardencourtca.org/news-and-announcements
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+- url: https://www.gardencourtca.org/single-post/love-your-park-cleanup
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - requirements.gear
+  - first_step
+- url: https://www.gardencourtca.org/single-post/gcca-annual-meeting-saturday-june-13-1-30-3-30-pm
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.westphillylocal.com/?p=70938
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+  - cost
+  - what_to_expect
+- url: https://groups.google.com/g/sprucehillca/c/jVFUC-bNASw
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
