@@ -28,7 +28,10 @@ Skip the run (append a `{"wave": "skipped", ...}` line with the reason, commit a
 finish with a one line summary) when any of these hold:
 - the account's weekly usage is above `skip_if_account_weekly_above`;
 - the 5 hour usage is above `skip_if_five_hour_above`;
-- this week's Find Your Jawn spend has reached the cap.
+- this week's Find Your Jawn spend has reached the cap;
+- during launch week, the account's weekly usage has reached `launch_week.stop_at_account_weekly_percent`
+  (owner instruction 2026-10-08: keep researching until the meter reads 20 percent or the queue is
+  empty, whichever comes first). Check this before every wave, not only at the start.
 
 ## 2. Pick a wave
 

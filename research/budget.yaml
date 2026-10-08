@@ -5,8 +5,9 @@ launch_week:
   starts: 2026-10-08
   ends: 2026-10-15
   cap_percent: 20            # site build plus research together
+  stop_at_account_weekly_percent: 20   # owner 2026-10-08: keep researching until the account's weekly meter reads 20
 weekly_cap_percent: 20       # later weeks: all nightly runs combined
-per_run_cap_percent: 3       # a nightly run stops starting new agents after spending this much
+per_run_cap_percent: 5       # a run stops starting new agents after spending this much
 skip_if_account_weekly_above: 60   # leave room for the owner's other projects
 skip_if_five_hour_above: 50
 log: research/waves/usage.jsonl    # one line per wave: wave, time, percent before, percent after
