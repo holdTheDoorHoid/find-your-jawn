@@ -28,7 +28,9 @@ A visitor will read what you write and decide whether to show up. Accuracy beats
    finish, every `leads_only` item that has its own website (not Meetup, Facebook or Instagram) must
    be fetched and turned into a record (or dropped with a reason in `notes`). A run that ends with
    many unchecked leads that had working websites is incomplete.
-8. **Write your file early and often.** Write the output file after your first few groups, then
+8. **Tools: only Read, Write, Bash (to check your JSON), WebFetch and WebSearch.** Never call Agent,
+   spawn_task, dismiss_task, SendMessage, or any other tool. You work alone and finish alone.
+9. **Write your file early and often.** Write the output file after your first few groups, then
    rewrite it as you go, so nothing is lost if you are interrupted. Do not use git.
 
 ## Words people will read
