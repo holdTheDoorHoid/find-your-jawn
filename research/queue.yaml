@@ -360,7 +360,7 @@ waves:
     batch_files: research/batches/w19b-leads-platform/
     searches_per_agent: 6
     status: todo
-    note: "leads_only names whose only link is a platform page or nothing (129 leads, 13 batches of 10); one search each to find the group's own site."
+    note: "leads_only names whose only link is a platform page or nothing (129 leads, 13 batches of 10); one search each to find the group's own site. Not run yet: leads follow up yields about one group per 15 leads (w19a, w19c), so it is low priority."
   - {id: w20-tier1-irs-joinable, lane: A, kind: batches, brief: tier1, status: todo, note: "IRS groups in joinable NTEE codes WITHOUT a website (needs one search each). Groups with a website went to w20a, w20b and w20c."}
   - {id: guide-quizzo-recheck, lane: guide, kind: slices, brief: quizzo, searches_per_agent: 4, status: todo, note: "Recheck the unconfirmed nights in data/guides/quizzo.yaml from venue or host pages, and read the community Quizzo List spreadsheet named in the Billy Penn guide as a lead only. Import with fyj import-guide quizzo. Rerun every three months; bars change quizzo nights often."}
 
@@ -381,7 +381,7 @@ waves:
     searches_per_agent: 2
     status: todo
     after: [w20a-tier1-irs-web]
-    note: "IRS e-postcard groups with a website and no NTEE code. 1303 groups, 87 batches of 15."
+    note: "IRS e-postcard groups with a website and no NTEE code. 1303 groups, 87 batches of 15 at first. On 2026-10-08 evening 555 rows were removed from batches 09 onward: chapters of The Questers (a national antiques club) that file at its Philadelphia headquarters with questers1944.org as their website, nearly all outside the city; list in research/batches/w20b-questers-chapters-removed.json. Batches 09 to 50 were rewritten from the remaining 628 rows. Batches 04 and 05 were one national sorority (Delta Phi Epsilon) under 15 EINs each, all hidden."
   - id: w20c-tier1-irs-web
     lane: A
     kind: batches
