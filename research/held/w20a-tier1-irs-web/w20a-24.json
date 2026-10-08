@@ -1,0 +1,77 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-24",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 30,
+ "leads_only": [
+  {
+   "name": "Fairmount Park Conservancy",
+   "url": "https://myphillypark.org",
+   "note": "named as co-host of a Second Saturday tour and workshop on the Fair Amount Food Forest events page; not checked"
+  },
+  {
+   "name": "Country Dance and Song Society",
+   "url": null,
+   "note": "named as the affiliate on the Germantown Country Dancers site; no link was read on that page; not checked"
+  },
+  {
+   "name": "Pennsylvania Horticulture Society (City Harvest program)",
+   "url": null,
+   "note": "named as the source of the City Harvest program on the Hansberry Garden site; no link read; not checked"
+  }
+ ],
+ "blocked": [],
+ "notes": "Searches: 2 of 2 used (cap reached). Fetches: 30 of 60 used. No rate limiting or bot checks seen. Records held without a summary or sources: Dope Girls Inc (website 404 on both addresses, one search found nothing matching) and Edg Sports League Corporation (no web address in the IRS record, one search found nothing matching). Two IRS groups are hidden as businesses with no community program (Elder Serve Solutions, Equal Access Legal Services) and one legal clinic is hidden for the same reason (Halpern Legal Clinic). Dynamic Alliance USA is out_of_area because its programs run in Cameroon, New Jersey, and Maryland. Familiar Hearts' events calendar did not load. Gathering Place's partner and contact pages were not read. The Enterprise Project's TEP Talk episodes are undated, so it stays dormant. Good As Gold Foundation is called a foundation but runs public programs, so it is published; owner may want to confirm.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823026220",
+     "irs_bmf:823026220"
+    ],
+    "group_id": "dope-girls-inc",
+    "ein": "823026220",
+    "website": "https://www.dopegirlsinc.com"
+   },
+   "verdict": "publish",
+   "name": "Dope Girls Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not check. Both www.dopegirlsinc.com and dopegirlsinc.com return HTTP 404 on the homepage (not a block, the page is not found). One WebSearch for the name with Philadelphia found no organization by this name. The closest result, Girls Inc. of Greater Philadelphia and Southern New Jersey (EIN 23-1607172), is a different organization. Needs a human check of the IRS record or a current web address before this can be written up. Held without summary, categories, or sources.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:393279395",
+     "irs_bmf:393279395"
+    ],
+    "group_id": "edg-sports-league-corporation",
+    "ein": "393279395",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Edg Sports League Corporation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not check. The IRS record's website field holds a name, not a web address, so it was treated as missing and no site was fetched. One WebSearch for the name with Philadelphia found no matching organization. Results were EDGE Sports Global (Massachusetts) and Philadelphia Sports Leagues, a different group. The IRS address is an apartment address (33 E Roumfort Rd Apt L2), so it may be a residence, not a program site. Needs a human check before this can be written up. Held without summary, categories, or sources.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

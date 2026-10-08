@@ -5,18 +5,25 @@ leads:
 - irs_990n:393247867
 - irs_bmf:393247867
 ein: '393247867'
-summary: null
-what_you_do: null
+summary: A performance space and recording studio in Philadelphia that presents artists in an intimate
+  setting. It has shows on Tuesdays and Fridays and Big-Band Sundays, and it was founded in 2018.
+what_you_do: Go to a show and pay a suggested donation at the door, or join the weekly mailing list. Artists
+  can send booking inquiries.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- theater-dance-performance
+interests:
+- variety_cabaret
+motives:
+- social
+- enhancement
+formats:
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +32,31 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Performances on Tuesdays and Fridays, with doors at 7 pm and shows at 7:30 pm, plus Big-Band Sundays
+    announced separately. Event images on the site had no readable dates when checked.
+  days:
+  - tue
+  - fri
+  - sun
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 22 E Clapier St
+- label: Notsolatin venue
+  address: 1440 W. Ritner Street
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
+  planning_district: null
+  zip: '19145'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Suggested $20 donation at the door. Tickets are not sold in advance unless stated.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +70,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to a Tuesday or Friday show (doors 7 pm), pay the suggested $20 at the door, or join the weekly
+    mailing list through the site's Google Form
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Shows are open to the public with a suggested donation, and the site says how to join the mailing
+    list
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.notsolatin.org
-  email: null
+  website: https://www.notsolatin.org
+  email: jake@notsolatin.org
   phone: null
   contact_name: Jacob Kelberman
-  social: []
+  social:
+  - https://www.instagram.com/notsolatin
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.notsolatin.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.notsolatin.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

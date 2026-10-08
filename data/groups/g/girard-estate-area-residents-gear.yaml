@@ -80,12 +80,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the contact form or the email address on the group's website to ask about the next meeting,
+    since the site lists no meeting times.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  newcomer_friendliness: 2
+  basis: The website is marked as a new site in development. It lists no meetings, events or join steps
+    beyond a contact form, so the way in is unclear.
+  what_to_expect: The website does not describe a first visit, meeting times or who attends, and it lists
+    no events or dates. Expect to contact the group first to learn when and where it meets. The site does
+    not mention dues or fees.
   first_visit_tips: []
 contacts:
   website: https://www.girardestateneighbors.org/
@@ -94,7 +98,7 @@ contacts:
   contact_name: Jody Della Barba
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
 sources:
@@ -115,8 +119,15 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.girardestateneighbors.org/
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.basis
+  - first_step.what_to_expect
+  - status
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

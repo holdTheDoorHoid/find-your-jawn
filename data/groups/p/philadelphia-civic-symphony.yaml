@@ -5,18 +5,25 @@ leads:
 - irs_990n:921345794
 - irs_bmf:921345794
 ein: '921345794'
-summary: null
-what_you_do: null
+summary: A nonprofit orchestra that aims to bring classical music to historically underserved communities.
+  It plays public concerts, often pay-what-you-wish, and its most recent listed concert was in May 2026.
+what_you_do: Attend a public concert, or support the orchestra with a donation. The site does not say
+  how musicians join or audition.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- enhancement
+- values
+formats:
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +32,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Public concerts are listed on the Events page with dates. The most recent was on Saturday, May
+    30, 2026, 3 to 4 pm. No upcoming date was shown when checked.
   days: []
   times: []
   recurring: null
-  season: null
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 6411 Chew Ave
+- label: Reformation Lutheran Church
+  address: 1215 E. Vernon Road
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
+  planning_district: null
+  zip: '19150'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Pay-what-you-wish. The May 2026 concert suggested $25 a person. Other events vary.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +66,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Go to a public concert listed on the Events page, or follow the orchestra on Instagram for new
+    dates
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Concerts are open to the public, but the page does not say how to join as a player
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: phillycivicsymphony.org
+  website: https://phillycivicsymphony.org
   email: null
   phone: null
   contact_name: Hans-Ethan Hibbard
-  social: []
+  social:
+  - https://www.instagram.com/phillycivicsymphony/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://phillycivicsymphony.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +100,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillycivicsymphony.org/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - locations
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://phillycivicsymphony.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

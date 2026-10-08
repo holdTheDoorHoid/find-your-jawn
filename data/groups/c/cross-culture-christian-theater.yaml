@@ -5,18 +5,24 @@ leads:
 - irs_990n:842605773
 - irs_bmf:842605773
 ein: '842605773'
-summary: null
-what_you_do: null
+summary: A Philadelphia theater group that stages productions and sells merchandise through its website.
+  The site lists no current events, so check with the group before planning a visit.
+what_you_do: Buy tickets to a production when one is announced, or donate to the group. The contact page
+  is the listed way to ask about getting involved; the site does not describe classes, auditions, or volunteering.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- theater-dance-performance
+interests:
+- community_theater
+motives:
+- enhancement
+- social
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -67,11 +73,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Watch ctwphilly.com for the next production date, or ask through the contact page at ctwphilly.com/contact
+    how to get involved
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: 'The way in is unclear: shows are open to the public, but no dates are listed and the site does
+    not describe classes, auditions, or volunteering.'
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -79,11 +87,13 @@ contacts:
   email: null
   phone: null
   contact_name: Elsa Johnson Bass
-  social: []
+  social:
+  - https://www.facebook.com/groups/472606549600803/
+  - https://www.instagram.com/ctwphilly/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-12
+sign_of_life_url: https://www.ctwphilly.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +109,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.ctwphilly.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+- url: https://www.ctwphilly.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

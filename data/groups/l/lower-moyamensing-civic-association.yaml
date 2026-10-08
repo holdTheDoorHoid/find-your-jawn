@@ -7,17 +7,19 @@ leads:
 - irs_990n:263512930
 - irs_bmf:263512930
 ein: '263512930'
-summary: Lower Moyamensing Civic Association is one of the community organizations registered with the
-  City to review nearby zoning and building proposals in the South part of the city. Neighbors can follow
-  what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: A volunteer civic group for Lower Moyamensing in South Philadelphia, the blocks roughly from
+  Broad to 7th Streets and Snyder to Oregon Avenues. Members run a spring and fall flea market, a holiday
+  tree recycling drive, and an environmental committee that organizes cleanups and tree care.
+what_you_do: Volunteers help run the flea markets and the tree drive, join litter checks and block cleanups,
+  and help care for trees and neighborhood gardens. Paying members also vote in board elections and on
+  other questions the board puts to the membership.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- clean_blocks
 motives:
 - values
 - social
@@ -27,6 +29,7 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -40,34 +43,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The group runs a spring and a fall flea market and a holiday tree recycling drive.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Meeting place
+- label: Office address (per City list)
   address: 2437 S. Broad Street, Philadelphia, PA 19148
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19148'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 2437 S. Broad Street, Philadelphia, PA 19148
-  neighborhood: null
-  planning_district: south
-  zip: '19148'
-  lat: 39.91882026545042
-  lng: -75.1646404174458
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Membership is $15 a year per adult. Joining the email list and volunteering are free.
 commitment: null
 group_size: null
 access:
@@ -82,13 +76,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the free email list, or email lomophilly@gmail.com to ask when the next general meeting is.
+    Membership ($15 a year, for adults 18 and up who live or own property in the area) gives you a vote
+    in board matters.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Volunteer work is open to residents, costs nothing, and has a clear way in through the email
+    list and contact, but meeting times and whether non-members can attend are not posted.
+  what_to_expect: The site does not say how long a meeting runs or who usually comes. The easiest first
+    step is a block cleanup, where the group can help with supplies, or a quick litter check on trash
+    nights. Check the calendar or the email list for the next date before you come.
+  first_visit_tips:
+  - Check the group's calendar page or email list for the next date.
+  - Ask whether general meetings are open to people who are not members.
 contacts:
   website: https://www.lomophilly.org
   email: lomophilly@gmail.com
@@ -98,7 +99,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://lomophilly.org/flea-market/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -131,8 +132,31 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.lomophilly.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - status
+- url: https://lomophilly.org/about/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://lomophilly.org/clean-green/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+- url: https://lomophilly.org/flea-market/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,18 +5,30 @@ leads:
 - irs_990n:861865258
 - irs_bmf:861865258
 ein: '861865258'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A volunteer-run guild for people who make felt, at every skill level. Its free meetings and workshops
+  happen on Zoom, and it keeps a free library of tutorials. Members also get in-person workshops and a
+  spring retreat.
+what_you_do: Join a free Zoom meeting or workshop, or become a member to take part in the in-person workshops,
+  the spring retreat and the member shows. Members can also volunteer on committees.
+kind: club
+categories:
+- arts-crafts
+interests:
+- fiber_arts
+motives:
+- enhancement
+- social
+formats:
+- learn_skill
+- side_by_side
+roles:
+- hands_on
+- create
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Free regular meetings and workshops on Zoom, announced on the site. Members also get a spring
+    retreat and a November business meeting. Day and time were not shown when checked.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -49,11 +62,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Zoom meetings and the free tutorial library cost nothing. Guild membership is $50 a year, renews
+    automatically, and gives subsidized workshops and retreat access.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +81,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join a free Zoom meeting (open to everyone), or click Join on the Join Us page to become a member
+    for $50 a year
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The guild says it welcomes members at every skill level and lists free meetings open to everyone,
+    with a clear join button
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: NEFGuild.org
-  email: null
+  website: https://nefguild.org
+  email: northeastfeltmakersguild@gmail.com
   phone: null
   contact_name: Marcie Ziskind
-  social: []
+  social:
+  - https://www.instagram.com/northeastfeltmakersguild
+  - https://www.facebook.com/profile.php?id=100063737431520
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-02
+sign_of_life_url: https://nefguild.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +118,27 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://nefguild.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+  - contacts
+- url: https://nefguild.org/join-us
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://nefguild.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

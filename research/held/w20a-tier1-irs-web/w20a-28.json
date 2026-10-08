@@ -1,0 +1,104 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-28",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 12,
+ "leads_only": [
+  {
+   "name": "Philadelphia Youth Basketball Inc",
+   "url": "https://www.idealist.org/en/nonprofit/c34208c7b4d64777a6e73eff65df932c-philadelphia-youth-basketball-inc-philadelphia",
+   "note": "Seen in a search result while looking for Team Basketball & Education. Not read. A separate nonprofit; its own website is not known. Worth checking on its own."
+  },
+  {
+   "name": "Basketball Builds Bridges",
+   "url": "https://www.cbsnews.com/philadelphia/news/basketball-builds-bridges-throughout-philadelphia/",
+   "note": "Named in a news result as a basketball program at a North Philadelphia recreation center. Not read beyond the snippet; check its own site."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://karimacares.org",
+   "status": null,
+   "note": "Host not found (DNS), also tried www. Treated as a missing website. Not a bot check."
+  },
+  {
+   "url": "https://teambasketballandeducation.com",
+   "status": null,
+   "note": "Host not found (DNS), also tried www. Treated as a missing website. Not a bot check."
+  }
+ ],
+ "notes": "Searches: both of the 2 allowed were used, on Team Basketball & Education and Philly Peace in Progress; the cap was then reached, so Karima Cares and Kids In Need were not searched and are placeholders. Fetches: 12. Verdicts: publish 7, not_a_group 1. Four publish records have verified facts from the group's own site or a dated public page (TeenTrek, Museum of Black Joy, Bogucki Foundation, Philly Peace in Progress). Three publish records are placeholders with status unknown and no audience, categories or sources (Karima Cares, Kids In Need Recovered Addicts, Team Basketball & Education); they are expected to be held back by the pipeline until someone checks them, and the orchestrator should decide. KIPP is a charter school operator, not a group. Two IRS website fields were names rather than web addresses (Kids In Need, Philly Peace In Progress); the Philly Peace domain came from its Idealist listing and was then verified on the group's own site. Two IRS domains are dead (Karima Cares, Team Basketball). No IRS street addresses are published: the group pages did not give them, and several look like homes or apartments.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:992555071",
+     "irs_bmf:992555071"
+    ],
+    "group_id": "karima-cares",
+    "ein": "992555071"
+   },
+   "verdict": "publish",
+   "name": "Karima Cares",
+   "summary": "A nonprofit listed with the IRS. We could not find a working website or any public page for it, so what it does and how to join are still unknown.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS filing lists karimacares.org as its website. That host did not resolve, with or without www, so the website is treated as missing. This record was not searched: both WebSearch calls went to Team Basketball & Education and Philly Peace in Progress before the cap. No categories, interests, audience or sources were written, so the pipeline should hold it back until checked. Re-run with one search for Karima Cares Philadelphia. Contact name from the IRS filing not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232930948",
+     "irs_bmf:232930948"
+    ],
+    "group_id": "kids-in-need-recovered-addicts-inc",
+    "ein": "232930948"
+   },
+   "verdict": "publish",
+   "name": "Kids In Need Recovered Addicts",
+   "summary": "A nonprofit listed with the IRS. We could not find a working website or any public page for it, so what it does and how to join are still unknown.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS filing lists a name, not a web address, under website, so the website is treated as missing. Not searched: the search cap was used on two other groups in this batch. Legal name Kids In Need Recovered Addicts Inc. The name hints at youth and recovery work, but no tags were assigned until checked. No categories, interests, audience or sources were written, so the pipeline should hold it back. Re-run with one search. Contact name from the IRS filing not published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:393099918",
+     "irs_bmf:393099918"
+    ],
+    "group_id": "team-basketball-and-education-inc",
+    "ein": "393099918"
+   },
+   "verdict": "publish",
+   "name": "Team Basketball & Education",
+   "summary": "A nonprofit listed with the IRS. We could not find a working website or any public page for it, so what it does and how to join are still unknown.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS filing lists teambasketballandeducation.com, which did not resolve, with or without www. One WebSearch for the exact name found no organization by this name in Philadelphia. The closest hits were other groups (Philadelphia Youth Basketball Inc and Pro Skills Basketball), which are different organizations and are not recorded here. The IRS address is an apartment, so it is not published. No categories, interests, audience or sources were written; hold back until checked.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

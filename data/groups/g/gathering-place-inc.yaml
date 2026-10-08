@@ -1,22 +1,34 @@
 id: gathering-place-inc
-name: Gathering Place Inc
+name: Gathering Place
 aka: []
 leads:
 - irs_990n:921283599
 - irs_bmf:921283599
 ein: '921283599'
-summary: null
-what_you_do: null
+summary: A Philadelphia community space that brings people with different views together for conversation,
+  open mics, paint nights, and small dinners.
+what_you_do: Apply for a Set The Table dinner (about ten guests are picked to mix viewpoints, and chosen
+  guests pay a $10 reservation fee). Join the event mailing list for open mics and paint nights.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- social-meetups
+- theater-dance-performance
+- arts-crafts
+interests:
+- conversation_circles
+- storytelling_spoken_word
+- painting_drawing
+motives:
+- social
+- values
+formats:
+- conversation
+- perform_make_together
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Set The Table dinner dates are to be announced. Open mics and paint nights have no set dates;
+    the event mailing list sends a notice before each one.
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -51,9 +64,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Chosen Set The Table guests pay a $10 reservation fee. Other event costs are not listed.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +80,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the event mailing list on the website, and apply for the next Set The Table dinner.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Dinners need an application and are chosen by the group, so the way in is unclear beyond applying.
+    The mailing list is open to anyone.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.thegatheringplacephilly.com
+  website: https://www.thegatheringplacephilly.com
   email: null
   phone: null
   contact_name: Peace Ike
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.thegatheringplacephilly.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +113,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.thegatheringplacephilly.com/set-the-table.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://www.thegatheringplacephilly.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - contacts
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

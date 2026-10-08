@@ -6,11 +6,12 @@ leads:
 - city_rco_points:282
 - irs_bmf:232544389
 ein: '232544389'
-summary: Packer Park Civic Association is one of the community organizations registered with the City
-  to review nearby zoning and building proposals in the South part of the city. Neighbors can follow what
-  is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: A nonprofit civic association for the Packer Park area of South Philadelphia, north of Pattison
+  Avenue and west of Broad Street. It works to improve living conditions and civic pride in the area,
+  and the City lists it as a Registered Community Organization that is consulted on nearby zoning and
+  building proposals.
+what_you_do: The group reviews nearby building and zoning proposals with the City and developers, and
+  sends neighbors emails and call alerts about local issues.
 kind: civic
 categories:
 - neighborhood-civic
@@ -45,34 +46,25 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Meeting place
-  address: City Life Church / Gym , 3301 South 20th Street , Phila. PA. 19145, Accessible, Lots of Parking
+- label: Meeting place (per City list)
+  address: City Life Church gym, 3301 South 20th Street, Philadelphia, PA 19145
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19145'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 3310 South 20th St, C/o Barbara Capozzi, Esq., Phila. PA. 19145
-  neighborhood: null
-  planning_district: lower_south
-  zip: '19145'
-  lat: 39.90883690125521
-  lng: -75.19433312757951
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Membership starts at $25, paid once or as a subscription that renews every 12 months.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The City's registry describes this meeting place as accessible, with lots of parking.
 requirements:
   act153_clearances: null
   background_check: null
@@ -81,15 +73,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the association's emails and call alerts on its website, and ask the group where its
+    next meeting is. Membership, if you want it, starts at $25.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The email sign-up and membership are clear, but the site posts no meeting times and its newest
+    news is from 2022, so it is unclear what a newcomer would find.
+  what_to_expect: The site does not describe a typical meeting or event, and its events list shows no
+    meetings after 2021. Signing up for emails and call alerts is the simplest first step. Ask the group
+    what is happening now before you go.
+  first_visit_tips:
+  - Ask whether meetings are still being held, since the site lists none after 2021.
+  - Confirm the meeting place before you go, because the address comes from the City list.
 contacts:
-  website: https://PackerParkCivic.com
+  website: https://packerparkcivic.com
   email: BCPACKERPARK@GMAIL.COM
   phone: '2155515100'
   contact_name: Barbara Capozzi
@@ -123,8 +121,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://packerparkcivic.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://packerparkcivic.com/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://packerparkcivic.com/latest-news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://packerparkcivic.com/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

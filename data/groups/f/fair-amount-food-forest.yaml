@@ -5,18 +5,31 @@ leads:
 - irs_990n:851976110
 - irs_bmf:851976110
 ein: '851976110'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A community food forest in Fairmount Park where neighbors plant, tend, and harvest together,
+  with plant walks, cooking and preserving workshops, and a farmers market.
+what_you_do: Join a planting or tending session, or come to a free workshop on herbs, preserving, pruning,
+  or fruit trees. Vendors can apply to sell at the farmers market.
+kind: garden
+categories:
+- gardening-greening
+- food-drink
+interests:
+- community_orchard
+- urban_farming
+- cooking_baking
+motives:
+- values
+- understanding
+formats:
+- side_by_side
+- learn_skill
+roles:
+- hands_on
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +38,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekly and monthly planting and tending sessions, plus Saturday workshops and plant walks listed
+    by date on the events page. A third Saturday plant walk and herbal circle runs most months.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 18986
+- label: Food forest
+  address: 2300 N 33rd St
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: Po Box 5623
-  neighborhood: null
-  planning_district: lower_northwest
-  zip: '19129'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Most workshops are free with an Eventbrite RSVP. A few events need registration through a park
+    site, and the wine making classes are for ages 21 and over.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +75,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: RSVP free on Eventbrite for the Oxymels workshop on Saturday, October 10, 12 to 2 pm, or sign up
+    on the volunteer calendar for the next planting session.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are posted publicly with a free way to RSVP, and the page says walk-ins are welcome at
+    workshops.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.fairamountfoodforest.org
+  website: https://www.fairamountfoodforest.org
   email: null
   phone: null
   contact_name: Jessika Faulkner
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.fairamountfoodforest.org/events.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +110,25 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.fairamountfoodforest.org/events.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+  - locations
+  - cost
+- url: https://www.fairamountfoodforest.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+  - what_you_do
+  - contacts
+  - audience
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

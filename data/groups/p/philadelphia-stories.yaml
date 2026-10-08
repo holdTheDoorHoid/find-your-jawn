@@ -35,15 +35,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Masterclass dates are not shown on the site, and the events list says 'coming soon.' Pitch Fest
-    is planned for 2027 with no dates yet.
+  text: Online masterclasses in novel writing and poetry, each booked through its own ticket page.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 2021 S 11th Stret
+- label: Mailing address (IRS record; the site lists no office)
+  address: 2021 S 11th Street, Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
   zip: '19148'
@@ -51,11 +50,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: paid
-  text: Masterclasses are sold through ticket links, and prices are not shown on the page. The magazine
-    itself is free.
+  text: The magazine is free to read. Masterclasses are paid and booked through ticket links, with prices
+    shown on those ticket pages.
 commitment: null
 group_size: null
 access:
@@ -70,15 +69,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the newsletter on philadelphiastories.org, and read the submission guidelines before
-    you send a piece if you live in or come from Pennsylvania, Delaware or New Jersey.
+  how: Download a free issue from philadelphiastories.org or subscribe to the newsletter. If you want
+    to submit work, read the submission guidelines first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Reading, subscribing and submitting are open to anyone in the region through a clear route, though
-    masterclasses are paid and their dates are not posted.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can read the free magazine and subscribe to the newsletter, and the site gives a clear
+    route for writers to submit. There is no in-person visit, and masterclasses are paid.
+  what_to_expect: The site has no in-person visit to plan for. The magazine is free to download, and submissions
+    have no reading fee. Paid online masterclasses in novel writing and poetry are booked through separate
+    ticket pages.
+  first_visit_tips:
+  - Read the submission guidelines before you send work, since submissions are open to writers and artists
+    who live in, grew up in, or have lived in PA, DE or NJ.
+  - The window for the Winter/Spring 2027 issue opens November 15, 2026 and closes February 1, 2027, as
+    the page prints it.
 contacts:
   website: https://philadelphiastories.org/
   email: null
@@ -111,8 +116,21 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: medium
+  - online_ok
+- url: https://philadelphiastories.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.website
+- url: https://philadelphiastories.org/submission-guidelines/
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.basis
+  - first_visit_tips
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

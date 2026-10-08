@@ -7,10 +7,10 @@ leads:
 - irs_990n:231710183
 - irs_bmf:231710183
 ein: '231710183'
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the South part of the city, Pennsport Civic Association gives neighbors a place to hear about projects
-  and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Neighbors in Pennsport who meet most months with city and state officials to hear about zoning
+  and building projects. The group also runs neighborhood cleanups and park volunteer days.
+what_you_do: Members follow zoning and development plans in the area and meet to talk them over. Members
+  can also join the cleanups and park volunteer days.
 kind: civic
 categories:
 - neighborhood-civic
@@ -39,13 +39,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General membership meetings on the second Wednesday of each month at 7 pm, except July and August.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Meeting place (EOM Athletic Association)
   address: 144 Moore St., Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
@@ -67,7 +69,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -81,19 +83,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the second Wednesday general meeting at 7 pm at EOM Athletic Association, 144 Moore St.
+    There is no meeting in July or August.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The group's site says in-person attendance is the best way to take part and that anyone who lives
+    in Pennsport counts as a member. No sign-up step is listed, but the site does not say newcomers are
+    specially welcomed.
+  what_to_expect: Meetings are held in the hall at EOM Athletic Association on Moore Street. Recent meetings
+    covered updates from city and state offices, utility construction work, and zoning variance requests,
+    so you can listen before you speak. The site does not say how long a meeting runs.
+  first_visit_tips:
+  - Plan around the summer break, since there are no meetings in July or August.
+  - Come in person, because the group says that is the best way to take part.
 contacts:
   website: https://www.pennsport.org/
-  email: patrickjfitzmauriceii@gmail.com
+  email: pennsportcivicassn@gmail.com
   phone: '2156688893'
   contact_name: Patrick Fitzmaurice
-  social: []
+  social:
+  - https://www.facebook.com/pennsport.civic
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -129,8 +139,27 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.pennsport.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts.social
+  - status
+  - last_sign_of_life
+- url: https://www.pennsport.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step.what_to_expect
+- url: https://www.pennsport.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,87 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-25",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [
+  {
+   "name": "Philadelphia Community Land Trust",
+   "url": "https://www.guidestar.org/profile/85-3756042",
+   "note": "separate Philadelphia land trust named in a search result for Northwest CLT, formed in 2020; not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.thehealthycaregiver.com",
+   "status": null,
+   "note": "no readable content on three tries across TheHealthyCaregiver.Com, thehealthycaregiver.com and www; not a refusal"
+  },
+  {
+   "url": "https://www.notsolatin.org/events",
+   "status": 403,
+   "note": "events page returned HTTP 403; the home page was readable"
+  },
+  {
+   "url": "https://northwestclt.org",
+   "status": 404,
+   "note": "group's own site returned HTTP 404 at both the bare and www addresses"
+  },
+  {
+   "url": "https://nbfoundation-inc.org/events",
+   "status": 404,
+   "note": "events page not found; the home page was readable"
+  }
+ ],
+ "notes": "The batch file holds 15 groups, not 25 (the file name says 25); all 15 were worked. Searches: 2 of 2, both spent on groups with no usable web address (Kuvuna Foundation found nothing; Northwest CLT found a Givebutter page and no dated news). Fetches: 25. Healthy Caregiver returned empty content on three tries, so it is recorded as unknown and held back. No rate limiting was seen; the 403 and 404 pages are listed under blocked. Verdicts: 11 publish (3 active, 4 probably_active, 1 dormant, 3 unknown), 1 hide (private), 1 not_a_group, 2 out_of_area. The two unknown records with no summary (Healthy Caregiver, Kuvuna) are held back by design; Northwest CLT is unknown with a summary and will show only if the owner accepts a low-confidence listing. Not verified on the group's own site: Kuvuna, Healthy Caregiver, Northwest CLT. No dashes were used in the text.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:721531169",
+     "irs_bmf:721531169"
+    ],
+    "group_id": "healthy-caregiver-foundation",
+    "ein": "721531169",
+    "website": "https://thehealthycaregiver.com"
+   },
+   "verdict": "publish",
+   "name": "Healthy Caregiver Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned no readable content on three tries (TheHealthyCaregiver.Com, thehealthycaregiver.com and www.thehealthycaregiver.com), so nothing about the group could be verified. This was not a refusal. IRS mailing address is PO Box 27774, Philadelphia 19118. No search was spent here because the two searches went to groups with no usable web address. Needs a retry before publishing; the record is held back until a summary exists.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:871073511",
+     "irs_bmf:871073511"
+    ],
+    "group_id": "kuvuna-foundation-usa",
+    "ein": "871073511"
+   },
+   "verdict": "publish",
+   "name": "Kuvuna Foundation USA",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS batch gives no web address, only the name 'Kuvuna Foundation', so the one search was spent on it. The search found no page for a Kuvuna Foundation in Philadelphia. Its programs, events and any way to join could not be checked. IRS address is 7500 Germantown Ave, 19119. The name suggests a foundation. Whether it is a grant or family fund that should be hidden as private is not established. Held back until a source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

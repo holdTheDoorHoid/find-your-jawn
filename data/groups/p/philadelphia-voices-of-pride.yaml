@@ -6,17 +6,18 @@ leads:
 - irs_990n:203671863
 - irs_bmf:203671863
 ein: '203671863'
-summary: A choir for LGBTQ people and allies in Philadelphia, with close to 150 singers who rehearse on
-  Tuesday nights and perform together.
-what_you_do: 'Sing in a mixed-voice choir: rehearse for months before each show, then perform in it.'
-kind: club
+summary: An LGBTQ and ally mixed voice chorus in Philadelphia that holds two audition windows a year and
+  also welcomes non-singing members.
+what_you_do: Audition to sing with the chorus, or join as a non-singing member. Rehearsals are on Tuesday
+  nights.
+kind: nonprofit
 categories:
 - music
 interests:
 - choir_singing
 motives:
+- values
 - social
-- enhancement
 formats:
 - perform_make_together
 - team_play
@@ -36,7 +37,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Rehearsals on Tuesday nights. Auditions are held twice a year, in summer (August) and winter (January).
+  text: Rehearsals on Tuesday nights at Resurrection Philadelphia, 123 S 17th St. Auditions are held in
+    summer (August) and winter (January). The next audition is listed as Tuesday, August 11, starting
+    at 6 pm; the page does not give a year.
   days:
   - tue
   times:
@@ -44,11 +47,20 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Rehearsals at Resurrection Philadelphia
+- label: Resurrection Philadelphia (rehearsals)
   address: 123 S 17th St
-  neighborhood: center_city
+  neighborhood: null
   planning_district: null
   zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Listed organization address
+  address: 1315 Spruce Street
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
   lat: null
   lng: null
   in_city: true
@@ -56,7 +68,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the pages checked
+  text: No dues or fees are stated on the join page or the home page.
 commitment: weekly
 group_size: null
 access:
@@ -71,11 +83,14 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Contact the membership team by email to book an audition for the next window
-  drop_in: null
+  how: Email membership@pvop.org to sign up for an audition, or to join as a non-singing member. Singers
+    need a pleasant voice and a love of music. Classical training is not required, and prepared music
+    is optional.
+  drop_in: false
   sign_up_needed: true
-  newcomer_friendliness: 2
-  basis: Joining needs a short audition held only twice a year, so the way in is clear but has fixed dates
+  newcomer_friendliness: 3
+  basis: There is a clear, low-bar way in by email, no training is required, and non-singers can join
+    too. Singing members still need the audition.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -116,12 +131,29 @@ sources:
   - first_step
   - requirements
   - contacts
+  - what_you_do
+  - cost
 - url: https://6abc.com/post/philadelphia-voices-pride-celebrates-20-years-music-community/19269498/
   seen: '2026-10-08'
   fields:
   - summary
   - status
   - what_you_do
+- url: https://pvop.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+  - status
+- url: https://singers.com/groups/Philadelphia+Voices+of+Pride
+  seen: '2026-10-08'
+  fields:
+  - lead
+- url: https://portal.philaculture.org/members?page=6
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

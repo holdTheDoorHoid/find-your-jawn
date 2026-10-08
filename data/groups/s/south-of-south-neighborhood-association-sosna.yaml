@@ -5,10 +5,11 @@ leads:
 - city_rco:326
 - city_rco_points:326
 ein: null
-summary: If you care about what gets built near you, South of South Neighborhood Association (SOSNA) is
-  a City registered community organization in the South part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Volunteer neighbors for the Graduate Hospital area, between Broad Street and the Schuylkill River
+  and between Washington Avenue and South Street. Members vote for the board, join committees on zoning,
+  clean and green, Vision Zero street safety, and economic development, and work on street trees.
+what_you_do: Join a committee (Economic Development, Clean and Green, Vision Zero, Zoning, SOSNA Impact
+  outreach, or Triangles), report empty tree pits, or run for the board.
 kind: civic
 categories:
 - neighborhood-civic
@@ -43,7 +44,16 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Meeting place
+- label: General member voting meeting (Christian St. YMCA Annex)
+  address: 1724 Christian St., Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Address on City list
   address: 1901 Washington Ave., Unit B, Philadelphia, PA 19146
   neighborhood: null
   planning_district: south
@@ -63,8 +73,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Membership is free, with no dues or donation required.
 commitment: null
 group_size: null
 access:
@@ -79,23 +89,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the October 15 general member voting meeting at the Christian St. YMCA Annex, 1724 Christian
+    St., 6:30 to 8:30 pm. Anyone can attend.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: Meetings are open to everyone, and joining is a free online form. Voting is limited to members
+    who live, own property or run a business in the area, so there is a clear way in for the public.
+  what_to_expect: The fall general member voting meeting is a two-hour evening session at the Christian
+    Street YMCA Annex. Members vote for board seats at this meeting. Board nominations close online on
+    Sunday, October 11, 2026, and self-nominees go on the ballot automatically.
+  first_visit_tips:
+  - 'Joining online takes a few minutes: you confirm your email with a six-digit code, then give your
+    address and your connection to the neighborhood.'
+  - Only members vote. Residents, property owners, businesses and nonprofits headquartered in the area
+    get full votes; people who live outside the area can join as associates and take part without voting.
 contacts:
   website: https://www.sosnaphilly.org/
   email: hello@sosnaphilly.org
   phone: '2159701596'
   contact_name: Morgan Rodriguez
-  social: []
-  calendar_feed: null
+  social:
+  - https://www.instagram.com/sosnaphilly
+  calendar_feed: https://calendar.google.com/calendar/ical/c_d29c0600c1c8601c0bc2b12727cc128d3b5efeb58262ed7a207fe64a71db9a2c%40group.calendar.google.com/public/basic.ics
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.sosnaphilly.org/board-elections
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -114,8 +133,37 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.sosnaphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+- url: https://www.sosnaphilly.org/board-elections
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - locations
+  - status
+  - last_sign_of_life
+- url: https://join.sosnaphilly.org/join
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step.basis
+  - first_visit_tips
+- url: https://www.sosnaphilly.org/how-to-get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts.website
+- url: https://www.sosnaphilly.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - contacts.calendar_feed
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

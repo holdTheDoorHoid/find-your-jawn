@@ -4,18 +4,30 @@ aka: []
 leads:
 - irs_bmf:232290505
 ein: '232290505'
-summary: null
-what_you_do: null
+summary: A regional food bank that supplies community partners across Philadelphia and nearby counties
+  in Pennsylvania and New Jersey. Volunteers can pack and sort food, cook in its community kitchen, or
+  make cards from home.
+what_you_do: Sign up for a packing and sorting shift, help prepare meals in the community kitchen, or
+  make cards for the Notes of Sunshine project and mail them to the volunteer department.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- hunger-housing-basic-needs
+- food-drink
+interests:
+- food_pantry
+- community_meals
+motives:
+- values
+formats:
+- side_by_side
+- team_play
+roles:
+- hands_on
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,22 +36,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Packing, sorting and community kitchen shifts are offered each week. The volunteer pages do not
+    list set days or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Volunteer department and main office
   address: 3616 S Galloway St
   neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19148'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -57,23 +70,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for a shift on the volunteer portal at philabundance.volunteerhub.com/vv2/, or email volunteer@philabundance.org
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Open sign-up on a public portal and by email; the page does not describe training or a first-visit
+    step
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.philabundance.org
+  email: volunteer@philabundance.org
+  phone: (215) 339-0900
   contact_name: James Mullen
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.philabundance.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +96,25 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.philabundance.org/volunteer-opportunities/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://www.philabundance.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+- url: https://www.philabundance.org/supporting-community-partners/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

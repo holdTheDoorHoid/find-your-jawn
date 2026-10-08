@@ -1,0 +1,86 @@
+{
+  "wave": "w19c-leads-tonight",
+  "agent": "w19c-01",
+  "lane": "K",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 20,
+  "records": [
+    {
+      "match": {"lead_ids": [], "group_id": "city-of-brotherly-love-softball-league", "website": "https://cblsl.leagueapps.com/"},
+      "verdict": "publish",
+      "name": "City of Brotherly Love Softball League",
+      "summary": "A slow pitch softball league for LGBTQIA+ players and their allies in the Philadelphia area. It has recreational and competitive divisions and lists more than 30 teams.",
+      "what_you_do": "Players register for a season and play slow pitch games. The league also holds events such as an end of season banquet.",
+      "kind": "club",
+      "categories": ["sports-teams"],
+      "interests": ["softball_baseball"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["lgbtq"], "faith": null, "support_group": false},
+      "schedule": {"text": "The league runs seasons. Fall Ball 2026 registration is listed on the site, and its end of season banquet was set for Saturday, September 19, 2026, from 2 to 6 pm. The pages read do not list game days or times.", "days": [], "times": [], "recurring": true, "season": "fall"},
+      "commitment": "seasonal",
+      "first_step": {"how": "Use the Sign Up link on the league site, or email join@cblsl.org.", "newcomer_friendliness": 4, "basis": "The site says it welcomes players and allies of all skill levels and gives a sign-up link and an email address."},
+      "contacts": {"website": "https://cblsl.leagueapps.com/", "email": "join@cblsl.org", "social": ["https://www.facebook.com/playcblsl", "https://www.instagram.com/cblslphl"]},
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://cblsl.leagueapps.com/",
+      "sources": [
+        {"url": "https://cblsl.leagueapps.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "schedule", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://cblsl.leagueapps.com/pages/partnership", "seen": "2026-10-08", "fields": ["name", "contacts"]}
+      ],
+      "research_tier": 1,
+      "confidence": "high",
+      "notes": "Found through the partner page lead. That page names no partner or sponsor organizations. It links a 2026 Partner Guide (a Google Drive file) and a 2025 Team Sponsors page, neither read. Game location, cost, and minimum age are not on the pages read. Tavern on Camac has its own record."
+    },
+    {
+      "match": {"lead_ids": []},
+      "verdict": "not_a_group",
+      "name": "Tavern on Camac",
+      "notes": "A bar, not a group. The league's site says it hosted the league's first after party, a one time event. Found through the City of Brotherly Love Softball League site.",
+      "sources": [{"url": "https://cblsl.leagueapps.com/", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": [], "website": "https://2026.pridebands.org/"},
+      "verdict": "out_of_area",
+      "name": "Pride Bands Alliance",
+      "notes": "A network of LGBTQ+ community bands from cities around the world, not a Philadelphia group with its own regular meeting place. The conference page lists its 2026 events in Philadelphia (May 22 and 23, 2026) as one time events presented with the Philadelphia Freedom Band, which is in leads_only for its own check.",
+      "sources": [{"url": "https://2026.pridebands.org/?p=302", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": []},
+      "verdict": "out_of_area",
+      "name": "Delco Scrabble Club",
+      "notes": "Meets weekly at Riddle Village, an assisted living facility in Media, Delaware County, per a February 26, 2026 Inquirer feature. Outside Philadelphia. The article gives no set day, time, website, or contact and does not say it invites visitors. A photo caption describes a Thursday meetup, but the article does not confirm that as the regular day.",
+      "sources": [{"url": "https://www.inquirer.com/life/competitive-scrabble-delco-scrabble-club-20260226.html", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": []},
+      "verdict": "out_of_area",
+      "name": "Kerala Association of Delaware Valley",
+      "notes": "A nonprofit cultural group for the Malayalee community, based in Exton, Pennsylvania, per its profile on the Benevity giving page. The profile says it serves the Delaware Valley, but no Philadelphia meeting place appears on it. The lead said West Chester; the profile says Exton. The website printed on the profile is malformed (a stray comma in the domain), so it was not visited, because the correct address would be a guess. Re-check that site if a Philadelphia event turns up.",
+      "sources": [{"url": "https://causes.benevity.org/causes/840-830898411", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": []},
+      "verdict": "out_of_area",
+      "name": "Pinball Gallery (Malvern) and Railroad Street Bar and Grill (Linfield) pinball leagues",
+      "notes": "Both venues are outside Philadelphia, per the earlier agent's note on an April 2023 guide. This run could not re-read the guide: kineticist.com returned 429 (too many requests) on two tries. The league dates are from 2023 and out of date. Not written up as a Philadelphia group. Re-read the guide if this verdict is challenged."
+    }
+  ],
+  "leads_only": [
+    {"name": "Philadelphia Freedom Band", "url": "https://2026.pridebands.org/?p=302", "note": "Philadelphia's LGBTQ+ community band, named as co-presenter with the Pride Bands Alliance at its 2026 conference events. Not checked."},
+    {"name": "United Veterans of Bridesburg", "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/", "note": "Named in a May 2012 article as a Bridesburg alliance founded in the 1970s that keeps the Memorial Day parade going, with the VFW and American Legion posts. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://philadelphianeighborhoods.com/tag/the-fortress-of-the-arts", "status": 403, "note": "Fortress of the Arts tag page. Blocked; not retried."},
+    {"url": "https://oriannahill.org/about/", "status": 403, "note": "Orianna Hill Dog Park site, about page. Blocked. The site root returned no page text on three fetches."},
+    {"url": "https://starnewsphilly.com/2019/11/27/river-wards-events-for-the-week-of-nov-27/", "status": 403, "note": "River Wards events page that a search snippet tied to American Legion Post 821. Blocked; not retried."},
+    {"url": "https://www.kineticist.com/news/play-pinball-philadelphia", "status": 429, "note": "Rate limited on two tries. Not retried further."},
+    {"url": "https://thecardshopfinder.com/pa/philadelphia/dark-depths-games/", "status": 403, "note": "Seen as 403 by an earlier agent (g2-games-puzzles). Not fetched in this run."},
+    {"url": "https://thecardshopfinder.com/pa/philadelphia/brave-new-worlds/", "status": 403, "note": "Directory page. Blocked for this run; not retried."},
+    {"url": "https://thecardshopfinder.com/pa/philadelphia/garden-of-earthly-delights/", "status": 403, "note": "Directory page. Blocked for this run; not retried."}
+  ],
+  "notes": "Budget: 1 of 1 WebSearch used; 20 WebFetch calls. Six records written: 1 publish, 4 out_of_area, 1 not_a_group. Nine of 15 leads were skipped (below), because no readable page from the group itself was found and the search budget was spent. Blocks and rate limits: philadelphianeighborhoods.com, oriannahill.org/about, starnewsphilly.com and thecardshopfinder.com returned 403; kineticist.com returned 429 on two tries and was not retried further. Redirects not followed: qvk9.org and its dog run page redirect to sovtrc.org, which redirects again to mahavideha.org; phillyfido.org redirects to lostpetsavl.org. Skipped leads: (1) VFW Post 2: Wikipedia's Bridesburg article mentions a VFW Post 2 founded in 1899, and the 2012 article names it, but no address, website, or activity after 2012 was found. (2) American Legion Post 821: a search snippet places it at 4404 Salmon St., Bridesburg, with community event listings, but the dated listing was blocked and no website was found. (3) The Fortress of the Arts: tag page blocked, no own site. (4) Dark Depths Games, Brave New Worlds, Garden of Earthly Delights: only directory pages, all blocked, no own site; likely game stores, so business verdicts if re-checked. (5) Orianna Hill Dog Park: oriannahill.org returned no page text on three fetches. Philadelphia Magazine describes a members-only dog park at 900 North Orianna Street, but the friends group is not verified; needs a re-check. (6) Queen Village K9: Philadelphia Magazine names QVK9 for the Mario Lanza Dog Run at 200 Catherine Street, but no working own site was found. (7) Schuylkill River Park Dog Run friends group: not identified; its listed domain redirects elsewhere. The Philadelphia Freedom Band and United Veterans of Bridesburg are in leads_only."
+}

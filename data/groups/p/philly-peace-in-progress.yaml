@@ -5,18 +5,32 @@ leads:
 - irs_990n:842117685
 - irs_bmf:842117685
 ein: '842117685'
-summary: null
-what_you_do: null
+summary: A West Philadelphia nonprofit that offers mentoring, life skills and grocery help to youth, families
+  and older adults, with a focus on young people affected by violence.
+what_you_do: Find a program through the Get Help page; services run at partner sites such as recreation
+  centers and libraries. Volunteers can use the Volunteer page, though the steps are not described there.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- advocacy-rights
+- kids-youth-mentoring
+- hunger-housing-basic-needs
+interests:
+- violence_prevention
+- mentoring
+- food_pantry
+motives:
+- values
+- protective
+formats:
+- learn_skill
 roles: []
-crowd: []
+crowd:
+- teens
+- families
+- seniors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +39,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
+  text: The site lists hours of 4:00 to 7:30 pm on Tuesdays, Wednesdays and Thursdays. The page does not
+    say which services these hours cover.
+  days:
+  - tue
+  - wed
+  - thu
+  times:
+  - daytime
+  - evening
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 5786 W Oxford St
+- label: West Philadelphia, at partner sites such as recreation centers and libraries
+  address: null
   neighborhood: null
-  planning_district: west_park
-  zip: '19131'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 5786 W Oxford Street
-  neighborhood: null
-  planning_district: west_park
-  zip: '19131'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -67,23 +78,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (445) 208-0177 or use the Contact page on the website to ask which program fits you, or start
+    on the Get Help page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site has a Get Help page for finding programs and a phone number to call. Volunteer steps
+    are not explained.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: Philly Peace In Progress
+  website: https://phillypeaceinprogress.org
   email: null
-  phone: null
+  phone: (445) 208-0177
   contact_name: Crystal Nelson
-  social: []
+  social:
+  - https://www.instagram.com/phillypeaceinprogress
+  - https://www.facebook.com/people/Phillypeaceinprogress
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://phillypeaceinprogress.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +114,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillypeaceinprogress.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - categories
+  - interests
+  - schedule
+  - locations
+  - contacts
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -39,24 +39,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Two weeks in August. The website names the 2026 festival (its 11th) and lists shows, a panel,
-    and an industry brunch, but gives no exact days.
+  text: A two-week festival every August, with shows, a panel, and an industry brunch. The site does not
+    give exact days.
   days: []
   times: []
   recurring: true
   season: summer
 locations:
 - label: Mailing address (IRS)
-  address: 2309 Tulip St
-  neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 2309 Tulip Street
+  address: 2309 Tulip St, Philadelphia, PA 19125
   neighborhood: null
   planning_district: river_wards
   zip: '19125'
@@ -67,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Tickets are sold online; prices are not on the homepage
+  text: Festival tickets are sold online through the group's ticket page. The site does not list prices.
 commitment: seasonal
 group_size: null
 access:
@@ -83,14 +74,19 @@ requirements:
   gear: null
 first_step:
   how: Email autumn@phillywomenstheatrefest.org with the subject Volunteer Opportunities to offer to usher
-    or help with set up, or check the 2026 Festival audition page for open calls.
-  drop_in: null
-  sign_up_needed: null
+    or help with set up and take down.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Festival auditions and volunteer sign-up are posted publicly, and the contact route is an email
-    address.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says it always needs volunteers and gives one email address to ask, so the way in is
+    clear. It names no beginner program or orientation, so it is rated 3.
+  what_to_expect: Volunteers help with ushering, set up, and take down for the festival. The site does
+    not say how long a shift runs or what time it starts, so ask when you send your email. To see a show,
+    you buy a ticket online first.
+  first_visit_tips:
+  - Use the subject line Volunteer Opportunities so your email is easy to find.
+  - Ask for the shift time, the place, and how long it lasts before you say yes.
+  - Join the email list on the site to hear when the next audition call opens.
 contacts:
   website: http://www.phillywomenstheatrefest.org
   email: autumn@phillywomenstheatrefest.org
@@ -129,14 +125,24 @@ sources:
   - schedule
   - status
   - last_sign_of_life
+  - cost
 - url: https://www.phillywomenstheatrefest.org/join-our-team
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
   - contacts
-research_tier: 1
-confidence: medium
+  - contacts.email
+- url: https://www.phillywomenstheatrefest.org/audition
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.phillywomenstheatrefest.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

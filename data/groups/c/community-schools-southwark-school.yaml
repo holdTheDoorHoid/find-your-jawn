@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Southwark School is one of the City's Community Schools, where volunteers help with after school
   and family programs. Open shifts are listed on the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Hand out weekly groceries to students and families, help run the food and clothing pantry,
+  and help at community fairs and other special events.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -43,7 +44,7 @@ schedule:
   season: null
 locations:
 - label: School
-  address: 1835 S. 9th St Philadelphia , PA 19148
+  address: 1835 S. 9th St, Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
   zip: '19148'
@@ -60,7 +61,7 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The school says families can ask for translation or accessibility accommodations for school events.
 requirements:
   act153_clearances: true
   background_check: true
@@ -69,15 +70,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check.'
-  first_visit_tips: []
+  how: Email Madeline Cerulli at Madeline.Cerulli@phila.gov to ask about open shifts, then start the clearance
+    checks before your first shift.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers must finish background clearances and have the principal certify their code of conduct
+    before they start, so you cannot just show up. The contact route is clear, so the way in is at least
+    open.
+  what_to_expect: 'Expect paperwork first: the clearance checks, a short orientation (about 45 minutes,
+    online or in person), and a signed code of conduct that the principal certifies. The school day runs
+    from 9:00 am to 3:39 pm, and the listing does not say how long a shift lasts.'
+  first_visit_tips:
+  - Ask the school's Family Engagement Liaison for the Volunteer Checklist, since the district says the
+    liaison helps with the forms.
+  - The child abuse and state criminal checks are free, and the child abuse result arrives by email within
+    14 days, so start early.
+  - The school's advisory council meets on the third Monday of each month at 9:15 am in the auditorium,
+    and the school says all are welcome. It is a way to see the building before you volunteer.
 contacts:
   website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186292
   email: Madeline.Cerulli@phila.gov
@@ -97,7 +107,30 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - what_you_do
+  - requirements.act153_clearances
+  - requirements.background_check
+- url: https://southwark.philasd.org/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.phone
+  - access.notes
+  - first_step.first_visit_tips
+  - first_step.what_to_expect
+- url: https://www.philasd.org/face/
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+  - requirements.act153_clearances
+  - requirements.background_check
+- url: https://www.phila.gov/programs/community-schools/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

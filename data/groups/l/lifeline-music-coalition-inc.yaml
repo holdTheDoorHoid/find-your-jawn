@@ -1,22 +1,30 @@
 id: lifeline-music-coalition-inc
-name: Lifeline Music Coalition Inc
+name: Lifeline Music Coalition
 aka: []
 leads:
 - irs_990n:352213500
 - irs_bmf:352213500
 ein: '352213500'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that puts on jazz concerts and festivals and lists a jazz ensemble program.
+  The concerts it has listed were free to attend, but no upcoming dates were posted when checked.
+what_you_do: Go to a jazz concert or festival the group puts on, or contact the group about its jazz ensemble
+  or about booking musicians.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- music
+interests:
+- community_band
+motives:
+- enhancement
+- social
+formats:
+- one_off_event
 roles: []
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,7 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: No upcoming dates were posted when checked. The most recent dated concert in the visible page
+    text was in April 2023.
   days: []
   times: []
   recurring: null
@@ -51,9 +60,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: The concerts listed on the page were free to attend.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +76,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email lifelinemusic@comcast.net or call 215-421-3688 to ask about upcoming concerts or the Arpeggio
+    Jazz Ensemble
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The page lists no membership or audition process and no upcoming events, so the way in is unclear
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: lifelinemusiccoalition.com
-  email: null
-  phone: null
+  website: https://lifelinemusiccoalition.com
+  email: lifelinemusic@comcast.net
+  phone: 215-421-3688
   contact_name: Warren Oree
-  social: []
+  social:
+  - https://www.facebook.com/lifelinemusiccoalition/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-04
+sign_of_life_url: https://lifelinemusiccoalition.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +111,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://lifelinemusiccoalition.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - contacts
+- url: https://lifelinemusiccoalition.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

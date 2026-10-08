@@ -4,10 +4,10 @@ aka: []
 leads:
 - city_rco:324
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the South part of the city, South Broad Street Neighborhood Association gives neighbors a place to
-  hear about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Neighbors around South Broad Street who meet most months to talk over zoning and building plans.
+  The group also runs a few community events, such as a fall pumpkin carve.
+what_you_do: Members follow zoning and development plans in the area and meet to talk them over. Zoning
+  meetings are held on Zoom.
 kind: civic
 categories:
 - neighborhood-civic
@@ -36,14 +36,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meetings most months at 7 pm, usually posted a few days ahead. Some months, including several
+    summer months, have no meeting.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 1930 South Broad St, Philadelphia, PA (Constitution Health Plaza), and Zoom Meetings
+- label: Meeting place (City list)
+  address: 1930 South Broad St, Philadelphia, PA (Constitution Health Plaza)
   neighborhood: null
   planning_district: null
   zip: null
@@ -60,7 +63,7 @@ locations:
   lng: -75.16846938856837
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -78,19 +81,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the join form on sbsna.org (name, address and email), then watch for the next meeting post
+    and register through its Zoom link if the meeting is online.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Meetings are open, and the site has a clear join form and an email list. Meeting dates are posted
+    only a few days ahead, and zoning meetings need a Zoom registration.
+  what_to_expect: Meetings usually start at 7 pm and cover zoning and building plans for the area. Zoning
+    meetings are held on Zoom, and the site asks attendees to register through the link on the meeting
+    post. The site does not say how long meetings run or what they cost, and it lists no dues.
+  first_visit_tips:
+  - Check the site a few days before, since some months have no meeting.
+  - Register through the Zoom link on the meeting post if you plan to join online.
 contacts:
-  website: www.sbsna.org
+  website: https://www.sbsna.org/
   email: anthony@bruttanitiarchitecture.com
   phone: '2152180300'
   contact_name: Anthony Bruttaniti
-  social: []
+  social:
+  - https://www.facebook.com/SBSNA
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -105,8 +115,32 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.sbsna.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - status
+- url: https://sbsna.org/join-us/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts.website
+- url: https://sbsna.org/contacts/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.contact_name
+- url: https://sbsna.org/2026/09/11/meeting-on-september-15-2026-7pm/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

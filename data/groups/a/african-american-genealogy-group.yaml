@@ -5,18 +5,25 @@ leads:
 - irs_990n:232823485
 - irs_bmf:232823485
 ein: '232823485'
-summary: null
-what_you_do: null
+summary: A nonprofit that helps people trace African American family history. It holds free public meetings
+  with a speaker most months, and members can also join workshops and state group meetings.
+what_you_do: Come to a free general meeting on the second Tuesday of the month, except July and August.
+  There is a social hour at 6 pm, and the talk starts at 6:30 pm. Registration is on the group's site.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- history-heritage-preservation
+interests:
+- genealogy
+motives:
+- understanding
+- values
+formats:
+- learn_skill
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +32,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General meetings on the second Tuesday of the month, except July and August. Social hour at 6
+    pm, talk at 6:30 pm.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -42,9 +52,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free and open to the public
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +68,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Register for the next general meeting through the registration page on aagg.org, then arrive for
+    the 6 pm social hour.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: General meetings are free and open to the public, and registration is the stated way in. The
+    next talk is aimed at beginners.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: African American Genealogy Group
+  website: https://www.aagg.org
   email: null
   phone: null
   contact_name: Velinda D Banks
-  social: []
+  social:
+  - https://www.facebook.com/AAGGPhilly
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://aagg.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +103,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://aagg.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+  - contacts
+- url: https://www.cbsnews.com/amp/philadelphia/news/african-american-genealogy-group-philadelphia-black-history-month
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

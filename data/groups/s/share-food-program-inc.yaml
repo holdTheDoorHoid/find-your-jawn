@@ -1,18 +1,21 @@
 id: share-food-program-inc
-name: Philly Food Rescue
+name: Nice Roots Farm (SHARE Food Program)
 aka:
 - Share Food Program
+- Philly Food Rescue
 leads:
 - irs_bmf:232360819
 ein: '232360819'
-summary: A volunteer driver program run through Share Food Program. Volunteers pick up surplus food from
-  grocers, restaurants and markets and bring it to pantries, shelters, schools and community fridges.
-what_you_do: Claim a pickup in the app, collect the food, deliver it to the matched site, and log the
-  rescue. Each run takes about an hour.
+summary: The farm of SHARE Food Program, which grows fresh fruit and vegetables for donation to the community,
+  to SHARE-affiliated pantries, and to mutual aid networks. Volunteers can sign up on the program's page.
+what_you_do: Sign up with the Volunteer to Help button on the farm's page. The page does not say what
+  volunteers do on the farm.
 kind: program
 categories:
+- gardening-greening
 - hunger-housing-basic-needs
 interests:
+- urban_farming
 - food_rescue
 motives:
 - values
@@ -21,7 +24,7 @@ formats:
 roles:
 - hands_on
 crowd:
-- all_adults
+- neighbors
 bridging: null
 audience:
   open_to: public
@@ -33,17 +36,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Rescues are claimed in the app, one time or on a recurring basis, any time that fits
+  text: Rescues are posted in the app as they come up. They can be one time or recurring, and each takes
+    about an hour or less.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Greater Philadelphia area
-  address: null
+- label: SHARE Food Program office (farm address not published)
+  address: 2901 W. Hunting Park Avenue
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19129'
   lat: null
   lng: null
   in_city: true
@@ -66,17 +70,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Download the Philly Food Rescue app, make a profile, turn on notifications and claim a rescue
-  drop_in: true
+  how: Click Volunteer to Help on the farm's page
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Anyone can sign up in the app. Drivers need a license and insurance, and a bike or transit pass
-    works for smaller runs
+  basis: There is a clear sign-up button, but the page does not describe tasks, schedules, or what a first
+    day is like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.sharefoodprogram.org/philly-food-rescue/what-we-do/
-  email: null
+  website: https://www.sharefoodprogram.org/our-programs/nice-roots-farm/
+  email: volunteer@sharefoodprogram.org
   phone: (215) 223-2220
   contact_name: null
   social: []
@@ -107,8 +111,38 @@ sources:
   - schedule
   - summary
   - what_you_do
+  - locations
+- url: https://www.sharefoodprogram.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.sharefoodprogram.org/community-fridges/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.sharefoodprogram.org/philly-food-rescue/what-we-do/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - status
+- url: https://www.sharefoodprogram.org/our-programs/nice-roots-farm/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://www.phillyorchards.org/orchards
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -8,16 +8,23 @@ leads:
 - irs_990n:205664729
 - irs_bmf:205664729
 ein: '205664729'
-summary: If you care about what gets built near you, East Passyunk Crossing Civic Association (EPX) is
-  a City registered community organization in the South part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Neighbors in the East Passyunk area who follow zoning and development plans and meet monthly
+  to talk them over. The group also runs volunteer cleanups, tree care and a community garden, and hosts
+  neighborhood events such as a fall festival.
+what_you_do: Members follow zoning and development plans and attend a monthly membership meeting. Volunteers
+  can help with cleanups, tree care and the community garden, and the group hosts neighborhood events
+  like Fall Fest.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
+- nature-environment
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- community_garden
+- tree_tending
 motives:
 - values
 - social
@@ -27,6 +34,7 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -40,22 +48,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: General membership meetings on the first Monday of each month at 7 pm, online on Zoom for now.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
-  address: 1025 Mifflin St Philadelphia, PA 19148
-  neighborhood: null
-  planning_district: south
-  zip: '19148'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
   address: 1025 Mifflin St Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
@@ -64,7 +65,7 @@ locations:
   lng: -75.16176261860377
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -73,7 +74,7 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Monthly meetings are online on Zoom for now, according to the group's site.
 requirements:
   act153_clearances: null
   background_check: null
@@ -82,13 +83,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up for the group's mailing list to get the monthly Zoom details, then join the first Monday
+    meeting at 7 pm.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The site gives a fixed monthly meeting time, an online way in and a mailing list sign-up. It
+    does not say whether non-members may speak or vote.
+  what_to_expect: Monthly general membership meetings run online on Zoom, and the October 2026 calendar
+    lists the next one from 7 to 8:30 pm. The site does not say who usually attends or what the agenda
+    covers, and it does not mention dues.
+  first_visit_tips:
+  - Get on the mailing list early so the Zoom details reach you before the meeting.
+  - The group also holds separate zoning meetings, so check the events page for the next one if zoning
+    is your interest.
+  - Log in a few minutes early to test your audio and video.
 contacts:
   website: https://www.epcrossing.org/
   email: Zoning@epcrossing.org
@@ -98,7 +107,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.epcrossing.org/?page_id=4853
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -131,8 +140,38 @@ sources:
   - locations
   - contacts.website
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.epcrossing.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.website
+- url: https://www.epcrossing.org/?page_id=5013
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - online_ok
+  - access.notes
+  - first_step.how
+  - first_step.what_to_expect
+- url: https://www.epcrossing.org/?page_id=4853
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.epcrossing.org/?page_id=4951
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - what_you_do
+- url: https://www.epcrossing.org/?page_id=4876
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

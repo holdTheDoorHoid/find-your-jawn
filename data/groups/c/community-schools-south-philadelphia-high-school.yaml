@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: A Community School partnership between the City, the School District and neighbors, South Philadelphia
   High School welcomes volunteers through the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Hand out weekly groceries to students and families, spend time with students in the gaming
+  room, and help at special events such as resource fairs.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -24,7 +25,7 @@ roles:
 - help_teach
 - hands_on
 crowd:
-- kids
+- teens
 bridging: null
 audience:
   open_to: public
@@ -43,7 +44,7 @@ schedule:
   season: null
 locations:
 - label: School
-  address: 2101 S Broad St Philadelphia , PA 19148
+  address: 2101 S Broad St, Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
   zip: '19148'
@@ -69,16 +70,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check;
-    Volunteer City Release Waiver.'
-  first_visit_tips: []
+  how: Email Madeline Cerulli at Madeline.Cerulli@phila.gov to ask about open shifts, then start the clearance
+    checks before your first shift.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers must finish background clearances and have the principal certify their code of conduct
+    before they start, so you cannot just show up. The contact route is clear, so the way in is at least
+    open.
+  what_to_expect: 'Expect paperwork first: the clearance checks, a short orientation (about 45 minutes,
+    online or in person), and a signed code of conduct that the principal certifies. The listing says
+    volunteers help with groceries, the gaming room, and special events, but it does not say how long
+    a shift lasts.'
+  first_visit_tips:
+  - Ask the school's Family Engagement Liaison for the Volunteer Checklist, since the district says the
+    liaison helps with the forms.
+  - The child abuse and state criminal checks are free, and the child abuse result arrives by email within
+    14 days, so start early.
+  - If you have not lived in Pennsylvania for the past 10 years, book a fingerprint check through IdentoGo
+    first ($23.25, and you must pre-enroll).
 contacts:
   website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186394
   email: Madeline.Cerulli@phila.gov
@@ -98,7 +108,22 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - what_you_do
+  - requirements.act153_clearances
+  - requirements.background_check
+- url: https://www.philasd.org/face/
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+  - requirements.act153_clearances
+  - requirements.background_check
+- url: https://www.phila.gov/programs/community-schools/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
