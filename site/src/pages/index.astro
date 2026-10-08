@@ -6,6 +6,7 @@ import { browsableFamilies } from '../lib/vocab';
 import { fill } from '../lib/inline';
 import { suggestGroupUrl } from '../lib/issues';
 import { withBase } from '../lib/site';
+import CheckIn from '../components/CheckIn.astro';
 import Base from '../layouts/Base.astro';
 import { home, paths, site } from '../strings/en';
 
@@ -22,6 +23,8 @@ const guides = [paths.serviceHours, paths.courtOrdered, paths.families, paths.ne
 <Base title={`${site.name}: ${site.tagline}`} fullTitle description={site.description} path="">
   <div class="page">
     <div class="wrap-wide">
+      <CheckIn />
+
       <section class="hero">
         <h1>Find Your <span>Jawn</span></h1>
         <p class="lede">{home.heroLede}</p>
@@ -33,7 +36,6 @@ const guides = [paths.serviceHours, paths.courtOrdered, paths.families, paths.ne
         <div class="doors">
           <div class="door">
             <h2>{home.match.title}</h2>
-            <p><span class="badge badge--note">{home.match.status}</span></p>
             <p>{home.match.text}</p>
             <a class="btn" href={withBase('match/')}>{home.match.cta}</a>
           </div>

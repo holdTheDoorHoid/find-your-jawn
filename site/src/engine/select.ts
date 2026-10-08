@@ -62,18 +62,20 @@ export class Variety implements VarietyLike {
 
 /**
  * Close fits, best first, one at a time, with a penalty for repeating a family or organization and
- * a hard stop at two. Groups whose location we could not check against a locked distance come last.
+ * a hard stop at two. Groups are taken tier by tier: confirmed passes first, then the ones with a locked
+ * answer we could not check, and last the ones whose place we could not find (see rankTier).
  */
 export function selectClose(pool: Pool, n: number, variety: Variety, exclude: Set<string>): Scored[] {
   const picks: Scored[] = [];
   const taken = new Set<string>(exclude);
-  for (const tier of [0, 1]) {
-    const tierList = pool.scored.filter((s) => (s.unknown.includes('distance') ? 1 : 0) === tier);
+  for (let tier = 0; tier <= 3 && picks.length < n; tier++) {
+    // Sorted best score first within the tier (the pool is sorted by tier, then score).
+    const tierList = pool.scored.filter((s) => s.tier === tier);
     while (picks.length < n) {
       let best: Scored | null = null;
       let bestAdj = -Infinity;
       for (const s of tierList) {
-        // tierList is sorted best first, so nothing after this can beat the current best.
+        // Nothing after this one can beat the current best, because the list is sorted by score.
         if (best && s.score <= bestAdj) break;
         if (taken.has(s.p.g.id) || !variety.canTake(s.p)) continue;
         const adj = s.score - variety.penalty(s.p);

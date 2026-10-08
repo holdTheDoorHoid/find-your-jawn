@@ -10,6 +10,11 @@ import type { Answers, Diagnosis } from './types';
 // The shared setup for every engine call: the groups prepared, the answers turned into a profile,
 // and the pool of groups that pass the hard filters, scored.
 
+/** Confirmed passes first, then by score, then by id so the order never wobbles. */
+export function compareScored(a: Scored, b: Scored): number {
+  return a.tier - b.tier || b.score - a.score || (a.p.g.id < b.p.g.id ? -1 : 1);
+}
+
 export interface MatchOptions {
   /** the date to judge "last seen active" against; tests pass a fixed one */
   now?: Date;
@@ -31,7 +36,7 @@ export interface Pool {
   ctx: Context;
   /** every group, in the order given */
   evals: Evaluation[];
-  /** groups that pass every rule, scored, best first */
+  /** groups that pass every rule, scored: confirmed passes first, then by score */
   scored: Scored[];
   byId: Map<string, Scored>;
   diagnosis: Diagnosis;
@@ -62,7 +67,7 @@ export function buildPool(ctx: Context): Pool {
     evals.push(ev);
     if (passes(ev)) scored.push(scoreGroup(p, ev, ctx.profile, ctx.taste, ctx.now));
   }
-  scored.sort((a, b) => b.score - a.score || (a.p.g.id < b.p.g.id ? -1 : 1));
+  scored.sort(compareScored);
   return { ctx, evals, scored, byId: new Map(scored.map((s) => [s.p.g.id, s])), diagnosis: diagnose(evals) };
 }
 

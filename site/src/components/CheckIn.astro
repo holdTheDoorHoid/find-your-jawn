@@ -1,0 +1,21 @@
+---
+import { loadGroups } from '../lib/data';
+
+// The "Did you go to...?" card (DESIGN section 7). This page ships almost no script: a tiny check
+// reads the planned visits kept in this browser, and only when one has passed does the real card
+// load. Most visitors never download it.
+const { built } = loadGroups();
+---
+
+<div id="checkin-root" data-version={built} hidden></div>
+
+<script>
+  import { todayString } from '../lib/plan-dates';
+  import { store } from '../lib/storage';
+  import { dueCheckIns, readPlans } from '../islands/quiz/plans';
+
+  const root = document.getElementById('checkin-root');
+  if (root && dueCheckIns(readPlans(store), todayString()).length > 0) {
+    import('../islands/checkin-mount').then((m) => m.mountCheckIn(root, root.dataset.version ?? ''));
+  }
+</script>

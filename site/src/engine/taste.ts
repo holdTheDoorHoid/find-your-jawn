@@ -2,7 +2,6 @@ import type { Group } from '../lib/types';
 import type { Catalog } from './catalog';
 import { buildPool, makeContext, type MatchOptions } from './match';
 import type { Prepared } from './prepare';
-import { similarity } from './similarity';
 import { stretchCandidates } from './stretch';
 import type { Answers, FollowId } from './types';
 import { computeResults } from './select';
@@ -150,7 +149,7 @@ export function pickFollowUps(groups: Group[], cat: Catalog, answers: Answers, o
   for (const id of Object.keys(FOLLOW_OPTIONS) as FollowId[]) {
     if (answers.follow[id] !== undefined) continue;
     if (id === 'cadence' && answers.often && answers.often.value !== 'any') continue;
-    if (id === 'kids_along' && (answers.paths.includes('kids') || (answers.kidsAges?.length ?? 0) > 0)) continue;
+    if (id === 'kids_along' && (answers.paths.includes('kids') || (answers.kidsAges?.length ?? 0) > 0 || (answers.age !== undefined && answers.age.hi < 21))) continue;
     if (id === 'online' && answers.far?.mode === 'anywhere') continue;
     let change = 0;
     for (const value of FOLLOW_OPTIONS[id]) {

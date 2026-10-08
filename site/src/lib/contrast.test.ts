@@ -55,6 +55,14 @@ const TEXT: [string, string][] = [
   ['calm-bg', 'calm-accent'],
   ['accent-ink', 'calm-accent'],
   ['ink', 'accent-soft'],
+  // the match quiz
+  ['accent-soft-ink', 'surface'],
+  ['muted', 'surface-2'],
+  ['good-ink', 'good-bg'],
+  ['info-ink', 'info-bg'],
+  ['notice-ink', 'notice-bg'],
+  ['accent-soft-ink', 'accent-soft'],
+  ['accent', 'accent-soft'],
 ];
 
 const UI: [string, string][] = [
@@ -64,6 +72,11 @@ const UI: [string, string][] = [
   ['focus', 'surface'],
   ['accent', 'bg'],
   ['note-ink', 'bg'],
+  // the match quiz: progress bar, selected cards, locked answers
+  ['accent', 'surface-2'],
+  ['accent', 'accent-soft'],
+  ['line-strong', 'surface-2'],
+  ['accent-soft-ink', 'accent-soft'],
 ];
 
 for (const [name, theme] of [

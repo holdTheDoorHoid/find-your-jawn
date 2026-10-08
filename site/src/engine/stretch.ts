@@ -151,7 +151,7 @@ function candidateFor(s: Scored, profile: Profile): StretchCandidate | null {
     if (often && often.value !== 'any' && p.g.commitment === 'ongoing_role') return null;
   }
 
-  cand.rank = 0.6 * s.score + 0.3 * goal + 0.1 * (cand.edge ? EDGE_STRENGTH[cand.edge.type] : 0.8);
+  cand.rank = 0.6 * s.score + 0.3 * goal + 0.1 * (cand.edge ? EDGE_STRENGTH[cand.edge.type] : 0.8) - 0.08 * Math.min(2, s.unknown.length);
   return cand;
 }
 

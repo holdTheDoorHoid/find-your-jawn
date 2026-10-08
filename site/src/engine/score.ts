@@ -32,9 +32,15 @@ export const WEIGHTS: Readonly<Record<PartName, number>> = {
 /** The newcomer part counts for this much when strangers feel hard (DESIGN: rises to 20 percent). */
 export const NEWCOMER_WEIGHT_HARD = 0.2;
 
-/** Taken off a group's score for each locked answer we could not check, up to the cap. Ranks it below known passes. */
-export const UNKNOWN_PENALTY = 0.06;
-export const UNKNOWN_PENALTY_CAP = 2;
+/**
+ * Groups are shown in tiers: first the ones that pass every locked answer by what their page says,
+ * then the ones with one locked answer we could not check, then two or more, and last the ones
+ * whose place we could not find when distance is locked. Inside a tier, the score decides.
+ */
+export function rankTier(unknown: readonly NoteKey[]): number {
+  if (unknown.includes('distance')) return 3;
+  return Math.min(2, unknown.length);
+}
 
 /** Small lifts for things a path asks for, added after the weighted parts. */
 export const PATH_BOOST = { hoursForm: 0.08, newcomer: 0.06, student: 0.08, faithTradition: 0.05, kids: 0.04 } as const;
@@ -66,8 +72,10 @@ export interface Scored {
   parts: Parts;
   /** weighted parts, 0 to 1 */
   total: number;
-  /** total plus path lifts minus the unknown penalty */
+  /** weighted parts plus path lifts, 0 to 1 */
   score: number;
+  /** 0 when every locked answer is confirmed, higher when some could not be checked (see rankTier) */
+  tier: number;
   evidence: Evidences;
   /** locked answers we could not check */
   unknown: NoteKey[];
@@ -379,8 +387,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
     boosts.push('faith_tradition');
   }
 
-  const penalty = UNKNOWN_PENALTY * Math.min(UNKNOWN_PENALTY_CAP, ev.unknown.length);
-  const score = clamp(total + lift - penalty);
+  const score = clamp(total + lift);
 
   return {
     p,
@@ -388,6 +395,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
     parts,
     total,
     score,
+    tier: rankTier(ev.unknown),
     unknown: ev.unknown,
     boosts,
     evidence: {
