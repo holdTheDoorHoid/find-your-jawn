@@ -63,8 +63,13 @@ Always write `basis`: one sentence on why.
 ## Vocabulary
 
 Use only ids from `research/briefs/vocab-cheatsheet.md` for `kind`, `categories` (interest family
-ids), `interests` (tag ids), `motives`, `formats`, `roles`, `crowd`. If no tag fits, put your words
-in `notes` instead of inventing an id.
+ids), `interests` (tag ids), `motives`, `formats`, `roles`, `crowd`. Never invent an id.
+
+**Every `publish` record needs `summary`, `kind`, `audience.open_to`, at least one `categories` id
+and at least one `interests` tag, and at least one source.** A record missing any of these is held
+back and does not go live. When no tag fits exactly, choose the closest one (an orchestra that takes
+community players is `community_band`; a dance school is `social_dance` or `cultural_dance`) and add
+your own words in `notes`.
 
 ## Output
 
