@@ -381,3 +381,44 @@ that are visible and at tier 1 or higher are checked; tier 0 groups are counted.
   one research agent: `id`, `name`, `aka`, `kind`, `ein`, `address`, `zip`, `planning_district`,
   `research_tier`, `lead_ids` (put these in `match.lead_ids`), `contacts`, `lead_descriptions` (internal,
   trimmed to 600 characters, never to be copied) and `liveness` when the checker has run.
+
+## 9. Guide lists (things that are not groups)
+
+Some useful things are recurring events at businesses, not groups: bar quizzo nights first (owner
+decision 2026-10-08). They live on their own guide page, never in `groups.json`, the quiz pool or
+browse. One YAML file per guide at `data/guides/<guide>.yaml`:
+
+```yaml
+guide: quizzo
+title: Quizzo nights
+updated: 2026-10-08
+lead_sources:                       # credited and linked on the page; never copied
+  - name: "Billy Penn: Philly quizzo guide (August 2026)"
+    url: https://billypenn.com/2026/08/10/philly-quizzo-history-guide/
+entries:
+  - id: johnnys-tavern-tue           # venue slug plus day; stable
+    venue: Johnny's Tavern
+    address: 123 Example St
+    zip: "19125"
+    neighborhood: Fishtown           # from data/vocab/neighborhoods.yaml when known
+    planning_district: river_wards   # filled by the importer from the ZIP when missing
+    day: tue                         # mon tue wed thu fri sat sun
+    start: "20:00"                   # 24 hour, or null
+    host: Example Quizzo Co          # the company or person who runs it, if published
+    cost: free                       # free | paid | unknown
+    cost_text: Free to play
+    team_size: Up to 6 players       # as published, or null
+    age: 21_plus                     # 21_plus | all_ages | unknown
+    notes: Themed rounds once a month; walk ins can join a table.   # our words, short
+    status: confirmed                # confirmed (venue or host page) | unconfirmed (lead only)
+    sources:
+      - {url: https://example.com/events, seen: 2026-10-08, fields: [day, start, host]}
+    last_checked: 2026-10-08
+```
+
+Only `confirmed` entries are shown. `unconfirmed` entries stay in the file so a later wave can check
+them. Research agents write `research/inbox/guide-<guide>/<agent>.json` as
+`{"wave", "agent", "guide", "model", "searches_used", "fetches_used", "entries": [...], "blocked": [...], "notes"}`;
+`fyj import-guide <guide>` merges them (dedupe by venue and day; a confirmed entry beats an
+unconfirmed one; newer `last_checked` wins), applies the dash rule, and archives the inbox files to
+`research/done/guide-<guide>/`.

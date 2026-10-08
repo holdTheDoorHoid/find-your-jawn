@@ -53,6 +53,7 @@ and back a second and third time (section 4).
 | Long tail (2026-10-08) | After launch week, a nightly scheduled run keeps researching in small batches and skips itself when usage is running high |
 | Publishing (2026-10-08) | Research from scheduled runs goes live automatically once it passes the automatic checks (DATA_MODEL section 7); the owner gets a short summary after each run |
 | Footer credit (2026-10-08) | No credit line. The footer carries sources and the GitHub link only |
+| Quizzo nights (2026-10-08) | Bar and brewery quiz nights get ONE "Quizzo nights" guide page, not a listing per venue, so quiz results do not fill up with bars. Billy Penn's guide is a lead source, credited and linked; each night is confirmed from the venue's or host's own page before it is listed |
 | Quiz questions (added later the same day) | Use psychology and efficient questions to get the most accurate picture in the fewest taps: concrete scenes, forced choices, a taste test of real groups, adaptive follow ups, tuned by simulation (DESIGN section 2) |
 
 ## 3. What already exists, and where we fit
