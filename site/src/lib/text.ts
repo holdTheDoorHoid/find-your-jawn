@@ -90,3 +90,8 @@ export function titleCase(id: string): string {
     .map((w, i) => (i > 0 && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
     .join(' ');
 }
+
+/** A group's name inside one of our own sentences: a dash in the name becomes a comma, because we never use dashes as punctuation. */
+export function plainName(name: string): string {
+  return name.replace(/\s+[-\u2013\u2014]+\s+/g, ', ').replace(/[\u2013\u2014]/g, ', ');
+}

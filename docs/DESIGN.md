@@ -180,6 +180,14 @@ Everything runs in the browser from `groups.json`. It is plain rules, so every r
 Weights are starting values. The simulation in section 12 tunes them, and every change is recorded
 in this table.
 
+**Gaps in the data.** Real records are uneven, so the engine never treats "we do not know" as "no".
+A fact a group's page does not give scores neutral (about 0.5) on that part, and the confidence part
+reflects how thin the record is. A locked answer on a fact we do not have lets the group through as
+"unknown": it is shown after every group we could confirm, and its card says what is not listed ("Cost
+not listed.", "Location not listed."). Court ordered service is the one exception, because we never
+infer it: only a yes counts. The role and format part also includes who is in the room, from the "who
+would you like to meet" answers. These choices are implemented in `site/src/engine/`.
+
 **Variety.** After scoring, results are picked one at a time with a penalty for repeating an interest
 family or parent organization already chosen, so eight results are not eight running clubs.
 

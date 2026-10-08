@@ -18,6 +18,7 @@ import { store } from '../lib/storage';
 import type { Group } from '../lib/types';
 import { myList as t } from '../strings/en';
 import ForgetPanel from './ForgetPanel';
+import PlannedVisits from './PlannedVisits';
 
 interface Props {
   dataVersion: string;
@@ -135,6 +136,8 @@ export default function MyListApp({ dataVersion, places }: Props) {
   return (
     <div>
       {blocked && <p class="callout" role="alert">{t.blocked}</p>}
+
+      <PlannedVisits />
 
       {!ready && <p role="status">{t.loading}</p>}
 

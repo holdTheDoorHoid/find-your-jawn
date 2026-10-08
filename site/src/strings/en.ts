@@ -778,7 +778,6 @@ export const home = {
     title: 'Match me',
     text: 'Answer a few quick questions. Get a short list of groups that fit you, why each one fits, and how to show up the first time.',
     cta: 'Match me',
-    status: 'Almost ready',
   },
   browse: {
     title: 'Browse everything',
@@ -800,19 +799,16 @@ export const home = {
 
 export const match = {
   title: 'Match me',
-  metaDescription: 'The Find Your Jawn match quiz is almost ready.',
-  heading: 'The match quiz is almost ready',
-  lede: 'We are still building it. Here is what it will do.',
-  points: [
-    'Ask you about a dozen quick questions, with pictures and choices. You can skip any of them.',
-    'Show you about eight groups, with why each one fits you and exactly how to show up the first time.',
-    'Include a couple of gentle stretches, one small step outside what you would normally pick.',
-    'Keep your answers on your device. Nothing you answer leaves your browser.',
-  ],
-  meanwhile: 'While you wait, you can:',
-  browse: 'Browse every group',
-  how: 'Read how ranking will work',
+  metaDescription:
+    'Answer a few quick questions and get a short list of Philadelphia community groups that fit you, with why each one fits and how to show up the first time.',
+  heading: 'Match me',
+  lede: 'About four minutes. Skip any question you like. You get about eight groups that fit you, and why.',
   mountLabel: 'Match quiz',
+  noscript: 'The match quiz needs JavaScript to run in your browser. You can still browse every group.',
+  meanwhile: 'Rather look around yourself?',
+  browse: 'Browse every group',
+  how: 'Read how ranking works',
+  privateLine: 'Your answers stay on this device.',
 };
 
 export const about = {
@@ -882,7 +878,7 @@ export const privacy = {
     },
     { h: 'What stays on your device' },
     {
-      p: 'If you save a group, the site keeps its name in your browser\'s storage. If the match quiz saves your answers, they will live there too. The storage keys all start with "fyj:". We never see them, and they never leave your device.',
+      p: 'If you save a group, the site keeps its name in your browser\'s storage. The match quiz keeps your answers there too, along with any visits you plan and what you tell us about them, so a reload picks up where you left off. The storage keys all start with "fyj:". We never see them, and they never leave your device.',
     },
     {
       p: 'You can wipe all of it any time with the button below, or on the [My list](/my-list/) page.',
@@ -910,7 +906,7 @@ export const privacy = {
 export const ranking = {
   title: 'How ranking works',
   metaDescription:
-    'Plain words on how Find Your Jawn orders groups: no paid placement, how browse is sorted, and how the match quiz will choose, explain and stretch.',
+    'Plain words on how Find Your Jawn orders groups: no paid placement, how browse is sorted, and how the match quiz chooses, explains and stretches.',
   blocks: [
     { h: 'No one can pay for a better spot' },
     {
@@ -922,7 +918,7 @@ export const ranking = {
     },
     { h: 'The match quiz' },
     {
-      p: 'The quiz is not live yet. This is how it will work. It uses plain rules, so every result can be explained. Everything runs in your browser.',
+      p: 'The quiz uses plain rules, so every result can be explained. Everything runs in your browser, and your answers never leave it.',
     },
     { h3: 'Step 1: what is ruled out' },
     {
@@ -934,19 +930,19 @@ export const ranking = {
         'It is not open to you, such as a group only for students at another school, a members only group, or one with a minimum age you do not meet.',
         'It is a support group, unless you asked for support groups.',
         'It is a faith community and you chose to leave those out.',
-        'It breaks an answer you locked, such as cost, schedule, distance, access or background checks.',
+        'It breaks an answer you locked, such as cost, schedule, distance, access or background checks. If a group\'s page does not say, we do not rule it out. We show it after the groups we could check, and say what is not listed.',
         'It does not fit the guide you are using. For court ordered service, only groups with a public source that says they accept those hours are shown.',
       ],
     },
     { h3: 'Step 2: how well it fits' },
     {
-      p: 'Each group that is left gets a score from these parts. The weights are starting values, and we tune them with practice runs. Every change is written down in the project on GitHub.',
+      p: 'Each group that is left gets a score from these parts. When a group\'s page does not say something, that part counts as neutral, not as a no. The weights are starting values, and we tune them with practice runs. Every change is written down in the project on GitHub.',
     },
     {
       ul: [
         '**What you are into** (25 percent): the topics you picked and the moments you liked.',
         '**Why you want to join** (20 percent): whether the group offers the reasons that matter most to you.',
-        '**What you would do there** (15 percent): hands on, figuring things out, making, helping, leading or organizing, and how you like to be with people.',
+        '**What you would do there** (15 percent): hands on, figuring things out, making, helping, leading or organizing, how you like to be with people, and who is in the room.',
         '**Practical fit** (15 percent): your schedule, how far it is, how often, group size and cost, for the things you did not lock.',
         '**Your taste test** (10 percent): groups like the ones you liked, and not like the ones you passed on.',
         '**Welcome for newcomers** (10 percent): rises to 20 percent if you said meeting strangers is hard.',
@@ -956,7 +952,7 @@ export const ranking = {
     },
     { h3: 'Step 3: variety' },
     {
-      p: 'We pick results one at a time. Each time, a group gets a small penalty if we already picked one in the same interest or from the same organization. Eight results should not be eight running clubs.',
+      p: 'We pick results one at a time. Each time, a group gets a small penalty if we already picked one in the same interest or from the same organization, and no more than two results can share one. Eight results should not be eight running clubs.',
     },
     { h3: 'Step 4: we explain' },
     {
@@ -1028,4 +1024,687 @@ export const notFound = {
   text: 'We could not find that page. It may have moved, or the group may have been removed.',
   home: 'Go to the home page',
   browse: 'Browse every group',
+};
+
+// ---------------------------------------------------------------- match results
+
+export const results = {
+  // How a trip is described in a sentence.
+  mode: { walk: 'on foot', septa: 'by SEPTA', drive: 'by car' },
+
+  // Short facts used inside the "why it fits" sentences.
+  bit: {
+    meets: 'meets {when}',
+    travelFrom: 'about {n} minutes from {home} {how}',
+    travel: 'about {n} minutes away {how}',
+    free: 'free',
+    low: 'low cost',
+    language: 'help in {language}',
+    wheelchair: 'wheelchair accessible',
+    follow: {
+      outdoors: 'outdoors',
+      indoors: 'indoors',
+      competitive: 'a little competitive',
+      casual: 'casual',
+      online: 'you can join online',
+      one_time: 'a one time thing',
+      ongoing: 'something you can keep coming back to',
+      kids: 'kids can come',
+    } as Record<string, string>,
+  },
+  /** When a group meets: "Saturdays in the morning". */
+  timeIn: {
+    morning: 'in the morning',
+    daytime: 'during the day',
+    afternoon: 'in the afternoon',
+    evening: 'in the evening',
+    night: 'late at night',
+    flexible: 'at flexible times',
+  } as Record<string, string>,
+  /** How people spend time together, as a phrase after "you like". */
+  formatPhrase: {
+    side_by_side: 'working side by side with other people',
+    conversation: 'talking things over in a small group',
+    team_play: 'playing as a team',
+    perform_make_together: 'making or performing together',
+    behind_the_scenes: 'helping behind the scenes',
+    lead_organize: 'leading and organizing',
+    learn_skill: 'learning a skill from someone who knows it',
+    one_off_event: 'one time events with no long promise',
+  } as Record<string, string>,
+  rolePhrase: {
+    hands_on: 'working with your hands',
+    figure_out: 'figuring things out',
+    create: 'making and creating',
+    help_teach: 'helping and teaching',
+    lead: 'taking the lead',
+    organize: 'planning and organizing',
+  } as Record<string, string>,
+
+  // Why a group fits, in the person's own terms.
+  why: {
+    starred: 'You starred {family}. This one is about {matched}.',
+    picked: 'You picked {family}. This one is about {matched}.',
+    tag: 'You chose {tag}, and this group is for it.',
+    sceneTag: 'You liked "{scene}". This is a place to do it: {matched}.',
+    sceneFamily: 'You liked "{scene}", and this group is part of {matched}.',
+    words: 'You wrote "{word}", and this group is about {matched}.',
+    edge: 'It is next door to {via}, which you picked. This one is about {matched}.',
+    motive: 'You said "{motive}" matters most to you, and this group is built for it.',
+    format: 'You like {format}, and that is how this group spends its time.',
+    role: 'You like {role}, and that is what you would do here.',
+    community: 'It is for {community}, one of the communities you said you would like to meet.',
+    practical: 'It fits what you asked for: {bits}.',
+    taste: 'It is like {name}, which you liked.',
+    newcomer: 'Newcomers are welcome here.',
+    newcomerHard: 'It is rated welcoming to newcomers, which helps when walking into a room of strangers is hard.',
+    regular: 'It meets on a steady schedule in one place, which is how friendships start.',
+    kind: 'A {kind} that fits what you told us.',
+    court: 'They accept court ordered hours.',
+    hoursForm: 'They sign service hour forms.',
+    kidsAlong: 'Kids can come along.',
+    student: 'This group is for students at your school.',
+  },
+
+  // Stretches: change exactly one thing, keep the rest familiar.
+  stretch: {
+    topic: 'This is a stretch: it is {to} instead of {from}.',
+    way: 'This is a stretch: you would {way} instead of what you usually do.',
+    crowd: 'This is a stretch: the crowd is new, with a mix of ages or neighborhoods.',
+    depth: 'This is a stretch: a bigger role, where you help run things.',
+    stays: 'Everything else stays familiar.',
+    stillTopic: 'It is still {topic}.',
+    stillWay: 'It is still the same way of taking part, with the same kind of crowd.',
+    stillBoth: 'It is still {topic}, with the same way of taking part.',
+    stillFits: 'It still fits what you asked for: {bits}.',
+    example: 'In this kind of group, that can look like: {example}',
+    future: 'It points toward "{future}". {because}',
+  },
+  edgeWhy: {
+    same_skill: 'It uses a lot of the same skills as {from}.',
+    same_crowd: 'It tends to draw the same kind of people as {from}.',
+    same_place: 'It happens in the same kinds of places as {from}.',
+    same_cause: 'It cares about the same cause as {from}.',
+    same_topic: 'It is close to {from} in subject.',
+  } as Record<string, string>,
+  wayPhrase: {
+    do_it: 'join in',
+    learn_it: 'learn it',
+    teach_it: 'teach it',
+    serve_it: 'help from the side',
+    lead_it: 'lead it',
+  } as Record<string, string>,
+
+  // The wildcard.
+  wild: {
+    lead: 'You would not pick this yourself, so it is our wildcard.',
+    connects: 'It connects to what you said: {clauses}.',
+    interest: 'you picked {via}, and this is next door to it',
+    motive: 'you want to {motive}',
+    motivePhrase: {
+      values: 'you want to do something that matters',
+      understanding: 'you want to learn something',
+      social: 'you want to meet people',
+      career: 'you want to build skills for work',
+      protective: 'you want a break from stress and a way to feel lighter',
+      enhancement: 'you want to feel good about what you have done',
+    } as Record<string, string>,
+    format: 'you like {format}',
+    role: 'you like {role}',
+    crowd: 'you want to meet people who are different from you',
+    future: 'it points toward "{future}"',
+    welcoming: 'very welcoming',
+    free: 'free',
+    cheap: 'low cost',
+    tryOnce: 'easy to try once',
+    traits: 'It is {traits}.',
+  },
+
+  // Things we could not check. Shown on the card.
+  notes: {
+    cost: 'Cost not listed.',
+    schedule: 'Days and times not listed.',
+    distance: 'Location not listed.',
+    access: 'Access not listed. Ask the group first.',
+    access_partial: 'Only partly wheelchair accessible. Ask the group first.',
+    school: 'Which school it is for is not listed.',
+    languages: 'Languages not listed.',
+    background: 'Background check rules not listed.',
+    frequency: 'How often it meets is not listed.',
+    hours_form: 'Ask if they sign service hour forms.',
+    kids: 'Ask if kids can come.',
+    residents: 'Meant for people who live nearby. Check that your block is covered.',
+    faith: 'Tradition not listed.',
+    newcomer: 'Not rated for newcomers yet.',
+  } as Record<string, string>,
+
+  firstStep: {
+    dropIn: 'You can just show up. Open the group page for the next date.',
+    signUp: 'Sign up first. The group page says how.',
+    generic: 'Open the group page for contact details and the next date.',
+  },
+};
+
+// ---------------------------------------------------------------- the match quiz
+
+export const quiz = {
+  loading: 'Getting the quiz ready...',
+  loadError: 'We could not load the quiz. Check your connection and try again.',
+  retry: 'Try again',
+  noscript: 'The match quiz needs JavaScript to run in your browser. You can still browse every group.',
+
+  back: 'Back',
+  next: 'Next',
+  skip: 'Skip',
+  skipLong: 'Skip this question',
+  notSure: 'Not sure',
+  done: 'Done',
+  startOver: 'Start over',
+  stepLabel: 'Question {n} of about {total}',
+  progressLabel: 'Quiz progress',
+  nothingPicked: 'Nothing picked yet',
+  pickedCount: '{n} picked',
+  saved: 'Your answers are saved on this device only.',
+  privacyLink: 'How we keep it private',
+  storageBlocked: 'Your browser is not letting this site save anything, so the quiz will start over if you close the page.',
+
+  resume: {
+    title: 'Welcome back',
+    text: 'You started this quiz before. Your answers are still on this device.',
+    continue: 'Pick up where I left off',
+    results: 'See my matches again',
+    restart: 'Start over',
+  },
+
+  lock: {
+    label: 'Lock this',
+    on: 'Locked: we will never show a group that breaks this.',
+    off: 'Not locked: we will prefer this, but may show others.',
+  },
+
+  start: {
+    title: 'What brings you here?',
+    help: 'Pick any that fit. There are no wrong reasons.',
+    options: {
+      explore: 'Just exploring',
+      hours: 'I need service hours for school',
+      court: 'I have court ordered community service',
+      newcomer: "I'm new to Philly",
+      student: "I'm a student",
+      kids: "I'm bringing my kids",
+      support: "I'm looking for a support group",
+    },
+    supportTitle: 'Support groups have their own calm page',
+    supportText: 'Crisis numbers come first there, and there is no quiz. You can still take the quiz for other things.',
+    supportPrivacy: 'Choosing this sends nothing anywhere.',
+    supportCta: 'Go to support groups',
+    go: "Let's go",
+  },
+
+  hours: {
+    title: 'Service hours for school',
+    help: 'Only groups that take your age are shown, and groups that sign hour forms come first.',
+    age: 'How old are you?',
+    age18: '18 or older',
+    need: 'How many hours do you need?',
+    needOther: 'Not sure',
+    form: 'Does someone at school need to sign a form?',
+    formYes: 'Yes, a signed form',
+    formNo: 'No form',
+    formUnsure: 'Not sure yet',
+    tip: 'Groups that are not sure about forms are still shown. Ask them before you start.',
+  },
+
+  court: {
+    title: 'Court ordered community service',
+    help: 'We show only groups that say, with a public source, that they accept court ordered hours. We never guess.',
+    need: 'How many hours do you need?',
+    restrictions: 'Is there anything you cannot do?',
+    noChildren: 'No work with children',
+    nothing: 'Nothing I can think of',
+    confirm: 'Always check with your probation officer or program before you start. Groups can change what they accept.',
+    guide: 'Read the plain guide to court ordered service',
+  },
+
+  kids: {
+    title: 'How old are your kids?',
+    help: 'Pick every age that fits. We show groups where kids can come along and the age rule works for the youngest.',
+    ages: { 0: 'Under 1', 1: '1 to 2', 3: '3 to 4', 5: '5 to 7', 8: '8 to 12', 13: '13 to 17' } as Record<number, string>,
+  },
+
+  newcomer: {
+    title: 'How long have you been in Philly?',
+    help: 'We will put groups that are good at welcoming new people first.',
+    options: { weeks: 'Just got here', months: 'A few months', year: 'About a year', years: 'Several years' },
+  },
+
+  student: {
+    title: 'Which school do you go to?',
+    help: 'Groups at your school join the list.',
+    other: 'Another school',
+    none: 'Pick a school',
+    label: 'School',
+  },
+
+  scenes: {
+    title: 'Pick the Saturday mornings that sound good.',
+    help: 'Tap any that you would enjoy. Skip the rest.',
+    moreTitle: 'Here are a few more.',
+    moreHelp: 'Tap any that sound good. Skip the rest.',
+    none: 'None of these',
+  },
+
+  moments: {
+    title: 'When did you last lose track of time?',
+    help: 'Tap any that fit.',
+    words: 'Anything else you love doing? Use your own words (optional).',
+    wordsHelp: 'For example: chess, murals, dogs.',
+  },
+
+  when: {
+    title: 'When are you free?',
+    help: 'Pick the days and the parts of the day.',
+    days: 'Days',
+    times: 'Parts of the day',
+    flexible: 'It changes week to week',
+    flexibleHelp: 'For shift work or a busy life. We will favor groups you can drop in on.',
+  },
+
+  often: {
+    title: 'How often can you come?',
+    help: 'We will not show anything that asks for more than this if you lock it.',
+    options: {
+      once: 'Just once to try',
+      monthly: 'About once a month',
+      weekly: 'About once a week',
+      any: 'As often as it takes',
+    },
+  },
+
+  far: {
+    title: 'How far will you go?',
+    help: 'We use this only to work out travel time. It stays on your device.',
+    mode: 'How do you get around?',
+    modes: { walk: 'I walk', septa: 'I take SEPTA', drive: 'I drive', anywhere: 'Anywhere is fine' },
+    minutes: 'Up to how many minutes?',
+    minutesLabel: '{n} minutes',
+    place: 'Where will you start from?',
+    hood: 'Neighborhood',
+    hoodPick: 'Pick a neighborhood',
+    zip: 'or ZIP code',
+    zipHelp: 'Five digits. We do not look up your address.',
+    zipBad: 'We do not know that ZIP code. Pick a neighborhood instead.',
+    estimate: 'Travel times are estimates from the middle of your neighborhood. Always check the route.',
+  },
+
+  budget: {
+    title: 'What can you spend?',
+    help: 'Many groups are free.',
+    options: { free: 'Free only', low: 'Free or low cost', any: 'I can pay if it is worth it' },
+  },
+
+  rulesA: {
+    title: 'Anything that rules things out?',
+    help: 'All of this is optional.',
+    age: 'Your age',
+    ageHelp: 'Some groups have age rules. If you skip this, we show groups for adults.',
+    bands: { '13': '13 to 15', '16': '16 or 17', '18': '18 to 24', '25': '25 to 34', '35': '35 to 54', '55': '55 to 64', '65': '65 or older' } as Record<string, string>,
+    wheelchair: 'I need a wheelchair accessible place',
+    languages: 'Languages you want help in',
+    languagesHelp: 'Pick any. Most groups use English.',
+  },
+
+  rulesB: {
+    title: 'A few more choices',
+    help: 'All of this is optional.',
+    privacy: 'This never leaves your device.',
+    faith: 'Faith groups',
+    faithOptions: { include: 'Include them', exclude: 'Leave them out', only: 'Only my tradition' },
+    tradition: 'Your tradition',
+    traditionPick: 'Pick one',
+    background: "I'd rather avoid roles that need a background check",
+    backgroundHelp: 'Some roles, like working with children, need one. Many do not.',
+  },
+
+  interests: {
+    title: 'What are you into?',
+    help: 'Pick any. You will choose your favorites next.',
+  },
+  stars: {
+    title: 'Star up to three you love.',
+    help: 'Only the ones you star open up to more specific interests.',
+    max: 'That is three. Tap a star to take one off.',
+    starLabel: 'Star {name}',
+  },
+  tags: {
+    title: 'What do you like most?',
+    help: 'Tap the ones that sound good (optional).',
+  },
+
+  motives: {
+    title: 'Which reason is MOST like you, and which is LEAST?',
+    title2: 'Now the same for the four that are left.',
+    help: 'There are no wrong reasons. Building a resume, needing hours or just getting out of the house are all good ones.',
+    most: 'Most like me',
+    least: 'Least like me',
+    pickBoth: 'Pick one most and one least.',
+  },
+
+  meet: {
+    title: 'Who would you like to meet?',
+    with: 'The people I meet are',
+    withOptions: { similar: 'A lot like me', different: 'Different from me', mix: 'A mix' },
+    age: 'About my age, or all ages?',
+    ageOptions: { same: 'About my age', all: 'All ages' },
+    communities: 'Communities you would like to find people from (optional)',
+    privacy: 'This never leaves your device.',
+  },
+
+  strangers: {
+    title: 'Walking into a room of strangers feels...',
+    options: { 1: 'Exciting', 2: 'Fine', 3: 'A little nervous', 4: 'Hard', 5: 'Really hard' } as Record<number, string>,
+    bring: "I'd rather bring someone with me",
+    size: 'What size group do you like?',
+    sizes: { small: 'Small, under 15', medium: 'Medium', large: 'Large', any: 'Any size' },
+  },
+
+  newness: {
+    title: 'Trying new things',
+    likes: "I like trying things I've never done.",
+    likesOptions: { 1: 'Not me', 2: 'Not much', 3: 'Sometimes', 4: 'Mostly', 5: 'Very me' } as Record<number, string>,
+    last: 'The last time you tried something totally new, how did it go?',
+    lastOptions: { great: 'Great', ok: 'Fine', hard: 'Hard', none: "I can't remember" },
+    gentle: 'If new things are hard, you can pick the Gentle setting on your results.',
+  },
+
+  future: {
+    title: 'A year from now, what would you love to be able to say?',
+    help: 'Pick up to two. We aim a few suggestions at them.',
+    max: 'That is two. Tap one to take it off.',
+  },
+
+  taste: {
+    title: 'Real groups: what do you think?',
+    help: 'Tap one for each. This teaches us your taste.',
+    progress: 'Group {n} of {total}',
+    into: 'Into it',
+    maybe: 'Maybe',
+    not: 'Not for me',
+    why: 'What was the main reason? (optional)',
+    whyReasons: {
+      far: 'Too far',
+      time: 'Wrong time',
+      not_my_thing: 'Not my thing',
+      intense: 'Too intense',
+      crowded: 'Too many people',
+      cost: 'Costs too much',
+    } as Record<string, string>,
+    noReason: 'No reason, next',
+    probe: 'A little different from what you picked',
+    loadingGroups: 'Finding real groups for you...',
+    none: 'We have no groups to show you in this step. Your results come next.',
+  },
+
+  follow: {
+    title: 'Just one more thing',
+    titlePlural: 'A couple more things',
+    questions: {
+      setting: { title: 'In the cold months, would you rather be...', options: { outdoors: 'Outdoors', indoors: 'Indoors', either: 'Either is fine' } },
+      competition: { title: 'Do you like it...', options: { casual: 'Casual and relaxed', competitive: 'A bit competitive', either: 'Either is fine' } },
+      online: { title: 'Is joining online okay?', options: { yes: 'Yes, online is fine', no: 'No, I want to be there' } },
+      cadence: { title: 'Do you want...', options: { one_time: 'One time events', ongoing: 'Something I can keep coming back to', either: 'Either is fine' } },
+      kids_along: { title: 'Do you want to bring kids along?', options: { yes: 'Yes, kids come too', no: 'No' } },
+    } as Record<string, { title: string; options: Record<string, string> }>,
+    working: 'Checking which questions matter...',
+  },
+
+  heard: {
+    title: "Here's what we heard",
+    help: 'Tap anything that is wrong to take it off. Then see your matches.',
+    removed: 'Removed. Tap to put it back.',
+    removeLabel: 'Remove: {text}',
+    restoreLabel: 'Put back: {text}',
+    change: 'Change my answers',
+    empty: 'You skipped everything, so we will show a mix of groups that are easy to try.',
+    go: 'Show my matches',
+    chips: {
+      hours: 'Service hours: {n} needed',
+      hoursForm: 'A signed form',
+      court: 'Court ordered service',
+      noChildren: 'No work with children',
+      kids: 'Bringing kids',
+      newcomer: 'New to Philly',
+      student: 'Student at {school}',
+      scenes: 'You liked {n} scenes',
+      starred: '{name}, starred',
+      picked: '{name}',
+      tag: '{name}',
+      words: 'In your words: {words}',
+      most: 'Most like you: {reason}',
+      least: 'Least like you: {reason}',
+      when: 'Free: {when}',
+      flexible: 'Free time changes week to week',
+      often: 'Comes: {how}',
+      far: 'Up to {n} minutes {how}',
+      anywhere: 'Anywhere is fine',
+      budget: { free: 'Free only', low: 'Free or low cost', any: '' },
+      age: 'Age {range}',
+      wheelchair: 'Wheelchair accessible',
+      languages: 'Help in {languages}',
+      faithExclude: 'No faith groups',
+      faithOnly: 'Only my tradition: {tradition}',
+      faithInclude: 'Faith groups are fine',
+      background: 'Avoid background checks',
+      meet: { similar: 'People like you', different: 'People different from you', mix: 'A mix of people' },
+      sameAge: 'About your age',
+      communities: '{n} communities',
+      strangers: { 1: 'Strangers feel exciting', 2: 'Strangers feel fine', 3: 'Strangers feel a little nervous', 4: 'Strangers feel hard', 5: 'Strangers feel really hard' } as Record<number, string>,
+      bring: 'You would rather bring someone',
+      size: { small: 'Small groups', medium: 'Medium groups', large: 'Large groups', any: '' } as Record<string, string>,
+      newness: { low: 'New things are hard', high: 'You like new things' },
+      future: 'Stretch toward: "{future}"',
+      taste: 'You reacted to {n} real groups',
+      follow: '{text}',
+      locked: 'locked',
+    },
+  },
+};
+
+// ---------------------------------------------------------------- the results page
+
+export const matches = {
+  title: 'Your matches',
+  intro: 'These groups fit what you told us, and each one says why. Nothing you answered leaves this device.',
+  loading: 'Finding your matches...',
+  loadError: 'We could not load the groups. Check your connection and try again.',
+  thinking: 'Working out your matches...',
+  updated: 'Updated. Showing {n} groups.',
+  updatedOne: 'Updated. Showing 1 group.',
+
+  dial: {
+    label: 'How adventurous do you feel?',
+    gentle: 'Gentle',
+    balanced: 'Balanced',
+    bold: 'Bold',
+    help: {
+      gentle: 'Mostly groups close to what you picked, with one small stretch.',
+      balanced: 'Mostly close fits, two small stretches and one wildcard.',
+      bold: 'More stretches, and one wildcard.',
+    },
+    gentleNote: 'New things can feel hard, so the Gentle setting may suit you.',
+    useGentle: 'Switch to Gentle',
+  },
+
+  kind: {
+    close: 'Close fit',
+    stretch: {
+      topic: 'One step sideways',
+      way: 'Same thing, new way in',
+      crowd: 'New crowd',
+      depth: 'Next rung',
+    } as Record<string, string>,
+    wildcard: 'Wildcard',
+  },
+
+  firstStep: 'Your first step',
+  why: 'Why it fits',
+  notes: 'Good to know',
+
+  travel: 'About {n} minutes {how}',
+
+  save: 'Save',
+  saved: 'Saved',
+  saveLabel: 'Save {name} to my list',
+  savedLabel: 'Saved: {name}. Tap to remove.',
+  plan: 'Plan it',
+  share: 'Send to a friend',
+  notForMe: 'Not for me',
+  actionsLabel: 'Actions for {name}',
+
+  notWhy: {
+    title: 'What was the main reason?',
+    far: 'Too far',
+    time: 'Wrong time',
+    not_my_thing: 'Not my thing',
+    intense: 'Too intense',
+    already: 'Already in it',
+    cancel: 'Never mind',
+  } as Record<string, string>,
+  replaced: 'Got it. We took {name} off and added another.',
+  removedOnly: 'Got it. We took {name} off. There was nothing else to add right now.',
+
+  more: 'Show me more',
+  moreCount: 'Show me more ({n} more fit)',
+  moreCountPlural: 'Show me more ({n} more fit)',
+  moreNone: 'That is everything that fits right now.',
+  moreHelp: 'More groups that fit, picked the same way.',
+
+  edit: 'Change my answers',
+  restart: 'Start over',
+  restartConfirm: 'Start over? This clears your quiz answers on this device.',
+  restartYes: 'Yes, start over',
+  browse: 'Browse every group instead',
+
+  few: {
+    title: 'Not many groups fit all of that',
+    textOne: 'Only one group fits everything you locked.',
+    text: 'Only {n} groups fit everything you locked.',
+    zero: 'No group fits everything you locked.',
+    blocking: 'These locked answers are ruling out the most groups:',
+    loosen: 'Loosen: {what}',
+    loosenHelp: 'Turns the lock into a wish. We will still prefer it.',
+    comesBack: '{n} groups',
+    comesBackOne: '1 group',
+    court: 'We do not have any group that says, with a public source, that it accepts court ordered hours yet. Ask your probation officer or program for approved places, and read our plain guide.',
+    courtLink: 'Read the court ordered service guide',
+    kids: 'No group in our list says kids can come along and fits the youngest age yet. You can loosen this to see groups that do not say, and ask them.',
+    hoursForm: 'No group in our list says it signs service hour forms. Loosen this to see groups that do not say, and ask them.',
+    nothing: 'Try browsing every group, or loosen a locked answer.',
+  },
+  blocker: {
+    budget: 'Your budget',
+    when: 'Your days and times',
+    often: 'How often you can come',
+    far: 'How far you will go',
+    wheelchair: 'Wheelchair access',
+    languages: 'Your languages',
+    background: 'Avoiding background checks',
+    path: 'Court ordered hours',
+    form: 'A signed hours form',
+    kids: 'Kids can come along',
+    newcomer: 'Welcoming to newcomers',
+    online: 'Not online only',
+  } as Record<string, string>,
+
+  rungTitle: 'Next steps',
+  noscript: 'The matches need JavaScript. You can still browse every group.',
+};
+
+// ---------------------------------------------------------------- plan it and send to a friend
+
+export const plan = {
+  button: 'Plan it',
+  title: 'Plan your first visit',
+  help: 'Pick a day and a time. We write it down and make a calendar file with reminders.',
+  date: 'Day',
+  time: 'Time',
+  past: 'Pick a day that has not happened yet.',
+  oddDay: 'This group usually meets on {days}. Check that this day works.',
+  sentenceLabel: 'Your plan',
+  sentence: '{when} at {time} I will go to {name}.',
+  noon: 'noon',
+  firstStep: 'First step: {step}',
+  icsTitle: 'Visit {name}',
+  icsFooter: 'Made with Find Your Jawn. Feeling unsure the first time is normal.',
+  reminderDay: 'Tomorrow: {name}',
+  reminderHours: 'In two hours: {name}',
+  download: 'Download the calendar file',
+  save: 'Save this plan',
+  saved: 'Saved on this device. When the day has passed, we will ask how it went.',
+  reminders: 'The file adds a reminder the day before and another two hours before.',
+  close: 'Close',
+  fileFailed: 'We could not make the calendar file in this browser. Your plan is still saved.',
+  upcoming: 'Planned for {when}',
+  mineTitle: 'Planned visits',
+  mineEmpty: 'Nothing planned right now.',
+  wentTitle: 'You went',
+  remove: 'Remove',
+  removeLabel: 'Remove the plan to visit {name}',
+};
+
+export const share = {
+  button: 'Send to a friend',
+  title: 'Send {name} to a friend',
+  help: 'The message has the link to the group page and nothing else. It never includes your answers.',
+  message: 'I found this group on Find Your Jawn: {name}. {url}',
+  shareText: '{name}, a group in Philadelphia on Find Your Jawn',
+  native: 'Share',
+  copy: 'Copy the message',
+  copied: 'Copied. Paste it into a message.',
+  copyFailed: 'Could not copy. Select the message above and copy it.',
+  sms: 'Send as a text',
+  messageLabel: 'Message to send',
+  close: 'Close',
+};
+
+// ---------------------------------------------------------------- check in (later visits)
+
+export const checkin = {
+  title: 'Did you go to {name}?',
+  planned: 'You planned to go on {when}.',
+  yes: 'Yes, I went',
+  notYet: 'Not yet',
+  dismiss: 'Dismiss',
+  dismissLabel: 'Dismiss this question about {name}',
+  how: 'How was it?',
+  outcomes: { loved: 'I liked it', okay: 'It was okay', not_for_me: 'Not for me' } as Record<string, string>,
+  thanks: {
+    loved: 'Glad to hear it.',
+    okay: 'Fair enough. Places and faces feel more familiar with every visit.',
+    not_for_me: 'That is useful to know. Not every group fits, and that is normal.',
+  } as Record<string, string>,
+  honest: 'It is worth going back a couple of times before you decide. Real friendships take many hours together, and that is normal.',
+  next: 'Your next step',
+  nextLoading: 'Finding ideas...',
+  nextMore: 'More like it',
+  nextBigger: 'A bigger role',
+  nextStretch: 'A stretch',
+  nextNone: 'Take the match quiz to get ideas for what to try next.',
+  nextQuiz: 'Take the match quiz',
+  nextBrowse: 'Browse groups like it',
+  whatHappened: 'What got in the way?',
+  obstacles: { time: 'Time', nerves: 'Nerves', cost: 'Cost', no_reply: 'I never heard back' } as Record<string, string>,
+  fix: {
+    time: 'Pick a new day. A plan with a date is much more likely to happen.',
+    nerves: 'Feeling unsure the first time is normal, and most groups are glad when someone new comes. Bring a friend, and read what a first visit is like.',
+    cost: 'Here are groups like it that cost less.',
+    no_reply: 'Some groups are slow to answer, or only answer on the day. Try a drop in group instead.',
+  } as Record<string, string>,
+  planAgain: 'Plan a new day',
+  inviteFriend: 'Invite a friend',
+  firstVisit: 'What a first visit is like',
+  similar: 'Groups like it',
+  none: 'We could not find similar groups right now.',
+  saved: 'Thanks. We saved your answer on this device.',
+  close: 'Close',
 };

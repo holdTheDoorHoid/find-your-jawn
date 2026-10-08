@@ -76,6 +76,14 @@ export function loadVocab(): Vocab {
   return vocabCache;
 }
 
+let rawVocabCache: unknown = null;
+
+/** vocab.json as it was written: every vocabulary file keyed by name. For the quiz configuration. */
+export function loadRawVocab(): unknown {
+  if (rawVocabCache === null) rawVocabCache = readJson(path.join(DATA_DIR, 'vocab.json')) ?? {};
+  return rawVocabCache;
+}
+
 let manifestCache: Manifest | null = null;
 
 export function loadManifest(): Manifest {

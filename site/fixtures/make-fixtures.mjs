@@ -9,6 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parse as parseYaml } from 'yaml';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -154,6 +155,14 @@ const vocab = {
     neighborhoods,
   },
 };
+
+// The quiz needs the whole of these files (scenes, interest graph, ways in, future selves, and the
+// full motive, format and role lists), so the sample vocabulary borrows them from data/vocab/ as they
+// are. Only the interest families stay a small subset, to match the made up groups below.
+const realVocab = path.resolve(here, '../../data/vocab');
+const readReal = (name) => parseYaml(fs.readFileSync(path.join(realVocab, `${name}.yaml`), 'utf8'));
+for (const name of ['scenes', 'future_selves', 'ways_in', 'motives', 'formats', 'roles']) vocab[name] = readReal(name);
+vocab.interests.edges = readReal('interests').edges;
 
 // ---------------------------------------------------------------- groups
 

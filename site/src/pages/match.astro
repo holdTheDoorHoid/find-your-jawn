@@ -1,7 +1,12 @@
 ---
+import QuizApp from '../islands/quiz/QuizApp';
+import CheckIn from '../components/CheckIn.astro';
 import Base from '../layouts/Base.astro';
+import { loadGroups } from '../lib/data';
 import { withBase } from '../lib/site';
-import { match as t, paths } from '../strings/en';
+import { match as t, paths, quiz } from '../strings/en';
+
+const { built } = loadGroups();
 ---
 
 <Base title={t.title} description={t.metaDescription} path="match/">
@@ -9,13 +14,15 @@ import { match as t, paths } from '../strings/en';
     <div class="wrap">
       <h1>{t.heading}</h1>
       <p class="lede">{t.lede}</p>
+      <p class="help">{t.privateLine}</p>
 
-      <!-- QUIZ MOUNT. The quiz island (src/islands/quiz/) replaces the placeholder below with
-           <QuizApp client:only="preact" ... />. See src/islands/quiz/README.md. -->
+      <CheckIn />
+
       <section id="quiz-root" aria-label={t.mountLabel}>
-        <ul>
-          {t.points.map((p) => <li>{p}</li>)}
-        </ul>
+        <QuizApp client:only="preact" dataVersion={built}>
+          <p slot="fallback" role="status">{quiz.loading}</p>
+        </QuizApp>
+        <noscript><p class="callout">{t.noscript}</p></noscript>
       </section>
 
       <h2>{t.meanwhile}</h2>
