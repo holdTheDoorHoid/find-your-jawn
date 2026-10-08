@@ -11,8 +11,9 @@ ein: null
 summary: A Latino-based nonprofit in North Philadelphia that offers health and behavioral health care,
   foster care and adoption, family and children's services, early childhood education, and community and
   economic development.
-what_you_do: Ask the main office about the program you need, or a referral. The site does not describe
-  volunteer steps.
+what_you_do: Call the main office about the program you need, such as early childhood, foster care, or
+  behavioral health. Volunteers can fill out an interest form for events such as the Sugar Cane Festival,
+  the toy drive, or clean-up days.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -28,6 +29,7 @@ formats:
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - families
 bridging: null
@@ -42,11 +44,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Program hours are not listed on the website. Call the office for times.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The clinics at Rising Sun and Westmoreland are open Monday to Friday, 7 am to 5 pm, since June
+    22, 2026. Office hours are not posted. Early childhood programs run half day or full day, with no
+    times listed.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: Main office
   address: 1900 N. 9th Street, Suite 102
@@ -57,16 +68,36 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Early childhood center (Marshall)
+  address: 2318 N. Marshall Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Early childhood center (Rising Stars)
+  address: 4221 N. 2nd Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Costs vary by program and are not listed on the website.
+  text: Head Start preschool is free for income-eligible families. Other program costs are not listed.
+    Drug and alcohol treatment is listed as covered for people without insurance.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site describes its early childhood and mental health services as bilingual but does not name
+    the languages. Accessibility is not stated on the pages we read.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,15 +106,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the main line at 267-296-7200 and ask about the program you need, such as early childhood
-    or family services.
-  drop_in: null
-  sign_up_needed: null
+  how: Call 267-296-7200 or email info@apmphila.org and ask for the program you need. For early childhood,
+    call 267-296-7357 or fill out the online enrollment form.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: A public phone line and office address are listed for intake. Eligibility rules are not on the
-    site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: There is a public phone line, office address, and interest form, but eligibility rules differ
+    by program and are not all posted.
+  what_to_expect: 'These are services for clients, so a first step is a phone call or an online form rather
+    than a walk-in visit. Eligibility depends on the program: income for Head Start and Pre-K Counts,
+    or insurance for mental health and treatment. The volunteer form is an interest form, so expect a
+    follow-up call rather than an immediate placement.'
+  first_visit_tips:
+  - Have household income and insurance details ready when you call
+  - Ask which languages staff speak before you visit
+  - Expect a follow-up after you fill out the volunteer interest form
 contacts:
   website: https://apmphila.org
   email: info@apmphila.org
@@ -140,7 +177,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://apmphila.org/get-involved/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+  - first_step
+- url: https://apmphila.org/our-services/family/early-childhood-education/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - access
+  - locations
+  - schedule
+- url: https://apmphila.org/our-services/health/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - schedule
+  - contacts
+  - access
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

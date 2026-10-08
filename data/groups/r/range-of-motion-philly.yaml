@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: A studio in Center City with martial arts, parkour, dance and music classes for kids, teens and
   adults, plus school break camps and a summer camp.
-what_you_do: Join an after-school or summer class, try an adult martial arts or street dance class, or
-  email for a free trial martial arts lesson.
+what_you_do: Join an after-school or school break class for kids, or start adult martial arts after a
+  one on one consultation. Email the studio to set up the consultation.
 kind: program
 categories:
 - running-cycling-fitness
@@ -23,7 +23,10 @@ formats:
 - team_play
 roles:
 - hands_on
-crowd: []
+crowd:
+- kids
+- teens
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -35,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: After-school classes during the school year, school closing camps, a summer camp, and adult classes.
-    The full class schedule is on the site.
+  text: Adult martial arts and dance classes run through the year. After-school classes run during the
+    school year, with school break camps and a summer camp.
   days: []
   times: []
   recurring: true
@@ -54,8 +57,10 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: An intro month is listed at $25. Early registration discounts are offered on the site.
-commitment: null
+  text: Adult memberships are paid monthly, and the site lists several prices, roughly $110 to $195 a
+    month depending on classes and discounts. Youth after-school registration is $100 per child, plus
+    monthly fees. Confirm current prices with the studio before you join.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -66,17 +71,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email Rangeofmotion@gmail.com for a free trial martial arts lesson, or register for an intro month
-    through the Register Today link
+  how: Email Rangeofmotion@gmail.com to set up a one on one consultation for adult martial arts. For kids,
+    use the early registration form for after-school or class programs.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The site names an intro month and a free trial lesson for newcomers and says how to start.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Adult martial arts requires a one on one consultation and a paid first month before you can join,
+    and the site lists no drop in option. Youth programs need a registration fee and forms before the
+    first class.
+  what_to_expect: Adult martial arts classes last about 1 to 2 hours and mix bag work, pad and mitt drills,
+    and partner exchanges, with strength and conditioning included. The first step is a one on one consultation,
+    where you can ask about your level. A first month of membership is charged after that.
+  first_visit_tips:
+  - Book the one on one consultation before you come, and ask about your level then.
+  - Ask the studio what to wear and where to arrive, since the site does not say.
+  - Plan for a 1 to 2 hour class; mobility and drilling sessions last one hour.
+  - 'Read the cancellation terms before you pay: cancelling takes effect 30 days after you give notice,
+    and a fee applies inside that window.'
 contacts:
   website: https://romcommunity.com/
   email: Rangeofmotion@gmail.com
@@ -106,7 +120,20 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.romcommunity.com/martial-arts
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - cost
+- url: https://www.romcommunity.com/rates-registration
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

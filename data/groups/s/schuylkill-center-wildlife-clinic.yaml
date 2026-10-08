@@ -6,13 +6,17 @@ leads: []
 ein: null
 summary: A nature center in Roxborough with woods, fields, and trails. Volunteers help with its yearly
   Winter Bird Census and with seasonal work days.
-what_you_do: Count birds during the Winter Bird Census, or join a volunteer day such as the Greenhouse
-  Decorators event.
+what_you_do: Count birds on the yearly Winter Bird Census, plant trees or native plants on volunteer days,
+  join monthly restoration workdays, or volunteer at the Wildlife Clinic.
 kind: nonprofit
 categories:
 - nature-environment
+- animals
 interests:
 - citizen_science
+- habitat_restoration
+- tree_tending
+- wildlife_rehab
 motives:
 - values
 - understanding
@@ -34,8 +38,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Clinic support volunteers work two 4-hour shifts a month; animal care volunteers commit to a weekly
-    4-hour shift; training sessions are offered a few times a year
+  text: Restoration workdays run monthly. Wildlife Clinic support volunteers work two 4 hour shifts a
+    month, and animal care volunteers commit to one 4 hour shift a week. Volunteer training is offered
+    a few times a year.
   days: []
   times:
   - morning
@@ -43,8 +48,17 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Schuylkill Center, Roxborough
+- label: Schuylkill Center, Visitor Center
   address: 8480 Hagy's Mill Road
+  neighborhood: null
+  planning_district: null
+  zip: '19128'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Wildlife Clinic
+  address: 304 Port Royal Avenue
   neighborhood: null
   planning_district: null
   zip: '19128'
@@ -55,7 +69,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: The Winter Bird Census is free
+  text: Volunteering and the Winter Bird Census are free.
 commitment: one_off
 group_size: null
 access:
@@ -65,28 +79,41 @@ access:
 requirements:
   act153_clearances: null
   background_check: null
-  court_ordered_ok: unknown
+  court_ordered_ok: 'no'
   service_hours_letter: unknown
   kids_ok: false
   gear: null
 first_step:
-  how: Use the Sign Up link on the event page, or call 215-482-7300 to ask about volunteer days
+  how: For event days such as the Winter Bird Census or a planting day, use the Sign Up link on the event
+    page. For the Wildlife Clinic, apply online, attend an information session, sign the volunteer agreement,
+    and finish the online ethics and safety courses before a first shift.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The Winter Bird Census is for birders of any experience level and includes a sign-up link
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Winter Bird Census page says birders of any skill level are welcome, no experience is needed,
+    and it has a sign up link. Clinic shifts need an application and training first, so that route rates
+    lower.
+  what_to_expect: Event days last a few hours and are free, with hands on tasks such as planting, decorating
+    the greenhouse, or counting birds by sight and sound. Wildlife Clinic volunteers go through an application,
+    an information session, a waiver and online training before their first shift. Food and drinks are
+    provided on the Winter Bird Census morning.
+  first_visit_tips:
+  - Sign up through the event link ahead of time, since the events list does not show how to register.
+  - Bring a donation if you like; the clinic suggests paper towels, cotton balls, trash bags, or dish
+    soap.
+  - 'Check the age rules first: clinic support starts at 16 and animal care at 18, and group workdays
+    need one adult for every 10 to 12 children.'
+  - Ask the Center about parking and transit when you call, since the site does not list them.
 contacts:
   website: https://schuylkillcenter.org
   email: null
   phone: 215-482-7300
   contact_name: null
   social: []
-  calendar_feed: null
+  calendar_feed: webcal://schuylkillcenter.org/?post_type=tribe_events&ical=1&eventDisplay=list
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://schuylkillcenter.org
+sign_of_life_url: https://schuylkillcenter.org/events/
 sources:
 - url: https://schuylkillcenter.org/?p=279962
   seen: '2026-10-08'
@@ -115,7 +142,25 @@ sources:
   - cost
   - audience
   - first_step
-research_tier: 1
+  - what_to_expect
+  - first_visit_tips
+- url: https://schuylkillcenter.org/events/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - contacts.calendar_feed
+- url: https://schuylkillcenter.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - audience.min_age
+  - schedule
+  - locations
+  - contacts.phone
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -34,8 +34,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Every other month on a Wednesday evening, 6:30 to 9 pm. Listed dates were June 3, 2026 and July
-    29, 2026.
+  text: Every other month on a Wednesday evening, 6:30 to 9 pm.
   days:
   - wed
   times:
@@ -70,18 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: 'RSVP to Christine Pickup if you can, or just show up. General church line: 215-389-1513 or info@old-swedes.org'
+  how: Just show up on a meal night, or call the church office at 215-389-1513 or email info@old-swedes.org
+    to RSVP if you can
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The event page invites people to just show up and gives a way to RSVP
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The event page invites people to just show up and says an RSVP is optional, with a named contact
+    and general church line.
+  what_to_expect: Volunteers cook and get the meal ready in the church kitchen on a weeknight evening,
+    from 6:30 to 9 pm. The meal supports the St. Gabriel's congregation in North Philadelphia, and the
+    page does not list a cost to take part.
+  first_visit_tips:
+  - Tell the church office you are coming if you can, so someone knows to expect you
+  - Plan for an evening trip, since the page does not list parking or transit
+  - Ask what to wear or bring, because the page does not say
 contacts:
   website: https://www.old-swedes.org/
   email: info@old-swedes.org
   phone: 215-389-1513
-  contact_name: null
+  contact_name: Christine Pickup
   social: []
   calendar_feed: null
 status: active
@@ -96,7 +102,15 @@ sources:
   - first_step
   - status
   - locations
-research_tier: 1
+  - what_to_expect
+  - cost
+- url: https://www.old-swedes.org/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

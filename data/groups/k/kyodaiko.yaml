@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: A community taiko drumming group that teaches classes to beginners and experienced players and
   performs at festivals and fundraisers.
-what_you_do: Take a beginner or experienced taiko class, come to public performances, or book the group
-  for a festival or event. The site lists no volunteer roles.
+what_you_do: Take the beginner Fundamentals class, which needs no experience, or join the intermediate
+  class. You can also come to public performances or book a taiko taster workshop.
 kind: club
 categories:
 - music
@@ -24,26 +24,30 @@ formats:
 roles:
 - hands_on
 crowd:
-- all_ages
+- teens
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 12
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Classes are on the classes page (The Fundamentals class returns in September 2026); performing
-    at the Barnes Art Ball on October 16, 2026
-  days: []
-  times: []
+  text: Fundamentals beginner class meets Thursdays, 7:30 to 9 pm. Intermediate class meets Mondays, 7:30
+    to 9 pm. Taiko Taster workshops run a few times a year, usually in summer and around the holidays.
+  days:
+  - mon
+  - thu
+  times:
+  - evening
   recurring: true
   season: year_round
 locations:
-- label: Address on contact page (practice space not confirmed)
+- label: Practice space (not confirmed on the site)
   address: 3901 Conshohocken Ave
   neighborhood: null
   planning_district: null
@@ -55,7 +59,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Class fees are on the classes page, not read
+  text: Fees are not listed on the classes page. Ask the group by email.
 commitment: weekly
 group_size: null
 access:
@@ -70,15 +74,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email kyodaiko.info@gmail.com to ask about the next Fundamentals class, which the site says is
-    returning
-  drop_in: null
-  sign_up_needed: null
+  how: Email kyodaiko.info@gmail.com to ask about the next Fundamentals class, which needs no prior experience
+    and provides all equipment
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site offers beginner classes, says it welcomes new members, and points to a classes page
-    to start
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The classes page says no experience is needed and all equipment is provided, and the group welcomes
+    new members, but joining goes through an email to the teacher rather than a drop-in.
+  what_to_expect: The Fundamentals class runs 90 minutes on Thursday evenings and provides all the drums
+    and equipment. Ages 12 and up may join, and younger children need a parent supervising. If you want
+    a shorter try first, the taiko taster is a two hour hands-on workshop.
+  first_visit_tips:
+  - Email before you come to confirm the class is running and where it meets
+  - Ask about fees before you go, since the classes page does not list them
+  - Try a taiko taster workshop first if you want a short hands-on start
 contacts:
   website: http://kyodaiko.com
   email: kyodaiko.info@gmail.com
@@ -105,7 +114,18 @@ sources:
   - contacts
   - status
   - locations
-research_tier: 1
+- url: http://kyodaiko.com/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - requirements
+  - audience
+  - what_to_expect
+  - cost
+  - what_you_do
+  - crowd
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

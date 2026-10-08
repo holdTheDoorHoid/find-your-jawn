@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A Philadelphia tenant group that teaches renters their rights, runs eviction and repair clinics,
   and helps tenants form tenant unions in their buildings. It also staffs help lines for renters.
-what_you_do: Attend a tenant rights workshop or clinic, call for counseling, or join the Network as a
-  renter who organizes with neighbors.
+what_you_do: Sign up for a free one-hour tenant rights webinar, in person or on Zoom, call the hotline
+  for counseling, attend a repair or eviction defense clinic, or join the Network as a renter who organizes
+  with neighbors.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -33,11 +34,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Free tenant rights webinars run several times a week, Monday to Saturday, in person or on Zoom.
+    Sign up in advance for a time that works for you.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Office
   address: 100 South Broad Street, Suite 800
@@ -51,8 +62,8 @@ locations:
 online_ok: true
 cost:
   level: low
-  text: Counseling and hotline help are offered free to tenants. Landlord inspections and background checks
-    cost a fee.
+  text: The webinars and hotline counseling are free. Landlord inspections and background checks cost
+    a fee.
 commitment: drop_in
 group_size: null
 access:
@@ -67,14 +78,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 267-635-4100 and press 3 for hotline help, or use the Join the Network link on the website
+  how: Register for a webinar by calling 267-635-4130 or using the Zoom registration link on the webinars
+    page. For urgent help, call the hotline at 267-635-4100 and press 3.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: 'The group explicitly serves tenants with no experience and says how to start: a hotline, workshops,
-    and a join link.'
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The webinars are designed to educate tenants, each one ends with questions to an attorney or
+    housing counselor, and the site gives a phone line and a join page with clear steps.
+  what_to_expect: A webinar lasts about one hour, in person or on Zoom, and covers tenant rights in rental
+    housing. It ends with a question and answer period with an attorney or housing counselor. The sessions
+    give general information, not legal advice.
+  first_visit_tips:
+  - Register ahead by phone or online
+  - Write down your question about your own lease or repair issue for the question period
+  - If you do not have internet access, call 267-635-4130 and staff will sign you up
 contacts:
   website: https://rturn.net
   email: null
@@ -98,7 +115,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://rturn.net/landlord-tenant-webinars/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - audience
+  - commitment
+- url: https://rturn.net/register/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

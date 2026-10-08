@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A recreational adult kickball league. Teams play on Sunday afternoons in spring and early summer
   at Starr Garden on Lombard Street.
-what_you_do: Register for the season, get placed on a team, and play Sunday games with a playoff session
-  at the end.
+what_you_do: Register for the season, get placed on a team or as a free agent, and play Sunday games with
+  a playoff session at the end.
 kind: program
 categories:
 - sports-teams
@@ -24,15 +24,15 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 21
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Sundays, 2 to 6 pm. The 2026 season ran April 12 to July 26, with playoffs starting July 26. The
-    2027 season is not posted yet.
+  text: Sunday games from 2 to 6 pm in spring and early summer, with a playoff session at the end of the
+    season. The next season is not posted yet.
   days:
   - sun
   times:
@@ -52,8 +52,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: The site says all fees go back into the league but does not list an amount. Older listings gave
-    $36 per person (Philadelphia Magazine guide, date not shown) and $75 (Inquirer, December 2022).
+  text: The league does not list a fee on its site, and says all fees go back into the league. Confirm
+    the current price on the registration page before you sign up.
 commitment: seasonal
 group_size: null
 access:
@@ -66,15 +66,27 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
-  gear: null
+  gear: Plastic cleats only, since metal cleats are not allowed. The league provides the ball, and gear
+    that gives an advantage, such as receiving gloves or steel toes, is not allowed.
 first_step:
-  how: Register through the league's Eventbrite page for the current season
+  how: Register for the season through the league's registration page. Choose the free agent option if
+    you do not have a team, and sign the liability waiver before you play.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to the public with a public registration page; no newcomer program stated
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The 2026 registration page recommends a no-cost exhibition game for new players, regardless of
+    experience, with rules, kicking basics and a short scrimmage, and it offers a free agent option for
+    people without a team.
+  what_to_expect: Games run on Sundays from 2 to 6 pm on the Starr Garden field, with up to 10 players
+    on the field and substitutes allowed for up to half a regular season roster. Each team needs a mix
+    of players, and a team that cannot field at least eight players forfeits. Rain and storm calls are
+    made up to an hour before game time, and games can be rescheduled for poor air quality.
+  first_visit_tips:
+  - Arrive on time, because a player who is more than 10 minutes late can leave the team short or cause
+    a forfeit.
+  - Wear plastic cleats only; the league provides the ball.
+  - Sign the liability waiver after you register, before you play.
+  - Check the league site for weather and heat calls before you travel.
 contacts:
   website: http://phillykickball.net/
   email: phillykickball@gmail.com
@@ -96,7 +108,21 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - cost
+- url: http://phillykickball.net/official-rules
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - audience.min_age
+  - first_visit_tips
+  - what_to_expect
+- url: http://phillykickball.net/2026-registration
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - newcomer_friendliness
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

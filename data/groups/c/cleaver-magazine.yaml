@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: An independent online literary magazine, published quarterly since 2013, that also runs writing
   classes and needs volunteer reviewers, editors and interns.
-what_you_do: Take a craft or business of writing class, volunteer as a reviewer, editor or intern, or
-  send in writing through its online submissions portal.
+what_you_do: Take a live online writing class, volunteer as a reviewer, editor or intern, or send in writing
+  through its online submissions portal.
 kind: nonprofit
 categories:
 - books-writing
@@ -29,17 +29,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Live online classes run on set dates and times, most about two hours. Some classes are 90 minutes.
   days: []
   times: []
   recurring: null
   season: null
 locations: []
-online_ok: null
+online_ok: true
 cost:
-  level: free
-  text: Free quarterly subscription. Class prices are not in the text read.
-commitment: null
+  level: low
+  text: The quarterly magazine is free to subscribe to. Most classes cost $60, one bundle costs $100,
+    and some sessions are pay what you want.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -53,14 +54,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Subscribe to the free quarterly issue on the Subscribe page, or sign up for a class through the
-    Classes page
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: Classes are offered at every experience level and the site lists how to sign up
-  what_to_expect: null
-  first_visit_tips: []
+  how: Pick a live class on the Classes page and register through its link, or subscribe to the free quarterly
+    issue first
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Classes are open to writers of all genres and experience levels and can be booked online, but
+    some expect a draft you bring to class, and each class has a seat limit
+  what_to_expect: Classes are live on Zoom with a set date and time, usually about two hours. Seats are
+    limited, from 4 to 25 people depending on the class. Some classes ask you to bring a short draft of
+    up to 1,000 words, and some sessions are not recorded.
+  first_visit_tips:
+  - Read the class description to see whether you need to bring a draft
+  - Register early, since small classes fill up
 contacts:
   website: http://www.cleavermagazine.com
   email: null
@@ -85,8 +91,19 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: high
+- url: https://www.cleavermagazine.com/classes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://www.cleavermagazine.com/opportunities/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

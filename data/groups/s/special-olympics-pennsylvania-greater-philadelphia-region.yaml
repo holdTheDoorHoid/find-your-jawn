@@ -39,8 +39,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sports and training run on schedules that vary by sport and location. The state site has a sport
-    finder for nearby options.
+  text: Sports and training run on schedules that vary by sport and location. Use the sport finder to
+    find one near you. Volunteers can ask questions on a monthly online info call on the fourth Wednesday,
+    6:30 to 7:30 pm.
   days: []
   times: []
   recurring: true
@@ -59,7 +60,7 @@ online_ok: null
 cost:
   level: free
   text: Athletic training and competitions are at no cost to athletes, per the state site.
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -74,15 +75,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Read the athlete requirements, find a sport near you, or send a message through the contact page.
-    The state team says it replies within two business days.
-  drop_in: null
-  sign_up_needed: null
+  how: 'Athletes: create an athlete profile on the state portal and finish the health screening. Volunteers:
+    start through the volunteer opportunities page and come to the monthly info call first.'
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to athletes from age 2 and to volunteers, with a monthly volunteer info call or webinar,
-    though the site does not describe a beginner day.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Athletes and volunteers both have a clear way in, including a no-pressure monthly info call,
+    but the site describes no beginner day, and athletes need a formal identification of eligibility first.
+  what_to_expect: Staff hold a monthly online info call on the fourth Wednesday, 6:30 to 7:30 pm, to answer
+    questions about volunteer roles. Event volunteers help at one-day or multi-day competitions with scorekeeping,
+    awards, and setup or cleanup, for about 2 to 8 hours on event day only. Athletes register on the state
+    portal, complete a short health screening, and train at no cost.
+  first_visit_tips:
+  - Join the monthly info call first; it is a question session, not a sign up.
+  - Athletes need a formal identification of eligibility from an agency or professional before they register.
+  - Every volunteer needs volunteer registration; local program and some coaching roles also need training
+    and a background check.
+  - Call 610-630-9450 or use the contact page; the state team says it replies within two business days.
 contacts:
   website: https://specialolympicspa.org/
   email: null
@@ -103,14 +112,29 @@ sources:
   - requirements
   - first_step
   - status
+  - contacts
 - url: https://specialolympicspa.org/meet-our-team/
   seen: '2026-10-08'
   fields:
   - locations
   - contacts
   - audience
-research_tier: 1
-confidence: medium
+- url: https://specialolympicspa.org/requirements
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - audience.min_age
+- url: https://specialolympicspa.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - schedule
+  - what_to_expect
+  - requirements
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

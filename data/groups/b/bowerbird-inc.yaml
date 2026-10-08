@@ -8,8 +8,8 @@ leads:
 ein: '562629725'
 summary: A Philadelphia nonprofit that presents music, dance and film, and runs synth classes and a free
   community synth studio.
-what_you_do: Attend concerts and events, take synth classes, or use the free Community Synth Studio at
-  AMLA and Esperanza. Support Bowerbird through its giving page.
+what_you_do: Attend concerts and events, take synth classes, or book time at the free Community Synth
+  Studio at AMLA and Esperanza. Support Bowerbird through its giving page.
 kind: nonprofit
 categories:
 - music
@@ -37,14 +37,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concerts and classes on listed dates in October and November 2026, and a free Community Synth
-    Studio from October 21 to December 17, 2026
-  days: []
-  times: []
-  recurring: false
+  text: The studio runs Oct 21 to Dec 17, 2026, Tuesday and Thursday 3 to 6 pm and Wednesday 3 to 9 pm,
+    and is closed Thanksgiving week. Concerts run Oct 16 to 24, 2026. The Intro to Synths class is Oct
+    20, and Synth Foundations starts Oct 27.
+  days:
+  - tue
+  - wed
+  - thu
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: fall
 locations:
-- label: Office (listed address; events are at other venues)
+- label: Community Synth Studio (AMLA Studios at Esperanza)
+  address: 4261 N. 5th St., 1st Floor (lower level)
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: Free parking in the Esperanza lot on Bristol Street. Listed SEPTA routes are 47, 53, and 4.
+- label: Office (events are at other venues)
   address: 252 S Saint Bernard St
   neighborhood: null
   planning_district: null
@@ -56,32 +71,42 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Studio time is listed as free. Class and concert fees are not stated on the page we read
-commitment: drop_in
+  text: Studio time is free for all experience levels. Class and concert fees are not stated on the pages
+    we read.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Accessibility is not stated. The studio entrance is on Bristol Street through Esperanza's main
+    doors.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Studio users sign a user agreement, waiver, and code of conduct after signing up. Equipment is
+    provided.
 first_step:
-  how: Go to the Community Synth Studio at AMLA or Esperanza during its run (October 21 to December 17,
-    2026), or sign up for the Intro to Synths class on October 20
-  drop_in: true
-  sign_up_needed: null
+  how: Attend a studio orientation or the Intro to Synths class on Oct 20, then email SoundLab@bowerbird.org
+    to book studio time at least one week ahead.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The studio says all experience levels are welcome, and the classes are open to the public
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'The studio says all experience levels are welcome and explains how to start: an orientation,
+    an intro class, or the first 30 minutes of a first session.'
+  what_to_expect: Studio time must be booked, in half-hour blocks up to two hours, and a studio manager
+    is on site during open hours. After you sign up you receive an FAQ and sign a user agreement, waiver,
+    and code of conduct. The studio has a range of synths, modular systems, a theremin, and small starter
+    kits to try.
+  first_visit_tips:
+  - Email SoundLab@bowerbird.org at least a week ahead with a preferred time and a backup
+  - Say whether you have done an orientation or an intro class
+  - Park in the free Esperanza lot on Bristol Street, or take SEPTA routes 47, 53, or 4
 contacts:
   website: http://www.bowerbird.org
-  email: null
+  email: SoundLab@bowerbird.org
   phone: null
   contact_name: Dustin Hurt
   social:
@@ -119,7 +144,21 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: http://www.bowerbird.org/community-synth-studio/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - commitment
+  - first_step
+  - requirements
+  - access
+  - contacts
+  - first_visit_tips
+  - newcomer_friendliness
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

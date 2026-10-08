@@ -15,8 +15,10 @@ what_you_do: Staff the front desk, table at events, give tours, help with fundra
 kind: nonprofit
 categories:
 - advocacy-rights
+- social-meetups
 interests:
 - womens_lgbtq_rights
+- lgbtq_social
 motives:
 - values
 - social
@@ -41,11 +43,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The newsletter goes out every two weeks. The page does not list meeting days or times.
+  text: 'Community Mondays run monthly on Monday evenings, 6 to 8 pm: game night, an open mic, and a craft
+    night. Volunteer shifts are weekly, with monthly planning meetings.'
   days:
+  - mon
   - tue
   times:
   - morning
+  - evening
   recurring: true
   season: null
 locations:
@@ -58,10 +63,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: St. Luke's and the Epiphany (game night and craft night)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: Free to volunteer
+  text: Volunteering is free. The Community Mondays page does not list a fee, so check before you come.
 commitment: one_off
 group_size: null
 access:
@@ -76,15 +90,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Add your name to the Volunteer Mailing List for one-time roles, or email the committee you want
-    to join
+  how: Come to Community Mondays game night on the first Monday at St. Luke's and the Epiphany, or add
+    your name to the Volunteer Mailing List for one-time roles.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: One-time volunteer roles are open to anyone who signs up for the mailing list, and the page explains
-    how to join regular shifts.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Game night says all are welcomed and is described as low stakes, and the volunteer page explains
+    how to sign up for one-time roles and regular shifts.
+  what_to_expect: 'Community Mondays are evening events for LGBTQIA+ adults 18 and up: board and card
+    games at game night, an open mic for LGBTQIA+ performers, and a monthly craft night. The page does
+    not say how many people come or whether you need to register, so plan on the 6 to 8 pm window.'
+  first_visit_tips:
+  - Call 215-732-2220 to confirm the date and whether you need to sign up.
+  - Bring a game of your own if you want to play one in particular; bringing your own games is allowed.
+  - Go to the volunteer page if you want to help; one-time roles need only a mailing list sign-up.
 contacts:
   website: https://www.waygay.org/volunteer
   email: info@waygay.org
@@ -119,6 +138,8 @@ sources:
   - cost
   - first_step
   - status
+  - last_sign_of_life
+  - locations
 - url: https://www.waygay.org/elders
   seen: '2026-10-08'
   fields:
@@ -155,7 +176,8 @@ sources:
   - contacts
   - commitment
   - status
-research_tier: 1
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

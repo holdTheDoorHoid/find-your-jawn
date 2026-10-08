@@ -48,9 +48,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: No cost shown on the site
-commitment: null
+  level: free
+  text: Rides are free and voluntary, and no waiver is required.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -62,16 +62,25 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: A front white headlight and a rear red reflector or tail light after dark, a bike kept in good
+    repair, and a basic repair kit with a spare tube. Bring water in summer and warm layers in winter.
 first_step:
-  how: Sign up for the email list, then join a posted Easy ride
+  how: Pick a posted ride on wednightrides.org, check its start point and route, and show up with lights
+    and a bike in good shape.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Easy rides are labeled and posted in advance, and the group invites sign ups for updates. There
-    is no separate newcomer session.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The site says everyone is welcome regardless of experience, and every ride is posted in advance
+    with a start point and route, so a newcomer knows where to show up.
+  what_to_expect: A ride is a group trip through Philadelphia on a posted route, with rides running roughly
+    6 to 9.5 miles, some of them hilly. Each ride post names a start, a route, and an end spot, often
+    a park or a brewery. Riders are asked to follow traffic rules, stop at red lights, and look out for
+    pedestrians.
+  first_visit_tips:
+  - Read the ride post for the start point and route before you go, since they change from ride to ride.
+  - After dark, bring a white front light and a red rear light or reflector, which Pennsylvania law requires.
+  - Bring a basic repair kit, water in summer, and warm layers in winter.
+  - Arrive sober, and stay to the right and out of the way of traffic.
 contacts:
   website: https://wednightrides.org/
   email: null
@@ -94,7 +103,15 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://wednightrides.org/how-we-ride/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

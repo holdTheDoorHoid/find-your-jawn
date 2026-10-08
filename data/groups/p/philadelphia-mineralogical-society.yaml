@@ -34,19 +34,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly meeting on the second Thursday, doors open at 7 pm and the talk starts at 7:30 pm, in
-    person or on Zoom
+  text: Monthly meeting on the second Thursday, doors open at 7 pm for social time and the program starts
+    at 7:30 pm, in person or on Zoom.
   days:
   - thu
   times:
   - evening
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: St. Matthew's United Methodist Church
+  address: 600 Walker Rd, Wayne, PA 19087
+  neighborhood: null
+  planning_district: null
+  zip: '19087'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: true
 cost:
   level: null
-  text: Membership cost is not listed on the site
+  text: Membership cost is not listed on the site, and the site does not say whether guests pay.
 commitment: monthly
 group_size: null
 access:
@@ -61,14 +70,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a public monthly meeting, or use the Join Now link on the society site
+  how: Come to a public monthly meeting in person, or ask for the Zoom link through the society's website
+    contact form
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Meetings are open to the public and membership is open to anyone interested in earth sciences,
-    but the site does not describe a beginner program
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Meetings are open to the public and the website explains how to get the Zoom link, but the site
+    does not describe a beginner program
+  what_to_expect: Each meeting has a short business part, then a lecture or video presentation, with social
+    time before it. Topics change from month to month and are listed on the site. The site does not say
+    whether guests pay.
+  first_visit_tips:
+  - Arrive around 7 pm for social time
+  - Use the website contact form to ask for the Zoom link if you want to join online
+  - The in-person meetings are in Wayne, Delaware County, not in the city
 contacts:
   website: https://www.philamineralsociety.org/
   email: info@phillyrocks.org
@@ -77,8 +92,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
-sign_of_life_url: https://www.philamineralsociety.org/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.philamineralsociety.org/news-meeting-schedule/
 sources:
 - url: https://www.philamineralsociety.org/
   seen: '2026-10-08'
@@ -88,7 +103,16 @@ sources:
   - status
   - first_step
   - contacts
-research_tier: 1
+  - online_ok
+- url: https://www.philamineralsociety.org/news-meeting-schedule/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - online_ok
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

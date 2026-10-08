@@ -41,5 +41,10 @@ If a group's site has nothing beyond what tier 1 already found, still send the r
 site had no more detail. If the group now looks closed, private or not joinable, use the right
 verdict from `_common.md`.
 
+Keep `schedule.text` and `cost.text` to things that repeat (weekly rehearsal, yearly dues). Leave out
+one time promotions and dated events there; a dated event belongs only in `last_sign_of_life`. Leave
+`access.notes` out entirely when the pages say nothing about access (do not write "not stated"), and
+leave out any field you could not establish rather than sending null or an empty list.
+
 Spend about the same effort on each group. Partner organizations named on a group's site that are
 not in the batch go in `leads_only`.

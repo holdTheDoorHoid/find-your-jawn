@@ -35,7 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Farm Market open Tuesday and Friday 11 am to 7 pm, and Saturday 10 am to 4 pm
+  text: Farm Market open Tuesday and Friday 11 am to 7 pm, and Saturday 10 am to 4 pm.
   days:
   - tue
   - fri
@@ -45,7 +45,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Farm Market
+- label: Farm Market, at W.B. Saul Agricultural High School
   address: 7095 Henry Avenue, Philadelphia, PA
   neighborhood: null
   planning_district: null
@@ -57,7 +57,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Membership cost is not listed on the site
+  text: Shopping the Farm Market does not require membership. Membership asks for a member equity investment
+    that is refunded if you leave the Co-op; the amount is not listed on the pages we read.
 commitment: drop_in
 group_size: null
 access:
@@ -72,13 +73,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the Farm Market, or use the Join Now button on the site to become a member
+  how: Visit the Farm Market during its hours and shop without joining. To become a member, use the Join
+    Now button on the membership page.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The Farm Market is open to the public and the site has a clear way to join
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Farm Market is open to anyone without membership, and the membership page explains how to
+    join through a Join Now button. The site does not describe a newcomer session.
+  what_to_expect: The Farm Market is open to the public, so you can walk in during its hours and shop
+    without joining. Members get extra perks, such as a 5 percent discount on Weavers Way Farms produce
+    and member-only sales. Fees are not listed on the pages we read, so call the Farm Market before you
+    join.
+  first_visit_tips:
+  - 'Check the hours first: Tuesday and Friday 11 am to 7 pm, Saturday 10 am to 4 pm.'
+  - The site links a parking map rather than describing parking, so look at it before you drive.
+  - Call 267.876.3101 with questions about membership before you sign up.
+  - If you join, a working member owes six volunteer hours per person each year (anyone over 16), due
+    in the first four months.
 contacts:
   website: https://www.weaversway.coop
   email: null
@@ -86,7 +97,7 @@ contacts:
   contact_name: Jill Fink
   social: []
   calendar_feed: null
-status: active
+status: probably_active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://www.weaversway.coop
 sources:
@@ -115,7 +126,27 @@ sources:
   - status
   - first_step
   - cost
-research_tier: 1
+  - what_you_do
+- url: https://weaversway.coop/membership/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - interests
+  - what_you_do
+- url: https://weaversway.coop/membership/working-membership/
+  seen: '2026-10-08'
+  fields:
+  - commitment
+  - first_visit_tips
+- url: https://weaversway.coop/stores/stores-farm-market/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

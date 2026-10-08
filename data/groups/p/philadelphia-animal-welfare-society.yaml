@@ -7,8 +7,8 @@ leads:
 ein: '263862631'
 summary: A Philadelphia animal rescue with an Old City adoption center and two spay and neuter clinics.
   Volunteers can help at the shelter, and people can foster animals while they wait for homes.
-what_you_do: Help care for animals at the adoption center, and open your home to foster kittens or other
-  animals until they are adopted.
+what_you_do: Help with cat care, dog care, behind the scenes tasks, or adoption events, or open your home
+  to foster animals until they are adopted.
 kind: nonprofit
 categories:
 - animals
@@ -37,10 +37,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer shifts and foster placements run through the year; check the volunteer page for current
-    openings
+  text: Volunteer shifts run through the year at the Old City adoption center and the Grays Ferry clinic,
+    both open seven days a week, and at a PetSmart cat habitat on weekdays and weekends.
   days: []
-  times: []
+  times:
+  - morning
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -71,10 +74,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: PetSmart Cat Habitat
+  address: Broad Street and Washington Avenue
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: Volunteering and fostering are unpaid; the group asks for donations
+  text: Volunteering and fostering are unpaid. The group asks for donations.
 commitment: ongoing_role
 group_size: null
 access:
@@ -87,15 +99,24 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Nothing listed for volunteers. Foster homes provide a safe space and transport to the Grays Ferry
+    clinic for medical care.
 first_step:
-  how: Use the Become a Volunteer page or email the foster team to start a foster application
+  how: Pick a role on the volunteer page and submit the volunteer application, or fill out the online
+    foster sign-up form and watch the onboarding video
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site has a plain volunteer page and a foster page that explain how to start
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page lists roles and how to apply, and the foster page explains the sign-up form
+    and onboarding video
+  what_to_expect: Volunteers start with an application, and the site does not say what orientation includes
+    or how long a shift lasts. Fostering comes with medical care paid by PAWS and supplies if you want
+    them, but you provide a safe, separate space for cats and a way to keep dogs apart from resident pets.
+    Typical foster stays run three to eight weeks or longer.
+  first_visit_tips:
+  - Check the volunteer page for current openings at each location
+  - 'Call or email the location before you go: Old City 215-238-9901, Grays Ferry 215-298-9680'
+  - Foster questions go to foster@phillypaws.org
 contacts:
   website: https://phillypaws.org/
   email: foster@phillypaws.org
@@ -122,7 +143,23 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
+  - last_sign_of_life
+- url: https://phillypaws.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+- url: https://phillypaws.org/foster/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - requirements
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

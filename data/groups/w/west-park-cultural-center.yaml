@@ -14,10 +14,13 @@ categories:
 - kids-youth-mentoring
 - arts-crafts
 - theater-dance-performance
+- music
 interests:
 - after_school_camps
 - pottery_ceramics
 - community_theater
+- painting_drawing
+- instrument_lessons
 motives:
 - values
 - enhancement
@@ -41,8 +44,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: After school classes run during the school year, with a summer camp (Camp Ginkgo). The 2026 Arts
-    Fest was on Saturday, June 13. Class times are not published on the page.
+  text: After school classes run during the school year, and Camp Ginkgo runs in the summer. Class days
+    and times differ by program, so check each program page. The visual art class meets Tuesday and Thursday,
+    4 to 5:30 pm.
   days: []
   times: []
   recurring: true
@@ -57,10 +61,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Afterschool Visual Art class site
+  address: Martha Washington School, 766 N 44th Street
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: Not published on the page
+  text: Class fees are not listed on the pages we read. Ask the center about fees and any financial help
+    when you register.
 commitment: null
 group_size: null
 access:
@@ -68,21 +82,27 @@ access:
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Pick a class on the center's program pages and use the Learn more link to enroll, or email info@westparkcultural.org
-    for class times.
-  drop_in: null
-  sign_up_needed: null
+  how: Pick a class on the program pages and use its Register now or Learn more link, or call 215-473-7810
+    to ask about class times and fees.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Programs are open to the public, with a sign up step on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Programs and the June Arts Fest are open to the public, and each program page has a way to register.
+    The site does not describe a beginner program.
+  what_to_expect: Afterschool classes meet during the school year, and the visual art class for ages 10
+    to 13 meets Tuesdays and Thursdays from 4 to 5:30 pm at Martha Washington School. Fees differ by program,
+    so ask before you sign up. Volunteers for the ceramics class must have criminal and child abuse clearances.
+  first_visit_tips:
+  - Call or email ahead to confirm class times, since not every program page lists them.
+  - Ask about fees and financial help when you register.
+  - Go to the June Arts Fest first to see the center's work before you sign up.
 contacts:
   website: https://westparkcultural.org
   email: info@westparkcultural.org
@@ -117,8 +137,31 @@ sources:
   - status
   - last_sign_of_life
   - requirements
-research_tier: 1
-confidence: high
+- url: https://westparkcultural.org/program/
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+  - cost
+- url: https://westparkcultural.org/support/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - requirements
+  - first_step
+- url: https://westparkcultural.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://westparkcultural.org/program/afterschool-visual-art
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - audience
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

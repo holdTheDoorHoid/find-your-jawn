@@ -3,10 +3,10 @@ name: ACCT Philly
 aka: []
 leads: []
 ein: null
-summary: The city's open intake animal shelter. Volunteers can walk dogs, help with adoptions, or drive
-  animals to new homes, and people can foster animals to free up space.
-what_you_do: Walk dogs, help at adoption events, transport animals, or take a foster animal home until
-  it is adopted.
+summary: The city's open intake animal shelter on Hunting Park Avenue. Volunteers walk dogs, help at adoption
+  events, and care for cats at adoption centers, and people can foster animals until they are adopted.
+what_you_do: Walk dogs or care for cats at the shelter, help at adoption events, staff the in-store adoption
+  centers, bring a group for a laundry or food pantry project, or foster an animal.
 kind: nonprofit
 categories:
 - animals
@@ -23,58 +23,87 @@ roles:
 - hands_on
 - help_teach
 crowd:
-- all_ages
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer orientations are held through the year; check the volunteer page for dates
-  days: []
-  times: []
+  text: The shelter lobby is open 7 days a week from 10 am to 6 pm. Volunteers finish an online orientation
+    on their own time, and shelter volunteers commit at least 3 hours a month. Adoption events run Oct
+    9 to 16 and Oct 23 to 24, 2026.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: ACCT Philly shelter
+  address: 111 W. Hunting Park Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: Volunteering and fostering are unpaid
+  text: Volunteering and fostering are unpaid. A $10 cat adoption special runs Oct 9 to 16, 2026.
 commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Accessibility is not stated on the pages we read. The page suggests the small lot outside the
+    animal adoption center, which is closest to the entrance.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Apply through Become a Volunteer and attend a volunteer orientation
+  how: Complete the online orientation and quiz on the Become a Volunteer page, then fill out the volunteer
+    application. Approval can take up to a week.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site names volunteer orientations as the way in
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Clear public steps are posted and the site says how to apply, but volunteers need an online orientation,
+    a quiz, and an approved application before the first shift.
+  what_to_expect: Shelter volunteers take an online orientation first, then are approved for a role such
+    as cat socialization, dog walking, or photographing animals. Individual volunteers get specialized
+    training before they handle animals, and shelter volunteers commit at least 3 hours a month. Groups
+    and corporate teams do not handle dogs or cats, and corporate sessions run about 2 to 3 hours with
+    a shelter tour.
+  first_visit_tips:
+  - Finish the online orientation and quiz before you come in
+  - Park in the small lot outside the animal adoption center, closest to the entrance
+  - Plan a visit between 10 am and 6 pm, when the lobby is open
 contacts:
   website: http://www.acctphilly.org/
-  email: null
+  email: volunteer@acctphilly.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-07
+last_sign_of_life: 2026-10
 sign_of_life_url: http://www.acctphilly.org/
 sources:
 - url: http://www.acctphilly.org/
@@ -84,7 +113,25 @@ sources:
   - what_you_do
   - status
   - first_step
-research_tier: 1
+  - schedule
+  - last_sign_of_life
+- url: http://www.acctphilly.org/become-a-volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+  - audience
+  - commitment
+  - crowd
+  - contacts
+- url: http://www.acctphilly.org/hours-and-directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - access
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

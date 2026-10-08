@@ -37,9 +37,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The museum is open Tuesday to Friday, 9:30 am to 4:30 pm, and on the first Saturday of the month,
-    noon to 4 pm. The site lists two different Saturday season ranges, so check before a visit. Talks
-    are listed by date, such as October 22, 2026 at 6 to 7:30 pm.
+  text: Open Tuesday to Friday, 9:30 am to 4:30 pm. The first Saturday of the month is open noon to 4
+    pm, but the site gives two different season ranges for that Saturday, so check before a visit. Closed
+    on some holidays and breaks.
   days:
   - tue
   - wed
@@ -64,13 +64,17 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Museum admission is free. Visits are booked in advance online.
+  text: Admission is free. The institute prefers that you register on its Eventbrite page, but walk-ins
+    are welcome.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'The museum is on the second floor and reached by a flight of stairs; the visit page does not
+    mention an elevator. Accessibility questions go to info@wagnerfreeinstitute.org. Nearest SEPTA stop
+    named on the visit page: Temple University / Cecil B. Moore Avenue on the Broad Street Line (local
+    trains only).'
 requirements:
   act153_clearances: null
   background_check: null
@@ -79,15 +83,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the free museum hours, or register for the October 22, 2026 Weeknights at the Wagner talk
-    on the institute's site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Admission is free and the talks and open house are open to the public, but the site does not
-    describe a beginner program.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for a free visit on the institute's Eventbrite page, or walk in during museum hours, Tuesday
+    to Friday.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The visit page says walk-ins are welcome, that scavenger hunts guide first-time visitors, and
+    that staff are available to answer questions.
+  what_to_expect: 'A visit is self-guided: you walk through the specimen hall at your own pace past fossils,
+    minerals, and mounted animals. A themed scavenger hunt is one way to start, and staff can answer questions.
+    Admission is free, and the institute also runs adult talks and evening courses.'
+  first_visit_tips:
+  - Register on the Eventbrite page first, since it speeds entry; walk-ins are also welcome.
+  - Check the hours before you go, because the first Saturday schedule is listed two different ways.
+  - The museum is up a flight of stairs, so ask info@wagnerfreeinstitute.org about access before you come.
+  - Pencils and paper are available for sketching in the hall.
 contacts:
   website: https://www.wagnerfreeinstitute.org
   email: info@wagnerfreeinstitute.org
@@ -122,8 +132,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - last_sign_of_life
+- url: https://www.wagnerfreeinstitute.org/visit
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - access
+  - first_step
+  - first_visit_tips
+  - locations
+- url: https://www.wagnerfreeinstitute.org/evening-courses
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

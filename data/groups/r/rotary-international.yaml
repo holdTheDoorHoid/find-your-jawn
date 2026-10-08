@@ -8,8 +8,8 @@ leads:
 ein: '231034795'
 summary: A Rotary club of business and professional members, part of Rotary District 7450. It focuses
   its service on people in need, mostly in Philadelphia and some abroad.
-what_you_do: Come to an evening meeting with a speaker, sign up for a service day such as the Mount Moriah
-  Cemetery cleanup, or join a fundraising walk team.
+what_you_do: Come to an evening meeting with a speaker, sign up for a service day such as a cemetery cleanup,
+  or join a fundraising walk team.
 kind: club
 categories:
 - social-meetups
@@ -40,15 +40,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Evening meetings at 6 pm on the dates the club lists (Oct 1 and Nov 5, 2026). The page does not
-    publish a regular meeting day.
-  days: []
+  text: Evening meetings at 6 pm on the first Thursday of the month at the Pyramid Club. Service days
+    and social events are posted on the club calendar.
+  days:
+  - thu
   times:
   - evening
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Pyramid Club (venue for the Nov 5, 2026 meeting)
+- label: Pyramid Club (meeting venue)
   address: 1735 Market Street, Philadelphia, PA
   neighborhood: null
   planning_district: null
@@ -60,9 +61,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Guest policy and dues are not published. Some events cost money, such as a block of $99 tickets
-    for a Dec 6, 2026 concert.
-commitment: null
+  text: Dues and guest fees are not published. Some events are ticketed, such as a concert with paid tickets.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -76,15 +76,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for the next meeting or a volunteer day on the club's page, ask to speak at a meeting
-    through the page's form, or use the membership form
+  how: Register for the next Thursday meeting through the online form on the club's site, or sign up for
+    a service day on the club calendar.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public events are posted with registration links and visitors can ask to speak, but the club
-    does not publish a guest policy.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Meetings and service days are posted publicly with online sign up, and the club says guests are
+    part of the audience. The club does not publish a guest policy, so the rating stays at 3.
+  what_to_expect: A meeting is an evening at 6 pm with a speaker who talks for about 20 to 25 minutes,
+    followed by questions. Usually 30 to 60 members and guests attend, mostly professionals and civic
+    leaders. Service days are hands on volunteer work the club organizes, such as a cemetery cleanup.
+  first_visit_tips:
+  - Register through the meeting form before the date, since that is how the club counts guests.
+  - Ask the club about guest meal costs and dress when you register, because the site does not say.
+  - Ask about any dues before you join, since the club does not publish them.
 contacts:
   website: https://philadelphiarotary.org
   email: info@philadelphiarotary.org
@@ -122,7 +127,18 @@ sources:
   - first_step
   - contacts
   - cost
-research_tier: 1
+- url: https://philadelphiarotary.org/speak-at-our-meeting
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - first_step
+- url: https://philadelphiarotary.org/involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

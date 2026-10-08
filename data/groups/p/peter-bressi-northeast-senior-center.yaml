@@ -25,7 +25,7 @@ crowd:
 - seniors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: 60
   max_age: null
@@ -58,7 +58,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Not stated on the page
+  text: The page lists no membership or program fees. Ask when you call.
 commitment: null
 group_size: null
 access:
@@ -73,13 +73,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call (215) 831-2926 or stop by for a guided tour
-  drop_in: null
+  how: Call (215) 831-2926 to ask about membership, or stop by during open hours and ask for a guided
+    tour
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Invites visitors to tour the center; membership steps are not on the page
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The page invites people to come in any time for a guided tour and gives a phone number to ask
+    about joining
+  what_to_expect: The page does not describe a set first visit. Members are Philadelphia residents aged
+    60 and up, and the center offers cards, bingo, exercise, computer lessons, trips, and help from a
+    caseworker with benefits, rent rebates, utilities, and housing.
+  first_visit_tips:
+  - Call first to ask about membership and the next tour
+  - A secure parking lot is on site
+  - Open Monday to Friday, 8:30 am to 4:30 pm
 contacts:
   website: https://www.neccbh.org/peter-bressi-senior-center/
   email: null
@@ -97,6 +104,8 @@ sources:
   - name
   - locations
   - contacts.phone
+  - status
+  - last_sign_of_life
 - url: https://www.neccbh.org/peter-bressi-senior-center/
   seen: '2026-10-08'
   fields:
@@ -108,8 +117,10 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: low
+  - cost
+  - access
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

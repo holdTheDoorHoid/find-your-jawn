@@ -4,10 +4,10 @@ aka: []
 leads:
 - cultural_fund:5-shorts-project-3
 ein: null
-summary: A Philadelphia film group that helps local residents make their own films, with no experience
-  needed, and runs a teen film festival.
-what_you_do: Learn filmmaking through the Learn Filmmaking and teen program pages, make a short with the
-  group, or buy tickets to the Teen Film Fest.
+summary: A Philadelphia film group that helps local residents make their own short films, with no filmmaking
+  background needed. It also runs teen film programs and a yearly teen film festival.
+what_you_do: Work through the free filmmaking tutorials on the Learn Filmmaking page, join a teen summer
+  session that makes a film, or attend the Teen Film Fest.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -39,22 +39,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The free tutorials have no set dates. Teen sessions run twice a week for 5 hours a day, mostly
+    in summer. The 2026 Teen Film Fest was on July 25.
   days: []
   times: []
-  recurring: null
-  season: null
-locations: []
+  recurring: true
+  season: summer
+locations:
+- label: Teen sessions (Germantown)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: The tutorials and teen sessions are free. Teen sessions include a stipend, meals, and transportation
+    costs. An optional Community Membership is $15 a month, with sliding-scale fees and scholarships.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The About page links to an accessibility page, but the content we read lists no features.
 requirements:
   act153_clearances: null
   background_check: null
@@ -63,18 +74,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Join the monthly newsletter on 5shorts.org, then open the Learn Filmmaking page to find the next
-    class.
-  drop_in: null
-  sign_up_needed: null
+  how: Start with one free Learn Filmmaking tutorial, then email hello@5shorts.org to ask about the next
+    teen session and its application.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The group says no experience is needed and has a teen and youth track, but no class dates were
-    visible.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The tutorials list no prerequisites, the homepage says no experience is needed, and the teen
+    program explains how to apply by email.
+  what_to_expect: The tutorials each cover one filmmaking skill, such as writing a script, planning shots,
+    sound, lighting, or editing, and they cost nothing. Teen sessions run about 5 hours at a time, twice
+    a week in summer, with a stipend and meals. The site does not describe a first-day routine, so ask
+    the team what to expect.
+  first_visit_tips:
+  - Email hello@5shorts.org for the application and the next session dates
+  - Ask where Germantown sessions meet and how to get there
+  - Look at the Teen Film Fest page to see what the group's films look like
 contacts:
   website: http://www.5shorts.org
-  email: null
+  email: hello@5shorts.org
   phone: null
   contact_name: null
   social: []
@@ -96,8 +113,31 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+  - schedule
+  - contacts
+- url: https://5shorts.org/learn-filmmaking/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - requirements
+  - first_step
+- url: https://5shorts.org/teen-youth-programs/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+  - first_step
+  - audience
+- url: https://5shorts.org/about/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

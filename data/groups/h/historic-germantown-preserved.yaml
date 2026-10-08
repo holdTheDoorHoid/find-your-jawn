@@ -40,18 +40,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Wyck garden helpers come on Tuesdays and Fridays. Events run through fall 2026, including Saturday
-    and Sunday tours and workshops in October and November.
+  text: Wyck garden helpers come on Tuesdays and Fridays. Tours and workshops are held on some weekends
+    in the fall.
   days:
   - tue
   - fri
   - sat
   - sun
   times:
+  - morning
   - daytime
   recurring: true
   season: fall
 locations:
+- label: Wyck Home Farm (kitchen garden)
+  address: 6026 Germantown Avenue, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Partner sites across Germantown, Mount Airy and Chestnut Hill
   address: null
   neighborhood: null
@@ -65,7 +75,7 @@ online_ok: false
 cost:
   level: low
   text: Many events are free. A Cliveden walking tour is $20, or $10 for members and for residents of
-    19119 and 19144.
+    19119 and 19144. The Wyck garden program does not list a cost.
 commitment: drop_in
 group_size: null
 access:
@@ -80,15 +90,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: For the Wyck garden, come on a Tuesday or Friday with no sign-up needed. For other questions, email
+  how: Come to the Wyck garden on a Tuesday or Friday; no sign-up is needed. For other questions, email
     programs@historicgermantownpa.org
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The garden program offers short lessons and needs no registration, so beginners can start on
-    their first visit.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The garden program offers short lessons, needs no registration, and the group's page says so
+    directly, so a beginner can come to a first session.
+  what_to_expect: Sessions combine short lessons with hands-on work in the kitchen garden of the historic
+    home farm. Listed morning sessions run from 10 am to noon, and afternoon sessions start at 4 pm. You
+    take home a share of fresh produce, and the page does not list a cost for the garden program.
+  first_visit_tips:
+  - Check the session list on wyck.org before you come, since sessions are listed by date
+  - Wear clothes you can work outside in, because the work is hands-on in a garden
+  - Plan your trip, since the page does not list parking or transit for the garden
 contacts:
   website: https://historicgermantownpa.org
   email: programs@historicgermantownpa.org
@@ -132,7 +147,8 @@ sources:
   - first_step
   - status
   - contacts
-research_tier: 1
+  - locations
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

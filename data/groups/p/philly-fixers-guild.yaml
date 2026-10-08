@@ -35,8 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free Repair Fairs on Thursdays from 6 to 8 pm. Upcoming fairs are October 8, November 12 and December
-    10, 2026.
+  text: Free Repair Fairs on Thursdays from 6 to 8 pm at NextFab, with fairs posted on the group's calendar.
   days:
   - thu
   times:
@@ -69,23 +68,31 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Bring the broken item (one you can carry in) and any replacement part you already know you need.
 first_step:
-  how: Bring a broken item to a Repair Fair, or sign up on the site for fair notices and volunteer information
+  how: Bring a broken household item to a Thursday evening Repair Fair at NextFab. Email the volunteer
+    contact or join the Repair Fair list to hear about each fair.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: Fairs are open to anyone with an item to fix, and the group says skilled and general helpers
-    are both welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Fairs are open to anyone with an item to fix, and the group says volunteers without repair skills
+    are welcome and that a Fixer guides you through the repair.
+  what_to_expect: You stay with your item and do the troubleshooting yourself, with a volunteer Fixer
+    guiding each step. Check-in happens at a triage table before the repair. The fair runs for two hours,
+    from 6 to 8 pm, and costs nothing. Repairs are done by volunteers who are not necessarily licensed,
+    and nothing comes with a warranty.
+  first_visit_tips:
+  - Bring the whole item and any spare part you already know you need.
+  - Plan to stay for the repair, since dropping an item off is not allowed.
+  - Join the Repair Fair email list to hear about each fair's date.
+  - If you cannot make a fair, use the Ask a Fixer page to get advice on fixing the item at home.
 contacts:
   website: https://www.phillyfixersguild.org/
-  email: null
+  email: bendavis@phillyfixersguild.org
   phone: null
   contact_name: null
   social: []
-  calendar_feed: null
+  calendar_feed: webcal://phillyfixersguild.org/?post_type=tribe_events&ical=1&eventDisplay=list
 status: active
 last_sign_of_life: 2026-10
 sign_of_life_url: https://www.phillyfixersguild.org/calendar
@@ -104,7 +111,20 @@ sources:
   - locations
   - cost
   - status
-research_tier: 1
+  - contacts.calendar_feed
+  - first_step
+- url: https://phillyfixersguild.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts.email
+- url: https://phillyfixersguild.org/guidelines/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false
