@@ -55,24 +55,23 @@ export function serviceHours(groups: Group[]): { forms: Capped; teens: Capped } 
   return { forms: cap(forms), teens: cap(teens) };
 }
 
+/** A yes for court ordered service. The pipeline refuses a yes without a source, so a yes here has one. */
+export function acceptsCourtOrdered(g: Group): boolean {
+  return g.requirements.court_ordered_ok === 'yes';
+}
+
+/** Kids can come along, and the minimum age is one a young child can meet. */
+export function welcomesKids(g: Group): boolean {
+  return g.requirements.kids_ok && (g.audience.min_age === undefined || g.audience.min_age <= 12);
+}
+
 /** Only groups with a sourced yes. The pipeline refuses a yes without a source. */
 export function courtOrdered(groups: Group[]): Capped {
-  return cap(
-    groups
-      .filter(openToVisitor)
-      .filter((g) => g.requirements.court_ordered_ok === 'yes')
-      .sort(byName),
-  );
+  return cap(groups.filter(openToVisitor).filter(acceptsCourtOrdered).sort(byName));
 }
 
 export function families(groups: Group[]): Capped {
-  return cap(
-    groups
-      .filter(openToVisitor)
-      .filter((g) => g.requirements.kids_ok)
-      .filter((g) => g.audience.min_age === undefined || g.audience.min_age <= 12)
-      .sort(byWelcomeThenName),
-  );
+  return cap(groups.filter(openToVisitor).filter(welcomesKids).sort(byWelcomeThenName));
 }
 
 const NEIGHBOR_WORDS = /civic|neighbor|walking|librar/;

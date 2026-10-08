@@ -1029,3 +1029,151 @@ export const notFound = {
   home: 'Go to the home page',
   browse: 'Browse every group',
 };
+
+// ---------------------------------------------------------------- match results
+
+export const results = {
+  // How a trip is described in a sentence.
+  mode: { walk: 'on foot', septa: 'by SEPTA', drive: 'by car' },
+
+  // Short facts used inside the "why it fits" sentences.
+  bit: {
+    meets: 'meets {when}',
+    travelFrom: 'about {n} minutes from {home} {how}',
+    travel: 'about {n} minutes away {how}',
+    free: 'free',
+    low: 'low cost',
+    language: 'help in {language}',
+    wheelchair: 'wheelchair accessible',
+    follow: {
+      outdoors: 'outdoors',
+      indoors: 'indoors',
+      competitive: 'a little competitive',
+      casual: 'casual',
+      online: 'you can join online',
+      one_time: 'a one time thing',
+      ongoing: 'something you can keep coming back to',
+      kids: 'kids can come',
+    } as Record<string, string>,
+  },
+  /** When a group meets: "Saturdays in the morning". */
+  timeIn: {
+    morning: 'in the morning',
+    daytime: 'during the day',
+    afternoon: 'in the afternoon',
+    evening: 'in the evening',
+    night: 'late at night',
+    flexible: 'at flexible times',
+  } as Record<string, string>,
+  /** How people spend time together, as a phrase after "you like". */
+  formatPhrase: {
+    side_by_side: 'working side by side with other people',
+    conversation: 'talking things over in a small group',
+    team_play: 'playing as a team',
+    perform_make_together: 'making or performing together',
+    behind_the_scenes: 'helping behind the scenes',
+    lead_organize: 'leading and organizing',
+    learn_skill: 'learning a skill from someone who knows it',
+    one_off_event: 'one time events with no long promise',
+  } as Record<string, string>,
+  rolePhrase: {
+    hands_on: 'working with your hands',
+    figure_out: 'figuring things out',
+    create: 'making and creating',
+    help_teach: 'helping and teaching',
+    lead: 'taking the lead',
+    organize: 'planning and organizing',
+  } as Record<string, string>,
+
+  // Why a group fits, in the person's own terms.
+  why: {
+    starred: 'You starred {family}. This one is about {matched}.',
+    picked: 'You picked {family}. This one is about {matched}.',
+    tag: 'You chose {tag}, and this group is for it.',
+    sceneTag: 'You liked "{scene}". This is a place to do it: {matched}.',
+    sceneFamily: 'You liked "{scene}", and this group is part of {matched}.',
+    words: 'You wrote "{word}", and this group is about {matched}.',
+    edge: 'It is next door to {via}, which you picked. This one is about {matched}.',
+    motive: 'You said "{motive}" matters most to you, and this group is built for it.',
+    format: 'You like {format}, and that is how this group spends its time.',
+    role: 'You like {role}, and that is what you would do here.',
+    practical: 'It fits what you asked for: {bits}.',
+    taste: 'It is like {name}, which you liked.',
+    newcomer: 'Newcomers are welcome here.',
+    newcomerHard: 'It is rated welcoming to newcomers, which helps when walking into a room of strangers is hard.',
+    regular: 'It meets on a steady schedule in one place, which is how friendships start.',
+    kind: 'A {kind} that fits what you told us.',
+    court: 'They accept court ordered hours.',
+    hoursForm: 'They sign service hour forms.',
+    kidsAlong: 'Kids can come along.',
+    student: 'This group is for students at your school.',
+  },
+
+  // Stretches: change exactly one thing, keep the rest familiar.
+  stretch: {
+    topic: 'This is a stretch: it is {to} instead of {from}.',
+    way: 'This is a stretch: you would {way} instead of what you usually do.',
+    crowd: 'This is a stretch: the crowd is new, with a mix of ages or neighborhoods.',
+    depth: 'This is a stretch: a bigger role, where you help run things.',
+    stays: 'Everything else stays familiar.',
+    stillTopic: 'It is still {topic}.',
+    stillWay: 'It is still the same way of taking part, with the same kind of crowd.',
+    stillBoth: 'It is still {topic}, with the same way of taking part.',
+    stillFits: 'It still fits what you asked for: {bits}.',
+    example: 'In this kind of group, that can look like: {example}',
+    future: 'It points toward "{future}". {because}',
+  },
+  edgeWhy: {
+    same_skill: 'It uses a lot of the same skills as {from}.',
+    same_crowd: 'It tends to draw the same kind of people as {from}.',
+    same_place: 'It happens in the same kinds of places as {from}.',
+    same_cause: 'It cares about the same cause as {from}.',
+    same_topic: 'It is close to {from} in subject.',
+  } as Record<string, string>,
+  wayPhrase: {
+    do_it: 'join in',
+    learn_it: 'learn it',
+    teach_it: 'teach it',
+    serve_it: 'help from the side',
+    lead_it: 'lead it',
+  } as Record<string, string>,
+
+  // The wildcard.
+  wild: {
+    lead: 'You would not pick this yourself, so it is our wildcard.',
+    connects: 'It connects to what you said: {clauses}.',
+    interest: 'you picked {via}, and this is next door to it',
+    motive: 'you want to {motive}',
+    format: 'you like {format}',
+    role: 'you like {role}',
+    crowd: 'you want to meet people who are different from you',
+    future: 'it points toward "{future}"',
+    welcoming: 'very welcoming',
+    free: 'free',
+    cheap: 'low cost',
+    tryOnce: 'easy to try once',
+    traits: 'It is {traits}.',
+  },
+
+  // Things we could not check. Shown on the card.
+  notes: {
+    cost: 'Cost not listed.',
+    schedule: 'Days and times not listed.',
+    distance: 'Location not listed.',
+    access: 'Access not listed. Ask the group first.',
+    languages: 'Languages not listed.',
+    background: 'Background check rules not listed.',
+    frequency: 'How often it meets is not listed.',
+    hours_form: 'Ask if they sign service hour forms.',
+    kids: 'Ask if kids can come.',
+    residents: 'Meant for people who live nearby. Check that your block is covered.',
+    faith: 'Tradition not listed.',
+    newcomer: 'Not rated for newcomers yet.',
+  } as Record<string, string>,
+
+  firstStep: {
+    dropIn: 'You can just show up. Open the group page for the next date.',
+    signUp: 'Sign up first. The group page says how.',
+    generic: 'Open the group page for contact details and the next date.',
+  },
+};
