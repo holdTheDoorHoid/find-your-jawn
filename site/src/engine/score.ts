@@ -1,5 +1,5 @@
 import { timesMatch } from '../lib/filters';
-import { crowdFit } from './crowd';
+import { communityMatch, crowdFit } from './crowd';
 import { languageBase } from '../lib/language';
 import { monthsSince } from '../lib/dates';
 import { acceptsCourtOrdered } from '../lib/paths';
@@ -31,6 +31,8 @@ export const WEIGHTS: Readonly<Record<PartName, number>> = {
 
 /** The newcomer part counts for this much when strangers feel hard (DESIGN: rises to 20 percent). */
 export const NEWCOMER_WEIGHT_HARD = 0.2;
+/** ...and this much for people who arrived in Philly in the last few months. */
+export const NEWCOMER_WEIGHT_NEW = 0.15;
 
 /**
  * Groups are shown in tiers: first the ones that pass every locked answer by what their page says,
@@ -53,6 +55,8 @@ export interface Evidences {
   motive?: string;
   role?: { id: string; scene?: string };
   format?: { id: string; scene?: string };
+  /** a community they said they would like to find, that this group is for */
+  community?: string;
   practical: {
     schedule?: { days: string[]; times: string[] };
     travel?: { minutes: number; limit: number };
@@ -96,6 +100,8 @@ const avg = (xs: number[]) => (xs.length === 0 ? 0 : xs.reduce((a, b) => a + b, 
 
 function interestPart(p: Prepared, profile: Profile): { value: number; evidence?: Evidences['interest'] } {
   if (profile.tagW.size === 0 && profile.famW.size === 0) return { value: 0.5 };
+  // A record with no tags and no categories is a gap in the data, not a mismatch.
+  if (p.tags.length === 0 && p.families.length === 0) return { value: 0.5 };
   let best = 0;
   let second = 0;
   let bestEv: Evidences['interest'];
@@ -138,8 +144,10 @@ function roleFormatPart(p: Prepared, profile: Profile): { value: number; role?: 
   const f = part(p.g.formats, profile.formatW);
   const vals = [r?.v, f?.v, crowdFit(p, profile) ?? undefined].filter((x): x is number => x !== undefined);
   if (vals.length === 0) return { value: 0.5 };
+  // A community they said they would like to find, that this group is for: a clear plus.
+  const bonus = communityMatch(p, profile) ? 0.15 : 0;
   return {
-    value: avg(vals),
+    value: clamp(avg(vals) + bonus),
     role: r?.best ? { id: r.best, scene: profile.roleScene.get(r.best) } : undefined,
     format: f?.best ? { id: f.best, scene: profile.formatScene.get(f.best) } : undefined,
   };
@@ -198,6 +206,13 @@ function practicalPart(p: Prepared, ev: Evaluation, profile: Profile): { value: 
     const rank = g.commitment ? COMMIT_RANK[g.commitment] : undefined;
     const want = FREQ_RANK[a.often.value] ?? 3;
     parts.push({ w: PRACTICAL_WEIGHTS.commitment, v: rank === undefined ? 0.5 : rank <= want ? 1 - 0.15 * (want - rank) : 0.1 });
+  }
+
+  // A lot of hours to give (service hours or court ordered): a group that meets often gets them done.
+  const hoursNeeded = Math.max(a.hours?.need ?? 0, a.court?.need ?? 0);
+  if (hoursNeeded >= 30 && (a.paths.includes('hours') || a.paths.includes('court'))) {
+    const rank = g.commitment ? COMMIT_RANK[g.commitment] : undefined;
+    parts.push({ w: PRACTICAL_WEIGHTS.commitment, v: rank === undefined ? 0.5 : rank >= 2 || g.commitment === 'drop_in' ? 1 : 0.2 });
   }
 
   // Group size: asked outright, or leaned toward by "too many people" taps and hard strangers.
@@ -288,7 +303,8 @@ function tastePart(p: Prepared, taste: TasteSets): { value: number; liked?: Grou
     const s = similarity(p, q);
     if (s > up) {
       up = s;
-      liked = q.g;
+      // The explanation says "like X, which you liked", so X cannot be the group itself.
+      if (q.g.id !== p.g.id) liked = q.g;
     }
   }
   for (const q of taste.already) up = Math.max(up, 0.7 * similarity(p, q));
@@ -308,6 +324,13 @@ function newcomerPart(p: Prepared): { value: number; nf?: number } {
   if (g.first_step.drop_in === true) v += 0.1;
   if (g.first_step.sign_up_needed === true) v -= 0.05;
   return { value: clamp(v, 0.35, 0.75) };
+}
+
+/** Someone who would rather bring a friend finds a group they can drop in on a little easier to try. */
+function withFriendBonus(value: number, p: Prepared, profile: Profile): number {
+  if (!profile.answers.bringSomeone) return value;
+  const easy = p.g.first_step.drop_in === true || p.g.commitment === 'drop_in' || p.g.commitment === 'one_off';
+  return easy ? clamp(value + 0.1) : value;
 }
 
 function regularPart(p: Prepared): { value: number; regular: boolean } {
@@ -330,6 +353,15 @@ function confidencePart(p: Prepared, now: Date): number {
 
 // ---------------------------------------------------------------- the whole score
 
+/** The weights for this person: newcomer welcome counts more for people who find strangers hard (20 percent), and somewhat more for people who just arrived (15 percent). */
+export function weightsFor(profile: Profile): Record<PartName, number> {
+  const w: Record<PartName, number> = { ...WEIGHTS };
+  const a = profile.answers;
+  if (profile.hardStrangers) w.newcomer = NEWCOMER_WEIGHT_HARD;
+  else if (a.paths.includes('newcomer') && (a.newSince === 'weeks' || a.newSince === 'months')) w.newcomer = NEWCOMER_WEIGHT_NEW;
+  return w;
+}
+
 export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste: TasteSets, now: Date): Scored {
   const interest = interestPart(p, profile);
   const motive = motivePart(p, profile);
@@ -337,6 +369,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
   const practical = practicalPart(p, ev, profile);
   const tasteP = tastePart(p, taste);
   const newcomer = newcomerPart(p);
+  newcomer.value = withFriendBonus(newcomer.value, p, profile);
   const regular = regularPart(p);
 
   const parts: Parts = {
@@ -350,8 +383,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
     confidence: confidencePart(p, now),
   };
 
-  const weights: Record<PartName, number> = { ...WEIGHTS };
-  if (profile.hardStrangers) weights.newcomer = NEWCOMER_WEIGHT_HARD;
+  const weights = weightsFor(profile);
   let sum = 0;
   let wsum = 0;
   for (const k of Object.keys(weights) as PartName[]) {
@@ -403,6 +435,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
       motive: motive.motive,
       role: rf.role,
       format: rf.format,
+      community: communityMatch(p, profile) ?? undefined,
       practical: practical.evidence,
       taste: tasteP.liked ? { liked: tasteP.liked } : undefined,
       newcomer: { nf: newcomer.nf },
@@ -416,8 +449,7 @@ export function scoreGroup(p: Prepared, ev: Evaluation, profile: Profile, taste:
  * explanation reads the biggest positive ones.
  */
 export function lifts(s: Scored, profile: Profile): Record<PartName, number> {
-  const weights: Record<PartName, number> = { ...WEIGHTS };
-  if (profile.hardStrangers) weights.newcomer = NEWCOMER_WEIGHT_HARD;
+  const weights = weightsFor(profile);
   const wsum = Object.values(weights).reduce((x, y) => x + y, 0);
   const out = {} as Record<PartName, number>;
   for (const k of Object.keys(weights) as PartName[]) out[k] = (weights[k] * (s.parts[k] - 0.5)) / wsum;

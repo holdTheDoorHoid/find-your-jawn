@@ -1,10 +1,11 @@
 import { crowdDisjoint } from './crowd';
 import { evaluate, passes } from './filters';
+import { rankTier } from './score';
 import type { Pool } from './match';
 import type { Prepared } from './prepare';
 import type { Profile } from './profile';
 import type { Scored } from './score';
-import type { Axes, EdgeType, StretchType, WayId } from './types';
+import type { Axes, EdgeType, NoteKey, StretchType, WayId } from './types';
 
 // Stretches and the wildcard (DESIGN section 4).
 //
@@ -81,6 +82,10 @@ export interface StretchCandidate {
   type: StretchType;
   /** a rank that mixes fit, future self goals and comfort; higher is better */
   rank: number;
+  /** practical facts we could not check, counting the ones the person did not lock */
+  unknown: NoteKey[];
+  /** 0 when everything practical is confirmed, higher when not (see rankTier) */
+  tier: number;
   /** how well it moves toward a chosen future self, 0 to 1 */
   goal: number;
   goalId?: string;
@@ -119,13 +124,13 @@ export function futureFit(p: Prepared, profile: Profile): { value: number; id?: 
   return { value: best, id: bestId };
 }
 
-function candidateFor(s: Scored, profile: Profile): StretchCandidate | null {
+function candidateFor(s: Scored, profile: Profile, unknown: NoteKey[]): StretchCandidate | null {
   const p = s.p;
   const axes = axesOf(p, profile);
   const type = onlyAxis(axes);
   if (!type) return null;
   const { value: goal, id: goalId } = futureFit(p, profile);
-  const cand: StretchCandidate = { s, type, rank: 0, goal, goalId };
+  const cand: StretchCandidate = { s, type, rank: 0, goal, goalId, unknown, tier: rankTier(unknown) };
 
   if (type === 'topic') {
     // One step sideways needs a real edge from something they asked for.
@@ -151,22 +156,25 @@ function candidateFor(s: Scored, profile: Profile): StretchCandidate | null {
     if (often && often.value !== 'any' && p.g.commitment === 'ongoing_role') return null;
   }
 
-  cand.rank = 0.6 * s.score + 0.3 * goal + 0.1 * (cand.edge ? EDGE_STRENGTH[cand.edge.type] : 0.8) - 0.08 * Math.min(2, s.unknown.length);
+  cand.rank = 0.6 * s.score + 0.3 * goal + 0.1 * (cand.edge ? EDGE_STRENGTH[cand.edge.type] : 0.8);
   return cand;
 }
 
-/** May this group appear as a stretch or wildcard at all, whatever its axes? */
-function stretchAllowed(s: Scored, profile: Profile, pool: Pool): boolean {
+/**
+ * May this group appear as a stretch or wildcard at all, whatever its axes? Returns the practical facts
+ * we could not check, or null when it may not appear.
+ */
+function stretchAllowed(s: Scored, profile: Profile, pool: Pool): NoteKey[] | null {
   const p = s.p;
-  if (p.support) return false;
+  if (p.support) return null;
   // Faith groups are stretches only for people who chose to include faith.
-  if (p.faith && profile.answers.faith?.mode !== 'include' && profile.answers.faith?.mode !== 'only') return false;
+  if (p.faith && profile.answers.faith?.mode !== 'include' && profile.answers.faith?.mode !== 'only') return null;
   // Never stretch a practical limit, whether or not it was locked.
   const strict = evaluate(p, profile, { strict: true, travel: pool.ctx.travel });
-  if (!passes(strict)) return false;
+  if (!passes(strict)) return null;
   // A group whose place we cannot find might be too far, so it cannot be offered as a stretch.
-  if (strict.unknown.includes('distance')) return false;
-  return true;
+  if (strict.unknown.includes('distance')) return null;
+  return [...new Set([...s.unknown, ...strict.unknown])];
 }
 
 /** Every group that could be a stretch, best first within each type. */
@@ -177,11 +185,13 @@ export function stretchCandidates(pool: Pool, exclude: Set<string> = new Set()):
   const out: StretchCandidate[] = [];
   for (const s of pool.scored) {
     if (exclude.has(s.p.g.id) || s.score < floor) continue;
-    if (!stretchAllowed(s, profile, pool)) continue;
-    const c = candidateFor(s, profile);
+    const unknown = stretchAllowed(s, profile, pool);
+    if (!unknown) continue;
+    const c = candidateFor(s, profile, unknown);
     if (c) out.push(c);
   }
-  out.sort((a, b) => b.rank - a.rank || (a.s.p.g.id < b.s.p.g.id ? -1 : 1));
+  // Groups we could confirm come before groups we could not, then by rank.
+  out.sort((a, b) => a.tier - b.tier || b.rank - a.rank || (a.s.p.g.id < b.s.p.g.id ? -1 : 1));
   return out;
 }
 
@@ -209,7 +219,7 @@ export function pickStretches(cands: StretchCandidate[], n: number, variety: Var
     const c = cands.find((x) => x.type === t && variety.canTake(x.s.p));
     if (c) firsts.push(c);
   }
-  firsts.sort((a, b) => b.goal - a.goal || b.rank - a.rank);
+  firsts.sort((a, b) => a.tier - b.tier || b.goal - a.goal || b.rank - a.rank);
   for (const c of firsts) {
     if (chosen.length >= n) break;
     if (variety.canTake(c.s.p)) take(c);
@@ -228,6 +238,8 @@ export function pickStretches(cands: StretchCandidate[], n: number, variety: Var
 export interface WildcardCandidate {
   s: Scored;
   rank: number;
+  unknown: NoteKey[];
+  tier: number;
   /** what links it honestly to something the person said */
   links: WildLink[];
 }
@@ -292,15 +304,17 @@ export function wildcardCandidates(pool: Pool, exclude: Set<string>, accept: (s:
     if (g.cost.level !== 'free' && g.cost.level !== 'low') continue;
     const easy = g.commitment === 'one_off' || g.commitment === 'drop_in' || g.first_step.drop_in === true;
     if (!easy) continue;
-    // Something they would not pick: not an interest they asked for.
+    // Something they would not pick: not an interest they asked for, and not in a family they picked or starred.
     if (s.p.tags.some((t) => profile.likedTags.has(t))) continue;
-    if (!stretchAllowed(s, profile, pool)) continue;
+    if (s.p.families.some((f) => profile.likedFamilies.has(f) || profile.answers.picked.includes(f) || profile.answers.starred.includes(f))) continue;
+    const unknown = stretchAllowed(s, profile, pool);
+    if (!unknown) continue;
     const links = wildcardLinks(s.p, profile);
     if (links.length === 0) continue;
     const welcome = ((g.first_step.newcomer_friendliness ?? 4) - 1) / 4;
     const rank = 0.3 * welcome + 0.2 * (s.p.philly ? 1 : 0) + 0.15 * (g.bridging ? 1 : 0) + 0.2 * s.score + 0.15 * Math.min(1, links.length / 2);
-    out.push({ s, rank, links });
+    out.push({ s, rank, links, unknown, tier: rankTier(unknown) });
   }
-  out.sort((a, b) => b.rank - a.rank || (a.s.p.g.id < b.s.p.g.id ? -1 : 1));
+  out.sort((a, b) => a.tier - b.tier || b.rank - a.rank || (a.s.p.g.id < b.s.p.g.id ? -1 : 1));
   return out;
 }

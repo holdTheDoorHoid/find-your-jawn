@@ -1,5 +1,6 @@
 import { fill } from '../../lib/inline';
 import { parseDate, parseTime, weekdayOf } from '../../lib/plan-dates';
+import { plainName } from '../../lib/text';
 import { labels, plan as t } from '../../strings/en';
 
 // "Plan it": the sentence that makes a plan feel real, and a calendar file made in the browser with
@@ -45,7 +46,7 @@ export function dateWords(date: string): string {
 
 /** The sentence: "Saturday, October 11 at 9 am I will go to the Trail Crew." */
 export function planSentence(plan: Pick<PlanInput, 'name' | 'date' | 'time'>): string {
-  return fill(t.sentence, { when: dateWords(plan.date), time: timeWords(plan.time), name: plan.name });
+  return fill(t.sentence, { when: dateWords(plan.date), time: timeWords(plan.time), name: plainName(plan.name) });
 }
 
 // ---------------------------------------------------------------- the calendar file

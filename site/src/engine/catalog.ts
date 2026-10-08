@@ -20,6 +20,7 @@ export interface Catalog {
   formatLabel: Map<string, string>;
   wayLabel: Map<string, string>;
   hoodLabel: Map<string, string>;
+  communityLabel: Map<string, string>;
   hoodDistrict: Map<string, string>;
   /** tag id to the ways in the vocabulary lists it under, for example literacy_tutoring: teach_it */
   tagWays: Map<string, Set<WayId>>;
@@ -80,6 +81,7 @@ export function buildCatalog(data: CatalogData): Catalog {
     formatLabel: labelMap(data.formats),
     wayLabel: labelMap(data.ways),
     hoodLabel: new Map(data.neighborhoods.map((n) => [n.id, n.label])),
+    communityLabel: labelMap(data.communities ?? []),
     hoodDistrict: new Map(data.neighborhoods.map((n) => [n.id, n.district])),
     tagWays,
   };

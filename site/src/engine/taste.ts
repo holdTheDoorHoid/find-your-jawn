@@ -101,13 +101,15 @@ export function pickTasteCards(groups: Group[], cat: Catalog, answers: Answers, 
       if (seenTypes.has(c.type)) continue;
       if ((famCount.get(c.s.p.primary) ?? 0) >= 2) continue;
       seenTypes.add(c.type);
+      const at = strongPool.findIndex((x) => x.p.g.id === c.s.p.g.id);
+      if (at >= 0) strongPool.splice(at, 1);
       chosen.push({ p: c.s.p, probe: true });
       famCount.set(c.s.p.primary, (famCount.get(c.s.p.primary) ?? 0) + 1);
     }
   }
   // Not enough probes: more strong cards.
   while (chosen.length < count && strongPool.length > 0) {
-    const i = strongPool.findIndex((s) => (famCount.get(s.p.primary) ?? 0) < 2);
+    const i = strongPool.findIndex((s) => (famCount.get(s.p.primary) ?? 0) < 2 && !chosen.some((c) => c.p.g.id === s.p.g.id));
     if (i < 0) break;
     const [s] = strongPool.splice(i, 1);
     chosen.push({ p: s!.p, probe: false });

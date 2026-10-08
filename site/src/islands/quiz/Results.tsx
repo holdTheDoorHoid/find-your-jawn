@@ -5,6 +5,7 @@ import { computeResults, moreResults, replacementFor, type Outcome } from '../..
 import type { Answers, BlockerKey, Dial, NotWhy, Result } from '../../engine/types';
 import { fill } from '../../lib/inline';
 import { withBase } from '../../lib/site';
+import { plainName } from '../../lib/text';
 import type { Group } from '../../lib/types';
 import { matches as t } from '../../strings/en';
 import { ResultCard } from './ResultCard';
@@ -79,7 +80,7 @@ export function Results({ groups, cat, places, answers, setAnswers, onEdit, onRe
     setOutcome(next);
     setList(list.flatMap((x) => (x.group.id === r.group.id ? (fill_ ? [fill_] : []) : [x])));
     setAnswers({ notForMe: notForMeList });
-    setMessage(fill_ ? fill(t.replaced, { name: r.group.name }) : fill(t.removedOnly, { name: r.group.name }));
+    setMessage(fill_ ? fill(t.replaced, { name: plainName(r.group.name) }) : fill(t.removedOnly, { name: plainName(r.group.name) }));
     const target = fill_ ?? remaining[0];
     if (target) setFocusId(target.group.id);
   };

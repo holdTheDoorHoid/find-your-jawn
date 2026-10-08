@@ -52,7 +52,7 @@ export interface Feedback {
   not: { g: Group; why?: NotWhy }[];
   /** groups the person is already in: shown never, but they count as a vote for the topic */
   already: Group[];
-  /** every group the person said no to: never shown again */
+  /** every group the person said no to, in the taste test or on a result: never shown again */
   hidden: Set<string>;
   /** multiplier on the travel limit, 1 means no change, 0.8 per "too far" */
   travelScale: number;
@@ -221,6 +221,8 @@ export function deriveFeedback(a: Answers, lookup: (id: string) => Group | undef
     if (t.r === 'into') fb.into.push(g);
     else if (t.r === 'maybe') fb.maybe.push(g);
     else {
+      // Said no: never shown again, and what the reason teaches is kept for this visit.
+      fb.hidden.add(id);
       fb.not.push({ g, why: t.why });
       learn(g, t.why);
     }

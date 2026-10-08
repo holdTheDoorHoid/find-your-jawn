@@ -33,7 +33,7 @@ export interface Evaluation {
 }
 
 /** Practical limits that stretches must never break, whether or not the person locked them. */
-export const STRICT_KEYS: readonly BlockerKey[] = ['budget', 'when', 'often', 'far', 'wheelchair', 'background'];
+export const STRICT_KEYS: readonly BlockerKey[] = ['budget', 'when', 'often', 'far', 'wheelchair', 'languages', 'background'];
 
 /** Extra minutes of doubt allowed before a group with only a rough location fails a travel limit. */
 const SLACK: Record<Precision, number> = { exact: 0, neighborhood: 4, zip: 4, district: 12 };
@@ -118,16 +118,21 @@ export function evaluate(p: Prepared, profile: Profile, opts: EvalOptions = {}):
   if (p.support && !a.includeSupport) baseFail('support');
   if (profile.feedback.hidden.has(g.id)) baseFail('hidden');
 
-  // Age: a group the person is too young or too old for is never shown.
+  // Age: a group the person is too young or too old for is never shown. On the kids path, a group
+  // where kids can come along is judged by the children's ages, because the parent is only there
+  // with them (a youth league with a maximum age of 14 is exactly what a parent of an 8 year old wants).
   const { min_age: min, max_age: max } = g.audience;
-  if ((min !== undefined && min > profile.age.lo) || (max !== undefined && max < profile.age.hi)) baseFail('age');
+  const forTheKids = a.paths.includes('kids') && !isLoose(a, 'kids') && g.requirements.kids_ok;
+  if (!forTheKids && ((min !== undefined && min > profile.age.lo) || (max !== undefined && max < profile.age.hi))) baseFail('age');
 
   // Who may join.
   switch (g.audience.open_to) {
     case 'public':
       break;
     case 'students':
-      if (!a.school || !g.audience.school || g.audience.school !== a.school) baseFail('open_to');
+      if (!a.school) baseFail('open_to');
+      else if (!g.audience.school) unknown('school');
+      else if (g.audience.school !== a.school) baseFail('open_to');
       break;
     case 'parents': {
       const parent = a.paths.includes('kids') || (a.kidsAges?.length ?? 0) > 0 || (a.meet?.communities ?? []).includes('parents');
@@ -169,7 +174,8 @@ export function evaluate(p: Prepared, profile: Profile, opts: EvalOptions = {}):
   }
   if (a.paths.includes('kids') && !isLoose(a, 'kids')) {
     const youngest = Math.min(...((a.kidsAges?.length ?? 0) > 0 ? (a.kidsAges as number[]) : [12]));
-    if (!welcomesKids(g) || (g.audience.min_age !== undefined && g.audience.min_age > youngest)) fail('kids');
+    const { min_age: kidMin, max_age: kidMax } = g.audience;
+    if (!welcomesKids(g) || (kidMin !== undefined && kidMin > youngest) || (kidMax !== undefined && kidMax < youngest)) fail('kids');
   }
 
   // ---- locked answers
@@ -218,6 +224,7 @@ export function evaluate(p: Prepared, profile: Profile, opts: EvalOptions = {}):
   if (a.wheelchair?.value && active('wheelchair', a.wheelchair.locked)) {
     const w = g.access.wheelchair;
     if (w === 'no') fail('wheelchair');
+    else if (w === 'partial') unknown('access_partial');
     else if (w !== 'yes') unknown('access');
   }
 

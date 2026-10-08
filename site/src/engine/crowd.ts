@@ -42,12 +42,20 @@ export function crowdDisjoint(p: Prepared, profile: Profile): boolean {
   return !crowd.some((c) => mine.has(c));
 }
 
+/** A community the person said they would like to find, that the group is for (LGBTQ+, veterans, ...). */
+export function communityMatch(p: Prepared, profile: Profile): string | null {
+  const wanted = profile.answers.meet?.communities ?? [];
+  if (wanted.length === 0) return null;
+  return p.g.audience.community.find((c) => wanted.includes(c)) ?? null;
+}
+
 /**
  * How well the people in the room match who the person wants to meet, 0 to 1. Null when we know
  * nothing about the group's crowd.
  */
 export function crowdFit(p: Prepared, profile: Profile): number | null {
   const g = p.g;
+  if (communityMatch(p, profile)) return 1;
   if (g.crowd.length === 0 && !g.bridging) return null;
   const meet = profile.answers.meet;
   const mixed = g.bridging || g.crowd.includes('all_ages');

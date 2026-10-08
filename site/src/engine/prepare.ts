@@ -1,5 +1,5 @@
 import { isFaithGroup } from '../lib/badges';
-import { placeLocations } from '../lib/place';
+import { isMailingLocation, placeLocations } from '../lib/place';
 import { slugify } from '../lib/text';
 import type { Group } from '../lib/types';
 import { districtCenter, neighborhoodCenter, zipCenter, type Catalog } from './catalog';
@@ -92,7 +92,7 @@ export function orgKey(g: Group): string {
   if (g.kind === 'student_org' && g.audience.school) return `school:${g.audience.school}`;
   const name = g.name.toLowerCase();
   for (const [re, key] of PARENTS) if (re.test(name)) return key;
-  const head = name.split(/\s[-:|]\s|:|\||\(| at /)[0] ?? name;
+  const head = name.split(/\s[-\u2013\u2014]\s|[\u2013\u2014]|:|\||\(| at /)[0] ?? name;
   return slugify(head.replace(/^the /, '')) || g.id;
 }
 
@@ -178,12 +178,13 @@ export function prepare(g: Group, cat: Catalog): Prepared {
     districts: locs.map((l) => slugify(l.planning_district ?? '')).filter(Boolean),
     hoods: locs.map((l) => (l.neighborhood ?? '').toLowerCase().replace(/[-\s]+/g, '_')).filter(Boolean),
     ways: waysOf(g, cat),
-    faith: isFaithGroup(g),
+    faith: isFaithGroup(g) || families.includes('faith-community'),
     support: g.audience.support_group || g.kind === 'support_group' || families.some((f) => cat.supportFamilies.has(f)),
     outdoors: outdoorsOf(g, families),
     philly: families.some((f) => PHILLY_FAMILIES.has(f)) || g.interests.some((t) => PHILLY_TAGS.has(t)),
     completeness: completenessOf(g, points),
-    onlineOnly: g.online_ok && g.locations.every((l) => !l.in_city),
+    // A mailing address is not a place to go to, so a group with only one meets online or somewhere unknown.
+    onlineOnly: g.online_ok && !g.locations.some((l) => l.in_city && !isMailingLocation(l)),
   };
   cache.set(g, p);
   return p;

@@ -37,7 +37,9 @@ out.diagnosis // which locked answers are ruling groups out, for the honest empt
 
 - **Gaps are not no.** A fact the group's page does not give scores neutral (about 0.5) on that part,
   and the confidence part reflects how thin the record is. A question the person skipped scores 0.5 for
-  every group, so it cannot split them. Nothing throws on a thin record.
+  every group, so it cannot split them. (One exception: a group whose crowd is only an age group the person
+  is not part of, such as a kids only group for a retiree, scores lower even when the question was skipped.)
+  Nothing throws on a thin record.
 - **Locked answers on unknown facts.** The group passes, but is shown after every group we could confirm
   (`rankTier`: 0 confirmed, 1 or 2 unconfirmed answers, 3 no place found when distance is locked), and the
   card says what is not listed ("Cost not listed.", "Location not listed.").
@@ -51,7 +53,9 @@ out.diagnosis // which locked answers are ruling groups out, for the honest empt
 - **The wildcard** is very welcoming (a rating of 4 or 5), free or low cost, drop in or one time, practical
   for the person, not an interest they asked for, and tied to something they said. It needs a published
   rating, so with data that has no ratings there is no wildcard. That is on purpose.
-- **Variety:** no more than two results share a primary interest family or a parent organization. The
+- **Variety:** no more than two results share a primary interest family or a parent organization on each
+  page of results. "Show me more" starts a new page: the limit applies inside it and between pages it only
+  nudges the order (otherwise a person whose fits are all in one family would run out after two). The
   parent organization is worked out from the group's name (`orgKey` in `prepare.ts`); use a `parent_org`
   field when the data has one.
 

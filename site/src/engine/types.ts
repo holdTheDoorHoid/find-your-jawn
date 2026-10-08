@@ -176,6 +176,8 @@ export interface CatalogData {
   ways: LabelDef[];
   waysByFamily: Record<string, Partial<Record<WayId, WayExample>>>;
   neighborhoods: PlaceDef[];
+  /** communities a visitor may want to find (LGBTQ+, veterans, ...), for the "who to meet" answer */
+  communities?: LabelDef[];
 }
 
 // ---------------------------------------------------------------- results
@@ -211,6 +213,8 @@ export type NoteKey =
   | 'schedule'
   | 'distance'
   | 'access'
+  | 'access_partial'
+  | 'school'
   | 'languages'
   | 'background'
   | 'frequency'

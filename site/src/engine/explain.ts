@@ -1,5 +1,6 @@
 import { fill } from '../lib/inline';
 import { languageName } from '../lib/language';
+import { plainName } from '../lib/text';
 import { labels, results as t } from '../strings/en';
 import { familyLabel, tagName } from './catalog';
 import { roundMinutes } from './travel';
@@ -100,6 +101,11 @@ function motiveLine(s: Scored, ctx: Context): string | null {
 }
 
 function roleFormatLine(s: Scored, ctx: Context): string | null {
+  const comm = s.evidence.community;
+  if (comm) {
+    const label = ctx.cat.communityLabel.get(comm);
+    if (label) return fill(t.why.community, { community: label });
+  }
   const f = s.evidence.format;
   const r = s.evidence.role;
   if (f) {
@@ -148,7 +154,7 @@ export function whyLines(s: Scored, ctx: Context): string[] {
         return bits.length > 0 ? fill(t.why.practical, { bits: listWords(bits) }) : null;
       })(),
     },
-    { part: 'taste', text: s.evidence.taste ? fill(t.why.taste, { name: s.evidence.taste.liked.name }) : null },
+    { part: 'taste', text: s.evidence.taste ? fill(t.why.taste, { name: plainName(s.evidence.taste.liked.name) }) : null },
     { part: 'newcomer', text: newcomerLine(s, ctx) },
     { part: 'regular', text: s.evidence.regular ? t.why.regular : null },
   ];
@@ -216,7 +222,7 @@ function linkClause(link: WildLink, ctx: Context): string {
     case 'interest':
       return fill(t.wild.interest, { via: lower(link.via), tag: lower(tagName(cat, link.tag)) });
     case 'motive':
-      return fill(t.wild.motive, { motive: lower(cat.motiveLabel.get(link.id) ?? link.id) });
+      return t.wild.motivePhrase[link.id] ?? fill(t.wild.motive, { motive: lower(cat.motiveLabel.get(link.id) ?? link.id) });
     case 'format':
       return fill(t.wild.format, { format: t.formatPhrase[link.id] ?? lower(cat.formatLabel.get(link.id) ?? link.id) });
     case 'role':
@@ -257,13 +263,13 @@ export function wildcardLine(c: WildcardCandidate, ctx: Context): string {
 
 const NOTE_TEXT: Record<NoteKey, string> = t.notes as Record<NoteKey, string>;
 
-export function notesFor(s: Scored, ctx: Context): { notes: string[]; noteKeys: NoteKey[] } {
-  const keys: NoteKey[] = [...s.unknown];
+export function notesFor(s: Scored, ctx: Context, extraUnknown: NoteKey[] = []): { notes: string[]; noteKeys: NoteKey[] } {
+  const keys: NoteKey[] = [...new Set([...s.unknown, ...extraUnknown])];
   const a = ctx.profile.answers;
   // Someone gave a starting point and a way of travelling, but this group has no place we can use.
   if (a.far && a.far.mode !== 'anywhere' && ctx.profile.home && s.ev.minutes === undefined && !s.p.onlineOnly && !keys.includes('distance')) keys.push('distance');
   // Partly accessible: worth a word even when the person did not lock access.
-  if (a.wheelchair?.value && s.p.g.access.wheelchair === 'partial' && !keys.includes('access')) keys.push('access');
+  if (a.wheelchair?.value && s.p.g.access.wheelchair === 'partial' && !keys.includes('access_partial')) keys.push('access_partial');
   if (a.paths.includes('hours') && a.hours?.form && s.p.g.requirements.service_hours_letter === 'unknown' && !keys.includes('hours_form')) keys.push('hours_form');
   return { noteKeys: keys, notes: keys.map((k) => NOTE_TEXT[k]).filter(Boolean) };
 }
@@ -284,7 +290,7 @@ export function buildResult(
   ctx: Context,
   extra: { stretch?: StretchCandidate; wild?: WildcardCandidate } = {},
 ): Result {
-  const { notes, noteKeys } = notesFor(s, ctx);
+  const { notes, noteKeys } = notesFor(s, ctx, extra.stretch?.unknown ?? extra.wild?.unknown ?? []);
   const result: Result = {
     group: s.p.g,
     kind,
