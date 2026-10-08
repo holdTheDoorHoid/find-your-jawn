@@ -3,8 +3,8 @@
   "agent": "w20c-17",
   "lane": "A",
   "model": "haiku",
-  "searches_used": 0,
-  "fetches_used": 14,
+  "searches_used": 2,
+  "fetches_used": 19,
   "records": [
     {
       "match": {"lead_ids": ["irs_990n:850557753", "irs_bmf:850557753"], "group_id": "project-short", "ein": "850557753", "website": "https://www.project-short.com/"},
@@ -37,23 +37,27 @@
       "match": {"lead_ids": ["irs_990n:822995719", "irs_bmf:822995719"], "group_id": "redeemed-for-a-cause-outreach", "ein": "822995719", "website": "https://www.redeemedforacause.org"},
       "verdict": "publish",
       "name": "Redeemed for a Cause Outreach",
+      "summary": "A Philadelphia nonprofit started by a human trafficking survivor. It does street outreach to women in the sex trade, runs drop-in centers in South and West Philadelphia, and each year before Valentine's Day packs roses with encouraging notes for shelters.",
+      "what_you_do": "Donate flowers, chocolates, or winter items for the Valentine's roses, or ask the group through its website how to volunteer for outreach or deliveries. The news coverage does not describe a formal volunteer sign-up.",
       "kind": "nonprofit",
-      "status": "unknown",
-      "sources": [{"url": "https://www.redeemedforacause.org", "seen": "2026-10-08", "fields": ["name"]}],
+      "categories": ["advocacy-rights", "hunger-housing-basic-needs"],
+      "interests": ["violence_prevention", "goods_closets"],
+      "motives": ["values"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["women"], "faith": null, "support_group": false},
+      "cost": {"level": "unknown", "text": "The sources read do not state prices for any service."},
+      "first_step": {"how": "Use the group's website to ask how to volunteer or to donate items for the next Valentine's Day rose drive.", "drop_in": false, "newcomer_friendliness": 2, "basis": "The sources read do not describe a volunteer sign-up, so the way in is unclear."},
+      "contacts": {"website": "https://www.redeemedforacause.org", "email": null, "phone": null, "social": []},
+      "status": "dormant",
+      "last_sign_of_life": "2024-02",
+      "sign_of_life_url": "https://www.cbsnews.com/amp/philadelphia/news/south-philadelphia-redeemed-for-a-cause-outreach-roses-for-survivors",
+      "sources": [
+        {"url": "https://www.cbsnews.com/amp/philadelphia/news/south-philadelphia-redeemed-for-a-cause-outreach-roses-for-survivors", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life"]},
+        {"url": "https://cbsnews.com/amp/philadelphia/news/gamechangers-philadelphia-woman-with-passion-to-help-others-working-to-stop-human-trafficking", "seen": "2026-10-08", "fields": ["summary", "status"]}
+      ],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "The website's TLS certificate names only bluehost.com, so the fetch tool refused the page twice (with and without www). Nothing could be read from the site. IRS listing address: 730-732 West Moyamensing Ave. Search result pending."
-    },
-    {
-      "match": {"lead_ids": ["irs_990n:232444692", "irs_bmf:232444692"], "group_id": "tasker-street-baptist-church-commun-ity-outreach-corporation", "ein": "232444692", "website": null},
-      "verdict": "publish",
-      "name": "Tasker Street Baptist Church Community Outreach Corporation",
-      "kind": "nonprofit",
-      "status": "unknown",
-      "sources": [{"url": "https://www.google.com/search?q=Tasker+Street+Baptist+Church+Community+Outreach+Philadelphia", "seen": "2026-10-08", "fields": ["name"]}],
-      "research_tier": 1,
-      "confidence": "low",
-      "notes": "The website field held an accounting firm's name, not a web address, so no website was fetched. Search pending."
+      "notes": "Sources are two local TV news articles (dated February 10, 2024 and February 13, 2020), not the group's own site. The group's website would not load: its TLS certificate names only bluehost.com, so its own pages were not read. The newest dated item is February 2024, so status is dormant. Neighborhoods are named in the sources but no street addresses, so none are recorded. Founder name left out on purpose. IRS listing address: 730 and 732 West Moyamensing Ave."
     },
     {
       "match": {"lead_ids": ["irs_990n:851191133", "irs_bmf:851191133"], "group_id": "rousseau-foundation", "ein": "851191133", "website": "https://www.rousseaufoundation.org/"},
@@ -85,10 +89,9 @@
       "name": "Sisterhood 4 Vets",
       "kind": "nonprofit",
       "status": "unknown",
-      "sources": [{"url": "https://sisterhood4vets.com", "seen": "2026-10-08", "fields": ["name"]}],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "The first fetch returned HTTP 522 with a Retry-After of 120 seconds. A retry was planned later in the run. Result pending."
+      "notes": "The group's website returned HTTP 522 (Retry-After 120 seconds) on three attempts spread over the run, so no page was read. Nothing is known beyond the IRS listing (1516 S Cleveland St). Needs a later pass."
     },
     {
       "match": {"lead_ids": ["irs_990n:464067957", "irs_bmf:464067957"], "group_id": "sisters-giving-back", "ein": "464067957", "website": "https://sistergivingback.com/"},
@@ -123,22 +126,24 @@
       "notes": "Upcoming dated items are the October 2026 cohort and the November 21, 2026 conference. The newest past item is an April 19, 2026 bingo event. No email is published. The June 2025 gala was held in Deptford, New Jersey, outside Philadelphia."
     },
     {
-      "match": {"lead_ids": ["irs_990n:232444692", "irs_bmf:232444692"], "group_id": "tasker-street-baptist-church-commun-ity-outreach-corporation"},
-      "verdict": "hide",
-      "hidden_reason": "private",
-      "name": "Tasker Street Baptist Church Community Outreach Corporation",
-      "placeholder": true
+      "match": {"lead_ids": ["irs_990n:232444692", "irs_bmf:232444692"], "group_id": "tasker-street-baptist-church-commun-ity-outreach-corporation", "ein": "232444692", "website": null},
+      "verdict": "publish",
+      "name": "Tasker Street Baptist Church Community Outreach",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The website field held an accounting firm's name, not a web address, so no site was fetched. One search found an undated Philadelphia Tribune article about Tasker Street Missionary Baptist Church (phillytrib.com, article f27433fe). Its search excerpt names a Community Outreach Corporation with an after-school mentoring and homework program, job-search help by appointment, and a monthly nursing home ministry. The article returned HTTP 429 twice, so no summary was written from it. Identity not confirmed: the article says Missionary Baptist, the IRS says Baptist, and a church directory lists 2010 Tasker Street while the IRS lists 2018 Tasker St. Needs a dated source before publishing."
     },
     {
       "match": {"lead_ids": ["irs_990n:222559057", "irs_bmf:222559057"], "group_id": "temple-community-and-economic-development-corporation", "ein": "222559057", "website": null},
       "verdict": "publish",
-      "name": "Temple Community & Economic Development Corporation",
+      "name": "Temple Community and Economic Development Corporation",
       "kind": "nonprofit",
       "status": "unknown",
-      "sources": [{"url": "https://www.google.com/search?q=Temple+Community+Economic+Development+Corporation+Philadelphia", "seen": "2026-10-08", "fields": ["name"]}],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "The website field held an accounting firm's name, not a web address, so no website was fetched. The search budget ran out before this group could be searched."
+      "notes": "The website field held a CPA firm's name, not a web address, so no site was fetched. Not searched: the two-search budget was spent on Tasker Street and Redeemed for a Cause. The IRS listing gives 1327 S 19th St, unit 35. Needs a search or a site before any summary is written."
     },
     {
       "match": {"lead_ids": ["irs_990n:232789608", "irs_bmf:232789608"], "group_id": "the-justinian-foundation", "ein": "232789608", "website": "https://www.justinian.org/foundation.php"},
@@ -170,7 +175,7 @@
       "sources": [{"url": "https://asistersheart.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "first_step", "contacts", "status"]}],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "The site has no dated items. Its social links point to generic Squarespace and Facebook accounts, so they were left out. The email is shown on the page next to a link that looked broken, so verify it before relying on it. The street address comes from the IRS listing, not the site."
+      "notes": "The site has no dated items. Its social links point to generic Squarespace and Facebook accounts, so they were left out. The email is shown on the page next to a link that looked broken, so verify it before relying on it. The street address comes from the IRS listing (6131 Webster St), not the site."
     },
     {
       "match": {"lead_ids": ["irs_990n:830573396", "irs_bmf:830573396"], "group_id": "al-hanifiyya-haven", "ein": "830573396", "website": null},
@@ -178,10 +183,9 @@
       "name": "Al-Hanifiyya Haven",
       "kind": "nonprofit",
       "status": "unknown",
-      "sources": [{"url": "https://apps.irs.gov/app/eos/", "seen": "2026-10-08", "fields": ["name"]}],
       "research_tier": 1,
       "confidence": "low",
-      "notes": "The website field held a stray character, not a web address, so no website was fetched. The search budget ran out before this group could be searched. IRS listing address: 5512 Belmar Ter."
+      "notes": "The website field held a stray character, not a web address, so no site was fetched. Not searched: the two-search budget was spent on Tasker Street and Redeemed for a Cause. IRS listing address: 5512 Belmar Ter."
     },
     {
       "match": {"lead_ids": ["irs_990n:332569699", "irs_bmf:332569699"], "group_id": "asian-american-business-alliance-of-greater-philadelphia", "ein": "332569699", "website": "https://asianbusinessphila.com/"},
@@ -253,12 +257,13 @@
     },
     {
       "match": {"lead_ids": ["irs_990n:320301613", "irs_bmf:320301613"], "group_id": "building-boys-to-men", "ein": "320301613", "website": "https://www.buildingboystomen.org"},
-      "verdict": "not_a_group",
+      "verdict": "hide",
+      "hidden_reason": "out_of_scope",
       "name": "Building Boys to Men",
       "sources": [{"url": "https://www.buildingboystomen.org", "seen": "2026-10-08", "fields": ["verdict"]}],
       "research_tier": 1,
       "confidence": "high",
-      "notes": "A nonprofit whose main offer is a subscription educational video game (memberships from 1.99 to 19.99 dollars a month, plus a 9.99 dollar one-time unlock). The site lists no classes, meetings, volunteer roles, or in-person programs. The free sampler is a product, not a group. The site address (2825 Ormes St) differs from the IRS listing (1018 S 55th St)."
+      "notes": "A nonprofit whose main offer is a paid subscription educational video game (memberships from 1.99 to 19.99 dollars a month, plus a 9.99 dollar one-time unlock). The site lists no classes, meetings, volunteer roles, or in-person programs, so it is treated as a business with no community program. The free sampler is a product, not a group. The site address (2825 Ormes St) differs from the IRS listing (1018 S 55th St)."
     },
     {
       "match": {"lead_ids": ["irs_990n:842774653", "irs_bmf:842774653"], "group_id": "caoba-foundation", "ein": "842774653", "website": "https://caobafoundation.org"},
@@ -271,10 +276,13 @@
     }
   ],
   "leads_only": [
-    {"name": "Justinian Society of Philadelphia", "url": "https://www.justinian.org/foundation.php", "note": "Parent bar association named on the Justinian Foundation's page (attorneys of Italian ancestry, membership application, 2026 dated events listed). Read on that page only; needs its own record."}
+    {"name": "Justinian Society of Philadelphia", "url": "https://www.justinian.org/foundation.php", "note": "Parent bar association named on the Justinian Foundation's page (attorneys of Italian ancestry, membership application, 2026 dated events listed). Read on that page only; needs its own record."},
+    {"name": "Covenant House (Kensington)", "url": null, "note": "Named in a 2024 news article as a place Redeemed for a Cause delivered gifts to. Not checked."}
   ],
   "blocked": [
+    {"url": "https://sisterhood4vets.com", "status": 522, "note": "Origin error on three attempts; Retry-After 120 seconds. No page read."},
+    {"url": "https://www.phillytrib.com/religion/tasker-street-missionary-baptist-revitalizing-through-youth-and-evangelism/article_f27433fe-37c7-5c4d-a9a4-4843baa32f88.html", "status": 429, "note": "Rate limited on two attempts. Article seen only as a search excerpt, so not used for a summary."},
     {"url": "https://www.redeemedforacause.org", "status": null, "note": "TLS certificate names only bluehost.com, so the fetch tool refused the page (tried with and without www). Not a bot check."}
   ],
-  "notes": "Work in progress, file rewritten after the first fetch round. Placeholder rows (verdict hide or unknown) are pending the search and retry steps and will be replaced."
+  "notes": "Searches: 2 of 2 used, both on Tasker Street and Redeemed for a Cause. Temple Community and Economic Development Corporation and Al-Hanifiyya Haven were not searched because the cap was reached, so both are unknown with no summary. Sisterhood 4 Vets was unreadable (HTTP 522 three times). Tasker Street's article was rate limited (HTTP 429) on two attempts. Redeemed for a Cause's own website would not load, so its record rests on two CBS Philadelphia news articles (February 2024 and February 2020). Three IRS website fields were not web addresses (an accounting firm, a CPA firm and a stray character), and those were treated as missing. Rate limiting hit one domain at a time, not many. Verdict counts: 12 publish (4 with unknown status and no summary), 1 hide (private), 1 hide (out_of_scope), 1 out_of_area."
 }

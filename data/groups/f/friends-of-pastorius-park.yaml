@@ -10,8 +10,8 @@ leads:
 ein: '222818977'
 summary: 'Volunteers who look after Pastorius Park in Chestnut Hill: they care for its plantings, waterways,
   and historic structures, and work with the city''s parks department.'
-what_you_do: Help with workdays that clear invasive plants and plant native trees and shrubs that support
-  birds and pollinators.
+what_you_do: Help at workdays that clear invasive plants, weed and mulch planting beds, water trees during
+  drought, and plant native trees and shrubs that support birds and pollinators.
 kind: friends_group
 categories:
 - nature-environment
@@ -40,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer work comes in cleanup and planting seasons. The group posts no fixed weekly schedule.
-    Northeast Woods work runs through fall 2026.
+  text: Workdays come in cleanup and planting seasons, with no fixed weekly schedule. Each workday has
+    its own sign-up link on the volunteer page.
   days: []
   times: []
   recurring: null
@@ -59,7 +59,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: No cost is mentioned for volunteering or visiting
+  text: The site lists no fee to visit or volunteer. Donations are voluntary and help pay for trees, plantings,
+    water systems and structures.
 commitment: seasonal
 group_size: null
 access:
@@ -74,14 +75,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the volunteer opportunities newsletter (the site says only a few emails a year) or
-    email info@friendsofpastorius.org
+  how: Sign up for a workday through the registration link on the volunteer page, or email info@friendsofpastorius.org
+    with questions
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The page does not say how workdays are announced beyond the newsletter, so the way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The volunteer page says new volunteers are always welcome and gives a sign-up form for each workday,
+    plus an email for questions.
+  what_to_expect: A workday is outdoor work in the park, such as weeding, mulching, tree care, watering
+    and clearing sticks from walkways. The October 2026 workday runs 9 am to noon, with check-in at the
+    warming hut, and coffee, water and sweets are provided. The site lists no fee for volunteering.
+  first_visit_tips:
+  - Wear closed-toe shoes or sneakers and long pants, since ticks, poison ivy and stinging nettle live
+    in the park, and bring work gloves.
+  - Rakes, shovels and wheelbarrows are on hand at events, but you can bring your own tools.
+  - There is no parking lot and no car access inside the park, so plan to park on the nearby streets.
+  - Restrooms at the Hut are open spring to fall, from dawn to dusk.
 contacts:
   website: https://friendsofpastorius.org
   email: info@friendsofpastorius.org
@@ -93,7 +102,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
+sign_of_life_url: https://friendsofpastorius.org/volunteer/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -140,8 +149,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://friendsofpastorius.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - first_step.first_visit_tips
+  - cost
+  - last_sign_of_life
+- url: https://friendsofpastorius.org/faqs/
+  seen: '2026-10-08'
+  fields:
+  - first_step.first_visit_tips
+  - cost
+- url: https://friendsofpastorius.org/events/
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

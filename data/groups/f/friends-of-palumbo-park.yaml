@@ -7,8 +7,8 @@ leads:
 ein: null
 summary: Neighbors who care for Palumbo Park in South Philadelphia. They do cleanups and planting, push
   for park improvements, raise money through grants and donations, and run community events.
-what_you_do: Come to the Love Your Park day, join volunteer cleanups and planting, or use the volunteer
-  page on the group's site.
+what_you_do: Help replant areas that lost most of their plants, a project the group is running with the
+  city, or come to the Love Your Park day. You can also email to ask about volunteering or membership.
 kind: friends_group
 categories:
 - nature-environment
@@ -36,11 +36,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Love Your Park day on November 14, 2026, 10:30 am to 1 pm; the only dated event on the site
+  text: Clean-ups and planting happen in the spring and fall, and the group posts its dates on the site.
   days: []
   times:
   - morning
-  recurring: false
+  recurring: true
   season: event_only
 locations:
 - label: Frank Palumbo Sr Park
@@ -54,8 +54,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: No event fee is stated. The site says the park is open to all and offers an optional donate link.
+  level: free
+  text: Membership costs nothing and is open to anyone. The site does not state a fee for events, and
+    it has an optional donate link.
 commitment: null
 group_size: null
 access:
@@ -70,15 +71,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Love Your Park day on November 14, 10:30 am to 1 pm, or sign up through the Volunteer
-    and Join page on palumbopark.org
+  how: Email palumbopark@gmail.com to ask about volunteering or membership, or come to the Love Your Park
+    day in November
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: A dated public event and a volunteer page are listed, but the site does not say how a newcomer
-    starts.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Membership is free and open to anyone, and there is a clear email to start, but the site does
+    not say first timers are welcome at work days.
+  what_to_expect: Work days are outdoor planting and clean-up jobs in a small South Philadelphia pocket
+    park. The volunteer page does not say how long a work day lasts, what to wear, or whether tools are
+    supplied. Membership costs nothing.
+  first_visit_tips:
+  - Email palumbopark@gmail.com before you come, since the site does not list a regular work day schedule.
+  - The park sits next to Fleisher Art Memorial at 723 Catharine Street, but the site gives no parking
+    or transit details.
+  - The Love Your Park day is on November 14, 10:30 am to 1 pm, the one dated event on the site.
 contacts:
   website: https://www.palumbopark.org/
   email: palumbopark@gmail.com
@@ -112,7 +119,23 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://palumbopark.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - schedule
+  - what_you_do
+- url: https://palumbopark.org/visit/
+  seen: '2026-10-08'
+  fields:
+  - first_step.first_visit_tips
+  - locations
+- url: https://palumbopark.org/projects/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

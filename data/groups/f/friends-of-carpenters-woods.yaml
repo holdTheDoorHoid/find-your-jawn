@@ -7,10 +7,10 @@ leads:
 - irs_990n:264345005
 - irs_bmf:264345005
 ein: '264345005'
-summary: A volunteer group that helps restore habitat, keep trails in shape, and make repairs at Carpenters
-  Woods. A nonprofit directory describes the group this way. We have not seen its own pages.
-what_you_do: Volunteer work days to restore habitat, maintain trails, and make repairs, according to a
-  nonprofit directory listing. Dates were not found.
+summary: Volunteers who care for Carpenters Woods. Recent work days included weeding the meadow and repairing
+  the bridge, and the group posts work day news on its own website.
+what_you_do: Join a work day to weed the meadow, repair the bridge and other structures, and help look
+  after the woods. The group's website also shares a bird guide, a tree map, and plant information.
 kind: friends_group
 categories:
 - nature-environment
@@ -36,10 +36,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Work days are held several times a year and announced in blog posts. The site gives no fixed days
+    or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Carpenters Woods
@@ -72,12 +73,13 @@ first_step:
   how: Email focw24@gmail.com and ask about the next volunteer work day
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Work days are announced in blog posts without dates on the site, and no sign-up steps are published,
+    so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.facebook.com/carpenterswoods
+  website: https://focw.org/
   email: focw24@gmail.com
   phone: null
   contact_name: Katrzyna Janick
@@ -116,8 +118,26 @@ sources:
   - summary
   - what_you_do
   - interests
-research_tier: 1
-confidence: low
+- url: https://focw.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://focw.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.website
+- url: https://loveyourpark.org/park-friends-network
+  seen: '2026-10-08'
+  fields:
+  - contacts.website
+  - contacts.email
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

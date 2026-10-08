@@ -10,7 +10,8 @@ ein: '232901427'
 summary: Neighbors who care for Gorgas Park in Roxborough. They put on park concerts and family events,
   and they hold spring planting and cleanup days.
 what_you_do: Sign up for a spring planting or cleanup day, help at a family event or concert, or donate
-  to the park.
+  to the park. The group also runs a garden club that meets weekly; the site does not say how to join
+  it.
 kind: friends_group
 categories:
 - nature-environment
@@ -40,7 +41,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Spring planting and cleanup days, and summer concerts; dates are posted each season
+  text: Spring planting and cleanup days, and summer concerts. Dates are posted each season on the group's
+    site.
   days: []
   times: []
   recurring: null
@@ -73,14 +75,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch the Volunteer page on gorgaspark.com for the next spring planting or cleanup day, and register
-    through the link there
+  how: Watch the Volunteer Opportunities page on gorgaspark.com for the next spring planting or cleanup
+    day, and sign up through the link posted there.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Planting and cleanup days are open to volunteers who sign up on the group's site
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Planting and cleanup days are open to volunteers who sign up on the group's site. The site does
+    not describe a first-timer step.
+  what_to_expect: Spring planting and cleanup days are the main way to help, and they are announced each
+    season. The site does not say how long these days last, what tasks there are, or what to bring. A
+    past planting day had limited spots, so sign up early.
+  first_visit_tips:
+  - Sign up early, since a past planting day had limited spots.
+  - The site does not list what to bring or wear. The Contact Us form on gorgaspark.com is the only listed
+    way to ask.
 contacts:
   website: https://www.gorgaspark.com
   email: pprstewardship@phila.gov
@@ -126,7 +134,24 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.gorgaspark.com/gorgas-park-2026/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - schedule
+- url: https://www.gorgaspark.com/volunteer-opportunities/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - schedule
+- url: https://www.gorgaspark.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

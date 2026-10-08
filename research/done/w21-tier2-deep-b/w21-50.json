@@ -1,0 +1,365 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-50",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 19,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_990n:452247158", "irs_bmf:452247158"], "group_id": "friends-of-mount-moriah-cemetery-inc", "ein": "452247158", "website": "https://friendsofmountmoriahcemetery.org"},
+      "verdict": "publish",
+      "name": "Friends of Mount Moriah Cemetery",
+      "summary": "Volunteers who clean up and restore Mount Moriah Cemetery in southwest Philadelphia. They hold clean-up days through the year, and you can come to just one.",
+      "what_you_do": "Clear brush, trim weeds, pick up trash, plant flowers, and help with historical research on the grounds. Groups from colleges and businesses also come to clean-up days, and a group can adopt a plot or section to keep it mowed and trimmed.",
+      "kind": "friends_group",
+      "categories": ["history-heritage-preservation", "nature-environment"],
+      "interests": ["cemetery_friends", "park_cleanup"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Organized clean-up days run through the year. The group announces each one and can also help other groups plan their own clean-up.",
+        "days": ["sat"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [{"label": "Mount Moriah Cemetery, Philadelphia entrance on Kingsessing Avenue", "address": "6201 Kingsessing Ave", "zip": "19142", "in_city": true}],
+      "online_ok": false,
+      "cost": {"level": "free", "text": "Free to volunteer. Donations help pay for flowers planted on the grounds."},
+      "commitment": "drop_in",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email info@fommci.org to ask about the next clean-up day, or to bring a group or adopt a plot",
+        "drop_in": true,
+        "newcomer_friendliness": 4,
+        "basis": "The volunteer page says new volunteers are always wanted and tells people to email the group to start.",
+        "what_to_expect": "You work outdoors on the cemetery grounds with other volunteers, and college and business groups also come to clean-up days. The volunteer page does not say how long a day runs, and volunteering costs nothing.",
+        "first_visit_tips": [
+          "Email info@fommci.org before you come, since the volunteer page does not list set dates.",
+          "On weekends the gates are open about 10:30 am to 4 pm, and rain or snow can keep them shut.",
+          "If you drive, park on the main roads inside the grounds, keep to 15 mph, and never park on the grass.",
+          "Bikes belong in the racks near the entrances, not locked to trees, monuments or fences."
+        ]
+      },
+      "contacts": {
+        "website": "https://friendsofmountmoriahcemetery.org",
+        "email": "info@fommci.org",
+        "contact_name": "Paulette Rhone",
+        "social": ["https://www.facebook.com/groups/Fommci/", "https://www.instagram.com/mountmoriahcemetery"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://friendsofmountmoriahcemetery.org/events/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.nbcphiladelphia.com/news/local/volunteers-work-to-bring-new-life-to-historic-cemetery-targeted-by-burglar/4388136/", "seen": "2026-10-08", "fields": ["status", "schedule", "first_step", "last_sign_of_life"]},
+        {"url": "https://friendsofmountmoriahcemetery.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts.social"]},
+        {"url": "https://friendsofmountmoriahcemetery.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "first_step", "cost"]},
+        {"url": "https://friendsofmountmoriahcemetery.org/events/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "cost"]},
+        {"url": "https://friendsofmountmoriahcemetery.org/visit/", "seen": "2026-10-08", "fields": ["first_step.first_visit_tips"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Deep pass on the group's own volunteer, events and visit pages. The volunteer page welcomes new volunteers and says to email to start, but it gives no clean-up dates. Tier 1 said clean-ups happen one or two times a month; the group's own pages do not confirm that, so the summary and schedule no longer say it. Saturday is kept from tier 1 because the April 25, 2026 and October 17, 2026 events both fall on a Saturday. Newest dated item: Volunteer Picnic, Saturday October 17, 2026, 12:00 pm to 4:00 pm, free. No transit stop, parking lot or accessibility details are on the site, so none are given."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:806"], "group_id": "friends-of-northwood-park", "website": "https://www.northwoodparkfriends.com/"},
+      "verdict": "publish",
+      "name": "Friends of Northwood Park",
+      "summary": "Volunteers who care for Northwood Park. They run cleanups, a plant sale fundraiser and an Easter egg hunt, and they host a yoga class in the park on listed dates through the fall.",
+      "what_you_do": "Join through the JOIN US form on the site, come to a cleanup or the Volunteer Kick-Off, or take part in the yoga class in the park.",
+      "kind": "friends_group",
+      "categories": ["nature-environment", "running-cycling-fitness"],
+      "interests": ["friends_of_park", "park_cleanup", "yoga_movement"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "one_off_event"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Yoga in the Park runs 10 to 11 am on dates the site lists through the warm months. The group also holds park cleanups and a volunteer kick-off, and the site posts each date.",
+        "times": ["morning"],
+        "recurring": true
+      },
+      "locations": [{"label": "Northwood Park", "address": "999 Arrott St", "zip": "19124", "in_city": true}],
+      "cost": {"text": "The page does not say whether events are free. The plant sale is a fundraiser."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the JOIN US form on northwoodparkfriends.com, then come to the Volunteer Kick-Off or a listed cleanup",
+        "newcomer_friendliness": 3,
+        "basis": "The site has a join form and a kick-off day, which is a clear start, but it does not say beginners or newcomers are welcome.",
+        "what_to_expect": "Cleanups are hands-on work in the park alongside neighbors. The spring Love Your Park cleanup on the site runs 10 am to noon, and the site does not say what to bring, whether tools are supplied, or whether events cost money.",
+        "first_visit_tips": [
+          "Come to the Volunteer Kick-Off first if you want to meet the group before a cleanup.",
+          "The site does not give parking, transit or what to bring, so email the group's listed contact address before you come."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.northwoodparkfriends.com/",
+        "email": "pprstewardship@phila.gov",
+        "social": ["https://www.facebook.com/NorthwoodParkFriends", "https://www.instagram.com/northwoodparkfriends"]
+      },
+      "status": "probably_active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.northwoodparkfriends.com/",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "kind"]},
+        {"url": "https://www.northwoodparkfriends.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "first_step.what_to_expect", "first_step.first_visit_tips", "contacts.social", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The site has only a home page with event listings. The join form and support form are Google Forms, which I did not open or submit, and the Facebook and Instagram pages were not read. Events on the site print no year, so the tier 1 last sign of life of 2026-10 is kept but the page itself does not show that year; please check it. The footer copyright year (2024) is not evidence. The dogwood19124.org link in the footer did not resolve when checked, so it is not recorded."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:808"], "group_id": "friends-of-paines-park-paines-park-friends"},
+      "verdict": "publish",
+      "name": "Friends of Paine's Park",
+      "summary": "The City lists a Friends group for Paine's Park, a skate park and plaza beside the Schuylkill River trail. We could not confirm its current work from a public page.",
+      "what_you_do": "Join park cleanups, plantings and events with your neighbors.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["friends_of_park"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Paine's Park", "address": "400 Martin Luther King Drive", "zip": "19103", "in_city": true}],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected with this Friends group"
+      },
+      "contacts": {
+        "website": "https://www.facebook.com/p/friendsofpainespark-61578948212743/?_rdr",
+        "email": "pprstewardship@phila.gov",
+        "social": ["https://www.facebook.com/p/friendsofpainespark-61578948212743/"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "kind", "contacts.social", "first_step"]},
+        {"url": "https://schuylkillbanks.org/landmarks/paines-park", "seen": "2026-10-08", "fields": ["summary"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "No group website is in our data. The only web page for the group is a Facebook page, which was not read. One web search for the group by name found no page about it, only other Friends groups and the city's Park Friends list, so nothing new is recorded. The status and last sign of life are tier 1 values taken from the city list; no dated item from the group itself was found, so please check the status before it goes live. Deep pass not possible; the City stewardship office is the way in."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:810"], "group_id": "friends-of-palumbo-park", "website": "https://www.palumbopark.org/"},
+      "verdict": "publish",
+      "name": "Friends of Palumbo Park",
+      "summary": "Neighbors who care for Palumbo Park in South Philadelphia. They do cleanups and planting, push for park improvements, raise money through grants and donations, and run community events.",
+      "what_you_do": "Help replant areas that lost most of their plants, a project the group is running with the city, or come to the Love Your Park day. You can also email to ask about volunteering or membership.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["friends_of_park", "park_cleanup"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "one_off_event"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Clean-ups and planting happen in the spring and fall, and the group posts its dates on the site.",
+        "times": ["morning"],
+        "recurring": true
+      },
+      "locations": [{"label": "Frank Palumbo Sr Park", "address": "723 Catharine St", "zip": "19147", "in_city": true}],
+      "cost": {"level": "free", "text": "Membership costs nothing and is open to anyone. The site does not state a fee for events, and it has an optional donate link."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email palumbopark@gmail.com to ask about volunteering or membership, or come to the Love Your Park day in November",
+        "newcomer_friendliness": 3,
+        "basis": "Membership is free and open to anyone, and there is a clear email to start, but the site does not say first timers are welcome at work days.",
+        "what_to_expect": "Work days are outdoor planting and clean-up jobs in a small South Philadelphia pocket park. The volunteer page does not say how long a work day lasts, what to wear, or whether tools are supplied. Membership costs nothing.",
+        "first_visit_tips": [
+          "Email palumbopark@gmail.com before you come, since the site does not list a regular work day schedule.",
+          "The park sits next to Fleisher Art Memorial at 723 Catharine Street, but the site gives no parking or transit details.",
+          "The Love Your Park day is on November 14, 10:30 am to 1 pm, the one dated event on the site."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.palumbopark.org/",
+        "email": "palumbopark@gmail.com",
+        "social": ["https://www.instagram.com/palumbopark", "https://www.facebook.com/palumbopark", "https://twitter.com/palumbopark"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.palumbopark.org/",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "kind"]},
+        {"url": "https://www.palumbopark.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://palumbopark.org/volunteer/", "seen": "2026-10-08", "fields": ["first_step", "cost", "schedule", "what_you_do"]},
+        {"url": "https://palumbopark.org/visit/", "seen": "2026-10-08", "fields": ["first_step.first_visit_tips", "locations"]},
+        {"url": "https://palumbopark.org/projects/", "seen": "2026-10-08", "fields": ["what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep pass on the home, volunteer, visit and projects pages. The projects page lists replanting and protective fencing, done with the city, with no dates. Park hours, parking, transit and accessibility are not on the site. Love Your Park is the only dated event: November 14, 2026, 10:30 am to 1 pm."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:811"], "group_id": "friends-of-paolone-park"},
+      "verdict": "publish",
+      "name": "Friends of Paolone Park",
+      "summary": "A Friends group, listed by the City, for Louis P. Paolone Sr. Park on Sears Street in South Philadelphia. Its own activities are not yet confirmed.",
+      "what_you_do": "Join park cleanups, plantings and events with your neighbors.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["friends_of_park"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Louis P. Paolone Sr. Park", "address": "732 Sears St", "zip": "19147", "in_city": true}],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected with this Friends group"
+      },
+      "contacts": {
+        "website": "https://www.facebook.com/paolonepark",
+        "email": "pprstewardship@phila.gov",
+        "social": ["https://www.facebook.com/paolonepark"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "No group website is in our data. The only other web presence is a Facebook page, which was not read. This group was not web searched because the one search allowed went to Paine's Park. Status and last sign of life are tier 1 values from the city list; no dated item from the group itself was found, so please check the status before it goes live."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:812", "irs_990n:222818977", "irs_bmf:222818977"], "group_id": "friends-of-pastorius-park", "ein": "222818977", "website": "https://friendsofpastorius.org"},
+      "verdict": "publish",
+      "name": "Friends of Pastorius Park",
+      "summary": "Volunteers who look after Pastorius Park in Chestnut Hill: they care for its plantings, waterways, and historic structures, and work with the city's parks department.",
+      "what_you_do": "Help at workdays that clear invasive plants, weed and mulch planting beds, water trees during drought, and plant native trees and shrubs that support birds and pollinators.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["habitat_restoration", "friends_of_park"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages", "neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Workdays come in cleanup and planting seasons, with no fixed weekly schedule. Each workday has its own sign-up link on the volunteer page."
+      },
+      "locations": [{"label": "Pastorius Park", "address": "8177 Roanoke Street", "zip": "19118", "in_city": true}],
+      "online_ok": false,
+      "cost": {"level": "free", "text": "The site lists no fee to visit or volunteer. Donations are voluntary and help pay for trees, plantings, water systems and structures."},
+      "commitment": "seasonal",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Sign up for a workday through the registration link on the volunteer page, or email info@friendsofpastorius.org with questions",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The volunteer page says new volunteers are always welcome and gives a sign-up form for each workday, plus an email for questions.",
+        "what_to_expect": "A workday is outdoor work in the park, such as weeding, mulching, tree care, watering and clearing sticks from walkways. The October 2026 workday runs 9 am to noon, with check-in at the warming hut, and coffee, water and sweets are provided. The site lists no fee for volunteering.",
+        "first_visit_tips": [
+          "Wear closed-toe shoes or sneakers and long pants, since ticks, poison ivy and stinging nettle live in the park, and bring work gloves.",
+          "Rakes, shovels and wheelbarrows are on hand at events, but you can bring your own tools.",
+          "There is no parking lot and no car access inside the park, so plan to park on the nearby streets.",
+          "Restrooms at the Hut are open spring to fall, from dawn to dusk."
+        ]
+      },
+      "contacts": {
+        "website": "https://friendsofpastorius.org",
+        "email": "info@friendsofpastorius.org",
+        "contact_name": "Fabrozio Franco",
+        "social": ["https://www.facebook.com/friendsofpastorius", "https://www.instagram.com/pastoriuspark"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://friendsofpastorius.org/volunteer/",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.friendsofpastorius.org/news/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "summary"]},
+        {"url": "https://www.friendsofpastorius.org/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "cost", "contacts", "schedule"]},
+        {"url": "https://friendsofpastorius.org/our-work/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "first_step", "contacts", "status"]},
+        {"url": "https://friendsofpastorius.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "first_step", "first_step.first_visit_tips", "cost", "last_sign_of_life"]},
+        {"url": "https://friendsofpastorius.org/faqs/", "seen": "2026-10-08", "fields": ["first_step.first_visit_tips", "cost"]},
+        {"url": "https://friendsofpastorius.org/events/", "seen": "2026-10-08", "fields": ["cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Deep pass on the volunteer page, FAQ and events page. The events page lists no events; the sign-up for the main workday is on the volunteer page, for Saturday October 24, 2026, with a rain date of Sunday October 25, 2026. Tier 1 had 'Northeast Woods work runs through fall 2026' in the schedule text; that is a dated item, so it moved out and only the October 2026 workday is named. Newcomer rating went from 2 to 4 because the volunteer page now says new volunteers are always welcome and shows how to sign up for each workday. Transit and accessibility are not on the site, so none are recorded."
+    },
+    {
+      "match": {"lead_ids": ["city_friends:813", "irs_990n:205281093", "irs_bmf:205281093"], "group_id": "friends-of-penn-treaty-park", "ein": "205281093", "website": "https://www.penntreatypark.org"},
+      "verdict": "publish",
+      "name": "Friends of Penn Treaty Park",
+      "summary": "A nonprofit that supports Penn Treaty Park on the Delaware River waterfront. It runs a volunteer program, takes donations, and posts park news and a public events calendar.",
+      "what_you_do": "Help with park cleanup (litter, recycling, upkeep), plant trees, flowers and shrubs, help set up and run events, or serve on the park's leadership board. You can also donate.",
+      "kind": "friends_group",
+      "categories": ["nature-environment"],
+      "interests": ["friends_of_park"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "The park is open daily from 8 am to 6 pm. Volunteer days and events are listed on the group's Activities and Events page and its calendar.",
+        "recurring": true
+      },
+      "locations": [{"label": "Penn Treaty Park", "address": "1301 N Beach St", "zip": "19125", "in_city": true}],
+      "cost": {"text": "No park admission fee is mentioned, and parking is free. Volunteer and event costs are not listed."},
+      "access": {
+        "wheelchair": "unknown",
+        "notes": "Nearest SEPTA: the 43 bus stops at the park entrance on Beach Street. Accessible parking spaces are next to the park entrance."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Look at the group's calendar of upcoming volunteer opportunities, then email fopenntreatypark@gmail.com to ask how to sign up for the next one",
+        "newcomer_friendliness": 2,
+        "basis": "The volunteer page lists a calendar and an email but no sign-up steps, so the way in is unclear.",
+        "what_to_expect": "Volunteer work is hands-on park upkeep such as litter and recycling pickup, planting trees, flowers and shrubs, or helping at events. The site does not say how long a shift runs, what to wear or whether tools are supplied, and it lists no volunteer costs.",
+        "first_visit_tips": [
+          "Email fopenntreatypark@gmail.com before you come to ask how to sign up for a volunteer day.",
+          "Parking is free: accessible spaces sit next to the park entrance on Beach Street, and more free parking is on E Columbia Avenue, across N Delaware Avenue.",
+          "Take the 43 bus to the park entrance, or walk about 15 minutes from Girard station on the Market-Frankford Line.",
+          "The park is open daily from 8 am to 6 pm."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.penntreatypark.org",
+        "email": "fopenntreatypark@gmail.com",
+        "contact_name": "Andrew Thomson",
+        "social": ["https://www.instagram.com/penntreatypark", "https://www.facebook.com/PennTreatyPark"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://www.penntreatypark.org/activities-events",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.penntreatypark.org", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "contacts", "schedule", "cost"]},
+        {"url": "https://www.penntreatypark.org/activities-events", "seen": "2026-10-08", "fields": ["summary", "status", "last_sign_of_life", "schedule"]},
+        {"url": "https://www.penntreatypark.org/support/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "first_step.first_visit_tips"]},
+        {"url": "https://www.penntreatypark.org/getting-here", "seen": "2026-10-08", "fields": ["access.notes", "cost", "locations", "first_step.first_visit_tips"]},
+        {"url": "https://www.penntreatypark.org/connect", "seen": "2026-10-08", "fields": ["contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The address is corrected to 1301 N Beach St from the group's own pages; the city list says 1299 Beach St. The group's calendar is a Google Calendar embed that did not show its entries, and no iCal or RSS link was found, so no calendar feed is recorded. The newest dated item on the group's site is a June 15, 2026 article (date from the web address), so last sign of life moves from tier 1's 2026-10 to 2026-06. The Delaware River Trail closure notice has no year on the page, so it is not recorded. The volunteer page has no sign-up steps, which is why the newcomer rating is 2."
+    }
+  ],
+  "leads_only": [],
+  "blocked": [],
+  "notes": "Seven groups in this batch. Five have their own sites and got a deep pass (home page plus two to four more pages each). Friends of Northwood Park's site has only a home page with event listings, so it had no more detail; its sign-up forms are Google Forms that I did not open or submit. Paine's Park and Paolone have no group website in our data (Facebook only, not read), so they carry tier 1 facts with a note. One web search for Paine's Park found nothing about the group, and Paolone was not searched because the one allowed search went to Paine's Park. Corrections: Penn Treaty address is now 1301 N Beach St from the group's own pages; Penn Treaty's last sign of life moved to June 2026; the Mount Moriah summary no longer claims clean-ups one or two times a month, which the group's pages do not confirm. Newcomer ratings: Mount Moriah set to 4, Pastorius raised from 2 to 4, Penn Treaty set to 2 (way in unclear), Northwood kept at 3. Dated items moved out of schedule text. Dogwood19124.org (linked from the Northwood footer) did not resolve on this run, so it is not recorded. Budget: 1 of 1 WebSearch used; 19 fetches used across the group sites, under the 6 per group cap. No blocked pages. Facebook, Instagram and Google Form pages were not opened."
+}

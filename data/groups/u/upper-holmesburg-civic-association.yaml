@@ -103,7 +103,9 @@ contacts:
   email: scywin@rcn.com
   phone: '2159908128'
   contact_name: Stanley Cywinski
-  social: []
+  social:
+  - https://www.facebook.com/Upperholmesburg
+  - https://x.com/UpperHolmesburg
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -140,6 +142,9 @@ sources:
   - schedule
   - status
   - contacts.website
+  - summary
+  - first_step
+  - contacts
 - url: https://upperholmesburg.org/mission/
   seen: '2026-10-08'
   fields:
@@ -158,6 +163,11 @@ sources:
 - url: https://upperholmesburg.org/events/
   seen: '2026-10-08'
   fields:
+  - status
+- url: https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf
+  seen: '2026-10-08'
+  fields:
+  - locations
   - status
 research_tier: 2
 confidence: medium

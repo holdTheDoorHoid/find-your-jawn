@@ -75,8 +75,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: The site does not state dues.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -109,7 +109,8 @@ contacts:
   email: tcazoning@gmail.com
   phone: '2154352780'
   contact_name: Chris Labovitz
-  social: []
+  social:
+  - https://www.facebook.com/share/g/19Nbv6mDqs/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -155,6 +156,7 @@ sources:
   - schedule
   - first_step
   - status
+  - contacts
 - url: https://sites.google.com/view/taconycivicassociation/membership
   seen: '2026-10-08'
   fields:
@@ -162,6 +164,11 @@ sources:
 - url: https://sites.google.com/view/taconycivicassociation/calendar-and-events
   seen: '2026-10-08'
   fields:
+  - status
+- url: https://www.phila.gov/media/20260421151810/Report_AcceptedRCOs_04132026.pdf
+  seen: '2026-10-08'
+  fields:
+  - locations
   - status
 research_tier: 2
 confidence: medium

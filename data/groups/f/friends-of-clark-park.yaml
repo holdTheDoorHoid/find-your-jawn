@@ -11,8 +11,8 @@ leads:
 ein: '237426386'
 summary: Neighbors who support Clark Park in West Philadelphia. They push for the park upgrades the City
   approved, such as nature-based playgrounds and a permanent restroom, and they host events such as Parktoberfest.
-what_you_do: Join as a member or sign up to volunteer through the group's website. Members can also attend
-  board meetings and events such as Parktoberfest.
+what_you_do: Volunteers help with gardening, social media outreach, and tabling at the Saturday farmers
+  market. Members pay yearly dues, and anyone can ask for access to the online board meetings.
 kind: friends_group
 categories:
 - nature-environment
@@ -42,15 +42,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Parktoberfest is Saturday, October 10, 2 to 8 pm. The page does not print the year, but October
-    10 is a Saturday in 2026. Board meeting dates are on a linked page and are not listed on the home
-    page.
+  text: The group keeps a membership table at the Saturday farmers market. Volunteers sign up by email,
+    and board meetings are held online.
   days:
   - sat
   times:
   - daytime
-  - evening
-  recurring: null
+  recurring: true
   season: fall
 locations:
 - label: Clark Park
@@ -64,8 +62,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership and donation amounts are not shown on the page.
+  level: low
+  text: Yearly dues start at $10 for seniors, students, and people with limited income, and are $25 for
+    an individual. A one-time donation is also accepted.
 commitment: null
 group_size: null
 access:
@@ -80,14 +79,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer page (friendsofclarkpark.org/volunteering) to sign up to help, or join at friendsofclarkpark.org/membership
-  drop_in: null
+  how: Stop by the membership table at the Saturday farmers market, or email volunteer@friendsofclarkpark.org
+    to ask about volunteering
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The membership and volunteer pages are public and say how to join. The site does not say beginners
-    are welcome in so many words.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The membership table and volunteer email are public and say how to join; the site does not say
+    newcomers are welcome in so many words.
+  what_to_expect: 'You can stop at the membership table at the Saturday farmers market to join or ask
+    about volunteering. Dues are yearly: $10 at the lowest level and $25 for an individual. Board meetings
+    are held online, and access is given on request by email to the president.'
+  first_visit_tips:
+  - Online membership sign-up asks for a birthdate, and you must be over 13 to join online.
+  - Ask about the board meeting link by emailing the president through the group's Board Meetings page.
 contacts:
   website: https://www.friendsofclarkpark.org/
   email: Info@friendsofclarkpark.org
@@ -153,8 +157,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts.email
-research_tier: 1
-confidence: medium
+- url: https://www.friendsofclarkpark.org/blog
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.friendsofclarkpark.org/volunteering
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - what_you_do
+  - contacts.email
+- url: https://www.friendsofclarkpark.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step.what_to_expect
+  - first_visit_tips
+- url: https://www.friendsofclarkpark.org/board-meetings
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

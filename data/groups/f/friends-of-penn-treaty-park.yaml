@@ -9,8 +9,8 @@ leads:
 ein: '205281093'
 summary: A nonprofit that supports Penn Treaty Park on the Delaware River waterfront. It runs a volunteer
   program, takes donations, and posts park news and a public events calendar.
-what_you_do: Sign up through the volunteer page to help with park work, donate, or come to events listed
-  on the group's calendar.
+what_you_do: Help with park cleanup (litter, recycling, upkeep), plant trees, flowers and shrubs, help
+  set up and run events, or serve on the park's leadership board. You can also donate.
 kind: friends_group
 categories:
 - nature-environment
@@ -37,15 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The park is open daily from 8 am to 6 pm. Volunteer and event dates were not listed on the pages
-    read.
+  text: The park is open daily from 8 am to 6 pm. Volunteer days and events are listed on the group's
+    Activities and Events page and its calendar.
   days: []
   times: []
-  recurring: false
+  recurring: true
   season: null
 locations:
 - label: Penn Treaty Park
-  address: 1299 Beach St
+  address: 1301 N Beach St
   neighborhood: null
   planning_district: null
   zip: '19125'
@@ -56,13 +56,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Event and volunteer costs are not listed.
+  text: No park admission fee is mentioned, and parking is free. Volunteer and event costs are not listed.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: the 43 bus stops at the park entrance on Beach Street. Accessible parking spaces
+    are next to the park entrance.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -71,14 +72,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the Activities and Events page for the next volunteer day or park event, or email the group
-    at fopenntreatypark@gmail.com to ask how to help
+  how: Look at the group's calendar of upcoming volunteer opportunities, then email fopenntreatypark@gmail.com
+    to ask how to sign up for the next one
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The volunteer page lists a calendar and an email but no sign-up steps, so the way in is unclear.
+  what_to_expect: Volunteer work is hands-on park upkeep such as litter and recycling pickup, planting
+    trees, flowers and shrubs, or helping at events. The site does not say how long a shift runs, what
+    to wear or whether tools are supplied, and it lists no volunteer costs.
+  first_visit_tips:
+  - Email fopenntreatypark@gmail.com before you come to ask how to sign up for a volunteer day.
+  - 'Parking is free: accessible spaces sit next to the park entrance on Beach Street, and more free parking
+    is on E Columbia Avenue, across N Delaware Avenue.'
+  - Take the 43 bus to the park entrance, or walk about 15 minutes from Girard station on the Market-Frankford
+    Line.
+  - The park is open daily from 8 am to 6 pm.
 contacts:
   website: https://www.penntreatypark.org
   email: fopenntreatypark@gmail.com
@@ -127,7 +136,32 @@ sources:
   - first_step
   - contacts
   - schedule
-research_tier: 1
+  - cost
+- url: https://www.penntreatypark.org/activities-events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+  - last_sign_of_life
+  - schedule
+- url: https://www.penntreatypark.org/support/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_step.first_visit_tips
+- url: https://www.penntreatypark.org/getting-here
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - cost
+  - locations
+  - first_step.first_visit_tips
+- url: https://www.penntreatypark.org/connect
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

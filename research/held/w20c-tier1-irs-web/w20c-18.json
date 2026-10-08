@@ -1,0 +1,263 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-18",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 17,
+ "leads_only": [
+  {
+   "name": "Christ of Calvary Covenant Church",
+   "url": "https://networks.whyhunger.org/organisation/14187",
+   "note": "Named in a food directory at 500 South 61st Street, the same street address as the Christ of Calvary Community Development Corporation IRS entity. Its own website was not found, so it was not checked."
+  },
+  {
+   "name": "Parents of Murdered Children, Central Philadelphia chapter",
+   "url": "https://whyy.org/articles/parents-of-murdered-children-philadelphia",
+   "note": "Named in a WHYY article as a chapter serving families of murder victims. Its own chapter website was not identified and the national site was not visited, so it was not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.childusadvocacy.org",
+   "status": 301,
+   "note": "Redirects to oldroundchurch.com, an unrelated church domain. Redirect not followed."
+  },
+  {
+   "url": "https://www.christofcalvary.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS failure)."
+  },
+  {
+   "url": "https://www.condocdg.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS failure)."
+  },
+  {
+   "url": "https://hofinet.org",
+   "status": null,
+   "note": "TLS certificate expired; refused on two attempts."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used; 17 WebFetch calls used (14 first pass, 3 follow-up). Redirect followed: codedbykids.com to codedby.org (same group name). Redirect not followed: childusadvocacy.org to an unrelated church domain. Batch website fields that were not usable: 'https:ethiophilly.org' (malformed; ethiophilly.org used) and '1986' (treated as missing for Families Are Victims Too). Verdicts: 14 publish (8 with content, 6 held back as unknown with no summary: Cathedral Childcare, Child USAdvocacy, Christ of Calvary CDC, Condo Community Development Group, Families Are Victims Too, Housing Finance Information Network), 1 not_a_group (Equity Solutions Svcs II). Status among the 8 with content: 2 active (Coded by, Ethiopian Community Association), 2 dormant (Educated Sistas, Girls Justice League), 4 probably_active (C.H.A.N.G.E., Embracing God's Angels, Emmanuel Advancement Center, Helping Hands Ministry). Searches ran out before Child USAdvocacy and Condo Community Development Group could be searched. Key follow-up: the Philadelphia Episcopal Cathedral church (philadelphiacathedral.org) is open to the public and was verified on its own site, but it is not recorded under the Cathedral Childcare IRS id; it needs its own group record.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465469534",
+     "irs_bmf:465469534"
+    ],
+    "group_id": "cathedral-childcare-inc",
+    "ein": "465469534",
+    "website": "https://www.philadelphiacathedral.org"
+   },
+   "verdict": "publish",
+   "name": "Cathedral Childcare",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Office",
+     "address": "3717 Chestnut Street Suite 200",
+     "zip": "19104",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://www.philadelphiacathedral.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.philadelphiacathedral.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "notes": "Held back on purpose: no summary, categories or interests, because it is not established what this IRS entity runs. Its address matches the cathedral office address on philadelphiacathedral.org, which lists an Early Learning Center with no hours, fees or enrollment details and links to a third party site. The cathedral church itself is open to the public (Sunday worship at 10 am, noonday services on Wednesdays and Fridays, a newcomers form, and events dated Friday, October 9 and Sunday, October 11, 2026). Suggest a separate record for Philadelphia Episcopal Cathedral with its own group id, and a separate check of the Early Learning Center. The site prints info@philadelphiacathedral.org and 215-386-0234, but its email link points to a different address. Legal name: Cathedral Childcare Inc.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:831918925",
+     "irs_bmf:831918925"
+    ],
+    "group_id": "child-usadvocacy",
+    "ein": "831918925",
+    "website": "https://www.childusadvocacy.org"
+   },
+   "verdict": "publish",
+   "name": "Child USAdvocacy",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Office",
+     "address": "3508 Market St Ste 211",
+     "zip": "19104",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://www.childusadvocacy.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Held back: no summary, because nothing about what the group does could be read. The website returned a 301 redirect to oldroundchurch.com, an unrelated church domain. That redirect was not followed, so nothing from that domain is recorded. The search budget was used on other groups, so no search was run for this one. The IRS list names an individual contact, not recorded here. A later check (IRS listing or a working site) can confirm what it does; nonpartisan child protection advocacy would be in scope.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:753133714",
+     "irs_bmf:753133714"
+    ],
+    "group_id": "christ-of-calvary-community-development-corporation-inc",
+    "ein": "753133714",
+    "website": "https://www.christofcalvary.org"
+   },
+   "verdict": "publish",
+   "name": "Christ of Calvary Community Development Corporation",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Office",
+     "address": "500 S 61st St",
+     "zip": "19143",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://www.christofcalvary.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Held back: no summary. The website did not resolve (DNS failure). The one search for the exact name found no Philadelphia organization by that name. The closest match is Christ of Calvary Covenant Church at 500 South 61st Street, the same street address as this IRS entity, which a food directory lists with a Saturday food pantry. The link between the church and this entity is not confirmed. Added to leads_only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:455542039",
+     "irs_bmf:455542039"
+    ],
+    "group_id": "condo-community-development-group-inc",
+    "ein": "455542039",
+    "website": "https://www.condocdg.org"
+   },
+   "verdict": "publish",
+   "name": "Condo Community Development Group",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Office",
+     "address": "5601 Woodland Ave",
+     "zip": "19143",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://www.condocdg.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Held back: no summary. The website did not resolve (DNS failure). Also known as Condo Reconciliation Group. The name suggests a condominium association, which is out of scope, but nothing confirmed that and no search was left for it. If a later check confirms it is a condo or homeowner association, change the verdict to hide with hidden_reason out_of_scope.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232987475",
+     "irs_bmf:232987475"
+    ],
+    "group_id": "families-are-victims-too-f-a-v-t",
+    "ein": "232987475"
+   },
+   "verdict": "publish",
+   "name": "Families Are Victims Too",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Office",
+     "address": "1324 S 50th St",
+     "zip": "19143",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Held back: no summary. The batch website field held '1986', which is not a web address, so it was treated as missing. The one search for the exact name in Philadelphia found no organization by that name. The results were news and agency pages on other Philadelphia victim services, which are not this group and were not recorded. Legal name in the IRS list is 'Families Are Victims Too F a V T', so search that form too if a later check is done.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:262514644",
+     "irs_bmf:262514644"
+    ],
+    "group_id": "housing-finance-information-network",
+    "ein": "262514644"
+   },
+   "verdict": "publish",
+   "name": "Housing Finance Information Network",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "IRS listed address",
+     "address": "4216 Pine St",
+     "zip": "19104",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "website": "https://hofinet.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "Held back: no summary. The site's TLS certificate has expired; the fetch was refused on two tries, so nothing was read. The IRS list gives the contact as The Wharton School. It may be a national or international network, in which case the verdict would be out_of_area, but that is unconfirmed. Re-check later.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

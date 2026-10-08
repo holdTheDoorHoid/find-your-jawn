@@ -7,14 +7,18 @@ leads:
 - irs_990n:232736812
 - irs_bmf:232736812
 ein: '232736812'
-summary: The City lists this as a Friends group for Cianfrani Park at 721 South 8th Street. We could not
-  confirm what the group does now.
-what_you_do: Not confirmed. We found no page describing this group's work.
+summary: Neighbors who care for Cianfrani Park at 8th and Fitzwater. The group's blog has posted about
+  cleanups, tree care, planting, and gardening workshops, and it holds a monthly meeting. Its newest dated
+  post is from 2021.
+what_you_do: Its past posts describe park cleanup days, tree care, planting, gardening workshops, and
+  requests for donations. The group meets on the first Tuesday of each month, at Palumbo Recreation Center
+  or in the park when the weather allows.
 kind: friends_group
 categories:
 - nature-environment
 interests:
 - friends_of_park
+- park_cleanup
 motives:
 - values
 - social
@@ -36,10 +40,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The group meets at 7 pm on the first Tuesday of each month, at Palumbo Recreation Center at 10th
+    and Fitzwater, or in the park when the weather allows.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Cianfrani Park
@@ -47,6 +54,15 @@ locations:
   neighborhood: null
   planning_district: null
   zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Palumbo Recreation Center (monthly meetings)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -69,16 +85,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email Cianfranipark@gmail.com, the group's address in the City list, and ask about the next park
-    work day
+  how: Go to the first-Tuesday meeting at 7 pm at Palumbo Recreation Center (10th and Fitzwater), or email
+    Cianfranipark@gmail.com to confirm the group still meets
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site lists a monthly meeting time and place, but its newest dated post is from 2021 and it
+    gives no sign-up steps, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.facebook.com/8thandfitzwater/
+  website: https://cianfranipark.com/
   email: Cianfranipark@gmail.com
   phone: null
   contact_name: Jason Rubin
@@ -114,7 +131,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts.social
-research_tier: 1
+- url: https://cianfranipark.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://loveyourpark.org/park-friends-network
+  seen: '2026-10-08'
+  fields:
+  - contacts.website
+  - contacts.email
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

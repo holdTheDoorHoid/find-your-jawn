@@ -40,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Upcoming events: a movie night on October 16, 2026 (activities from 4 pm, movie at 6 pm) and
-    a tree lighting on December 11, 2026 (6 to 8 pm)'
+  text: Community events at the park, such as a movie night and a winter tree lighting. Check the events
+    page for dates.
   days:
   - fri
   times:
@@ -61,7 +61,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No admission or dues published
+  text: No admission or dues listed for events. The site has a donate page with no suggested amount.
 commitment: one_off
 group_size: null
 access:
@@ -76,14 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Movie Night on October 16, 2026 at Harrowgate Park, 3455 Kensington Ave, from 4 pm,
-    and ask a Friends member how to help
+  how: Come to the Friends of Harrowgate Park Movie Night on October 16, 2026 at the park, 3455 Kensington
+    Ave, from 4 pm, and ask a Friends member how to help.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public events on set dates, but the site does not explain how to join the group itself
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are open to the public on set dates. The site does not explain how to join the group or
+    volunteer.
+  what_to_expect: The Movie Night runs 3:30 to 8 pm. Activities start at 4 pm, with a DJ, refreshments,
+    arts and crafts, face painting, balloon twisters, and a game truck, and the film starts at 6 pm. Bring
+    your own blanket or chairs. The event page does not list an admission price.
+  first_visit_tips:
+  - Bring your own blanket or chairs, as the event page asks.
+  - Plan to arrive by 4 pm for the activities; the movie starts at 6 pm.
+  - The site has no accessibility details, so call (215) 683-3600 or email the group before you come if
+    you need access help.
 contacts:
   website: https://harrowgatepark.com
   email: FriendsOfHarrowgate@gmail.com
@@ -91,10 +98,11 @@ contacts:
   contact_name: Sonja Bingham
   social:
   - https://www.facebook.com/FriendsOfHarrowgatePark/
+  - https://www.instagram.com/friendsofharrowgate/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://harrowgatepark.com
+sign_of_life_url: https://harrowgatepark.com/event/friends-of-harrowgate-parks-movie-night/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/PPR_Friends_Groups/FeatureServer/0
   seen: '2026-10-08'
@@ -132,8 +140,26 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts.social
-research_tier: 1
-confidence: medium
+- url: https://harrowgatepark.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+- url: https://harrowgatepark.com/event/friends-of-harrowgate-parks-movie-night/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - cost
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://harrowgatepark.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

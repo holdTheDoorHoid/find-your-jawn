@@ -9,10 +9,12 @@ leads:
 - irs_990n:205312496
 - irs_bmf:205312496
 ein: '205312496'
-summary: A nonprofit that runs a riding stable near the Wissahickon in Fairmount Park, offering lessons,
-  trail rides, and boarding. It also holds monthly volunteer days for park and barn upkeep.
-what_you_do: Come to a monthly volunteer day to help with park and barn work, join the mailing list for
-  volunteer openings, or take lessons and trail rides.
+summary: A nonprofit that runs a riding stable near the Wissahickon in Fairmount Park, offering riding
+  lessons, leasing, and boarding. It also holds monthly volunteer days for barn and park upkeep.
+what_you_do: Come to a volunteer day, which the site describes as monthly with no dates posted, to help
+  with park and barn work. You can join the free barn mailing list for volunteer openings, or take riding
+  lessons. The riding page lists trail rides only as a perk of a lease, and leasing is open to current
+  students.
 kind: nonprofit
 categories:
 - animals
@@ -33,19 +35,19 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 8
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Monthly volunteer days, with no dates posted on the site. Lessons and rides are arranged by contacting
-    the stable.
+  text: Volunteer days are described as monthly, with no dates on the site; the events calendar is linked
+    from the events page. Lessons run year round and are booked by email when a slot opens.
   days: []
   times: []
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: Courtesy Stable
   address: 901 East Cathedral Road
@@ -58,29 +60,39 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Lesson, leasing, and boarding prices are not shown on the site.
+  level: paid
+  text: Lessons are paid, with prices given on request, and are due the day of the lesson unless paid
+    in advance by cash or check. Barn Days cost $50 per person. Joining the barn mailing list is free.
 commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Parking is on-street and off-street, and the barn has one restroom.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Hard-soled shoes with a heel. A helmet is required whenever you are mounted, and one can be borrowed.
 first_step:
-  how: Call the stable at 215-482-8108 and ask when the next monthly volunteer day is
-  drop_in: null
-  sign_up_needed: null
+  how: Sign up for the free barn mailing list, which carries barn news and volunteer openings, or email
+    barnmanager@courtesystable.org to ask about a lesson
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Volunteer days exist, but the site gives no dates and no sign-up steps, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Lessons are booked by email and held until a slot opens, and the site gives no volunteer dates,
+    so the way in is unclear.
+  what_to_expect: A lesson is one hour, either private or shared with other riders, and you choose how
+    often you ride. Before you ride you must sign the rider release form, which you can download and complete
+    ahead of time. Riders under 15 need a parent or guardian on site, and lesson payment is due the day
+    of the lesson, by cash or check, unless paid in advance.
+  first_visit_tips:
+  - Wear hard-soled shoes with a heel.
+  - Bring a helmet, or ask to borrow one, since a helmet is required whenever you are mounted.
+  - Download and complete the rider release form before you arrive.
+  - Plan for parking, which is both on-street and off-street.
 contacts:
   website: https://courtesystable.org/
   email: cynbarn0421@gmail.com
@@ -126,14 +138,42 @@ sources:
   - locations
   - contacts
   - status
+  - contacts.social
 - url: https://courtesystable.org/get-involved
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
   - newcomer_friendliness
-research_tier: 1
-confidence: low
+  - first_step.how
+- url: https://courtesystable.org/riding
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - requirements.kids_ok
+  - requirements.gear
+  - first_visit_tips
+  - first_step.what_to_expect
+  - audience.min_age
+- url: https://courtesystable.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.sign_up_needed
+- url: https://courtesystable.org/contact
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - contacts.email
+  - contacts.phone
+- url: https://courtesystable.org/the-barn
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

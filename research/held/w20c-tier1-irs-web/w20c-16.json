@@ -1,0 +1,300 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-16",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 14,
+ "leads_only": [
+  {
+   "name": "PHSC (general body meeting named on the G.W. Childs HSA site)",
+   "url": "https://gwchildshsa.org/en/",
+   "note": "Named on the G.W. Childs site as holding a 2026 to 2027 general body meeting. Full name and own site not checked."
+  },
+  {
+   "name": "Pets for Vets Philadelphia",
+   "url": "https://www.msharcumsharethelove.org",
+   "note": "Named as a service of Ms. Harcum Share the Love Foundation. Not checked on its own."
+  },
+  {
+   "name": "Juntos (South Philadelphia, Latine immigrant community organization)",
+   "url": "https://philadelphianeighborhoods.com/2022/05/25/south-philadelphia-juntos-greets-latinx-philadelphians-with-community-and-resources/",
+   "note": "Named in a search result. Not the same group as Latinos Educando Juntos. Own site not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.bantusafehaven.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS error), 1 try."
+  },
+  {
+   "url": "https://www.philadelphiaurbanyouthcollab.org",
+   "status": 404,
+   "note": "Home page 404 with and without www, 2 tries."
+  },
+  {
+   "url": "https://www.progressivewc.com",
+   "status": null,
+   "note": "No page text returned on 3 tries (www twice, bare domain once). Not a bot block as far as known."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used (cap reached). 14 WebFetch attempts. The two searches went to Latinos Educando Juntos (one GuideStar profile, no website) and Disgrace to Grace Ministry (no match). Left unknown and held back for lack of a usable website and of search budget: Bainbridge House (website is a Facebook page), Doors of Hope Ministries, Makom Community, My Edge. Dead or wrong websites: Bantu Safe Haven (DNS error), I AM a Girl (its batch website is ACESO in Uganda, unrelated), Philadelphia Urban Youth Collaborative (404). Progressive Worship Center returned no page text. Judgment calls to review: GW Childs HSA published for parents (the batch rule on booster clubs for one school was not applied); Ms. Harcum hidden as a family charity; Donte Wylie Foundation and Everywhere Project published as probably_active on live sites with no dates. Friends of Chester Arthur is the same group as MANAS, now renamed. The Everywhere Project homepage held a line of text addressed to summarizers; it was ignored. No throttling seen: the errors were DNS and 404 responses. IRS contact names were not recorded because they came from tax forms, not from the groups' own publications.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:bainbridge-house-inc-3",
+     "irs_990n:232658098",
+     "irs_bmf:232658098"
+    ],
+    "group_id": "bainbridge-house-inc",
+    "ein": "232658098",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bainbridge House",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "social": [
+     "https://www.facebook.com/people/Bainbridge-House-Philadelphia/100064910970849/"
+    ]
+   },
+   "notes": "Found only on the Cultural Fund list and the IRS lists. The batch website field is a Facebook page, which is not read under our rules, so no own website was found. The search budget was spent before this group, so no other source was checked. Needs a check: confirm what it does, and whether the Cultural Fund listing means an arts or culture program. IRS contact name and street address were not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:882005482",
+     "irs_bmf:882005482"
+    ],
+    "group_id": "bantu-safe-haven-inc",
+    "ein": "882005482",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bantu Safe Haven",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website in the IRS record (www.bantusafehaven.org) did not resolve when fetched (DNS error), so it is treated as dead and not recorded. No other web presence was found, and the search budget was spent. Left unknown for a later wave. IRS contact name not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232978442",
+     "irs_bmf:232978442"
+    ],
+    "group_id": "disgrace-to-grace-ministry",
+    "ein": "232978442",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Disgrace to Grace Ministry",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a name, not a web address. One search for the name in Philadelphia found no matching organization, only other Grace-named churches, which were not used. Left unknown. It may be a small ministry that is not indexed; a state business registry or a Facebook search may show it.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471829133",
+     "irs_bmf:471829133"
+    ],
+    "group_id": "doors-of-hope-ministries-inc",
+    "ein": "471829133",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Doors of Hope Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field names a financial services firm, not this group, so it was not used. The search budget was spent before this group, so no web presence was found. Left unknown for a later wave. IRS contact name not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:872373088",
+     "irs_bmf:872373088"
+    ],
+    "group_id": "i-am-a-girl",
+    "ein": "872373088",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "I AM a Girl",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website points to ACESO, a non-profit in Mbale, Uganda. Its pages do not mention I AM a Girl, so that site is not evidence for this group and is not recorded. No other web presence was found, and the search budget was spent. Left unknown; needs a check for the right Philadelphia website. Not marked out of area, because that is not established.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:882240120",
+     "irs_bmf:882240120"
+    ],
+    "group_id": "latinos-educando-juntos",
+    "ein": "882240120",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Latinos Educando Juntos",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.guidestar.org/Profile/88-2240120",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "ein"
+     ]
+    }
+   ],
+   "notes": "One search found a GuideStar profile for the same EIN (seen in search results, not fetched). It describes a statewide 501(c)(3) for early learning and families, with a different address (3169 N 5th St) from the batch address (2501 S Marshall St). It shows no website, schedule or program dates, so no summary is written. Left unknown; a later wave should check the address and look for a program page.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:464777001",
+     "irs_bmf:464777001"
+    ],
+    "group_id": "makom-community",
+    "ein": "464777001",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Makom Community",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a name, not a web address. The search budget was spent before this group, so no web presence was checked. Left unknown for a later wave.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:992107540",
+     "irs_bmf:992107540"
+    ],
+    "group_id": "my-edge",
+    "ein": "992107540",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "My Edge",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field held a job title ('Executive Director'), not a web address or a group name. The search budget was spent before this group, so nothing was checked. The name is generic, so a later search should use the IRS address to confirm identity.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:392250142",
+     "irs_bmf:392250142"
+    ],
+    "group_id": "philadelphia-urban-youth-collaborative",
+    "ein": "392250142",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Urban Youth Collaborative",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website (philadelphiaurbanyouthcollab.org) returned 404 on the home page, with and without www. No other web presence was checked because the search budget was spent. Left unknown for a later wave. A congregation, so it should not be rejected.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232912666",
+     "irs_bmf:232912666"
+    ],
+    "group_id": "progressive-worship-center",
+    "ein": "232912666",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Progressive Worship Center",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website (www.progressivewc.com) returned no page text on three tries, with www and without. This does not look like a bot block, but I could not read the page. No other web presence was checked because the search budget was spent. Left unknown for a later wave. A congregation, so it should not be rejected.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

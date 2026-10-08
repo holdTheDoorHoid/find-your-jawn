@@ -10,8 +10,8 @@ leads:
 ein: null
 summary: A nonprofit that supports South Philadelphia's largest park. It backs park programs and local
   wildlife and works toward a long-term park plan.
-what_you_do: Join as a member (dues start at $25), volunteer on park work, or donate. The group says donations
-  go to the park.
+what_you_do: Volunteer on Saturday mornings or at the Welcome Center desk, join as a member (membership
+  starts at $25), or donate. The group says donations go to the park.
 kind: friends_group
 categories:
 - nature-environment
@@ -37,12 +37,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are posted on the group's public calendar, but the pages we read showed no dated events.
-    The park is open every day, with longer hours from April to October.
+  text: 'Regular volunteer hours are Saturdays, 10 am to 12 pm. Welcome Center desk shifts run daily,
+    9 am to 4 pm. Events are posted on the group''s calendar. The park is open daily: 6 am to 9 pm from
+    April to October, and 6 am to 6 pm from November to March.'
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Park
   address: 1500 Pattison Ave
@@ -56,13 +57,15 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: Membership dues start at $25. Donations are optional.
+  text: Membership starts at $25. Group or corporate volunteer days require a yearly membership of $200
+    or $500. Donations are optional.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Two restrooms: one outside the Welcome Center at 1800 Pattison Ave, and one across from the
+    skatepark, under I-95.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -71,21 +74,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join as a member through the membership link on the group's site, or email info@fdrpark.org to
-    ask how to volunteer
+  how: Fill out the general volunteer sign-up form on the Volunteer page of fdrparkphilly.org. You will
+    then get a monthly newsletter with sign-up links for park work.
   drop_in: null
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Membership is open to the public and the site gives a clear way to join, but its volunteer steps
-    are not described on the pages we read.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site gives a clear sign-up route and a first-day orientation for Welcome Center volunteers,
+    but it does not say beginners are specially welcome.
+  what_to_expect: Regular volunteer sessions run Saturdays from 10 am to 12 pm, and Welcome Center desk
+    shifts run up to seven hours. Welcome Center volunteers get an orientation on their first day. Group
+    and corporate volunteer days need a yearly membership.
+  first_visit_tips:
+  - The Welcome Center is at 1800 Pattison Ave, and there is a restroom outside it.
+  - For a desk shift, sign up through the shift spreadsheet linked on the volunteer page.
+  - If you need community service hours, email stewardship@fdrpark.org.
 contacts:
   website: https://www.fdrparkphilly.org
   email: info@fdrpark.org
   phone: '2679730848'
   contact_name: BARBARA CAPOZZI
-  social: []
+  social:
+  - https://www.facebook.com/fdrpark/
+  - http://instagram.com/fo_fdrpark
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -124,12 +134,30 @@ sources:
   - first_step
   - contacts
   - locations
+  - status
 - url: https://www.fdrparkphilly.org/events
   seen: '2026-10-08'
   fields:
   - status
   - schedule
-research_tier: 1
+- url: https://www.fdrparkphilly.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - schedule
+  - cost
+- url: https://www.fdrparkphilly.org/frequently-asked-questions
+  seen: '2026-10-08'
+  fields:
+  - access
+  - schedule
+  - cost
+- url: https://www.fdrparkphilly.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,23 @@
+{
+  "wave": "w17b-arts-alliance-names",
+  "agent": "w17b-04",
+  "lane": "Q",
+  "model": "haiku",
+  "searches_used": 3,
+  "fetches_used": 5,
+  "records": [],
+  "leads_only": [],
+  "blocked": [
+    {
+      "url": "https://www.staging2.resist.org/grantees/till-arts-project",
+      "status": 403,
+      "note": "Fetch returned HTTP 403. Not retried and not worked around. Program details seen only in a search snippet, so not used."
+    },
+    {
+      "url": "https://stageagent.com/theatre-companies/19401",
+      "status": 403,
+      "note": "Fetch returned HTTP 403 for a search result about Theatre Encore. Not retried."
+    }
+  ],
+  "notes": "Input 04.json has wave w17-coalitions and agent q-arts-networks, and its 3 entries are Cultural Alliance portal listings with no group links. Processed as given. Result: no records written. Theatre Encore: one search found no Philadelphia theatre company by this name. The matches were theatres in Independence (Missouri), Elizabeth City (North Carolina) and Arlington (Virginia), plus the Encore Series, a Philadelphia music organization that is not a theatre. Not recorded. Studio Tshay: one search found no listing, website or article for a Philadelphia studio by this name. Not recorded. Till Arts Project: confirmed as a real Philadelphia arts group that serves LGBTQ+ artists, founded and led by artist Wit Lopez, per two public pages: a Mural Arts artist page with no date shown (https://muralarts.org/?p=21626) and a Bryn Mawr Bulletin article marked Winter 2023 (https://www.brynmawr.edu/bulletin/wit-lopez-15). No own website was found, and no page I could read lists classes, open calls, or how to join, so no public way in is confirmed and no record was written. The program details in the search snippet came from a resist.org page that returned 403 on fetch, so they were not used. Suggested next step: find its own site or a public program listing. Searches used: 3 of 12 (one per lead). Fetches used: 5, two of which returned 403. Budget was not exhausted."
+}
