@@ -1,0 +1,263 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-13",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 24,
+ "leads_only": [
+  {
+   "name": "PHILADANCO (Philadelphia Dance Company)",
+   "url": "https://www.philadanco.org",
+   "note": "Appeared in a search result while checking Philadelphia Dance Access. Not read; it may run dance training that the public can join."
+  },
+  {
+   "name": "PhiladelphiaDANCE",
+   "url": "https://philadelphiadance.org/",
+   "note": "Appeared in a search result while checking Philadelphia Dance Access. Not read."
+  },
+  {
+   "name": "Philadelphia Dance Projects (EIN 23-2997324)",
+   "url": "https://www.charitynavigator.org/ein/232997324",
+   "note": "Appeared in a search result as a different 501(c)(3) from the Dance Access record. Only a rating-site listing was seen; its own website was not found."
+  },
+  {
+   "name": "Gamma Iota Sigma",
+   "url": "https://philadelphia.cpcusocietychapter.org/index.php",
+   "note": "Named on the CPCU chapter site as a student program. It is a national insurance and risk student organization; Philadelphia campus chapters were not checked."
+  },
+  {
+   "name": "Parent and Community Advisory Council (School District of Philadelphia)",
+   "url": "https://www.philasd.org/schoolboard/wp-content/uploads/sites/892/2023/10/004.2-Parent-and-Community-Advisory-Council-5.pdf",
+   "note": "Appeared in a search result. It is a School District advisory body, not the Home and School Council. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://philadelphiagamelab.org",
+   "status": null,
+   "note": "TLS certificate name mismatch on both http and https; the server presents a hosting provider certificate for another name. Page not read."
+  },
+  {
+   "url": "https://www.phillymobilefoodassociation.com/",
+   "status": null,
+   "note": "TLS certificate chain error (unable to get a local issuer certificate) on two attempts. Page not read."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used (hard cap reached). Search 1 was for the Philadelphia Home and School Council; no council website was found, and the phlcouncil.com hit is a City Council page. Search 2 combined Philadelphia Dance Access and Philadelphia's Family to Family in one query; neither name matched a Philadelphia organization. Fetches: 24. Dead domains (DNS not found, with and without www): philadelphiadanceaccess.org and philadelphiasfamilytofamily.org. PEFUND.ORG returned HTTP 404 on both forms. Notebook domain redirects to Chalkbeat Philadelphia, which does not mention The Notebook. No rate limiting seen. Held back as unknown (no summary, categories or interests) because the site was unreadable and no searches were left: Consumer Council, Dance Access, Game Lab, Mobile Food Association, Family to Family. Personal contact names and phone numbers from the IRS lists were left out of records.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:510618125"
+    ],
+    "group_id": "philadelphia-consumer-council",
+    "ein": "510618125"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Consumer Council",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS 990-N filer at PO Box 2547 (19147). The batch website is an email address on a personal mail domain, so it was not used as a website and was not recorded as the group's email. No search was left for this group. No group website or public activity was found. Held back until someone checks the group by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:230389289"
+    ],
+    "group_id": "philadelphia-dance-access",
+    "ein": "230389289"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Dance Access",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS 990-N filer at 2029 Pemberton Street (19103). The batch website www.philadelphiadanceaccess.org does not resolve, with or without www (DNS not found). One search for the exact name found no organization by this name. The closest dance results were other groups with other EINs (Philadelphia Dance Projects, EIN 23-2997324, and PHILADANCO), so they were not used for this record. Held back until the group is checked by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:237125573",
+     "irs_bmf:237125573"
+    ],
+    "group_id": "philadelphia-engineering-foundation",
+    "ein": "237125573"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Philadelphia Engineering Foundation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website PEFUND.ORG returned HTTP 404 on both the bare domain and the www address, so no page could be read. Hidden as a likely private foundation or fund, based on the name only; not confirmed. Revisit if the group publishes a public program, a website or a volunteer or class offer.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:453538298"
+    ],
+    "group_id": "philadelphia-game-lab",
+    "ein": "453538298",
+    "website": "https://philadelphiagamelab.org"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Game Lab",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS 990-N filer at 721 South Mildred Street (19147). The batch website returns a TLS certificate error on two attempts: the server presents a hosting provider certificate for another name, so the page could not be read. No search was left for this group. Held back until the site is reachable or the group is checked another way.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:454573500"
+    ],
+    "group_id": "philadelphia-mobile-food-association",
+    "ein": "454573500",
+    "website": "https://www.phillymobilefoodassociation.com"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia Mobile Food Association",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS 990-N filer at PO Box 2014 (19103). The batch website returns a TLS certificate error on two attempts (unable to get a local issuer certificate), so no page could be read. The name suggests a food truck trade group, which would be a business association; not confirmed. Held back until the site is read. If it turns out to be a trade association with no public program, change to hide out_of_scope.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:464455030"
+    ],
+    "group_id": "philadelphias-family-to-family",
+    "ein": "464455030"
+   },
+   "verdict": "publish",
+   "name": "Philadelphia's Family to Family",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS 990-N filer at 2115B Wallace Street (19130). The batch website www.philadelphiasfamilytofamily.org does not resolve, with or without www (DNS not found). One search for the exact name found no Philadelphia organization with this name. The search surfaced a national foster care initiative called Family to Family, which is a different program and was not used. No public page was read. Held back until the group is checked by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232663205",
+     "irs_bmf:232663205"
+    ],
+    "group_id": "philadelphia-israel-chamber-of-comm-erce",
+    "ein": "232663205",
+    "website": "https://www.phillyisraelchamber.org/"
+   },
+   "verdict": "hide",
+   "hidden_reason": "out_of_scope",
+   "name": "Philadelphia-Israel Chamber of Commerce",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "A business membership chamber that connects Israeli start-up companies with regional partners and markets. Membership is by company tier, and no community program open to the public was found. The events page is listed, but the pages read show no dated items and do not say whether non-members can attend. Hidden as a business association with no community program. Address on the site: 100 E Penn Square, Philadelphia, PA 19107. Revisit if it runs open public events or volunteer programs.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232421716"
+    ],
+    "group_id": "philadelphia-jewelers-row-associa-tion",
+    "ein": "232421716",
+    "website": "https://www.jrow.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "out_of_scope",
+   "name": "Jewelers' Row District",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "District organization for stores and restaurants between Walnut and Market Streets and 7th and 9th Streets, run as a member association. Its public events (happy hours and a Diamonds and Dogs event) are undated on the page, and no volunteer, class or resident program was found. Hidden as a business association with no community program. IRS legal name is 'Philadelphia Jewelers Row Associa Tion'. The phone number on the page belongs to a member business and was not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232434446"
+    ],
+    "group_id": "philadelphia-music-alliance",
+    "ein": "232434446",
+    "website": "https://www.philadelphiamusicalliance.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "out_of_scope",
+   "name": "Philadelphia Music Alliance",
+   "status": "probably_active",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Nonprofit that keeps up the Walk of Fame on the Avenue of the Arts, runs school-based programs for high school music students (career summits, masterclasses, scholarships, and an instrument donation with Musicopia), and lists a mailing address in Bala Cynwyd. No public way for an adult to join, volunteer or take a class was found, and the pages read have no dated items. Hidden for now. Revisit if it posts volunteer roles, open classes or public events.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:462716505"
+    ],
+    "group_id": "philadelphia-public-school-notebook",
+    "ein": "462716505",
+    "website": "https://thenotebook.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "out_of_scope",
+   "name": "Philadelphia Public School Notebook",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Nonprofit education news outlet. No volunteer, class or membership program was found. The site address redirects to Chalkbeat Philadelphia (philadelphia.chalkbeat.org, then www.chalkbeat.org/philadelphia/), and that page does not mention The Notebook, so a merger is not confirmed. If a merger is confirmed, change the verdict to duplicate or defunct. Hidden as a news outlet with no community program.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

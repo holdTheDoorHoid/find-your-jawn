@@ -5,18 +5,24 @@ leads:
 - irs_990n:844440248
 - irs_bmf:844440248
 ein: '844440248'
-summary: null
-what_you_do: null
+summary: Stylists give free haircuts and styling to people who cannot get to a salon because of illness,
+  disability or displacement, including at hospitals, rehab centers and at home.
+what_you_do: Clients ask for a visit through the request form. Helpers and sponsors can start from the
+  Join Our Village page, which the site links to but does not describe in detail.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- health-wellness
+interests:
+- health_outreach
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +31,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Free services at the Hospital of the University of Pennsylvania every Monday, at Jefferson Moss-Magee
+    Rehabilitation on the third Sunday of each month, and in weekly three-hour sessions at Ronald McDonald
+    House Charities in Philadelphia
+  days:
+  - mon
+  - sun
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -51,8 +61,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free
 commitment: null
 group_size: null
 access:
@@ -67,23 +77,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: If you need a visit, use the Join the Circle of Care form on restoresalonservices.org. To help,
+    start with the Join Our Village page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Anyone who needs a visit can sign up through a public form. Volunteer steps are not described
+    on the site.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.restoresalonservices.org
-  email: null
+  website: https://www.restoresalonservices.org
+  email: info@restoresalonservices.org
   phone: null
   contact_name: Richard Cornish
-  social: []
+  social:
+  - https://www.facebook.com/restoresalonservices
+  - https://www.instagram.com/restoresalonservices
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.restoresalonservices.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +114,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.restoresalonservices.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

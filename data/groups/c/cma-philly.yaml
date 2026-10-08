@@ -1,59 +1,77 @@
 id: cma-philly
-name: Cma Philly
-aka: []
+name: CMA Philly (Crystal Meth Anonymous)
+aka:
+- Cma Philly
 leads:
 - irs_990n:205763523
 - irs_bmf:205763523
 ein: '205763523'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A peer fellowship for people who want to stop using crystal meth. Members meet most days of the
+  week in Center City and Fishtown, and anyone can come to a meeting.
+what_you_do: Attend a weekly meeting to share, listen, and support others in recovery. Meetings follow
+  the Twelve Step model. Newcomers can start with the Beginner's Meeting.
+kind: support_group
+categories:
+- support-recovery
+interests:
+- addiction_recovery
+motives:
+- protective
+- social
+formats:
+- conversation
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meetings most days of the week, mostly at 7:15 pm. Center City meetings are at The Hart of Catering,
+    and Fishtown meetings are at 8:30 pm or 9:30 pm on Girard Avenue. One Saturday meeting is online.
+  days:
+  - sun
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - evening
+  - night
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1315 Spruce St
+- label: The Hart of Catering (Center City meetings)
+  address: 2101 Sansom St
   neighborhood: null
-  planning_district: central
-  zip: '19107'
+  planning_district: null
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1315 Spruce Street
+- label: Hope on Girard (Fishtown meetings)
+  address: 126 W Girard Ave
   neighborhood: null
-  planning_district: central
-  zip: '19107'
+  planning_district: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: No dues or fees
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +85,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Wednesday 7:15 pm Beginner's Meeting at The Hart of Catering, 2101 Sansom St, or call
+    the 24-hour helpline at 855-638-4373 with questions
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 5
+  basis: The site lists a weekly Beginner's Meeting, says the fellowship is open to anyone, and charges
+    no dues
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.phillycma.org/
   email: null
-  phone: null
+  phone: 855-638-4373
   contact_name: Cory Bortnicker
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.phillycma.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +119,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.phillycma.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - cost
+  - contacts
+  - status
+- url: https://www.phillycma.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - online_ok
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

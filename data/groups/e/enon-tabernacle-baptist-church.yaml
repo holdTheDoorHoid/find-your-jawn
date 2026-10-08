@@ -4,46 +4,74 @@ aka: []
 leads:
 - irs_bmf:920194648
 ein: '920194648'
-summary: null
-what_you_do: null
+summary: 'A Baptist church with two Philadelphia locations: Enon East on West Cheltenham Avenue and Enon
+  West on West Coulter Street. Neighbors can join Sunday worship at either campus, a Thursday night young
+  adult Bible study, or a young adult fellowship that meets the second weekend of each month.'
+what_you_do: Attend Sunday worship at either campus, join the Thursday young adult Bible study at Enon
+  East, or take part in the young adult fellowship, where young adults also lead worship.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- faith-community
+interests:
+- worship_community
+- scripture_study
+- faith_youth_programs
+motives:
+- values
+- social
+formats:
+- conversation
+- perform_make_together
+roles:
+- hands_on
+crowd:
+- all_ages
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: black_church
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Sunday worship at 6:45 am at Enon West and 9:45 am at Enon East; Thursday young adult Bible study
+    at 7 pm at Enon East; young adult fellowship the second weekend of each month (no set dates shown)
+  days:
+  - sun
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Enon East
   address: 2800 W Cheltenham Ave
   neighborhood: null
-  planning_district: upper_north
+  planning_district: null
   zip: '19150'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Enon West
+  address: 230 West Coulter Street
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: No fee is listed on the church's pages
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +85,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to Sunday worship at either campus, or call (215) 276-7200 or email enon@enontab.org about
+    the young adult Bible study
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Sunday worship is public at both campuses, and the site lists a phone line and a general email
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://enonbiblewalk.org/
+  email: enon@enontab.org
+  phone: (215) 276-7200
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://enonbiblewalk.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +110,22 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://enonbiblewalk.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - what_you_do
+  - online_ok
+  - status
+- url: https://enonbiblewalk.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

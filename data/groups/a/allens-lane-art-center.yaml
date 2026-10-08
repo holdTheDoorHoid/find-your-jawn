@@ -33,12 +33,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall 2026 classes began September 8, and registration is open now. A Kids Day Off Camp runs October
-    9, and gallery events run through October, including an artists' talk on October 24 from 6 to 8 pm.
+  text: Classes run in seasonal terms, with kids' classes listed separately from adult classes. Summer
+    camp is a separate program.
   days: []
   times: []
-  recurring: false
-  season: fall
+  recurring: true
+  season: year_round
 locations:
 - label: Allens Lane Art Center
   address: 601 W Allens Lane
@@ -52,8 +52,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Tuition and scholarship details are not listed on the site.
-commitment: null
+  text: Class tuition is not shown on the pages we could read. The site describes its programs as low-cost.
+    Members get tuition discounts on workshops.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -67,13 +68,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Find a class in the Fall 2026 listings and register online, or email info@allenslane.org
+  how: Call (215) 248-0546 or email info@allenslane.org to ask which fall classes are open, then register
+    for one online.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public classes are listed with online sign up for ages 5 and up and for adults.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes are open to the public with online sign-up, and phone and email are listed for questions.
+    The adult class page showed no upcoming classes when it was read, so confirm before you register.
+  what_to_expect: Adult and youth classes run in seasonal terms, and sign-up is online. The pages we read
+    do not show how many weeks a class runs, the class times, or whether materials are included, so ask
+    the center before you register. Kids' classes are listed separately from adult classes.
+  first_visit_tips:
+  - Ask whether the class you want has openings, since the adult class page showed none when it was read.
+  - Ask about scholarships or per-week discounts, since class scholarships are not listed on the pages
+    read.
+  - Ask whether membership makes sense if you plan to take several classes, since members get tuition
+    discounts on workshops.
+  - The office is at 601 W Allens Lane and is open Monday to Thursday, 10 am to 5 pm.
 contacts:
   website: https://allenslane.org/
   email: info@allenslane.org
@@ -101,12 +112,23 @@ sources:
   - requirements
   - first_step
   - contacts
+  - what_you_do
+  - last_sign_of_life
 - url: https://www.phillymag.com/be-well-philly/pottery-classes-philadelphia/
   seen: '2026-10-08'
   fields:
   - interests
-research_tier: 1
-confidence: high
+- url: https://allenslane.org/about/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://allenslane.org/classes/adults/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,166 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-05",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 23,
+ "leads_only": [
+  {
+   "name": "Fund for Vocations",
+   "url": "https://fundforvocations.org",
+   "note": "Named as a partner on the Serra Club of Philadelphia site, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://delawarephi.org",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on one fetch, 2026-10-08. Not retried or worked around. Held as unknown."
+  },
+  {
+   "url": "https://www.liturgysociety.org",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on one fetch, 2026-10-08. Not retried or worked around. Held as unknown."
+  },
+  {
+   "url": "https://athanasiusalmakary.com",
+   "status": null,
+   "note": "Returned no text on three fetches (bare domain twice, www once). Treated as unreadable, not a block. Held as unknown."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used (cap reached, no more searches). 23 WebFetch calls used of 60. Police Transparency Project had only a name in the batch; GuideStar gave its website, which was then read. Rose Haven had only an email address; one search found no Philadelphia match. Schwauby's Cool Cats is out_of_area (its only dated event is in East Stroudsburg, PA). Solewell is hidden as a private grant foundation. Records with verdict publish and status unknown (Philly Superheroes, Public Health Management Services, Ritual Gem, Rose Haven, Society for Catholic Liturgy) were written so the attempt is on record; they lack summary, categories and audience, so they are held back. Philly Voice events page returned 404. Linked sister sites of Real Life International Ministries (Real Life CDC at reallifecdc.org, WorkDatWord at workdatword.com) were fetched and dropped: Real Life CDC shares the same PO box and phone and has only a contact form, and WorkDatWord is a content arm with 2017 and 2018 posts. LIFE Turning Point of Philadelphia appeared in a search summary with no URL and was not checked. Process error to report: one call to a browser tool (mcp__Claude_Browser__navigate) was made by mistake; it is not on this brief's tool list. The auto mode classifier denied it, and nothing was loaded or read from it. No further tool calls of that kind were made.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:392229209",
+     "irs_bmf:392229209"
+    ],
+    "group_id": "philly-superheroes",
+    "ein": "392229209",
+    "website": "https://www.phillysuperheroes.org"
+   },
+   "verdict": "publish",
+   "name": "Philly Superheroes",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.phillysuperheroes.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "notes": "The site showed only an under construction page on 2026-10-08: no programs, dates, contacts or address. Name and kind come from the IRS batch. Held back (no summary, categories or audience) until a working site or a tier 2 check shows what the group does.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232971146",
+     "irs_bmf:232971146"
+    ],
+    "group_id": "public-health-management-services-corporation",
+    "ein": "232971146",
+    "website": "https://delawarephi.org"
+   },
+   "verdict": "publish",
+   "name": "Public Health Management Services Corporation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The website returned HTTP 403 Forbidden on 2026-10-08, so nothing could be read. Not retried or worked around. Name, kind and address come from the IRS batch only (1500 Market St, Center Square East). Held back (no summary, categories or audience). Check whether this is a community group at all before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:393696942",
+     "irs_bmf:393696942"
+    ],
+    "group_id": "ritual-gem-of-fr-athanasius-al-makary",
+    "ein": "393696942",
+    "website": "https://athanasiusalmakary.com"
+   },
+   "verdict": "publish",
+   "name": "Ritual Gem of Fr Athanasius Al-Makary",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The website returned no text on three fetches on 2026-10-08 (bare domain twice, www once), so nothing could be read. Name and kind come from the IRS batch. Held back (no summary, categories or audience). The page may load its text with scripts; not retried further.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:811440601",
+     "irs_bmf:811440601"
+    ],
+    "group_id": "rose-haven-family-ministries",
+    "ein": "811440601"
+   },
+   "verdict": "publish",
+   "name": "Rose Haven Family Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The IRS batch has no web address: its website field holds an email address on a personal domain, which is not recorded as a contact because it is not clearly the group's own. One search found no Philadelphia group under this name. The Rose Haven results were a Portland, Oregon organization, not this group. Batch address is 430 Reed Street, 19147. Held back (no summary, categories or audience). Needs a tier 2 check for a web presence or a Philadelphia listing before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:300023733",
+     "irs_bmf:300023733"
+    ],
+    "group_id": "society-for-catholic-liturgy",
+    "ein": "300023733",
+    "website": "https://www.liturgysociety.org"
+   },
+   "verdict": "publish",
+   "name": "Society for Catholic Liturgy",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The website returned HTTP 403 Forbidden on 2026-10-08, so nothing could be read. Not retried or worked around. The IRS batch gives a Philadelphia address (222 N 17th St) but a contact name of Diocese of Salt Lake City, so it may not serve Philadelphia. That is unverified. Held back (no summary, categories or audience). Needs a readable site or a tier 2 check, and possibly an out_of_area verdict.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

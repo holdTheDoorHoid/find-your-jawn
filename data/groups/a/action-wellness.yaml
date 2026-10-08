@@ -34,7 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Buddy Program schedule is set with the group after you apply. The website does not list it.
+  text: Your visit schedule is set with the group after you apply and finish orientation. Orientation
+    dates are posted on the volunteer page.
   days: []
   times: []
   recurring: null
@@ -67,17 +68,24 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Complete the volunteer application linked as Apply Now on the site, then attend a volunteer orientation
+  how: Fill out the volunteer application linked as Apply Now on the volunteer page, then attend the next
+    virtual orientation listed on the site.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: A public application and orientation come before any match, so the way in is clear but not drop
-    in
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A public application and an orientation come before any client match, so the way in is clear
+    but not drop in.
+  what_to_expect: You start with an online application that asks for your contact details, two emergency
+    contacts, and your date of birth, and it asks a yes or no question about criminal history. Orientation
+    is a virtual meeting listed on the site, and a client match comes after it. The site does not give
+    the length of orientation or a time commitment.
+  first_visit_tips:
+  - Be 18 or older and out of high school, which the application requires
+  - Have two emergency contacts ready, with a name, phone number, and relationship for each
+  - Call 215-981-0088 with questions before you apply
 contacts:
   website: https://www.actionwellness.org
-  email: null
+  email: jlefkowitz@actionwellness.org
   phone: 215-981-0088
   contact_name: Mary Evelyn Torres
   social: []
@@ -109,6 +117,9 @@ sources:
   - first_step
   - status
   - contacts
+  - schedule
+  - last_sign_of_life
+  - contacts.phone
 - url: https://www.actionwellness.org/programs/buddy-program/
   seen: '2026-10-08'
   fields:
@@ -116,8 +127,20 @@ sources:
   - categories
   - interests
   - audience
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://www.actionwellness.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - first_step
+- url: https://www.actionwellness.org/volunteer/apply/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience.min_age
+  - what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

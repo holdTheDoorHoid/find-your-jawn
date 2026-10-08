@@ -6,8 +6,10 @@ leads:
 - cultural_fund:activate-3
 ein: null
 summary: A media arts group in the Philadelphia region that makes collaborative documentaries and runs
-  a multimedia hub documenting arts work by Latinx, BIPOC and immigrant artists.
-what_you_do: Check the events and opportunities pages for projects that take volunteers or new collaborators.
+  a multimedia hub about arts work by Latinx, BIPOC, and immigrant artists. It also asks the public for
+  archive material and works with videographers.
+what_you_do: Send photos, videos, or audio of rumbas for the Philly Rumba archive call, or send a portfolio
+  if you are a videographer. The events page lists screenings and gatherings, and some of them are free.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -35,16 +37,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No dated events on the home page. Events and opportunities are on separate pages.
+  text: There is no weekly meeting listed. Calls, projects, and events are posted on the group's site
+    as they come up.
   days: []
   times: []
   recurring: null
   season: null
 locations: []
-online_ok: false
+online_ok: true
 cost:
   level: null
-  text: Not listed on the home page.
+  text: The site does not list prices for its events or calls, and it links to a donation page for money.
 commitment: null
 group_size: null
 access:
@@ -59,17 +62,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Check the events and opportunities pages on the site, or use the contact page.
+  how: Send your material through the Dropbox request link on the group's Philly Rumba archive page, or
+    email films@activatestories.org with questions.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Events and opportunities pages exist but were not read, so the way in is unclear from the home
-    page.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Open calls for material and portfolios each say how to send work, and public events list registration
+    links, but the site does not describe a newcomer program or a first visit.
+  what_to_expect: Most of what the group offers is a call for material or a public screening. If the team
+    picks items from a personal collection for a film, it says it will offer an honorarium that you agree
+    on first. Outdoor screenings in parks often ask you to register ahead.
+  first_visit_tips:
+  - Check the events page for the date, place, and whether you need to register
+  - Ask about usage and credit before you send your material, since the call does not say
+  - Email with questions before you send files so you know what format they want
 contacts:
   website: https://www.activatestories.org
-  email: null
+  email: films@activatestories.org
   phone: null
   contact_name: null
   social:
@@ -80,7 +89,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: http://www.activatestories.org
+sign_of_life_url: https://www.activatestories.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=1
   seen: '2026-10-04'
@@ -102,12 +111,34 @@ sources:
   - status
   - first_step
   - contacts
+  - contacts.social
 - url: https://www.cultureworksphila.org/fiscal-sponsorship/fiscally-sponsored-projects
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.activatestories.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+  - cost
+  - schedule
+  - first_step
+- url: https://www.activatestories.org/opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts.email
+- url: https://www.activatestories.org/collaborate
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

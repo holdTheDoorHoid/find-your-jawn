@@ -5,18 +5,28 @@ leads:
 - irs_990n:222435299
 - irs_bmf:222435299
 ein: '222435299'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A society for science fiction and fantasy fans in Philadelphia. It holds free meetings most months
+  with guest speakers, author talks and fan panels.
+what_you_do: Come to meetings, most of them free and some online, to hear guest speakers and authors and
+  join fan panels. The November meeting is held in person at PHILCON.
+kind: club
+categories:
+- games-puzzles
+- science-learning
+interests:
+- fandom_cons
+- talks_lectures
+motives:
+- social
+- understanding
+formats:
+- conversation
+- one_off_event
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,38 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Most months on a Friday evening, usually 8 pm, alternating between online (Zoom) and in person.
+    No August meeting is listed. The page gives month and day without a year.
+  days:
+  - fri
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 8303
+- label: St. Mary's at Penn (in person meetings)
+  address: 3916 Locust Walk
   neighborhood: null
-  planning_district: central
-  zip: '19101'
+  planning_district: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: The Rotunda (in person meetings)
+  address: 4014 Walnut Street
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Meetings are free and open to the public.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +80,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the next Friday meeting, online or at St. Mary's at Penn, then email info@psfs.org to ask
+    how to join the announcement list.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Meetings are free and open to the public with a listed contact, though the page does not say
+    how guests are treated.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.psfs.org
-  email: null
+  website: https://www.psfs.org
+  email: info@psfs.org
   phone: null
   contact_name: Ingmar Hector Cruz
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.psfs.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +114,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.psfs.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

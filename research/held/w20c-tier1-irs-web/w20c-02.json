@@ -1,0 +1,157 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-02",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 26,
+ "leads_only": [
+  {
+   "name": "Friends of the Charles Santore Branch",
+   "url": "https://libraryfriends.info",
+   "note": "Alias in the IRS record for the Free Library Friends group. The branch's own site, satorelibrary.org, does not resolve. Not checked."
+  },
+  {
+   "name": "Neighborhood Friends groups of the Free Library",
+   "url": "https://libraryfriends.info",
+   "note": "A directory listing says about 48 neighborhood groups belong to the Free Library Friends. The group's own page did not name them. Not checked."
+  },
+  {
+   "name": "Philly Black Worker Project",
+   "url": "https://www.equityresearchcooperative.org/freedom-dream-partners",
+   "note": "Named as a 2025 partner on the Equity Research Cooperative page. Not checked."
+  },
+  {
+   "name": "Empowered Minds Academy",
+   "url": "https://www.equityresearchcooperative.org/freedom-dream-partners",
+   "note": "Named as a 2025 partner on the Equity Research Cooperative page. Not checked."
+  },
+  {
+   "name": "Christian Community Services Inc.",
+   "url": "https://www.equityresearchcooperative.org/freedom-dream-partners",
+   "note": "Named as a 2025 partner on the Equity Research Cooperative page. Location not stated. Not checked."
+  },
+  {
+   "name": "Philadelphia Community Land Trust",
+   "url": "https://www.equityresearchcooperative.org/freedom-dream-partners",
+   "note": "Named as a past partner on the Equity Research Cooperative page. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.freelibrary.org/friends/",
+   "status": 403,
+   "note": "HTTP 403 Forbidden. Not retried."
+  },
+  {
+   "url": "https://www.dadinc.org",
+   "status": null,
+   "note": "Fetch returned no output on three attempts (www, bare domain, http). Cause unknown; the site could not be read."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used, on Friends Neighborhood Guild and Friends of the Free Library. 26 of 60 fetches used. Clothes-Pin and Community Reachout Program were not searched, because the two searches went to the two groups most likely to yield a joinable record; both are recorded as unknown and held back. Dead domains (DNS lookup failed): friendsguild.net (www and bare), friendsneighborhoodguild.org, satorelibrary.org. Redirects followed: friendsofbachemartin.org to the school site bachemartin.org; givememyrosess.com to givememyroses.org; faithandliberty.org to a speakers bureau at liberty.americanbible.org, which is not the Discovery Center. No rate limiting seen. Held back for lack of a summary: Clothes-Pin, Community Reachout Program, Delta Alpha Delta Fraternity, Friends Neighborhood Guild. Verdicts: publish 10 (6 with full summaries, 4 unknown), hide 2, not_a_group 2, out_of_area 1. Most publish records with probably_active status rest on a working site with no dated items, so the owner should review status before the directory goes live.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:900587762",
+     "irs_bmf:900587762"
+    ],
+    "group_id": "clothes-pin",
+    "ein": "900587762"
+   },
+   "verdict": "publish",
+   "name": "Clothes-Pin",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Nothing found about this group. The IRS web field holds a design firm's name, not a web address, and the two-search budget ran out before this group was looked up. Needs a search by hand. No summary written, so this record is held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232895839",
+     "irs_bmf:232895839"
+    ],
+    "group_id": "community-reachout-program",
+    "ein": "232895839"
+   },
+   "verdict": "publish",
+   "name": "Community Reachout Program",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Nothing found. The IRS web field says pending, and the two-search budget ran out before this group was looked up. The IRS address is an apartment on North Broad Street, which may be a home, so no address is recorded. Needs a search by hand. No summary written, so this record is held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:853465756",
+     "irs_bmf:853465756"
+    ],
+    "group_id": "delta-alpha-delta-fraternity",
+    "ein": "853465756",
+    "website": "https://www.dadinc.org"
+   },
+   "verdict": "publish",
+   "name": "Delta Alpha Delta Fraternity",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website could not be read: three fetch attempts (www, bare domain and http) returned no output. The name suggests a fraternity, but membership rules were not checked. Retry by hand before writing a summary. Held back until then.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:231424024",
+     "irs_bmf:231424024"
+    ],
+    "group_id": "friends-neighborhood-guild-inc",
+    "ein": "231424024",
+    "website": "https://www.friendsguild.net"
+   },
+   "verdict": "publish",
+   "name": "Friends Neighborhood Guild",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The web address friendsguild.net does not resolve, and neither do friendsneighborhoodguild.org or the www form. The one search found a Quaker settlement house with this name, founded in 1879 and based in North Philadelphia, which the search source links to friendsguild.net. The only program list found is from 2007, so nothing current is recorded and no summary is written. The IRS address (704 W Girard Ave) differs from the Guild address in the Philadelphia Encyclopedia article (703 North Eighth Street). Check which is current. The IRS contact name is a payroll service and is not recorded. Held back until the current site is checked.",
+   "sources": [
+    {
+     "url": "https://philadelphiaencyclopedia.org/essays/friends-neighborhood-guild/",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

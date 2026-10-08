@@ -1,0 +1,114 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-04",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [
+  {
+   "name": "Focused Athletics",
+   "url": "https://www.odinproperties.com/odin-forward/",
+   "note": "Philadelphia youth program named on the Odin Forward page as one it helped launch. Its own website was not found and it was not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://mercazhalacha.org",
+   "status": 403,
+   "note": "HTTP 403 Forbidden on the first fetch; not retried or worked around"
+  },
+  {
+   "url": "https://www.maasai-rising.org",
+   "status": null,
+   "note": "Domain did not resolve (DNS error); bare domain also failed"
+  },
+  {
+   "url": "https://www.northnovahfellowship.com",
+   "status": null,
+   "note": "Domain did not resolve (DNS error); bare domain also failed"
+  },
+  {
+   "url": "https://www.pmhs98.org",
+   "status": null,
+   "note": "Domain did not resolve (DNS error); bare domain also failed"
+  }
+ ],
+ "notes": "Batch of 15 IRS groups. Verdicts: 8 publish, 4 hide, 3 out_of_area. Two of the publish records (Mercaz Halacha and North Novah Fellowship) are unknown-status records with no categories, interests or audience, because their sites could not be read; they should be held back until checked by hand. Three domains did not resolve and Mercaz Halacha returned 403. PASHRM's bare domain gave a certificate name error; its www address worked. Mindful Philanthropy is hidden because membership is limited to funders. Searches: 2 of 2 used. The first was for Natural Organized Woman Sorority, whose IRS website field was a name, not an address. The second was for Maasai Rising after its domain failed; it returned directory listings only. Fetches: 25. Budget was not exhausted by fetches.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:395141468",
+     "irs_bmf:395141468"
+    ],
+    "group_id": "mercaz-halacha",
+    "ein": "395141468",
+    "website": "https://mercazhalacha.org"
+   },
+   "verdict": "publish",
+   "name": "Mercaz Halacha",
+   "summary": "A nonprofit registered with the IRS in Philadelphia. We could not read its website, so we do not yet know what it offers or how to take part.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://mercazhalacha.org"
+   },
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website returned HTTP 403 Forbidden to our fetch, so nothing on it could be read and it was not retried. The IRS address (30 South 15th Street, with a suite-style number) looks like a mailbox service, not a meeting place. Categories, interests and audience are left out because we could not establish what the group does, so the pipeline should hold this record back until someone checks the site by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:993707085",
+     "irs_bmf:993707085"
+    ],
+    "group_id": "north-novah-fellowship-inc",
+    "ein": "993707085",
+    "website": "https://www.northnovahfellowship.com"
+   },
+   "verdict": "publish",
+   "name": "North Novah Fellowship",
+   "summary": "A religious fellowship registered with the IRS in Philadelphia. We could not reach its website, so we do not yet know its services, meeting times, or how a newcomer can visit.",
+   "kind": "congregation",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Both www.northnovahfellowship.com and northnovahfellowship.com did not resolve (DNS error) in our checks, so the website from the IRS batch appears dead. No search was spent on this group. Categories, interests and audience are left out because nothing could be read, so the pipeline should hold this record back until someone checks it by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232869256",
+     "irs_bmf:232869256"
+    ],
+    "group_id": "philadelphia-mennonite-high-school",
+    "ein": "232869256",
+    "website": "https://pmhs98.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Philadelphia Mennonite High School",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website pmhs98.org did not resolve in two checks, so nothing was read from the school's site. Hidden as private on the strength of the name and IRS filing: a school that admits students is not a group a newcomer can join. A reviewer should confirm this. No search was spent on it.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

@@ -1,34 +1,46 @@
 id: serra-international
-name: Serra International
-aka: []
+name: Serra Club of Philadelphia
+aka:
+- Serra International
 leads:
 - irs_990n:237176259
 - irs_bmf:237176259
 ein: '237176259'
-summary: null
-what_you_do: null
-kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A Catholic club that works to encourage vocations to the priesthood and religious life, and helps
+  members listen for their own calling. Meetings feature speakers on vocations.
+what_you_do: Attend a Zoom meeting as a guest of a member, or come to one of the quarterly meetings that
+  are open to anyone. The club's past speaker videos and vocation resources are on the site.
+kind: club
+categories:
+- faith-community
+- social-meetups
+interests:
+- faith_service_projects
+- fraternal_service_clubs
+motives:
+- values
+formats:
+- conversation
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: catholic
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Zoom meetings on the third Tuesday of each month. The October meeting was listed for Tuesday,
+    October 20, 12:30 PM.
+  days:
+  - tue
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -49,11 +61,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the site
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +79,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Visit the JOIN NOW page on serraclubphilly.org to sign up, or attend one of the quarterly Zoom
+    meetings that are open to anyone
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site says new members are welcome, links to a join page, and opens one meeting each quarter
+    to anyone.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: serraclubphilly.org
+  website: https://serraclubphilly.org
   email: null
   phone: null
   contact_name: John Liston
-  social: []
+  social:
+  - https://www.youtube.com/channel/UCjXaoKk0V3PdC6A9tVLhVsQ
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://serraclubphilly.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +115,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://serraclubphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - online_ok
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

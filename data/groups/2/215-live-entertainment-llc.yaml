@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: A Philadelphia performing arts group that teaches acting, dance, and voice to young people and
   adults, and stages shows about real social issues.
-what_you_do: Take a class in acting, dance, or voice, or audition for the youth companies. Audiences can
-  see the shows listed on the events page.
+what_you_do: Take a weekly class in acting, dance, or music, or audition for a youth company. Audiences
+  can attend the group's events, such as an artist showcase and a murder mystery dinner.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -33,24 +33,29 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 6
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Classes run once a week from January to December. Ages 6 to 13 take a 60 minute class, and ages
+    14 to 17 and adults take a 2 hour class. The Youth Acting Company rehearses on Saturday mornings,
+    with some afternoon extensions.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
+  season: year_round
 locations: []
 online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: The Youth Acting Company charges a $30 registration fee on audition day and $60 a month in dues.
+    The site does not list class prices.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -64,15 +69,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Call 267-251-1156 or use the Education Registration form on the site to sign up for a class or
-    youth company.
+  how: Call 267-251-1156 to ask about a class or the Youth Acting Company, then book an audition appointment.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Classes and youth companies are open to the public with a clear sign up path, but the page shows
-    no class schedule.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes are open to the public with a phone line and a sign up path, but the site does not say
+    whether a trial class is offered.
+  what_to_expect: Classes meet once a week, and each student picks acting, dance, or music. The group
+    describes its younger classes as building structure and confidence, and its older classes as building
+    performance skills and preparing for work in the arts. The site does not list class prices, so ask
+    before you sign up.
+  first_visit_tips:
+  - Call before you come to confirm the class time, since the site does not list days or times for classes
+  - Ask whether a trial class is possible before you pay the registration fee
+  - Ask where classes are held, because the site does not give an address
 contacts:
   website: https://www.215liveentertainment.com
   email: null
@@ -97,7 +107,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.215liveentertainment.com/education
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - categories
+  - interests
+- url: https://www.215liveentertainment.com/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience.min_age
+  - commitment
+  - first_step
+- url: https://www.215liveentertainment.com/youth-acting-company
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://www.215liveentertainment.com/education-registration
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

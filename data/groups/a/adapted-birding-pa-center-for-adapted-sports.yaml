@@ -3,10 +3,11 @@ name: Adapted Birding (PA Center for Adapted Sports)
 aka: []
 leads: []
 ein: null
-summary: A birding program for people with disabilities, run by a nonprofit that serves people with disabilities.
-  Guided outings take place on accessible trails across the Philadelphia region, and each walk needs registration.
-what_you_do: Register for a guided outing, sign the waiver and forms the first time, then walk an accessible
-  trail with a group and look for birds.
+summary: A birding program for people with disabilities, run by the Pennsylvania Center for Adapted Sports.
+  Each outing visits a park or nature site in the region, mostly on paved or firm paths, and every outing
+  needs its own registration.
+what_you_do: Register for an outing, complete the waiver and forms if you are new, then walk the trail
+  with the group and look for birds.
 kind: program
 categories:
 - outdoors-adventure
@@ -19,7 +20,8 @@ formats:
 - side_by_side
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -32,15 +34,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Guided outings on weekend mornings through the fall, each with its own sign-up. Listed outings
-    run from Sept 13 to Nov 1, 2026, including Oct 10 at Peace Valley Park and Oct 24 at the Schuylkill
-    Center.
+  text: Outings are scheduled on weekend days in the fall, most starting in the morning, and each one
+    has its own sign-up.
   days:
   - sat
   - sun
   times:
   - morning
-  recurring: true
+  - daytime
+  recurring: false
   season: fall
 locations:
 - label: Office at 4 Boathouse Row
@@ -73,13 +75,15 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: null
+  text: The outing pages do not list a fee.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'Most listed sites have accessible restrooms. Paths vary: some are paved and flat, while others
+    have gravel lots, steep grades, or grassy sections, and some sites have little shade. The Chanticleer
+    outing page advises manual wheelchair users to bring a helper for the steep sections.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -88,18 +92,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick an outing on the program calendar and register through its sign-up form
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the birding sign-up form for an outing on the program page. First-time participants then
+    hear from the team about waivers and paperwork.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can register for an outing, but space is limited and each person must sign waivers and
-    paperwork before the first walk.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Any member of the public can register for an outing through a form, and the page explains the
+    first-time paperwork. It does not say beginners are welcome, and space is limited.
+  what_to_expect: Outings are group walks on park and nature trails, mostly on weekend mornings. Before
+    your first outing you sign the waivers and paperwork, and the team contacts you after you register.
+    The pages do not list the fee or how long a walk lasts, so ask when you sign up.
+  first_visit_tips:
+  - Register for each outing on its own, since some park outings need a second sign-up with the partner
+    site.
+  - Ask where to meet, because some outings send the meeting spot by email after you register.
+  - Bring sun protection and bug spray, since some sites have little shade and at least one can be buggy.
+  - If you use a manual wheelchair and the trail has steep sections, plan on a helper, as the group advises
+    for one site.
 contacts:
   website: https://centeronline.com/
   email: null
-  phone: null
+  phone: 215-765-5118
   contact_name: null
   social:
   - https://www.facebook.com/PCAS.sport
@@ -121,7 +134,20 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - access
+  - requirements
+  - cost
+- url: https://centeronline.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+- url: https://centeronline.com/contact-pcas
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -34,20 +34,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Upcoming: October 15, October 19 (virtual), October 29, November 12 and November 19, 2026.'
+  text: The chapter posts morning coffee talks, virtual workshops, evening dinner events, and a yearly
+    National Philanthropy Day event. Dates change, so check the events page.
   days: []
-  times: []
+  times:
+  - morning
+  - daytime
+  - evening
   recurring: true
   season: null
 locations:
-- label: Coffee conversations in suburban offices (Glenmede and RSM)
+- label: Coffee conversations at Glenmede and RSM offices, in the suburbs and in Philadelphia
   address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: null
   transit: null
 - label: Evening event at The Logan Hotel
   address: One Logan Square, Philadelphia, PA 19103
@@ -58,11 +62,21 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: The Bellevue Hotel, site of the 2026 National Philanthropy Day
+  address: 200 S Broad St, Philadelphia, PA 19102
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: true
 cost:
   level: null
-  text: Member and non-member prices are not listed on the page.
-commitment: null
+  text: Professional membership dues are $320 plus $125 in local chapter dues. Event prices for members
+    and non-members are not shown on the pages read.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -76,13 +90,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Register Now link on any listed event, or the chapter contact form.
+  how: Pick an event on the chapter's events page and use its Register link. If you are not sure a non-member
+    can attend, ask through the chapter's contact form first.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Events list public registration links, but the page does not say how non-members attend.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Events are listed publicly with registration links, but the pages do not say how a non-member
+    signs up or whether a first-time guest is welcome. Membership needs a fundraising role, and joining
+    runs through the national association.
+  what_to_expect: Coffee talks run from about 8:45 to 10 am at office sites, in the suburbs or in Philadelphia,
+    and last about 75 minutes. Virtual workshops run about an hour over Zoom at midday. Evening events
+    are held at hotels in Center City. Event prices are not shown, so check the registration page before
+    you sign up.
+  first_visit_tips:
+  - Check the price on the registration page before you sign up, since the pages do not show non-member
+    prices.
+  - Ask the chapter whether a non-member can attend before you pay for an event.
+  - The coffee talks in the suburbs need travel outside the city, so check the venue address when you
+    register.
+  - Parking and transit are not listed on the event pages, so check the venue before you go.
 contacts:
   website: https://afpgpc.starchapter.com/meetinginfo.php
   email: null
@@ -103,7 +129,20 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - online_ok
+  - last_sign_of_life
+  - contacts
+- url: https://afpgpc.org/Join_Now
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - cost
+  - first_step
+- url: https://afpgpc.org/Volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

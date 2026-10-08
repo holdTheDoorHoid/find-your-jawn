@@ -1,22 +1,27 @@
 id: dereyk-morris-foundation-inc
-name: Dereyk Morris Foundation Inc
+name: Dereyk Morris Foundation
 aka: []
 leads:
 - irs_990n:612043152
 - irs_bmf:612043152
 ein: '612043152'
-summary: null
-what_you_do: null
+summary: A Philadelphia foundation that says it supports incarcerated people through education. The office
+  on South Broad Street welcomes visits on weekdays, and the site calls for volunteers, but it does not
+  describe its programs.
+what_you_do: Ask about volunteering by phone or on a visit to the office. The site links to events and
+  personal training pages, but it does not say what either involves.
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- advocacy-rights
+interests:
+- justice_reform_reentry
 motives: []
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,16 +30,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Office hours are 9 am to 5 pm on weekdays. Program times are not listed on the site.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 123 S Broad St Suite 15
+- label: Office
+  address: 123 South Broad Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19109'
   lat: null
   lng: null
@@ -43,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -58,23 +69,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Visit the office at 123 South Broad Street on a weekday, or call 267-325-1686, and ask how to volunteer
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The office welcomes visits and the site calls for volunteers, but it does not say how to sign
+    up or what the programs involve
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: dmfphilly.org
-  email: null
-  phone: null
+  website: https://dmfphilly.org
+  email: info@dmfphilly.org
+  phone: 267-325-1686
   contact_name: Dereyk Morris
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://dmfphilly.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -90,8 +102,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://dmfphilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - contacts
+  - status
+- url: https://dmfphilly.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

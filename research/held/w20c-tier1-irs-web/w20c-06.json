@@ -1,0 +1,257 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-06",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [
+  {
+   "name": "The Wardrobe (formerly Career Wardrobe; Wings for Success merged into it)",
+   "url": "https://careerwardrobe.org/",
+   "note": "Checked as the merger partner. Headquarters at 444 North 3rd Street, Suite 105, Philadelphia 19123. Resale stores include Philadelphia, Upper Darby, Norristown, and Malvern. A volunteer portal is linked; specific roles not stated. No record written because it is outside this batch. Strong candidate for a tier 1 record."
+  },
+  {
+   "name": "AFRICOM (Coalition of African and Caribbean Immigrant Communities)",
+   "url": "https://philadelphianeighborhoods.com/2017/06/26/kingsessing-africom-serves-as-center-of-african-immigrant-community/",
+   "note": "Named in a search result as a Philadelphia coalition of more than 40 member groups, with an office at 6328 Paschal Avenue, Suite A (per a federal library directory). Own website not located. Not checked."
+  },
+  {
+   "name": "African Cultural Alliance of North America (ACANA)",
+   "url": null,
+   "note": "Named in a search result as a Philadelphia social services and cultural group, and as developing the Africa Center at 55th Street and Chester Avenue. Own website not located. Not checked."
+  },
+  {
+   "name": "African Family Health Organization (AFAHO)",
+   "url": "https://www.cbsnews.com/philadelphia/news/brotherly-love-african-family-health-organization-nonprofit",
+   "note": "Named in a CBS Philadelphia news story as a youth empowerment and adult education group. Own website not located. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.giveabeanwater.org",
+   "status": 404,
+   "note": "Listed site not found, with and without www"
+  },
+  {
+   "url": "https://www.icfchurch.org",
+   "status": 302,
+   "note": "Redirects to a domain-for-sale page; the church's own site was not found"
+  },
+  {
+   "url": "https://www.chelkeinu.org",
+   "status": 500,
+   "note": "Server error on three tries; not a bot check"
+  },
+  {
+   "url": "https://www.daughtersofdestiny.org",
+   "status": 301,
+   "note": "Redirects to another national ministry's page; not followed"
+  },
+  {
+   "url": "https://getholdings.com/nonprofits/ein/464317617",
+   "status": 404,
+   "note": "Directory EIN page; search snippet used instead"
+  },
+  {
+   "url": "https://getholdings.com/nonprofits/ein/882490607",
+   "status": 404,
+   "note": "Directory EIN page"
+  },
+  {
+   "url": "https://getholdings.com/nonprofits/ein/920430127",
+   "status": 404,
+   "note": "Directory EIN page"
+  },
+  {
+   "url": "https://getholdings.com/nonprofits/ein/262638896",
+   "status": 404,
+   "note": "Directory EIN page"
+  },
+  {
+   "url": "https://getholdings.com/nonprofits/ein/222720647",
+   "status": 404,
+   "note": "Directory EIN page"
+  }
+ ],
+ "notes": "Batch of 15 IRS-list groups. Two of two searches used. Both went to groups a newcomer could most likely join: African Immigrants Resources Center (website field was the name cut short) and International Christian Fellowship Church (website parked). Five groups were not searched because the budget ran out: Black Thornberry Inc, When You Give a Bean Water, Daughters of Destiny, Kingdom Realm Ministries, and Chelkeinu Initiative. Those five, plus African Immigrants and ICF, are held-back records with status unknown and no summary, so they will not show on the site until someone checks them. Two groups are fully researched and publishable: Lemkin Institute (judgment call: its work is global and online, and its Philadelphia address comes only from the IRS list, so please confirm it belongs in a Philadelphia directory) and Women's Nonprofit Leadership Initiative (status probably_active, but its newest dated item is a 2024 year with no month). Fetches used: 25 of 60. No rate limiting: the failures were 404s, a 500, and parked or redirected domains. Three are out of area (Task Brasil, Theta, Keren Ezra). Two are hidden as private (Tequila That Cares Foundation, and To the Moon and Back Michael D Mooney Jr Foundation) and one as defunct (Wings for Success, merged into The Wardrobe, a Philadelphia-headquartered group now in leads_only).",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:920430127",
+     "irs_bmf:920430127"
+    ],
+    "group_id": "when-you-give-a-bean-water",
+    "ein": "920430127"
+   },
+   "verdict": "publish",
+   "name": "When You Give a Bean Water",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website (giveabeanwater.org) returned HTTP 404 with and without www, and the EIN lookup page returned 404 too. Not searched: the search budget went to two other groups. IRS address is 1500 Chestnut Street, 19102. Held back on purpose: no summary, so it does not show on the site. Needs a search or a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:464317617",
+     "irs_bmf:464317617"
+    ],
+    "group_id": "african-immigrants-resources-center-inc",
+    "ein": "464317617"
+   },
+   "verdict": "publish",
+   "name": "African Immigrants Resources Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://getholdings.com/nonprofits/ein/464317617",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "notes": "The listed website was the group name cut short, so it was treated as missing. One search found only a nonprofit directory listing: a Philadelphia 501(c)(3) with a tax-exempt status date of February 2015 and a generic mission. The directory page returned 404 when fetched, so these facts come from the search snippet only. No own website, program, or dated activity found. IRS address is 8913 Brous Ave, 19152. Held back on purpose: no summary. Needs a manual check that it still operates.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:882490607",
+     "irs_bmf:882490607"
+    ],
+    "group_id": "black-thornberry-inc",
+    "ein": "882490607"
+   },
+   "verdict": "publish",
+   "name": "Black Thornberry Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website was the group name in capitals, not a web address, so it was treated as missing. Not searched: the two searches went to African Immigrants Resources Center and International Christian Fellowship Church, which seemed most joinable. The EIN lookup page returned 404. IRS address is 833 Princeton Ave, 19111. Held back on purpose: no summary. Needs a search or a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:825323191",
+     "irs_bmf:825323191"
+    ],
+    "group_id": "chelkeinu-initiative",
+    "ein": "825323191"
+   },
+   "verdict": "publish",
+   "name": "Chelkeinu Initiative",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "chelkeinu.org returned HTTP 500 on three tries (with www and without). Not searched: no search budget was left. IRS address is 8201 Castor Ave, 19152. Held back on purpose: no summary. Re-run this group in a later batch.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:262638896",
+     "irs_bmf:262638896"
+    ],
+    "group_id": "daughters-of-destiny-inc",
+    "ein": "262638896"
+   },
+   "verdict": "publish",
+   "name": "Daughters of Destiny",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website (daughtersofdestiny.org) redirects to a page of another national ministry, Prison Fellowship, so it was not recorded as this group's site and that page was not read further. The EIN lookup page returned 404. Not searched: no search budget was left. IRS address is 1713 Stanwood St, 19152. Held back on purpose: no summary. Needs a search or a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:222720647",
+     "irs_bmf:222720647"
+    ],
+    "group_id": "international-christian-fellowship-church",
+    "ein": "222720647"
+   },
+   "verdict": "publish",
+   "name": "International Christian Fellowship Church",
+   "kind": "congregation",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://www.disciplepair.com/browse/church/international-christian-fellowship-philadelphia-pa",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website (WWW.ICFCHURCH.ORG) redirects to a domain-for-sale page, so it is not treated as the church's site. One search found a community-added directory entry at 7957 Castor Ave, which matches the IRS address. The entry lists it as a Community Church, with no denomination, service times, or own website. A second same-name listing at another address was judged unreliable and not used. The phone number on the directory is community-added, so it was not recorded. Held back on purpose: no summary.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:871634205",
+     "irs_bmf:871634205"
+    ],
+    "group_id": "kingdom-realm-ministries-inc",
+    "ein": "871634205"
+   },
+   "verdict": "publish",
+   "name": "Kingdom Realm Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The listed website (encounterasia.com) belongs to Encounter Asia, a ministry that runs events in Asia. It does not mention Kingdom Realm Ministries or Philadelphia. Its tagline uses the phrase The Kingdom Realm and it links a Facebook page with a similar handle, but the site does not say they are the same group, so the site was not recorded as this group's. Not searched: no search budget was left. IRS address is 2642 Tremont St, 19152. Held back on purpose: no summary.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

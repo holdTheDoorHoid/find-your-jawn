@@ -1,0 +1,252 @@
+{
+  "wave": "w20c-tier1-irs-web",
+  "agent": "w20c-02",
+  "lane": "A",
+  "model": "haiku",
+  "searches_used": 2,
+  "fetches_used": 26,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_990n:900587762", "irs_bmf:900587762"], "group_id": "clothes-pin", "ein": "900587762"},
+      "verdict": "publish",
+      "name": "Clothes-Pin",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Nothing found about this group. The IRS web field holds a design firm's name, not a web address, and the two-search budget ran out before this group was looked up. Needs a search by hand. No summary written, so this record is held back."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:811484597", "irs_bmf:811484597"], "group_id": "cloud-cloth-education", "ein": "811484597", "website": "https://dreamline.org"},
+      "verdict": "out_of_area",
+      "name": "Dreamline",
+      "notes": "IRS legal name: Cloud Cloth Education. The web address is Dreamline, a youth program in which young people make Dream Banners, which are art and words about the change they want to see. Its only Philadelphia address is a suite number that looks like a mailbox. The program is open to adult-led groups anywhere in the world, and the site lists no Philadelphia meetings or events. Marked out of area; the owner may decide to list it as a national program.",
+      "sources": [{"url": "https://dreamline.org", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:205763523", "irs_bmf:205763523"], "group_id": "cma-philly", "ein": "205763523", "website": "https://www.phillycma.org/"},
+      "verdict": "publish",
+      "name": "CMA Philly (Crystal Meth Anonymous)",
+      "summary": "A peer fellowship for people who want to stop using crystal meth. Members meet most days of the week in Center City and Fishtown, and anyone can come to a meeting.",
+      "what_you_do": "Attend a weekly meeting to share, listen, and support others in recovery. Meetings follow the Twelve Step model. Newcomers can start with the Beginner's Meeting.",
+      "kind": "support_group",
+      "categories": ["support-recovery"],
+      "interests": ["addiction_recovery"],
+      "motives": ["protective", "social"],
+      "formats": ["conversation"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": true},
+      "schedule": {"text": "Meetings most days of the week, mostly at 7:15 pm. Center City meetings are at The Hart of Catering, and Fishtown meetings are at 8:30 pm or 9:30 pm on Girard Avenue. One Saturday meeting is online.", "days": ["sun", "mon", "tue", "wed", "thu", "fri", "sat"], "times": ["evening", "night"], "recurring": true},
+      "locations": [
+        {"label": "The Hart of Catering (Center City meetings)", "address": "2101 Sansom St", "zip": "19103", "in_city": true},
+        {"label": "Hope on Girard (Fishtown meetings)", "address": "126 W Girard Ave", "zip": "19104", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {"level": "free", "text": "No dues or fees"},
+      "commitment": "drop_in",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Come to the Wednesday 7:15 pm Beginner's Meeting at The Hart of Catering, 2101 Sansom St, or call the 24-hour helpline at 855-638-4373 with questions", "drop_in": true, "newcomer_friendliness": 5, "basis": "The site lists a weekly Beginner's Meeting, says the fellowship is open to anyone, and charges no dues"},
+      "contacts": {"website": "https://www.phillycma.org/", "phone": "855-638-4373"},
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://www.phillycma.org/", "seen": "2026-10-08", "fields": ["summary", "audience", "cost", "contacts", "status"]},
+        {"url": "https://www.phillycma.org/meetings", "seen": "2026-10-08", "fields": ["schedule", "locations", "first_step", "online_ok"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Twelve Step support group. The homepage's only dated item is a 2025 feedback form, so no month is recorded and status is probably_active by the working-site rule. Meeting list may change; confirm before going. The page gives the Fishtown ZIP as 19104 in one place and as 1910 in another; 19104 is used here. The Sunday 7:15 pm speaker meeting is described as open. The 24-hour helpline is the number printed on the homepage."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232895839", "irs_bmf:232895839"], "group_id": "community-reachout-program", "ein": "232895839"},
+      "verdict": "publish",
+      "name": "Community Reachout Program",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "Nothing found. The IRS web field says pending, and the two-search budget ran out before this group was looked up. The IRS address is an apartment on North Broad Street, which may be a home, so no address is recorded. Needs a search by hand. No summary written, so this record is held back."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:853465756", "irs_bmf:853465756"], "group_id": "delta-alpha-delta-fraternity", "ein": "853465756", "website": "https://www.dadinc.org"},
+      "verdict": "publish",
+      "name": "Delta Alpha Delta Fraternity",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The website could not be read: three fetch attempts (www, bare domain and http) returned no output. The name suggests a fraternity, but membership rules were not checked. Retry by hand before writing a summary. Held back until then."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:612043152", "irs_bmf:612043152"], "group_id": "dereyk-morris-foundation-inc", "ein": "612043152", "website": "https://dmfphilly.org"},
+      "verdict": "publish",
+      "name": "Dereyk Morris Foundation",
+      "summary": "A Philadelphia foundation that says it supports incarcerated people through education. The office on South Broad Street welcomes visits on weekdays, and the site calls for volunteers, but it does not describe its programs.",
+      "what_you_do": "Ask about volunteering by phone or on a visit to the office. The site links to events and personal training pages, but it does not say what either involves.",
+      "kind": "nonprofit",
+      "categories": ["advocacy-rights"],
+      "interests": ["justice_reform_reentry"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Office hours are 9 am to 5 pm on weekdays. Program times are not listed on the site.", "days": ["mon", "tue", "wed", "thu", "fri"], "times": ["daytime"], "recurring": true},
+      "locations": [{"label": "Office", "address": "123 South Broad Street", "zip": "19109", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Not stated on the site"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Visit the office at 123 South Broad Street on a weekday, or call 267-325-1686, and ask how to volunteer", "drop_in": true, "newcomer_friendliness": 2, "basis": "The office welcomes visits and the site calls for volunteers, but it does not say how to sign up or what the programs involve"},
+      "contacts": {"website": "https://dmfphilly.org", "email": "info@dmfphilly.org", "phone": "267-325-1686"},
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://dmfphilly.org", "seen": "2026-10-08", "fields": ["summary", "schedule", "locations", "contacts", "status"]},
+        {"url": "https://dmfphilly.org/contact", "seen": "2026-10-08", "fields": ["contacts", "first_step"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "IRS legal name: Dereyk Morris Foundation Inc. The site has no dated items, and its footer copyright is not used as evidence. Linked pages for upcoming events and personal training were not opened. The category is the closest fit; the programs are not described. Check programs before relying on this record."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:393156790", "irs_bmf:393156790"], "group_id": "early-college-charter-school-of-philadelphia", "ein": "393156790", "website": "https://www.earlycollegephl.org"},
+      "verdict": "not_a_group",
+      "name": "Early College Charter School of Philadelphia",
+      "notes": "A public, open-enrollment charter school for grades 6 to 12 at 1420 Pine Street. Treated as a school rather than a community group: the site shows family, admissions, calendar and staff pages, and no volunteer or community program. The page does not mention a lottery. The owner may want to decide whether schools belong in the directory.",
+      "sources": [{"url": "https://www.earlycollegephl.org", "seen": "2026-10-08", "fields": ["name", "verdict"]}]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:871841250", "irs_bmf:871841250"], "group_id": "equity-research-organization", "ein": "871841250", "website": "https://www.equityresearchcooperative.org/"},
+      "verdict": "hide",
+      "hidden_reason": "out_of_scope",
+      "name": "Equity Research Cooperative",
+      "notes": "Describes itself as a people of color led research collaborative that also acts as a grantmaker to partner groups. Partners are chosen by the organization, with no open call, application or membership. The site has no events, classes or dated posts, and it publishes no phone or email (a contact page and a newsletter form are linked). Treated as a grantmaker with no public way in. Partner names are listed in leads_only.",
+      "sources": [
+        {"url": "https://www.equityresearchcooperative.org/", "seen": "2026-10-08", "fields": ["verdict"]},
+        {"url": "https://www.equityresearchcooperative.org/freedom-dream-partners", "seen": "2026-10-08", "fields": ["verdict"]}
+      ]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:832372645", "irs_bmf:832372645"], "group_id": "faith-and-liberty-discovery-center-llc", "ein": "832372645", "website": "https://www.faithandliberty.org"},
+      "verdict": "not_a_group",
+      "name": "Faith and Liberty Discovery Center",
+      "notes": "The IRS record is an LLC at 101 N Independence Mall East. The name and address suggest a visitor exhibit, which is a building or attraction rather than a joinable group. The web address now redirects to a speakers bureau run by the American Bible Society. That bureau books lecturers for civic groups, clubs and churches, and it does not mention the center, Independence Mall or Philadelphia. It lists no street address. The IRS kind says congregation, but nothing on the sites says that. The owner may want to check the LLC's status before publishing anything about it.",
+      "sources": [
+        {"url": "https://www.faithandliberty.org", "seen": "2026-10-08", "fields": ["verdict"]},
+        {"url": "https://liberty.americanbible.org/", "seen": "2026-10-08", "fields": ["verdict"]}
+      ]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:202783941", "irs_bmf:202783941"], "group_id": "friars-senior-society", "ein": "202783941", "website": "https://www.friarsseniorsociety.com"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Friars Senior Society",
+      "notes": "A University of Pennsylvania senior honor society founded in 1899. Members are recognized seniors, and the site does not say how they are chosen or how an outsider could join. Its fundraisers (dinners, a coffeehouse, bake sales) are not a way in for a visitor. The site lists a 2025 spring dinner with an April 17, 2018 date, which conflicts with its title, so no dates are used. The IRS address is a private apartment and is not recorded.",
+      "sources": [{"url": "https://www.friarsseniorsociety.com", "seen": "2026-10-08", "fields": ["verdict"]}]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:231424024", "irs_bmf:231424024"], "group_id": "friends-neighborhood-guild-inc", "ein": "231424024", "website": "https://www.friendsguild.net"},
+      "verdict": "publish",
+      "name": "Friends Neighborhood Guild",
+      "kind": "nonprofit",
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The web address friendsguild.net does not resolve, and neither do friendsneighborhoodguild.org or the www form. The one search found a Quaker settlement house with this name, founded in 1879 and based in North Philadelphia, which the search source links to friendsguild.net. The only program list found is from 2007, so nothing current is recorded and no summary is written. The IRS address (704 W Girard Ave) differs from the Guild address in the Philadelphia Encyclopedia article (703 North Eighth Street). Check which is current. The IRS contact name is a payroll service and is not recorded. Held back until the current site is checked.",
+      "sources": [{"url": "https://philadelphiaencyclopedia.org/essays/friends-neighborhood-guild/", "seen": "2026-10-08", "fields": ["name"]}]
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:473625107", "irs_bmf:473625107"], "group_id": "friends-of-bache-martin", "ein": "473625107", "website": "https://www.friendsofbachemartin.org"},
+      "verdict": "publish",
+      "name": "Friends of Bache-Martin",
+      "summary": "A family team at Bache-Martin School that stands behind students and staff. Parents and guardians are invited to volunteer and to sign up for the school newsletter.",
+      "what_you_do": "Volunteer with the school or sign up for its newsletter. The page does not list what volunteer jobs involve.",
+      "kind": "friends_group",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["school_parent_groups"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "parents", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [{"label": "Bache-Martin School", "address": "2201 Brown Street", "zip": "19130", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Not stated on the page"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Call Bache-Martin School at 215-400-7550 and ask how to join the Friends and Family team, or sign up for the school newsletter", "newcomer_friendliness": 2, "basis": "The page invites parents to get involved and links to a newsletter and volunteer section, but does not say how the team meets or how to join"},
+      "contacts": {"website": "https://www.bachemartin.org/", "phone": "215-400-7550"},
+      "status": "probably_active",
+      "sources": [{"url": "https://www.bachemartin.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "locations", "contacts", "first_step", "status"]}],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The web address on the IRS record (friendsofbachemartin.org, IRS name Friends of Bache Martin) redirects to the school's own site, bachemartin.org, which describes a Friends and Family team. That team is treated as this group, but the match is not confirmed. The site has no dated items. The 215-400-4000 number on the page is the district family line, not the school's, and is not recorded."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:237351482", "irs_bmf:237351482"], "group_id": "friends-of-the-free-library-of-philadelphia-inc-19103-16", "ein": "237351482", "website": "https://libraryfriends.info"},
+      "verdict": "publish",
+      "name": "Friends of the Free Library of Philadelphia",
+      "summary": "An independent nonprofit that backs the city's Free Library through neighborhood volunteer groups at its branches. It also runs the Book Corner, a shop for new, rare and used books.",
+      "what_you_do": "Join or volunteer with a neighborhood Friends group at a branch, or buy books at the Book Corner. The site does not say how to join, so contact the group to ask.",
+      "kind": "friends_group",
+      "categories": ["books-writing"],
+      "interests": ["library_programs"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [{"label": "Address as published", "address": "311 N. 20th Street", "zip": "19103", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Membership fees are not stated on the site"},
+      "first_step": {"how": "Email freelibraryfriends@gmail.com or call (215) 567-0527 and ask how to join or find your neighborhood Friends group", "newcomer_friendliness": 2, "basis": "The site names a contact route but not how to join, and it lists no events"},
+      "contacts": {"website": "https://libraryfriends.info", "email": "freelibraryfriends@gmail.com", "phone": "(215) 567-0527"},
+      "status": "probably_active",
+      "sources": [{"url": "https://libraryfriends.info", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "kind", "locations", "contacts", "first_step", "status"]}],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "IRS legal name matches. The IRS-listed site satorelibrary.org does not resolve; it belonged to the Charles Santore Branch Friends group named as an alias. The site claims more than 10,000 members, which is not verified. A directory listing says about 48 neighborhood Friends groups belong to the organization; the group's own page does not name them. The office address is not the IRS address (1901 Vine Street, the Central Library). Founding year differs between sources, so none is recorded. freelibrary.org/friends returned HTTP 403 and was not retried."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:932757779", "irs_bmf:932757779"], "group_id": "friends-of-waring-inc", "ein": "932757779", "website": "https://friendsofwaring.com"},
+      "verdict": "publish",
+      "name": "Friends of Waring",
+      "summary": "Volunteers who keep the library open at Laura W. Waring Elementary School, a school for grades K to 8 on Green Street. The library reopened for students in 2022 after more than ten years closed.",
+      "what_you_do": "Volunteer to help staff the school library, or give a donation. The site has a volunteer page, but this record does not describe what a volunteer does on a shift.",
+      "kind": "friends_group",
+      "categories": ["books-writing", "kids-youth-mentoring"],
+      "interests": ["library_programs", "school_parent_groups"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Volunteer shift times are not published on the page."},
+      "locations": [{"label": "Laura W. Waring Elementary School library", "address": "1801 Green Street", "zip": "19130", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Donations are accepted; no volunteer fees are listed"},
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {"how": "Email friendsofwaringelementary@gmail.com and ask how to volunteer in the school library", "newcomer_friendliness": 3, "basis": "The site has a volunteer page and a published email, and it says community volunteers staff the library"},
+      "contacts": {"website": "https://friendsofwaring.com", "email": "friendsofwaringelementary@gmail.com"},
+      "status": "unknown",
+      "sources": [{"url": "https://friendsofwaring.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "kind", "locations", "contacts", "first_step", "cost"]}],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "The only dated item on the site is the library's March 2022 opening, which is history rather than a recent sign of life, so status is unknown. The site links to Facebook, Instagram and LinkedIn, but those links were not read. The page does not say what volunteers need before they start, such as school clearances."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:884029214", "irs_bmf:884029214"], "group_id": "give-me-my-rosess", "ein": "884029214", "website": "http://givememyroses.org/"},
+      "verdict": "publish",
+      "name": "Give Me My Roses",
+      "summary": "A Philadelphia nonprofit that promotes gratitude and appreciation. It runs a Women's Circle every two weeks, an arts and crafts workshop for ages 9 and up, and a recognition program at participating venues.",
+      "what_you_do": "Join the Women's Circle by RSVP email, or ask about the arts and crafts workshop through the contact form.",
+      "kind": "nonprofit",
+      "categories": ["social-meetups", "arts-crafts"],
+      "interests": ["conversation_circles", "craft_circle"],
+      "formats": ["conversation", "perform_make_together"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "The Women's Circle meets every two weeks. Dates and times are not published on the site; RSVP by email. The workshop has no published schedule.", "recurring": true},
+      "locations": [{"label": "Philadelphia, PA (no street address published)", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Not stated on the site"},
+      "first_step": {"how": "Email info@GiveMeMyRoses.org to RSVP for the Women's Circle, or use the contact form to ask about the arts and crafts workshop", "newcomer_friendliness": 3, "basis": "The Women's Circle takes RSVPs by email from the public; the site does not say whether it has openings"},
+      "contacts": {"website": "http://givememyroses.org/", "email": "info@GiveMeMyRoses.org"},
+      "status": "probably_active",
+      "sources": [{"url": "http://givememyroses.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "kind", "schedule", "contacts", "first_step", "status"]}],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "IRS legal name: Give Me My Rosess. The IRS web address givememyrosess.com redirects to givememyroses.org, which is used here. The site has no dated events or news, and its footer has no year and misspells the name. The events page is linked but showed no listings. No street address is published, so the IRS address is not used. Eligibility for the Women's Circle is not stated, although the name suggests it is for women."
+    }
+  ],
+  "leads_only": [
+    {"name": "Friends of the Charles Santore Branch", "url": "https://libraryfriends.info", "note": "Alias in the IRS record for the Free Library Friends group. The branch's own site, satorelibrary.org, does not resolve. Not checked."},
+    {"name": "Neighborhood Friends groups of the Free Library", "url": "https://libraryfriends.info", "note": "A directory listing says about 48 neighborhood groups belong to the Free Library Friends. The group's own page did not name them. Not checked."},
+    {"name": "Philly Black Worker Project", "url": "https://www.equityresearchcooperative.org/freedom-dream-partners", "note": "Named as a 2025 partner on the Equity Research Cooperative page. Not checked."},
+    {"name": "Empowered Minds Academy", "url": "https://www.equityresearchcooperative.org/freedom-dream-partners", "note": "Named as a 2025 partner on the Equity Research Cooperative page. Not checked."},
+    {"name": "Christian Community Services Inc.", "url": "https://www.equityresearchcooperative.org/freedom-dream-partners", "note": "Named as a 2025 partner on the Equity Research Cooperative page. Location not stated. Not checked."},
+    {"name": "Philadelphia Community Land Trust", "url": "https://www.equityresearchcooperative.org/freedom-dream-partners", "note": "Named as a past partner on the Equity Research Cooperative page. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://www.freelibrary.org/friends/", "status": 403, "note": "HTTP 403 Forbidden. Not retried."},
+    {"url": "https://www.dadinc.org", "status": null, "note": "Fetch returned no output on three attempts (www, bare domain, http). Cause unknown; the site could not be read."}
+  ],
+  "notes": "Budget: 2 of 2 WebSearch calls used, on Friends Neighborhood Guild and Friends of the Free Library. 26 of 60 fetches used. Clothes-Pin and Community Reachout Program were not searched, because the two searches went to the two groups most likely to yield a joinable record; both are recorded as unknown and held back. Dead domains (DNS lookup failed): friendsguild.net (www and bare), friendsneighborhoodguild.org, satorelibrary.org. Redirects followed: friendsofbachemartin.org to the school site bachemartin.org; givememyrosess.com to givememyroses.org; faithandliberty.org to a speakers bureau at liberty.americanbible.org, which is not the Discovery Center. No rate limiting seen. Held back for lack of a summary: Clothes-Pin, Community Reachout Program, Delta Alpha Delta Fraternity, Friends Neighborhood Guild. Verdicts: publish 10 (6 with full summaries, 4 unknown), hide 2, not_a_group 2, out_of_area 1. Most publish records with probably_active status rest on a working site with no dated items, so the owner should review status before the directory goes live."
+}

@@ -1,22 +1,32 @@
 id: give-me-my-rosess
-name: Give Me My Rosess
-aka: []
+name: Give Me My Roses
+aka:
+- Give Me My Rosess
 leads:
 - irs_990n:884029214
 - irs_bmf:884029214
 ein: '884029214'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that promotes gratitude and appreciation. It runs a Women's Circle every
+  two weeks, an arts and crafts workshop for ages 9 and up, and a recognition program at participating
+  venues.
+what_you_do: Join the Women's Circle by RSVP email, or ask about the arts and crafts workshop through
+  the contact form.
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- social-meetups
+- arts-crafts
+interests:
+- conversation_circles
+- craft_circle
 motives: []
-formats: []
+formats:
+- conversation
+- perform_make_together
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The Women's Circle meets every two weeks. Dates and times are not published on the site; RSVP
+    by email. The workshop has no published schedule.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 315 S Broad St
+- label: Philadelphia, PA (no street address published)
+  address: null
   neighborhood: null
-  planning_district: central
-  zip: '19107'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 315 s broad street
-  neighborhood: null
-  planning_district: central
-  zip: '19107'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -52,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -67,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email info@GiveMeMyRoses.org to RSVP for the Women's Circle, or use the contact form to ask about
+    the arts and crafts workshop
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The Women's Circle takes RSVPs by email from the public; the site does not say whether it has
+    openings
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.givememyrosess.com
-  email: null
+  website: http://givememyroses.org/
+  email: info@GiveMeMyRoses.org
   phone: null
   contact_name: Lonnie summers
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://givememyroses.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +103,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://givememyroses.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - schedule
+  - contacts
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
