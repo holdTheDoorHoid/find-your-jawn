@@ -186,7 +186,7 @@ const hand = [
     crowd: ['families', 'all_adults'],
     schedule: { text: 'Most Saturday mornings from spring to fall, plus a planting day in April', days: ['sat'], times: ['morning'], season: 'year_round' },
     locations: [loc('mayfair', 'Meet at the corner shelter', '123 Example Ave', 'Route 14 bus to Example Ave')],
-    cost: { level: 'free', text: 'No cost. Gloves and tools are provided.' },
+    cost: { level: 'free', text: 'Gloves and tools are provided.' },
     commitment: 'drop_in',
     group_size: 'medium',
     access: { wheelchair: 'unknown', languages: ['en', 'es'], notes: 'Work happens on sidewalks. Ask about tasks that can be done sitting down.' },

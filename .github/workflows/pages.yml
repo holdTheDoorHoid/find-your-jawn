@@ -22,10 +22,44 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      # Until the real site lands (milestone M4.1), publish the placeholder page.
+
+      # 1. Build the data the site shows (site/public/data/) from the group files.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the pipeline
+        run: pip install -e pipeline
+      - name: Build the data
+        run: |
+          if command -v fyj >/dev/null 2>&1 && fyj build --help >/dev/null 2>&1; then
+            fyj build
+          else
+            echo "::warning title=Sample data::fyj build is not available yet. The site build will use the made up sample data in site/fixtures/data, and every page shows a Sample data banner."
+          fi
+
+      # 2. Build the site. "npm run build" runs prepare-data first: real pipeline output wins, and
+      #    the sample data is copied in only when there is none.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install site packages
+        working-directory: site
+        run: npm ci
+      - name: Build the site
+        working-directory: site
+        run: npm run build
+      - name: Say so if the sample data went live
+        run: |
+          if grep -q '"fixture": *true' site/public/data/manifest.json 2>/dev/null; then
+            echo "::warning title=Sample data is being published::The deployed site contains made up sample groups."
+          fi
+
+      # 3. Publish.
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: placeholder
+          path: site/dist
       - id: deployment
         uses: actions/deploy-pages@v4

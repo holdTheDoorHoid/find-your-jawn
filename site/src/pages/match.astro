@@ -1,8 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { suggestGroupUrl } from '../lib/issues';
 import { withBase } from '../lib/site';
-import { match as t } from '../strings/en';
+import { match as t, paths } from '../strings/en';
 ---
 
 <Base title={t.title} description={t.metaDescription} path="match/">
@@ -22,7 +21,7 @@ import { match as t } from '../strings/en';
       <h2>{t.meanwhile}</h2>
       <ul>
         <li><a href={withBase('browse/')}>{t.browse}</a></li>
-        <li><a href={withBase('paths/families/')}>{t.paths}</a></li>
+        {[paths.serviceHours, paths.courtOrdered, paths.families, paths.newToPhilly].map((g) => <li><a href={withBase(`paths/${g.slug}/`)}>{g.title}</a></li>)}
         <li><a href={withBase('how-ranking-works/')}>{t.how}</a></li>
       </ul>
     </div>

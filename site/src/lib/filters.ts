@@ -2,7 +2,7 @@ import { isFaithGroup } from './badges';
 import { DISTRICT_REGION, OTHER_REGION } from './geo';
 import { languageBase } from './language';
 import { monthKey } from './dates';
-import { compareNames, fold, nameKey, slugify } from './text';
+import { fold, nameKey, slugify } from './text';
 import { DAYS, type CostLevel, type Group } from './types';
 
 // Pure filter, search and sort logic for the browse page. No DOM, no network, so it is easy to
@@ -188,7 +188,9 @@ export function sortGroups(list: IndexedGroup[], sort: SortKey, q = ''): Indexed
   const copy = list.slice();
   const toks = tokens(q);
   const phrase = toks.join(' ');
-  const az = (a: IndexedGroup, b: IndexedGroup) => compareNames(a.g.name, b.g.name) || (a.g.id < b.g.id ? -1 : 1);
+  // sortName is folded once when the index is built, so sorting thousands of groups stays fast.
+  const az = (a: IndexedGroup, b: IndexedGroup) =>
+    a.sortName < b.sortName ? -1 : a.sortName > b.sortName ? 1 : a.g.id < b.g.id ? -1 : 1;
   if (sort === 'recent') {
     copy.sort((a, b) => b.recent - a.recent || az(a, b));
   } else if (sort === 'best' && toks.length) {

@@ -292,7 +292,7 @@ export const group = {
   iRunHelp: 'Confirm your details and tell newcomers what to expect.',
   remove: 'Remove my details',
   removeHelp: 'Ask us to take down a name, phone, email or the whole listing.',
-  moreInFamily: 'More groups in',
+  moreInFamily: 'More groups like this',
   seeAllIn: 'See all {family} groups',
   save: 'Save to my list',
   saved: 'Saved to my list',
@@ -319,7 +319,7 @@ export const group = {
   quickFacts: 'Quick facts',
   outOfFive: '{n} out of 5',
   who: {
-    labelOpen: 'Open to',
+    labelOpen: 'Who can join',
     labelAges: 'Ages',
     labelFaith: 'Faith',
     minAge: 'Ages {n} and up',
@@ -763,7 +763,6 @@ export const match = {
   ],
   meanwhile: 'While you wait, you can:',
   browse: 'Browse every group',
-  paths: 'Try a guide: service hours, families or new to Philly',
   how: 'Read how ranking will work',
   mountLabel: 'Match quiz',
 };

@@ -218,7 +218,7 @@ export default function BrowseApp({ config }: Props) {
     if (focusFrom.current === null) return;
     const start = focusFrom.current;
     focusFrom.current = null;
-    const el = listRef.current?.querySelectorAll('li')[start]?.querySelector('a');
+    const el = listRef.current?.querySelectorAll(':scope > li')[start]?.querySelector('a');
     if (el instanceof HTMLElement) el.focus();
   }, [shown]);
 

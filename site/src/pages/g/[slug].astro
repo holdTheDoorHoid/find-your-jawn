@@ -23,7 +23,7 @@ import { fill } from '../../lib/inline';
 import { languageName } from '../../lib/language';
 import { groupIssueLinks } from '../../lib/issues';
 import { absoluteUrl, groupPath, interestPath, withBase } from '../../lib/site';
-import { hostOf, safeHttpUrl, telHref, titleCase } from '../../lib/text';
+import { safeHttpUrl, telHref, titleCase } from '../../lib/text';
 import { districtFor, familyLabel, labelFor } from '../../lib/vocab';
 import { group as t, labels } from '../../strings/en';
 
@@ -94,6 +94,12 @@ if (g.requirements.court_ordered_ok === 'no') reqs.push(t.courtNo);
 if (g.requirements.service_hours_letter === 'yes') reqs.push(t.hoursYes);
 if (g.requirements.service_hours_letter === 'no') reqs.push(t.hoursNo);
 if (g.requirements.kids_ok) reqs.push(t.kidsOk);
+
+const sourceItems = g.sources.map((s) => {
+  const when = sourceSeen(s);
+  const tail = (when ? `, ${t.sourceSeen} ${when}` : '') + (s.fields.length > 0 ? `. ${t.supports}: ${s.fields.map(fieldLabel).join(', ')}` : '');
+  return { href: safeHttpUrl(s.url), label: linkLabel(s.url), tail };
+});
 
 // related
 const families = g.categories.slice(0, 3).map((id) => ({ id, label: familyLabel(vocab, id) }));
@@ -309,21 +315,9 @@ const description = metaDescription(g);
         </dl>
         {stale && <p>{stale}</p>}
         {
-          g.sources.length > 0 && (
+          sourceItems.length > 0 && (
             <ul class="source-list">
-              {
-                g.sources.map((s) => {
-                  const href = safeHttpUrl(s.url);
-                  const when = sourceSeen(s);
-                  return (
-                    <li>
-                      {href ? <a href={href} rel="noopener noreferrer">{linkLabel(s.url)}</a> : hostOf(s.url)}
-                      {when ? `, ${t.sourceSeen} ${when}` : ''}
-                      {s.fields.length > 0 ? `. ${t.supports}: ${s.fields.map(fieldLabel).join(', ')}` : ''}
-                    </li>
-                  );
-                })
-              }
+              {sourceItems.map((s) => <li>{s.href ? <a href={s.href} rel="noopener noreferrer">{s.label}</a> : s.label}{s.tail}</li>)}
             </ul>
           )
         }
