@@ -1,23 +1,33 @@
 id: all-mentees-on-board-non-profit-organization
-name: All Mentees on Board Non Profit Organization
+name: All Mentees On Board
 aka:
-- All Mentees on Board
+- All Mentees on Board Non Profit Organization
 leads:
 - irs_990n:862748467
 - irs_bmf:862748467
 ein: '862748467'
-summary: null
-what_you_do: null
+summary: A Philadelphia youth group that mentors girls through after-school programs, life skills training
+  and a summer camp.
+what_you_do: Girls sign up for the A.M.O.B. Girls Work Too program and attend its orientation. Membership
+  for the 2026 to 2027 school year is open through a sign-up form on the site.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+- after_school_camps
+motives:
+- values
+- social
+formats:
+- learn_skill
 roles: []
-crowd: []
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -26,17 +36,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: After-school programming during the school year, plus a summer program. Office hours are Tuesday
+    to Friday, 10:30 am to 5 pm, and Saturday, 10 am to 2:30 pm.
+  days:
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: '4810'
+- label: Main office
+  address: 2101 Brandywine St, Suite 100
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
+  planning_district: null
+  zip: '19130'
   lat: null
   lng: null
   in_city: true
@@ -45,7 +62,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -59,23 +76,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill in the membership form on amobservices.org, or call 267-599-8966 during office hours to ask
+    about the Girls Work Too program.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining takes a sign up or application before you see the program.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: amobservices.org
-  email: null
-  phone: null
+  website: https://amobservices.org
+  email: info@amobservices.org
+  phone: 267-599-8966
   contact_name: Aleshia Nicole Pate
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://amobservices.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +109,18 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://amobservices.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,7 +5,8 @@ leads:
 - irs_990n:993674473
 - irs_bmf:993674473
 ein: '993674473'
-summary: null
+summary: A nonprofit that grows a memorial forest of saguaro cacti in the Arizona desert for LGBTQIA2S+
+  people.
 what_you_do: null
 kind: nonprofit
 categories: []
@@ -31,23 +32,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 55 E Montana St
+- label: Address on the site
+  address: 39634 E. 48 Ave, Salome, AZ 85348
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
+  planning_district: null
+  zip: '85348'
   lat: null
   lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 55 E Montana Street
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
-  lat: null
-  lng: null
-  in_city: true
+  in_city: false
   transit: null
 online_ok: null
 cost:
@@ -75,15 +67,15 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: rainbowreserve.org
-  email: null
+  website: https://rainbowreserve.org
+  email: support@rainbowreserve.org
   phone: null
   contact_name: Max Kozaczki
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://rainbowreserve.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +92,15 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+- url: https://rainbowreserve.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

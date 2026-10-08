@@ -1,0 +1,107 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-26",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://cliveden.org/",
+   "status": 403,
+   "note": "Website blocked on the one fetch. Not retried or worked around. Cliveden record held back as unknown."
+  },
+  {
+   "url": "https://freeinspiration.org",
+   "status": 403,
+   "note": "Bare domain blocked. The www version returned only a title and tagline. F.I.R.E. record held back as unknown."
+  },
+  {
+   "url": "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/3079122/governing-document",
+   "status": 403,
+   "note": "UK register page for a same-named charity, checked for area of benefit. Blocked; not read."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used. Fetches: 19. Batch of 15 groups: 8 publish (Cliveden and F.I.R.E. are unknown and held back), 1 not_a_group, 6 out_of_area. Judgment calls the owner may want to review: Bududa (work in Uganda), Caribbean Coalition (Caribbean scope, online events), Collectively Free (national animal rights, Philadelphia IRS address), East European Jewish Heritage Project (work in Eastern Europe; the listed website belongs to another organization), Fresh Fire (worship in Elkins Park, Montgomery County), GE2P2 (global research foundation). The Crossing is not_a_group because its only public way in is concert tickets. Extended Play is a narrow filmmaker service with low confidence. Summaries were written fresh from the pages read. No leads_only items: the only other named places (Holsey Temple Church, Fabric Workshop and Museum, Presbyterian Church of Chestnut Hill) are venues with no URL seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:cliveden-of-the-national-trust-inc-3",
+     "irs_bmf:232232675"
+    ],
+    "group_id": "cliveden-of-the-national-trust-inc",
+    "ein": "232232675",
+    "website": "https://cliveden.org/"
+   },
+   "verdict": "publish",
+   "name": "Cliveden",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://cliveden.org/"
+   },
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Cultural Fund lead. The website returned HTTP 403 on the one fetch, so nothing about programs, dates, hours, tickets or contacts was read. Held back for a later pass by someone who can reach the site. Address on the IRS record: 6401 Germantown Ave, 19144. Legal name: Cliveden of the National Trust Inc.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:522227764",
+     "irs_bmf:522227764"
+    ],
+    "group_id": "east-european-jewish-heritage-project-usa-ltd",
+    "ein": "522227764",
+    "website": null
+   },
+   "verdict": "out_of_area",
+   "name": "East European Jewish Heritage Project USA",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the batch record (voluntas-international.org) belongs to a different organization called Voluntas, so it is not recorded as this group's site. One search found no Philadelphia activity. Search summaries (pages I did not open) describe a 1999 newsletter about a group of this name working on East European Jewish culture, aid, and restoration of sites, with a Minsk address, and a UK charity register entry giving an area of benefit of Eastern Europe. That UK register page returned HTTP 403 when fetched. IRS record address: 221 Pelham Rd, 19119. Verdict out_of_area with low confidence; the owner may review.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:811319439",
+     "irs_bmf:811319439"
+    ],
+    "group_id": "fire-free-inspiration-reaching-everyone",
+    "ein": "811319439",
+    "website": "https://www.freeinspiration.org/"
+   },
+   "verdict": "publish",
+   "name": "F.I.R.E. (Fire Free Inspiration Reaching Everyone)",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.freeinspiration.org/"
+   },
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The www site returned only its name and tagline, with no programs, dates or contacts. The bare domain freeinspiration.org returned HTTP 403 and is listed under blocked. One search found nothing matching in Philadelphia. IRS record address: 135 E Pomona St, 19144. Held back until someone can read the site or find a public source.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

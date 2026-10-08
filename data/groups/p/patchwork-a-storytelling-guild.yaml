@@ -32,9 +32,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public story nights and showcases several times a year, mostly at The Rotunda on Walnut Street
-    and at the Chestnut Hill Library, plus some at Charles A. Brown Ice House in Bethlehem. The next listed
-    event is Saturday, October 24, 2026 at 7 pm at the Ice House. Most items are one-off events.
+  text: Story nights and showcases several times a year, mostly at The Rotunda on Walnut Street, with
+    others at the Chestnut Hill Library and the Ice House in Bethlehem, and some held online.
   days: []
   times: []
   recurring: false
@@ -59,18 +58,18 @@ locations:
   in_city: true
   transit: null
 - label: Charles A. Brown Ice House
-  address: 56 River Street, Bethlehem, PA
+  address: 56 River Street, Bethlehem, PA 18018
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '18018'
   lat: null
   lng: null
   in_city: false
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: low
-  text: Free or pay what you can. Some shows suggest $15.
+  text: Most shows are free or pay what you can, and some suggest $15 a person.
 commitment: one_off
 group_size: null
 access:
@@ -85,14 +84,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to a story night, or use the teller application or the open call linked from the site
+  how: Buy a ticket for a story night through the ticket link on the events page. To tell a story, use
+    the teller application or open call when one is listed.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public shows are open to anyone, and teller applications and story swap registration are separate
-    steps the page describes.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public shows are open to anyone with a ticket link, and teller calls are listed separately, but
+    the page does not say how beginners are helped to tell a story.
+  what_to_expect: 'A story night is a live show: a host introduces several tellers, and each one tells
+    a story aloud while the audience listens. Showcases usually run about an hour to two hours, and some
+    shows add an open mic. Most shows are free or pay what you can, and some suggest $15.'
+  first_visit_tips:
+  - Buy your ticket ahead through the link on the events page, since many shows need one.
+  - Many shows are pay what you can, so bring what fits your budget.
+  - Start times vary from early afternoon to 7 pm, so check the event page for yours.
 contacts:
   website: https://patchworkstorytelling.org/upcoming-events
   email: info@patchworkstorytelling.org
@@ -115,7 +120,13 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://patchworkstorytelling.org/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

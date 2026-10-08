@@ -3,8 +3,8 @@ name: NextFab
 aka: []
 leads: []
 ein: null
-summary: A makerspace in North Philadelphia with laser cutters, 3D printers, electronics, sewing, metal
-  and woodworking tools. Classes and shop time need a membership, but you can take a tour first.
+summary: A North Philadelphia makerspace with laser cutters, 3D printers, woodshops, metal and sewing
+  tools, and electronics benches. Free tours and public events let you look around before you join.
 what_you_do: Take classes, use the tools, and join the member community. Several of its free Repair Fairs
   are held here.
 kind: club
@@ -62,29 +62,45 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: A membership is needed for most classes and shop access. Class prices are not listed on the site.
+  level: paid
+  text: 'Membership is needed for classes and shop use: $149 a month, month to month, or $134.10 a month
+    on a yearly agreement. A discounted $129 a month applies to students, educators, military, seniors,
+    first responders and others. Tours are free.'
 commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
-  languages: []
-  notes: null
+  wheelchair: partial
+  languages:
+  - en
+  notes: 'The building is described as ADA compliant, with a paved, ramped entrance, a load-in garage,
+    and gender-neutral restrooms near the workshops. Some workshop areas and machines may be hard to use
+    for some physical disabilities, so ask about accommodations. Classes assume you can follow instruction
+    in English on your own. Nearest SEPTA rail, per the FAQ: the Berks stop on the Market-Frankford Line,
+    about five blocks east. Bus Routes 3 and 57 and the Girard Avenue trolley also run nearby.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: You may bring your own hand tools. Power tools and unusual items need instructor permission first.
 first_step:
-  how: Take a tour, look at the membership options, then sign up
+  how: Book a free tour through the website, then ask about membership before you plan a class or a project
+    on the machines.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Tours are offered, but full access and classes need a paid membership first.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Free tours and public events let you see the space before you pay, but classes and shop use need
+    a paid membership and a proficiency check.
+  what_to_expect: A free tour walks you through the North Philadelphia space, including the jewelry, sewing,
+    woodworking, metal, and laser cutting areas. Before you use the machines, you finish an online orientation
+    and then pass a proficiency check, a private lesson, or a class. Ask when you book how long a tour
+    runs.
+  first_visit_tips:
+  - Book the tour through the website before you come.
+  - Free on-site parking is open to visitors as well as members.
+  - Check the events page for free public gatherings that non-members can join.
+  - Ask an instructor before you bring any power tools or unusual items.
 contacts:
   website: https://nextfab.com/
   email: null
@@ -94,7 +110,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.phillyfixersguild.org/calendar
+sign_of_life_url: https://nextfab.com/events/
 sources:
 - url: https://nextfab.com/
   seen: '2026-10-08'
@@ -105,13 +121,37 @@ sources:
   - schedule
   - first_step
   - contacts
+  - status
 - url: https://www.phillyfixersguild.org/calendar
   seen: '2026-10-08'
   fields:
   - status
   - what_you_do
-research_tier: 1
-confidence: medium
+- url: https://nextfab.com/take-a-tour/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+- url: https://nextfab.com/classes/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+- url: https://nextfab.com/about/faqs/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - access
+  - requirements
+  - first_step
+- url: https://nextfab.com/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

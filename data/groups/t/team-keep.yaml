@@ -5,18 +5,24 @@ leads:
 - irs_990n:851899918
 - irs_bmf:851899918
 ein: '851899918'
-summary: null
-what_you_do: null
+summary: A nonprofit that helps Philadelphia residents get back the ID papers they need for housing, jobs,
+  benefits, and health care. It runs weekly clinics at Free Library branches.
+what_you_do: Bring a mailing address to a clinic, where staff help you request birth certificates, photo
+  IDs, and Social Security cards. Staff also run a phone and text hotline.
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- hunger-housing-basic-needs
+interests:
+- free_help_clinics
+- housing_help
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,25 +31,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly community clinics at six Free Library of Philadelphia branches. The clinic calendar on
+    keep.id lists the days and places.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 520 Carpenter Lane Comm
+- label: Main office
+  address: 3675 Market Street, Ste 200
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 20 South 39th Street Apt S1
-  neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
@@ -52,7 +50,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated in the page text.
 commitment: null
 group_size: null
 access:
@@ -67,23 +65,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Find a clinic date on the keep.id clinic calendar and bring a mailing address, or call 1-844-KEEPID
+    with questions.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The clinics are open to the public, and the site gives a phone line to ask questions.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://team.keep.id
   email: null
-  phone: null
+  phone: 1-844-KEEPID
   contact_name: Steffen Cornwell
-  social: []
+  social:
+  - https://www.instagram.com/keepidphilly
+  - https://www.linkedin.com/company/keep-id-philly/
+  - https://www.youtube.com/@teamkeep7088
+  - https://twitter.com/keepidphilly
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://team.keep.id
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +102,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://team.keep.id
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

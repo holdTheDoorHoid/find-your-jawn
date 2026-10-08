@@ -4,12 +4,13 @@ aka:
 - Pennsylvania Center for Adapted Sports (PCAS)
 leads:
 - irs_bmf:232814991
+- manual_seeds:schuylkill-navy-pennsylvania-center-for-adaptive-sport
 ein: '232814991'
 summary: A Philadelphia nonprofit for people with disabilities. It runs about 13 sport and wellness programs
   year round, including rowing, cycling, kayaking, skiing, climbing, sitting volleyball, yoga and youth
   track and field.
-what_you_do: Take part in a program such as rowing, cycling, kayaking or youth track and field, open to
-  people with disabilities.
+what_you_do: Join one of the sport and wellness programs, such as rowing, cycling, kayaking or youth track
+  and field, or volunteer on cycling and adaptive rowing days.
 kind: nonprofit
 categories:
 - sports-teams
@@ -38,14 +39,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Programs run through the year, and rowing runs May to October. Dates and times vary by sport,
-    so check the program pages.
+  text: About 13 programs run through the year, and rowing runs May to October. Dates and times vary by
+    sport, so check each program page. Volunteer cycling days are Saturday mornings in Philadelphia and
+    Sunday afternoons in Chester County, April to October, weather permitting.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Office on Boathouse Row
+- label: PCAS office on Boathouse Row
   address: 4 Boathouse Row, Kelly Drive
   neighborhood: null
   planning_district: null
@@ -54,19 +56,28 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+- label: PCAS Boathouse
+  address: 1233 Martin Luther King Jr Drive
+  neighborhood: null
+  planning_district: null
+  zip: '19130'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: Fees and how to join are not stated on the site. It links to an eligibility document, which was
-    not read.
+  text: The site does not state program fees. It says participants receive equipment, instruction and
+    training. It also has donation links.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages:
   - en
-  notes: The site describes its settings as barrier free and shows hand cycling, but it has no separate
-    wheelchair statement and no ASL statement.
+  notes: The site describes its settings as barrier free and shows hand cycling. It has no separate wheelchair
+    or ASL statement.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,23 +86,33 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the contact page on the site, and read the eligibility document it links
+  how: Call 215-765-5118 or use the contact form on the contact page of centeronline.com to ask about
+    the program you want. Volunteers can use the volunteer form on the site.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: A public contact page and a program list; the eligibility document was not read
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a program list open to people with disabilities, a contact form and a phone number.
+    The eligibility document it links needs a sign-in to read, so the full steps to join are not known.
+  what_to_expect: The site does not say how long a session lasts or what a first day looks like. It says
+    participants receive equipment, instruction and training, and volunteers help at cycling and rowing
+    days.
+  first_visit_tips:
+  - Ask which program fits you first, since the site lists adult and youth programs separately.
+  - The Boathouse at 1233 Martin Luther King Jr Drive has bike racks and free parking, according to the
+    volunteer page.
+  - The eligibility document needs a Google sign-in, so ask the office for a copy if you need one.
 contacts:
   website: http://www.centeronline.com/
   email: null
   phone: 215-765-5118
-  contact_name: Kelly Drive
-  social: []
+  contact_name: PCAS Office
+  social:
+  - https://www.facebook.com/PCAS.Sport/
+  - https://www.instagram.com/centeronline
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.centeronline.com/
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.centeronline.com/news
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,6 +137,7 @@ sources:
   fields:
   - locations
   - contacts
+  - first_step
 - url: http://www.centeronline.com/
   seen: '2026-10-08'
   fields:
@@ -126,8 +148,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - online_ok
+  - access
+  - cost
+  - schedule
+- url: https://www.centeronline.com/pcas-volunteer
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_visit_tips
+  - what_you_do
+  - first_step
+- url: https://www.centeronline.com/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

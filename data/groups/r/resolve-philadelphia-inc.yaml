@@ -1,22 +1,33 @@
 id: resolve-philadelphia-inc
-name: Resolve Philadelphia Inc
-aka: []
+name: Resolve Philly
+aka:
+- Resolve Philadelphia Inc
 leads:
 - irs_990n:832762074
 - irs_bmf:832762074
 ein: '832762074'
-summary: null
-what_you_do: null
+summary: A local news organization made for Philadelphia neighborhoods. It sends free text updates in
+  English and Spanish, runs a Germantown news hub, and holds community workshops and townhalls.
+what_you_do: Text EQUAL INFO to 215-910-4040 for free updates, sign up for the Germantown newsletter,
+  or come to a G-Town Beat workshop or townhall.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- neighborhood-civic
+- books-writing
+interests:
+- community_development
+- zines_media
+motives:
+- understanding
+formats:
+- one_off_event
 roles: []
-crowd: []
+crowd:
+- neighbors
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,7 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Text updates any time. Workshops, townhalls, and Germantown events are announced on the site,
+    such as an October 2026 Germantown townhall update.
   days: []
   times: []
   recurring: null
@@ -51,13 +63,15 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The text service and newsletters are free.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -67,23 +81,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Text EQUAL INFO to 215-910-4040 to start getting free updates in English or Spanish.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Anyone can sign up for the free text service or newsletters, and the site says how.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.resolvephilly.org
+  website: https://www.resolvephilly.org
   email: null
-  phone: null
+  phone: 215-910-4040
   contact_name: Sara Shahriari
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.resolvephilly.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +114,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.resolvephilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

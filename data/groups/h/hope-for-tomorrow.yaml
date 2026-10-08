@@ -5,18 +5,26 @@ leads:
 - irs_990n:473194843
 - irs_bmf:473194843
 ein: '473194843'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that gives out food, diapers, clothing, and water to families in need.
+  It also runs a summer camp, a college scholarship, and holiday baskets and toys.
+what_you_do: Ask about the food cupboard, diaper, clothing and water programs, or the summer camp and
+  scholarship. The site does not say how to sign up, so call first.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- hunger-housing-basic-needs
+- kids-youth-mentoring
+interests:
+- food_pantry
+- goods_closets
+- after_school_camps
+motives:
+- values
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -31,19 +39,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 4551 Morris St
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
+- label: Main address
   address: 4551 Morris Street
   neighborhood: null
-  planning_district: upper_northwest
+  planning_district: null
   zip: '19144'
   lat: null
   lng: null
@@ -67,23 +66,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (215) 844-8389 and ask how to sign up for the food cupboard, diaper, or summer camp programs.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Programs are listed but the site does not say who qualifies or how to start, so the way in is
+    unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://hftphilly.wixsite.com/communityofhelp
   email: null
-  phone: null
+  phone: (215) 844-8389
   contact_name: Omar S Galloway
-  social: []
+  social:
+  - https://www.facebook.com/CommunityofHelp
+  - https://www.instagram.com/community_of_help
+  - https://twitter.com/Hopefor90527467
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://hftphilly.wixsite.com/communityofhelp
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +103,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://hftphilly.wixsite.com/communityofhelp
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - locations
+  - status
+- url: https://hftphilly.wixsite.com/communityofhelp/programs
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,8 +7,8 @@ leads:
 ein: '231946391'
 summary: A contemporary art center with a 56-year history. It hosts exhibits, screenings, artist exchanges
   and a weekly Wednesday program called The Vibrary.
-what_you_do: Attend events and screenings, join The Vibrary's weekly Wednesday sessions, or volunteer
-  through the Volunteer page. The newsletter is the best way to stay informed.
+what_you_do: Drop in on a Wednesday afternoon at The Vibrary, see an exhibit or screening, or RSVP for
+  a workshop. The volunteer page had no open roles when checked, so check back there later.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -36,11 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly Wednesday sessions of The Vibrary, plus events in fall 2026 including a capstone celebration
-    on October 24 and November 5, 2026
+  text: The Vibrary meets every Wednesday from 1 to 4 pm at the Project Space. Workshops and special events
+    are listed separately and use an RSVP.
   days:
   - wed
-  times: []
+  times:
+  - daytime
   recurring: true
   season: fall
 locations:
@@ -56,13 +57,17 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Not stated on the page we read
+  text: No fee is listed for regular Wednesdays or workshops. Some special events are free.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The accessibility page describes the Market Street building (5212 Market St), not the Cambridge
+    Street Project Space where The Vibrary meets. It says that building has its public spaces on the first
+    floor, no stairs or elevators, a wheelchair accessible restroom, cushioned seating on request, and
+    welcomes service animals. Sign language interpreters attend some events, so check each event page.
+    Confirm access at Cambridge Street before you visit.
 requirements:
   act153_clearances: null
   background_check: null
@@ -71,13 +76,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a Wednesday Vibrary session, or fill in the Volunteer page form to help with events
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Events are open to the public and the site lists a clear way to volunteer
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to a Wednesday session of The Vibrary between 1 and 4 pm at 4029 Cambridge St; you can stay
+    15 minutes or the whole afternoon.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: Regular Wednesdays are drop in, the page welcomes curious people, and it says no art experience
+    is needed for workshops.
+  what_to_expect: The Vibrary is a relaxed afternoon with books, conversation, coffee and tea, and listening
+    sessions. Some weeks have a featured guest, and other weeks the people who come set the mood. Workshops
+    and special events need an RSVP, but regular Wednesdays do not.
+  first_visit_tips:
+  - Bring a book or a mug to donate if you like; the space collects books for its Little Free Libraries
+    and mugs for the tea service on Wednesdays.
+  - For a workshop, RSVP through the link on the event listing.
+  - The parking and transit notes on the site are for the Market Street building, so ask about Cambridge
+    Street before you drive.
 contacts:
   website: http://paintedbride.org
   email: info@paintedbride.org
@@ -109,8 +123,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: high
+  - contacts.email
+  - contacts.phone
+- url: https://paintedbride.org/projects/the-vibrary/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.how
+  - first_step.drop_in
+  - first_step.sign_up_needed
+  - first_step.newcomer_friendliness
+  - cost
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://paintedbride.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://paintedbride.org/accessibility/
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+- url: https://paintedbride.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

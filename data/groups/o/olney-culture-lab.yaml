@@ -34,8 +34,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Festivals and events through the year, listed on the events calendar. The Olney Youth Arts Festival
-    was listed for Oct 7, 2026.
+  text: Festivals and events through the year, listed on the events calendar.
   days: []
   times: []
   recurring: false
@@ -53,7 +52,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Event prices are not listed.
+  text: Check each event listing for cost. The calendar marks some events as free.
 commitment: one_off
 group_size: null
 access:
@@ -68,16 +67,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Sign up for updates on the site, or check the events calendar for the next festival.
+  how: Check the events calendar for the next event and go, or sign up for updates with the Get Updates
+    form in the site footer.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public festivals and events, with an email update sign-up.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are public, the calendar shows each one, and the site offers an email update sign-up.
+  what_to_expect: Events celebrate the neighborhood's many cultures with youth arts, a community dinner,
+    and performances by local artists. Each calendar listing shows the venue, the time, and whether the
+    event is free.
+  first_visit_tips:
+  - Check the calendar listing for the venue and time before you go, since events move between places.
+  - The group's office is in Center City, so go by the event listing rather than the office address.
+  - Join the Get Updates list in the footer so new events reach you.
 contacts:
   website: https://olneyculturelab.org
-  email: null
+  email: olneyculturelab@gmail.com
   phone: null
   contact_name: null
   social: []
@@ -113,7 +118,24 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://olneyculturelab.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - status
+- url: https://olneyculturelab.org/signature-events/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: https://olneyculturelab.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: Rowing for people with disabilities on the Schuylkill River, run by the Pennsylvania Center for
   Adapted Sports. Members can row for fun or race, with coaches who have college and national team experience.
-what_you_do: Row on the river from May through October with coaches and volunteers. Equipment is provided,
-  and some rowers go on to regattas.
+what_you_do: Row on the Schuylkill with coaches and volunteers in season, which the program page gives
+  as May through October. Equipment is provided, and some rowers go on to regattas.
 kind: club
 categories:
 - water-rowing
@@ -38,8 +38,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: May through October, Tuesdays and Wednesdays from 5:30 pm until dusk, per the PCAS rowing page.
-    An older listing says Monday to Wednesday, so confirm before going.
+  text: Tuesdays and Wednesdays from 5:30 pm until dusk, from May through October on the rowing program
+    page. Another PCAS page says May through September, and an older listing said Monday to Wednesday,
+    so confirm the days and season before going. Volunteer shifts on the PCAS volunteer page run Monday
+    to Thursday.
   days:
   - tue
   - wed
@@ -60,15 +62,15 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No fee is listed for rowers. Equipment is provided.
+  text: No fee is listed for rowers. Equipment and coaches are provided at each session.
 commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages:
   - en
-  notes: Equipment and coaches are provided at each session. The page does not say how wheelchair users
-    take part or whether ASL is offered, so ask first.
+  notes: A testimonial on the rowing page mentions a wheelchair left on the dock, but the page does not
+    explain how wheelchair users take part or whether ASL is offered, so ask first.
 requirements:
   act153_clearances: null
   background_check: null
@@ -77,14 +79,20 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Fill in the rower form on the PCAS rowing page, or use the PCAS contact form
+  how: Fill in the rower form on the PCAS rowing page at centeronline.com/adapted-rowing. You can also
+    call 215-765-5118 to ask first.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to people 14 and up through a listed form, and the program offers recreational rowing as
-    well as racing.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The page says rowers at every level are welcome, that equipment and coaches are provided at each
+    session, and it gives a form to start. Rowers must be 14 or older.
+  what_to_expect: Sessions run on the river on Tuesday and Wednesday evenings from 5:30 pm until dusk
+    in season. Coaches and volunteers staff each session, and volunteers help rowers into and out of the
+    boat and row with them. Equipment is provided, and no fee is listed.
+  first_visit_tips:
+  - Confirm the day and season before you go, since the PCAS pages do not agree on either.
+  - The boathouse has free parking and bike racks, according to the volunteer pages.
+  - Ask ahead how a wheelchair user takes part, since the rowing page does not say.
 contacts:
   website: https://www.centeronline.com/adapted-rowing
   email: null
@@ -92,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.centeronline.com/adapted-rowing
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.centeronline.com/par-training
 sources:
 - url: https://www.centeronline.com/adapted-rowing
   seen: '2026-10-08'
@@ -107,12 +115,29 @@ sources:
   - access
   - first_step
   - status
+  - audience
+  - requirements
 - url: https://www.centeronline.com/contact-pcas
   seen: '2026-10-08'
   fields:
   - contacts.phone
   - locations
-research_tier: 1
+  - contacts
+- url: https://www.centeronline.com/par-training
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - schedule
+  - first_visit_tips
+- url: https://www.centeronline.com/pcas-volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -35,8 +35,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Classes are run by outside instructors and their dates and times are not on the summary page.
-    Performances and the annual gala are held through the year; the Gala 2026 page shows no date.
+  text: Each class is taught by its own instructor or company on that teacher's calendar, and the classes
+    page does not list days or times. Performances run through the year, and the center holds a gala each
+    year.
   days: []
   times: []
   recurring: true
@@ -54,13 +55,15 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Class prices are not shown. Contact the instructor or Performance Garage for fees.
+  text: Class prices are not shown on the site, so ask the instructor or Performance Garage for fees.
+    The YouthMoves program for students is described as free.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA, per the visit page: Broad Street Line to the Spring Garden station, with bus
+    routes 2 and 43 nearby.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,15 +72,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Open the Classes page, pick a class (ballet, Bollywood, Bharatanatyam, or early childhood music),
-    and contact that instructor or company for dates, ages and prices.
+  how: Pick a class on the classes page, then contact that instructor or company directly for dates, ages
+    and prices. The center's phone is 215-569-4060.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site lists classes but gives no ages, levels, registration steps or prices, so the way in
-    is unclear. Rehearsals are closed to the public.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes are listed with their teachers, but the site gives no ages, levels, dates or prices,
+    so the way in is unclear. Rehearsals are closed to the public.
+  what_to_expect: The site does not say how long a class runs, who attends, or what it costs, so ask the
+    teacher. Performances are held in the center's 105-seat theater through the year.
+  first_visit_tips:
+  - Call or email during weekday office hours, 10 am to 5 pm, to confirm the class and its first date.
+  - Take the Broad Street Line to the Spring Garden station, or the number 2 or number 43 bus.
+  - 'Parking is in a garage on 15th Street between Brandywine and Spring Garden Streets, under a grocery
+    store: $15 before 5 pm and $8 after 5 pm.'
+  - Rehearsals are closed to the public, so check with the teacher before you come to watch.
 contacts:
   website: https://www.performancegarage.org/
   email: info@performancegarage.org
@@ -96,6 +105,7 @@ sources:
   fields:
   - name
   - contacts.website
+  - contacts
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -109,6 +119,7 @@ sources:
   - interests
   - first_step
   - requirements
+  - contacts
 - url: https://www.performancegarage.org/
   seen: '2026-10-08'
   fields:
@@ -116,11 +127,24 @@ sources:
   - locations
   - contacts
   - status
+  - what_you_do
+  - schedule
 - url: https://www.performancegarage.org/gala-2026
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.performancegarage.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+  - access
+  - contacts
+- url: https://www.performancegarage.org/youthmoves
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

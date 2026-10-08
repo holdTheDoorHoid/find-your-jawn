@@ -33,10 +33,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Cleanups throughout the year, usually 1 to 2 hours, rain or shine
+  text: Cleanups are posted by date as they are scheduled. They usually last 1 to 2 hours and go ahead
+    rain or shine.
   days: []
   times: []
-  recurring: true
+  recurring: false
   season: year_round
 locations:
 - label: Delaware River waterfront, Schuylkill River Trail, Penn's Landing, Fairmount Park riverbanks
@@ -51,7 +52,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No participation fee is stated; gloves, bags, and tools are provided
+  text: No participation fee is stated on the group's pages. Gloves, bags, and tools are provided.
 commitment: one_off
 group_size: null
 access:
@@ -63,16 +64,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Supplies are provided. Bring comfortable outdoor clothes, closed-toe shoes, and a reusable water
+    bottle, plus sun protection or rain gear as needed.
 first_step:
-  how: Find a listed Philadelphia river cleanup on the national cleanup events page
+  how: Watch the Philadelphia River Cleanup listing on the group's site for a date, then join that cleanup.
+    You can also email the office to ask about upcoming Philadelphia dates.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Cleanups are listed publicly and supplies are provided
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The group says no experience is needed and cleanups suit all levels, and it offers a way to join,
+    but no Philadelphia date is posted right now.
+  what_to_expect: A cleanup lasts about 1 to 2 hours along a riverbank, and you pick up litter with a
+    group. Supplies are handed out at the start, with a kickoff briefing. Every volunteer signs a release
+    and waiver that is brought to the site on the day, and a minor needs a parent or guardian to sign.
+  first_visit_tips:
+  - Wear closed-toe shoes and comfortable outdoor clothes, and bring a reusable water bottle.
+  - Fill in the release and waiver before the day and bring it with you.
+  - Bring sun protection or rain gear, since cleanups go ahead rain or shine.
+  - Ask the office for the meeting spot if the listing does not show one.
 contacts:
   website: https://oceanblueproject.org
   email: office@oceanblueproject.org
@@ -93,7 +103,23 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+  - requirements
+- url: https://oceanblueproject.org/ocean-blue-volunteers/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - first_visit_tips
+- url: https://oceanblueproject.org/volunteer-cleanup-near-me/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+- url: https://oceanblueproject.org/national-cleanup-programs/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

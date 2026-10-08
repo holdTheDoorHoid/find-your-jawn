@@ -3,10 +3,10 @@ name: PA Center for Adapted Sports
 aka: []
 leads: []
 ein: null
-summary: An adapted sports center based at Boathouse Row that runs year-round programs in rowing, swimming,
-  skiing, and track and field for children and adults.
-what_you_do: Participants can join rowing, swimming, skiing, and track and field, including youth programs.
-  The center has volunteer pages for general help and for adaptive rowing.
+summary: An adapted sports center on Boathouse Row with 13 year-round sport and wellness programs for
+  children and adults with disabilities, including rowing, swimming, skiing and track and field.
+what_you_do: Join a program such as adaptive rowing, swimming, skiing or track and field, or sign up to
+  volunteer at cycling or rowing sessions through the volunteer page.
 kind: nonprofit
 categories:
 - sports-teams
@@ -38,17 +38,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Adaptive rowing for athletes meets Tuesday and Wednesday evenings from 5:30 pm until dusk, May
+    through September or October. Volunteer cycling runs Saturday mornings from 9 am to 1 pm in Philadelphia
+    and Sunday afternoons from 1 to 3 pm in Chester County, April through October, weather permitting.
+  days:
+  - tue
+  - wed
+  - sat
+  - sun
+  times:
+  - evening
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Boathouse Row, Philadelphia
-  address: null
+- label: PCAS office, 4 Boathouse Row
+  address: 4 Boathouse Row, Kelly Drive
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19130'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: PCAS Boathouse
+  address: 1233 Martin Luther King Drive
+  neighborhood: null
+  planning_district: null
+  zip: '19130'
   lat: null
   lng: null
   in_city: true
@@ -56,14 +74,15 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Fees are not stated. The site says equipment, venues, and instruction are provided, with no fee
-    listed.
+  text: The pages do not list program fees. The center says it provides equipment, venues, instruction
+    and training.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The center describes its settings as barrier-free and supportive, but the pages give no detail
+    on ramps, boat access or transport.
 requirements:
   act153_clearances: null
   background_check: null
@@ -72,23 +91,30 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the volunteer pages for volunteering, or the program pages for youth options.
+  how: If you are 14 or older, fill in the sign-up form on the Philadelphia Adaptive Rowing page.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Several program and volunteer pages are linked, but sign-up steps are not on the home page.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The rowing page says no skill is needed and gives a sign-up form, but it also links an eligibility
+    document that could not be read, so the rating stays at 3.
+  what_to_expect: Rowing sessions run on weekday evenings from 5:30 pm until dusk, and the page says equipment,
+    coaches and volunteers are provided at every session. Beginners are served alongside experienced rowers
+    who want to race. Fees are not listed on the pages read.
+  first_visit_tips:
+  - Read the eligibility document the rowing page links before your first session, since its text could
+    not be summarized here.
+  - Free parking and bike racks are at the boathouse, weather permitting.
+  - To volunteer instead, use the volunteer page; no minimum hours are required.
 contacts:
   website: https://www.centeronline.com/
   email: null
-  phone: null
+  phone: 215-765-5118
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.centeronline.com/
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.centeronline.com/news
 sources:
 - url: http://www.centeronline.com/
   seen: '2026-10-08'
@@ -109,11 +135,40 @@ sources:
   - cost
   - first_step
   - status
+  - access.notes
+  - contacts.website
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.centeronline.com/pcas-volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - requirements.service_hours_letter
+  - first_step.how
+- url: https://www.centeronline.com/adapted-rowing
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - first_step.what_to_expect
+  - locations
+- url: https://www.centeronline.com/contact-pcas
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - locations
+- url: https://www.centeronline.com/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

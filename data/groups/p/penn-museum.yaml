@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shifts run Tuesday to Sunday, 10 am to 4 pm. Volunteers commit to at least 4 hours a month, and
-    weekend volunteers are especially needed.
+  text: Volunteer shifts run Tuesday to Sunday, 10 am to 4 pm. Each volunteer commits to at least four
+    hours a month, and weekend volunteers are especially needed.
   days:
   - tue
   - wed
@@ -47,11 +47,11 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Penn Museum, University City
-  address: null
+- label: Penn Museum
+  address: 3260 South Street
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
@@ -63,25 +63,35 @@ cost:
 commitment: ongoing_role
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: Ramps or power-assisted doors at the Main and East entrances, borrowable manual wheelchairs,
+    and accessible restrooms on the Lower Level. The third floor Etruscan Italy and Greece galleries are
+    reached by stairs, and staff can point you to a lift. The museum page says it is near SEPTA Penn Medicine
+    Station, and the line is not named.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Submit the online application for the Cartifacts opportunity, or email volunteer@pennmuseum.org
+  how: Submit the online Apply Now form for the Cartifacts volunteer role, or email volunteer@pennmuseum.org
+    with questions.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Volunteers must apply for a listed role, reviews are on a rolling basis, and no beginner training
-    is described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteers must apply for a listed role, applications are reviewed on a rolling basis, and the
+    page describes no beginner training.
+  what_to_expect: You set up a cart of five to ten objects that share a theme tied to one gallery, then
+    talk with visitors of all ages about each object. Shifts run Tuesday to Sunday, 10 am to 4 pm. The
+    page does not describe training, so ask what a first shift looks like before you commit.
+  first_visit_tips:
+  - Apply first, since the museum reviews applications on a rolling basis.
+  - 'Parking may be tight: the museum garage on Convention Avenue is under renovation, with Penn Park
+    Garage and Chestnut 34 Garage as backups.'
+  - Weekend volunteers are especially needed, so say if you can do weekends.
 contacts:
   website: https://www.penn.museum
   email: volunteer@pennmuseum.org
@@ -103,7 +113,22 @@ sources:
   - first_step
   - contacts
   - audience
-research_tier: 1
+  - requirements
+  - kids_ok
+- url: https://www.penn.museum/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+- url: https://www.penn.museum/visit/accessibility
+  seen: '2026-10-08'
+  fields:
+  - access
+- url: https://www.penn.museum/visit/getting-here
+  seen: '2026-10-08'
+  fields:
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

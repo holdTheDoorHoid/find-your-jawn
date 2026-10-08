@@ -1,0 +1,79 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-27",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 23,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.internationalballet.com",
+   "status": 307,
+   "note": "Redirects to a domain-for-sale parking page. Not followed; treated as a dead domain. The group's own site is internationalballet.org."
+  }
+ ],
+ "notes": "Both WebSearch calls used. Masterminds Chess Club: only a September 2019 U.S. Chess article found, so status is dormant. International Ballet Exchange: group site found at internationalballet.org. Israel Tree of Life Ministries was not searched, because the budget went to the two groups with better odds of a public way in; it is held back as unknown and can be retried. Search results also surfaced chess community leads (two lichess team pages for Northeast Philadelphia and Community College of Philadelphia clubs, a Northeast Times article on free chess in Rittenhouse Square, and a Free Library chess calendar item). Not followed: they are platform, news or library pages rather than group sites, and no search budget was left to verify them. Guessed same-site paths /get-involved (Here to Help) and /meetings (Bhakti Recovery Group) returned 404. No bot checks, 403s or rate limiting were seen. Fetch budget left: about 37 of 60. Verdict counts: publish 12 (two of them, Israel Tree of Life Ministries and One Way One Love, are unknown and held back), hide 1, not_a_group 1, out_of_area 1.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233071861",
+     "irs_bmf:233071861"
+    ],
+    "group_id": "israel-tree-of-life-ministries",
+    "ein": "233071861",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Israel Tree of Life Ministries",
+   "kind": "congregation",
+   "status": "unknown",
+   "sources": [],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No web address on file: the website field holds the group name, not a link. Not searched this run, because the two WebSearch calls went to Masterminds Chess Club and International Ballet Exchange, which had better odds of a public way in. IRS filing address: 6724 Blakemore St, 19119, not confirmed elsewhere. Retry in a later wave with one search.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:392929700",
+     "irs_bmf:392929700"
+    ],
+    "group_id": "one-way-one-love",
+    "ein": "392929700",
+    "website": "https://www.onewayonelovecdc.com"
+   },
+   "verdict": "publish",
+   "name": "One Way One Love",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.onewayonelovecdc.com"
+   },
+   "sources": [
+    {
+     "url": "https://www.onewayonelovecdc.com/programs/program-list",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site says its programs are coming soon (three entries marked TBA). The mission page was linked but not read. The site has a registration form, a sponsor form and an events page, but no dates, email, phone or address. The site name is One Way One Love CDC. The IRS batch lists 4945 Germantown Ave Apt 1, 19144, which is not confirmed on the site. Retry after programs are announced.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

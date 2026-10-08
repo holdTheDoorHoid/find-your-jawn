@@ -1,7 +1,9 @@
 id: penn-ac-rowing-association
 name: Penn AC Rowing Association
-aka: []
-leads: []
+aka:
+- Penn Athletic Club Rowing
+leads:
+- manual_seeds:schuylkill-navy-penn-athletic-club
 ein: null
 summary: The rowing section of Penn Athletic Club. It runs open learn-to-row classes, junior rowing tracks,
   a summer camp for high school students, adult masters rowing, and a high performance group.
@@ -30,17 +32,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Learn-to-row classes are open to the public. Dates are not listed on the page.
-  days: []
-  times: []
-  recurring: null
+  text: Learn to Row runs in four sessions from spring into early fall, with a weeknight class and a Saturday
+    class each week.
+  days:
+  - mon
+  - tue
+  - sat
+  times:
+  - evening
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Penn AC on Boathouse Row
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not listed on the page
-commitment: null
+  level: paid
+  text: Learn to Row costs $350 per level.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -54,24 +71,30 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Open the Learn to Row page at pennac.org/programs/ltr/, or use the contact page
-  drop_in: null
-  sign_up_needed: null
+  how: Register for a Learn to Row level on RegattaCentral (a free account is needed) before the level
+    starts. Walk-ins are not accepted, and questions go to ltr@pennac.org.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Learn-to-row classes are open to the public, and the club links a program page with a way to
-    start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Learn to Row page is written for adults with no rowing experience and explains how to register
+    online, though it does not take walk-ins.
+  what_to_expect: Learn to Row is for adults aged 21 and older with no rowing experience. Each level meets
+    for 90 minutes twice a week, one weeknight and one Saturday, over several weeks, and you finish level
+    1 before level 2. If a class does not fill it may be moved, and a canceled class is refunded in full.
+  first_visit_tips:
+  - 'Register early: applications close the day before each level starts, and walk-ins are not accepted.'
+  - The page does not list what to wear or bring, so email ltr@pennac.org before your first class.
+  - Start with level 1, since the levels must be taken in order.
 contacts:
   website: https://pennac.org/
-  email: null
+  email: info@pennac.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://pennac.org/
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://pennac.org/programs/ltr/
 sources:
 - url: https://pennac.org/
   seen: '2026-10-08'
@@ -82,8 +105,25 @@ sources:
   - first_step
   - requirements
   - status
-research_tier: 1
-confidence: medium
+  - locations
+- url: https://pennac.org/programs/ltr/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - audience
+  - commitment
+  - status
+  - requirements
+- url: https://pennac.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

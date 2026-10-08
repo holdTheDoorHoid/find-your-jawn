@@ -1,0 +1,118 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-25",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 23,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://unitedchurchesfellowship.com",
+   "status": 403,
+   "note": "HTTP 403 on fetch. Not retried and not worked around."
+  }
+ ],
+ "notes": "Used 2 of 2 WebSearch calls, both on groups with distinctive names (The School Mindfulness Project and Talking Tech w/ Wayne), so the search budget is spent. Used 23 fetches, including one secure connection failure (www.sapfa911.org, recovered with the bare domain), one 403 (United Churches Fellowship), two redirects and one spam page. Four groups had no usable web address (Stick to the Plan Org, Triumphant Faith Ministries, Talking Tech and The School Mindfulness Project; the last two were resolved by search). Stick to the Plan Org and Triumphant Faith Ministries had no search left, so they stay unknown with no summary and will be held back. United Churches Fellowship is blocked and Asia Adams Save Our Children Foundation shows only a placeholder, so both are unknown too. Addresses from the IRS list were not used anywhere, because some look like homes; only addresses a group publishes on its own site are recorded. schoolmindfulness.org now serves an unrelated spam sales page and was not used as a source. A separate Philadelphia school mindfulness group, Mindfulness Through Movement Inc, was named in search results but not checked, and no URL was recorded for it. Supreme Gospel Entertainment & Marketing is a marketing business with no community program described, so it is not_a_group.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:333982263",
+     "irs_bmf:333982263"
+    ],
+    "group_id": "stick-to-the-plan-org",
+    "ein": "333982263"
+   },
+   "verdict": "publish",
+   "name": "Stick to the Plan Org",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS list is the group name typed in capitals, not a web address, so no page was found. This group was not searched: both searches went to groups with distinctive names. Nothing could be verified about what the group does. Needs a name search by a later agent.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233059280",
+     "irs_bmf:233059280"
+    ],
+    "group_id": "triumphant-faith-ministries-inc",
+    "ein": "233059280"
+   },
+   "verdict": "publish",
+   "name": "Triumphant Faith Ministries",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website on the IRS list is an email address, not a web address. The email is not recorded because it is not clearly the group's own. No search was left for this group, so no page, service schedule or address was verified. Needs a name search by a later agent.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232977028",
+     "irs_bmf:232977028"
+    ],
+    "group_id": "united-churches-fellowship",
+    "ein": "232977028"
+   },
+   "verdict": "publish",
+   "name": "United Churches Fellowship",
+   "kind": "congregation",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://unitedchurchesfellowship.com"
+   },
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website returned HTTP 403 (access blocked). It was not retried or worked around. The website here is the address the group typed on its tax form, not checked. Nothing else was read, so no summary is written. Needs a later check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:861140496",
+     "irs_bmf:861140496"
+    ],
+    "group_id": "asia-adams-save-our-children-foundation-inc",
+    "ein": "861140496",
+    "website": "https://www.asiaadams.org"
+   },
+   "verdict": "publish",
+   "name": "Asia Adams Save Our Children Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "contacts": {
+    "website": "https://www.asiaadams.org"
+   },
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website address returned only a placeholder page with one word, both with and without www, so nothing about the group's work could be read. This group was not searched. The word Foundation may mean a private or family foundation, which is out of scope, so check that before publishing. Needs a later name search.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

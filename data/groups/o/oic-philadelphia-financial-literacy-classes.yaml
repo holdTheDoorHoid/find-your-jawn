@@ -23,7 +23,7 @@ crowd:
 - all_adults
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -38,20 +38,20 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Job training programs at N Broad and Thompson streets
-  address: null
+- label: OIC Philadelphia, N Broad and Thompson streets
+  address: 1231 N Broad St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19122'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The page says many programs like this are free or low cost, and advises confirming the cost with
-    OIC.
+  level: free
+  text: Free workshops and coaching for Philadelphia residents, per OIC's financial empowerment page.
+    Confirm before you enroll.
 commitment: null
 group_size: null
 access:
@@ -66,14 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call (215) 236-7700 or send an inquiry through the OIC contact page.
+  how: Call (215) 236-7700 and ask for the next money skills workshop or coaching session by name. The
+    site does not list class dates.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to the public with a phone line and inquiry form, though eligibility and class dates are
-    not published.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open to Philadelphia residents, with a phone line and inquiry form, but class dates and format
+    are not published.
+  what_to_expect: Workshops cover budgets, saving, credit reports, opening a bank account, and debt, and
+    coaching is one-on-one. Both are free for Philadelphia residents. Ask on the phone how long a workshop
+    runs and whether it meets in person or online, since the site does not say.
+  first_visit_tips:
+  - Have a valid state ID handy, since the job training programs ask for one.
+  - If you are also looking at job training, it asks for a high school diploma or GED and a passing entrance
+    assessment.
+  - Ask for the financial workshop by name, because the inquiry form is built for job training programs.
 contacts:
   website: https://oicphila.org/contact/
   email: null
@@ -94,7 +101,20 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+- url: https://oicphila.org/financial-empowerment-philadelphia/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - cost
+  - first_step
+- url: https://oicphila.org/inquiry/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

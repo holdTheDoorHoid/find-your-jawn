@@ -8,8 +8,8 @@ ein: '232545727'
 summary: A Philadelphia ensemble that plays new and 20th and 21st century classical music and jazz. Its
   Playing the Markets pop-ups bring small groups into shops, markets and workplaces, and its concerts
   are open to the public.
-what_you_do: Catch a free or low cost pop-up performance, buy a concert ticket, or ask about volunteering
-  through the group's website.
+what_you_do: Catch a free pop-up performance, buy a concert ticket, or volunteer at events by calling
+  or emailing the group.
 kind: nonprofit
 categories:
 - music
@@ -20,7 +20,8 @@ motives:
 - social
 formats:
 - one_off_event
-roles: []
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
@@ -33,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Playing the Markets pop-ups and concert series throughout the year. Recent listed dates: Sept
-    24, 2026 (Fairmount Farmers Market) and Oct 3, 2026 (Firstival at Eastern State Penitentiary).'
+  text: Playing the Markets pop-ups and concerts run through the year at markets, public spaces, theaters
+    and museums. The group posts each date on its website.
   days: []
   times: []
   recurring: true
@@ -52,7 +53,8 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: 'Varies: some events are free or pay what you wish, others are $10 to $25'
+  text: 'Varies: free pop-ups need no ticket, some events are pay what you wish, and ticketed concerts
+    have run from $10 to $25.'
 commitment: one_off
 group_size: null
 access:
@@ -67,20 +69,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch orchestra2001.org for the next Playing the Markets pop-up near you, or email info@orchestra2001.org
-    to ask about volunteering
+  how: Go to the next free Playing the Markets pop-up; the group posts the dates on orchestra2001.org.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Pop-ups are public and free or low cost; the site lists a volunteer role
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free pop-ups are public and need no ticket, and the site lists a phone number and email for volunteering.
+  what_to_expect: A pop-up is a small group, such as a jazz trio, string quartet or brass group, playing
+    in a market or public space. The group's page says sessions typically run two to three hours. The
+    site has no accessibility details, so ask the group before you go if you need them.
+  first_visit_tips:
+  - Free pop-ups need no ticket, so you can walk up.
+  - Check the site for the date and place, since pop-ups move between markets and events.
+  - Concert tickets are sold through outside ticket pages linked from the site.
 contacts:
   website: http://www.orchestra2001.org
   email: info@orchestra2001.org
   phone: 267-687-6243
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/Orchestra2001
+  - https://www.instagram.com/orchestra_2001/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -107,7 +115,24 @@ sources:
   - locations
   - status
   - first_step
-research_tier: 1
+  - what_you_do
+  - last_sign_of_life
+  - first_step.drop_in
+  - first_step.sign_up_needed
+- url: https://www.orchestra2001.org/emerging-markets
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step.what_to_expect
+- url: https://www.orchestra2001.org/support
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - first_step.how
+  - contacts.email
+  - contacts.phone
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

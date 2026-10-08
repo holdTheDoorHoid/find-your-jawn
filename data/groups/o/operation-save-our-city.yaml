@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: Runs Sunshine House in Kensington, a support space for people dealing with addiction. It also
   does outreach, community clean-ups, food drives and overdose-reversal (Narcan) training.
-what_you_do: Get involved through the Get Involved page, donate, or contact the group about helping out.
+what_you_do: Sign up through the Volunteer button on the Sunshine House page, or contact the group to
+  ask what help is needed right now.
 kind: nonprofit
 categories:
 - health-wellness
@@ -39,11 +40,11 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Sunshine House, Kensington (address not listed)
-  address: null
+- label: Sunshine House
+  address: 2774 Kensington Ave
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19134'
   lat: null
   lng: null
   in_city: true
@@ -51,7 +52,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: No fees are listed. Donations go through a fundraising page.
+  text: No fees are listed. Donations go through the group's fundraising page.
 commitment: drop_in
 group_size: null
 access:
@@ -66,17 +67,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the Get Involved page or the contact page for volunteer options.
+  how: Fill in the volunteer sign-up form from the Volunteer button on the Sunshine House page, then call
+    (267) 804-7166 or email to ask about hours and a first shift.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: A way to get involved is posted, but the details are on pages not read.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: A volunteer sign-up form is posted and training workshops are offered, but the site does not
+    describe what a volunteer shift involves.
+  what_to_expect: Sunshine House on Kensington Avenue is a safe indoor place to rest, with a messaging
+    center where you can call or leave messages for family, clothing and hygiene supplies, snacks, and
+    wound-care supplies. Overdose-reversal training and volunteer education workshops are offered. Volunteers
+    help run these services, so the sign-up form is the way in.
+  first_visit_tips:
+  - Confirm hours by phone or email before you come, since the website does not list them.
+  - Ask about the overdose-reversal (Narcan) training when you sign up; the Sunshine House page links
+    to a training sign-up.
+  - Ask the group about the best way to get there, since the site gives no transit directions.
 contacts:
   website: https://www.operationsaveourcity.org
-  email: null
-  phone: null
+  email: Operationsaveourcity@gmail.com
+  phone: (267) 804-7166
   contact_name: null
   social: []
   calendar_feed: null
@@ -99,8 +109,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.operationsaveourcity.org/get-more-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.operationsaveourcity.org/sunshine
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://www.operationsaveourcity.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

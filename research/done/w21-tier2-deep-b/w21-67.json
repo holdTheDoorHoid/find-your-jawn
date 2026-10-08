@@ -1,0 +1,259 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-67",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 24,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_bmf:232814991", "manual_seeds:schuylkill-navy-pennsylvania-center-for-adaptive-sport"], "group_id": "pennsylvania-center-for-adapted-sports", "ein": "232814991", "website": "http://www.centeronline.com/"},
+      "verdict": "publish",
+      "name": "Pennsylvania Center for Adapted Sports",
+      "summary": "A Philadelphia nonprofit for people with disabilities. It runs about 13 sport and wellness programs year round, including rowing, cycling, kayaking, skiing, climbing, sitting volleyball, yoga and youth track and field.",
+      "what_you_do": "Join one of the sport and wellness programs, such as rowing, cycling, kayaking or youth track and field, or volunteer on cycling and adaptive rowing days.",
+      "kind": "nonprofit",
+      "categories": ["sports-teams"],
+      "interests": ["adaptive_sports"],
+      "motives": ["values", "enhancement"],
+      "formats": ["learn_skill", "team_play"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": ["disability"], "support_group": false},
+      "schedule": {"text": "About 13 programs run through the year, and rowing runs May to October. Dates and times vary by sport, so check each program page. Volunteer cycling days are Saturday mornings in Philadelphia and Sunday afternoons in Chester County, April to October, weather permitting.", "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "PCAS office on Boathouse Row", "address": "4 Boathouse Row, Kelly Drive", "zip": "19130", "in_city": true},
+        {"label": "PCAS Boathouse", "address": "1233 Martin Luther King Jr Drive", "zip": "19130", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {"text": "The site does not state program fees. It says participants receive equipment, instruction and training. It also has donation links."},
+      "access": {"wheelchair": "unknown", "languages": ["en"], "notes": "The site describes its settings as barrier free and shows hand cycling. It has no separate wheelchair or ASL statement."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-765-5118 or use the contact form on the contact page of centeronline.com to ask about the program you want. Volunteers can use the volunteer form on the site.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The site has a program list open to people with disabilities, a contact form and a phone number. The eligibility document it links needs a sign-in to read, so the full steps to join are not known.",
+        "what_to_expect": "The site does not say how long a session lasts or what a first day looks like. It says participants receive equipment, instruction and training, and volunteers help at cycling and rowing days.",
+        "first_visit_tips": [
+          "Ask which program fits you first, since the site lists adult and youth programs separately.",
+          "The Boathouse at 1233 Martin Luther King Jr Drive has bike racks and free parking, according to the volunteer page.",
+          "The eligibility document needs a Google sign-in, so ask the office for a copy if you need one."
+        ]
+      },
+      "contacts": {"website": "http://www.centeronline.com/", "phone": "215-765-5118", "contact_name": "PCAS Office", "social": ["https://www.facebook.com/PCAS.Sport/", "https://www.instagram.com/centeronline"]},
+      "status": "active",
+      "last_sign_of_life": "2026-07",
+      "sign_of_life_url": "https://www.centeronline.com/news",
+      "sources": [
+        {"url": "http://www.centeronline.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "online_ok", "access", "cost", "contacts", "schedule"]},
+        {"url": "https://www.centeronline.com/contact-pcas", "seen": "2026-10-08", "fields": ["contacts", "first_step", "locations"]},
+        {"url": "https://www.centeronline.com/pcas-volunteer", "seen": "2026-10-08", "fields": ["schedule", "first_visit_tips", "what_you_do", "first_step"]},
+        {"url": "https://www.centeronline.com/news", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Main record for three batch entries that are one organization: pennsylvania-center-for-adapted-sport and pennsylvania-center-for-adaptive-sport are marked duplicate. Adaptive rowing (PAR) is a separate record. The newest news post is dated July 13, 2026 (a spring 2026 update). The eligibility document is a Google Doc that needs a sign-in, so it is listed under blocked. Online programs are listed in both the adult and youth lists, so online_ok is now yes. The tier 1 contact name was a street, so it is now PCAS Office. Program fees and sign-up steps are not stated on the site."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "pennsylvania-center-for-adapted-sports", "website": "http://www.centeronline.com/"},
+      "verdict": "duplicate",
+      "name": "Pennsylvania Center for Adapted Sport",
+      "research_tier": 2,
+      "notes": "Same organization, same address and same website as pennsylvania-center-for-adapted-sports. Merged into that record."
+    },
+    {
+      "match": {"lead_ids": ["manual_seeds:schuylkill-navy-pennsylvania-center-for-adaptive-sport"], "group_id": "pennsylvania-center-for-adapted-sports", "website": "http://www.centeronline.com/"},
+      "verdict": "duplicate",
+      "name": "Pennsylvania Center for Adaptive Sport",
+      "research_tier": 2,
+      "notes": "Same organization as pennsylvania-center-for-adapted-sports, with the same website and Boathouse Row office. The name differs only in spelling. Its manual seed lead has been added to the main record's lead list."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "pennsylvania-dragon-boat-club", "website": "https://penndbc.com"},
+      "verdict": "publish",
+      "name": "Pennsylvania Dragon Boat Club",
+      "summary": "A nonprofit dragon boat club with a recreational side and a race team. It paddles the Schuylkill River in season, and recreational paddlers practice about once a month.",
+      "what_you_do": "Paddle with the club on Thursday, Saturday and Sunday mornings in season, join the Tuesday evening runs, or race with the team at regattas.",
+      "kind": "club",
+      "categories": ["water-rowing"],
+      "interests": ["dragon_boat"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Team practices on the Schuylkill River on Thursday, Saturday and Sunday mornings during dragon boat season, plus Tuesday evening runs, sometimes at the Temple track. Recreational paddlers practice about once a month, and dedicated paddlers can practice up to three times a week.", "days": ["tue", "thu", "sat", "sun"], "times": ["morning", "evening"], "recurring": true, "season": "summer"},
+      "locations": [
+        {"label": "Schuylkill River, team practices", "in_city": true},
+        {"label": "Club address", "address": "1233 Martin Luther King Jr Dr", "zip": "19131", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"text": "The site lists no membership fees. It has only a donation button."},
+      "commitment": "monthly",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email penndbc@gmail.com or use the contact form on penndbc.com, and ask how a new paddler joins the recreational side.",
+        "newcomer_friendliness": 2,
+        "basis": "The site describes a recreational side that paddles about once a month, but it has no first visit, join or FAQ steps, so the way in is not clear."
+      },
+      "contacts": {"website": "https://penndbc.com", "email": "penndbc@gmail.com"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://penndbc.com",
+      "sources": [
+        {"url": "https://penndbc.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "commitment", "cost", "contacts", "first_step"]},
+        {"url": "https://www.penndbc.com/events", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The home page is the only page with club details. The join, FAQ and contact URLs return 404, so the first visit is not described anywhere on the site. The events page lists only a corporate dragon boat offering (Turtle River Adventures) and no dated club events. A 2026 search found nothing dated for this club, so the status stays probably_active. The search pointed to a different group, the Philadelphia Dragon Boat Association (phillydragonboat.com), which is not merged here and was not checked. The club address is the same as the PCAS Boathouse. The club gives zip 19131 for it, while PCAS pages give 19130. The fetched home page text included instructions about how to format the reply; they were not followed."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:performance-garage", "irs_bmf:311668674"], "group_id": "performance-garage", "ein": "311668674", "website": "https://www.performancegarage.org/"},
+      "verdict": "publish",
+      "name": "Performance Garage",
+      "summary": "A dance center in a renovated former stable on Brandywine Street. It hosts classes taught by resident companies and instructors, youth and education programs, performances, and a 105-seat theater.",
+      "what_you_do": "Take a class taught by a resident company or instructor (ballet, Bollywood, Bharatanatyam, or early childhood music), or see a performance at the center.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["cultural_dance", "dance_company"],
+      "motives": ["enhancement", "social"],
+      "formats": ["learn_skill", "one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Each class is taught by its own instructor or company on that teacher's calendar, and the classes page does not list days or times. Performances run through the year, and the center holds a gala each year.", "recurring": true, "season": "year_round"},
+      "locations": [{"label": "Performance Garage", "address": "1515 Brandywine St", "zip": "19130", "in_city": true}],
+      "cost": {"text": "Class prices are not shown on the site, so ask the instructor or Performance Garage for fees. The YouthMoves program for students is described as free."},
+      "access": {"wheelchair": "unknown", "notes": "Nearest SEPTA, per the visit page: Broad Street Line to the Spring Garden station, with bus routes 2 and 43 nearby."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a class on the classes page, then contact that instructor or company directly for dates, ages and prices. The center's phone is 215-569-4060.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Classes are listed with their teachers, but the site gives no ages, levels, dates or prices, so the way in is unclear. Rehearsals are closed to the public.",
+        "what_to_expect": "The site does not say how long a class runs, who attends, or what it costs, so ask the teacher. Performances are held in the center's 105-seat theater through the year.",
+        "first_visit_tips": [
+          "Call or email during weekday office hours, 10 am to 5 pm, to confirm the class and its first date.",
+          "Take the Broad Street Line to the Spring Garden station, or the number 2 or number 43 bus.",
+          "Parking is in a garage on 15th Street between Brandywine and Spring Garden Streets, under a grocery store: $15 before 5 pm and $8 after 5 pm.",
+          "Rehearsals are closed to the public, so check with the teacher before you come to watch."
+        ]
+      },
+      "contacts": {"website": "https://www.performancegarage.org/", "email": "info@performancegarage.org", "phone": "215-569-4060", "social": ["https://www.instagram.com/performance_garage/", "https://www.facebook.com/performancegaragephilly"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.performancegarage.org/classes",
+      "sources": [
+        {"url": "https://www.performancegarage.org/classes", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "requirements", "contacts"]},
+        {"url": "https://www.performancegarage.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "status", "contacts"]},
+        {"url": "https://www.performancegarage.org/contact", "seen": "2026-10-08", "fields": ["locations", "first_visit_tips", "access", "contacts"]},
+        {"url": "https://www.performancegarage.org/youthmoves", "seen": "2026-10-08", "fields": ["cost"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=8", "seen": "2026-10-04", "fields": ["name", "contacts"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The visit page gives hours, parking and transit. The site lists a Gala 2026 with no month, so last_sign_of_life is left empty and the status stays probably_active. YouthMoves is a free year-long dance program for students at Franklin Learning Center, so it is not a public class and is not listed as one. Four teacher sites named on the classes page were fetched and not turned into records: Chocolate Ballerina Company (free classes, but no class times or class location on its site), Daksha Dance Troupe (a school with studios in Malvern, Philadelphia and Marlton, NJ; no ages, prices or enrollment steps on the page), Nardhana Academy (a Malvern academy with no Philadelphia meeting place shown), and Mister John's Music (a music school with Philadelphia and Atlanta locations; no prices or ages on the page). Roger Lee Dance Company is named in a testimonial and is in leads_only."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "pha-senior-centers-wilson-park-cassie-l-holley-emlen-arms", "website": "https://www.pha.phila.gov/residents/senior-programs/senior-centers/"},
+      "verdict": "publish",
+      "name": "PHA Senior Centers (Wilson Park, Cassie L. Holley, Emlen Arms)",
+      "summary": "Free senior centers at three Philadelphia Housing Authority sites, open to housing residents and to seniors from the wider community. Members take part in meals, dance and exercise classes, movies, and trips around the city.",
+      "what_you_do": "Eat a meal, join a dance, walking or aerobic class, enjoy music or a movie, socialize, or go on a trip around the city.",
+      "kind": "program",
+      "categories": ["seniors-intergenerational"],
+      "interests": ["senior_centers", "senior_activities"],
+      "motives": ["social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["seniors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Meals, dance, walking and aerobic classes, movies, music and trips run at the centers. Ask the contact listed on the page for the current times."},
+      "locations": [
+        {"label": "Wilson Park Senior Center", "address": "2500 Jackson St.", "zip": "19145", "in_city": true},
+        {"label": "Cassie L. Holley Senior Center", "address": "2100 Dickinson St.", "zip": "19146", "in_city": true},
+        {"label": "Emlen Arms Senior Center", "address": "6733 Emlen St.", "zip": "19119", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"level": "free", "text": "Free. The page says the Philadelphia Housing Authority and the Philadelphia Corporation for Aging pay for the services."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call Carla Fleming at 215-684-3959, the only contact the page lists, and ask which center is closest and how to join.",
+        "newcomer_friendliness": 3,
+        "basis": "The page says the centers are open to seniors in the wider community as well as PHA residents, and it gives a phone number to call. The enrollment steps are not described.",
+        "what_to_expect": "The centers offer a meal, dance and exercise classes, walking, movies, music and trips around the city, and the page says the services are free. It does not say how long a visit lasts or what time activities start, so call ahead.",
+        "first_visit_tips": [
+          "Call 215-684-3959 first, since the page lists no days, hours or sign-up form.",
+          "Pick the center nearest you: Wilson Park at 2500 Jackson St, Cassie L. Holley at 2100 Dickinson St, or Emlen Arms at 6733 Emlen St.",
+          "The general PHA line is 215-684-4000, open 9 am to 5 pm every day, according to the senior programs page."
+        ]
+      },
+      "contacts": {"website": "https://www.pha.phila.gov/residents/senior-programs/senior-centers/", "phone": "215-684-3959", "contact_name": "Carla Fleming"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.pha.phila.gov/residents/senior-programs/senior-centers/",
+      "sources": [
+        {"url": "https://www.pha.phila.gov/residents/senior-programs/senior-centers/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "schedule", "locations", "cost", "first_step", "contacts", "status"]},
+        {"url": "https://www.pha.phila.gov/residents/senior-programs/", "seen": "2026-10-08", "fields": ["first_step", "cost", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "All three centers share one page with one listed contact, and no individual center pages were found. The page's main heading says housing and programming are for residents 55 and older, but it gives no age minimum for these centers, so none is recorded. Two other PHA programs on the same site are not separate groups and were not recorded: Healthy Cafe at Wilson Park (low-cost food) and the Congregate Housing Services Program at Bentley Hall (ages 62 and older). The Philadelphia Corporation for Aging is named as a funder; it is a city agency, so it is not listed. The tier 1 line about help with daily activities was removed because neither PHA page says so. The only year on the pages is a copyright footer, which is not evidence, so the status stays probably_active."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "philadelphia-adaptive-rowing-par", "website": "https://www.centeronline.com/adapted-rowing"},
+      "verdict": "publish",
+      "name": "Philadelphia Adaptive Rowing (PAR)",
+      "summary": "Rowing for people with disabilities on the Schuylkill River, run by the Pennsylvania Center for Adapted Sports. Members can row for fun or race, with coaches who have college and national team experience.",
+      "what_you_do": "Row on the Schuylkill with coaches and volunteers in season, which the program page gives as May through October. Equipment is provided, and some rowers go on to regattas.",
+      "kind": "club",
+      "categories": ["water-rowing", "sports-teams"],
+      "interests": ["rowing", "adaptive_sports"],
+      "motives": ["enhancement", "social"],
+      "formats": ["team_play", "learn_skill"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["teens", "all_adults"],
+      "audience": {"open_to": "public", "min_age": 14, "community": ["disability"], "support_group": false},
+      "schedule": {"text": "Tuesdays and Wednesdays from 5:30 pm until dusk, from May through October on the rowing program page. Another PCAS page says May through September, and an older listing said Monday to Wednesday, so confirm the days and season before going. Volunteer shifts on the PCAS volunteer page run Monday to Thursday.", "days": ["tue", "wed"], "times": ["evening"], "recurring": true},
+      "locations": [{"label": "PCAS Boathouse on the Schuylkill", "address": "1233 Martin Luther King Jr. Drive", "zip": "19130", "in_city": true}],
+      "online_ok": false,
+      "cost": {"text": "No fee is listed for rowers. Equipment and coaches are provided at each session."},
+      "commitment": "seasonal",
+      "access": {"wheelchair": "unknown", "languages": ["en"], "notes": "A testimonial on the rowing page mentions a wheelchair left on the dock, but the page does not explain how wheelchair users take part or whether ASL is offered, so ask first."},
+      "requirements": {"kids_ok": false, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the rower form on the PCAS rowing page at centeronline.com/adapted-rowing. You can also call 215-765-5118 to ask first.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The page says rowers at every level are welcome, that equipment and coaches are provided at each session, and it gives a form to start. Rowers must be 14 or older.",
+        "what_to_expect": "Sessions run on the river on Tuesday and Wednesday evenings from 5:30 pm until dusk in season. Coaches and volunteers staff each session, and volunteers help rowers into and out of the boat and row with them. Equipment is provided, and no fee is listed.",
+        "first_visit_tips": [
+          "Confirm the day and season before you go, since the PCAS pages do not agree on either.",
+          "The boathouse has free parking and bike racks, according to the volunteer pages.",
+          "Ask ahead how a wheelchair user takes part, since the rowing page does not say."
+        ]
+      },
+      "contacts": {"website": "https://www.centeronline.com/adapted-rowing", "phone": "215-765-5118"},
+      "status": "active",
+      "last_sign_of_life": "2026-04",
+      "sign_of_life_url": "https://www.centeronline.com/par-training",
+      "sources": [
+        {"url": "https://www.centeronline.com/adapted-rowing", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "access", "audience", "first_step", "requirements"]},
+        {"url": "https://www.centeronline.com/par-training", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url", "schedule", "first_visit_tips"]},
+        {"url": "https://www.centeronline.com/contact-pcas", "seen": "2026-10-08", "fields": ["contacts", "locations"]},
+        {"url": "https://www.centeronline.com/pcas-volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "first_visit_tips", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The rowing program's page is the main source. The /rowing page on the PCAS site returned 404. The sources disagree on the days (the program page says Tuesday and Wednesday, an older listing says Monday to Wednesday) and on the season (May to October on the program page, May to September on the training page); the schedule text flags both. The rower form's fields are not shown as text, so they are unknown. The coaches' experience in the summary is carried over from tier 1 and was not seen on the pages read this time. The 2026 volunteer training dates (April 21, 22, 28 and 29, 2026) are the newest dated evidence and set last_sign_of_life. This program has its own form and age minimum, so it stays a separate record from the PCAS record. The boathouse zip is 19130 on PCAS pages and 19131 on the training page; 19130 is used."
+    }
+  ],
+  "leads_only": [
+    {"name": "Roger Lee Dance Company", "url": "https://www.performancegarage.org/", "note": "Named in a testimonial on the Performance Garage home page as a company that has presented its concert series at the center for 12 years. No own website is linked on the page, so it was not checked."}
+  ],
+  "blocked": [
+    {"url": "https://docs.google.com/document/d/1KeTlNj909_d8XHFurxLJRdj_xJZky0UmJW71CQRIPno/edit?usp=sharing", "status": null, "note": "Eligibility document linked from centeronline.com. Google Docs sign-in page; not readable without an account."}
+  ],
+  "notes": "Seven batch entries. Three are one organization, Pennsylvania Center for Adapted Sports (PCAS): the EIN entry is the main record, and the other two names are marked duplicate. Adaptive rowing (PAR) is a PCAS program with its own form and age minimum, so it has its own record. Budget: 1 of 1 WebSearch used. The one search was run for the dragon boat club after its join and FAQ pages returned 404. It found nothing dated for 2026 for this club. Its results pointed to a different club, the Philadelphia Dragon Boat Association (phillydragonboat.com), which is not merged here and was not checked; it is worth a future pass. 24 WebFetch calls in total. Not blocked, but 404: centeronline.com/rowing, penndbc.com/join, penndbc.com/faq, penndbc.com/contact, performancegarage.org/visit. Teacher sites named on the Performance Garage classes page were fetched and dropped with reasons in that record's notes. The PHA page names the Philadelphia Corporation for Aging as a funder; it is a city agency and was not listed. The fetched text for the dragon boat home page included instructions about how to format the reply; they were not followed. No rate limiting was seen."
+}

@@ -4,9 +4,10 @@ aka: []
 leads: []
 ein: null
 summary: A shared clay studio in Mount Airy with six week beginner courses in handbuilding and wheel throwing.
-  Membership is for experienced clay users, and reduced fees are offered to some local residents.
-what_you_do: Take a beginner course, then move into the shared studio once you have enough experience
-  and finish the introduction period.
+  Membership is for intermediate and advanced clay users, and reduced fees are offered to some Northwest
+  Philadelphia residents.
+what_you_do: Take a six-week beginner course, or join the studio after four weeks of pre-membership training
+  and an interview with the studio manager.
 kind: program
 categories:
 - arts-crafts
@@ -33,10 +34,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Six week beginner courses run in handbuilding and wheel throwing. Membership is for intermediate
-    and advanced clay users.
-  days: []
-  times: []
+  text: 'Six-week beginner courses run in several sessions a year: handbuilding on Tuesday evenings from
+    6 to 9 pm, and wheel throwing on Sunday mornings from 10 am to 1 pm. Members book their own studio
+    time on the studio calendar.'
+  days:
+  - tue
+  - sun
+  times:
+  - evening
+  - morning
   recurring: true
   season: year_round
 locations:
@@ -51,8 +57,11 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class and membership prices are not listed. Reduced fees are offered to some local residents.
+  level: paid
+  text: 'Beginner course: $340 basic, $190 reduced for Northwest Philadelphia residents who have faced
+    long-standing marginalization and financial strain, or $350 or more as a supporter. Clay, tools, firings
+    and glazes are included. Membership: $165 a month basic, $100 reduced, or $170 or more as a supporter,
+    after pre-membership training that costs $250 basic, $160 reduced or $300 supporter.'
 commitment: null
 group_size: null
 access:
@@ -67,20 +76,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Contact the studio manager at cornelia@outlaw-arts.com or (267) 650-1757 to register or join the
-    waiting list
+  how: Text or call 267-650-1757 to register for the next six-week beginner course or to join the waitlist.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Beginner courses are open to the public, and the page gives a direct contact to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The beginner course page says no prior experience is needed and gives a text number to register
+    or join the waitlist.
+  what_to_expect: A beginner series runs six weeks plus one make-up class, meeting once a week for about
+    three hours in a group of no more than six. Clay, tools, firings and glazes are included, and you
+    take home at least three finished pieces. Handbuilding is done at a table, sitting or standing.
+  first_visit_tips:
+  - Pay in full before you register; cash, check, Venmo and Cash App are accepted.
+  - The studio offers no refunds, so confirm the series dates before you pay.
 contacts:
   website: https://outlaw-arts.com/
   email: cornelia@outlaw-arts.com
   phone: (267) 650-1757
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/outlaw.arts
+  - https://www.facebook.com/0utlawArts
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -96,11 +111,34 @@ sources:
   - first_step
   - contacts
   - status
+  - what_you_do
+  - contacts.email
+  - contacts.phone
+  - sign_of_life_url
 - url: https://www.phillymag.com/be-well-philly/pottery-classes-philadelphia/
   seen: '2026-10-08'
   fields:
   - audience
-research_tier: 1
+- url: https://www.outlaw-arts.com/general-7
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - first_step.what_to_expect
+  - first_visit_tips
+- url: https://www.outlaw-arts.com/services-1
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step.how
+- url: https://www.outlaw-arts.com/event-list
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

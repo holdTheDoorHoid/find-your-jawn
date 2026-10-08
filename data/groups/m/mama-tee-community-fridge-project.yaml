@@ -3,11 +3,11 @@ name: Mama-Tee Community Fridge Project
 aka: []
 leads: []
 ein: null
-summary: A network of community fridges across Philadelphia, run with volunteers, that puts fresh food
-  within reach of neighbors. It also runs a pop-up grocery store on Washington Avenue.
-what_you_do: Help distribute fresh produce and organize donations, take part in school or company volunteer
-  days, or work on projects remotely from home.
-kind: program
+summary: A volunteer-run network of community fridges across Philadelphia that puts fresh food within
+  reach of neighbors. It also runs a pop-up grocery store on Washington Avenue.
+what_you_do: Help stock the fridges with fresh produce, organize donations, join a school or company volunteer
+  day, or help with projects from home. Volunteers start by sending an email.
+kind: network
 categories:
 - hunger-housing-basic-needs
 interests:
@@ -33,7 +33,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free pop-up grocery on Saturdays at 1 pm. Fridges are restocked each week.
+  text: Fridges are restocked each week, and anyone can take food from them, first come first served.
   days:
   - sat
   times:
@@ -167,21 +167,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the volunteer page's email button for the track you want (Volunteer Inquiry, Corporate or School
-    Volunteer Inquiry, or Virtual Volunteer Inquiry). It opens a message to hello@mama-tee.com.
-  drop_in: true
-  sign_up_needed: null
+  how: 'Email hello@mama-tee.com with the subject line for the track you want: Volunteer Inquiry for the
+    regular volunteer track, Corporate or School Volunteer Inquiry for a group day, or Virtual Volunteer
+    Inquiry for remote work.'
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Three volunteer tracks are listed openly with a direct email way in, but the page gives no shift
-    days, times or training details
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Three volunteer tracks are listed openly with a direct email route, but the page gives no shift
+    days, times or training, so the first shift is arranged by email.
+  what_to_expect: Regular volunteers help stock the fridges with fresh produce, sort donations, and connect
+    surplus food with people who need it. Shift times, training and what to wear are not published, so
+    the first step is an email conversation. Fridge food is free and open to any neighbor, and the fridges
+    are restocked each week.
+  first_visit_tips:
+  - Pick the email subject line that matches your track, so the group can send you the right next step.
+  - The fridge locations page marks four fridges as out of order and one as relocating, so check that
+    page before you go to a site.
+  - For the pop-up grocery store at 2203 Washington Ave, call 215-585-2767 to ask about its hours.
 contacts:
   website: https://www.mamateefridge.com
   email: hello@mama-tee.com
   phone: 215-585-2767
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/mamateefridge
+  - https://www.linkedin.com/in/mamateefridge/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: 2025-09
@@ -194,12 +204,14 @@ sources:
   - schedule
   - contacts
   - requirements
+  - status
 - url: https://philly.citycast.fm/food-drink/where-to-find-community-fridges-in-philly
   seen: '2026-10-08'
   fields:
   - status
   - schedule
   - locations
+  - last_sign_of_life
 - url: https://www.mamateefridge.com
   seen: '2026-10-08'
   fields:
@@ -211,6 +223,7 @@ sources:
   fields:
   - what_you_do
   - first_step
+  - requirements
 - url: https://www.mamateefridge.com/fridgelocations
   seen: '2026-10-08'
   fields:
@@ -219,7 +232,13 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.mamateefridge.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

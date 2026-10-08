@@ -5,21 +5,27 @@ leads:
 - irs_bmf:231352336
 ein: '231352336'
 summary: A more than 100-year-old group that helps immigrants and refugees in Greater Philadelphia with
-  English classes, legal help, health services and youth programs. Volunteers help with classes, office
-  work and events.
-what_you_do: Volunteer as an English class tutor or assistant, help at the front desk, or help with events.
-  The volunteer page lists the roles.
+  English classes, legal help, health services and youth programs. Volunteers help with classes, the food
+  pantry, events and home setup for newly arrived refugees.
+what_you_do: Take an in-person English class, or volunteer to teach English, help the food pantry, help
+  at events, or set up homes for newly arrived refugees. Groups from schools, congregations or businesses
+  can also help with home setup and donation drives.
 kind: nonprofit
 categories:
 - advocacy-rights
+- culture-language-heritage-groups
+- hunger-housing-basic-needs
 interests:
 - immigrant_rights
+- esl_conversation
+- food_pantry
 motives:
 - values
 - social
 formats:
 - side_by_side
 - team_play
+- learn_skill
 roles:
 - help_teach
 - hands_on
@@ -39,10 +45,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: English classes run in 10-week sessions on Mondays and Wednesdays, 10 am to 12 pm. Volunteer shifts
+    can be one time or ongoing.
+  days:
+  - mon
+  - wed
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -56,14 +66,15 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: free
-  text: Free to volunteer
+  level: low
+  text: English classes cost $100 for the full session, paid at registration. Volunteering is free.
 commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Barriers can be reported by phone, email or mail, and the group aims to reply within 14 business
+    days. Its website works with a keyboard and with screen readers.
 requirements:
   act153_clearances: null
   background_check: null
@@ -72,25 +83,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look at the volunteer opportunities page at nscphila.org/how-help/volunteer-opportunities, then
-    call 215-893-8400
+  how: Call 215-893-8400 to ask about the next English class session, or register for a volunteer shift
+    through the link on the volunteer page.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The group is open to the public and lists volunteer roles, but the page does not say what a first
-    step looks like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: English classes start at beginner level and volunteer roles are open to the public, but classes
+    charge $100 per session before you start and enrollment goes through a staff contact.
+  what_to_expect: English classes meet in person at the Arch Street office on Mondays and Wednesdays from
+    10 am to 12 pm for 10 weeks. Students are placed in one of six levels from beginner to advanced, and
+    the page does not explain how placement works. The fee is $100 for the session and is paid when you
+    register.
+  first_visit_tips:
+  - Ask how placement works and what to bring when you call, since the course page does not say.
+  - Plan for the $100 session fee, which is paid at registration.
+  - Fall 2026 classes started October 5, 2026, so ask when the next session begins.
+  - Ask about building entry, elevators and parking before you come, since the site does not describe
+    the building.
 contacts:
   website: https://nscphila.org
-  email: null
+  email: info@nscphila.org
   phone: 215-893-8400
   contact_name: null
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-08
-sign_of_life_url: https://nscphila.org
+last_sign_of_life: 2026-10
+sign_of_life_url: https://nscphila.org/courses/english-classes-fall-2026
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -106,7 +125,30 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
+- url: https://nscphila.org/how-help/volunteer-opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - commitment
+  - first_step
+  - contacts
+- url: https://nscphila.org/courses/english-classes-fall-2026
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - locations
+  - status
+  - last_sign_of_life
+- url: https://nscphila.org/accessibility
+  seen: '2026-10-08'
+  fields:
+  - access
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

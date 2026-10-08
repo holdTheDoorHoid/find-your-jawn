@@ -7,8 +7,8 @@ leads:
 ein: null
 summary: A not-for-profit that works to turn the Benjamin Franklin Parkway into a park for everyone. It
   runs summer programs in Maja Park and a yearly art installation on the Parkway.
-what_you_do: Go to the council's events on the Parkway, such as the summer evening programs in Maja Park.
-  The site lists no volunteer sign-up.
+what_you_do: Go to a free Tuesday evening jazz concert in Maja Park, or to a summer festival day on the
+  Parkway such as the Oval Minifest. The council lists no volunteer sign-up, so ask by email.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -37,14 +37,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Summer evening programs in Maja Park, such as concerts, run in August and September. The site
-    does not list set weekly days.
-  days: []
+  text: Free Tuesday evening jazz concerts in Maja Park, 6:30 to 8 pm, run in August and September, with
+    no sign-up needed.
+  days:
+  - tue
   times:
   - evening
   recurring: true
   season: summer
 locations:
+- label: Maja Park, at N 22nd St and the Parkway
+  address: N 22nd St and Benjamin Franklin Pkwy
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (c/o Friends Select School)
   address: 1651 Benjamin Franklin Pkwy
   neighborhood: null
@@ -56,8 +66,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Maja Park concerts are free and need no registration. Some festival activities have a fee.
 commitment: null
 group_size: null
 access:
@@ -72,13 +82,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Go to a summer program in Maja Park, or email info@parkwaycouncil.org to ask how to get involved
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Go to a free Tuesday evening jazz concert in Maja Park, 6:30 to 8 pm, and bring a blanket or chair.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The concerts are free, open to all, and need no registration; the council gives an email address
+    for questions about getting involved.
+  what_to_expect: Each week a jazz trio is joined by a different featured soloist, and most people sit
+    on their own blanket or chair. Concerts are weather permitting, and the council posts any cancellations
+    on Instagram.
+  first_visit_tips:
+  - Bring a blanket or chair, and a picnic if you like.
+  - Check the council's Instagram on the day, since weather can cancel a concert.
+  - The council's site links to PHLASH and SEPTA information for getting to the Parkway.
 contacts:
   website: https://www.parkwaycouncil.org
   email: info@parkwaycouncil.org
@@ -109,7 +125,25 @@ sources:
   - status
   - last_sign_of_life
   - contacts
-research_tier: 1
+  - first_visit_tips
+  - volunteer
+- url: https://www.parkwaycouncil.org/maja-park
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_step.what_to_expect
+  - cost
+  - contacts.email
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+- url: https://www.parkwaycouncil.org/oval-minifest
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

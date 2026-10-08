@@ -5,37 +5,45 @@ leads:
 - irs_990n:871586270
 - irs_bmf:871586270
 ein: '871586270'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A training program for women who run a business or plan to start one. It offers a seven-week
+  course, personal coaching, and chances to work with other women business owners.
+what_you_do: Take the seven-week course, meet with a coach, and connect with other women in business.
+  Ask the admissions office about financial aid.
+kind: program
+categories:
+- careers-skills-professional
+interests:
+- entrepreneurs
+motives:
+- career
+formats:
+- learn_skill
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Seven-week program. The site does not list calendar dates for the current course.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 6610 Germantown Avenue
+- label: Classroom at Braid Mill co-working space
+  address: 441 High Street
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19119'
+  planning_district: null
+  zip: '19144'
   lat: null
   lng: null
   in_city: true
@@ -43,7 +51,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not published on the site. The academy says it helps with financial aid, so ask the admissions
+    office.
 commitment: null
 group_size: null
 access:
@@ -58,23 +67,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill out the registration form linked from ogwba.org, or email drbutler@ogwba.org with questions
+    first.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Needs a registration form, and the site says you must be a current business owner or committed
+    to starting one.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://ogwba.org/
-  email: null
-  phone: null
+  email: drbutler@ogwba.org
+  phone: (800) 314-6979
   contact_name: Dr Narriett Butler
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-10
+sign_of_life_url: https://ogwba.org/events-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +102,26 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://ogwba.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+- url: https://ogwba.org/admission-
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - cost
+- url: https://ogwba.org/events-1
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

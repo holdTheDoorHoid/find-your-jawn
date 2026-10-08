@@ -1,0 +1,55 @@
+{
+ "wave": "w21-tier2-deep-b",
+ "agent": "w21-67",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 24,
+ "leads_only": [
+  {
+   "name": "Roger Lee Dance Company",
+   "url": "https://www.performancegarage.org/",
+   "note": "Named in a testimonial on the Performance Garage home page as a company that has presented its concert series at the center for 12 years. No own website is linked on the page, so it was not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://docs.google.com/document/d/1KeTlNj909_d8XHFurxLJRdj_xJZky0UmJW71CQRIPno/edit?usp=sharing",
+   "status": null,
+   "note": "Eligibility document linked from centeronline.com. Google Docs sign-in page; not readable without an account."
+  }
+ ],
+ "notes": "Seven batch entries. Three are one organization, Pennsylvania Center for Adapted Sports (PCAS): the EIN entry is the main record, and the other two names are marked duplicate. Adaptive rowing (PAR) is a PCAS program with its own form and age minimum, so it has its own record. Budget: 1 of 1 WebSearch used. The one search was run for the dragon boat club after its join and FAQ pages returned 404. It found nothing dated for 2026 for this club. Its results pointed to a different club, the Philadelphia Dragon Boat Association (phillydragonboat.com), which is not merged here and was not checked; it is worth a future pass. 24 WebFetch calls in total. Not blocked, but 404: centeronline.com/rowing, penndbc.com/join, penndbc.com/faq, penndbc.com/contact, performancegarage.org/visit. Teacher sites named on the Performance Garage classes page were fetched and dropped with reasons in that record's notes. The PHA page names the Philadelphia Corporation for Aging as a funder; it is a city agency and was not listed. The fetched text for the dragon boat home page included instructions about how to format the reply; they were not followed. No rate limiting was seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": "pennsylvania-center-for-adapted-sports",
+    "website": "http://www.centeronline.com/"
+   },
+   "verdict": "duplicate",
+   "name": "Pennsylvania Center for Adapted Sport",
+   "research_tier": 2,
+   "notes": "Same organization, same address and same website as pennsylvania-center-for-adapted-sports. Merged into that record.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "manual_seeds:schuylkill-navy-pennsylvania-center-for-adaptive-sport"
+    ],
+    "group_id": "pennsylvania-center-for-adapted-sports",
+    "website": "http://www.centeronline.com/"
+   },
+   "verdict": "duplicate",
+   "name": "Pennsylvania Center for Adaptive Sport",
+   "research_tier": 2,
+   "notes": "Same organization as pennsylvania-center-for-adapted-sports, with the same website and Boathouse Row office. The name differs only in spelling. Its manual seed lead has been added to the main record's lead list.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

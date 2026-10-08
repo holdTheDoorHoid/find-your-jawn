@@ -5,10 +5,11 @@ leads:
 - cultural_fund:macguffin-theatre-film-company-3
 - irs_bmf:232962685
 ein: '232962685'
-summary: A nonprofit theater group that teaches acting classes and camps for children and teens. It also
-  runs troupes for improv, cabaret, comedy and acting, and holds auditions for its shows.
-what_you_do: Take an acting class in the fall, winter or spring term, sign a child up for a youth camp
-  or after-school class, or join a troupe such as improv, cabaret or comedy. Auditions are held for productions.
+summary: A nonprofit theater company that teaches classes in acting, musical theatre, comedy and film
+  for children and teens, with camps and after-school programs. It also runs troupes for improv, cabaret
+  and acting, and holds auditions for its productions.
+what_you_do: Take a class during a fall, winter or spring term, sign a child up for a summer camp or after-school
+  program, or join a troupe such as improv, cabaret or comedy. Auditions are held for productions.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -27,24 +28,30 @@ formats:
 roles:
 - create
 - hands_on
-crowd: []
+crowd:
+- kids
+- teens
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 7
+  max_age: 18
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Classes run in the Fall 2026, Winter 2027 and Spring 2027 terms, with after-school programs and
-    camps in 2026. Exact class days and times are on the class pages.
-  days: []
+  text: Classes run on Wednesdays and Saturdays in the fall, winter and spring terms. The After School
+    Program meets on Tuesdays and Thursdays through the season, and troupe rehearsals are on Saturdays.
+  days:
+  - tue
+  - wed
+  - thu
+  - sat
   times: []
   recurring: true
-  season: fall
+  season: year_round
 locations:
 - label: MacGuffin studio
   address: 2030 Sansom St, 2nd floor
@@ -57,8 +64,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class and camp prices are not on the summary page. The group offers scholarships.
+  level: paid
+  text: Troupe tuition on the audition page is $295 for fall and winter and $245 for spring. Class and
+    camp prices are not on the pages read. Scholarships are offered on financial need, and only a limited
+    number are available.
 commitment: seasonal
 group_size: null
 access:
@@ -73,15 +82,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Look at the Fall 2026 and Winter 2027 classes on the website and sign up for one, or email info@macguffintf.com
-    to ask about the next term and scholarships.
+  how: Sign up for a Fall 2026 class through the enroll page on macguffintf.com, or email info@macguffintf.com
+    first to talk through your goals and ask about scholarships.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Classes, camps and auditions are open to the public with a clear way to sign up, but the site
-    does not say that beginners are specifically welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The classes page says beginners are welcome and invites a call or email to talk through learning
+    goals, and the enroll page gives a clear route to sign up.
+  what_to_expect: Classes run on Wednesdays and Saturdays during each term, and the After School Program
+    meets on Tuesdays and Thursdays. Youth classes are for ages 7 to 10 and middler and teen classes for
+    ages 11 to 18. The pages read do not give class length or term prices, so ask the office before you
+    pay.
+  first_visit_tips:
+  - Auditions are held on the second floor at 2030 Sansom Street, behind a purple door, so look for that
+    door on your first visit.
+  - Ask about a scholarship before you pay. Applications are reviewed on financial need and take 2 to
+    3 weeks to process.
+  - The company uses an opt-out photo policy, so tell staff early if you do not want to appear in photos
+    or videos.
 contacts:
   website: http://MacGuffinTF.com
   email: info@macguffintf.com
@@ -94,7 +112,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: http://MacGuffinTF.com
+sign_of_life_url: https://macguffintf.com/this-season/auditions/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=7
   seen: '2026-10-04'
@@ -119,8 +137,42 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://macguffintf.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - first_step
+  - status
+- url: https://macguffintf.com/classes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+- url: https://macguffintf.com/classes/fall-2026/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+- url: https://macguffintf.com/enroll/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://macguffintf.com/this-season/auditions/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - status
+  - last_sign_of_life
+  - first_visit_tips
+  - schedule
+- url: https://macguffintf.com/scholarships/
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

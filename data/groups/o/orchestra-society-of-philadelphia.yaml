@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A community orchestra founded in 1964 for experienced players who read music at sight. It plays
   through big orchestral works and does not give public concerts.
-what_you_do: 'Each rehearsal covers one full program in one evening: the first half works through the
-  hard sections, and the second half plays the piece with few stops.'
+what_you_do: One program is rehearsed each evening. The first half drills the difficult passages, and
+  after a short break the group plays the whole piece with few stops.
 kind: club
 categories:
 - music
@@ -41,11 +41,11 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Presser Hall, Room 240, Esther Boyer College of Music, Temple University
-  address: null
+- label: Presser Hall, Room 240, Esther Boyer College of Music and Dance, Temple University
+  address: 2001 N 13th St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19122'
   lat: null
   lng: null
   in_city: true
@@ -53,13 +53,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The group's pages do not list dues, fees or an audition.
 commitment: null
 group_size: null
 access:
   wheelchair: 'yes'
   languages: []
-  notes: The rehearsal room is on the second floor and reached by elevator, per the group's page.
+  notes: Room 240 is on the second floor of Presser Hall and is reached by elevator. The site does not
+    use the words wheelchair accessible.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,19 +69,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill in the online Join us form or email join@orchestrasociety.org, then come to a Friday rehearsal
+    as a guest for one evening.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The join page invites you to come for an evening or as a guest for a few weeks, but the group
+    is for players who read music at sight, so beginners are not the target.
+  what_to_expect: Most evenings have about 60 to 75 musicians, all unpaid, working through one program.
+    The first half covers the hard passages in each section, and after a short break the group plays the
+    whole piece with few stops.
+  first_visit_tips:
+  - Arrive a little early and use the elevator to reach Room 240 on the second floor.
+  - Street parking nearby is well lit and patrolled by Temple police, according to the group's page.
+  - Music for the following week can be signed out at the current week's rehearsal.
 contacts:
   website: https://www.orchestrasociety.org
-  email: null
+  email: join@orchestrasociety.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/groups/orchestrasocietyofphiladelphia
+  - https://www.instagram.com/orchestrasocietyphiladelphia
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -99,8 +109,26 @@ sources:
   - status
   - last_sign_of_life
   - audience
-research_tier: 1
-confidence: medium
+  - access.wheelchair
+  - access.notes
+  - contacts.website
+- url: https://orchestrasociety.org/join/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - roles
+  - crowd
+  - first_step
+  - cost
+  - contacts.email
+- url: https://orchestrasociety.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step.what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

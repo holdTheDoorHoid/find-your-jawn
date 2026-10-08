@@ -4,8 +4,8 @@ aka:
 - Northeast Philly Toastmasters
 leads: []
 ein: null
-summary: A Toastmasters club with a Northeast Philadelphia name that meets online. Guests are welcome
-  at any skill level and attend free after an RSVP.
+summary: A Northeast Philadelphia Toastmasters club that practices public speaking and meets online on
+  Zoom. Guests attend free after an RSVP and choose for themselves whether to speak.
 what_you_do: Join an online meeting to try speaking, answer impromptu questions, or just watch and say
   what brought you.
 kind: club
@@ -33,8 +33,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tuesdays at 7 pm, online, according to the national listing. The club's own page says its schedule
-    is coming soon.
+  text: Online on Zoom every other Tuesday evening, 7 to 9 pm, usually the 1st and 3rd Tuesdays.
   days:
   - tue
   times:
@@ -45,7 +44,7 @@ locations: []
 online_ok: true
 cost:
   level: free
-  text: Free for guests
+  text: Free for guests.
 commitment: null
 group_size: null
 access:
@@ -60,13 +59,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: RSVP on the club's Meetup page to get the Zoom link.
-  drop_in: true
-  sign_up_needed: null
+  how: RSVP for a guest seat on the club's Meetup page. The Zoom link is posted there after you RSVP.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The club says guests are welcome regardless of skill or confidence, and explains how to attend.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The club says guests are welcome at any skill level, speaking is optional for guests, and its
+    pages explain how to RSVP.
+  what_to_expect: A guest joins the Zoom meeting and watches members give prepared speeches, speak off
+    the cuff, and run the meeting roles, followed by feedback. You are asked what brought you to the meeting
+    and, at the close, what you thought of it. Speaking is your choice, and the visit costs nothing.
+  first_visit_tips:
+  - RSVP on the club's Meetup page first, since the Zoom link appears only after you do.
+  - Decide before the meeting whether you want to take part in the impromptu speaking, since guests choose.
+  - Check the Meetup page for cancellations, because the club posts changes there.
+  - Meeting times are shown in your own local time on the club's site.
 contacts:
   website: https://nephilly.toastmastersclubs.org/
   email: nephillytoastmaster@gmail.com
@@ -95,8 +101,24 @@ sources:
   - summary
   - cost
   - first_step
-research_tier: 1
-confidence: low
+- url: https://nephilly.toastmastersclubs.org/directions/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - contacts
+- url: https://nephilly.toastmastersclubs.org/meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://nephilly.toastmastersclubs.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

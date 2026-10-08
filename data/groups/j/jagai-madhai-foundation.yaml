@@ -1,29 +1,37 @@
 id: jagai-madhai-foundation
-name: Jagai Madhai Foundation
-aka: []
+name: Bhakti Recovery Group
+aka:
+- Jagai Madhai Foundation
 leads:
 - irs_990n:332291471
 - irs_bmf:332291471
 ein: '332291471'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
+summary: A 12-step recovery fellowship for people working on addiction and related struggles. It adds
+  bhakti yoga, a devotional practice, to the steps, and the only membership requirement is a wish to recover.
+what_you_do: Go to a recovery meeting that follows the 12 steps and includes bhakti yoga. The site also
+  has pages on how the program works and on working the steps.
+kind: support_group
+categories:
+- support-recovery
+interests:
+- addiction_recovery
+motives:
+- values
+- social
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - sober
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
   text: null
   days: []
@@ -67,23 +75,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Meetings link on bhaktirecoverygroup.com to find a meeting time and go to one.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site says the only requirement is wanting recovery and links to meetings, but no meeting
+    times were readable in our fetch.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: bhaktirecoverygroup.com
+  website: https://www.bhaktirecoverygroup.com
   email: null
   phone: null
   contact_name: Gwenyth Hammond
-  social: []
+  social:
+  - https://www.facebook.com/12stepbhakti
+  - https://www.instagram.com/bhaktirecoverygroup/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.bhaktirecoverygroup.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +110,17 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.bhaktirecoverygroup.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
