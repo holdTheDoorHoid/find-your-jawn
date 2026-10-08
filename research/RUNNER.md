@@ -47,8 +47,10 @@ Read `research/queue.yaml`. Take the first wave with `status: todo` whose `after
 
 ## 3. Launch Haiku agents
 
-Up to eight at once, `model: "haiku"`, in the background, one per batch file or slice. Prompt, filled
-in:
+Up to eight at once, in the background, one per batch file or slice. Use `subagent_type:
+"fyj-researcher"` (defined in `.claude/agents/fyj-researcher.md`: Haiku, research tools only). If that
+type is not listed in this session, use `subagent_type: "general-purpose"` with `model: "haiku"`.
+Prompt, filled in:
 
 > You are a Find Your Jawn research agent. Read `~/Desktop/find-your-jawn/research/briefs/_common.md`,
 > then `~/Desktop/find-your-jawn/research/briefs/<brief>.md`, then
