@@ -18,8 +18,11 @@ dashes as punctuation, write your file early, tools). Ignore its record format: 
    Instagram and Facebook cannot be read; a venue known only from social media stays unconfirmed.
 3. Record facts only: venue name, street address and ZIP (venue's own page or host page), day, start
    time, host, cost (most are free), team size limits, age rule (most bars are 21 and over; say
-   `unknown` unless stated), and one short line of notes in your own words if something is useful to
-   a first timer (themed nights, prizes as bar tabs, walk ins welcome). No more than one sentence.
+   `unknown` unless stated), and `notes`: ONE short sentence written for a first time visitor, or null.
+   Good: "Runs 7 to 9 pm.", "A music themed quiz.", "No sign up needed.", "Also on Thursdays."
+   Never put research bookkeeping in `notes` (what a page did or did not say, disagreements between
+   sources, other guides, what you could not find). That goes in the top level `notes` of your file.
+   A night that is monthly or seen only once is `unconfirmed`, since this guide lists weekly nights.
 4. `status: "confirmed"` only when a venue or host page you fetched shows the night (dated or a
    standing weekly listing). Otherwise `status: "unconfirmed"` with the Billy Penn guide as the only
    source. Write every entry either way.
