@@ -38,8 +38,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sankofa Community Farm Volunteer Day on Saturday, October 10, at 9:30 am. Register on the event
-    page. The Welcome Center is open Thursday to Monday, 9:30 am to 4:30 pm, for visitors.
+  text: Sankofa Community Farm volunteer days are on Saturday mornings, 9:30 am to noon, and are posted
+    on the garden's calendar. The Welcome Center is open Thursday to Monday, 9:30 am to 4:30 pm, from
+    April into early December.
   days:
   - sat
   times:
@@ -59,39 +60,50 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: No admission or program fees are stated on the home page.
+  text: Admission is free and most programs are free. Some paid events are offered.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: A wheelchair is available at the Welcome Center. Lath House restrooms have accessible stalls
+    but no automatic doors. The Bartram's Mile Trail is paved with some moderate inclines, and the Meadow
+    has grass paths with steeper slopes. Some areas offer audio descriptions for visitors with limited
+    vision.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Register for a volunteer day through the Bartram's Garden event page. Each volunteer registers
-    separately to sign the waiver.
+  how: Register for a Sankofa Community Farm volunteer day on the garden's event page, where you sign
+    your own waiver. Welcome Volunteer applications are closed, so you can join the interest list instead.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The page says no special skills or past experience are needed and walks through the sign-up steps.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page says no special skills or past experience are needed, and it walks through
+    how to register and sign the waiver.
+  what_to_expect: A volunteer day runs from 9:30 am to noon on a Saturday and meets at the farm at Bartram's
+    Garden. The work is outdoors with farm staff, such as planting, harvesting, weeding, removing invasive
+    plants, and helping the orchard, and no special skills are needed. The listing does not say what to
+    bring or wear or whether tools are supplied, so check the event page before you go.
+  first_visit_tips:
+  - Register on the event page first and sign your own waiver, since each person registers separately.
+  - Public restrooms are open daily, 9:30 am to 4:30 pm.
+  - Parking is free in the loop from 54th Street, along 51st Street, and along 56th Street, but on-site
+    spots are limited.
 contacts:
   website: https://www.bartramsgarden.org/volunteer/
-  email: null
+  email: info@bartramsgarden.org
   phone: (215) 729-5281
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.bartramsgarden.org/volunteer
+sign_of_life_url: https://www.bartramsgarden.org/calendar/list/?tribe-bar-search=volunteer
 sources:
 - url: https://www.bartramsgarden.org/volunteer
   seen: '2026-10-08'
@@ -119,11 +131,37 @@ sources:
   - audience
   - schedule
   - contacts
+  - audience.min_age
+  - status
+  - contacts.phone
 - url: https://www.phillyorchards.org/orchards
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.bartramsgarden.org/visit/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - access
+  - schedule
+  - locations
+  - contacts.email
+  - contacts.phone
+- url: https://www.bartramsgarden.org/farm/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.bartramsgarden.org/calendar/list/?tribe-bar-search=volunteer
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

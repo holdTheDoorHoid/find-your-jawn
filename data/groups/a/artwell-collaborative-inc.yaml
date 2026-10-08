@@ -5,12 +5,13 @@ leads:
 - cultural_fund:artwell-collaborative-inc-3
 - irs_bmf:201705075
 ein: '201705075'
-summary: A Philadelphia nonprofit that gives young people a place to make art through writing, music,
-  poetry, visual arts and performance. Most of its work happens in schools and community groups, and its
-  free family days are open to the public.
-what_you_do: Volunteer in development, design, finance or community engagement by writing to the contact
-  on its Get Involved page, attend a free family day, or come to its poetry and art show. Board members
-  can apply through the board form on the site.
+summary: A Philadelphia nonprofit that helps young people make art and poetry. Its work runs through school
+  and library programs such as We the Poets, EcoArts and student art shows, and its public workshops,
+  family days and poetry and art show are listed on its events page.
+what_you_do: Email the program director through the Get Involved page to volunteer in development, design,
+  finance or community engagement, go to a public workshop or family day from the events page, or apply
+  to the board through the Join the Board page. Schools and groups can request a youth program or pop
+  up workshop through a form.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -42,15 +43,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A free family day ran on Sunday Oct 4, 2026, 10 am to 4 pm, held with partner organizations. It
-    is still listed on the site as upcoming. Student programs run in schools and libraries on dates set
-    by each host. The date of the poetry and art show is not listed.
+  text: Public workshops, skill builds, family days and the poetry and art show are posted on the events
+    page with their own dates. Student programs run in schools and libraries on dates each host sets.
+    The poetry and art show is held in May at The Galleries at Moore College of Art and Design.
   days:
   - sun
   times:
   - daytime
   recurring: null
-  season: fall
+  season: event_only
 locations:
 - label: Office
   address: 100 W Oxford St, Suite E-1200
@@ -61,10 +62,20 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Galleries at Moore College of Art and Design (poetry and art show)
+  address: 1916 Race Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: free
-  text: The family day is free and volunteering costs nothing. Student program costs are not listed.
+  text: Public workshops, family days and volunteering are free where listed. Youth programs are fee based
+    for agencies outside its core partner network, though grant sponsored workshops are sometimes available.
 commitment: null
 group_size: null
 access:
@@ -79,14 +90,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Write to the volunteer contact listed on the Get Involved page to offer help, and watch the events
-    page for the next free family day.
+  how: Watch the events page for a public workshop or family day, then go. To volunteer, email the program
+    director listed on the Get Involved page.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The free family days are open to anyone, and the volunteer roles name a contact to write to.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public events are listed with dates and times, and the volunteer roles name a contact to write
+    to. The event listings do not say whether you must sign up before you attend.
+  what_to_expect: Public skill builds have usually run about two hours on a Saturday afternoon, with hands-on
+    poetry, art or self-care sessions. Lunch and learn talks run about an hour and are often online. Family
+    days run most of the day, and the events page does not say how many people attend.
+  first_visit_tips:
+  - Open the event's own page for the exact address, since past events were held at the ArtWell office
+    on West Oxford Street and at partner venues.
+  - For a school or youth group, use the Request a Program form on the site or call 215-220-6253.
+  - Ask the program director by email before you come to volunteer for the first time.
 contacts:
   website: https://www.theartwell.org
   email: info@theartwell.org
@@ -96,7 +114,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.theartwell.org
+sign_of_life_url: https://www.theartwell.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=2
   seen: '2026-10-04'
@@ -124,11 +142,45 @@ sources:
   fields:
   - what_you_do
   - first_step
+  - contacts
 - url: https://www.theartwell.org/news/by-the-numbers-2025-2026
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.theartwell.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - online_ok
+  - first_step
+  - last_sign_of_life
+  - status
+  - locations
+- url: https://www.theartwell.org/request-a-program
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - crowd
+- url: https://www.theartwell.org/artshow
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - crowd
+- url: https://www.theartwell.org/youth-programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: https://www.theartwell.org/join-the-board
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

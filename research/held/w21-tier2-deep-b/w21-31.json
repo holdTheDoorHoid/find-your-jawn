@@ -1,0 +1,178 @@
+{
+ "wave": "w21-tier2-deep-b",
+ "agent": "w21-31",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 37,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "Batch of 7 groups, all written as publish. Fetches used: 37. Alliance used 7 fetches, one more than the six per group guide; the seventh was the cultural events hub, and its French Tables page returned HTTP 404. Searches used: 0, since every gap was reachable on the group's own site. No 403s, bot checks or paywalls were met. Conflicts flagged in group notes: Anna Crusis audition timing (home page 2026 round versus an older auditions page), AMC membership wording, Almanac kids_ok (tier 1 value kept). Tier 1 summaries corrected: Almanac (festival claim removed), Anne-Marie Mulgrew (company now described from its own page), AMC (activity count and biking added), Alliance (adult classes added to what you do). Leads: none had a URL on the pages read. Named venues and partners (Pig Iron Theatre Company, The Ginkgo Center, the Free Library's Whitman Branch) were not checked. Note: an earlier copy of this file was moved by the pipeline from the inbox to hold-running before this rewrite; this inbox copy supersedes it.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "cultural_fund:almanac-dance-circus-theatre-3"
+    ],
+    "group_id": "almanac-dance-circus-theatre",
+    "website": "http://www.thealmanac.us"
+   },
+   "verdict": "publish",
+   "name": "Almanac Projects",
+   "summary": "A dance, circus and theater company in Philadelphia that makes shows and offers free Helpful Hints workshops. It also runs AlmanAcro, an open acrobatics class on Monday evenings.",
+   "what_you_do": "Sign up for a free Helpful Hints workshop, take the Monday evening AlmanAcro acrobatics class, buy a ticket to a show, or join the mailing list.",
+   "kind": "nonprofit",
+   "categories": [
+    "theater-dance-performance"
+   ],
+   "interests": [
+    "dance_company",
+    "community_theater"
+   ],
+   "motives": [
+    "enhancement",
+    "social"
+   ],
+   "formats": [
+    "learn_skill",
+    "one_off_event"
+   ],
+   "roles": [
+    "create",
+    "hands_on"
+   ],
+   "crowd": [
+    "all_ages",
+    "all_adults"
+   ],
+   "audience": {
+    "open_to": "public",
+    "support_group": false
+   },
+   "schedule": {
+    "text": "AlmanAcro, an open ensemble acrobatics class, meets every Monday at 6:30 pm for 2 hours at Acro& in Northern Liberties. Free Helpful Hints workshops are offered on dates posted on the calendar.",
+    "days": [
+     "mon"
+    ],
+    "times": [
+     "evening"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "AlmanAcro at Acro&",
+     "address": "723 N Bodine St, Philadelphia",
+     "neighborhood": "Northern Liberties",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "cost": {
+    "level": "low",
+    "text": "Helpful Hints workshops are free. AlmanAcro costs $30 with a sliding scale, and the office asks you to email if cost is a barrier. Show tickets vary by production."
+   },
+   "commitment": "one_off",
+   "access": {
+    "wheelchair": "unknown",
+    "notes": "The AlmanAcro studio at Acro& is up a flight of stairs and is not ADA accessible. The site says workshop host spaces should be ADA accessible or have as few steps as possible."
+   },
+   "requirements": {
+    "kids_ok": false,
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Fill out the Airtable sign-up form linked on the site for the next free Helpful Hints workshop.",
+    "sign_up_needed": true,
+    "newcomer_friendliness": 4,
+    "basis": "The workshop is described as introductory and accessible for people of many ability levels, it is free, and sign-up is by an online form.",
+    "what_to_expect": "A visit lasts about 50 minutes. It starts with a 25 minute excerpt of a duet performance, then a 25 minute movement workshop that introduces dance and circus, and ends with a short question and answer. The workshops are led by Rhonda Moore and Ben Grinberg, and some are held at senior centers and other places where seniors gather.",
+    "first_visit_tips": [
+     "Sign up with the Airtable form ahead of time, since the site lists sign-up rather than walk in visits.",
+     "The Oct 19 and Oct 25, 2026 workshops are at Pig Iron Theatre Company, Studio A. The Nov 7, 2026 workshop is at The Ginkgo Center.",
+     "The site does not say what to wear, so email admin@thealmanac.us if you are unsure.",
+     "For AlmanAcro, bring a water bottle, movement clothes and an optional small snack."
+    ]
+   },
+   "contacts": {
+    "website": "http://www.thealmanac.us",
+    "email": "admin@thealmanac.us",
+    "social": [
+     "https://www.instagram.com/almanacprojects/",
+     "https://www.facebook.com/almanacdancecircustheatre/"
+    ]
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-10",
+   "sign_of_life_url": "https://www.thealmanac.us/calendar",
+   "sources": [
+    {
+     "url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=1",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "contacts.website"
+     ]
+    },
+    {
+     "url": "http://www.thealmanac.us",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "cost",
+      "status"
+     ]
+    },
+    {
+     "url": "https://www.thealmanac.us/helpful-hints",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_to_expect",
+      "first_step",
+      "newcomer_friendliness",
+      "basis",
+      "access"
+     ]
+    },
+    {
+     "url": "https://www.thealmanac.us/almanacro",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "locations",
+      "cost",
+      "first_visit_tips",
+      "access",
+      "what_you_do"
+     ]
+    },
+    {
+     "url": "https://www.thealmanac.us/work-with-us",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://www.thealmanac.us/calendar",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "last_sign_of_life",
+      "sign_of_life_url",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "high",
+   "notes": "Workshop dates come from the site calendar, which prints the year. The Helpful Hints page says the workshops suit seniors and are sometimes held at senior centers and homes, while the home page calls the program intergenerational for elders and young people, so kids_ok stays false from tier 1 until someone checks. The Busy People duet project is separate: it is for BIPOC elders aged 55 and up and non-elder dance artists, pays selected participants, and premieres Mar 11 to 14, 2027 at FringeArts. The tier 1 summary said the company runs festivals; no page read shows that, so the claim is removed. Pig Iron Theatre Company and The Ginkgo Center are workshop venues named on the site and were not checked as leads.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Northern Liberties' is unknown"
+   ]
+  }
+ ]
+}

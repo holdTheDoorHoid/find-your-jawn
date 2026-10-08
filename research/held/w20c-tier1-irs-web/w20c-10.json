@@ -1,0 +1,138 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-10",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 28,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "Batch of 15 IRS-list groups. Search budget used in full (2 of 2): High Flock Comics (no match) and Balanced Veterans (the search showed its domain, which was then fetched). Fetch budget: 28 used of 60. Five groups are unknown records because they have no usable web address and were not searched: Bethel Agape Ministries, Cross Cultural Connect, Folamis Oasis, and Developing Excellence (its batch domain does not resolve; DNS failed on every try). High Flock Comics was searched but not found. A later run should search the four unsearched groups first. Dead or moved domains: balancedveterans.com redirects to balancedveterans.org; developingexcellence.net does not resolve. Dropped as leads: the Commission of Inquiry for Cambodia (a Save Cambodia project, not a separate group) and the Macro United conference (a conference, not a group). Named without links, so not listed as leads: Catalyst Church, Christ Community Church, Fathership Foundation, Rooted In Love Ministries, and the United Cambodian Association of Minnesota (not Philadelphia). No 403s, bot checks or logins were met. No forms were submitted and no one was contacted. Owner decisions to review: (1) Balanced Veterans and Empowering Freedom do peer support or suicide-prevention work, and support_group is false on both; the support flow rule may apply. (2) Echo Collective: its partisan status and Philadelphia location are both unconfirmed. (3) Oaks of Hope International: Philadelphia comes only from the IRS list. (4) Save Cambodia's calendar gives a Philadelphia street address for some briefings; not recorded. (5) Springboard's mailing address is c/o an individual, so only its ZIP is noted. Verdict counts: publish 14 (9 with content, 5 unknown and held back), out_of_area 1.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:270063486",
+     "irs_bmf:270063486"
+    ],
+    "group_id": "developing-excellence-inc",
+    "ein": "270063486",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Developing Excellence",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "IRS list name: Developing Excellence Inc. The batch website, http://www.developingexcellence.net, did not resolve (DNS error on the www and bare domains, retried once). No search was used here because both searches went to other groups. No summary written. The IRS list address is 701 E Cathedral Rd Ste 45, the same suite that appears for Echo Collective and Specialists of Schools. Next step: search the name with Philadelphia.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:463640667",
+     "irs_bmf:463640667"
+    ],
+    "group_id": "bethel-agape-ministries-inc",
+    "ein": "463640667",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Bethel Agape Ministries",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "IRS list name: Bethel Agape Ministries Inc. The batch website field holds a name, not a web address, so no site was fetched. No search was used because both searches went to other groups. No summary written. The IRS list address includes a unit number, which looks like a residence, so no address is recorded. As a congregation it should not be rejected; confirm whether it holds public services before publishing.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472635543",
+     "irs_bmf:472635543"
+    ],
+    "group_id": "cross-cultural-connect",
+    "ein": "472635543",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Cross Cultural Connect",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The batch website field holds the group's name, not a web address, so no site was fetched. No search was used, because both searches went to High Flock Comics and Balanced Veterans. A later run should search the name with Philadelphia. No summary written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851339482",
+     "irs_bmf:851339482"
+    ],
+    "group_id": "folamis-oasis",
+    "ein": "851339482",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Folamis Oasis",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The batch website field holds 'Precious Jewels Prevention Program LLC', a company name, not a web address, so no site was fetched. That may mean this entry is a prevention business rather than a group; check before publishing. No search was used. No summary written.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:842147438",
+     "irs_bmf:842147438"
+    ],
+    "group_id": "high-flock-comics",
+    "ein": "842147438",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "High Flock Comics",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The batch website field holds the group's name, not a web address. One search for 'High Flock Comics' Philadelphia found no shop, club or group by that name; the results were general guides to Philadelphia comic shops. The name may be spelled differently, or the group may be new or closed. No summary written. Next step: try name variants.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -1,22 +1,29 @@
 id: artistyear
-name: Artistyear
+name: ArtistYear
 aka: []
 leads:
 - irs_990n:811281053
 - irs_bmf:811281053
 ein: '811281053'
-summary: null
-what_you_do: null
+summary: A national AmeriCorps program that places full time teaching artists in K to 12 schools and community
+  settings, including in Philadelphia.
+what_you_do: Apply to serve as a full time ArtistYear Fellow teaching in schools or communities for 6
+  or 10 months. Applications are reviewed on a rolling basis until the slots are filled.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- kids-youth-mentoring
+interests:
+- tutoring
+motives:
+- values
 formats: []
-roles: []
-crowd: []
+roles:
+- help_teach
+crowd:
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,10 +32,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Full time service: 10 months from a September start, or 6 months from a January start'
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -53,7 +60,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +74,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Check the eligibility rules on the Apply Now page, then submit the application for the 2026 to
+    2027 program year
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Needs an application, an arts degree or comparable experience, U.S. citizenship or legal residency,
+    and background checks
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: ARTISTYEAR.ORG
+  website: https://artistyear.org
   email: null
   phone: null
   contact_name: Margo Drakos
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://artistyear.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +108,25 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://artistyear.org/apply-now/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - first_step
+  - audience
+- url: https://artistyear.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+- url: https://artistyear.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

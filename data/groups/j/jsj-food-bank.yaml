@@ -5,18 +5,26 @@ leads:
 - irs_990n:932737755
 - irs_bmf:932737755
 ein: '932737755'
-summary: null
-what_you_do: null
+summary: A nonprofit that offers free meals and behavioral health programs for students in grades K to
+  12 and adults 55 and older in Philadelphia.
+what_you_do: Students and older adults can ask about free meals and behavioral health programs. The group
+  also lists free after school programs.
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- hunger-housing-basic-needs
+- kids-youth-mentoring
+interests:
+- food_pantry
+- after_school_camps
 motives: []
 formats: []
 roles: []
-crowd: []
+crowd:
+- kids
+- seniors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -31,19 +39,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: JSJ Food Bank office
   address: 4722 Horrocks St
   neighborhood: null
-  planning_district: lower_northeast
-  zip: '19124'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 4722 Horrocks Street
-  neighborhood: null
-  planning_district: lower_northeast
+  planning_district: null
   zip: '19124'
   lat: null
   lng: null
@@ -51,8 +50,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: No cost, as the group describes its meals and programs
 commitment: null
 group_size: null
 access:
@@ -67,23 +66,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-375-4558 or email info@jsjfoodbank.org to ask how to get meals or sign up for the after
+    school programs
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site lists the services but no sign up steps, dates or hours, so the way in is unclear
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.jsjfoodbank.org
-  email: null
-  phone: null
+  website: https://www.jsjfoodbank.org
+  email: info@jsjfoodbank.org
+  phone: 215-375-4558
   contact_name: Jeanne Spence
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.jsjfoodbank.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +100,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.jsjfoodbank.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - locations
+  - contacts
+  - first_step
+  - status
+- url: https://www.jsjfoodbank.org/blog
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

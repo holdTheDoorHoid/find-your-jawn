@@ -1,40 +1,60 @@
 id: st-marks-church
-name: St Marks Church
+name: Saint Mark's Church
 aka: []
 leads:
 - irs_bmf:231583643
 ein: '231583643'
-summary: null
-what_you_do: null
+summary: An Episcopal parish on Locust Street that serves a Saturday meal called the Soup Bowl to about
+  140 guests each week. It also runs a food cupboard and a choir with public concerts, and holds a Newcomer
+  Brunch.
+what_you_do: Come to the Saturday Soup Bowl, sit in on a Sunday service, or attend the Newcomer Brunch.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- food-drink
+- hunger-housing-basic-needs
+- faith-community
+- music
+interests:
+- community_meals
+- food_pantry
+- worship_community
+- choir_singing
+motives:
+- values
+formats:
+- side_by_side
+- perform_make_together
 roles: []
-crowd: []
+crowd:
+- neighbors
+- newcomers
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Saturday Soup Bowl (the site gives no time). Saturday Low Mass at 10 am. Sunday Masses at 8, 9
+    and 11 am, and Choral Evensong on the first Sunday of the month, October through June.
+  days:
+  - sat
+  - sun
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 1625 Locust St
+- label: Church
+  address: 1625 Locust Street
   neighborhood: null
-  planning_district: central
-  zip: '19103'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -42,8 +62,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not listed on the site
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +77,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Newcomer Brunch (listed for Sunday, October 11 at 12:30 pm), or attend a Sunday service.
+    Call 215-735-1416 for more.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site lists a Newcomer Brunch with a way to sign up, and Sunday services are open to visitors.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://saintmarksphiladelphia.org/
   email: null
-  phone: null
+  phone: 215-735-1416
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://saintmarksphiladelphia.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +102,18 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://saintmarksphiladelphia.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

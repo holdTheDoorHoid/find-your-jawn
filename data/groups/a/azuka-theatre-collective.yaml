@@ -7,9 +7,9 @@ leads:
 ein: '233005982'
 summary: A Philadelphia theater company that stages productions and develops new plays with writers. Its
   New Play Development program offers readings, events, and a way to submit scripts.
-what_you_do: See a production (tickets are set by the viewer after the show), come to a New Play event,
-  or submit a script through the New Play Development pages. Classes, usher volunteering, and open rehearsals
-  are not described; ask the company.
+what_you_do: See a production and pay what you decide afterward, come to a New Play event when one is
+  listed, or send a script through the online New Play Development form. The site does not describe classes,
+  usher volunteering, or open rehearsals, so ask the company.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -36,13 +36,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Productions run through the 2026 to 2027 season, and each show has its own dates. A production
-    titled #CHARLOTTESVILLE runs October 14 to November 1, though the year is not shown on the page.'
+  text: The company runs a season of productions, each with its own dates on the calendar, and lists a
+    2026 to 2027 season. New Play events are readings and workshops, announced when they are scheduled.
   days: []
   times: []
   recurring: null
   season: null
 locations:
+- label: The Theaters at The Drake (Louis Bluver Theatre or Proscenium Theatre)
+  address: 302 S. Hicks Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Office
   address: 1700 Sansom Street, Suite 800
   neighborhood: null
@@ -55,13 +64,15 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: 'Pay What You Decide: the viewer sets the price after the show'
+  text: 'Pay What You Decide: reserve a seat for free, see the show, then pay the amount you choose. Fixed-price
+    tickets are also sold.'
 commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: the B Line subway to Walnut-Locust, about 2 blocks from the theaters, per the
+    company''s directions page. The L Line stops at 15th Street, and several bus routes stop nearby.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,15 +81,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a Pay What You Decide ticket for the next production through the tickets link on the site,
-    or join the mailing list to hear about New Play events and script submission periods.
+  how: Reserve a Pay What You Decide seat online or by phone for the next production, then pay the amount
+    you choose after the show.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can buy a ticket with a flexible price. The writer programs accept submissions, though
-    the open periods were not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can reserve a flexible-price seat with an email confirmation, and the New Play program
+    takes work from emerging Philadelphia writers. The page does not say how a first visit works.
+  what_to_expect: Shows are at The Theaters at The Drake on South Hicks Street. For Pay What You Decide,
+    you reserve a seat in advance at no cost, check in at the box office under your name, and pay after
+    the show by cash, check, card, or Venmo. Unclaimed seats are released 15 minutes before each performance,
+    so arrive early.
+  first_visit_tips:
+  - Check the production page to see which theater door to use, since both theaters are on Hicks Street.
+  - Reserve early, because unclaimed seats are released 15 minutes before the show.
+  - Take the B Line to Walnut-Locust, about 2 blocks away, or check the directions page for bus and trolley
+    stops.
+  - Pay after the show using the envelope basket or the box office.
 contacts:
   website: https://azukatheatre.org
   email: Info@AzukaTheatre.org
@@ -112,7 +131,29 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://azukatheatre.org/location
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access.notes
+- url: https://azukatheatre.org/pay-what-you-decide
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+- url: https://azukatheatre.org/new-play-events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+- url: https://azukatheatre.org/npd-submissions
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

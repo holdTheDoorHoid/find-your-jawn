@@ -1,0 +1,200 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-07",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 24,
+ "leads_only": [
+  {
+   "name": "Theresa Nonprofit Foundation of Diabetes Fund",
+   "url": "https://loverocknonprofitfoundation.org",
+   "note": "Named as a partner on the Loverock site, with a donation link only. No own website was seen, so not checked."
+  },
+  {
+   "name": "Brightside Academy",
+   "url": "https://laplacitawellness.com",
+   "note": "Named on the La Placita site as the operator of summer camps. No own website was seen, so not checked."
+  },
+  {
+   "name": "Michael the Archangel Ministry",
+   "url": "https://www.fop5.org",
+   "note": "Linked from the Philadelphia FOP Lodge 5 site with no description. Its URL was not captured and it was not checked. It may be unrelated to the auxiliary."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.mylionsheart.org",
+   "status": 404,
+   "note": "Dead link, not a bot block. The bare domain mylionsheart.org also returned 404."
+  },
+  {
+   "url": "https://www.royalsisterproject.com",
+   "status": 404,
+   "note": "Dead link, not a bot block. The group's real domain, royalsistersproject.com, was read instead."
+  },
+  {
+   "url": "https://www.livingsocialsupports.org",
+   "status": "DNS not found",
+   "note": "Dead domain, not a bot block. The bare domain did not resolve either."
+  },
+  {
+   "url": "https://www.neversureenderhope.org",
+   "status": "DNS not found",
+   "note": "Dead domain, not a bot block. The bare domain did not resolve either."
+  },
+  {
+   "url": "https://fop5auxiliary.org",
+   "status": "DNS not found",
+   "note": "Domain taken from the typed email address for the FOP auxiliary. It did not resolve."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, cap reached. Fetches: 24 of 60. No bot checks or 403s were met. Dead links are listed under blocked as 404 or DNS failures, not blocks. Verdicts: 13 publish (4 probably_active, 3 dormant, 6 unknown and held back for lack of a summary) and 2 out_of_area (Ekenywa, Nikwia Wodoe). The six unknown records are My Lion S Heart, No More Xcuses Ministries, Beyond My Reach, Living Social Supports, Michael Lutz FOP Lodge 5 Auxiliary and Never Surrender Hope. Two searches were used: My Lion S Heart (no match found) and Royal Sisters Project (the GoFundMe page led to the real domain). Several IRS typed websites were not web addresses (a company name, a bare name, an email address, or a malformed https// link); each is handled in its record. Heroes Wish dormant status rests on a date read from a news link URL, so a reviewer may want to confirm it.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:831560204",
+     "irs_bmf:831560204"
+    ],
+    "group_id": "my-lion-s-heart",
+    "ein": "831560204"
+   },
+   "verdict": "publish",
+   "name": "My Lion S Heart",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The typed website, https://www.mylionsheart.org, returned HTTP 404, and so did the bare domain. One WebSearch for the name found no Philadelphia nonprofit by this name. IRS filing address is 8001 Castor Avenue, unit 333, 19152. Needs a manual check of the IRS entry and another search before anything is published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:861052274",
+     "irs_bmf:861052274"
+    ],
+    "group_id": "no-more-xcuses-ministries",
+    "ein": "861052274"
+   },
+   "verdict": "publish",
+   "name": "No More Xcuses Ministries",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The typed website value 'Ballard Spahr LLC' is a company name, not a web address, so it was treated as missing. The search budget was spent on other groups, so no search was run for this one. IRS filing address is 1030 Knorr St, 19111. Needs one search before it can be published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:923985998",
+     "irs_bmf:923985998"
+    ],
+    "group_id": "beyond-my-reach-inc",
+    "ein": "923985998",
+    "website": "https://beyondmyreach.org"
+   },
+   "verdict": "publish",
+   "name": "Beyond My Reach",
+   "kind": "congregation",
+   "contacts": {
+    "website": "https://beyondmyreach.org",
+    "email": null,
+    "phone": null,
+    "social": []
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site at beyondmyreach.org returned only a title, 'Beyond My Reach Center', on two fetches, with no description, programs, dates or contacts. Nothing else was found, and no search was spent on it. The IRS filing name is Beyond My Reach Inc. Its filing address is an apartment (3725 Ronnald Dr Apt 2B, 19154), so it is not a public meeting place. Needs a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:832200544",
+     "irs_bmf:832200544"
+    ],
+    "group_id": "living-social-supports-limited",
+    "ein": "832200544"
+   },
+   "verdict": "publish",
+   "name": "Living Social Supports",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The typed website, www.livingsocialsupports.org, did not resolve (DNS lookup failed), and neither did the bare domain. Not searched, because the search budget was spent on other groups. IRS filing address is 9462 Fairgreen Ln, 19114. Needs one search before it can be published.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465085616",
+     "irs_bmf:465085616"
+    ],
+    "group_id": "michael-lutz-fraternal-order-of-police-lodge-5-auxiliary",
+    "ein": "465085616"
+   },
+   "verdict": "publish",
+   "name": "Michael Lutz FOP Lodge 5 Auxiliary",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The typed website was an email address at fop5auxiliary.org, and that domain did not resolve, so no website was found. The IRS filing address, 11630 Caroline Rd, 19154, is the same as the Philadelphia FOP Lodge 5 office on fop5.org, which does not mention an auxiliary. Whether it is open to the public is unknown. Not searched, because the search budget was spent. Needs one search. If it turns out to be members only, change the verdict to hide.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:823514889",
+     "irs_bmf:823514889"
+    ],
+    "group_id": "never-surrender-hope",
+    "ein": "823514889"
+   },
+   "verdict": "publish",
+   "name": "Never Surrender Hope",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The typed website, www.neversureenderhope.org, did not resolve, and neither did the bare domain. Not searched, because the search budget was spent. IRS filing address is 9705 Berea St, 19114. The name is generic, so one search should use the address or the contact name as well.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

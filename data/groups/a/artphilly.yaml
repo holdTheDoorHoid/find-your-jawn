@@ -4,7 +4,7 @@ aka: []
 leads:
 - cultural_fund:artphilly
 ein: null
-summary: A Philadelphia arts group of creators across many art forms that puts on a city wide arts festival
+summary: A Philadelphia arts group of creators across many art forms that puts on a citywide arts festival
   with projects in venues around the city.
 what_you_do: Buy a ticket to a festival project, browse the project list, or sign up for the newsletter
   to hear about the next festival.
@@ -37,16 +37,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The group runs a citywide arts festival as a season of projects, not weekly classes. The pages
+    checked do not give dates for a next festival.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations: []
-online_ok: false
+online_ok: true
 cost:
-  level: null
-  text: null
+  level: low
+  text: Many festival events are free, and some free events need an RSVP. Ticketed events are $26 standard,
+    or $13 for students, children, seniors, and arts and industry workers, and $2 for EBT card holders.
+    All ticket sales are final, and cancelled shows get full refunds.
 commitment: one_off
 group_size: null
 access:
@@ -61,18 +64,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Sign up for the newsletter on artphilly.org and follow the Instagram page, then watch for the next
-    festival listing.
+  how: Sign up for the newsletter at artphilly.org and follow the group's Instagram, then pick a project
+    from the next festival's list when it posts.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Festival events are public, but the page shows no class, membership or volunteer path, only a
-    newsletter.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Festival events are open to the public and tickets are sold online, but the site shows no class,
+    membership, or volunteer path, and no festival is running now, so the newsletter is the only way in.
+  what_to_expect: A visit is one festival project, which can range from theater and music to dinners and
+    events in parks, museums, and theaters. Standard tickets are $26, and some events are free. Each project
+    lists its own venue and time, so check the project page before you go.
+  first_visit_tips:
+  - All ticket sales are final, so check the date and venue before you buy.
+  - Door sales are first come, first served, and some shows sell out, so buy ahead if you can.
+  - Write to info@artphilly.org about date changes, since changes are not guaranteed.
 contacts:
   website: https://artphilly.org
-  email: hannah@almacommunications.co
+  email: info@artphilly.org
   phone: null
   contact_name: null
   social:
@@ -82,7 +90,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-06
-sign_of_life_url: https://artphilly.org
+sign_of_life_url: https://artphilly.org/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=2
   seen: '2026-10-04'
@@ -97,7 +105,29 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://artphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+  - online_ok
+- url: https://artphilly.org/faq
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_visit_tips
+  - contacts
+  - schedule
+- url: https://artphilly.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

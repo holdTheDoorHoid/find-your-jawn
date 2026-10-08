@@ -1,22 +1,28 @@
 id: bainbridge-community-health-systems-inc
-name: Bainbridge Community Health Systems Inc
+name: Bainbridge Community Health Systems
 aka: []
 leads:
 - irs_990n:861441357
 - irs_bmf:861441357
 ein: '861441357'
-summary: null
-what_you_do: null
+summary: A health nonprofit in Philadelphia that runs community workshops and youth programs, and invites
+  residents to volunteer, take part, or give.
+what_you_do: Ask about current workshops or youth programs and join one when it is running. The group
+  has invited the public to volunteer, take part, or donate.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- health-wellness
+interests:
+- health_outreach
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -58,23 +64,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email info@bainbridgehealth.org or call (215) 645-9900 to ask about current workshops, youth programs,
+    or volunteer openings
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site invites volunteers and participation, but it lists no current events, so the way in
+    is unclear
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.bainbridgehealth.org
-  email: null
-  phone: null
+  website: https://www.bainbridgehealth.org
+  email: info@bainbridgehealth.org
+  phone: (215) 645-9900
   contact_name: Frentzie Glover
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2023-10
+sign_of_life_url: https://www.bainbridgehealth.org/news
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +99,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.bainbridgehealth.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - first_step
+  - audience
+- url: https://www.bainbridgehealth.org/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

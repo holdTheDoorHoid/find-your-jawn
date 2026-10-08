@@ -11,8 +11,8 @@ ein: '222614286'
 summary: Volunteers who help look after the food forest at Awbury Arboretum in Germantown. Planting and
   orchard care work days are listed through the Philadelphia Orchard Project, and Awbury's volunteer office
   takes questions by email.
-what_you_do: Help plant and care for trees and plants on a listed work day. Register on the POP events
-  page for the date.
+what_you_do: Help plant and care for trees and plants on a listed work day. Register on the Philadelphia
+  Orchard Project events page for the date.
 kind: garden
 categories:
 - gardening-greening
@@ -40,7 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Work day Wednesday, October 14, from 9 am to 12 pm, per POP's events list.
+  text: Work days are posted by date on the Philadelphia Orchard Project events page. Check there for
+    the next one.
   days:
   - wed
   times:
@@ -48,8 +49,17 @@ schedule:
   recurring: false
   season: null
 locations:
-- label: Food forest
+- label: Food forest at Awbury Arboretum
   address: 6336 Ardleigh St
+  neighborhood: null
+  planning_district: null
+  zip: '19138'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Awbury office, The Francis Cope House (mailing address)
+  address: One Awbury Road
   neighborhood: null
   planning_district: null
   zip: '19138'
@@ -60,7 +70,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Cost not stated
+  text: No fee is listed for work days.
 commitment: one_off
 group_size: null
 access:
@@ -75,15 +85,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Click Register Now for the October 14 work day on the POP events page, or email volunteer@awbury.org
-    to ask about other volunteering
+  how: Register for an upcoming work day on the Philadelphia Orchard Project events page with the Register
+    Now button, or email volunteer@awbury.org to ask about other ways to help.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: POP says volunteers of all skill levels are welcome and asks for an RSVP; the listing is open
-    to registration.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Philadelphia Orchard Project listing says volunteers of all ages and skill levels are welcome
+    at planting and orchard care events, and that registering gets you directions.
+  what_to_expect: A work day is a morning session, such as 9 am to noon, spent helping care for the food
+    forest. The listing does not say what tools or clothing to bring, who leads the day, or whether children
+    may come, so ask when you register.
+  first_visit_tips:
+  - Register first. RSVPing is how you get the detailed directions and updates.
+  - The food forest is at 6336 Ardleigh St, a different address from the Awbury office on One Awbury Road.
+  - One Awbury page shows a volunteer phone number that differs by one digit from the main number, so
+    email volunteer@awbury.org first if you are unsure which to call.
 contacts:
   website: https://awbury.org/volunteer/
   email: volunteer@awbury.org
@@ -132,16 +148,29 @@ sources:
   - status
   - first_step
   - summary
+  - first_step.what_to_expect
 - url: https://awbury.org/volunteer/
   seen: '2026-10-08'
   fields:
   - contacts
   - first_step
+  - contacts.email
+  - contacts.phone
 - url: https://www.phillyorchards.org/orchards
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://awbury.org/volunteering/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+- url: https://awbury.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

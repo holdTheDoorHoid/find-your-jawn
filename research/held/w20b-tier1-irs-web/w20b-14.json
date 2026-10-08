@@ -1,0 +1,307 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-14",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 28,
+ "leads_only": [
+  {
+   "name": "Fight For Lifers",
+   "url": "https://www.reconstructioninc.org",
+   "note": "named as a program of Reconstruction Inc on its site; no link of its own found, not checked"
+  },
+  {
+   "name": "Alumni Ex-Offenders Association",
+   "url": "https://www.reconstructioninc.org",
+   "note": "named as a program of Reconstruction Inc on its site; no link of its own found, not checked"
+  },
+  {
+   "name": "LEAD (youth leadership and advocacy, Reconstruction Inc)",
+   "url": "https://www.reconstructioninc.org",
+   "note": "named as a program of Reconstruction Inc on its site; no link of its own found, not checked"
+  },
+  {
+   "name": "Reconstruction II",
+   "url": "https://www.reconstructioninc.org",
+   "note": "named as a program of Reconstruction Inc on its site; no link of its own found, not checked"
+  },
+  {
+   "name": "Noble Pillars",
+   "url": "https://www.reconstructioninc.org",
+   "note": "named as a program of Reconstruction Inc on its site; no link of its own found, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://letsrizeup.org",
+   "status": 404,
+   "note": "home page returns 404 with and without www; not a bot check, nothing readable"
+  }
+ ],
+ "notes": "Batch file holds 15 groups, not 14 as the file name suggests; all 15 are handled. Verdicts: publish 11 (only Nebinger PTA is a full record with a summary, status active; the other 10 are held back as status unknown with no summary), not_a_group 1, hide 3 (Raleigh Area Alumnae Association as private, Reclaim Philadelphia as partisan, Reconstruction Inc as defunct; the last two are judgment calls flagged in their notes). Searches: 2 of 2 used, both on Philasoup Inc and Richard Chappelle Recovery Center; neither gave usable evidence. Fetches: about 28 of 60. Blank pages on two tries: philasoup.org and readysetlive.org. Domains that do not resolve (www and bare tried): phillyyogafactory.com, rshphilly.org, rwaphilly.org (batch WWW.RWAPHILLY.ORG), rsaphilly.com, richardchappellerecovery.com. Security flag: outandbackpartyrun.org now serves a gambling page; treat as hijacked and do not link it. The Polish Heritage Society site in the batch is the national ACPC site; the Philadelphia group appears only as an ACPC affiliate. No rate limiting seen on the fetch tool. Search budget ran out before the 10 unknown groups could be checked, so a second pass with search budget would help most for Philasoup, Racquets Serving Hope, Ready Set Live, Ready Willing and Able, Philly Yoga Factory, Resident Spouse Association and Richard Chappelle Recovery Center.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:455510035"
+    ],
+    "group_id": "philasoup-inc",
+    "ein": "455510035",
+    "website": "https://www.philasoup.org"
+   },
+   "verdict": "publish",
+   "name": "Philasoup Inc",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.philasoup.org"
+   },
+   "notes": "Held back: no summary written. The site returned a blank page on two tries (www and bare domain), so nothing could be read. The one search for the name found no listing or article for this organization. IRS filing address is 1315 Walnut Street Suite 320 (19107), not verified on any page. Needs a human look or a re-check of the site.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:320448698"
+    ],
+    "group_id": "philly-yoga-factory",
+    "ein": "320448698",
+    "website": "https://www.phillyyogafactory.com"
+   },
+   "verdict": "publish",
+   "name": "Philly Yoga Factory",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.phillyyogafactory.com"
+   },
+   "notes": "Held back: no summary written. The batch website does not resolve (www and bare domain both fail DNS). No search budget was left for this group. The name and the IRS address (1520 Sansom Street) suggest a yoga studio, which may be a business rather than a community group; if so, the verdict should become not_a_group. Needs a human look.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232365871",
+     "irs_bmf:232365871"
+    ],
+    "group_id": "polish-heritage-society-of-philadelphia",
+    "ein": "232365871"
+   },
+   "verdict": "publish",
+   "name": "Polish Heritage Society of Philadelphia",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://polishcultureacpc.org/organizations/",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "notes": "Held back: no summary written. The batch website (polishcultureacpc.org) is the national American Council for Polish Culture site, not this group's own page, so no facts were taken from it. Its organizations page lists 'Polish Heritage Society of Philadelphia, Pennsylvania' as an affiliate, with no street address. The IRS address (812 Lombard St Apt 12) looks like an apartment, so this may be a small home-based group. The group's own page was not found and no search budget was left. Needs a human look.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:273003472"
+    ],
+    "group_id": "racquets-serving-hope",
+    "ein": "273003472",
+    "website": "https://www.rshphilly.org"
+   },
+   "verdict": "publish",
+   "name": "Racquets Serving Hope",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.rshphilly.org"
+   },
+   "notes": "Held back: no summary written. The batch website does not resolve (www and bare domain both fail DNS). No search budget was left for this group. IRS address is 2200 Arch Street Unit 308 (19103), which looks like an apartment unit, so the group may be small or home-based. Needs a human look or a search for the correct website.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:260713775"
+    ],
+    "group_id": "ready-set-live-inc",
+    "ein": "260713775",
+    "website": "https://readysetlive.org"
+   },
+   "verdict": "publish",
+   "name": "Ready Set Live Inc",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://readysetlive.org"
+   },
+   "notes": "Held back: no summary written. The site returned a blank page on two tries (the batch address and the lowercase address), so nothing could be read. No search budget was left for this group. IRS address is 100 S Broad Street Suite 1530 (19110). Needs a human look or a re-check of the site.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:262150260"
+    ],
+    "group_id": "ready-willing-and-able-philadelphia-inc",
+    "ein": "262150260",
+    "website": "https://www.rwaphilly.org"
+   },
+   "verdict": "publish",
+   "name": "Ready Willing & Able Philadelphia",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.rwaphilly.org"
+   },
+   "notes": "Held back: no summary written. The batch website (WWW.RWAPHILLY.ORG) does not resolve, and rwaphilly.org fails DNS too. No search budget was left for this group. IRS address is 1211 Bainbridge Street (19147). The correct website may use a different domain. Needs a human look.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:462829919"
+    ],
+    "group_id": "resident-spouse-association",
+    "ein": "462829919",
+    "website": "https://www.rsaphilly.com"
+   },
+   "verdict": "publish",
+   "name": "Resident Spouse Association",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.rsaphilly.com"
+   },
+   "notes": "Held back: no summary written. The batch website does not resolve (www and bare domain both fail DNS), which matches the liveness check already in the batch (address does not resolve, checked 2026-10-08). No search budget was left. The name suggests a group for the spouses of a particular set of people, which may be private or invite only; this is not confirmed. IRS address is 303 Fulton St (19147). A reviewer should decide whether it should be hidden as private.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:843212755"
+    ],
+    "group_id": "richard-chappelle-recovery-center",
+    "ein": "843212755",
+    "website": "https://www.richardchappellerecovery.com"
+   },
+   "verdict": "publish",
+   "name": "Richard Chappelle Recovery Center",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://www.richardchappellerecovery.com"
+   },
+   "notes": "Held back: no summary written. The batch website does not resolve (www and bare domain both fail DNS). One search for the name found no listing under this exact name. The other results were different Philadelphia recovery organizations and were not used. IRS address is 900 N Broad St (19130). A recovery center could be a support group or a treatment provider, which decides the verdict. Needs a human look.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821394237",
+     "irs_bmf:821394237"
+    ],
+    "group_id": "rize-up-inc",
+    "ein": "821394237",
+    "website": "https://letsrizeup.org"
+   },
+   "verdict": "publish",
+   "name": "Rize Up Inc",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "contacts": {
+    "website": "https://letsrizeup.org"
+   },
+   "notes": "Held back: no summary written. The domain resolves, but the home page returns HTTP 404 with and without www, so nothing could be read. No search budget was left. IRS address 709 N 2nd St Ste 400 PMB 1054 (19123) is a private mailbox, so it may not be a place people can visit. Needs a human look at the site's other pages or a re-check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:264505524"
+    ],
+    "group_id": "road-runners-club-of-america",
+    "ein": "264505524"
+   },
+   "verdict": "publish",
+   "name": "Road Runners Club of America",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back: no summary written. The batch website (outandbackpartyrun.org) now shows an unrelated online gambling advertisement dressed up as a shop page. It is not this group's site, so nothing was summarized from it and the URL is not recorded. Do not publish that URL. Batch aka: Out & Back Party Run (OBPR). The name matches the national Road Runners Club of America, but no Philadelphia chapter or program was confirmed, and the IRS address (764 North 23rd Street, 19130) is not tied to any page. No search budget was left. Needs a human look.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

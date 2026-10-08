@@ -1,35 +1,50 @@
 id: balanced-veterans
-name: Balanced Veterans
-aka: []
+name: Balanced Veterans Network
+aka:
+- Balanced Veterans
 leads:
 - irs_990n:841854742
 - irs_bmf:841854742
 ein: '841854742'
-summary: null
-what_you_do: null
+summary: A veteran-led community for veterans and their families, with peer support, education and wellness
+  resources on topics such as the move out of military service and suicide prevention.
+what_you_do: Join the free online community through the website or the app, and take part in the listed
+  events, such as a Veterans Day event, two 5K runs and retreats.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- social-meetups
+- health-wellness
+interests:
+- veterans_posts
+- mental_health_awareness
+motives:
+- values
+- social
+formats:
+- conversation
+- one_off_event
+roles:
+- figure_out
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - veterans
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Ten events are listed for October and November 2026, including a Veterans Day event on November
+    1, two 5K runs, a gravel bike race and several retreats. The events page gives no places.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 776 Hill Rd
@@ -49,10 +64,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
+  level: free
+  text: Membership and the listed events are free.
 commitment: null
 group_size: null
 access:
@@ -67,23 +82,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Click Join Today on the website, or download the group's app, to set up a free membership.
+  drop_in: true
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Membership is free and open to veterans and their families, with a clear way to sign up. The
+    site does not say what a typical event feels like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.balancedveterans.com
+  website: https://balancedveterans.org
   email: null
   phone: null
   contact_name: Caleb Masoner
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://balancedveterans.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +116,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://balancedveterans.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - cost
+  - online_ok
+  - contacts
+- url: https://balancedveterans.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

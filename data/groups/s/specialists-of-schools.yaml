@@ -5,18 +5,28 @@ leads:
 - irs_990n:232788914
 - irs_bmf:232788914
 ein: '232788914'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A membership network for Philadelphia-area professionals whose work involves students. Members
+  network, learn about local services for students and take part in continuing education.
+what_you_do: Apply for membership, then join the networking events and continuing education workshops
+  the group offers to members.
+kind: network
+categories:
+- careers-skills-professional
+interests:
+- professional_associations
+motives:
+- career
+- social
+formats:
+- conversation
+- learn_skill
+roles:
+- figure_out
+crowd:
+- professionals
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -31,10 +41,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Mailing address (group's website)
   address: 701 E Cathedral Rd Ste 45 PMB 442
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19128'
   lat: null
   lng: null
@@ -58,23 +68,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Use the Apply for Membership page on the group's website, or email admin@specialistsofschools.org,
+    to ask about joining.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Membership needs an application before you can see the events, and the events list was empty
+    when checked.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.specialistsofschools.org
-  email: null
-  phone: null
+  website: https://www.specialistsofschools.org
+  email: admin@specialistsofschools.org
+  phone: 484-909-0428
   contact_name: Ann H Collins
-  social: []
+  social:
+  - https://www.facebook.com/groups/specialistsofschools
+  - https://www.facebook.com/specialistsofschools
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.specialistsofschools.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +105,27 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.specialistsofschools.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - locations
+  - status
+- url: https://www.specialistsofschools.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://www.specialistsofschools.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

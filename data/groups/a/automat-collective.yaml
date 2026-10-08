@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: An artist run gallery in the Crane Arts Building that shows invited exhibitions and hosts free
   zinemaking workshops and book launches.
-what_you_do: Visit on a Saturday for the exhibition, RSVP for the free Print and Play zinemaking workshop
-  on Oct 10, or come to a book launch.
+what_you_do: Visit the gallery on a Saturday, RSVP for a free zinemaking workshop, or come to a second
+  Thursday reception or a book launch.
 kind: program
 categories:
 - arts-crafts
@@ -38,20 +38,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Gallery open Saturdays noon to 5 pm or by appointment. Print and Play workshop Oct 10, 2026, 4
-    to 7 pm.
+  text: Gallery open Saturdays noon to 5 pm or by appointment. Second Thursday receptions run 6 to 9 pm
+    each month.
   days:
   - sat
+  - thu
   times:
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Gallery in Crane Arts Building, Suite 105
-  address: 1400 N. American Street, Philadelphia, PA 19125
+  address: 1400 N. American Street, Philadelphia, PA
   neighborhood: null
   planning_district: null
-  zip: '19125'
+  zip: '19122'
   lat: null
   lng: null
   in_city: true
@@ -63,9 +65,10 @@ cost:
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The gallery is wheelchair accessible and offers free handicap parking. The group's about page
+    says it can be reached by car, bike, and public transit.
 requirements:
   act153_clearances: null
   background_check: null
@@ -74,14 +77,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: RSVP through the Eventbrite link for the free Print and Play zinemaking workshop on Oct 10, 2026,
-    4 to 7 pm.
-  drop_in: null
+  how: Come to a Saturday gallery visit, or RSVP through the group's Eventbrite link for a free zinemaking
+    workshop such as Print and Play.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The workshop is free and public with an RSVP, though the page does not say beginners are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The gallery is open to the public on Saturdays with no sign-up. Workshops take an RSVP, but the
+    page does not say beginners are welcome or who a workshop is for.
+  what_to_expect: The gallery is the first gallery past the main front doors on the first floor of the
+    Crane Arts Building. Visits run Saturdays from noon to 5 pm, and the page does not say how long a
+    visit takes or who staffs the space.
+  first_visit_tips:
+  - Come on a Saturday between noon and 5 pm, or email the gallery to set up another time.
+  - The gallery has free handicap parking and can be reached by car, bike, or public transit.
+  - Print and Play is held at Second State Press, not at the gallery. The page gives no address for that
+    venue, so read the RSVP details.
 contacts:
   website: http://automatcollective.com
   email: automatcollective@gmail.com
@@ -93,7 +103,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: http://automatcollective.com
+sign_of_life_url: http://automatcollective.com/current/if-when
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=2
   seen: '2026-10-04'
@@ -111,7 +121,22 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - first_step
+- url: http://automatcollective.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - access
+  - schedule
+  - first_step.what_to_expect
+- url: http://automatcollective.com/current/if-when
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

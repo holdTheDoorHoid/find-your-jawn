@@ -1,0 +1,135 @@
+{
+ "wave": "w21-tier2-deep-b",
+ "agent": "w21-34",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 30,
+ "leads_only": [
+  {
+   "name": "Philadelphia Orchard Project",
+   "url": "https://www.phillyorchards.org",
+   "note": "Named on Awbury's site as the host of the food forest work day listings. Its events page was read for this batch (Awbury's Oct 14 and Penn Park's Oct 28, 2026 workdays). Its own about and volunteer pages were not read, so it still needs its own record."
+  },
+  {
+   "name": "Glen Foerd",
+   "url": "https://www.glenfoerd.org",
+   "note": "Named on Audubon's Mid-Atlantic page as the host of a Philly Birding Weekend kayak and birdwatch event. Not checked."
+  }
+ ],
+ "blocked": [],
+ "notes": "All 7 batch groups written as publish with tier 2 fields. Used 30 fetches and 0 WebSearch calls (budget was 1; not needed). Not-found pages: Audubon events page (404) and awbury.org/contact-us (404); the awbury.org/contact page was read instead. The Mobilize page for an Audubon Discovery Center walk returned only its title. Corrections to tier 1: Audubon binoculars claim removed; Bartram's and Azuka dated events removed from schedule text; Automat zip set to 19122 per the group's exhibition page; Awbury phone conflict flagged. Aurora's upcoming-events page showed 2025 listings while its home page shows 2026 events; the record follows the home page. Two leads are listed (Philadelphia Orchard Project, Glen Foerd) and are not checked beyond what is noted. Second State Press (Automat's workshop venue) and Azuka's four resident companies have no URLs on the pages read, so they are not added. Lead-platform pages (Eventbrite) were not read for facts.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "group_id": "audubon-mid-atlantic",
+    "website": "https://www.audubon.org/mid-atlantic"
+   },
+   "verdict": "publish",
+   "name": "Audubon Mid-Atlantic",
+   "summary": "The Mid-Atlantic office of the National Audubon Society. In Philadelphia it runs the Discovery Center at the Strawberry Mansion Reservoir and leads public bird walks and tours in city parks.",
+   "what_you_do": "Join a public birding walk or tour in a Philadelphia park, or visit the Discovery Center for its programs, such as nature journaling, stargazing, and habitat enhancement days.",
+   "kind": "nonprofit",
+   "categories": [
+    "outdoors-adventure"
+   ],
+   "interests": [
+    "birding"
+   ],
+   "motives": [
+    "values",
+    "understanding"
+   ],
+   "formats": [
+    "side_by_side",
+    "learn_skill"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "all_ages"
+   ],
+   "audience": {
+    "open_to": "public",
+    "partisan": false,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Public birding walks and tours in Philadelphia parks are posted on the events calendar, each with its own sign-up link. The Discovery Center keeps its own hours, which change with the seasons.",
+    "days": [
+     "sat",
+     "sun"
+    ],
+    "times": [
+     "morning"
+    ],
+    "recurring": true,
+    "season": "year_round"
+   },
+   "locations": [
+    {
+     "label": "Discovery Center, Strawberry Mansion Reservoir",
+     "address": "3401 Reservoir Dr",
+     "neighborhood": "Strawberry Mansion",
+     "zip": "19121",
+     "in_city": true
+    },
+    {
+     "label": "Walks and tours in city parks, such as FDR Park, The Woodlands, and East Fairmount Park",
+     "in_city": true
+    }
+   ],
+   "online_ok": false,
+   "commitment": "one_off",
+   "first_step": {
+    "how": "Pick a walk on the Audubon events calendar and register through its sign-up link.",
+    "newcomer_friendliness": 3,
+    "basis": "Walks are open to the public with a published sign-up link. The page does not say whether beginners are welcome.",
+    "what_to_expect": "Walks listed for Philadelphia have run from 8 to 10 am in city parks such as FDR Park and The Woodlands. The page does not give a price, a group size, or what to bring, so read the listing before you go.",
+    "first_visit_tips": [
+     "Summer hours end on Oct 15. After that the Discovery Center opens Tuesday to Sunday, 10 am to 5 pm, and it is closed Mondays.",
+     "Call the Discovery Center at (610) 990-3431 with questions, since its page lists no email.",
+     "Parking and directions are on a separate Audubon page, which names no SEPTA stop."
+    ]
+   },
+   "contacts": {
+    "website": "https://www.audubon.org/mid-atlantic",
+    "phone": "(610) 990-3431"
+   },
+   "status": "active",
+   "last_sign_of_life": "2026-10",
+   "sign_of_life_url": "https://www.audubon.org/mid-atlantic",
+   "sources": [
+    {
+     "url": "https://www.audubon.org/discovery",
+     "seen": "2026-10-08",
+     "fields": [
+      "locations",
+      "schedule",
+      "contacts.phone",
+      "first_step.first_visit_tips"
+     ]
+    },
+    {
+     "url": "https://www.audubon.org/mid-atlantic",
+     "seen": "2026-10-08",
+     "fields": [
+      "what_you_do",
+      "schedule",
+      "first_step",
+      "status",
+      "last_sign_of_life"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "Binoculars claim from tier 1 removed: the Discovery Center's own page does not say it lends binoculars and lists no exhibits or trails, so those amenities appear only in other listings. The Discovery Center address and phone come from its own page. The Mid-Atlantic get-involved page lists no Philadelphia volunteer roles. The Audubon events page returned a 404, and the Mobilize page for the Discovery Center walk returned only its title, so walk details rest on the main Mid-Atlantic page. Admission, accessibility, parking and transit are not stated on any page read.",
+   "_held_reasons": [
+    "schema: locations[0].neighborhood 'Strawberry Mansion' is unknown"
+   ]
+  }
+ ]
+}

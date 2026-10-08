@@ -4,10 +4,11 @@ aka: []
 leads:
 - cultural_fund:artcinia-llc
 ein: null
-summary: A small arts presenter that books professional local musicians into neighborhood venues, so people
-  can hear live concerts close to home.
-what_you_do: Go to a concert near you from the group's concerts page, or sign up for the mailing list
-  to hear about upcoming shows. The group also posts updates on X.
+summary: A small arts presenter that runs a Music in Your Neighborhood program, bringing professional
+  local musicians to neighborhood venues. The site lists no upcoming shows, and its newest dated item
+  is from October 2022.
+what_you_do: Ask about becoming an Artcinia Ambassador through the contact form, or join the mailing list
+  to hear about future concerts.
 kind: program
 categories:
 - music
@@ -36,11 +37,20 @@ schedule:
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Office (not a concert venue)
+  address: 1315 Walnut Street, Suite 300, Philadelphia, PA 19107
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not listed on the page
+  text: Concert prices are not listed on the site.
 commitment: null
 group_size: null
 access:
@@ -55,13 +65,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the mailing list on artcinia.com, then go to a show from the concerts page.
+  how: Use the contact form on artcinia.com to ask about the Ambassador role, and tick the box to join
+    the email list.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Concerts are public, and the page offers a mailing list sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The email list and the Ambassador invitation are open to anyone, but the site does not describe
+    the role and lists no shows, so the way in is unclear.
+  what_to_expect: The site describes neighborhood concerts by local professional musicians. It does not
+    show any recent or upcoming shows, times, or venues, so a first visit cannot be planned from the site
+    alone. Contact the company first to ask what is coming up.
+  first_visit_tips:
+  - Use the contact form, since the site lists no email address or phone number.
+  - Expect no set schedule; the concerts page shows no upcoming shows at this check.
 contacts:
   website: https://artcinia.com
   email: null
@@ -69,9 +85,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://artcinia.com
+status: dormant
+last_sign_of_life: 2022-10
+sign_of_life_url: https://artcinia.com/concerts
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=1
   seen: '2026-10-04'
@@ -86,7 +102,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://artcinia.com/concerts
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://artcinia.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

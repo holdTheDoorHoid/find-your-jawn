@@ -413,7 +413,7 @@ waves:
     searches_per_agent: 2
     status: todo
     after: [w20a-tier1-irs-web]
-    note: "IRS e-postcard groups with a website and no NTEE code. 1303 groups, 87 batches of 15 at first. On 2026-10-08 evening 555 rows were removed from batches 09 onward: chapters of The Questers (a national antiques club) that file at its Philadelphia headquarters with questers1944.org as their website, nearly all outside the city; list in research/batches/w20b-questers-chapters-removed.json. Batches 09 to 50 were rewritten from the remaining 628 rows. Batches 04 and 05 were one national sorority (Delta Phi Epsilon) under 15 EINs each, all hidden."
+    note: "IRS e-postcard groups with a website and no NTEE code. 1303 groups, 87 batches of 15 at first. On 2026-10-08 evening 555 rows were removed from batches 09 onward: chapters of The Questers (a national antiques club) that file at its Philadelphia headquarters with questers1944.org as their website, nearly all outside the city; list in research/batches/w20b-questers-chapters-removed.json. Batches 09 to 50 were rewritten from the remaining 628 rows. Batches 04 and 05 were one national sorority (Delta Phi Epsilon) under 15 EINs each, all hidden. PAUSED 2026-10-08 evening after batch 15: yield fell to about 1 publishable group per 15 (dead domains, family charities), so batches 16 to 50 are left for a cheaper scripted liveness pass (fyj liveness) first; only rerun agents on the ones that pass."
   - id: w20c-tier1-irs-web
     lane: A
     kind: batches

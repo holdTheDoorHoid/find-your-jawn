@@ -1,22 +1,32 @@
 id: andree-collective
-name: Andree Collective
+name: Andrée Collective
 aka: []
 leads:
 - irs_990n:873519400
 - irs_bmf:873519400
 ein: '873519400'
-summary: null
-what_you_do: null
+summary: A Philadelphia nonprofit that uses weddings and celebrations to offer jobs and counseling referrals
+  to women who survived intimate partner violence or human trafficking. Supporters can give monthly or
+  attend its annual gala.
+what_you_do: Buy a ticket to the Celebrations for Freedom Gala, join the monthly Party 29 giving program,
+  or apply through the group's Opportunities page for its board, its Emerging Leaders Council (ages 18
+  to 35), or an unpaid part time marketing internship.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- advocacy-rights
+- careers-skills-professional
+interests:
+- womens_lgbtq_rights
+- board_service
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +35,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: An annual gala (the 2025 gala was on Sunday, November 2). Other events are listed on the upcoming
+    events page.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
-- label: Mailing address (IRS)
+- label: Group address
   address: 3714 Midvale Ave
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 2401 Pennsylvania Avenue 1C44-45
-  neighborhood: null
-  planning_district: central
-  zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Gala tickets start at $125 for the 2026 event (early bird pricing)
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +69,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Buy a ticket to the 2026 Celebrations for Freedom Gala at The Arts Ballroom, or click I'm Interested
+    on the Opportunities page
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Galas and events are open to the public for purchase; board and council roles need an interest
+    form
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.andreecollective.org
+  website: https://www.andreecollective.org
   email: null
   phone: null
   contact_name: Samantha Mathews
-  social: []
+  social:
+  - https://www.instagram.com/andreecollective/
+  - https://www.linkedin.com/company/andr%C3%A9e-collective
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://www.andreecollective.org/upcoming-events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +106,32 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.andreecollective.org/gala
+  seen: '2026-10-08'
+  fields:
+  - status
+  - cost
+  - locations
+  - first_step
+- url: https://www.andreecollective.org/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+- url: https://www.andreecollective.org/opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.andreecollective.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,25 +5,30 @@ leads:
 - irs_990n:920250170
 - irs_bmf:920250170
 ein: '920250170'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
+summary: A virtual community for people working through grief and loss. It offers support groups, prayer
+  calls, workshops and seminars, and one on one counseling or referrals.
+what_you_do: Ask about joining a support group or prayer call, or ask for one on one counseling or a referral.
+kind: support_group
+categories:
+- support-recovery
+interests:
+- grief_support
 motives: []
-formats: []
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
   faith: null
   partisan: false
-  support_group: false
+  support_group: true
 schedule:
   text: null
   days: []
@@ -49,7 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -67,17 +72,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-327-8498 or email support@griefspeaks1.com to ask about the next support group or prayer
+    call
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site names support groups and prayer calls but publishes no dates or times, so the way in
+    is unclear
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.griefspeaks1.com
-  email: null
-  phone: null
+  website: https://www.griefspeaks1.com
+  email: support@griefspeaks1.com
+  phone: 215-327-8498
   contact_name: Yolanda Booker
   social: []
   calendar_feed: null
@@ -100,8 +107,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.griefspeaks1.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - online_ok
+  - audience
+  - contacts
+  - first_step
+- url: https://www.griefspeaks1.com/our-programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

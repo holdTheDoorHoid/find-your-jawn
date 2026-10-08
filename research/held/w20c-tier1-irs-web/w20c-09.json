@@ -1,0 +1,192 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-09",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 37,
+ "leads_only": [
+  {
+   "name": "Boys and Girls Club, 1709 Kinsey Street",
+   "url": null,
+   "note": "Named as the venue for Project Always Receiving's back to school giveaway. No link on the page, so not checked."
+  },
+  {
+   "name": "Ronald McDonald House Charities of Philadelphia",
+   "url": "https://www.rmhcphilly.org/",
+   "note": "Partner on 901 Education's Welcome Kits project. Fetch returned 403, so it was not read (see blocked)."
+  },
+  {
+   "name": "The Bridge Foundation",
+   "url": null,
+   "note": "Named as the source of Pennsylvania Alliance of Recovery Residences' 2026 scholarships. No link on the page, so not checked; may be a private funder."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://wereign.net/",
+   "status": null,
+   "note": "TLS certificate names do not match the host (shared hosting certificate). Failed on three attempts, including www. Not a bot check; nothing could be read."
+  },
+  {
+   "url": "https://www.rmhcphilly.org/",
+   "status": 403,
+   "note": "HTTP 403 on fetch. Lead from 901 Education's projects page."
+  }
+ ],
+ "notes": "Verdicts: 15 publish, 0 hide. Two searches were used, both on IRS groups White Dove and Yes We Care Recovery, and neither found a web presence. Searches ran out before We Reign, Christian Credit Development, House of Win and Lytle Love Foundation; their records are held back as unknown (no summary, categories or interests) and need a second pass with search budget. Grief Speaks has a summary but unknown status. No hide verdicts: none of the groups showed a signal that could be established as private, defunct or out of scope with the evidence available. Dropped: Green Drinks Philly (the listing points to YPE's Eventbrite page, no separate chapter found). Dead pages (404): parronline.org/news, andreecollective.org/events, 901education.org/events. Facebook pages (House of Win, Project Always Receiving) were recorded as social links and not read. Copyright years were not used as evidence. No rate limiting; one site failed on TLS every time. Fetches used: 37, including 404 responses and errors.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:814800671",
+     "irs_bmf:814800671"
+    ],
+    "group_id": "we-reign-inc",
+    "ein": "814800671",
+    "website": "https://wereign.net/"
+   },
+   "verdict": "publish",
+   "name": "We Reign",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://wereign.net/"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website failed on every attempt (TLS certificate name mismatch on wereign.net, socket error on www.wereign.net), so nothing was read. Not searched: the two WebSearch calls went to the IRS groups White Dove and Yes We Care Recovery. Held back as unknown. Batch address 2152 N 28th St is from the IRS list and is not confirmed on a public page, so no location was written. Contact name from the IRS list left out.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232817422",
+     "irs_bmf:232817422"
+    ],
+    "group_id": "white-dove-perform-arts-enrichment-center",
+    "ein": "232817422",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "White Dove Perform Arts Enrichment Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS form's website field reads 'Accounting and Consulting Services', not a web address, so it was treated as missing. One search for the exact name and a variant (Performing Arts) found no website, listing or news item. Nothing confirms what it does, so no summary is written and it stays held back. Batch address 2510 Ridge Ave is unconfirmed, so no location was written. Contact name left out. Needs a search by hand or a second pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:451496977",
+     "irs_bmf:451496977"
+    ],
+    "group_id": "yes-we-care-recovery-inc",
+    "ein": "451496977",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Yes We Care Recovery",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS form's website field reads 'Restoration Outreach', not a web address, so it was treated as missing. One search for the exact name plus Philadelphia found no matching group; the results were other recovery services that are not this group. Nothing confirms what it does, so no summary is written and it stays held back. Batch address 1007 W Dauphin St is unconfirmed, so no location was written. Contact name left out. Needs a search by hand or a second pass.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233030496",
+     "irs_bmf:233030496"
+    ],
+    "group_id": "christian-credit-development",
+    "ein": "233030496",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Christian Credit Development",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS form's website field repeats the group's name, not a web address, so it was treated as missing. Not searched: the two WebSearch calls went to other groups, so what it does is unknown and it may not be a community group. Held back as unknown. Batch address 5255 E Roosevelt Blvd is unconfirmed, so no location was written. Contact name left out. Needs a search or a fetch before a verdict.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472108908",
+     "irs_bmf:472108908"
+    ],
+    "group_id": "house-of-win-inc",
+    "ein": "472108908",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "House of Win",
+   "kind": "nonprofit",
+   "contacts": {
+    "social": [
+     "https://www.facebook.com/houseofwin/"
+    ]
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS form's website field is a Facebook page. Facebook is lead only, so it was not read; the link is recorded as a social link. Not searched: the two WebSearch calls went to other groups, so what it does is unknown. Held back as unknown. Batch address 1105 Fillmore St is unconfirmed, so no location was written. Contact name left out. Needs a search or a fetch of the group's own site before a verdict.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:861555696",
+     "irs_bmf:861555696"
+    ],
+    "group_id": "lytle-love-foundation-inc",
+    "ein": "861555696",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Lytle Love Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS form's website field is '4', not a web address, so it was treated as missing. Not searched: the two WebSearch calls went to other groups. The word Foundation may mean a private family or scholarship fund, which would be hide with hidden_reason private, but that is unverified. Held back as unknown. Batch address 1716 Orthodox St is unconfirmed, so no location was written. Contact name left out. Needs a search or a fetch before a verdict.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

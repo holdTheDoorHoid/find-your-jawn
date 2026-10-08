@@ -1,22 +1,32 @@
 id: project-always-receving
-name: Project Always Receving
-aka: []
+name: Project Always Receiving
+aka:
+- Project Always Receving
 leads:
 - irs_990n:921174089
 - irs_bmf:921174089
 ein: '921174089'
-summary: null
-what_you_do: null
+summary: A Philadelphia group that works on vacant lots to create shared community space, and runs family
+  events such as a back to school giveaway, a health and wellness fair and open mic nights.
+what_you_do: Come to the open events, such as the back to school giveaway or the open mic night. Volunteers
+  can use the volunteer form on the group's site.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- gardening-greening
+- hunger-housing-basic-needs
+interests:
+- vacant_lot_greening
+- goods_closets
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- families
+- kids
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +35,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Events come up through the year. Past ones include a back to school giveaway and a health and
+    wellness fair in August, and an open mic night in May.
   days: []
   times: []
   recurring: null
-  season: null
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: 1347 Sellers Street
+- label: Overington Park (event venue)
+  address: 4600 Leiper St, Philadelphia, PA
   neighborhood: null
-  planning_district: lower_northeast
-  zip: '19124'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1347 Sellers St
+- label: Boys and Girls Club, Kinsey Street (giveaway venue)
+  address: 1709 Kinsey St, Philadelphia, PA
   neighborhood: null
-  planning_district: lower_northeast
-  zip: '19124'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -53,7 +64,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +78,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Watch the events page for the next event and come by, or fill out the volunteer form on the group's
+    site
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Events are open to the public, and the site has a volunteer form and a contact email
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://projectalwaysreceiving.org/
-  email: null
+  email: Projectalwaysreceiving@gmail.com
   phone: null
   contact_name: Project Always Receiving
-  social: []
+  social:
+  - https://www.facebook.com/profile.php?id=100090728117621
+  - https://www.instagram.com/par_focus/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-08
+sign_of_life_url: https://projectalwaysreceiving.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +114,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://projectalwaysreceiving.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - locations
+  - what_you_do
+  - first_step
+- url: https://projectalwaysreceiving.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

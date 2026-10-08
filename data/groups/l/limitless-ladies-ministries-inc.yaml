@@ -1,40 +1,56 @@
 id: limitless-ladies-ministries-inc
-name: Limitless Ladies Ministries Inc
+name: Limitless Ladies Ministries
 aka: []
 leads:
 - irs_990n:934398117
 - irs_bmf:934398117
 ein: '934398117'
-summary: null
-what_you_do: null
-kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A Christ-centered nonprofit ministry for women. It runs Love Bags, care packages of everyday
+  supplies and encouraging cards for people in need, plus teen workshops and life coaching.
+what_you_do: Sign up for a workshop from the events page, or help with Love Bags. The group asks people
+  to get in touch to learn how to help.
+kind: nonprofit
+categories:
+- faith-community
+- hunger-housing-basic-needs
+interests:
+- faith_service_projects
+- goods_closets
+motives:
+- values
+- social
+formats:
+- learn_skill
+- behind_the_scenes
+roles:
+- hands_on
+- help_teach
+crowd:
+- all_adults
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Workshops and events are listed on the events page for spring and summer 2025, including teen
+    workshops and a community event. No 2026 events are listed.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 43091
+- label: Mailing address (PO box)
+  address: PO Box 43091
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
   lat: null
   lng: null
@@ -58,23 +74,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Check the events page for the next teen or community workshop and use its link to register, or
+    call 302-468-7234 to ask about a workshop or about helping with Love Bags.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Workshops have a posted sign-up link and the group invites people to get in touch, but the site
+    does not say what a typical workshop involves.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: limitlessladiesministries.org
-  email: null
-  phone: null
+  website: https://limitlessladiesministries.org
+  email: slfowlkes@limitlessladiesforever.org
+  phone: 302-468-7234
   contact_name: Suzette L Fowlkes
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-08
+sign_of_life_url: https://limitlessladiesministries.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +109,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://limitlessladiesministries.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+  - locations
+- url: https://limitlessladiesministries.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,54 +5,77 @@ leads:
 - irs_990n:452639881
 - irs_bmf:452639881
 ein: '452639881'
-summary: null
-what_you_do: null
+summary: A meditation community rooted in Buddhist practice, open to anyone who wants to practice together.
+  It offers free online sessions and in-person gatherings in Philadelphia and nearby.
+what_you_do: Join a free online sit or discussion on the group's schedule, or attend an in-person gathering,
+  such as a morning session or a residential retreat.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- health-wellness
+- faith-community
+interests:
+- meditation_mindfulness
+- humanist_spiritual
+motives:
+- values
+- enhancement
+formats:
+- side_by_side
+- conversation
+roles:
+- figure_out
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: buddhist
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Online meditation sessions and discussion groups are on a calendar the site links. Six in-person
+    gatherings are listed for August to December 2026, mostly at Philadelphia venues, plus a residential
+    retreat outside the city.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 3526 Ainslie St
+- label: Summit Presbyterian (in-person gatherings)
+  address: 6757 Greene St
   neighborhood: null
-  planning_district: lower_northwest
-  zip: '19129'
+  planning_district: null
+  zip: '19119'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: PO Box 27097
+- label: Unitarian Society of Germantown, Sullivan Chapel (in-person gatherings)
+  address: 359 W. Johnson Street
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19118'
+  planning_district: null
+  zip: '19144'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Pendle Hill Retreat Center (residential retreat)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: '19086'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: Online offerings are free and open to the public. The site gives no fee for in-person gatherings.
 commitment: null
 group_size: null
 access:
@@ -67,23 +90,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  how: Use the Zoom link on the group's schedule page to join an online session, or email info@springboardsangha.org
+    to ask about an in-person gathering.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: Online sessions are open to the public and the site has a page describing each practice, but
+    it does not say beginners are specially welcome.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.springboardsangha.org
-  email: null
+  website: https://www.springboardsangha.org
+  email: info@springboardsangha.org
   phone: null
   contact_name: Paul W Martin
-  social: []
+  social:
+  - https://www.instagram.com/springboardmeditationcommunity/
+  - https://www.youtube.com/@SpringboardMeditationSangha
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.springboardsangha.org/upcoming-events/2026-in-person-meditation-offerings
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +127,26 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.springboardsangha.org/upcoming-events/2026-in-person-meditation-offerings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - status
+  - last_sign_of_life
+- url: https://www.springboardsangha.org/meditation-periods/schedule
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.springboardsangha.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

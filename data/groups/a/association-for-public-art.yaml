@@ -5,11 +5,11 @@ leads:
 - cultural_fund:association-for-public-art-3
 - irs_bmf:231367631
 ein: '231367631'
-summary: A Philadelphia organization that runs public art programs, including Art on the Parkway, and
-  keeps a public art map and an archive of public art from 1872 to 1980.
-what_you_do: See the public art on view, such as Let Freedom Ring at Cherry Street Pier and Franklin Thread
-  in Maja Park, come to a listed event or tour, or use the public art map. Class and volunteer roles are
-  not described.
+summary: A Philadelphia organization that runs public art projects, including Art on the Parkway, and
+  keeps a public art map and a digital archive of public art from 1872 to 1980.
+what_you_do: See public artworks on view outdoors, such as Let Freedom Ring at Cherry Street Pier and
+  Franklin Thread in Maja Park, join a walking tour, talk or family day from the events page, or browse
+  the public art map and archive. The pages read do not describe class or volunteer roles.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events and tours are posted on the Events and Tours page, which was not read. Public works on
-    view run through October 2026, and Let Freedom Ring through November 1, 2026.
+  text: Walking tours, talks and family days run as a series on posted dates, listed on the events page.
+    Public artworks stay on view outdoors for set periods.
   days: []
   times: []
   recurring: false
@@ -49,10 +49,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Cherry Street Pier (Let Freedom Ring), Race Street and Columbus Boulevard
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated on the homepage
+  text: Event costs are not listed on the events page, and the artwork page does not say whether viewing
+    is free.
 commitment: null
 group_size: null
 access:
@@ -67,15 +77,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: See Let Freedom Ring at Cherry Street Pier before November 1, 2026, or join the mailing list on
-    the site to hear about tours and events.
+  how: See Let Freedom Ring at Cherry Street Pier, on view through November 1, 2026, or open a walking
+    tour's own event page from the events page for its time, meeting place and cost.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The outdoor works can be seen at any time and the mailing list is public, but the event sign-up
-    route was not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The outdoor artworks are public, and each event has its own page. The events list does not show
+    sign up steps, so check each event page to see whether you need to register.
+  what_to_expect: Public artworks are outdoors, so a visit is a walk to the site, with the artwork page
+    listing Friday to Sunday hours from 2 to 8 pm for Let Freedom Ring. Walking tours, talks and family
+    days appear on the events page, and each links to its own page with the details. The events list does
+    not say how many people attend.
+  first_visit_tips:
+  - Open the public art map to find artworks, then open each artwork's own page for its dates and site.
+  - Check each event page for the start time and meeting spot, since the events list shows only dates.
 contacts:
   website: https://www.associationforpublicart.org/
   email: null
@@ -85,7 +100,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.associationforpublicart.org/
+sign_of_life_url: https://www.associationforpublicart.org/events/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=2
   seen: '2026-10-04'
@@ -107,7 +122,29 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+- url: https://www.associationforpublicart.org/events/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://www.associationforpublicart.org/public-art-map/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://www.associationforpublicart.org/artwork/let-freedom-ring/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+  - first_step
+  - what_to_expect
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

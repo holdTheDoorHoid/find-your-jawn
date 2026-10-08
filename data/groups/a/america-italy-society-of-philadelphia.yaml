@@ -6,8 +6,8 @@ leads:
 ein: '231539206'
 summary: A nonprofit that links Philadelphia with Italy through Italian language courses, conversation
   classes, film nights, concerts and an Italian book club.
-what_you_do: Take a term of Italian classes or a conversation class, or come to the film nights, concerts
-  and book club meetings listed on its calendar.
+what_you_do: Take a 12-week Italian course or a weekly conversation class, or come to the film nights,
+  concerts and events on its calendar. The Italian Book Club is free for members.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -21,6 +21,7 @@ motives:
 - social
 formats:
 - learn_skill
+- conversation
 - one_off_event
 roles:
 - figure_out
@@ -37,31 +38,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Language courses run in terms: the fall term runs September 28 to December 19, and winter enrollment
-    is coming soon. Film, concert and book club events are listed by date.'
+  text: Regular Italian courses run in 12-week terms, one 90-minute class a week, in person or online.
+    Conversation classes meet for an hour a week for 12 weeks at several levels and times. Film nights,
+    concerts and book club meetings are listed by date on the calendar.
   days: []
   times: []
   recurring: true
-  season: fall
+  season: year_round
 locations:
 - label: Language school
   address: 230 S. Broad St., Suite 1105, Philadelphia, PA
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19102'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Regular courses cost $450, or $425 for members. Conversation classes cost $280 for 12 weeks. Membership
+    is not required for courses, but the Italian Book Club is only for members.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - it
   notes: null
 requirements:
   act153_clearances: null
@@ -71,14 +76,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Contact the front desk at ais.frontdesk@aisphila.org or call 215-735-3250 about the next term or
-    an event
+  how: On the regular courses page, click Enroll on a 101 course, the beginner level. If you are new and
+    want a higher level, take the placement test first.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site lists courses and events but does not say whether membership is needed to join classes
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The courses start at a beginner level (101) with a plain enroll button, and the conversation
+    classes include a beginner class that starts October 14, 2026.
+  what_to_expect: Regular courses run 12 weeks with one 90-minute class a week, in person or online, and
+    a course will not start with fewer than 4 students. Conversation classes meet for an hour a week for
+    12 weeks at beginner, pre-intermediate, intermediate and advanced levels. New students take a placement
+    test first.
+  first_visit_tips:
+  - Books for levels 101 to 203 are pickup only at the school.
+  - New students who want a level above 101 must take the placement test, and its fee comes off tuition.
+  - Class recording is not allowed.
+  - Call 215-735-3250 or email the front desk to choose a level before you enroll.
 contacts:
   website: https://www.aisphila.org
   email: ais.frontdesk@aisphila.org
@@ -88,7 +101,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.aisphila.org/
+sign_of_life_url: https://www.aisphila.org/conversation-classes
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -105,8 +118,41 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://www.aisphila.org/regular-language-courses
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - online_ok
+  - first_step
+  - newcomer_friendliness
+  - basis
+  - what_to_expect
+  - first_visit_tips
+  - access
+- url: https://www.aisphila.org/conversation-classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.aisphila.org/the-italian-book-club-of-philadelphia
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - cost
+  - schedule
+- url: https://www.aisphila.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

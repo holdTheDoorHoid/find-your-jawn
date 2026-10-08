@@ -4,36 +4,58 @@ aka: []
 leads:
 - irs_bmf:231365233
 ein: '231365233'
-summary: null
-what_you_do: null
+summary: A Lutheran congregation in North Philadelphia with Sunday worship at 10:30 am, in person and
+  online. The church runs Katie's Cupboard, a food pantry at its building, but the site does not list
+  its hours.
+what_you_do: Attend Sunday worship in person or watch the virtual service, or call or email to ask about
+  the pantry.
 kind: congregation
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- hunger-housing-basic-needs
+- faith-community
+interests:
+- food_pantry
+- worship_community
+motives:
+- values
+formats:
+- side_by_side
 roles: []
-crowd: []
+crowd:
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Sunday worship at 10:30 am in person, with a virtual service posted on Sundays. Katie's Cupboard
+    hours are not listed.
+  days:
+  - sun
+  times:
+  - morning
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 4860 N Howard St
+- label: Sanctuary
+  address: 4843 N Mascher Street
   neighborhood: null
-  planning_district: upper_north
+  planning_district: null
+  zip: '19120'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Katie's Cupboard food pantry
+  address: 4860 N Howard Street
+  neighborhood: null
+  planning_district: null
   zip: '19120'
   lat: null
   lng: null
@@ -42,8 +64,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not listed on the site
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +79,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Attend Sunday worship at 10:30 am, or call or email to ask about the pantry.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The site invites visitors to Sunday worship and gives a phone and email, but describes no newcomer
+    program.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: http://www.taborphila.org/
+  email: taborphila@gmail.com
+  phone: 215-455-1706
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.taborphila.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +104,22 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.taborphila.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://www.sepa.org/_files/ugd/6750c7_016223f99ae44b8780c2e8db3e12ea90.pdf
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

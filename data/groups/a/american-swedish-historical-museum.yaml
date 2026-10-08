@@ -6,8 +6,8 @@ leads:
 ein: null
 summary: A museum in South Philadelphia that shares Scandinavian history and culture through exhibits,
   events, classes, and volunteer work.
-what_you_do: Visit the exhibits, come to an event or the Centennial Gala, take a family or adult education
-  program, or volunteer through the Support page.
+what_you_do: Visit the exhibits, take a family or adult education program, or volunteer for events such
+  as Lucia Festival or Midsommarfest.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -41,7 +41,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open Tuesday to Sunday, 10 am to 4 pm
+  text: Open Tuesday to Sunday, 10 am to 4 pm, and closed Mondays and on major holidays. Admission is
+    free on the second Sunday of each month.
   days:
   - tue
   - wed
@@ -65,14 +66,18 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: null
+  level: low
+  text: Adults $15, seniors, students and military $10, children 5 to 11 $5, and children under 5 free.
+    Members are admitted free (individual membership $55, student or senior $45), and the second Sunday
+    of each month is free for everyone.
 commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Accessible parking is on Pattison Avenue by the rear entrance, and caregivers of visitors with
+    special needs do not pay admission. Service dogs are welcome, but emotional support, comfort and therapy
+    dogs are not.
 requirements:
   act153_clearances: null
   background_check: null
@@ -81,15 +86,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Visit during open hours, or fill in the volunteer form on the Support page to help with events
-    and the collection.
-  drop_in: null
+  how: Visit during open hours, Tuesday to Sunday, 10 am to 4 pm. To volunteer, email the contact listed
+    for the role you want on the volunteer page.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public museum with a visible volunteer and membership page, though the steps are not spelled
-    out.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The museum is open to visitors with posted hours and prices, and each volunteer role lists a
+    contact to email. The page does not say whether beginners can volunteer, except that the gift shop
+    role offers training.
+  what_to_expect: A visit means walking through the museum's exhibits on Scandinavian history and culture
+    during open hours. Admission is charged except for members, children under 5, and visitors on the
+    free second Sunday of the month.
+  first_visit_tips:
+  - Check the hours first, since the museum is closed on Mondays and on major holidays.
+  - Ring the doorbell at the back entrance to be let in.
+  - Service dogs are welcome, but emotional support, comfort and therapy dogs are not.
+  - Visit on the second Sunday of the month if you want free admission.
 contacts:
   website: http://www.americanswedish.org
   email: null
@@ -119,12 +131,34 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - sign_of_life_url
 - url: http://www.americanswedish.org
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
-research_tier: 1
+  - summary
+  - contacts
+  - status
+- url: https://www.americanswedish.org/visit
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - access
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.americanswedish.org/support/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - basis
+- url: https://www.americanswedish.org/support/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

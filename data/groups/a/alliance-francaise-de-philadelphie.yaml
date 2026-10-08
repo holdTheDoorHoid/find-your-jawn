@@ -3,10 +3,10 @@ name: Alliance Française de Philadelphie
 aka: []
 leads: []
 ein: null
-summary: The French cultural center in Philadelphia. It runs French conversation classes, informal French
-  meals around the city, and monthly book clubs for adults and teens.
-what_you_do: Join a current-events conversation class (intermediate and advanced only), a French-speaking
-  meal at a restaurant, or a monthly book club discussed in French.
+summary: The French cultural center in Philadelphia. It teaches adults French from A1 (beginner) to C1
+  (advanced), and it runs French conversation meals and book clubs for adults and teens.
+what_you_do: Take a French class at any level from A1 to C1, online or in person, join a French Tables
+  meal to practice with native speakers, or come to a book club.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -18,6 +18,7 @@ motives:
 - understanding
 - social
 formats:
+- learn_skill
 - conversation
 roles:
 - figure_out
@@ -35,8 +36,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Recurring French conversation classes, French Tables meals and monthly book clubs. The day and
-    time of each one are on its upcoming-event pages.
+  text: Adult French classes run in 10-week sessions each season, once a week for 1.5 to 2 hours, in person
+    in Center City or online. French Tables meals and book clubs repeat on the dates listed on their event
+    pages.
   days: []
   times: []
   recurring: true
@@ -46,37 +48,46 @@ locations:
   address: 1420 Walnut Street, Suite 700, Philadelphia
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19102'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Adult classes cost $375 per 10-week session, plus course materials. Individual membership is $65
+    and student membership (26 or younger) is $45. Members get discounts on events and can borrow from
+    the library.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - fr
   notes: null
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email alliance@afphila.com or open the upcoming-event page for the event you want
+  how: Open the adult classes page, pick a class at your level, and register. If you have studied French
+    before, take the short placement test first.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The Newsroom is for intermediate and advanced learners only, and the site does not say how a
-    beginner starts with the other events
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The adult classes page says complete beginners can check the class schedule and register, and
+    that the placement test is for people who have studied French or spent time in a French-speaking country.
+  what_to_expect: Classes meet once a week for 1.5 to 2 hours, with no more than 8 students, in person
+    in Center City or online. A 10-week session costs $375 and must be paid in advance, with materials
+    extra. The Alliance also runs French Tables meals where you practice with native speakers.
+  first_visit_tips:
+  - A refund needs a call to the office more than a day before the first class.
+  - Events are held at different venues, so check the event page for the address before you go.
+  - Sessions run each season (fall, winter, spring and summer), so pick the term that starts next.
 contacts:
   website: https://afphila.com
   email: alliance@afphila.com
@@ -85,8 +96,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-07
-sign_of_life_url: https://afphila.com/cultural-events/recurring-events
+last_sign_of_life: 2026-09
+sign_of_life_url: https://afphila.com/learn-french/adult-classes/
 sources:
 - url: https://afphila.com/cultural-events/recurring-events
   seen: '2026-10-08'
@@ -97,8 +108,38 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
-confidence: medium
+  - what_you_do
+  - formats
+- url: https://afphila.com/learn-french/adult-classes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - newcomer_friendliness
+  - basis
+  - online_ok
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://afphila.com/learn-french/adult-classes/step-2-schedule/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - what_to_expect
+- url: https://afphila.com/learn-french/placement-test/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://afphila.com/membership-and-support/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

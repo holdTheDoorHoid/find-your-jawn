@@ -7,9 +7,9 @@ leads:
 - irs_bmf:383714248
 ein: '383714248'
 summary: A nonprofit that presents live new jazz and improvised music in Philadelphia, mostly at the Solar
-  Myth venue. It also runs a mentoring series and a podcast.
-what_you_do: Buy a ticket to a listed show, join the mailing list for news, or visit the Volunteer page
-  to see how to help at events.
+  Myth venue. It also runs a mentoring series, a podcast, and a membership program.
+what_you_do: Buy a ticket to a listed show, join the mailing list for news, become a member for ticket
+  discounts, or sign up on the Volunteer page to help at events.
 kind: nonprofit
 categories:
 - music
@@ -22,6 +22,7 @@ formats:
 - one_off_event
 roles:
 - help_teach
+- hands_on
 crowd: []
 bridging: null
 audience:
@@ -34,12 +35,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Concerts are held most months at Solar Myth, usually at 8 pm. Buy tickets for a listed show through
+    its ticket link.
   days: []
-  times: []
-  recurring: null
-  season: null
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
+- label: Solar Myth (main concert venue)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Office
   address: 1901 S 9th St, Suite 509
   neighborhood: null
@@ -51,8 +63,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: null
+  level: paid
+  text: Tickets are sold per show, and prices are not listed on the pages we checked. Membership is billed
+    monthly, from $10 a month to $150 a month, and includes ticket discounts.
 commitment: one_off
 group_size: null
 access:
@@ -67,24 +80,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to an upcoming show through the event link on arsnovaworkshop.org, or join the mailing
-    list
+  how: Buy a ticket to an upcoming show through the ticket link on the What's On page, or join the mailing
+    list first to hear about new dates.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public concerts are sold with ticket links, so anyone can attend without membership
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts are sold to anyone through ticket links, and the volunteer form is open to the public.
+    The site has no beginner program, so this is about attending shows rather than learning a skill.
+  what_to_expect: Most shows are evening concerts at Solar Myth, usually starting at 8 pm. Tickets are
+    bought through linked ticketing pages, and some shows sell out, so buy early. Members get early access
+    and discounts if you plan to come often.
+  first_visit_tips:
+  - Plan for an evening start, since most listed shows begin at 8 pm.
+  - Buy tickets ahead through the ticket link, since some shows sell out.
+  - If you want to help at events, use the online volunteer form; it places you in a pool of volunteers.
 contacts:
   website: https://www.arsnovaworkshop.org/
-  email: null
+  email: membership@arsnovaworkshop.org
   phone: null
   contact_name: Mark Christman
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.arsnovaworkshop.org/
+sign_of_life_url: https://www.arsnovaworkshop.org/whats-on/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=1
   seen: '2026-10-04'
@@ -114,8 +133,34 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+  - contacts
+- url: https://www.arsnovaworkshop.org/whats-on/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.arsnovaworkshop.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+  - contacts
+- url: https://www.arsnovaworkshop.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - first_step
+  - first_visit_tips
+- url: https://www.arsnovaworkshop.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

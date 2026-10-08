@@ -6,10 +6,10 @@ leads:
 - irs_bmf:232524428
 - manual_seeds:anna-crusis-feminist-choir
 ein: '232524428'
-summary: A nonprofit feminist choir in Philadelphia that welcomes new singers through auditions. The most
-  recent audition round we found was held in July 2026.
-what_you_do: Audition to join as a singer and sing with the choir. Supporters can also give a donation
-  of their choosing.
+summary: A feminist choir in Philadelphia, founded in 1975, that sings songs on feminist and LGBTQ+ themes.
+  It welcomes new singers through auditions and produces two major concerts each year.
+what_you_do: Audition to join as a singer, come to one of the two major concerts each year, or volunteer
+  during a concert or in another role. You can also give a donation.
 kind: nonprofit
 categories:
 - music
@@ -22,23 +22,26 @@ formats:
 - perform_make_together
 roles:
 - create
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
+  - transgender
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Rehearsal times are not listed on the site. Auditions were held in Center City on 2026-07-25 and
-    2026-07-26.
+  text: Rehearsal days and times are not published on the site. New singers join through auditions that
+    are announced to the newsletter list, and the choir produces two major concerts each year.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Center City, Philadelphia (auditions)
@@ -53,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The site invites donations and lists no membership fee. Joining costs are not stated.
+  text: No membership fee is listed, and donations are invited.
 commitment: null
 group_size: null
 access:
@@ -68,24 +71,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the audition page at annacrusis.org/auditions/ for the next round, then sign up for an audition.
+  how: Sign up for the annacrusis.org newsletter to get the next audition details, then apply for an audition.
   drop_in: null
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Joining requires an audition, and the next audition date is not listed. The site says all SSAA
-    voices are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining means an audition, and the next round is not posted yet. The site says audition details
+    go out by newsletter.
+  what_to_expect: Your first step is an audition in Center City, Philadelphia. The 2026 round was held
+    on July 25 and 26, and the choir announces each round to its newsletter list. ANNA also produces two
+    major concerts each year.
+  first_visit_tips:
+  - The site does not say what to prepare for an audition, so ask at info@annacrusis.org or 267-825-7464
+    before you sign up.
+  - Rehearsal days, times and place are not published, so ask the same way.
+  - The choir also recruits nonsinging volunteers and board members.
 contacts:
   website: https://annacrusis.org
-  email: null
-  phone: null
+  email: info@annacrusis.org
+  phone: 267-825-7464
   contact_name: Ann Deinhardt
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-07
-sign_of_life_url: https://annacrusis.org/auditions/
+sign_of_life_url: https://annacrusis.org
 sources:
 - url: https://philaculturalfund.org/community-calendar
   seen: '2026-10-04'
@@ -113,7 +122,29 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - basis
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://annacrusis.org/auditions/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+- url: https://annacrusis.org/about-anna/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - crowd
+- url: https://annacrusis.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://annacrusis.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

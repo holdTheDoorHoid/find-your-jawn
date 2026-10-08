@@ -1,49 +1,56 @@
 id: cathedral-childcare-inc
-name: Cathedral Childcare Inc
-aka: []
+name: Philadelphia Episcopal Cathedral
+aka:
+- Cathedral Childcare Inc
 leads:
 - irs_990n:465469534
 - irs_bmf:465469534
 ein: '465469534'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: The cathedral of the Episcopal Diocese of Pennsylvania in Center City. It holds a Sunday 10 am
+  service and noonday services on Wednesdays and Fridays, and it has a newcomers form and a survey to
+  help people find a ministry.
+what_you_do: Come to Sunday Eucharist at 10 am or a noon Eucharist on a Wednesday or Friday, fill out
+  the newcomers form, or take the survey to find a ministry.
+kind: congregation
+categories:
+- faith-community
+interests:
+- worship_community
+motives:
+- values
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- neighbors
+- newcomers
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: protestant
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Sunday Holy Eucharist at 10 am. Noonday Eucharist on Wednesdays and Fridays (the time is not stated
+    on the page).
+  days:
+  - sun
+  - wed
+  - fri
+  times:
+  - morning
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 3717 Chestnut Street Suite 200
+- label: Cathedral
+  address: 19 South 38th Street
   neighborhood: null
-  planning_district: university_southwest
-  zip: '19104'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 3701 Chestnut Street No 6W
-  neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
@@ -52,8 +59,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not listed on the site
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +74,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Attend the Sunday 10 am service, or fill out the newcomers form on the site.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site has a newcomers form and a ministry survey, and it invites visitors to services.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: WWW.PHILADELPHIACATHEDRAL.ORG
-  email: null
-  phone: null
+  website: http://www.philadelphiacathedral.org/
+  email: info@philadelphiacathedral.org
+  phone: 215-386-0234
   contact_name: The Organization
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: http://www.philadelphiacathedral.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +107,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://www.philadelphiacathedral.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://www.interfaithphiladelphia.org/location/philadelphia-cathedral-episcopal/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
