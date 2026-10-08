@@ -35,6 +35,15 @@ describe('interface strings', () => {
   });
 });
 
+describe('sample data', () => {
+  it('follows the same no dashes rule in its text', () => {
+    const raw = readFileSync(join(process.cwd(), 'fixtures/data/groups.json'), 'utf8');
+    const texts = [...walk(JSON.parse(raw), 'groups')].filter(([path]) => !/\.(url|website|email|id|slug)$/.test(path)).map(([, s]) => s);
+    const bad = texts.filter((s) => !/^https?:/.test(s) && (s.includes(EM) || s.includes(EN) || / - /.test(s)));
+    expect(bad).toEqual([]);
+  });
+});
+
 function sourceFiles(dir: string): string[] {
   const out: string[] = [];
   for (const name of readdirSync(dir)) {

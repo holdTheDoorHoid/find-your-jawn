@@ -1,7 +1,7 @@
 import { OTHER_REGION, REGIONS } from './geo';
 import { prettify, titleCase } from './text';
 import type { Group, Vocab } from './types';
-import { districtFor } from './vocab';
+import { browsableFamilies, districtFor } from './vocab';
 
 // What the browse island needs from the vocabulary, worked out while the site builds so the island
 // does not have to download vocab.json. Small, and serialized into the page.
@@ -39,7 +39,7 @@ export function makeBrowseConfig(groups: Group[], vocab: Vocab, built: string): 
   const familyIds = new Set<string>(vocab.families.map((f) => f.id));
   const used = new Set<string>();
   for (const g of groups) for (const c of g.categories) used.add(c);
-  const families: BrowseFamily[] = vocab.families.map((f) => ({ id: f.id, label: f.label, icon: f.icon }));
+  const families: BrowseFamily[] = browsableFamilies(vocab).map((f) => ({ id: f.id, label: f.label, icon: f.icon }));
   for (const id of used) if (!familyIds.has(id)) families.push({ id, label: prettify(id) });
 
   // Districts that appear in the data, grouped by region.
@@ -63,6 +63,7 @@ export function makeBrowseConfig(groups: Group[], vocab: Vocab, built: string): 
   if (other.length) regions.push({ id: OTHER_REGION.id, label: OTHER_REGION.label, districts: other });
 
   const labels: Record<string, string> = {};
+  for (const f of vocab.families) labels[f.id] = f.label;
   for (const f of families) labels[f.id] = f.label;
   for (const g of groups) for (const id of g.interests) if (!labels[id]) labels[id] = vocab.tagLabels.get(id) ?? prettify(id);
 

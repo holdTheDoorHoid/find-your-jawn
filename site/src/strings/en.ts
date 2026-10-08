@@ -69,7 +69,7 @@ export const labels = {
   } as Record<string, string>,
   kind: {
     nonprofit: 'Nonprofit',
-    civic: 'Civic group',
+    civic: 'Neighborhood or civic group',
     club: 'Club',
     team: 'Team or league',
     student_org: 'Student group',
@@ -77,7 +77,7 @@ export const labels = {
     friends_group: 'Friends group',
     garden: 'Garden',
     program: 'Program',
-    network: 'Network',
+    network: 'Network or meetup',
     support_group: 'Support group',
   } as Record<string, string>,
   commitment: {
@@ -158,15 +158,18 @@ export const labels = {
   } as Record<string, string>,
   faith: {
     catholic: 'Catholic',
-    muslim: 'Muslim',
-    jewish: 'Jewish',
     protestant: 'Protestant',
-    interfaith: 'Interfaith',
+    black_church: 'Black church',
+    orthodox_christian: 'Orthodox Christian',
+    jewish: 'Jewish',
+    muslim: 'Muslim',
     buddhist: 'Buddhist',
     hindu: 'Hindu',
     sikh: 'Sikh',
     quaker: 'Quaker',
-    orthodox: 'Orthodox',
+    unitarian: 'Unitarian Universalist',
+    interfaith: 'Interfaith',
+    other: 'Another tradition',
   } as Record<string, string>,
   school: {
     penn: 'Penn',
@@ -731,6 +734,7 @@ export const home = {
     title: 'Match me',
     text: 'Answer a few quick questions. Get a short list of groups that fit you, why each one fits, and how to show up the first time.',
     cta: 'Match me',
+    status: 'Almost ready',
   },
   browse: {
     title: 'Browse everything',

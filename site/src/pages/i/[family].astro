@@ -8,17 +8,19 @@ import { fill } from '../../lib/inline';
 import { suggestGroupUrl } from '../../lib/issues';
 import { interestPath, withBase } from '../../lib/site';
 import { compareNames, prettify } from '../../lib/text';
+import { browsableFamilies } from '../../lib/vocab';
 import type { InterestFamily } from '../../lib/types';
 import { interests as t } from '../../strings/en';
 
 export function getStaticPaths() {
   const vocab = loadVocab();
   const { groups } = loadGroups();
-  const families: InterestFamily[] = [...vocab.families];
+  // Support only families (support and recovery) have no interest page: those groups live on /support/.
+  const families: InterestFamily[] = [...browsableFamilies(vocab)];
   // A family named only in the data still gets a page, so links from group pages never break.
   for (const g of groups) {
     for (const id of g.categories) {
-      if (!families.some((f) => f.id === id)) families.push({ id, label: prettify(id), tags: [] });
+      if (!vocab.familyById.has(id) && !families.some((f) => f.id === id)) families.push({ id, label: prettify(id), tags: [] });
     }
   }
   return families.map((family) => ({ params: { family: family.id }, props: { family } }));
@@ -47,7 +49,7 @@ const tagNames = family.tags.map((x) => x.label.toLowerCase());
         list.length > 0 ? (
           <>
             <p><a href={withBase(`browse/?fam=${encodeURIComponent(family.id)}`)}>{t.refine}</a></p>
-            <GroupList groups={list} places={places} />
+            <GroupList groups={list} places={places} headingLevel={2} />
           </>
         ) : (
           <div class="empty">

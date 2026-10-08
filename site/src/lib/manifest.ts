@@ -75,7 +75,7 @@ export function normalizeManifest(raw: unknown): Manifest {
   return {
     built: str(o.built) ?? str(o.built_at) ?? str(o.date),
     fixture: o.fixture === true,
-    total: firstDefined(num(o.total), num(o.count), num(counts.total), num(counts.groups)),
+    total: firstDefined(num(o.published), num(o.total), num(o.count), num(counts.total), num(counts.groups)),
     byStatus: pickMap('by_status', 'status'),
     byTier: pickMap('by_tier', 'tier', 'tiers'),
     byCategory: pickMap('by_category', 'category', 'categories'),
@@ -88,7 +88,6 @@ export function normalizeManifest(raw: unknown): Manifest {
       num(tier0.unchecked),
       num(tier0.count),
       num(obj(counts.by_tier)['0']),
-      num(obj(o.by_tier)['0']),
     ),
     coverage: coverageRows(o.coverage ?? o.coverage_estimates ?? o.estimates),
   };

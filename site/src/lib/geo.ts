@@ -3,7 +3,7 @@
 
 export const REGIONS: { id: string; label: string }[] = [
   { id: 'center-city', label: 'Center City' },
-  { id: 'north', label: 'North and River Wards' },
+  { id: 'north', label: 'North' },
   { id: 'northeast', label: 'Northeast' },
   { id: 'northwest', label: 'Northwest' },
   { id: 'west-southwest', label: 'West and Southwest' },

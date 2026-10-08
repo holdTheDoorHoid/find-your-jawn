@@ -161,7 +161,7 @@ export default function MyListApp({ dataVersion, places }: Props) {
                 <li key={s.id}>
                   <div class="saved-item">
                     {g ? (
-                      <GroupCard group={g} places={places} />
+                      <GroupCard group={g} places={places} headingLevel={2} />
                     ) : load === 'ready' ? (
                       <div class="gcard">
                         <p class="kind">{s.id}</p>

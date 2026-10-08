@@ -264,6 +264,14 @@ strong {
   margin: 0;
 }
 
+@media (max-width: 40rem) {
+  .notice {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    padding: 0.45rem 0;
+  }
+}
+
 .notice--sample {
   background: var(--sample-bg);
   color: var(--sample-ink);
@@ -282,6 +290,11 @@ strong {
   margin-bottom: 0;
 }
 
+.callout a {
+  color: var(--note-ink);
+  font-weight: 700;
+}
+
 /* header */
 
 .site-header {
@@ -289,7 +302,7 @@ strong {
   border-bottom: 1px solid var(--line);
 }
 
-.site-header .wrap-wide {
+.site-header .header-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

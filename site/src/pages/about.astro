@@ -8,6 +8,13 @@ import { about as t } from '../strings/en';
 const sources = loadSources();
 const handMade = t.sourceHandMade;
 
+// Many registry URLs are data endpoints (an API or a CSV). Only link to pages a person can read.
+function pageLink(url: string): string | null {
+  const href = safeHttpUrl(url);
+  if (!href) return null;
+  return /\/(rest|api)\/|\.(csv|json|ya?ml)(\?|$)|[?&]format=/i.test(href) ? null : href;
+}
+
 // One credit line per attribution. Sources with no real attribution go under a plain heading.
 function creditOf(s: SourceEntry): string {
   return !s.attribution || /^see /i.test(s.attribution) ? handMade : s.attribution;
@@ -48,7 +55,7 @@ const credits = group(open);
                       <ul>
                         {
                           list.map((s) => {
-                            const href = safeHttpUrl(s.url);
+                            const href = pageLink(s.url);
                             return (
                               <li>
                                 {s.name}
@@ -74,7 +81,7 @@ const credits = group(open);
               <ul>
                 {
                   leadOnly.map((s) => {
-                    const href = safeHttpUrl(s.url);
+                    const href = pageLink(s.url);
                     return (
                       <li>
                         {s.name}

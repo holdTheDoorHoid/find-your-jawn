@@ -2,8 +2,8 @@
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { loadManifest } from '../lib/data';
-import { absoluteUrl, basePath, withBase } from '../lib/site';
-import { notice, site } from '../strings/en';
+import { absoluteUrl, withBase } from '../lib/site';
+import { site } from '../strings/en';
 import '../styles/global.css';
 
 interface Props {
@@ -23,7 +23,6 @@ const { title, description = site.description, path, fullTitle = false, ogType =
 const pageTitle = fullTitle ? title : `${title} | ${site.name}`;
 const canonical = absoluteUrl(path);
 const sample = loadManifest().fixture;
-const base = basePath();
 const csp =
   "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'";
 ---
@@ -52,23 +51,9 @@ const csp =
     <meta name="twitter:description" content={description} />
     {import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content={csp} />}
   </head>
-  <body class={calm ? 'calm' : undefined} data-base={base}>
+  <body class={calm ? 'calm' : undefined}>
     <a class="skip-link" href="#main">{site.skipLink}</a>
-    {
-      sample && (
-        <div class="notice notice--sample" role="note">
-          <div class="wrap-wide">
-            <p><strong>{notice.fixtureTitle}</strong> {notice.fixtureText}</p>
-          </div>
-        </div>
-      )
-    }
-    <div class="notice" role="note">
-      <div class="wrap-wide">
-        <p><strong>{notice.title}</strong> {notice.text}</p>
-      </div>
-    </div>
-    <Header />
+    <Header sample={sample} />
     <main id="main" tabindex="-1">
       <slot />
     </main>

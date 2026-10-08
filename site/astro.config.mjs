@@ -10,5 +10,9 @@ export default defineConfig({
   build: { format: 'directory' },
   compressHTML: true,
   devToolbar: { enabled: false },
-  integrations: [preact(), sitemap()],
+  integrations: [
+    preact(),
+    // My list is private to each visitor and the 404 page is not a page, so neither goes in the sitemap.
+    sitemap({ filter: (page) => !page.includes('/my-list/') && !page.endsWith('/404.html') }),
+  ],
 });

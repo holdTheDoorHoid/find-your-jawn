@@ -2,6 +2,7 @@
 import InterestTiles from '../components/InterestTiles.astro';
 import { isBrowsable } from '../lib/filters';
 import { loadGroups, loadVocab } from '../lib/data';
+import { browsableFamilies } from '../lib/vocab';
 import { fill } from '../lib/inline';
 import { suggestGroupUrl } from '../lib/issues';
 import { withBase } from '../lib/site';
@@ -13,7 +14,7 @@ const vocab = loadVocab();
 const browsable = groups.filter(isBrowsable);
 const counts: Record<string, number> = {};
 for (const g of browsable) for (const c of g.categories) counts[c] = (counts[c] ?? 0) + 1;
-const families = vocab.families.filter((f) => (counts[f.id] ?? 0) > 0);
+const families = browsableFamilies(vocab).filter((f) => (counts[f.id] ?? 0) > 0);
 
 const guides = [paths.serviceHours, paths.courtOrdered, paths.families, paths.newToPhilly];
 ---
@@ -32,6 +33,7 @@ const guides = [paths.serviceHours, paths.courtOrdered, paths.families, paths.ne
         <div class="doors">
           <div class="door">
             <h2>{home.match.title}</h2>
+            <p><span class="badge badge--note">{home.match.status}</span></p>
             <p>{home.match.text}</p>
             <a class="btn" href={withBase('match/')}>{home.match.cta}</a>
           </div>

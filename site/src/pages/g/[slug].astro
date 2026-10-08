@@ -51,8 +51,8 @@ const openText =
   openTo === 'students' && g.audience.school
     ? fill(t.who.school, { school: schoolName(g.audience.school) })
     : (labels.openTo[openTo] ?? titleCase(openTo));
-const communities = g.audience.community.map((c) => communityLabel(c, vocab.labels.audiences?.get(c)));
-const crowd = g.crowd.map((c) => labelFor(vocab, 'audiences', c));
+const communities = g.audience.community.map((c) => communityLabel(c, (section, id) => vocab.labels[section]?.get(id)));
+const crowd = g.crowd.map((c) => labelFor(vocab, 'crowd', c));
 const faithText = isFaithGroup(g)
   ? g.audience.faith
     ? fill(t.who.faith, { faith: labels.faith[g.audience.faith] ?? titleCase(g.audience.faith) })
@@ -102,7 +102,10 @@ const sourceItems = g.sources.map((s) => {
 });
 
 // related
-const families = g.categories.slice(0, 3).map((id) => ({ id, label: familyLabel(vocab, id) }));
+const families = g.categories
+  .filter((id) => !vocab.familyById.get(id)?.supportOnly)
+  .slice(0, 3)
+  .map((id) => ({ id, label: familyLabel(vocab, id) }));
 const { groups: all } = loadGroups();
 const familyCount = (id: string) => all.filter((x) => x.categories.includes(id) && !x.audience.support_group).length;
 

@@ -41,12 +41,22 @@ export function GroupCard({ group, places, maxBadges = 6, headingLevel = 3 }: Pr
   );
 }
 
-export function GroupList({ groups, places, two = false }: { groups: Group[]; places?: Record<string, string>; two?: boolean }) {
+export function GroupList({
+  groups,
+  places,
+  two = false,
+  headingLevel = 3,
+}: {
+  groups: Group[];
+  places?: Record<string, string>;
+  two?: boolean;
+  headingLevel?: 2 | 3;
+}) {
   return (
     <ul class={two ? 'group-list group-list--two' : 'group-list'}>
       {groups.map((g) => (
         <li key={g.id}>
-          <GroupCard group={g} places={places} />
+          <GroupCard group={g} places={places} headingLevel={headingLevel} />
         </li>
       ))}
     </ul>

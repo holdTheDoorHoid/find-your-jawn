@@ -1,6 +1,7 @@
 import { formatDate, formatMonthYear, monthsSince } from './dates';
 import { clip, hostOf, prettify } from './text';
 import { fill } from './inline';
+import { languageName } from './language';
 import { group as t, labels } from '../strings/en';
 import type { Group, GroupSource } from './types';
 
@@ -119,9 +120,16 @@ const COMMUNITY: Record<string, string> = {
   deaf: 'Deaf and hard of hearing',
 };
 
-/** A label for an affinity such as "lgbtq". Uses the vocabulary first, then a short built in list. */
-export function communityLabel(id: string, vocabLabel?: string): string {
-  return vocabLabel ?? COMMUNITY[id] ?? prettify(id);
+/**
+ * A label for an `audience.community` value. Values are plain ids such as "lgbtq", or carry a
+ * prefix: "heritage:irish" and "language:es" (data/vocab/audiences.yaml). `lookup` finds a label in
+ * the vocabulary section that owns the id.
+ */
+export function communityLabel(value: string, lookup: (section: string, id: string) => string | undefined = () => undefined): string {
+  const [prefix, rest] = value.includes(':') ? (value.split(':', 2) as [string, string]) : ['', value];
+  if (prefix === 'heritage') return `${lookup('heritage', rest) ?? prettify(rest)} heritage`;
+  if (prefix === 'language') return `${languageName(rest)} speakers`;
+  return lookup('community', rest) ?? COMMUNITY[rest] ?? prettify(rest);
 }
 
 /** "Saturday and Sunday" from ["sat", "sun"], in week order. */

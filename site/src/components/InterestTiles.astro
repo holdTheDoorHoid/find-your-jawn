@@ -1,13 +1,17 @@
 ---
-import { withBase, interestPath } from '../lib/site';
+import { fill } from '../lib/inline';
+import { interestPath, withBase } from '../lib/site';
+import { interests as t } from '../strings/en';
 import type { InterestFamily } from '../lib/types';
 
 interface Props {
   families: InterestFamily[];
   counts?: Record<string, number>;
   wide?: boolean;
+  headingLevel?: 2 | 3;
 }
-const { families, counts = {}, wide = false } = Astro.props;
+const { families, counts = {}, wide = false, headingLevel = 3 } = Astro.props;
+const Heading = `h${headingLevel}` as 'h2' | 'h3';
 ---
 
 <ul class={wide ? 'tiles tiles--wide' : 'tiles'}>
@@ -15,12 +19,12 @@ const { families, counts = {}, wide = false } = Astro.props;
     families.map((f) => (
       <li>
         <div class="tile">
-          <h3>
+          <Heading>
             {f.icon && <span class="icon" aria-hidden="true">{f.icon}</span>}
             <a href={withBase(interestPath(f.id))}>{f.label}</a>
-          </h3>
+          </Heading>
           {f.blurb && <p>{f.blurb}</p>}
-          {counts[f.id] !== undefined && <p>{counts[f.id] === 1 ? '1 group' : `${counts[f.id]} groups`}</p>}
+          {counts[f.id] !== undefined && <p>{counts[f.id] === 0 ? t.countNone : counts[f.id] === 1 ? t.countOne : fill(t.count, { n: counts[f.id] })}</p>}
         </div>
       </li>
     ))

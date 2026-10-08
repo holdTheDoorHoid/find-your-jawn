@@ -134,6 +134,8 @@ export interface InterestFamily {
   icon?: string;
   /** a line of examples, "hiking, caving, kayaking" */
   blurb?: string;
+  /** used only by the separate support flow: no tile, no interest page, no browse filter */
+  supportOnly?: boolean;
   tags: InterestTag[];
 }
 
