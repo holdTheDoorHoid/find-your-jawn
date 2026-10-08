@@ -1,0 +1,322 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-26",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 22,
+  "records": [
+    {
+      "match": {"lead_ids": ["city_nac:10", "irs_bmf:232017882"], "group_id": "hopephl", "ein": "232017882", "website": "hopephl.org"},
+      "verdict": "publish",
+      "name": "HopePHL",
+      "summary": "HopePHL serves as a Neighborhood Advisory Committee for the City of Philadelphia, linking residents in the West part of the city to services and giving them a voice.",
+      "what_you_do": "Work with neighbors and the City on local services and what the area needs. Its neighborhood staff also help residents one on one with property tax relief, 311 requests, utility bills, and reporting litter or vacant lots.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["community_development", "civic_association"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Bridges to Wealth meets online on the second Monday of each month at 5 pm. Larger community briefings are held quarterly.", "days": ["mon"], "times": ["evening"], "recurring": true},
+      "locations": [{"label": "Office", "address": "325 N 39th St", "planning_district": "west", "zip": "19104", "lat": 39.96548481150126, "lng": -75.20706645527825, "in_city": true}],
+      "online_ok": true,
+      "access": {"wheelchair": "unknown", "notes": "Some meetings are held online."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Ask Kevin Brown at 267-777-5820 for the link to the online Bridges to Wealth meeting, held the second Monday of each month at 5 pm.",
+        "newcomer_friendliness": 3,
+        "basis": "The site lists open online meetings and a named contact for the link. It implies residents are welcome but does not say so outright or give eligibility rules.",
+        "what_to_expect": "The meetings we found are online, so you join from a phone or computer once you have the link. The page does not say how long a meeting runs or how many people usually attend. One-on-one appointments with the neighborhood staff are open Monday to Friday, 9 am to 5:30 pm, for help with things like property tax relief or utility bills.",
+        "first_visit_tips": [
+          "Call the main line, (267) 720-HOPE, or Kevin Brown at 267-777-5820 before a meeting to get the link.",
+          "For an appointment, bring the bill or notice you want help with.",
+          "The office is at 325 N. 39th Street, Philadelphia, PA 19104. The site gives no parking or transit details."
+        ]
+      },
+      "contacts": {"website": "hopephl.org", "email": "kdesmond@hopephl.org", "phone": "267-777-5819", "contact_name": "Kathy Desmond"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0",
+      "sources": [
+        {"url": "https://hopephl.org/neighborhood-services.html", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "online_ok", "access", "first_step"]},
+        {"url": "https://hopephl.org/contact.html", "seen": "2026-10-08", "fields": ["locations", "contacts.phone"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The homepage presents HopePHL as a human services nonprofit (housing, family and youth services). The Neighborhood Advisory Committee role is on the neighborhood services page and in the City list, so the summary stands. Published phone lines differ: the main line is (267) 720-HOPE, the meeting-link contact Kevin Brown is 267-777-5820, and the community outreach contact Yolanda Braxton is 267-777-5893. The tier 1 number 267-777-5819 is kept. Office email addresses on the site are hidden behind email protection, so none were verified. The community outreach page gave a contact but no program detail. The 2023 copyright footer is not used as evidence. Status and last_sign_of_life are carried from tier 1; the 2026 voting link on the site gives a year but no month, so it does not change them. Meeting dates for the general NAC meeting are not given (the site says later this year), so nothing was recorded for it."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:852572984", "irs_bmf:852572984"], "group_id": "sisters-learning-code", "ein": "852572984", "website": "https://phillytechsistas.org/"},
+      "verdict": "publish",
+      "name": "Philly Tech Sistas",
+      "summary": "A nonprofit that helps women of color build coding and tech career skills. It runs beginner workshops, career talks, and mentoring circles.",
+      "what_you_do": "Attend a coding workshop or a career talk, join a mentoring circle, or volunteer as a mentor or teaching assistant.",
+      "kind": "nonprofit",
+      "categories": ["making-tech"],
+      "interests": ["coding_software", "digital_skills"],
+      "motives": ["career", "enhancement", "social"],
+      "formats": ["learn_skill", "conversation"],
+      "roles": ["figure_out", "hands_on"],
+      "crowd": ["all_adults", "young_adults", "professionals"],
+      "audience": {"open_to": "public", "community": ["women"], "support_group": false},
+      "schedule": {"text": "Offers skills workshops, a speaker series on career and leadership topics, and mentoring circles. The website does not say how often any of these meet. It also holds an annual Women in Tech Brunch fundraiser."},
+      "locations": [{"label": "Mailing address (IRS)", "address": "Po Box 24084", "planning_district": "west", "zip": "19139", "in_city": true}],
+      "cost": {"text": "The website does not list prices for workshops, talks, or mentoring circles, and it gives no ticket price for the brunch."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Use the Join us button on the website to reach the group's Meetup page, then sign up for a workshop there. To mentor, fill in the mentor form linked from the website.",
+        "newcomer_friendliness": 4,
+        "basis": "The site says its workshops welcome people new to tech or building on existing skills, and the Join us button gives a clear way in.",
+        "what_to_expect": "The website does not say how long a workshop runs, who leads it, or what it costs. Workshops cover tech skills such as web development and Salesforce certification, and the group also runs career talks and mentoring circles led by professionals in a field.",
+        "first_visit_tips": [
+          "Expect to make a Meetup account, since the website sends people there to join.",
+          "The website lists no dates, so check the group's Meetup page for the next workshop.",
+          "For details the website does not give, email info@phillytechsistas.org."
+        ]
+      },
+      "contacts": {"website": "https://phillytechsistas.org/", "email": "info@phillytechsistas.org", "contact_name": "Ashley Turner"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://phillytechsistas.org/",
+      "sources": [
+        {"url": "https://phillytechsistas.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "first_step", "contacts.email", "status"]},
+        {"url": "https://phillytechsistas.org/get-involved", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://phillytechsistas.org/our-programs", "seen": "2026-10-08", "fields": ["schedule", "what_you_do"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The footer shows a 2018 copyright and no event dates appear anywhere on the site, so the site may be out of date. The copyright year is not used as evidence, so status stays probably_active. The tier 1 cost text pointed to an events page that lists no events; it is corrected. The site's newsletter form shows a setup notice, which is not reported as a fact. The Women in Tech Brunch is an annual fundraiser with no date or price on the site. Program names from the programs page are Sisters Learning Code workshops, the Thrive Up speaker series, and mentoring circles. The Meetup and Facebook pages were not read for facts. The email address is taken from the site footer."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:370", "city_rco_points:370", "irs_990n:232734198"], "group_id": "walnut-hill-community-association", "ein": "232734198", "website": "https://www.facebook.com/WalnutHillCA/"},
+      "verdict": "publish",
+      "name": "Walnut Hill Community Association",
+      "summary": "If you care about what gets built near you, Walnut Hill Community Association is a City registered community organization in the West part of the city that hears about zoning and development proposals.",
+      "what_you_do": "Members follow zoning and development plans in the area and meet to talk them over.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "locations": [
+        {"label": "Meeting place", "address": "The Enterprise Center, Community Development Corporation Suite 1, 4548 Market Street, Philadelphia, PA 19139", "planning_district": "west", "zip": "19139", "in_city": true},
+        {"label": "Contact address (City list)", "address": "The Enterprise Center, Community Development Corporation Suite 1, 4548 Market Street, Philadelphia, PA 19139", "planning_district": "university_southwest", "zip": "19139", "lat": 39.95692700648436, "lng": -75.21899941956609, "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-407-7182 or email dave.brindley@cru.org to ask when and where the next meeting is.",
+        "newcomer_friendliness": 2,
+        "basis": "The only listed web presence is a Facebook page, and no meeting time, place, or public invitation is published, so the way in is unclear."
+      },
+      "contacts": {"website": "https://www.facebook.com/WalnutHillCA/", "email": "dave.brindley@cru.org", "phone": "2154077182", "contact_name": "Dave Brindley"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "No website of its own was found. The only listed website is a Facebook page (lead only), which was not opened for facts, so the first step and status rest on the City list. Nothing about meetings, joining, or first visits could be verified, so what_to_expect and first_visit_tips are left out. The tier 1 contact address repeated the Enterprise Center name twice; corrected to one copy. Status active rests on City registry data (2026-10); no group-owned dated item was found, which is flagged for review. The one WebSearch was spent on the Overbrook school, so this group was not searched."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:132", "irs_990n:320437828", "irs_bmf:320437828"], "group_id": "cathedral-park-community-development-association", "ein": "320437828", "website": "https://www.CathedralParkCDC.org"},
+      "verdict": "publish",
+      "name": "Cathedral Park Community Development Association",
+      "summary": "Cathedral Park Community Development Association works on affordable housing and neighborhood improvement in West Philadelphia. It is also a Registered Community Organization (RCO), a group the City asks developers to consult about nearby zoning and building plans, so neighbors can have a say through it.",
+      "what_you_do": "Neighbors review nearby building and zoning proposals and share the group's view with the City and developers. The website also shares information on affordable homes and mortgages.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Monthly meeting on the third Tuesday of the month at 6:30 pm at 4987 W. Thompson Street.", "days": ["tue"], "times": ["evening"], "recurring": true},
+      "locations": [
+        {"label": "Meeting place", "address": "4987 W. Thompson Street, Philadelphia, PA 19131", "planning_district": "west_park", "zip": "19131", "in_city": true},
+        {"label": "Contact address (City list)", "address": "4987 W. Thompson Street, Philadelphia, PA 19131", "planning_district": "west_park", "zip": "19131", "lat": 39.974534435523125, "lng": -75.22025231497476, "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-477-1832 to ask whether the public can attend the third-Tuesday meeting at 6:30 pm at 4987 W. Thompson Street.",
+        "newcomer_friendliness": 2,
+        "basis": "The meetings page gives the day, time, and place but does not say whether the public may attend or whether you must register first, so the way in is unclear.",
+        "what_to_expect": "The meeting page gives only the day, time, and place. It does not say how long a meeting runs, who attends, or whether there is a cost.",
+        "first_visit_tips": [
+          "Confirm by phone first that the public is welcome at the meeting.",
+          "Plan to arrive by 6:30 pm, when the meeting starts.",
+          "The page gives no parking or transit details for 4987 W. Thompson Street, 19131."
+        ]
+      },
+      "contacts": {"website": "https://www.CathedralParkCDC.org", "email": "MarkFrogHarris@verizon.net", "phone": "2154771832", "contact_name": "Mark Frog Harris"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://www.cathedralparkcdc.org/meetings", "seen": "2026-10-08", "fields": ["schedule", "locations", "first_step"]},
+        {"url": "https://www.CathedralParkCDC.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts.phone"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The group's site says it works on affordable housing and neighborhood improvement and does not mention the RCO role, which comes from the City list. The site publishes the email CathedralParkCDC@Gmail.com and a P.O. Box 11796, Philadelphia, PA 19101 mailing address; the tier 1 email MarkFrogHarris@verizon.net is kept in the record. The meetings page does not confirm that meetings are currently taking place. The who-are-we page returned HTTP 404. No dated group-owned items were found, so active status rests on City RCO registry data (2026-10) and is flagged for review."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:140"], "group_id": "centennial-parkside-community-development-corporation", "website": "https://www.Centennialparkside.org"},
+      "verdict": "publish",
+      "name": "Centennial Parkside Community Development Corporation",
+      "summary": "Centennial Parkside Community Development Corporation works to preserve and revitalize East Parkside with residents, local businesses, and institutions. It is also a Registered Community Organization (RCO), so neighbors can have a say in nearby zoning and building plans.",
+      "what_you_do": "Attend the group's monthly public meetings. The group works on healthy living, civic engagement, the arts, and stronger ties to Fairmount Park, and neighbors can review nearby zoning and building plans with it.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Holds regular monthly meetings that the public may attend. The website does not give the day, time, or place.", "recurring": true},
+      "locations": [
+        {"label": "Meeting place", "address": "Christ Community Baptist Church, 1224 North 41st Street, also held on the sites", "planning_district": null, "in_city": true},
+        {"label": "Contact address (City list)", "address": "3479 West Girard Avenue, Philadelphia, PA 19104", "planning_district": "west_park", "zip": "19104", "lat": 39.97348324758126, "lng": -75.20354189378973, "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "The website says the group has no dues, fees, or other costs."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 267-225-8356 to ask for the date, time, and place of the next monthly public meeting.",
+        "newcomer_friendliness": 2,
+        "basis": "The website says monthly meetings are open to the public but gives no day, time, or place, so a newcomer has to ask to find out. The way in is unclear.",
+        "what_to_expect": "The website says the group holds regular monthly meetings that the public may attend. It does not say how long a meeting runs or who usually comes.",
+        "first_visit_tips": [
+          "Ask whether the meeting is held in person, online, or both.",
+          "Ask the group for the meeting place before you go, since the website does not give one.",
+          "The group's contact address is 3479 West Girard Avenue, Philadelphia, PA 19104. The website gives no parking or transit details."
+        ]
+      },
+      "contacts": {"website": "https://www.Centennialparkside.org", "email": "zoning@centennialparkside.org", "phone": "2672258356", "contact_name": "Claritza Cruz"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://www.Centennialparkside.org/about-us/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "audience.open_to", "first_step"]},
+        {"url": "https://www.Centennialparkside.org", "seen": "2026-10-08", "fields": ["contacts.phone"]},
+        {"url": "https://www.Centennialparkside.org/news-events/", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "STATUS NEEDS A DECISION. The group's own newest dated item is Sunday October 6, 2024 (a North Star Park celebration). Its other dated items are from 2023 (executive director hiring notice September 13, 2023; a statement March 20, 2023; a renters contest February 9, 2023). Under the status rule, evidence older than 24 months is dormant. Tier 1 set active from the City RCO registry (2026-10). The status is left unchanged here, pending a decision. The site lists info@centennialparkside.org; the tier 1 email zoning@centennialparkside.org is kept. The tier 1 meeting place wording ('also held on the sites') is unchanged. The cost level comes from the about page statement that there are no dues, fees, or other costs."
+    },
+    {
+      "match": {"lead_ids": ["city_rco:150", "city_rco_points:150"], "group_id": "city-avenue-special-services-district-of-philadelphia-and-lower", "website": "https://cityave.org"},
+      "verdict": "publish",
+      "name": "City Avenue Special Services District of Philadelphia and Lower Merion",
+      "summary": "A special services district that works mostly with businesses and property owners along City Avenue in Philadelphia and Lower Merion. It also runs community events such as block parties, food trucks, and a movie night, and it is a Registered Community Organization (RCO) that developers consult about nearby zoning and building plans.",
+      "what_you_do": "Attend district events, from networking happy hours to community events like block parties and movie nights. Anyone who lives, works, or does business in the district can propose an event by contacting the office.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Hosts more than 20 networking, professional development, and social events each year. Lunch and Learns are held monthly, and a pop-up pub runs in the summer.", "recurring": true},
+      "locations": [{"label": "Office", "address": "1 Belmont Avenue, Suite 700, Bala Cynwyd, PA 19004", "planning_district": "west_park", "zip": "19004", "lat": 39.998531141140646, "lng": -75.22572466438571, "in_city": false}],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Look at the events calendar at cityave.org/events, pick a community event such as a movie night or festival, and call 610-747-0311 with questions.",
+        "newcomer_friendliness": 2,
+        "basis": "The site lists community events but does not say whether they are free or open to everyone, and many events are for professionals. Proposing an event has a clear route, but attending a public event does not.",
+        "what_to_expect": "Events include networking happy hours for professionals, monthly Lunch and Learns, a gathering on the district's growth held since 2016, and community events such as block parties and food trucks. The website does not give prices or places for most of them.",
+        "first_visit_tips": [
+          "The office is in Bala Cynwyd, outside Philadelphia, so check where an event is held before you go.",
+          "Read each event's description, since many are for professionals.",
+          "Call 610-747-0311 to ask whether an event is open to the public."
+        ]
+      },
+      "contacts": {"website": "https://cityave.org", "email": "bryanf@cityave.org", "phone": "6107470311", "contact_name": "Bryan Fenstermaker"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://cityave.org/events/",
+      "sources": [
+        {"url": "https://cityave.org/events/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url", "locations"]},
+        {"url": "https://cityave.org/events-and-community/", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "first_step", "what_to_expect"]},
+        {"url": "https://cityave.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts.phone", "locations"]},
+        {"url": "https://cityave.org", "seen": "2026-10-08", "fields": ["summary"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Publish is a judgment call. The site leans toward businesses and property owners, but it runs community events (block parties, food trucks, a pop-up pub, a movie night, a community festival), so it passes the community program test. The office is in Bala Cynwyd (Lower Merion), outside the city. Tier 1 had it marked in city; corrected to not in city, though the district still serves parts of Philadelphia. The events page says there are no upcoming events; its newest dated items are an August 13, 2026 networking happy hour (registration, exclusive), a September 25, 2026 Bala Cynwyd Movie Nights (7 to 9 pm), and an October 3, 2026 networking conference, which is the newest sign of life. Dated homepage items with no year written (a 54th Street Community Festival, a movie night) are not used. The site publishes cityave@cityave.org; the tier 1 email bryanf@cityave.org is kept. The copyright year 2026 is not used as evidence. Two tier 1 office location entries had the same address and were merged into one."
+    },
+    {
+      "match": {"lead_ids": ["city_volunteer_portal:186411"], "group_id": "community-schools-overbrook-educational-center", "website": "https://oec.philasd.org/"},
+      "verdict": "publish",
+      "name": "Community Schools @Overbrook Educational Center",
+      "summary": "Overbrook Educational Center is a K to 8 public school and a City Community School, a partnership between the City, the School District, and neighbors that offers family, health, and after-school services. Volunteers sign up through the District's volunteer process.",
+      "what_you_do": "Help with school-based programs for students and families after completing the required clearance checks and orientation.",
+      "kind": "program",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["after_school_camps", "tutoring", "mentoring"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side", "conversation"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "The school day runs 8:15 am to 2:54 pm. The website gives no set volunteer hours."},
+      "locations": [{"label": "School", "address": "6722 Landsdowne Ave, Philadelphia, PA 19151", "planning_district": "west_park", "zip": "19151", "in_city": true}],
+      "cost": {"text": "The state clearance checks are free. The FBI fingerprint check costs $23.25 if you have not lived in Pennsylvania for the past 10 years."},
+      "requirements": {"background_check": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call the school at 215-400-7540 to ask whether it needs volunteers, then start the District's volunteer steps from the Volunteer page linked on the school's website.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Volunteers must clear background checks and finish an orientation before they start, so a first visit needs approval first. The steps are clearly listed.",
+        "what_to_expect": "A first step is paperwork, not a shift. Volunteers complete two state checks and an FBI check (a signed affirmation can replace the FBI check if you have lived in Pennsylvania for 10 years), then a Volunteer Orientation within 45 days of starting, which takes about 45 minutes online or in person, and sign a Volunteer Code of Conduct. The District page gives no time commitment or required number of hours.",
+        "first_visit_tips": [
+          "Ask the school whether it needs volunteers before you start the clearance paperwork.",
+          "If you have not lived in Pennsylvania for the past 10 years, plan for an FBI fingerprint check, which costs $23.25.",
+          "The school day runs 8:15 am to 2:54 pm, so plan any visit around it. The website gives no parking or entrance details."
+        ]
+      },
+      "contacts": {"website": "https://oec.philasd.org/", "email": "Madeline.Cerulli@phila.gov", "phone": "(215) 834-6277"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186411",
+      "sources": [
+        {"url": "https://oec.philasd.org/", "seen": "2026-10-08", "fields": ["contacts.website", "schedule", "first_step"]},
+        {"url": "https://www.phila.gov/programs/community-schools/overbrook-educational-center/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts.email"]},
+        {"url": "https://www.philasd.org/face/", "seen": "2026-10-08", "fields": ["requirements.background_check", "cost", "first_step", "first_visit_tips"]},
+        {"url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186411", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Galaxy Digital volunteer portal returned HTTP 403 this session, so the tier 1 listing was not re-read. Status and last_sign_of_life are carried from tier 1 and were not verified this session. The tier 1 lead text said Philly Reading Coaches is the only current volunteer role on the portal; that was not re-checked. The school main line 215-400-7540 (school site and City page) differs from the tier 1 number (215) 834-6277; the tier 1 number is kept in the record and the school line is used in the first step. The City page gives education@phila.gov as a general email. The school's pages name different principals, so none is recorded. The District volunteer page names three checks but not Act 153, so act153_clearances is left out. The school page's 'last modified' stamp is not used as news. The City page lists no community school events from October 8, 2026 to January 8, 2027. The school's partnerships page returned HTTP 404. The website field now points to the school's own site; the portal link is kept in sources."
+    }
+  ],
+  "leads_only": [
+    {"name": "Philadelphia Lawyers for Social Equity", "url": "https://plsephilly.org/", "note": "Named on HopePHL's neighborhood services page as the group that runs expungement intake clinics, not checked."}
+  ],
+  "blocked": [
+    {"url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186411", "status": 403, "note": "City volunteer portal listing for Overbrook refused the fetch (HTTP 403). Not retried or worked around."}
+  ],
+  "notes": "Seven groups, all published. Searches used: 1 of 1 (Overbrook school lookup). Fetches used: 22, including two HTTP 404 pages (Cathedral Park who-are-we, Overbrook partnerships) and the one blocked 403 page. Reviewer flags: (1) Centennial Parkside: its own newest dated item is October 6, 2024, which the status rule would call dormant; tier 1 active rests on the City RCO registry and is left unchanged, so this needs a decision. (2) Cathedral Park, Walnut Hill, Philly Tech Sistas, and Overbrook have no dated group-owned items within 12 months; their status carries over from tier 1 and rests on City or tier 1 data. (3) City Avenue is mainly a business district that also runs community events; publish is a judgment call, and its office is outside the city. (4) HopePHL's homepage presents it as a human services nonprofit, but the NAC role is on its neighborhood services page, so the summary stands. (5) Published phone lines differ from tier 1 for HopePHL and Overbrook; tier 1 values are kept and the groups' own lines are in each record's notes. Several tier 1 emails differ from the addresses the groups publish; tier 1 values are kept and the site addresses are in notes. Walnut Hill has no own website; its only listed site is a Facebook page that was not read for facts."
+}

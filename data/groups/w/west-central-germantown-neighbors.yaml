@@ -7,16 +7,21 @@ leads:
 - irs_990n:232888616
 - irs_bmf:232888616
 ein: '232888616'
-summary: If you care about what gets built near you, West Central Germantown Neighbors is a City registered
-  community organization in the Upper Northwest part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: West Central Germantown Neighbors is a neighborhood group that holds community meetings and potlucks,
+  helps with the Tulpehocken Station Garden, and follows zoning and development in the area.
+what_you_do: Neighbors take part in community meetings and potlucks, help with the Tulpehocken Station
+  Garden, share ideas on how vacant land could be used, and offer to help when they can. The group also
+  works on local history, including the Tulpehocken Station Historic District.
 kind: civic
 categories:
 - neighborhood-civic
+- gardening-greening
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- community_garden
+- preservation_architecture
 motives:
 - values
 - social
@@ -28,6 +33,7 @@ roles:
 - figure_out
 crowd:
 - neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -39,13 +45,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Four regular community meetings a year: the last Sunday in January, the last Wednesday in March,
+    Memorial Day, and the first Sunday in October. Three of the four are held at the end of a potluck,
+    and other meetings are called when needed.'
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Meeting place (City list)
   address: Germantown Community Presbyterian Church, 6141 Greene Street, aka 160 West Tulpehocken Street,
     Philadelphia, PA 19144
   neighborhood: null
@@ -82,13 +90,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to a community meeting, or email the board at wcgnboard@gmail.com with an idea or an offer
+    to help.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The volunteer page invites ideas and offers of help and lists attending a meeting as a first
+    step, but the site does not list meeting dates or places.
+  what_to_expect: Neighbors come to the community meetings, and families with kids have been part of them.
+    Last fall's potluck meeting at Wyck drew about 40 neighbors, including costumed kids and dogs. Ask
+    the board for the next date and place, since the site does not list them.
+  first_visit_tips:
+  - Email the board for the next meeting date and place before you come.
+  - Sign up for the free online newsletter to hear about the next meeting.
+  - If the meeting is a potluck, bring a dish to share.
 contacts:
   website: https://www.wcgnonline.org/
   email: juliescarroll@gmail.com
@@ -132,7 +147,28 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://www.wcgnonline.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.wcgnonline.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.wcgnonline.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.wcgnonline.org/news
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

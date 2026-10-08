@@ -1,21 +1,25 @@
 id: nals-inc-19103
-name: Nals Inc
+name: NALS of Philadelphia
 aka: []
 leads:
 - irs_990n:731457279
 ein: '731457279'
-summary: null
+summary: A legal secretaries association that the IRS data lists at a Philadelphia address. The tax record
+  under this number belongs to a national group based in Indianapolis, and I could not reach a local website,
+  so whether a Philadelphia group meets here is not yet known.
 what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
+kind: network
+categories:
+- careers-skills-professional
+interests:
+- professional_associations
 motives: []
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -76,15 +80,20 @@ last_sign_of_life: null
 sign_of_life_url: null
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+  - verdict
+- url: https://projects.propublica.org/nonprofits/organizations/731457279
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

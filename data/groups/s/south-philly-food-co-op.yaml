@@ -3,11 +3,11 @@ name: South Philly Food Co-op
 aka: []
 leads: []
 ein: null
-summary: A member-owned grocery on South Juniper Street. Its online volunteer form lets people offer help
-  with community events, marketing, event planning, handy jobs, and office work.
-what_you_do: Pick the roles you want on the online volunteer form, such as tabling at community events,
-  event planning, marketing, or admin support. The site does not say how many hours each role takes.
-kind: club
+summary: A community-owned grocery on South Juniper Street in South Philadelphia. Neighbors who become
+  members own a share of the store, and anyone can shop there.
+what_you_do: Help at community events by tabling, planning events, doing marketing or communications,
+  handling handy jobs such as building displays, phone banking, or office support.
+kind: civic
 categories:
 - food-drink
 interests:
@@ -16,8 +16,8 @@ motives:
 - values
 - social
 formats:
-- side_by_side
 - team_play
+- one_off_event
 roles:
 - hands_on
 - organize
@@ -34,14 +34,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer hours and shift times are not listed on the site.
+  text: Volunteering starts with an online sign-up form. The events calendar did not load for us, so no
+    event dates are listed here.
   days: []
   times: []
   recurring: null
   season: null
 locations:
 - label: Store
-  address: 2031 S. Juniper St.
+  address: 2031 South Juniper Street
   neighborhood: null
   planning_district: null
   zip: '19148'
@@ -52,7 +53,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Membership cost is not stated on the site; non-members can shop
+  text: The member equity amount is not confirmed. The join page blocked our reader, and the news articles
+    we read did not state it. The co-op says non-members can shop.
 commitment: null
 group_size: null
 access:
@@ -67,15 +69,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the volunteer form on the co-op's website
-  drop_in: null
+  how: Fill in the volunteer form on the co-op's site, pick the roles you like, and choose email or text
+    updates. Anyone can shop in the store.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: A public form takes a name, email and chosen roles; the site describes no training or screening
+  basis: Open to the public with a clear online sign-up for volunteering, and shoppers do not need to
+    be members.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.southphillyfood.coop
+  website: https://www.southphillyfood.coop/
   email: null
   phone: 215-920-1100
   contact_name: null
@@ -91,12 +95,36 @@ sources:
   - summary
   - what_you_do
   - first_step
+  - roles
 - url: https://www.southphillyfood.coop
   seen: '2026-10-08'
   fields:
   - locations
   - contacts
   - status
+- url: https://www.southphillyfood.coop/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.southphillyfood.coop/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+- url: https://www.6abc.com/amp/post/south-philly-food-op-is-owned-community/18014014/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://ncg.coop/partners-find/pa/south-philly-food-co-op
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://philadelphia.coop/membership/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

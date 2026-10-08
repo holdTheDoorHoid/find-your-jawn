@@ -1,0 +1,213 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-12",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 21,
+ "leads_only": [
+  {
+   "name": "Parkside Association of Philadelphia",
+   "url": "https://philadelphianeighborhoods.com/tag/parkside-association-of-philadelphia/",
+   "note": "Name match from the Parkside Angling search, a 2013 blog post about a West Parkside neighborhood group. Not checked and probably unrelated to angling."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.padcp.org",
+   "status": null,
+   "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."
+  },
+  {
+   "url": "https://www.pafoa.org/",
+   "status": null,
+   "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."
+  },
+  {
+   "url": "https://www.phialpasigma.org",
+   "status": null,
+   "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."
+  },
+  {
+   "url": "https://www.pahealthactionfund.org/",
+   "status": 404,
+   "note": "Homepage returns not found over https and http. Not a bot block."
+  }
+ ],
+ "notes": "Batch of 15 IRS groups: 7 publish, 8 hide. Two searches used, both for groups whose website field was not a web address. Parkside Angling Association: no page found. PDR Swimming for Success: found the team's own site, read, and status set to dormant from 2023 evidence (low confidence). Dead domains are listed under blocked but are not bot blocks. Judgment calls for owner review: (1) Mid-Atlantic Eurasia Business Council is kept although mainly a trade council; (2) Penn State Alumni Association Philadelphia Chapter is hidden under the alumni rule even though it lists public volunteer events; (3) Pennsylvania Education for All Coalition is listed while its nonpartisan status is not stated on the site; (4) Parkside Angling Association has no audience, schedule or summary facts beyond its IRS address, so it should stay unpublished until a source is found. Year-only evidence (2026 on Philly Black Pride and the Philadelphia Botanical Club site) is treated as active with no month recorded. No rate limiting was seen. Budget: 2 of 2 searches used, 21 fetch calls.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:240682685"
+    ],
+    "group_id": "parkside-angling-association",
+    "ein": "240682685",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Parkside Angling Association",
+   "summary": "A nonprofit listed with the IRS at 2401 Pennsylvania Avenue under this name. We could not find a public page for it, so what it does is not yet confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "outdoors-adventure"
+   ],
+   "interests": [
+    "kayaking"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "One search for the name found no page for this group. The website on the tax form was not a web address (it reads CPA), so it was treated as missing. The name suggests a fishing club, but the vocabulary has no angling tag; kayaking is a placeholder for the closest outdoor water activity. No audience, schedule or cost is recorded because no source was read. Held back until a source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232819668"
+    ],
+    "group_id": "pcah-haddington",
+    "ein": "232819668",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "PCAH Haddington",
+   "research_tier": 1,
+   "notes": "The website typed on the tax form is the domain of a housing developer and manager, and the address is that developer's headquarters. The homepage did not mention a Haddington property or any public program. The name suggests a housing ownership entity with no public way in, so hidden as private. One fetch only; the link between this entity and the developer is not confirmed.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232846034"
+    ],
+    "group_id": "pcah-haddington-corp-ii",
+    "ein": "232846034",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "PCAH Haddington Corp II",
+   "research_tier": 1,
+   "notes": "Same address and same typed website as PCAH Haddington. Name suggests a housing ownership entity with no public way in, so hidden as private. One fetch only, shared with the other PCAH record.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233040608",
+     "irs_bmf:233040608"
+    ],
+    "group_id": "penn-state-alumni-association-19102",
+    "ein": "233040608",
+    "website": "http://www.psuphila.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Penn State Alumni Association Philadelphia Chapter",
+   "research_tier": 1,
+   "notes": "Alumni association chapter for Penn State graduates. Membership is $50 a year or $700 for life, per its site. Hidden under the alumni association rule. The site does list some public-facing events, including a produce party with Sharing Excess on November 7, 2026 from 9 am to 2 pm, so the owner may want to review this rule for chapters that run open volunteer events. Batch name was Penn State Alumni Association.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:236670898",
+     "irs_bmf:236670898"
+    ],
+    "group_id": "phi-alpha-sigma-fraternity",
+    "ein": "236670898",
+    "website": "https://www.phialpasigma.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Phi Alpha Sigma Fraternity",
+   "research_tier": 1,
+   "notes": "The website (typed as Www.phialpasigma.org) does not resolve, with or without www. The batch lists a fraternity office at 313 South 10th Street. Fraternities are member-only, and no public way in was found, so hidden as private. Revisit if the site comes back and shows an open program.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:222653263"
+    ],
+    "group_id": "phi-tau-chapter-of-the-delta-phi-epsilon-sorority",
+    "ein": "222653263",
+    "website": "https://www.dphie.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Phi Tau Chapter of Delta Phi Epsilon Sorority",
+   "research_tier": 1,
+   "notes": "The international sorority site describes a social sorority with collegiate and alumnae chapters, and its headquarters is 251 South Camac Street. The Phi Tau chapter's own page was not found, and the joining steps are on a separate page that was not read. Sorority chapters are member-only, so hidden as private.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233068929"
+    ],
+    "group_id": "pennsylvania-association-of-drug-court-professionals",
+    "ein": "233068929",
+    "website": "https://www.padcp.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Pennsylvania Association of Drug Court Professionals",
+   "research_tier": 1,
+   "notes": "The website (padcp.org) does not resolve, with or without www. By name, this is a statewide professional association for drug court staff. It was not checked further, and no public way in was found, so hidden as private. Revisit if the site returns.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:208601905"
+    ],
+    "group_id": "pennsylvania-firearm-owners-association",
+    "ein": "208601905",
+    "website": "https://www.pafoa.org/"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Pennsylvania Firearm Owners Association",
+   "research_tier": 1,
+   "notes": "The website (pafoa.org) does not resolve, with or without www. By name, this is a statewide membership and advocacy group. Its partisan status was not checked, and advocacy groups of this kind can endorse candidates. No public way in was found, so hidden as private. Revisit if the site returns and the owner wants advocacy groups of this kind listed.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:822684612"
+    ],
+    "group_id": "pennsylvania-health-action-fund",
+    "ein": "822684612",
+    "website": "https://www.pahealthactionfund.org/"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Pennsylvania Health Action Fund",
+   "research_tier": 1,
+   "notes": "The homepage returns not found over both https and http. The name suggests a political or advocacy fund, but it was not checked further, and no public way in was found, so hidden as private. Not a bot block. Revisit if the site returns.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

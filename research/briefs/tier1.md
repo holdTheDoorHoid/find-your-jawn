@@ -16,7 +16,10 @@ the Mummers lineup, the Cultural Fund, hand seeds). For EACH group in the batch,
 
 Spend about the same effort on each group; do not go deep on one and skip the rest. If you cannot
 find anything about a group, still write a record with `status: "unknown"`, `verdict: "publish"`,
-`research_tier: 1`, `confidence: "low"` and a note, so we know it was tried.
+`research_tier: 1`, `confidence: "low"` and a note, so we know it was tried. In that case LEAVE OUT
+`summary`, `categories` and `interests`, so the record is held back, which is right. Never write a summary
+that describes your research ("we could not find a website", "the IRS lists", "I could not reach"): a
+summary says what the group does, or it is left out.
 
 Arts groups from the Cultural Fund: many are venues or companies whose public way in is attending,
 taking a class, or volunteering (ushers, events). Say which in `what_you_do` and `first_step.how`.

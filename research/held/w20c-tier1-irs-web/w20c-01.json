@@ -1,0 +1,192 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-01",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [
+  {
+   "name": "Save the Academy",
+   "url": "https://www.cpuf.org/",
+   "note": "Named on the Center for Philadelphia's Urban Future page as a volunteer campaign to keep the Academy of Natural Sciences museum open. No own URL seen."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://palumbogriffinshsa.com",
+   "status": null,
+   "note": "TLS certificate could not be verified on two tries (bare domain and www)"
+  },
+  {
+   "url": "https://www.africanbike.org",
+   "status": null,
+   "note": "returned empty content on two tries (www and bare domain)"
+  },
+  {
+   "url": "https://mediaanddestiny.org",
+   "status": null,
+   "note": "TLS certificate name mismatch on two tries (bare domain and www)"
+  },
+  {
+   "url": "https://www.dropintheocean.org/our-work.html",
+   "status": 404,
+   "note": "page not found"
+  },
+  {
+   "url": "https://codeforphilly.org/",
+   "status": null,
+   "note": "page returned only its title on two tries (www and bare domain); retry later"
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used, both on the two groups with no usable web address (Children First Action Fund, Bridges 2030 International). 25 WebFetch calls used of 60. 5th Square's listed site belongs to another organization, so it needed a search too, but the budget was already spent. No rate limiting seen; failures were TLS errors and empty pages. Verdict counts: publish 11 (of which 5 are held back for lack of summary and category: 5th Square, A Drop in the Ocean, African Bicycle Contribution, Bridges 2030 International, Center for Media and Destiny), hide 2, out_of_area 2. Leads from the Center for Philadelphia's Urban Future page: Code for Philly returned only its title on two tries (in blocked, worth a retry later). Open Data Philly was read and dropped: it is a data catalog with no volunteer, event or join route. Save the Academy has no URL of its own in the source, so it stays in leads_only. Groups named on the 1791 Delegates and American Legion pages were dropped without a fetch: First Amendment Watch (NYU), the National Interfaith Anti-Bullying Summit and Parliament of the World's Religions (national or global, not Philadelphia), Temple Israel in Manchester NH (out of area), The Foundation for Religious Literacy and Mount America Foundation (foundations named on other pages, not checked), and the Philadelphia Veterans Parade (one event, not a group). ReligionAndPublicLife.org is part of 1791 Delegates.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:844804437",
+     "irs_bmf:844804437"
+    ],
+    "group_id": "5th-square",
+    "ein": "844804437"
+   },
+   "verdict": "publish",
+   "name": "5th Square",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS filing lists cpuf.org as this group's website, but that site belongs to the Center for Philadelphia's Urban Future, a fiscal sponsor with a different name. Its listed projects (Code for Philly, Open Data Philly, Save the Academy) do not include 5th Square, so the link was not used. No page for 5th Square was found. Its search was not used because both searches went to the two groups with no web address. IRS address: 700 S 7th St, Philadelphia 19147. Held back: no summary or category yet.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821927041",
+     "irs_bmf:821927041"
+    ],
+    "group_id": "a-drop-in-the-ocean-inc",
+    "ein": "821927041",
+    "website": "https://www.dropintheocean.org"
+   },
+   "verdict": "publish",
+   "name": "A Drop in the Ocean",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.dropintheocean.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS legal name: A Drop in the Ocean Inc. The site gives the same EIN (82-1927041). It names two contacts, with an email hidden on the page and a US phone number, and gives no street address and no description of Philadelphia work. Its volunteer page and social links point to a Norwegian site (drapenihavet.no). The IRS filing lists 422 Green St, Philadelphia 19123. Service area not confirmed. Held back until someone can say what it does and where.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:933688284",
+     "irs_bmf:933688284"
+    ],
+    "group_id": "academy-at-palumbo-home-and-school-association",
+    "ein": "933688284"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Academy at Palumbo Home and School Association",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Home and school association for the Academy at Palumbo, so hidden under the brief's rule for booster groups serving one school. The site could not be read (certificate error on the bare domain and on www). The domain name includes 'griffins', so the association may cover a second school too. If it serves parents of more than one school, or if the owner wants parent groups listed, reconsider. IRS address: 1100 Catharine St, Philadelphia 19147.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:810806191",
+     "irs_bmf:810806191"
+    ],
+    "group_id": "african-bicycle-contribution",
+    "ein": "810806191",
+    "website": "https://www.africanbike.org"
+   },
+   "verdict": "publish",
+   "name": "African Bicycle Contribution",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://www.africanbike.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned no content on two tries (www and bare domain), so nothing about its work, location or events was read. No search was used on this group (both searches went to groups with no web address). IRS address: 2000 Hamilton Street, Philadelphia 19130. Held back until the site can be read or a second source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:852400361",
+     "irs_bmf:852400361"
+    ],
+    "group_id": "bridges-2030-international",
+    "ein": "852400361"
+   },
+   "verdict": "publish",
+   "name": "Bridges 2030 International",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website field was the name 'Bridges 2030', not a web address, so it was treated as missing. One search for the name with Philadelphia found no organization of that name; the results were about bridges in general. The IRS address, 632 North 2nd Street, is the same street address as American Group Psychotherapy Association Inc in this batch. Held back until a web page or a second source is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:454950524",
+     "irs_bmf:454950524"
+    ],
+    "group_id": "center-for-media-and-destiny",
+    "ein": "454950524",
+    "website": "https://mediaanddestiny.org"
+   },
+   "verdict": "publish",
+   "name": "Center for Media and Destiny",
+   "kind": "nonprofit",
+   "contacts": {
+    "website": "https://mediaanddestiny.org"
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site could not be read. Both mediaanddestiny.org and www.mediaanddestiny.org returned a certificate name mismatch (the server presents a hosting provider's certificate). Nothing about its work or events was read. The IRS address is 1352 South St Unit 501, Philadelphia 19147. Held back until the site can be read.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

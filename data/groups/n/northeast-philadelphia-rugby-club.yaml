@@ -1,22 +1,33 @@
 id: northeast-philadelphia-rugby-club
-name: Northeast Philadelphia Rugby Club
-aka: []
+name: Northeast Philadelphia Irish Rugby Club
+aka:
+- Northeast Philadelphia Rugby Club
 leads:
 - irs_990n:300663361
 - irs_bmf:300663361
 ein: '300663361'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: An adult rugby club in Northeast Philadelphia with men's and women's teams. It trains twice a
+  week at Roosevelt Playground, and newcomers are invited to come to training.
+what_you_do: Players train on Tuesday and Thursday evenings and play the fall season. No experience is
+  needed to come to training, according to the site.
+kind: club
+categories:
+- sports-teams
+interests:
+- football_rugby
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- learn_skill
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,26 +36,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Fall season runs August 11 to November 7, 2026. Training is Tuesdays and Thursdays, 7:30 to 9
+    pm, at Roosevelt Playground.
+  days:
+  - tue
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: fall
 locations:
-- label: Mailing address (IRS)
-  address: 6285 Souder St
+- label: Roosevelt Playground (training)
+  address: null
   neighborhood: null
-  planning_district: north_delaware
-  zip: '19149'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6285 Souder Street
+- label: Pleasant Hill Park (home field)
+  address: North Delaware Avenue, Philadelphia, PA 19114
   neighborhood: null
-  planning_district: north_delaware
-  zip: '19149'
+  planning_district: null
+  zip: '19114'
   lat: null
   lng: null
   in_city: true
@@ -52,8 +67,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: The club charges dues (the site links to a dues page), but the amount is not shown.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +82,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill in the interest form on the site, then come to a Tuesday or Thursday training
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site invites newcomers to training, says no experience is needed, and gives an interest form.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: neprugby.com
+  website: https://neprugby.com/
   email: null
   phone: null
   contact_name: Scott Poroski
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://neprugby.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +115,26 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://neprugby.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+  - audience
+  - crowd
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

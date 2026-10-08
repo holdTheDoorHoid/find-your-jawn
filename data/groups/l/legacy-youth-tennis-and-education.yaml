@@ -1,21 +1,34 @@
 id: legacy-youth-tennis-and-education
-name: Legacy Youth Tennis and Education
+name: LEGACY Youth Tennis & Education
 aka: []
 leads:
 - irs_bmf:231747032
 ein: '231747032'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A tennis and education program based at the LEGACY Tennis Center on Ridge Avenue. It offers junior
+  clinics, camps, private lessons, tournaments, and after-school programs.
+what_you_do: Kids join junior clinics, camps, and after-school programs. Adults can take clinics and lessons.
+  The site has volunteer and careers pages.
+kind: program
+categories:
+- sports-teams
+- kids-youth-mentoring
+interests:
+- tennis_pickleball
+- after_school_camps
+motives:
+- enhancement
+- values
+formats:
+- learn_skill
+- team_play
+roles:
+- hands_on
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,16 +37,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Winter break camps run four days in late December. Summer camps start in June. The Juneteenth
+    celebration is June 19, 2026 from 5 to 7 pm, and the annual gala is October 24, 2026 at 6 pm. Clinic
+    days and times are not stated.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 4842 Ridge Ave
+- label: LEGACY Tennis Center
+  address: 4842 Ridge Avenue, Philadelphia, PA 19129
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
   lat: null
   lng: null
@@ -42,7 +57,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Clinic, camp, and lesson prices are not stated on the pages read. Winter camps have had an early-registration
+    discount, and the menu links to financial aid.
 commitment: null
 group_size: null
 access:
@@ -54,26 +70,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Register through the online portal or a camp sign-up page, and book private lessons through the
+    lessons page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Registration is public and clear, but tryouts and beginner levels are not described.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.legacyyte.org/
   email: null
-  phone: null
+  phone: 215.487.3477
   contact_name: The Organization
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.legacyyte.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +99,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.legacyyte.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - kind
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+  - status
+  - requirements
+  - roles
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

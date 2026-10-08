@@ -1,30 +1,36 @@
 id: chestnut-hill-business-improvement-district
 name: Chestnut Hill Business Improvement District
-aka: []
+aka:
+- Chestnut Hill Business District
+- CHBD
 leads:
 - city_rco:451
 - irs_bmf:841629688
 ein: '841629688'
-summary: Chestnut Hill Business Improvement District is one of the community organizations registered
-  with the City to review nearby zoning and building proposals in the Upper Northwest part of the city.
-  Neighbors can follow what is planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: The Chestnut Hill Business District runs public cleanups and street events in the Chestnut Hill
+  shopping area. It is also one of the City's registered community organizations, so it reviews variance
+  requests for projects inside its district.
+what_you_do: Pick up litter at the public cleanup days, or come to district street events such as Halloween
+  on the Hill.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- clean_blocks
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
+- one_off_event
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -38,17 +44,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Cleanups, markets and street events are posted on its events calendar. Its Registered Community
+    Organization meetings are held the first Tuesday of each month at 9 am at the district office; the
+    site does not say whether the public may attend.
+  days:
+  - tue
+  times:
+  - morning
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
-  address: 8514 Germantown Avenue
+  address: 10 East Springfield Avenue, Philadelphia, PA 19118
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19118'
   lat: null
   lng: null
   in_city: true
@@ -80,23 +90,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Pick a public cleanup or street event from the district's events calendar and come at the listed
+    start time.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Cleanups and street events are posted publicly with times and meeting spots, and the listings
+    give no sign-up step.
+  what_to_expect: A cleanup on the calendar runs from 9 am to noon and is a morning of picking up litter
+    in a park or along a street, with other volunteers. The listings do not say what to bring or whether
+    tools are supplied. The calendar does not list prices for most events.
+  first_visit_tips:
+  - For the Pastorius Park clean-ups, check in at the warming hut and arrive for the 9 am start, since
+    the listing says it begins promptly.
+  - Some listings name a rain date, so check the calendar the day before you go.
+  - The district office at 10 East Springfield Avenue is open Monday to Friday 8:30 am to 5 pm and Saturday
+    10 am to 4 pm; call 215-247-6696 to ask what to bring.
+  - The Chestnut Hill East and West Regional Rail lines serve the area, according to the district's resident
+    FAQ.
 contacts:
   website: https://chestnuthillpa.com
-  email: coneill@chestnuthillpa.com
-  phone: '2152476696'
+  email: koneill@chestnuthillpa.com
+  phone: 215-247-6696
   contact_name: Courtney Oneill
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://chestnuthillpa.com/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -114,8 +135,36 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://chestnuthillpa.com/
+  seen: '2026-10-08'
+  fields:
+  - aka
+  - what_you_do
+  - status
+- url: https://chestnuthillpa.com/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule.text
+  - first_step
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://chestnuthillpa.com/about-us/registered-community-organization/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+- url: https://chestnuthillpa.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - locations
+- url: https://chestnuthillpa.com/our-community/resident-faq/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

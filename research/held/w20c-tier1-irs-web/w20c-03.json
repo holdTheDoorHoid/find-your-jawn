@@ -1,0 +1,214 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-03",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [
+  {
+   "name": "Culturally Conscious Dermatology",
+   "url": "https://culturallyconsciousdermatology.org",
+   "note": "linked as Learn more on the Heath Health Foundation site, not checked"
+  },
+  {
+   "name": "LiveWell Philadelphia area peer groups",
+   "url": "https://www.livewell-foundation.org",
+   "note": "the LiveWell site lists Philadelphia-area groups under Philly Groups; each group is not checked"
+  },
+  {
+   "name": "Girard Coalition",
+   "url": null,
+   "note": "named in a search summary as working on Girard Avenue from I-95 to the Zoo; no URL seen, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.philadelphialiberty.org/",
+   "status": 403,
+   "note": "Liberty Community Church homepage returned HTTP 403 Forbidden. Not retried."
+  },
+  {
+   "url": "https://www.lwci.org",
+   "status": "certificate_expired",
+   "note": "Light of the World Ministries: TLS certificate expired on both the www and bare domain."
+  },
+  {
+   "url": "https://www.mpcfund.org",
+   "status": "connection_refused",
+   "note": "M Patricia Carroll Fund: connection refused on two tries."
+  },
+  {
+   "url": "https://irug.org",
+   "status": "connection_refused",
+   "note": "Infrared and Raman Users Group: connection refused on the bare domain and on www."
+  },
+  {
+   "url": "https://www.catchafire.org/organizations/hairs-2-u-wig-bank_17910",
+   "status": 403,
+   "note": "Volunteer directory listing for Hairs 2 U, not the group's own site. Not used."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, both for IRS groups with no web address (Hope on Girard, Hairs 2 U). Fetches: 22 of 60. Hope on Girard: the search found no organization by that name, so its record is unknown and should be held back. Hairs 2 U: a 2020 Inquirer article linked the group's own site, which was then read. Connection refused (mpcfund, irug) and certificate expired (lwci) were each retried once and are listed in blocked; none was a rate limit across many domains. Liberty and catchafire returned 403; not retried. The Rogel Cancer Center wig bank PDF redirected to a University of Michigan host and was not followed; it is a Michigan file and unlikely to list Philadelphia groups. Great Dames: the Philadelphia link is weak and needs a human check. Verdict counts: publish 12 (7 with content, 5 unknown and held back), hide 3.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:873051962",
+     "irs_bmf:873051962"
+    ],
+    "group_id": "hope-on-girard-inc",
+    "ein": "873051962"
+   },
+   "verdict": "publish",
+   "name": "Hope on Girard",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on IRS filing",
+     "address": "126 W Girard Ave",
+     "zip": "19123",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS filing's web address field reads 'Hope on Girard', which is not a web address, so no site was fetched. One search for the name found no organization by that name, only Girard Avenue pages and a building record at Girard Ave and N Front St. No page was read, so there is no summary and no source; this record should be held back. The search summary named the Girard Coalition as a Girard Avenue group; it is listed in leads_only and was not checked. Needs a web address or a second look.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:043692866",
+     "irs_bmf:043692866"
+    ],
+    "group_id": "light-of-the-world-ministries",
+    "ein": "043692866",
+    "website": "https://www.lwci.org"
+   },
+   "verdict": "publish",
+   "name": "Light of the World Ministries",
+   "kind": "congregation",
+   "locations": [
+    {
+     "label": "Mailing address (PO Box 8133)",
+     "address": "PO Box 8133, Philadelphia, PA 19101",
+     "zip": "19101",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website's TLS certificate has expired on both the www and bare domain, so nothing could be read. No summary or source written; this record should be held back until the site can be read. Address and kind come from the IRS filing and the batch only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800308693",
+     "irs_bmf:800308693"
+    ],
+    "group_id": "liberty-community-church",
+    "ein": "800308693",
+    "website": "http://www.philadelphialiberty.org/"
+   },
+   "verdict": "publish",
+   "name": "Liberty Community Church",
+   "kind": "congregation",
+   "locations": [
+    {
+     "label": "Address on IRS filing",
+     "address": "1117 East Passyunk Ave, 1st Floor",
+     "zip": "19147",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website returned HTTP 403 Forbidden, so nothing was read and no summary or source is written. This record should be held back until the site can be read. Address and kind come from the IRS filing only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:331027628",
+     "irs_bmf:331027628"
+    ],
+    "group_id": "m-patricia-carroll-fund",
+    "ein": "331027628",
+    "website": "https://www.mpcfund.org"
+   },
+   "verdict": "publish",
+   "name": "M Patricia Carroll Fund",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Address on IRS filing",
+     "address": "1420 Walnut St, Suite 1200",
+     "zip": "19102",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website refused connections on two tries, so nothing was read. The name suggests a fund, which may be a private grantmaker and would then be hidden as private; this needs a check once the site loads. No summary or source written, so this record should be held back. Address comes from the IRS filing only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:020548123",
+     "irs_bmf:020548123"
+    ],
+    "group_id": "infrared-and-raman-users-group",
+    "ein": "020548123",
+    "website": "https://irug.org"
+   },
+   "verdict": "publish",
+   "name": "Infrared and Raman Users Group",
+   "kind": "nonprofit",
+   "locations": [
+    {
+     "label": "Mailing address (PO Box 7646)",
+     "address": "PO Box 7646, Philadelphia, PA 19101",
+     "zip": "19101",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site refused connections on both the bare and www addresses, so nothing was read. The name suggests a scientific users group; the IRS filing lists it in care of the Philadelphia Museum of Art. It may serve members outside Philadelphia, so scope is unknown. No summary or source written; this record should be held back until the site can be read.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

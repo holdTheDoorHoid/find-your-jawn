@@ -9,7 +9,9 @@ ein: '237253481'
 summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
   in the Upper Northwest part of the city, East Mt. Airy Neighbors gives neighbors a place to hear about
   projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+what_you_do: Members follow zoning and development plans in the area and meet to talk them over. Volunteers
+  can also serve as ambassadors who represent the group at city board meetings and public hearings, such
+  as the Zoning Board of Adjustment and City Council.
 kind: civic
 categories:
 - neighborhood-civic
@@ -38,11 +40,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Office hours on Tuesday and Thursday, 10 am to 2 pm. The Community Impact Committee meets on the
+    third Monday of the month, 7 to 8 pm, on Zoom.
+  days:
+  - mon
+  - tue
+  - thu
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
   address: Zoom
@@ -80,19 +88,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register through the Zoom link on the Community Impact Committee page, then attend its third Monday
+    meeting from 7 to 8 pm.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Meetings are on Zoom with a registration link, and the site invites neighbors to join through
+    an online membership application. The site does not say outright that the committee is open to all.
+  what_to_expect: The office is open Tuesday and Thursday from 10 am to 2 pm, and other visits are by
+    appointment. The meetings listed on the site are on Zoom, and one project meeting asked people to
+    register in advance. The site does not state a cost or how long a meeting runs.
+  first_visit_tips:
+  - 'Register first: the Zoom link goes to a registration page.'
+  - Office hours are Tuesday and Thursday, 10 am to 2 pm; other days need an appointment.
+  - Membership is an online application that the site links from its join page.
 contacts:
   website: https://eastmtairyneighbors.org
   email: RCO@eastmtairyneighbors.org
   phone: '2677342029'
   contact_name: Evonne Tisdale
-  social: []
+  social:
+  - https://www.facebook.com/eastmtairy/
+  - https://www.instagram.com/eman_19119/
+  - https://www.instagram.com/eastmtairyneighbors.19119/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -122,7 +140,37 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://eastmtairyneighbors.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://eastmtairyneighbors.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://eastmtairyneighbors.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://eastmtairyneighbors.org/registered-community-organization
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://eastmtairyneighbors.org/zoning-committee-1
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

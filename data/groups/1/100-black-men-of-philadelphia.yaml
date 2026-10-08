@@ -6,9 +6,11 @@ ein: null
 summary: A mentoring nonprofit for young people in Philadelphia. It pairs boys in grades 2 to 12 with
   mentors, runs leadership and financial literacy programs, and offers a college prep group for students
   heading to Lincoln or Cheyney University.
-what_you_do: Youth enroll online for the Leadership Academy, the mentorship program and financial literacy
-  classes for grades 7 to 12. The group also runs workshops on professional skills, resumes and mock interviews.
-  The site does not say whether adults can volunteer as mentors.
+what_you_do: Youth sign up through the Mentee (Youth) Participation Request form on the site and pick
+  a program, such as the Saturday Leadership Academy. The group also runs financial literacy classes for
+  grades 7 to 12 and workshops on professional skills, resumes and interviews. Men who are 25 or older
+  and live in Philadelphia can apply for membership. Members volunteer at least 40 hours a year, through
+  mentoring, committees or other work, and pay yearly dues.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -40,11 +42,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Programs run through the year. The site says to check its calendar for monthly events, but the
-    calendar was not on the page we read.
-  days: []
+  text: The Leadership Academy and the online Mentorship Program meet on the 1st and 3rd Saturday of each
+    month. The site does not give the meeting time.
+  days:
+  - sat
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Main office
@@ -56,10 +59,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: The site does not state a fee for the youth programs. Adult members pay yearly dues of $300, and
+    the page lists $350 for some members under 30 or over 60, with unclear wording.
 commitment: null
 group_size: null
 access:
@@ -71,18 +75,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Click To Enroll link on the site for a youth program, or call (267) 424-2444 to ask about
-    volunteer mentoring.
+  how: Fill in the Mentee (Youth) Participation Request form on the site and pick the Saturday Leadership
+    Academy.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Youth programs have a clear online sign-up open to the public. The steps for adult volunteers
-    are not stated.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A public form on the site lists each program to choose from, so the youth way in is clear. The
+    site does not say how a non-member adult can mentor.
+  what_to_expect: The Leadership Academy is for young men in grades 2 to 12, grouped by age and led by
+    mentors. Topics include character, conflict resolution, goal setting and leadership. The site does
+    not give the place, the length or the fee for sessions.
+  first_visit_tips:
+  - Have a parent or guardian's name, phone number, email, school and grade ready, since the form asks
+    for them.
+  - Ask the office for the place and start time, because the site does not list them.
+  - To ask about adult volunteering, call (267) 424-2444 or email office@100blackmenphilly.org.
 contacts:
   website: https://100blackmenphilly.org
   email: office@100blackmenphilly.org
@@ -105,7 +115,23 @@ sources:
   - first_step
   - status
   - contacts
-research_tier: 1
+- url: https://100blackmenphilly.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - audience
+  - online_ok
+  - requirements
+  - first_step
+  - first_visit_tips
+- url: https://100blackmenphilly.org/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

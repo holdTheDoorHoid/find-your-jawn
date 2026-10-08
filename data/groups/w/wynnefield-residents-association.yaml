@@ -44,8 +44,8 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Meeting place
-  address: John C Anderson Cultural Center, 5301 Overbrook Ave - Phila, PA 19131
+- label: Meeting place (City list)
+  address: John C Anderson Cultural Center, 5301 Overbrook Ave, Phila, PA 19131
   neighborhood: null
   planning_district: west_park
   zip: '19131'
@@ -54,7 +54,7 @@ locations:
   in_city: true
   transit: null
 - label: Contact address (City list)
-  address: John C Anderson Cultural Center, 5301 Overbrook Ave - Phila, PA 19131
+  address: John C Anderson Cultural Center, 5301 Overbrook Ave, Phila, PA 19131
   neighborhood: null
   planning_district: west_park
   zip: '19131'
@@ -80,11 +80,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email crystalbmorris@hotmail.com to ask when and where the next meeting is at the John C. Anderson
+    Cultural Center.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The City list gives a meeting place and a contact but no meeting time or sign-up step. The only
+    web page is a Facebook page, which was not read for facts, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -107,6 +109,7 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+  - first_step
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -130,8 +133,8 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

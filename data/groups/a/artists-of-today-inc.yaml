@@ -85,12 +85,13 @@ last_sign_of_life: null
 sign_of_life_url: null
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.contact_name
   - ein
+  - verdict
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
   fields:
@@ -106,5 +107,5 @@ sources:
 research_tier: 1
 confidence: low
 last_checked: '2026-10-08'
-hidden: false
-hidden_reason: null
+hidden: true
+hidden_reason: out_of_scope

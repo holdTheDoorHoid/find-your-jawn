@@ -6,16 +6,24 @@ leads:
 - city_rco_points:380
 - irs_bmf:231579424
 ein: '231579424'
-summary: If you care about what gets built near you, West Mount Airy Neighbors, Inc. is a City registered
-  community organization in the Upper Northwest part of the city that hears about zoning and development
-  proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: West Mount Airy Neighbors is the City registered community organization for West Mount Airy.
+  It follows zoning and building proposals and runs committees on the environment, historic preservation,
+  traffic calming, and neighborhood diversity.
+what_you_do: Neighbors follow zoning and building plans at Zoom meetings. When a project is refused approval,
+  the group hosts a public meeting where the developer presents and then sends the Zoning Board of Adjustment
+  a letter with the vote and neighbors' concerns.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
+- advocacy-rights
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- tree_tending
+- street_safety_transit
+- preservation_architecture
 motives:
 - values
 - social
@@ -38,16 +46,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Zoning meetings on Zoom, normally the first Wednesday of each month at 7 pm. The group holds them
+    as needed.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: Zoom , , Summit Presbyterian Church, 6757 Greene Street, Philadelphia, PA 19119
+- label: 'Zoom for zoning meetings (City list address: Summit Presbyterian Church)'
+  address: 6757 Greene St, Philadelphia, PA 19119
   neighborhood: null
-  planning_district: upper_northwest
+  planning_district: null
   zip: '19119'
   lat: null
   lng: null
@@ -62,11 +73,11 @@ locations:
   lng: -75.20045095047938
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -80,15 +91,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Join the Zoom zoning meeting on the first Wednesday at 7 pm. The link is on the group's zoning
+    page.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The zoning page says the meetings are open to anyone and gives a regular Zoom time, but it has
+    no newcomer welcome and its listed meeting dates use a different start time.
+  what_to_expect: Zoning meetings run on Zoom, and anyone can join to hear the cases the group is following.
+    The group hosts public meetings where developers present plans, then sends the Zoning Board a letter
+    with the vote and neighbors' concerns. You can listen, and anyone can testify at a Zoning Board hearing
+    even without joining the group.
+  first_visit_tips:
+  - Join a few minutes early and check your Zoom setup first.
+  - Check the zoning page for the date, since the listed meetings used 7:30 pm rather than the usual 7
+    pm.
+  - Have the address of the project you care about ready, since the group lists cases by address.
 contacts:
-  website: https://wman.net/zoning/
+  website: https://wman.net/
   email: josephine.g.winter@gmail.com
   phone: '2158151181'
   contact_name: Josephine Winter
@@ -121,7 +141,25 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
+- url: https://wman.net/zoning/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://wman.net/
+  seen: '2026-10-08'
+  fields:
+  - categories
+  - interests
+  - first_step
+  - contacts.website
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

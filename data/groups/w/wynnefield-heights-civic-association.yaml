@@ -42,8 +42,8 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Meeting place
-  address: Virtual - Zoom, Sharon Baptist Church, 3955 Conshohocken Ave., Phila., PA 19131
+- label: Meeting place (City list)
+  address: Virtual (Zoom), Sharon Baptist Church, 3955 Conshohocken Ave., Phila., PA 19131
   neighborhood: null
   planning_district: west_park
   zip: '19131'
@@ -51,16 +51,16 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: P.O. Box#2874 , Bala Cynwd, PA 19004
+- label: Mailing address (City list)
+  address: P.O. Box 2874, Bala Cynwyd, PA 19004
   neighborhood: null
   planning_district: west_park
   zip: '19004'
   lat: 40.002624303009505
   lng: -75.20920617358784
-  in_city: true
+  in_city: false
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -78,11 +78,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email TogetherWHCA@gmail.com to ask when and where the next meeting is.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The City list gives a Zoom meeting place but no meeting time. No website, sign-up step or public
+    schedule was found, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -105,6 +106,7 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+  - first_step
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -113,8 +115,8 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

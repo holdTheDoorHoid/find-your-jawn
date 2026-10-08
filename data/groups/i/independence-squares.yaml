@@ -5,45 +5,64 @@ leads:
 - irs_990n:232648309
 - irs_bmf:232648309
 ein: '232648309'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A square dance club for LGBTQ+ dancers in Philadelphia. Members dance modern Western square dance,
+  and partners change about every 15 minutes, so you can come without a partner.
+what_you_do: Take a beginner class in the fall, come to a summer open house, or join the Tuesday evening
+  classes and dances. Saturday dances run at several levels, so check the dance schedule before you go.
+kind: club
+categories:
+- theater-dance-performance
+- social-meetups
+interests:
+- social_dance
+- lgbtq_social
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- learn_skill
 roles: []
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - lgbtq
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Tuesday classes and workshops, 7 to 9:30 pm, for beginners and experienced dancers. Beginner classes
+    start each September and run until spring. Saturday dances fall on certain dates through the year;
+    see the dance schedule.
+  days:
+  - tue
+  - sat
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 13209
+- label: Lutheran Church of the Holy Communion (most dances)
+  address: 2111 Sansom St, Philadelphia
   neighborhood: null
-  planning_district: central
-  zip: '19101'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
+  level: low
+  text: About $10 for one dance session, $15 for both sessions of a two-session event, and usually $5
+    for open houses. Reduced admission is available by application.
 commitment: null
 group_size: null
 access:
@@ -58,23 +77,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to a Tuesday class at 2111 Sansom St at 7 pm, or to a summer open house. No partner is needed;
+    join the nearest square when the music starts.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The page says newcomers are welcome, runs beginner classes each fall and open houses in summer
+    for beginners, and says no partner is needed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: independencesquares.org
-  email: null
+  website: https://independencesquares.org
+  email: independencesquares@hotmail.com
   phone: null
   contact_name: Lisa Hantman
-  social: []
+  social:
+  - https://www.facebook.com/independencesquares/
+  - https://www.instagram.com/independencesquares/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://independencesquares.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +114,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://independencesquares.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+  - status
+- url: https://independencesquares.org/dance-schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

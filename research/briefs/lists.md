@@ -22,3 +22,15 @@ Method, in this order (searches are scarce, fetches are cheap):
 Aim for 25 to 50 checked records. Work through the list in order and spend about the same effort on
 each group, so small groups get the same attention as famous ones. Do not worry about groups we may
 already have; the importer merges duplicates by website and name.
+
+**Congregations** (lane R): `kind: congregation`, family `faith-community`, `audience.faith` set
+(catholic, protestant, black_church, jewish, muslim, quaker and so on). Put the main worship time in
+`schedule`, and in `what_you_do` the ways a newcomer or neighbor can take part: worship, community
+meals, food pantries, service days, choirs, young adult or senior groups. A congregation whose site
+shows nothing but worship is still a record (tag `worship_community`).
+
+**Support groups** (lane U): `kind: support_group`, family `support-recovery`,
+`audience.support_group: true`. These are shown only when a visitor asks, so accuracy matters more
+than ever. For fellowships with many meetings (AA, NA, Al-Anon, SMART Recovery), write ONE record
+for the local intergroup or service office with a link to its own meeting finder in `contacts`;
+never copy meeting lists. Never record a person's name or private contact for a support group.

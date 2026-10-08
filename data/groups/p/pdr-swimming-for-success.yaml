@@ -4,18 +4,26 @@ aka: []
 leads:
 - irs_990n:842777596
 ein: '842777596'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
+summary: A competitive swim team in Philadelphia, started in 1971 to give young African American swimmers
+  a way into the sport. Its own site lists a registration page, a tryout request and a phone number, but
+  we found no recent team news.
+what_you_do: Train and compete as a member of the team. Joining starts with the team's registration page
+  or a tryout request.
+kind: team
+categories:
+- water-rowing
+interests:
+- swimming
+motives:
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -30,11 +38,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 1760 Market Street - Ste 902
+- label: Team address on the team site
+  address: 4200 Wissahickon Avenue
   neighborhood: null
-  planning_district: central
-  zip: '19103'
+  planning_district: null
+  zip: '19129'
   lat: null
   lng: null
   in_city: true
@@ -42,7 +50,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The cost page is linked from the team site, but we could not read it.
 commitment: null
 group_size: null
 access:
@@ -57,21 +65,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Team Registration page on the team site, or send a tryout request through the Request a
+    Tryout page
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Registration and a tryout come before you can see the team, and the site does not explain how
+    tryouts work.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: PDR Swimming
+  website: https://www.gomotionapp.com/team/mapdrs/page/home
   email: null
-  phone: null
+  phone: 215-292-8270
   contact_name: Brian Walters
   social: []
   calendar_feed: null
-status: unknown
+status: dormant
 last_sign_of_life: null
 sign_of_life_url: null
 sources:
@@ -83,8 +93,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.gomotionapp.com/team/mapdrs/page/home
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - locations
+  - cost
+  - first_step
+  - contacts
+- url: https://en.wikipedia.org/wiki/Jim_Ellis_(swimming_coach)
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

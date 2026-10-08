@@ -1,22 +1,27 @@
 id: kiwanis-international-inc-19147
-name: Kiwanis International Inc
-aka: []
+name: Kiwanis Club (South Philadelphia)
+aka:
+- Kiwanis International Inc
 leads:
 - irs_990n:814083658
 - irs_bmf:814083658
 ein: '814083658'
-summary: null
+summary: A local club in the Kiwanis service network in South Philadelphia. I could not reach its website
+  because the site blocked my visit, and I found no dated news, so meeting times and how to join are not
+  yet known.
 what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
+kind: club
+categories:
+- social-meetups
+interests:
+- fraternal_service_clubs
 motives: []
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -77,12 +82,13 @@ last_sign_of_life: null
 sign_of_life_url: null
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.contact_name
   - ein
+  - verdict
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
   fields:
@@ -91,8 +97,13 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+- url: https://projects.propublica.org/nonprofits/organizations/814083658
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - kind
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

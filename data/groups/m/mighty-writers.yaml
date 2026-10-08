@@ -4,19 +4,22 @@ aka: []
 leads:
 - irs_bmf:010920922
 ein: 010920922
-summary: A free nonprofit that helps Philadelphia kids ages 7 to 14 get better at writing. Volunteers
-  help with homework at its after school Academy or mentor one young writer over time.
-what_you_do: Writing Assistants help students with homework and writing, one shift of 1 to 4 hours a week.
-  Mentors meet their mentee 2 to 4 times a month for at least a year. Big Brothers Big Sisters handles
-  screening and matching for mentors.
+summary: A free nonprofit that helps Philadelphia kids get better at writing. Volunteers help with homework
+  at its after-school Academy, mentor one young writer over time, or help with food and diaper distribution.
+what_you_do: Writing Assistants help students with homework and writing, one shift of 1 to 4 hours a week,
+  at select locations. Mentors meet their mentee 2 to 4 times a month for at least a year, and Big Brothers
+  Big Sisters handles screening and matching. Distribution volunteers work one 3 to 4 hour shift a week,
+  unloading deliveries and running food and diaper distribution.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - books-writing
+- hunger-housing-basic-needs
 interests:
 - tutoring
 - mentoring
 - literacy_tutoring
+- food_pantry
 motives:
 - values
 formats:
@@ -37,9 +40,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Writing Assistant shifts of 1 to 4 hours, one a week; mentors meet 2 to 4 times a month
-  days: []
-  times: []
+  text: After-School Academy runs Monday to Friday, 3 to 6 pm. Writing Assistants work one 1 to 4 hour
+    shift a week, and mentors meet 2 to 4 times a month.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -52,10 +62,55 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: MW Hartranft center
+  address: 2449 N 9th St
+  neighborhood: null
+  planning_district: null
+  zip: '19133'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: MW West center
+  address: 3520 Fairmount Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: MW North center
+  address: 2301 Master St
+  neighborhood: null
+  planning_district: null
+  zip: '19121'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: MW El Futuro center
+  address: 1025 S 9th St
+  neighborhood: null
+  planning_district: null
+  zip: '19147'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: MW Northeast center
+  address: 4704 Leiper St
+  neighborhood: null
+  planning_district: null
+  zip: '19124'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: true
 cost:
   level: free
-  text: Programs are free for families
+  text: All of the group's programs are free.
 commitment: weekly
 group_size: null
 access:
@@ -64,21 +119,29 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Apply through the volunteer page, and email volunteers@mightywriters.org with any questions about
-    the background clearances
+  how: Submit the volunteer registration form from the group's volunteer page, then email volunteers@mightywriters.org
+    with any questions about clearances.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Roles are listed publicly with a clear way to apply; clearances and orientation come before you
-    start
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteering starts with a registration form, role-based clearances and an orientation, and the
+    site does not say what happens after you apply.
+  what_to_expect: Writing Assistants give one 1 to 4 hour shift a week at the after-school Academy, helping
+    with homework and writing and sometimes at snack time or outdoor play. Volunteers commit to at least
+    six months, and staff walk new volunteers through clearances during orientation. Mentors meet a student
+    2 to 4 times a month for at least a year, and Big Brothers Big Sisters handles their screening and
+    training.
+  first_visit_tips:
+  - Ask which center has Writing Assistant openings, since the site does not name the select locations.
+  - Plan on at least six months of help, because the group says longer service matters most with young
+    people.
+  - Mentoring can be done virtually or in person.
 contacts:
   website: https://mightywriters.org/volunteer/
   email: volunteers@mightywriters.org
@@ -107,7 +170,21 @@ sources:
   - contacts
   - status
   - online_ok
-research_tier: 1
+  - first_step
+- url: https://mightywriters.org/locations/
+  seen: '2026-10-08'
+  fields:
+  - locations
+- url: https://mightywriters.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+- url: https://mightywriters.org/volunteer-application/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

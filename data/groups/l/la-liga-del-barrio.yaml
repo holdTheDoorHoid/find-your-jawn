@@ -1,40 +1,57 @@
 id: la-liga-del-barrio
-name: La Liga Del Barrio
+name: La Liga del Barrio
 aka: []
 leads:
 - irs_bmf:384005924
 ein: '384005924'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A basketball league for boys and girls ages 6 to 18, with an adult division for players 19 and
+  up. It runs a winter league and a summer 2026 season, and each player receives a jersey.
+what_you_do: Players join scheduled league games, including Saturday games in the winter league. Volunteers
+  can coach, help plan events, or do outreach.
+kind: club
+categories:
+- sports-teams
+interests:
+- basketball
+- youth_coaching
+motives:
+- social
+- enhancement
+formats:
+- team_play
+- learn_skill
+roles:
+- hands_on
+- organize
+crowd:
+- kids
+- teens
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 6
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: 'Summer 2026 season runs June 27 to August 15. Winter league: scrimmages in early December, a
+    January season with nine Saturday games, and a draft in early January. Game and practice times are
+    not stated.'
+  days:
+  - sat
   times: []
   recurring: null
-  season: null
+  season: summer
 locations:
-- label: Mailing address (IRS)
-  address: 10234 Dedaker St
+- label: Community College of Philadelphia (championship games)
+  address: null
   neighborhood: null
-  planning_district: upper_far_northeast
-  zip: '19116'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -42,8 +59,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: The site says fees are among the lowest in the city, but it gives no amount.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +71,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Register online through the links on the site, early, because spots fill quickly
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Public registration is clear, but the site does not describe tryouts or beginner levels.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://laligadelbarrio.com/
   email: null
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: http://laligadelbarrio.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +98,25 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: http://laligadelbarrio.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+  - contacts
+  - roles
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

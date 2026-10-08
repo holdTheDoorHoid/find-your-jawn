@@ -1,0 +1,219 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-09",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 22,
+ "leads_only": [
+  {
+   "name": "United Way of Greater Philadelphia and Southern New Jersey",
+   "url": null,
+   "note": "named as a partner in the entrepreneur program on the Investing in Ourselves site, not checked"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://jazzlivesphiladelphia.org",
+   "status": 403,
+   "note": "HTTP 403 on fetch; not read"
+  },
+  {
+   "url": "https://www.jewishdialogue.org/",
+   "status": null,
+   "note": "connection closed on two tries; network failure, not a block"
+  },
+  {
+   "url": "https://www.deafcatholicphilly.org",
+   "status": null,
+   "note": "connection refused on two tries (with and without www)"
+  },
+  {
+   "url": "https://www.antique-row.org",
+   "status": null,
+   "note": "expired certificate on both forms of the address"
+  },
+  {
+   "url": "https://www.conviviousa.org",
+   "status": null,
+   "note": "domain does not resolve (with and without www)"
+  },
+  {
+   "url": "https://www.icat4u.org",
+   "status": null,
+   "note": "domain does not resolve (with and without www)"
+  },
+  {
+   "url": "https://www.keyhillah.org",
+   "status": null,
+   "note": "domain does not resolve (with and without www)"
+  },
+  {
+   "url": "https://www.kotc.org",
+   "status": null,
+   "note": "domain now serves an unrelated marketing site, not the group"
+  }
+ ],
+ "notes": "Budget: WebSearch used 2 of 2 (hard cap, all spent: one on Keepers of the Culture, one on the Deaf Catholic ministry). WebFetch used 22 of 60. No rate limiting seen; failures were DNS errors, expired certificates, refused or closed connections, one 403 and one 404 (hbapa.net/lef-info/, home page read instead). Fire Fighters record hidden without a search. Records with unknown status and no summary are the ones that could not be read; they are held back by design and need a manual check. Two records rest on search excerpts rather than fetched pages: Deaf Apostolate (matched by contact name only) and Keepers of the Culture (matched by name only, dormant). Green Light was checked on its homepage only. No group was filed under a partisan, private-foundation or hate category. Verdict counts: publish 12, hide 1, not_a_group 1, out_of_area 1.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233088374"
+    ],
+    "group_id": "historic-antique-row-business-association",
+    "ein": "233088374",
+    "website": "https://www.antique-row.org"
+   },
+   "verdict": "publish",
+   "name": "Historic Antique Row Business Association",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Could not read the site: antique-row.org shows an expired certificate on both forms of the address. No search left to find another page. The name suggests a merchants' association for shops on Antique Row, which may make it a business group rather than a community group. No summary written. Needs a manual check (possibly a hide as a business association) before publishing. IRS address 1022 Clinton Street.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472081365"
+    ],
+    "group_id": "il-convivio-inc",
+    "ein": "472081365",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Il Convivio Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the IRS form (www.conviviousa.org) does not resolve, with or without www. No search left. No summary written, because no page says what the group does. IRS address 1617 JFK Blvd 19th Floor. Needs a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:061692494",
+     "irs_bmf:061692494"
+    ],
+    "group_id": "international-association-of-fire-fighters",
+    "ein": "061692494",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "International Association of Fire Fighters",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Hidden without a search (the search budget went to two other groups). The only public label is the website field, which reads 'Local 837 Health & Welfare Fund'. That is a benefit fund label, not a web address, and no page could be read. Hidden as private on that label alone. IRS address 415 N 5th St. A reviewer should confirm before this is final.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:205262101"
+    ],
+    "group_id": "international-center-against-terrorism",
+    "ein": "205262101",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "International Center Against Terrorism",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the IRS form (www.icat4u.org) does not resolve, with or without www. No search left. No summary written, because nothing public was found about what the group does. A reviewer should check the IRS record and decide whether this is a real group that should be published or hidden. IRS address 1420 Walnut Street Suite 1107.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:475352166"
+    ],
+    "group_id": "jazz-lives-philadelphia",
+    "ein": "475352166",
+    "website": "https://jazzlivesphiladelphia.org"
+   },
+   "verdict": "publish",
+   "name": "Jazz Lives Philadelphia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site returned HTTP 403 to the fetch tool, so nothing on it was read. No search left. No summary written. The name suggests a jazz group, which is not verified. Needs a manual check. IRS address 1601 Brown Street 2.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:710884858"
+    ],
+    "group_id": "jewish-dialogue-group",
+    "ein": "710884858",
+    "website": "https://www.jewishdialogue.org/"
+   },
+   "verdict": "publish",
+   "name": "Jewish Dialogue Group",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The site connection closed on two tries. This is a network failure, not an HTTP block or bot check. No search left. No summary written. Retry before publishing. IRS address is PO Box 34726 (19101), a mailing address only.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:820678844"
+    ],
+    "group_id": "keyhillah-inc",
+    "ein": "820678844",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Keyhillah Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the IRS form (www.keyhillah.org) does not resolve, with or without www. No search left. No summary written, because nothing public was found. IRS address 438 Gaskill St (19147). Needs a manual check.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

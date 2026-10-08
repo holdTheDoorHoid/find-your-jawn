@@ -45,7 +45,7 @@ schedule:
   season: null
 locations:
 - label: Meeting place
-  address: Mt. Airy United Fellowship Church, 701 West Johnson Street, 19144
+  address: Mt. Airy United Fellowship Church, 701 West Johnson Street, Philadelphia, PA 19144
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -80,7 +80,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the contact listed for the association at itsfromiz77@yahoo.com to ask when its next meeting
+    is at Mt. Airy United Fellowship Church and whether neighbors can attend.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -115,7 +116,16 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0/query?where=lni_id%3D123&outFields=*&f=json
+  seen: '2026-10-08'
+  fields:
+  - name
+  - locations
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

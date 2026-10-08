@@ -1,10 +1,12 @@
 id: captain-erick-foster-memorial-ride
-name: Captain Erick Foster Memorial Ride
-aka: []
+name: Team Foster
+aka:
+- Captain Erick Foster Memorial Ride
 leads:
 - irs_990n:473192875
 ein: '473192875'
-summary: null
+summary: A nonprofit that raises money for trained service dogs for injured veterans, and supports each
+  veteran and dog team after the dog arrives. Its office is in Conshohocken, Montgomery County.
 what_you_do: null
 kind: nonprofit
 categories: []
@@ -30,14 +32,14 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: PO Box 2145
+- label: Office
+  address: 900 Maple St, Conshohocken, PA 19428
   neighborhood: null
-  planning_district: central
-  zip: '19103'
+  planning_district: null
+  zip: '19428'
   lat: null
   lng: null
-  in_city: true
+  in_city: false
   transit: null
 online_ok: null
 cost:
@@ -65,15 +67,15 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: teamfoster.org
-  email: null
+  website: https://teamfoster.org
+  email: us@teamfoster.org
   phone: null
   contact_name: Nicholas Liermann
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://teamfoster.org
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -83,8 +85,15 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+- url: https://teamfoster.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

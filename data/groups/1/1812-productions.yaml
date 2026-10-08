@@ -7,8 +7,10 @@ leads:
 ein: '232938464'
 summary: A Philadelphia theater company that makes comedy and comic theater about community, history,
   and people. Besides its shows, it runs training programs and holds auditions.
-what_you_do: Buy tickets to a show or a season subscription, audition for a production, or apply to the
-  1812 Education or Apprenticeship programs.
+what_you_do: Buy a ticket to a show or a season subscription, or use a ticket discount. Auditions are
+  held for productions when they are scheduled; none were listed when we checked. 1812 Education brings
+  weekly theater workshops into two Philadelphia public schools. The apprenticeship is a paid full-time
+  job, and its listed application deadline, April 13, 2026, has passed.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -34,11 +36,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The 2026 to 2027 season is listed by name, with show titles. The website shows no months or exact
-    dates.
+  text: Productions run in a yearly season at Plays & Players Theatre. The site does not give a weekly
+    schedule, and show dates are on each show's own page.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Plays & Players Theatre (performances)
@@ -62,13 +64,18 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Tickets and season subscriptions are sold; prices are not on the homepage.
+  text: Tickets and season subscriptions are sold on the site, and ticket discounts are listed. Prices
+    were not on the pages read.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: A ramp from the sidewalk reaches the lobby. Orchestra rows B to G have no steps, rows H to M
+    have one step, row N has two and row O has three. The mezzanine and lower level are reached only by
+    stairs. Wheelchair and companion seats are booked by phone or email, not online. Some shows are open
+    captioned, and free listening headsets are at the box office. The lower level restrooms are not accessible.
+    The site does not list ASL or sensory-friendly shows.
 requirements:
   act153_clearances: null
   background_check: null
@@ -77,25 +84,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to one show, or call 215.592.9560 or email info@1812productions.org to ask about the
-    education and apprenticeship programs.
+  how: Buy a ticket to one show on the site, then go to Plays & Players Theatre at 1714 Delancey Place.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Anyone can buy a show ticket. The training programs are listed without details, so ask before
-    applying.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can buy a show ticket on the site, and the box office takes questions by phone and email.
+    No audition was scheduled when we checked, so the ticket is the clearest way in.
+  what_to_expect: Shows at Plays & Players Theatre are seated comedy performances about community, history
+    and people. The orchestra level has the most step-free rows, so ask for seats there if you need them.
+    Tickets are paid, and prices were not on the pages read.
+  first_visit_tips:
+  - Check each show's own page for its dates and prices, since the season list shows no dates.
+  - Wheelchair and companion seats are not sold online, so call 215-592-9560 or email info@1812productions.org
+    to book them.
+  - Free listening headsets are picked up at the box office window, first come, first served, with no
+    reservation.
+  - The lower level restrooms are not wheelchair accessible.
 contacts:
   website: http://www.1812productions.org
   email: info@1812productions.org
-  phone: 215.592.9560
+  phone: '2155929560'
   contact_name: '1812'
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.1812productions.org
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.1812productions.org/1812-apprenticeship
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=1
   seen: '2026-10-04'
@@ -120,7 +134,29 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: http://www.1812productions.org/auditions-2
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.1812productions.org/1812-education
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.1812productions.org/1812-apprenticeship
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.1812productions.org/accessibility
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

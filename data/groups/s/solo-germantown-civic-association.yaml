@@ -38,14 +38,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Monthly meeting on the fourth Tuesday at the Southside Church Center on Wayne Avenue.
+  days:
+  - tue
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 5058 Wayne Ave (in person suspended) Phila PA 19144, Virtual via Zoom
+- label: Meeting place (Southside Church Center, enter on Manheim St)
+  address: 5058 Wayne Ave, Philadelphia, PA 19144
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -54,7 +55,7 @@ locations:
   in_city: true
   transit: null
 - label: Contact address (City list)
-  address: 4908 Wayne Ave Philadelhia, PA 19144
+  address: 4908 Wayne Ave, Philadelphia, PA 19144
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -66,7 +67,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -80,13 +81,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the fourth Tuesday meeting at the Southside Church Center, 5058 Wayne Ave, and join the
+    group's Google Group for updates before you go.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The group's home page says all are welcome at its monthly meeting and names the day and place
+    to start, with a Google Group for updates.
+  what_to_expect: Expect a monthly meeting that the group's site says anyone can attend. The site covers
+    zoning, business on Wayne Avenue, and the 39th Police District, so those are good topics to ask about.
+    The site lists no dues or sign-up for the meeting.
+  first_visit_tips:
+  - Use the Manheim Street entrance, which the group's site names.
+  - Join the Google Group before you come, since an older City listing says in-person meetings were suspended.
+  - Use the contact page on the group's site to reach the organizer with questions.
 contacts:
   website: https://www.sologermantown.com/
   email: sologermantown19144@gmail.com
@@ -115,7 +123,14 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://www.sologermantown.com/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

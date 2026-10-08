@@ -1,21 +1,30 @@
 id: fins-aquatics-club
-name: Fins Aquatics Club
-aka: []
+name: Philadelphia Fins Aquatics Club
+aka:
+- Fins Aquatics Club
 leads:
 - irs_990n:264553485
 ein: '264553485'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A swim club that welcomes swimmers of every age and skill level. It practices at a pool in Center
+  City on weeknight evenings and weekend mornings.
+what_you_do: Swim at the scheduled practices, which are open to swimmers at every level. Join the team
+  as a member to train with it.
+kind: club
+categories:
+- water-rowing
+interests:
+- swimming
+motives:
+- social
+- enhancement
+formats:
+- team_play
 roles: []
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,17 +33,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practices Monday to Thursday, 7:30 to 8:45 pm, and Saturday and Sunday, 10:30 am to noon, as listed
+    on the USMS club page. Confirm before you come.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - sat
+  - sun
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: PO Box 60145
+- label: Friends Select School indoor pool
+  address: 1651 Benjamin Franklin Parkway
   neighborhood: null
-  planning_district: central
-  zip: '19102'
+  planning_district: null
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
@@ -42,8 +60,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the pages we could read
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -57,15 +75,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Contact the club through its website, philadelphiafins.org, and ask how to join a practice. The
+    practice times are published on the USMS club page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Practice times and a welcome statement are published, but the join steps and any registration
+    requirement could not be read on the club's own site.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.philadelphiafins.org
+  website: https://www.philadelphiafins.org
   email: null
   phone: null
   contact_name: Robert Breitel
@@ -83,8 +103,15 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://usms.org/clubs/philadelphia-fins
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - audience
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

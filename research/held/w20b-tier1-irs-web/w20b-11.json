@@ -1,0 +1,210 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-11",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 19,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.ncbiphilly.org",
+   "status": null,
+   "note": "DNS error: domain does not resolve, with and without www (2026-10-08)"
+  },
+  {
+   "url": "https://oldcitybusinesscollective.org",
+   "status": null,
+   "note": "DNS error: domain does not resolve, with and without www (2026-10-08)"
+  },
+  {
+   "url": "https://pennsylvanianow.org",
+   "status": 301,
+   "note": "Permanent redirect to an unrelated domain (attackdemo.com). Not followed. Not the group's site."
+  },
+  {
+   "url": "https://www.parkinsonscreativecollective.org",
+   "status": null,
+   "note": "TLS certificate expired (2026-10-08)"
+  }
+ ],
+ "notes": "Batch file 11.json holds 15 groups, not 11, so all 15 were processed. Search budget: 2 of 2 used, cap reached. Fetches: 19, including failed and redirected ones. No rate limiting seen. One stray call to a browser navigate tool was made by mistake during the run; it returned an error and no browser action happened. Four publish records (NCBI Philadelphia, National Organization for Women, Old City Business Collective, Parkinson's Creative Collective) have no readable source and no confirmed purpose, so they carry empty sources and should be held back by the importer. Judgment calls for owner review: national groups whose own pages show no Philadelphia activity are out_of_area (NOBLE, NAGCR, Paper Airplanes); PARID is published as a statewide group; National Freedom Day Association is published at low confidence because only its IRS mailing address is in Philadelphia; the Philadelphia Space Interest Group is treated as the National Space Society chapter; Oporation Ava and Papa Konga are hidden as private because no public presence was found.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:861133197"
+    ],
+    "group_id": "national-coalition-building-institute-of-philadelphia",
+    "ein": "861133197",
+    "website": "https://www.ncbiphilly.org"
+   },
+   "verdict": "publish",
+   "name": "National Coalition Building Institute of Philadelphia",
+   "summary": "Listed in IRS records as a Philadelphia nonprofit tied to the National Coalition Building Institute. Its website did not load during our check, so what it does and how to join are not yet confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "community_development"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No readable source. The listed website (www.ncbiphilly.org) does not resolve (DNS error), checked with and without www on 2026-10-08. Name and address come from the IRS list only. Summary, category and audience are placeholders based on the name, so the owner may want to hold this record until the group can be read.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:237454889"
+    ],
+    "group_id": "national-organization-for-women-inc-19147",
+    "ein": "237454889",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "National Organization for Women",
+   "summary": "Listed in IRS records as National Organization for Women Inc, with a Philadelphia mailing address. The website in the record redirects to a site that is not the group's, so what it does here and how to join are not yet confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "advocacy-rights"
+   ],
+   "interests": [
+    "womens_lgbtq_rights"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No readable source. The listed website pennsylvanianow.org returned a permanent redirect to attackdemo.com, an unrelated domain. It was not followed, and no link to it should be published. The IRS list gives a P.O. Box (63759, 19147). Tags and audience are placeholders from the name. The national organization's own website was not read.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:270594845"
+    ],
+    "group_id": "old-city-business-collective",
+    "ein": "270594845",
+    "website": "http://www.oldcitybusinesscollective.org"
+   },
+   "verdict": "publish",
+   "name": "Old City Business Collective",
+   "summary": "Listed in IRS records as a Philadelphia nonprofit with an Old City office address. Its website did not load during our check, so what it does and how to join are not yet confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "careers-skills-professional"
+   ],
+   "interests": [
+    "entrepreneurs"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No readable source. Both www and bare forms of oldcitybusinesscollective.org fail to resolve (DNS error), checked 2026-10-08. The name suggests a business association. If it only serves businesses, the verdict should be hide (out_of_scope) instead. Tags and audience are placeholders from the name.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:270589431"
+    ],
+    "group_id": "oporation-ava-inc",
+    "ein": "270589431",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Oporation Ava Inc",
+   "research_tier": 1,
+   "notes": "The IRS list gives no website (NONE) and a 315 Market Street office floor as the address. One search for Oporation Ava with Philadelphia found no matching public page; the results were unrelated. No public way in was found, so this is hidden under the no-public-way-in rule. Reopen if a public page turns up. It may also be a business office rather than a group (not_a_group is possible).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851632539"
+    ],
+    "group_id": "papa-konga-foundation",
+    "ein": "851632539",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Papa Konga Foundation",
+   "research_tier": 1,
+   "notes": "The IRS list gives a business name (jfk import export llc) in the website field, so it is treated as having no website. One search for Papa Konga Foundation with Philadelphia found no public page for this foundation; the results were for other foundations. No public way in was found, so this is hidden as private. Reopen if a public page turns up. The IRS address is 808 N 29th St (19130).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:273360283"
+    ],
+    "group_id": "parkinsons-creative-collective",
+    "ein": "273360283",
+    "website": "https://www.parkinsonscreativecollective.org"
+   },
+   "verdict": "publish",
+   "name": "Parkinson's Creative Collective",
+   "summary": "Listed in IRS records as a Philadelphia nonprofit with a Green Street address. Its name points to creative work connected with Parkinson's, but its website could not be read, so what it offers and how to join are not yet confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "arts-crafts"
+   ],
+   "interests": [
+    "craft_circle"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "sources": [],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No readable source. https://www.parkinsonscreativecollective.org fails the security check (TLS certificate expired), checked 2026-10-08. Tags come from the name only. If the group turns out to be a support group, the tags should move to support-recovery. Audience is a placeholder.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

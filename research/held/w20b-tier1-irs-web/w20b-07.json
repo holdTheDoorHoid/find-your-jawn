@@ -1,0 +1,321 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-07",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 32,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.earthskeepersinc.com",
+   "status": 403,
+   "note": "HTTP 403 on a second fetch; the first fetch returned an empty page."
+  },
+  {
+   "url": "https://www.edbacon.org",
+   "status": 403,
+   "note": "HTTP 403 on two fetches."
+  },
+  {
+   "url": "http://www.fightforcure.org",
+   "status": 403,
+   "note": "HTTP 403 on one fetch."
+  },
+  {
+   "url": "https://philadelphiafins.org/index.html",
+   "status": 403,
+   "note": "Fins club site: 403 on the root domain and on index.html. A TLS handshake failed on https://www.philadelphiafins.org."
+  },
+  {
+   "url": "https://www.usms.org/comp/meets/swim.php?s=4677864",
+   "status": 403,
+   "note": "USMS meet results page. Could not confirm a 2024 meet named in a search snippet."
+  },
+  {
+   "url": "https://www.factsonisrael.com",
+   "status": null,
+   "note": "TLS certificate names another host; factsonisrael.com does not resolve."
+  },
+  {
+   "url": "https://www.electriceducation.com",
+   "status": null,
+   "note": "Connection closed on three tries (www and bare domain)."
+  },
+  {
+   "url": "https://www.diaboliqueball.org",
+   "status": null,
+   "note": "Domain does not resolve (DNS error)."
+  },
+  {
+   "url": "https://daagroup.org/",
+   "status": null,
+   "note": "Domain does not resolve; www.daagroup.org also failed."
+  },
+  {
+   "url": "https://www.family-inc.org",
+   "status": null,
+   "note": "Domain does not resolve; bare domain also failed."
+  },
+  {
+   "url": "https://www.fanshelpingfans.org",
+   "status": null,
+   "note": "Domain does not resolve; bare domain also failed."
+  }
+ ],
+ "notes": "Searches: 2 of 2 used, both on Fins Aquatics Club and Earths Keepers, which were the joinable or blocked groups most worth a look. That left no search for Doctors Advisory Alliance, Family Inc, Fans Helping Fans, E Volve, Factsonisrael.com, Electric Education and Fight for Cure, which are written as unknown. Fetches: 32, including retries and two early guesses at domains that are not in the batch (diabolique.org and diabolique.ball). Both failed and were not used. Errors were mostly DNS failures, TLS or connection failures, and 403 blocks spread across many hosts. That looked like network trouble more than rate limiting, so each failing host got one retry and Electric Education got three tries. No 403 was bypassed. The evolvefoundation.net link redirected to evolve.org, which is not the same organization. Earths Keepers' batch liveness field (alive, HTTP 200, checked 13:18 UTC today) conflicts with this run (403). Leads not followed: the Church of St. Luke and the Epiphany, which hosts Dignity's Sunday Mass (no site was read), and the ProPublica filer for Fins Swim Club Inc (org 721515022), which has a different filer number. Counts: 10 publish (1 active, 9 unknown), 4 hide, 1 out_of_area.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:020631669"
+    ],
+    "group_id": "diabolique-foundation-inc",
+    "ein": "020631669"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Diabolique Foundation Inc",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS filing lists 317 South Street, 19147. The website as typed (WWW.DIABOLIQUEBALL.ORG) did not resolve, so no public page could be read. The website name suggests a ball, which points to a fundraising event run by a private foundation. Hidden as private because no public way to join was found. Re-check if a working site turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:813750366"
+    ],
+    "group_id": "doctors-advisory-alliance-inc",
+    "ein": "813750366"
+   },
+   "verdict": "publish",
+   "name": "Doctors Advisory Alliance",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the tax form (https://daagroup.org/) did not resolve, with or without www. No search was used on this group because both searches went to other groups in the batch. Summary, categories and audience are left out because nothing could be verified. IRS address is 123 South Broad Street, Suite 1670, 19109. Needs a search by its legal name before it can be described.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:470904131"
+    ],
+    "group_id": "e-volve-foundation-inc",
+    "ein": "470904131"
+   },
+   "verdict": "publish",
+   "name": "E Volve Foundation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Legal name E Volve Foundation Inc. The website typed on the tax form (http://www.evolvefoundation.net) redirects with a 301 to evolve.org, which describes an investment organization focused on the evolution of consciousness. That site does not mention E Volve or Philadelphia, so it is treated as not this group, and the website is left out. Summary not written. IRS address is 113 N Van Pelt St, 19103. No search was used on this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800595674"
+    ],
+    "group_id": "earths-keepers",
+    "ein": "800595674"
+   },
+   "verdict": "publish",
+   "name": "Earths Keepers",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website www.earthskeepersinc.com returned an empty page on the first fetch and HTTP 403 on the second. The batch liveness field says alive (HTTP 200, checked 2026-10-08 13:18 UTC), which does not match this run, so it was not used. One search found nothing about this group in Philadelphia. The IRS address is a PO box (22714, 19110), so no meeting place is recorded. The contact name on the filing is a person and is not recorded. Summary left out. Needs a reader who can open the site.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:201863143"
+    ],
+    "group_id": "ed-bacon-foundation",
+    "ein": "201863143"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Ed Bacon Foundation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website www.edbacon.org returned HTTP 403 on two fetches, so nothing on the group's own site could be read. The name marks it as a foundation and the IRS filing is a PO box, so it is hidden as private until a readable page shows a public program or volunteer role. Re-check if access changes.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:463217818"
+    ],
+    "group_id": "electric-education-inc",
+    "ein": "463217818"
+   },
+   "verdict": "publish",
+   "name": "Electric Education Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website electriceducation.com returned an empty page once and a closed connection on three tries (www and bare domain). Nothing was read. IRS address is 1500 Locust Street, 19102. If it turns out to be a business, the verdict should become not_a_group. Summary, categories and audience left out because nothing could be verified. No search was used on this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:161293582"
+    ],
+    "group_id": "epsilon-mu-chapter-of-the-delta-phi-epsilon-international",
+    "ein": "161293582"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Epsilon Mu Chapter of Delta Phi Epsilon",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "A chapter of the Delta Phi Epsilon sorority, filed under the sorority's headquarters address (251 S Camac Street). The IRS name is cut off in the batch. The national site (dphie.org) lists a How To Join page, but this chapter is a membership group for sorority members, so there is no public way in for a newcomer. Hidden as private. The same national site and contact appear on the Epsilon Pi record. The national How To Join page is not checked and is not a record in this batch.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:141734666"
+    ],
+    "group_id": "epsilon-pi-chapter-of-the-delta-phi-epsilon-sorority",
+    "ein": "141734666"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Epsilon Pi Chapter of Delta Phi Epsilon",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "A chapter of the Delta Phi Epsilon sorority, filed under the sorority's headquarters address (251 S Camac Street). It shares the national site (dphie.org) and contact with the Epsilon Mu record. Membership is limited to sorority members, so there is no public way in for a newcomer. Hidden as private. Not checked further.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:812557204"
+    ],
+    "group_id": "factsonisrael-com-inc",
+    "ein": "812557204"
+   },
+   "verdict": "publish",
+   "name": "Factsonisrael.com",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The legal name is Factsonisrael Com Inc. The website typed on the tax form (http://www.factsonisrael.com/) returned a TLS error: the certificate names another host, and factsonisrael.com does not resolve. Nothing was read. The domain suggests an advocacy or education site, which is not verified. If it turns out to be a party, campaign or other partisan group, it is out of scope. Summary left out. IRS address is 1232 Ridge Avenue, 19123. No search was used on this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:201333805"
+    ],
+    "group_id": "family-inc",
+    "ein": "201333805"
+   },
+   "verdict": "publish",
+   "name": "Family Inc",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the tax form (www.family-inc.org) did not resolve, and the bare domain also failed. No search was used on this group. Summary, categories and audience left out because nothing could be verified. IRS address is an office suite, 42 South 15th Street, Suite 1776, 19102, so it may not be a meeting place.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:201150169"
+    ],
+    "group_id": "fans-helping-fans",
+    "ein": "201150169"
+   },
+   "verdict": "publish",
+   "name": "Fans Helping Fans",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website typed on the tax form (www.fanshelpingfans.org) did not resolve, and the bare domain also failed. No search was used on this group. Summary, categories and audience left out because nothing could be verified. IRS address is PO Box 15894, 19103.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:352364396"
+    ],
+    "group_id": "fight-for-cure",
+    "ein": "352364396"
+   },
+   "verdict": "publish",
+   "name": "Fight for Cure",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website http://www.fightforcure.org returned HTTP 403 on one fetch, so nothing could be read. No search was used on this group. The name alone does not say what the group does. Summary, categories and audience left out. IRS address is 2200 Benjamin Franklin Parkway, E1204, 19130.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

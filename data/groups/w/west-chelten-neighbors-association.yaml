@@ -5,17 +5,21 @@ leads:
 - city_rco:412
 - city_rco_points:412
 ein: null
-summary: West Chelten Neighbors Association is a Registered Community Organization (RCO) in the Upper
-  Northwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: West Chelten Neighbors Association is a nonprofit, membership-based neighborhood group in West
+  Germantown. It works on safety, zoning, cleanliness and beautification, and an annual block party, and
+  it is a City registered community organization.
+what_you_do: Members help shape the group's work on safety, zoning, cleanliness and beautification, and
+  community events such as an annual block party. Neighbors also share their views on nearby zoning and
+  building plans with the City and developers.
 kind: civic
 categories:
 - neighborhood-civic
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- preservation_architecture
 motives:
 - values
 - social
@@ -38,14 +42,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: General membership meetings several times a year, usually at 6:30 pm at the Weavers Way Germantown
+    office on Chelten Avenue, unless a different time is announced.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: Weavers Way Germantown Office Community Room 326B Chelten Avenue , Philadelphia, PA 19144
+- label: Meeting place (general meetings)
+  address: Weavers Way Germantown Office Community Room, 326B W Chelten Ave, Philadelphia, PA 19144
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -64,8 +71,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Membership is free. Donations, from $5, are welcome to cover costs.
 commitment: null
 group_size: null
 access:
@@ -80,15 +87,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the free membership form on the group's membership page, or email membership@westchelten.org,
+    then come to the next general meeting, usually at 6:30 pm at the Weavers Way Germantown office.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can join for free, and associate members can attend meetings and join committees, but
+    the site does not say whether non-members can come to a meeting.
+  what_to_expect: General meetings are evening gatherings at the Weavers Way office on Chelten Avenue,
+    where members handle group business and hear neighborhood updates such as block party plans. The fall
+    meeting also has an open floor for new topics. Full members vote and can serve on the board, and associate
+    members can attend and join committees.
+  first_visit_tips:
+  - Fill in the membership form before the meeting so you are on the list as an associate member.
+  - Check the group's news page for the date, since general meetings happen only a few times a year.
+  - Go to the community room in the Weavers Way Germantown office at 326B W Chelten Ave.
 contacts:
-  website: https://www.westchelten.org
+  website: https://westcheltenneighborsassociation.wordpress.com/
   email: info@westchelten.org
   phone: '2152000716'
   contact_name: Cristina Wuenschel
@@ -115,8 +130,31 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://westcheltenneighborsassociation.wordpress.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.website
+- url: https://westcheltenneighborsassociation.wordpress.com/about/meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+- url: https://westcheltenneighborsassociation.wordpress.com/about/wcn-membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - audience
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

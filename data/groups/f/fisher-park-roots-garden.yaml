@@ -2,12 +2,13 @@ id: fisher-park-roots-garden
 name: Fisher Park Roots Garden
 aka:
 - Fisher Park Community Garden; Roots Community Garden
+- Fisher Park Community Garden
+- Roots Community Garden
 leads:
 - city_gardens:9
 ein: null
-summary: Fisher Park Roots Garden is a registered community garden in the Upper North part of the city,
-  listed by the City of Philadelphia. Neighbors grow food and flowers together; contact the garden to
-  ask about a plot or a workday.
+summary: Fisher Park Roots Garden is a City-registered community garden in Fisher Park, in the Upper North
+  part of the city, with 19 raised beds. Contact the garden to ask about plots or workdays.
 what_you_do: Garden alongside neighbors and help with workdays.
 kind: garden
 categories:
@@ -68,7 +69,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the garden at olneyrootsgardenoffisherpark@gmail.com to ask about open plots or the next
+    workday.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -93,7 +95,15 @@ sources:
   - locations
   - contacts.website
   - contacts.email
-research_tier: 1
+- url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0/query?objectIds=9&outFields=*&f=json
+  seen: '2026-10-08'
+  fields:
+  - name
+  - aka
+  - locations
+  - status
+  - contacts.email
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

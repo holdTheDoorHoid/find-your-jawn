@@ -7,11 +7,12 @@ leads:
 - irs_990n:320437828
 - irs_bmf:320437828
 ein: '320437828'
-summary: Cathedral Park Community Development Association is a Registered Community Organization (RCO)
-  in the West Park part of the city. The City asks developers to talk with RCOs about nearby zoning and
-  building plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Cathedral Park Community Development Association works on affordable housing and neighborhood
+  improvement in West Philadelphia. It is also a Registered Community Organization (RCO), a group the
+  City asks developers to consult about nearby zoning and building plans, so neighbors can have a say
+  through it.
+what_you_do: Neighbors review nearby building and zoning proposals and share the group's view with the
+  City and developers. The website also shares information on affordable homes and mortgages.
 kind: civic
 categories:
 - neighborhood-civic
@@ -40,10 +41,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly meeting on the third Tuesday of the month at 6:30 pm at 4987 W. Thompson Street.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -82,13 +85,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-477-1832 to ask whether the public can attend the third-Tuesday meeting at 6:30 pm at
+    4987 W. Thompson Street.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The meetings page gives the day, time, and place but does not say whether the public may attend
+    or whether you must register first, so the way in is unclear.
+  what_to_expect: The meeting page gives only the day, time, and place. It does not say how long a meeting
+    runs, who attends, or whether there is a cost.
+  first_visit_tips:
+  - Confirm by phone first that the public is welcome at the meeting.
+  - Plan to arrive by 6:30 pm, when the meeting starts.
+  - The page gives no parking or transit details for 4987 W. Thompson Street, 19131.
 contacts:
   website: https://www.CathedralParkCDC.org
   email: MarkFrogHarris@verizon.net
@@ -124,7 +133,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://www.cathedralparkcdc.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+- url: https://www.CathedralParkCDC.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.phone
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

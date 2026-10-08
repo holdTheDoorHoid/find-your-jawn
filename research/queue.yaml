@@ -323,7 +323,27 @@ waves:
       text: 'Open Collective collectives based in Philadelphia (start at https://opencollective.com/search?query=philadelphia, read at most 6 search pages) and Fractured Atlas fiscally sponsored artists and projects in Philadelphia (public directory pages only). Keep community groups, mutual aid, clubs and volunteer projects; skip one person creative projects.'
     - agent: m-local-sponsors
       text: 'Other fiscal sponsors that serve Philadelphia groups. Use searches to find their public project lists (for example Bread and Roses Community Fund partners, Philadelphia Activities Fund, Allied fiscal sponsors of neighborhood projects, Public Health Management Corporation projects, The Philadelphia Foundation fiscal sponsorship, Urban Affairs Coalition partners). Urban Affairs Coalition (https://uac.org/) sponsors many small community programs: start there.'
-  - {id: w13-congregations, lane: R, kind: slices, brief: congregations, status: todo}
+  - id: w13-congregations
+    lane: R
+    kind: slices
+    brief: lists
+    searches_per_agent: 3
+    status: todo
+    slices:
+    - agent: r-quaker-meetings
+      text: 'Philadelphia Yearly Meeting (https://www.pym.org/) list of monthly meetings: every Quaker meeting that meets in the City of Philadelphia, with its worship time, First Day school, and committees or service work open to visitors. Also Friends Center (1501 Cherry St) programs open to the public.'
+    - agent: r-episcopal-lutheran
+      text: 'Episcopal Diocese of Pennsylvania (https://www.diopa.org/) parishes in Philadelphia and the Southeastern Pennsylvania Synod of the ELCA (https://sselca.org/) congregations in Philadelphia. Favor congregations with community meals, pantries, choirs or service programs open to neighbors.'
+    - agent: r-presbyterian-methodist-ucc
+      text: 'Presbytery of Philadelphia (https://www.presbyphl.org/) congregations, the United Methodist Eastern Pennsylvania Conference congregations in Philadelphia, United Church of Christ and American Baptist congregations in Philadelphia. Favor congregations with community programs open to neighbors.'
+    - agent: r-catholic-parishes
+      text: 'Archdiocese of Philadelphia parish finder (https://archphila.org/) for parishes in the City of Philadelphia, plus Saint Vincent de Paul conferences, Catholic young adult groups and parish community programs (pantries, meals, senior clubs) open to the public. Start with parishes whose websites list ministries; spend about the same effort on each.'
+    - agent: r-jewish-congregations
+      text: 'Synagogues and Jewish community groups in Philadelphia: the Jewish Federation of Greater Philadelphia directory (https://www.jewishphilly.org/), Reconstructing Judaism affiliated congregations, Chabad houses in the city, and Jewish volunteer programs (Jewish Relief Agency, Repair the World Philadelphia). We already have Tribe 12; skip it.'
+    - agent: r-muslim-hindu-sikh-buddhist
+      text: 'Mosques, Hindu temples, Sikh gurdwaras and Buddhist temples and sanghas in the City of Philadelphia (start from the Interfaith Philadelphia site https://www.interfaithphiladelphia.org/ and each community''s own site). Record open events, community meals (langar), classes and volunteer programs open to the public.'
+    - agent: r-black-churches
+      text: 'Historic and active Black congregations in Philadelphia with community programs open to neighbors (Mother Bethel AME, Enon Tabernacle Baptist, Zion Baptist, Mount Airy Church of God in Christ, Sharon Baptist, Vine Memorial Baptist and others found through the Black Clergy of Philadelphia and Vicinity and denominational lists). Record worship time and community programs (food, youth, health, re entry, senior).'
   - {id: w14-community-media, lane: H, kind: slices, brief: media, status: todo}
   - {id: w15-faith-mutual-aid-immigrant, lane: I, kind: slices, brief: mutual_aid, status: todo}
   - {id: w16-libraries-rec-schools, lane: J, kind: slices, brief: libraries, status: todo}
@@ -344,7 +364,19 @@ waves:
       text: 'Philadelphia Association of Community Development Corporations members (https://pacdc.org/), main street and business district groups with volunteer committees, and neighborhood network hubs. Record CDCs only when they run a program residents can join (volunteer days, resident committees, clean ups, community gardens).'
     - agent: q-food-access
       text: 'Food access networks: community fridge maps for Philadelphia, Philly Food Rescue, Share Food Program partner pantries that publish volunteer shifts, the Coalition Against Hunger, and mutual aid directories. Pantries and fridges that take volunteers are records (family hunger-housing-basic-needs). Philabundance and SHARE locators need a browser: skip those tools, use their public partner pages only.'
-  - {id: w18-support-groups, lane: U, kind: slices, brief: support, status: todo}
+  - id: w18-support-groups
+    lane: U
+    kind: slices
+    brief: lists
+    searches_per_agent: 3
+    status: todo
+    slices:
+    - agent: u-recovery
+      text: 'Recovery support in Philadelphia: the Southeastern Pennsylvania Intergroup of Alcoholics Anonymous (one record linking its meeting finder), Narcotics Anonymous Philadelphia area service, Al-Anon and Alateen in Philadelphia, SMART Recovery meetings in the city, recovery community organizations (PRO-ACT and others) with peer groups and drop in centers, and sober social groups. One record per organization; never copy meeting lists.'
+    - agent: u-mental-health-grief-caregiver
+      text: 'Mental health, grief and caregiver support groups in Philadelphia: NAMI Philadelphia (https://namiphilly.org/) support groups, Mental Health Partnerships, grief support centers (for example Uplift Center for Grieving Children, hospice bereavement groups open to the public), caregiver support groups (Alzheimer''s Association Delaware Valley, Philadelphia Corporation for Aging), and survivor support groups. One record per organization or recurring group.'
+    - agent: u-illness-parenting-lgbtq
+      text: 'Illness, parenting and identity support groups in Philadelphia: Cancer Support Community Greater Philadelphia, hospital support group calendars (Penn Medicine, Jefferson, Temple Health) for groups open to the public, new parent and postpartum support groups, LGBTQ support groups (William Way peer groups were already checked; skip them), and support groups for families of people who are incarcerated. One record per organization or recurring group.'
   - id: w19a-leads-own-site
     lane: K
     kind: batches

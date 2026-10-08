@@ -4,18 +4,22 @@ aka: []
 leads:
 - irs_990n:873059083
 ein: '873059083'
-summary: null
+summary: A Philadelphia arts and culture group that received tax exempt status in 2022. Its website returned
+  a page not found error for me, and I found no dated events, classes or public contact, so what it offers
+  is not yet known.
 what_you_do: null
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- theater-dance-performance
+interests:
+- community_theater
 motives: []
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -76,15 +80,21 @@ last_sign_of_life: null
 sign_of_life_url: null
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+  - verdict
+- url: https://projects.propublica.org/nonprofits/organizations/873059083
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope

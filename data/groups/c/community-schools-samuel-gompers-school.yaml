@@ -43,9 +43,9 @@ schedule:
   season: null
 locations:
 - label: School
-  address: 5701 Wynnefield Ave Philadelphia , PA 19131
+  address: 5701 Wynnefield Ave, Philadelphia, PA 19131
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19131'
   lat: null
   lng: null
@@ -62,22 +62,31 @@ access:
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call the school at (215) 400-3350 or email the Community School Coordinator at ijnanya.newman@phila.gov
+    to ask which volunteer help is open this season.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The city program page describes the school's work but not how a volunteer signs up, and the required
+    clearances must be on file before a first shift.
+  what_to_expect: Volunteers support the school's family and student programs and events, working with
+    the Community School Coordinator. The city page lists events, resource fairs, family forums, and adult
+    classes, but it does not describe what a volunteer shift looks like. Any adult volunteer needs a child
+    abuse history clearance and a PA criminal record check on file before starting.
+  first_visit_tips:
+  - Get your two clearances on file before your first shift.
+  - Ask the coordinator which events need help this season, because the city page does not list volunteer
+    roles.
+  - Call during office hours, 8:30 a.m. to 5 p.m. Monday to Friday, as the city page lists them.
 contacts:
-  website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186401
+  website: https://www.phila.gov/departments/mayors-office-of-education/community-schools/samuel-gompers-school/
   email: Madeline.Cerulli@phila.gov
   phone: (215) 834-6277
   contact_name: null
@@ -95,8 +104,21 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
-confidence: medium
+  - summary
+  - status
+- url: https://www.phila.gov/departments/mayors-office-of-education/community-schools/samuel-gompers-school/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts.website
+  - locations
+- url: https://mya.philasd.org/?p=420
+  seen: '2026-10-08'
+  fields:
+  - requirements.act153_clearances
+  - requirements.background_check
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

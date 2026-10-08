@@ -5,46 +5,59 @@ leads:
 - irs_990n:231989670
 - irs_bmf:231989670
 ein: '231989670'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A Catholic community for LGBTQ+ Catholics. Members gather for Sunday Mass in Center City, join
+  online Masses and discussion nights, and get a newsletter about upcoming events.
+what_you_do: Come to Mass in person or online, join a Zoom discussion, or read the group's quarterly magazine.
+  Members also get invitations to events.
+kind: congregation
+categories:
+- faith-community
+- social-meetups
+interests:
+- worship_community
+- lgbtq_social
+motives:
+- values
+- social
+formats:
+- conversation
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
-  community: []
-  faith: null
+  community:
+  - lgbtq
+  faith: catholic
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Mass in person on Sundays at 7 pm, plus some online Masses and discussion nights on Zoom. Check
+    the services page for dates.
+  days:
+  - sun
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 53348
+- label: The Church of St. Luke and the Epiphany (Sunday Mass)
+  address: 330 S 13th Street
   neighborhood: null
-  planning_district: central
-  zip: '19105'
+  planning_district: null
+  zip: '19107'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
-commitment: null
+  text: Not stated on the pages we read
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to Sunday Mass at 7 pm at St. Luke and the Epiphany, or join an online Mass on Zoom. Email
+    hello@dignityphila.org to ask how to get on the newsletter list.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Mass times, a meeting place and a public contact email are published, and the group posts its
+    events publicly.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.dignityphila.org
-  email: null
+  website: https://www.dignityphila.org
+  email: hello@dignityphila.org
   phone: null
   contact_name: Michael Viola
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.dignityphila.org/services
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +106,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.dignityphila.org/services
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - status
+- url: https://www.dignityphila.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - first_step
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

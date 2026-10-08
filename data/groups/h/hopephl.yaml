@@ -7,7 +7,9 @@ leads:
 ein: '232017882'
 summary: HopePHL serves as a Neighborhood Advisory Committee for the City of Philadelphia, linking residents
   in the West part of the city to services and giving them a voice.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+what_you_do: Work with neighbors and the City on local services and what the area needs. Its neighborhood
+  staff also help residents one on one with property tax relief, 311 requests, utility bills, and reporting
+  litter or vacant lots.
 kind: civic
 categories:
 - neighborhood-civic
@@ -36,10 +38,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Bridges to Wealth meets online on the second Monday of each month at 5 pm. Larger community briefings
+    are held quarterly.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -51,7 +56,7 @@ locations:
   lng: -75.20706645527825
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -60,7 +65,7 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Some meetings are held online.
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,13 +74,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Ask Kevin Brown at 267-777-5820 for the link to the online Bridges to Wealth meeting, held the
+    second Monday of each month at 5 pm.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The site lists open online meetings and a named contact for the link. It implies residents are
+    welcome but does not say so outright or give eligibility rules.
+  what_to_expect: The meetings we found are online, so you join from a phone or computer once you have
+    the link. The page does not say how long a meeting runs or how many people usually attend. One-on-one
+    appointments with the neighborhood staff are open Monday to Friday, 9 am to 5:30 pm, for help with
+    things like property tax relief or utility bills.
+  first_visit_tips:
+  - Call the main line, (267) 720-HOPE, or Kevin Brown at 267-777-5820 before a meeting to get the link.
+  - For an appointment, bring the bill or notice you want help with.
+  - The office is at 325 N. 39th Street, Philadelphia, PA 19104. The site gives no parking or transit
+    details.
 contacts:
   website: hopephl.org
   email: kdesmond@hopephl.org
@@ -102,8 +116,21 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
-confidence: medium
+- url: https://hopephl.org/neighborhood-services.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - online_ok
+  - access
+  - first_step
+- url: https://hopephl.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.phone
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

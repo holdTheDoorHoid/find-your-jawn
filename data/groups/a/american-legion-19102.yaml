@@ -1,40 +1,55 @@
 id: american-legion-19102
-name: American Legion
-aka: []
+name: American Legion Post 405
+aka:
+- American Legion
 leads:
 - irs_990n:236444692
 - irs_bmf:236444692
 ein: '236444692'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A veterans post that meets once a month at the Union League of Philadelphia. Its site also lists
+  local events, including the Philadelphia Veterans Parade and a yearly dinner gala.
+what_you_do: Ask the post about membership, or buy a ticket to the yearly dinner gala. Ask whether guests
+  can sit in on a monthly meeting.
+kind: club
+categories:
+- social-meetups
+interests:
+- veterans_posts
+- fraternal_service_clubs
+motives:
+- social
+- values
+formats:
+- conversation
+- one_off_event
+roles:
+- organize
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - veterans
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Meets on the third Monday of each month at 6 PM
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Union League of Philadelphia
   address: 140 S Broad St
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19102'
   lat: null
   lng: null
@@ -43,8 +58,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: Gala tickets are $120. Meeting cost and dues are not listed.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +73,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the post to ask about membership, or go to a third Monday meeting at 6 PM.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The page does not say what membership requires, what dues cost, or whether meetings are open
+    to non-members.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.phillypost405.com/
-  email: null
+  website: https://phillypost405.com/
+  email: Editorpost405@gmail.com
   phone: null
   contact_name: Union League of Philadelphia
-  social: []
+  social:
+  - https://www.facebook.com/groups/301484466568908
+  - https://www.instagram.com/americanlegionpost405
+  - https://www.linkedin.com/company/american-legion-post-405
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://phillypost405.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +110,19 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillypost405.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

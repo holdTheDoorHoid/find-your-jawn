@@ -1,0 +1,59 @@
+{
+ "wave": "w17-coalitions",
+ "agent": "q-pysc-directory-2",
+ "lane": "Q",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 49,
+ "leads_only": [
+  {
+   "name": "North Philly RAMS (American Youth Football)",
+   "url": "https://www.causeiq.com/organizations/american-youth-football-north-philly-rams,863251024/",
+   "note": "The directory's only link is a nonprofit profile on CauseIQ, not the group's site. It lists a 2009 Cecil B Moore Ave address and a 2005 founding year, with no programs, schedule, contact, or recent filings. No current evidence, so not published. No search was spent on it because the two-search budget went to AC United and Olney Eagles."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.acunited.org/",
+   "status": 403,
+   "note": "HTTP 403 on the directory's link. Not retried and not worked around. One search returned third-party listings for a club called AC United Soccer Club (Abington Community United) in Roslyn, Montgomery County. That may or may not be the directory's club, so nothing from those listings was recorded."
+  },
+  {
+   "url": "http://www.frankfordchargers.org/",
+   "status": null,
+   "note": "TLS handshake failure on four URL variants (http and https, with and without www). Not a bot check. Unreachable from this run; retry later."
+  },
+  {
+   "url": "https://giveandgoathletics.org/",
+   "status": 525,
+   "note": "HTTP 525 (origin SSL error) on https and http, three attempts in total. Unreachable from this run; retry later."
+  }
+ ],
+ "notes": "Directory page used: https://pysc.org/community-of-practice/ (linked from pysc.org as 'View All Organizations'). The PYSC homepage says 'over 170' youth sports providers, not the 157 in the brief. Only the 30 groups in this slice were checked. Verdicts: 22 publish, 2 out_of_area, 3 blocked, 1 leads_only, 2 dropped without a record (below). Dropped: Far Northeast Raiders (its SportsEngine page shows an American football program and a 19154 address, but no dates, cost, sign-up, or contact; a second look could publish it). Olney Eagles (its directory link leaguelineup.com/olneyeagles redirects to the Stack Sports home page; the only other evidence was a 2017 registration notice and an unclaimed third-party listing; no current activity shown). Fetch problems: Frankford Chargers and Give and Go Athletics were unreachable; Inter Philly FC's new domain returned empty pages twice; Mid-City's first directory link did not resolve (DNS). AC United is blocked (403) and was not worked around. Searches used: 2 (AC United, Olney Eagles). Fetches used: 49. Status notes: several sites show only copyright footers or undated items; those were not used as evidence, so those groups are probably_active or unknown rather than active.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [],
+    "website": "https://www.icphila.org/"
+   },
+   "verdict": "out_of_area",
+   "name": "Irish Diaspora Center",
+   "notes": "Listed in the directory as a youth sports organization, but the site shows no sports program. It lists a youth club, senior outreach, a genealogy group, a mental health program, and cultural events. The only address on the site is in Havertown, Pennsylvania (Delaware County). No Philadelphia program was found. Reconsider if a Philadelphia sports or youth program is confirmed.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [],
+    "website": "https://www.ironmentors.com/"
+   },
+   "verdict": "out_of_area",
+   "name": "Iron Sharpens Iron Inc.",
+   "notes": "The directory link goes to Iron Sharpens Iron Mentoring, Inc., whose listed address is in Las Vegas, Nevada. It is a mentoring group with no sports program on the site. No Philadelphia program was found, so it is not published. A Philadelphia branch, if one exists, would need its own link.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

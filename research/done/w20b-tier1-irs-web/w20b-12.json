@@ -1,0 +1,249 @@
+{
+  "wave": "w20b-tier1-irs-web",
+  "agent": "w20b-12",
+  "lane": "A",
+  "model": "haiku",
+  "searches_used": 2,
+  "fetches_used": 21,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_990n:240682685"], "group_id": "parkside-angling-association", "ein": "240682685", "website": null},
+      "verdict": "publish",
+      "name": "Parkside Angling Association",
+      "summary": "A nonprofit listed with the IRS at 2401 Pennsylvania Avenue under this name. We could not find a public page for it, so what it does is not yet confirmed.",
+      "kind": "nonprofit",
+      "categories": ["outdoors-adventure"],
+      "interests": ["kayaking"],
+      "status": "unknown",
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "One search for the name found no page for this group. The website on the tax form was not a web address (it reads CPA), so it was treated as missing. The name suggests a fishing club, but the vocabulary has no angling tag; kayaking is a placeholder for the closest outdoor water activity. No audience, schedule or cost is recorded because no source was read. Held back until a source is found."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232819668"], "group_id": "pcah-haddington", "ein": "232819668", "website": null},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "PCAH Haddington",
+      "research_tier": 1,
+      "notes": "The website typed on the tax form is the domain of a housing developer and manager, and the address is that developer's headquarters. The homepage did not mention a Haddington property or any public program. The name suggests a housing ownership entity with no public way in, so hidden as private. One fetch only; the link between this entity and the developer is not confirmed."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232846034"], "group_id": "pcah-haddington-corp-ii", "ein": "232846034", "website": null},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "PCAH Haddington Corp II",
+      "research_tier": 1,
+      "notes": "Same address and same typed website as PCAH Haddington. Name suggests a housing ownership entity with no public way in, so hidden as private. One fetch only, shared with the other PCAH record."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:842777596"], "group_id": "pdr-swimming-for-success", "ein": "842777596", "website": "https://www.gomotionapp.com/team/mapdrs/page/home"},
+      "verdict": "publish",
+      "name": "PDR Swimming for Success",
+      "summary": "A competitive swim team in Philadelphia, started in 1971 to give young African American swimmers a way into the sport. Its own site lists a registration page, a tryout request and a phone number, but we found no recent team news.",
+      "what_you_do": "Train and compete as a member of the team. Joining starts with the team's registration page or a tryout request.",
+      "kind": "team",
+      "categories": ["water-rowing"],
+      "interests": ["swimming"],
+      "motives": ["enhancement"],
+      "formats": ["team_play"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "members", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [{"label": "Team address on the team site", "address": "4200 Wissahickon Avenue", "zip": "19129", "in_city": true}],
+      "cost": {"level": "unknown", "text": "The cost page is linked from the team site, but we could not read it."},
+      "first_step": {"how": "Use the Team Registration page on the team site, or send a tryout request through the Request a Tryout page", "newcomer_friendliness": 2, "basis": "Registration and a tryout come before you can see the team, and the site does not explain how tryouts work."},
+      "contacts": {"website": "https://www.gomotionapp.com/team/mapdrs/page/home", "email": null, "phone": "215-292-8270", "social": []},
+      "status": "dormant",
+      "sources": [
+        {"url": "https://www.gomotionapp.com/team/mapdrs/page/home", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "locations", "cost", "first_step", "contacts"]},
+        {"url": "https://en.wikipedia.org/wiki/Jim_Ellis_(swimming_coach)", "seen": "2026-10-08", "fields": ["summary", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "low",
+      "notes": "The team site was reached through a TeamUnify address that redirects to GoMotion. Its footer says 2026, which is a copyright year and not evidence. Its newest dated item is a 2022 tour, shown by year only, and its upcoming events list is empty. The newest dated sign of life found is a 2023 note that the program stayed open and active, so status is dormant. The practice pools are not named on the team site. Verify with the team before publishing, since the summary may be out of date."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:233040608", "irs_bmf:233040608"], "group_id": "penn-state-alumni-association-19102", "ein": "233040608", "website": "http://www.psuphila.org"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Penn State Alumni Association Philadelphia Chapter",
+      "research_tier": 1,
+      "notes": "Alumni association chapter for Penn State graduates. Membership is $50 a year or $700 for life, per its site. Hidden under the alumni association rule. The site does list some public-facing events, including a produce party with Sharing Excess on November 7, 2026 from 9 am to 2 pm, so the owner may want to review this rule for chapters that run open volunteer events. Batch name was Penn State Alumni Association."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232820194"], "group_id": "pennsylvania-russia-business-council", "ein": "232820194", "website": "http://www.ma-rbc.org"},
+      "verdict": "publish",
+      "name": "Mid-Atlantic Eurasia Business Council",
+      "summary": "A business council that links Mid-Atlantic companies with partners in Eurasia, mostly through trade events, seminars and delegations. It also holds public cultural and remembrance events, including programs about people who rescued Jews during the Holocaust.",
+      "what_you_do": "Attend a public seminar or commemoration event, register for a trade event, or apply for membership as a business. The site also lists internships.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional", "culture-language-heritage-groups"],
+      "interests": ["professional_associations", "cultural_exchange"],
+      "motives": ["career", "understanding"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "cost": {"level": "unknown", "text": "Some events are free and others use registration. Prices are not stated on the pages we read."},
+      "first_step": {"how": "Register for a public event on the site, such as the October 26, 2026 Carl Lutz event that has a Zoom registration link, or use the Contact Us page to ask about attending", "newcomer_friendliness": 3, "basis": "Public events have registration links, but membership is an application aimed at businesses."},
+      "contacts": {"website": "http://www.ma-rbc.org", "email": null, "phone": null, "social": []},
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "http://www.ma-rbc.org",
+      "sources": [
+        {"url": "http://www.ma-rbc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "kind", "audience", "cost", "first_step", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Judgment call: this is mainly a business trade council. It is kept because it lists public cultural and commemoration events with open or free registration. The owner may prefer to hide it as a business with little community program. Batch name was Pennsylvania-Russia Business Council; the site uses the Mid-Atlantic Eurasia name and says it was formerly the Mid-Atlantic Russia Business Council. The IRS office address is 1600 Market Street Suite 1320, Philadelphia 19103, but it was not shown on the pages read, so it is not in locations. Only the first 100,000 characters of the homepage were read. Last dated item found: a June 2026 bill and June 2026 trade events."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:562494545"], "group_id": "pennsylvanias-education-for-all-coalition-inc", "ein": "562494545", "website": "https://www.paedforall.org"},
+      "verdict": "publish",
+      "name": "Pennsylvania Education for All Coalition",
+      "summary": "A parent-led nonprofit that helps families get the school support their children with disabilities need. It offers free help with IEPs, runs networks for parents and self advocates, and works for children to learn in their neighborhood schools.",
+      "what_you_do": "Come to a free IEP clinic, join the Parent Consultant Network or the Self Advocate Network, use the free education modules, or sign up for updates.",
+      "kind": "nonprofit",
+      "categories": ["advocacy-rights", "kids-youth-mentoring"],
+      "interests": ["disability_rights", "school_parent_groups"],
+      "motives": ["protective", "values"],
+      "formats": ["learn_skill", "one_off_event"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["parents", "disability"], "faith": null, "support_group": false},
+      "schedule": {"text": "Free IEP Clinic on October 17, 2026, 12:30 to 3 pm. An Annual Inclusion Conference is listed for November 7, 9:30 am to 3:30 pm, with no year shown.", "days": [], "times": ["daytime"], "recurring": false, "season": "event_only"},
+      "cost": {"level": "free", "text": "IEP support and the education modules are listed as free. Donations are optional."},
+      "first_step": {"how": "Come to the free IEP Clinic on October 17, 2026, or email info@paedforall.org to ask about joining the Parent Consultant Network", "newcomer_friendliness": 4, "basis": "The site explains its free IEP support and how to join its parent and self advocate networks."},
+      "contacts": {"website": "https://www.paedforall.org", "email": "info@paedforall.org", "phone": "(267) 232-0570", "social": []},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.paedforall.org",
+      "sources": [
+        {"url": "https://www.paedforall.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "contacts", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Legal name: Pennsylvania's Education For All Coalition Inc (batch name Pennsylvanias Education for All Coalition Inc). The site does not say whether it is nonpartisan. It is an education and disability advocacy group, not a party or campaign, so it is listed; the owner may want to confirm. The IRS office address, 718 Arch Street Suite 600N, Philadelphia 19106, was not shown on the site, so it is not in locations. The October 17 clinic has 2026 in its title. The November 7 conference shows no year, so it was not used for status."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:236670898", "irs_bmf:236670898"], "group_id": "phi-alpha-sigma-fraternity", "ein": "236670898", "website": "https://www.phialpasigma.org"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Phi Alpha Sigma Fraternity",
+      "research_tier": 1,
+      "notes": "The website (typed as Www.phialpasigma.org) does not resolve, with or without www. The batch lists a fraternity office at 313 South 10th Street. Fraternities are member-only, and no public way in was found, so hidden as private. Revisit if the site comes back and shows an open program."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:222653263"], "group_id": "phi-tau-chapter-of-the-delta-phi-epsilon-sorority", "ein": "222653263", "website": "https://www.dphie.org"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Phi Tau Chapter of Delta Phi Epsilon Sorority",
+      "research_tier": 1,
+      "notes": "The international sorority site describes a social sorority with collegiate and alumnae chapters, and its headquarters is 251 South Camac Street. The Phi Tau chapter's own page was not found, and the joining steps are on a separate page that was not read. Sorority chapters are member-only, so hidden as private."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:300216697"], "group_id": "philadelphia-black-gay-pride-inc", "ein": "300216697", "website": "https://www.phillyblackpride.org"},
+      "verdict": "publish",
+      "name": "Philly Black Pride",
+      "summary": "A group that puts on Pride celebrations for LGBTQ people of color in Philadelphia. Its site also has a Pride 365 section and a fund that takes donations.",
+      "what_you_do": "Attend the PRIDE 2026 celebration, book through the 2026 host hotel link, or sign up for monthly updates.",
+      "kind": "nonprofit",
+      "categories": ["social-meetups", "advocacy-rights"],
+      "interests": ["lgbtq_social", "racial_equity"],
+      "motives": ["social", "values"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "min_age": null, "community": ["lgbtq", "black"], "faith": null, "support_group": false},
+      "cost": {"level": "unknown", "text": "Event admission and registration fees are not stated on the page we read. Donations are requested."},
+      "first_step": {"how": "Sign up for the monthly updates on the site, or email info@phillyblackpride.org to ask how to attend PRIDE 2026", "newcomer_friendliness": 3, "basis": "Events and updates are public, but the page does not describe how to attend or volunteer."},
+      "contacts": {"website": "https://www.phillyblackpride.org", "email": "info@phillyblackpride.org", "phone": null, "social": []},
+      "status": "active",
+      "sources": [
+        {"url": "https://www.phillyblackpride.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "cost", "first_step", "contacts", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Legal name: Philadelphia Black Gay Pride Inc. Status active rests on PRIDE 2026 and the 2026 host hotel on the homepage. No month is shown, so no last_sign_of_life is recorded. The footer year 2025 is a copyright year and was not used. Instagram and Facebook pages were not read."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232285209", "irs_bmf:232285209"], "group_id": "philadelphia-botanical-club-academy-of-natural-sciences", "ein": "232285209", "website": "https://www.philbotclub.org"},
+      "verdict": "publish",
+      "name": "Philadelphia Botanical Club",
+      "summary": "A club for anyone who loves plants, founded in 1891. It holds free talks on botany at monthly meetings from September to May, and it also runs field trips, workshops and a yearly journal.",
+      "what_you_do": "Come to a free monthly talk, go on a field trip or workshop, or join for the journal Bartonia and member events.",
+      "kind": "club",
+      "categories": ["science-learning"],
+      "interests": ["natural_history", "talks_lectures"],
+      "motives": ["understanding", "social"],
+      "formats": ["one_off_event"],
+      "roles": ["figure_out"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "schedule": {"text": "Monthly meetings from September through May on Thursday evenings. Doors open at 6 pm and talks begin at 6:30 pm.", "days": ["thu"], "times": ["evening"], "recurring": true},
+      "locations": [{"label": "McLean Library at the Pennsylvania Horticultural Society", "address": "100 North 20th Street, Philadelphia, PA", "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "free", "text": "Monthly meetings are free and open to the public. Membership, field trip and workshop prices are not listed on the page we read."},
+      "commitment": "monthly",
+      "first_step": {"how": "Come to a monthly meeting at the McLean Library, doors open at 6 pm. For a Zoom-only meeting, email philbotclub@gmail.com the week before to get the link.", "drop_in": true, "newcomer_friendliness": 4, "basis": "The site says anyone with an interest in plants is welcome, and it explains how a non-member can attend, including by Zoom."},
+      "contacts": {"website": "https://www.philbotclub.org", "email": "philbotclub@gmail.com", "phone": null, "social": []},
+      "status": "active",
+      "sources": [
+        {"url": "https://www.philbotclub.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "online_ok", "cost", "commitment", "first_step", "contacts", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Legal name in the batch adds Academy of Natural Sciences; the site names only the club. Status active rests on 2026 items on the site: the 2026 Pine Barrens field meeting and a request to renew membership for 2026. The monthly meeting dates are written without years, so no month is recorded and the confidence stays at medium. The club says it was founded in 1891."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:233068929"], "group_id": "pennsylvania-association-of-drug-court-professionals", "ein": "233068929", "website": "https://www.padcp.org"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Pennsylvania Association of Drug Court Professionals",
+      "research_tier": 1,
+      "notes": "The website (padcp.org) does not resolve, with or without www. By name, this is a statewide professional association for drug court staff. It was not checked further, and no public way in was found, so hidden as private. Revisit if the site returns."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:208601905"], "group_id": "pennsylvania-firearm-owners-association", "ein": "208601905", "website": "https://www.pafoa.org/"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Pennsylvania Firearm Owners Association",
+      "research_tier": 1,
+      "notes": "The website (pafoa.org) does not resolve, with or without www. By name, this is a statewide membership and advocacy group. Its partisan status was not checked, and advocacy groups of this kind can endorse candidates. No public way in was found, so hidden as private. Revisit if the site returns and the owner wants advocacy groups of this kind listed."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:822684612"], "group_id": "pennsylvania-health-action-fund", "ein": "822684612", "website": "https://www.pahealthactionfund.org/"},
+      "verdict": "hide",
+      "hidden_reason": "private",
+      "name": "Pennsylvania Health Action Fund",
+      "research_tier": 1,
+      "notes": "The homepage returns not found over both https and http. The name suggests a political or advocacy fund, but it was not checked further, and no public way in was found, so hidden as private. Not a bot block. Revisit if the site returns."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:237360170", "irs_bmf:237360170"], "group_id": "pennsylvania-public-health-association-inc", "ein": "237360170", "website": "https://pa-pha.phmc.org"},
+      "verdict": "publish",
+      "name": "Pennsylvania Public Health Association",
+      "summary": "A statewide membership group for people who work in public health. It shares a free newsletter, posts action alerts and events, and works to advance public health policy in Pennsylvania.",
+      "what_you_do": "Read the free newsletter, follow the action alerts and events, or join as a member to take part in the work.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional", "health-wellness"],
+      "interests": ["professional_associations", "health_outreach"],
+      "motives": ["career", "values"],
+      "formats": ["learn_skill"],
+      "audience": {"open_to": "public", "min_age": null, "community": [], "faith": null, "support_group": false},
+      "locations": [{"label": "Office", "address": "1500 Market Street", "zip": "19102", "in_city": true}],
+      "cost": {"level": "unknown", "text": "Membership fees are not listed on the page we read."},
+      "first_step": {"how": "Sign up for the free newsletter on the site, or email contact@pa-pha.org to ask how to become a member", "newcomer_friendliness": 3, "basis": "The newsletter sign-up is open to anyone, but the page does not describe membership steps or fees, and it does not say whether events are open to non-members."},
+      "contacts": {"website": "https://pa-pha.phmc.org", "email": "contact@pa-pha.org", "phone": null, "social": []},
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://pa-pha.phmc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "locations", "cost", "first_step", "contacts", "status"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "Legal name: Pennsylvania Public Health Association Inc. The site lists upcoming events, action alerts and a newsletter sign-up, but none of them show a date, so status is probably_active (a working site with no dates). Office address and email as published on the site. The site says it is an affiliate of the American Public Health Association."
+    }
+  ],
+  "leads_only": [
+    {"name": "Parkside Association of Philadelphia", "url": "https://philadelphianeighborhoods.com/tag/parkside-association-of-philadelphia/", "note": "Name match from the Parkside Angling search, a 2013 blog post about a West Parkside neighborhood group. Not checked and probably unrelated to angling."}
+  ],
+  "blocked": [
+    {"url": "https://www.padcp.org", "status": null, "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."},
+    {"url": "https://www.pafoa.org/", "status": null, "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."},
+    {"url": "https://www.phialpasigma.org", "status": null, "note": "Dead site: DNS lookup failed for www and bare domain. Not a bot block."},
+    {"url": "https://www.pahealthactionfund.org/", "status": 404, "note": "Homepage returns not found over https and http. Not a bot block."}
+  ],
+  "notes": "Batch of 15 IRS groups: 7 publish, 8 hide. Two searches used, both for groups whose website field was not a web address. Parkside Angling Association: no page found. PDR Swimming for Success: found the team's own site, read, and status set to dormant from 2023 evidence (low confidence). Dead domains are listed under blocked but are not bot blocks. Judgment calls for owner review: (1) Mid-Atlantic Eurasia Business Council is kept although mainly a trade council; (2) Penn State Alumni Association Philadelphia Chapter is hidden under the alumni rule even though it lists public volunteer events; (3) Pennsylvania Education for All Coalition is listed while its nonpartisan status is not stated on the site; (4) Parkside Angling Association has no audience, schedule or summary facts beyond its IRS address, so it should stay unpublished until a source is found. Year-only evidence (2026 on Philly Black Pride and the Philadelphia Botanical Club site) is treated as active with no month recorded. No rate limiting was seen. Budget: 2 of 2 searches used, 21 fetch calls."
+}

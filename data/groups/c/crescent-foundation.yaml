@@ -1,21 +1,35 @@
 id: crescent-foundation
-name: Crescent Foundation
-aka: []
+name: Crescent Boat Club
+aka:
+- Crescent Foundation
 leads:
 - irs_990n:232755161
 ein: '232755161'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: A member-run rowing club on the Schuylkill River at Boathouse Row. Adults can join and row at
+  any level, and young people can take part in summer and junior rowing programs.
+what_you_do: Members row the club's boats on the river, from a first outing up to masters racing. The
+  club also runs junior and summer rowing programs. Anyone can walk the public riverfront path, which
+  is open year round.
+kind: club
+categories:
+- water-rowing
+interests:
+- rowing
+- youth_rowing
+motives:
+- enhancement
+- social
+formats:
+- team_play
+- learn_skill
+roles:
+- hands_on
+crowd:
+- all_adults
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +38,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Membership runs year round, with summer coaching and junior programs
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 5 Boathouse Row
+- label: Club and boathouse
+  address: '#5 Boathouse Row, 5 Kelly Drive'
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Membership dues apply. Amounts were not read.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +68,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Send an inquiry through the membership form on crescentboatclub.org, or apply to a summer or junior
+    rowing program from the youth rowing page.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The club says no rowing experience is needed and points newcomers to a membership inquiry form
+    and beginner-friendly youth and summer programs.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: crescentboatclub.org
+  website: https://crescentboatclub.org
   email: null
   phone: null
   contact_name: William Shea
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-05
+sign_of_life_url: https://crescentboatclub.org/news/
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -83,8 +99,23 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://crescentboatclub.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://crescentboatclub.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

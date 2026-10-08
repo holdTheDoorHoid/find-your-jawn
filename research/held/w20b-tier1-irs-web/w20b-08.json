@@ -1,0 +1,327 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-08",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 25,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.fitlersquar.org",
+   "status": null,
+   "note": "DNS lookup failed (host not found), tried twice"
+  },
+  {
+   "url": "https://www.herophillyunlimited.org",
+   "status": null,
+   "note": "TLS certificate does not match the host (shared hosting certificate), tried twice"
+  },
+  {
+   "url": "https://www.santorelibrary.org",
+   "status": 500,
+   "note": "HTTP 500 on two tries"
+  },
+  {
+   "url": "https://www.giveandgoathletics.org",
+   "status": 301,
+   "note": "permanent redirect to an unrelated site (kibeho-sanctuary.com); redirect not followed"
+  },
+  {
+   "url": "https://www.philafca.org",
+   "status": null,
+   "note": "DNS lookup failed, tried twice including the bare domain"
+  },
+  {
+   "url": "https://funeralconsumers.org",
+   "status": null,
+   "note": "national organization site, checked for a Philadelphia chapter; DNS lookup failed"
+  },
+  {
+   "url": "https://www.girardcoalition.org",
+   "status": null,
+   "note": "DNS lookup failed, tried with and without www"
+  },
+  {
+   "url": "https://www.gasitupfoundation.org",
+   "status": null,
+   "note": "DNS lookup failed, tried with and without www"
+  },
+  {
+   "url": "https://www.phillyflagfootball.com",
+   "status": null,
+   "note": "connection closed on four tries; bare domain redirects to http www, which also closed the connection"
+  }
+ ],
+ "notes": "Batch held 15 groups, not 8. Searches: 2 of 2 used, both on the two groups the brief names (Friends of Tel Bet Yerah, Greater Love Greater Health Enterprises). Fetches: 25. Verdicts: publish 12 (4 with live pages: Frator Heru, Friends of Franklin, Independence Branch friends, Global Khalifa; 8 held back as unknown with no sources or audience: Fitler Square, Five Loaves, Santore, Funeral Consumers, Gas It Up, Girard Coalition, Give and Go, Flag Football), hide 2 (Greater Love, Gamma Pi), out_of_area 1 (Tel Bet Yerah). Blocked: 9 entries, mostly DNS failures and TLS or 500 errors, not rate limiting; other domains answered normally. Friends of Franklin date verified on a second read. Global Khalifa needs an owner check before it goes live (plans, not confirmed services; LLC versus Inc naming). Friends of Franklin is online only, so its Philadelphia link is weak. Records for the eight unknown groups need a second pass with search budget, which this run did not have.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232111686",
+     "irs_bmf:232111686"
+    ],
+    "group_id": "fitler-square-improvement-assn-inc",
+    "ein": "232111686",
+    "website": "https://www.fitlersquar.org"
+   },
+   "verdict": "publish",
+   "name": "Fitler Square Improvement Association",
+   "summary": "A neighborhood association for the Fitler Square area, by its name and official listing. We could not reach its website, so its current meetings and projects are not yet confirmed.",
+   "kind": "civic",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "civic_association"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website did not resolve (DNS lookup failed) on two tries. No search was spent on this group, so there is no dated evidence. Official listing gives a PO Box (7709, 19101), not recorded as a location. Category chosen from the name only. No sources yet and no audience, so held back until someone can reach a working page.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:472873749"
+    ],
+    "group_id": "five-loaves-and-two-fish-unlimited-hero",
+    "ein": "472873749",
+    "website": "https://www.herophillyunlimited.org"
+   },
+   "verdict": "publish",
+   "name": "Five Loaves & Two Fish Unlimited-Hero",
+   "summary": "A nonprofit listed at 104 South 20th Street on an official tax list. Its website would not load securely for us, so what it does is not confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website hostname presents a shared hosting certificate that does not match the domain (checked twice), so the domain may not be set up. Name and address from the official list only. No categories, audience or sources yet, so held back until a working page or a phone check confirms what it does.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:911962015"
+    ],
+    "group_id": "friends-of-the-free-library-of-philadelphia-inc-19147",
+    "ein": "911962015",
+    "website": "https://www.santorelibrary.org"
+   },
+   "verdict": "publish",
+   "name": "Friends of the Santore Library",
+   "summary": "Friends group for the Santore Library branch at 932 South 7th Street. Its website returned an error for us, so its current activities are not confirmed.",
+   "kind": "friends_group",
+   "categories": [
+    "books-writing"
+   ],
+   "interests": [
+    "library_programs"
+   ],
+   "locations": [
+    {
+     "label": "Santore Library",
+     "address": "932 S 7th St",
+     "zip": "19147",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website returned HTTP 500 on two tries. The name comes from the library's web address and was not seen on any page we could read. Legal name in the official list: Friends of the Free Library of Philadelphia Inc (branch group). No audience or sources yet, so held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:236278750"
+    ],
+    "group_id": "funeral-consumers-alliance-of-greater-philadelphia-inc",
+    "ein": "236278750",
+    "website": "https://www.philafca.org"
+   },
+   "verdict": "publish",
+   "name": "Funeral Consumers Alliance of Greater Philadelphia",
+   "summary": "A consumer group for people planning funerals, by its name and official listing. We could not reach its website, so its current talks and workshops are not confirmed.",
+   "kind": "civic",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website (philafca.org) did not resolve on two tries. The national funeral consumer site also did not resolve, so no chapter page could be checked. Address on the filing is 1906 Rittenhouse Square, 19103, not recorded as a location. No categories, audience or sources yet, so held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:853088897"
+    ],
+    "group_id": "gas-it-up-foundation",
+    "ein": "853088897",
+    "website": "https://www.gasitupfoundation.org"
+   },
+   "verdict": "publish",
+   "name": "Gas It Up Foundation",
+   "summary": "A Philadelphia foundation listed at 113 South 21st Street on an official tax list. We could not reach its website, so what it does is not confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website (gasitupfoundation.org) did not resolve on two tries. The name says foundation, so check whether this is a public charity (in scope) or a private foundation (out of scope) before publishing. No categories, audience or sources yet, so held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:562436216"
+    ],
+    "group_id": "girard-coalition-incorporation",
+    "ein": "562436216",
+    "website": "https://www.girardcoalition.org"
+   },
+   "verdict": "publish",
+   "name": "Girard Coalition",
+   "summary": "A neighborhood coalition on Girard Avenue, going by its name and official listing. We could not reach its website, so its current meetings and projects are not confirmed.",
+   "kind": "civic",
+   "categories": [
+    "neighborhood-civic"
+   ],
+   "interests": [
+    "community_development"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Website (girardcoalition.org) did not resolve on two tries, with and without www. Also known as The Coalition GCI, per the official list. Address 704 West Girard Avenue, 19123. Categories chosen from the name only. No audience or sources yet, so held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:821268022"
+    ],
+    "group_id": "give-and-go-athletics",
+    "ein": "821268022",
+    "website": "https://www.giveandgoathletics.org"
+   },
+   "verdict": "publish",
+   "name": "Give and Go Athletics",
+   "summary": "An athletics nonprofit listed with a Philadelphia mailing address (19130). Its old web address now leads to an unrelated site, so what it offers is not confirmed.",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The web address answers with a permanent redirect to an unrelated site, which was not followed. No search was spent on this group, since both searches went to the two groups the brief names. Official list gives a PO Box (56197, 19130). No categories, audience or sources yet, so held back. Next step: search for a current page or a phone number.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:263998689"
+    ],
+    "group_id": "greater-philadelphia-flag-football-league",
+    "ein": "263998689",
+    "website": "https://www.phillyflagfootball.com"
+   },
+   "verdict": "publish",
+   "name": "Greater Philadelphia Flag Football League",
+   "summary": "A flag football league for the Philadelphia area, by its name and official listing. We could not reach its website, so its seasons and sign-up steps are not confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "sports-teams"
+   ],
+   "interests": [
+    "football_rugby"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website redirects from the bare domain to the www address, and the connection then closed on four tries. Official listing gives PO Box 21 (19105), not recorded. Category chosen from the name only. No audience or sources yet, so held back.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:853306716"
+    ],
+    "group_id": "greater-love-greater-health-enterprises",
+    "ein": "853306716"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Greater Love Greater Health Enterprises",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Official list gives no web address. The web field held an email address on a general Gmail account, which is not clearly the group's own, so it is not recorded. One search found no public page, event or program under this name. Hidden as private (no public way in found). Revisit if a public page appears. Address on the filing: 1336 Kater Street, 19147.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465243463"
+    ],
+    "group_id": "gamma-pi-chapter-of-the-delta-phi-epsilon-sorority",
+    "ein": "465243463",
+    "website": "https://www.dphie.org/"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Gamma Pi Chapter of Delta Phi Epsilon",
+   "kind": "club",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Chapter of a national social sorority. The national site (dphie.org) is live, has a public How to Join page and a chapter locator, and lists 251 S Camac St as its office, the same address as on the filing. Hidden as private because the chapter is a membership group reached only through national recruitment, and no chapter-level activity was found. Owner could choose to list the national sorority as its own record.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:205884256"
+    ],
+    "group_id": "friends-of-tel-bet-yerah"
+   },
+   "verdict": "out_of_area",
+   "name": "Friends of Tel Bet Yerah",
+   "kind": "friends_group",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "The web field held 'Mr.', not an address, so no website is recorded. One search found only the Tel Bet Yerah archaeological site on the Sea of Galilee in Israel, with excavation staff and field school reports, and no Philadelphia activity. Filing address 2047 Locust St, 19103. Verdict is out_of_area based on the subject of the group; owner may want to confirm it is only an overseas excavation support group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

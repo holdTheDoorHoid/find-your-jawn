@@ -4,27 +4,39 @@ aka: []
 leads:
 - city_nac:4
 ein: null
-summary: Episcopal Community Services of the Diocese of PA is a Neighborhood Advisory Committee listed
-  by the City of Philadelphia, a local community organization that works with the City on services and
-  priorities in the West part of the city.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
-kind: civic
+summary: ECS Philly works to reduce poverty in Philadelphia, mostly in West Philadelphia, with a food
+  pantry, housing help, one-on-one coaching, after-school enrichment, and monthly community dinners. The
+  City also lists it as a Neighborhood Advisory Committee that ECS leads.
+what_you_do: Volunteers help cook for a community meal, sort and hand out groceries at the food pantry,
+  lead activities, help with after-school programs, and give mock job interviews, mainly at the St. Barnabas
+  Community Resource Center.
+kind: nonprofit
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
+- kids-youth-mentoring
 interests:
 - community_development
 - civic_association
+- food_pantry
+- housing_help
+- after_school_camps
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
+- help_teach
 crowd:
 - neighbors
+- families
+- seniors
 bridging: null
 audience:
   open_to: public
@@ -36,10 +48,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Community Dinners are held monthly at the St. Barnabas Community Resource Center.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -69,15 +81,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the volunteer interest form on the Get Involved page, then ask about the next monthly
+    Community Dinner before you go.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Volunteering starts with a public interest form, and the monthly dinners are described as community
+    meals, but the site does not say whether anyone can walk in to a dinner.
+  what_to_expect: Volunteers might cook for a community meal, set up and hand out groceries at the food
+    pantry, lead an activity, or help with after-school programs. Community Dinners are monthly meals
+    meant to build trust and connection among neighbors. Most of the events listed for this fall are free.
+  first_visit_tips:
+  - Ask first whether the monthly dinner is open to walk-ins, since the site does not say.
+  - Call (215) 351-1400 to confirm place and time, because many listed events do not give a location.
+  - Name the roles you prefer on the volunteer form, such as the food pantry or mock interviews.
 contacts:
-  website: ecsphilly.org
+  website: https://ecsphilly.org/
   email: rhenam@ecsphilly.org
   phone: 215-528-5147
   contact_name: Rhena McClain
@@ -85,7 +104,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
+sign_of_life_url: https://ecsphilly.org/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0
   seen: '2026-10-08'
@@ -96,7 +115,26 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://ecsphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.phone
+  - contacts.email
+- url: https://ecsphilly.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+- url: https://ecsphilly.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

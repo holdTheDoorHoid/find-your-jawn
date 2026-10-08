@@ -7,17 +7,20 @@ leads:
 - irs_990n:844274175
 - irs_bmf:844274175
 ein: '844274175'
-summary: Overbrook Farms Club is one of the community organizations registered with the City to review
-  nearby zoning and building proposals in the West Park part of the city. Neighbors can follow what is
-  planned and speak up.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: Neighbors in Overbrook Farms who run a civic club founded in 1892. They care for local history
+  and historic preservation, follow nearby building and zoning plans, and host a block party and fall
+  events.
+what_you_do: Members vote for the club's board, weigh in on neighborhood decisions, and volunteer on local
+  projects. Neighbors can also join events such as the block party and History Night, some of which need
+  an RSVP or tickets.
 kind: civic
 categories:
 - neighborhood-civic
+- history-heritage-preservation
 interests:
 - civic_association
 - community_development
+- preservation_architecture
 motives:
 - values
 - social
@@ -40,28 +43,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Board and member meetings are held about once a month, mostly on Zoom.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Meeting place
-  address: 6376 City Avenue , Philadelphia, PA 19151
+- label: Mailing address
+  address: 6376 City Avenue, Philadelphia, PA 19151
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19151'
   lat: null
   lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
-  address: 6376 City Ave , Philadelphia, PA 19151
-  neighborhood: null
-  planning_district: west_park
-  zip: '19151'
-  lat: 39.98697119518387
-  lng: -75.24955033833463
   in_city: true
   transit: null
 online_ok: null
@@ -82,16 +76,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Email the club's executive committee in advance to say you plan to attend a member meeting; non-members
+    are welcome at them.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Membership needs a home inside the club's area and a board vote, and member meetings need an
+    advance email. Public events and the neighborhood listserv give a lower-stakes first look.
+  what_to_expect: Most meetings in 2026 are held on Zoom, and members get the invitation by email before
+    each one. Non-members are welcome at member meetings if they email ahead, and the site does not list
+    dues. Club events such as the block party and History Night are a lower-pressure way to meet neighbors,
+    though some need an RSVP or tickets.
+  first_visit_tips:
+  - If you are a member, watch your email for the Zoom invitation before the meeting.
+  - The neighborhood listserv has posting rules, including no partisan or personal posts, so read them
+    before you write.
+  - Some club events need an RSVP or tickets, so check the event details before you plan to go.
 contacts:
   website: https://www.overbrookfarmsphila.org/
-  email: conorcorcoran@yahoo.com
+  email: ofcexecutivecommittee@gmail.com
   phone: '2159900896'
   contact_name: Conor Corcoran
   social: []
@@ -132,8 +135,49 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.overbrookfarmsphila.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - interests
+- url: https://www.overbrookfarmsphila.org/membership
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - first_step.how
+  - first_step.basis
+- url: https://www.overbrookfarmsphila.org/community-meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.drop_in
+  - first_step.sign_up_needed
+  - first_step.what_to_expect
+- url: https://www.overbrookfarmsphila.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.overbrookfarmsphila.org/community-events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step.what_to_expect
+- url: https://www.overbrookfarmsphila.org/contactus
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+- url: https://www.overbrookfarmsphila.org/neighborhood-listserv
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

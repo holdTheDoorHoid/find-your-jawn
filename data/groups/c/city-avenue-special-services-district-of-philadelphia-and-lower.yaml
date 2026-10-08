@@ -5,11 +5,13 @@ leads:
 - city_rco:150
 - city_rco_points:150
 ein: null
-summary: City Avenue Special Services District of Philadelphia and Lower Merion is a Registered Community
-  Organization (RCO) in the West Park part of the city. The City asks developers to talk with RCOs about
-  nearby zoning and building plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: A special services district that works mostly with businesses and property owners along City
+  Avenue in Philadelphia and Lower Merion. It also runs community events such as block parties, food trucks,
+  and a movie night, and it is a Registered Community Organization (RCO) that developers consult about
+  nearby zoning and building plans.
+what_you_do: Attend district events, from networking happy hours to community events like block parties
+  and movie nights. Anyone who lives, works, or does business in the district can propose an event by
+  contacting the office.
 kind: civic
 categories:
 - neighborhood-civic
@@ -38,29 +40,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Hosts more than 20 networking, professional development, and social events each year. Lunch and
+    Learns are held monthly, and a pop-up pub runs in the summer.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Office
   address: 1 Belmont Avenue, Suite 700, Bala Cynwyd, PA 19004
-  neighborhood: null
-  planning_district: null
-  zip: '19004'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Contact address (City list)
-  address: 1 Belmont Avenue Suite 700, Bala Cynwyd, PA 19004
   neighborhood: null
   planning_district: west_park
   zip: '19004'
   lat: 39.998531141140646
   lng: -75.22572466438571
-  in_city: true
+  in_city: false
   transit: null
 online_ok: null
 cost:
@@ -80,13 +74,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Look at the events calendar at cityave.org/events, pick a community event such as a movie night
+    or festival, and call 610-747-0311 with questions.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site lists community events but does not say whether they are free or open to everyone, and
+    many events are for professionals. Proposing an event has a clear route, but attending a public event
+    does not.
+  what_to_expect: Events include networking happy hours for professionals, monthly Lunch and Learns, a
+    gathering on the district's growth held since 2016, and community events such as block parties and
+    food trucks. The website does not give prices or places for most of them.
+  first_visit_tips:
+  - The office is in Bala Cynwyd, outside Philadelphia, so check where an event is held before you go.
+  - Read each event's description, since many are for professionals.
+  - Call 610-747-0311 to ask whether an event is open to the public.
 contacts:
   website: https://cityave.org
   email: bryanf@cityave.org
@@ -96,7 +98,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://cityave.org/events/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -115,7 +117,30 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://cityave.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - locations
+- url: https://cityave.org/events-and-community/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - what_to_expect
+- url: https://cityave.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - locations
+- url: https://cityave.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

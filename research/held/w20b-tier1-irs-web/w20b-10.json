@@ -1,0 +1,93 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-10",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 40,
+ "leads_only": [
+  {
+   "name": "Kiwanis Club of Phil-Mont",
+   "url": "https://northeasttimes.com/t/kiwanis-club-of-phil-mont/",
+   "note": "Named in a news tag page found while searching for the South Philadelphia Kiwanis club. Its own website was not found and it was not checked."
+  },
+  {
+   "name": "William Way LGBT Community Center",
+   "url": "https://outxout.com/venue/williamwaylgbtcommunitycenterphiladelphia",
+   "note": "Named in a directory result for the LGBT Heart search. Not a partner of LGBT Heart. Its own website was not fetched."
+  },
+  {
+   "name": "Philly Pride 365",
+   "url": "https://phillygaycalendar.com/directory/philly-pride-365/",
+   "note": "Named in a directory result for the LGBT Heart search. Not a partner of LGBT Heart. Its own website was not fetched."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://k19067.site.kiwanis.org/",
+   "status": 403,
+   "note": "Site blocked the fetch. Facts came from ProPublica only."
+  },
+  {
+   "url": "https://mobilizedconstruction.com/",
+   "status": 403,
+   "note": "Site blocked the fetch. Facts came from ProPublica only."
+  },
+  {
+   "url": "http://phl.naaap.org/",
+   "status": 503,
+   "note": "Temporary server error on three tries. The chapter's own site naaapphila.org was used instead."
+  }
+ ],
+ "notes": "The batch file holds 15 groups, not 10, and all 15 are covered. Verdicts: publish 13, not_a_group 1, out_of_area 1, hide 0. Searches: both WebSearch calls used (South Philadelphia Kiwanis: no club page found; LGBT Heart: no current listing found). Fetches: 40 calls, including errors. Sites that did not resolve (DNS error with and without www): larazaforliberation.org, thelectionarycompany.org, legendaryperfprmances.org (typo), legendaryperformances.org, lectionarycompany.org, lgbtheart.org, nalsofphiladelphia.org, namcphiladelphia.org. Marathon Acts site returned 404 on both forms. The Mazeppa Productions site on file is an unrelated personal site and was not used. The Military Assistance Project site is a parked page. ProPublica Nonprofit Explorer was used for IRS facts where the group's own site was dead, blocked or parked. Records without audience.open_to (Kiwanis, La Raza, Lectionary, Legendary, Marathon Acts, Mazeppa, Military Assistance, Mobilized, NALS, NAMC) are held back on purpose until checked. LGBT Heart has no source URL (its ProPublica page returned 404), so it is held back too. No WebSearch was left for Legendary Performances, Marathon Acts, Lectionary Company, La Raza, NALS, NAMC or Mobilized. The best next checks: the Kiwanis club number, NALS Philadelphia, Legendary Performances and LGBT Heart. Rate limiting was not seen.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:331015833"
+    ],
+    "group_id": "legendary-performances",
+    "ein": "331015833"
+   },
+   "verdict": "publish",
+   "name": "Legendary Performances",
+   "kind": "nonprofit",
+   "summary": "I could not find a working website, a clear name match, or any public activity for this group, so what it offers and how to take part are not yet known.",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The batch website legendaryperfprmances.org (likely a misspelling) and the corrected legendaryperformances.org both fail to resolve (DNS error). ProPublica's page for this EIN shows only an unknown organization with a 2002 filing, so it cannot confirm the name or purpose, and no source URL is recorded. Both WebSearch calls went to other groups, so this group got no name search. No categories, interests or audience are set because the group type is not established. The record will be held back until a name search is run by hand.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:550866827"
+    ],
+    "group_id": "lesbian-gay-bisexual-transgender-health-education-research-tr",
+    "ein": "550866827"
+   },
+   "verdict": "publish",
+   "name": "LGBT Heart",
+   "kind": "nonprofit",
+   "summary": "A group whose IRS legal name points to LGBT health education and research. I could not reach a website, and my one search for LGBT Heart found no current listing under that name, so its programs and how to take part are not yet known.",
+   "categories": [
+    "health-wellness"
+   ],
+   "interests": [
+    "health_outreach"
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Both www.lgbtheart.org and lgbtheart.org fail to resolve (DNS error). The ProPublica page for this EIN returned HTTP 404, so there is no public source page to cite and the record has no sources, which holds it back. The legal name is Lesbian Gay Bisexual Transgender Health Education Research TR Inc, with an alternate name LGBT Heart in the batch. Audience is not established, so audience.open_to is left out. The LGBT search results were general directories and mention William Way and Philly Pride 365 (see leads_only), not this group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

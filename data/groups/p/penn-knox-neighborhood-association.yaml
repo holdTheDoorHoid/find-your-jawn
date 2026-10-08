@@ -38,15 +38,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly meetings are listed for the first Tuesday of the month, 7 to 9 pm, on Zoom.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: Monthly Zoom meetings, Quarterly Hybrid meetings at , Friends Free Library, 5418 Germantown
-    Ave, Philadelphia, PA 19144, United States
+- label: Quarterly hybrid meetings (Friends Free Library)
+  address: 5418 Germantown Ave
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -65,8 +66,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: 'Suggested yearly dues: $10 per person or $25 per household. Any amount is welcome.'
 commitment: null
 group_size: null
 access:
@@ -81,13 +82,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email pennknox.germantown@gmail.com to confirm the next Zoom meeting before you join, since the
+    site's meeting listings stop in 2024.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site lists a monthly Zoom meeting, but its newest meeting listing is from 2024, and it does
+    not say outright that neighbors may attend.
+  what_to_expect: Meetings review nearby zoning and building proposals, and the group shares its view
+    with the City and developers. The site lists the first Tuesday of the month from 7 to 9 pm on Zoom.
+    Suggested dues help pay for event permits, legal fees, and newsletter printing, and the site does
+    not describe how a meeting runs.
+  first_visit_tips:
+  - Confirm the next meeting by email before you log on.
+  - Dues are suggested, not required, and the site says a check can be mailed or dropped off.
+  - The site's footer lists a Facebook group and an Instagram account, which may carry newer meeting details.
 contacts:
   website: http://pennknox.com
   email: pennknox.germantown@gmail.com
@@ -116,8 +125,31 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: http://pennknox.com
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.pennknox.com/newsletter-archive
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.pennknox.com/minutes
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: http://pennknox.com/dues-or-donate
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+- url: http://pennknox.com/rco
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,13 +1,16 @@
 id: greater-phila-asian-social-services
-name: Greater Phila. Asian Social Services
-aka: []
+name: Greater Philadelphia Alliance Social Services Center (GPASS)
+aka:
+- Greater Phila. Asian Social Services
+- GPASS
 leads:
 - city_nac:7
 ein: null
-summary: Greater Phila. Asian Social Services serves as a Neighborhood Advisory Committee for the City
-  of Philadelphia, linking residents in the Upper North part of the city to services and giving them a
-  voice.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: GPASS is a nonprofit social service center in North Philadelphia. It runs the Neighborhood Advisory
+  Committee for the Olney and Logan area, a City-backed program that connects residents to City services
+  and gives neighbors a voice on local needs.
+what_you_do: Volunteer on the sub-committee that helps plan the committee's work, or visit the office
+  on a weekday to talk with the NAC coordinator about City programs and neighborhood needs.
 kind: civic
 categories:
 - neighborhood-civic
@@ -43,7 +46,7 @@ schedule:
   season: null
 locations:
 - label: Office
-  address: 4943 N 5th St
+  address: 4943 N 5th St, Philadelphia, PA 19120
   neighborhood: null
   planning_district: upper_north
   zip: '19120'
@@ -69,15 +72,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Call 215-456-1662 or visit the office on a weekday and ask how to join the Neighborhood Advisory
+    Sub-Committee.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The NAC page invites residents to join its volunteer sub-committee and says to call or visit,
+    but it gives no meeting schedule, so it is not rated higher.
+  what_to_expect: A first visit is a talk with the NAC coordinator about City programs and what the area
+    needs. The sub-committee helps plan the committee's activities, but the site lists no meeting times,
+    so ask when you call. No page we could read says whether there is a charge for the volunteer role.
+  first_visit_tips:
+  - The office is closed on weekends, so plan a visit Monday to Friday between 9 am and 5 pm.
+  - The office is at 4943 North 5th Street, Philadelphia, PA 19120.
+  - Call ahead at 215-456-1662 to check that the coordinator is available.
+  - The office also hosts community meetings, such as a police district advisory council session the calendar
+    listed for September 2026.
 contacts:
-  website: gpasspa.org
+  website: https://gpasspa.org
   email: ykim@gpasspa.org
   phone: 215-456-1662 x119
   contact_name: YoAn Kim
@@ -96,7 +108,31 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://gpasspa.org
+  seen: '2026-10-08'
+  fields:
+  - name
+  - aka
+  - last_sign_of_life
+- url: https://gpasspa.org/nac
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://gpasspa.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_visit_tips
+- url: https://gpasspa.org/contact-info
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,9 +5,10 @@ leads:
 - irs_990n:921700603
 - irs_bmf:921700603
 ein: '921700603'
-summary: A free club of people who study mushrooms and other fungi in Philadelphia. It runs guided walks,
-  workshops and citizen science, and joins park cleanups.
-what_you_do: Join a guided fungus walk, learn to log finds online, or help with a park cleanup.
+summary: A free club for people curious about mushrooms and other fungi in Philadelphia. Members go on
+  guided forays, learn to log their finds online, and join park cleanups.
+what_you_do: Join a guided fungus walk, log your finds on iNaturalist, or help with the monthly cleanup
+  at Cobbs Creek Park.
 kind: club
 categories:
 - science-learning
@@ -38,18 +39,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Walks, workshops and cleanups happen through the year. The club site does not list a regular day
-    or time for cleanups.
-  days: []
-  times: []
-  recurring: false
+  text: Monthly cleanups at Cobbs Creek Park on the first Sunday of each month, 2 to 4 pm. Guided walks
+    and forays are held through the year.
+  days:
+  - sun
+  times:
+  - daytime
+  recurring: true
   season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 6602 Morris Park Rd
+- label: Mailing address
+  address: 6602 Morris Park Rd, Philadelphia, PA 19151
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19151'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Monthly cleanups
+  address: Cobbs Creek Park, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -57,8 +69,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Membership is free, and some events are free and open to everyone
-commitment: null
+  text: Membership is free. Most events are free and open to everyone, and the club also takes donations.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -72,23 +84,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email the club to ask about the next outing or cleanup
+  how: Pick a listed foray or the first-Sunday cleanup at Cobbs Creek Park, then RSVP through the event
+    page if it has one.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The club says volunteers are welcome, membership is free, and a public contact address is published
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The volunteer page says beginners are welcome, the events page says the forays are free and open
+    to everyone, and the club publishes an email address and a mailing list for newcomers.
+  what_to_expect: A foray is a guided walk through a park or preserve, led by experts, and most are free
+    and open to everyone. The monthly cleanup at Cobbs Creek Park runs from 2 to 4 pm on the first Sunday.
+    The club says both experienced mushroom people and beginners are welcome, and it is funded by donations.
+  first_visit_tips:
+  - Check the event page for the exact meeting spot, since some forays are outside the city, such as Ridley
+    Creek State Park.
+  - If you do not have a ride to an out-of-city foray, ask about carpooling through the club's email or
+    its Facebook group.
+  - Bring a phone if you want to log your finds in the iNaturalist app, where the club keeps a project.
 contacts:
   website: https://phillymycoclub.com
   email: info@phillymycoclub.com
   phone: null
   contact_name: Kevin Popowich
-  social: []
+  social:
+  - https://www.facebook.com/groups/phillymycoclub
+  - https://www.instagram.com/phillymycoclub
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://phillymycoclub.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillymycoclub.com/events-info/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,8 +136,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - contacts.email
+- url: https://phillymycoclub.com/events-info/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step.sign_up_needed
+  - cost
+  - locations
+- url: https://phillymycoclub.com/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step.newcomer_friendliness
+  - first_step.basis
+  - what_you_do
+  - schedule
+- url: https://phillymycoclub.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.social
+  - contacts.email
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

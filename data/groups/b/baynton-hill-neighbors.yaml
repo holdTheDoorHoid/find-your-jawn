@@ -44,15 +44,6 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Meeting place
-  address: 293 East Bringhurst St, Philadelphia, PA 19144
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 - label: Contact address (City list)
   address: 293 East Bringhurst St, Philadelphia, PA 19144
   neighborhood: null
@@ -80,7 +71,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the contact listed for the association at bhna.rco@gmail.com to ask when its next meeting
+    is and whether neighbors can attend.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -115,7 +107,16 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0/query?where=lni_id%3D115&outFields=*&f=json
+  seen: '2026-10-08'
+  fields:
+  - name
+  - locations
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

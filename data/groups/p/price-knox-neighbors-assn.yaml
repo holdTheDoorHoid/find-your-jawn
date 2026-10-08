@@ -7,13 +7,15 @@ leads:
 ein: null
 summary: If you care about what gets built near you, Price-Knox Neighbors Assn. is a City registered community
   organization in the Upper Northwest part of the city that hears about zoning and development proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+what_you_do: Members follow zoning and development plans in the area, meet once a month, and work through
+  committees on streets and beautification, voting, safety, events, and the Price Street play lot.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- voter_education
 motives:
 - values
 - social
@@ -36,13 +38,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly general meeting on the third Saturday at 9 am, at the Price Street Tot Lot in good weather
+    and at Rittenhouse Soundworks otherwise.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Meeting place
+- label: Rittenhouse Soundworks (indoor meetings)
   address: 219 W Rittenhouse St
   neighborhood: null
   planning_district: null
@@ -62,9 +67,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free to join, with no dues or initiation fees.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -78,15 +83,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the third Saturday meeting at 9 am, at the Price Street Tot Lot in good weather or at Rittenhouse
+    Soundworks otherwise. The next listed meeting is October 17, 2026.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: 'Meetings are open, and the site lays out a clear path: residents inside the boundaries join
+    for free after attending one open meeting, but the welcome depends on living in the area.'
+  what_to_expect: Expect neighbors from the blocks around Knox and Rittenhouse Streets. The group talks
+    over zoning and development plans in the area and works with the City on renovating the Price Street
+    play lot. On a first visit you can simply listen, and joining as a member is free.
+  first_visit_tips:
+  - Check the group's website calendar before you go, since the meeting place changes with the weather.
+  - Bring your name, address, and a way to reach you if you want to register as a member.
+  - Plan to arrive by 9 am, when the meeting starts.
+  - Ask to be added to the email list to hear about changes between meetings.
 contacts:
-  website: www.priceknox.org
+  website: https://www.priceknox.org
   email: mathis.anthony52@gmail.com
   phone: '2152840266'
   contact_name: Tony Mathis
@@ -94,7 +107,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.priceknox.org/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -113,8 +126,24 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.priceknox.org/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - commitment
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.jazznearyou.com/philadelphia/venue/rittenhouse-soundworks
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

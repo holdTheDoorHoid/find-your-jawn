@@ -4,9 +4,11 @@ aka: []
 leads:
 - city_volunteer_portal:186411
 ein: null
-summary: A Community School partnership between the City, the School District and neighbors, Overbrook
-  Educational Center welcomes volunteers through the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+summary: Overbrook Educational Center is a K to 8 public school and a City Community School, a partnership
+  between the City, the School District, and neighbors that offers family, health, and after-school services.
+  Volunteers sign up through the District's volunteer process.
+what_you_do: Help with school-based programs for students and families after completing the required clearance
+  checks and orientation.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -36,14 +38,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The school day runs 8:15 am to 2:54 pm. The website gives no set volunteer hours.
   days: []
   times: []
   recurring: null
   season: null
 locations:
 - label: School
-  address: 6722 Landsdowne Ave Philadelphia , PA 19151
+  address: 6722 Landsdowne Ave, Philadelphia, PA 19151
   neighborhood: null
   planning_district: west_park
   zip: '19151'
@@ -54,7 +56,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The state clearance checks are free. The FBI fingerprint check costs $23.25 if you have not lived
+    in Pennsylvania for the past 10 years.
 commitment: null
 group_size: null
 access:
@@ -63,21 +66,32 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call the school at 215-400-7540 to ask whether it needs volunteers, then start the District's volunteer
+    steps from the Volunteer page linked on the school's website.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers must clear background checks and finish an orientation before they start, so a first
+    visit needs approval first. The steps are clearly listed.
+  what_to_expect: A first step is paperwork, not a shift. Volunteers complete two state checks and an
+    FBI check (a signed affirmation can replace the FBI check if you have lived in Pennsylvania for 10
+    years), then a Volunteer Orientation within 45 days of starting, which takes about 45 minutes online
+    or in person, and sign a Volunteer Code of Conduct. The District page gives no time commitment or
+    required number of hours.
+  first_visit_tips:
+  - Ask the school whether it needs volunteers before you start the clearance paperwork.
+  - If you have not lived in Pennsylvania for the past 10 years, plan for an FBI fingerprint check, which
+    costs $23.25.
+  - The school day runs 8:15 am to 2:54 pm, so plan any visit around it. The website gives no parking
+    or entrance details.
 contacts:
-  website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186411
+  website: https://oec.philasd.org/
   email: Madeline.Cerulli@phila.gov
   phone: (215) 834-6277
   contact_name: null
@@ -95,7 +109,26 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+- url: https://oec.philasd.org/
+  seen: '2026-10-08'
+  fields:
+  - contacts.website
+  - schedule
+  - first_step
+- url: https://www.phila.gov/programs/community-schools/overbrook-educational-center/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.email
+- url: https://www.philasd.org/face/
+  seen: '2026-10-08'
+  fields:
+  - requirements.background_check
+  - cost
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
