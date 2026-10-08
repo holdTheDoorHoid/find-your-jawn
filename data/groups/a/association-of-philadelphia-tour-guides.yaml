@@ -5,18 +5,28 @@ leads:
 - irs_990n:452671534
 - irs_bmf:452671534
 ein: '452671534'
-summary: null
-what_you_do: null
+summary: A membership group for people who guide visitors around Philadelphia, both paid and volunteer
+  guides. It runs a certification program for city guides and keeps members connected through training
+  and events.
+what_you_do: Members take part in the city guide education and certification program, get training, and
+  share industry events and news.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- history-heritage-preservation
+interests:
+- walking_tours
+motives:
+- career
+- understanding
+formats:
+- learn_skill
+roles:
+- help_teach
+crowd:
+- professionals
 bridging: null
 audience:
-  open_to: null
+  open_to: members
   school: null
   min_age: null
   max_age: null
@@ -25,11 +35,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The office is open weekdays from 8 am to 5 pm. A 2027 membership drive is mentioned, with no dates
+    given.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 901 N Penn St Unit F1901
@@ -44,7 +61,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -58,23 +75,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Join through the Join APT membership page, or contact the office
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Joining is by membership, and the page does not show dues or a meeting schedule, so the way in
+    is not clear to a newcomer.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: phillyguides.org
+  website: https://phillyguides.org
   email: null
   phone: null
   contact_name: Judy Smith
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://phillyguides.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -91,8 +109,16 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://phillyguides.org/about-apt/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - first_step
+  - schedule
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

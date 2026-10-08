@@ -1,22 +1,34 @@
 id: university-city-hospitality-coalition-inc
-name: University City Hospitality Coalition Inc
+name: University City Hospitality Coalition
 aka: []
 leads:
 - irs_990n:232464523
 - irs_bmf:232464523
 ein: '232464523'
-summary: null
-what_you_do: null
+summary: A volunteer-run group that serves free hot meals and sandwiches to people in West Philadelphia's
+  University City, with church and campus partners hosting the meals. It also works to ease hunger and
+  homelessness in the neighborhood.
+what_you_do: Help cook, assemble meals, or bake at partner churches, or donate food. Partner churches
+  post their volunteer days.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- food-drink
+- faith-community
+interests:
+- community_meals
+- faith_service_projects
+motives:
+- values
+formats:
+- team_play
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +37,43 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Hot meals on weeknights at 6:00 pm at rotating church and campus sites, and a Saturday noon meal,
+    per an undated PA 211 listing. Confirm before going.
+  days:
+  - mon
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - evening
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 3720 Spruce St PMB 410
+- label: University Lutheran Church
+  address: 3637 Chestnut Street
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 3720 Spruce Street PMB 410
+- label: Woodland Presbyterian Church
+  address: 401 South 42nd Street
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free meals
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -67,7 +87,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Volunteer through a partner church's posted volunteer day, or call the coordinators before a shift
+    to confirm the schedule
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -77,13 +98,13 @@ first_step:
 contacts:
   website: www.uchcphiladelphia.org
   email: null
-  phone: null
+  phone: 610-639-4395
   contact_name: Gwendolyn Thamm
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.fpcphila.org/events/2026/8/16/casseroles-uchc
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +121,24 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pa211.org/agency/15943/50754/61569
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - contacts
+  - cost
+- url: https://www.idealist.org/en/nonprofit/9ef71042b36e461e8be6a6b7123f741f-university-city-hospitality-coalition-philadelphia
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.fpcphila.org/events/2026/8/16/casseroles-uchc
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

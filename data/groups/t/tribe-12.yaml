@@ -5,31 +5,46 @@ leads:
 - irs_990n:271610125
 - irs_bmf:271610125
 ein: '271610125'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+summary: A Jewish community in Philadelphia for people in their 20s and 30s. It runs social events such
+  as caramel apple making, frame drumming, and holiday and Shabbat gatherings.
+what_you_do: Sign up for a calendar event, such as a cooking night or a drumming session, and meet other
+  young adults.
+kind: club
+categories:
+- faith-community
+- social-meetups
+interests:
+- congregation_social
+- young_adult_social
+motives:
+- social
+- understanding
+formats:
+- side_by_side
+- perform_make_together
 roles: []
-crowd: []
+crowd:
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
   community: []
-  faith: null
+  faith: jewish
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Events through the month. Listed dates include Caramel Apple Making on Thursday, October 15, 2026
+    (6:30 to 8:30 pm) and Frame Drumming on Wednesday, October 21, 2026 (7 to 8:30 pm).
+  days:
+  - wed
+  - thu
+  times:
+  - evening
+  recurring: true
+  season: fall
 locations:
 - label: Mailing address (IRS)
   address: 101 S Independence Mall E
@@ -49,11 +64,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Event prices not listed on the home page. An optional sustainer gift of $12 a month is offered.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +82,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Choose an event on the events calendar and register. Some events are marked space limited.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Single events are open to registration on a public calendar, but the page does not say newcomers
+    are especially welcome
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
+  website: https://tribe12.org/
+  email: yo@tribe12.org
   phone: null
   contact_name: Ross Berkowitz
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://tribe12.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -98,8 +114,17 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://tribe12.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - audience
+  - cost
+  - contacts
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

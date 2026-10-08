@@ -7,29 +7,32 @@ leads:
 - irs_990n:233070557
 - irs_bmf:233070557
 ein: '233070557'
-summary: If you care about what gets built near you, Fishtown Neighbors Association is a City registered
-  community organization in the River Wards part of the city that hears about zoning and development proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: The neighborhood association for Fishtown. Neighbors meet at general membership meetings, work
+  on beautification, safety and planning committees, and run community events such as a holiday party
+  and a chili cookoff.
+what_you_do: Attend general meetings, join a committee like Beautification or Safety and Planning, help
+  run neighborhood events, or register voters through the association's voter program.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
-- community_development
+- clean_blocks
+- voter_education
 motives:
 - values
 - social
 formats:
-- conversation
 - lead_organize
+- team_play
 roles:
 - organize
-- figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -38,35 +41,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: General membership meetings are held in the evening at the Fishtown Recreation Center. The most
+    recent listing found was Wednesday, Aug 19, 2026, 7 to 8:30 pm. The next date was not listed.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Meeting place
-  address: Fishtown Recreation Center, 1202 E Montgomery Ave, Philadelphia, PA 19125
+- label: Fishtown Recreation Center
+  address: 1202 East Montgomery Avenue
   neighborhood: null
-  planning_district: river_wards
+  planning_district: null
   zip: '19125'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: PO Box 3744, Philadelphia, PA 19125
-  neighborhood: null
-  planning_district: river_wards
-  zip: '19125'
-  lat: 39.97263836133733
-  lng: -75.12871276118543
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free to attend
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -77,22 +74,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Sign up for the newsletter on fishtown.org or use the contact page to ask about the next general
+    meeting
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The listing says all Fishtown residents and business owners are welcome, and meetings are open
+    to the public; membership details are on the site but were not confirmed
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.fishtown.org
+  website: https://fishtown.org
   email: zoning@fishtown.org
   phone: '2156075711'
   contact_name: Robert Everett
-  social: []
+  social:
+  - https://fishtown.org/contact.html
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -129,6 +129,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+- url: https://fishtown.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - interests
+  - first_step
+  - contacts
+- url: https://nkcdc.org/event/fna-general-meeting/2026-08-19/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - audience
+  - status
 research_tier: 1
 confidence: medium
 last_checked: '2026-10-08'

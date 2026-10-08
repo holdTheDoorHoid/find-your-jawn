@@ -1,22 +1,33 @@
 id: friends-of-mount-moriah-cemetery-inc
-name: Friends of Mount Moriah Cemetery Inc
+name: Friends of Mount Moriah Cemetery
 aka: []
 leads:
 - irs_990n:452247158
 - irs_bmf:452247158
 ein: '452247158'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: Volunteers who clean up and restore Mount Moriah Cemetery in southwest Philadelphia. They hold
+  clean-up days one or two times a month, and you can come to just one.
+what_you_do: Clear brush, trim weeds, pick up trash, plant flowers, and help with historical research
+  on the grounds. Groups from colleges and businesses also come to clean-up days.
+kind: friends_group
+categories:
+- history-heritage-preservation
+- nature-environment
+interests:
+- cemetery_friends
+- park_cleanup
+motives:
+- values
+- social
+formats:
+- side_by_side
+roles:
+- hands_on
+crowd:
+- all_ages
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -25,35 +36,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Clean-up events one or two times a month, through the year. A Saturday event was planned for April
+    25, 2026. Dates are posted on the group's volunteer page.
+  days:
+  - sat
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 5321
+- label: Mount Moriah Cemetery, Philadelphia entrance on Kingsessing Avenue
+  address: 6201 Kingsessing Ave
   neighborhood: null
-  planning_district: lower_southwest
+  planning_district: null
   zip: '19142'
   lat: null
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 2559 S 70th Street
-  neighborhood: null
-  planning_district: lower_southwest
-  zip: '19142'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free to volunteer. Donations help pay for flowers planted on the grounds.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,23 +71,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Pick a clean-up day from the volunteer page, or email info@fommci.org
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Clean-up days are open to community members, students and groups, and a volunteer can attend
+    one event without any long-term commitment.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.fommci.org
-  email: null
+  website: https://friendsofmountmoriahcemetery.org
+  email: info@fommci.org
   phone: null
   contact_name: Paulette Rhone
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.nbcphiladelphia.com/news/local/volunteers-work-to-bring-new-life-to-historic-cemetery-targeted-by-burglar/4388136/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +105,22 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.nbcphiladelphia.com/news/local/volunteers-work-to-bring-new-life-to-historic-cemetery-targeted-by-burglar/4388136/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - first_step
+  - last_sign_of_life
+- url: https://friendsofmountmoriahcemetery.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
