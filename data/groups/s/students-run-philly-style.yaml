@@ -5,10 +5,10 @@ leads:
 - irs_990n:814223573
 - irs_bmf:814223573
 ein: '814223573'
-summary: A free Philadelphia nonprofit that pairs students in grades 6 to 12 with adult volunteer mentors,
-  called Running Leaders, to train for half or full marathons together.
-what_you_do: Students and mentors train together up to 10 hours a week from March through November, building
-  toward a race. Mentors volunteer as Running Leaders.
+summary: A free running program for Philadelphia students in grades 6 to 12 that trains them toward a
+  half or full marathon, with volunteer mentors called Running Leaders.
+what_you_do: Students train with a team and a mentor up to 10 hours a week from March to November. Running
+  Leaders co-lead practices, usually after school or on Saturday mornings.
 kind: nonprofit
 categories:
 - running-cycling-fitness
@@ -21,11 +21,11 @@ motives:
 - enhancement
 formats:
 - team_play
+- learn_skill
 roles:
-- hands_on
 - help_teach
+- lead
 crowd:
-- kids
 - teens
 bridging: null
 audience:
@@ -38,7 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Students and mentors train up to 10 hours a week, March through November.
+  text: Training runs March through November for the November Philadelphia Half or Full Marathon. Running
+    Leaders co-lead 2 to 3 practices a week, usually 3 to 5 pm or Saturday mornings.
   days: []
   times: []
   recurring: true
@@ -56,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free for students, according to the program description
+  text: Free for participants. The site says race entries, transportation, and running gear are included.
 commitment: seasonal
 group_size: null
 access:
@@ -71,23 +72,25 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Become a Student Runner page or the Become a Volunteer Mentor page
+  how: 'Mentors: fill in the interest form on the volunteer mentor page. Enrollment reopens in August
+    2026. Students: check the site for enrollment.'
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Students and mentors apply through set pages, and the steps are not spelled out on the site.
+  basis: Mentors need an interest form, mandatory training, a background check, and to be 21 or older.
+    Student sign-up steps were not read.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://studentsrunphilly.org
-  email: null
+  website: https://www.studentsrunphilly.org/
+  email: jboyd@studentsrunphilly.org
   phone: null
   contact_name: The Organization
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2025-11
-sign_of_life_url: https://studentsrunphilly.org
+sign_of_life_url: https://www.inquirer.com/news/philadelphia/mile-up-students-run-philly-style-half-marathon-20251121.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,8 +116,32 @@ sources:
   - requirements
   - first_step
   - status
+- url: https://www.studentsrunphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - contacts
+- url: https://www.studentsrunphilly.org/become-a-volunteer-mentor
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - first_step
+  - requirements
+  - commitment
+- url: https://www.inquirer.com/news/philadelphia/mile-up-students-run-philly-style-half-marathon-20251121.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
-confidence: medium
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,16 +4,25 @@ aka: []
 leads:
 - city_nac:18
 ein: null
-summary: A community organization named by the City as a Neighborhood Advisory Committee, Southwest CDC
-  connects neighbors in the University Southwest part of the city with City services and a say in local
-  priorities.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: A community development group serving Southwest Philadelphia since 1987. It offers housing counseling,
+  job and workforce help, an after-school program and a summer camp, and it runs the Neighborhood Advisory
+  Committee, which gives residents a say in local planning.
+what_you_do: Get help with housing counseling, job and workforce services, or money coaching. Families
+  can use the after-school program for students at John Patterson Elementary, and neighborhood children
+  can join the summer camp. Residents can also take part in the Neighborhood Advisory Committee's planning
+  work.
 kind: civic
 categories:
 - neighborhood-civic
+- kids-youth-mentoring
+- hunger-housing-basic-needs
+- careers-skills-professional
 interests:
 - community_development
 - civic_association
+- after_school_camps
+- housing_help
+- job_clubs
 motives:
 - values
 - social
@@ -25,6 +34,8 @@ roles:
 - figure_out
 crowd:
 - neighbors
+- families
+- kids
 bridging: null
 audience:
   open_to: public
@@ -36,10 +47,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: The Neighborhood Advisory Subcommittee meets on the second Tuesday of each month. The site gives
+    no meeting time or place, so call to confirm.
+  days:
+  - tue
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -59,25 +72,33 @@ commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - es
+  notes: Housing counselors are bilingual in Spanish and English.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Call Lorraine Thomas at 215-729-3948 to ask how to volunteer.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The volunteer page gives one contact and no steps. The subcommittee meets monthly, but the page
+    gives no time, place or sign-up for it, so the way in is unclear.
+  what_to_expect: The site does not describe what a first visit involves. The office is at 6328 Paschall
+    Avenue, and the main office line is 215-729-0800, so a phone call is the best first step.
+  first_visit_tips:
+  - Call before you go, since the site does not list office hours.
+  - Housing counselors are bilingual in Spanish and English, so ask for that if it helps.
+  - The after-school program is for students at John Patterson Elementary, so call a program coordinator
+    to ask whether it fits your child.
 contacts:
-  website: southwestcdc.org
+  website: https://southwestcdc.org
   email: donna@southwestcdc.org
   phone: 215-729-7441
   contact_name: Donna Henry
@@ -96,7 +117,39 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://southwestcdc.org/services/nac/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://southwestcdc.org/get-involved/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://southwestcdc.org/services/after-school-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - crowd
+  - requirements
+- url: https://southwestcdc.org/services/housing-counseling/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - access
+- url: https://southwestcdc.org/news-events/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://southwestcdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

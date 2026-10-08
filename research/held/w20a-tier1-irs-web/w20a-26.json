@@ -1,0 +1,128 @@
+{
+ "wave": "w20a-tier1-irs-web",
+ "agent": "w20a-26",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 29,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://sisters4harmony.com/",
+   "status": null,
+   "note": "Three fetch attempts (http, https, https with www) got no response."
+  },
+  {
+   "url": "https://experimentalfarmnetwork.org/",
+   "status": null,
+   "note": "Three fetch attempts failed with a TLS handshake error."
+  },
+  {
+   "url": "https://www.itaam.org",
+   "status": null,
+   "note": "DNS lookup fails. The bare itaam.org shows an unrelated Arabic-language platform page."
+  },
+  {
+   "url": "https://www.sppaaa.org",
+   "status": null,
+   "note": "Every attempt returned an unrelated online casino page, not the group's site."
+  }
+ ],
+ "notes": "Batch of 15 groups: 14 publish, 1 hide. Searches: 2 of 2, both for the two groups with no usable website (Woodford Tennis Club and Crystal Bird Fauset). Fetches: 29 of 60. Four sites could not be read or showed unrelated content (see blocked). Their records are minimal and will be held back by design, because no summary, category, audience or source could be established from the group's own site. Redirects and checks: yoga4philly.org redirects to yoga4theworld.org and that target is recorded; Woodford's .com domain frames its .net site. Named but not checked, with no URL captured: Rotary Club of Chestnut Hill, Mt. Airy Learning Tree, and Philadelphia Yoga Teachers. Batch website fields that were not web addresses: Woodford (an email) and Crystal Bird Fauset (a person's name). IRS addresses are not published unless the group's own site showed them. Footers, copyright lines and image file names were not treated as dates. Did not finish early on any group; no budget was left unused on a lead with a working website.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:932186421",
+     "irs_bmf:932186421"
+    ],
+    "group_id": "sisters-4-harmony-inc",
+    "ein": "932186421",
+    "website": "http://sisters4harmony.com/"
+   },
+   "verdict": "publish",
+   "name": "Sisters 4 Harmony",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tried. Three fetch attempts (http, https, https with www) got no response, so the site could not be read and nothing about activities, schedule or contacts is recorded. Held back by design until the site can be read or another public source is found. Not a rate limit; the failure was specific to this domain.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:881938279",
+     "irs_bmf:881938279"
+    ],
+    "group_id": "society-to-preserve-philadelphia-african-american-assets",
+    "ein": "881938279"
+   },
+   "verdict": "publish",
+   "name": "Society to Preserve Philadelphia African American Assets",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tried. The typed website (www.sppaaa.org) now shows an unrelated online casino page on every attempt, not the group's own site. The URL is deliberately left out of the record so no link leads visitors to gambling content. Nothing about the group's activities is recorded. Held back by design until a reliable public page is found. Suggest a manual check of the group's current web presence. IRS address (6353 Germantown Ave, 19144) not confirmed publicly.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:262847063",
+     "irs_bmf:262847063"
+    ],
+    "group_id": "the-experimental-farm-network-cooperative",
+    "ein": "262847063",
+    "website": "https://experimentalfarmnetwork.org"
+   },
+   "verdict": "publish",
+   "name": "Experimental Farm Network",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tried. Three attempts (http, https, https with www) failed with a TLS handshake error, so the website could not be read. Nothing about activities, schedule or contacts is recorded. Held back by design until the site can be read. Legal name: The Experimental Farm Network Cooperative. IRS record address (5447 Morris St, 19144) not confirmed publicly.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:510285504",
+     "irs_bmf:510285504"
+    ],
+    "group_id": "the-institute-for-the-preservation-of-african-american-music",
+    "ein": "510285504"
+   },
+   "verdict": "publish",
+   "name": "Institute for the Preservation of African-American Music",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Tried. www.itaam.org does not resolve (DNS lookup fails), which matches the liveness check already in the batch (dead, checked 2026-10-08). The bare itaam.org loads a page titled as an Arabic-language food platform, which is not this group. Nothing about current activity is recorded. Held back by design. Not marked defunct: no evidence of dissolution was found, only that the website is unreachable. IRS record address (517 Wadsworth Ave, 19119) not confirmed publicly.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -54,16 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 4533 Pine Street, Philadelphia, PA 19143-1805
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
-  lat: 39.95196758855623
-  lng: -75.21286480400173
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -81,19 +72,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email westphillyplanpreserve@gmail.com to ask about the next Zoom meeting and to be added to the
+    group's list. No meeting time is published on any page we could read.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The only public routes are a City registry listing, an email and phone, and an Instagram page.
+    No meeting times or how-to-join steps were found.
+  what_to_expect: We could not find a published meeting time, format or agenda for this group. The City
+    lists it as a Zoom-based RCO, so ask the group what its next meeting looks like before you plan to
+    attend.
+  first_visit_tips:
+  - Ask by email or phone for the next meeting date and the Zoom link before you count on it.
+  - Ask whether visitors are welcome to join a meeting.
 contacts:
   website: https://www.instagram.com/westphillyplanpreserve/
   email: westphillyplanpreserve@gmail.com
   phone: '2674081236'
   contact_name: Mary McGettigan
-  social: []
+  social:
+  - https://www.instagram.com/westphillyplanpreserve/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -108,6 +106,9 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
+  - summary
+  - online_ok
+  - status
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0
   seen: '2026-10-04'
   fields:
@@ -116,8 +117,8 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,232 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-01",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 15,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.AAHGS.org",
+   "status": 403,
+   "note": "afro-american-historical-and-genealogical-society: HTTP 403 on fetch. Not retried and not worked around. Needs a later look or a human check."
+  },
+  {
+   "url": "https://www.asmp.org",
+   "status": 403,
+   "note": "american-society-of-media-photographers-inc: HTTP 403 on fetch. Not retried and not worked around. No record written."
+  },
+  {
+   "url": "http://www.atownfs.org/",
+   "status": null,
+   "note": "DNS failure (name does not resolve) on www and bare domain. Not an HTTP block. Covered by the allentown-freethought-society record."
+  }
+ ],
+ "notes": "Batch of 15 IRS groups. Verdicts: 7 publish (Questers chapters 1507-ellarslie and abigail-flanner-1524 as unknown, achieveability-community-development-corporation as probably_active, aga-philadelphia-chapter as active, al-dia-foundation as dormant, and action-alliance and actions-for-animals as unknown with no source, so they will be held back); 1 out_of_area (allentown, a judgment from the name, needs a human check); 3 hide private (alpha-chi sorority chapter, two AFGE locals); 2 not_a_group (ambo-inc, anarcho-syndicalist-review); 2 blocked with no record (AAHGS and ASMP, both 403). Searches: the two-search cap was used on Action Alliance and Actions for Animals, which had no usable website; neither search found the group's own page. Questers join page guessed URL returned 404. Batch website for achieveability (MISSIONFIRSTHOUSING.ORG) belongs to Mission First Housing Group, so the group's own site was found separately. Fetches used 15 of the 60 allowed. No rate limiting was seen on other domains. Budget was not exhausted by fetches; it was exhausted by searches.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:231892938"
+    ],
+    "group_id": "action-alliance-of-senior-citizens-of-greater-philadelphia",
+    "ein": "231892938",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Action Alliance of Senior Citizens of Greater Philadelphia",
+   "summary": "A group for older adults in the Philadelphia area, with an office at 1319 Locust Street. We have not yet found the group's own page, so its activities are not confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "seniors-intergenerational"
+   ],
+   "interests": [
+    "senior_activities"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "locations": [
+    {
+     "label": "Office (address on tax filing)",
+     "address": "1319 Locust Street, 2nd Floor",
+     "zip": "19107",
+     "in_city": true
+    }
+   ],
+   "first_step": {
+    "how": "Visit or write to the office at 1319 Locust Street, 2nd Floor, to ask how to get involved",
+    "newcomer_friendliness": 2,
+    "basis": "No public page was found, so the way in is unclear."
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "IRS data gives no web address. The contact email on the IRS record is a personal account, so it was not recorded. One search found no page for this name. interests tag senior_activities was chosen from the name only. No source found, so this record is held back until a source is added. Name suggests senior advocacy; not verified.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:474653659"
+    ],
+    "group_id": "actions-for-animals",
+    "ein": "474653659",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Actions for Animals",
+   "summary": "An animal-focused group with an address at 628 South 11th Street. We have not found the group's own page yet, so what it does is not confirmed.",
+   "kind": "nonprofit",
+   "categories": [
+    "animals"
+   ],
+   "interests": [
+    "shelter_volunteering"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "locations": [
+    {
+     "label": "Address on tax filing",
+     "address": "628 South 11th Street",
+     "zip": "19147",
+     "in_city": true
+    }
+   ],
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Batch website was None and the IRS contact is a person's name, not recorded. Two searches (budget used) found no page tied to this address. An article about the Philadelphia Zoo's 250,000 Actions for Animals Challenge came up, but that is a zoo campaign, not this group. A ProPublica listing for Action For Animals Inc has a different EIN (251495358) and is not this filer. interests tag shelter_volunteering was chosen from the name only. No source found, so this record is held back until a source is added.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:800240811"
+    ],
+    "group_id": "allentown-freethought-society",
+    "ein": "800240811",
+    "website": "http://www.atownfs.org/"
+   },
+   "verdict": "out_of_area",
+   "name": "Allentown Freethought Society",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Name points to Allentown in the Lehigh Valley, outside Philadelphia. Its website (atownfs.org, tried as www and bare domain) does not resolve (DNS failure), so no page was read. IRS record gives a PO Box with Philadelphia zip 19108, which does not settle the question. Verdict is a judgment from the name and must be checked by a person before use. Change to publish only if a Philadelphia meeting or service is found.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232631070"
+    ],
+    "group_id": "alpha-chi-chapter-of-delta-phi-epsilon-sorority",
+    "ein": "232631070",
+    "website": "https://www.dphie.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Alpha Chi Chapter of Delta Phi Epsilon Sorority",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "Single chapter of an international social sorority. The national site describes a membership process (how to join, alumnae initiation, legacies) and does not describe public events for this chapter. The chapter's own page was not found. National site has 2026 items (international governing board installation; scholarships for academic year 2026). Hidden as private.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:233056564",
+     "irs_bmf:233056564"
+    ],
+    "group_id": "american-federation-of-government-employees-19106",
+    "ein": "233056564",
+    "website": "https://www.afge.org"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "American Federation of Government Employees",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "National labor union. The national site says membership is for government workers nationwide and overseas, so the public cannot join. No Philadelphia local or chapter page was found on the national site. National site has dated 2026 news (October 5, 2026 and September 28, 2026). IRS address is 700 Arch Street. Separate filer from the 19107 record. Hidden as private (members only).",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:236275173",
+     "irs_bmf:236275173"
+    ],
+    "group_id": "american-federation-of-government-employees-19107",
+    "ein": "236275173",
+    "website": null
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "American Federation of Government Employees",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "IRS website field reads Local Union 2032, not a web address, so no website is recorded. Separate filer from the 19106 record. Address is 801 Market Street, Suite 12 per the IRS. National union membership is limited to government workers, so the public cannot join. Hidden as private (members only). Contact person on the IRS record not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:462925186"
+    ],
+    "group_id": "ambo-inc",
+    "ein": "462925186",
+    "website": "https://ambo.co"
+   },
+   "verdict": "not_a_group",
+   "name": "Ambo Inc",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "IRS filing lists a nonprofit, but the site read is a clothing brand page for athleisure apparel that says stay tuned, with no dates and no community program. No way to join, volunteer or attend found. Treated as a business, not a group.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471578913"
+    ],
+    "group_id": "anarcho-syndicalist-review",
+    "ein": "471578913",
+    "website": "https://www.syndicalist.us"
+   },
+   "verdict": "not_a_group",
+   "name": "Anarcho-Syndicalist Review",
+   "research_tier": 1,
+   "confidence": "high",
+   "notes": "Independent labor magazine produced by volunteers, with a mailing PO box in Philadelphia. Readers subscribe, donate, or read online; the site describes no membership, meetings, or volunteer sign-up. Treated as a publication, not a group. Latest dated item: a Fall 2026 issue posted September 18, 2026. Contact email on the site not recorded.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

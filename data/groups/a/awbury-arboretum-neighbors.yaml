@@ -4,9 +4,11 @@ aka: []
 leads:
 - city_rco:113
 ein: null
-summary: If you care about what gets built near you, Awbury Arboretum Neighbors is a City registered community
-  organization in the Upper North part of the city that hears about zoning and development proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Awbury Arboretum Neighbors is a neighbors group for East Germantown, founded in 1974, that sends
+  out newsletters and meeting notices and meets online each month to talk over local issues, including
+  zoning and development.
+what_you_do: Members and neighbors hear from speakers at a monthly Zoom meeting, read the newsletter and
+  meeting notices, and talk over zoning, development and neighborhood news.
 kind: civic
 categories:
 - neighborhood-civic
@@ -35,14 +37,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly meeting on the second Wednesday at 7 pm, held on Zoom.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Meeting place
-  address: 5725 Sprague Street, Philadelphia, PA 19138
+- label: Monthly meeting (online, Zoom)
+  address: null
   neighborhood: null
   planning_district: upper_north
   zip: '19138'
@@ -59,11 +63,11 @@ locations:
   lng: -75.1651233007315
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: 'Annual dues: $20 family, $25 contributing, $10 for members 65 and older, $50 business.'
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -77,23 +81,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the Zoom meeting on the second Wednesday at 7 pm; the link is on the home page. To become
+    a member, pay annual dues by PayPal or by check to the P.O. Box, and send your name, phone, email
+    and mailing address.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The home page publishes the Zoom link for the monthly meeting and the site lists membership steps,
+    but it does not say whether non-members may attend or who may join.
+  what_to_expect: The monthly meeting is held on Zoom at 7 pm on the second Wednesday, and the October
+    14, 2026 meeting will cover City registered community organization issues. Recent speakers have included
+    city council members, a state representative, a city department head, and the arboretum director.
+    Dues are paid once a year, from $10 for members 65 and older to $50 for a business.
+  first_visit_tips:
+  - Open the Zoom link a few minutes early to check your connection
+  - Email aaneighbors@mail.com if you are not sure whether guests are welcome
 contacts:
   website: https://aaneighbors.wixsite.com/aaneighbors
-  email: brenna.dee@gmail.com
+  email: aaneighbors@mail.com
   phone: '6462690712'
   contact_name: Brenna Kelly
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://aaneighbors.wixsite.com/aaneighbors
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -104,8 +116,26 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://aaneighbors.wixsite.com/aaneighbors
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - online_ok
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.email
+  - first_step.how
+  - first_step.what_to_expect
+- url: https://aaneighbors.wixsite.com/aaneighbors/membership-information
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step.basis
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

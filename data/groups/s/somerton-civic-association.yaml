@@ -9,7 +9,8 @@ ein: '472464435'
 summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
   in the Upper Far Northeast part of the city, Somerton Civic Association gives neighbors a place to hear
   about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+what_you_do: Volunteer members talk over neighborhood events and issues at monthly meetings, often with
+  invited speakers and elected officials, and bring local problems to them and to the police.
 kind: civic
 categories:
 - neighborhood-civic
@@ -38,10 +39,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly meeting on the second Tuesday at 7 pm at the Walker Lodge, plus special meetings as needed.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -64,9 +67,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: low
+  text: Annual dues of $5 per household, covering up to two members, running September through August.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -80,13 +83,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Attend the second Tuesday meeting at 7 pm at the Walker Lodge, 1290 Southampton Road. The site
+    invites Somerton residents to come to a monthly meeting to join.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The site invites residents to attend a monthly meeting in order to join, says new members can
+    vote at the meeting after they join, and gives an email contact.
+  what_to_expect: The meeting starts at 7 pm at the Walker Lodge and is often joined by invited speakers,
+    elected officials or their staff, and a local police meeting. The board meets before each member meeting.
+    Dues are $5 a year per household if you decide to join.
+  first_visit_tips:
+  - Bring $5 in case you decide to join, since dues run September through August
+  - Email civicsomerton@gmail.com with questions before the meeting, since the site asks for email rather
+    than calls
 contacts:
   website: https://sites.google.com/view/somertoncivic/
   email: civicsomerton@gmail.com
@@ -96,7 +106,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://sites.google.com/view/somertoncivic/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -123,8 +133,26 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://sites.google.com/view/somertoncivic/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.email
+- url: https://sites.google.com/view/somertoncivic/about
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - commitment
+  - first_step.how
+  - first_step.drop_in
+  - first_step.basis
+  - first_step.what_to_expect
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

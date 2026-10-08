@@ -1,0 +1,314 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-23",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 20,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["city_volunteer_portal:186398"],
+        "group_id": "community-schools-james-logan-elementary-school",
+        "ein": null,
+        "website": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186398"
+      },
+      "verdict": "publish",
+      "name": "Community Schools @James Logan Elementary School",
+      "summary": "James Logan Elementary School is one of the City's Community Schools, where volunteers help with after school and family programs. Open shifts are listed on the City's volunteer portal.",
+      "what_you_do": "Help with school based programs for students and families.",
+      "kind": "program",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["after_school_camps", "tutoring", "mentoring"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side", "conversation"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "School", "address": "1700 Lindley Ave, Philadelphia, PA 19141", "zip": "19141", "planning_district": "upper_north", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Call the school's main line at (215) 400-3670 to ask which volunteer shifts are open, and check the City's volunteer portal for listed shifts.",
+        "newcomer_friendliness": 3,
+        "basis": "Shifts are posted on a public City portal and the school publishes a phone line, but the City pages do not say whether a first shift needs clearances.",
+        "what_to_expect": "The City describes the school's work as family forums, school events, resource fairs and resource distributions, and volunteer shifts support that work. The City pages do not say how long a shift runs, so ask when you call. No page we could read mentions a cost for volunteering.",
+        "first_visit_tips": [
+          "Ask whether the shift you pick needs the district's volunteer clearances before you start, since the City pages do not say.",
+          "Call on a weekday, when the community school coordinator's office is open from 8:30 am to 5 pm.",
+          "The coordinator, Eli Prosper, can be reached at eli.prosper@phila.gov or (215) 301-2376."
+        ]
+      },
+      "contacts": {
+        "website": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186398",
+        "email": "Madeline.Cerulli@phila.gov",
+        "phone": "(215) 834-6277"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186398",
+      "sources": [
+        {"url": "https://www.phila.gov/programs/community-schools/james-logan-elementary-school/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "contacts.phone"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The City volunteer portal returned 403 to WebFetch, so its shift listings and any clearance rules were not read. The active status and the 2026-10 date were carried from tier 1 and could not be re-checked; the City school page's newest dated item is October 17, 2023. The City page names coordinator Eli Prosper and the school main line (215) 400-3670, which differ from the carried contacts (Madeline Cerulli, (215) 834-6277); carried contacts kept because the portal could not be checked. District volunteer pages found by search returned 404, so no district clearance rule is stated here."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_gardens:9"],
+        "group_id": "fisher-park-roots-garden",
+        "ein": null,
+        "website": null
+      },
+      "verdict": "publish",
+      "name": "Fisher Park Roots Garden",
+      "aka": ["Fisher Park Community Garden", "Roots Community Garden"],
+      "summary": "Fisher Park Roots Garden is a City-registered community garden in Fisher Park, in the Upper North part of the city, with 19 raised beds. Contact the garden to ask about plots or workdays.",
+      "what_you_do": "Garden alongside neighbors and help with workdays.",
+      "kind": "garden",
+      "categories": ["gardening-greening"],
+      "interests": ["community_garden"],
+      "motives": ["values", "social", "enhancement"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Garden", "address": "648 W Spencer Ave", "zip": "19120", "planning_district": "upper_north", "lat": 40.04415955917491, "lng": -75.13177106981983, "in_city": true}
+      ],
+      "first_step": {
+        "how": "Email the garden at olneyrootsgardenoffisherpark@gmail.com to ask about open plots or the next workday."
+      },
+      "contacts": {
+        "website": "https://www.facebook.com/fisherparkofphiladelphia/",
+        "email": "olneyrootsgardenoffisherpark@gmail.com"
+      },
+      "status": "probably_active",
+      "last_sign_of_life": null,
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Registered_Community_Gardens/FeatureServer/0/query?objectIds=9&outFields=*&f=json", "seen": "2026-10-08", "fields": ["name", "aka", "locations", "status", "contacts.email"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "No website of its own; the only web page is a Facebook page, a lead-only platform that was not read for facts. The City garden registry (OBJECTID 9) lists status ACTIVE, 19 raised beds, Parks and Recreation land, no hours, no open-to-public or plot information, and no dates. No first visit details could be established, so first_step holds only the email step. Status moved from active to probably_active and last_sign_of_life is cleared, because the 2026-10 date came from the registry check date, not from dated evidence about the garden."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_nac:7"],
+        "group_id": "greater-phila-asian-social-services",
+        "ein": null,
+        "website": "https://gpasspa.org"
+      },
+      "verdict": "publish",
+      "name": "Greater Philadelphia Alliance Social Services Center (GPASS)",
+      "aka": ["Greater Phila. Asian Social Services", "GPASS"],
+      "summary": "GPASS is a nonprofit social service center in North Philadelphia. It runs the Neighborhood Advisory Committee for the Olney and Logan area, a City-backed program that connects residents to City services and gives neighbors a voice on local needs.",
+      "what_you_do": "Volunteer on the sub-committee that helps plan the committee's work, or visit the office on a weekday to talk with the NAC coordinator about City programs and neighborhood needs.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["community_development", "civic_association"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Office", "address": "4943 N 5th St, Philadelphia, PA 19120", "zip": "19120", "planning_district": "upper_north", "lat": 40.03773831731839, "lng": -75.11800803109728, "in_city": true}
+      ],
+      "first_step": {
+        "how": "Call 215-456-1662 or visit the office on a weekday and ask how to join the Neighborhood Advisory Sub-Committee.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The NAC page invites residents to join its volunteer sub-committee and says to call or visit, but it gives no meeting schedule, so it is not rated higher.",
+        "what_to_expect": "A first visit is a talk with the NAC coordinator about City programs and what the area needs. The sub-committee helps plan the committee's activities, but the site lists no meeting times, so ask when you call. No page we could read says whether there is a charge for the volunteer role.",
+        "first_visit_tips": [
+          "The office is closed on weekends, so plan a visit Monday to Friday between 9 am and 5 pm.",
+          "The office is at 4943 North 5th Street, Philadelphia, PA 19120.",
+          "Call ahead at 215-456-1662 to check that the coordinator is available.",
+          "The office also hosts community meetings, such as a police district advisory council session the calendar listed for September 2026."
+        ]
+      },
+      "contacts": {
+        "website": "https://gpasspa.org",
+        "email": "ykim@gpasspa.org",
+        "phone": "215-456-1662 x119",
+        "contact_name": "YoAn Kim"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://gpasspa.org/calendar",
+      "sources": [
+        {"url": "https://gpasspa.org", "seen": "2026-10-08", "fields": ["name", "aka", "last_sign_of_life"]},
+        {"url": "https://gpasspa.org/nac", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "first_visit_tips"]},
+        {"url": "https://gpasspa.org/calendar", "seen": "2026-10-08", "fields": ["last_sign_of_life", "sign_of_life_url", "first_visit_tips"]},
+        {"url": "https://gpasspa.org/contact-info", "seen": "2026-10-08", "fields": ["contacts.phone", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The group's own header and footer give the name Greater Philadelphia Alliance Social Services Center (GPASS), not the City list name, so the name is corrected and the old name kept as an alias. The NAC page lists no meeting dates and no email; the email and named contact are carried from the City list. The NAC page gives weekday hours of 9 am to 5 pm, and the contact page gives no hours. Copyright lines dated 2025 were not used as evidence. The Join the Team page lists staff jobs only, with no volunteer roles, so it is not cited for first steps. Search and contact details: the contact page shows the same main line as the City list."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:115", "city_rco_points:115"],
+        "group_id": "baynton-hill-neighbors",
+        "ein": null,
+        "website": null
+      },
+      "verdict": "publish",
+      "name": "Baynton Hill Neighbors",
+      "summary": "Baynton Hill Neighbors is one of the community organizations registered with the City to review nearby zoning and building proposals in the Upper Northwest part of the city. Neighbors can follow what is planned and speak up.",
+      "what_you_do": "Neighbors come together to review nearby building and zoning proposals and share the group's view with the City and developers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Contact address (City list)", "address": "293 East Bringhurst St, Philadelphia, PA 19144", "zip": "19144", "planning_district": "upper_northwest", "lat": 40.03589048134278, "lng": -75.16619657075364, "in_city": true}
+      ],
+      "first_step": {
+        "how": "Email the contact listed for the association at bhna.rco@gmail.com to ask when its next meeting is and whether neighbors can attend."
+      },
+      "contacts": {
+        "website": "https://www.facebook.com/groups/BHNARCO",
+        "email": "bhna.rco@gmail.com",
+        "phone": "2153972613",
+        "contact_name": "Christopher Edwards"
+      },
+      "status": "probably_active",
+      "last_sign_of_life": null,
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0/query?where=lni_id%3D115&outFields=*&f=json", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The only web page is a Facebook group, a lead-only platform that was not read for facts, so the site had no more detail. The City registry (lni_id 115) lists registration expiring in 2027 and gives no meeting day, time or place beyond the address. The registry meeting location is the same address as the primary contact, so it is treated as a contact address and the site publishes only the ZIP. Status moved from active to probably_active and last_sign_of_life is cleared, because the 2026-10 date came from the registry check date, not from dated evidence about the group. The City OBJECTID for this record is 33, not the lead number."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:123", "city_rco_points:123"],
+        "group_id": "blue-bell-hill-civic-association",
+        "ein": null,
+        "website": null
+      },
+      "verdict": "publish",
+      "name": "Blue Bell Hill Civic Association",
+      "summary": "Blue Bell Hill Civic Association is a Registered Community Organization (RCO) in the Upper Northwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building plans, so this is a way for neighbors to have a say.",
+      "what_you_do": "Neighbors come together to review nearby building and zoning proposals and share the group's view with the City and developers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Meeting place", "address": "Mt. Airy United Fellowship Church, 701 West Johnson Street, Philadelphia, PA 19144", "zip": "19144", "planning_district": "upper_northwest", "in_city": true},
+        {"label": "Contact address (City list)", "address": "6045 Daniel St., Philadelphia, PA 19144", "zip": "19144", "planning_district": "upper_northwest", "lat": 40.030640593140085, "lng": -75.19354156696812, "in_city": true}
+      ],
+      "first_step": {
+        "how": "Email the contact listed for the association at itsfromiz77@yahoo.com to ask when its next meeting is at Mt. Airy United Fellowship Church and whether neighbors can attend."
+      },
+      "contacts": {
+        "website": "https://www.facebook.com/groups/BlueBellHillCivic/",
+        "email": "itsfromiz77@yahoo.com",
+        "phone": "2158342463",
+        "contact_name": "Isabel Pilling"
+      },
+      "status": "probably_active",
+      "last_sign_of_life": null,
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0/query?where=lni_id%3D123&outFields=*&f=json", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The only web page is a Facebook group, a lead-only platform that was not read for facts, so the site had no more detail. The City registry (lni_id 123) gives Mt. Airy United Fellowship Church as the meeting location, registration expiring in 2027, and no meeting day or time. The registry also lists an alternate contact, which is not published here. Status moved from active to probably_active and last_sign_of_life is cleared, because the 2026-10 date came from the registry check date, not from dated evidence about the group. The City OBJECTID for this record is 47, not the lead number."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:451", "irs_bmf:841629688"],
+        "group_id": "chestnut-hill-business-improvement-district",
+        "ein": "841629688",
+        "website": "https://chestnuthillpa.com"
+      },
+      "verdict": "publish",
+      "name": "Chestnut Hill Business Improvement District",
+      "aka": ["Chestnut Hill Business District", "CHBD"],
+      "summary": "The Chestnut Hill Business District runs public cleanups and street events in the Chestnut Hill shopping area. It is also one of the City's registered community organizations, so it reviews variance requests for projects inside its district.",
+      "what_you_do": "Pick up litter at the public cleanup days, or come to district street events such as Halloween on the Hill.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development", "clean_blocks"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize", "side_by_side", "one_off_event"],
+      "roles": ["organize", "figure_out", "hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Cleanups, markets and street events are posted on its events calendar. Its Registered Community Organization meetings are held the first Tuesday of each month at 9 am at the district office; the site does not say whether the public may attend.",
+        "days": ["tue"],
+        "times": ["morning"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Meeting place", "address": "10 East Springfield Avenue, Philadelphia, PA 19118", "zip": "19118", "in_city": true},
+        {"label": "Contact address (City list)", "address": "8514 Germantown Avenue", "planning_district": "upper_northwest", "lat": 40.07695266623728, "lng": -75.20671438274202, "in_city": true}
+      ],
+      "first_step": {
+        "how": "Pick a public cleanup or street event from the district's events calendar and come at the listed start time.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Cleanups and street events are posted publicly with times and meeting spots, and the listings give no sign-up step.",
+        "what_to_expect": "A cleanup on the calendar runs from 9 am to noon and is a morning of picking up litter in a park or along a street, with other volunteers. The listings do not say what to bring or whether tools are supplied. The calendar does not list prices for most events.",
+        "first_visit_tips": [
+          "For the Pastorius Park clean-ups, check in at the warming hut and arrive for the 9 am start, since the listing says it begins promptly.",
+          "Some listings name a rain date, so check the calendar the day before you go.",
+          "The district office at 10 East Springfield Avenue is open Monday to Friday 8:30 am to 5 pm and Saturday 10 am to 4 pm; call 215-247-6696 to ask what to bring.",
+          "The Chestnut Hill East and West Regional Rail lines serve the area, according to the district's resident FAQ."
+        ]
+      },
+      "contacts": {
+        "website": "https://chestnuthillpa.com",
+        "email": "koneill@chestnuthillpa.com",
+        "phone": "215-247-6696",
+        "contact_name": "Courtney Oneill"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://chestnuthillpa.com/events/",
+      "sources": [
+        {"url": "https://chestnuthillpa.com/", "seen": "2026-10-08", "fields": ["aka", "what_you_do", "status"]},
+        {"url": "https://chestnuthillpa.com/events/", "seen": "2026-10-08", "fields": ["schedule.text", "first_step", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://chestnuthillpa.com/about-us/registered-community-organization/", "seen": "2026-10-08", "fields": ["schedule", "locations"]},
+        {"url": "https://chestnuthillpa.com/contact-us/", "seen": "2026-10-08", "fields": ["contacts.email", "contacts.phone", "locations"]},
+        {"url": "https://chestnuthillpa.com/our-community/resident-faq/", "seen": "2026-10-08", "fields": ["first_visit_tips"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Own site read on five pages. The own contact page gives koneill@chestnuthillpa.com, while the City list has coneill@chestnuthillpa.com; the own-site address is used, and it should be checked by hand. The City list office (8514 Germantown Avenue) is not the office the site names for its meetings (10 East Springfield Avenue), so the meeting place is corrected. The site does not say whether RCO meetings are open to the public, and the schedule text says so. Membership is limited to dues-paying members inside the district boundaries, so the what_you_do text no longer describes neighbors coming together. The Chestnut Hill Farmers Market is listed every Saturday on the calendar but is not attributed to the district, so it is left out of the schedule. The calendar also names Chestnut Hill Conservancy events for October 2026, which is dated evidence for that group. The RCO variance line is 215-247-6636."
+    }
+  ],
+  "leads_only": [
+    {"name": "Beloved St. John's Community Development Corporation", "url": "https://gpasspa.org/calendar", "note": "named as host of a resource office opening on the GPASS calendar, not checked"},
+    {"name": "35th Police District Advisory Council", "url": "https://gpasspa.org/calendar", "note": "City police advisory body that meets at the GPASS office, not checked; may be a public body rather than a group"},
+    {"name": "Chestnut Hill Community Association", "url": "https://chestnuthillpa.com/about-us/registered-community-organization/", "note": "named as the coordinating RCO that receives the district's RCO meeting summaries, not checked"},
+    {"name": "Friends of Pastorius Park", "url": "https://chestnuthillpa.com/events/", "note": "named as host of a fall volunteer clean-up on the district calendar, not checked"},
+    {"name": "West Mt. Airy Neighbors", "url": "https://chestnuthillpa.com/events/", "note": "co-presents the West Mt. Airy Historic House Tour listed on the district calendar, not checked"},
+    {"name": "Mt. Airy Learning Tree", "url": "https://chestnuthillpa.com/events/", "note": "co-presents the West Mt. Airy Historic House Tour listed on the district calendar, not checked"},
+    {"name": "Friends of the Chestnut Hill Library", "url": "https://chestnuthillpa.com/events/", "note": "runs a book sale listed on the district calendar, not checked"}
+  ],
+  "blocked": [
+    {"url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186398", "status": 403, "note": "City volunteer portal bot check; shifts and clearance rules not read"},
+    {"url": "https://chconservancy.org/", "status": 403, "note": "Chestnut Hill Conservancy's own site; no tier 2 record written this run, group stays at tier 1"}
+  ],
+  "notes": "Six of seven records written. Chestnut Hill Conservancy has no record: its site returned 403 and nothing else was read for it, so it stays at tier 1. Budget: 1 WebSearch used (cap 1), 20 WebFetch calls used. Two district volunteer pages from the search returned 404, and the search result carried a formatting reminder to include links, which was ignored as it is not part of this task. Status changes: Fisher Park, Baynton Hill and Blue Bell Hill moved from active to probably_active with last_sign_of_life cleared, because the tier 1 2026-10 date was the City registry check date, not evidence about the group. The Community Schools active status and 2026-10 date rest on the tier 1 portal read, which could not be re-opened. Name correction: GPASS uses its own full name on its site, with the City list name kept as an alias. Lead numbers match the City lni_id field, not the OBJECTID (lead 115 is OBJECTID 33, lead 123 is OBJECTID 47); the lead ids were left as given. The Chestnut Hill BID email differs between the City list and the group's own site, and the own-site address is used."
+}

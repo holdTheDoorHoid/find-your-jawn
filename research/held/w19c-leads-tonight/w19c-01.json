@@ -1,0 +1,71 @@
+{
+ "wave": "w19c-leads-tonight",
+ "agent": "w19c-01",
+ "lane": "K",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 20,
+ "leads_only": [
+  {
+   "name": "Philadelphia Freedom Band",
+   "url": "https://2026.pridebands.org/?p=302",
+   "note": "Philadelphia's LGBTQ+ community band, named as co-presenter with the Pride Bands Alliance at its 2026 conference events. Not checked."
+  },
+  {
+   "name": "United Veterans of Bridesburg",
+   "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/",
+   "note": "Named in a May 2012 article as a Bridesburg alliance founded in the 1970s that keeps the Memorial Day parade going, with the VFW and American Legion posts. Not checked."
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://philadelphianeighborhoods.com/tag/the-fortress-of-the-arts",
+   "status": 403,
+   "note": "Fortress of the Arts tag page. Blocked; not retried."
+  },
+  {
+   "url": "https://oriannahill.org/about/",
+   "status": 403,
+   "note": "Orianna Hill Dog Park site, about page. Blocked. The site root returned no page text on three fetches."
+  },
+  {
+   "url": "https://starnewsphilly.com/2019/11/27/river-wards-events-for-the-week-of-nov-27/",
+   "status": 403,
+   "note": "River Wards events page that a search snippet tied to American Legion Post 821. Blocked; not retried."
+  },
+  {
+   "url": "https://www.kineticist.com/news/play-pinball-philadelphia",
+   "status": 429,
+   "note": "Rate limited on two tries. Not retried further."
+  },
+  {
+   "url": "https://thecardshopfinder.com/pa/philadelphia/dark-depths-games/",
+   "status": 403,
+   "note": "Seen as 403 by an earlier agent (g2-games-puzzles). Not fetched in this run."
+  },
+  {
+   "url": "https://thecardshopfinder.com/pa/philadelphia/brave-new-worlds/",
+   "status": 403,
+   "note": "Directory page. Blocked for this run; not retried."
+  },
+  {
+   "url": "https://thecardshopfinder.com/pa/philadelphia/garden-of-earthly-delights/",
+   "status": 403,
+   "note": "Directory page. Blocked for this run; not retried."
+  }
+ ],
+ "notes": "Budget: 1 of 1 WebSearch used; 20 WebFetch calls. Six records written: 1 publish, 4 out_of_area, 1 not_a_group. Nine of 15 leads were skipped (below), because no readable page from the group itself was found and the search budget was spent. Blocks and rate limits: philadelphianeighborhoods.com, oriannahill.org/about, starnewsphilly.com and thecardshopfinder.com returned 403; kineticist.com returned 429 on two tries and was not retried further. Redirects not followed: qvk9.org and its dog run page redirect to sovtrc.org, which redirects again to mahavideha.org; phillyfido.org redirects to lostpetsavl.org. Skipped leads: (1) VFW Post 2: Wikipedia's Bridesburg article mentions a VFW Post 2 founded in 1899, and the 2012 article names it, but no address, website, or activity after 2012 was found. (2) American Legion Post 821: a search snippet places it at 4404 Salmon St., Bridesburg, with community event listings, but the dated listing was blocked and no website was found. (3) The Fortress of the Arts: tag page blocked, no own site. (4) Dark Depths Games, Brave New Worlds, Garden of Earthly Delights: only directory pages, all blocked, no own site; likely game stores, so business verdicts if re-checked. (5) Orianna Hill Dog Park: oriannahill.org returned no page text on three fetches. Philadelphia Magazine describes a members-only dog park at 900 North Orianna Street, but the friends group is not verified; needs a re-check. (6) Queen Village K9: Philadelphia Magazine names QVK9 for the Mario Lanza Dog Run at 200 Catherine Street, but no working own site was found. (7) Schuylkill River Park Dog Run friends group: not identified; its listed domain redirects elsewhere. The Philadelphia Freedom Band and United Veterans of Bridesburg are in leads_only.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": []
+   },
+   "verdict": "out_of_area",
+   "name": "Pinball Gallery (Malvern) and Railroad Street Bar and Grill (Linfield) pinball leagues",
+   "notes": "Both venues are outside Philadelphia, per the earlier agent's note on an April 2023 guide. This run could not re-read the guide: kineticist.com returned 429 (too many requests) on two tries. The league dates are from 2023 and out of date. Not written up as a Philadelphia group. Re-read the guide if this verdict is challenged.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  }
+ ]
+}

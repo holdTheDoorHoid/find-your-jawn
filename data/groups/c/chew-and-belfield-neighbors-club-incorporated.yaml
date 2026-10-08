@@ -6,27 +6,39 @@ leads:
 - irs_990n:232177876
 - irs_bmf:232177876
 ein: '232177876'
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the Upper North part of the city, Chew and Belfield Neighbors Club Incorporated gives neighbors a
-  place to hear about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Chew and Belfield Neighbors Club is a nonprofit founded in 1981 that runs neighborhood cleanups,
+  free tutoring and classes, and job help, and holds a free summer clothing and furniture giveaway.
+what_you_do: Neighbors volunteer on cleanups, tree plantings and block work, and can get free tutoring,
+  GED help, and job or resume help. The club meets monthly, and membership is $12 a year for the whole
+  household.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
+- kids-youth-mentoring
+- careers-skills-professional
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- tree_tending
+- tutoring
+- job_clubs
 motives:
 - values
 - social
 formats:
+- side_by_side
 - conversation
 - lead_organize
 roles:
+- hands_on
+- help_teach
 - organize
 - figure_out
 crowd:
 - neighbors
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -38,14 +50,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly meeting on the last Wednesday at 6 pm; neighborhood cleanups about every other Wednesday;
+    free tutoring and classes run October through April.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Meeting place
-  address: 6211 Chew Ave , PO Box 14134, Philadelphia PA 19138
+- label: Monthly meeting (Wissahickon Charter School gymnasium)
+  address: 815 E. Washington Ln, Philadelphia, PA 19138
   neighborhood: null
   planning_district: upper_north
   zip: '19138'
@@ -54,7 +69,7 @@ locations:
   in_city: true
   transit: null
 - label: Contact address (City list)
-  address: 6211 Chew Ave , PO Box 14134, Philadelphia PA 19138
+  address: 6211 Chew Ave, PO Box 14134, Philadelphia PA 19138
   neighborhood: null
   planning_district: upper_northwest
   zip: '19138'
@@ -64,8 +79,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Membership is $12 a year for the whole household; the club's services are free.
 commitment: null
 group_size: null
 access:
@@ -77,16 +92,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Contact the club by phone or its contact form to ask about the next cleanup, meeting, or tutoring
+    session. Students sign up for tutoring. To join, contact the club, since the site describes no separate
+    sign-up.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Services are free and the site invites people to get in touch about upcoming events, but it does
+    not say whether monthly meetings are open to non-members.
+  what_to_expect: Monthly meetings are at 6 pm on the last Wednesday in the Wissahickon Charter School
+    gymnasium. Cleanups happen about every other Wednesday, and tutoring runs October through April for
+    students aged 7 to 99. Membership is $12 a year for the household, and the services are free.
+  first_visit_tips:
+  - Call the club to confirm the date of the next meeting or cleanup before you come
+  - Ask about access when you call, since the site does not describe it
+  - Have $12 ready if you decide to join as a member
 contacts:
   website: https://1981cbnc.wixsite.com/cbnc
   email: jesus4620032004@yahoo.com
@@ -121,7 +144,35 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
+- url: https://1981cbnc.wixsite.com/cbnc
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - locations
+  - contacts.website
+- url: https://1981cbnc.wixsite.com/cbnc/about-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - crowd
+  - requirements.kids_ok
+  - first_step.what_to_expect
+- url: https://1981cbnc.wixsite.com/cbnc/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://1981cbnc.wixsite.com/cbnc/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - first_step.how
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

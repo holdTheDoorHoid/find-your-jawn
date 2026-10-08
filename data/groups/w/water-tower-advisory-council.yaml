@@ -5,18 +5,20 @@ leads:
 - irs_990n:834537377
 - irs_bmf:834537377
 ein: '834537377'
-summary: null
-what_you_do: null
+summary: A nonprofit that guides how the Water Tower Recreation Center is developed and used.
+what_you_do: The site does not describe a way to join or help. The contact page is the only listed step.
 kind: nonprofit
-categories: []
-interests: []
+categories:
+- neighborhood-civic
+interests:
+- rec_center_council
 motives: []
 formats: []
 roles: []
 crowd: []
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -67,7 +69,7 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the contact page at wtrec.org/contact to ask how to take part in the council or its programs.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -75,15 +77,17 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.wtrec.org
+  website: https://www.wtrec.org
   email: null
   phone: null
   contact_name: Keith Kunz
-  social: []
+  social:
+  - https://www.instagram.com/water_tower_advisory_council/
+  - https://www.facebook.com/Water-Tower-Advisory-Council-105650027902862/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.wtrec.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -100,8 +104,20 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.wtrec.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - status
+- url: https://www.wtrec.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

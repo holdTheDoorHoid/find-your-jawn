@@ -8,7 +8,8 @@ ein: null
 summary: If you care about what gets built near you, Greater Bustleton Civic League is a City registered
   community organization in the Upper Far Northeast part of the city that hears about zoning and development
   proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+what_you_do: Members are volunteer Bustleton residents who talk over public safety, zoning, crime, cleanliness
+  and development at monthly meetings, in person or by Zoom.
 kind: civic
 categories:
 - neighborhood-civic
@@ -37,11 +38,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Monthly meeting on the fourth Tuesday at 7 pm, in person in the credit union community room or
+    by Zoom.
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Meeting place
   address: Community Room, American Heritage Credit Union, 2060 Red Lion Road, Philadelphia, PA 19115
@@ -61,11 +65,11 @@ locations:
   lng: -75.04990007869
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -79,16 +83,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Come to the fourth Tuesday meeting at 7 pm in the credit union community room at 2060 Red Lion
+    Road, or join by Zoom. The site has a membership form you can read first.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The meeting time, place and a Zoom option are published openly, and a membership form is online,
+    but the site does not say whether non-members may attend.
+  what_to_expect: Meetings start at 7 pm on the fourth Tuesday, in person or by Zoom. The group is run
+    by volunteer Bustleton residents, and its agendas are posted on the site. The site does not say how
+    long meetings run or whether there are dues.
+  first_visit_tips:
+  - Email gbustletoncl@gmail.com or use the contact form to ask whether guests are welcome before your
+    first meeting
+  - Check the Meeting Info page for the Zoom details if you cannot come in person
 contacts:
   website: https://gbcl.online/
-  email: jackohara1@aol.com
+  email: gbustletoncl@gmail.com
   phone: '2156766890'
   contact_name: Jack O'Hara
   social: []
@@ -114,7 +125,35 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://gbcl.online/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - online_ok
+  - contacts.website
+- url: https://gbcl.online/meeting-info/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step.basis
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://gbcl.online/about/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.what_to_expect
+- url: https://gbcl.online/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

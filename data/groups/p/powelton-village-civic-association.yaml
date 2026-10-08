@@ -7,26 +7,30 @@ leads:
 - irs_990n:232664411
 - irs_bmf:232664411
 ein: '232664411'
-summary: Powelton Village Civic Association is a Registered Community Organization (RCO) in the University
-  Southwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building
-  plans, so this is a way for neighbors to have a say.
-what_you_do: Neighbors come together to review nearby building and zoning proposals and share the group's
-  view with the City and developers.
+summary: An all-volunteer group of Powelton Village residents that is also a Registered Community Organization,
+  so developers talk with it about nearby zoning and building plans. It also organizes clean-ups and social
+  events.
+what_you_do: Members vote on the association's decisions and leadership. Neighbors review nearby building
+  and zoning proposals and share the association's view with the City and developers. Volunteers also
+  run clean-ups and social events and care for parks, playgrounds and sidewalks.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- clean_blocks
 motives:
 - values
 - social
 formats:
 - conversation
 - lead_organize
+- side_by_side
 roles:
 - organize
 - figure_out
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -40,14 +44,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Membership meetings run 7 to 8:30 pm. Some are held by video and some in person at Metropolitan
+    Baptist Church. Each date is posted on the group's website.
   days: []
-  times: []
-  recurring: null
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: Metropolitan Baptist Church, 3500 Baring St, Philadelphia 19104, or, Via Zoom
+- label: Meeting place (in person, Metropolitan Baptist Church)
+  address: 3500 Baring St, Philadelphia, PA 19104
   neighborhood: null
   planning_district: university_southwest
   zip: '19104'
@@ -56,7 +62,7 @@ locations:
   in_city: true
   transit: null
 - label: Contact address (City list)
-  address: P.O. Box 7616 , Philadelphia, PA 19101 , United States
+  address: P.O. Box 7616, Philadelphia, PA 19101
   neighborhood: null
   planning_district: university_southwest
   zip: '19101'
@@ -64,10 +70,10 @@ locations:
   lng: -75.19086120127739
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: The site lists no dollar amounts for membership. Donations are also accepted.
 commitment: null
 group_size: null
 access:
@@ -82,23 +88,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the online membership form on the group's membership page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Any Powelton Village resident, owner or renter, can join through an online form, and meeting
+    dates are posted publicly. The site does not say whether non-members can attend meetings.
+  what_to_expect: The association reviews nearby building and zoning proposals, and its membership meetings
+    run 7 to 8:30 pm. Some meetings are by video, and the link is sent by the neighborhood email list
+    before each one.
+  first_visit_tips:
+  - Get on the neighborhood email list so you receive the video link before a virtual meeting.
+  - For an in-person meeting, the church is at 3500 Baring Street.
+  - Current residents who are members can vote on the association's decisions and leadership.
 contacts:
-  website: www.poweltonvillage.org
+  website: https://www.poweltonvillage.org
   email: rco_notice@poweltonvillage.org
-  phone: '6103085524'
+  phone: 610-308-5524
   contact_name: Jamie Macaulay
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
+sign_of_life_url: https://www.poweltonvillage.org/meeting-notes/
 sources:
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
@@ -132,8 +144,30 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 1
-confidence: medium
+- url: https://www.poweltonvillage.org/meeting-notes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.poweltonvillage.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - first_visit_tips
+- url: https://www.poweltonvillage.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.poweltonvillage.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,21 +1,32 @@
 id: beat-the-streets-inc
-name: Beat the Streets Inc
+name: Beat the Streets Philadelphia
 aka: []
 leads:
 - irs_bmf:822662383
 ein: '822662383'
-summary: null
-what_you_do: null
+summary: A sports and learning group that uses wrestling, mentoring, and tutoring to help student athletes
+  in under-served parts of Philadelphia do well in school.
+what_you_do: Students can join a wrestling team or use the Mentoring Center for school help. The group
+  is recruiting coaches, and mentors are often college student athletes from Drexel and Penn.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- sports-teams
+- kids-youth-mentoring
+interests:
+- youth_coaching
+- mentoring
+- tutoring
+motives:
+- values
+formats:
+- team_play
+roles:
+- help_teach
+crowd:
+- students
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -30,10 +41,10 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 3700 Market St Ste 300
+- label: Mentoring Center and headquarters
+  address: 3700 Market Street, Suite 300
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19104'
   lat: null
   lng: null
@@ -42,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the pages read.
 commitment: null
 group_size: null
 access:
@@ -54,26 +65,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: 'Coaches: use the resources page to apply. Mentors: use the mentoring page. Parents and students
+    seeking academic help: contact the Mentoring Coordinator to set a first visit. Wrestlers: find a team
+    near you on the site.'
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: Each role has a stated way in, and a first visit to the Mentoring Center is offered.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://btsphilly.org/
+  email: btsphilly@btsphilly.org
+  phone: (215) 454-2255
   contact_name: Ben Reiter
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-02
+sign_of_life_url: https://btsphilly.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +95,26 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://btsphilly.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - roles
+  - status
+  - contacts
+- url: https://btsphilly.org/mentoring
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - roles
+- url: https://www.pysc.org/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

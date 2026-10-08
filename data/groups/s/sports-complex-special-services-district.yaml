@@ -4,16 +4,21 @@ aka: []
 leads:
 - city_rco:339
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the South part of the city, Sports Complex Special Services District gives neighbors a place to hear
-  about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: The special services district that looks after streets, trees, and green space around the sports
+  complex in South Philadelphia. Its programs cover litter and leaf pickup, street trees, and dog waste
+  stations for people who live inside the district.
+what_you_do: Residents can sign up for phone alerts, ask for a new street tree, and come to community
+  events. The district also follows zoning and development plans in the area and shares news about projects
+  such as a new arena and a traffic plan.
 kind: civic
 categories:
 - neighborhood-civic
+- nature-environment
 interests:
 - civic_association
 - community_development
+- clean_blocks
+- tree_tending
 motives:
 - values
 - social
@@ -27,7 +32,7 @@ crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -36,14 +41,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Holds an annual board meeting and publishes a yearly report. Other meeting times are not posted
+    on the site.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 3300 South 7th Street, 19148
+- label: District office
+  address: 3300 South 7th Street, Suite 2, Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
   zip: '19148'
@@ -62,8 +68,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Phone alerts, community events, the recycling cart, and reusable grocery bags are free, according
+    to the programs page.
 commitment: null
 group_size: null
 access:
@@ -78,15 +85,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call 215-271-1701 and ask to be added to the Autocall phone alert list. Only people who live in
+    the district can join.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Most programs and the phone alerts are for district residents, and the site does not say how
+    someone from outside the district can take part. The way in is unclear beyond that.
+  what_to_expect: 'The district''s work happens on the street: litter pickup, tree care, and dog waste
+    stations. The website does not describe a regular meeting or what one is like, so a phone call to
+    the office is the best first step. The phone alerts, events, and recycling cart cost nothing.'
+  first_visit_tips:
+  - Call the office at 215-271-1701 before you go, since no regular meeting times are posted.
+  - Have your home address ready, because the phone alerts and community events are for district residents.
+  - On event days, follow the overhead signs to the event parking lots.
 contacts:
-  website: www.scssd.org
+  website: https://www.scssd.org
   email: sjalosinski@scssd.org
   phone: '2152711701'
   contact_name: Shawn Jalosinski
@@ -105,8 +119,28 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://www.scssd.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.website
+- url: https://scssd.org/community-programs-events/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step.how
+  - first_step.sign_up_needed
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

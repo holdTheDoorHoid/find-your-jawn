@@ -5,18 +5,27 @@ leads:
 - irs_990n:851759830
 - irs_bmf:851759830
 ein: '851759830'
-summary: null
-what_you_do: null
+summary: A registered nonprofit that works with young people on skills, school enrichment, character and
+  mentoring. Programs include auto technician training, photography, fitness, a lifestyle course, and
+  a music and engineering program.
+what_you_do: Join one of the youth programs, or help with community service days such as neighborhood
+  cleanups and gardening.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+- youth_leadership
+motives:
+- values
 formats: []
 roles: []
-crowd: []
+crowd:
+- kids
+- teens
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -67,7 +76,8 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Use the Volunteer link on tennesseeprogram.com (it opens the contact page) to ask how to join a
+    program or help on a service day. The site does not publish enrollment rules.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: null
@@ -75,15 +85,17 @@ first_step:
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: tennesseeprogram.com
+  website: https://tennesseeprogram.com
   email: null
   phone: null
   contact_name: Cclanus Tennessee
-  social: []
+  social:
+  - https://www.facebook.com/Tennesseeprogram
+  - https://www.instagram.com/tennesseeprogram/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://tennesseeprogram.com
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -99,8 +111,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://tennesseeprogram.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - crowd
+  - first_step
+  - contacts
+  - status
+- url: https://tennesseeprogram.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

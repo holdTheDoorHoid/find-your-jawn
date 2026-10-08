@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Add B. Anderson is one of the City's Community Schools, where volunteers help with after school
   and family programs. Open shifts are listed on the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Help with school programs for students and families, such as weekly reading coaching and
+  grocery distribution, per the City's volunteer listing.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -36,14 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Some volunteer roles repeat weekly, such as reading coaching and grocery distribution, per the
+    City's volunteer listing. Days and times are not given.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: School
-  address: 1034 S 60th St Philadelphia , PA 19143
+  address: 1034 S 60th St, Philadelphia, PA 19143
   neighborhood: null
   planning_district: university_southwest
   zip: '19143'
@@ -69,18 +71,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call or email the Community School Coordinator, Lyndell Mason, at (267) 226-5850 or lyndell.mason@phila.gov,
+    and ask about the open volunteer roles.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The City's school page names a coordinator to contact, and the volunteer listing is open to the
+    public. Whether clearances apply to this school was not confirmed this run.
+  what_to_expect: The coordinator's listed office hours are weekdays, 8:30 am to 5 pm, so that is the
+    best time to call. The school's programs include after school learning, family events, and student
+    support. The site does not say how long a shift runs, so ask the coordinator.
+  first_visit_tips:
+  - Call the coordinator on a weekday between 8:30 am and 5 pm, when the listed office hours run.
+  - Ask what paperwork or clearances come before a first shift, since the City page does not list them.
 contacts:
-  website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186409
-  email: Madeline.Cerulli@phila.gov
-  phone: (215) 834-6277
-  contact_name: null
+  website: https://www.phila.gov/programs/community-schools/add-b-anderson-school/
+  email: lyndell.mason@phila.gov
+  phone: (267) 226-5850
+  contact_name: Lyndell Mason (Community School Coordinator)
   social: []
   calendar_feed: null
 status: active
@@ -95,7 +103,21 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - what_you_do
+  - schedule
+- url: https://www.phila.gov/programs/community-schools/add-b-anderson-school/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts.website
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

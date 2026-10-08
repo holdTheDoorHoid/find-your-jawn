@@ -1,34 +1,38 @@
 id: neighborhood-bike-works
 name: Neighborhood Bike Works
-aka: []
+aka:
+- Women, Trans and Nonbinary Open Shop at Neighborhood Bike Works
+- Bike Church at Neighborhood Bike Works
+- Ride Club at Neighborhood Bike Works
+- Earn-a-Bike at Neighborhood Bike Works
 leads:
 - irs_bmf:233012779
 ein: '233012779'
-summary: A nonprofit community bike shop at 3939 Lancaster Avenue. It teaches people to ride and repair
-  bikes, and sells refurbished bikes and parts to pay for free and low-cost classes.
-what_you_do: Fix your own bike with the shop's tools during Bike Church or an open shop night, or join
-  the youth program to learn repair.
+summary: A community bike shop that teaches young people to fix bikes and gives youth a chance to earn
+  a bike, with weekday after-school hours and a Saturday open shop.
+what_you_do: Youth join weekday programs to learn bike repair. Graduates of the programs can use the Saturday
+  open shop to work on bikes.
 kind: nonprofit
 categories:
 - running-cycling-fitness
+- kids-youth-mentoring
 interests:
 - bike_repair
 motives:
 - enhancement
-- values
 formats:
 - learn_skill
 roles:
 - hands_on
-- help_teach
+- figure_out
 crowd:
-- all_adults
+- kids
 - teens
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 8
   max_age: null
   community:
   - women
@@ -37,24 +41,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Community shop open Tuesday, Thursday and Friday from 12 to 4 pm. Bike Church (18 and up) on Tuesday
-    and Thursday from 6:30 to 9 pm, and the first Saturday from 3 to 6 pm. Women, trans and nonbinary
-    open shop (18 and up) on Wednesday from 6:30 to 9 pm. Youth programs Monday to Thursday from 4 to
-    6 pm, and a Saturday youth drop in from 10 am to 2 pm for youth graduates.
+  text: Youth programs run Monday to Thursday, 4 to 6 pm (summer hours may vary). A Saturday youth open
+    shop runs 10 am to 2 pm.
   days:
   - mon
   - tue
   - wed
   - thu
-  - fri
   - sat
   times:
   - daytime
-  - evening
   recurring: true
   season: null
 locations:
-- label: Mel's Community Bike Shop
+- label: Neighborhood Bike Works shop
   address: 3939 Lancaster Ave
   neighborhood: null
   planning_district: null
@@ -63,11 +63,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: Shop prices and class fees are not stated on the site
-commitment: null
+  level: free
+  text: Fees are not stated. The site says youth can earn a bike, but it does not explain how.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -78,28 +78,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: 'Youth: fill in the Youth Programs Interest Form on the site. Adults: come to Bike Church or an
-    open shop hour.'
+  how: Fill in the Youth Programs Interest Form on the site.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The shop teaches people to ride and repair bikes, has open hours for adults, and has a clear
-    youth interest form.
+  newcomer_friendliness: 2
+  basis: Youth join through an interest form, and the Saturday open shop is for graduates of the programs.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.neighborhoodbikeworks.org
-  email: info@neighborhoodbikeworks.org
+  website: https://neighborhoodbikeworks.org/
+  email: mustafa@neighborhoodbikeworks.org
   phone: (267) 728-0214
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.neighborhoodbikeworks.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.neighborhoodbikeworks.org/youth-programs
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,8 +114,43 @@ sources:
   - first_step
   - contacts
   - status
+- url: https://www.neighborhoodbikeworks.org/bike-shop
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - audience
+  - locations
+  - cost
+  - commitment
+  - status
+  - first_step
+- url: https://www.neighborhoodbikeworks.org/youth-programs
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - audience
+  - requirements
+  - status
+  - first_step
+  - contacts
+- url: https://neighborhoodbikeworks.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

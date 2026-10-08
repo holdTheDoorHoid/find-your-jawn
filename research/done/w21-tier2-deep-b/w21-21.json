@@ -1,0 +1,420 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-21",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 24,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["city_rco:341", "city_rco_points:341", "irs_990n:236462144", "irs_bmf:236462144"],
+        "group_id": "spruce-hill-community-association",
+        "ein": "236462144",
+        "website": "https://www.sprucehillca.org/"
+      },
+      "verdict": "publish",
+      "name": "Spruce Hill Community Association",
+      "summary": "Neighbors who run the May Fair, historic preservation, zoning and other committees for Spruce Hill. They also hold public board meetings and act as a registered community organization that reviews nearby building plans.",
+      "what_you_do": "Pick a committee from the committees page, come to a board meeting, or become a member. The association says it is always looking for new members and committee volunteers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic", "history-heritage-preservation"],
+      "interests": ["civic_association", "community_development", "preservation_architecture"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Board meetings are on a Tuesday evening at 7:30 pm at the Spruce Hill Community Center, with a Zoom option. Check the site for each date.",
+        "days": ["tue"],
+        "times": ["evening"]
+      },
+      "locations": [
+        {
+          "label": "Meeting place",
+          "address": "Spruce Hill Community Center, 257 S 45th St, Philadelphia, PA 19104; Virtual: https://us02web.zoom.us/j/81135129776?pwd=TGlGMlhqdXF4Znl0UzR0QXF1SG1rdz09",
+          "zip": "19104",
+          "planning_district": "university_southwest",
+          "in_city": true
+        }
+      ],
+      "cost": {
+        "level": "low",
+        "text": "Yearly membership: $20 for an individual or family, $10 for a senior or student. Business and sponsor levels cost more."
+      },
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a committee from the committees page (nine are listed, including May Fair, Historic Preservation and Zoning), or come to a board meeting. To get notices, join the mailing list or pay yearly membership.",
+        "newcomer_friendliness": 3,
+        "basis": "Committees say they welcome new members, membership is open to individuals, and board notices are public with a Zoom option. The site does not say outright that visitors may attend meetings.",
+        "what_to_expect": "Board meetings start at 7:30 pm on a Tuesday at the community center, with Zoom as an option. A recent agenda covered event updates, committee reports and a guest speaker. The site does not say how long meetings run or whether visitors may speak.",
+        "first_visit_tips": [
+          "Confirm the date of the next board meeting on the site before you go.",
+          "Zoom is listed as an option if you would rather join from home.",
+          "Membership is open to individuals, businesses and institutions with an interest in the neighborhood, which runs from about 38th to 46th Streets and Woodland Avenue to Market Street."
+        ]
+      },
+      "contacts": {
+        "website": "www.sprucehillca.org",
+        "email": "sprucehillzoning@gmail.com",
+        "phone": "2672612030",
+        "contact_name": "Julie Bush"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://www.sprucehillca.org/", "seen": "2026-10-08", "fields": ["schedule", "first_step"]},
+        {"url": "https://www.sprucehillca.org/committees/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step"]},
+        {"url": "https://www.sprucehillca.org/donate/", "seen": "2026-10-08", "fields": ["cost", "first_step"]},
+        {"url": "https://www.sprucehillca.org/about/", "seen": "2026-10-08", "fields": ["summary", "audience"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The home page's board notice has a headline reading Tue Sep 8 but an address reading jun-9 (a Tuesday in 2026), so no meeting date is recorded. The notice details came through the home page; the notice page itself was not opened. Newest dated item on the site is that June 2026 notice, older than the City list date already in last_sign_of_life, so that value was kept. The City list address and the community center address are the same place, so one location is kept. The Spruce Hill Community Trust (501(c)(3) arm) is a lead, not fetched."
+    },
+    {
+      "match": {
+        "group_id": "the-enterprise-center-cdc",
+        "lead_ids": ["city_nac:21"],
+        "website": "https://theenterprisecenter.com"
+      },
+      "verdict": "hide",
+      "hidden_reason": "out_of_scope",
+      "name": "The Enterprise Center CDC",
+      "summary": "A nonprofit community development lender that makes loans and offers business advice in West Philadelphia. Its website lists no meetings, events, volunteer roles or membership.",
+      "what_you_do": "Apply for a business loan or request business advisory help through the forms on the site.",
+      "kind": "nonprofit",
+      "sources": [
+        {"url": "https://theenterprisecenter.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Hidden as out of scope (businesses with no community program). The site describes a loan application, a business advisory intake form and a donation link. It lists no meetings, events, volunteer roles or membership. The guessed pages /about/ and /community/ returned 404. The tier 1 summary (a say in local priorities) is not supported by the site. The City listing (city_nac:21) describes a Neighborhood Advisory Committee, which the site does not mention. The orchestrator may reverse this if community development lenders are in scope."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:thinkingdance-3", "irs_990n:472165715", "irs_bmf:472165715"],
+        "group_id": "thinkingdance",
+        "ein": "472165715",
+        "website": "http://www.thinkingdance.net"
+      },
+      "verdict": "publish",
+      "name": "thINKingDANCE",
+      "summary": "A collective of dance writers that runs an online journal of dance reviews, interviews and essays. It also takes pitches from outside writers.",
+      "what_you_do": "Read the reviews and essays on the site, join the mailing list, or pitch a piece through the guest writer page. Readers can also donate.",
+      "kind": "nonprofit",
+      "categories": ["books-writing", "theater-dance-performance"],
+      "interests": ["writing_group", "zines_media"],
+      "motives": ["understanding", "enhancement"],
+      "roles": ["create"],
+      "audience": {"open_to": "public"},
+      "schedule": {
+        "text": "No set meetings or classes. Articles appear on the site as they are published."
+      },
+      "locations": [
+        {
+          "label": "Mailing address (not a meeting place)",
+          "address": "4815 Regent St #1",
+          "zip": "19143",
+          "planning_district": "university_southwest",
+          "in_city": true
+        }
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "free",
+        "text": "No cost is listed to read or subscribe. Guest writers are paid $100 per accepted article."
+      },
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Read a few recent pieces on the site, then join the mailing list or send a pitch to editor@thinkingdance.net, following the guest writer page.",
+        "newcomer_friendliness": 3,
+        "basis": "Anyone can read the journal and join the mailing list, and the site invites new writers to pitch. Guest capacity is limited and staff write most pieces.",
+        "what_to_expect": "Nothing happens in person, since the group works through its online journal. A pitch is shaped with an editor first, and the editorial board then decides whether to commission the full piece. Guest pitches are accepted all year, and open calls for new writers come every one to two years.",
+        "first_visit_tips": [
+          "Read a few recent pieces first to get the tone, since reviews make up most of the journal.",
+          "A pitch should include a subject outline, the view you would bring and a writing sample, as the guest writer page asks.",
+          "A Philadelphia dance connection is encouraged but not required."
+        ]
+      },
+      "contacts": {
+        "website": "http://www.thinkingdance.net",
+        "email": "info@thinkingdance.net",
+        "contact_name": "Megan Bridge",
+        "social": ["https://www.facebook.com/thinkingdance", "https://www.instagram.com/thinkingdance/"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.thinkingdance.net",
+      "sources": [
+        {"url": "http://www.thinkingdance.net", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://thinkingdance.net/writer-submissions/", "seen": "2026-10-08", "fields": ["first_step", "cost", "what_you_do"]},
+        {"url": "https://thinkingdance.net/about/", "seen": "2026-10-08", "fields": ["summary", "audience"]},
+        {"url": "https://thinkingdance.net/contact/", "seen": "2026-10-08", "fields": ["contacts", "locations"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Tier 1 schedule text described a one time posting run in early October, and recurring was set true. Both are removed because the group has no set meetings. The latest dated item is an article whose October 2026 date comes from its URL path, not visible text, so the 2026-10 value was kept from tier 1. Contact page publishes info@ for general questions and editor@ for pitches; the editor address is in first_step. The mailing address is the group's own published mailing address for checks, not a meeting place. It includes an apartment number, so the owner may want to check it. Grapevine giving circle is a lead, not fetched."
+    },
+    {
+      "match": {
+        "lead_ids": ["cultural_fund:united-caribbean-association-of-philadelphia", "irs_bmf:825303249"],
+        "group_id": "united-caribbean-association-of-philadelphia",
+        "ein": "825303249",
+        "website": "https://philadelphiacarnival.com/"
+      },
+      "verdict": "publish",
+      "name": "United Caribbean Association of Philadelphia (Philly Carnival)",
+      "summary": "The nonprofit behind the Philadelphia Caribbean Carnival. Its costumed mas band, Philly Mas United, is taking interest sign-ups for the 2027 Carnival.",
+      "what_you_do": "Join Philly Mas United, the band that is planning its road experience for the 2027 Carnival. Pre-register with the free online form on the site. No matching costume is required, so you can wear an older costume or design a new one.",
+      "kind": "nonprofit",
+      "categories": ["philly-traditions", "culture-language-heritage-groups"],
+      "interests": ["parade_units", "street_festivals", "heritage_clubs"],
+      "motives": ["social", "values"],
+      "formats": ["perform_make_together", "one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "community": ["heritage:caribbean"]},
+      "schedule": {
+        "text": "No practice dates or times are published yet for the 2027 Carnival band."
+      },
+      "cost": {
+        "level": "unknown",
+        "text": "Pre-registering is free and needs no payment. Band fees and costume costs are not listed on the site."
+      },
+      "commitment": "seasonal",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {
+        "gear": "A costume of your own choosing: an older Carnival costume or a new design. No matching costume is required.",
+        "court_ordered_ok": "unknown",
+        "service_hours_letter": "unknown"
+      },
+      "first_step": {
+        "how": "Fill in the free pre-registration interest form linked from the Join Us page on the Carnival site. It is an interest check, so no payment is needed.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The Join Us page says the band welcomes first-time masqueraders and gives a free online form to start. Practice dates and fees are not yet published.",
+        "what_to_expect": "This is an interest check for the 2027 Carnival, so the site has no practice schedule yet. The band says it will provide food, drinks and music. Ask about practices and fees through the contact form or email before you commit.",
+        "first_visit_tips": [
+          "Bring a costume from a past Carnival, or plan a new one, since the band has no matching costume rule.",
+          "The page encourages you to bring a flag and some friends.",
+          "If you have questions first, use the Schedule a meeting link on the contact page."
+        ]
+      },
+      "contacts": {
+        "website": "https://philadelphiacarnival.com/",
+        "email": "ucaphila@gmail.com",
+        "contact_name": "Don a Bailey",
+        "social": ["https://facebook.com/phillycarnival", "https://instagram.com/ucaphilly"]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://philadelphiacarnival.com/",
+      "sources": [
+        {"url": "https://philadelphiacarnival.com/", "seen": "2026-10-08", "fields": ["summary", "contacts", "status"]},
+        {"url": "https://philadelphiacarnival.com/main-old", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "requirements", "first_step"]},
+        {"url": "https://philadelphiacarnival.com/events", "seen": "2026-10-08", "fields": ["schedule"]},
+        {"url": "https://philadelphiacarnival.com/contact-us", "seen": "2026-10-08", "fields": ["contacts", "first_visit_tips"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Events page lists no events. The contact page publishes an email, a contact form and a scheduling link, but no phone and no mailing address. Tier 1 pulled 1112 S 54th St from the IRS list. The group publishes no mailing address and the IRS address may be a home, so it is removed from locations under the ethics rule on home addresses. Status stays probably_active: the site is current but has no dated items. Donation banner refers to the 2027 Carnival with no full date."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:376", "city_rco_points:376", "irs_990n:812353927", "irs_bmf:812353927"],
+        "group_id": "west-belmont-civic-association",
+        "ein": "812353927",
+        "website": "http://westbelmontcivic.org/"
+      },
+      "verdict": "publish",
+      "name": "West Belmont Civic Association",
+      "summary": "West Belmont neighbors who review nearby zoning and building plans, take on local problems such as trash and abandoned cars, and bring concerns to elected officials and City services.",
+      "what_you_do": "Meet monthly to talk over zoning proposals and neighborhood problems, or contact the association with a concern. Residents can ask for help reaching elected officials or city services.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public"},
+      "schedule": {
+        "text": "Meetings are on the first Tuesday of each month at 6 pm at New Church Down the Way Ministries, 4234 Ogden Street.",
+        "days": ["tue"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {
+          "label": "Meeting place",
+          "address": "New Church Down the Way Ministries, 4234 Ogden Street, Philadelphia, PA 19104",
+          "zip": "19104",
+          "planning_district": "university_southwest",
+          "in_city": true
+        }
+      ],
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Sign up for the association's mailing list at the link on its site, then call or email before the first Tuesday to ask whether visitors may attend the meeting.",
+        "newcomer_friendliness": 2,
+        "basis": "The site gives the meeting time, place and contact details, but says nothing about whether visitors may attend or how to join.",
+        "what_to_expect": "Meetings are held monthly on the first Tuesday at 6 pm at New Church Down the Way Ministries. The site does not say who attends, how long meetings run, or how a visitor is greeted. The association offers help with zoning and building concerns, neighborhood problems such as trash and abandoned cars, and contacting City services.",
+        "first_visit_tips": [
+          "Call or email before the meeting to confirm it is still on the first Tuesday.",
+          "The meeting is at New Church Down the Way Ministries, 4234 Ogden Street.",
+          "Bring a specific concern, such as trash or a building proposal, since those are the issues the site lists."
+        ]
+      },
+      "contacts": {
+        "website": "http://westbelmontcivic.org/",
+        "email": "depickett@westbelmontcivic.org",
+        "phone": "2158735722",
+        "contact_name": "David Pickett"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "http://westbelmontcivic.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "contacts"]},
+        {"url": "https://westbelmontcivic.org/meeting-information/", "seen": "2026-10-08", "fields": ["schedule", "first_step", "contacts"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Two schedules appear on the site: the home page's purpose text says fourth Tuesday once, while the meeting page and contact block say first Tuesday. The record uses first Tuesday; confirm with the association. The newest dated item on the site is an October 2017 event, and the others run 2015 to 2017. The active status and 2026-10 come from the tier 1 City RCO list, so the orchestrator may want to recheck status. The contact address 4311 Otter Street is listed on the site as the president's address and may be personal, so it is not published here. Not stated on the site: whether visitors may attend, dues, accessibility."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:383", "city_rco_points:383"],
+        "group_id": "west-philly-plan-preserve"
+      },
+      "verdict": "publish",
+      "name": "West Philly Plan + Preserve",
+      "summary": "West Philly Plan + Preserve is a Registered Community Organization (RCO) in the University Southwest part of the city. The City asks developers to talk with RCOs about nearby zoning and building plans, so this is a way for neighbors to have a say.",
+      "what_you_do": "Neighbors come together to review nearby building and zoning proposals and share the group's view with the City and developers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {
+          "label": "Meeting place",
+          "address": "Virtual on Zoom, Previously: Calvary Center for Culture and Community, 801 South 48th Street, Philadelphia, PA 19143",
+          "zip": "19143",
+          "planning_district": "university_southwest",
+          "in_city": true
+        }
+      ],
+      "online_ok": true,
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email westphillyplanpreserve@gmail.com to ask about the next Zoom meeting and to be added to the group's list. No meeting time is published on any page we could read.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "The only public routes are a City registry listing, an email and phone, and an Instagram page. No meeting times or how-to-join steps were found.",
+        "what_to_expect": "We could not find a published meeting time, format or agenda for this group. The City lists it as a Zoom-based RCO, so ask the group what its next meeting looks like before you plan to attend.",
+        "first_visit_tips": [
+          "Ask by email or phone for the next meeting date and the Zoom link before you count on it.",
+          "Ask whether visitors are welcome to join a meeting."
+        ]
+      },
+      "contacts": {
+        "email": "westphillyplanpreserve@gmail.com",
+        "phone": "2674081236",
+        "contact_name": "Mary McGettigan",
+        "social": ["https://www.instagram.com/westphillyplanpreserve/"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "summary", "locations", "online_ok", "contacts.email", "contacts.phone", "contacts.contact_name", "status"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/RCO_Points/FeatureServer/0", "seen": "2026-10-04", "fields": ["name", "contacts.email", "contacts.phone", "contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "No group website was found. The only web presence in the batch is an Instagram account, which is a lead source only, so it is listed under social and not read for facts. One WebSearch found no page for this group. Email and phone come from the City RCO list. The tier 1 website field held the Instagram URL and was moved to social. The City list contact address (4533 Pine Street) is removed because it may be a home address. Recommend holding this record until the group publishes a meeting notice."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_rco:387", "city_rco_points:387"],
+        "group_id": "west-powelton-saunders-park-rco",
+        "website": "https://www.wpsprco.org/"
+      },
+      "verdict": "publish",
+      "name": "West Powelton Saunders Park RCO",
+      "summary": "Volunteer neighbors in West Powelton who review zoning cases, run a neighborhood cleaning effort, and plan community events in Saunders Park.",
+      "what_you_do": "Follow zoning and development plans in West Powelton and Saunders Park, meet by Zoom to talk them over, and help with neighborhood cleaning and events. Newcomers can get on the notice list by email.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development", "clean_blocks"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public"},
+      "schedule": {
+        "text": "Meets by Zoom at 7 pm on the 2nd and 4th Thursdays of the month, September to June.",
+        "days": ["thu"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "online_ok": true,
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email wpsprco@gmail.com to be added to the meeting notice list, which includes the Zoom details, then join a Thursday meeting on Zoom.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Newcomers can get the Zoom details by email, and meetings run on a fixed schedule. The site does not say whether visitors may attend or speak.",
+        "what_to_expect": "Meetings are held on Zoom at 7 pm on the second and fourth Thursday of the month, from September to June, with a summer break. The group reviews zoning cases and neighborhood projects. The site does not describe the meeting format, how long meetings run, or whether visitors may speak.",
+        "first_visit_tips": [
+          "Email early, since the Zoom details come through the notice list.",
+          "If you bring a zoning case, contact the chair at the same email about a month before the zoning hearing."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.wpsprco.org/",
+        "email": "wpsprco@gmail.com",
+        "phone": "6103489940",
+        "contact_name": "Pamela Andrews"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://www.wpsprco.org/", "seen": "2026-10-08", "fields": ["summary", "first_step"]},
+        {"url": "https://www.wpsprco.org/meetings", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "first_step"]},
+        {"url": "https://www.wpsprco.org/about", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience"]},
+        {"url": "https://www.wpsprco.org/contact", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "contacts.phone", "contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The meetings page says all meetings are on Zoom with no in-person place listed. Tier 1's meeting place (428 N. 41st Street) and City list contact address (4209 Filbert Street) are removed because the group no longer lists an in-person place and the City list addresses may be homes. Tier 1 email (the City list personal address) is replaced by the group's published wpsprco@gmail.com. The phone number comes from the City list and is kept. The events page lists a Fall Fling, a 2024 Work-N-Play and a 2025 essay contest, all under past events, with no recurring meeting beyond the schedule. Status and last_sign_of_life are kept from tier 1; the June meeting notice is older than that date."
+    }
+  ],
+  "leads_only": [
+    {"name": "Spruce Hill Community Trust", "url": "https://www.sprucehillca.org/about/", "note": "501(c)(3) arm of the association, described on its about page; not checked"},
+    {"name": "University City District", "url": "https://www.sprucehillca.org/", "note": "named as the organization of a guest speaker in a board meeting notice on the association's home page; not checked"},
+    {"name": "University City Historical Society", "url": "https://www.sprucehillca.org/", "note": "named in a post on the association's home page about historic date markers; not checked"},
+    {"name": "New Church Down the Way Ministries", "url": "https://westbelmontcivic.org/meeting-information/", "note": "congregation that hosts West Belmont meetings; named on the meeting page; not checked"},
+    {"name": "thINKingDANCE Giving Circle (Grapevine)", "url": "https://www.grapevine.org/giving-circle/OLWs44x/thINKingDANCE-Giving-Circle", "note": "giving circle for thINKingDANCE run on a donor platform; not checked"}
+  ],
+  "blocked": [],
+  "notes": "Batch of 7 groups: 6 publish, 1 hide (The Enterprise Center CDC, out of scope). Fetches: 24 used. Two guessed pages on theenterprisecenter.com returned 404 (/about/ and /community/); no bot checks or 403s. One WebSearch used for West Philly Plan + Preserve, which found no page for the group. The phila.gov RCO training slides PDF could not be read as text, so no open-meeting rule is claimed for any group. Ethics rule applied: home-looking addresses removed (West Belmont president's address, West Philly Plan + Preserve City list address, West Powelton City list address and old meeting address, UCAP IRS address); the orchestrator should check these. Leads named on batch sites were listed in leads_only and not fetched: they are partners of batch groups rather than groups in this batch, so the brief sends them to future research. Status concerns: West Belmont's own site has no dated item after 2017, and West Philly Plan + Preserve has only registry evidence, so both have low confidence."
+}

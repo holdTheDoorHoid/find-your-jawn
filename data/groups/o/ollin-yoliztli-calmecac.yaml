@@ -8,9 +8,8 @@ leads:
 ein: '421701809'
 summary: A Philadelphia group founded in 2003 to explore and share Mexicayotl culture, a tradition from
   Mexico before the Spanish arrived. It runs events, a radio show and an Indigenous Peoples Day celebration.
-what_you_do: Attend the group's events and programs, such as the 14th Philadelphia Indigenous People Day,
-  or follow the Nika Tlaka radio show. The site has pages for volunteers and members, but they do not
-  yet show steps, terms or fees. You can also read the blog and history pages, or donate.
+what_you_do: Come to the group's festivals and celebrations, follow the Nika Tlaka radio show, or volunteer
+  on the board, in marketing and social media, or in dancing and music. Donations are also welcome.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -37,11 +36,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The homepage shows no dates or times for its events. The events page was blocked (HTTP 403) and
-    could not be read.
+  text: A few festivals and celebrations each year, including the Philadelphia Indigenous Peoples Day
+    celebration. The site does not list dates for any of them.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -53,19 +52,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 2062 South Cecil street
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: Membership fees and event prices are not shown.
+  text: The site asks for donations. It shows no membership fees or event prices.
 commitment: null
 group_size: null
 access:
@@ -80,14 +70,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email brujo@ollinyoliztlicalmecac.org to ask how to volunteer or join as a member, and ask about
-    the next event.
+  how: Email brujo@ollinyoliztlicalmecac.org to say you would like to volunteer, or ask about the next
+    festival.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Volunteer and member pages exist, but no steps, terms or fees are shown, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The volunteer page names an email route with no application form, and the group holds public
+    festivals. The site shows no dates or steps for a first visit.
+  what_to_expect: The site does not describe a first visit. Volunteers are needed for board work, marketing
+    and social media, and dancing or music, and most events are bilingual.
+  first_visit_tips:
+  - Email before you come, since the site shows no event dates or times.
+  - If you dance or play music, say so in your email, because the group lists both as needs.
 contacts:
   website: http://www.ollinyoliztlicalmecac.org
   email: brujo@ollinyoliztlicalmecac.org
@@ -96,8 +90,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.ollinyoliztlicalmecac.org
+last_sign_of_life: 2024-10
+sign_of_life_url: https://www.ollinyoliztlicalmecac.org/about-1
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=7
   seen: '2026-10-04'
@@ -129,8 +123,36 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.ollinyoliztlicalmecac.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - newcomer_friendliness
+- url: https://www.ollinyoliztlicalmecac.org/about-1
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.ollinyoliztlicalmecac.org/members
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.ollinyoliztlicalmecac.org/blog
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.ollinyoliztlicalmecac.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

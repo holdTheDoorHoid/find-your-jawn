@@ -5,15 +5,21 @@ leads:
 - city_nac:13
 - irs_bmf:232037301
 ein: '232037301'
-summary: Mt. Vernon Manor, Inc. serves as a Neighborhood Advisory Committee for the City of Philadelphia,
-  linking residents in the University Southwest part of the city to services and giving them a voice.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: A community development group in the Mantua area of West Philadelphia, formed in 1977. It runs
+  a weekly food pantry, helps residents with rent, utility and property tax costs, and runs the neighborhood
+  advisory committee that links residents to City services.
+what_you_do: Sign in at the Wednesday 9 am food pantry, ask for help with rent, utilities, property taxes
+  or benefits, or take part in the elected neighborhood subcommittee, which meets monthly to name local
+  needs.
 kind: civic
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
 interests:
 - community_development
 - civic_association
+- food_pantry
+- housing_help
 motives:
 - values
 - social
@@ -36,11 +42,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Food pantry every Wednesday at 9 am, with sign-in. The elected Neighborhood Advisory Subcommittee
+    meets monthly, and the site gives no meeting time or place.
+  days:
+  - wed
+  times:
+  - morning
+  recurring: true
+  season: year_round
 locations:
 - label: Office
   address: 631 N 39th St
@@ -69,17 +78,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Call the office at 215-475-9492 on a weekday between 9 am and 3 pm and ask how to join the subcommittee
+    or start with the Wednesday food pantry.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The Wednesday pantry takes sign-ins, which is simple, but the site does not say how to join the
+    elected subcommittee or whether its meetings are open to visitors.
+  what_to_expect: The pantry is a weekly sign-in on Wednesday mornings at 9 am. The site does not describe
+    a subcommittee meeting, so ask the office about its time and place before you go.
+  first_visit_tips:
+  - Plan to sign in when you arrive at the Wednesday pantry.
+  - Call first to confirm when and where the subcommittee meets.
+  - The site lists office hours of weekdays 9 am to 3 pm.
 contacts:
-  website: mvmcdc.org
+  website: https://mvmcdc.org
   email: michael@mvmcdc.org
-  phone: 215)475-9492
+  phone: 215-475-9492
   contact_name: Michael Thorpe
   social: []
   calendar_feed: null
@@ -102,7 +117,25 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
+- url: https://mvmcdc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://mvmcdc.org/neighborhood-advisory-sub-committee/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+- url: https://mvmcdc.org/get-involved/contact_us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

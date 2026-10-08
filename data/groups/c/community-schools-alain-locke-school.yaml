@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Alain Locke School is one of the City's Community Schools, where volunteers help with after school
   and family programs. Open shifts are listed on the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Help lead weekly student clubs for grades K to 8 and support school events, per the City's
+  volunteer listing.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -36,14 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Student clubs run weekly, and volunteers are asked to lead one, per the City's volunteer listing.
+    Days and times are not given.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: School
-  address: 4550 Haverford Ave Philadelphia , PA 19104
+  address: 4550 Haverford Ave, Philadelphia, PA 19104
   neighborhood: null
   planning_district: university_southwest
   zip: '19104'
@@ -69,21 +71,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call Jared Beck, the Community School Coordinator, at (215) 400-7670 or email jared.beck@phila.gov
+    to ask about the club volunteer roles.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check;
-    Volunteer City Release Waiver.'
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The volunteer listing says school volunteers must clear background and child abuse checks and
+    sign district forms before starting, so the way in takes approval rather than a drop-in visit.
+  what_to_expect: The coordinator's listed office hours are weekdays, 8:30 am to 5 pm. Before a first
+    shift, volunteers who work with students need background and child abuse clearances, per the volunteer
+    listing. The school's programs include after school learning, family events, and student support,
+    so ask which club or event you would help with.
+  first_visit_tips:
+  - Call during the coordinator's weekday office hours, 8:30 am to 5 pm.
+  - Ask which clearances apply before you plan a first shift, since the City page does not list them.
 contacts:
-  website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186410
-  email: Madeline.Cerulli@phila.gov
-  phone: (215) 834-6277
-  contact_name: null
+  website: https://www.phila.gov/programs/community-schools/alain-locke-school/
+  email: jared.beck@phila.gov
+  phone: (215) 400-7670
+  contact_name: Jared Beck (Community School Coordinator)
   social: []
   calendar_feed: null
 status: active
@@ -98,7 +104,24 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - what_you_do
+  - schedule
+  - requirements.act153_clearances
+  - requirements.background_check
+  - first_step.basis
+- url: https://www.phila.gov/programs/community-schools/alain-locke-school/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+  - contacts.website
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

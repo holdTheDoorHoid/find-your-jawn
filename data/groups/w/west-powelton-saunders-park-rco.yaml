@@ -5,16 +5,17 @@ leads:
 - city_rco:387
 - city_rco_points:387
 ein: null
-summary: A neighborhood group the City of Philadelphia has registered to be consulted on zoning and development
-  in the University Southwest part of the city, West Powelton Saunders Park RCO gives neighbors a place
-  to hear about projects and respond.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: Volunteer neighbors in West Powelton who review zoning cases, run a neighborhood cleaning effort,
+  and plan community events in Saunders Park.
+what_you_do: Follow zoning and development plans in West Powelton and Saunders Park, meet by Zoom to talk
+  them over, and help with neighborhood cleaning and events. Newcomers can get on the notice list by email.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
 - civic_association
 - community_development
+- clean_blocks
 motives:
 - values
 - social
@@ -37,10 +38,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Meets by Zoom at 7 pm on the 2nd and 4th Thursdays of the month, September to June.
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Meeting place
@@ -61,7 +64,7 @@ locations:
   lng: -75.20554397542087
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -79,16 +82,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email wpsprco@gmail.com to be added to the meeting notice list, which includes the Zoom details,
+    then join a Thursday meeting on Zoom.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Newcomers can get the Zoom details by email, and meetings run on a fixed schedule. The site does
+    not say whether visitors may attend or speak.
+  what_to_expect: Meetings are held on Zoom at 7 pm on the second and fourth Thursday of the month, from
+    September to June, with a summer break. The group reviews zoning cases and neighborhood projects.
+    The site does not describe the meeting format, how long meetings run, or whether visitors may speak.
+  first_visit_tips:
+  - Email early, since the Zoom details come through the notice list.
+  - If you bring a zoning case, contact the chair at the same email about a month before the zoning hearing.
 contacts:
   website: https://www.wpsprco.org/
-  email: andrewsp0719@gmail.com
+  email: wpsprco@gmail.com
   phone: '6103489940'
   contact_name: Pamela Andrews
   social: []
@@ -114,7 +123,28 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://www.wpsprco.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: https://www.wpsprco.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step
+- url: https://www.wpsprco.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+- url: https://www.wpsprco.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

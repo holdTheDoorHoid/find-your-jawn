@@ -6,17 +6,20 @@ leads:
 - city_rco:389
 - city_rco_points:389
 ein: null
-summary: A community organization named by the City as a Neighborhood Advisory Committee, Whitman Council,
-  Inc. connects neighbors in the South part of the city with City services and a say in local priorities.
-  It is also a registered community organization, so developers are asked to talk with it about nearby
-  zoning and building plans.
-what_you_do: Work with neighbors and the City on local services and what the area needs.
+summary: A neighborhood advisory council for the Whitman area of South Philadelphia, serving the community
+  since 1977. Its office helps neighbors with utility bills, property tax and rent rebates, senior programs,
+  and other housing questions.
+what_you_do: Staff help residents apply for utility assistance, property tax and rent rebates, and the
+  senior property tax freeze, and answer questions about SEPTA schedules and zoning. The council also
+  lists its board meetings and community events on its calendar.
 kind: civic
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
 interests:
 - community_development
 - civic_association
+- housing_help
 motives:
 - values
 - social
@@ -39,28 +42,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
+  text: Board meetings are listed for Wednesday evenings around 6:30 pm. The site does not say how often
+    they meet.
+  days:
+  - wed
+  times:
+  - evening
   recurring: null
   season: null
 locations:
 - label: Office
-  address: 2455 S 3rd St
+  address: 2455 S 3rd St, Philadelphia, PA 19148
   neighborhood: null
   planning_district: south
   zip: '19148'
   lat: 39.912265451133976
   lng: -75.15644037016096
-  in_city: true
-  transit: null
-- label: Meeting place
-  address: 2455 S. 3rd St, Philadelphia, PA 19148
-  neighborhood: null
-  planning_district: south
-  zip: '19148'
-  lat: null
-  lng: null
   in_city: true
   transit: null
 - label: Contact address (City list)
@@ -90,16 +87,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Call (215) 468-4056 or email whitmancouncilinc@gmail.com to book an appointment at the office on
+    S 3rd Street.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The site says the council helps anyone who asks, and it gives office hours and a phone number
+    to book a visit.
+  what_to_expect: Visits are usually booked ahead, since the office prefers appointments. Staff can help
+    with utility assistance, property tax and rent rebates, and LIHEAP or PACE applications. The site
+    does not list costs for these services.
+  first_visit_tips:
+  - Call during office hours, Monday to Friday, 8 am to 4:30 pm, to book a time.
+  - Ask about parking and transit when you book, since the site gives no directions for either.
+  - The office is on S 3rd Street at the same address listed for the 2025 board meetings.
 contacts:
-  website: whitmancouncil.com
-  email: mkapkkz@msn.com
+  website: https://whitmancouncil.com
+  email: whitmancouncilinc@gmail.com
   phone: 215-468-4056
   contact_name: Mark Kapczynski
   social: []
@@ -134,8 +138,41 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
-confidence: medium
+- url: https://whitmancouncil.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts.website
+  - contacts.phone
+- url: https://whitmancouncil.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience.open_to
+  - first_step.newcomer_friendliness
+  - first_step.basis
+- url: https://whitmancouncil.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+- url: https://whitmancouncil.com/calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+- url: https://whitmancouncil.com/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

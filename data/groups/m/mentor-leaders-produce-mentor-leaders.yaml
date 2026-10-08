@@ -5,18 +5,27 @@ leads:
 - irs_990n:824056224
 - irs_bmf:824056224
 ein: '824056224'
-summary: null
-what_you_do: null
+summary: A mentoring nonprofit that works with young people ages 10 to 24 through one-on-one and group
+  mentoring, life skills training, and job pathways for top mentees.
+what_you_do: Young people can join as mentees through a form on the site, or book a call. The site describes
+  mentor roles only in general terms, so volunteer mentoring is not recorded.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- kids-youth-mentoring
+interests:
+- mentoring
+motives:
+- values
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- kids
+- teens
+- young_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -52,7 +61,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Fees are not stated. The site lists financial incentives for mentees based on achievement.
 commitment: null
 group_size: null
 access:
@@ -64,26 +73,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
+  how: Join as a mentee using the form on the site, or use the Book A Call link.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Entry is through a form and a call, and the site does not describe the steps after that.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://mlpml.org/
   email: null
   phone: null
   contact_name: Vincent Garrett
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://mlpml.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -98,8 +107,21 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://mlpml.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+  - status
+  - crowd
+- url: https://pysc.org/community-of-practice/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: low
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

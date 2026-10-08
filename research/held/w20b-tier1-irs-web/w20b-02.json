@@ -1,0 +1,420 @@
+{
+ "wave": "w20b-tier1-irs-web",
+ "agent": "w20b-02",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 35,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://www.aquacorps.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice. Not a bot block or rate limit: other domains resolved in the same session."
+  },
+  {
+   "url": "http://arlisdvc.org/ (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "https://www.aid-creative.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "https://www.bestfootforwardphilly.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "https://www.iotaphilambda-philly.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "https://www.thebwfp.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "https://www.blackdanceonline.org (also bare domain and https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on every form tried, twice."
+  },
+  {
+   "url": "http://aspire.web.irs.gov/ (also https)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on both forms."
+  },
+  {
+   "url": "https://begirl.world (also www)",
+   "status": "ENOTFOUND",
+   "note": "DNS error on both forms, found through a search result."
+  },
+  {
+   "url": "https://connectkindness.com/featured/begirl-world",
+   "status": "HTTP 500",
+   "note": "Server error on two tries. Used only as a search snippet, not as a source for any field."
+  },
+  {
+   "url": "https://begirlworld.com",
+   "status": "301",
+   "note": "Redirects to an unrelated business domain. Not followed past that hop."
+  },
+  {
+   "url": "https://bloktoberfest.org",
+   "status": "301",
+   "note": "Redirects to a second domain, then to an unrelated online shop. Not followed past two hops."
+  }
+ ],
+ "notes": "Budget: 2 of 2 WebSearch calls used (cap reached, no further searches), 35 WebFetch calls used of 60. Results: 15 records, 12 publish, 2 hide, 1 not_a_group. Eleven of the publish records are status unknown with no summary, so the importer should hold them back; they are unknown because their websites did not resolve (DNS errors, twice each across www, bare and https forms; other domains resolved in the same session, so this does not look like rate limiting and no wait was needed), their site had no text (Ancient Coins), or no website was on file (Brandywine, Camp Tiagahton). Begirlworld is the only publish record with a summary, and it is dormant with only year-level dates, so I recommend it stays out of the live site until a current sign of life. Blackburn Group is a training firm (not_a_group). The Asian Pacific American Internal Revenue Employees and the City of Philadelphia association are hidden as private on their names alone, since neither public page could be read; confidence is noted on each. Search budget is the main gap: the next wave with fresh search budget should go to the eleven unknown groups, starting with Black Dance Resource Center, Best Foot Forward Philly, Billy Weeks Fellowship Program and Brandywine Valley Freedom Church. The Freedom Church result (freedomchurchphilly.org) is a different name and was not recorded; a later wave may check it separately.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:020619018"
+    ],
+    "group_id": "ancient-coins-for-education-inc",
+    "ein": "020619018",
+    "website": "http://ancientcoinsforeducation.org"
+   },
+   "verdict": "publish",
+   "name": "Ancient Coins for Education",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "http://ancientcoinsforeducation.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "IRS 990N filer, legal name Ancient Coins for Education Inc. The website loaded on three tries (http, https and www) but had no readable text, so it may load its content with scripts. Nothing about activities, schedule, contacts or cost was verified. Only the IRS filing supports the name. The IRS filing address (One Penn Center, 19th Floor, 1617 John F Kennedy Boulevard, 19103) is a filing address only, not a confirmed meeting place. Needs a browser check in a later wave.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:270402102"
+    ],
+    "group_id": "aqua-org",
+    "ein": "270402102",
+    "website": "https://www.aquacorps.org"
+   },
+   "verdict": "publish",
+   "name": "Aqua Org",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.aquacorps.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "The website typed on the IRS filing (www.aquacorps.org) did not resolve on three tries (www, bare domain and https). Nothing about activities or how to join was verified. IRS filing address 783 S 2nd St Unit a, 19147. Needs a search in a later wave.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:232523755"
+    ],
+    "group_id": "art-libraries-society-of-north-america",
+    "ein": "232523755",
+    "website": "http://arlisdvc.org/"
+   },
+   "verdict": "publish",
+   "name": "Art Libraries Society of North America, Delaware Valley Chapter",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "http://arlisdvc.org/",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "Legal name on the IRS filing is Art Libraries Society of North America, with the chapter name Arlisna Delaware Valley Chapter as an alias. The chapter website did not resolve on three tries (http, bare domain and https). Public way in not verified, so it may turn out to be members only. IRS filing address 320 South Broad Street, 19102.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:352284613"
+    ],
+    "group_id": "asian-pacific-american-internal-revenue-employees",
+    "ein": "352284613",
+    "website": "http://aspire.web.irs.gov/"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Asian Pacific American Internal Revenue Employees",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "medium",
+   "notes": "An employee network inside the IRS, so membership is for IRS staff and there is no public way in. The site on the IRS record (aspire.web.irs.gov) did not resolve on two tries, so no page was read. The call rests on the group's name and its IRS subdomain. IRS filing address 600 Arch Street, 19106.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:263523447"
+    ],
+    "group_id": "association-for-the-advancement-and-integration-of-design",
+    "ein": "263523447",
+    "website": "https://www.aid-creative.org"
+   },
+   "verdict": "publish",
+   "name": "Association for the Advancement and Integration of Design",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.aid-creative.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "The website www.aid-creative.org did not resolve on three tries (www, bare domain and https). Nothing verified about programs or how to join. IRS filing address 1315 Walnut Street, Suite 320, 19107, the same suite listed for Black Dance Resource Center. That may be a shared office or fiscal address (not checked).",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:237433304"
+    ],
+    "group_id": "association-of-city-management-and-professional-employees",
+    "ein": "237433304"
+   },
+   "verdict": "hide",
+   "hidden_reason": "private",
+   "name": "Association of City Management and Professional Employees",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The name points to an employee association for City of Philadelphia staff (the IRS alias reads 'of the City of Phila'). The website on the IRS record is an email style string, not a web address, so there was no site to read, and the search budget was spent. The call rests on the name alone; membership appears limited to city staff. Filing address PO Box 58220, 19102. Revisit if a public page turns up.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:811065008"
+    ],
+    "group_id": "best-foot-forward-philly",
+    "ein": "811065008",
+    "website": "https://www.bestfootforwardphilly.org"
+   },
+   "verdict": "publish",
+   "name": "Best Foot Forward Philly",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.bestfootforwardphilly.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "The website www.bestfootforwardphilly.org did not resolve on three tries (www, bare domain and https). Nothing verified about activities or how to join. IRS filing address 1218 S 6th St, 19147. Needs a search in a later wave.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:237382841",
+     "irs_bmf:237382841"
+    ],
+    "group_id": "beta-omicron-chapter-of-iota",
+    "ein": "237382841",
+    "website": "https://www.iotaphilambda-philly.org"
+   },
+   "verdict": "publish",
+   "name": "Iota Phi Lambda, Beta Omicron Chapter",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.iotaphilambda-philly.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "IRS legal names are Iota Phi Lambda Sorority Inc and Iota Phi Lambda Soroity Beta Omicron Chapter (sic). The chapter website did not resolve on three tries (www, bare domain and https). This is a sorority chapter, so membership is probably by intake, and a public way in is not verified. IRS filing address PO Box 34144, 19101. If a national or chapter page shows intake is closed or by invitation only, change the verdict to hide with hidden_reason private.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:273773385"
+    ],
+    "group_id": "billy-weeks-fellowship-program-inc",
+    "ein": "273773385",
+    "website": "https://www.thebwfp.org"
+   },
+   "verdict": "publish",
+   "name": "Billy Weeks Fellowship Program",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.thebwfp.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "IRS legal name Billy Weeks Fellowship Program Inc. The website www.thebwfp.org did not resolve on three tries (www, bare domain and https). Nothing verified about activities, faith tradition or how to join. IRS filing address 2129 Green St, 19130. Needs a search in a later wave.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:850834898"
+    ],
+    "group_id": "black-dance-resource-center",
+    "ein": "850834898",
+    "website": "https://www.blackdanceonline.org"
+   },
+   "verdict": "publish",
+   "name": "Black Dance Resource Center",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.blackdanceonline.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "The website www.blackdanceonline.org did not resolve on three tries (www, bare domain and https). Nothing verified about classes, events or how to join. IRS filing address 1315 Walnut Street, Suite 320, 19107, the same suite as the Association for the Advancement and Integration of Design record. Needs a search in a later wave, since this may be an arts group that a newcomer could attend or volunteer with.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:453948522"
+    ],
+    "group_id": "bloktoberfest",
+    "ein": "453948522",
+    "website": "https://bloktoberfest.org"
+   },
+   "verdict": "publish",
+   "name": "Bloktoberfest",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://bloktoberfest.org",
+     "seen": "2026-10-08",
+     "fields": []
+    }
+   ],
+   "notes": "bloktoberfest.org redirected to diamond138.com, which redirected again to an unrelated online shop, so the group's own page could not be read. Nothing verified about whether this is a recurring group or a one-time event, or how to take part. IRS filing address 60 North 23rd Street, Suite 1411, 19103. Needs a search in a later wave.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:822770803"
+    ],
+    "group_id": "brandywine-valley-freedom-church",
+    "ein": "822770803"
+   },
+   "verdict": "publish",
+   "name": "Brandywine Valley Freedom Church",
+   "kind": "congregation",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [],
+   "notes": "The IRS record has no website ('None'). One search for the exact name found no Philadelphia church by this name. A different Philadelphia congregation, Freedom Church, appears in results with the site freedomchurchphilly.org; it is not confirmed as the same group, so it is not recorded here. IRS filing address 800 North 2nd Street, 183, 19123. Kind is from the name only, not from a readable page. Needs a second search in a later wave.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:815383133"
+    ],
+    "group_id": "camp-tiagahton-llc",
+    "ein": "815383133"
+   },
+   "verdict": "publish",
+   "name": "Camp Tiagahton",
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The IRS legal name is Camp Tiagahton LLC. An LLC is usually a business, so this may be a rental camp (possible not_a_group) rather than a community group. The website field held a person's name, not a web address, so it was ignored. The search budget was spent, so nothing was checked. IRS filing address 620 Christian Street, 19147. Needs a check in a later wave.",
+   "_held_reasons": [
+    "sources: at least one entry with a url and a seen date (YYYY-MM-DD)",
+    "summary is required to publish",
+    "kind is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

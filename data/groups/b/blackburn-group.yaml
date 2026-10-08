@@ -71,9 +71,9 @@ contacts:
   contact_name: Christina Blackburn
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: dormant
+last_sign_of_life: 2022-11
+sign_of_life_url: https://www.speranzaproject.org
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -83,8 +83,13 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
-hidden: false
-hidden_reason: null
+- url: https://www.speranzaproject.org
+  seen: '2026-10-08'
+  fields:
+  - status
+  - name
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
+hidden: true
+hidden_reason: out_of_scope
