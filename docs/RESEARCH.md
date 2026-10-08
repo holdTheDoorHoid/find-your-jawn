@@ -26,9 +26,9 @@ no public way in.
 | Tier | Who does it | What it produces | Target cost |
 |---|---|---|---|
 | 0 Harvest | Scripts | Leads, merged into groups with name, kind, address, contacts | free |
-| 1 Basic | Sonnet, 20 to 25 groups per agent | Alive or not, joinable or not, our summary, tags, cost, schedule if easy | about 5,000 to 8,000 tokens per group |
-| 1c Classify | Sonnet, 50 groups per call, no web | Tags, motives and formats for leads that already carry a description (student groups, grantees) | about 1,000 tokens per group |
-| 2 Deep | Sonnet, 6 to 8 groups per agent | First visit guide, newcomer rating with basis, requirements, access, languages | about 20,000 to 30,000 tokens per group |
+| 1 Basic | Haiku, 15 to 20 groups per agent | Alive or not, joinable or not, our summary, tags, cost, schedule if easy | about 5,000 to 8,000 tokens per group |
+| 1c Classify | Haiku, 40 groups per call, no web | Tags, motives and formats for leads that already carry a description (student groups, grantees) | about 1,000 tokens per group |
+| 2 Deep | Haiku, 6 to 8 groups per agent | First visit guide, newcomer rating with basis, requirements, access, languages | about 20,000 to 30,000 tokens per group |
 | 3 Confirmed | The group, through a GitHub issue | Corrections and a "confirmed by the group" badge | free |
 
 Scripts always go first. Before any agent touches a group, the sign of life checker has already tried
@@ -193,11 +193,15 @@ A wave is a small batch of agents with one purpose. Rules:
 - Eight agents or fewer per wave, each with a stated WebSearch budget (usually 15 to 20). WebSearch is
   capped at about 200 calls per session, shared by everything running, so search heavy waves run one
   after another. Prefer WebFetch on known URLs and scripts for structured pages.
-- Model: Sonnet for research. Opus only for engineering.
+- Model: Haiku 5.5 for research (owner decision 2026-10-08). Sonnet or Opus only for engineering.
 - Each wave has a brief in `research/briefs/<wave>.md` and ends with a log in
   `research/waves/<date>-<wave>.md`: agents, tokens, searches, candidates found, new versus already
   known, blocked sources, and anything surprising.
-- Every wave ends at a pause point. The orchestrator reports to the owner before the next wave.
+- Since 2026-10-08 waves run without a pause point: the usage meter (`research/budget.yaml`) and the
+  automatic checks (DATA_MODEL section 7) are the gates, and the owner gets a short summary after
+  each run. The queue of waves still to run is `research/queue.yaml`.
+- Research briefs for Haiku agents are short and self contained (`research/briefs/`), so agents do not
+  need to read the whole document set.
 
 Planned order: phase 1 (C, D, B remainder, 1c classification, tier 1 on the official list), phase 2
 (F in three waves of six districts, G in four waves, then H, I, J, E), gap waves until saturation,

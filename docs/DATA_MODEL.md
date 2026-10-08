@@ -189,8 +189,9 @@ Every published listing shows "last seen active" from `last_sign_of_life`.
 
 ### Research tiers
 
-- Tier 0: created from leads by script; only name, kind, address and contacts. Hidden from the quiz
-  until it reaches tier 1, visible in browse with an "unverified" label.
+- Tier 0: created from leads by script; only name, kind, address and contacts. Not published
+  (changed 2026-10-08: a name and an IRS address is not useful to a visitor, and many tier 0 records
+  are not joinable). Tier 0 groups count toward the "How complete is this?" page until checked.
 - Tier 1: basic pass (alive, joinable, summary, tags, cost, schedule if easy).
 - Tier 2: deep pass (first visit, newcomer friendliness with basis, requirements, access).
 - Tier 3: the group itself confirmed the listing through a GitHub issue.
@@ -216,10 +217,73 @@ Controlled lists live in `data/vocab/`:
 
 ## 5. Site data (built, not committed)
 
-The pipeline's build step writes `site/public/data/`:
+`fyj build` writes `site/public/data/`. Only groups that pass the publish checks (section 7) and have
+`research_tier` 1 or higher, `hidden: false` and `audience.partisan: false` are written.
 
-- `groups.json`: compact index of every published group (the quiz and browse load this).
-- `groups/<slug>.json`: full record per group for its page.
-- `vocab.json`: merged vocabularies.
-- `manifest.json`: build date, counts by status, tier, category and planning district, and the
-  coverage estimates from `research/coverage/`.
+- `groups.json`: `{"built": "<ISO date>", "count": n, "groups": [...]}`. Each entry is the group record
+  of section 3 with these fields removed: `leads`, `sources`, `ein`, `contacts`, `first_step.basis`,
+  `first_step.what_to_expect`, `first_step.first_visit_tips`, `access.notes`, `requirements.gear`,
+  and `planning_district` added to each location (from the neighborhood vocabulary or the ZIP).
+  Null values, empty lists and empty objects are omitted to keep the file small. The quiz, results
+  and browse load this file.
+- `groups/<slug>.json`: the full record for the group page, everything in section 3 except `leads`.
+- `vocab.json`: every vocabulary file merged, keyed by file name (`interests`, `motives`, ...).
+- `manifest.json`: build date, counts by status, tier, category and planning district, the number of
+  tier 0 groups not yet checked, and the coverage estimates from `research/coverage/`.
+
+## 6. Research records (what research agents hand in)
+
+Research agents never edit group files. Each agent writes one JSON file,
+`research/inbox/<wave>/<agent>.json`:
+
+```json
+{
+  "wave": "w1-tier1-friends", "agent": "w1-03", "lane": "A", "model": "haiku",
+  "searches_used": 4, "fetches_used": 31,
+  "records": [],
+  "leads_only": [{"name": "Friends of Example Park", "url": "https://example.org", "note": "named as a partner, not checked"}],
+  "blocked": [{"url": "https://example.org", "status": 403, "note": "bot check"}],
+  "notes": "anything surprising"
+}
+```
+
+Each entry in `records` is a group record (section 3) holding only the fields the agent could
+establish, plus:
+
+- `match` (req): how the importer finds the group: `{"lead_ids": [], "group_id": null, "ein": null,
+  "website": null}`. Waves over known leads always give `lead_ids`. Discovery waves give what they
+  have; the importer matches by group id, then EIN, then website domain, then normalized name plus
+  ZIP, and otherwise creates a new group.
+- `verdict` (req): `publish`, `hide` (with `hidden_reason`), `not_a_group`, `duplicate` (with
+  `match.group_id` of the survivor) or `out_of_area`.
+- `sources` (req): `[{url, seen, fields}]`, so every fact can be traced.
+- `research_tier`: 1 or 2. Tier 1 records must carry `status`, `last_sign_of_life` (or null with
+  status `unknown`) and `sign_of_life_url`.
+
+Anything absent stays unknown; never guess. Text fields (`summary`, `what_you_do`, `schedule.text`,
+`cost.text`, everything under `first_step`) are written in our own words.
+
+`fyj import-research <wave>` validates each file, merges passing records into group files under the
+file lock (research values win over harvested values; a newer research tier wins over an older one;
+contacts merge without dropping a published source), moves failing records to
+`research/held/<wave>/<agent>.json` with the reasons, and archives the processed inbox file to
+`research/done/<wave>/`.
+
+## 7. Automatic publish checks
+
+`fyj check` runs before every build and every scheduled publish. A group that fails is held back from
+the site (not deleted) and listed in the check report with its reasons:
+
+1. Schema: required fields present; every vocabulary value exists in `data/vocab/`.
+2. Sources: every published group has at least one source with a URL and a date seen.
+3. Own words: no run of 8 or more consecutive words in `summary`, `what_you_do`, `schedule.text`,
+   `cost.text` or `first_step` text is shared with any lead description merged into the group (and,
+   when a cached copy exists, with the text of its cited source pages).
+4. No dashes as punctuation in our text: no em dash, no en dash, no spaced hyphen. The importer
+   rewrites the obvious cases to a comma before checking.
+5. Scope: no partisan name patterns (ward committee, Democratic or Republican committee or club,
+   campaign, for mayor, for council, PAC) unless the record is hidden as partisan; support groups
+   carry `audience.support_group: true`.
+6. Claims need sources: `court_ordered_ok: yes` and `service_hours_letter: yes` need a source whose
+   `fields` list names them.
+7. Removals: nothing in `data/blocklist.yaml` (group ids, or field values to suppress) is published.

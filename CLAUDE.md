@@ -52,7 +52,8 @@ Read before doing anything: `docs/PLAN.md` (the owner's decisions, authoritative
   small fixtures in `pipeline/tests/fixtures/`; unit tests never use the network. Lint with ruff.
 - Site: Node 24 and npm in `site/`, TypeScript. Interface text lives in one strings module so
   translation can come later. The quiz and matching run entirely in the visitor's browser.
-- Models: Sonnet for research and routine work, Opus for hard engineering. Never Fable for subagents.
+- Models (owner decision 2026-10-08): Haiku for research, Sonnet for engineering and routine work,
+  Opus only for genuinely hard engineering. Never Fable for subagents.
 
 ## Git and process
 

@@ -48,6 +48,11 @@ and back a second and third time (section 4).
 | Events | Groups plus how to show up (when they meet, cost, what a first visit is like). A live events calendar comes later, fed only by calendars groups publish themselves |
 | This session | Plan, public repository with placeholder site, free script harvest of official lists. AI research waves start after the owner reviews this plan |
 | City volunteering (added later the same day) | Include every City of Philadelphia volunteer opportunity: the City's volunteer portal (Community Schools, on Galaxy Digital) and every department's volunteer program on phila.gov |
+| Research model (2026-10-08) | Research agents run on Haiku 5.5 (replaces Sonnet in the founding plan). Engineering agents run on Sonnet, Opus only where a task truly needs it |
+| Launch week budget (2026-10-08) | About 20 percent of the week's usage allowance (October 8 to 15) for the site build and research together, read from the usage meter before every wave |
+| Long tail (2026-10-08) | After launch week, a nightly scheduled run keeps researching in small batches and skips itself when usage is running high |
+| Publishing (2026-10-08) | Research from scheduled runs goes live automatically once it passes the automatic checks (DATA_MODEL section 7); the owner gets a short summary after each run |
+| Footer credit (2026-10-08) | No credit line. The footer carries sources and the GitHub link only |
 | Quiz questions (added later the same day) | Use psychology and efficient questions to get the most accurate picture in the fewest taps: concrete scenes, forced choices, a taste test of real groups, adaptive follow ups, tuned by simulation (DESIGN section 2) |
 
 ## 3. What already exists, and where we fit
@@ -155,6 +160,16 @@ and day of service.
 Each milestone becomes a GitHub issue once the owner approves the plan. Site work runs in parallel
 with research from phase 1 onward, using early data.
 
+**Launch week (2026-10-08 to 15).** The owner asked to build the site now and research in phases. The
+site (phases 4.1, 4.3, 4.4 and a first cut of 4.5, 4.6 and 4.9) is built in parallel with research, so
+the site can go live this week with enough checked groups to be useful: every interest family and
+every part of the city represented. City records (registered community organizations, rec centers,
+libraries, senior centers, gardens) get scripted basic listings for free. Haiku waves check the
+Friends groups, Mummers clubs and seeds, read national chapter finders (lane P), and sweep interest
+families (lane G). The map (4.2), the neighborhood starter pack (4.7) and the question simulation
+wait for the long tail. Everything not done this week goes into `research/queue.yaml`, which the
+nightly run works through.
+
 **Phase 0, foundation (this session)**
 - M0.1 Plan documents (this file, DESIGN, RESEARCH, DATA_MODEL, ETHICS).
 - M0.2 Public repository, placeholder site on GitHub Pages with the early preview notice.
@@ -211,8 +226,10 @@ with research from phase 1 onward, using early data.
 
 ## 7. Budget and pacing
 
-Rough Sonnet token estimates; actual use is logged per wave in `research/waves/` so we can correct
-course early.
+Since 2026-10-08 the budget is set in share of the weekly usage allowance, read from the usage meter:
+about 20 percent for launch week, then nightly runs capped by `research/budget.yaml`. Every wave logs
+the meter before and after in `research/waves/usage.jsonl`. The token estimates below are from the
+founding plan (Sonnet); Haiku costs less per group.
 
 | Phase | Work | Estimate |
 |---|---|---|
@@ -251,7 +268,7 @@ point, so the owner can stop or redirect spending.
 1. Review this plan and the design and research documents; approve phase 1.
 2. Contact Join Philly's founder about partnering. A draft note is in `docs/outreach/join-philly.md`
    (not sent).
-3. Decide the footer credit line (for example "Made by LSOH", your name, or none).
+3. Footer credit line: decided 2026-10-08, none.
 4. Later: a custom domain (pages under holdthedoorhoid.github.io share browser storage with your
    other sites), and recruiting a few real testers from different backgrounds.
 5. Optional and valuable: photograph community bulletin boards you pass (library, laundromat, coffee
