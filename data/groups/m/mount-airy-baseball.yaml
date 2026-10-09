@@ -4,10 +4,12 @@ aka: []
 leads:
 - irs_bmf:271349185
 ein: '271349185'
-summary: A community baseball organization in northwest Philadelphia with spring and fall baseball from
-  T-ball through age 15, summer travel teams, winter instruction, and summer camps.
-what_you_do: Kids register for spring or fall baseball, travel teams, winter instruction, or camp. Adults
-  interested in coaching can use the coaching information page.
+summary: A community baseball club in northwest Philadelphia that has run since 1985. It offers fall ball
+  for kids ages 7 to 15, spring play from T-ball through age 15, summer travel teams, winter instruction,
+  and camps. Parents and other adults can volunteer as coaches or umpires.
+what_you_do: Kids register for fall or spring baseball, a summer travel team, winter instruction, or camp.
+  Adults who want to coach can mark interest on a child's registration form or email the club, and the
+  club contacts volunteers about coaching openings.
 kind: club
 categories:
 - sports-teams
@@ -37,14 +39,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall baseball runs early September to early November. Winter instruction runs January through
-    March. Spring, summer, and camp days and times are not stated.
-  days: []
-  times: []
-  recurring: null
+  text: Fall ball is played on Sundays from early September to early November, with games at several Mt.
+    Airy fields and no practices or playoffs. Winter instruction runs January through March. Spring, summer
+    travel team, and camp days and times are not stated.
+  days:
+  - sun
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Four home fields in northwest Philadelphia
+- label: 'Mt. Airy fields: Finley Playground, Givnish Field (formerly Leeds Field), and Pleasant Playground'
   address: null
   neighborhood: null
   planning_district: null
@@ -55,30 +61,40 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not stated.
-commitment: null
+  level: low
+  text: Fall ball costs $60 per child. Need-based help is available by email, and the club says no child
+    is turned away for inability to pay. Other program fees are not stated.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Register on the registration page, or use the TeamSnap form linked on the homepage
-  drop_in: null
-  sign_up_needed: null
+  how: For a child, register through the TeamSnap form for fall ball, linked from the fall ball page.
+    To coach, mark interest on the registration form or email mtairybaseball@yahoo.com.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Registration is public and online, and the club runs beginner age groups from T-ball, but tryouts
-    are not stated.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Any child in the age range can register online and need-based help is offered, but the site does
+    not say whether a child needs prior experience.
+  what_to_expect: Fall ball is Sunday games at Mt. Airy fields, with start times between 9 am and 5 pm.
+    Kids play in divisions set by birthday, and each player gets a team hat and jersey. Families see game
+    times in TeamSnap once teams are set.
+  first_visit_tips:
+  - Check your child's birth date against the division dates on the fall ball page before you register.
+  - Need help with the fee? Email mtairybaseballscores@gmail.com; the club says no child is turned away
+    for inability to pay.
+  - The site does not list equipment, so ask the club whether your child needs a glove.
+  - Adults who want to coach need Pennsylvania child abuse and state police clearances, and head and assistant
+    coaches attend clinics before the season.
 contacts:
   website: https://www.mtairybaseball.org/
   email: mtairybaseball@yahoo.com
@@ -86,9 +102,9 @@ contacts:
   contact_name: Dan Winterstein
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.mtairybaseball.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.mtairybaseball.org/fall-baseball/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,8 +129,24 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.mtairybaseball.org/fall-baseball/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - audience
+- url: https://www.mtairybaseball.org/coaching/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -3,15 +3,16 @@ name: Olivet Covenant Presbyterian Church
 aka: []
 leads: []
 ein: null
-summary: A Presbyterian congregation with a newsletter and a page for newcomers, for people looking for
-  a church home.
-what_you_do: Use the newcomer page to get in touch, read the Sunday bulletin, or join the newsletter.
-  Worship times are not on the site, so ask the office.
+summary: A Presbyterian church on North 22nd Street with Sunday worship, a Wednesday Bible study and a
+  page for people who are new to the church.
+what_you_do: Come to Sunday worship and stay for the potluck after it, or join the Wednesday Bible study.
+  The church started Connection Groups in 2026 so members and newcomers can build friendships.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- scripture_study
 motives:
 - values
 - social
@@ -32,10 +33,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday bulletin posted for each week. Worship times are not shown on the site.
-  days: []
-  times: []
-  recurring: null
+  text: Sunday worship at 11 am, with a potluck right after. Wednesday Bible study at 1 pm in the basement
+    lounge, with a Zoom option. The site asks people to confirm each week's meeting by email before they
+    come.
+  days:
+  - sun
+  - wed
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Church building
@@ -47,7 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -65,23 +72,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call or email the church office to ask about worship times and visiting
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has a newcomer page and a newsletter sign up, but no visit details
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to Sunday worship at 11 am, or fill out the newcomer form on the I'm New Here page and a leader
+    will reach out to you.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The I'm New Here page invites newcomers to send in a form and says a leader will reach out, and
+    the 2026 Connection Groups are described as a way for newcomers to meet people.
+  what_to_expect: Sunday worship starts at 11 am and a potluck follows right after. The site does not
+    say how long the service runs or what it is like, so the office can answer questions before you come.
+    The site does not say visitors must pay, though it has an online giving link.
+  first_visit_tips:
+  - Call or email the church office before your first visit with any questions.
+  - The church has a parking lot.
+  - Stay after worship for the potluck if you want to meet people.
 contacts:
   website: https://www.olivetphilly.com
   email: ocoffice@verizon.net
   phone: 215-232-2019
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/olivetphilly
+  - https://www.facebook.com/olivetphilly
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.olivetphilly.com/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.olivetphilly.com/sundaybulletin
 sources:
 - url: https://www.olivetphilly.com/
   seen: '2026-10-08'
@@ -91,8 +107,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - contacts.social
+  - first_step.how
+- url: https://www.olivetphilly.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.basis
+  - first_step.sign_up_needed
+- url: https://www.olivetphilly.com/sundaybulletin
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.olivetphilly.com/participate
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - online_ok
+  - first_step.first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

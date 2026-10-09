@@ -6,8 +6,8 @@ leads:
 ein: '232303766'
 summary: A Philadelphia nonprofit in the Olney area that helps new immigrants and low-income families
   with housing, naturalization help and benefit enrollment, and runs an early learning center.
-what_you_do: Call the phone number on the site or use its contact page to ask about housing, immigration
-  or benefits help, or about the early learning center.
+what_you_do: Call 202-821-8591 to ask about housing, immigration or benefits help, or about the early
+  learning center. Housing, benefits and immigration help is by appointment.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -34,17 +34,35 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Housing, benefits and immigration services are by appointment, weekdays 9 am to 5 pm. The early
+    learning center is open weekdays 7 am to 6 pm.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Office
-  address: 6055 N. 5th St., Philadelphia
+  address: 6055 N. 5th St.
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19120'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Early Learning Center
+  address: 5224 Rising Sun Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19120'
   lat: null
   lng: null
   in_city: true
@@ -52,7 +70,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not list fees for housing, benefits, immigration help, or the early learning center.
 commitment: null
 group_size: null
 access:
@@ -67,14 +85,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the phone number on the site or use the contact page
-  drop_in: null
-  sign_up_needed: null
+  how: Call 202-821-8591 to book an appointment for housing, benefits or immigration help, or to ask about
+    the early learning center. The site also has a contact page.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site says it serves new immigrants and low-income families, and it gives a phone number and
-    a contact page to start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says it serves new immigrants and gives a phone number to start, but housing and childcare
+    are for low-income families and the eligibility rules are not described.
+  what_to_expect: Housing, benefits and immigration help is by appointment, and staff guide you through
+    each application, including naturalization and benefit sign-ups. The page does not say how long a
+    visit takes, what papers to bring, or what it costs.
+  first_visit_tips:
+  - 'Book by phone first: housing, benefits and immigration services are by appointment only.'
+  - The office is at 6055 N. 5th St. The early learning center is at a different address, 5224 Rising
+    Sun Avenue.
+  - Ask about languages and eligibility when you call, since the site does not list either.
 contacts:
   website: https://koreancenter.org/
   email: null
@@ -107,7 +132,29 @@ sources:
   fields:
   - name
   - website
-research_tier: 1
+- url: https://koreancenter.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - locations
+  - status
+- url: https://koreancenter.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://koreancenter.org/services/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

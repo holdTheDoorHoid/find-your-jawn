@@ -6,8 +6,8 @@ leads: []
 ein: null
 summary: A historic Presbyterian church on Pine Street with a 10:30 am Sunday service, Sunday school for
   young children during worship, and a concert program.
-what_you_do: Attend the 10:30 am Sunday service, which has childcare, send children to Sunday school during
-  worship from September through July, or look into the community and mission programs.
+what_you_do: Attend the 10:30 am Sunday service, which has staffed childcare for infants and toddlers.
+  Send children to Sunday school from September through July, or look into the community and mission programs.
 kind: congregation
 categories:
 - faith-community
@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday service at 10:30 am. Sunday school for ages 4 through 4th grade during worship, September
-    through July.
+  text: Sunday service at 10:30 am in the upstairs sanctuary. Sunday school classes run September through
+    July, and children take part in the first part of worship with their parents.
   days:
   - sun
   times:
@@ -59,12 +59,14 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: A ramp on the west side of the building leads to the foyer, and an elevator there goes up to
+    the sanctuary. The accessible restroom is on the first floor next to the nursery. Ask a greeter at
+    the main entrance for help.
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,13 +75,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Attend the 10:30 am service; parking and access details are in a linked PDF
+  how: Attend the 10:30 am Sunday service in the upstairs sanctuary. To ask about Sunday school for children,
+    email Pastor Rebecca at rebecca@oldpine.org.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says visitors are welcome and expected, and explains how to attend
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says visitors are welcome and expected, explains childcare and Sunday school, and gives
+    the worship time, but names no separate newcomer program.
+  what_to_expect: The 10:30 am service is held in the upstairs sanctuary, which has a historic pipe organ.
+    A choir sings most Sundays from September to mid-June, an in-house bluegrass band plays at services
+    through the year, and coffee hour follows worship. The site does not say how long the service lasts,
+    what to wear, or whether there is a cost.
+  first_visit_tips:
+  - Park in the free lot on the east side of 5th Street between Lombard and Pine, or ask a greeter for
+    a placard for on-street parking on Lombard between 3rd and 5th.
+  - The loading zone in front of the main entrance at 412 Pine Street can be used to drop off people with
+    mobility needs.
+  - Staffed nursery care is available for infants and toddlers during worship.
+  - Coffee hour follows worship on Sundays, if you want to stay and meet people.
 contacts:
   website: https://oldpine.org
   email: info@oldpine.org
@@ -102,7 +115,29 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://oldpine.org/the-church/children-and-youth/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+- url: https://oldpine.org/the-church/worship-and-music/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - schedule
+- url: https://oldpine.org/who-we-are/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: http://oldpine.org/wp-content/uploads/2024/08/parking-instructions.pdf
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+  - locations
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

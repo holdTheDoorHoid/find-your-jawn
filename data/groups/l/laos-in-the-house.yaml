@@ -4,9 +4,10 @@ aka: []
 leads: []
 ein: null
 summary: A nonprofit that uses storytelling and the arts to bring together Lao and Laotian Americans.
-  It has run a Lao summer camp, keeps a volunteer sign-up form, and invites people to share their stories.
-what_you_do: Sign up to volunteer through the form on the site, share a story through the submissions
-  page, or come to one of its events.
+  It has run a summer camp for children that covers Lao music, dance, customs and cooking, keeps a volunteer
+  sign-up form, and invites people to share their own stories.
+what_you_do: Sign up to volunteer through the form on the site, send in a story through the submissions
+  page, or come to an event the group announces. The group also sells merchandise and takes donations.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -20,7 +21,8 @@ formats:
 - conversation
 roles:
 - create
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -33,14 +35,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No regular schedule is listed. The latest dated item is the Lao Summer Camp Philly 2025, with
-    no month shown.
+  text: No regular weekly schedule is listed. The group announces events and its summer camp on the site
+    as they are planned.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
-- label: Mailing address
+- label: Mailing address (c/o CultureTrust)
   address: 1315 Walnut Street, Suite 320
   neighborhood: null
   planning_district: null
@@ -49,10 +51,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Lao Buddhist Temple of North Philadelphia (site of the 2025 summer camp)
+  address: 335 E Chew Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19120'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: No event or class costs are stated. Donations and shop items are linked.
+  level: low
+  text: Past summer camp prices were $75 for returning students and $125 for new students, and a place
+    could be sponsored for $125. Donations and merchandise are also linked on the site.
 commitment: null
 group_size: null
 access:
@@ -64,17 +76,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the volunteer sign-up form on the site, or email the group's general address
+  how: Email info@laosinthehouse.com or fill in the volunteer sign-up form on the site. For the summer
+    camp, watch the camp page and register there, since space is limited.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The volunteer form and event pages are public, but the site does not describe how new members
-    start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer form and the camp registration are public and clear, but the site does not describe
+    how to join its ongoing activities.
+  what_to_expect: The summer camp runs for one week, 8:30 am to 3:30 pm, with breakfast, lunch and snacks
+    included. Campers are grouped by age and learn music, dance, customs, Lao phrases and cooking from
+    teaching artists, then perform a recital at the end. Families can come on the first day.
+  first_visit_tips:
+  - The mailing address is c/o CultureTrust, so confirm the meeting place with the group before you visit
+  - Register early, since the camp has limited space
+  - Ask whether the next camp dates are set, because the site lists none yet
 contacts:
   website: https://www.laosinthehouse.com
   email: info@laosinthehouse.com
@@ -83,8 +101,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.laosinthehouse.com/
+last_sign_of_life: 2025-08
+sign_of_life_url: https://www.laosinthehouse.com/lao-summer-camp-philly-2025
 sources:
 - url: https://www.laosinthehouse.com/
   seen: '2026-10-08'
@@ -114,8 +132,26 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.laosinthehouse.com/lao-summer-camp-philly-2025
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - last_sign_of_life
+  - locations
+  - requirements
+  - summary
+- url: https://www.laosinthehouse.com/volunteer-sign-up-form
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.laosinthehouse.com/new-events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

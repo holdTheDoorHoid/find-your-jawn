@@ -29,7 +29,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Mass at 10 am, Saturday Vigil Mass at 4:30 pm, and weekday Mass Monday to Friday at 7:30
+  text: Saturday vigil Mass at 4:30 pm, Sunday Mass at 10 am, and weekday Mass Monday to Friday at 7:30
     am.
   days:
   - sat
@@ -45,8 +45,17 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Church (weekday Mass in the chapel of the former convent)
+- label: Church
   address: 248 S. 4th St.
+  neighborhood: null
+  planning_district: null
+  zip: '19106'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Chapel of the former convent (weekday Mass)
+  address: 5th and Locust Sts.
   neighborhood: null
   planning_district: null
   zip: '19106'
@@ -72,13 +81,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about parish life
+  how: Come to the Sunday 10 am Mass or the Saturday 4:30 pm vigil, or call the rectory at 215-923-7930
+    to ask about parish life.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone and the rectory phone is listed; no newcomer program is listed on the
+    site or the Archdiocese page.
+  what_to_expect: Mass is free and open to anyone. Sunday Mass is at 10 am, the Saturday vigil at 4:30
+    pm, and weekday Mass at 7:30 am Monday to Friday in the chapel of the former convent at 5th and Locust.
+    Confession is heard on Saturdays at 4 pm, and neither the parish site nor the bulletin page we could
+    read lists any groups for newcomers.
+  first_visit_tips:
+  - Weekday Mass is held in the chapel of the former convent at 5th and Locust, not in the main church.
+  - For baptism information, call the rectory at 215-923-7930.
+  - The rectory is at 252 S. 4th Street.
 contacts:
   website: https://www.oldstmary.com
   email: null
@@ -86,9 +103,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.oldstmary.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://church-bulletin.org/?id=167
 sources:
 - url: https://archphila.org/parish/old-st-marys-philadelphia/
   seen: '2026-10-08'
@@ -99,11 +116,24 @@ sources:
   - locations
   - contacts
   - status
+  - what_to_expect
+  - first_visit_tips
 - url: https://archphila.org/parish_vicariat/philadelphia-south/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://oldstmary.com
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts
+  - first_step
+- url: https://church-bulletin.org/?id=167
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

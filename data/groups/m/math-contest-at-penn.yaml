@@ -4,10 +4,10 @@ aka: []
 leads:
 - penn_clubs:upenn-math-contest
 ein: null
-summary: Penn students who run an annual math contest for high schoolers, with beginner and advanced rounds.
-  Non-math volunteers help with social media, finance, logistics, and contest day work.
-what_you_do: Volunteer on the contest team, or have a high schooler compete in the in-person or online
-  contest.
+summary: Penn students who run a math contest for high schoolers, with problems meant for beginners and
+  experienced students alike. The site does not list volunteer roles, so ask the staff by email.
+what_you_do: Have a high schooler compete in the contest, in person on Penn's campus or online, or join
+  the interest list to hear about the next one. Ask staff by email about helping on the contest team.
 kind: student_org
 categories:
 - science-learning
@@ -36,16 +36,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Runs an annual contest; the site gives no dates
+  text: The site posts no dates for its contests. Join the interest list or email staff to hear when the
+    next one is set.
   days: []
   times: []
   recurring: true
   season: event_only
-locations: []
-online_ok: null
+locations:
+- label: Penn campus (in-person contests)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: The site does not state an entry fee.
 commitment: null
 group_size: null
 access:
@@ -57,17 +67,21 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Join the contest's interest list from the homepage, or email staff@pennmathcontest.com with questions.
+  how: Join the PMC VI interest list from the homepage, or email staff@pennmathcontest.com with questions.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The interest list and the email are open to anyone. The directory lists an application, but the
-    page does not describe one.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The interest list and the staff email are open to anyone, and the site says the problems suit
+    beginners. The site describes no orientation or volunteer steps.
+  what_to_expect: Contests have individual and team challenges, with problems meant for every level. Students
+    take part in person on Penn's campus or online, and winners get prizes or certificates. The site does
+    not give contest dates, length, or fees, so the staff email is the best way to ask.
+  first_visit_tips:
+  - Join the interest list so you hear when the next contest is announced.
+  - Email staff to ask whether a high schooler can take part in person or online.
 contacts:
   website: https://pennmathcontest.com
   email: staff@pennmathcontest.com
@@ -96,7 +110,29 @@ sources:
   fields:
   - status
   - first_step
-research_tier: 1
+  - summary
+  - what_you_do
+  - contacts
+  - online_ok
+  - locations
+- url: https://pennmathcontest.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - requirements
+- url: https://pennmathcontest.com/past-results
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+- url: https://pennmathcontest.com/archive
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

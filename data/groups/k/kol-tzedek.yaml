@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A Reconstructionist synagogue in West Philadelphia. Members pray on Shabbat, study in the Torah
   school and adult classes, and can join a virtual community.
-what_you_do: Come to Shabbat and prayer services, enroll children in the Torah school, take an adult learning
-  class, or become a member. A newsletter sign-up is on the site.
+what_you_do: Come to Friday evening or Saturday morning services, enroll children in the Torah school,
+  take an adult learning class, or become a member. A newsletter sign-up is on the site.
 kind: congregation
 categories:
 - faith-community
@@ -23,6 +23,7 @@ roles: []
 crowd:
 - all_adults
 - families
+- kids
 bridging: null
 audience:
   open_to: public
@@ -34,12 +35,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shabbat services at 5300 Whitby Ave. Times are on the Shabbat and prayer page, which was not read
-    for this record.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Friday evening service at 6:30 pm, hybrid or online. Saturday morning service at 10 am in person,
+    followed by a lunch. Torah School meets Sunday afternoons, 3:15 to 5:30 pm, for kindergarten to 7th
+    grade.
+  days:
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Shabbat services
   address: 5300 Whitby Ave
@@ -50,42 +58,69 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Office
+  address: '5310 Whitby Ave, Commercial #1'
+  neighborhood: null
+  planning_district: null
+  zip: '19143'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: A membership page and a sustaining share are listed. Dues amounts are not printed.
+  text: Membership runs on a sustaining share. The page prints the 5785 figures as $180 a month or $2,160
+    a year, with a suggested minimum of $36 a month, and says money should not be a barrier to membership.
+    No price for visiting services or for Torah School tuition is printed.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: Accessible front door with a push button into the lobby, an ADA restroom, and a handicapped parking
+    spot directly in front of the sanctuary on Whitby Ave. The page does not mention an elevator or ramp.
+    Friday services are live-captioned, and ASL is available for High Holiday services when requested
+    at least 30 days ahead. Fidgets and headphones can be borrowed during services.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Shabbat and prayer page or the membership page, or send a general question through the
-    site
-  drop_in: null
+  how: Come to the Friday 6:30 pm service, hybrid or online, or the Saturday 10 am service in person.
+    For Torah School, use the Register Now form on the Torah School page, or call the Torah School Director
+    at 267-629-2349.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Membership and prayer pages are public, but the site does not say whether guests are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The Shabbat page welcomes first-time guests, and the membership page gives a form and a staff
+    contact to start; no guest orientation is described, so it is a 4 rather than a 5.
+  what_to_expect: Friday services run about an hour and a half, and Saturday services run two to two and
+    a half hours, mostly in Hebrew. The page welcomes first-time guests and has no dress code, but it
+    does not say where to check in or whether there is a sign-in step. The cost of attending as a guest
+    is not printed.
+  first_visit_tips:
+  - Street parking on Whitby Ave is not guaranteed. A handicapped spot is directly in front of the sanctuary,
+    and the Director of Operations can hold nearby parking if you ask ahead.
+  - Fidgets and headphones can be borrowed during services; they sit next to the prayerbooks.
+  - The prayerbooks are Siddur Chaverim Kol Yisrael on Friday and P'tach Libi on Saturday. The page does
+    not say whether copies are provided.
 contacts:
   website: https://www.kol-tzedek.org/
   email: null
   phone: (267) 702-6187
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/koltzedek
+  - https://www.instagram.com/koltzedek/
+  - https://www.youtube.com/channel/UCRYuR4ZnILBZjubeWUeYHAw
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.kol-tzedek.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.kol-tzedek.org/shabbat.html
 sources:
 - url: https://www.kol-tzedek.org/
   seen: '2026-10-08'
@@ -102,8 +137,35 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.kol-tzedek.org/shabbat.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - access
+  - status
+  - last_sign_of_life
+- url: https://www.kol-tzedek.org/ktts.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - requirements
+  - first_step
+  - audience
+- url: https://www.kol-tzedek.org/membership.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://www.kol-tzedek.org/access.html
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

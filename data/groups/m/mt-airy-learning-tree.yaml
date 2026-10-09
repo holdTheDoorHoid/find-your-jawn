@@ -3,11 +3,13 @@ name: Mt. Airy Learning Tree
 aka: []
 leads: []
 ein: null
-summary: An adult learning center in Mt. Airy. It runs paid classes in arts, cooking, computers, fitness,
-  gardening, and more, and holds a yearly garden tour and a house tour as fundraisers. Anyone can sign
-  up for a class, and teachers can propose one through a form.
+summary: An adult learning center in Mt. Airy, called MALT on its site. It offers a large catalog of paid
+  classes in three terms a year, covering arts, cooking, computers, fitness, gardens, and more, and it
+  holds a yearly garden tour as a fundraiser. Anyone can sign up for a class, and teachers can propose
+  one through a form.
 what_you_do: Take a class in person or online, propose a course to teach, or help with the garden tour
-  and other events. The site does not list volunteer sign-ups or a membership.
+  and other events. Browse the current catalog by topic, location, or teacher. The site does not list
+  volunteer sign-ups or a membership.
 kind: nonprofit
 categories:
 - science-learning
@@ -36,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Office hours are Monday to Thursday, 9 am to 2 pm. Classes run in terms, and each listing shows
-    its own dates, such as Fall 2026 courses that meet on October 8 and October 15, 2026.
+  text: The office is open Monday to Thursday, 9 am to 2 pm. Classes run in three terms a year (fall,
+    winter, and spring), and each class lists its own dates and times.
   days:
   - mon
   - tue
@@ -48,7 +50,7 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Mt. Airy Learning Tree
+- label: Mt. Airy Learning Tree office
   address: 6601 Greene St
   neighborhood: null
   planning_district: null
@@ -57,17 +59,28 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Other class sites across Northwest Philadelphia (listed on each course)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: true
 cost:
   level: paid
-  text: Classes are paid and fees differ by course. One online marketing course lists a $49 fee. A scholarship
-    fund and gift certificates are listed on the site.
+  text: Classes are paid, and each course has its own fee. Every student pays a $6 registration fee each
+    term. A scholarship fund is listed on the donate page, and the site does not state who can apply.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: Access varies by class site. Some sites have elevators or ramps, and the site names two churches
+    with wheelchair accessible rooms. Students with trouble climbing stairs are asked to let the office
+    know. The office can confirm a room and accessibility needs.
 requirements:
   act153_clearances: null
   background_check: null
@@ -76,15 +89,25 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: 'Sign up for a course through the online catalog, or send a course proposal through the form on
-    the Want to Teach page. Phone: 215-843-6333.'
-  drop_in: null
-  sign_up_needed: null
+  how: Create an online account, pick a class in the online catalog, and sign up online. You can also
+    sign up by phone at 215-843-6333 or in person at the office at 6601 Greene St, Monday to Thursday,
+    9 am to 2 pm.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Classes are open to all adults with online sign-up, and several listed courses are labeled for
-    beginners.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Any adult can sign up for a class online, and several listed courses are labeled for beginners,
+    but the site does not describe a welcome program for new students.
+  what_to_expect: Each class sets its own dates and fee, and you also pay a $6 registration fee each term.
+    Classes meet at many sites across Northwest Philadelphia, including churches, schools, and the Greene
+    Street office. Some courses show as full with a waitlist option, and the page does not say how large
+    classes are.
+  first_visit_tips:
+  - Read your confirmation email, since some classes meet at other sites and it gives directions.
+  - To cancel for a refund, call or email the office at least 2 days before the first class. The $6 term
+    fee is kept.
+  - You cannot cancel online, so do not rely on the website to cancel.
+  - Ask the office about parking and room access before a first class, since the site does not give them
+    for every room.
 contacts:
   website: https://mtairylearningtree.org/
   email: info@mtairylearningtree.org
@@ -106,6 +129,8 @@ sources:
   - contacts
   - requirements
   - what_you_do
+  - categories
+  - interests
 - url: https://aceweb.mtairylearningtree.org/CourseStatus.awp?&course=26FFC01
   seen: '2026-10-08'
   fields:
@@ -123,7 +148,19 @@ sources:
   fields:
   - status
   - what_you_do
-research_tier: 1
+- url: https://mtairylearningtree.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_to_expect
+- url: https://mtairylearningtree.org/getting-class/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

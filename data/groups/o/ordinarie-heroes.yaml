@@ -8,7 +8,8 @@ ein: '474100206'
 summary: A Philadelphia nonprofit that helps young people build leadership, school and career skills.
   It also runs a mobile pantry, an educational farm and nutrition workshops.
 what_you_do: Young people take part in weekly in-person leadership sessions, tutoring, film and photo
-  workshops, and college and career prep. Volunteers sign up through the site's Connect page.
+  workshops, and college and career prep. The Inspire program is for young people aged 11 and up. Adults
+  and young people can help with the food pantry, tutoring or office work, and adults can sign up as mentors.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -17,6 +18,7 @@ categories:
 interests:
 - youth_leadership
 - tutoring
+- mentoring
 - food_pantry
 - film_video
 motives:
@@ -28,7 +30,9 @@ formats:
 roles:
 - hands_on
 - help_teach
-crowd: []
+crowd:
+- teens
+- families
 bridging: null
 audience:
   open_to: public
@@ -40,15 +44,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Staff are in the office Monday to Friday, 2 to 8 pm, and on Saturdays for scheduled events. Leadership
-    sessions run weekly in person.
+  text: Program office open Monday to Friday, 2 to 8 pm, and on Saturdays for scheduled events. Leadership
+    sessions run weekly in person. Food pantry volunteer shifts run on the 2nd and 4th Saturdays, 9 am
+    to 2 pm, February through December.
   days:
   - mon
   - tue
   - wed
   - thu
   - fri
+  - sat
   times:
+  - morning
   - daytime
   - evening
   recurring: true
@@ -66,7 +73,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost listed
+  text: No cost listed on the site
 commitment: weekly
 group_size: null
 access:
@@ -81,15 +88,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call (215) 385-5135 or email info@ohmovement.org to ask about the next leadership session, or use
-    the Connect page to volunteer
+  how: Fill out the online volunteer form on the Connect page for a food pantry shift (2nd and 4th Saturdays,
+    9 am to 2 pm), or call (215) 385-5135 to ask about the next leadership session.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a public sign-up form for young people and a Connect page for volunteers, with a
-    phone and email to ask questions. It does not describe what a first session is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has online forms for volunteers, mentors and young people, plus a phone and email for
+    questions. It does not describe what a first session or shift is like.
+  what_to_expect: A food pantry shift runs 9 am to 2 pm on the 2nd and 4th Saturdays. Volunteers check
+    stock, organize new items, bag groceries and interact with families in Hunting Park. The site does
+    not describe a training or what a leadership session looks like.
+  first_visit_tips:
+  - Call (215) 385-5135 or email info@ohmovement.org before your first shift to confirm the time.
+  - The office at 2066 W Hunting Park Ave is open Monday to Friday, 2 to 8 pm.
+  - Donations of supplies are accepted all year, and the site keeps a list of current needs.
 contacts:
   website: https://www.ohmovement.org
   email: info@ohmovement.org
@@ -127,7 +139,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.ohmovement.org/connect
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - roles
+  - commitment
+- url: https://www.ohmovement.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - crowd
+  - interests
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

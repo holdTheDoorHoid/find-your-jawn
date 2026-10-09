@@ -3,15 +3,17 @@ name: Our Lady of Calvary Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish on Knights Road in the Far Northeast with five Sunday Masses, weekday morning
-  Mass, and Saturday confession.
-what_you_do: Come to Mass, or ask the parish about its school. The Archdiocese page lists no community
-  programs.
+summary: A Catholic parish on Knights Road in the Far Northeast with Sunday Masses, a weekday morning
+  Mass, a Saturday vigil and Saturday confession.
+what_you_do: Come to Mass, or join a parish ministry such as the Adoration Chapel, the ushers, the choirs,
+  the Knights of Columbus or the Legion of Mary. The parish also runs a school, and the ministries page
+  lists a contact person for each group.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- worship_music
 motives:
 - values
 formats:
@@ -30,9 +32,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 6:30, 8 and 10 am and at noon, and at 6 pm in February, April, June, October
-    and December. Weekday Mass Monday to Friday at 6:30 am (September to June) and at 8 am. Saturday Mass
-    at 8 am. Saturday confession 3:45 to 4:45 pm.
+  text: Saturday vigil Mass at 5 pm and Saturday Mass at 8 am. Sunday Masses at 6:30, 8 and 10 am and
+    at noon, plus a 6 pm Mass in February, April, June, October and December. Weekday Mass Monday to Friday
+    at 6:30 am (September to June) and at 8 am. Saturday confession 3:45 to 4:45 pm, or by appointment
+    at the rectory.
   days:
   - sat
   - sun
@@ -75,23 +78,30 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the parish office
+  how: Come to a Sunday Mass or the Saturday 5 pm vigil, or call the parish office at 215-637-7515 with
+    questions.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Masses are open to anyone and the office phone is listed, but the site describes no welcome process
+    for newcomers.
+  what_to_expect: Mass is free and open to anyone. The website does not describe the service, how long
+    it runs, or what visitors do during it. The office at 215-637-7515 is the best place for those questions.
+  first_visit_tips:
+  - Call the parish office at 215-637-7515 for parking, transit and directions, since the site does not
+    list them.
+  - The Saturday vigil at 5 pm is an option if Sunday mornings are hard to make.
 contacts:
   website: https://www.ourladyofcalvary.org
   email: null
   phone: 215-637-7515
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/ourladyofcalvaryparish/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.ourladyofcalvary.org
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://ourladyofcalvary.org/church-bulletin/
 sources:
 - url: https://archphila.org/parish/our-lady-of-calvary-philadelphia/
   seen: '2026-10-08'
@@ -106,7 +116,28 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.ourladyofcalvary.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts.social
+- url: https://ourladyofcalvary.org/directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step.first_visit_tips
+- url: https://ourladyofcalvary.org/parish-ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+- url: https://ourladyofcalvary.org/church-bulletin/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

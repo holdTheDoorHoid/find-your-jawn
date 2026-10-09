@@ -5,10 +5,11 @@ leads:
 - irs_bmf:236392694
 - manual_seeds:schuylkill-navy-bachelors-barge-club
 ein: '236392694'
-summary: A rowing club on Boathouse Row that says it welcomes both experienced and new rowers, with group
-  and private coaching that can teach beginners.
-what_you_do: Row with coaches on the Schuylkill, take group or private coaching, or come back to rowing
-  after college.
+summary: An adult rowing club on Boathouse Row. People new to rowing take a short run of learn to row
+  lessons in gig boats, and the club takes members after an application.
+what_you_do: Take about five or six gig lessons with a coach, then row gigs on your own. Move to team
+  boats after roughly 50 miles in a gig, and later to a more advanced shell with coaching. Members pay
+  dues.
 kind: club
 categories:
 - water-rowing
@@ -26,7 +27,7 @@ crowd:
 - all_adults
 bridging: null
 audience:
-  open_to: members
+  open_to: public
   school: null
   min_age: 18
   max_age: null
@@ -42,11 +43,11 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Bachelors Barge Club boathouse, Boathouse Row
+- label: Boathouse Row, Kelly Drive
   address: null
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19130'
   lat: null
   lng: null
   in_city: true
@@ -54,7 +55,7 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: Pricing is on a separate page that was not read.
+  text: Dues apply; the amount was not shown on the pages read
 commitment: seasonal
 group_size: null
 access:
@@ -69,17 +70,16 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Find the Membership and Pricing pages on bachelorsbargeclub.org. The contact details on the home
-    page look like template placeholders, so none are recorded.
+  how: Complete the application form on the membership page. Applicants must be over 18 and able to swim.
+    Space is limited, so you may be put on a waiting list.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The club says coaches teach beginners, but membership and prices are on pages not read, and no
-    working contact was found.
+  basis: Membership needs an application and may mean a waiting list before you see what the club is like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://www.bachelorsbargeclub.org
+  website: https://www.bachelorsbargeclub.org/
   email: BachelorsBargeClub@drexel.edu
   phone: null
   contact_name: Benner
@@ -111,6 +111,7 @@ sources:
   - kind
   - locations
   - cost
+  - status
 - url: https://www.bachelorsbargeclub.org/membership/
   seen: '2026-10-08'
   fields:
@@ -123,6 +124,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - cost
+- url: https://www.bachelorsbargeclub.org/membership
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+  - first_step
+  - contacts
+- url: https://boathouserow.org/about
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
 confidence: low
 last_checked: '2026-10-08'

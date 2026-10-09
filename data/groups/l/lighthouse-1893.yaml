@@ -3,19 +3,21 @@ name: Lighthouse 1893
 aka: []
 leads: []
 ein: null
-summary: A Philadelphia community organization with year-round sports leagues, after-school programs,
-  mentoring through Recreation Over Violence, and STEM classes. Its Lions Elite teams play at several
-  age levels.
-what_you_do: Kids join sports leagues, after-school programs, or STEM classes. Adults can volunteer at
-  events, support programs, or help behind the scenes. Membership fees support the programs.
-kind: club
+summary: A Fairhill community organization founded in 1893 as a preschool and afterschool program. It
+  runs youth sports leagues, a STEM program for kids 8 to 13, and Recreation Over Violence, an affordable
+  sports program for children and families. Its Lions Elite teams play at several age levels.
+what_you_do: Kids can join sports leagues, the STEM program or the summer camp. Families can take part
+  in Recreation Over Violence. Adults can volunteer through an online form, and membership is a monthly
+  donation that funds the programs.
+kind: nonprofit
 categories:
 - sports-teams
 - kids-youth-mentoring
+- science-learning
 interests:
 - youth_coaching
-- mentoring
 - after_school_camps
+- stem_outreach
 motives:
 - social
 - values
@@ -40,7 +42,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Leagues and programs run year-round. Days, times, and seasons are not stated on the pages read.
+  text: Sports leagues and programs run year-round, according to the site. Days, times and seasons are
+    not stated on the pages read.
   days: []
   times: []
   recurring: null
@@ -48,7 +51,7 @@ schedule:
 locations:
 - label: The Somerset Building
   address: 141 West Somerset St., Philadelphia, PA 19133
-  neighborhood: null
+  neighborhood: fairhill
   planning_district: null
   zip: '19133'
   lat: null
@@ -57,7 +60,7 @@ locations:
   transit: null
 - label: Lighthouse Sports Complex
   address: 101 East Erie Ave., Philadelphia, PA 19134
-  neighborhood: null
+  neighborhood: fairhill
   planning_district: null
   zip: '19134'
   lat: null
@@ -67,8 +70,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Fees are not stated. The site has a membership option (Lighthouse Champion) and says membership
-    fees fund programs.
+  text: Program fees are not stated. Membership is a monthly donation, from $10 a month (SPARK) to $100
+    a month (LIGHTKEEPER), with higher tiers above that. The page does not say whether a child needs a
+    membership to play.
 commitment: null
 group_size: null
 access:
@@ -83,14 +87,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Start with the membership page (Become a Lighthouse Champion), or call the phone number listed
+  how: Call 215-425-7800, the number the site lists for getting started, and ask about the league, the
+    STEM program or Recreation Over Violence. For the 2026 STEM program, use the enrollment button on
+    its page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: A membership comes first, and start dates and tryouts for programs are not stated, so the way
-    in takes an extra step.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists a phone number and a membership page, but does not say how children sign up, when
+    programs start, or whether there is a tryout, so the way in takes an extra step.
+  what_to_expect: The site does not describe a typical practice, class or session length. The 2026 STEM
+    program for kids aged 8 to 13 covers six weekly topics, including body systems, brain science and
+    movement. Ask the phone line about start dates, cost and whether a child needs a membership to play.
+  first_visit_tips:
+  - Call before you visit, since the site does not list program times
+  - Ask whether a membership is needed before a child can play
+  - 'Check which building your program uses: the Somerset Building or the Lighthouse Sports Complex'
 contacts:
   website: https://www.lighthouse1893.org/
   email: null
@@ -120,7 +131,34 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.lighthouse1893.org/recreational-programs/
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - crowd
+- url: https://www.lighthouse1893.org/guiding-light-stem-26/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - crowd
+  - schedule
+- url: https://www.lighthouse1893.org/lighthouse-champions/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.lighthouse1893.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.lighthouse1893.org/recreation-over-violence/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

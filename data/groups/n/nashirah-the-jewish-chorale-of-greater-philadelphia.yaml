@@ -6,8 +6,8 @@ ein: null
 summary: An auditioned community choir that sings the full range of Jewish choral music for audiences
   in the Philadelphia area. New singers join by audition, and the site shows an audition poster for the
   2026 to 2027 season.
-what_you_do: Audition to join, sing in rehearsals, and perform in concerts. Members of the public can
-  attend the concerts, though the page we read did not show ticket prices.
+what_you_do: Audition to join, then sing in rehearsals and perform in concerts. The site lists its concerts
+  by date, but it did not show ticket prices or rehearsal times.
 kind: nonprofit
 categories:
 - music
@@ -65,15 +65,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch the site for the audition details for the 2026 to 2027 season, or email the manager to ask
-    how to audition
+  how: Read the membership terms on the Auditions page, then email manager@nashirah.org to book an audition
+    time. Auditions are by appointment, in person or online.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Singers audition before joining, and the audition dates and sign up steps are not written out
-    in the text of the page we read
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining requires an audition booked by email and confirmed by the artistic staff, and the site
+    does not show a way to try a rehearsal first.
+  what_to_expect: The audition is by appointment, in person or online, and singers are checked on sight-reading,
+    memory for pitch, rhythm, range, and blend. The page does not say how long an audition lasts or what
+    it costs. Arrive at least 15 minutes before your time.
+  first_visit_tips:
+  - Read the membership terms before you book, since applicants are asked to be able to meet them.
+  - Arrive at least 15 minutes before your audition time.
+  - Practice sight-reading and your vocal range, since those are what the staff listen for.
 contacts:
   website: https://nashirahphila.wordpress.com/
   email: manager@nashirah.org
@@ -84,9 +89,9 @@ contacts:
   - https://www.facebook.com/nashirah.philadelphia
   - https://www.instagram.com/nashirah.philadelphia/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://nashirahphila.wordpress.com/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://nashirahphila.wordpress.com/performance/
 sources:
 - url: https://nashirahphila.wordpress.com/
   seen: '2026-10-08'
@@ -98,7 +103,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
+  seen: '2026-10-04'
+  fields:
+  - name
+  - locations
+- url: https://nashirahphila.wordpress.com/auditions/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://nashirahphila.wordpress.com/performance/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+- url: https://nashirahphila.wordpress.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

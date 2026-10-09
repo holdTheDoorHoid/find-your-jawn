@@ -5,12 +5,16 @@ leads: []
 ein: null
 summary: A Catholic parish on Tulip Street with Masses in English and Spanish, a Latin Mass at 1:30 pm,
   and a Saturday evening vigil.
-what_you_do: Come to Mass in English, Spanish or Latin. The Archdiocese page lists no community programs.
+what_you_do: Come to Mass in English, Spanish or Latin, or join a parish ministry such as the Food Cupboard,
+  the Giving Tree Committee or the youth ministries. Children and teens can take part in P.R.E.P. religious
+  education, and adults exploring the Catholic faith can join R.C.I.A. The parish also holds a Wednesday
+  Rosary at 6:30 pm in the church, open to everyone.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- faith_youth_programs
 motives:
 - values
 formats:
@@ -31,8 +35,8 @@ audience:
   support_group: false
 schedule:
   text: Sunday Masses at 8 and 10:15 am, at 11:30 am in Spanish, and at 1:30 pm in the Latin form. Saturday
-    vigil at 5 pm. Weekday Mass at 8 am, and at 7 pm in Spanish; 9 am on federal holidays. Saturday confession
-    4 to 4:45 pm.
+    vigil at 5 pm. Weekday Mass at 8 am, and at 7 pm in Spanish on Wednesday; 9 am on federal holidays.
+    Saturday confession 4 to 4:45 pm. Wednesday Rosary at 6:30 pm in the church.
   days:
   - sat
   - sun
@@ -65,7 +69,9 @@ commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -75,13 +81,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory
+  how: Come to any listed Mass, or call the parish office Monday to Thursday, 9 am to 4 pm, to ask about
+    visiting or to register as a new parishioner.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: 'The site has a general welcome message and explains how a new parishioner registers: download
+    the form from the website, then send it to the office or call.'
+  what_to_expect: Mass is free and open to anyone, with services in English, Spanish and Latin. The site
+    does not say how long a Mass lasts or what happens during it. The office is open Monday to Thursday
+    and closed on Fridays, so call on those days if you have questions.
+  first_visit_tips:
+  - The office is open Monday to Thursday, 9 am to 4 pm, and closed Fridays, so plan your call for those
+    hours.
+  - The parish secretary speaks English and Spanish.
+  - Download the New Parishioner Registration form from the website if you want to join the parish.
 contacts:
   website: https://www.olctacony.com
   email: null
@@ -89,9 +103,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.olctacony.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://olctacony.com/bulletins/
 sources:
 - url: https://archphila.org/parish/our-lady-of-consolation-philadelphia/
   seen: '2026-10-08'
@@ -107,8 +121,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.olctacony.com
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+- url: https://olctacony.com/home/about-parish-info/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.how
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+  - first_step.basis
+  - access.languages
+- url: https://olctacony.com/religious-education/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+- url: https://olctacony.com/bulletins/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

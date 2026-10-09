@@ -1,0 +1,331 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-071",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 24,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_990n:474876589", "irs_bmf:474876589"], "group_id": "pennsylvania-health-access-network", "ein": "474876589", "website": "https://www.pahealthaccess.org/"},
+      "verdict": "publish",
+      "name": "Pennsylvania Health Access Network",
+      "summary": "A statewide group that helps people get and keep health coverage. Its helpline offers free help with applying, enrolling, and sorting out coverage problems, and it runs campaigns to protect Medicaid and affordable care.",
+      "what_you_do": "Call or text the helpline for free coverage help, share your story for advocacy work, or join the mailing list to volunteer with enrollment help and advocacy campaigns.",
+      "kind": "nonprofit",
+      "categories": ["health-wellness", "hunger-housing-basic-needs"],
+      "interests": ["health_outreach", "free_help_clinics"],
+      "motives": ["protective", "values"],
+      "formats": ["conversation", "team_play"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["all_adults", "families"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "The helpline takes calls and texts. The site does not list its hours.", "recurring": true},
+      "locations": [{"label": "Office address (visits not stated)", "address": "1501 Cherry Street", "zip": "19102", "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "free", "text": "Free help with health coverage, according to the site."},
+      "access": {"wheelchair": "unknown", "languages": ["en", "es"]},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call or text the helpline at (877) 570-3642 for free help with your health coverage.",
+        "newcomer_friendliness": 4,
+        "basis": "The main action on the site is a helpline for people who need help understanding and enrolling in coverage. It offers Spanish help and a language line, so a call or text is a clear first step.",
+        "what_to_expect": "Your first contact is a call or text to the helpline about health coverage, food assistance, or a problem with coverage. The site does not say how long a call takes or what hours the line keeps. Spanish is offered, and a language line covers other languages.",
+        "first_visit_tips": [
+          "Save the helpline number before you call: (877) 570-3642.",
+          "Keep any letters or notices about your coverage nearby, since the site does not say what to bring.",
+          "Ask for Spanish or the language line if English is hard for you."
+        ]
+      },
+      "contacts": {"website": "https://www.pahealthaccess.org/", "phone": "(877) 570-3642", "contact_name": "Antoinette Kraus"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.pahealthaccess.org/news/new-poll-pennsylvania-voters-across-party-lines-support-policies-to-make-healthcare-more-affordable/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.pahealthaccess.org/", "seen": "2026-10-08", "fields": ["summary", "first_step", "cost", "access", "contacts", "status", "last_sign_of_life", "schedule"]},
+        {"url": "https://www.pahealthaccess.org/get-help/", "seen": "2026-10-08", "fields": ["first_step", "cost", "access.languages"]},
+        {"url": "https://www.pahealthaccess.org/volunteer-with-us/", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://friendscentercorp.org/about/directory-of-tenant-organizations/", "seen": "2026-10-08", "fields": ["lead"]},
+        {"url": "https://www.pahealthaccess.org/news/new-poll-pennsylvania-voters-across-party-lines-support-policies-to-make-healthcare-more-affordable/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Deep pass. Helpline hours, office visit rules and walk-in help are not stated on the pages read. The contact page returned HTTP 403 and was not read (see blocked). Training, time commitment, minimum age and background check for volunteers are not stated. The get-help page confirms Spanish help and a language line, and mentions food assistance."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:237360170", "irs_bmf:237360170"], "group_id": "pennsylvania-public-health-association-inc", "ein": "237360170", "website": "https://pa-pha.phmc.org"},
+      "verdict": "publish",
+      "name": "Pennsylvania Public Health Association",
+      "summary": "A statewide membership group for people who work in public health. It shares a free newsletter, posts action alerts and events, and works to advance public health policy in Pennsylvania.",
+      "what_you_do": "Read the free newsletter, follow the action alerts and events, or join as a member to take part in the work, including topic subcommittees and work groups.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional", "health-wellness"],
+      "interests": ["professional_associations", "health_outreach"],
+      "motives": ["career", "values"],
+      "formats": ["learn_skill"],
+      "crowd": ["professionals"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Office", "address": "1500 Market Street", "zip": "19102", "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "low", "text": "The newsletter is free. Membership is $75 a year for individuals and $50 a year for students, early-career professionals and retirees. Organizations pay $500 a year. Dues renew automatically."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Subscribe to the free newsletter on the site, or email contact@pa-pha.org to ask whether an event is open to non-members.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Anyone can subscribe to the free newsletter, so you can see the work before paying dues. The site does not say whether non-members can attend events.",
+        "what_to_expect": "A first step is reading the free newsletter, which covers events, announcements and analysis, and the membership pages describe training, policy and funding topics. Membership is a yearly subscription with automatic renewal, and members get conference discounts and a chance to join work groups. The site does not say how events run or whether non-members can attend, so ask before you register.",
+        "first_visit_tips": [
+          "Subscribe to the newsletter first to see what is coming up.",
+          "Membership is handled on a separate sign-up site linked from the Membership page, so check the fee for your situation before you sign up.",
+          "Ask contact@pa-pha.org whether an event you want is open to non-members before you pay."
+        ]
+      },
+      "contacts": {"website": "https://pa-pha.phmc.org", "email": "contact@pa-pha.org", "contact_name": "Johanna Dunleavy"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://pa-pha.phmc.org/events",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://pa-pha.phmc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "locations", "first_step", "contacts", "online_ok"]},
+        {"url": "https://pa-pha.phmc.org/membership", "seen": "2026-10-08", "fields": ["cost", "first_step", "what_you_do"]},
+        {"url": "https://pa-pha.phmc.org/events", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "online_ok"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep pass. Membership fees come from the membership page. Whether non-members can attend events is not stated on any page read. The events page lists a virtual partnerships webinar with no date, and a Mid-Atlantic breakfast on Sunday, November 1, 2026, held at a convention center in San Antonio, Texas, tied to the APHA annual meeting. That breakfast is not a Philadelphia event, so it is not used as a location. Status moved to active because the events page read on 2026-10-08 lists a dated 2026 event. The site names the American Public Health Association as its parent; that national group is outside Philadelphia and is not added as a lead."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:231352269"], "group_id": "pennsylvania-society-for-the-prevention-of-cruelty-to-animals", "ein": "231352269", "website": "https://www.pspca.org"},
+      "verdict": "publish",
+      "name": "Pennsylvania SPCA (PSPCA)",
+      "summary": "A large animal shelter and rescue with a Philadelphia headquarters on Erie Avenue. It places animals in foster homes and welcomes adult volunteers for animal care, adoption events and special events.",
+      "what_you_do": "Volunteers socialize dogs and cats, help at adoption and special events, or support office work. Foster homes care for animals until they are adopted, and the shelter provides food, supplies and vet care at no cost.",
+      "kind": "nonprofit",
+      "categories": ["animals"],
+      "interests": ["shelter_volunteering", "animal_fostering"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "min_age": 18, "support_group": false},
+      "locations": [{"label": "Philadelphia headquarters", "address": "350 E. Erie Avenue", "zip": "19134", "in_city": true}],
+      "cost": {"level": "free", "text": "Fostering costs the foster home nothing. The shelter provides food, crates, litter, medication and free veterinary care."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"kids_ok": false, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Choose the Philadelphia headquarters on the volunteer page and apply online through Volgistics. You must be 18 or older.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The volunteer application is online, and the shelter holds public adoption and fundraising events where you can see the work first. The page does not state how long training lasts.",
+        "what_to_expect": "Expect an online application for the location you pick, then training. Once trained, volunteers must work with minimal supervision, and the roles include dog or cat socialization, adoption and special events, and office support. The pages do not state training length or hours per week.",
+        "first_visit_tips": [
+          "Expect animal dander and cleaning chemicals in the work areas, and be ready for an emotionally charged setting, as the volunteer page warns.",
+          "Public adoption and special events are a way to see the shelter before you apply.",
+          "Volunteers must be 18 or older."
+        ]
+      },
+      "contacts": {"website": "https://www.pspca.org", "email": "foster@pspca.org", "contact_name": "Finance Department"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.pspca.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://www.pspca.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status", "last_sign_of_life", "access.languages"]},
+        {"url": "https://pspca.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "audience", "locations", "first_step", "requirements.kids_ok"]},
+        {"url": "https://pspca.org/foster/", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "interests"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Deep pass. The volunteer page gives 18 as the minimum age. The foster page gives no age, so audience.min_age reflects the volunteer rule. Tier 1 set kids_ok to false; the volunteer rule of 18 or older keeps that in place. Protective Custody fostering needs prior PSPCA fostering, Pennsylvania residence and a background check, but it is not a newcomer role, so it is not in requirements. Training length, time commitment, background checks for general volunteers, and visiting hours are not stated. Other PSPCA centers (Main Line Animal Rescue in Chester Springs, Lancaster and Danville) are outside Philadelphia and are not listed as locations. The guessed /contact-us/ page returned 404 and was not retried. Status uses October 2026 event listings on the homepage."
+    },
+    {
+      "match": {"group_id": "peoples-budget-office", "website": "https://peoplesbudgetoffice.org"},
+      "verdict": "publish",
+      "name": "People's Budget Office",
+      "summary": "A Philadelphia group that helps residents understand the city budget and push for public money for the services people need. Anyone can attend a Budget 101 or Budget 201 workshop or monthly office hours, take the budget survey, or join the newsletter.",
+      "what_you_do": "Attend a Budget 101 or Budget 201 workshop (most ask you to RSVP), join the monthly office hours, take the budget survey, or sign up for the newsletter.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic"],
+      "interests": ["community_development"],
+      "motives": ["understanding"],
+      "formats": ["learn_skill"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Budget 101 and 201 workshops move around the city, usually on weeknight evenings with some weekend afternoons, and most ask you to RSVP. The group also says it holds monthly office hours.", "times": ["daytime", "evening"], "recurring": true},
+      "locations": [{"label": "Office", "address": "1909 S 9th Street, Room 209", "zip": "19148", "in_city": true}],
+      "online_ok": true,
+      "cost": {"text": "The site does not state fees for workshops or office hours."},
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "RSVP for a Budget 101 workshop listed on the events page. Most sessions ask for an RSVP.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "Budget 101 is a beginner workshop on how the city budget works, and the events page gives a clear way to attend (an RSVP for most sessions). Office hours are listed, but the page does not say whether they are drop-in.",
+        "what_to_expect": "Budget 101 sessions run about two hours in neighborhood venues across the city and explain how the city budget works. Most ask you to RSVP, and some have offered food and childcare. The site does not state a fee for any session, and some sessions are held online.",
+        "first_visit_tips": [
+          "RSVP on the events page before you go, since most sessions ask for one.",
+          "Check the events page for newer dates: the 2026 sessions listed run from April 6 to June 2.",
+          "Some sessions are online, so you can join from home."
+        ]
+      },
+      "contacts": {"website": "https://peoplesbudgetoffice.org", "email": "info@peoplesbudgetoffice.org"},
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://peoplesbudgetoffice.org/events",
+      "sources": [
+        {"url": "https://peoplesbudgetoffice.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "locations", "contacts"]},
+        {"url": "https://peoplesbudgetoffice.org/events", "seen": "2026-10-08", "fields": ["schedule", "first_step", "online_ok", "status", "last_sign_of_life"]},
+        {"url": "https://www.buildingbok.com/directory", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep pass. The homepage names monthly office hours but gives no day, time, place or drop-in rule, and the /office-hours guessed URL returned 404. Tier 1 had called office hours drop-in; the pages read do not confirm that, so what_you_do now says join instead of drop in. The events page lists 2026 sessions from April 6 to June 2 and 2025 sessions, with no later sessions listed. Workshop venues are neighborhood sites and are not recorded as locations; only the homepage office address is. Survey results go to city leaders, per the site."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:232290505"], "group_id": "philabundance", "ein": "232290505", "website": "https://www.philabundance.org"},
+      "verdict": "publish",
+      "name": "Philabundance",
+      "summary": "A regional food bank that supplies community partners across Philadelphia and nearby counties in Pennsylvania and New Jersey. Volunteers can pack and sort food, cook in its community kitchen, or make cards from home.",
+      "what_you_do": "Sign up for a packing and sorting shift, help prepare meals in the community kitchen, or make cards for the Notes of Sunshine project and mail them to the volunteer department.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs", "food-drink"],
+      "interests": ["food_pantry", "community_meals"],
+      "motives": ["values"],
+      "formats": ["side_by_side", "team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Shifts are offered each week, and warehouse repacking runs in the morning or afternoon. The volunteer pages do not list set days or hours.", "times": ["morning", "daytime"], "recurring": true},
+      "locations": [
+        {"label": "Volunteer department and main office", "address": "3616 S Galloway St", "zip": "19148", "in_city": true},
+        {"label": "Hunger Relief Center, South Philadelphia (warehouse repacking shifts)", "in_city": true}
+      ],
+      "online_ok": true,
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Sign up for a shift on the VolunteerHub portal linked from the volunteer page, or make Notes of Sunshine cards at home and mail them to 3616 S. Galloway Street.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Shift sign-up is public online and by email, and the cards can be made from home. The volunteer pages do not describe an orientation before a first shift.",
+        "what_to_expect": "A warehouse repacking shift means packing and sorting food at the Hunger Relief Center in South Philadelphia, in the morning or afternoon. Friends, family and coworkers can sign up as a group through a separate form. The pages do not say how long a shift runs, what to wear, or whether there is training before a first shift.",
+        "first_visit_tips": [
+          "Sign up through VolunteerHub before you come, since shifts are booked online.",
+          "Groups of friends, family or coworkers can book together through the group form.",
+          "The pages do not list parking or entry details, so call (215) 339-0900 before a first shift."
+        ]
+      },
+      "contacts": {"website": "https://www.philabundance.org", "email": "volunteer@philabundance.org", "phone": "(215) 339-0900", "contact_name": "James Mullen"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.philabundance.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://www.philabundance.org/volunteer-opportunities/", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "locations", "first_step", "contacts"]},
+        {"url": "https://www.philabundance.org/volunteer/", "seen": "2026-10-08", "fields": ["first_step", "what_you_do"]},
+        {"url": "https://www.philabundance.org/", "seen": "2026-10-08", "fields": ["summary", "locations", "contacts"]},
+        {"url": "https://www.philabundance.org/supporting-community-partners/", "seen": "2026-10-08", "fields": ["summary"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep pass. The volunteer pages name warehouse repacking, the community kitchen and Notes of Sunshine cards, but give no set days or hours, minimum age, children's policy, orientation, or parking and entry details. The /community-kitchen/ and /volunteer-faqs/ guessed URLs returned 404 and were not retried. The Hunger Relief Center has no street address on the pages read. Status stays probably_active: the site works but shows no dated volunteer posts, and the report and financial file upload dates are not used as evidence."
+    },
+    {
+      "match": {"group_id": "philadelphia-anti-drug-anti-violence-network-paan", "website": "https://www.paan1989.org"},
+      "verdict": "publish",
+      "name": "Philadelphia Anti-Drug/Anti-Violence Network (PAAN)",
+      "summary": "A Philadelphia nonprofit that works to reduce drug use and violence among young people and their families through prevention services, crisis intervention, counseling and job readiness. It has held open events such as a men's breakfast and takes sign-ups for its mailing list.",
+      "what_you_do": "Join the mailing list, call the office, or send a question through the site's contact form. The site lists Intensive Prevention Services and Crisis Intervention as its programs.",
+      "kind": "nonprofit",
+      "categories": ["advocacy-rights", "health-wellness"],
+      "interests": ["violence_prevention", "harm_reduction"],
+      "motives": ["protective", "values"],
+      "formats": ["conversation", "one_off_event"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [{"label": "Office (Lehigh Pavilion)", "address": "2700 North 17th Street, Suite 200", "zip": "19132", "in_city": true}],
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-940-0550 or send a question through the contact form on paan1989.org to ask how to join the mailing list or attend the next open event.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The mailing list is open to anyone, and the site lists a phone line and a contact form. The site does not describe intake for its programs or say how events are announced.",
+        "what_to_expect": "A first step is a phone call, a contact form message, or a mailing list sign-up. The site does not say what intake for its prevention or crisis programs looks like, how long it takes, or who qualifies. It describes a men's breakfast that about 30 men attended, but gives no date, time or cost for it.",
+        "first_visit_tips": [
+          "Call before you go, since the site does not list office hours.",
+          "Ask whether an event is for men only or open to everyone, since the site does not say.",
+          "Confirm the office address first, because a directory listing gives a slightly different street address for the same suite."
+        ]
+      },
+      "contacts": {"website": "https://www.paan1989.org", "phone": "215-940-0550", "social": ["https://www.facebook.com/PAANOrganization/", "https://instagram.com/Paan_19_89"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.paan1989.org",
+      "sources": [
+        {"url": "https://www.paan1989.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "first_step", "contacts", "status"]},
+        {"url": "https://uac.org/partners/philadelphia-anti-drug-anti-violence-network-paan/", "seen": "2026-10-08", "fields": ["lead", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Deep pass with low confidence. No event, news or program item on the site carries a date. The footer reads 2019, which is not used as evidence. A web search for 2026 PAAN events found no dated listing. Office hours, visiting rules, program eligibility and event costs are not stated. The site gives 2700 North 17th Street, Suite 200 (Lehigh Pavilion), while one directory listing gives 200 N 17th Street, Suite 200, so confirm before a visit. Status stays probably_active because the site works, not because a dated item was found. The /contact guessed URL returned 404 and was not retried."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:463404583"], "group_id": "philadelphia-athletics-youth-sports-association", "ein": "463404583", "website": "https://www.phillyathletics.org/"},
+      "verdict": "publish",
+      "name": "Philadelphia Athletics Youth Sports Association (PAYSA)",
+      "summary": "An all-volunteer youth baseball league with five age divisions, from 3 year olds to 12 year olds. Its fall 2026 in-house season is underway, and volunteers coach, umpire and keep the fields up.",
+      "what_you_do": "Kids play weekly practices and Friday or Saturday games. Adults can coach, umpire, help maintain the fields or raise money, after a background check.",
+      "kind": "nonprofit",
+      "categories": ["sports-teams"],
+      "interests": ["softball_baseball", "youth_coaching"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play"],
+      "roles": ["hands_on", "help_teach", "organize"],
+      "crowd": ["kids", "families"],
+      "audience": {"open_to": "public", "min_age": 3, "max_age": 12, "support_group": false},
+      "schedule": {"text": "Fall in-house season: one weekday evening practice a week (about 6 to 8:45 pm, depending on division), one game a week on a Friday evening or Saturday, and a Saturday morning session for the youngest group.", "days": ["fri", "sat"], "times": ["morning", "evening"], "recurring": true, "season": "fall"},
+      "locations": [{"label": "Fields at the 48th and Woodland Avenue Recreation Center", "in_city": true}],
+      "online_ok": false,
+      "cost": {"text": "The registration fee is not shown on the page. The league will not turn away a family that cannot pay the full fee, if the family emails the commissioner before registering. Those talks are confidential."},
+      "commitment": "seasonal",
+      "access": {"wheelchair": "unknown"},
+      "requirements": {"kids_ok": true, "background_check": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email PAYSACommissioner@gmail.com to ask about the next season and fee help before you register, then watch the site for the next sign-up form. The fall 2026 sign-up closed on August 15.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Any child in an age division can sign up through a public form each season, but the page does not describe a program for first-time players.",
+        "what_to_expect": "Kids play one weekday evening practice and one game a week. Practices run about 6 to 8:45 pm depending on division, and the youngest group meets on Saturday mornings. Adult volunteers coach, umpire and help keep the fields ready, and every volunteer must pass background checks. The page does not give time commitments for volunteers.",
+        "first_visit_tips": [
+          "Check the age cutoff: divisions use age as of May 1.",
+          "If the fee is a problem, email the commissioner before you register.",
+          "Volunteers need a Pennsylvania State Police criminal history report and a Child Abuse History certification. Coaches and volunteers also take an online abuse-reporting course, though sign-up for it was not open when the page was read."
+        ]
+      },
+      "contacts": {"website": "https://www.phillyathletics.org/", "email": "PAYSACommissioner@gmail.com", "contact_name": "Steve Pogarsky"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.phillyathletics.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://www.phillyathletics.org/", "seen": "2026-10-08", "fields": ["summary", "schedule", "locations", "cost", "first_step", "contacts", "status", "audience"]},
+        {"url": "http://www.phillyathletics.org/page/show/2190650?referrer_id=", "seen": "2026-10-08", "fields": ["requirements", "first_step", "what_you_do"]},
+        {"url": "https://pysc.org/community-of-practice/", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Deep pass. The volunteer information page names the state police check and the child abuse history certificate for every volunteer, an online abuse-reporting course for coaches and volunteers (sign-up not open when read), and a Volunteer Disclosure Form for insurance and city recreation rules. Certificates go by email to the compliance officer, Mamie Doyle Mannella. An FBI fingerprint check is not needed for unpaid volunteers who have lived in Pennsylvania for the past 10 years and sign a written statement; otherwise it costs about $27. The page does not list volunteer time commitments, the minimum volunteer age, or a field street address. The act153_clearances field is not set: the page names the two checks but does not use the words Act 153. Status uses 2026 schedule items on the homepage, including the October 19 no-games weekend."
+    }
+  ],
+  "leads_only": [
+    {"name": "Transit Forward Philadelphia", "url": "https://www.transitforwardphilly.org/", "note": "Named as the host of an April 20, 2026 Budget 201 session on the People's Budget Office events page. Its homepage was read once for a one-line summary only. No record was built, so this lead still needs a full pass."}
+  ],
+  "blocked": [
+    {"url": "https://www.pahealthaccess.org/contact-us/", "status": 403, "note": "HTTP 403 on the contact page; not retried"}
+  ],
+  "notes": "Tier 2 deep pass on 7 groups, all verdict publish. Budget: 1 of 1 WebSearch (PAAN; no dated 2026 listing found) and 24 WebFetch calls, of which 6 were guessed URLs that returned 404 or 403 and were not retried. Status changes: People's Budget Office moved to active (2026 sessions through June 2); Pennsylvania Public Health Association moved to active (a dated November 2026 event is listed); PAYSA last sign of life moved to 2026-10. Corrections to tier 1: People's Budget Office no longer says office hours are drop-in (not confirmed by the pages read); PSPCA and PAAN summaries and first steps were tightened to what the pages say. Tool mistake to report: I made one call to a browser navigate tool that is not on this agent's tool list. The permission classifier denied it. I did not retry it and used no browser tools after that. All other work used Read, Write, Bash (JSON check), WebFetch and WebSearch only."
+}

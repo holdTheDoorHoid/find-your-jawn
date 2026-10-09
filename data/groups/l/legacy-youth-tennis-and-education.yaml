@@ -5,9 +5,10 @@ leads:
 - irs_bmf:231747032
 ein: '231747032'
 summary: A tennis and education program based at the LEGACY Tennis Center on Ridge Avenue. It offers junior
-  clinics, camps, private lessons, tournaments, and after-school programs.
-what_you_do: Kids join junior clinics, camps, and after-school programs. Adults can take clinics and lessons.
-  The site has volunteer and careers pages.
+  clinics, camps, private lessons, tournaments, and after-school programs at partner schools.
+what_you_do: Kids join junior clinics, summer camps, and the after-school program. Adults can take clinics
+  and lessons. Volunteers can coach in the after-school program, help at events, or join the summer program
+  for a three-week term.
 kind: program
 categories:
 - sports-teams
@@ -37,13 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Winter break camps run four days in late December. Summer camps start in June. The Juneteenth
-    celebration is June 19, 2026 from 5 to 7 pm, and the annual gala is October 24, 2026 at 6 pm. Clinic
-    days and times are not stated.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Junior clinics meet on the same day each week for a 13-week session. Summer camps run weekdays
+    from 9 am to 3 pm for about 12 weeks.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: LEGACY Tennis Center
   address: 4842 Ridge Avenue, Philadelphia, PA 19129
@@ -57,9 +63,10 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Clinic, camp, and lesson prices are not stated on the pages read. Winter camps have had an early-registration
-    discount, and the menu links to financial aid.
-commitment: null
+  text: Prices are not listed on the pages read. Summer camps offer up to $25 a week off for early sign-up
+    and 10 percent off each extra sibling, and need a 40 percent deposit to register. Financial aid is
+    available for students whose families cannot cover fees.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -73,14 +80,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register through the online portal or a camp sign-up page, and book private lessons through the
-    lessons page
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Registration is public and clear, but tryouts and beginner levels are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Choose a junior clinic that fits your child's age on the junior clinics page, then register in
+    the online Registration Portal. Adults can book private lessons on the lessons page.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Competitive Clinic accepts complete beginners, the Munchkin clinic is introductory, and registration
+    is online. No trial class is offered, so it is not a 5.
+  what_to_expect: Junior clinics meet on one set day each week for a 13-week session, grouped by age and
+    level. Summer camps run weekdays from 9 am to 3 pm for about 12 weeks, and you can sign up week by
+    week. The pages read do not list clinic prices, so check the portal or call before you sign up.
+  first_visit_tips:
+  - Call 215.487.3477 to confirm the day and time for your child's clinic, since the junior clinics page
+    does not list them
+  - Ask whether a first clinic can be a trial, because the site does not say
+  - If cost is a concern, the financial aid form is linked from the scholarships page
 contacts:
   website: https://www.legacyyte.org/
   email: null
@@ -89,7 +103,7 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
+last_sign_of_life: 2026-06
 sign_of_life_url: https://www.legacyyte.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -117,8 +131,33 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://legacyyte.org/legacy-tennis-center/junior-clinics/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - crowd
+  - first_step
+- url: https://legacyyte.org/legacy-tennis-center/center-tennis-camps/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - crowd
+- url: https://legacyyte.org/scholarships/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://legacyyte.org/get-involved/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://legacyyte.org/community-programs/after-school-program/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

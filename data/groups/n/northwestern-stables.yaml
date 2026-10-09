@@ -3,11 +3,10 @@ name: Northwestern Stables
 aka: []
 leads: []
 ein: null
-summary: A riding stable in Wissahickon Valley Park that teaches group lessons year round to children
+summary: A riding stable in Wissahickon Valley Park that teaches group and private riding lessons to children
   over 7 and adults, runs summer day camps, and holds shows and fundraisers that welcome volunteer help.
-what_you_do: Take group riding lessons placed by level, go to summer camp, or help with a schooling show
-  fundraiser through the volunteer sign-up sheet. The stable also runs Racehorse Restarts, which rehabilitates
-  retired racehorses.
+what_you_do: Take riding lessons placed by level, go to summer day camp, or help at a show or fundraiser.
+  The stable also runs Racehorse Restarts, which rehabilitates and rehomes retired racehorses.
 kind: program
 categories:
 - animals
@@ -34,9 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Year-round group lessons for children over 7 and adults, plus summer day camps for ages 7 to
-    13. Dated events on the site: Haunted Horses on October 24, 2026 at 4:30 pm, and Holiday Horses and
-    Bazaar on December 5, 2026 at 10 am.'
+  text: Group lessons run in multi-week sessions in fall, winter, spring and summer. Summer day camp runs
+    weekdays, 9 am to 3 pm, in weekly sessions for ages 7 to 13.
   days: []
   times: []
   recurring: true
@@ -53,8 +51,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Prices are not published on the site.
+  level: paid
+  text: 'Group lessons are paid per session: $240 for a four-week summer session, $480 for an eight-week
+    winter session, and $960 for a sixteen-week spring or fall session. Private lesson prices vary, and
+    payment is due before the session starts. Summer day camp is $470 per week.'
 commitment: null
 group_size: null
 access:
@@ -69,17 +69,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Call (215) 242-8892 or use the contact on the website to ask about lessons, camps and volunteering.
+  how: Email office@northwesternstables.com to ask about beginner lessons and join the new student email
+    list, or call (215) 242-8892. The site says beginner registration for Fall 2026 is open.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Lessons are open to children over 7 and adults and are placed by level, with a phone number listed,
-    but the site does not say beginners are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Youth beginners ages 7 to 12 have their own Leadline/Beginner class and the site explains how
+    to register, but adult classes are for experienced riders and new adults must contact the stable first.
+  what_to_expect: Group lessons last one hour and run in multi-week sessions. Riders are placed in groups
+    by level, based on an instructor's observation and a conversation about your skills. Private and semi-private
+    lessons are mostly on weekdays before 5 pm, and beginners ages 7 to 12 start in the Leadline/Beginner
+    class.
+  first_visit_tips:
+  - Arrive 20 minutes early for a Leadline/Beginner barn lesson on grooming and tacking a horse.
+  - Pay before the session starts, online, by check or in cash. Credit card payments carry extra fees.
+  - Classes fill first come, first served, and current students get preference, so register early.
 contacts:
   website: https://northwesternstables.com
-  email: null
+  email: office@northwesternstables.com
   phone: (215) 242-8892
   contact_name: null
   social:
@@ -108,12 +115,29 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - sign_of_life_url
 - url: https://www.phila.gov/2022-10-14-six-places-to-see-and-interact-with-horses-in-philadelphia
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
-confidence: medium
+- url: https://northwesternstables.com/lessons/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+- url: https://northwesternstables.com/programs/summer-camp/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - audience
+- url: https://northwesternstables.com/racehorse-restarts-giving-thoroughbreds-a-future/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

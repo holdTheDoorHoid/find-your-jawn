@@ -59,7 +59,7 @@ schedule:
   - daytime
   - evening
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: Neighborhood Bike Works shop
   address: 3939 Lancaster Ave
@@ -171,6 +171,15 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+- url: https://www.neighborhoodbikeworks.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - status
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

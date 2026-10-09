@@ -5,9 +5,10 @@ leads:
 - irs_bmf:384005924
 ein: '384005924'
 summary: A basketball league for boys and girls ages 6 to 18, with an adult division for players 19 and
-  up. It runs a winter league and a summer 2026 season, and each player receives a jersey.
-what_you_do: Players join scheduled league games, including Saturday games in the winter league. Volunteers
-  can coach, help plan events, or do outreach.
+  up. It runs a winter league and a summer season, and each player receives a jersey.
+what_you_do: Players register for a season, are placed on teams through a draft, and join scheduled league
+  games, including Saturday games in the winter league. Volunteers can coach, help plan events, or do
+  outreach.
 kind: club
 categories:
 - sports-teams
@@ -33,18 +34,18 @@ audience:
   school: null
   min_age: 6
   max_age: null
-  community: []
+  community:
+  - latino
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: 'Summer 2026 season runs June 27 to August 15. Winter league: scrimmages in early December, a
-    January season with nine Saturday games, and a draft in early January. Game and practice times are
-    not stated.'
+  text: 'Winter league: scrimmages in early December, a draft in early January, and nine Saturday games
+    in January. The league also runs a summer season. Game and practice times are not stated.'
   days:
   - sat
   times: []
-  recurring: null
+  recurring: true
   season: summer
 locations:
 - label: Community College of Philadelphia (championship games)
@@ -64,7 +65,8 @@ commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -74,13 +76,19 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register online through the links on the site, early, because spots fill quickly
-  drop_in: null
-  sign_up_needed: null
+  how: 'Register online through the sign-up link for your division: boys or girls 6 to 11, girls 12 to
+    18, boys 12 to 18, or adults 19 and up. Sign up early, because spots fill quickly.'
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public registration is clear, but the site does not describe tryouts or beginner levels.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Registration is public and clear, and the league offers Spanish-language support, but the site
+    does not describe tryouts or skill levels, and players are placed through a draft.
+  what_to_expect: Sign-up comes first. Players are placed on teams through a draft held in early January
+    for the winter league, and the winter season has early December scrimmages before nine Saturday games
+    in January. Each player receives a jersey, and the site does not list game or practice times.
+  first_visit_tips:
+  - Register early, since spots fill quickly and the site gives no deadline.
+  - Ask the league for game and practice times and the home court, since the site does not list them.
 contacts:
   website: http://laligadelbarrio.com/
   email: null
@@ -111,12 +119,18 @@ sources:
   - status
   - contacts
   - roles
+  - access
+  - requirements
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://laligadelbarrio.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

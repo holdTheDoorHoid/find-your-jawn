@@ -1,0 +1,456 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-072",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 31,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["irs_990n:232285209", "irs_bmf:232285209"],
+        "group_id": "philadelphia-botanical-club-academy-of-natural-sciences",
+        "ein": "232285209",
+        "website": "https://www.philbotclub.org"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Botanical Club",
+      "summary": "Plant lovers who have met since 1891 to learn about the region's plants. The club hosts free botany talks at monthly meetings from September to May, and it also runs volunteer-led field trips and publishes a yearly journal.",
+      "what_you_do": "Come to a free monthly talk, join a volunteer-led field trip, or join as a member for the journal Bartonia and member events.",
+      "kind": "club",
+      "categories": ["science-learning"],
+      "interests": ["natural_history", "talks_lectures"],
+      "motives": ["understanding", "social"],
+      "formats": ["one_off_event"],
+      "roles": ["figure_out"],
+      "audience": {"open_to": "public", "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Monthly meetings from September through May on Thursday evenings. Doors open at 6 pm and talks begin at 6:30 pm.",
+        "days": ["thu"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "McLean Library at the Pennsylvania Horticultural Society", "address": "100 North 20th Street, Philadelphia, PA", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "free",
+        "text": "Monthly meetings and most field trips are free and open to the public. Membership is $20 a year, or $10 for students."
+      },
+      "commitment": "monthly",
+      "access": {
+        "wheelchair": "yes",
+        "notes": "The meeting room is wheelchair accessible, according to the club's meetings page."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to a monthly meeting at the McLean Library, doors open at 6 pm. For a Zoom meeting, email philbotclub@gmail.com by 10 pm the day before to get the link.",
+        "drop_in": true,
+        "newcomer_friendliness": 4,
+        "basis": "The meetings page says the talks are open to the public and that all are welcome, and it explains how a non-member can request the Zoom link.",
+        "what_to_expect": "Doors open at 6 pm, and a short business meeting comes first. A guest speaker gives the talk from about 6:30 pm, and the room closes around 7:30 pm. Some people stay on for an optional dinner at a restaurant across the street.",
+        "first_visit_tips": [
+          "Check the meetings page first, since some evenings are Zoom only or hybrid.",
+          "To join, pay online or mail the membership form to the club's mailing address, which the membership page gives.",
+          "Arrive around 6 pm, when doors open."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.philbotclub.org",
+        "email": "philbotclub@gmail.com",
+        "contact_name": "Academy of Natural Sciences"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://www.philbotclub.org/meetings",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.philbotclub.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts"]},
+        {"url": "https://www.philbotclub.org/meetings", "seen": "2026-10-08", "fields": ["schedule", "locations", "online_ok", "access", "first_step", "status", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://www.philbotclub.org/membership", "seen": "2026-10-08", "fields": ["cost", "commitment", "first_step"]},
+        {"url": "https://www.philbotclub.org/field-trips-workshops", "seen": "2026-10-08", "fields": ["what_you_do", "cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Zoom timing conflict: the meetings page says to email by 10 pm the day before, and the club's Instagram asks for the week before. The record follows the club's own page. Meeting dates used are the 2026 dates printed on the meetings page; the Instagram posts carry no year and were not used for dates. The membership-information address returned 404, so the dues come from the membership page. The membership page shows some placeholder text. The field trips page listed no workshops at this read, so the summary mentions field trips only. Zoom timing was corrected from tier 1 and wheelchair access was added. Joint field meeting fees were not put in cost text because that event is a one-time offer."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:452736378", "irs_bmf:452736378"],
+        "group_id": "philadelphia-boys-gymnastics",
+        "ein": "452736378",
+        "website": "https://www.philadelphiaboysgymnastics.org/"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Boys and Girls Gymnastics",
+      "summary": "A gymnastics school with preschool classes, beginner girls classes and a boys program that trains toward USA Gymnastics competition. New families can book a $30 trial lesson before they join.",
+      "what_you_do": "Kids take gymnastics in sessions across fall, winter and spring. Boys who want to compete train in the men's development program. New students fill out an application and a medical liability form.",
+      "kind": "program",
+      "categories": ["sports-teams", "running-cycling-fitness"],
+      "interests": ["youth_coaching", "strength_training"],
+      "motives": ["enhancement", "social"],
+      "formats": ["learn_skill", "team_play"],
+      "roles": ["hands_on", "figure_out"],
+      "crowd": ["kids", "families"],
+      "audience": {"open_to": "public", "min_age": 3, "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Weekly classes in fall, winter and spring. Preschool and beginner girls classes meet on weekdays and weekends, and boys competition classes meet two to four days a week.",
+        "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+        "times": ["morning", "daytime", "evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Gym at 3500 Scotts Lane, Suite 2 (WareSpace building)", "address": "3500 Scotts Lane, Suite 2, Philadelphia PA", "zip": "19129", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {
+        "level": "paid",
+        "text": "Monthly tuition is $130 for preschool or beginner girls classes at one class a week, with extra days at $125 a month each. Boys competition levels run $230 to $450 a month. A trial lesson costs $30. A summer policy reduces a month's tuition for boys competition families who miss training in July or August."
+      },
+      "commitment": "weekly",
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Book a $30 trial lesson through the online registration link, or call Fred Turoff at (215) 204-7452 to arrange one. Then fill in the application and medical liability forms.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The site lists beginner and preschool classes and a $30 trial lesson, and it explains how a new family starts.",
+        "what_to_expect": "Preschool classes last 45 minutes and beginner girls classes last 55 minutes, once a week to start. Preschool has a low student-to-teacher ratio, and the higher levels are by staff invitation. The site does not describe a first class, so the trial lesson is the best way to see one.",
+        "first_visit_tips": [
+          "Use the Directions page on the gym's site. The separate PDF directions are marked as incorrect.",
+          "Ask which level fits your child before you book, since advanced levels are by staff invitation.",
+          "Call (215) 204-7452 or email info@philadelphiaboysgymnastics.org if you have questions before you come."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.philadelphiaboysgymnastics.org/",
+        "email": "info@philadelphiaboysgymnastics.org",
+        "phone": "(215) 204-7452",
+        "contact_name": "Fred Turoff"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-08",
+      "sign_of_life_url": "https://www.philadelphiaboysgymnastics.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.philadelphiaboysgymnastics.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "locations", "first_step", "contacts", "status", "last_sign_of_life", "requirements"]},
+        {"url": "https://www.philadelphiaboysgymnastics.org/how-to-join-pbg", "seen": "2026-10-08", "fields": ["cost", "first_step", "contacts"]},
+        {"url": "https://www.philadelphiaboysgymnastics.org/classes", "seen": "2026-10-08", "fields": ["schedule", "audience", "cost", "commitment"]},
+        {"url": "https://www.philadelphiaboysgymnastics.org/summer-tuition-policy", "seen": "2026-10-08", "fields": ["cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Trial lesson corrected from free (tier 1) to $30, per the How to Join page. The How to Join page does not mention the application or medical forms; the homepage does, so they are kept. Minimum age corrected from 5 to 3 because preschool classes take ages 3 and 4 (classes page). Tuition amounts come from the classes page for the 2026 to 2027 season. Partners named on the homepage (TUMG, FTI) appear by initials only and were not checked; they are in leads_only. A 2023 news item still names East Falls, which predates the November 2024 move to WareSpace, so it was not used. Parking and transit are not on the site. Footer years of 2025 are not used as evidence."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:232070998", "irs_bmf:232070998"],
+        "group_id": "philadelphia-ceili-group",
+        "ein": "232070998",
+        "website": "https://www.philadelphiaceiligroup.org"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Ceili Group",
+      "summary": "An Irish music and dance group in Philadelphia, founded in 1958. It runs a free monthly ceili for young people and adults, a first-Friday Irish music session, and an annual Irish music and dance festival.",
+      "what_you_do": "Dance at the free monthly Ceili OG, play or listen at the first-Friday session at The Irish Center, buy festival tickets, or join as a member. Volunteers can sign up for festival work or year-round help through the group's Volunteer page.",
+      "kind": "club",
+      "categories": ["culture-language-heritage-groups", "music"],
+      "interests": ["heritage_clubs", "folk_traditional_music"],
+      "motives": ["social", "values"],
+      "formats": ["team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": ["heritage:irish"], "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Irish traditional music session on the first Friday of each month at 7:30 pm at The Irish Center, 6815 Emlen St. Ceili OG is a free monthly ceili, but the site does not show its dates or start time.",
+        "days": ["fri"],
+        "times": ["evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "The Irish Center", "address": "6815 Emlen St", "zip": "19119", "in_city": true}
+      ],
+      "cost": {
+        "level": "free",
+        "text": "Ceili OG is free. The site gives no cost for the first-Friday session, and concert and festival tickets are sold separately. Membership dues are $15 individual, $25 family, $50 contributing, $100 sponsoring and $500 lifetime."
+      },
+      "commitment": "drop_in",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to the first-Friday Irish music session at 7:30 pm at The Irish Center, 6815 Emlen St, or to Ceili OG, the free monthly ceili. Check the group's site for the next Ceili OG date, since none was published when we read it.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "Ceili OG is free, instructed and open to young people and adults, and the session has a set time and place, but the site does not say beginners are welcome.",
+        "what_to_expect": "Ceili OG is a free dance session where the steps are taught, with live music from The Next Generation Session. The first-Friday session is a traditional Irish music night that starts at 7:30 pm and is hosted by Hollis Payer. The site does not give the length of either event or the cost of the session.",
+        "first_visit_tips": [
+          "Check the group's site for the next Ceili OG date and start time before you go.",
+          "Members get discounts on many Ceili Group events, according to the membership page.",
+          "The site lists no parking or transit details for The Irish Center, so check before you go."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.philadelphiaceiligroup.org",
+        "contact_name": "Anne McNiff"
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.philadelphiaceiligroup.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.philadelphiaceiligroup.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "first_step", "status", "last_sign_of_life", "contacts"]},
+        {"url": "https://www.philadelphiaceiligroup.org/membership", "seen": "2026-10-08", "fields": ["cost", "what_you_do"]},
+        {"url": "https://www.philadelphiaceiligroup.org/volunteer", "seen": "2026-10-08", "fields": ["what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The monthly events page reads under construction and gives no Ceili OG dates or times, so those stay unpublished. Date conflict: the homepage says the annual membership meeting is Sunday, October 11, 2026 at noon (moved from January) and is the last day of the festival. The membership page's 2026 board meeting list says the annual meeting moved to February 1 and other dates are still to be set, with meetings at 2 pm at The Irish Center. The record uses the homepage date; the owner should confirm. The October 11 event is kept only in last_sign_of_life, not in schedule text. The volunteer page sends people to a sign-up form, which was not submitted. The Irish Center is the venue and co-sponsor and appears in leads_only."
+    },
+    {
+      "match": {
+        "lead_ids": [],
+        "group_id": "philadelphia-center-for-gun-violence-reporting",
+        "website": "https://www.pcgvr.org/"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Center for Gun Violence Reporting",
+      "summary": "Researchers, journalists and gun violence survivors working to make news coverage of gun violence more accurate and fair. The group publishes studies and reporting guides, keeps a directory of survivors who will speak to the press, and hosts events.",
+      "what_you_do": "Read the free reporting guides and research, sign up for the newsletter, and attend events the group hosts. Journalists can use the survivor directory, and survivors can ask to learn more about joining it, which includes an introductory workshop.",
+      "kind": "program",
+      "categories": ["advocacy-rights"],
+      "interests": ["violence_prevention"],
+      "motives": ["values", "understanding"],
+      "formats": ["learn_skill", "one_off_event"],
+      "audience": {"open_to": "public", "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Events are announced on the site and in the newsletter. No regular schedule is published."
+      },
+      "locations": [
+        {"label": "Mailing address (through CultureWorks Greater Philadelphia)", "address": "1315 Walnut Street, Suite 300", "zip": "19107", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "free",
+        "text": "Public reporting resources and the newsletter are free. The site also takes optional donations."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Subscribe to the newsletter, or read the free reporting guides. Survivors who want to learn about the Survivor Connection can leave a message through the site's Get connected page.",
+        "newcomer_friendliness": 2,
+        "basis": "The guides and newsletter are open to everyone, but the site describes no volunteer, membership or meeting path, and it does not say how to book the survivor workshop.",
+        "what_to_expect": "The group does not run regular meetings or drop-in sessions. The site's ways in are reading its guides, subscribing to the newsletter and going to announced events. Survivors who join the directory first complete an introductory workshop on trauma, media literacy and public health.",
+        "first_visit_tips": [
+          "Subscribe to the newsletter to hear about events, since they are announced there and on the site.",
+          "Journalists can register on the site to search the survivor directory and map.",
+          "If you are a reporter, start with the reporting toolkit, the site's most visited resource."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.pcgvr.org/",
+        "social": ["https://bsky.app/profile/pcgvr.org"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://www.pcgvr.org/",
+      "sources": [
+        {"url": "https://www.pcgvr.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "online_ok", "cost", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://www.pcgvr.org/contact", "seen": "2026-10-08", "fields": ["locations", "contacts", "first_step"]},
+        {"url": "https://survivorconnection.org", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "first_visit_tips"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The contact page prints a mailing address only, with no email or phone; questions go through a message form, which was not submitted. The site has no volunteer or membership path, which is why newcomer friendliness stays at 2. The Survivor Connection page names a program director for questions; that name is not recorded as a contact. The homepage lists a leadership change effective May 1, 2026. The homepage's newest dated post is June 30, 2026. The 2025 footer is not used as evidence."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:921345794", "irs_bmf:921345794"],
+        "group_id": "philadelphia-civic-symphony",
+        "ein": "921345794",
+        "website": "https://phillycivicsymphony.org"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Civic Symphony",
+      "summary": "A nonprofit orchestra that aims to bring classical music to historically underserved communities. It plays public concerts, often pay-what-you-wish, and lists its concerts on its Events page.",
+      "what_you_do": "Attend a public concert, or support the orchestra with a donation. The site does not say how musicians join or audition.",
+      "kind": "nonprofit",
+      "categories": ["music"],
+      "interests": ["community_band"],
+      "motives": ["enhancement", "values"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Public concerts are posted on the Events page as they are booked. The site does not publish a regular rehearsal or concert schedule.",
+        "recurring": false,
+        "season": "event_only"
+      },
+      "locations": [
+        {"label": "Reformation Lutheran Church", "address": "1215 E. Vernon Road", "zip": "19150", "in_city": true}
+      ],
+      "cost": {
+        "level": "low",
+        "text": "Concerts are pay-what-you-wish, and some events print a suggested donation. Some events are ticketed through Eventbrite."
+      },
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Go to a public concert listed on the Events page, or follow the orchestra on Instagram for new dates.",
+        "newcomer_friendliness": 3,
+        "basis": "Concerts are open to the public with posted times and a pay-what-you-wish entry, but the site does not say how to join as a player or volunteer.",
+        "what_to_expect": "Concerts listed on the Events page run about an hour or two, at times that vary. The venue is Reformation Lutheran Church on Vernon Road, and admission is pay-what-you-wish. The site gives little beyond the times and venue, so a first concert is the best way to see what it is like.",
+        "first_visit_tips": [
+          "Free on-street parking is available near Reformation Lutheran Church on Vernon Road, according to the Events page.",
+          "No upcoming concert was listed when we read the Events page, so check it or the Instagram account for new dates."
+        ]
+      },
+      "contacts": {
+        "website": "https://phillycivicsymphony.org",
+        "contact_name": "Hans-Ethan Hibbard",
+        "social": ["https://www.instagram.com/phillycivicsymphony/"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://phillycivicsymphony.org/events",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://phillycivicsymphony.org/events", "seen": "2026-10-08", "fields": ["summary", "schedule", "cost", "locations", "first_step", "status", "last_sign_of_life", "first_visit_tips"]},
+        {"url": "https://phillycivicsymphony.org/musicians", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://phillycivicsymphony.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The musicians page is nearly empty and has no join or audition information. The About and Who We Are pages return 404. One WebSearch for how players join found nothing about this orchestra, so no player route is recorded. The Events page lists concerts back to 2024; only the May 30, 2026 concert is used as recent evidence, and no upcoming concert was shown when read. The Events page does not print a street address for the May 2026 concert; the venue is taken from the free parking note on that page and from the earlier listings at Reformation Lutheran Church."
+    },
+    {
+      "match": {
+        "lead_ids": [],
+        "group_id": "philadelphia-county-ares-pcares",
+        "website": "https://phlares.org"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia County ARES (PCARES)",
+      "summary": "Volunteer ham radio operators who provide emergency communications for the Southeastern Pennsylvania Red Cross, run radio nets, and train for disaster response.",
+      "what_you_do": "Check into the Sunday evening net, take part in drills and Red Cross station activations, and train for emergency response. The group's site says no amateur radio license is required to join, and it lists a Groups.io mailing list as its only contact route.",
+      "kind": "network",
+      "categories": ["making-tech", "emergency-disaster"],
+      "interests": ["ham_radio", "emergency_response_teams"],
+      "motives": ["protective", "values"],
+      "formats": ["team_play", "learn_skill"],
+      "roles": ["help_teach", "hands_on"],
+      "audience": {"open_to": "public", "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Net on Sundays at 8 pm on the Phil-Mont repeater, 147.030 MHz, plus offset with a 91.5 PL tone. The net is also carried on EchoLink and ALLSTAR.",
+        "days": ["sun"],
+        "times": ["evening"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "online_ok": true,
+      "cost": {
+        "text": "The pages we could read do not mention dues or fees for joining or for the net."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Listen to the Sunday 8 pm net on 147.030 MHz, or join it by EchoLink (node W3QV-R) or ALLSTAR (node 47970). Send questions to the group's Groups.io list, the only contact route the site gives.",
+        "newcomer_friendliness": 3,
+        "basis": "The site says no amateur license is needed to join the group, and the Sunday net is a regular, open entry point, but it lists no training steps or meeting place.",
+        "what_to_expect": "The Sunday evening net runs at 8 pm on a local repeater, and the group says it trains for local disasters such as storms, floods, fires and building collapses. The site does not describe a first meeting, a training calendar or a meeting place, so ask through the Groups.io list before your first net.",
+        "first_visit_tips": [
+          "The site says no license is needed to join the group, but it does not say whether one is needed to transmit on the net.",
+          "Red Cross membership is not required, but the site says it can help with access to facilities.",
+          "The site lists no sign-up form, so taking part in the net itself is the first step."
+        ]
+      },
+      "contacts": {
+        "website": "https://phlares.org"
+      },
+      "status": "active",
+      "last_sign_of_life": "2025-10",
+      "sign_of_life_url": "https://w3abt.seas.upenn.edu/wp-content/uploads/2026/01/Meeting-October-18th-Google-Docs.pdf",
+      "sources": [
+        {"url": "https://phlares.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "first_step", "online_ok"]},
+        {"url": "https://phlares.org/local-ares-groups", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step"]},
+        {"url": "https://phlares.org/contact", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://w3abt.seas.upenn.edu/wp-content/uploads/2026/01/Meeting-October-18th-Google-Docs.pdf", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Groups.io list (groups.io/g/PhiladelphiaCountyARES) returned 402 Payment Required, so its membership rules and any meeting details could not be read; it is in blocked. The PHLARES site's own posts end in March 2024, so the active status rests on the October 2025 meeting notice carried over from tier 1. The team page lists officers, which were not recorded. The local groups page names county groups for Chester, Montgomery, Bucks and Delaware counties and two adjacent groups; these are outside Philadelphia and were not recorded. Whether a license is needed to transmit on the net is not stated and is flagged for the owner to check."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:233022581", "irs_bmf:233022581"],
+        "group_id": "philadelphia-family-pride",
+        "ein": "233022581",
+        "website": "https://www.philadelphiafamilypride.org"
+      },
+      "verdict": "publish",
+      "name": "Philadelphia Family Pride",
+      "summary": "A membership group for LGBTQ+ families in the Philadelphia area. It hosts get-togethers and family events, runs resource fairs, and offers classes for people thinking about becoming parents.",
+      "what_you_do": "Come to the informal get-togethers and family events, take a prospective parent class, or join as a member. Members get discounted outings, parenting education and the newsletter.",
+      "kind": "nonprofit",
+      "categories": ["social-meetups", "kids-youth-mentoring"],
+      "interests": ["lgbtq_social", "parent_playgroups", "foster_care_support"],
+      "motives": ["social", "values"],
+      "formats": ["conversation", "one_off_event"],
+      "roles": ["hands_on"],
+      "crowd": ["families"],
+      "audience": {"open_to": "public", "community": ["lgbtq", "parents"], "support_group": false, "partisan": false},
+      "schedule": {
+        "text": "Events and informal get-togethers are posted on the website as they are planned.",
+        "season": "event_only"
+      },
+      "locations": [
+        {"label": "Greater Philadelphia region (events vary)"}
+      ],
+      "cost": {
+        "text": "The pages we could read do not show membership dues. Members get discounted outings, and the site accepts donations."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Check the Events menu for get-togethers and resource fairs, then join or renew through the site's Join or Renew page. To sign up for a prospective parent class, use the Google form linked on the class page when the next series is posted.",
+        "newcomer_friendliness": 3,
+        "basis": "Public events and resource pages can be read without signing in, and the site has a clear join button, but the pages do not say which events need membership.",
+        "what_to_expect": "Informal get-togethers and family events are posted on the site as they are planned. The 2025 prospective parent series was held in person and covered adoption, surrogacy, sperm donation and legal questions, with social time to meet other prospective parents. The class page did not show dates for a newer series when we read it.",
+        "first_visit_tips": [
+          "Ask before you go whether an event is open to non-members, since the site does not say.",
+          "The class series has a YouTube playlist of past classes, which you can watch before you decide.",
+          "The group offers to connect people with professionals and current parents, so you can ask through the site's contact page."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.philadelphiafamilypride.org",
+        "contact_name": "Marc Berman"
+      },
+      "status": "active",
+      "last_sign_of_life": "2025-11",
+      "sign_of_life_url": "https://www.philadelphiafamilypride.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.philadelphiafamilypride.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://www.philadelphiafamilypride.org/prospective-parent-classes", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "what_to_expect"]},
+        {"url": "https://www.philadelphiafamilypride.org/upcoming-events", "seen": "2026-10-08", "fields": ["schedule"]},
+        {"url": "https://www.philadelphiafamilypride.org/membership-benefits", "seen": "2026-10-08", "fields": ["what_you_do", "cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Membership dues are not printed on any page we could read. The guessed addresses /join-or-renew and /membership both return 404, and the homepage's Join or Renew link was not followed to its real address; the membership-benefits page links to it. The upcoming events page was empty at this read, so no event dates are recorded beyond the 2025 class series. The group's mailing address is PO Box 31848, Philadelphia, PA 19104, which is not a venue. The November 2025 newsletter is the newest dated evidence, carried over from tier 1. The Family Matters Conference is said to be in October, with no year printed."
+    }
+  ],
+  "leads_only": [
+    {"name": "The Irish Center", "url": "https://www.philadelphiaceiligroup.org", "note": "Named on the Ceili Group site as the venue and co-sponsor of Ceili OG. Its own website address is not on the pages read, so it was not fetched."},
+    {"name": "CultureWorks Greater Philadelphia", "url": "https://www.pcgvr.org/contact", "note": "Named on the gun violence center's contact page as the host for its mailing address. Its own site was not read."},
+    {"name": "TUMG (named by initials on the gym's Partners section)", "url": "https://www.philadelphiaboysgymnastics.org/", "note": "Partner listed by initials only; no expansion or link on the pages read. Not checked."},
+    {"name": "FTI (named by initials on the gym's Partners section)", "url": "https://www.philadelphiaboysgymnastics.org/", "note": "Partner listed by initials only; no expansion or link on the pages read. Not checked."},
+    {"name": "Torrey Botanical Society", "url": "https://www.philbotclub.org/field-trips-workshops", "note": "Co-host of a 2026 New Jersey field meeting named on the club's field trips page. A national society, not a Philadelphia group; its own site was not read."},
+    {"name": "Botanical Society of America", "url": "https://www.philbotclub.org/field-trips-workshops", "note": "Co-host of a 2026 New Jersey field meeting named on the club's field trips page. A national society, not a Philadelphia group; its own site was not read."},
+    {"name": "Gays with Kids GWK Academy", "url": "https://www.philadelphiafamilypride.org/prospective-parent-classes", "note": "Named as a resource on the prospective parent classes page. Its own site was not read, and it may not be a Philadelphia group."}
+  ],
+  "blocked": [
+    {"url": "https://groups.io/g/PhiladelphiaCountyARES", "status": 402, "note": "Payment Required when read. Membership rules and meeting details could not be read."}
+  ],
+  "notes": "Budget: 1 of 1 WebSearch used (for how the Philadelphia Civic Symphony players join; nothing about this orchestra was found). 31 of 60 fetches used; no rate limiting seen. Pages that returned 404 (not counted as blocked): philbotclub.org/membership-information; phillycivicsymphony.org/about; phillycivicsymphony.org/who-we-are; philadelphiafamilypride.org/join-or-renew; philadelphiafamilypride.org/membership. Corrections to tier 1: gym trial lesson is $30 (was free); gym minimum age is 3 (was 5); Botanical Club Zoom request timing follows the meetings page; Ceili annual meeting date conflict is flagged for the owner. Four groups had their own sites with the joining or class details they needed; Civic Symphony and PHLARES had almost no joining information on their sites. Leads without their own URL on the page use the naming page as the url, with the note saying so. The Irish Center's own website was not on the pages read, so it was not fetched."
+}

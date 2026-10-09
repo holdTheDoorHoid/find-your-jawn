@@ -55,8 +55,8 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: null
+  level: free
+  text: No dues or fees. Meetings run on voluntary member contributions, and literature is sold at cost.
 commitment: null
 group_size: null
 access:
@@ -71,14 +71,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-NA-WORKS for immediate help, or pick a meeting from the meeting directory on the website
-    and go to see how it works.
-  drop_in: null
+  how: Call 215-NA-WORKS (215-629-6757) for immediate help, or call or text 215-999-4670 for meeting times
+    by ZIP code. You can also pick a meeting from the meeting directory on the website and go to see how
+    it works.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site links a Welcome to NA page and an FAQ, and it says how to reach help and find a meeting.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The FAQ says you do not have to be clean to attend a first meeting, and the Welcome page describes
+    how newcomers are greeted, with a help line and a meeting finder to start.
+  what_to_expect: Expect an informal meeting of people in recovery from drug addiction, where members
+    take turns sharing or one person speaks at length. Visitors are usually asked to give a first name,
+    and there is no fee to attend. Some meetings are open to people who do not have an addiction and some
+    are closed, so check the listing first.
+  first_visit_tips:
+  - Arrive a few minutes early and stay until the end if you can, and feel free to ask questions.
+  - Choose a meeting marked open if you do not have an addiction yourself.
+  - Be ready to say your first name, which is the usual way to introduce yourself.
+  - Pamphlets are often free at meetings, so you can take one home.
 contacts:
   website: https://naworks.org
   email: null
@@ -89,7 +98,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://naworks.org/
+sign_of_life_url: https://naworks.org/events/
 sources:
 - url: https://naworks.org/
   seen: '2026-10-08'
@@ -113,7 +122,31 @@ sources:
   fields:
   - what_you_do
   - online_ok
-research_tier: 1
+  - first_step
+- url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
+  seen: '2026-10-04'
+  fields:
+  - name
+- url: https://naworks.org/117-2/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - cost
+- url: https://naworks.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://naworks.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

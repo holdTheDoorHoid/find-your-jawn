@@ -6,7 +6,8 @@ ein: null
 summary: A United Church of Christ congregation near 4th and Race streets that worships on Sunday in person
   and on Zoom, hosts Sunday suppers, and runs historical tours.
 what_you_do: Join Sunday worship at 10 am or stay for fellowship at 11:15 am, come to a Sunday supper,
-  help with the coat drive or the breakfast, or take a historical tour.
+  help with the Saturday breakfast or the coat drive, join the newcomer brunch after service, or take
+  a historical tour.
 kind: congregation
 categories:
 - faith-community
@@ -39,9 +40,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10 am, in person and hybrid with Zoom. Fellowship hour at 11:15 am. Historical
-    tours Wednesdays, Thursdays and Fridays, 10 am to 1 pm.
+  text: Sunday worship at 10 am, in person and on Zoom. Fellowship hour at 11:15 am. Sunday Suppers every
+    week at 5 pm. Saturday breakfast every Saturday morning. Historical tours on Wednesdays, Thursdays
+    and Fridays, 10 am to 1 pm.
   days:
+  - sat
   - sun
   - wed
   - thu
@@ -49,6 +52,7 @@ schedule:
   times:
   - morning
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -65,7 +69,7 @@ online_ok: true
 cost:
   level: null
   text: null
-commitment: null
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -79,14 +83,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship in person or on Zoom, or join the coffee or brunch the site offers to newcomers
+  how: Come to Sunday worship at 10 am, in person or on Zoom. To join the newcomer brunch after service,
+    tell the church in advance through the contact form.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The site says new faces are always welcome, has a page for newcomers, and gives a Zoom option
-    for worship
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 5
+  basis: The site has a newcomer page, a newcomer brunch after worship, and a welcoming committee that
+    can meet you before your first Sunday, and it says anyone is welcome as they are.
+  what_to_expect: Sunday worship starts at 10 am, in person or on Zoom, and the site says you do not have
+    to agree to any set of beliefs to belong. The site does not say how long the service lasts or what
+    to wear. After service, a newcomer group goes out for brunch or a drink in Center City or Old City,
+    and the site does not list a cost for it.
+  first_visit_tips:
+  - If you want the newcomer brunch after service, tell the church first through the contact form.
+  - Worship is also on Zoom if you would rather join from home.
+  - The contact page has a parking pass link, so check it before you drive.
+  - You can ask for coffee with the pastor before your first Sunday by calling 215-922-4566 or emailing
+    admin@oldfirstucc.org.
 contacts:
   website: https://oldfirstucc.org
   email: admin@oldfirstucc.org
@@ -114,7 +127,39 @@ sources:
   fields:
   - schedule
   - requirements.kids_ok
-research_tier: 1
+- url: https://oldfirstucc.org/newbie/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - what_to_expect
+  - contacts
+- url: https://oldfirstucc.org/newbie/hangout/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://oldfirstucc.org/sunday-suppers-are-back/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://oldfirstucc.org/serve/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+- url: https://oldfirstucc.org/know/history/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://oldfirstucc.org/old-first-cooks-breakfast-saturday-october-31/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

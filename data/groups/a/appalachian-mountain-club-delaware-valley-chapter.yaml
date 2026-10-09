@@ -47,7 +47,16 @@ schedule:
   times: []
   recurring: true
   season: year_round
-locations: []
+locations:
+- label: Outings across greater Philadelphia and nearby counties
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: false
 cost:
   level: free
@@ -142,6 +151,16 @@ sources:
   fields:
   - cost
   - first_visit_tips
+- url: https://amcdv.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+  - contacts
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

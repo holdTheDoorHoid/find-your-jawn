@@ -5,10 +5,11 @@ leads:
 - irs_990n:871840772
 - irs_bmf:871840772
 ein: '871840772'
-summary: Works for racial justice in mapping and GIS, aiming to bring more Black people into geospatial
-  careers through mentorship, scholarships and events.
-what_you_do: Volunteer or join a committee through the website, register for the annual conference, or
-  take part in its mentorship and events.
+summary: Supports Black leaders in mapping and GIS. It runs mentorship, scholarships, events and an annual
+  conference that help more Black people build geospatial careers.
+what_you_do: 'Fill in the volunteer form on the website to share your skills and interests. The group
+  matches volunteers with one of four program teams: events, storytelling, mentorship, or education and
+  advocacy. You can also apply to attend the annual conference.'
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -39,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Annual conference (the 2025 edition was November 19 to 20 at Howard University in Washington,
-    D.C.), plus events and volunteer sign-ups listed on the website.
+  text: Runs an annual conference and volunteer teams that take part in events, storytelling, mentorship
+    and education. Event dates are listed on the events page.
   days: []
   times: []
   recurring: true
@@ -57,8 +58,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Costs are not listed on the website.
+  level: free
+  text: Annual conference registration is free, though attendance is by application and space is limited.
+    The site lists no fees for volunteering or events.
 commitment: ongoing_role
 group_size: null
 access:
@@ -73,15 +75,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up on the volunteer page of the website, or register for the next annual conference through
-    the Events page
+  how: Fill in the volunteer form on the website and share your skills and interests. You will be matched
+    with a program team. To attend the annual conference, apply through the events page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteering and conference registration are listed publicly on the website, and no application
-    is shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer form is public, and no application or eligibility rule is listed for volunteers.
+    Conference attendance is by application, and the site does not say how a newcomer starts with a single
+    event.
+  what_to_expect: 'Volunteering starts with the form, then the group matches you to one of four program
+    teams: events, storytelling, mentorship, or education and advocacy. The site does not describe time
+    commitment or training. The annual conference is free, but you must apply to attend.'
+  first_visit_tips:
+  - List the skills and interests you have on the volunteer form, since matching depends on them.
+  - Apply early for the annual conference, since space is limited.
+  - The listed address is a mailing address, so contact the group by email or phone before you visit anywhere.
 contacts:
   website: https://northstarofgis.org
   email: admin@northstarofgis.org
@@ -95,7 +103,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2025-11
-sign_of_life_url: https://northstarofgis.org
+sign_of_life_url: https://northstarofgis.org/conference
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -125,7 +133,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://northstarofgis.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://northstarofgis.org/conference
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://northstarofgis.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

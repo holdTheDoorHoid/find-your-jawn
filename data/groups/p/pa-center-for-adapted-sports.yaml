@@ -71,7 +71,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: The pages do not list program fees. The center says it provides equipment, venues, instruction
@@ -137,6 +137,9 @@ sources:
   - status
   - access.notes
   - contacts.website
+  - audience
+  - online_ok
+  - contacts
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
@@ -168,6 +171,10 @@ sources:
   - status
   - last_sign_of_life
   - sign_of_life_url
+- url: https://boathouserow.org/about
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

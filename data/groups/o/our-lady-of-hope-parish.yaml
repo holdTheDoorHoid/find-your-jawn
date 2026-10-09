@@ -3,10 +3,11 @@ name: Our Lady of Hope Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at 5200 North Broad Street with Sunday Masses, a Spanish Mass at 10:30 am,
-  and weekday morning Mass.
-what_you_do: Come to Mass. The page names an African American Apostolate and a Hispanic Apostolate, each
-  with a contact person, but gives no meeting times.
+summary: A Catholic parish at 5200 North Broad Street with Sunday Masses, a Spanish Mass at 11 am and
+  weekday morning Mass.
+what_you_do: Come to Mass. The parish names an African American Apostolate and a Hispanic Apostolate,
+  each with a contact person, and a St. Vincent de Paul conference (call 267-297-5548). The site gives
+  no meeting times for the apostolates.
 kind: congregation
 categories:
 - faith-community
@@ -31,12 +32,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8:30 am, 10:30 am (Spanish) and 12:30 pm. Weekday Mass Monday to Saturday at
-    8:30 am. Saturday confession 3:45 to 4:15 pm.
+  text: Sunday Masses at 9 am in English and 11 am in Spanish. Saturday Mass at 4 pm in English. Weekday
+    Mass Tuesday to Friday at 8 am in the chapel, in English. The parish has no Monday Mass. Saturday
+    confession 3:30 to 4 pm, or by appointment through the office.
   days:
   - sat
   - sun
-  - mon
   - tue
   - wed
   - thu
@@ -64,7 +65,9 @@ commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -74,23 +77,31 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the parish office
+  how: Come to the 9 am English or 11 am Spanish Sunday Mass, or call the parish office at 215-329-8100
+    to ask about joining.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the parish phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The About Us section calls the parish welcoming and invites newcomers to contact the parish about
+    joining.
+  what_to_expect: Mass is free and open to anyone. Spanish is offered at the 11 am Sunday Mass only. The
+    site does not describe what a Mass is like or how new parishioners join, so call the office with questions.
+  first_visit_tips:
+  - Pick the 11 am Sunday Mass if you want the Spanish service.
+  - The parish office number is 215-329-8100. The site has no parking or transit notes, so call before
+    you come.
+  - Confession is on Saturday from 3:30 to 4 pm, or by appointment through the office.
 contacts:
   website: https://www.olhcatholic.org
   email: null
   phone: 215-329-8100
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/olhphila
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.olhcatholic.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.olhcatholic.org/bulletins
 sources:
 - url: https://archphila.org/parish/our-lady-of-hope-philadelphia/
   seen: '2026-10-08'
@@ -106,7 +117,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.olhcatholic.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - first_step.basis
+  - first_step.how
+  - access.languages
+  - contacts.social
+- url: https://www.olhcatholic.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+- url: https://www.olhcatholic.org/bulletins
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

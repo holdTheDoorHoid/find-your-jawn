@@ -8,7 +8,7 @@ ein: '822509059'
 summary: A nonprofit that helps Black and Brown women start and grow businesses in the Philadelphia region,
   with office hours, skill-building, and help getting funding.
 what_you_do: Book an office hour for one-on-one business help, take part in networking and skill-building
-  events, or use the FounderyPHL map of local business resources, which is open to anyone in the region.
+  events, or use FounderyPHL, the group's interactive map of local business resources.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -36,11 +36,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Office hours by sign-up through the website contact page; no regular weekly schedule was published.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Office hours run every Tuesday and Thursday, 1 to 5 pm. Sessions are booked through the website's
+    contact page.
+  days:
+  - tue
+  - thu
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: Office
   address: '348 E Walnut Lane, #4'
@@ -69,20 +73,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for office hours through the contact page on momyourbusiness.com
-  drop_in: null
-  sign_up_needed: null
+  how: Request an office hour through the contact page on momyourbusiness.com, which lists Tuesday and
+    Thursday sessions from 1 to 5 pm.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The way in is clear, but the main pathway is for Black and Brown women founders and the site
-    does not say whether office hours are open to others.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The way to book is clear and public, but the mission centers on Black and Brown women founders,
+    and the site does not say who may book office hours or what a session costs.
+  what_to_expect: The site does not describe a session. It says office hours are on Tuesday and Thursday
+    afternoons and that you book through the website. It does not say how long a session lasts, whether
+    it costs money, or whether the office is open to walk-ins.
+  first_visit_tips:
+  - Ask in your request whether office hours are open to you and what a session costs.
+  - 'The office is at 348 E Walnut Lane, #4, in the 19144 zip code.'
+  - Call 800-524-4934 if you need help booking.
 contacts:
   website: https://www.momyourbusiness.com
   email: info@momyourbusiness.com
   phone: 800-524-4934
   contact_name: Tanya T Morris
-  social: []
+  social:
+  - https://www.facebook.com/groups/mompreneursleadingtheway
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -117,7 +128,13 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://momyourbusiness.com/entrepreneurial-support-contact-us
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

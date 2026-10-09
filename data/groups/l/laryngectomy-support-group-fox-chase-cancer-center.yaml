@@ -50,7 +50,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Outpatient Area B, fireplace lounge, Fox Chase Cancer Center
+- label: Fox Chase Cancer Center (group meets online)
   address: 333 Cottman Avenue
   neighborhood: null
   planning_district: null
@@ -62,7 +62,7 @@ locations:
 online_ok: true
 cost:
   level: free
-  text: Free, per the Fox Chase support group page
+  text: Free. Fox Chase describes its support groups as a free service.
 commitment: monthly
 group_size: null
 access:
@@ -77,13 +77,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the Fox Chase main line at 888-369-2427 or register through the staff contact on the page.
+  how: Call Fox Chase at 215-728-2668 (support group and social work questions) or the main line at 888-369-2427,
+    and ask to join the neuroendocrine group. The group's page names two facilitators to contact.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The page does not say who can join, and registration goes through staff contacts.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The page names facilitators to contact before you join, and it does not say who may join or what
+    a session is like.
+  what_to_expect: The group meets online on the third Wednesday of each month from 4 to 5 pm, led by two
+    licensed social workers. The page says sessions aim to reduce loneliness and anxiety, teach coping
+    skills, and share practical information about treatment. Fox Chase's support pages say groups are
+    for patients, their families and people in treatment elsewhere, but this page does not say who may
+    join, so ask first.
+  first_visit_tips:
+  - Call the support line before the session to confirm how to join, since the page does not say
+  - Ask for the printable schedule the group's page links to, to see the full year
+  - Use a device with sound and a steady internet connection, since sessions are online
 contacts:
   website: https://www.foxchase.org/neuroendocrine-tumor-support-group
   email: null
@@ -108,6 +117,7 @@ sources:
   fields:
   - cost
   - audience
+  - first_step
 - url: https://www.foxchase.org/support/counseling-support/support-groups/breast-cancer-support-group
   seen: '2026-10-08'
   fields:
@@ -195,7 +205,9 @@ sources:
   - schedule
   - first_step
   - contacts
-research_tier: 1
+  - what_you_do
+  - online_ok
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

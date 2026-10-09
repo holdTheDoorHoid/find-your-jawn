@@ -4,10 +4,11 @@ aka: []
 leads:
 - irs_bmf:231352237
 ein: '231352237'
-summary: A Center City animal welfare group, founded in 1874, that runs adoptions, a community cat program
-  and a Philly pets program. Its website also has sections for foster homes and volunteers.
-what_you_do: The website has separate Foster and Volunteer sections. This read did not reach their details,
-  so check them before signing up.
+summary: A Philadelphia animal welfare group, founded in 1874, that runs adoptions, a community cat program,
+  and a Philly Pets program. It also places animals in foster homes and uses shelter volunteers.
+what_you_do: Volunteer at the shelter (age 14 and up) or in the PetSmart cat role (age 18 and up), or
+  foster an animal in your home until it is ready for a new family. Start with the interest form for the
+  role you want.
 kind: nonprofit
 categories:
 - animals
@@ -20,19 +21,22 @@ formats:
 - side_by_side
 roles:
 - hands_on
-crowd: []
+crowd:
+- teens
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 14
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Adoption hours are Tuesday and Saturday noon to 5 pm, and Wednesday and Friday noon to 7 pm.
+  text: Adoption hours are Tuesday and Saturday noon to 5 pm, and Wednesday and Friday noon to 7 pm. Shelter
+    volunteer shifts depend on the role, and PetSmart shifts run about three hours.
   days:
   - tue
   - wed
@@ -53,7 +57,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
   text: null
@@ -68,17 +72,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Volunteer or Foster section of the website, or email info@morrisanimalrefuge.org
+  how: Fill out the shelter interest form on the volunteer page, or the Under 18 form if you are 14 to
+    17. To foster, complete the foster questionnaire or application on the foster page. Volunteer questions
+    go to volunteer@morrisanimalrefuge.org.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Public volunteer and foster sections and a general email are listed, but the steps and minimum
-    age were not read.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The way in is clear (an interest form and then a volunteer waiver), but the volunteer page notes
+    a waitlist dated January 2025, and foster applicants complete counseling before a first pet. An application
+    step comes before you see what it is like.
+  what_to_expect: The site does not describe a typical shift. Shelter volunteers may help with animal
+    care, dog walks, cat socialization, photos and animal bios, transport, or fundraising events, depending
+    on the role. Because the volunteer page noted a waitlist dated January 2025, ask about the current
+    wait before you plan to start.
+  first_visit_tips:
+  - Read the volunteer waiver linked on the volunteer page before your first shift.
+  - Adoption hours are listed on the site, so you can plan a visit to see the animals at 1242 Lombard
+    Street.
+  - If you are under 18, plan for an adult to supervise, since the page says minors may need it.
 contacts:
   website: https://morrisanimalrefuge.org
   email: info@morrisanimalrefuge.org
@@ -106,7 +120,37 @@ sources:
   - last_sign_of_life
   - locations
   - first_step
-research_tier: 1
+- url: https://morrisanimalrefuge.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - requirements
+  - first_step
+  - what_you_do
+  - roles
+  - crowd
+- url: https://morrisanimalrefuge.org/foster/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.morrisanimalrefuge.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.morrisanimalrefuge.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

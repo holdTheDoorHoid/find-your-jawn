@@ -7,8 +7,9 @@ leads:
 ein: '834381414'
 summary: A group that brings neighbors, businesses, and community groups together along the Delaware riverfront.
   It runs the July 4th FreedomFest fireworks festival.
-what_you_do: Come out for the July 4th FreedomFest and the events along the river. The site does not describe
-  volunteering or membership.
+what_you_do: Come out for the free July 4th FreedomFest at Pleasant Hill Park. The alliance also starts
+  new events during the year and invites ideas for next year's festival. The site does not describe volunteering
+  or membership.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -20,7 +21,8 @@ motives:
 formats:
 - one_off_event
 roles: []
-crowd: []
+crowd:
+- families
 bridging: null
 audience:
   open_to: public
@@ -32,13 +34,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A yearly July 4th FreedomFest fireworks festival. The 2027 festival is announced for July 2027.
+  text: Each July 4th, a free fireworks festival at Pleasant Hill Park on the Delaware River, with a flag
+    raising at 5 pm and fireworks at 9 pm.
   days: []
-  times: []
+  times:
+  - daytime
+  - evening
   recurring: true
   season: summer
 locations:
-- label: Delaware riverfront, Northeast Philadelphia
+- label: Pleasant Hill Park (Linden Ave. at the Delaware River)
   address: null
   neighborhood: null
   planning_district: null
@@ -49,8 +54,8 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: No ticket price listed on the site
+  level: free
+  text: Free to attend. No tickets or registration needed.
 commitment: one_off
 group_size: null
 access:
@@ -62,27 +67,36 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Plan to attend the July 4th FreedomFest along the Delaware, and check the website for 2027 details
-    as they are posted
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the free July 4th FreedomFest at Pleasant Hill Park. The next one is set for July 4, 2027,
+    and details will be posted on the website as they come out.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The festival is free and open to the public, with no tickets or registration needed.
+  what_to_expect: The festival starts with a flag raising and the national anthem at 5 pm, then has live
+    music, food trucks, vendors and family activities, with fireworks at 9 pm. It runs until about 9:30
+    pm. Admission is free and no tickets are needed.
+  first_visit_tips:
+  - Parking is not on the park grounds. Visitors park on State Road and nearby streets, and the group
+    suggests a ride share.
+  - Plan for the weather, since the festival goes ahead rain or shine.
+  - Bring water and check the website before the day for any changes.
 contacts:
   website: https://www.oneriveralliance.org
   email: null
   phone: null
   contact_name: Dana Russikoff
-  social: []
+  social:
+  - https://instagram.com/oneriverphilly
+  - https://www.facebook.com/oneriveralliance/
+  - https://www.linkedin.com/company/oneriveralliance
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-07
-sign_of_life_url: https://www.oneriveralliance.org
+sign_of_life_url: https://www.oneriveralliance.org/freedomfest2026
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -106,8 +120,25 @@ sources:
   - schedule
   - locations
   - status
-research_tier: 1
-confidence: low
+  - first_step.how
+  - contacts.social
+- url: https://www.oneriveralliance.org/freedomfest2026
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - requirements.kids_ok
+  - first_step.what_to_expect
+  - first_step.first_visit_tips
+  - last_sign_of_life
+- url: https://www.oneriveralliance.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -3,17 +3,20 @@ name: Memorial Presbyterian Church of Fox Chase
 aka: []
 leads: []
 ein: null
-summary: A Presbyterian church in Fox Chase with an 11 am worship service, a children's ministry, and
-  a program called Food for Hope whose details are not on the site.
-what_you_do: Attend Sunday worship at 11 am, join the children's ministry, or sign up for the volunteering
-  and giving options listed on the site.
+summary: A Presbyterian church in Fox Chase with an 11 am Sunday service, a children's ministry for children
+  of all ages, and Food for Hope, a food pantry that gives out food bags on Saturdays.
+what_you_do: Attend Sunday worship at 11 am, enroll children in the children's ministry with the registration
+  form, or volunteer through the church's volunteering form. Food for Hope gives food bags on Saturdays
+  to people in Fox Chase and nearby who need them, with no ID required.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
 - faith_youth_programs
 - faith_service_projects
+- food_pantry
 motives:
 - values
 - social
@@ -35,7 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 11 am
+  text: Sunday worship at 11 am. Food for Hope gives out food bags on Saturdays, and the site gives no
+    hours, so call the church office at 215-745-2844 to ask.
   days:
   - sun
   times:
@@ -45,7 +49,7 @@ schedule:
 locations:
 - label: Church building
   address: 7902 Oxford Avenue
-  neighborhood: null
+  neighborhood: fox_chase
   planning_district: null
   zip: '19111'
   lat: null
@@ -55,7 +59,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no fees for worship or the children's ministry. It has donation options.
 commitment: null
 group_size: null
 access:
@@ -70,20 +74,29 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship, or use the contact page to ask about visiting
+  how: Come to Sunday worship at 11 am, or call the church office at 215-745-2844 or email mpcfoxchase@gmail.com
+    to ask about visiting.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Worship is public with a contact page and a newsletter sign up, but there is no visitor welcome
-    message
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Worship is public and the contact page is the way to ask questions, but the site has no visitor
+    welcome message or new-here steps.
+  what_to_expect: The site does not describe a Sunday visit, so the office is the best place to ask. Worship
+    starts at 11 am. The children's ministry is listed for children of all ages, with Sunday School, Junior
+    Church, and a program called Jesus and Me, but the site gives no session times.
+  first_visit_tips:
+  - Call or email before your first Sunday to ask about parking and which entrance to use, since the site
+    does not say.
+  - For children, use the registration form linked from the children's ministry page.
+  - Ask about accessibility before you come, since the site lists none.
 contacts:
   website: https://foxchasechurch.org
   email: mpcfoxchase@gmail.com
   phone: 215-745-2844
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/mpcfoxchase
+  - https://www.facebook.com/FoxChaseChurch
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -96,6 +109,7 @@ sources:
   - schedule
   - what_you_do
   - status
+  - first_step
 - url: https://presbyphl.org/our-churches/
   seen: '2026-10-08'
   fields:
@@ -103,8 +117,31 @@ sources:
   - contacts.email
   - contacts.phone
   - locations
-research_tier: 1
-confidence: low
+- url: https://foxchasechurch.org/childrens-ministry1
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - requirements
+  - what_to_expect
+- url: https://foxchasechurch.org/foodforhope
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+- url: https://foxchasechurch.org/giving-volunteering
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://foxchasechurch.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

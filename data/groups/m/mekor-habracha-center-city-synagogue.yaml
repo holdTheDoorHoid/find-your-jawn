@@ -36,11 +36,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Daily minyanim and classes are on the davening schedule page, which was not read. The homepage
-    lists a Tot Shabbat once a month, with no time printed.
-  days: []
-  times: []
-  recurring: null
+  text: Weekday morning and evening prayers, Shabbat morning services from 9:15 am, and a Tot Shabbat
+    on the last Shabbat of each month, about 11 am. Times shift with the seasons, so check the davening
+    schedule.
+  days:
+  - sun
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Synagogue
@@ -54,8 +64,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership is listed. Dues and fees are not stated on the page.
+  level: paid
+  text: 'Membership for the 2026 to 2027 year: single $1,000, couple or family $2,000, student $500, plus
+    a suggested $100 security fee. Payment plans are available, and the shul says no one is turned away
+    for lack of funds. The page does not say whether visitors pay to attend services.'
 commitment: null
 group_size: null
 access:
@@ -67,16 +79,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Join the WhatsApp group or sign up for the newsletter, both linked from the homepage
-  drop_in: null
+  how: Email admin@mekorhabracha.org with 'Join Us' in the subject line to join the WhatsApp group, then
+    come to a service on the davening schedule.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says visitors are welcomed and links newsletter and WhatsApp sign-ups.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The homepage says visitors are welcome and gives a WhatsApp route and a newsletter sign-up. The
+    visit page does not describe a first visit or say whether you must register.
+  what_to_expect: The site does not describe a first visit in detail, so the office is the best place
+    to ask what to expect. Shabbat morning prayers begin at 9:15 am, and a hot kiddush follows around
+    11:30 am. The page says the shul welcomes members and nonmembers alike, but it does not say what visitors
+    pay.
+  first_visit_tips:
+  - Call the office at 215-525-4246 before your first visit to ask what to wear and which entrance to
+    use.
+  - Check the davening schedule for current times, since winter times differ from summer.
+  - If cost is a concern, ask about the payment plans the page says are available.
 contacts:
   website: https://www.mekorhabracha.org/
   email: admin@mekorhabracha.org
@@ -84,9 +105,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.mekorhabracha.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.mekorhabracha.org/davening
 sources:
 - url: https://www.mekorhabracha.org/
   seen: '2026-10-08'
@@ -99,7 +120,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.mekorhabracha.org/visit-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.mekorhabracha.org/davening
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://www.mekorhabracha.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://www.mekorhabracha.org/events-1/mekors-tot-shabbat
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,39 +1,54 @@
 id: second-alarmers-association-of-philadelphia-inc
-name: Second Alarmers Association of Philadelphia Inc
+name: Second Alarmers Association of Philadelphia
 aka: []
 leads:
 - irs_bmf:236292574
 ein: '236292574'
-summary: null
-what_you_do: null
+summary: A volunteer association that brings meals, warm supplies, and rest support to first responders
+  at fires, police incidents, and big city events.
+what_you_do: Members give about 20 hours a month through on-scene calls, standby details, and work at
+  the station, and attend 8 of the 12 monthly meetings each year. Applicants must be 18 or older, hold
+  a Pennsylvania or New Jersey driver's license, have a high school diploma or GED, and be able to lift
+  20 to 50 pounds regularly.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- emergency-disaster
+interests:
+- volunteer_fire_ems
+- emergency_response_teams
+motives:
+- values
+- social
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Association meetings are held on the first Monday of each month at 8 pm, moved to the next Monday
+    when that day is a holiday. The station lists 24/7 operating hours.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
-  address: 2900 Roberts Ave
+- label: Station and office
+  address: 2900 Roberts Avenue, Philadelphia, PA
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
   lat: null
   lng: null
@@ -43,7 +58,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -54,26 +69,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: null
+  how: Fill out the membership application online or as a PDF, submit it, and sit for an interview. Accepted
+    applicants are voted on at an association meeting and then start as probationary members for 12 months.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: An application, an interview, and a member vote come before you see the work, so the way in is
+    not open to casual visitors.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
-  email: null
-  phone: null
+  website: https://www.philly2ndalarmers.com/volunteer-opportunities
+  email: Communityoutreach@philly2ndalarmers.com
+  phone: 215-223-1936
   contact_name: null
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: probably_active
+last_sign_of_life: 2025-02
+sign_of_life_url: https://www.phila.gov/2025-04-22-national-volunteer-week-highlighting-contributions-volunteers-make-in-our-community/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -81,8 +98,25 @@ sources:
   - name
   - locations
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.philly2ndalarmers.com/volunteer-opportunities
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - commitment
+  - requirements
+  - first_step
+  - contacts
+- url: https://www.phila.gov/2025-04-22-national-volunteer-week-highlighting-contributions-volunteers-make-in-our-community/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,9 +4,10 @@ aka: []
 leads: []
 ein: null
 summary: A Catholic parish at 63rd Street and Lancaster Avenue with Sunday Masses, including a Latin High
-  Mass, and daily Mass with Lauds.
-what_you_do: Come to Mass, or to Thursday Adoration, which runs from 7 am to 7:20 pm, with Vespers and
-  Benediction at 7 pm. The page lists no other public programs.
+  Mass, and weekday Mass with Lauds.
+what_you_do: Come to Mass or to Thursday Adoration, which includes Vespers and Benediction at 7 pm. Families
+  are welcome. The parish also lists a Lourdes for Life program and pilgrimages, though the site gives
+  few details. The site links a 2026 to 2027 registration form for First Penance and First Communion.
 kind: congregation
 categories:
 - faith-community
@@ -30,10 +31,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am, 9:30 am (Latin High Mass), 11:30 am and 8 pm. Weekday Mass Monday to Friday
-    at 6:30 am, followed by Lauds. Saturday Mass at 8:30 am and a 4 pm vigil. Thursday Adoration 7 am
-    to 7:20 pm, with Vespers and Benediction at 7 pm. Confession is offered most days, including Saturday
-    2:30 to 4 pm.
+  text: Sunday Masses at 8 am, 9:30 am (Latin High Mass), 11:30 am and 8 pm. Weekday Masses at 6:30 am
+    and 8:30 am, with Lauds at 8 am; times shift a little in summer. Saturday morning Mass and a 4 pm
+    vigil. Thursday Adoration after Mass, with a 4 pm Rosary and 7 pm Vespers and Benediction. Confession
+    most days, including Saturday 2:30 to 3:45 pm.
   days:
   - sat
   - sun
@@ -50,7 +51,7 @@ schedule:
   season: year_round
 locations:
 - label: Church (63rd St. and Lancaster Ave.)
-  address: 63rd St. and Lancaster Ave.
+  address: 6301 Woodbine Ave.
   neighborhood: null
   planning_district: null
   zip: '19151'
@@ -61,13 +62,15 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend.
+  text: Mass is free to attend. Visitors are not expected to give.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: For the October 2026 pilgrimage day, the site named a ramped entrance on the Lancaster Avenue
+    side and an accessible restroom trailer. It does not say whether that entrance is used at ordinary
+    Masses.
 requirements:
   act153_clearances: null
   background_check: null
@@ -76,13 +79,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass or the Thursday Adoration, or call the parish
+  how: Come to a Sunday Mass or to Thursday Adoration. To join the parish, use the registration page on
+    the website or call 215-473-1669.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass and Adoration are open to anyone and the phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The I'm New Here page is written for newcomers, says families are welcome, and points to the
+    parish registration page.
+  what_to_expect: Mass and Adoration are free, and visitors are not expected to put money in the offering.
+    Families are welcome, and the parish says a restless child is fine; a parent may step out to the vestibule
+    and come back when the child settles. The site does not give how long Mass or Adoration lasts, so
+    ask the office if you have questions.
+  first_visit_tips:
+  - There is no parking lot. Park on the street in the Overbrook Farms area and walk to the church.
+  - On Sundays and holy days, arrive early, since students from nearby St. Joseph's University sometimes
+    take up street spaces during the school year.
+  - Call 215-473-1669 about transit or access, since the site does not give those details.
 contacts:
   website: https://www.ourladylourdes.org
   email: null
@@ -90,9 +102,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.ourladylourdes.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.ourladylourdes.org/faqs
 sources:
 - url: https://archphila.org/parish/our-lady-of-lourdes-philadelphia/
   seen: '2026-10-08'
@@ -107,7 +119,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.ourladylourdes.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://www.ourladylourdes.org/im-new-here
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step
+  - requirements.kids_ok
+  - first_step.first_visit_tips
+- url: https://www.ourladylourdes.org/faqs
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - status
+  - last_sign_of_life
+- url: https://www.ourladylourdes.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - first_step.how
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

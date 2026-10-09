@@ -6,10 +6,10 @@ leads:
 - city_programs:mural-arts-philadelphia-volunteering
 ein: null
 summary: A citywide public art nonprofit. Its programs include art education, public art and civic engagement,
-  restorative justice, and Porch Light. It also runs walking tours and Mural Arts Month, a month of events
-  each October.
-what_you_do: Join a program, take a guided tour, attend a Mural Arts Month event, or see the Join the
-  Action page for ways to help.
+  restorative justice, and Porch Light. It also runs guided walking tours and Mural Arts Month, a set
+  of exhibitions, tours, and participatory events in October 2026.
+what_you_do: Join a program, take a guided walking tour, visit a mural dedication or Mural Arts Month
+  event, or use the Join the Action page to suggest a mural idea or report a mural that needs repair.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -34,17 +34,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Mural Arts Month runs in October 2026. Tours, artist panels and historic mural events from September
-    10 to November 21 are listed without a year on the page.
+  text: Walking tours and public events, including mural dedications, are posted on the events calendar
+    with their own dates. Check the calendar for the time and place of each one.
   days: []
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Mural Arts Center
+  address: 1727-29 Mt. Vernon Street
+  neighborhood: null
+  planning_district: null
+  zip: '19130'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Public art is free to see. The site does not state class costs.
+  text: Public art is free to see. The site does not state the cost of tours or classes.
 commitment: null
 group_size: null
 access:
@@ -59,13 +68,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Start from the Programs page or the events page, or join through Join the Action
+  how: Pick a program on the Programs page, call the tours line at (215) 925-3633 about a walking tour,
+    or sign up on the mailing list to hear about events.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Tours and public art are open to anyone, but the site does not describe how to enroll in classes.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public murals and events are open to anyone and a phone line handles tours, but the site does
+    not say how someone enrolls in the education or civic programs.
+  what_to_expect: Public murals are free to see, and you can take a guided walking tour on set dates,
+    though some tours have sold out. The site does not give tour prices or the time of each event, so
+    call (215) 925-3633 or check the event listing before you go.
+  first_visit_tips:
+  - Call (215) 925-3633 early for walking tours, since some dates sell out.
+  - Check each event listing for its time and location, because the calendar shows dates only.
+  - The Mural Arts Center is at 1727-29 Mt. Vernon Street, Philadelphia 19130.
+  - Ask about wheelchair or other access before you come, since the site does not describe it.
 contacts:
   website: https://www.muralarts.org
   email: info@muralarts.org
@@ -93,11 +110,31 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - name
 - url: https://www.buildingbok.com/directory
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://muralarts.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+- url: https://muralarts.org/join-the-action/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://muralarts.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - cost
+  - what_to_expect
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

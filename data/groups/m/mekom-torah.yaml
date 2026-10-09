@@ -3,10 +3,10 @@ name: Mekom Torah
 aka: []
 leads: []
 ein: null
-summary: An online study group for Jewish adults. It offers Hebrew courses, reading groups and a discussion
-  group called Exploring Judaism, which needs no Hebrew to join.
-what_you_do: Sign up for a Hebrew course, join a reading group, or take part in the Exploring Judaism
-  discussions on Zoom when they are running.
+summary: An online study group for Jewish adults, with beginner Hebrew courses and reading groups. Its
+  Exploring Judaism discussion series is on sabbatical until fall 2027.
+what_you_do: Sign up for a Hebrew course or join a reading group. Exploring Judaism, a discussion series
+  that needs no Hebrew, is paused until fall 2027.
 kind: program
 categories:
 - faith-community
@@ -34,12 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Exploring Judaism meets on Zoom two Thursdays a month at 2 pm Eastern, October to May. The site
-    says the group is on sabbatical right now. Reading the Tradition in Hebrew meets every other Sunday,
-    with no time listed.
+  text: Reading the Tradition in Hebrew meets every other Sunday, and the site lists no time for it. Exploring
+    Judaism is on sabbatical until fall 2027; when it runs, it meets two Thursdays a month from 2 to 3:15
+    pm Eastern, on Zoom, October through May.
   days:
-  - thu
   - sun
+  - thu
   times:
   - daytime
   recurring: true
@@ -47,8 +47,9 @@ schedule:
 locations: []
 online_ok: true
 cost:
-  level: null
-  text: null
+  level: low
+  text: 'Suggested donations, not fixed fees: $200 for the 12-session How to Read Hebrew course and $360
+    for an Exploring Judaism series. You can give more or less.'
 commitment: seasonal
 group_size: null
 access:
@@ -63,15 +64,20 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Use the sign up link on the How to Read Hebrew page, or contact the group by phone or its contact
-    page
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the sign-up form on the How to Read Hebrew course page, or call 610-368-4065 with questions.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says Exploring Judaism needs no Hebrew and is open to everyone, and it links a sign
-    up page for each course.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The How to Read Hebrew course is written for people new to Hebrew, and the page explains how
+    to sign up. The home page says Exploring Judaism needs no Hebrew to join.
+  what_to_expect: Courses meet on Zoom, and sessions are recorded for anyone who misses one. How to Read
+    Hebrew has twelve sessions on Monday evenings from 7 to 8:15 pm Eastern, with all materials provided.
+    Exploring Judaism is a discussion led by Rabbi Helen Plotkin, and you get the Zoom link after you
+    sign up.
+  first_visit_tips:
+  - Set up Zoom on your phone or computer before the first session.
+  - Fill in the form with your name, email, and a few words about yourself, as the page asks.
+  - Call 610-368-4065 if you are not sure which course fits your level.
 contacts:
   website: https://www.mekomtorah.org/
   email: null
@@ -95,8 +101,36 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.mekomtorah.org/exploring-judaism.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - status
+  - audience
+- url: https://www.mekomtorah.org/how-to-read-hebrew.html
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_step
+  - cost
+  - schedule
+  - requirements
+- url: https://www.mekomtorah.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.mekomtorah.org/about.html
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - online_ok
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
-hidden: false
-hidden_reason: null
+hidden: true
+hidden_reason: out_of_scope
