@@ -8,8 +8,9 @@ leads:
 ein: '232360819'
 summary: The farm of SHARE Food Program, which grows fresh fruit and vegetables for donation to the community,
   to SHARE-affiliated pantries, and to mutual aid networks. Volunteers can sign up on the program's page.
-what_you_do: Sign up with the Volunteer to Help button on the farm's page. The page does not say what
-  volunteers do on the farm.
+what_you_do: Join a Community Farming Day from May through December to prep beds, plant and seed, weed
+  and water, mulch, harvest, and clean up the grounds. Food rescues are also claimed in the Philly Food
+  Rescue app.
 kind: program
 categories:
 - gardening-greening
@@ -24,7 +25,7 @@ formats:
 roles:
 - hands_on
 crowd:
-- neighbors
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -36,14 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Rescues are posted in the app as they come up. They can be one time or recurring, and each takes
-    about an hour or less.
+  text: Community Farming Days run May through December. Food rescues are claimed in the app as they come
+    up, and each takes about an hour or less.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: SHARE Food Program office (farm address not published)
+- label: SHARE Food Program office (the farm sits beside the Share Warehouse in Allegheny West; farm street
+    address not published)
   address: 2901 W. Hunting Park Avenue
   neighborhood: null
   planning_district: null
@@ -55,8 +57,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free to volunteer
-commitment: drop_in
+  text: Free to volunteer.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -67,22 +69,30 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Closed-toe shoes or boots, clothes you can get dirty, a water bottle, and garden gloves if you
+    have them.
 first_step:
-  how: Click Volunteer to Help on the farm's page
+  how: Click the Volunteer to Help button on the farm's page to sign up for a Community Farming Day. Food
+    rescues are claimed separately in the Philly Food Rescue app.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: There is a clear sign-up button, but the page does not describe tasks, schedules, or what a first
-    day is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone of any age can sign up through a clear button, and the page lists the tasks and what to
+    bring. It does not say whether beginners are welcome or how a first day runs.
+  what_to_expect: A Community Farming Day is fully outdoors, so the weather matters, and the page advises
+    checking the forecast the day before. The farm manager, Ellie Kaplan, runs the farm year-round with
+    help from others. The page does not give a start time or how long a day lasts.
+  first_visit_tips:
+  - Wear closed-toe shoes or boots and clothes you do not mind getting dirty.
+  - Check the forecast the day before and dress in layers, since the work is outdoors.
+  - Bring sun protection, and take care if you are bothered by mosquitoes or stings.
+  - For food rescues, you need a cell phone and must be able to lift at least 30 pounds, or bring a friend.
 contacts:
   website: https://www.sharefoodprogram.org/our-programs/nice-roots-farm/
   email: volunteer@sharefoodprogram.org
   phone: (215) 223-2220
-  contact_name: null
+  contact_name: Ellie Kaplan (farm manager)
   social: []
   calendar_feed: null
 status: active
@@ -103,6 +113,8 @@ sources:
   - contacts
   - schedule
   - locations
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://www.sharefoodprogram.org/get-involved/philly-food-rescue-volunteer/
   seen: '2026-10-08'
   fields:
@@ -112,6 +124,7 @@ sources:
   - summary
   - what_you_do
   - locations
+  - first_visit_tips
 - url: https://www.sharefoodprogram.org/get-involved/
   seen: '2026-10-08'
   fields:
@@ -141,8 +154,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.sharefoodprogram.org/get-involved/farming/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - requirements
+  - what_to_expect
+  - first_visit_tips
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

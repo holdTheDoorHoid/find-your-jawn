@@ -6,9 +6,8 @@ leads:
 ein: null
 summary: A theatre company in residence at the Sedgwick Theater in Mt. Airy. It stages a season of plays
   and runs classes, student matinees and a summer camp.
-what_you_do: Buy tickets to a season show, take an adult class or workshop, or bring a student group.
-  The site has a Volunteer page for helping with the company; its roles are not described in the page
-  text.
+what_you_do: Buy tickets to a season show, take an adult workshop, or bring a student group. Volunteers
+  usher, hand out flyers at local businesses, prepare mailings, and help build sets and costumes.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -34,8 +33,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Plays run in a yearly season (Season XVII is current), with adult classes and workshops on the
-    education page. Exact class dates are not in the page text.
+  text: A season of plays runs each year (Season XVII is the current one). The Shakespeare Gym workshop
+    for working actors meets Sundays from 7 to 9:30 pm in sessions with set dates, and the education pages
+    list other workshops.
   days: []
   times: []
   recurring: true
@@ -53,13 +53,19 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Ticket prices listed on the site
+  text: Tickets are about $30 to $75, with previews at the low end and opening nights at the high end.
+    Youth 18 and under pay $30 to $35, seniors get $5 off full price, active military pay $25 to $30,
+    and a limited number of $10 rush tickets go on sale in person one hour before curtain.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The site calls the theater accessible and has an accessible restroom in the lobby. You can ask
+    for seating accommodations when you buy tickets. Some performances have open captioning, but the site
+    does not say which ones. To confirm the entrance and seating, email the box office. SEPTA Bus 23 stops
+    at Mount Pleasant Avenue, and the page names Allen Lane and Sedgwick stations on the Chestnut Hill
+    rail lines nearby.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,15 +74,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to a Season XVII show, or sign up for the QMail newsletter to hear about classes and
-    volunteer openings
+  how: Buy a ticket to a Season XVII show, or email volunteer@quintessencetheatre.org to ask about ushering.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Shows are public and sold by ticket, and the site lists adult classes and a volunteer page with
-    no application step shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows are open to anyone with a ticket, and the site has an email sign up for volunteers. The
+    adult workshop listed is aimed at working actors and does not say beginners are welcome.
+  what_to_expect: Shows are staged at the Sedgwick Theater on Germantown Avenue, and you can buy tickets
+    in advance or try for a limited $10 rush ticket in person about an hour before curtain. If you usher,
+    you get a free ticket to the show you work and a free concessions item, with no alcohol.
+  first_visit_tips:
+  - Park in the free lot directly across from the theater, or use the unmetered street spaces on Germantown
+    Avenue, which have a 2-hour limit.
+  - Take SEPTA Bus 23 to Mount Pleasant Avenue. The site warns that the trip from Center City takes a
+    long time, so allow extra time.
+  - Ask for seating accommodations when you buy tickets, in person or online.
+  - Volunteers must be 18 or older, or 15 to 17 with a guardian. Email volunteer@quintessencetheatre.org
+    with your availability and interests.
 contacts:
   website: https://www.quintessencetheatre.org/
   email: boxoffice@quintessencetheatre.org
@@ -104,7 +118,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - first_step.how
+- url: https://www.quintessencetheatre.org/ticket-prices
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.quintessencetheatre.org/adult-classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.basis
+- url: https://www.quintessencetheatre.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.how
+  - first_visit_tips
+- url: https://www.quintessencetheatre.org/accessibility
+  seen: '2026-10-08'
+  fields:
+  - access.wheelchair
+  - access.notes
+- url: https://www.quintessencetheatre.org/directions
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

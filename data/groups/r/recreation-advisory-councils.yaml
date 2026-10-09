@@ -7,7 +7,8 @@ leads:
 ein: null
 summary: Lets anyone become a voting member of their local rec center's advisory council just by attending
   one meeting and signing in, with elected officer roles for more involved members.
-what_you_do: null
+what_you_do: Help your rec center decide which programs to offer, raise money for supplies and equipment,
+  plan events, and help keep the center clean.
 kind: program
 categories:
 - neighborhood-civic
@@ -35,16 +36,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly meetings at your recreation center
+  text: Each rec center has its own council, and the councils are expected to meet monthly at the center.
+    The 2016 manual asks for the same time and place each month, so ask your rec center staff for the
+    next date.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: year_round
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Joining and voting cost nothing, since the 2016 manual bars fees for membership and voting rights.
 commitment: monthly
 group_size: null
 access:
@@ -59,13 +62,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Attend one meeting of your rec center's council and sign the sign-in sheet so your name is on it.
+    Ask the rec center staff for the next meeting date, since the city page does not list one.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The city says anyone can join by attending one meeting and signing in, and the 2016 manual says
+    meetings are open to the public. The city page gives no meeting dates, so you need to ask your rec
+    center.
+  what_to_expect: Meetings are open to the public and are held at the rec center, with the date, time
+    and place posted there at least five days ahead, according to the city's 2016 manual. Members can
+    vote in council elections and help plan programs and events, and to vote or hold office you must be
+    a registered volunteer or adult participant at the center, or the parent of a registered child there.
+    Officer posts (president, vice president, treasurer and secretary) require being 18 and having attended
+    70 percent of meetings in the election cycle, and the 2016 manual also requires a criminal background
+    check and child abuse clearance for officers.
+  first_visit_tips:
+  - Ask the staff at your rec center for the next meeting date and time, since the city page does not
+    list them.
+  - Look for the meeting notice posted in the rec center, which must go up at least five days before each
+    meeting.
+  - To vote or hold office later, register as a volunteer or adult participant at the center, or as the
+    parent of a registered child there.
+  - Officers must pass a criminal background check and child abuse clearance under the 2016 manual, so
+    plan ahead if you want that role.
 contacts:
   website: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/recreation-advisory-councils/
   email: null
@@ -78,15 +98,27 @@ last_sign_of_life: 2024-02
 sign_of_life_url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/recreation-advisory-councils/
 sources:
 - url: https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/recreation-advisory-councils/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
+  - what_you_do
+  - first_step.how
+  - first_step.drop_in
+- url: https://www.phila.gov/media/20201112152901/Advisory-Council-Manual-2016.pdf
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - commitment
+  - cost
+  - requirements
+  - first_step.basis
+  - first_visit_tips
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

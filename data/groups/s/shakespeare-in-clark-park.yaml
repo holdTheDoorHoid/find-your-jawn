@@ -8,8 +8,8 @@ leads:
 ein: '204846079'
 summary: A theater company that puts on Shakespeare plays outdoors in Clark Park each summer. Audiences
   come to the shows, and the company posts job openings for artists on its site.
-what_you_do: Come to a summer show in Clark Park. The company lists paid job openings under Work with
-  Us; it does not describe volunteer roles.
+what_you_do: Come to a free outdoor show in Clark Park. The company posts paid artist openings under Work
+  with Us, and its site does not describe volunteer roles.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -32,15 +32,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Outdoor summer productions in Clark Park. Hamlet is listed for summer 2026; the page gives no
-    dates.
+  text: Outdoor summer productions in Clark Park, with evening shows that start at 7 pm.
   days: []
-  times: []
+  times:
+  - evening
   recurring: true
   season: summer
 locations:
-- label: Clark Park
-  address: null
+- label: Clark Park, the Bowl (near Chester Avenue and 43rd Street)
+  address: 43rd Street and Chester Avenue
   neighborhood: null
   planning_district: null
   zip: null
@@ -50,8 +50,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Ticket prices are not published on the site
+  level: free
+  text: Shows are described as free on the company's About page. The site also has a donate button.
 commitment: seasonal
 group_size: null
 access:
@@ -66,13 +66,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check shakespeareinclarkpark.org for the next season's dates, then go to a show in Clark Park
+  how: Check shakespeareinclarkpark.org for the next season's dates, then come to an evening show at the
+    Bowl in Clark Park.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows are public outdoor performances; ticket rules are not confirmed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows are free outdoor performances anyone can walk up to. The site does not describe seating,
+    what a first visit is like, or a welcome for newcomers.
+  what_to_expect: The 2026 Hamlet ran about 90 minutes with no intermission and started at 7 pm at the
+    Bowl. The company describes picnic style audiences, but the site does not say whether seats are provided.
+    If weather forces a move, that evening's show goes indoors at Plays & Players Theatre, and the company
+    says the show goes on rain or shine.
+  first_visit_tips:
+  - If it rains, check whether the show has moved to Plays & Players Theatre at 1714 Delancey St that
+    evening.
+  - Bring something to sit on if you want it, since the site does not say whether seats are provided.
+  - Find the Bowl near Chester Avenue and 43rd Street, which is where the shows are held.
 contacts:
   website: https://www.shakespeareinclarkpark.org/
   email: info@shakespeareinclarkpark.org
@@ -80,15 +89,16 @@ contacts:
   contact_name: Kittson Oneill
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.shakespeareinclarkpark.org/
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.shakespeareinclarkpark.org/next-up
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=10
   seen: '2026-10-04'
   fields:
   - name
   - contacts.website
+  - contacts
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -113,7 +123,27 @@ sources:
   - locations
   - status
   - first_step
-research_tier: 1
+- url: https://www.shakespeareinclarkpark.org/next-up
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - last_sign_of_life
+  - status
+- url: https://www.shakespeareinclarkpark.org/location
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+- url: https://www.shakespeareinclarkpark.org/about-scp
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

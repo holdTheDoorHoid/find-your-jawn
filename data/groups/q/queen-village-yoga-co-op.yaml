@@ -8,8 +8,7 @@ ein: null
 summary: A worker-owned yoga co-op in Philadelphia where the teachers run classes, events and workshops
   together. Drop-in classes are by donation, and mats and props are free to use.
 what_you_do: Drop in to a class without signing up and pay what you choose, with a suggested minimum of
-  $15. Mats and props are free. The Iyengar classes taught by Ellen are priced separately, and the site
-  does not give that price.
+  $15. Mats and props are free. Ellen's Iyengar classes cost more and are priced separately.
 kind: club
 categories:
 - running-cycling-fitness
@@ -33,14 +32,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Drop-in classes run on the schedule posted on the site. The newest dated item is the Align and
-    flow class with Mary on Oct. 14, 2026. Zoom classes with Ellen are listed on a separate site, practiceyogastudio.com.
+  text: Vinyasa, align and flow, embodied flow, restorative and Iyengar classes run through the week.
+    Ellen's Monday and Thursday 6 pm Iyengar classes are labeled beginner friendly, and her Level II classes
+    meet Tuesday evening and Saturday morning. Zoom classes need a separate sign up at practiceyogastudio.com,
+    and the schedule page shows the current week.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Studio, per a 2024 Philly Mag listing (not on the group's own site)
+- label: Studio
   address: 804 S 4th St
   neighborhood: null
   planning_district: null
@@ -52,8 +53,9 @@ locations:
 online_ok: true
 cost:
   level: low
-  text: Drop-in classes run on a donation with a suggested minimum of $15, and no one is turned away for
-    lack of funds. Mats and props are free. The Iyengar class price is not listed.
+  text: 'Most drop-in classes are by donation with a suggested minimum of $15, and no one is turned away
+    for lack of funds. Ellen''s Iyengar classes are priced separately: $25 a drop-in, or $20 a class with
+    a 10-class card that expires after six months.'
 commitment: drop_in
 group_size: null
 access:
@@ -66,23 +68,33 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Mats and props are provided free, so you do not need your own.
 first_step:
-  how: Show up for a drop-in class without registering in advance, such as the Oct. 14, 2026 Align and
-    flow class with Mary, and pay what you choose, with a suggested $15 minimum.
+  how: Show up to an in-person drop-in class with no sign up needed. For a beginner class, try Ellen's
+    Monday or Thursday 6 pm Iyengar class, which is $25 a drop-in or $20 a class with a 10-class card.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Drop-ins need no advance sign-up and mats are free, but the site does not say beginner classes
-    are offered.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The team page labels Ellen's Monday and Thursday 6 pm Iyengar classes as beginner friendly, and
+    the co-op says in-person drop-ins need no advance sign up. It does not describe a newcomer program
+    or orientation.
+  what_to_expect: No sign up is needed for in-person drop-in classes. You pay what you choose, with a
+    suggested $15 minimum, and mats and props are free. Ellen's Iyengar classes run 75 to 90 minutes and
+    are priced separately from the donation classes.
+  first_visit_tips:
+  - Mats and props are free, so you do not need to bring your own.
+  - Ellen's Iyengar classes are not donation based, so check the price before you go.
+  - Zoom classes need their own sign up at practiceyogastudio.com.
+  - The site does not say where the door is or how to get there, so call (215) 755-3268 or email info@practiceyogacoop.com
+    before your first visit.
 contacts:
   website: https://practiceyogacoop.com
   email: info@practiceyogacoop.com
-  phone: null
+  phone: (215) 755-3268
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/practiceyogaco_op
+  - https://www.facebook.com/practiceyogacoopphilly
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -105,12 +117,30 @@ sources:
   - status
   - last_sign_of_life
   - online_ok
+  - sign_of_life_url
 - url: https://www.phillymag.com/best-of-philly-archive/practice-yoga-co-op/
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
-confidence: low
+- url: https://practiceyogacoop.com/team
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step.basis
+  - first_step.newcomer_friendliness
+  - requirements.gear
+- url: https://practiceyogacoop.com/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://practiceyogacoop.com/schedule
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

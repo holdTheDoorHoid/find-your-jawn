@@ -34,11 +34,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall classes start October 1 (year not stated). The 2026 New Play Development Conference schedule
-    is posted as a download.
+  text: Classes are offered each fall, and most are held online. The group also runs a yearly New Play
+    Development Conference.
   days: []
   times: []
-  recurring: false
+  recurring: true
   season: fall
 locations:
 - label: Philadelphia (mailing address on site)
@@ -50,11 +50,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: Class fees and ticket prices are not listed. A refund policy and financial aid information are
-    linked.
+  level: paid
+  text: Classes are paid, with listed prices from $320 to $480 per course. A partial scholarship and payment
+    plans are available.
 commitment: null
 group_size: null
 access:
@@ -69,14 +69,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Browse the classes and the conference schedule on the site, read the financial aid information,
-    then sign up.
+  how: Pick a class on the Upcoming Classes page and press its Register link. For a payment plan, email
+    classes@playpenn.org; for the PlayPenn Access Scholarship, use the linked application form.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Classes and events are listed publicly with a sign-up route
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The classes page welcomes theatre makers of all experience levels, and each class has a Register
+    link. No auditions or applications are listed for classes, though one course is named as advanced.
+  what_to_expect: Classes are paid online courses on playwriting and stage craft, with a start date and
+    a Register link for each course. The pages read did not give class length, weekly times, or how many
+    people are in a class.
+  first_visit_tips:
+  - Check the Register page for each class's level, length and times, since the class list does not show
+    them.
+  - Read the refund policy and ask about a payment plan before you pay.
+  - Most classes are online, so plan on a quiet place to work and a reliable internet connection.
+  - Call PlayPenn at 267-807-8234 with questions before you register.
 contacts:
   website: http://www.playpenn.org
   email: mail@playpenn.org
@@ -84,9 +92,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.playpenn.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: http://www.playpenn.org/classes
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9
   seen: '2026-10-04'
@@ -100,7 +108,21 @@ sources:
   - schedule
   - contacts
   - status
-research_tier: 1
+  - what_you_do
+- url: http://www.playpenn.org/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - online_ok
+  - first_step
+  - status
+- url: http://www.playpenn.org/events
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

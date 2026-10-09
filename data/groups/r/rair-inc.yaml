@@ -8,8 +8,8 @@ leads:
 ein: '272857282'
 summary: An arts organization at 7333 Milnor Street in the Northeast that runs an artist residency, public
   tours and community events, including a yearly event called Trash Bash.
-what_you_do: Take a tour of the facility, volunteer through the site's Volunteer section, or come to a
-  community event such as Trash Bash 2026.
+what_you_do: Book a tour of the facility, volunteer through the site's Volunteer section, or come to the
+  yearly Trash Bash party, a ticketed evening of food, drinks and a silent auction of donated art.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -34,10 +34,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Tours are offered in person or online, typically at least once a month, and upcoming dates are
+    posted on the tours page and on Instagram. The yearly Trash Bash party is a ticketed evening event.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Facility
@@ -52,13 +53,16 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost listed for tours or events on the page
+  text: Tour prices are not listed on the tours page. Recent Trash Bash tickets cost about $90 to $160,
+    depending on the ticket type.
 commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Access needs are handled case by case. Email the creative director at billy@rairphilly.org before
+    a visit. The tours page also offers a pre-recorded tour on YouTube for people who cannot attend a
+    live one.
 requirements:
   act153_clearances: null
   background_check: null
@@ -67,24 +71,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the Volunteer section on rairphilly.org or email info@rairphilly.org to ask about the next
-    tour or community event
-  drop_in: null
-  sign_up_needed: null
+  how: Book a tour through the links on the Tours page of rairphilly.org, or email info@rairphilly.org
+    to ask about the next tour or community event.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site lists public tours, community events and a volunteer section, which is a clear way in
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Tours and the yearly party are open to the public and booked through clear links, and the Volunteer
+    page invites sign ups. The site does not describe a beginner program.
+  what_to_expect: Tours run in person or online, typically at least once a month. A virtual tour lasts
+    about an hour and ends with time for questions, and you get the Zoom link the Friday before. In-person
+    tours are limited in size, so book ahead.
+  first_visit_tips:
+  - Book a space through the Ticketleap links on the Tours page, and email info@rairphilly.org with questions.
+  - For a virtual tour, watch for the Zoom link, which comes the Friday before.
+  - If you cannot attend live, a pre-recorded tour is on YouTube.
+  - For access needs, email billy@rairphilly.org before you come.
 contacts:
   website: http://rairphilly.org
   email: info@rairphilly.org
   phone: null
   contact_name: Fern Gookin
-  social: []
+  social:
+  - https://www.instagram.com/rair_philly
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://rairphilly.org
+status: active
+last_sign_of_life: '2026'
+sign_of_life_url: https://rairphilly.org/trash-bash-2026
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=10
   seen: '2026-10-04'
@@ -114,8 +126,26 @@ sources:
   - first_step
   - status
   - contacts
-research_tier: 1
-confidence: low
+- url: https://rairphilly.org/tours
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - access.notes
+- url: https://rairphilly.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://rairphilly.org/trash-bash-2026
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

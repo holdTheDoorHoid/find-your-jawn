@@ -33,10 +33,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly hikes, plus fitness challenges and social outings. The site does not give set days or times
-    in the text I read.
-  days: []
-  times: []
+  text: Weekly hikes, usually on Saturday mornings, as posted on the events calendar. Dates and meeting
+    places change, so check the calendar before you go.
+  days:
+  - sat
+  times:
+  - morning
   recurring: true
   season: year_round
 locations:
@@ -67,14 +69,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact page or the events page on the group site to ask about the next hike
+  how: Pick a Saturday hike on the events calendar, then message the group on Instagram before you go
+    to ask how to join. Some hikes share details through an RSVP link or a group chat.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The event list is visible, but the site does not explain how to join or what it costs, so the
-    way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The About page says beginners and all fitness levels are welcome, and the Join Us page has a
+    Sign up now button, but the page does not spell out the sign-up steps.
+  what_to_expect: Most listed hikes are Saturday morning outings, usually starting between 8 and 9:30
+    am, on a trail in the city or the nearby suburbs. Some are easy loops of a few miles and others are
+    longer out and back walks, so check the event listing for the pace. The site does not list a fee for
+    hikes or dues for members. The group also runs fitness challenges and social outings.
+  first_visit_tips:
+  - Check the event listing for the meeting place, start time and pace before you go.
+  - Some events share details by RSVP link or in a group chat, so ask for the chat when you sign up.
+  - Wear shoes that can handle trail mud and bring water.
+  - Arrive a few minutes early so you can find the group before the start time.
 contacts:
   website: https://phillyhikingbeauties.com
   email: null
@@ -84,8 +94,8 @@ contacts:
   - https://www.instagram.com/phillyhikingbeauties
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-06
-sign_of_life_url: https://philly.citycast.fm/best/philly-hike-groups-philadelphia-hiking-club
+last_sign_of_life: 2026-09
+sign_of_life_url: https://phillyhikingbeauties.com/events
 sources:
 - url: https://phillyhikingbeauties.com
   seen: '2026-10-08'
@@ -99,7 +109,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://phillyhikingbeauties.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - first_step
+  - locations
+- url: https://phillyhikingbeauties.com/contact
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://phillyhikingbeauties.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - audience
+- url: https://phillyhikingbeauties.com/littlehikingbeauties
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - requirements
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

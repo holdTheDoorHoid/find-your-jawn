@@ -9,9 +9,10 @@ leads:
 ein: '205455597'
 summary: A nonprofit that runs creative leadership and college and career programs for young people in
   Philadelphia. In its semester program, teams plan arts-focused service projects in their neighborhoods.
-what_you_do: Young people register for Doing Good, a semester-long afterschool program where teams plan
-  arts-focused service projects, or for Instruments for Success, a six-week college and career readiness
-  program. Past participants can join the Youth Advocacy Council. The site lists no volunteer roles.
+what_you_do: Young people apply to Doing Good, a semester program where teams plan an arts-focused service
+  project, or to Instruments for Success, a fall program that helps high school seniors with college and
+  career applications. Alumni and School District of Philadelphia students can also join the Youth Advocacy
+  Council, which meets twice a month and pays a stipend.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -26,7 +27,8 @@ formats:
 roles:
 - organize
 - hands_on
-crowd: []
+crowd:
+- students
 bridging: null
 audience:
   open_to: public
@@ -38,10 +40,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Instruments for Success runs September 23 to November 4, with the year not shown (fall 2026 by
-    context). Doing Good is a semester-long program, and a spring 2026 cohort is mentioned without dates.
-  days: []
-  times: []
+  text: Programs run one semester at a time at Temple University's Center City Campus. Doing Good meets
+    Mondays and Thursdays, and Instruments for Success meets Mondays and Wednesdays, both from 4:30 to
+    6:30 pm.
+  days:
+  - mon
+  - wed
+  - thu
+  times:
+  - evening
   recurring: true
   season: null
 locations:
@@ -54,12 +61,22 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Temple University Center City Campus (program sessions)
+  address: 1515 Market Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated whether programs are free. The page says SEPTA passes and meals are provided, and students
-    can earn a stipend if they meet attendance and participation rules
-commitment: null
+  text: The site says SEPTA passes and meals are provided, and students who meet attendance and participation
+    rules earn a stipend at the end of the semester. The program pages do not say in plain words whether
+    there is a fee. The Youth Advocacy Council pays $10 an hour.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -73,14 +90,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the registration form for Doing Good or Instruments for Success on the website
-  drop_in: null
-  sign_up_needed: null
+  how: On the Doing Good page, click Apply for Doing Good and fill in the online form. Seniors can use
+    the Instruments for Success form instead.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Youth programs need a registration form, and the page does not explain how places are chosen,
-    so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: You must apply through an online form before you can take part. Doing Good is limited to 30 students
+    per semester, and the page does not say how students are chosen.
+  what_to_expect: Doing Good starts with a few weeks of skills such as budgeting, marketing and event
+    planning. Teams then pitch an arts-focused service project to a panel of experts and receive up to
+    $500 to carry it out. Sessions meet Monday and Thursday from 4:30 to 6:30 pm, and students who meet
+    the attendance rules earn a stipend at the end of the semester.
+  first_visit_tips:
+  - Ask for a SEPTA pass if you need one, since the program provides them.
+  - Meals are provided, according to the site.
+  - Several SEPTA lines and buses stop within one block of the Temple campus at 1515 Market Street.
+  - Send travel questions to Marcus Bryant at mbryant@project440.org.
 contacts:
   website: https://www.project440.org
   email: info@project440.org
@@ -123,7 +148,36 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
+- url: https://www.project440.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - summary
+  - cost
+  - status
+- url: https://project440.org/doinggood
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - audience
+- url: https://project440.org/ifs-philly
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+- url: https://project440.org/youth-advocacy-council
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

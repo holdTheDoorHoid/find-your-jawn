@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Recruits several hundred trained volunteers for one night each January to canvass the city overnight
   and count and survey people experiencing unsheltered homelessness.
-what_you_do: null
+what_you_do: Walk an assigned zone with a team overnight, ask people living outdoors if they will take
+  a short survey, and record answers through a secure online link.
 kind: program
 categories:
 - hunger-housing-basic-needs
@@ -33,12 +34,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: One night each January
+  text: One overnight count each January. It runs from 10 pm to 4 am, and volunteers check in before it
+    starts.
   days: []
-  times: []
-  recurring: null
+  times:
+  - night
+  recurring: true
   season: winter
-locations: []
+locations:
+- label: Citywide, with check-in at the Municipal Services Building in 2026
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -57,13 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up through the city's online volunteer form before its deadline (in 2025 it closed January
+    6, about two weeks before the count), then complete the OHS training before the night.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Training: Yes: volunteers are trained the same day or before the count.'
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Open to the public through a yearly online form, and OHS says all volunteers get training; a
+    2026 city post describes a first-time volunteer, but no page says newcomers get a special welcome
+    or that you can just show up.
+  what_to_expect: 'The count is one long night: teams check in, get a short briefing, and then go out
+    in assigned zones. The overnight count runs from 10 pm to 4 am, though a 2026 volunteer''s team finished
+    around 1:45 am. That volunteer described the night as emotional and fulfilling, and said an experienced
+    outreach worker led their team.'
+  first_visit_tips:
+  - Plan for about five hours out, since one 2026 volunteer's shift ran about four and three quarters
+    hours.
+  - Watch the OHS training videos before the night, as a 2026 volunteer did.
+  - Arrive for check-in before the 10 pm start, since the team reviews materials and assigns drivers first.
+  - Past volunteers often wore a blue shirt with the year's theme, so check what the organizers ask you
+    to wear.
 contacts:
   website: https://www.phila.gov/2024-02-27-2024-pit-count-kicks-off-with-hundreds-of-volunteers/
   email: null
@@ -71,9 +95,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2024-02
-sign_of_life_url: https://www.phila.gov/2024-02-27-2024-pit-count-kicks-off-with-hundreds-of-volunteers/
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.phila.gov/2026-03-31-we-all-count-my-first-experience-volunteering-with-ohss-point-in-time-count/
 sources:
 - url: https://www.phila.gov/2024-02-27-2024-pit-count-kicks-off-with-hundreds-of-volunteers/
   seen: '2026-10-04'
@@ -83,8 +107,28 @@ sources:
   - summary
   - audience
   - requirements
-research_tier: 1
+  - schedule
+  - what_you_do
+- url: https://www.phila.gov/2026-03-31-we-all-count-my-first-experience-volunteering-with-ohss-point-in-time-count/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://whyy.org/articles/volunteers-needed-philadelphia-annual-homeless-count-2025
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+- url: https://www.phila.gov/2022-02-10-the-2022-pit-count-what-it-is-why-its-important-and-how-you-can-help
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

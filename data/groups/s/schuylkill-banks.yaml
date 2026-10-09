@@ -3,15 +3,18 @@ name: Schuylkill Banks
 aka: []
 leads: []
 ein: null
-summary: The nonprofit behind the Schuylkill River Trail, which covers the southernmost eight miles of
-  the river from the Fairmount Dam to the Delaware. It runs public trail events and links to a volunteer
-  page.
-what_you_do: Take part in public trail events, or ask about volunteer work through the volunteer page.
+summary: The group that cares for the southern eight miles of the Schuylkill River trail, from Fairmount
+  Dam to the Delaware River. It runs public events on the trail and the water, and volunteers help keep
+  the trail clean and green and help run those events.
+what_you_do: Volunteer on trail care, such as picking up litter, pulling invasive plants, planting and
+  spreading mulch, or help with events like kayak tours and movie nights. You can also come to a public
+  event.
 kind: nonprofit
 categories:
 - nature-environment
 interests:
 - river_stewardship
+- park_cleanup
 motives:
 - values
 - social
@@ -33,10 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Trail work runs weekdays 10 am to 4 pm and weekends 10 am to 1 pm, in sessions of at least three
+    hours. Help with events happens on select Thursdays, Saturdays and Sundays in warmer months.
   days: []
-  times: []
-  recurring: null
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Schuylkill River Trail, Fairmount Dam to the Delaware River
@@ -50,8 +55,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Not stated on the page checked
+  level: low
+  text: Events are described as a mix of free and low-cost activities. Prices are not listed on the pages
+    we could read.
 commitment: null
 group_size: null
 access:
@@ -66,13 +72,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the volunteer page on the website, or call 215-309-5523 to ask about volunteer days
+  how: Fill in the volunteer form on the website with your name, email and interests. For a different
+    day or a group visit, contact the group first.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The volunteer page was linked but its schedule and sign-up steps were not on the page checked
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can send in the public volunteer form, but the page does not mention a first-time orientation
+    or training.
+  what_to_expect: Trail sessions last at least three hours and usually run 10 am to 4 pm on weekdays or
+    10 am to 1 pm on weekends. The work can include picking up litter, removing graffiti, pulling invasive
+    plants, planting, and spreading mulch or gravel. Event help covers setup, checking people in, carrying
+    kayaks to and from the water, handing out refreshments and cleanup.
+  first_visit_tips:
+  - Plan for at least three hours, and check the weekday or weekend hours before you go.
+  - Groups of up to 12 can volunteer together, so contact the group first to set up a group day.
+  - If you need a different day, ask, since the page says scheduling can be flexible.
+  - The email address sits behind a protected link, so use the contact page or call 215-309-5523.
 contacts:
   website: https://www.schuylkillbanks.org
   email: null
@@ -92,8 +107,21 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.schuylkillbanks.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - first_visit_tips
+- url: https://www.schuylkillbanks.org/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

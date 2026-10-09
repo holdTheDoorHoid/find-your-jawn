@@ -10,8 +10,8 @@ ein: '452708054'
 summary: A print shop and zine library in West Philadelphia with public open hours on Wednesday evenings
   and Sunday afternoons. Members use the presses, and the studio teaches printmaking, bookmaking, and
   zine making.
-what_you_do: Browse the zine library, take a printmaking or zine workshop, or join as a member to use
-  the presses.
+what_you_do: Join as a member to use the presses after orientation and training, take a workshop, ask
+  about a custom workshop or private lesson, or browse the free zine library.
 kind: nonprofit
 categories:
 - books-writing
@@ -45,8 +45,8 @@ schedule:
   - wed
   - sun
   times:
-  - daytime
   - evening
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -61,14 +61,17 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Membership plans and workshops charge fees. The site lists no prices.
-commitment: drop_in
+  level: paid
+  text: Open Hours membership is $40 a month for working members or $50 a month for non-working members.
+    Keyholder membership is $115 a month for working members or $135 a month for non-working members,
+    with a three month minimum. A four visit punchcard is $75. Workshops charge their own fees.
+commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The site says the facilities are ADA accessible and the main entrance on Reinhard Street is accessible.
+    It does not describe stairs, elevators or restrooms. For other accommodations, email studio@phillysoapbox.org.
 requirements:
   act153_clearances: null
   background_check: null
@@ -77,18 +80,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit during public open hours (Wednesday evenings or Sunday afternoons), or ask about membership
-    or a workshop through the studio's site
-  drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Public open hours are posted; the site does not describe a newcomer program
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call the studio phone at (267) 630-1632 during Wednesday 6 to 10 pm or Sunday 1 to 5 pm open hours
+    to ask about a visit, and apply for a membership if you want to use the equipment.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Studio access takes a membership, a punchcard or a workshop, plus an application and an orientation
+    before you use the presses. The open hours are posted, but the site does not say a visitor can walk
+    in.
+  what_to_expect: Open hours run on Wednesday evenings and Sunday afternoons, with monitors who answer
+    questions but do not teach. Entry takes a membership, a punchcard or a workshop, and you call the
+    studio to be let in. Newer members must finish set training hours on each press or tool before they
+    use it.
+  first_visit_tips:
+  - 'Call the studio phone during open hours to be let in: (267) 630-1632.'
+  - Masks are encouraged but optional in the studio, according to the site.
+  - Use the main entrance on Reinhard Street, which the site describes as accessible.
+  - Email studio@phillysoapbox.org before you come if you need an accommodation.
 contacts:
   website: https://phillysoapbox.org/
-  email: null
-  phone: null
+  email: info@phillysoapbox.org
+  phone: (267) 630-1632
   contact_name: Mary Tasillo
   social: []
   calendar_feed: null
@@ -128,7 +140,26 @@ sources:
   - contacts
   - status
   - kind
-research_tier: 1
+  - access
+- url: https://phillysoapbox.org/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - requirements
+  - what_you_do
+- url: https://phillysoapbox.org/workshops-events
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://phillysoapbox.org/studio-library
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

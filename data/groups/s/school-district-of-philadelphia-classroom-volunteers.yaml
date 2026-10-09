@@ -4,9 +4,10 @@ aka: []
 leads:
 - city_programs:school-district-of-philadelphia-classroom-volunteers
 ein: null
-summary: Lets a resident volunteer in a Philadelphia public school classroom after checking with that
-  school and completing a free Pennsylvania Child Abuse History Clearance.
-what_you_do: null
+summary: Lets a Philadelphia resident volunteer in a public school classroom once the school agrees and
+  the volunteer has finished the required clearances and orientation.
+what_you_do: Help a teacher in a classroom at a school you choose. Before you start, you complete the
+  required checks, the district's volunteer orientation, and a code of conduct signed for the principal.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -34,16 +35,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: How often you come is set with the school. The district page does not give a schedule or a time
+    commitment.
   days: []
   times: []
   recurring: null
   season: year_round
-locations: []
+locations:
+- label: A Philadelphia public school, arranged with the school first
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: No program fee. The state child abuse history and criminal history checks are free. An FBI fingerprint
+    check costs $23.25, and applies only if you have not lived in Pennsylvania for the past 10 years.
 commitment: null
 group_size: null
 access:
@@ -52,24 +64,34 @@ access:
   notes: null
 requirements:
   act153_clearances: true
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Clearances: Pennsylvania Child Abuse History Clearance (free for volunteers); the page
-    also points to a separate volunteer checklist we did not fetch, which may name further clearances.'
-  first_visit_tips: []
+  how: Ask the school whether it needs volunteers, then start the free clearances and sign up for the
+    district's volunteer orientation.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers must finish clearances, an orientation and a principal's sign-off before they start,
+    so you see the classroom only after the paperwork.
+  what_to_expect: 'Most of the first stretch is paperwork: the child abuse history clearance, the state
+    criminal history check, and either an FBI check with fingerprints or a signed affirmation if you have
+    lived in Pennsylvania for 10 years. Next comes the orientation, either an online webinar of about
+    45 minutes with a short quiz or an in person session led by a family engagement liaison. The page
+    does not say how often volunteers come or how long they stay.'
+  first_visit_tips:
+  - Check with the school first, because each school decides whether it needs volunteers.
+  - Start the child abuse history clearance early, since the page says results can take up to 14 days.
+  - Finish the orientation within 45 days of starting, and hand the signed code of conduct to the principal.
+  - If you have not lived in Pennsylvania for the past 10 years, pre-enroll with IdentoGo before your
+    fingerprint appointment.
 contacts:
   website: https://www.philasd.org/face/#volunteer
   email: null
-  phone: null
+  phone: 215-400-4180
   contact_name: null
   social: []
   calendar_feed: null
@@ -85,8 +107,20 @@ sources:
   - summary
   - audience
   - requirements
-research_tier: 1
+  - status
+- url: https://www.philasd.org/face/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - requirements
+  - first_step
+  - contacts
+  - locations
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -3,10 +3,11 @@ name: Senior Companion Program (Philadelphia Corporation for Aging)
 aka: []
 leads: []
 ein: null
-summary: Volunteers aged 55 and up who visit older adults living at home who are lonely or have health
-  or sight challenges, offering friendship and steady company.
-what_you_do: Visit one older adult on a regular schedule, keep them company, and help them stay connected.
-  Volunteers complete a background check and special training first.
+summary: Volunteers aged 55 and up who visit older adults living at home who are lonely, isolated or have
+  health or sight challenges, offering friendship, steady company and some practical help.
+what_you_do: Visit one older adult at home on a regular schedule, keep them company, and help with small
+  tasks such as sorting mail, light meals or getting to medical appointments. You complete a background
+  check and paid training first.
 kind: program
 categories:
 - seniors-intergenerational
@@ -32,7 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteers commit at least 20 hours a week
+  text: Volunteers need to be able to serve about 20 hours a week, visiting one older adult on a regular
+    schedule.
   days: []
   times: []
   recurring: null
@@ -50,7 +52,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free to volunteer; volunteers receive a cash stipend and travel reimbursement
+  text: No cost to volunteer. Volunteers receive a tax-free hourly stipend, travel and meal reimbursement,
+    and paid holiday, sick and vacation time, and their training is paid.
 commitment: ongoing_role
 group_size: null
 access:
@@ -59,30 +62,37 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Contact the Philadelphia Corporation for Aging; the article does not describe the application steps
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the online volunteer application, then call 215-765-9000 ext. 5124 or email seniorcp@pcacares.org
+    with questions about the next steps.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Background checks and special training come before service, and the public article does not describe
-    how to apply
-  what_to_expect: null
-  first_visit_tips: []
+  basis: You apply, meet an income guideline and pass a criminal background check before service, and
+    the site does not say what a first visit looks like.
+  what_to_expect: The site does not describe the first visit. Before you serve, you complete a criminal
+    background check and paid pre-service training, though the site does not say which comes first. After
+    that you get four hours of ongoing training each month while you serve about 20 hours a week.
+  first_visit_tips:
+  - Check that you can give about 20 hours a week before you apply, because the application asks about
+    it.
+  - 'Be ready to say how you get around: the application asks about your own car, SEPTA or CCT Connect.'
+  - Ask when the background check and paid training start, since the site does not say which comes first.
 contacts:
-  website: https://www.pcacares.org
-  email: null
-  phone: 215-765-9000
+  website: https://pcacares.org/services/community-connection/senior-companion-program/
+  email: seniorcp@pcacares.org
+  phone: 215-765-9000 ext. 5124
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2025-07
-sign_of_life_url: https://whyy.org/articles/philadelphia-senior-companions-loneliness-friendship
+status: active
+last_sign_of_life: 2025-12
+sign_of_life_url: https://pcacares.org/news/senior-companions-help-combat-loneliness-with-friendship/
 sources:
 - url: https://whyy.org/articles/philadelphia-senior-companions-loneliness-friendship
   seen: '2026-10-08'
@@ -99,8 +109,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://pcacares.org/services/community-connection/senior-companion-program/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - requirements
+  - cost
+  - commitment
+  - first_step
+- url: https://pcacares.org/senior-companion-program-volunteer-application/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://pcacares.org/news/senior-companions-help-combat-loneliness-with-friendship/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

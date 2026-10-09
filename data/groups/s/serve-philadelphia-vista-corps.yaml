@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Places full time AmeriCorps VISTA members for a year of paid, stipend supported national service
   inside City offices, for example the Office of Immigrant Affairs.
-what_you_do: null
+what_you_do: Serve a full year inside a City department on one project, such as building language access
+  tools, writing a community resource guide, or organizing volunteer events for Community Schools.
 kind: program
 categories:
 - neighborhood-civic
@@ -36,12 +37,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A full time service year, new class starting in late summer
+  text: A one year, full time service term. Applications are closed for now, and the City's interest form
+    is how people hear when the next cycle opens. The start month is not published.
   days: []
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: City offices, such as the Office of Immigrant Affairs in City Hall
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -60,17 +71,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the sign up form at https://bit.ly/ServeApplication.
-  drop_in: null
+  how: Fill out the City's interest form to be told when the next VISTA cycle opens, and read the benefits
+    and requirements page. Questions go to ServeVISTA@phila.gov or (215) 686-0823.
+  drop_in: false
   sign_up_needed: true
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: You must apply to join, and the current application window is closed. The City says the roles
+    are entry level and encourages people to apply even if they feel underqualified.
+  what_to_expect: Members work full time for one year inside a City department on a project, and the City
+    describes the roles as entry level. The pages read do not list the pay, benefits, eligibility rules,
+    or start month, so ask the contact or read the benefits and requirements page before you apply.
+  first_visit_tips:
+  - Read the benefits and requirements page before you fill out anything.
+  - Expect the window to be closed for now; the last window we found ended April 30, 2025.
+  - Ask the contact about eligibility and the start month, since the public pages do not give them.
 contacts:
-  website: https://www.phila.gov/2025-09-05-serve-philadelphia-vistas-strengthen-access-and-outreach-at-oia/
-  email: null
-  phone: null
+  website: https://www.phila.gov/programs/serve-philadelphia-vista-corps/serve-philadelphia-vista-corps-application/
+  email: ServeVISTA@phila.gov
+  phone: (215) 686-0823
   contact_name: null
   social: []
   calendar_feed: null
@@ -79,15 +97,33 @@ last_sign_of_life: 2026-08
 sign_of_life_url: https://www.phila.gov/2025-09-05-serve-philadelphia-vistas-strengthen-access-and-outreach-at-oia/
 sources:
 - url: https://www.phila.gov/2025-09-05-serve-philadelphia-vistas-strengthen-access-and-outreach-at-oia/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
-confidence: low
-last_checked: '2026-10-04'
+  - what_you_do
+  - locations
+  - status
+  - last_sign_of_life
+- url: https://www.phila.gov/programs/serve-philadelphia-vista-corps/serve-philadelphia-vista-corps-application/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - first_step
+  - contacts
+  - status
+  - requirements
+- url: https://www.phila.gov/2025-04-24-meet-the-serve-philadelphia-vistas-who-are-making-an-impact-in-community-schools/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+research_tier: 2
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

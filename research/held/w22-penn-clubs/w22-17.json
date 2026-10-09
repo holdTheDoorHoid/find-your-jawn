@@ -1,0 +1,253 @@
+{
+ "wave": "w22-penn-clubs",
+ "agent": "w22-17",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 45,
+ "leads_only": [
+  {
+   "name": "First Love Center",
+   "url": "https://firstlovecenter.com",
+   "note": "named as the affiliate of Ready@20 in its directory description, not checked"
+  },
+  {
+   "name": "Renewal Presbyterian Church",
+   "url": "https://westphilly.renewalchurch.org",
+   "note": "parent church of Renewal College Fellowship, not checked (the listed page redirected to an unrelated address)"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://pennsimplychaos.com/",
+   "status": 525,
+   "note": "server error on two tries; club website not read"
+  },
+  {
+   "url": "https://pennr2r.com/",
+   "status": null,
+   "note": "request timed out on three tries; club website not read"
+  },
+  {
+   "url": "https://pennreprojustice.my.canva.site/home",
+   "status": null,
+   "note": "returned only the page title (script-rendered page); no dated content could be read"
+  }
+ ],
+ "notes": "All 20 Penn Clubs entries in batch 17 were read through the directory API. 20 records written, 0 searches, 45 fetches (within the 60 cap; budget not exhausted). Verdicts: 20 publish, of which 3 are held back by design with status unknown and no summary, categories or interests (Quiz Bowl at Penn, Skeptic's Dinner, Service Link), because their directory status fields read INACTIVE while the active flag is true. Status counts: active 3 (Reach-A-Peer Helpline, REACH at Penn, Science Olympiad), probably_active 13, dormant 1 (Science Policy and Diplomacy Group, whose own site's newest dated items are 2019 to 2020), unknown 3. Conventions used: the Penn Clubs label UNDER REVIEW was read as a registration label, not activity. Directory active flag true with no dated item gives probably_active. Directory application_required values 1 were read as yes; values 2 to 5 were read as unclear, and the rules for unclear values are in each record's basis. Where the listing's text and its flag disagree (Social Deduction Club), the text was used and the conflict is in the record notes. Dates without a year were not given a year: Road2Research (September 18), Simply Chaos (September 6), Science Olympiad registration dates, and the journal submission window. Personal contacts were left out: named student contacts or personal student emails on Service Link, Simply Chaos and Skeptic's Dinner, and a named person's email on Renewal College Fellowship. Club emails were used instead. The Reach-A-Peer helpline phone numbers are the club's public help lines and are recorded. Renewal's listed website redirected to an unrelated address and was not followed. The Ready@20 social links belong to First Love Center and are recorded as listed. Summaries were written fresh from the directory and club pages; no copied runs.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-quiz-bowl"
+    ],
+    "group_id": "quiz-bowl-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Quiz Bowl at Penn",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Weekly practices on Mondays and Thursdays, 8 to 10 pm (listed for Spring 26)",
+    "days": [
+     "mon",
+     "thu"
+    ],
+    "times": [
+     "evening"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "JMHH rooms F38 and F86 (Penn campus)",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "email": "pennquizbowl@gmail.com",
+    "website": null,
+    "phone": null,
+    "social": [
+     "https://facebook.com/pennquizbowl",
+     "https://twitter.com/pennquizbowl"
+    ]
+   },
+   "first_step": {
+    "how": "Join the email list through the sign-up form on the club's page, or email the club with questions. The directory says an application is required.",
+    "newcomer_friendliness": 2,
+    "basis": "The directory says an application is required, so the first step is the email list and a question to the club."
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-quiz-bowl/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "locations",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "notes": "Held back on purpose. The directory status field reads INACTIVE even though the active flag is true, so status is unknown and no summary, categories or interests were written. The only dated detail is the Spring 26 practice schedule, and no dated event or post was found. Confirm with the club whether the team is running this year. Its Facebook and Twitter links were not read (leads only).",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:service-link"
+    ],
+    "group_id": "service-link",
+    "ein": null,
+    "website": "https://servicelinkatpenn.wixsite.com/community"
+   },
+   "verdict": "publish",
+   "name": "Service Link",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Information sessions at the start of each semester, announced on Instagram. A recorded session is on the club's website."
+   },
+   "contacts": {
+    "email": "servicelinkatpenn@gmail.com",
+    "website": "https://servicelinkatpenn.wixsite.com/community",
+    "phone": null,
+    "social": [
+     "https://instagram.com/servicelinkatpenn/",
+     "https://facebook.com/servicelinkatpenn/",
+     "https://linkedin.com/company/service-link-upenn/"
+    ]
+   },
+   "first_step": {
+    "how": "Watch for the information session at the start of the semester, or apply through the Volunteer page on the club's website.",
+    "newcomer_friendliness": 2,
+    "basis": "Volunteers apply, and the listing says the club is not taking new members right now."
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/service-link/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    },
+    {
+     "url": "https://servicelinkatpenn.wixsite.com/community",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "first_step"
+     ]
+    }
+   ],
+   "notes": "Held back on purpose. The directory status field reads INACTIVE (active flag true), so no summary, categories or interests were written. The club's website has a 2024 recap link with no month and a 2021 copyright line, and neither gives a clear recent date. The directory gives 2011 as the founding year. A named student contact on the directory was left out, and the club email is recorded instead. Confirm with the club whether it is still running.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:round-table-dinner"
+    ],
+    "group_id": "skeptics-dinner",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Skeptic's Dinner",
+   "kind": "student_org",
+   "audience": {
+    "open_to": "students",
+    "school": "penn",
+    "min_age": null,
+    "community": [],
+    "faith": null,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "No regular schedule is listed. The club emails the location or a video call link for each dinner."
+   },
+   "cost": {
+    "level": "free",
+    "text": "Free meal"
+   },
+   "locations": [
+    {
+     "label": "Franklin Building, Room 221",
+     "address": "3451 Walnut Street",
+     "in_city": true
+    }
+   ],
+   "contacts": {
+    "email": null,
+    "website": null,
+    "phone": null,
+    "social": [
+     "https://facebook.com/skepticsdinner/"
+    ]
+   },
+   "first_step": {
+    "how": "Email the club to say you are interested. The club then sends the location or a video call link for the next dinner.",
+    "newcomer_friendliness": 2,
+    "basis": "The listing marks an application as required, and the way in is by email."
+   },
+   "status": "unknown",
+   "research_tier": 1,
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/round-table-dinner/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "cost",
+      "locations",
+      "contacts",
+      "first_step",
+      "status"
+     ]
+    }
+   ],
+   "notes": "Held back on purpose. The directory status reads Inactive (active flag true), so no summary, categories or interests were written. No dated events were found. The club's student contact email on the directory was left out. Confirm with the club whether dinners are still running.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

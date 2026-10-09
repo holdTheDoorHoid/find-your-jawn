@@ -6,7 +6,9 @@ leads:
 ein: null
 summary: A program for teens considering a police career, teaching law enforcement skills through mentoring,
   classroom instruction and hands on training.
-what_you_do: null
+what_you_do: Train on Saturdays with mentoring, classroom lessons and drills, including tactical and agility
+  training. Cadets also help at official events such as parades, memorials and charity runs, and can join
+  optional summer camps.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -32,16 +34,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Saturday training from 10 am to 5 pm at the Philadelphia Police Academy. Attendance at Saturday
+    sessions is required.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: year_round
-locations: []
+locations:
+- label: Saturday training at the Philadelphia Police Academy; intake at 8501 State Road
+  address: 8501 State Road
+  neighborhood: null
+  planning_district: null
+  zip: '19136'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: A $50 yearly insurance and registration fee is collected if accepted, and probation uniforms cost
+    about $350.
 commitment: ongoing_role
 group_size: null
 access:
@@ -50,29 +65,38 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Probation uniforms, about $350 (per the program site)
 first_step:
-  how: null
+  how: Apply online at ppdexplorers.org, or download the PEC-991 paper pack, sign it and mail it to 8501
+    State Road. Watch your email for a call from a recruitment officer, which the site says comes within
+    five business days.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Training: Yes: classroom instruction and hands on training.'
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Teens need an application, a clean background check, a fitness and agility test, an interview
+    and a yearly fee before they see the program, so the way in is clear but selective.
+  what_to_expect: Cadets train on Saturdays from 10 am to 5 pm, with classroom lessons, mentoring and
+    hands-on drills. They also help at official events such as parades and memorials. Applicants under
+    18 need a parent or guardian at testing and interviews.
+  first_visit_tips:
+  - Check your email often after you apply, since physical assessment dates are sent there.
+  - Applicants who are 14 must be enrolled in high school to apply.
+  - Budget for the $50 yearly fee and about $350 for probation uniforms.
+  - Keep Saturdays free, since training is mandatory from 10 am to 5 pm.
 contacts:
-  website: https://www.phila.gov/2024-04-09-its-a-summer-thing-city-unveils-summer-programs-activities-for-children-youth-teens-and-families/
-  email: null
-  phone: null
+  website: https://ppdexplorers.org
+  email: police.explorers@phila.gov
+  phone: (215) 685-8160
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2024-04
-sign_of_life_url: https://www.phila.gov/2024-04-09-its-a-summer-thing-city-unveils-summer-programs-activities-for-children-youth-teens-and-families/
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://www.phila.gov/itsasummerthing
 sources:
 - url: https://www.phila.gov/2024-04-09-its-a-summer-thing-city-unveils-summer-programs-activities-for-children-youth-teens-and-families/
   seen: '2026-10-04'
@@ -82,8 +106,26 @@ sources:
   - summary
   - audience
   - requirements
-research_tier: 1
-confidence: medium
-last_checked: '2026-10-04'
+- url: https://www.phila.gov/itsasummerthing
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - status
+  - last_sign_of_life
+- url: https://ppdexplorers.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - requirements
+  - first_step
+  - contacts
+  - locations
+  - audience
+research_tier: 2
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

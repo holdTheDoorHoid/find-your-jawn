@@ -6,11 +6,11 @@ leads:
 - irs_bmf:272813668
 ein: '272813668'
 summary: A Philadelphia nonprofit that uses performing arts to build confidence, voice and community in
-  children and teens from kindergarten through 12th grade. It runs year-round classes, summer camps and
-  Shadow Company, a youth arts group for high schoolers.
-what_you_do: Enroll a child in a year-round class or a summer theatre or imagination camp, have a high
-  school student join Shadow Company, come to a youth show, or support the work through volunteering,
-  sponsorship or giving.
+  children and teens from kindergarten through 12th grade. It runs fall to spring classes, summer camps,
+  and Shadow Company, a year-round youth theater group for high schoolers.
+what_you_do: Enroll a child in a fall to spring class or a summer camp, or have a high school student
+  join Shadow Company at any time. Families can come to youth shows, and supporters can volunteer, sponsor
+  or donate.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -41,14 +41,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Year-round classes and summer camps (dates not listed on the site); Shadow Company accepts high
-    school students at any point; a Fringe show, When Tides Collide, is on sale (date not listed)
-  days: []
-  times: []
+  text: Classes run fall to spring. Silhouettes, a theater class for grades 5 to 8, meets monthly on Saturdays
+    from 10 am to noon. Summer camps run each summer for grades K to 12. Shadow Company runs on a season
+    from October through September, with monthly meetings for grades 9 to 12.
+  days:
+  - sat
+  times:
+  - morning
   recurring: true
   season: year_round
 locations:
-- label: Office
+- label: Main Building
   address: 21 W Washington Ln
   neighborhood: null
   planning_district: null
@@ -59,10 +62,11 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: No class, camp or ticket prices are listed; contact the group for pricing. The site mentions scholarships
-    funded by donors.
-commitment: null
+  level: paid
+  text: Classes use a sliding scale, with listed direct costs of $160 to $365 per session, and lower tiers
+    and full scholarships are available. One Silhouettes day can be bought alone for $31.25. Shadow Company
+    has no fee. Camp prices are not listed on the site.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -76,15 +80,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register a child for a year-round class or summer camp through the site, or have a high school
-    student enroll in Shadow Company, where enrollment is open now
+  how: Register a child for a class or camp through the online form linked on the program pages, or buy
+    one Silhouettes drop-in day for $31.25. High school students can register for Shadow Company at any
+    time through its year-round form.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Year-round programs are open for registration and the youth group takes new high school members
-    at any point; the site does not say beginners are specifically welcomed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can register online for a class, camp, or Shadow Company. The site does not offer a free
+    trial class and does not say beginners are welcome, but a single Silhouettes day can be bought for
+    $31.25.
+  what_to_expect: Classes meet at the main building at 21 W Washington Lane, and sessions run from one
+    to three hours. Kids work with professional artists on singing, dancing, improv and sketches, and
+    the classes we read about end with a showing or showcase for family and friends. Shadow Company meets
+    monthly, and the site does not mention an audition for members.
+  first_visit_tips:
+  - 'Ask about scholarships before you pay: lower tiers and full scholarships exist, but the scholarship
+    page gives no application steps, so call or email the group.'
+  - Plan to pay a deposit or the full fee when you register, since a spot is not held until you pay.
+  - 'Check the refund rule first: no refunds within 5 days of the first session, or for missed sessions.'
 contacts:
   website: http://www.yesandcamp.org
   email: info@yesandcamp.org
@@ -120,8 +133,31 @@ sources:
   - locations
   - contacts
   - requirements
-research_tier: 1
-confidence: medium
+- url: https://www.yesandcamp.org/studio
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - commitment
+- url: https://www.yesandcamp.org/summer-camps
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://www.yesandcamp.org/shadow-company
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://www.yesandcamp.org/scholarship-funds
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

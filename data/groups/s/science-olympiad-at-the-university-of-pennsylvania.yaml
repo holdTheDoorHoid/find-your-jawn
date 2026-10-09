@@ -1,18 +1,33 @@
 id: science-olympiad-at-the-university-of-pennsylvania
-name: Science Olympiad at the University of Pennsylvania
-aka: []
+name: Science Olympiad at the University of Pennsylvania (SOUP)
+aka:
+- Science Olympiad at the University of Pennsylvania
 leads:
 - penn_clubs:science-olympiad
 ein: null
-summary: null
-what_you_do: null
+summary: Penn students who run a science competition invitational and mentor Philadelphia middle and high
+  school teams. Their Urban Initiative offers science mentoring at under-resourced high schools.
+what_you_do: Help run the invitational, mentor school teams, or volunteer with the Urban Initiative. Members
+  also get a mailing list and a Slack.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- science-learning
+- kids-youth-mentoring
+interests:
+- stem_outreach
+- mentoring
+motives:
+- values
+- understanding
+formats:
+- lead_organize
+- one_off_event
+roles:
+- organize
+- help_teach
+crowd:
+- students
+- teens
 bridging: null
 audience:
   open_to: students
@@ -24,7 +39,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Invitational on February 13, 2027. No regular meeting schedule is listed.
   days: []
   times: []
   recurring: null
@@ -48,31 +63,48 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Fill out the interest form linked on the club's page, or email the club to join the mailing list
+    and Slack. The club is not taking new members right now.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The club is not accepting members now, and the interest form is the only way in.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://pennscienceolympiad.org/
   email: pennscienceolympiad@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/ScienceOlympiadatpenn/
+  - https://instagram.com/scienceolympiadatpenn/
+  - https://linkedin.com/company/penn-science-olympiad
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://pennscienceolympiad.org/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/science-olympiad/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+  - status
+- url: http://pennscienceolympiad.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -34,7 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 2nd and 4th Wednesdays at noon, except December
+  text: Meets on the 2nd and 4th Wednesday of the month from noon to 1 pm, except December. Meetings are
+    in person at SEPTA headquarters or online.
   days:
   - wed
   times:
@@ -42,7 +43,7 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: SEPTA Headquarters, Room 11C
+- label: SEPTA Headquarters, Market Street (room number to confirm when you sign up)
   address: 1234 Market St
   neighborhood: null
   planning_district: null
@@ -53,8 +54,8 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: free
-  text: Club visits are free. Dues are not shown.
+  level: low
+  text: Visits are listed as free. Membership dues are $70 every six months.
 commitment: null
 group_size: null
 access:
@@ -69,18 +70,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the listed number or use the club's visit form, then come to a lunchtime meeting in person
-    or online
-  drop_in: null
-  sign_up_needed: null
+  how: Email the club at least 48 hours before the meeting to register as a guest, using Toastmasters@septa.org,
+    then come to a noon meeting in person or ask for the online link.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The listing says visits are free and guests need not speak until ready, and the club says anyone
-    may join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The club says guests are welcome at any meeting and gives a clear way to sign up ahead by email.
+    The club pages do not say whether guests must speak.
+  what_to_expect: Each meeting runs from noon to 1 pm on the 2nd and 4th Wednesdays, in person at SEPTA
+    headquarters or online. The club pages do not say whether guests must speak or how a meeting runs
+    for visitors, so ask when you register. Visits are listed as free, and membership dues are $70 every
+    six months.
+  first_visit_tips:
+  - Email the club at least 48 hours before the meeting, since building security needs advance notice
+    of guests.
+  - Bring a government-issued photo ID on the day of your visit.
+  - Ask which room to go to, because the club's pages list two different room numbers.
+  - If you would rather join from home, ask for the online meeting link when you register.
 contacts:
   website: https://septa.toastmastersclubs.org/
-  email: null
+  email: Toastmasters@septa.org
   phone: 215-580-7036
   contact_name: null
   social: []
@@ -98,13 +107,35 @@ sources:
   - cost
   - first_step
   - contacts
+  - summary
 - url: https://septa.toastmastersclubs.org/
   seen: '2026-10-08'
   fields:
   - status
   - schedule
   - locations
-research_tier: 1
+  - summary
+  - online_ok
+  - cost
+  - contacts
+  - first_step
+- url: https://septa.toastmastersclubs.org/page/guestshtml/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+- url: https://septa.toastmastersclubs.org/directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step
+  - first_visit_tips
+- url: https://septa.toastmastersclubs.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

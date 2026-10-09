@@ -9,8 +9,8 @@ leads:
 ein: '264000058'
 summary: A modern dance company in Philadelphia that tells stories through movement. Students can take
   its dance classes or its summer dance intensive, and anyone can see its shows.
-what_you_do: Take a dance class or sign up for the summer dance intensive, or buy a ticket to a show.
-  Company auditions held in the spring are closed for now.
+what_you_do: Take the Monday open company class for $10, or buy a ticket to a show. Company auditions
+  are closed for now.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -36,15 +36,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Dance classes are listed on the site, but no class times are shown. The 2026 summer intensive
-    is open for registration with no dates shown. Upcoming performances include a Richmond, Virginia show
-    on Oct 14, 2026 and a FringeArts run in Philadelphia on Nov 13 and 14, 2026 at 7:30 pm.
-  days: []
-  times: []
-  recurring: null
+  text: Open company classes run every Monday from 10 to 11 am. The company also runs summer dance intensives;
+    the 2026 ones were for ages 14 to 20 and for ages 18 and up.
+  days:
+  - mon
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Company address on its site (a residential building; street not published here)
+- label: Equilibrium Dance Academy (Monday open company classes)
+  address: 1802 S. Broad Street
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Company address listed on its contact page (street not published here)
   address: null
   neighborhood: null
   planning_district: null
@@ -55,9 +65,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class and intensive prices are not shown on the site. Show tickets are sold separately.
-commitment: null
+  level: low
+  text: Monday open company classes are $10 per class, paid in cash or by Venmo on site. Show tickets
+    are sold separately.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -71,20 +82,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call or email the company to ask when the next dance class starts or how to register for the summer
-    intensive, then sign up through the site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Classes are listed and the company is open to the public, but the site gives no schedule, prices
-    or beginner information, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Go to the Monday 10 am open company class at Equilibrium Dance Academy, 1802 S. Broad Street. Sign
+    the liability form on arrival and pay $10 on site. Email the company first if you want to know the
+    class level.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The Monday classes are open to the public, need no registration, and cost $10 a class, so the
+    way in is clear. The page does not say the class level or whether beginners are welcome.
+  what_to_expect: Each open company class runs one hour, from 10 to 11 am on Mondays, at Equilibrium Dance
+    Academy on South Broad Street. You sign a liability form, pay $10 in cash or by Venmo, and take the
+    class, and the page asks everyone to arrive on time. The company does not describe the level of the
+    class, so email before your first visit if you are new to dance.
+  first_visit_tips:
+  - Arrive on time, since the page asks everyone to.
+  - Bring cash or the Venmo app for the $10 fee.
+  - Sign the liability form before you take the class.
+  - Email the company first to ask about level or beginners, because the site does not say.
 contacts:
   website: https://sharpdance.org
   email: corpdancer@yahoo.com
   phone: (215) 880-2306
-  contact_name: Diane Sharp-Nachsin
+  contact_name: Diane Sharp Nachsin, Artistic Director
   social: []
   calendar_feed: null
 status: active
@@ -120,7 +139,27 @@ sources:
   - contacts
   - status
   - locations
-research_tier: 1
+- url: https://sharpdance.org/dance-with-us/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://sharpdance.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://sharpdance.org/calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

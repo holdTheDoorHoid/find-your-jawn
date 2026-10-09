@@ -4,10 +4,11 @@ aka: []
 leads:
 - cultural_fund:spiral-q-3
 ein: null
-summary: A Philadelphia-area arts group that uses public art and community projects to bring people, neighborhoods
+summary: A Philadelphia arts group that uses public art and community projects to bring people, neighborhoods
   and causes together. It works through the year with students, neighbors and activists.
-what_you_do: Join the mailing list, contact the group to ask about projects or volunteering, or support
-  the work with donations or supplies.
+what_you_do: Take part in Peoplehood, the yearly community parade and pageant, through art builds, community
+  sessions and rehearsals. You can also ask about volunteering, fill in an interest form to join the board
+  or advisory council, or donate money or supplies.
 kind: program
 categories:
 - arts-crafts
@@ -33,17 +34,38 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No schedule is published. The site names a project called Peoplehood 2026, with no month shown.
-  days: []
-  times: []
-  recurring: false
-  season: year_round
-locations: []
+  text: Peoplehood is an annual parade and pageant, built over about six weeks of community sessions,
+    art builds and rehearsals. The parade is held on a Saturday in the fall, with a rain date a week later.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
+  season: event_only
+locations:
+- label: Spiral Q warehouse (art builds and community sessions)
+  address: 4247 Stiles Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Clark Park (community sessions and pageant)
+  address: 45th Street and Kingsessing Avenue
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated on the page.
-commitment: null
+  text: The site lists no cost to take part. Donations and supply gifts are welcome.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,15 +79,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email community@spiralq.org or call 215-222-6979 to ask how to take part, or sign up for the mailing
-    list on the site
+  how: Fill in the Peoplehood participation list form on Spiral Q's site, or email community@spiralq.org
+    or call 215-222-6979 to ask how to take part.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site invites students, neighbors and activists to get involved, but it describes no public
-    events or hours, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can fill in the participation form, and the site invites neighbors, students and activists
+    to take part. Open hours and regular events are not published, so timing depends on the project calendar.
+  what_to_expect: Peoplehood starts with community conversations and creative meetings, moves to art builds
+    where people make puppets, banners and screen prints, and ends with a parade and a pageant in a park.
+    The process runs about six weeks. The site lists no cost to take part and asks for donations and supplies.
+  first_visit_tips:
+  - Fill in the participation list form, since individuals join the list before they take part.
+  - Read the Art Build info document linked on the Peoplehood page for space, accessibility and parking
+    details.
+  - The parade starts at The Paul Robeson House, 4951 Walnut Street, and the pageant takes place in Clark
+    Park.
 contacts:
   website: https://www.spiralq.org/
   email: community@spiralq.org
@@ -75,9 +104,9 @@ contacts:
   - https://www.facebook.com/spiralq
   - https://www.instagram.com/spiralq/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.spiralq.org
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: http://www.spiralq.org/11311-2/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11
   seen: '2026-10-04'
@@ -102,8 +131,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: http://www.spiralq.org/11311-2/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - cost
+  - commitment
+  - what_you_do
+  - status
+  - last_sign_of_life
+- url: http://www.spiralq.org/who-we-are/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

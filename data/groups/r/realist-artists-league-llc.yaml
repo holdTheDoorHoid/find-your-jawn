@@ -32,9 +32,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Open studio with long pose figure and portrait: Saturdays 9 am to 4 pm, and Sundays long pose
-    figure 9 am to 4 pm'
+  text: 'Open studio runs Saturdays and Sundays, 9 am to 4 pm, with a live model in long pose figure and
+    portrait sessions. Ongoing figure and still life classes meet on weekdays in multi-week terms: figure
+    painting on Mondays and Thursdays, and still life on Tuesdays, both during the day.'
   days:
+  - mon
+  - tue
+  - thu
   - sat
   - sun
   times:
@@ -53,9 +57,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
-commitment: null
+  level: paid
+  text: Open studio is $25 for one day or $40 for both days, and card payments add a fee. Classes are
+    sold by multi-week term, starting at about $900, and figure painting also offers a $100 drop-in day.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,15 +72,22 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Bring your own art materials; the studio provides easels and tables.
 first_step:
-  how: Sign up through the Open Studio page on realistartleague.com before you come.
+  how: Contact the studio before your first open studio day (a Saturday or Sunday, 9 am to 4 pm) to get
+    parking and entry details, then pay $25 for the day.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Open studio is open to artists who contact the studio first. The page calls the space judgment-free
+    but does not say beginners are welcome. The studio's classes say all experience levels are welcome.
+  what_to_expect: Open studio is a full day, 9 am to 4 pm, built around a six-hour pose with a live model.
+    You bring your own art materials, and the studio provides easels and tables. One day costs $25, or
+    $40 for both weekend days.
+  first_visit_tips:
+  - Check the open studio page for closed weekends before you come, since some Saturdays are closed.
+  - Cash, check or Zelle avoid the card fee that applies to credit card payments.
+  - Bring your own art materials; the studio provides easels and tables.
 contacts:
   website: https://realistartleague.com
   email: studio@realistartleague.com
@@ -101,7 +113,23 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+- url: https://realistartleague.com/openstudio
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - commitment
+  - requirements.gear
+  - first_visit_tips
+- url: https://realistartleague.com/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step.basis
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

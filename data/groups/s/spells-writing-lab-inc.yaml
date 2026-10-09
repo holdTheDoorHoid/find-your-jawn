@@ -6,8 +6,9 @@ leads:
 ein: null
 summary: A Philadelphia nonprofit that helps school-age children build creative and expository writing
   skills through free writing programs, classroom visits, and workshops for teachers.
-what_you_do: Apply online to volunteer as a classroom writing mentor, a Write Club tutor, or a workshop
-  helper, then attend an orientation. You can also register for a workshop or ask for a classroom visit.
+what_you_do: Apply online to volunteer as a classroom writing mentor, a Write Club tutor (no teaching
+  experience needed), or a workshop helper, then attend an orientation. You can also register for a workshop
+  or ask for a classroom visit.
 kind: nonprofit
 categories:
 - books-writing
@@ -35,15 +36,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer orientations are held on weeknights in Center City, with one planned on Drexel University's
-    campus; dates are announced on the site. Workshops are listed on the registration page.
-  days: []
+  text: Write Club workshops run live online on Tuesdays and Thursdays at 11 am during the school year.
+    Free workshops run on many weekend afternoons during the school year at the lab and at pop-up sites.
+    Classroom mentors work in schools during the day, and volunteer orientations are usually on weeknights
+    in Center City.
+  days:
+  - tue
+  - thu
   times:
-  - evening
-  recurring: false
+  - daytime
+  recurring: true
   season: year_round
 locations:
-- label: Center City (volunteer orientations)
+- label: Spells office (second floor)
+  address: 1417 N 2nd Street, Suite 22B
+  neighborhood: null
+  planning_district: null
+  zip: '19122'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Volunteer orientations (weeknights, usually Center City)
   address: null
   neighborhood: null
   planning_district: null
@@ -52,16 +66,19 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: free
-  text: Volunteering and workshop programs are listed as free
+  text: The Write Club and the workshops are free for students. The site lists no cost to volunteers.
 commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: the Market-Frankford Line to Girard station, about 3.5 blocks away, and the Route
+    15 trolley to Girard Avenue and 2nd Street, about 2.5 blocks away. Buses 57 and 5 also serve the area.
+    The office is on the second floor, and visitors use a callbox to be buzzed up. The site does not mention
+    an elevator or a step-free entrance.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,17 +87,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Submit the online volunteer application on phillyspells.org, then attend the next orientation
+  how: Submit the online volunteer application on phillyspells.org, linked as Volunteer Now, then attend
+    the next orientation once a date is posted.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Orientations are open and the online form is simple, though volunteers must apply and attend
-    an orientation first.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Write Club tutor page says no teaching experience is required, offers tutor training, and
+    pairs newcomers with experienced tutors. Orientation dates are not posted yet, so the next step has
+    no date.
+  what_to_expect: Tutors guide young writers through creative and expository forms, with training first
+    and a buddy system for newcomers. The Write Club runs live online on Tuesdays and Thursdays at 11
+    am and is free for students, while classroom mentors travel to schools to lead workshops in person.
+    The site sets no minimum time commitment for tutors, but orientation comes first.
+  first_visit_tips:
+  - Watch the site's news and events pages for the next orientation date, since none is posted now.
+  - Expect an online application first, and the site does not say whether you need a background check.
+  - Orientations are usually on weeknights in Center City, with one planned on Drexel University's campus.
+  - Classroom mentors work in schools during the day, and the site says daytime availability is wanted.
 contacts:
   website: http://www.phillyspells.org
-  email: null
+  email: write@phillyspells.org
   phone: null
   contact_name: null
   social:
@@ -109,7 +135,36 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: http://www.phillyspells.org/volunteer/classroom/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: http://www.phillyspells.org/volunteer/tutors/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - commitment
+  - requirements
+- url: http://www.phillyspells.org/directions
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+- url: http://www.phillyspells.org/programs/writeclub/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - online_ok
+- url: http://www.phillyspells.org/programs/workshops/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

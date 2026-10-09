@@ -1,0 +1,300 @@
+{
+ "wave": "w20c-tier1-irs-web",
+ "agent": "w20c-32",
+ "lane": "A",
+ "model": "haiku",
+ "searches_used": 2,
+ "fetches_used": 28,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "https://1v1p.net",
+   "status": null,
+   "note": "Unreachable: TLS certificate names a different host (both http and https)"
+  },
+  {
+   "url": "https://iaamaqueen.godaddysites.com",
+   "status": 404,
+   "note": "Page not found"
+  },
+  {
+   "url": "https://www.ryanfamilyhope.com",
+   "status": 404,
+   "note": "Page not found (also 404 without www)"
+  },
+  {
+   "url": "https://phillyrj.org",
+   "status": null,
+   "note": "Unreachable: DNS lookup fails (also for www.phillyrj.org)"
+  },
+  {
+   "url": "https://nsaed.org",
+   "status": null,
+   "note": "Unreachable: DNS lookup fails (also for www.nsaed.org)"
+  },
+  {
+   "url": "https://www.morepassplus.com/ways-to-help",
+   "status": 404,
+   "note": "Page not found"
+  }
+ ],
+ "notes": "Budget: both WebSearch calls used (on the Racial Justice Organizing Committee and the Center for Civic Leadership and Change); no further searches. 28 fetches used. Verdicts: 12 publish (8 of these are unknown and held back because nothing was found beyond IRS data, 4 are publish with low confidence), 3 out_of_area (Lotus, CSEIA, Umbrella of Ukrainian Hope), 0 hide, 0 not_a_group, 0 duplicate. Groups with no working website (Love Is the Key, Mama Sophia, Strong Families, Queens United, Ryan Family Hope, One Vision One Purpose, Racial Justice Organizing Committee, Center for Civic Leadership and Change) were checked on ProPublica by EIN as a public IRS source; most IRS summaries have no mission text. Two of these (Racial Justice Organizing Committee and Center for Civic Leadership and Change) were the only ones that got a web search. Several candidates (Mama Sophia, Love Is the Key, Strong Families, Queens United, Ryan Family Hope, One Vision One Purpose) got no search because the budget was spent. Fix next: a person could check Racial Justice Organizing Committee, Center for Civic Leadership and Change, and the four unknown IRS groups by hand. Owner decisions needed: whether CSEIA and Umbrella of Ukrainian Hope should count as out of area, and whether PCDC of Alliances and More Pass Plus should go live without a stated Philadelphia service area.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:834337271",
+     "irs_bmf:834337271"
+    ],
+    "group_id": "love-is-the-key-corporation",
+    "ein": "834337271",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Love Is the Key Corporation",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/834337271",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds 'www.;oveisthekeyorg.weebly.com', which is not a valid address (stray semicolon), so no website was used. ProPublica lists a Philadelphia address and one 2019 Form 990-EZ showing no revenue or expenses. No program description found. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:844256431",
+     "irs_bmf:844256431"
+    ],
+    "group_id": "mama-sophia",
+    "ein": "844256431",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Mama Sophia",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/844256431",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds a name ('Mama Sophia Inc.'), not a web address, so no website was used. ProPublica lists a Philadelphia address, a 501(c)(3) status, and a FY2024 Form 990-EZ filed in November 2025 showing contributions and no expenses. No program description found. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:465690303",
+     "irs_bmf:465690303"
+    ],
+    "group_id": "one-vision-one-purpose",
+    "ein": "465690303",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "One Vision One Purpose",
+   "kind": "congregation",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/465690303",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website 1V1P.NET could not be read: its TLS certificate names a different host, over both http and https. ProPublica lists a Philadelphia address, classifies the group as a church with a Christian focus, and shows no filing data. No program description found. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:261288337",
+     "irs_bmf:261288337"
+    ],
+    "group_id": "queens-united-to-elevate-and-empower-the-next-sister",
+    "ein": "261288337",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Queens United to Elevate and Empower the Next Sister",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/261288337",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field was malformed ('https//' with no colon). The address it points to, iaamaqueen.godaddysites.com, returns a 404 error, so no website was used. ProPublica lists a Philadelphia address, a 2021 tax exemption, and no filing data. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:851851336",
+     "irs_bmf:851851336"
+    ],
+    "group_id": "racial-justice-organizing-committee",
+    "ein": "851851336",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Racial Justice Organizing Committee",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/851851336",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website phillyrj.org does not resolve (DNS lookup fails, with and without www). ProPublica lists a Philadelphia address, a December 2020 tax exemption, and no filing data. The one web search found no official site. A single independent blog post mentions the group; its claims could not be checked and are not recorded here. Owner should review before this record is considered for publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:862212986",
+     "irs_bmf:862212986"
+    ],
+    "group_id": "ryan-family-hope",
+    "ein": "862212986",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Ryan Family Hope",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/862212986",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website ryanfamilyhope.com returns a 404 error, with and without www, so no website was used. ProPublica lists a Philadelphia address, a May 2021 tax exemption, and no filing data. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:611747012",
+     "irs_bmf:611747012"
+    ],
+    "group_id": "strong-families-commission-incorporated",
+    "ein": "611747012",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Strong Families Commission",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/611747012",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website field holds a name (COMMONWEALTH CITIZENS COUNCIL INCORPORATED), not a web address, so no website was used. ProPublica lists a Philadelphia address, a 501(c)(3) status, and no filing data. It is classed as multipurpose human services with a public policy research note, which is not enough to describe what it does. No web search was run for this group because both searches went to other groups in the batch.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:471870773",
+     "irs_bmf:471870773"
+    ],
+    "group_id": "the-center-for-civic-leadership-and-change",
+    "ein": "471870773",
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "The Center for Civic Leadership and Change",
+   "kind": "nonprofit",
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/471870773",
+     "seen": "2026-10-08",
+     "fields": [
+      "name"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The website nsaed.org does not resolve (DNS lookup fails, with and without www). The IRS list gives an alternate name, Nsaeducationnetwork. The one web search for the full name found no organization by that name in Philadelphia; the results were unrelated programs at other institutions. ProPublica lists a Philadelphia address and filings for 2016 to 2024, classed as student services. A person should check this one by hand.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

@@ -4,15 +4,26 @@ aka: []
 leads:
 - penn_clubs:americanredcross
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn student group that connects the Philadelphia Red Cross with the Penn campus, mostly through
+  volunteer shifts at blood drives.
+what_you_do: Volunteers help run blood drives and other Red Cross events, and pass news between students
+  and the local chapter.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- emergency-disaster
+- health-wellness
+interests:
+- disaster_relief
+- health_outreach
+motives:
+- values
+formats:
+- team_play
+- one_off_event
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -48,11 +59,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join the club's volunteer GroupMe or its email list, both linked on the club's page. The listing
+    says an application is required but does not describe it.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The listing says an application is required, and the process is not described.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -60,19 +72,29 @@ contacts:
   email: upenn.redcross@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/PennRedCross
+  - https://instagram.com/PennAmericanRedCross/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubs.com/api/clubs/americanredcross/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/americanredcross/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -4,15 +4,25 @@ aka: []
 leads:
 - penn_clubs:snugs
 ein: null
-summary: null
-what_you_do: null
+summary: A Penn student chapter of a national nonprofit that teaches one-on-one swim lessons to kids with
+  special needs, free of charge.
+what_you_do: Volunteers teach one-on-one swim lessons at the Penn pool. Students apply to volunteer first.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- water-rowing
+- sports-teams
+interests:
+- swimming
+- adaptive_sports
+motives:
+- values
+formats:
+- side_by_side
+roles:
+- help_teach
+- hands_on
+crowd:
+- kids
 bridging: null
 audience:
   open_to: students
@@ -30,19 +40,19 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Address
-  address: UPenn Pottruck Center Sheerr Pool
+- label: Sheerr Pool at the Pottruck Center, Penn
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free lessons for participants
 commitment: null
 group_size: null
 access:
@@ -57,23 +67,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the chapter to say you want to volunteer. The listing says an application is required, and
+    the chapter will send details.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The listing says an application is required, and no audition is mentioned.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: http://www.snugsnational.org
   email: penn@snugsnational.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/snugsatpenn/
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: http://www.snugsnational.org
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +93,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/snugs/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - locations
+  - contacts
+  - first_step
+  - status
+- url: http://www.snugsnational.org
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

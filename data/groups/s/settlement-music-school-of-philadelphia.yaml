@@ -34,25 +34,65 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Adult classes and ensembles run through the year. The adult page does not list days or times.
+  text: Adult classes run 10 to 16 weeks at a time, and ensembles run through the school year. The adult
+    class pages do not list days or times, and staff match you to a class at a registration appointment.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Several branches, including Germantown, Wynnefield and Kardon Northeast
-  address: null
+- label: Mary Louise Curtis Branch (group piano meets in the Helen Eaton Keyboard Lab)
+  address: 416 Queen St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19147'
   lat: null
   lng: null
   in_city: true
   transit: null
+- label: Benoliel-Germantown Branch
+  address: 6128 Germantown Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Kardon-Northeast Branch
+  address: 3745 Clarendon Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19114'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Wynnefield Branch
+  address: 4910 Wynnefield Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19131'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Willow Grove Branch (outside Philadelphia)
+  address: 318 Davisville Road, Willow Grove
+  neighborhood: null
+  planning_district: null
+  zip: '19090'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: true
 cost:
   level: paid
-  text: Tuition is charged. The site has a Financial Aid link, but the adult page does not list amounts.
+  text: Tuition is charged. Adult classes are listed at $330 for 10 weeks (intro piano and guitar), $630
+    for 16 weeks (group piano), and $265 for 10 weeks (musicianship). Individual lessons are $45 for a
+    half hour, $67.50 for 45 minutes, or $90 for an hour, each week. The registration fee is $65 for one
+    person or $95 for a family, and it is not refundable.
 commitment: null
 group_size: null
 access:
@@ -67,23 +107,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-320-2601 or use the site's contact page to ask about adult classes and financial aid
+  how: Fill out the inquiry form on the site or call 215-320-2601. A branch staff member will set a phone
+    or video appointment, then a registration appointment to recommend a class and sign you up.
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says it welcomes all ages and skill levels, from beginners to established musicians,
-    and lists a phone line
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The adult page says the school welcomes all ages and skill levels, from beginners up, and the
+    enrollment page lays out a clear way to start.
+  what_to_expect: You start with a phone or video call with a branch staff member about your interests
+    and goals. At a registration appointment, staff suggest a class, teacher, or program, and you pay
+    the registration fee and first payment to enroll. Group classes are paid as a deposit and installments
+    through the school year.
+  first_visit_tips:
+  - Think about your goals and the instrument or style you want before the first call.
+  - 'Have a payment method ready: the school takes cash, check, Visa, MasterCard, and debit cards.'
+  - Check the hours for the branch you choose, since each branch keeps its own schedule.
 contacts:
   website: https://settlementmusic.org
-  email: null
+  email: info@settlementmusic.org
   phone: 215-320-2601
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-05
 sign_of_life_url: https://settlementmusic.org/music/adults/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -104,8 +151,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - last_sign_of_life
+- url: https://settlementmusic.org/music/adults/classes/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - locations
+- url: https://settlementmusic.org/get-started/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://settlementmusic.org/get-started/tuition-fees/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+  - what_to_expect
+- url: https://settlementmusic.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -34,13 +34,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Pop-up classes; the site does not publish a fixed weekly schedule
+  text: Pop-up classes with no fixed weekly schedule. Dates are posted one class at a time on the Next
+    Class page.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Pop-up class location (not published)
+- label: Pop-up park or court (changes by class)
   address: null
   neighborhood: null
   planning_district: null
@@ -51,30 +52,41 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: No class fee is listed. The site invites donations through its fundraising page.
+  level: low
+  text: Suggested donation of $10 to $15 per class. No one is turned away for lack of funds. Donations
+    go through the group's fundraising page or its Ko-fi page.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The Next Class page lists a barrier-free entrance and space, an accessible restroom, bench seating
+    with demonstrations from a seat, and water. Classes are held on grass. Classes are pop-ups, so check
+    the Next Class page for each class's location.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: A mask is required, and the group has a limited supply to share. Wear comfortable athletic clothes.
 first_step:
-  how: Register for the next class through the fundraising page linked from queerobics.com, or email queerobics@gmail.com
-    with questions.
+  how: Read the Next Class page on queerobics.com for the date and park, then email queerobics@gmail.com
+    to ask how to sign up before you come.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Open to the public, with seated and low-impact options and an email contact. The Next Class page
+    does not say beginners are welcome and does not spell out how to register.
+  what_to_expect: The class is an accessibility-centered dance and movement class held outdoors in parks
+    or on courts. Dance captains show moves live beside the lead instructor and offer low-impact and seated
+    options. Masks are required, and the suggested donation is $10 to $15, with no one turned away for
+    lack of funds.
+  first_visit_tips:
+  - Bring a mask if you can, because the group has only a limited supply.
+  - Wear comfortable athletic clothes, like the instructors in the group's flyers.
+  - Water is available at class.
+  - Check the Next Class page for the location before you go, since each class is a pop-up.
 contacts:
   website: https://www.queerobics.com/
   email: queerobics@gmail.com
@@ -84,8 +96,8 @@ contacts:
   - https://www.instagram.com/queerobics_west_philly
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-05
-sign_of_life_url: https://www.queerobics.com/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.queerobics.com/next-class
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=10
   seen: '2026-10-04'
@@ -100,7 +112,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - first_step.how
+  - first_step.basis
+  - access.wheelchair
+  - requirements.gear
+  - cost
+- url: https://www.queerobics.com/next-class
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - access.notes
+  - first_step.what_to_expect
+  - first_visit_tips
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

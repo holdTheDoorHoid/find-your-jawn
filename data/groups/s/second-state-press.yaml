@@ -6,9 +6,10 @@ leads:
 - irs_bmf:272829297
 ein: '272829297'
 summary: A nonprofit printmaking studio in Philadelphia that teaches hand printing methods, from stone
-  lithography to screen printing, and lets members use the studio.
-what_you_do: Sign up for a printmaking workshop (beginners and experienced printers both welcome), become
-  a studio member, or come to the exhibitions and Second Thursday events.
+  lithography to screen printing, and lets artist members rent studio time. It also holds exhibitions
+  and Second Thursday events.
+what_you_do: Take an intro or beginner printmaking class, become an artist member and use the studio,
+  or come to the exhibitions and Second Thursday events.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -34,15 +35,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workshops are listed by date through early November, such as an intro to riso printing on October
-    11 and a color woodcut workshop on October 17 to 18. The workshop listings do not show a year. Second
-    Thursday events and exhibitions are listed by date.
-  days: []
-  times: []
+  text: The studio is open Wednesday to Friday 12 to 8 pm and Saturday and Sunday 10 am to 6 pm, and is
+    closed Monday and Tuesday. Classes are posted as dated listings, and the studio also holds Second
+    Thursday events and exhibitions.
+  days:
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
+  - evening
   recurring: true
   season: fall
 locations:
-- label: Studio
+- label: Studio, Crane Arts Building
   address: 1400 North American St, Suite B103
   neighborhood: null
   planning_district: null
@@ -54,7 +62,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Prices were not in the visible page content. Check each workshop listing.
+  text: Each class has its own price, which the class list does not show. Artist membership is $50 a year
+    and is needed for studio access, and a Supporter membership is $100 a year.
 commitment: null
 group_size: null
 access:
@@ -69,24 +78,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for an intro workshop on the studio site, such as the intro to riso printing on October
-    11, or come to a Second Thursday to see the studio.
-  drop_in: null
-  sign_up_needed: null
+  how: Register for an intro class from the printmaking classes page, such as Intro to Riso Printing (listed
+    for Oct 11, 2026).
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says beginners are welcome and lists intro workshops with dates.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Many classes are tagged beginner-friendly or labeled intro, and each class has its own page with
+    a link to sign up.
+  what_to_expect: Intro classes are short, usually a single session of about 2.5 to 5 hours, and teach
+    the basics of one method such as riso, screen printing, lino or letterpress. The class list does not
+    show prices, so check each class page before you sign up. The studio is in the Crane Arts Building,
+    and the site gives no parking or transit details.
+  first_visit_tips:
+  - Riso printing on your own needs an Intro to Riso class or relevant riso experience, so take that class
+    first.
+  - The studio is self-guided and members are expected to know their own process, so an intro class helps
+    before you rent studio time alone.
+  - Several earlier listings are marked sold out, so check the class page for open spots before you travel.
+  - Parking and transit are not on the site, so check directions to the Crane Arts Building before you
+    go.
 contacts:
-  website: http://www.secondstatepress.org
-  email: null
-  phone: null
+  website: https://secondstatepress.org/
+  email: info@secondstatepress.org
+  phone: 215-232-2120
   contact_name: Emma Flick
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: http://www.secondstatepress.org
+sign_of_life_url: https://secondstatepress.org/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=10
   seen: '2026-10-04'
@@ -110,8 +130,24 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.secondstatepress.org/classes
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+- url: https://secondstatepress.org/about-membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://secondstatepress.org/facilities
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - contacts
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

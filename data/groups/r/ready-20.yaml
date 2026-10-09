@@ -4,15 +4,23 @@ aka: []
 leads:
 - penn_clubs:first-love-phily
 ein: null
-summary: null
-what_you_do: null
+summary: A Christian student group for young adults who want to grow in faith together. It is linked to
+  First Love Center.
+what_you_do: Come to the weekly meeting, bring a friend, and take part in the group's activities.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
+categories:
+- faith-community
+interests:
+- faith_youth_programs
+motives:
+- values
+- social
+formats:
+- conversation
 roles: []
-crowd: []
+crowd:
+- students
+- young_adults
 bridging: null
 audience:
   open_to: students
@@ -24,20 +32,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Weekly meeting. The listing gives no day or time.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: Harnwell College House
+- label: Harnwell College House (Penn campus)
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: true
   transit: null
 online_ok: null
 cost:
@@ -57,11 +65,12 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Attend the weekly meeting, then ask the group how to apply. The listing says an application is
+    required.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The listing says an application is required, so the way in is not fully open.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -69,11 +78,13 @@ contacts:
   email: ready20penn@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/flc_philly
+  - https://youtube.com/@firstlovephiladelphia
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennclubs.com/api/clubs/first-love-phily/?format=json
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +92,17 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/first-love-phily/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - contacts
+  - first_step
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

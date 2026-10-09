@@ -1,18 +1,27 @@
 id: reach-a-peer-helpline
-name: Reach-A-Peer Helpline
-aka: []
+name: Reach-A-Peer Helpline (RAP-Line)
+aka:
+- Reach-A-Peer Helpline
 leads:
 - penn_clubs:rapline
 ein: null
-summary: null
-what_you_do: null
+summary: Trained Penn student volunteers who take calls and texts from fellow students. The help is free,
+  anonymous and confidential.
+what_you_do: Volunteers listen, share information, and point people to other help. They are peers, not
+  professional counselors. A training class for new volunteers is recruiting for fall 2026.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- health-wellness
+interests:
+- mental_health_awareness
+motives:
+- values
+formats:
+- conversation
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,16 +33,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Phone line nightly from 9 pm to 1 am. Text line open 24/7.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - night
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free
 commitment: null
 group_size: null
 access:
@@ -48,31 +65,48 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Apply through the form linked on the club's page for the fall 2026 training class. Questions go
+    to the training email on the page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Volunteers join through an application to the training class.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://pennrapline.wixsite.com/talk
   email: presidents.rapline@gmail.com
-  phone: null
+  phone: 215-573-2727
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/RAPLine/
+  - https://instagram.com/penn.rapline/
+  - https://twitter.com/penn_rapline
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://pennrapline.wixsite.com/talk
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/rapline/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - status
+  - contacts
+- url: https://pennrapline.wixsite.com/talk
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

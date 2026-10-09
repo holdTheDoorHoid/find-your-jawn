@@ -3,10 +3,11 @@ name: South Philly Striders Running Club
 aka: []
 leads: []
 ein: null
-summary: A running club for South Philadelphia, Penn's Landing, Old City and Queen Village. Its best known
-  event is an annual holiday lights run that ends with a stop at a bar.
-what_you_do: Join the holiday lights run in December with runners of all paces, then go to the bar afterward
-  with the group.
+summary: A free running club for South Philadelphia and nearby neighborhoods such as Queen Village, Old
+  City and Society Hill. Runners of all abilities meet for weekday morning and Saturday runs, and each
+  December the club joins a holiday lights run that ends at a brewery.
+what_you_do: Show up at a scheduled run, such as the Tuesday or Thursday 6:15 am or Saturday 8 am runs
+  from Front and South Streets, or join the December holiday lights run and the gathering at its finish.
 kind: club
 categories:
 - running-cycling-fitness
@@ -31,16 +32,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Annual holiday lights run in December. The site lists a Thursday run at 7 pm from Marconi Plaza,
-    at Broad Street and Oregon Avenue. Regular run times are not listed.
+  text: 'Regular runs: Tuesday and Thursday at 6:15 am and Saturday at 8 am, all leaving Front and South
+    Streets. Wednesday at 6:30 pm from 6th and Race Streets. The December holiday lights run starts at
+    7 pm from Marconi Plaza each year.'
   days:
+  - tue
+  - wed
   - thu
+  - sat
   times:
+  - morning
   - evening
   recurring: true
-  season: event_only
+  season: year_round
 locations:
-- label: Marconi Plaza, Broad Street and Oregon Avenue
+- label: Front and South Streets (Tuesday, Thursday and Saturday runs)
   address: null
   neighborhood: null
   planning_district: null
@@ -49,11 +55,29 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: 6th and Race Streets (Wednesday run)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Marconi Plaza, Broad Street and Oregon Avenue (holiday lights run start)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
-  level: null
-  text: Not stated on the site
-commitment: null
+  level: free
+  text: There is no membership fee or dues. The site lists no cost for the regular runs.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -67,24 +91,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the holiday lights run; the site says all paces are welcome. Follow the club's Facebook
-    group for news.
-  drop_in: null
+  how: Show up at a Tuesday or Thursday 6:15 am, Wednesday 6:30 pm, or Saturday 8 am run, or email the
+    club or message its Facebook group with questions first.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The holiday run welcomes all paces, but the site lists no regular runs or sign up steps.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The about page says newcomers are always welcome, there are no fees, and you can show up at a
+    scheduled run. The holiday run page says all paces are welcome.
+  what_to_expect: Typical weekday morning runs cover 2 to 7 miles, and Saturday runs range from 3 to 10
+    or more miles, according to the about page. Runners of all abilities are welcome, and there is no
+    fee to join. The site names no pace groups or leaders, so ask in the Facebook group which run suits
+    your pace before you come.
+  first_visit_tips:
+  - Meet at Front and South Streets for the morning runs, which the club lists as the start point.
+  - Check the club's Facebook group for news on runs, since the site says other runs are posted there
+    and on Instagram.
+  - For the December holiday run, bring your ID and cross streets only on green lights, as the club asks.
 contacts:
   website: https://southphillystriders.com
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/groups/southphillystriders/
   calendar_feed: null
 status: active
 last_sign_of_life: 2025-11
-sign_of_life_url: https://southphillystriders.com
+sign_of_life_url: https://www.southphillystriders.com/2025/11/18th-annual-sps-fbr-holiday-lights-run-december-11-at-dock-street-brewery-south/
 sources:
 - url: https://southphillystriders.com
   seen: '2026-10-08'
@@ -93,7 +126,23 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+  - cost
+  - locations
+  - contacts
+- url: https://southphillystriders.com/runs/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - commitment
+- url: https://southphillystriders.com/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

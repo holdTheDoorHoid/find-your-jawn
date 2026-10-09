@@ -36,8 +36,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Weekly runs: Mondays at 7 pm from the Center of Rittenhouse Square, Wednesdays at 6 pm from Philadelphia
-    Runner in Manayunk, and Thursdays at 6 am from the southwest corner of Love Park'
+  text: 'Weekly runs: Mondays at 7 pm from the center of Rittenhouse Square (3 miles), Wednesdays at 6
+    pm from Philadelphia Runner in Manayunk (3 miles), and Thursdays at 6 am from the southwest corner
+    of Love Park (4 miles). Runs stop halfway for stretching and conversation, and they go on year round
+    except in severe weather, when cancellations are posted on the site.'
   days:
   - mon
   - wed
@@ -46,7 +48,7 @@ schedule:
   - morning
   - evening
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: Center of Rittenhouse Square
   address: null
@@ -78,7 +80,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free
+  text: Free. Donations are optional and go through the group's support page.
 commitment: drop_in
 group_size: null
 access:
@@ -93,13 +95,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Show up at a meeting point on a run night. The site also has a Heylo invite link.
+  how: Go to the meeting spot for one weekly run, such as Monday at 7 pm at the center of Rittenhouse
+    Square. You can email contact@queerrun.net with questions before you go.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: All runs are free and open to all paces, and the site invites people to just show up.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says all runners are welcome whatever their background or experience, runs are open
+    to all paces, and each run has a named meeting spot and time.
+  what_to_expect: Runs are free and go on year round except in severe weather. Each run is 3 or 4 miles
+    at your own pace, with a stop halfway for stretching and conversation. Runners are not compared with
+    one another, and the group puts care for each other first.
+  first_visit_tips:
+  - Check the site for cancellations before you go, since runs are cancelled in severe weather and the
+    cancellations are posted on the site.
+  - 'Meet at the spot listed for your run: the center of Rittenhouse Square, Philadelphia Runner in Manayunk,
+    or the southwest corner of Love Park.'
+  - The site does not say what to bring or wear, so email contact@queerrun.net if you are unsure.
 contacts:
   website: https://queerrun.net
   email: contact@queerrun.net
@@ -136,7 +147,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://queerrun.net/runs-and-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step.how
+- url: https://queerrun.net/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step.newcomer_friendliness
+  - first_step.basis
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

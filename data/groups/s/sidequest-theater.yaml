@@ -3,9 +3,10 @@ name: SideQuest Theater
 aka: []
 leads: []
 ein: null
-summary: An improv theater near Rittenhouse Square that offers beginner workshops and improv classes and
-  puts on its own shows, including a show running October 2 to 25, 2026.
-what_you_do: Take a beginner workshop or an improv class, or come see the theater's own shows.
+summary: An improv theater near Rittenhouse Square that offers a free intro workshop, eight-week improv
+  classes from beginner to advanced, and its own shows.
+what_you_do: Take the free intro workshop, sign up for an eight-week improv class, or come see one of
+  the theater's own shows.
 kind: program
 categories:
 - theater-dance-performance
@@ -18,7 +19,8 @@ formats:
 - learn_skill
 roles:
 - create
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -30,11 +32,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Beginner workshops and improv classes are offered, but the site does not list class days or times.
-    Camp Dread runs October 2 to 25, 2026.
-  days: []
-  times: []
-  recurring: null
+  text: Improv series run eight weeks, on Monday and Thursday evenings from 7 to 9:30 pm, and each series
+    ends with a student performance for friends and family.
+  days:
+  - mon
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: The Adrienne Theater
@@ -48,14 +53,16 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class prices are not listed. Show tickets are sold through CrowdWork.
+  level: paid
+  text: Improv series are $399 for eight weeks. The free intro workshop costs nothing. Show tickets are
+    sold separately.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA stop, per the theater''s FAQ: the 19th Street trolley station, a short walk. Bus
+    routes 9, 12, 17, 21 and 42 also stop nearby.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -64,14 +71,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact email or join the mailing list to ask about the next beginner workshop
-  drop_in: null
-  sign_up_needed: null
+  how: Register for the free 90 minute Intro to Improv workshop through the link on the classes page,
+    or ask the theater by email or phone about the next eight-week beginner class (Improv 1). Registration
+    runs through linked sites.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site lists beginner workshops and improv classes and gives a contact email and a mailing
-    list.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site labels a free 90 minute intro workshop as beginner friendly, says improv is for everyone,
+    and lists a beginner eight-week class with a clear way to register.
+  what_to_expect: 'Improv 1 is the beginner series: eight Thursday evenings from 7 to 9:30 pm, starting
+    with the basics and ending with a short two person scene. Classes are for people 18 and up unless
+    a class is marked for minors, and each series ends with a performance for friends and family. Each
+    series costs $399, so the free intro workshop is a no-cost way to try improv first.'
+  first_visit_tips:
+  - Start with the free intro workshop if you are unsure, since the site labels it beginner friendly.
+  - Buy show tickets ahead; only a limited number are sold at the door, and you can give your name at
+    the box office with no printed ticket.
+  - 'Parking: Park America (2027 Sansom St) and Patriot Parking (2102 Sansom St) are the closest lots,
+    and street parking is not guaranteed.'
+  - The theater is BYO, so you can bring your own drinks. Some shows are for adults only, so check the
+    rating on the Shows page first.
 contacts:
   website: https://sidequesttheater.com/
   email: contact@sidequesttheater.com
@@ -94,7 +113,22 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://sidequesttheater.com/classes/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+  - requirements
+- url: https://sidequesttheater.com/faq/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+  - crowd
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

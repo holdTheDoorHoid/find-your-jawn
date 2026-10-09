@@ -34,14 +34,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shows, student showings and events are listed by date on the company website. Class times were
-    not shown on the pages read.
+  text: Workshops run as short multi-day sessions. Shows and student showings are listed by date on the
+    company website, and class times are not shown on the pages read.
   days: []
   times: []
   recurring: false
   season: event_only
 locations:
-- label: Company address (from IRS and Cultural Fund records)
+- label: Company mailing address (confirmed on the contact page)
   address: 1417 N 2nd St
   neighborhood: null
   planning_district: null
@@ -68,25 +68,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look up the Pig Iron School training on the company site, or come to a public show or student showing
-    to see the work first.
+  how: Go to a student showing on the school events page to see the work first, or pick a beginner workshop
+    such as Intro to Clown from the school page and use its apply link.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Shows and student showings are open to the public and listed by date; the way into the school
-    was not spelled out on the pages read.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Workshops are open to the public with a learn more and apply link, and the company lists beginner
+    classes, but the pages read do not give prices, age rules or the steps after applying.
+  what_to_expect: Workshops are short, multi-day sessions taught by company faculty, such as Emmanuelle
+    Delpech for Intro to Clown and Neutral Mask. Classes use movement, improvised scenes and physical
+    games, so expect to move and play with others. The pages read did not give tuition, daily hours or
+    class size, so ask the school before you sign up.
+  first_visit_tips:
+  - Read the workshop description on the school page to check that it is for beginners.
+  - Ask about tuition and daily hours before you apply, since the pages do not list them.
+  - Wear clothes you can move in, since the classes are physical.
+  - Call the company at 215-425-1100 if the apply page leaves questions open.
 contacts:
   website: https://www.pigiron.org/
   email: null
-  phone: null
+  phone: 215-425-1100
   contact_name: Daniel Rothenberg
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.pigiron.org/
+sign_of_life_url: https://pigiron.org/
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=9
   seen: '2026-10-04'
@@ -110,8 +117,31 @@ sources:
   - first_step
   - status
   - locations
-research_tier: 1
-confidence: medium
+- url: https://pigiron.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+- url: https://pigiron.org/school/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+- url: https://pigiron.org/school/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://pigiron.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null
