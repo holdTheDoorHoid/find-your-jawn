@@ -8,9 +8,10 @@ leads:
 - irs_bmf:262201967
 ein: '262201967'
 summary: A Philadelphia nonprofit that teaches Bharatanatyam, a classical Indian dance, and creates and
-  performs its own productions. Its free Fall Arts Fest event is one way the public can see the work.
-what_you_do: Take an ongoing beginner, intermediate, or advanced Kalakshetra-style Bharatanatyam class,
-  join a workshop, or attend a free performance such as the Philadelphia Fall Arts Fest.
+  performs its own productions. It offers classes at three levels and workshops for children, families
+  and adults.
+what_you_do: Take an ongoing beginner, intermediate or advanced Kalakshetra-style Bharatanatyam class,
+  book a workshop, or attend a free public performance such as the Philadelphia Fall Arts Fest.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -38,14 +39,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Ongoing classes at three levels; class days and times are not listed on the site. Philadelphia
-    Fall Arts Fest on September 19, 11 am to 3 pm, at the Kimmel Center (the page does not print the year).
+  text: Ongoing Bharatanatyam classes at beginner, intermediate and advanced levels. Class days and times
+    are not published, so ask for the current schedule.
   days: []
   times: []
   recurring: true
-  season: null
+  season: year_round
 locations:
-- label: Philadelphia (street address not published on the site)
+- label: Philadelphia studio (street address not published)
   address: null
   neighborhood: null
   planning_district: null
@@ -57,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Class fees are not listed. The Fall Arts Fest is free.
+  text: Class fees are not published on the site. Ask when you get in touch.
 commitment: null
 group_size: null
 access:
@@ -69,28 +70,35 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the contact form at usiloquydance.org/contact to ask about the next beginner Kalakshetra-style
-    class, or join the mailing list for workshop news.
+  how: Email shaily@usiloquydance.org or call 267-324-5917 to ask about the next beginner class. You can
+    also book a workshop with the Book a Workshop button on the Repertoire and Workshops page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Beginner classes are offered, and the site has a clear way in through its contact form and mailing
-    list.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Beginner classes are offered, and the site gives an email, a phone number and a contact page
+    to ask. Class times, fees and the studio address are not published, so you need to ask before you
+    plan a first visit.
+  what_to_expect: 'Classes use the Kalakshetra style and run at beginner, intermediate and advanced levels.
+    The site does not say how long a class lasts, what it costs, or whether a trial class is offered,
+    so ask those questions first. Workshops are another way in: an introduction for children ages 7 to
+    12, a technique session for adults, and a family workshop for mixed ages.'
+  first_visit_tips:
+  - Ask for the studio address and class times, since neither is published.
+  - Ask whether a trial class is offered; the site does not say.
+  - Watch the events page for free public performances, which the group lists by date.
 contacts:
   website: https://usiloquydance.org/
-  email: null
-  phone: null
+  email: shaily@usiloquydance.org
+  phone: 267-324-5917
   contact_name: Shaily Dadiala
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://usiloquydance.org/
+sign_of_life_url: https://www.ensembleartsphilly.org/tickets-and-events/free-events/free-philadelphia-fall-arts-fest
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=13
   seen: '2026-10-04'
@@ -124,7 +132,29 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://usiloquydance.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://usiloquydance.org/contact-usiloquy/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - locations
+- url: https://usiloquydance.org/repertoire
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+- url: https://www.ensembleartsphilly.org/tickets-and-events/free-events/free-philadelphia-fall-arts-fest
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

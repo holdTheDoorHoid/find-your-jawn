@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Mondays 3 to 5 pm food share. Thursdays 3 to 4 pm food distro. Second Saturday 9 am to noon free
-    market.
+  text: Food share every Monday from 3 to 5 pm, food distro every Thursday from 3 to 4 pm, and a free
+    market on the second Saturday from 9 am to noon.
   days:
   - mon
   - thu
@@ -73,20 +73,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come on a posted food share, distro or free market day. The fridge's Instagram is the only direct
-    contact listed.
+  how: Come to the Monday food share, the Thursday food distro, or the second Saturday free market during
+    the posted hours. The site lists no sign-up, and the only direct contact is the fridge's Instagram
+    page.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Serves neighbors on posted days and lists no eligibility rules
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The page says the fridge serves neighbors on posted days and lists no eligibility rules or sign-up,
+    so the way in is clear.
+  what_to_expect: 'The fridge runs on posted days only: a food share on Monday afternoons, a food distro
+    on Thursday afternoons, and a free market on the second Saturday morning. Stock comes from leftovers
+    from the food distro, other food shares and neighbor donations. The site does not say what to bring
+    or how visits run.'
+  first_visit_tips:
+  - Come only during the posted hours, since the site lists no other times.
+  - The site does not say what to bring, so ask the fridge's Instagram page before your first visit if
+    you need to know.
 contacts:
   website: https://lavazone.org/programs/the-ronnie-vega-memorial-peoples-fridge-2/
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/ronnievegafridge/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: 2025-09
@@ -99,11 +108,23 @@ sources:
   - locations
   - summary
   - what_you_do
+  - cost
+  - first_step
 - url: https://philly.citycast.fm/food-drink/where-to-find-community-fridges-in-philly
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://lavazone.org/updates/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://lavazone.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

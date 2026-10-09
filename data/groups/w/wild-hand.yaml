@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fiber Folk Night every Wednesday from 5 to 7 pm, free. Classes are listed on the site for October
-    and November, with some sessions for kids.
+  text: Fiber Folk Night every Wednesday from 5 to 7 pm, free. The shop also lists beginner classes in
+    knitting, crochet, weaving and spinning, and some are for kids.
   days:
   - wed
   times:
@@ -54,30 +54,41 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Fiber Folk Night is free. Classes cost about $10 for community basics and up to $350 for multi
-    day retreats.
+  text: Fiber Folk Night is free. Single classes run from about $10 for the community basics up to $100,
+    and two day retreats cost $350.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'The shop is wheelchair accessible, but its own restroom is not. The neighboring High Point Cafe
+    has an accessible restroom that customers may use. Nearest SEPTA: the Chestnut Hill West Regional
+    Rail line, at the Upsal or Carpenter Lane stop, about a 10 minute walk.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Bring your own fiber project to Fiber Folk Night.
 first_step:
-  how: Come to Fiber Folk Night, or sign up for a listed beginner class on the shop site
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Free weekly night and beginner classes are listed, though the page does not say how to sign up
-    for the night.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to Fiber Folk Night on a Wednesday from 5 to 7 pm at 606 Carpenter Lane, bringing a project
+    to work on. For a class, open the class page from the Workshops list on the shop's site and sign up
+    there.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: Fiber Folk Night is free, walk-ins are fine, and the page says first timers and people still
+    learning are welcome. Beginner classes are also listed, but the site does not describe a separate
+    newcomer program.
+  what_to_expect: Fiber Folk Night is a weekly, free evening where people bring their own fiber project
+    and work on it alongside others, from knitting and crochet to spinning. Everyone is welcome at any
+    skill level, and you can walk in without signing up. The page does not say whether tables and seating
+    are provided.
+  first_visit_tips:
+  - Bring a project you can work on, since the page asks visitors to bring one.
+  - There is no lot, but free street parking is usually within one block.
+  - Check the shop's email and social media for last minute changes.
 contacts:
   website: https://wild-hand.com/
   email: hi@wild-hand.com
@@ -99,7 +110,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - access
+- url: https://wild-hand.com/products/fiber-folk-night
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+  - requirements
+- url: https://wild-hand.com/pages/about
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://wild-hand.com/collections/workshops
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

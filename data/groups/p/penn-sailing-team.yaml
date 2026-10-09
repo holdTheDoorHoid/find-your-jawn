@@ -4,15 +4,24 @@ aka: []
 leads:
 - penn_clubs:penn-sailing
 ein: null
-summary: null
-what_you_do: null
+summary: Penn's competitive collegiate sailing team. It races against other colleges at weekend regattas
+  in the fall and spring and trains on the water several afternoons each week.
+what_you_do: Members train in the gym and on the water at least three days a week, and they travel for
+  weekend races during the fall and spring seasons.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- water-rowing
+interests:
+- sailing
+motives:
+- enhancement
+- social
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
@@ -24,26 +33,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practice on Tuesday, Thursday, and Friday, about 3:30 to 7:15 pm, plus weekend regattas in the
+    fall and spring seasons.
+  days:
+  - tue
+  - thu
+  - fri
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Address
-  address: Corinthian Yacht Club of Philadelphia
+- label: Corinthian Yacht Club of Philadelphia (as listed in the directory)
+  address: null
   neighborhood: null
   planning_district: null
   zip: null
   lat: null
   lng: null
-  in_city: false
+  in_city: null
   transit: null
 online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +72,27 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email the head coach (listed in the directory) to get started. The team takes new members only
+    while it has room, and only people who can commit to the full schedule.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: No experience is needed, but new members are taken only when there is room and they can commit
+    to the full season schedule.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.pennsailingteam.org/
   email: ihclark@upenn.edu
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://facebook.com/PennSailing/
+  - https://instagram.com/pennsailing/
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.pennsailingteam.org/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -81,8 +100,22 @@ sources:
   - name
   - locations
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.pennsailingteam.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://pennclubs.com/api/clubs/penn-sailing/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+  - commitment
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

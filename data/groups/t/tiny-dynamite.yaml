@@ -6,8 +6,8 @@ leads:
 - irs_990n:454035025
 - irs_bmf:454035025
 ein: '454035025'
-summary: A Philadelphia theatre company that makes plays at modest ticket prices in a relaxed, social
-  setting. Its shows include pub-style nights with food and drink, and volunteers can usher at shows.
+summary: A Philadelphia theatre company that stages one-hour plays for modest ticket prices in small Center
+  City venues. Volunteers can usher at shows and see them for free.
 what_you_do: Fill in the volunteer form on the site to join the usher list. Ushers see the show for free
   and get pizza and a drink. You can also buy a ticket to a show or come to a special party.
 kind: nonprofit
@@ -35,9 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Show dates are listed on individual event pages. The events page had no dated listings when read,
-    although a 2026 Valentine's Day show and a Jane Austen birthday party appear in the site menu. The
-    10th anniversary fundraiser has no date.
+  text: Show dates are posted one at a time on the events page. Ushers are called when a spot opens.
   days: []
   times: []
   recurring: null
@@ -52,11 +50,38 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: 'Show venue: Good Karma Cafe'
+  address: 265 Broad Street
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: 'Show venue: The Drake Theatre lobby'
+  address: 302 S Hicks Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: 'Show venue: The Racquet Club of Philadelphia'
+  address: 215 S 16th Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: low
-  text: Tickets are at modest prices, but exact prices are not shown on the pages read. Ushers volunteer
-    for free and see the show.
+  text: Tickets are at modest prices, but the pages read did not show exact prices. Ushers see the show
+    for free.
 commitment: seasonal
 group_size: null
 access:
@@ -71,17 +96,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer form on the site to be added to the usher list, then buy a ticket to the
-    next show you want to see.
+  how: Fill in the volunteer form at tinydynamite.org/volunteer, choosing Ushering, to join the usher
+    list. Then buy a ticket to the next show you want to see.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The usher form is public and volunteers are contacted when a spot opens. No orientation is described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The usher form and ticket sales are open to anyone, but no orientation is described and the page
+    does not say how often shows run.
+  what_to_expect: Ushers see the show free and get pizza and a drink. The company describes its plays
+    as about an hour long, and the page does not say how long a shift lasts or whether ushers get training.
+  first_visit_tips:
+  - The volunteer form asks for a name, email, and phone; you hear back only when a usher spot opens.
+  - Check the Venues page for where each show is staged, since the site lists no parking or transit notes.
+  - For ticket questions, call the box office at 215-399-0088 or write to boxoffice@tinydynamite.org.
 contacts:
   website: https://tinydynamite.org
-  email: null
+  email: info@tinydynamite.org
   phone: 215-399-0088
   contact_name: Philip H Hawkins
   social: []
@@ -121,12 +151,22 @@ sources:
   - what_you_do
   - first_step
   - cost
+  - first_visit_tips
 - url: https://tinydynamite.org/events/
   seen: '2026-10-08'
   fields:
   - schedule
   - status
-research_tier: 1
+- url: https://tinydynamite.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://tinydynamite.org/venues/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

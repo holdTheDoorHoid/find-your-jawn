@@ -33,7 +33,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 2nd and 4th Wednesdays at noon
+  text: 2nd and 4th Wednesdays, noon to 1 pm, in person at the Navy Yard or online through Google Meet.
   days:
   - wed
   times:
@@ -53,8 +53,8 @@ locations:
 online_ok: true
 cost:
   level: free
-  text: Club visits are free. Dues are not shown.
-commitment: null
+  text: Visits are free. Dues are not shown on the club site or the Toastmasters listing.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -68,13 +68,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the listed number or use the club's contact form, then come in person or join online
-  drop_in: null
+  how: Use the club's online contact form to say you want to visit, then come to a noon meeting at the
+    Navy Yard or join online through Google Meet.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The listing says visits are free, guests need not speak until ready, and anyone may join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Guests are welcome at any upcoming meeting, the first meeting is free, and the Toastmasters listing
+    says there is no pressure to take part until a guest is ready.
+  what_to_expect: A meeting runs about an hour at noon. Members give prepared and impromptu speeches,
+    practice meeting roles, and give each other feedback. Guests are welcome to sit in, and a guest does
+    not have to speak until ready.
+  first_visit_tips:
+  - Enter through the leasing office, reached from Chapel Way between Constitution Avenue and Normandy
+    Place.
+  - To join online, use Google Meet; the club's directions page has the link.
+  - The club pages do not list parking or transit, so ask through the contact form before you come.
+  - Arrive a few minutes early so you can find the entrance.
 contacts:
   website: https://2886.toastmastersclubs.org/
   email: null
@@ -95,13 +104,34 @@ sources:
   - cost
   - first_step
   - contacts
+  - online_ok
+  - contacts.phone
 - url: https://2886.toastmastersclubs.org/
   seen: '2026-10-08'
   fields:
   - status
   - schedule
   - locations
-research_tier: 1
+  - summary
+  - what_you_do
+  - cost
+- url: https://2886.toastmastersclubs.org/meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://2886.toastmastersclubs.org/directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - online_ok
+  - first_step
+- url: https://2886.toastmastersclubs.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

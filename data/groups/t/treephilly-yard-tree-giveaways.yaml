@@ -4,9 +4,10 @@ aka: []
 leads:
 - city_programs:treephilly-yard-tree-giveaways
 ein: null
-summary: The City's free yard tree giveaway program looks for volunteers to help run its spring and fall
-  giveaway events.
-what_you_do: null
+summary: The City's free yard tree giveaway program gives trees to Philadelphia residents to plant at
+  home, and it needs volunteers to help run its spring and fall giveaway events.
+what_you_do: Help run a spring or fall giveaway event. The city's pages do not list the tasks volunteers
+  do.
 kind: program
 categories:
 - nature-environment
@@ -34,16 +35,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Spring and fall giveaway events
-  days: []
-  times: []
-  recurring: null
+  text: Giveaways run in the spring and in the fall, mostly on weekend mornings.
+  days:
+  - sat
+  - sun
+  times:
+  - morning
+  recurring: true
   season: null
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Trees are free, but only Philadelphia residents can take one, and it must be planted in the ground.
 commitment: one_off
 group_size: null
 access:
@@ -58,17 +62,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Email treephilly@phila.gov or call 215-683-0217 to ask about volunteering at a giveaway, or fill
+    in the volunteer form linked on the TreePhilly page for the Bartram's Garden giveaway on Sunday, Nov.
+    8, 2026.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Volunteering is open to the public by form or by email, but the city's pages describe no training
+    and no shift tasks.
   what_to_expect: null
-  first_visit_tips: []
+  first_visit_tips:
+  - Ask the TreePhilly office what volunteers do at a giveaway before you sign up.
+  - Trees go only to Philadelphia residents who register through the TreePhilly page.
 contacts:
   website: https://www.phila.gov/programs/philly-tree-plan/resources/
-  email: null
-  phone: null
+  email: treephilly@phila.gov
+  phone: 215-683-0217
   contact_name: null
   social: []
   calendar_feed: null
@@ -77,15 +86,29 @@ last_sign_of_life: 2026-09
 sign_of_life_url: https://www.phila.gov/programs/philly-tree-plan/resources/
 sources:
 - url: https://www.phila.gov/programs/philly-tree-plan/resources/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
+  - contacts
+- url: https://treephilly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - schedule
+- url: https://treephilly.org/?p=8003
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - schedule
+  - first_visit_tips
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

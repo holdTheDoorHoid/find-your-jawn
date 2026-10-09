@@ -3,9 +3,10 @@ name: West Philly Insight
 aka: []
 leads: []
 ein: null
-summary: A free weekly meditation class in West Philadelphia, open to anyone, that meets at Calvary Community
+summary: A free weekly meditation group in West Philadelphia, open to anyone, that meets at Calvary Community
   Center on Baltimore Avenue.
-what_you_do: Sit and meditate with the group in the Insight style, and take part in the weekly class.
+what_you_do: Sit with the group in the Insight style, and join the Saturday guided meditation and talk
+  or a weekday sit.
 kind: club
 categories:
 - health-wellness
@@ -31,10 +32,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly meditation classes. The days and times are on the group's schedule page, which I could
-    not read.
-  days: []
-  times: []
+  text: 'Saturdays 1 to 2 pm: guided meditation and a talk, open to all. Wednesdays: two half hour sits,
+    7 to 7:30 am and 7:35 to 8:05 am, open to all. Thursdays: two half hour sits, 7 to 7:30 pm and 7:35
+    to 8:05 pm, listed for BIPOC.'
+  days:
+  - sat
+  - wed
+  - thu
+  times:
+  - daytime
+  - morning
+  - evening
   recurring: true
   season: null
 locations:
@@ -56,7 +64,8 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The meeting room is up a flight of stairs from the Baltimore Avenue door. The page does not mention
+    an elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -65,23 +74,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email westphillyinsight@gmail.com to ask about the next class
+  how: Come to the Saturday 1 to 2 pm session at Calvary Community Center, 4740 Baltimore Ave, or email
+    the group to ask about the weekday sits.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site says the classes are open to everyone and invites newcomers, with an email for questions
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The sits are open to all and the page invites questions by email, but it does not say whether
+    you need to register first.
+  what_to_expect: 'The Saturday session runs about an hour: a guided meditation, then a talk and time
+    for questions, then tea. The weekday sits are two 30 minute sits, and you can come to one or both.
+    The classes are free, and the page lists no fee or donation.'
+  first_visit_tips:
+  - Use the red double doors on Baltimore Avenue, and look for the chalkboard sign out front.
+  - Climb the stairs on your left after the door, and the room is at the top.
+  - Cushions, blankets and yoga mats are kept in a glass cabinet in the room.
 contacts:
   website: https://www.westphillyinsight.org/
   email: westphillyinsight@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/westphillyinsight
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.westphillyinsight.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.westphillyinsight.org/new-page
 sources:
 - url: https://www.westphillyinsight.org/
   seen: '2026-10-08'
@@ -92,8 +109,24 @@ sources:
   - locations
   - first_step
   - status
-research_tier: 1
-confidence: medium
+  - contacts
+- url: https://www.westphillyinsight.org/new-page
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - access
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.westphillyinsight.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

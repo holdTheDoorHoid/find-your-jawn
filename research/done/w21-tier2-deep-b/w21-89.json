@@ -1,0 +1,419 @@
+{
+  "wave": "w21-tier2-deep-b",
+  "agent": "w21-89",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 38,
+  "records": [
+    {
+      "match": {"lead_ids": [], "group_id": "the-savoy-company", "ein": null, "website": "https://savoy.org/"},
+      "verdict": "out_of_area",
+      "name": "The Savoy Company",
+      "summary": "A nonprofit Gilbert and Sullivan company with a mailing office in Norristown. Its 2026 summer show was staged at a garden in Villanova, outside the city.",
+      "what_you_do": "Fill in the Join Savoy interest form, or come to a public performance.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater"],
+      "motives": ["social", "enhancement"],
+      "formats": ["perform_make_together"],
+      "roles": ["create", "hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Stoneleigh: A Natural Garden (2026 summer show)", "address": "1829 County Line Road, Villanova, PA", "zip": "19085", "in_city": false},
+        {"label": "Mailing address (Norristown office)", "address": "730 Astor St, Norristown, PA", "zip": "19401", "in_city": false}
+      ],
+      "contacts": {"website": "https://savoy.org/", "email": "savoy@savoy.org", "phone": "215-735-7161"},
+      "status": "active",
+      "last_sign_of_life": "2026-08",
+      "sign_of_life_url": "https://wp.natlands.org/event/savoy-stoneleigh-2026-0815/",
+      "sources": [
+        {"url": "https://savoy.org/", "seen": "2026-10-08", "fields": ["summary", "locations", "contacts", "status"]},
+        {"url": "https://savoy.org/join/", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://wp.natlands.org/event/savoy-stoneleigh-2026-0815/", "seen": "2026-10-08", "fields": ["locations", "status", "last_sign_of_life"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Verdict suggested as out_of_area for the owner to confirm. The mailing office is in Norristown, the 2026 summer show (August 15, 2026, gates at 5 pm) was at Stoneleigh in Villanova, and the savoy.org pages I could read name no Philadelphia venue or city service. The tier 1 summary said Philadelphia area and since 1901; neither appears on the pages read, so the summary was rewritten. If the owner counts regional groups, flip to publish, but first_step and schedule then need a fuller pass. Four savoy.org pages returned 404 (trial-by-jury, the-gondoliers, our-history, about), so the 2026 Gondoliers dates and venue are unknown. Joining contact on the join page is joinsavoy@gmail.com, not recorded here."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:the-stagecrafters-theater-3"], "group_id": "the-stagecrafters-theater", "ein": null, "website": "https://thestagecrafters.org/"},
+      "verdict": "publish",
+      "name": "The Stagecrafters Theater",
+      "summary": "A community theater company in Chestnut Hill that stages five shows a season. Anyone can buy tickets, audition, volunteer, or join as a member.",
+      "what_you_do": "Audition by appointment, volunteer on stage or behind the scenes with no theater experience needed, or join as a member. Tickets and season subscriptions are also sold to the public.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater"],
+      "motives": ["social", "enhancement"],
+      "formats": ["perform_make_together"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Five shows each season. Audition forms for each production are posted about one month before its auditions.",
+        "days": [],
+        "times": [],
+        "recurring": true
+      },
+      "locations": [{"label": "Theater", "address": "8130 Germantown Ave.", "zip": "19118", "in_city": true}],
+      "online_ok": false,
+      "cost": {"level": "paid", "text": "Single tickets are sold per show. A 2026 to 2027 season subscription for all five shows is $85. The site says annual membership dues cost the same as a subscription."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the Volunteer Interest Form on the volunteer page, or email the volunteer address with questions.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The volunteer page says no prior theater experience is needed and links an interest form. The audition page says the company welcomes performers of all backgrounds, abilities and experiences.",
+        "what_to_expect": "Volunteers can help with lights and sound, set building, costumes, ushering and ticketing, and marketing. For a show, you book an audition slot, email a headshot and resume, and callbacks are by invitation. The page does not say how much time a volunteer commits to.",
+        "first_visit_tips": [
+          "Watch for the audition form that goes up about a month before each show's auditions.",
+          "Email the volunteer address with questions about time commitment, since the page does not give it.",
+          "Membership asks for four meetings a year (at least two to keep voting rights) and at least one volunteer shift a year."
+        ]
+      },
+      "contacts": {"website": "https://thestagecrafters.org/", "email": "info@thestagecrafters.org", "phone": "215-247-8881"},
+      "status": "active",
+      "last_sign_of_life": "2026-08",
+      "sign_of_life_url": "https://thestagecrafters.org/auditions/",
+      "sources": [
+        {"url": "https://thestagecrafters.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "contacts", "status"]},
+        {"url": "https://thestagecrafters.org/join-us/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://thestagecrafters.org/auditions/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "schedule", "status", "last_sign_of_life"]},
+        {"url": "https://thestagecrafters.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "requirements"]},
+        {"url": "https://thestagecrafters.org/membership/", "seen": "2026-10-08", "fields": ["cost", "first_step", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Removed the dated 2026 to 27 production openings from schedule.text (one time dates). The auditions page gives 2026 and 2027 audition dates with their years; last_sign_of_life uses the August 2026 auditions. The directions and parking page returned 404, so there are no access notes. The volunteer page says high school and college students can volunteer, so the tier 1 crowd value all_adults may be too narrow; left as is for review."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:the-thread-of-culturetrust-greater-philadelphia"], "group_id": "the-thread-of-culturetrust-greater-philadelphia", "ein": null, "website": "https://www.thethreadphilly.org"},
+      "verdict": "publish",
+      "name": "The Thread",
+      "aka": ["The Thread of Culturetrust Greater Philadelphia"],
+      "summary": "A free art installation in Vernon Park in Germantown. Visitors can use a disconnected rotary phone to leave a message about grief, healing, or someone they have lost, and recordings may be kept in a project archive.",
+      "what_you_do": "Visit the rotary phone in Vernon Park, or call the story line to leave a story for the archive or a message for someone you have lost. The site also has an email news sign-up.",
+      "kind": "program",
+      "categories": ["health-wellness", "history-heritage-preservation"],
+      "interests": ["mental_health_awareness", "oral_history"],
+      "motives": ["values", "understanding"],
+      "formats": ["conversation"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Open daily, with no set hours listed.", "days": [], "times": [], "recurring": true},
+      "locations": [{"label": "Vernon Park, Germantown", "address": "5800 Germantown Ave", "zip": "19144", "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "free", "text": "Free and open daily."},
+      "first_step": {
+        "how": "Visit the rotary phone at Vernon Park, which is open daily, or call (267) 314-7161 to leave a story.",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 3,
+        "basis": "The park is free and open daily, and anyone can take part by visiting or calling. There is no group meeting and no sign-up step.",
+        "what_to_expect": "Vernon Park at 5800 Germantown Ave is a place for reflection, remembering, and listening. You can use the disconnected rotary phone to leave a message for someone you have lost, or call to record a story. The site says submitted recordings may be kept and shared publicly through the archive.",
+        "first_visit_tips": [
+          "The Thread is not a helpline. The site points to its Resources page for other support.",
+          "Think about what you want to say before you call, since a recording may be shared publicly.",
+          "The park is open daily, and the site lists no set hours."
+        ]
+      },
+      "contacts": {"website": "https://www.thethreadphilly.org", "phone": "(267) 314-7161", "social": ["https://www.instagram.com/thethreadphilly"]},
+      "status": "active",
+      "last_sign_of_life": "2026-01",
+      "sign_of_life_url": "https://www.thethreadphilly.org/events",
+      "sources": [
+        {"url": "https://www.thethreadphilly.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "contacts", "status"]},
+        {"url": "https://www.thethreadphilly.org/events", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Status moved from probably_active to active: the events page lists a film screening and grief workshop dated January 7, 2026, and no upcoming events are listed. The news sign-up form shows a note that it needs a storage option, so it may not work. The about page returned 404. Partners named on the events page are in leads_only."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:the-woodlands-trust-for-historic-preservation-3", "irs_bmf:311609803"], "group_id": "the-woodlands-trust-for-historic-preservation", "ein": "311609803", "website": "http://www.woodlandsphila.org"},
+      "verdict": "publish",
+      "name": "The Woodlands Trust for Historic Preservation",
+      "summary": "A historic cemetery and garden at 4000 Woodland Avenue. It runs public tours, a public events calendar, and volunteer work days where people clean paths, plant and care for trees, and help welcome visitors.",
+      "what_you_do": "Book a tour of the mansion and cemetery ($20 a person), join a public event such as a walk or an evening event, or sign up for a clean-up or tree day. The Grave Gardeners program, run by The Woodlands, opens applications each January.",
+      "kind": "nonprofit",
+      "categories": ["history-heritage-preservation", "nature-environment"],
+      "interests": ["historic_site_volunteering", "walking_tours", "cemetery_friends", "tree_tending"],
+      "motives": ["understanding", "values"],
+      "formats": ["one_off_event", "team_play"],
+      "roles": ["hands_on", "help_teach"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "The grounds are open every day from dawn until dusk. Public tours run on weekdays from April through October and last about 1.5 hours. Clean-up work days are on weekends from October to March and on weekday evenings from April to September. Public events are listed on the events calendar.",
+        "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+        "times": ["daytime", "evening"],
+        "recurring": true
+      },
+      "locations": [{"label": "The Woodlands (cemetery and Hamilton Mansion)", "address": "4000 Woodland Ave", "zip": "19104", "in_city": true}],
+      "online_ok": true,
+      "cost": {"level": "paid", "text": "Public tours are $20 per person, with a $5 add-on for lunch setup. Individual membership is $40 a year and brings discounts on ticketed events. Some events are for members only, and other event prices vary."},
+      "commitment": "drop_in",
+      "access": {
+        "wheelchair": "partial",
+        "notes": "Paved roads, brick paths, and grass, with most roads having a 4-inch curb. The one ADA restroom is at the northeast corner of the Stable and is open when staff are on site and during public events. A wedge ramp for event areas can be set up if you ask in advance. Hamilton Mansion has four steps, and a ramp can be added on request. An event space accessibility map is available. Nearest SEPTA: Subway-Surface Trolley to the 40th Street Trolley Portal at 40th and Woodland, directly across from the gates (any line except T1, per the page)."
+      },
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Book a public tour on the tours page at least 2 weeks ahead, or walk the grounds yourself during open hours.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The grounds and public events are open to anyone, and tours are booked through a form. The volunteer page does not spell out how a new volunteer signs up.",
+        "what_to_expect": "A public tour takes about 1.5 hours on a weekday between April and October, and you book it ahead. Tours cover the cemetery and Hamilton Mansion, which is open by appointment or during certain events and has four steps unless a ramp is set up. Clean-up work days run on weekends from October to March and on weekday evenings from April to September.",
+        "first_visit_tips": [
+          "Book a tour at least 2 weeks ahead, since the page asks for advance notice.",
+          "Take the SEPTA trolley to 40th and Woodland. The gates are directly across from the trolley portal.",
+          "Plan to leave before sunset, since safety staff close the gates each evening.",
+          "Children under 14 need an adult with them, and dogs must stay leashed."
+        ]
+      },
+      "contacts": {"website": "http://www.woodlandsphila.org", "email": "info@woodlandsphila.org", "phone": "215-386-2181", "social": ["https://www.instagram.com/woodlandsphila/", "http://www.facebook.com/woodlandsphila", "https://www.linkedin.com/company/woodlandsphila"]},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.woodlandsphila.org/events-calendar",
+      "sources": [
+        {"url": "https://www.philaculturalfund.org/grantee-directory?2e1ab49c_page=12", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://www.woodlandsphila.org/events-calendar", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "schedule", "what_you_do"]},
+        {"url": "https://www.woodlandsphila.org/tours", "seen": "2026-10-08", "fields": ["cost", "first_step", "schedule", "contacts"]},
+        {"url": "https://www.woodlandsphila.org/visit", "seen": "2026-10-08", "fields": ["schedule", "access", "first_step", "first_visit_tips", "what_to_expect"]},
+        {"url": "https://www.woodlandsphila.org/membership", "seen": "2026-10-08", "fields": ["cost"]},
+        {"url": "https://www.woodlandsphila.org/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "commitment", "roles", "locations"]},
+        {"url": "http://www.woodlandsphila.org", "seen": "2026-10-08", "fields": ["summary", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "No general calendar feed was found. The events calendar gives one ICS link per event (format /events-calendar/<event>?format=ical), so calendar_feed is left out. Wheelchair is marked partial because the pages list both accessible features (paved roads, an ADA restroom, ramps on request) and barriers (brick paths, four mansion steps). POP Learning Orchard, a partner named on the homepage, now has its own record. Grave Gardeners (gravegardeners.org) is a Woodlands program and is covered here, not as a separate record. Woodlands Cemetery Company (woodlandscemeteryco.org) is not logged as a lead: it is the owner of the cemetery grounds and was not checked. Members-only events on the events calendar (Happy Hours for runners and Grave Gardeners, the members Halloween party) are not recorded as public."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:theater-of-witness-3"], "group_id": "theater-of-witness", "ein": null, "website": "https://www.theaterofwitness.org/"},
+      "verdict": "publish",
+      "name": "Theater of Witness",
+      "summary": "A testimonial theater group that turns true stories from people whose voices are often overlooked into plays and films, which the storytellers perform themselves.",
+      "what_you_do": "Send a reflection or tribute through the website, book a screening or workshop for the film Grand Young Women by email, or make a donation. A teen and young adult mentoring group works with the company by selection.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater", "storytelling_spoken_word"],
+      "motives": ["understanding", "values"],
+      "formats": ["perform_make_together", "one_off_event"],
+      "roles": ["create", "hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Productions and screenings are one time events, so check the website for the next one. The film Grand Young Women can be booked for a screening or workshop.",
+        "days": [],
+        "times": [],
+        "recurring": false,
+        "season": "event_only"
+      },
+      "locations": [
+        {"label": "Suzanne Roberts Theatre (2026 GrandWomen run)", "address": "480 South Broad Street", "in_city": true},
+        {"label": "Office", "address": "1315 Walnut Street, Suite 300", "zip": "19107", "in_city": true}
+      ],
+      "cost": {"text": "Ticket prices were not listed on the group's site."},
+      "commitment": "one_off",
+      "first_step": {
+        "how": "Email teya@theaterofwitness.org to book a screening or workshop for Grand Young Women, or send a reflection through the website form.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "The public route is booking a screening or workshop by email. The site lists no ticketed dates or volunteer roles, and the teen mentoring group takes people by selection, so the way to join is unclear.",
+        "what_to_expect": "Grand Young Women is a 30 minute film and part two of the GrandWomen project. The page does not say how a screening or workshop is run, what it costs, or how long it lasts, so ask when you book.",
+        "first_visit_tips": [
+          "Use the email address to book, since the page gives no phone number or office hours.",
+          "The office is at 1315 Walnut Street, Suite 300, but the site lists no hours for it.",
+          "If you want to take part before seeing a screening, send a reflection through the website form."
+        ]
+      },
+      "contacts": {"website": "https://www.theaterofwitness.org/", "email": "teya@theaterofwitness.org"},
+      "status": "active",
+      "last_sign_of_life": "2026-06",
+      "sign_of_life_url": "https://thephiladelphiacitizen.org/the-citizen-recommends-grandwomen/",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.theaterofwitness.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "first_step"]},
+        {"url": "https://www.theaterofwitness.org/grandwomen", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "schedule", "requirements"]},
+        {"url": "https://www.theaterofwitness.org/contact", "seen": "2026-10-08", "fields": ["contacts", "first_step", "first_visit_tips"]},
+        {"url": "https://thephiladelphiacitizen.org/the-citizen-recommends-grandwomen/", "seen": "2026-10-08", "fields": ["schedule", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The homepage mailing list link is malformed (it begins with http://https://), so it is not recorded. The site says the documentary of the original GrandWomen performance will premiere in the fall, with no year, so no date is recorded. Partners named on the GrandWomen page are in leads_only. The schedule text drops the June 2026 run dates (one time dates)."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:theatre-exile-3", "irs_bmf:232978331"], "group_id": "theatre-exile", "ein": "232978331", "website": "http://www.theatreexile.org"},
+      "verdict": "publish",
+      "name": "Theatre Exile",
+      "summary": "A nonprofit theatre in South Philadelphia that stages new and provocative plays. Its education programs include school residencies and camps, and volunteers and ushers can help at the theatre.",
+      "what_you_do": "Volunteer as an usher or in the office, which also gives free entry to shows, or join the education programs (school residencies and camps). An open house on Sunday Oct 11, 2026, 3 to 6 pm, is open to visitors, with an RSVP link on the site.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater"],
+      "motives": ["values", "social"],
+      "formats": ["behind_the_scenes", "one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Productions run through a season each year (the 2026 to 27 season is called Season 30). Usher and volunteer shifts are set per show, and the page lists no shift dates.",
+        "days": [],
+        "times": [],
+        "recurring": true
+      },
+      "locations": [{"label": "Theatre (all performances)", "address": "1340 S 13th St", "zip": "19147", "in_city": true}],
+      "cost": {"level": "paid", "text": "Single show tickets are sold separately. A 3-show Flex Pass starts at $45. Ushers and volunteers see shows for free."},
+      "commitment": "seasonal",
+      "access": {
+        "wheelchair": "unknown",
+        "notes": "Ask the Box Office in advance about special seating for an access need. Subscription series seating is general admission."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the online volunteer and usher form linked from the site, or come to the open house on Sunday, Oct 11, 2026 (3 to 6 pm) and ask about ushering.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The usher and volunteer form is open to the public, ushers see shows for free, and the open house is a public drop by. The site lists no usher training and no minimum age for ushers.",
+        "what_to_expect": "Ushers work at productions, and volunteers can also help in the office. The page does not say how long a shift runs, whether there is training, or how often shifts come up, so ask when you apply. Ushers and volunteers see the shows for free.",
+        "first_visit_tips": [
+          "Arrive at least 30 minutes early, since seating opens about 20 minutes before curtain.",
+          "If you will be late, call the Box Office at 215-218-4022 so the House Manager can plan for you.",
+          "Turn off electronic devices before the show, and food bought at the concessions can be taken into the theatre.",
+          "Ask the Box Office in advance about special seating for an access need."
+        ]
+      },
+      "contacts": {"website": "http://www.theatreexile.org", "email": "boxoffice@theatreexile.org", "phone": "215-218-4022", "social": ["http://instagram.com/theatreexile", "http://facebook.com/theatreexile"]},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.theatreexile.org/",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://www.theatreexile.org/", "seen": "2026-10-08", "fields": ["summary", "schedule", "cost", "contacts", "status", "first_step"]},
+        {"url": "https://www.theatreexile.org/join-us/interns-volunteers-ushers", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "requirements", "what_to_expect", "cost"]},
+        {"url": "https://www.theatreexile.org/procedures-policies", "seen": "2026-10-08", "fields": ["first_visit_tips", "access"]},
+        {"url": "https://www.theatreexile.org/exileblog", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Removed the Oct 11 open house date and the Sunday daytime pattern from schedule.text, since they describe a one time event. The directions and workshops pages returned 404, and the casting page returned 404, so no SEPTA stop is recorded. The volunteer page gives a staff email for questions; not recorded here. The internship age rule (18 and older) applies to internships, not ushers, so no minimum age is recorded for ushers."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:theatre-in-the-x-3"], "group_id": "theatre-in-the-x", "ein": null, "website": "http://www.theatreinthex.com"},
+      "verdict": "publish",
+      "name": "Theatre in the X",
+      "summary": "A free theater company in West Philadelphia that stages productions for the African American community and gives chances to playwrights, actors, directors, and behind-the-scenes crew.",
+      "what_you_do": "Come to a free production. You can also audition, volunteer, or work with the group, such as in stage crew, sound, or DJ roles, through the form on the website.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater", "stage_crew"],
+      "motives": ["social", "enhancement"],
+      "formats": ["perform_make_together", "team_play"],
+      "roles": ["create", "hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": ["heritage:black_american"], "support_group": false},
+      "schedule": {
+        "text": "Show dates are not listed on the site, so check the website for the next free production.",
+        "days": [],
+        "times": [],
+        "recurring": false,
+        "season": "event_only"
+      },
+      "cost": {"level": "free", "text": "Productions are free."},
+      "commitment": "one_off",
+      "first_step": {
+        "how": "Fill in the audition, volunteer, or work with us form on the website, or join the mailing list to hear about the next free production.",
+        "newcomer_friendliness": 3,
+        "basis": "Productions are free and open to the public, and the group offers one form for auditions, volunteering, and work roles. No dated events are listed, so the first visit cannot be described from the site.",
+        "what_to_expect": "The site does not say what a first visit is like or list show dates. The group works with actors, playwrights, directors, stage managers, sound engineers, and DJs, so ask through the form which role suits you.",
+        "first_visit_tips": [
+          "Check the website for the next free production, since show dates are not listed.",
+          "Name the role you want on the form, such as stage crew, sound, DJ, or playwriting.",
+          "Call 484-326-2596 if you want to ask before filling in the form."
+        ]
+      },
+      "contacts": {"website": "http://www.theatreinthex.com", "phone": "484-326-2596"},
+      "status": "active",
+      "last_sign_of_life": "2025-12",
+      "sign_of_life_url": "http://www.theatreinthex.com/production-history.html",
+      "sources": [
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "http://www.theatreinthex.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts"]},
+        {"url": "http://www.theatreinthex.com/about.html", "seen": "2026-10-08", "fields": ["summary", "cost", "first_step", "audience"]},
+        {"url": "http://www.theatreinthex.com/production-history.html", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "schedule"]},
+        {"url": "http://www.theatreinthex.com/ordinarypeople.html", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Status moved from probably_active to active on the production history page, which lists Ordinary People (a December 12 to 21 run, read as 2025) and Fraternity (August 21 to 24, free, read as 2025). The year is read from that page's 2025 listing; please verify if it matters. The ordinarypeople page describes that December run at Theatre Exile, 1340 S 13th St, pay what you can. I could not reconcile that with this group's own site, so no location is recorded. The site lists no address, show dates or 2026 productions. The email is obfuscated on the site, so none is recorded. The Painted Bride Art Center is named as fiscal sponsor (in leads_only)."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "pop-learning-orchard", "ein": null, "website": "https://www.phillyorchards.org/pop-learning-orchard/"},
+      "verdict": "publish",
+      "name": "POP Learning Orchard",
+      "aka": ["PLOW"],
+      "summary": "An education orchard inside The Woodlands, run by the Philadelphia Orchard Project. Volunteers help care for more than 90 fruit and nut trees, pollinator plants, and berry gardens, and the annual crops grown there are donated to people facing food insecurity.",
+      "what_you_do": "Help on orchard work days, at planting events, and at workshops, or help with non-planting tasks such as grant writing, editing, or graphic design.",
+      "kind": "nonprofit",
+      "categories": ["gardening-greening"],
+      "interests": ["community_orchard", "urban_farming"],
+      "motives": ["values", "enhancement"],
+      "formats": ["side_by_side", "team_play"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Orchard work days happen twice a week, but the page does not list the days or times. Volunteer emails go out more often in the spring and fall.",
+        "days": [],
+        "times": [],
+        "recurring": true
+      },
+      "locations": [{"label": "POP Learning Orchard, northwest part of The Woodlands", "address": "4000 Woodland Ave", "zip": "19104", "in_city": true}],
+      "cost": {"text": "The page mentions no fee for individual volunteers."},
+      "first_step": {
+        "how": "Join the Volunteer and Events email list through the sign-up form on the volunteer page, then watch for workday emails.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Anyone can join the email list, but the page does not say whether beginners are welcome, where to meet, or whether there is an orientation.",
+        "what_to_expect": "Volunteers look after a one acre orchard of more than 90 fruit and nut trees, plus pollinator plants, berry gardens, and annual crops grown between the tree rows. The page does not describe a typical workday, an orientation, or what to wear, so ask on the email list before your first shift.",
+        "first_visit_tips": [
+          "Sign up for the email list so you hear about workdays and events.",
+          "Ask for the meeting spot and time when you sign up, since the page does not list them.",
+          "The page mentions no fee for individual volunteers."
+        ]
+      },
+      "contacts": {"website": "https://www.phillyorchards.org"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.phillyorchards.org/pop-learning-orchard/",
+      "sources": [
+        {"url": "https://www.phillyorchards.org/pop-learning-orchard/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "first_step", "status"]},
+        {"url": "https://www.phillyorchards.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "cost"]},
+        {"url": "https://www.woodlandsphila.org/", "seen": "2026-10-08", "fields": ["name"]}
+      ],
+      "research_tier": 1,
+      "confidence": "medium",
+      "notes": "New record from a lead named on The Woodlands homepage (listed as a partner, external link). It was not run through the tier 1 batch; the facts come from the group's own pages read today, so check it is alive before publishing. The orchard sits on The Woodlands grounds, so the address is The Woodlands address; the page gives no street address of its own. The operator is the Philadelphia Orchard Project, and the page names an orchard director (not recorded). Status is probably_active: the pages describe current workdays, but no dated item within 12 months was found."
+    }
+  ],
+  "leads_only": [
+    {"name": "Salt Trails Philly", "url": "https://www.thethreadphilly.org/events", "note": "Named on The Thread's events page as partner of the yearly grief processionals. Its own website is not on that page, so not fetched."},
+    {"name": "Friends of Vernon Park", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of the 2024 Vernon Park opening celebration. Its own website is not on that page, so not fetched."},
+    {"name": "Friends of the Rail Park", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of the 2023 Rail Park opening celebration. Its own website is not on that page, so not fetched."},
+    {"name": "Germantown Info Hub", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a 2024 event. Its own website is not on that page, so not fetched."},
+    {"name": "Asian Arts Initiative", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a 2023 event. Its own website is not on that page, so not fetched."},
+    {"name": "Forman Arts Initiative", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a December 2025 event. Its own website is not on that page, so not fetched."},
+    {"name": "5 Shorts Project", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a September 2025 teen workshop. Its own website is not on that page, so not fetched."},
+    {"name": "Ghouls Next Door", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a January 2026 film screening and grief workshop. Its own website is not on that page, so not fetched."},
+    {"name": "Sisters in Film and Television (SiFT) Media 215", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a 2024 film project. Its own website is not on that page, so not fetched."},
+    {"name": "Scout LTD", "url": "https://www.thethreadphilly.org/events", "note": "Named as partner of a June 2025 event. Its own website is not on that page, so not fetched."},
+    {"name": "Philadelphia Death and Arts Festival", "url": "https://www.thethreadphilly.org/events", "note": "Named in the 2025 events list as a multi-day festival. Its own website is not on that page, so not fetched."},
+    {"name": "AFAHO (African Family Health Organization)", "url": "https://www.theaterofwitness.org/grandwomen", "note": "Named as partner in the film Grand Young Women and the teen mentoring group. Its own website is not on that page, so not fetched."},
+    {"name": "Philadelphia High School for Creative and Performing Arts (CAPA)", "url": "https://www.theaterofwitness.org/grandwomen", "note": "Named as a partner of the Theater of Witness teen mentoring group. Its own website is not on that page, so not fetched."},
+    {"name": "Painted Bride Art Center", "url": "http://www.theatreinthex.com/about.html", "note": "Named as the fiscal sponsor of Theatre in the X. Its own website is not on that page, so not fetched."}
+  ],
+  "blocked": [],
+  "notes": "Budget: 1 of 1 WebSearch used (on the Savoy venue). 38 WebFetch calls used. No rate limiting seen. 404 responses (not blocks): savoy.org trial-by-jury, the-gondoliers, our-history, about; thethreadphilly.org/about; theatreexile.org directions-and-parking, directions-parking, workshops, casting-submissions; thestagecrafters.org directions-and-parking. Verdicts: 6 publish from the batch (Stagecrafters, The Thread, Woodlands, Theater of Witness, Theatre Exile, Theatre in the X), 1 out_of_area (Savoy, for the owner to confirm), and 1 new publish record from a lead (POP Learning Orchard, research_tier 1). Status changes: The Thread and Theatre in the X moved from probably_active to active on dated items (January 2026 and December 2025). Stagecrafters has 2026 audition dates with years on its auditions page. Dated one time events were removed from schedule.text in Stagecrafters, Theater of Witness and Theatre Exile. Newcomer ratings: Stagecrafters 4, Theater of Witness 2 (no clear public way to join), the rest 3. Leads with their own websites: POP Learning Orchard was turned into a record. The other partner names have no own-site URL on the pages read, so they stay in leads_only."
+}

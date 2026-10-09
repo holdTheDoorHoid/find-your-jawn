@@ -3,15 +3,19 @@ name: Stonewall Sports Philadelphia
 aka: []
 leads: []
 ein: null
-summary: A recreational sports and social group for the LGBTQIA+ community. It runs leagues and events
-  including kickball, volleyball, bowling, trivia and a running group.
-what_you_do: Join a league or event as a player, or come to social nights and wellness sessions.
+summary: A recreational sports and social group for the LGBTQIA+ community. It runs leagues in sports
+  such as kickball, volleyball, bowling and pickleball, plus trivia and social events.
+what_you_do: Sign up for a league as a player, on a team, as a free agent or as a small group, or come
+  to new member mixers and community events.
 kind: club
 categories:
 - sports-teams
 - social-meetups
+- games-puzzles
 interests:
 - kickball_rec_leagues
+- tennis_pickleball
+- trivia_nights
 - lgbtq_social
 motives:
 - social
@@ -33,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Leagues run in seasons, with sign ups before each season. The pages checked do not list league
+    days or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Marconi Plaza (kickball)
@@ -51,7 +56,9 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Cost not stated. The site asks visitors to subscribe to monthly updates to get started.
+  text: The league pages do not list fees. The Player Assistance Fund can waive league registration fees
+    in full or in part for people facing financial hardship, and it takes applications before each season's
+    registration.
 commitment: seasonal
 group_size: null
 access:
@@ -66,13 +73,22 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Subscribe to the monthly updates on the site to hear about league sign ups, or email info@stonewallphilly.org
+  how: Subscribe to the monthly updates, then register for a league through the league registration page
+    when a season opens. Winter 2027 sign ups are expected in mid-November.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to the community with a public sign up path; no newcomer program is stated
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site runs new member calls and mixers each season, offers free agent teams for first-time
+    league players, and says no athletic experience is needed. Drop in is not described, so the group
+    is not rated higher.
+  what_to_expect: The group says no athletic experience is needed. New players can register as free agents,
+    and free agent teams are made up of other new players, so everyone starts at the same point. New member
+    calls and mixers each season help people meet others and learn how the leagues run.
+  first_visit_tips:
+  - If you do not have a team, pick the free agent option so the group can match you by skill and interest.
+  - Subscribe to the monthly updates so you hear when registration opens.
+  - Email info@stonewallphilly.org with questions about fees or a specific league.
+  - If cost is a concern, look into the Player Assistance Fund before you register.
 contacts:
   website: http://www.stonewallphilly.org/
   email: info@stonewallphilly.org
@@ -80,9 +96,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.stonewallphilly.org/
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.stonewallphilly.org/join
 sources:
 - url: http://www.stonewallphilly.org/
   seen: '2026-10-08'
@@ -94,7 +110,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.stonewallphilly.org/join
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.stonewallphilly.org/leagues
+  seen: '2026-10-08'
+  fields:
+  - interests
+- url: https://www.stonewallphilly.org/about/member-experience
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - newcomer_friendliness
+- url: https://www.stonewallphilly.org/registration/player-assistance-fund
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

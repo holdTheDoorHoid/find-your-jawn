@@ -8,8 +8,8 @@ leads:
 ein: null
 summary: Neighbors and visitors who look after Tacony Creek Park, a 300-acre watershed park in lower Northeast
   Philadelphia. The group runs free group walks and runs on the trails.
-what_you_do: Join a free group walk or run on the trails, or volunteer to help care for the land. The
-  volunteer page explains how to sign up.
+what_you_do: Join a free group walk or run on the trails, or volunteer for park cleanups, planting days
+  and storm drain marking through the online form.
 kind: friends_group
 categories:
 - nature-environment
@@ -39,7 +39,7 @@ audience:
   support_group: false
 schedule:
   text: Weekly group walks and runs, called Walk with Me and Run with Me, plus other trail programs. The
-    site does not list days or times.
+    Friends site points to a partner events calendar for days and times.
   days: []
   times: []
   recurring: true
@@ -57,13 +57,14 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Trail programs are free
+  text: Trail programs are free.
 commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: A 3.2-mile paved trail runs the length of the park for walking, running and biking. It is open
+    from dawn to dusk.
 requirements:
   act153_clearances: null
   background_check: null
@@ -72,15 +73,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up through the volunteer page (friendsoftaconycreekpark.org/volunteer/), or send a question
-    through the contact page (friendsoftaconycreekpark.org/contact-us/).
-  drop_in: null
+  how: Come to a Walk with Me or Run with Me, using the date and meeting time from the partner events
+    calendar, or fill in the volunteer form to join a cleanup or planting day.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site describes its members as neighbors and people who spend time in the park, says its trail
-    programs are free, and lists a volunteer page and a contact page. Sign-up details are not on the page.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The walks are free and open to visitors, and the site lists a volunteer form and a contact form.
+    The site does not say beginners are welcome by name.
+  what_to_expect: The walks and runs are free and happen weekly on the park trails. The Friends site does
+    not list meeting points, distances or paces, so check the events calendar first. For volunteer days,
+    you fill in the online form, and someone from the group contacts you after you submit.
+  first_visit_tips:
+  - Check the events calendar for the walk's meeting point, time and distance before you go.
+  - Take a SEPTA bus to a neighborhood gateway. The park's interactive map shows the closest one, and
+    buses 18 and 26 stop at some gateways.
+  - Watch your footing on the narrow, curved trail. In an emergency, call 911 and give the nearest gateway
+    or intersection.
+  - Send questions through the Contact Us form on the Friends site.
 contacts:
   website: https://friendsoftaconycreekpark.org/
   email: Cesali@ttfwatershed.org
@@ -112,7 +121,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - contacts.social
+- url: https://friendsoftaconycreekpark.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://friendsoftaconycreekpark.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://friendsoftaconycreekpark.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://friendsoftaconycreekpark.org/visitthepark/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+- url: https://friendsoftaconycreekpark.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

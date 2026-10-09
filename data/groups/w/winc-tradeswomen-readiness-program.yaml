@@ -3,9 +3,10 @@ name: WINC Tradeswomen Readiness Program
 aka: []
 leads: []
 ein: null
-summary: A Philadelphia pre-apprenticeship for women who want higher paying skilled trade careers. It
-  also helps build the math and personal skills needed to qualify.
-what_you_do: Build math and job skills, learn about the trades, and get ready to apply for apprenticeships.
+summary: A six week pre-apprenticeship for women who want skilled jobs in construction, manufacturing
+  or transit. It builds safety, math and job skills and helps with applications.
+what_you_do: Take safety training, build math and job skills, learn about the trades, and get ready to
+  apply for apprenticeships.
 kind: program
 categories:
 - careers-skills-professional
@@ -24,7 +25,7 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community:
   - women
@@ -32,12 +33,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Six week cohorts, held Tuesday through Thursday from 8 am to 4:30 pm.
+  days:
+  - tue
+  - wed
+  - thu
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Finishing Trades Institute training site
+  address: 2190 Horning Rd
+  neighborhood: null
+  planning_district: null
+  zip: '19116'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -56,23 +71,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Learn More and Apply link on the WINC page, which goes to the program's apply page.
-  drop_in: null
-  sign_up_needed: null
+  how: Use the Apply Now link at womenbuildpa.org, or email winc@fti.edu or call 267-939-0035 to ask about
+    the next cohort.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Needs an application, and eligibility and start dates are not stated on the page.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'You apply first, and the program lists requirements before you start: age 18 or older, a valid
+    driver''s license, a high school diploma or GED, and passing a drug test.'
+  what_to_expect: This is a six week pre-apprenticeship, with classes Tuesday through Thursday from 8
+    am to 4:30 pm at the Finishing Trades Institute on Horning Road. Training covers safety, education,
+    mentorship and help with job applications, and you explore trades such as carpentry, welding, HVAC
+    and painting. Orientation sessions are held in person, and the site does not say whether taking part
+    costs anything.
+  first_visit_tips:
+  - 'Check the listed requirements first: 18 or older, a valid driver''s license, a high school diploma
+    or GED, and passing a drug test.'
+  - Philadelphia residents get priority in the program.
+  - Orientation sessions are held in person at the training site, so plan to go there.
 contacts:
-  website: https://philaworks.org/winc/
-  email: null
+  website: https://womenbuildpa.org/
+  email: winc@fti.edu
   phone: 215-963-2100
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philaworks.org/winc/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://womenbuildpa.org/
 sources:
 - url: https://philaworks.org/winc/
   seen: '2026-10-08'
@@ -82,8 +107,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://womenbuildpa.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - schedule
+  - locations
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - contacts
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://womenbuildpa.org/apply/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

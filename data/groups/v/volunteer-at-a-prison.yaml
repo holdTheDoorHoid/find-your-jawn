@@ -6,7 +6,8 @@ leads:
 ein: null
 summary: Trains volunteers to provide educational and spiritual support to people held at one of four
   Philadelphia Department of Prisons facilities.
-what_you_do: null
+what_you_do: Give educational or spiritual support to people held in one of the four city facilities,
+  after finishing 16 hours of training and a background check.
 kind: program
 categories:
 - advocacy-rights
@@ -37,7 +38,17 @@ schedule:
   times: []
   recurring: null
   season: year_round
-locations: []
+locations:
+- label: 'One of four Philadelphia Department of Prisons facilities: Curran-Fromhold, the Detention Center,
+    Philadelphia Industrial Correctional Center, or Riverside'
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -50,24 +61,33 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Use the sign up form at https://www.phila.gov/documents/philadelphia-prisons-volunteer-form/.
-  drop_in: null
+  how: Email the volunteer application to pdp.volunteer@prisons.phila.gov. The form is on the City's form
+    page at phila.gov/documents/philadelphia-prisons-volunteer-form/.
+  drop_in: false
   sign_up_needed: true
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Training: Yes: 16 hours with the PDP training academy. Clearances: A background check,
-    subject to the Commissioner of Prisons'' approval.'
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Applicants must be approved by the Volunteer Services Division, then complete 16 hours of training
+    and a background check before they start. Applications that do not fit a program need are turned down.
+  what_to_expect: Accepted volunteers first finish 16 hours of training at the Department of Prisons training
+    academy, and the academy contacts them to start the background check. After that, volunteers give
+    educational or spiritual support inside a facility. The page does not describe what a first visit
+    looks like.
+  first_visit_tips:
+  - 'Check the rules before you apply: volunteers must be 21 or older with a valid state ID, and people
+    who were incarcerated must wait six months after release.'
+  - Relatives of people held in the system must say so on the application and are not placed at the same
+    facility.
+  - Questions go to 215-685-8149. Religious volunteer questions go to 215-685-8385.
 contacts:
   website: https://www.phila.gov/services/crime-law-justice/prisons-incarcerated-people-and-returning-citizens/volunteer-at-a-prison/
-  email: null
-  phone: null
+  email: pdp.volunteer@prisons.phila.gov
+  phone: 215-685-8149
   contact_name: null
   social: []
   calendar_feed: null
@@ -76,15 +96,24 @@ last_sign_of_life: 2025-04
 sign_of_life_url: https://www.phila.gov/services/crime-law-justice/prisons-incarcerated-people-and-returning-citizens/volunteer-at-a-prison/
 sources:
 - url: https://www.phila.gov/services/crime-law-justice/prisons-incarcerated-people-and-returning-citizens/volunteer-at-a-prison/
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - contacts.website
   - summary
   - audience
   - requirements
-research_tier: 1
+  - what_you_do
+  - first_step
+  - contacts
+  - commitment
+- url: https://www.phila.gov/documents/philadelphia-prisons-volunteer-form/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - status
+research_tier: 2
 confidence: medium
-last_checked: '2026-10-04'
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

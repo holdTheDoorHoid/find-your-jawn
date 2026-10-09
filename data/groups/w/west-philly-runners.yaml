@@ -31,15 +31,36 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly Wednesday night group run, and a Monday speed workout. Start times and meeting place are
-    not stated on the site.
+  text: Wednesday night group run from Clark Park, with a 2, 4 or 6 mile choice. Monday speed workout
+    at 6:30 pm in Penn Park. Friday coffee run at 6:30 am from Clark Park.
   days:
   - mon
   - wed
-  times: []
+  - fri
+  times:
+  - morning
+  - evening
   recurring: true
   season: null
-locations: []
+locations:
+- label: Clark Park
+  address: 44th and Baltimore Ave
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Penn Park
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -58,24 +79,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the JOIN US section on the site, which links to the club's Facebook group
+  how: Go to Clark Park for the Wednesday night group run and choose a 2, 4 or 6 mile loop, or subscribe
+    for weekly run news on the club's site.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Welcomes many paces, but the site gives no sign up steps and no meeting place, so the way in
-    is not clear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The site invites beginners and experienced runners alike, names where the Wednesday run starts,
+    and asks you to subscribe for weekly news. It does not say whether you must sign up before a run.
+  what_to_expect: The Wednesday run starts at Clark Park and finishes at a local bar, and you pick a 2,
+    4 or 6 mile route. The club says all paces are welcome, though most runners keep at least a 12-minute
+    pace. The site does not give a start time or a cost for the regular run.
+  first_visit_tips:
+  - Clark Park, at 44th and Baltimore Avenue, is where the Wednesday run starts.
+  - 'Pick your distance before you start: 2, 4 or 6 miles.'
+  - The Monday speed workout is at 6:30 pm in Penn Park if you want more speed work.
 contacts:
   website: https://westphillyrunners.com
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/groups/WestPhillyRunners
+  - https://www.instagram.com/westphillyrunners/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://westphillyrunners.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://westphillyrunners.com/upcoming-events/october-14-wpr-weekly-run
 sources:
 - url: https://westphillyrunners.com
   seen: '2026-10-08'
@@ -84,7 +113,27 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+  - contacts
+- url: https://westphillyrunners.com/about
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://westphillyrunners.com/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://westphillyrunners.com/upcoming-events/october-14-wpr-weekly-run
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

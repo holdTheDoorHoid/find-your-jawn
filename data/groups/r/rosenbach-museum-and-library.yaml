@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Thursday to Saturday 10:30 am to 6 pm; Sunday 10:30 am to 4:30 pm. Closed Monday to Wednesday.
-    Research appointment hours differ.
+  text: Open Thursday to Saturday 10:30 am to 6 pm and Sunday 10:30 am to 4:30 pm. Closed Monday to Wednesday.
+    Research visits follow different hours and need an appointment.
   days:
   - thu
   - fri
@@ -57,30 +57,41 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: Adults pay $20 for a guided tour or $15 for self-guided. Seniors and students pay less, children
+    aged 12 to 17 pay $10 guided or $7.50 self-guided, and children under 12 get in free. Rosenbach members
+    and AAM, ICOM and NARM members get in free.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The south entrance is wheelchair accessible; call 215-732-1600 ext. 110 for help. Service animals
+    are welcome in public areas. The visit page does not mention an elevator, sensory guidance, ASL or
+    captioned tours.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Visit during museum hours, or email info@rosenbach.org or call 215-732-1600 to ask about volunteering,
-    courses or research visits.
+  how: Book a guided or self-guided visit online or by phone at 215-732-1600, or sign up for a public
+    program such as a book club, talk or open house. Volunteer guides apply through the volunteer page.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Open to the public on posted hours with clear booking links, and several public events are free.
+    The volunteer guide route needs an application, so it is not counted in the rating.
+  what_to_expect: Guided tours start at 10:30 am Thursday to Sunday and are booked online. The self-guided
+    option uses the Bloomberg Connects app on your phone, so bring headphones. The museum welcomes photos
+    and notes, though paper notes must be in pencil, and video is not allowed during signature programs.
+  first_visit_tips:
+  - Book ahead by phone or email, since the museum asks visitors to pre-register.
+  - Bring headphones for the self-guided tour, which uses the Bloomberg Connects app.
+  - Use a pencil for notes on paper, and leave food and drink outside the tour.
+  - There is no parking on site, so plan how you will get to Delancey Place.
 contacts:
   website: https://www.rosenbach.org/
   email: info@rosenbach.org
@@ -107,7 +118,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://www.rosenbach.org/visit
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - access.wheelchair
+  - access.notes
+  - first_step
+- url: https://www.rosenbach.org/faqs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+- url: https://www.rosenbach.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.rosenbach.org/programs
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

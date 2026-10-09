@@ -6,8 +6,9 @@ leads:
 ein: null
 summary: A photography center in North Philadelphia that runs gallery shows, printing services, artist
   residencies, and youth education for photographers and image makers at every level.
-what_you_do: Visit the gallery and its free events, take a tutorial or use the Artist Lab printing team,
-  join a youth program, or apply for an artist residency.
+what_you_do: Visit the gallery, book an individual photo tutorial, use the printing team or the Artist
+  Lab, or ask about the youth programs. The artist residency is paid, but applications were closed when
+  the site was read.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -35,8 +36,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Gallery open Wednesday to Saturday, 12 to 6 pm. Exhibitions run September to November 2026 and
-    December 2026 to February 2027, with an October 2026 talk.
+  text: Gallery open Wednesday to Saturday, 12 to 6 pm.
   days:
   - wed
   - thu
@@ -58,9 +58,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Gallery visits and events are listed on the calendar. Tutorials, printing, and memberships have
-    fees; exact prices were not checked.
+  level: paid
+  text: TILT offers free programs and exhibitions. Photo tutorials cost $105 to $150 an hour on a sliding
+    scale. Memberships run $60 to $500 a year, or $5 to $40 a month.
 commitment: drop_in
 group_size: null
 access:
@@ -75,18 +75,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the gallery on a Wednesday to Saturday afternoon, or sign up for the newsletter to hear about
-    the next opening
+  how: Stop by the gallery at 1400 N. American Street, Suite 103, any Wednesday to Saturday between 12
+    and 6 pm to see the current show.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The gallery and public events are open to anyone, with a clear calendar and a membership option,
-    though some tutorials are paid
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The gallery is open to anyone during posted hours and each tutorial has a booking link, but the
+    page does not say beginners are welcome, so it is not rated higher.
+  what_to_expect: 'Gallery visits are self-guided: you walk through the exhibitions during open hours
+    at no charge. Tutorials are booked with an instructor in blocks of 1, 1.5, or 2 hours, at $105 to
+    $150 an hour on a sliding scale.'
+  first_visit_tips:
+  - Gallery hours are Wednesday to Saturday, 12 to 6 pm, so plan the visit inside those hours.
+  - To book a tutorial, contact Danielle Morris, who handles scheduling, at 215.232.5678.
+  - Membership opens the Studio, a members-only makerspace, which has an orientation for new users.
 contacts:
   website: http://www.tiltinstitute.org
-  email: null
+  email: info@tiltinstitute.org
   phone: 215.232.5678
   contact_name: null
   social: []
@@ -109,8 +114,43 @@ sources:
   - status
   - first_step
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://tiltinstitute.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+  - contacts
+  - first_step
+  - locations
+- url: https://tiltinstitute.org/individual-tutorials/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://tiltinstitute.org/memberships/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts
+  - first_visit_tips
+- url: https://tiltinstitute.org/youthed/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://tiltinstitute.org/calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://tiltinstitute.org/programs/artist-in-residence/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

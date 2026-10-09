@@ -8,9 +8,9 @@ leads:
 - irs_bmf:853064201
 ein: '853064201'
 summary: A mentoring program for early-career composers who are women, transgender, nonbinary or genderqueer.
-  It runs a summer festival each July, in person at Temple University or online.
-what_you_do: Apply to the annual summer festival, take virtual mini-courses, join the lab or get a resident
-  composer placement, and follow the events page or mailing list.
+  It runs a summer festival each July at Temple University and offers six-week online mini-courses.
+what_you_do: Apply to the summer festival if you are 13 to 19, take an online mini-course, or come to
+  the free premiere concert each July. The site also lists a lab and a resident composer placement.
 kind: nonprofit
 categories:
 - music
@@ -25,12 +25,13 @@ formats:
 roles:
 - create
 crowd:
+- teens
 - young_adults
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 13
   max_age: null
   community:
   - women
@@ -40,14 +41,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: An annual summer festival each July, plus virtual mini-courses and a lab
+  text: The festival runs each July on the Temple University campus. Six-week online mini-courses meet
+    weekly on Zoom at set times; in 2025 they met on Monday and Wednesday evenings.
   days: []
   times: []
   recurring: true
   season: summer
 locations:
-- label: Festival (Temple University, or online)
+- label: Temple University main campus
   address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Rock Hall, Temple University
+  address: 1715 N. Broad St
   neighborhood: null
   planning_district: null
   zip: null
@@ -57,8 +68,10 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Not stated on the page we read
+  level: paid
+  text: Festival tuition is $900, and dorm room and board is $1,400 more for students who stay on campus.
+    There is no application fee, and financial aid, including full scholarships, is available. Each online
+    mini-course is $200.
 commitment: seasonal
 group_size: null
 access:
@@ -73,13 +86,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Read the Festival page and apply during the open call, or sign up for the mailing list for updates
+  how: If you are 13 to 19, read the festival page and apply while admissions are open, which is until
+    spots fill. Adults can ask about the mini-courses by emailing erin@wildflowercomposers.org.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Entry is by application and eligibility rules on the Contact and Festival pages
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Entry is by application. The festival and the mini-courses both take applications, and the mini-course
+    page does not describe the application steps.
+  what_to_expect: The festival runs about two weeks in July on the Temple University campus. Students
+    take daily seminars and private composition lessons with a mentor, workshop a piece with Network for
+    New Music musicians, and write a new piece that is premiered on the last day. Tuition is $900, plus
+    room and board for students who live on campus, and the premiere concert is free and open to the public.
+  first_visit_tips:
+  - The final premiere concert at Rock Hall is free and needs no advance registration, so you can hear
+    what the festival makes.
+  - Chaperones walk students between buildings at all times.
+  - Tell the program about any dietary restrictions or allergies, which it says it can accommodate.
 contacts:
   website: http://www.wildflowercomposers.org
   email: erin@wildflowercomposers.org
@@ -88,9 +110,9 @@ contacts:
   social:
   - https://www.instagram.com/wildflowercomposers
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.wildflowercomposers.org
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://wildflowercomposers.org/events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=13
   seen: '2026-10-04'
@@ -120,8 +142,40 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://wildflowercomposers.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - contacts
+- url: https://wildflowercomposers.org/festival
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - status
+- url: https://wildflowercomposers.org/minicourses
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - online_ok
+  - schedule
+  - first_step
+- url: https://wildflowercomposers.org/events
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

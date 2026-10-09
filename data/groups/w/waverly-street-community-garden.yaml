@@ -12,10 +12,11 @@ leads:
 - city_gardens:4
 - city_gardens:5
 ein: null
-summary: A community garden on the City's Park Friends list, at 839 South St. We could not find a web
-  page or other current source for it.
-what_you_do: Join park cleanups, plantings and events with your neighbors.
-kind: friends_group
+summary: One of the Washington Square West Civic Association's community gardens, at 839 South St. Membership
+  is for people whose primary home is in the neighborhood, and the waitlist can be long.
+what_you_do: Garden members follow the association's garden rules. The public can see the garden on the
+  association's open garden days.
+kind: garden
 categories:
 - gardening-greening
 interests:
@@ -32,7 +33,7 @@ crowd:
 - neighbors
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -74,14 +75,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email Parks and Recreation's stewardship office (pprstewardship@phila.gov) and ask to be connected
-    with this Friends group
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: If your primary home is in Washington Square West, apply for garden membership through the association's
+    waitlist page at washwestcivic.org/community-gardens/waitlist, choosing a first and second garden.
+    Otherwise, come to a public open garden day if one is announced.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 1
+  basis: Members must have a primary home in Washington Square West, and the waitlist page says some members
+    wait three years for a plot.
+  what_to_expect: The association has held public Open Garden Days at this garden, including one in May
+    2026 during Love Your Park Week. Membership requires following the garden rules and having a primary
+    home in the neighborhood. The garden page does not describe a typical visit or work day.
+  first_visit_tips:
+  - When you apply, you pick a first and second choice garden, and you are added to both waitlists.
+  - The garden page mentions the garden rules but does not link them, so ask the association for a copy.
 contacts:
   website: https://www.washwestcivic.org/community-gardens/
   email: pprstewardship@phila.gov
@@ -108,8 +115,29 @@ sources:
   - contacts.website
   - contacts.email
   - first_step
-research_tier: 1
-confidence: low
+- url: https://www.washwestcivic.org/community-gardens/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - locations
+  - first_step
+- url: https://www.washwestcivic.org/community-gardens/waitlist
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - newcomer_friendliness
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+- url: https://loveyourpark.org/events/lyp-week-2026
+  seen: '2026-10-08'
+  fields:
+  - status
+  - what_to_expect
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

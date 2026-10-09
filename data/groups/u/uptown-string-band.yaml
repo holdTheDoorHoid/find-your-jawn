@@ -4,10 +4,11 @@ aka: []
 leads:
 - mummers:uptown-string-band
 ein: null
-summary: A Mummers string band based in Parkland, Pennsylvania, that marches in Philadelphia's New Year's
-  Day parade. It lists Uptown Hall in Langhorne as a rental venue and holds family days there.
-what_you_do: Play or march with the band in the parade, or come to its family events. The site has a Join
-  Us page, but it gave no steps.
+summary: A Mummers string band that practices in Langhorne, Bucks County, and marches in Philadelphia's
+  New Year's Day parade. Its Tuesday rehearsals are at Uptown Hall, which it also manages as a rental
+  venue, and it hosts public family events there.
+what_you_do: Join as a performer, marshal or social member, march in the New Year's Day parade, or come
+  to a public family event.
 kind: club
 categories:
 - philly-traditions
@@ -33,13 +34,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Marches and plays in the New Year's Day parade each January 1
-  days: []
-  times: []
+  text: Music rehearsals at Uptown Hall on Tuesdays, 8 to 10 pm. Prop and scenery sessions on Sundays,
+    11 am to 2 pm, at an annex in Fairless Hill, Pennsylvania. The band marches in Philadelphia's New
+    Year's Day parade each January 1.
+  days:
+  - tue
+  - sun
+  times:
+  - daytime
+  - evening
   recurring: true
   season: winter
 locations:
-- label: Uptown Hall (venue the band lists for rentals, not labeled as its clubhouse)
+- label: Uptown Hall (Tuesday music rehearsals)
   address: 831 Avenue D, Langhorne, PA 19047
   neighborhood: null
   planning_district: null
@@ -51,8 +58,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not published
-commitment: null
+  text: Dues and fees are not published on the site.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -66,13 +73,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Join Us page on uptownstringband.com, or call (215) 752-3479 to ask about joining.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: A Join Us page is linked, but it gave no contact steps or details.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Walk in on a Tuesday night at Uptown Hall, or fill out the Join Us form on uptownstringband.com
+    and wait for an officer to follow up.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: The site says Tuesday nights have an open-door policy and that anyone can fill out the Join Us
+    form. Musicians take a music test and dancers meet the drill director to find their level, so the
+    next step depends on the role.
+  what_to_expect: Tuesday nights use an open-door policy, and new people are placed by role. Musicians
+    take a short music test with the music director, dancers meet the drill director to find their level,
+    and marshals and aides go over their requirements with the chief marshal. The page gives no dues or
+    costs.
+  first_visit_tips:
+  - Uptown Hall is in Langhorne, Bucks County, so plan the drive; it is not in Philadelphia.
+  - Come between 8 and 10 pm on a Tuesday to see the music rehearsal.
+  - If you play, bring your instrument for the music test. The band lists saxophone, banjo, accordion,
+    upright bass and percussion.
+  - If you do not play, ask the officer about dancer, marshal or social roles.
 contacts:
   website: https://uptownstringband.com/
   email: email@uptownstringband.com
@@ -94,6 +112,8 @@ sources:
   fields:
   - name
   - status
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://uptownstringband.com/
   seen: '2026-10-08'
   fields:
@@ -104,7 +124,20 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.uptownstringband.com/join-us/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - requirements
+  - contacts
+- url: https://www.uptownstringband.com/uptown-hall/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

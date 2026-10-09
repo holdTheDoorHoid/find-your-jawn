@@ -3,9 +3,9 @@ name: We Walk PHL
 aka: []
 leads: []
 ein: null
-summary: A free walking group run through Philadelphia Parks and Recreation that meets in public parks
-  across the city. Trained local leaders guide about an hour of walking, one to three times a week depending
-  on the park.
+summary: A free walking group that meets in public parks across Philadelphia. Trained local leaders guide
+  about an hour of walking, one to three times a week depending on the park. The program is supported
+  by Parks and Recreation, the Fairmount Park Conservancy and the Department of Public Health.
 what_you_do: Walk with neighbors for about an hour in a park near you, and get to know people who walk
   the same route.
 kind: program
@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: One to three walks a week depending on the park, during the fall season from September 1 to October
-    31. Days and times are posted on the program's Facebook page.
+  text: Walks last about an hour, one to three a week depending on the park. The fall season runs September
+    1 to October 31. The Bartram's Garden walk meets every Thursday from 5 to 6 pm.
   days:
   - thu
   times:
@@ -43,8 +43,17 @@ schedule:
   recurring: true
   season: fall
 locations:
-- label: Public parks across Philadelphia (varies by site)
+- label: Public parks across Philadelphia (varies by walk)
   address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Bartram's Garden Welcome Center
+  address: 5400 Lindbergh Boulevard
   neighborhood: null
   planning_district: null
   zip: null
@@ -70,15 +79,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register through the We Walk PHL portal on GivePulse, or check the program's Facebook page for
-    the nearest walk
+  how: Find the walk nearest you on the We Walk PHL registration page on GivePulse, or call 215-309-5523.
+    The Bartram's Garden walk meets on Thursdays from 5 to 6 pm at the Welcome Center.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Free and described as open to neighbors, with a registration portal; eligibility rules are not
-    stated
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free and open to the public, with a registration portal and a phone line. The pages do not say
+    whether first time walkers get any extra help, and they do not say whether registration is needed
+    before the first walk.
+  what_to_expect: Each walk lasts about an hour and is guided by a trained local leader. The pages do
+    not describe the pace or distance, so ask the program before you go. Walks are free.
+  first_visit_tips:
+  - At Bartram's Garden, walk leaders greet people at the start, so go to the Welcome Center at 5400 Lindbergh
+    Boulevard.
+  - Ask the program about pace and distance if you want an easier walk.
+  - Check the park and time before each walk, since the schedule varies by park.
 contacts:
   website: https://www.phila.gov/2025-09-10-step-into-community-with-we-walk-phl/
   email: null
@@ -108,6 +123,8 @@ sources:
   - schedule
   - locations
   - status
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://www.schuylkillbanks.org/events/community-events/wewalkphl
   seen: '2026-10-08'
   fields:
@@ -119,7 +136,11 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
+- url: https://loveyourpark.org/events/lyp-week-2026
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

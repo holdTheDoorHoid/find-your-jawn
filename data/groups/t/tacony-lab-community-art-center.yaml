@@ -3,15 +3,18 @@ name: Tacony LAB Community Art Center
 aka: []
 leads: []
 ein: null
-summary: A community art center in Tacony run by Mural Arts Philadelphia with a city council office. It
-  offers free art classes for adults and youth, open studio time, and a Saturday kids club.
+summary: A community art center in Tacony that is a program of Mural Arts Philadelphia, run in partnership
+  with the local city council office. It offers free art classes, an open studio, and art clubs for kids
+  and teens.
 what_you_do: Take a free painting, drawing, sewing, weaving or laser cutter class, or use the open studio.
 kind: program
 categories:
 - arts-crafts
+- making-tech
 interests:
 - painting_drawing
 - fiber_arts
+- makerspace
 motives:
 - enhancement
 - social
@@ -23,6 +26,7 @@ roles:
 - create
 crowd:
 - all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -34,12 +38,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open studio for 30 plus hours a week; free classes with no dates listed; Saturday kids club held
-    three weekends a month
+  text: 'The open studio runs more than 30 hours a week. Posted hours: Monday noon to 8 pm, Tuesday 10
+    am to 8 pm, Wednesday 4 to 8 pm, Thursday noon to 4 pm and Friday 10 am to 2 pm. Saturdays are open
+    only during kids classes, and the center is closed Sunday.'
   days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
   - sat
   times:
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -47,7 +58,7 @@ locations:
   address: 6918 Torresdale Avenue
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19135'
   lat: null
   lng: null
   in_city: true
@@ -55,11 +66,12 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free art classes and free arts events
-commitment: null
+  text: Art classes are free. Many events need advance registration, and most event listings do not show
+    a price.
+commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
   notes: null
 requirements:
@@ -70,25 +82,32 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Visit the open studio, or sign up for the Saturday kids club through Eventbrite
+  how: Walk into the open studio during posted hours, or register for a free class or event through the
+    events page, which uses Eventbrite.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: Free classes, open studio hours and a listed sign up route give a newcomer a clear start
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes are free, the open studio runs posted hours, and the monthly open sew says no experience
+    is needed. Many events need advance registration, so the group is not rated 5.
+  what_to_expect: The open studio is for working on a project you bring or starting a new one. Classes
+    are free and cover painting, drawing, sewing, weaving and laser cutter design. The page does not say
+    how long a class runs or who attends.
+  first_visit_tips:
+  - Bring a project to work on, or come ready to start something new.
+  - Check the events page first, since many events need an advance sign up.
+  - Call (267) 686-7420 or email info@taconylab.org with questions about classes.
 contacts:
   website: https://taconylab.org
-  email: null
-  phone: null
+  email: info@taconylab.org
+  phone: (267) 686-7420
   contact_name: null
   social:
   - https://www.facebook.com/taconylab
   - https://www.instagram.com/taconylab_art_center
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://taconylab.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://taconylab.org/events/
 sources:
 - url: https://taconylab.org
   seen: '2026-10-08'
@@ -102,8 +121,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - access.wheelchair
+- url: https://taconylab.org/visit-the-lab/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - commitment
+  - contacts
+  - first_step
+- url: https://taconylab.org/events/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

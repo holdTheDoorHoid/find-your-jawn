@@ -1,0 +1,732 @@
+{
+ "wave": "w22b-penn-recheck",
+ "agent": "w22b-06",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 37,
+ "leads_only": [],
+ "blocked": [
+  {
+   "url": "http://philomathean.org/",
+   "status": null,
+   "note": "TLS certificate name mismatch; the fetch tool refused the page on two tries"
+  }
+ ],
+ "notes": "Ran 0 WebSearch calls and 37 WebFetch calls: 20 directory entries, 13 club sites or link pages, and 4 retries. Four records are full records with dated 2026 evidence (status active): Phi Gamma Nu (spring 2026 recruitment), Policy Consulting Group (fall 2026 recruiting in its directory entry), South Asia Society (2026 to 2027 membership and 2026 items on its link page), and SPEC Connaissance (2025 to 2026 speaker season, medium confidence). Sixteen are held back with status unknown and no summary. Reasons: no club website at all (Poker at Penn, Polish Club, Quadramics, QuakerBots, Quakers Venture Club, South Asian Women's Space, SPEC Sound); a site with no dated items (Sound Politicks, Sparks Dance Company, SPEC Film Society, SPEC Jazz & Grooves, PRISM, whose only year is a 2017 footer); a site dated only 2024 and 2025 (Quackers Bird Club); a site that would not load (Philomathean); and two dead pages (SPEC Pop Up and SPEC-TRUM, both 404 on specevents.net). Most directory statuses are INACTIVE with approved and active flags that conflict with it; PRISM and QuakerBots show UNDER REVIEW. Individual contact emails that look like a student's or a staff member's personal address were left out. Instagram, Facebook and Google Forms were not opened for facts. No student names were recorded.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:philomathean"
+    ],
+    "group_id": "philomathean-society",
+    "ein": null,
+    "website": "http://philomathean.org/"
+   },
+   "verdict": "publish",
+   "name": "Philomathean Society",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "http://philomathean.org/",
+    "email": "firstcensor@philomathean.org"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/philomathean/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club website could not be loaded. The fetch tool refused it on a certificate name mismatch, on two tries. The directory says the club takes members through an application form and holds biweekly meetings, but it gives no event dates. A directory note says the club registered for 2025 to 2026, which is a registration record, not dated activity. Needs a manual check of the site before publishing.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-poker-club"
+    ],
+    "group_id": "poker-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Poker at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "pennpokerclub@gmail.com",
+    "social": [
+     "https://instagram.com/pokeratpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-poker-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website in the directory. The entry lists a sign-up form and an Instagram account, with no events and no dated items. Social pages are leads only, so nothing was read there. Directory status is INACTIVE. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-polish-club"
+    ],
+    "group_id": "polish-club",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Polish Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "social": [
+     "https://instagram.com/upennpolishclub/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-polish-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory entry has no events or dates and says to contact members directly. The only email on the entry is a member's personal student address, so it was left out. Directory status is INACTIVE. Needs a dated source or a club address before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:prism"
+    ],
+    "group_id": "programs-in-religious-interfaith-and-spiritual-matters-prism",
+    "ein": null,
+    "website": "https://chaplain.upenn.edu/prism/"
+   },
+   "verdict": "publish",
+   "name": "Programs in Religious, Interfaith, and Spiritual Matters (PRISM)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://chaplain.upenn.edu/prism/",
+    "social": [
+     "https://instagram.com/pennprism/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/prism/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://chaplain.upenn.edu/prism/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club page lists no events or dated items. Its only year is a 2017 footer, which is not evidence. The directory status is UNDER REVIEW, which is a registration state. The directory's individual contact email was left out. The page points to a listserv for updates, which was not opened.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:upenn-quackers-bird-club"
+    ],
+    "group_id": "quackers-bird-club-at-penn",
+    "ein": null,
+    "website": "https://quackersbirdclub.netlify.app"
+   },
+   "verdict": "publish",
+   "name": "Quackers Bird Club at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://quackersbirdclub.netlify.app",
+    "email": "quackersbirdclub@gmail.com",
+    "social": [
+     "https://instagram.com/upennquackers"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/upenn-quackers-bird-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://quackersbirdclub.netlify.app",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club site is live but shows only photo credits dated 2024 and 2025 and a 2025 footer. It lists no event dates and no 2026 item. Directory status is INACTIVE. Needs a 2026 dated item (an outing, a meeting or a post) before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:quadramics"
+    ],
+    "group_id": "quadramics-theatre-co",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Quadramics Theatre Co.",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "quadramicsboard@googlegroups.com",
+    "social": [
+     "https://instagram.com/quadramics/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/quadramics/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory names a current production but gives no year or date. Its only dated items are 2021 fair badges. Directory status is INACTIVE. The Instagram account was not read for facts. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:quakerbots"
+    ],
+    "group_id": "quakerbots",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "QuakerBots",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "quakerbots-club@engineering.upenn.edu",
+    "social": [
+     "https://instagram.com/pennquakerbots/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/quakerbots/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory shows UNDER REVIEW and no events. The 2024 founding date is not recent activity. The mailing list sign-up is a form and was not opened. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-quakers-venture-club"
+    ],
+    "group_id": "quakers-venture-club-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Quakers Venture Club at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "quakersventureclub@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-quakers-venture-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory says the club recruits twice a year, with applications opening in the first two weeks of the spring and fall semesters, but it prints no year. No event dates. Directory status is INACTIVE. Needs a dated source, such as a 2026 recruiting notice, before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sound-politicks"
+    ],
+    "group_id": "sound-politicks",
+    "ein": null,
+    "website": "https://soundpoliticks.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Sound Politicks",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://soundpoliticks.weebly.com/",
+    "email": "upenn.soundpoliticks@gmail.com",
+    "social": [
+     "https://instagram.com/soundpoliticks"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sound-politicks/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://soundpoliticks.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club site has no dates, no application notice and no event list. Its only year is a quotation attribution, which is not evidence. Directory status is INACTIVE and gives only a founding year. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:south-asian-womens-space"
+    ],
+    "group_id": "south-asian-womens-space",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "South Asian Women's Space",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "pennsouthasianwomensspace@gmail.com",
+    "social": [
+     "https://instagram.com/penn.saws"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/south-asian-womens-space/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory shows only 2021 fair badges and no events. Directory status is INACTIVE. Social pages are leads only and were not read for facts. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sparks-dance-company"
+    ],
+    "group_id": "sparks-dance-company",
+    "ein": null,
+    "website": "https://sites.google.com/view/sparksdancecompany/home"
+   },
+   "verdict": "publish",
+   "name": "Sparks Dance Company",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://sites.google.com/view/sparksdancecompany/home",
+    "email": "president.sparksdancecompany@gmail.com",
+    "social": [
+     "https://instagram.com/sparks_dance_company"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sparks-dance-company/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/view/sparksdancecompany/home",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club site has no dates. Its only year is the 1989 founding year, and the 'page updated' label has no date. Auditions are mentioned with no date. Directory status is INACTIVE. Needs a dated source, such as an audition or show notice, before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-film-society"
+    ],
+    "group_id": "spec-film-society",
+    "ein": null,
+    "website": "https://specevents.net/film/"
+   },
+   "verdict": "publish",
+   "name": "SPEC Film Society",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://specevents.net/film/",
+    "email": "filmdirs@specevents.net",
+    "social": [
+     "https://instagram.com/specfilmpenn/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-film-society/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://specevents.net/film/",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club page lists no screenings, events or news with dates. Its only dates are 2023 image file names, which are not evidence. The page says the committee meets weekly but gives no day or time. Directory status is INACTIVE. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-jazz-grooves"
+    ],
+    "group_id": "spec-jazz-and-grooves",
+    "ein": null,
+    "website": "https://specatpenn.squarespace.com/jazz-and-grooves"
+   },
+   "verdict": "publish",
+   "name": "SPEC Jazz & Grooves",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://specatpenn.squarespace.com/jazz-and-grooves",
+    "email": "jazzdirs@specevents.net",
+    "social": [
+     "https://instagram.com/jazzandgrooves/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-jazz-grooves/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    },
+    {
+     "url": "https://specatpenn.squarespace.com/jazz-and-grooves",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club page lists no artist shows or events with dates. Its only dates are 2023 image file names. Directory status is INACTIVE. The site gives a second contact address, which was not recorded. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-pop-up"
+    ],
+    "group_id": "spec-pop-up",
+    "ein": null,
+    "website": "http://specevents.net/pop-up/"
+   },
+   "verdict": "publish",
+   "name": "SPEC Pop Up",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "popup@specevents.net",
+    "social": [
+     "https://instagram.com/popupspec/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-pop-up/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club page at http://specevents.net/pop-up/ returns 404 Not Found, and the https version does too. No other club page was found. Directory status is INACTIVE and lists no events. Needs a working site or a dated source before it can publish. This is a dead link, not a block.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-sound"
+    ],
+    "group_id": "spec-sound",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "SPEC Sound",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "sound@specevents.net",
+    "social": [
+     "https://instagram.com/spec.sound/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-sound/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "No club website. The directory shows no events and no dates. Its status field reads INACTIVE while the approved and active flags are set. Social pages are leads only. Needs a dated source before it can publish.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:spec-to-represent-undergraduate-minorities-spec-trum"
+    ],
+    "group_id": "spec-to-represent-undergraduate-minorities-spec-trum",
+    "ein": null,
+    "website": "http://specevents.net/trum/"
+   },
+   "verdict": "publish",
+   "name": "SPEC To Represent Undergraduate Minorities (SPEC-TRUM)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "spectrumdirs@specevents.net",
+    "social": [
+     "https://instagram.com/upennspectrum/"
+    ]
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/spec-to-represent-undergraduate-minorities-spec-trum/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "name",
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "The club page at http://specevents.net/trum/ returns 404 Not Found, and the https version does too. Directory status is INACTIVE and lists no events. Its only dated items are 2021 fair badges. Needs a working site or a dated source before it can publish. This is a dead link, not a block.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

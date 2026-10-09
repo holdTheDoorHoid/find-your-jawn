@@ -41,9 +41,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public tours run on weekdays from April through October and last about 1.5 hours. Clean-up work
-    days are on weekends from October to March and on weekday evenings from April to September. Public
-    events are on the calendar.
+  text: The grounds are open every day from dawn until dusk. Public tours run on weekdays from April through
+    October and last about 1.5 hours. Clean-up work days are on weekends from October to March and on
+    weekday evenings from April to September. Public events are listed on the events calendar.
   days:
   - mon
   - tue
@@ -70,31 +70,44 @@ locations:
 online_ok: true
 cost:
   level: paid
-  text: Public tours are $20 per person, with a $5 add-on for lunch setup. Some events are for members
-    only, and other event prices vary.
+  text: Public tours are $20 per person, with a $5 add-on for lunch setup. Individual membership is $40
+    a year and brings discounts on ticketed events. Some events are for members only, and other event
+    prices vary.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'Paved roads, brick paths, and grass, with most roads having a 4-inch curb. The one ADA restroom
+    is at the northeast corner of the Stable and is open when staff are on site and during public events.
+    A wedge ramp for event areas can be set up if you ask in advance. Hamilton Mansion has four steps,
+    and a ramp can be added on request. An event space accessibility map is available. Nearest SEPTA:
+    Subway-Surface Trolley to the 40th Street Trolley Portal at 40th and Woodland, directly across from
+    the gates (any line except T1, per the page).'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Request a tour through the online form on the tours page (book at least 2 weeks ahead), or check
-    the volunteer page and join a clean-up work day.
-  drop_in: null
+  how: Book a public tour on the tours page at least 2 weeks ahead, or walk the grounds yourself during
+    open hours.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Tours and public events are open to anyone who books or signs up, but the volunteer page does
-    not spell out a general sign-up process.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The grounds and public events are open to anyone, and tours are booked through a form. The volunteer
+    page does not spell out how a new volunteer signs up.
+  what_to_expect: A public tour takes about 1.5 hours on a weekday between April and October, and you
+    book it ahead. Tours cover the cemetery and Hamilton Mansion, which is open by appointment or during
+    certain events and has four steps unless a ramp is set up. Clean-up work days run on weekends from
+    October to March and on weekday evenings from April to September.
+  first_visit_tips:
+  - Book a tour at least 2 weeks ahead, since the page asks for advance notice.
+  - Take the SEPTA trolley to 40th and Woodland. The gates are directly across from the trolley portal.
+  - Plan to leave before sunset, since safety staff close the gates each evening.
+  - Children under 14 need an adult with them, and dogs must stay leashed.
 contacts:
   website: http://www.woodlandsphila.org
   email: info@woodlandsphila.org
@@ -146,7 +159,24 @@ sources:
   fields:
   - summary
   - contacts
-research_tier: 1
+- url: https://www.philaculturalfund.org/grantee-directory?2e1ab49c_page=12
+  seen: '2026-10-04'
+  fields:
+  - name
+  - contacts.website
+- url: https://www.woodlandsphila.org/visit
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - access
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.woodlandsphila.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

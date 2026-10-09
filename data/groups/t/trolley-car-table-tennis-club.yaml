@@ -3,9 +3,10 @@ name: Trolley Car Table Tennis Club
 aka: []
 leads: []
 ein: null
-summary: A nonprofit table tennis club in East Falls. It describes itself as a full-time club affiliated
-  with USA Table Tennis, and it offers open play every day.
-what_you_do: Come to open play and play with other players at the club.
+summary: A table tennis club at One Falls Center in East Falls, open to players of all levels. It runs
+  open play every day, a Tuesday league night and monthly tournaments, and it is affiliated with USA Table
+  Tennis.
+what_you_do: Come to open play, join the Tuesday league night, or take out a monthly or yearly membership.
 kind: club
 categories:
 - sports-teams
@@ -30,7 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Daily open play. Hours are not listed on the club site.
+  text: Open play Monday to Friday, 6 to 10 pm, and Saturday and Sunday, noon to 5 pm. League nights are
+    on Tuesdays at 7 pm.
   days:
   - mon
   - tue
@@ -39,11 +41,13 @@ schedule:
   - fri
   - sat
   - sun
-  times: []
+  times:
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
-- label: Club
+- label: Club at One Falls Center
   address: 3300 Henry Avenue
   neighborhood: null
   planning_district: null
@@ -54,30 +58,40 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Prices are not on the club site
-commitment: null
+  level: low
+  text: Daily play is $5 for adults and $3 for youth under 18, paid in cash. Monthly membership is $40
+    for adults and $20 for youth. Yearly membership is $360 for adults and $180 for youth, and a youth
+    yearly membership is half price when a parent is a yearly member. League nights cost $5, plus a $5
+    club entry fee for non-members.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: Route 32 bus, with a stop directly in front of Falls Center.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Go to open play, or contact the club by email or phone first
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open play is posted as daily and the club lists a contact. Its site does not explain beginner
-    sessions or walk-in rules.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Walk in during open play, sign in when you arrive, and pay the daily fee in cash.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The club says it welcomes players at every level and accepts walk-ins during open play. It does
+    not list beginner lessons.
+  what_to_expect: Open play means you sign in when you arrive and play with whoever is there. The club
+    welcomes players at every level, but it does not list a beginner session. Adults pay $5 for a day
+    of play, and youth under 18 pay $3.
+  first_visit_tips:
+  - Enter Falls Center from Henry Avenue, turn left just before the coffee and pizza shop, go through
+    the gate, and look for the club sign on your right.
+  - Go down the stairs by the door nearest the club sign.
+  - Bring cash, because daily fees are cash only.
+  - Taking SEPTA? The Route 32 bus stops directly in front of Falls Center.
 contacts:
   website: https://www.trolleycarttc.com/
   email: info@trolleycarttc.com
@@ -85,9 +99,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.trolleycarttc.com/
+status: active
+last_sign_of_life: 2025-12
+sign_of_life_url: https://www.trolleycarttc.com/news
 sources:
 - url: https://www.trolleycarttc.com/
   seen: '2026-10-08'
@@ -99,8 +113,31 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.trolleycarttc.com/play
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - requirements
+- url: https://www.trolleycarttc.com/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.trolleycarttc.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - access
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

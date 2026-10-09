@@ -7,11 +7,10 @@ leads:
 - irs_bmf:232313587
 - manual_seeds:washington-square-west-civic-association
 ein: '232313587'
-summary: The neighborhood civic association for Washington Square West. It co-hosts Love Your Park garden
-  days with Farm Philly, including the May 2026 Open Garden Day at Sartain and Waverly Gardens and at
-  South Street Garden.
-what_you_do: Come help at the Love Your Park open garden days, or meet the association's volunteers there.
-  The park page does not describe the association's regular meetings.
+summary: The neighborhood civic association for Washington Square West. It describes itself as Philadelphia's
+  first civic association, runs community gardens, and co-hosts Love Your Park garden days with Farm Philly.
+what_you_do: Come to the monthly board meeting, which is open to the public, or help at a Love Your Park
+  garden day. Membership joins and renewals are handled online.
 kind: civic
 categories:
 - neighborhood-civic
@@ -23,6 +22,7 @@ motives:
 - values
 - social
 formats:
+- conversation
 - one_off_event
 roles:
 - organize
@@ -40,18 +40,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Open Garden Day on Saturday, May 9, 2026: 9 AM to 12 PM at Sartain and Waverly Gardens, and 10
-    AM to 2 PM at South Street Garden'
+  text: Board of Directors meetings are held the second Tuesday of each month at 7 pm and are open to
+    the public. The meeting place is not listed on the site.
   days:
-  - sat
+  - tue
   times:
-  - morning
-  - daytime
-  recurring: null
-  season: event_only
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Sartain and Waverly Gardens
-  address: null
+- label: Sartain Garden
+  address: 1114 to 1118 Locust St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Waverly Garden
+  address: 1127 to 1131 Waverly St
   neighborhood: null
   planning_district: null
   zip: null
@@ -60,10 +68,10 @@ locations:
   in_city: true
   transit: null
 - label: South Street Garden
-  address: null
+  address: 839 South St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19147'
   lat: null
   lng: null
   in_city: true
@@ -71,7 +79,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The membership page does not list dues. Joining and renewing happen through an online portal.
 commitment: null
 group_size: null
 access:
@@ -86,21 +94,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a Love Your Park open garden day, such as the May 9 event, and ask the volunteers on site
-    how to join the association.
+  how: Attend the second Tuesday board meeting at 7 pm. The meeting place is not on the site, so confirm
+    it through the contact page or by phone before you go.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Garden days are public, but the page gives no sign-up step and the association's own website
-    could not be reached.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Board meetings are public, and membership joins online. The meeting place is not on the site,
+    so the first visit takes one call or email to confirm.
+  what_to_expect: The board meeting is a public monthly meeting held on the second Tuesday at 7 pm. The
+    site does not describe the agenda or how long the meeting runs. Garden days are a hands on way to
+    meet the association's volunteers.
+  first_visit_tips:
+  - Call 267-603-1318 or email info@washwestcivic.org to confirm the meeting place. The office phone is
+    voicemail only.
+  - Membership joins and renewals are done through the online portal linked on the membership page.
+  - Ask about garden days, which the association co-hosts with Farm Philly.
 contacts:
   website: https://washwestcivic.org
-  email: zoning@washwestcivic.org
-  phone: '2158060960'
+  email: info@washwestcivic.org
+  phone: 267-603-1318
   contact_name: Tami Sortman
-  social: []
+  social:
+  - https://www.facebook.com/washwestcivic
+  - https://www.instagram.com/washwestcivic
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -117,6 +133,7 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - sign_of_life_url
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0
   seen: '2026-10-08'
   fields:
@@ -140,7 +157,38 @@ sources:
   - name
   - locations
   - ein
-research_tier: 1
+- url: https://washwestcivic.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - contacts
+- url: https://washwestcivic.org/about/meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+- url: https://washwestcivic.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_visit_tips
+- url: https://washwestcivic.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts
+- url: https://washwestcivic.org/calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.washwestcivic.org/community-gardens/
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -4,10 +4,10 @@ aka: []
 leads:
 - cultural_fund:the-stagecrafters-theater-3
 ein: null
-summary: A community theater company in Chestnut Hill that stages a five show season. Members of the public
-  can buy tickets, and the site lists ways to audition, volunteer and join.
-what_you_do: Buy a ticket or a season subscription, or use the Join Us pages to learn about auditions,
-  volunteering and membership. Donations and sponsorships are also listed.
+summary: A community theater company in Chestnut Hill that stages five shows a season. Anyone can buy
+  tickets, audition, volunteer, or join as a member.
+what_you_do: Audition by appointment, volunteer on stage or behind the scenes with no theater experience
+  needed, or join as a member. Tickets and season subscriptions are also sold to the public.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -33,12 +33,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Five productions run in the 2026 to 2027 season. The page lists The Underpants opening September
-    18, Cry It Out opening February 5, For Peter Pan On Her 70th Birthday opening April 9, and POTUS opening
-    June 11. Years for these dates are inferred from the season name.
+  text: Five shows each season. Audition forms for each production are posted about one month before its
+    auditions.
   days: []
   times: []
-  recurring: false
+  recurring: true
   season: null
 locations:
 - label: Theater
@@ -54,6 +53,7 @@ online_ok: false
 cost:
   level: paid
   text: Single tickets are sold per show. A 2026 to 2027 season subscription for all five shows is $85.
+    The site says annual membership dues cost the same as a subscription.
 commitment: null
 group_size: null
 access:
@@ -68,18 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to The Underpants or the season subscription, or call 215-247-8881 to ask about auditions
-    and volunteering.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Tickets are open to the public, and the site has Join Us pages for auditions, volunteering and
-    membership, though their details were not read.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Fill in the Volunteer Interest Form on the volunteer page, or email the volunteer address with
+    questions.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The volunteer page says no prior theater experience is needed and links an interest form. The
+    audition page says the company welcomes performers of all backgrounds, abilities and experiences.
+  what_to_expect: Volunteers can help with lights and sound, set building, costumes, ushering and ticketing,
+    and marketing. For a show, you book an audition slot, email a headshot and resume, and callbacks are
+    by invitation. The page does not say how much time a volunteer commits to.
+  first_visit_tips:
+  - Watch for the audition form that goes up about a month before each show's auditions.
+  - Email the volunteer address with questions about time commitment, since the page does not give it.
+  - Membership asks for four meetings a year (at least two to keep voting rights) and at least one volunteer
+    shift a year.
 contacts:
   website: https://thestagecrafters.org/
-  email: null
+  email: info@thestagecrafters.org
   phone: 215-247-8881
   contact_name: null
   social: []
@@ -103,7 +109,32 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+- url: https://thestagecrafters.org/join-us/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://thestagecrafters.org/auditions/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://thestagecrafters.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://thestagecrafters.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

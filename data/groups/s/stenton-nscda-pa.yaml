@@ -5,9 +5,10 @@ leads:
 - cultural_fund:stenton-nscda-pa-3
 ein: null
 summary: The Stenton historic house museum in North Philadelphia, run by the Colonial Dames of America
-  in Pennsylvania. It offers free second Saturday tours, history programs and seasonal events.
-what_you_do: Come to a free second Saturday house tour, a history program or the Halloween Harvest Festival,
-  or support the Friends of Stenton. Volunteer roles are not listed on the site.
+  in Pennsylvania. It offers timed house tours, history talks and seasonal family events, such as a fall
+  harvest festival.
+what_you_do: Book a timed house tour, come to a history talk or a family event such as the Halloween Harvest
+  Festival, or support the Friends of Stenton. Volunteer roles are not listed on the site.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -21,7 +22,8 @@ formats:
 - one_off_event
 roles:
 - figure_out
-crowd: []
+crowd:
+- families
 bridging: null
 audience:
   open_to: public
@@ -33,10 +35,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free second Saturday house tours at 12, 1, 2 and 3 pm. October 10 has a symposium (10 am to 2
-    pm, $20) and a free chocolate demonstration (2 to 3 pm). The Halloween Harvest Festival runs October
-    24, 1 to 3 pm.
+  text: Timed house tours run Tuesday to Saturday from April 1 to December 19, starting on the hour from
+    1 to 3 pm. Second Saturdays are open 12 to 4 pm, May through October. From January to March, visits
+    are by appointment.
   days:
+  - tue
+  - wed
+  - thu
+  - fri
   - sat
   times:
   - daytime
@@ -55,28 +61,40 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: Second Saturday tours are free. The October 10 symposium is $20.
-commitment: drop_in
+  text: Adult admission is $10, and students, children and seniors pay $8. Children under 6 are free,
+    and so are Friends of Stenton members and residents of zip codes 19140, 19141 and 19144. Some events,
+    such as the fall symposium, have their own ticket prices.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: Wayne Junction station on the Regional Rail, about four blocks away. Bus 23 stops
+    at Windrim and Germantown Avenues, and Logan station on the Broad Street Line is a walk away.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to the free second Saturday tour, or RSVP for an event through the programs page at stenton.org/programs
+  how: Book a timed house tour by calling 215-329-7312 or emailing programs@stenton.org. A booking guarantees
+    your place.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Tours and several events are free and open to the public, and the site says how to RSVP for others.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Tours and many events are open to the public and have a phone and email way to book. The site
+    does not describe a newcomer program.
+  what_to_expect: Expect a timed walk through the historic house, booked ahead by phone or email. The
+    site does not say how long a tour takes or who leads it. Adult admission is $10, with lower prices
+    for students, children and seniors.
+  first_visit_tips:
+  - Reserve a spot on a timed tour, since a booking guarantees your place.
+  - Arrive a few minutes before the hour, when tours start.
+  - Take the Regional Rail to Wayne Junction, about four blocks away, or bus 23 to Windrim and Germantown
+    Avenues.
+  - Check the programs page before you visit, since the site lists holiday closures and changed hours.
 contacts:
   website: http://www.stenton.org
   email: information@stenton.org
@@ -108,8 +126,27 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+  - sign_of_life_url
+- url: https://www.stenton.org/visit
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - access
+  - first_step
+  - requirements.kids_ok
+  - commitment
+- url: https://www.stenton.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: http://www.stenton.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

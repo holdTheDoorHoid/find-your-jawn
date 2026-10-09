@@ -9,8 +9,8 @@ ein: '231687751'
 summary: A contemporary art center in West Philadelphia, also listed as the University City Arts League.
   Artists teach adult classes and workshops, members can use open studio time, and kids can join an after
   school art program.
-what_you_do: Take an artist led class or workshop, use the open studio, or sign a child up for after school
-  art.
+what_you_do: Take an artist led class or workshop, join as a member for open studio time, or sign a child
+  up for after school art.
 kind: program
 categories:
 - arts-crafts
@@ -37,12 +37,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Adult classes run through the year. An exhibition called BOHÉMIENNE runs October 2 to 29, 2026,
-    and the event post was dated September 11, 2026.
-  days: []
-  times: []
+  text: Adult classes run through the year. After school art for grades K to 5 runs on weekdays, 3 to
+    6 pm, during the school year, with snack and workshops from 4 to 6 pm.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  - evening
   recurring: true
-  season: fall
+  season: year_round
 locations:
 - label: Arts League building
   address: 4226 Spruce St
@@ -56,7 +63,9 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Class prices, membership prices and scholarship details are not listed on the site.
+  text: Adult class and membership prices are not shown on the main pages, so check the class page before
+    you register. After school is billed as monthly plans for one to five days a week. Drop-in school
+    holiday day camps are $125 per day.
 commitment: seasonal
 group_size: null
 access:
@@ -71,14 +80,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Take a Class link for adult classes, or the Register link for after school art
+  how: Pick an adult class on the Take a Class page at theartsleague.org and sign up online, or use the
+    Register link to enroll a child in after school art.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Adult classes are open to the public with online sign up, though the class types are not named
-    on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Adult classes are open to the public with online sign up. The class list, times and prices were
+    not visible on the pages checked, so a first timer needs to look at the class page before choosing.
+  what_to_expect: Adult classes are artist led classes and workshops. Open studio time is a member benefit,
+    so check membership before you plan to drop in. After school art serves grades K to 5 with snack and
+    workshops, and pickup is from Penn Alexander or Henry C. Lea Elementary between 3 and 4 pm.
+  first_visit_tips:
+  - Check the class page for dates and prices before you sign up, since they are not on the main pages.
+  - After school students from other schools must be dropped off by 4 pm.
+  - Fill in the Student Information Form before the first after school day.
+  - Use an email address you check often; the program contacts new families within a week of buying a
+    plan.
 contacts:
   website: https://www.theartsleague.org/
   email: coordinator@theartsleague.org
@@ -118,7 +135,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - interests
-research_tier: 1
+- url: https://www.theartsleague.org/after-school
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - requirements
+- url: https://www.theartsleague.org/classes
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.theartsleague.org/memberships
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

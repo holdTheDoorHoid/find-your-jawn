@@ -3,9 +3,10 @@ name: Unity Clinic
 aka: []
 leads: []
 ein: null
-summary: A free clinic on South 21st Street in South Philadelphia for uninsured patients. Volunteer nurses,
-  doctors and students staff it on Tuesday evenings.
-what_you_do: Volunteer as a nurse, clinician or student on a Tuesday evening shift.
+summary: A free primary care clinic for uninsured adults at 2130 South 21st Street in South Philadelphia.
+  The Augustinian Defenders of the Rights of the Poor run it with help from Villanova's nursing school,
+  and volunteer nurses, doctors and students staff it on Tuesday evenings.
+what_you_do: Volunteer as a nurse, clinician, student or translator on a Tuesday evening shift.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -33,7 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tuesdays, 5 to 8 pm. Volunteers arrive from 4:30 pm.
+  text: Clinic sessions run Tuesdays, 5 to 8 pm. Faculty, nurse and student volunteer hours run Tuesdays,
+    4:30 to 8:30 pm.
   days:
   - tue
   times:
@@ -53,33 +55,45 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free care for uninsured patients
+  text: Care is free for uninsured adults who do not qualify for government programs. The volunteer pages
+    mention no cost to volunteer.
 commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - es
+  - id
+  notes: Interpretation is offered in Spanish and Bahasa Indonesian, per the Villanova page.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Bring your own stethoscope
 first_step:
-  how: Nurse practitioners and physicians contact the clinic's volunteer coordinator. Nursing and medical
-    students go through their school programs.
-  drop_in: null
-  sign_up_needed: null
+  how: If you are a licensed nurse practitioner or physician, email phewson@augustinian.org, the volunteer
+    contact the Villanova page lists for them, or use the ADROP volunteer form at rightsofthepoor.org/volunteer.
+    Nursing and medical students go through their school programs.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Clinicians need a license and a set volunteer commitment, and students join through their schools
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Clinicians need a license and at least a monthly commitment, and students join through their
+    schools, so a first timer cannot simply walk in. The pages do not describe a first shift.
+  what_to_expect: Shifts run on Tuesday evenings. Nurses and nursing students take patient intake and
+    vital signs and give immunizations, and they can watch clinicians at work. Nurse practitioners and
+    physicians see patients and come at least one shift a month, and medical students work alongside a
+    clinician. The clinic also uses translators.
+  first_visit_tips:
+  - Bring your own stethoscope, since the Villanova page says every volunteer needs one.
+  - Arrive by 4:30 pm for volunteer hours; patient sessions start at 5.
+  - Parking at the clinic is on site and free.
+  - Nurses need a Pennsylvania license.
 contacts:
   website: https://www.villanova.edu/university/nursing/villanova-nursing-experience/college-in-the-community/unity-clinic.html
-  email: null
-  phone: null
+  email: adropinfo@augustinian.org
+  phone: 215-925-3566
   contact_name: null
   social: []
   calendar_feed: null
@@ -95,8 +109,29 @@ sources:
   - locations
   - first_step
   - requirements
-research_tier: 1
-confidence: low
+  - what_you_do
+  - cost
+  - commitment
+  - access
+- url: https://www.rightsofthepoor.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+- url: https://www.rightsofthepoor.org/our-ministries
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - cost
+  - first_step
+- url: https://www.rightsofthepoor.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

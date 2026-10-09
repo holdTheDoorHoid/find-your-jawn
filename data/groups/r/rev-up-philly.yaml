@@ -33,7 +33,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly meeting on a Wednesday, 3:00 to 4:30 pm, held on Zoom
+  text: Monthly meeting on a Wednesday from 3 to 4:30 pm, held on Zoom
   days:
   - wed
   times:
@@ -50,7 +50,8 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The event page gives no notes on captions, ASL or interpreters for the meeting. The group's site
+    has an accessibility statement and names the Mid-Atlantic ADA Center for ADA help.
 requirements:
   act153_clearances: null
   background_check: null
@@ -59,22 +60,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the short sign-up form linked on the Disability Pride PA calendar page, then join the Zoom
-    meeting
+  how: Fill in the short Google sign-up form linked from the event page, then join the next monthly Zoom
+    meeting.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The page says the meeting is open to everyone interested in making change, and gives a clear
-    sign-up form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The event page says the meeting is open to anyone interested in change for people with disabilities
+    and seniors in Philadelphia, and it gives a clear sign-up form. It does not say newcomers are specifically
+    welcome, so the rating stays at 3.
+  what_to_expect: The meeting is a video call on Zoom that runs about an hour and a half on a Wednesday
+    afternoon. Residents, workers and organizations share ideas for changes that matter to people with
+    disabilities and seniors in the city. The event page does not describe the agenda in detail.
+  first_visit_tips:
+  - Fill in the sign-up form on the event page before the meeting.
+  - You need a computer, tablet or phone with internet access to join the Zoom call.
+  - The coalition has its own join page on the group's site, for people who want to take part beyond one
+    meeting.
 contacts:
   website: https://www.disabilitypridepa.org/calendar/rev-up-philly
-  email: null
+  email: info@DisabilityPridePA.org
   phone: null
   contact_name: null
   social: []
-  calendar_feed: null
+  calendar_feed: https://www.disabilitypridepa.org/calendar/rev-up-philly?format=ical
 status: active
 last_sign_of_life: 2026-02
 sign_of_life_url: https://www.disabilitypridepa.org/calendar/rev-up-philly
@@ -88,7 +96,19 @@ sources:
   - first_step
   - status
   - commitment
-research_tier: 1
+  - access.notes
+  - contacts.calendar_feed
+- url: https://www.disabilitypridepa.org/calendar/rev-up-philly?format=ical
+  seen: '2026-10-08'
+  fields:
+  - contacts.calendar_feed
+  - last_sign_of_life
+- url: https://www.disabilitypridepa.org/revupphilly
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

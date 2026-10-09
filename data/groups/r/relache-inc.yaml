@@ -6,13 +6,14 @@ leads:
 ein: null
 summary: A music ensemble that presents concerts and collaborative projects, and invites singers and players
   to join some performances.
-what_you_do: Attend a listed concert, or sign up as a performer for a project such as the Unsilent Night
-  event. Multi-week collaborative workshops are also listed.
+what_you_do: Attend a listed concert, or take part in a public project such as Unsilent Night, which the
+  group says anyone can join. Multi-week collaborative workshops are also listed.
 kind: nonprofit
 categories:
 - music
 interests:
 - community_band
+- choir_singing
 motives:
 - enhancement
 - social
@@ -32,22 +33,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: No regular weekly schedule is published. Concerts and projects are listed one at a time.
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations: []
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Ticket prices are not shown on the site. The Unsilent Night walk is free.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The Unsilent Night walk is over 30 minutes long and crosses city streets. The site gives no other
+    access details.
 requirements:
   act153_clearances: null
   background_check: null
@@ -56,14 +58,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend a listed concert such as Re UNITE on Sun Oct 25, 2026 at 4 pm, or email director@relache.org
-    to ask about joining a performance.
-  drop_in: null
+  how: Come to Unsilent Night on Friday, Dec 18, 2026 at 6 pm, a free walk around Rittenhouse Square,
+    or email director@relache.org to ask about performing in a project.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The Unsilent Night listing says anyone can take part and needs no tickets. The site describes
+    no join or audition process for performers, so the rating stays at 3.
+  what_to_expect: Unsilent Night is a group performance of about 45 minutes, on foot through the streets
+    around Rittenhouse Square. Each participant plays one of four digital tracks on a phone or device
+    with speakers, and organizers help you download it before the countdown. Re | UNITE, the group's October
+    concert at the Philadelphia Ethical Society, is ticketed and the site shows no price.
+  first_visit_tips:
+  - Bring a phone or other device with speakers for the Unsilent Night track.
+  - Plan for more than 30 minutes of walking, including crossing city streets.
+  - Buy Re | UNITE tickets through the ticket link on the group's site before the Oct 25 concert.
 contacts:
   website: https://www.relachemusic.org
   email: director@relache.org
@@ -71,6 +80,7 @@ contacts:
   contact_name: null
   social:
   - https://www.instagram.com/relacheensemble
+  - https://www.facebook.com/RelacheEnsemble/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -89,7 +99,29 @@ sources:
   - schedule
   - contacts
   - status
-research_tier: 1
+- url: https://www.relachemusic.org/re-unite-26
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.relachemusic.org/re-joice-26
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - access.notes
+- url: https://www.relachemusic.org/musicians
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.relachemusic.org/support
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.relachemusic.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
