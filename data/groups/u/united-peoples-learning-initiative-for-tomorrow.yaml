@@ -9,8 +9,8 @@ leads:
 ein: '471364564'
 summary: Runs UPLIFT Academy, an early learning school in Philadelphia with a Montessori approach to reading
   and STEM, and funds reading rooms and meals for children in Liberia.
-what_you_do: Enroll a child at UPLIFT Academy, ask about volunteering through the contact form, or give
-  to the Hungry No More campaign for meals in Liberia.
+what_you_do: Enroll a child at UPLIFT Academy through the online Enroll Now application, ask about volunteering
+  through the contact page, or give to the Hungry No More campaign for meals in Liberia.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -22,13 +22,15 @@ motives:
 - values
 formats: []
 roles: []
-crowd: []
+crowd:
+- kids
+- families
 bridging: null
 audience:
   open_to: public
   school: null
   min_age: null
-  max_age: null
+  max_age: 12
   community: []
   faith: null
   partisan: false
@@ -64,18 +66,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Start an enrollment on the Enroll Now page at upliftworld.org, or call 267-226-9748 to ask about
-    UPLIFT Academy.
+  how: Fill out the first step of the Enroll Now application at upliftworld.org, or call 267-226-9748
+    with questions before you start.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The Academy has a public enrollment page and a phone number, but the page gives no tuition or
-    start dates.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Families fill out an application before they see the school, and the site does not mention tours
+    or open houses.
+  what_to_expect: UPLIFT Academy is a Montessori-style early learning center for children from 6 weeks
+    to 12 years old, with a focus on early literacy and hands-on learning. The application asks about
+    your child's current school or daycare, and the site does not say how long a school day is, what tuition
+    costs, or whether tours are offered. Call to ask about these before you apply.
+  first_visit_tips:
+  - Have a state ID, passport, or driver's license ready for each parent or guardian and each emergency
+    contact, since the form asks for an upload.
+  - If your child attended a daycare, have the names of the last three, because the school contacts them
+    before admission.
+  - Pick an anticipated start date, since the form asks for one.
 contacts:
   website: https://upliftworld.org
   email: atema@upliftworld.org
@@ -113,7 +123,18 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://upliftworld.org/uplift-academy/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_to_expect
+  - contacts
+- url: https://upliftworld.org/enroll-now/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -21,21 +21,23 @@ formats:
 - perform_make_together
 roles:
 - create
-crowd: []
+crowd:
+- teens
+- young_adults
 bridging: null
 audience:
   open_to: public
   school: null
   min_age: 14
-  max_age: null
+  max_age: 25
   community:
   - lgbtq
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Weekly sessions Wednesday to Friday, 4:00 to 6:30 pm. The summer schedule runs June to August.
-    Open events for all ages are listed without dates.
+  text: Weekly sessions Wednesday to Friday, 4 to 6:30 pm during the school year. The summer schedule,
+    June to August, is different and is shown only as images on the site.
   days:
   - wed
   - thu
@@ -47,7 +49,7 @@ schedule:
 locations:
 - label: Studio in the Northern Liberties area (address not listed)
   address: null
-  neighborhood: null
+  neighborhood: northern_liberties
   planning_district: null
   zip: null
   lat: null
@@ -72,13 +74,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply through the Google form linked on the site. Applications are taken year-round.
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the application on the Google form linked from the Join page on theyap.org. Applications
+    are taken all year.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Year-round applications for a free program, through a public form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A free program with a public application form that is open all year. The site does not say whether
+    art experience is needed.
+  what_to_expect: Sessions run Wednesday to Friday from 4 to 6:30 pm during the school year, and once
+    you have applied you can drop in. You make art with other young people, look at social justice ideas
+    through your work, and sometimes join guest artist workshops and gallery visits. The program is free,
+    and participants can also get food, art supplies and the chance to sell their artwork.
+  first_visit_tips:
+  - Apply first; the site lists no set deadline, so check the form for current dates.
+  - The site gives no street address for the studio, so ask the group on Instagram before your first session.
+  - Summer sessions run on a different schedule, shown only as images, so ask before June.
 contacts:
   website: https://www.theyap.org
   email: null
@@ -88,8 +98,8 @@ contacts:
   - https://instagram.com/theyoungartistprogram
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.theyap.org/
+last_sign_of_life: '2025'
+sign_of_life_url: https://www.theyap.org/events
 sources:
 - url: https://www.theyap.org/
   seen: '2026-10-08'
@@ -102,11 +112,27 @@ sources:
   - first_step
   - contacts
   - status
+  - crowd
 - url: https://www.cultureworksphila.org/fiscal-sponsorship/fiscally-sponsored-projects
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.theyap.org/join-yap
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - schedule
+  - cost
+  - audience
+- url: https://www.theyap.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

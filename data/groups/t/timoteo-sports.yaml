@@ -6,16 +6,19 @@ ein: null
 summary: A youth sports and mentoring group based on West Hunting Park Avenue in Philadelphia. It runs
   fall basketball and girls volleyball for kids, a free music program for teens, and after-school and
   mentoring work.
-what_you_do: Families register kids for fall basketball (ages 6 to 14) or girls volleyball. Teens register
-  for the free DASH Music Program (ages 12 to 18). The group also lists mentoring programs and scholarships.
+what_you_do: Families register kids for fall youth basketball (ages 6 to 14) or girls volleyball. Teens
+  register for the free DASH Music Program (ages 12 to 18). The group also runs Timoteo LinkUp mentoring
+  for students and lists scholarships with partner schools.
 kind: nonprofit
 categories:
 - sports-teams
 - music
+- kids-youth-mentoring
 interests:
 - basketball
 - youth_coaching
 - instrument_lessons
+- mentoring
 motives:
 - enhancement
 - social
@@ -38,19 +41,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Fall 2026 calendar: youth basketball from September 19 to November 14, Saturdays 9 am to 1 pm;
-    girls volleyball from October 3 to November 21, Saturdays 9 to 11 am; DASH Music Program from October
-    19 to December 7, Mondays 4 to 6 pm.'
+  text: 'Programs run in seasons. Fall programs: youth basketball on Saturdays 9 am to 1 pm, girls volleyball
+    on Saturdays 9 to 11 am, and the free DASH Music Program on Mondays 4 to 6 pm for eight weeks. Check
+    the site for each season''s dates.'
   days:
   - sat
   - mon
   times:
   - morning
-  - evening
+  - daytime
   recurring: true
   season: fall
 locations:
-- label: Timoteo Sports office, 1300 W Hunting Park Ave
+- label: Timoteo Sports office (DASH Music Program)
   address: 1300 W Hunting Park Ave., Philadelphia PA 19140
   neighborhood: null
   planning_district: null
@@ -71,8 +74,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The DASH Music Program is free (8 weeks). Basketball and volleyball fees are not stated on the
-    page. The site lists scholarships without amounts.
+  text: The DASH Music Program is free. Girls volleyball is $55 for a six week Saturday program. The site
+    does not state a basketball fee, and it mentions scholarships without amounts.
 commitment: seasonal
 group_size: null
 access:
@@ -87,15 +90,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Register Now link on the site for basketball, volleyball or the DASH music program, or
-    email info@timoteosports.org.
+  how: Register through the form for the program you want (youth basketball, girls volleyball, or the
+    DASH Music Program), or email info@timoteosports.org with questions.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Registration is public through a form for each program, but the page does not describe tryouts
-    or what a first session is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Each program has a public registration form and the volleyball listing says all skill levels
+    are welcome, but the site does not describe tryouts or what a first session is like.
+  what_to_expect: The site describes basketball as structured practices, competitive play, and mentorship,
+    with no tryouts listed. Girls volleyball meets on Saturday mornings at International Christian High
+    School, which the site does not give an address for. The site does not say how long each session runs
+    or what the first practice looks like.
+  first_visit_tips:
+  - Register through the form for each program; the site lists no drop in visits.
+  - Basketball meets at Esperanza, 4261 N 5th St; the DASH Music Program meets at the office, 1300 W Hunting
+    Park Ave.
+  - Ask the office for the street address of the volleyball location, since the site gives only the school
+    name.
+  - Call (609) 200-1351 or email info@timoteosports.org; the contact page also has a form.
 contacts:
   website: https://timoteosports.org/
   email: info@timoteosports.org
@@ -125,7 +137,28 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://timoteosports.org/sports
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - cost
+  - first_step
+  - requirements
+  - schedule
+- url: https://timoteosports.org/timoteo-linkup
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://timoteosports.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_visit_tips
+- url: https://timoteosports.org/our-impact
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

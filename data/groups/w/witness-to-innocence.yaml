@@ -67,14 +67,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for email updates, or use the Get Involved page to take action or request a speaker.
+  how: Sign up for email updates on the group's site, or open an action alert from the Action Alerts button
+    to take part in a campaign.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
   basis: Email updates, action alerts and speaker requests are open to anyone, and the site gives a clear
-    route in.
-  what_to_expect: null
-  first_visit_tips: []
+    way in.
+  what_to_expect: The site lists no regular meetings or in person events, so a first visit happens online.
+    You read a campaign page, take an action alert, or sign up for updates, and the listed actions cost
+    nothing (donations are optional).
+  first_visit_tips:
+  - 'Start online: the site lists no visiting hours.'
+  - To ask for a speaker, email speakers@witnesstoinnocence.org; the page does not say how far ahead to
+    book.
 contacts:
   website: https://www.witnesstoinnocence.org/
   email: info@witnesstoinnocence.org
@@ -103,11 +109,23 @@ sources:
   - locations
   - status
   - last_sign_of_life
+  - sign_of_life_url
 - url: https://friendscentercorp.org/about/directory-of-tenant-organizations/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.witnesstoinnocence.org/join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.witnesstoinnocence.org/speakers-bureau
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

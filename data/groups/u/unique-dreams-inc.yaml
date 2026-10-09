@@ -8,9 +8,10 @@ ein: '833369226'
 summary: A Philadelphia nonprofit that runs a free evening center for youth ages 10 to 17, a summer camp
   for younger kids, and a community food pantry. Youth get homework help, arts, sports, cooking, and a
   meal.
-what_you_do: Youth register online for the evening center, which includes a meal and round-trip rides,
-  and take part in homework help, arts and crafts, cooking, games, sports, and field trips. The food pantry
-  runs on set days each week.
+what_you_do: Youth ages 10 to 17 register for the free evening center, online or in person, and join homework
+  help, arts and crafts, cooking, gaming, boxing, sports, and field trips. Families can also enroll children
+  ages 8 to 12 in summer camp. The food pantry runs on set days from a trailer in the Garsed Center parking
+  lot, but the site lists more than one schedule, so call before you go.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -36,14 +37,14 @@ audience:
   open_to: public
   school: null
   min_age: 8
-  max_age: null
+  max_age: 17
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: 'Community Evening Resource Center: open every day, with registration from 5:30 PM and doors at
-    6:00 PM. Summer camp 2026 ran weekdays from 8:00 AM to 3:30 PM.'
+  text: Community Evening Resource Center open every evening, seven days a week, with check-in from 5:30
+    pm and doors at 6 pm. Summer camp for ages 8 to 12 runs June through August, weekdays 8 am to 3 pm.
   days:
   - mon
   - tue
@@ -54,10 +55,11 @@ schedule:
   - sun
   times:
   - evening
+  - daytime
   recurring: true
   season: year_round
 locations:
-- label: Unique Dreams, Inc.
+- label: Unique Dreams, Inc. (evening center and office)
   address: 4704 Leiper Street
   neighborhood: null
   planning_district: null
@@ -69,8 +71,8 @@ locations:
 online_ok: true
 cost:
   level: low
-  text: The evening center is free for ages 10 to 17. Summer camp was $100 per week with meals; before
-    and after care costs extra.
+  text: The evening center is free, including the meal and round-trip rides. Summer camp is $100 a week
+    with meals. Transportation to camp and before and after care cost extra.
 commitment: null
 group_size: null
 access:
@@ -85,14 +87,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register online for the free Community Evening Resource Center, or call 267-325-2115 with questions
+  how: Register a young person, ages 10 to 17, for the free Community Evening Resource Center, online
+    or in person, or call 267-325-2115 with questions first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to the public with a free online sign-up, but the site does not say whether walk-ins are
-    welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The center is free and open to any youth in the age range, with a clear sign-up path, but the
+    site does not say whether walk-ins are welcome.
+  what_to_expect: A young person registers, then spends the evening on homework help and one or more activities
+    such as arts and crafts, cooking, games, sports, or boxing. A meal is served, and the center provides
+    free rides home. The site names its staff but does not say how many adults or volunteers are present
+    each night.
+  first_visit_tips:
+  - Call 267-325-2115 before the first night, since the site does not say whether walk-ins are welcome.
+  - Registration is by the online form linked on the site or in person.
+  - Round-trip transportation is free.
+  - The office is open Monday to Friday, 7 am to 8 pm, and on weekends, 6 am to 6 pm.
 contacts:
   website: https://www.uniquedreamsinc.com/
   email: null
@@ -135,7 +145,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.uniquedreamsinc.com/community-evening-resource-center-cerc.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+  - cost
+  - requirements
+- url: https://www.uniquedreamsinc.com/summer-camp.html
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+- url: https://www.uniquedreamsinc.com/volunteer.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.uniquedreamsinc.com/no-weapons-formed-nwf.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

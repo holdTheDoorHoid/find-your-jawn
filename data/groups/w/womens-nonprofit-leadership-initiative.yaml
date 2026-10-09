@@ -73,15 +73,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the mailing list on wnli.org, or use one of the model letters on the Get Involved page
-    to write to a board chair.
+  how: Download a model letter from the Get Involved page and send it to a university or hospital board
+    chair.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Anyone can sign up or use the letters, but the site does not describe member events or volunteer
-    roles.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Model letters, board tips and the mailing list are open to anyone, and the site gives a clear
+    way in. It describes no member events or volunteer roles.
+  what_to_expect: There is no meeting or event listed on the site, so a first step happens online. Most
+    people start by reading the group's research on who sits on large hospital and university boards,
+    then sending a letter to a board leader. The site lists no cost for the letters, the board tips or
+    the mailing list.
+  first_visit_tips:
+  - 'Choose the model letter that fits the institution: higher education or healthcare.'
+  - The model letters can go to a board chair, a university president, or another board leader.
 contacts:
   website: https://www.wnli.org
   email: contact@wnli.org
@@ -89,9 +94,9 @@ contacts:
   contact_name: Wendy Epstein
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.wnli.org/get-involved
+status: dormant
+last_sign_of_life: 2024-07
+sign_of_life_url: https://wnli.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -126,7 +131,25 @@ sources:
   - audience
   - contacts
   - cost
-research_tier: 1
+  - what_to_expect
+- url: https://wnli.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://wnli.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_to_expect
+- url: https://wnli.org/members/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

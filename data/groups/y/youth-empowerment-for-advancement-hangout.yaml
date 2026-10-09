@@ -35,7 +35,7 @@ audience:
   open_to: public
   school: null
   min_age: 15
-  max_age: null
+  max_age: 24
   community: []
   faith: null
   partisan: false
@@ -83,15 +83,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Walk in to the hangout at 5257 Walton Ave on a weekday between 2 and 10 pm, or email teens@yeahphilly.org
-    to ask about volunteer or work openings
+  how: Go to the hangout at 5257 Walton Ave on a weekday between 2 and 10 pm, or email teens@yeahphilly.org
+    to ask about joining.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site posts hangout hours and a street address, which suggests drop in is fine; it lists no
-    sign-up steps for new visitors, so confirm by phone or email.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site posts hangout hours and an address but no intake steps. It describes its youth as teens
+    and young adults affected by violence, so confirm by phone or email first.
+  what_to_expect: The hangout is open on weekdays from 2 to 10 pm, and Saturdays are for scheduled events
+    only. The site does not say what happens on a first visit, whether you sign in, or what it costs,
+    so the staff are the best source. When we read it, the Work with YEAH page listed no open internships
+    or volunteer roles.
+  first_visit_tips:
+  - Call (267) 892-3538 or email teens@yeahphilly.org to check the fit before you go.
+  - Go on a weekday, since the hangout is closed on Sundays and open only for scheduled events on Saturdays.
+  - The site does not mention parking or transit, so check the street address before you go.
 contacts:
   website: https://www.yeahphilly.org
   email: teens@yeahphilly.org
@@ -128,12 +134,28 @@ sources:
   - cost
   - first_step
   - contacts
+  - audience
 - url: https://www.yeahphilly.org/news
   seen: '2026-10-08'
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://yeahphilly.org/work-with-yeah/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_step
+- url: https://yeahphilly.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://yeahphilly.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

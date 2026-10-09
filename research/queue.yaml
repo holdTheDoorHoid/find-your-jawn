@@ -435,17 +435,17 @@ waves:
     brief: tier1
     batch_files: research/batches/w20c-tier1-irs-web/
     searches_per_agent: 2
-    status: todo
+    status: done
     after: [w20b-tier1-irs-web]
-    note: "IRS groups with a website in the remaining NTEE codes (education, human services, rights, international, science, public benefit, mutual benefit, religion). Philanthropy, hospitals, disease charities, employment, scholarships, cemeteries, insurance and single schools left out. 482 groups, 33 batches of 15."
+    note: "IRS groups with a website in the remaining NTEE codes (education, human services, rights, international, science, public benefit, mutual benefit, religion). Philanthropy, hospitals, disease charities, employment, scholarships, cemeteries, insurance and single schools left out. 482 groups, 33 batches of 15. All 33 batches run and imported 2026-10-08 evening."
   - id: w21-tier2-deep-b
     lane: tier2
     kind: batches
     brief: tier2
     batch_files: research/batches/w21-tier2-deep-b/
     searches_per_agent: 1
-    status: todo
-    note: "First visit guides for every other active or probably active public tier 1 group with a website (655 groups, 94 batches of 7). Ids in research/batches/w21-tier2-deep-b-ids.json, active first, then highest newcomer rating, then thinnest family."
+    status: done
+    note: "First visit guides for every other active or probably active public tier 1 group with a website (655 groups, 94 batches of 7). Ids in research/batches/w21-tier2-deep-b-ids.json, active first, then highest newcomer rating, then thinnest family. All 94 batches run and imported 2026-10-08 evening."
   - id: w3-interests-e
     lane: G
     kind: slices
@@ -489,15 +489,15 @@ waves:
     brief: tier2
     batch_files: research/batches/w23-tier2-deep-c/
     searches_per_agent: 1
-    status: running
-    note: "First visit guides for the 771 groups published on 2026-10-08 evening (111 batches of 7). Ids in research/batches/w23-tier2-deep-c-ids.json."
+    status: done
+    note: "First visit guides for the 771 groups published on 2026-10-08 evening (111 batches of 7). Ids in research/batches/w23-tier2-deep-c-ids.json. All 111 batches run and imported by 9 pm."
   - id: w24-lists-thin
     lane: Q
     kind: slices
     brief: lists
     searches_per_agent: 3
-    status: running
-    note: "List pages for the thinnest interest families on 2026-10-08 evening (published groups: emergency and disaster 14, water and rowing 30, games and puzzles 31, outdoors 34, animals 36, food and drink 48, running and cycling 56, Philly traditions 56, seniors 62, making and tech 68). Find the current list page with a search when a starting point is named without a URL."
+    status: done
+    note: "Done 2026-10-08 evening: 14 slices (10 plus follow ups for water, animals, traditions and running leads), about 170 records, 37 new groups and the rest upgrades of groups we had. Best: older adults (30), running and cycling (22 plus 7), rowing and paddling (18 plus 8), making (17). Weakest: games (2, most club pages blocked). Remaining gaps are in each file's notes and leads_only. List pages for the thinnest interest families on 2026-10-08 evening (published groups: emergency and disaster 14, water and rowing 30, games and puzzles 31, outdoors 34, animals 36, food and drink 48, running and cycling 56, Philly traditions 56, seniors 62, making and tech 68). Find the current list page with a search when a starting point is named without a URL."
     slices:
     - agent: x-emergency
       text: 'Emergency and disaster volunteering in Philadelphia: Philadelphia Community Emergency Response Teams (CERT) run by the Office of Emergency Management, the Philadelphia Medical Reserve Corps, American Red Cross Southeastern Pennsylvania volunteer roles, amateur radio emergency groups (ARES and RACES for Philadelphia County, and ham radio clubs that train for emergencies), the Southeastern Pennsylvania VOAD member list, and disaster relief groups that recruit city residents. One record per team or organization.'
@@ -519,3 +519,15 @@ waves:
       text: 'Older adult groups in Philadelphia: senior community centers listed by the Philadelphia Corporation for Aging (each center with public programs is a record), aging in place villages that use neighbor volunteers (Penn''s Village, Northwest Village Network, East Falls Village and others), retired volunteer programs (RSVP and similar), intergenerational programs that pair students and elders, and nursing home or hospice volunteer programs open to the public.'
     - agent: x-making
       text: 'Making and tech groups in Philadelphia: hackerspaces and community makerspaces (Hive76 and others), Code for Philly, repair cafes and fix it clinics, bike repair co ops, FIRST robotics teams that take community mentors, Linux and programming user groups, ham radio clubs, woodworking and metalworking guilds, knitting, quilting and fiber arts guilds, and model railroad clubs. Skip paid classes at businesses.'
+  - id: w25-irs-liveness
+    lane: A
+    kind: script
+    status: todo
+    note: "Started 2026-10-08 evening: fyj liveness on the 1599 unpublished IRS groups that list a website (ids in research/batches/w25-irs-liveness-ids.json). Results land in data/liveness.jsonl. Next: batch only the groups whose site is alive with a newest date in 2025 or 2026, skip Questers chapters and the private kinds named in tier1.md, and run them with brief tier1."
+  - id: w26-tier2-deep-d
+    lane: tier2
+    kind: batches
+    brief: tier2
+    searches_per_agent: 1
+    status: todo
+    note: "First visit guides for the 367 published tier 1 groups with a website, active first, that w21 and w23 did not cover (ids in research/batches/w26-tier2-deep-d-ids.json, made 2026-10-08 evening). Make batches with: fyj batches w26-tier2-deep-d --ids-file research/batches/w26-tier2-deep-d-ids.json --tier 1 --target-tier 2 --size 7 --exclude-done."

@@ -8,9 +8,9 @@ ein: '465707649'
 summary: A membership trade group that links businesses in the United States and Ghana. It runs trade
   missions, business summits and open community gatherings, and a youth volunteer program for high school
   students.
-what_you_do: Business members get trade, investment and networking help, and can join trade missions and
-  expos. Anyone can register for the public gatherings, and tri-state high school students can volunteer
-  at large Philadelphia events through the Youth Diplomats program.
+what_you_do: Members get trade, investment and networking help and can join trade missions. Public gatherings
+  are open with registration when one is listed, and tri-state high school students can volunteer at large
+  Philadelphia area events through the Youth Diplomats program.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -40,12 +40,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Trade missions, summits and community gatherings are announced on the events page. The most recent
-    dated item is a trade mission to Accra, Ghana, May 30 to June 5, 2026, aimed at Philadelphia and Pennsylvania
-    business leaders.
+  text: Trade missions, summits and public gatherings are posted on the events page when they are planned,
+    so there is no regular weekly or monthly schedule. Youth Diplomats volunteers work at large Philadelphia
+    area events.
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations:
 - label: Philadelphia region (chamber events)
@@ -59,8 +59,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership dues are not listed on the site, and event prices were not shown on the pages read.
+  level: paid
+  text: 'Membership dues as listed: $50 for students, $250 for individuals or professionals, $1,500 for
+    club or corporate, and $5,000 for council. The page does not say how often dues are charged. Public
+    gathering prices were not shown on the pages read.'
 commitment: one_off
 group_size: null
 access:
@@ -75,15 +77,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look at the membership categories page on usghcc.org to see how to join, or register for a public
-    gathering on the events page.
+  how: Register for a public gathering through the registration link on the chamber's events page when
+    one is listed, or compare the membership levels on the membership page before you join.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Membership is for businesses and the dues are not listed, so the way in is unclear for individuals;
-    public events are open with registration.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Membership is aimed at businesses and professionals and costs $50 or more, and the events calendar
+    showed no listed events when checked. Public gatherings open with registration, so the way in depends
+    on the next event.
+  what_to_expect: Some public gatherings have included live music, food, networking and a raffle. Membership
+    payments go through an outside payment page, so check the level and price first. Event registration
+    runs through a separate ticket link.
+  first_visit_tips:
+  - Public gatherings use a separate registration link on the events page, not the membership payment
+    page.
+  - The Youth Diplomats program takes applications through a Learn More link, and the page does not list
+    ages or steps.
+  - The chamber lists an office in Philadelphia, but no street address is printed on the pages read, so
+    ask before you visit.
 contacts:
   website: https://usghcc.org
   email: null
@@ -128,7 +139,19 @@ sources:
   fields:
   - status
   - schedule
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://usghcc.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://usghcc.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

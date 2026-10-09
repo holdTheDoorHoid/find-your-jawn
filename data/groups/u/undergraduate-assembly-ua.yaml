@@ -6,9 +6,9 @@ leads:
 ein: null
 summary: Penn's elected student government. It decides how student groups get funded, pushes for changes
   that help students, and runs services for undergraduates.
-what_you_do: Attend the open General Body Meetings, which the public may also attend. Students can also
-  apply to be an associate member when the fall application opens, run for an elected seat, or fill out
-  the interest form for updates.
+what_you_do: Attend the General Body Meetings, which the public may attend (the closing Communications
+  portion is closed to visitors). Students can apply to be an associate member when the fall application
+  opens, run for an elected seat, or fill out the interest form for updates.
 kind: student_org
 categories:
 - neighborhood-civic
@@ -35,8 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: General Body Meetings on Sunday evenings in JMHH room 370, listed weekly from August 30 through
-    November 29, 2026
+  text: General Body Meetings every Sunday at 8 pm in Jon M. Huntsman Hall, room 370.
   days:
   - sun
   times:
@@ -44,7 +43,7 @@ schedule:
   recurring: true
   season: fall
 locations:
-- label: Huntsman Hall (JMHH), room 370, for General Body Meetings
+- label: Jon M. Huntsman Hall, room 370 (General Body Meetings)
   address: null
   neighborhood: null
   planning_district: null
@@ -53,7 +52,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: UA address as published on its website
+- label: UA office, as published on its website
   address: 3417 Spruce Street
   neighborhood: null
   planning_district: null
@@ -80,17 +79,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to an open General Body Meeting, or fill out the UA interest form to get updates on elections
-    and member applications.
+  how: Come to a General Body Meeting on a Sunday at 8 pm in Huntsman Hall, room 370. The public may attend.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Meetings are open to the public and the group gives a clear way to get updates.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The meetings are open to the public and the site gives a phone number and an email, but it does
+    not explain how to become a member.
+  what_to_expect: Visitors can attend the open part of the meeting. The site posts minutes from past meetings,
+    so you can see what has come up before you go. The last part, Communications, is closed to the public.
+  first_visit_tips:
+  - Read past meeting minutes on pennua.org to see what has been discussed.
+  - The final Communications portion of the meeting is closed to the public.
+  - Call (215) 898-6533 or email speaker@pennua.org with questions before you come.
 contacts:
   website: https://pennua.org/
-  email: exec@pennua.org
+  email: speaker@pennua.org
   phone: (215) 898-6533
   contact_name: null
   social:
@@ -119,7 +122,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
+  - what_you_do
+  - status
+- url: https://pennua.org/minutes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+  - first_visit_tips
+- url: https://pennua.org/members
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

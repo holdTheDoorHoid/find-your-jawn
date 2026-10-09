@@ -35,8 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Annual L.I.F.E. conference. The 5th one is Saturday, October 17, 2026, 11 am to 3 pm; the page
-    lists no other dates
+  text: Yearly L.I.F.E. conference on a Saturday, 11 am to 3 pm.
   days:
   - sat
   times:
@@ -55,8 +54,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: The yearly conference costs $30 per person and includes a light brunch.
 commitment: one_off
 group_size: null
 access:
@@ -71,13 +70,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Register link on womenhealed4apurpose.org to sign up for the October 17, 2026 conference
-  drop_in: null
-  sign_up_needed: null
+  how: Register for the October 17, 2026 conference through the Google form on the conference page. The
+    fee is $30 per person.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public conference with a clear register link; the page does not say how newcomers are welcomed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The conference takes registration through a clear online form, but the page does not say how
+    newcomers are welcomed.
+  what_to_expect: The conference is one Saturday, from 11 am to 3 pm, at Brand New Life Christian Center
+    on Germantown Avenue. A light brunch is served, and the 2026 theme is Year of Discovery; the page
+    does not describe the sessions or speakers. The fee is $30 per person.
+  first_visit_tips:
+  - Register before the day through the Google form; the page does not say whether you can pay at the
+    door.
+  - The page does not mention parking or transit, so check the address before you go.
 contacts:
   website: https://www.womenhealed4apurpose.org
   email: whfap2021@gmail.com
@@ -114,8 +120,22 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
-confidence: medium
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.womenhealed4apurpose.org/general-1
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.womenhealed4apurpose.org/registration
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

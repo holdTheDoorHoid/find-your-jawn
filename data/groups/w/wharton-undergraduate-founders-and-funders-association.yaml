@@ -6,8 +6,10 @@ leads:
 ein: null
 summary: A Penn student group that helps women and underrepresented people build and fund young companies,
   through speaker events and investment and consulting committees.
-what_you_do: Two speaker events a semester, open to anyone who joins the listserv, plus investment and
-  consulting committees that take applications.
+what_you_do: Penn undergraduates sign up for the club listserv to take part in speaker events, workshops
+  and mentoring. Students can also apply to the consulting committee, which takes on 10-week projects
+  for Penn-affiliated startups and Philadelphia-area women business owners, or to the investments committee,
+  which teaches venture capital basics and builds pitches.
 kind: student_org
 categories:
 - careers-skills-professional
@@ -27,7 +29,7 @@ crowd:
 - professionals
 bridging: null
 audience:
-  open_to: public
+  open_to: students
   school: penn
   min_age: null
   max_age: null
@@ -36,10 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Committee recruitment happens at the start of each semester through Penn Clubs. General body events
+    are open to Penn undergraduates who sign up for the listserv.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations: []
 online_ok: null
@@ -60,12 +63,14 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the listserv on the club's site to get event access. Committee roles need an application
-    through Penn Clubs.
+  how: Join the club listserv from its home page to get on the list for general body events. Committee
+    roles need a Penn Clubs application at the start of each semester; the site says applications reopen
+    in fall 2026.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Speaker events are open to anyone who joins the listserv, and committee roles need an application.
+  basis: Penn undergraduates can join general body events by signing up for the listserv, with no application,
+    and committee roles need an application, so the way in is clear for students.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -91,6 +96,10 @@ sources:
   fields:
   - first_step
   - status
+  - summary
+  - what_you_do
+  - audience
+  - schedule
 - url: https://pennclubs.com/api/clubs/penn-undergraduate-founders-and-funders-association/?format=json
   seen: '2026-10-08'
   fields:
@@ -98,7 +107,17 @@ sources:
   - what_you_do
   - audience
   - contacts
-research_tier: 1
+- url: https://groups.wharton.upenn.edu/wuffa/how-to-join/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - schedule
+- url: https://groups.wharton.upenn.edu/wuffa/committee-overviews/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

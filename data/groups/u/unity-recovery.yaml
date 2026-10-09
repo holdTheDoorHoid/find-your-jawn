@@ -6,9 +6,10 @@ leads:
 - irs_bmf:833604971
 ein: '833604971'
 summary: A peer-run recovery organization with a Philadelphia presence. It offers free one-on-one peer
-  support, recovery meetings held online, life skills workshops, and volunteer roles for people in recovery.
-what_you_do: Request one-on-one peer support, join the digital recovery meetings, take a life skills workshop,
-  or sign up to volunteer.
+  support, recovery meetings held online, life skills workshops, and volunteer roles open to people in
+  recovery, family members, and others.
+what_you_do: Ask for one-on-one peer support, for yourself or a loved one, join an online recovery meeting,
+  take a free life skills workshop, or sign up to volunteer.
 kind: nonprofit
 categories:
 - support-recovery
@@ -37,10 +38,21 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Digital recovery meetings run on a weekly schedule the site posts. The page does not list meeting
-    days or times.
-  days: []
-  times: []
+  text: Online recovery meetings run every day, several times a day, including a family meeting, an LGBTQ+
+    meeting, a parenting meeting, and a harm reduction meeting. Times are Eastern. Life skills workshops
+    run online on the third Saturday of each month at 10 am Eastern.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -56,7 +68,7 @@ locations:
 online_ok: true
 cost:
   level: free
-  text: Free. The group says it never charges a fee.
+  text: Free. The group says it never charges for peer support, and its workshops are always free.
 commitment: null
 group_size: null
 access:
@@ -71,13 +83,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Request Support page on the website, or call 267.748.2454, or email contact@unityrecovery.org
+  how: Join an online recovery meeting through its Join Now link on the digital meetings page, or fill
+    out the peer support request form for the Philadelphia area.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Services are free and open to the public, with a request form and a phone line on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Meetings and peer support are free and open to people in recovery or seeking it, with a Join
+    Now link and a request form, but the site does not explain how meeting sign-up works.
+  what_to_expect: Online meetings run on Zoom or a similar video platform. Video is optional, you can
+    mute your audio, and you can message the facilitator. If the room is full, you can leave your email
+    to be told when a space opens. After you submit a peer support request, a peer should be in touch
+    within 24 hours, according to the FAQ.
+  first_visit_tips:
+  - Times on the site are Eastern time, so check the time in your own zone before you join.
+  - Video is optional, and you can mute your audio.
+  - If a meeting is full, leave your email to be told when a space opens.
+  - You can ask for peer support for a loved one, too.
 contacts:
   website: https://www.unityrecovery.org
   email: contact@unityrecovery.org
@@ -115,7 +136,38 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://unityrecovery.org/digital-recovery-meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://unityrecovery.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+  - first_step
+- url: https://unityrecovery.org/rss-service-interest
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://unityrecovery.org/sdor
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - what_you_do
+- url: https://unityrecovery.org/faq
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

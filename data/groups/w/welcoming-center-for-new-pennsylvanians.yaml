@@ -8,7 +8,8 @@ summary: A Philadelphia nonprofit that helps immigrants build jobs, businesses, 
   skills. Its programs include English and digital skills classes, work readiness tracks, business courses
   and the Immigrant Leadership Institute, and it offers translation and interpretation help.
 what_you_do: Join an English or digital skills class, a work readiness track, a business planning course,
-  or the Immigrant Leadership Institute. Translation and interpretation help is available.
+  or the Immigrant Leadership Institute. Translation and interpretation help is available. Volunteers
+  can help with mock interviews, resume help and career guidance.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -17,9 +18,11 @@ interests:
 - esl_conversation
 - immigrant_welcome
 - entrepreneurs
+- job_clubs
 motives:
 - career
-formats: []
+formats:
+- learn_skill
 roles: []
 crowd:
 - newcomers
@@ -35,9 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: General English classes meet 9:30 am to 12 pm, two days a week, and start on set dates. Level
+    1 meets in person in Center City, and higher levels mix in-person and Zoom. Spots are waitlist only.
   days: []
-  times: []
+  times:
+  - morning
   recurring: null
   season: null
 locations:
@@ -52,14 +57,17 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The site does not state costs or eligibility for classes or services.
+  level: free
+  text: The English, computer, entrepreneurship and work readiness classes are listed as free. The site
+    does not say what the business planning courses cost.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  notes: Translation and interpretation help is offered. Call 215-557-2626 and staff will connect you
+    with help in your language.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,13 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the English and Digital Skills or Work Readiness page to find a program, then call the office
+  how: Fill out the waitlist or interest form on the English and digital skills page for the class you
+    want, or call 215-557-2626 to ask which level fits you.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Programs are listed, but the site does not say how to enroll or who qualifies.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The classes are free and aimed at immigrants, but most are waitlist only, and some need intermediate
+    English first. Enrolling means a form or a call, so walk-ins are not the way in.
+  what_to_expect: Classes are free and start on set dates. For General English, Level 1 meets in person
+    in Center City twice a week from 9:30 am to 12 pm, and higher levels mix in-person and Zoom. Joining
+    the waitlist does not guarantee a spot, so ask the office when the next start is.
+  first_visit_tips:
+  - Call 215-557-2626 first, since the site does not list office hours or walk-in rules.
+  - If English is not your first language, ask for help in your language when you call.
+  - The office is on the 4th floor of 211 N 13th St. The site does not say whether there is an elevator,
+    so ask when you call.
 contacts:
   website: https://welcomingcenter.org
   email: info@welcomingcenter.org
@@ -106,7 +122,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://welcomingcenter.org/esol-digital-skills/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - interests
+  - crowd
+- url: https://welcomingcenter.org/work-readiness/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+  - interests
+- url: https://welcomingcenter.org/contact-connect-with-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

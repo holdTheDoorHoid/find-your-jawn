@@ -3,11 +3,10 @@ name: Visitation B.V.M. Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at Lehigh Avenue and B Street with Sunday Masses in Spanish, English and Vietnamese,
-  and a Saturday vigil in English.
-what_you_do: Come to Mass in Spanish, English or Vietnamese. The Archdiocese page lists no community programs.
-  A Community Center at Visitation, 2646 Kensington Ave., is named on the July 2026 day of service list,
-  with no hours shown.
+summary: A Catholic parish on Kensington Avenue with Sunday Masses in Spanish, English and Vietnamese,
+  and a Saturday evening Mass in English.
+what_you_do: Come to Mass in Spanish, English or Vietnamese. The parish also runs a religious education
+  program for children and names an adult welcome and initiation program (R.C.I.A.) on its site.
 kind: congregation
 categories:
 - faith-community
@@ -33,9 +32,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am (Spanish), 9:30 am (English), 10 am (Spanish, upper church) and 11 am (Vietnamese).
-    Saturday vigil at 5 pm (English). Weekday Mass Monday to Saturday at 8:30 am, and Spanish Mass at
-    7 pm on Tuesday and Wednesday. Saturday confession 4 to 5 pm.
+  text: Sunday Masses at 8 am (Spanish), 9:30 am (English), 10 am (Spanish, in the upper church) and 11
+    am (Vietnamese). Saturday vigil Mass at 5 pm in English. Weekday Mass Monday to Saturday at 8:30 am,
+    and a Spanish Mass at 7 pm on Tuesday and Wednesday. Confession on Saturday from 4 to 5 pm.
   days:
   - sat
   - sun
@@ -50,8 +49,17 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Church (Lehigh Ave. and B St.)
-  address: Lehigh Ave. and B St.
+- label: Church and parish office
+  address: 2646 Kensington Ave.
+  neighborhood: null
+  planning_district: null
+  zip: '19125'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Rectory (sacrament interviews)
+  address: 2625 B St.
   neighborhood: null
   planning_district: null
   zip: '19125'
@@ -62,12 +70,15 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend.
+  text: Attending Mass has no charge. The parish invites giving through its ParishGiving sign-up.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
+  - vi
   notes: null
 requirements:
   act153_clearances: null
@@ -77,23 +88,31 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory
+  how: Come to any Mass on the schedule. To ask about joining as an adult, call the parish office at (215)
+    634-1133.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Masses are open to anyone, and the parish lists a phone number and an email for questions. The
+    parish pages do not describe a newcomer program for adults, so the adult program needs a phone call.
+  what_to_expect: Mass is offered in Spanish, English or Vietnamese, depending on the service you pick.
+    The parish lists no sign-up for attending Mass. The parish pages do not say how long Mass lasts or
+    what happens afterward, so ask the office if you want to know more.
+  first_visit_tips:
+  - 'Pick the language you want: Spanish at 8 and 10 am on Sunday, English at 9:30 am and Saturday at
+    5 pm, Vietnamese at 11 am.'
+  - Call the office at (215) 634-1133 for directions, since the parish pages give two addresses.
+  - Confession is on Saturday from 4 to 5 pm, or by appointment, if you want it before Mass.
 contacts:
   website: https://www.visitationbvm.net
-  email: null
+  email: visitation.philly@gmail.com
   phone: 215-634-1133
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.visitationbvm.net
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://visitationbvm.net/
 sources:
 - url: https://archphila.org/parish/visitation-bvm-philadelphia/
   seen: '2026-10-08'
@@ -114,8 +133,27 @@ sources:
   fields:
   - what_you_do
   - notes
-research_tier: 1
-confidence: medium
+- url: https://visitationbvm.net/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+  - contacts
+- url: https://visitationbvm.net/sacraments/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.visitationbvm.net
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -41,13 +41,17 @@ audience:
   support_group: false
 schedule:
   text: Baseball (ages 7 to 14) and softball (girls 7 to 12) run in spring and fall. Quickball (ages 4
-    to 6) runs on Saturdays from 9:45 to 10:45 am starting in April. Basketball (ages 4 to 16) has winter
-    and summer seasons. After-school programs run during the school year, and the summer camp ran June
-    29 to August 7, 2026.
+    to 6) meets on Saturday mornings from 9:45 to 10:45 am in spring. Basketball (ages 4 to 16) has a
+    winter and a summer season, with weeknight practices and games on Wednesdays and Saturdays. After-school
+    programs run during the school year, and a six-week summer enrichment camp is held each summer.
   days:
+  - tue
+  - wed
+  - thu
   - sat
   times:
   - morning
+  - evening
   recurring: true
   season: null
 locations:
@@ -69,12 +73,22 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: SCH Vare Fieldhouse (basketball practices and games)
+  address: 8000 E Cherokee St, Philadelphia PA 19128
+  neighborhood: null
+  planning_district: null
+  zip: '19128'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: The John B. Kelly after-school program is free and has limited spots. Other fees are not stated.
-    The group says it does not turn a child away for inability to pay.
-commitment: null
+  level: low
+  text: Winter basketball is $110 for ages 4 to 6 and $185 for ages 7 to 16, uniform included. Summer
+    basketball is $165. Quickball is $85 per spring season. The John B. Kelly after-school program is
+    free with limited spots, and the group says it does not turn a child away for inability to pay.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -88,14 +102,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Register button on the program page you want, or email info@uykq.org.
+  how: Open the program page you want, such as basketball for ages 4 to 16, and use its Register button.
+    Winter spots are limited, so register early, or email info@uykq.org to ask first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Basketball is open regardless of skill level, and the site explains how to register for each
-    program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Basketball is open to all skill levels and the group says every child gets a chance to play.
+    Quickball is an intro for ages 4 to 6, and each program page explains how to register.
+  what_to_expect: Winter basketball practices run on weeknight evenings starting at 6 pm, with one guaranteed
+    practice a week, and games are on Wednesday evenings and Saturday mornings. Coaches are volunteers,
+    and the winter fee includes the uniform. Quickball teaches hitting, fielding, catching and baserunning,
+    and parents help coaches carry out the lessons.
+  first_visit_tips:
+  - Winter basketball divisions are ages 4 to 6, 7 to 9, 10 to 12 and 13 to 16, so check your child's
+    age group before you sign up.
+  - The winter fee includes the uniform. The site does not list shoes or other gear, so ask.
+  - Basketball games and practices are at SCH Vare Fieldhouse, 8000 East Cherokee Street.
+  - Winter registration is online through the team sign up system, and spots are limited and may close
+    early.
 contacts:
   website: https://www.urbanyouthkq.com/
   email: info@uykq.org
@@ -103,8 +127,8 @@ contacts:
   contact_name: Haneef Hill
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-08
 sign_of_life_url: https://www.urbanyouthkq.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -135,12 +159,27 @@ sources:
   - contacts
   - status
   - interests
+  - last_sign_of_life
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: high
+- url: https://www.urbanyouthkq.com/basketball
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://www.urbanyouthkq.com/quickball
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_to_expect
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

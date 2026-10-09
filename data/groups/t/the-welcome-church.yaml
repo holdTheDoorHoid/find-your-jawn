@@ -4,10 +4,12 @@ aka: []
 leads:
 - irs_bmf:272863101
 ein: '272863101'
-summary: A small worshipping community on the Parkway for people living in poverty, with a Sunday service,
-  a coffee hour after worship, and winter clothing and meal drives.
-what_you_do: Come to Sunday worship on the Parkway, host the coffee hour and walk around after service,
-  help make bag lunches on certain Mondays, or donate winter items.
+summary: A small church community on the Benjamin Franklin Parkway that welcomes all people, especially
+  people experiencing homelessness. It holds an outdoor service on certain Sundays, and it collects winter
+  clothing and makes bag lunches.
+what_you_do: Come to Church on Logan, the outdoor service at Aviator Park on the first and last Sunday
+  of each month, and stay for the coffee hour. You can also help make bag lunches on certain Mondays,
+  or donate winter items.
 kind: congregation
 categories:
 - faith-community
@@ -38,15 +40,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship on the Parkway. The page does not list a time.
+  text: Church on Logan meets outdoors at Aviator Park on the first and last Sunday of each month at 3
+    pm, regardless of weather, with a coffee hour afterward. A Tuesday gathering runs from noon to 3:30
+    pm at 2111 Sansom Street, with Bible study from 1:30 pm.
   days:
   - sun
-  times: []
+  - tue
+  times:
+  - daytime
   recurring: true
   season: year_round
 locations:
-- label: Worship on the Parkway
+- label: Aviator Park, across from the Franklin Institute (Church on Logan)
   address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Tuesday gathering at Lutheran Church of the Holy Communion
+  address: 2111 Sansom Street
   neighborhood: null
   planning_district: null
   zip: null
@@ -57,7 +72,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the site
+  text: Cost is not listed for worship or the coffee hour.
 commitment: drop_in
 group_size: null
 access:
@@ -72,14 +87,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email or call the pastor to ask about volunteering or current needs
+  how: Come to Church on Logan at Aviator Park on the first or last Sunday of the month at 3 pm, then
+    stay for the coffee hour.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The page invites people to worship and to volunteer and gives named contacts, but no visitor
-    details
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The About Us page gives a fixed outdoor time and place, a coffee hour afterward, and a named
+    contact, and the presbytery page says all are welcome.
+  what_to_expect: The service is held outdoors and goes ahead regardless of the weather, so dress for
+    it. After the service, coffee hour hosts from different congregations walk around the park offering
+    snacks.
+  first_visit_tips:
+  - Email Rev. Schaunel Steinnagel at rvschaunel@aol.com or call 302-463-0542 to confirm the next service
+    date, since it falls only on the first and last Sunday.
+  - The church's winter needs list includes knit hats, gloves, hand warmers, and blankets, if you want
+    to bring something to donate.
+  - The Tuesday gathering at 2111 Sansom Street runs from noon to 3:30 pm, with Bible study from 1:30
+    pm.
 contacts:
   website: http://www.thewelcomechurch.org/
   email: rvschaunel@aol.com
@@ -89,7 +113,7 @@ contacts:
   - https://www.facebook.com/welcomechurchphilly
   calendar_feed: null
 status: active
-last_sign_of_life: '2026'
+last_sign_of_life: 2026-02
 sign_of_life_url: https://presbyphl.org/the-welcome-church/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -122,8 +146,24 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: low
+  - sign_of_life_url
+  - first_visit_tips
+- url: https://www.thewelcomechurch.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: http://www.thewelcomechurch.org/volunteer-and-contact
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

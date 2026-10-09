@@ -7,9 +7,10 @@ ein: '239233412'
 summary: A Philadelphia nonprofit that helps families move up through education, housing, workforce and
   money skills programs. It runs community leadership, youth and volunteer programs, and it hosts homebuyer
   and housing workshops.
-what_you_do: Volunteer with Xiente, join its community leadership or networking programs, or register
-  for a workshop. A first-time homebuyer class is listed for October 22, 2026, and a pre-purchase housing
-  workshop for November 12, 2026. Most programs use a registration form on a third-party site.
+what_you_do: Volunteer roles include mentoring a youth or adult in career exploration, supporting early
+  education or after school programs, helping run networking and advocacy events, and serving on a community
+  advisory group. You can also join the community leadership or networking programs, or register for a
+  workshop.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -42,8 +43,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Program schedules are not shown. Listed workshops: a first-time homebuyer class on October 22,
-    2026, and a pre-purchase housing workshop on November 12, 2026.'
+  text: The site does not show a schedule for its programs. Workshops are posted one at a time on the
+    events page.
   days: []
   times: []
   recurring: null
@@ -58,15 +59,17 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+online_ok: true
 cost:
   level: null
-  text: Workshop costs not shown
+  text: No fee is listed for the programs or workshops we checked.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -76,16 +79,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the register link for the program you want, or call the main office at (215) 426-8734
+  how: Fill in the short volunteer form on the Volunteer with Xiente page so the team can follow up with
+    you.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Most programs need a registration form first, and no schedule is shown
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The volunteer sign-up is a short form with a follow up, and workshops are open to the public
+    with registration. The site describes no beginner program.
+  what_to_expect: Volunteering starts with a short online form, and the team follows up from there. Some
+    workshops are online, such as the pre-purchase housing workshop on November 12, 2026, which runs on
+    Zoom from 5:30 to 7:30 pm Eastern after you register. The pages we checked list no fee, and spots
+    for workshops may be limited.
+  first_visit_tips:
+  - Register through the link on a workshop page; the Zoom details arrive by email.
+  - For questions about in person visits, call the main office at (215) 426-8734; the site does not describe
+    what a visit involves.
 contacts:
   website: https://www.xiente.org/
-  email: null
+  email: info@xiente.org
   phone: (215) 426-8734
   contact_name: The Organization
   social:
@@ -94,7 +105,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.xiente.org/
+sign_of_life_url: https://www.xiente.org/event/pre-purchase-housing-workshop-10/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,7 +125,28 @@ sources:
   - contacts
   - first_step
   - cost
-research_tier: 1
+  - access.languages
+- url: https://www.xiente.org/programs/social-capital/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.xiente.org/event/pre-purchase-housing-workshop-10/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_step
+  - cost
+  - online_ok
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.xiente.org/programs/social-capital/community-leadership/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
