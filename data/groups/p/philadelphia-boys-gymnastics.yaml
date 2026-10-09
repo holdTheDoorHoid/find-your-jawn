@@ -7,9 +7,10 @@ leads:
 - irs_bmf:452736378
 ein: '452736378'
 summary: A gymnastics school with preschool classes, beginner girls classes and a boys program that trains
-  toward USA Gymnastics competition. New families can book a free trial lesson before they join.
+  toward USA Gymnastics competition. New families can book a $30 trial lesson before they join.
 what_you_do: Kids take gymnastics in sessions across fall, winter and spring. Boys who want to compete
-  train in the men's development program. New students fill out an application and a medical form.
+  train in the men's development program. New students fill out an application and a medical liability
+  form.
 kind: program
 categories:
 - sports-teams
@@ -33,17 +34,27 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: 5
+  min_age: 3
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Fall, winter and spring classes were announced for enrollment on August 3, 2026. Class days and
-    times are not published on the site.
-  days: []
-  times: []
+  text: Weekly classes in fall, winter and spring. Preschool and beginner girls classes meet on weekdays
+    and weekends, and boys competition classes meet two to four days a week.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
   recurring: true
   season: null
 locations:
@@ -58,9 +69,11 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Tuition is not shown on the site. The site links to a summer tuition policy but does not give
-    the amounts. A free trial lesson is offered.
+  level: paid
+  text: Monthly tuition is $130 for preschool or beginner girls classes at one class a week, with extra
+    days at $125 a month each. Boys competition levels run $230 to $450 a month. A trial lesson costs
+    $30. A summer policy reduces a month's tuition for boys competition families who miss training in
+    July or August.
 commitment: weekly
 group_size: null
 access:
@@ -75,14 +88,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Contact the gym to arrange a free trial lesson, then fill out the application and medical liability
-    forms, or register online for a class session.
+  how: Book a $30 trial lesson through the online registration link, or call Fred Turoff at (215) 204-7452
+    to arrange one. Then fill in the application and medical liability forms.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site offers beginner girls classes and a free trial lesson, and it explains how to start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists beginner and preschool classes and a $30 trial lesson, and it explains how a new
+    family starts.
+  what_to_expect: Preschool classes last 45 minutes and beginner girls classes last 55 minutes, once a
+    week to start. Preschool has a low student-to-teacher ratio, and the higher levels are by staff invitation.
+    The site does not describe a first class, so the trial lesson is the best way to see one.
+  first_visit_tips:
+  - Use the Directions page on the gym's site. The separate PDF directions are marked as incorrect.
+  - Ask which level fits your child before you book, since advanced levels are by staff invitation.
+  - Call (215) 204-7452 or email info@philadelphiaboysgymnastics.org if you have questions before you
+    come.
 contacts:
   website: https://www.philadelphiaboysgymnastics.org/
   email: info@philadelphiaboysgymnastics.org
@@ -139,7 +159,24 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.philadelphiaboysgymnastics.org/how-to-join-pbg
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - contacts
+- url: https://www.philadelphiaboysgymnastics.org/classes
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - cost
+  - commitment
+- url: https://www.philadelphiaboysgymnastics.org/summer-tuition-policy
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

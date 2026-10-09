@@ -7,10 +7,10 @@ leads:
 - irs_bmf:833134534
 ein: '833134534'
 summary: A Philadelphia nonprofit that has offered free lectures on Polish history, culture and tradition
-  for more than 100 years. Anyone can attend the monthly talks from October to April, in person or on
-  Zoom.
+  for more than 100 years. Anyone can attend the monthly talks from October to April at the Associated
+  Polish Home, and some talks are also offered on Zoom.
 what_you_do: Attend a monthly lecture, watch past talks on the group's YouTube channel, or join the mailing
-  list for event news.
+  list for event news. The sign-up form may not be working yet.
 kind: program
 categories:
 - science-learning
@@ -37,9 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly lectures from October to April. A lecture is already listed for April 18, 2027 at 3 pm.
+  text: Monthly lectures from October to April, usually at 3 pm. Most are held at the Associated Polish
+    Home on Academy Road, and some are offered on Zoom.
   days: []
-  times: []
+  times:
+  - daytime
   recurring: true
   season: event_only
 locations:
@@ -70,14 +72,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the mailing list on the site, then come to the next lecture at the Associated Polish Home
-    on Academy Road, or join by Zoom when offered.
+  how: Come to the next lecture at the Associated Polish Home, 9150 Academy Road, at 3 pm. For the Zoom
+    option, email the group first, since the site does not say how to get the link.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Lectures are free and open to everyone, with a clear way to attend in person or online.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says all lectures are free and open to everyone, and it gives the address, the lecture
+    times and a contact email.
+  what_to_expect: A lecture is one talk on one topic, starting at 3 pm. Topics run from Polish history
+    and art to medicine and technology, and each lecture has a named speaker. The site does not say how
+    long a talk runs or whether there is time for questions.
+  first_visit_tips:
+  - Check the lectures page for the month's talk, and whether it is in person or on Zoom.
+  - The site does not describe parking or nearby transit for the Associated Polish Home, so plan your
+    route ahead of time.
+  - Donations are welcome and tax deductible, but you do not need to give to attend.
 contacts:
   website: https://www.polishpeoplesuniversity.org
   email: contact@polishpeoplesuniversity.org
@@ -86,8 +95,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
-sign_of_life_url: https://www.polishpeoplesuniversity.org
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.polishpeoplesuniversity.org/lectures
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,7 +126,21 @@ sources:
   - contacts
   - status
   - audience
-research_tier: 1
+- url: https://www.polishpeoplesuniversity.org/lectures
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+  - online_ok
+- url: https://www.polishpeoplesuniversity.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

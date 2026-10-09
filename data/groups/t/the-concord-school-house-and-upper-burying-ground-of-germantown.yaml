@@ -33,11 +33,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public visit hours, plus Evening Firefly Hours on August 4 to 6, 2026, 5 to 7 pm
+  text: Public visit hours are posted on the site. Evening Firefly Hours are free outdoor family and nature
+    programs that run April through October at Historic Germantown sites, and this site lists them among
+    its events, usually 5 to 7 pm.
   days: []
   times:
   - evening
-  recurring: null
+  recurring: true
   season: summer
 locations:
 - label: Concord School House
@@ -52,7 +54,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Evening Firefly Hours are free, according to the Historic Germantown page that describes them.
+    The homepage gives no price for visiting the burying ground or schoolroom.
 commitment: drop_in
 group_size: null
 access:
@@ -67,14 +70,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Plan a visit during the public hours listed on concordschoolhouse.org, or come to an evening event
-    such as the Firefly Hours in August.
+  how: Plan a visit during the public hours posted on concordschoolhouse.org, or come to an Evening Firefly
+    Hours event, which is free.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
   basis: Public visit hours and events are posted, with no membership step.
-  what_to_expect: null
-  first_visit_tips: []
+  what_to_expect: A visit means walking through the historic burying ground and seeing the 1775 schoolroom
+    during public hours. Firefly Hours are early-evening outdoor programs for families and nature. The
+    site does not say how long a visit takes or how many people usually come.
+  first_visit_tips:
+  - Check the website's visit page for current hours before you go.
+  - Email info@concordschoolhouse.org with access questions, since the site lists none.
 contacts:
   website: https://www.concordschoolhouse.org/
   email: info@concordschoolhouse.org
@@ -114,8 +121,15 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: high
+  - first_step.how
+  - last_sign_of_life
+- url: https://historicgermantownpa.org/firefly-hours/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

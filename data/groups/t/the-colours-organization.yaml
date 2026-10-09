@@ -5,10 +5,12 @@ leads:
 - irs_990n:232788115
 ein: '232788115'
 summary: A Philadelphia organization for queer people of color that offers health care, HIV and sexual
-  health services, case management and support groups. It also runs named social and creative activities,
-  including Rainbow Reads and an open mic night.
-what_you_do: Join a support group or one of the named activities, get HIV and sexual health services,
-  or call to ask about getting involved.
+  health services, case management and support groups. It also hosts community events such as an open
+  mic night and book clubs, and it makes a video talk series called Conversations.
+what_you_do: Get free HIV and STI screenings and safer sex kits, use case management, or ask for referrals
+  for mental health care, substance use treatment or PrEP. Ask how to join one of the support groups,
+  or ask about the open mic and book club events. The group also gives out free meals and clothing to
+  people facing hardship.
 kind: nonprofit
 categories:
 - social-meetups
@@ -16,6 +18,7 @@ categories:
 interests:
 - lgbtq_social
 - health_outreach
+- harm_reduction
 motives:
 - social
 - values
@@ -42,7 +45,7 @@ schedule:
   season: null
 locations:
 - label: Office
-  address: 1211 Chestnut Street
+  address: 1211 Chestnut Street, Suite 910
   neighborhood: null
   planning_district: null
   zip: '19107'
@@ -53,7 +56,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Some services are free, including HIV and STI screenings, safer sex kits, and meals and clothing
+    for people facing hardship. The site gives no price for case management or support groups.
 commitment: null
 group_size: null
 access:
@@ -68,14 +72,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-832-0100 or email info@coloursorganization.org. The site does not say how to join a group
-    or when groups meet.
+  how: Call 215-832-0100 or email info@coloursorganization.org, or use the contact form on the site, and
+    ask about the service or group you want.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Activities are named, but the way in is not described on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site names its services and support groups but does not say who is eligible, how to start,
+    or when groups meet, so the way in is unclear.
+  what_to_expect: The services page describes the support groups as spaces to connect and share experiences.
+    It does not give meeting times, group size, or what a first meeting is like, so ask staff when you
+    call.
+  first_visit_tips:
+  - Call before you come, since the site gives no meeting times or intake steps.
+  - The office is at 1211 Chestnut Street, Suite 910, in Philadelphia.
 contacts:
   website: https://www.coloursorganization.org
   email: info@coloursorganization.org
@@ -86,8 +95,8 @@ contacts:
   - https://facebook.com/coloursorganization1991
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.coloursorganization.org
+last_sign_of_life: 2025-03
+sign_of_life_url: https://thedp.com/article/2025/03/penn-daap-annual-gala
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -111,7 +120,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://coloursorganization.org/services/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step.what_to_expect
+  - audience
+- url: https://coloursorganization.org/conversations/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://coloursorganization.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step.how
+- url: https://thedp.com/article/2025/03/penn-daap-annual-gala
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

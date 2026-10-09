@@ -6,7 +6,7 @@ leads:
 - irs_bmf:921345794
 ein: '921345794'
 summary: A nonprofit orchestra that aims to bring classical music to historically underserved communities.
-  It plays public concerts, often pay-what-you-wish, and its most recent listed concert was in May 2026.
+  It plays public concerts, often pay-what-you-wish, and lists its concerts on its Events page.
 what_you_do: Attend a public concert, or support the orchestra with a donation. The site does not say
   how musicians join or audition.
 kind: nonprofit
@@ -32,11 +32,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public concerts are listed on the Events page with dates. The most recent was on Saturday, May
-    30, 2026, 3 to 4 pm. No upcoming date was shown when checked.
+  text: Public concerts are posted on the Events page as they are booked. The site does not publish a
+    regular rehearsal or concert schedule.
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: event_only
 locations:
 - label: Reformation Lutheran Church
@@ -51,7 +51,8 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: Pay-what-you-wish. The May 2026 concert suggested $25 a person. Other events vary.
+  text: Concerts are pay-what-you-wish, and some events print a suggested donation. Some events are ticketed
+    through Eventbrite.
 commitment: one_off
 group_size: null
 access:
@@ -67,13 +68,20 @@ requirements:
   gear: null
 first_step:
   how: Go to a public concert listed on the Events page, or follow the orchestra on Instagram for new
-    dates
+    dates.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts are open to the public, but the page does not say how to join as a player
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts are open to the public with posted times and a pay-what-you-wish entry, but the site
+    does not say how to join as a player or volunteer.
+  what_to_expect: Concerts listed on the Events page run about an hour or two, at times that vary. The
+    venue is Reformation Lutheran Church on Vernon Road, and admission is pay-what-you-wish. The site
+    gives little beyond the times and venue, so a first concert is the best way to see what it is like.
+  first_visit_tips:
+  - Free on-street parking is available near Reformation Lutheran Church on Vernon Road, according to
+    the Events page.
+  - No upcoming concert was listed when we read the Events page, so check it or the Instagram account
+    for new dates.
 contacts:
   website: https://phillycivicsymphony.org
   email: null
@@ -110,13 +118,18 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - first_visit_tips
 - url: https://phillycivicsymphony.org
   seen: '2026-10-08'
   fields:
   - summary
   - what_you_do
   - contacts
-research_tier: 1
+- url: https://phillycivicsymphony.org/musicians
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

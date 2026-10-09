@@ -3,9 +3,11 @@ name: St. Philip Neri Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at 218 Queen Street in South Philadelphia with a 10 am Sunday Mass, a Saturday
-  vigil, and weekday morning Mass.
-what_you_do: Come to Sunday Mass at 10 am. The page lists no community programs.
+summary: The Catholic parish in Queen Village at 218 Queen Street, with a Saturday vigil at 4:30 pm, a
+  10 am Sunday Mass, and weekday Masses at 7:30 am. The parish office helps new parishioners register
+  and start RCIA.
+what_you_do: Come to Sunday Mass at 10 am or a weekday Mass, or call the parish office about registering,
+  baptism classes, or RCIA (the program for adults who want to join the Catholic Church).
 kind: congregation
 categories:
 - faith-community
@@ -29,9 +31,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Mass at 10 am. Saturday vigil Mass at 4:30 pm and Saturday Mass at 8 am. Weekday Mass at
-    7:30 am. Holyday Mass at 7:30 am, with a holyday vigil at 7 pm. Saturday confession 3:45 to 4:15 pm,
-    and Sunday confession before the 10 am Mass.
+  text: Saturday vigil Mass at 4:30 pm and Saturday Mass at 8 am. Sunday Mass at 10 am. Weekday Mass at
+    7:30 am, Monday to Friday. Saturday confession 3:45 to 4:15 pm, and Sunday confession before the 10
+    am Mass. Holy day Mass at 7:30 am, with a holy day vigil at 7 pm.
   days:
   - sat
   - sun
@@ -48,7 +50,7 @@ schedule:
 locations:
 - label: Church
   address: 218 Queen St.
-  neighborhood: null
+  neighborhood: queen_village
   planning_district: null
   zip: '19147'
   lat: null
@@ -73,16 +75,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to the Sunday 10 am Mass, or call the parish
+  how: Come to the Sunday 10 am Mass, or call the parish office at 215-468-1922 to register or ask about
+    RCIA, which starts each fall for people over 14.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the parish phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The contact page opens with a hello and welcome, lists what newcomers can start (registering,
+    RCIA, baptism), and gives the office number. Mass itself needs no sign-up.
+  what_to_expect: Mass is free and open to anyone, and the Sunday 10 am Mass is the one the site lists
+    for visitors. For registration, RCIA or baptism, the office asks you to call first. Office hours are
+    weekdays from 9 am to 4 pm.
+  first_visit_tips:
+  - Call the office on a weekday between 9 am and 4 pm if you want to register or ask about RCIA.
+  - Sunday confession is offered before the 10 am Mass, and Saturday confession runs 3:45 to 4:15 pm.
+  - The site does not describe parking or transit, so ask the office if you need those details.
 contacts:
   website: https://www.queenvillagecatholic.com
-  email: null
+  email: stphilipneri@comcast.net
   phone: 215-468-1922
   contact_name: null
   social: []
@@ -104,8 +113,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.queenvillagecatholic.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - status
+- url: https://www.queenvillagecatholic.com/mass-times
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.queenvillagecatholic.com/become-catholic
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.queenvillagecatholic.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -1,0 +1,350 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-104",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 27,
+  "records": [
+    {
+      "match": {"lead_ids": ["penn_clubs:undergraduate-assembly-ua"], "group_id": "undergraduate-assembly-ua", "website": "https://pennua.org/"},
+      "verdict": "publish",
+      "name": "Undergraduate Assembly (UA)",
+      "summary": "Penn's elected student government. It decides how student groups get funded, pushes for changes that help students, and runs services for undergraduates.",
+      "what_you_do": "Attend the General Body Meetings, which the public may attend (the closing Communications portion is closed to visitors). Students can apply to be an associate member when the fall application opens, run for an elected seat, or fill out the interest form for updates.",
+      "kind": "student_org",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association"],
+      "motives": ["values", "career"],
+      "formats": ["lead_organize"],
+      "roles": ["lead", "organize"],
+      "crowd": ["students"],
+      "audience": {"open_to": "public", "school": "penn", "community": [], "support_group": false},
+      "schedule": {"text": "General Body Meetings every Sunday at 8 pm in Jon M. Huntsman Hall, room 370.", "days": ["sun"], "times": ["evening"], "recurring": true, "season": "fall"},
+      "locations": [
+        {"label": "Jon M. Huntsman Hall, room 370 (General Body Meetings)", "in_city": true},
+        {"label": "UA office, as published on its website", "address": "3417 Spruce Street", "zip": "19104", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Come to a General Body Meeting on a Sunday at 8 pm in Huntsman Hall, room 370. The public may attend.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The meetings are open to the public and the site gives a phone number and an email, but it does not explain how to become a member.",
+        "what_to_expect": "Visitors can attend the open part of the meeting. The site posts minutes from past meetings, so you can see what has come up before you go. The last part, Communications, is closed to the public.",
+        "first_visit_tips": [
+          "Read past meeting minutes on pennua.org to see what has been discussed.",
+          "The final Communications portion of the meeting is closed to the public.",
+          "Call (215) 898-6533 or email speaker@pennua.org with questions before you come."
+        ]
+      },
+      "contacts": {"website": "https://pennua.org/", "email": "speaker@pennua.org", "phone": "(215) 898-6533", "social": ["https://instagram.com/pennua/", "https://facebook.com/PennUA"]},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://pennclubs.com/api/clubs/undergraduate-assembly-ua/?format=json",
+      "sources": [
+        {"url": "https://pennua.org/", "seen": "2026-10-08", "fields": ["contacts", "what_you_do", "status"]},
+        {"url": "https://pennua.org/minutes", "seen": "2026-10-08", "fields": ["schedule", "audience", "first_step", "first_visit_tips"]},
+        {"url": "https://pennua.org/members", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://pennclubs.com/api/clubs/?format=json", "seen": "2026-10-04", "fields": ["name", "contacts.email"]},
+        {"url": "https://pennclubs.com/api/clubs/undergraduate-assembly-ua/?format=json", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "status", "first_step", "audience"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The site footer (homepage and members page) lists speaker@pennua.org, so the record uses it instead of the exec@pennua.org address from the Penn Clubs listing. The minutes page gives no date for the latest meeting. The members page calls this the 54th session, for 2026 to 2027. The associate member application and interest form come from the Penn Clubs listing, because the site does not mention them."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:833369226", "irs_bmf:833369226"], "group_id": "unique-dreams-inc", "ein": "833369226", "website": "https://www.uniquedreamsinc.com/"},
+      "verdict": "publish",
+      "name": "Unique Dreams",
+      "summary": "A Philadelphia nonprofit that runs a free evening center for youth ages 10 to 17, a summer camp for younger kids, and a community food pantry. Youth get homework help, arts, sports, cooking, and a meal.",
+      "what_you_do": "Youth ages 10 to 17 register for the free evening center, online or in person, and join homework help, arts and crafts, cooking, gaming, boxing, sports, and field trips. Families can also enroll children ages 8 to 12 in summer camp. The food pantry runs on set days from a trailer in the Garsed Center parking lot, but the site lists more than one schedule, so call before you go.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring", "hunger-housing-basic-needs"],
+      "interests": ["after_school_camps", "tutoring", "food_pantry"],
+      "motives": ["values", "social"],
+      "formats": ["team_play", "learn_skill"],
+      "roles": ["figure_out", "hands_on"],
+      "crowd": ["kids", "teens"],
+      "audience": {"open_to": "public", "min_age": 8, "max_age": 17, "community": [], "support_group": false},
+      "schedule": {"text": "Community Evening Resource Center open every evening, seven days a week, with check-in from 5:30 pm and doors at 6 pm. Summer camp for ages 8 to 12 runs June through August, weekdays 8 am to 3 pm.", "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "times": ["evening", "daytime"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Unique Dreams, Inc. (evening center and office)", "address": "4704 Leiper Street", "zip": "19124", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {"level": "low", "text": "The evening center is free, including the meal and round-trip rides. Summer camp is $100 a week with meals. Transportation to camp and before and after care cost extra."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Register a young person, ages 10 to 17, for the free Community Evening Resource Center, online or in person, or call 267-325-2115 with questions first.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The center is free and open to any youth in the age range, with a clear sign-up path, but the site does not say whether walk-ins are welcome.",
+        "what_to_expect": "A young person registers, then spends the evening on homework help and one or more activities such as arts and crafts, cooking, games, sports, or boxing. A meal is served, and the center provides free rides home. The site names its staff but does not say how many adults or volunteers are present each night.",
+        "first_visit_tips": [
+          "Call 267-325-2115 before the first night, since the site does not say whether walk-ins are welcome.",
+          "Registration is by the online form linked on the site or in person.",
+          "Round-trip transportation is free.",
+          "The office is open Monday to Friday, 7 am to 8 pm, and on weekends, 6 am to 6 pm."
+        ]
+      },
+      "contacts": {"website": "https://www.uniquedreamsinc.com/", "phone": "267-325-2115", "contact_name": "Angenique Howard", "social": ["https://www.facebook.com/Uniquedreamsinc", "https://www.instagram.com/uniquedreamsinc"]},
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://www.uniquedreamsinc.com/",
+      "sources": [
+        {"url": "https://www.uniquedreamsinc.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "status", "locations"]},
+        {"url": "https://www.uniquedreamsinc.com/community-evening-resource-center-cerc.html", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "audience", "first_step", "cost", "requirements"]},
+        {"url": "https://www.uniquedreamsinc.com/summer-camp.html", "seen": "2026-10-08", "fields": ["audience", "schedule", "cost"]},
+        {"url": "https://www.uniquedreamsinc.com/volunteer.html", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://www.uniquedreamsinc.com/no-weapons-formed-nwf.html", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Conflicts on the site, left for a human to confirm by phone: the homepage says registration is online only, while the evening center page says online or in person. The evening center page lists doors at 5:30 pm daily until 10 pm, a 10 pm curfew, and a 2 am closing, so the record gives no closing time. The center phone appears as 267-235-2115 and 267-325-2115; the volunteer page confirms 267-325-2115, which the record uses. The homepage lists food pantry days as Tuesday 4 pm and Thursday 6 pm, while the No Weapons Formed page lists food donations on Friday at 10:30 am and Tuesday at 1 pm, so the record gives no pantry times. The No Weapons Formed page describes a 2024 pilot, March 1 to December 30, 2024. Main office phone on the volunteer page is 215-648-1980. The volunteer page says a Zoom meeting about volunteering is coming, with no date."
+    },
+    {
+      "match": {"group_id": "united-muslim-masjid", "website": "https://www.ummonline.org/"},
+      "verdict": "publish",
+      "name": "United Muslim Masjid",
+      "summary": "A masjid in South Philadelphia, founded in 1994, with weekly Islamic classes on Tuesdays and Fridays after Isha prayer. The Friday class is streamed live online.",
+      "what_you_do": "Join the Tuesday class on the inner side of prayer, or follow the Friday class live online. The masjid also lists volunteer teams in communications, youth and family, and aging with dignity, plus Zakat al-Fitr and donation options.",
+      "kind": "congregation",
+      "categories": ["faith-community"],
+      "interests": ["scripture_study", "worship_community", "faith_service_projects"],
+      "motives": ["understanding", "values"],
+      "formats": ["learn_skill", "conversation"],
+      "roles": ["figure_out", "hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "faith": "muslim", "community": [], "support_group": false},
+      "schedule": {"text": "Tuesday class and Friday class, both after Isha prayer. The Friday class is live online.", "days": ["tue", "fri"], "times": ["night"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "United Muslim Masjid", "address": "810 South 15th St", "zip": "19146", "in_city": true},
+        {"label": "UMIC, second location named on the site (the site does not say which class meets here)", "address": "1251 Point Breeze Ave", "zip": "19146", "in_city": true}
+      ],
+      "online_ok": true,
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 215-546-6555 or use the contact form on ummonline.org to ask about the Tuesday class, or join the Friday class live online.",
+        "newcomer_friendliness": 3,
+        "basis": "The Friday class is streamed live for anyone to join and the classes are listed with days and times, but the site does not say whether beginners or non-Muslim visitors are welcome.",
+        "what_to_expect": "The Friday class is an explanation of a classic text on Islamic belief, given after Isha prayer and streamed live online. The Tuesday class covers the inner side of prayer, meaning how to pray with full focus, after Isha prayer. The site does not say where the classes meet, how long they run, or whether beginners get extra help.",
+        "first_visit_tips": [
+          "Check the weekly class schedule page on ummonline.org before you come, since it lists the classes and the online link.",
+          "The site lists two addresses, 810 South 15th Street and 1251 Point Breeze Avenue, but does not say which class meets at which one.",
+          "Prayer times are posted on the site as images, so check them before you go."
+        ]
+      },
+      "contacts": {"website": "https://www.ummonline.org/", "email": "info@ummonline.org", "phone": "215-546-6555", "social": ["https://www.facebook.com/UMMPhila/", "https://www.instagram.com/ummmasjid/"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.ummonline.org/",
+      "sources": [
+        {"url": "https://www.ummonline.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "status"]},
+        {"url": "https://ummonline.org/weekly-class-schedules/", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "first_step", "what_you_do"]},
+        {"url": "https://ummonline.org/islamic-education/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://ummonline.org/volunteer-signup/", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://ummonline.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://linktr.ee/ummmasjid", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://pa.cair.com/directory/mosques/eastern/", "seen": "2026-10-08", "fields": ["contacts", "lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The 10 Principles class is listed as resuming in January with no year and no day, so it is left out of the schedule. The site never says whether non-Muslim visitors are welcome. The tier 1 email, info@umm.org, did not appear on the contact page, which shows info@ummonline.org; the record uses the contact page address. The site does not name a teacher as the contact for any class."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:471364564", "irs_bmf:471364564"], "group_id": "united-peoples-learning-initiative-for-tomorrow", "ein": "471364564", "website": "https://upliftworld.org"},
+      "verdict": "publish",
+      "name": "UPLIFT",
+      "summary": "Runs UPLIFT Academy, an early learning school in Philadelphia with a Montessori approach to reading and STEM, and funds reading rooms and meals for children in Liberia.",
+      "what_you_do": "Enroll a child at UPLIFT Academy through the online Enroll Now application, ask about volunteering through the contact page, or give to the Hungry No More campaign for meals in Liberia.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring", "science-learning"],
+      "interests": ["tutoring", "stem_outreach"],
+      "motives": ["values"],
+      "crowd": ["kids", "families"],
+      "audience": {"open_to": "public", "max_age": 12, "community": [], "support_group": false},
+      "locations": [
+        {"label": "UPLIFT Academy", "address": "5534 Chester Avenue", "zip": "19143", "in_city": true}
+      ],
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill out the first step of the Enroll Now application at upliftworld.org, or call 267-226-9748 with questions before you start.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Families fill out an application before they see the school, and the site does not mention tours or open houses.",
+        "what_to_expect": "UPLIFT Academy is a Montessori-style early learning center for children from 6 weeks to 12 years old, with a focus on early literacy and hands-on learning. The application asks about your child's current school or daycare, and the site does not say how long a school day is, what tuition costs, or whether tours are offered. Call to ask about these before you apply.",
+        "first_visit_tips": [
+          "Have a state ID, passport, or driver's license ready for each parent or guardian and each emergency contact, since the form asks for an upload.",
+          "If your child attended a daycare, have the names of the last three, because the school contacts them before admission.",
+          "Pick an anticipated start date, since the form asks for one."
+        ]
+      },
+      "contacts": {"website": "https://upliftworld.org", "email": "atema@upliftworld.org", "phone": "267-226-9748", "contact_name": "Atema Addy", "social": ["https://www.facebook.com/UPLIFTworld1", "https://www.instagram.com/uplift.world/"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://upliftworld.org",
+      "sources": [
+        {"url": "https://upliftworld.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "contacts", "status"]},
+        {"url": "https://upliftworld.org/uplift-academy/", "seen": "2026-10-08", "fields": ["audience", "what_to_expect", "contacts"]},
+        {"url": "https://upliftworld.org/enroll-now/", "seen": "2026-10-08", "fields": ["first_step", "first_visit_tips"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The age range, 6 weeks to 12 years, comes from the UPLIFT Academy page, not the homepage. The site gives no tuition, school hours, start dates, or tour options, so the record leaves them out. The Hungry No More campaign is a separate donation page. Tutoring is the closest interest tag for an early learning school."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:204137497", "irs_bmf:204137497"], "group_id": "united-veterans-of-bridesburgparade-organization-inc", "ein": "204137497"},
+      "verdict": "publish",
+      "name": "United Veterans of Bridesburg",
+      "summary": "The group that runs the Bridesburg Memorial Day Parade, a long-running parade in Bridesburg that dates back to 1946. It also holds a Memorial 5K and 1 Mile Honor Walk that raises money for the parade.",
+      "what_you_do": "Watch the Memorial Day parade, or sign up for the Memorial 5K and 1 Mile Honor Walk held on a Saturday in May. The group's own website was not found, and the pages read do not say how to volunteer with the parade.",
+      "kind": "nonprofit",
+      "categories": ["philly-traditions"],
+      "interests": ["parade_units", "street_festivals"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "The Bridesburg Memorial Day Parade runs each Memorial Day. The Memorial 5K and 1 Mile Honor Walk is held on a Saturday in May.", "days": ["sat", "mon"], "recurring": true, "season": "spring"},
+      "locations": [
+        {"label": "Bridesburg Recreation Center (5K start and finish, per the 2025 listing)", "address": "4601 Richmond St", "zip": "19137", "in_city": true}
+      ],
+      "cost": {"level": "unknown", "text": "The 2025 listing showed no race fee and asked for donations."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Go watch the Memorial Day parade in Bridesburg, or sign up for the Memorial 5K and 1 Mile Honor Walk, which is held on a Saturday in May.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The parade is open to watch and the race has a public sign-up, but no page says how to join the organizing group.",
+        "what_to_expect": "The 2025 5K and 1 Mile Honor Walk started early on a Saturday morning in May, with the 5K at 8:30 am and the walk at 8:45 am. Both raise money for the parade, which is a Memorial Day tribute to veterans.",
+        "first_visit_tips": [
+          "Check the listing for the current year, since the 2025 race is the newest one found.",
+          "Race-day sign-up for the 2025 race ran from 7 to 8 am.",
+          "Donations are welcome for the race."
+        ]
+      },
+      "contacts": {"contact_name": "Gary Roman"},
+      "status": "probably_active",
+      "last_sign_of_life": "2025-05",
+      "sign_of_life_url": "https://findtherun.com/race/71059/2025-bridesburg-memorial-day-5k-and-1-mile-honor-walk",
+      "sources": [
+        {"url": "https://findtherun.com/race/71059/2025-bridesburg-memorial-day-5k-and-1-mile-honor-walk", "seen": "2026-10-08", "fields": ["what_you_do", "schedule", "locations", "cost", "first_step", "status", "last_sign_of_life"]},
+        {"url": "https://haid.app/en/events/2025-bridesburg-memorial-day-5k-and-1-mile-honor-walk-101049", "seen": "2026-10-08", "fields": ["first_step", "schedule"]},
+        {"url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/", "seen": "2026-10-08", "fields": ["summary"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "No official website was found, so none is recorded (the tier 1 value was a group name, not a URL). A third-party listing showed a phone number, but no page read confirmed it, so no phone is recorded. The Spirit News article is dated May 23, 2012, so it is used only for background (the 1946 start, the founders, and the veterans group running the parade), not as evidence of current activity. The newest dated evidence is the 5K on May 17, 2025, which makes the group probably_active. The 2011 donation address is too old to use."
+    },
+    {
+      "match": {"group_id": "unity-clinic", "website": "https://www.villanova.edu/university/nursing/villanova-nursing-experience/college-in-the-community/unity-clinic.html"},
+      "verdict": "publish",
+      "name": "Unity Clinic",
+      "summary": "A free primary care clinic for uninsured adults at 2130 South 21st Street in South Philadelphia. The Augustinian Defenders of the Rights of the Poor run it with help from Villanova's nursing school, and volunteer nurses, doctors and students staff it on Tuesday evenings.",
+      "what_you_do": "Volunteer on a Tuesday evening shift as a nurse, nurse practitioner, physician, nursing or medical student, or translator. Clinicians commit to at least one shift a month.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs"],
+      "interests": ["free_help_clinics"],
+      "motives": ["values", "career"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Clinic sessions run Tuesdays, 5 to 8 pm. Volunteer hours run Tuesdays, 4:30 to 8:30 pm.", "days": ["tue"], "times": ["evening"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Unity Clinic", "address": "2130 South 21st Street", "zip": "19145", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"level": "free", "text": "Free care for uninsured adults who do not qualify for government programs. The pages do not mention any cost for volunteers."},
+      "commitment": "ongoing_role",
+      "access": {"languages": ["es", "id"], "notes": "Translators help in Spanish and Bahasa Indonesian, per the Villanova page."},
+      "requirements": {"gear": "Bring your own stethoscope", "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "If you are a nurse practitioner or physician, email phewson@augustinian.org. If you are a nurse, a nursing or medical student, or a translator, email meredith.mackenziegreenle@villanova.edu. Students can also go through their school programs.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Clinicians need a license and commit to at least one shift a month, and students join through their schools, so a first-timer cannot simply walk in.",
+        "what_to_expect": "Shifts run on Tuesday evenings. Volunteer hours start at 4:30 pm, and patient visits run from 5 to 8 pm. Nurses and nursing students take vital signs and patient intake, and may give immunizations and watch clinicians at work. Nurse practitioners and physicians see patients, and medical students work alongside a clinician.",
+        "first_visit_tips": [
+          "Bring your own stethoscope, since the Villanova page asks every volunteer to bring one.",
+          "Arrive by 4:30 pm for volunteer hours, since patient sessions start at 5 pm.",
+          "Parking at the clinic is on site and free.",
+          "Nurses need a Pennsylvania license."
+        ]
+      },
+      "contacts": {"website": "https://www.villanova.edu/university/nursing/villanova-nursing-experience/college-in-the-community/unity-clinic.html", "email": "adropinfo@augustinian.org", "phone": "215-925-3566"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.villanova.edu/university/nursing/villanova-nursing-experience/college-in-the-community/unity-clinic.html",
+      "sources": [
+        {"url": "https://www.villanova.edu/university/nursing/villanova-nursing-experience/college-in-the-community/unity-clinic.html", "seen": "2026-10-08", "fields": ["summary", "schedule", "locations", "first_step", "requirements", "what_you_do", "cost", "commitment", "access"]},
+        {"url": "https://www.rightsofthepoor.org/", "seen": "2026-10-08", "fields": ["summary", "contacts"]},
+        {"url": "https://www.rightsofthepoor.org/our-ministries", "seen": "2026-10-08", "fields": ["summary", "cost", "first_step"]},
+        {"url": "https://www.rightsofthepoor.org/volunteer", "seen": "2026-10-08", "fields": ["first_step", "requirements", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Villanova page lists Patty Hewson for nurse practitioners and physicians, and Meredith MacKenzie Greenle for nursing students and general questions, including RNs and translators. The ADROP volunteer page gives a separate volunteer inquiry address, John.Green@augustinian.org, for pen pal and volunteer questions, which the record does not use. The Villanova page has no date, so no year-dated activity is recorded."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:833604971", "irs_bmf:833604971"], "group_id": "unity-recovery", "ein": "833604971", "website": "https://www.unityrecovery.org"},
+      "verdict": "publish",
+      "name": "Unity Recovery",
+      "summary": "A peer-run recovery organization with a Philadelphia presence. It offers free one-on-one peer support, recovery meetings held online, life skills workshops, and volunteer roles open to people in recovery, family members, and others.",
+      "what_you_do": "Ask for one-on-one peer support, for yourself or a loved one, join an online recovery meeting, take a free life skills workshop, or sign up to volunteer.",
+      "kind": "nonprofit",
+      "categories": ["support-recovery"],
+      "interests": ["addiction_recovery", "mental_health_support"],
+      "motives": ["understanding", "values"],
+      "formats": ["conversation", "learn_skill"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "community": [], "support_group": true},
+      "schedule": {"text": "Online recovery meetings run every day, several times a day, including a family meeting, an LGBTQ+ meeting, a parenting meeting, and a harm reduction meeting. Times are Eastern. Life skills workshops run online on the third Saturday of each month at 10 am Eastern.", "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "times": ["morning", "daytime", "evening"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Community centers in Philadelphia, plus telephone and video support", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {"level": "free", "text": "Free. The group says it never charges for peer support, and its workshops are always free."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Join an online recovery meeting through its Join Now link on the digital meetings page, or fill out the peer support request form for the Philadelphia area.",
+        "newcomer_friendliness": 3,
+        "basis": "Meetings and peer support are free and open to people in recovery or seeking it, with a Join Now link and a request form, but the site does not explain how meeting sign-up works.",
+        "what_to_expect": "Online meetings run on Zoom or a similar video platform. Video is optional, you can mute your audio, and you can message the facilitator. If the room is full, you can leave your email to be told when a space opens. After you submit a peer support request, a peer should be in touch within 24 hours, according to the FAQ.",
+        "first_visit_tips": [
+          "Times on the site are Eastern time, so check the time in your own zone before you join.",
+          "Video is optional, and you can mute your audio.",
+          "If a meeting is full, leave your email to be told when a space opens.",
+          "You can ask for peer support for a loved one, too."
+        ]
+      },
+      "contacts": {"website": "https://www.unityrecovery.org", "email": "contact@unityrecovery.org", "phone": "267.748.2454", "contact_name": "Arielle Ashford", "social": ["https://discord.gg/ndMpucTtSW"]},
+      "status": "active",
+      "last_sign_of_life": "2025-11",
+      "sign_of_life_url": "https://www.unityrecovery.org",
+      "sources": [
+        {"url": "https://www.unityrecovery.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life"]},
+        {"url": "https://unityrecovery.org/digital-recovery-meetings", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "first_step", "first_visit_tips", "what_to_expect"]},
+        {"url": "https://unityrecovery.org/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "requirements", "first_step"]},
+        {"url": "https://unityrecovery.org/rss-service-interest", "seen": "2026-10-08", "fields": ["cost", "first_step"]},
+        {"url": "https://unityrecovery.org/sdor", "seen": "2026-10-08", "fields": ["schedule", "cost", "what_you_do"]},
+        {"url": "https://unityrecovery.org/faq", "seen": "2026-10-08", "fields": ["audience", "what_to_expect"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The homepage lists a November 25, 2025 article, the newest dated item, which keeps the status active. The 2022 copyright footer is not evidence. The FAQ does not say whether the workshops are open to anyone, or whether people must be in recovery to attend. The header phone number is not explained as a request line, so the request steps use the form. The meeting facilitators' background (peer or staff) is not stated."
+    }
+  ],
+  "leads_only": [
+    {"name": "VFW Post 2 (Bridesburg)", "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/", "note": "named as a co-founder of the veterans group that runs the Bridesburg parade; its own site was not checked"},
+    {"name": "American Legion Post 821 (Bridesburg)", "url": "https://spiritnews.org/articles/remembrance-and-tradition-the-bridesburg-memorial-day-parade/", "note": "named as a co-founder of the veterans group that runs the Bridesburg parade; its own site was not checked"},
+    {"name": "Mary Mother of Captives pen pal program", "url": "https://www.rightsofthepoor.org/volunteer", "note": "named as a pen pal program on the ADROP volunteer page; no separate site was seen or checked"}
+  ],
+  "blocked": [],
+  "notes": "Budget: 1 of 1 WebSearch used; it found no official site for the Bridesburg veterans group. 27 WebFetch calls in total: each group's own pages, the pages each group named, the Bridesburg event pages, and one Spirit News article. No page was blocked, rate limited, or bot checked. One mistake: I made one call to a Claude Docs read tool, which is outside this agent's allowed tools. It was refused and returned nothing, so none of its output is used. Changes from tier 1 that a reviewer should see: UA email is now speaker@pennua.org (site footer); masjid email is now info@ummonline.org (contact page, not info@umm.org); Unity Recovery meeting times are now listed; Unique Dreams summer camp ends at 3 pm, not 3:30; Unity Recovery volunteers include family members, not only people in recovery; UPLIFT Academy serves ages 6 weeks to 12 years; Unity Clinic first steps now include the contact for RNs, students and translators. Dropped: the Bridesburg website value (a name, not a URL) and the phone 215-260-1778 (seen only in a search summary, not on any page read). Partners not turned into leads, with reasons: Sharing Excess, Philabundance, Food Donation Center and Wawa Food Share are food donors named on the No Weapons Formed page, large food suppliers rather than community groups, not checked; Villanova University nursing school is an institution; islamlecture.com is the streaming host for the Friday class, a platform rather than a group, not checked; Garsed Center, formerly the Frankford Y, is a building; ADROP (rightsofthepoor.org) runs Unity Clinic, so it is the operator here, not a partner, and its other volunteer programs (ESL tutoring, Spanish computer class, childcare) were not turned into separate leads. Open conflicts for a human to confirm by phone: Unique Dreams evening center closing time and registration rules, the food pantry schedule, and the Unique Dreams phone (267-235-2115 or 267-325-2115). The United Muslim Masjid 10 Principles class resumes in January with no year. Status is set from the newest dated evidence only."
+}

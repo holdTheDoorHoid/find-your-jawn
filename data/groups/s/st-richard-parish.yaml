@@ -3,14 +3,17 @@ name: St. Richard Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at 18th and Pollock Streets in South Philadelphia with three Sunday Masses,
-  one of them at the Holy Spirit worship site.
-what_you_do: Come to Mass. The page names a director of faith formation but lists no programs.
+summary: A Catholic parish at 18th and Pollock Streets in South Philadelphia, serving Catholics since
+  1924. It has a Saturday vigil, Sunday Masses at three times (one at the Holy Spirit worship site), and
+  a faith formation program (PREP) for children.
+what_you_do: Come to Mass, register as a new parishioner online or in person, or ask about faith formation
+  (PREP) for children and teens.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- faith_youth_programs
 motives:
 - values
 formats:
@@ -29,9 +32,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am, 10 am (at the Holy Spirit worship site) and 11:30 am. Weekday Mass at 8:30
-    am. Holyday Masses at 8:30 am, 12:05 pm and 7 pm, with a vigil at 4:30 pm. Saturday confession 3:30
-    to 4:15 pm, and before Sunday Masses.
+  text: Saturday vigil Mass at 4:30 pm at St. Richard. Sunday Masses at 8 am and 11:30 am at St. Richard,
+    and at 10 am at the Holy Spirit worship site. Weekday Masses at 8:30 am, Monday to Saturday. Holy
+    days are announced ahead of time. Confession Saturdays 3:30 to 4:15 pm and before Sunday Masses.
   days:
   - sat
   - sun
@@ -49,6 +52,15 @@ schedule:
 locations:
 - label: Church (18th and Pollock Sts.)
   address: 18th and Pollock Sts.
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Rectory and parish office
+  address: 3010 S. 18th Street
   neighborhood: null
   planning_district: null
   zip: '19145'
@@ -74,16 +86,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory
+  how: Come to any Mass on the schedule, or register as a new parishioner through the online form on the
+    parish site, or visit the rectory at 3010 S. 18th Street.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The Register page walks new households through the form and closes with a welcome, and the home
+    page invites visitors to come and see. The parish also accepts registration in person at the rectory.
+  what_to_expect: Mass is free and open to anyone. Sunday Mass is offered at three times, and the 10 am
+    Mass is at the Holy Spirit worship site, so check the schedule for the right church before you go.
+    The online registration asks for household details and whether each person is baptized, confirmed
+    or has received Holy Communion, with yes, no or unsure as answers.
+  first_visit_tips:
+  - Call the rectory at 215-468-4777 if you are not sure which church to attend on Sunday.
+  - The parish office is open Monday to Thursday from 9 am to 2 pm and Friday from 9 am to 12 pm.
+  - Holy day Masses are announced ahead of time, so check before a holy day.
 contacts:
   website: https://www.strichardchurch.org
-  email: null
+  email: parish@strichardchurch.org
   phone: 215-468-4777
   contact_name: null
   social: []
@@ -105,8 +125,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.strichardchurch.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+  - first_step
+  - status
+- url: https://www.strichardchurch.org/mass-confession-schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+- url: https://www.strichardchurch.org/register
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.strichardchurch.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - interests
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

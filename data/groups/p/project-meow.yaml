@@ -5,10 +5,10 @@ leads:
 - irs_990n:364835126
 - irs_bmf:364835126
 ein: '364835126'
-summary: An all volunteer West Philadelphia cat group that helps homeless cats through trap, neuter, return
-  and manage work, feeds colony cats, and finds homes for friendly abandoned cats.
-what_you_do: Feed colony cats once a week, foster or transport cats, help at tabling and fundraising events,
-  or join the design, social media or grant teams.
+summary: An all-volunteer cat rescue in West Philadelphia. It traps, neuters and returns community cats,
+  cares for kittens and sick cats, and fosters and adopts out friendly cats.
+what_you_do: Volunteer, foster a cat or kitten, help a community cat caretaker, or adopt from the adoptable
+  cats listed on the site.
 kind: nonprofit
 categories:
 - animals
@@ -17,13 +17,10 @@ interests:
 - animal_fostering
 motives:
 - values
-- social
 formats:
 - side_by_side
-- team_play
 roles:
 - hands_on
-- organize
 crowd:
 - all_adults
 bridging: null
@@ -37,15 +34,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Colony feeding is once a week, from 4 to 7 pm, for about an hour, and needs a vehicle. Other roles
-    have flexible hours.
+  text: Cat-care shifts run mornings and afternoons or evenings, booked on an online calendar. Colony
+    feeding happens at least once a week between 4 and 7 pm and takes about an hour.
   days: []
   times:
+  - morning
+  - daytime
   - evening
   recurring: true
   season: year_round
 locations:
-- label: Colony sites within 2 miles of Clark Park
+- label: West Philadelphia
   address: null
   neighborhood: null
   planning_district: null
@@ -72,13 +71,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Complete the volunteer application on the group's website, or email rfa@projectmeow.org.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: An application comes first, and some roles need a vehicle or lifting about 20 pounds.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Open the Volunteer page at projectmeow.org and fill out the volunteer application. To foster, use
+    the Foster Form on the fostering page, and a volunteer will get in touch.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The volunteer application and Foster Form are public and need no dues, and the fostering page
+    says no cat experience is required. The site lists no orientation dates or training steps.
+  what_to_expect: The site does not describe orientation or a first shift. Roles run from a few hours
+    a week of admin help to a weekly colony feeding near Clark Park that takes about an hour and needs
+    a vehicle. Fostering needs no cat experience, and the site says easy cats are available for beginners.
+  first_visit_tips:
+  - The cat-care shifts at the group's space require being able to lift 20 pounds.
+  - Fosters take kittens to vet visits, and kitten vaccines can mean several trips over two to three months.
+  - Send questions about fostering to fosters@projectmeow.org and general questions to rfa@projectmeow.org.
 contacts:
   website: https://www.projectmeow.org
   email: rfa@projectmeow.org
@@ -124,6 +130,8 @@ sources:
   - schedule
   - requirements
   - first_step
+  - what_to_expect
+  - first_visit_tips
 - url: https://www.projectmeow.org/about-us/contact-us/
   seen: '2026-10-08'
   fields:
@@ -133,7 +141,17 @@ sources:
   fields:
   - summary
   - status
-research_tier: 1
+- url: https://www.projectmeow.org/volunteer/volunteer-application/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.projectmeow.org/volunteer/fostering/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -3,19 +3,22 @@ name: Temple Beth Zion-Beth Israel (BZBI)
 aka: []
 leads: []
 ein: null
-summary: A congregation at 300 South 18th Street in Center City. It holds Shabbat morning services in
-  person and on Zoom, weekday morning minyanim, early childhood and family education, and adult learning.
-what_you_do: Join Shabbat morning services or a weekday minyan, plan a first visit with the Visiting Us
-  page, take part in adult learning, or join a Shabbat dinner for young professionals. Membership and
-  dues pages are linked.
+summary: A Jewish congregation at 300 South 18th Street in Center City. It holds Shabbat morning services
+  in person and on Zoom, weekday morning minyanim, family and early childhood education, and adult learning
+  classes.
+what_you_do: Join Shabbat morning services or a weekday minyan, take an adult class such as the introduction
+  to Judaism or the book club, or ask the office about the Shabbat dinners for young professionals. Membership
+  and dues are handled through the office.
 kind: congregation
 categories:
 - faith-community
+- books-writing
 interests:
 - worship_community
 - scripture_study
 - faith_youth_programs
 - congregation_social
+- book_club
 motives:
 - values
 - social
@@ -38,9 +41,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shabbat morning service at 9:30 am in the Goldberg Sanctuary and on Zoom. Weekday minyanim on
-    Monday and Thursday, Tuesday and Wednesday, and Friday morning, plus a Sunday morning minyan and schmooze.
-    Times are on the worship page.
+  text: Shabbat morning service at 9:30 am on Saturdays, in the Goldberg Sanctuary and on Zoom for most
+    in-person services. Weekday morning minyanim run every morning, with the times on the worship schedule,
+    and a prayer gathering is held on the first Friday night of each month.
   days:
   - mon
   - tue
@@ -51,6 +54,7 @@ schedule:
   - sun
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -63,10 +67,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Membership and dues pages are linked. Amounts are not printed on the homepage.
+  text: The site lists no dollar amounts for membership dues. It says dues are set around each family's
+    situation so that membership stays affordable.
 commitment: null
 group_size: null
 access:
@@ -81,18 +86,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Visiting Us page, or call 215.735.5148 or email templeoffice@bzbi.org
+  how: Call the Temple Office at 215-735-5148 with your questions before you come to Saturday morning
+    services at 9:30 am.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has a Visiting Us page and listed contacts. It does not describe a first visit or guest
-    policy.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The worship page says anyone interested in minyan is welcome, the Visiting Us page tells you
+    to call the office, and the adult learning page says no one is turned away from congregational learning.
+    The site does not describe a first-visit routine, so it is not rated 5.
+  what_to_expect: Shabbat morning services start at 9:30 am in the Goldberg Sanctuary, and most in-person
+    services can also be joined on Zoom once you get the password from the office. Weekday minyanim are
+    morning prayer gatherings open to anyone interested, and a Torah study with Rabbi Mort follows the
+    Wednesday minyan at about 8:15 am. The site does not say how long services last, what visitors wear,
+    or whether you must register first.
+  first_visit_tips:
+  - Call the Temple Office at 215-735-5148 or email templeoffice@bzbi.org; weekday hours are 9 am to 5
+    pm, and Friday hours end at 3 pm.
+  - For pick-up or drop-off by car, call the office to reserve a parking pass; metered street parking
+    is also nearby.
+  - Ask the office for the Zoom password if you would rather join online.
+  - The office is closed on federal holidays and many Jewish holidays, so call ahead on those days.
 contacts:
   website: https://bzbi.org/
   email: templeoffice@bzbi.org
-  phone: 215.735.5148
+  phone: 215-735-5148
   contact_name: null
   social: []
   calendar_feed: null
@@ -112,7 +129,32 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - sign_of_life_url
+- url: https://bzbi.org/worship/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - online_ok
+- url: https://bzbi.org/worship/visiting_us/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://bzbi.org/membership/join-or-renew/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://bzbi.org/learn/adult-learning/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

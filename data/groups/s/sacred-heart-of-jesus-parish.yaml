@@ -3,19 +3,23 @@ name: Sacred Heart of Jesus Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at 3rd and Reed Streets in South Philadelphia with three Sunday Masses, including
+summary: A Catholic parish on South 3rd Street in South Philadelphia, with three Sunday Masses, including
   a Spanish Mass at 9:15 am.
-what_you_do: Come to Mass. The Archdiocese page lists no community programs.
+what_you_do: Come to Mass, or join a parish program. The parish contact form lists altar serving, music,
+  liturgical volunteering, Hispanic ministry, religious education (PREP), and OCIA for adults who want
+  to join the Church.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- faith_youth_programs
 motives:
 - values
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
 crowd:
 - all_ages
 bridging: null
@@ -30,12 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am, 9:15 am (Spanish) and 11:30 am. Saturday vigil Mass at 4:15 pm. Weekday
-    Mass Monday to Friday at 7 am, and Saturday Mass at 8 am, in the parish chapel. Holyday vigil at 7
-    pm, with Masses at 7 am and noon on the day. Saturday confession 3:15 to 4 pm.
+  text: Sunday Masses at 8 am, 9:15 am (Spanish) and 11:30 am. Saturday Mass at 8 am and a vigil Mass
+    at 4:15 pm. Weekday Mass at 7 am Monday to Friday, plus a Spanish Mass at 7 pm on Tuesday. Holy Hour
+    and confession on Thursday from 6 to 7 pm, and confession on Saturday from 3:15 to 4 pm.
   days:
-  - sat
   - sun
+  - sat
   - mon
   - tue
   - wed
@@ -48,7 +52,7 @@ schedule:
   season: year_round
 locations:
 - label: Church (3rd and Reed Sts.)
-  address: 3rd and Reed Sts.
+  address: 1404 S 3rd St
   neighborhood: null
   planning_district: null
   zip: '19147'
@@ -74,13 +78,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory
+  how: Come to any listed Mass, such as the 9:15 am Spanish Mass on Sunday or the 7 am weekday Mass. To
+    register as a family or start a sacrament program such as OCIA or PREP, fill out the online parish
+    registration form.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone and drop in is fine. The parish registration form and its OCIA and PREP
+    options give a way in, but the site does not describe how those programs run.
+  what_to_expect: Mass is free and open to anyone, and Masses are held in the church unless a notice says
+    otherwise. English Masses are on Sunday at 8 am and 11:30 am, and the Spanish Mass is on Sunday at
+    9:15 am and Tuesday at 7 pm. The parish page does not describe what happens during Mass or how long
+    it lasts.
+  first_visit_tips:
+  - Pick a time from the schedule. The Spanish Mass is on Sunday at 9:15 am and Tuesday at 7 pm.
+  - The church is at 3rd and Reed Streets, at 1404 South 3rd Street.
+  - Holy day Mass times are not on the parish page, so check before a holy day.
+  - Adults who want to join the Church can ask about OCIA through the registration form.
 contacts:
   website: https://www.sacredheartchurchsp.com
   email: null
@@ -106,7 +120,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.sacredheartchurchsp.com
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+  - status
+- url: https://www.sacredheartchurchsp.com/index.php/mass-schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.sacredheartchurchsp.com/index.php/contact-us
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step
+- url: https://www.sacredheartchurchsp.com/index.php/about-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.sacredheartchurchsp.com/index.php/parish-registration
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

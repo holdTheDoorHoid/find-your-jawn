@@ -1,0 +1,358 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-103",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 24,
+  "records": [
+    {
+      "match": {"lead_ids": ["cultural_fund:tiny-dynamite-3", "irs_990n:454035025", "irs_bmf:454035025"], "group_id": "tiny-dynamite", "ein": "454035025", "website": "https://tinydynamite.org"},
+      "verdict": "publish",
+      "name": "Tiny Dynamite",
+      "summary": "A Philadelphia theatre company that stages one-hour plays for modest ticket prices in small Center City venues. Volunteers can usher at shows and see them for free.",
+      "what_you_do": "Fill in the volunteer form on the site to join the usher list. Ushers see the show for free and get pizza and a drink. You can also buy a ticket to a show or come to a special party.",
+      "kind": "nonprofit",
+      "categories": ["theater-dance-performance"],
+      "interests": ["community_theater"],
+      "motives": ["social", "enhancement"],
+      "formats": ["behind_the_scenes", "one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Shows are announced one at a time on the events page. Ushers are called when a spot opens."},
+      "locations": [
+        {"label": "Mailing address (P.O. Box)", "address": "PO Box 15129", "zip": "19130", "in_city": true},
+        {"label": "Show venue: Good Karma Cafe", "address": "265 Broad Street", "zip": "19107", "in_city": true},
+        {"label": "Show venue: The Drake Theatre lobby", "address": "302 S Hicks Street", "zip": "19102", "in_city": true},
+        {"label": "Show venue: The Racquet Club of Philadelphia", "address": "215 S 16th Street", "zip": "19102", "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "The company describes its ticket prices as modest, but exact prices are not shown on the pages read. Ushers see the show for free."},
+      "commitment": "seasonal",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the volunteer form at tinydynamite.org/volunteer, choosing Ushering, to join the usher list. Then buy a ticket to the next show you want to see.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The volunteer form and ticket sales are open to anyone. The volunteer page describes no orientation, and the site does not say how often shows run.",
+        "what_to_expect": "Ushers see the show free and get pizza and a drink. The company describes its plays as about an hour long, and the page does not say how long a shift lasts or whether ushers get training. The theater contacts you when a spot opens, so you may wait.",
+        "first_visit_tips": [
+          "The volunteer form asks for a name, email, and phone, and you hear back only when a usher spot opens.",
+          "Check the Venues page for where each show is staged, since the site lists no parking or transit notes.",
+          "For ticket questions, call the box office at 215-399-0088 or write to boxoffice@tinydynamite.org."
+        ]
+      },
+      "contacts": {"website": "https://tinydynamite.org", "email": "info@tinydynamite.org", "phone": "215-399-0088", "contact_name": "Philip H Hawkins"},
+      "status": "active",
+      "last_sign_of_life": "2026-02",
+      "sign_of_life_url": "https://tinydynamite.org/events/",
+      "sources": [
+        {"url": "https://tinydynamite.org/volunteer/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "first_visit_tips", "requirements"]},
+        {"url": "https://tinydynamite.org/events/", "seen": "2026-10-08", "fields": ["schedule", "status", "last_sign_of_life"]},
+        {"url": "https://tinydynamite.org/venues/", "seen": "2026-10-08", "fields": ["locations"]},
+        {"url": "https://tinydynamite.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://tinydynamite.org", "seen": "2026-10-08", "fields": ["cost", "what_to_expect", "summary"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page names a show called Valentine's Day with Tiny Dynamite 2026 but gives no date, so last_sign_of_life uses February from the holiday name. The home page says the 2025/26 season is ending. No show dates, accessibility notes, parking or transit notes were found on any page read. Box office email is listed on the contact page."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:tiny-farm-wagon-2"], "group_id": "tiny-farm-wagon", "website": "http://www.tinyfarmwagon.org"},
+      "verdict": "publish",
+      "name": "Tiny Farm Wagon",
+      "summary": "A mobile art project that builds gardens, runs workshops and holds art events. It works as an art classroom, greenhouse and gallery on wheels, and it cooks plant-based food in a cob oven.",
+      "what_you_do": "Take part in workshops, art events, or community events in its small garden, or email the project to ask about programs.",
+      "kind": "program",
+      "categories": ["gardening-greening", "arts-crafts"],
+      "interests": ["community_garden", "craft_circle"],
+      "motives": ["enhancement", "values"],
+      "formats": ["perform_make_together"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages", "neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "No dates are posted for its programs. Mother Tongue is an annual series of public art presentations and workshops, held in person and online."},
+      "locations": [
+        {"label": "Mailing address (the site does not say where the wagon is)", "address": "1315 Walnut Street, Suite 300", "zip": "19104", "in_city": true}
+      ],
+      "cost": {"level": "unknown", "text": "The site does not list costs for its programs."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email tinyfarmwagon@gmail.com, the address the home page gives for program information, and ask which programs are coming up and where they meet.",
+        "newcomer_friendliness": 2,
+        "basis": "Programs are named on the site, but none have dates, meeting places, costs or sign-up steps, and the site has no volunteer details, so email is the only clear way in.",
+        "what_to_expect": "The site describes workshops and art events that are open to the public. It does not say how long a visit runs, who attends, or what it costs, so ask those questions when you email.",
+        "first_visit_tips": [
+          "Email before you come, since the site posts no dates or meeting places for its programs.",
+          "The Walnut Street address is a mailing address; ask where a program will meet.",
+          "Two email addresses appear on the site: tinyfarmwagon@gmail.com for program information and tinyfarm.asst@gmail.com on the contact page."
+        ]
+      },
+      "contacts": {"website": "http://www.tinyfarmwagon.org", "email": "tinyfarm.asst@gmail.com"},
+      "status": "probably_active",
+      "sign_of_life_url": "http://www.tinyfarmwagon.org",
+      "sources": [
+        {"url": "http://www.tinyfarmwagon.org/programs-1", "seen": "2026-10-08", "fields": ["schedule", "what_you_do"]},
+        {"url": "http://www.tinyfarmwagon.org/contact-us", "seen": "2026-10-08", "fields": ["contacts", "locations"]},
+        {"url": "http://www.tinyfarmwagon.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "contacts", "status"]},
+        {"url": "http://www.tinyfarmwagon.org/take-action", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://www.mistysol.com/tinyfarmwagon", "seen": "2026-10-08", "fields": ["summary", "cost", "status"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "No program on any page read has a date, time, cost or sign-up step, so the status stays probably_active on the strength of a working site with no dates. The home page has an event-update sign-up form with a note that it may not work yet, so it is not offered as the first step. The contact page lists tinyfarm.asst@gmail.com while the home and mistysol.com pages list tinyfarmwagon@gmail.com for program information; both are recorded. The footer and home page name CultureTrust of Greater Philadelphia as the parent organization. The contact page social links point to template accounts, so none are recorded. A web search for 2026 Philadelphia events under this name found no listing. Programs named on the site are Philly Youth Story Collective, Mother Tongue, A Room to Write and Rest with Harriett's Bookshop, and the Tiny Farm Wagon Popup; the first and third are not recorded as separate groups."
+    },
+    {
+      "match": {"lead_ids": ["city_programs:town-watch-integrated-services", "city_volunteer_pages:departments-town-watch-integrated-services"], "group_id": "town-watch-integrated-services", "website": "https://www.phila.gov/departments/town-watch-integrated-services/"},
+      "verdict": "publish",
+      "name": "Town Watch Integrated Services",
+      "summary": "The City's Town Watch program trains, organizes, and equips residents who want to join a Town Watch group on their block. It also supports CERT, a disaster response program.",
+      "what_you_do": "Observe, document, and report suspicious or criminal activity on your block, and work with district police. Groups also take part in local Police District Advisory Commissions.",
+      "kind": "program",
+      "categories": ["neighborhood-civic", "emergency-disaster"],
+      "interests": ["town_watch", "preparedness_planning"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Year round, through a Town Watch group on your block", "season": "year_round"},
+      "locations": [
+        {"label": "TWIS office", "address": "30 S. 15th St., 18th floor", "zip": "19107", "in_city": true}
+      ],
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Ask whether a Town Watch group already meets on your block. To ask about joining or starting one, call the TWIS office at 215-686-1459.",
+        "newcomer_friendliness": 2,
+        "basis": "The city describes how groups get training and certification and links a form for new groups, but its pages do not say how one resident joins an existing group.",
+        "what_to_expect": "The city's pages describe what Town Watch groups do, not what a meeting is like. Members observe, document, and report, and groups work with district police and local advisory commissions. TWIS trains and certifies groups and sends trained staff into neighborhoods based on need.",
+        "first_visit_tips": [
+          "Call the office before you visit, since the site lists no office hours or walk-in times.",
+          "A group that wants to start one fills in the PDF application form for training and certification.",
+          "For non-emergency problems, the city's 311 line is linked from the department page."
+        ]
+      },
+      "contacts": {"website": "https://www.phila.gov/departments/town-watch-integrated-services/", "phone": "215-686-1459"},
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://www.phila.gov/departments/town-watch-integrated-services/",
+      "sources": [
+        {"url": "https://www.phila.gov/departments/town-watch-integrated-services/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "what_to_expect", "first_step", "first_visit_tips", "contacts", "locations", "status"]},
+        {"url": "https://www.phila.gov/departments/town-watch-integrated-services/about/", "seen": "2026-10-08", "fields": ["what_you_do", "what_to_expect", "summary"]},
+        {"url": "https://www.phila.gov/documents/town-watch-new-group-application/", "seen": "2026-10-08", "fields": ["first_step", "first_visit_tips"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The department page does not say how a resident joins an existing group. CERT is described only as a disaster response training that TWIS supports, not as a course TWIS teaches directly. The new-group application is a PDF with no deadlines, fees or contact details of its own. The department page lists three city events dated October 2026 (a juvenile resource fair, a wellness fair and a peace rally); it is not clear TWIS runs them, so they were not used for last_sign_of_life. Dated posts read today run to April 1, 2026. The 2026-05 date is carried over from the earlier pass and its source was not re-read."
+    },
+    {
+      "match": {"lead_ids": ["city_volunteer_pages:partner:treephilly:home"], "group_id": "treephilly", "website": "https://treephilly.org/?p=8003"},
+      "verdict": "publish",
+      "name": "TreePhilly Volunteer Giveaways (Parks and Recreation)",
+      "summary": "The city's tree program, run by Parks and Recreation, holds tree giveaways around the city, and volunteers sign up for shifts to help run them.",
+      "what_you_do": "Sign up for a volunteer shift at a citywide giveaway. The city's pages do not list the tasks, so ask the office what a shift involves before you sign up.",
+      "kind": "program",
+      "categories": ["nature-environment"],
+      "interests": ["tree_tending"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "one_off_event"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages", "neighbors"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Fall giveaways run mostly on weekends: 10 am to noon at neighborhood sites, and 10 am to 2:30 pm at the two citywide sites.", "days": ["fri", "sat", "sun"], "times": ["morning", "evening"], "recurring": false, "season": "fall"},
+      "locations": [
+        {"label": "Pennypack on the Delaware (northeast citywide giveaway)", "address": "Pennypack Pth", "zip": "19136", "in_city": true},
+        {"label": "Bartram's Garden (southwest citywide giveaway)", "address": "3000 S 56th St", "zip": "19143", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"level": "free", "text": "The trees are free. Only Philadelphia residents can take one, and it must be planted in the ground."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the volunteer form linked on the TreePhilly page for the Bartram's Garden giveaway on Sunday, Nov. 8, 2026, from 10 am to 2:30 pm. For other shifts, email treephilly@phila.gov to ask.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "A public sign-up form is linked for the two citywide giveaways. The page does not describe training or what a shift involves.",
+        "what_to_expect": "Citywide giveaways run 10 am to 2:30 pm, and neighborhood giveaways run 10 am to noon. The page does not say what volunteers do during a giveaway, so ask the office before you sign up.",
+        "first_visit_tips": [
+          "The resident registration for the Bartram's Garden giveaway closes Wed, Nov. 4, 2026. The page lists no separate volunteer deadline.",
+          "Email treephilly@phila.gov or call 215-683-0217 with questions about a shift."
+        ]
+      },
+      "contacts": {"website": "https://treephilly.org/?p=8003", "email": "treephilly@phila.gov", "phone": "215-683-0217"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://treephilly.org/?p=8003",
+      "sources": [
+        {"url": "https://treephilly.org/?p=8003", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "first_step", "first_visit_tips", "status", "last_sign_of_life"]},
+        {"url": "https://treephilly.org", "seen": "2026-10-08", "fields": ["contacts", "summary"]},
+        {"url": "https://www.phila.gov/departments/philadelphia-parks-recreation/get-involved/business-and-individual-volunteer-opportunities/", "seen": "2026-10-04", "fields": ["name", "contacts.website"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Fall 2026 giveaways on the TreePhilly page: Pennypack on Sept 19 (already passed), Maplewood on Oct 3 (passed), Holly Street Community Garden on Friday Oct 9 from 4 to 7 pm, Philly Tree People and Klean Kensington on Oct 17, Tioga and Tacony Creek on Oct 24, and Bartram's Garden on Nov 8. Volunteer forms are linked only for the two citywide giveaways. The home page button 'Volunteer at a park near you' leads to the Parks stewardship program, not to these giveaway shifts. Neighborhood giveaways have zip code limits that the page lists."
+    },
+    {
+      "match": {"lead_ids": ["city_programs:treephilly-yard-tree-giveaways"], "group_id": "treephilly-yard-tree-giveaways", "website": "https://www.phila.gov/programs/philly-tree-plan/resources/"},
+      "verdict": "publish",
+      "name": "TreePhilly yard tree giveaways",
+      "summary": "The City's free yard tree giveaway program gives trees to Philadelphia residents to plant at home, and it needs volunteers to help run its giveaway events.",
+      "what_you_do": "Help run a giveaway event. The city's pages do not list the tasks volunteers do, so ask the TreePhilly office first.",
+      "kind": "program",
+      "categories": ["nature-environment", "gardening-greening"],
+      "interests": ["tree_tending"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event", "side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Giveaways are held mostly on weekend mornings. The city's resources page gives no dates; the current fall list is on the TreePhilly site.", "days": ["sat", "sun"], "times": ["morning"], "recurring": true},
+      "cost": {"level": "free", "text": "Trees are free, but only Philadelphia residents can take one, and it must be planted in the ground."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email treephilly@phila.gov or call 215-683-0217 to ask about volunteering at a giveaway, or fill in the volunteer form linked on the TreePhilly page for the Bartram's Garden giveaway on Sunday, Nov. 8, 2026.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Volunteering is open to the public by form or by email, but the city's pages describe no training and no shift tasks.",
+        "first_visit_tips": [
+          "Ask the TreePhilly office what volunteers do at a giveaway before you sign up.",
+          "Trees go only to Philadelphia residents who register through the TreePhilly page."
+        ]
+      },
+      "contacts": {"website": "https://www.phila.gov/programs/philly-tree-plan/resources/", "email": "treephilly@phila.gov", "phone": "215-683-0217"},
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://treephilly.org/?p=8003",
+      "sources": [
+        {"url": "https://www.phila.gov/programs/philly-tree-plan/resources/", "seen": "2026-10-08", "fields": ["name", "summary", "what_you_do"]},
+        {"url": "https://treephilly.org/?p=8003", "seen": "2026-10-08", "fields": ["schedule", "first_step", "cost", "first_visit_tips", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://treephilly.org", "seen": "2026-10-08", "fields": ["contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The city resources page names the yard tree giveaway program but gives no giveaway timing, volunteer roles, sign-up steps or dates. The spring giveaway wording in the earlier summary could not be re-confirmed, so it was removed. This record and the treephilly record describe the same TreePhilly giveaway work. The orchestrator may want one of them marked duplicate; both are left as publish here. The 2026-09 date is the Sept 19 Pennypack giveaway listed on treephilly.org."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "trolley-car-table-tennis-club", "website": "https://www.trolleycarttc.com/"},
+      "verdict": "publish",
+      "name": "Trolley Car Table Tennis Club",
+      "summary": "A table tennis club at One Falls Center in East Falls, open to players of all levels. It runs open play every day, a Tuesday league night and monthly tournaments, and it is affiliated with USA Table Tennis.",
+      "what_you_do": "Come to open play, join the Tuesday league night, enter a monthly tournament, or take out a monthly or yearly membership.",
+      "kind": "club",
+      "categories": ["sports-teams"],
+      "interests": ["tennis_pickleball"],
+      "motives": ["enhancement", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Open play Monday to Friday, 6 to 10 pm, and Saturday and Sunday, noon to 5 pm. League nights are on Tuesdays at 7 pm.", "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "times": ["daytime", "evening"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Club at One Falls Center", "address": "3300 Henry Avenue", "zip": "19129", "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "Daily play is $5 for adults and $3 for youth under 18, paid in cash. Monthly membership is $40 for adults and $20 for youth. Yearly membership is $360 for adults and $180 for youth. Parents or guardians who are yearly members get half off the yearly youth membership. Non-members pay $5 per person on league nights, plus a $5 club entry fee."},
+      "commitment": "drop_in",
+      "access": {"notes": "Nearest SEPTA: Route 32 bus, with a stop directly in front of Falls Center at 3300 Henry Avenue."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Walk in during open play, sign in when you arrive, and pay the daily fee in cash.",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 4,
+        "basis": "The club says its leagues are open to players of all levels, and walk-ins are welcome during open play. No beginner lessons or beginner session is listed now.",
+        "what_to_expect": "You sign in when you arrive, pay the daily fee in cash, and start playing when a table is open. Matches are usually best 3 out of 5 games, and you can bring a friend or find a partner at the club. The page does not list beginner lessons, but it says players of every level are welcome.",
+        "first_visit_tips": [
+          "Coming by car from Henry Avenue, turn left just before the coffee and pizza shop, pass the gate, and park. Go down the stairs by the door nearest the club sign on your right.",
+          "Bring cash, because daily fees are cash only.",
+          "Taking SEPTA? The Route 32 bus stops directly in front of Falls Center.",
+          "To join the Tuesday league, show up before 7 pm. The league is capped at 24 players."
+        ]
+      },
+      "contacts": {"website": "https://www.trolleycarttc.com/", "email": "info@trolleycarttc.com", "phone": "267-335-2743"},
+      "status": "active",
+      "last_sign_of_life": "2025-12",
+      "sign_of_life_url": "https://www.trolleycarttc.com/news",
+      "sources": [
+        {"url": "https://www.trolleycarttc.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "interests", "status"]},
+        {"url": "https://www.trolleycarttc.com/play", "seen": "2026-10-08", "fields": ["schedule", "cost", "commitment", "first_step", "what_to_expect", "requirements"]},
+        {"url": "https://www.trolleycarttc.com/news", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://www.trolleycarttc.com/contact-us", "seen": "2026-10-08", "fields": ["locations", "contacts", "access", "first_visit_tips"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The contact page gives no accessibility information, so wheelchair access is unknown. The news page lists registration in December 2025 for table tennis classes at Mt. Airy Learning Tree, held January to March 2026. No current class is listed, so no lessons are recorded as current. The home page says the club holds tournaments monthly and is affiliated with USA Table Tennis."
+    },
+    {
+      "match": {"lead_ids": ["cultural_fund:twelve-gates-arts-3", "irs_990n:452976134", "irs_bmf:452976134"], "group_id": "twelve-gates-arts", "ein": "452976134", "website": "https://twelvegatesarts.org"},
+      "verdict": "publish",
+      "name": "Twelve Gates Arts",
+      "summary": "A gallery in Old City that shows contemporary art connected to South Asia and its diaspora. It holds exhibition openings, public talks, screenings and a residency for emerging artists.",
+      "what_you_do": "Visit the gallery during open hours, or go to an opening, talk or screening listed on the site. Writing workshops are posted from time to time.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts", "culture-language-heritage-groups", "science-learning"],
+      "interests": ["film_video", "cultural_exchange", "talks_lectures"],
+      "motives": ["understanding", "social"],
+      "formats": ["one_off_event", "conversation"],
+      "roles": ["create"],
+      "audience": {"open_to": "public", "community": [], "support_group": false},
+      "schedule": {"text": "Gallery open Wednesday noon to 6 pm and Thursday to Saturday 11 am to 5 pm. Tuesday visits are by appointment only, and the gallery is closed Sunday and Monday.", "days": ["wed", "thu", "fri", "sat"], "times": ["daytime"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Gallery", "address": "106 North 2nd Street", "zip": "19106", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"level": "unknown", "text": "Gallery admission is not stated on the site, which has a donation link. Some talks and showcases have tickets, and one student showcase is $40."},
+      "commitment": "drop_in",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Visit the gallery at 106 North 2nd Street during posted hours, or get a ticket for a talk or screening from the all-events list.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The gallery is open to the public on posted hours, and it gives a phone number and an email for questions. The site names no beginner programs.",
+        "what_to_expect": "Visits during posted hours are open to the public, so you can look at the current exhibition. Openings, talks and screenings are listed by date on the events page, and some need a ticket. Tuesday visits need an appointment, so call or email first if that is the day you have.",
+        "first_visit_tips": [
+          "Check the all-events page before you go, since some talks and screenings need a ticket.",
+          "The gallery is closed Sunday and Monday, and Tuesday visits need an appointment made by email or phone.",
+          "The site does not say whether a visit is free, so call (215) 253-8578 to ask first.",
+          "The gallery is at 106 North 2nd Street in Old City."
+        ]
+      },
+      "contacts": {"website": "https://twelvegatesarts.org", "email": "info@twelvegatesarts.org", "phone": "(215) 253-8578", "contact_name": "Aisha Zia Khan", "social": ["https://www.instagram.com/12gates"]},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.twelvegatesarts.org/all-events",
+      "sources": [
+        {"url": "https://www.twelvegatesarts.org/all-events", "seen": "2026-10-08", "fields": ["schedule", "cost", "first_step", "status", "last_sign_of_life", "what_you_do"]},
+        {"url": "https://twelvegatesarts.org", "seen": "2026-10-08", "fields": ["cost", "first_step", "locations", "status"]},
+        {"url": "https://www.twelvegatesarts.org/workshops", "seen": "2026-10-08", "fields": ["what_you_do", "status"]},
+        {"url": "https://www.twelvegatesarts.org/contact", "seen": "2026-10-08", "fields": ["contacts", "schedule", "first_visit_tips"]},
+        {"url": "https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12", "seen": "2026-10-04", "fields": ["name", "contacts.website"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["contacts.contact_name"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The current exhibition is Nihad Dukhan: Unbroken Lineages I, on view Oct 2 to 15, 2026, with an opening on Oct 2. Upcoming: the Saami Khayal Apprenticeship student showcase on Oct 9, 2026 at Philadelphia Ethical Society, 1906 Rittenhouse Sq, $40 tickets; and a screening and conversation, The Landscape of Memory, on Oct 29, 2026 at Public Trust, 4017 Walnut St, no price stated. The apprenticeship itself is by application. Admission and wheelchair access are not stated on any page read. The site gives two ZIP codes for the gallery, 19106 and 19104; 19106 is used. The workshops page lists past Poets' Studio writing workshops from spring and summer 2025 and a four-week painting workshop in November 2025, with no current dates."
+    }
+  ],
+  "leads_only": [
+    {"name": "Harriett's Bookshop", "url": "http://www.tinyfarmwagon.org/programs-1", "note": "named as a partner of the Tiny Farm Wagon room to write and rest retreat on its programs page, not checked"},
+    {"name": "CultureTrust of Greater Philadelphia", "url": "http://www.tinyfarmwagon.org/", "note": "named as the organization Tiny Farm Wagon is part of, in the home page and footer, not checked"},
+    {"name": "Maplewood Collective / Friends of Maplewood Mall", "url": "https://treephilly.org/?p=8003", "note": "named as a host of an Oct 3, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Holly Street Community Garden", "url": "https://treephilly.org/?p=8003", "note": "named as a host of an Oct 9, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Philly Tree People", "url": "https://treephilly.org/?p=8003", "note": "named as a partner of the Oct 17, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Klean Kensington", "url": "https://treephilly.org/?p=8003", "note": "named as a partner of the Oct 17, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Tioga Hope Park and Garden", "url": "https://treephilly.org/?p=8003", "note": "named as a host of an Oct 24, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Tioga United", "url": "https://treephilly.org/?p=8003", "note": "named as a partner of the Oct 24, 2026 TreePhilly giveaway, not checked"},
+    {"name": "Esperanza", "url": "https://treephilly.org/?p=8003", "note": "named as a partner of the Oct 24, 2026 Tacony Creek TreePhilly giveaway, not checked"},
+    {"name": "Tookany/Tacony-Frankford Watershed Partners", "url": "https://treephilly.org/?p=8003", "note": "named as a partner of the Oct 24, 2026 Tacony Creek TreePhilly giveaway, not checked"},
+    {"name": "Mt. Airy Learning Tree", "url": "https://www.trolleycarttc.com/news", "note": "named on the club news page as the site of past table tennis classes, not checked"},
+    {"name": "Philadelphia Ethical Society", "url": "https://www.twelvegatesarts.org/all-events", "note": "named as the venue for the Oct 9, 2026 student showcase on the gallery events page, not checked"},
+    {"name": "Public Trust", "url": "https://www.twelvegatesarts.org/all-events", "note": "named as the venue for the Oct 29, 2026 screening on the gallery events page, not checked"}
+  ],
+  "blocked": [],
+  "notes": "Batch 103, 7 groups, all 7 published (no hides). Searches used 1 of 1: a search for Tiny Farm Wagon events in 2026 found no listing. Fetches used 24, all succeeded, no rate limiting or blocked pages. Tiny Farm Wagon has no dated evidence and is low confidence. treephilly and treephilly-yard-tree-giveaways describe the same TreePhilly giveaway work; the orchestrator may want one marked duplicate. Carried over without re-reading: Town Watch last_sign_of_life 2026-05 and Tiny Dynamite last_sign_of_life 2026-02, which rests on a 2026 Valentine's Day show name with no date. Partner leads from treephilly.org are recorded with that page as their url because their own addresses were not given there. No budget was exhausted."
+}

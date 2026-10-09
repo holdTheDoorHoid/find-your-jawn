@@ -9,8 +9,9 @@ ein: '231516921'
 summary: A Philadelphia choral group that says it has sung together since 1948. It has an adult choir
   that rehearses weekly from September through May, and a free youth program called Next Generation for
   young singers.
-what_you_do: Adults audition for the choir, then rehearse and sing in its concerts. Young singers can
-  join the free weekly youth program.
+what_you_do: Adults send a request form to be considered for an audition, then rehearse and sing in the
+  choir's four public concerts each season. Young singers can join the free Saturday youth program with
+  no audition.
 kind: nonprofit
 categories:
 - music
@@ -37,14 +38,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The adult choir rehearses Tuesday evenings, 7:20 to 9:50 pm, at Friends Center from September
-    through May, with occasional Saturday all-day rehearsals before major concerts. The free youth program,
-    Next Generation, meets weekly at Temple Music Prep. The site gives its start as September 12 with
-    no year or weekday.
+  text: 'Adult choir rehearses on Tuesday evenings, 7:20 to 9:50 pm, at Friends Center from September
+    through May, with occasional all-day Saturday rehearsals before big concerts. The youth program meets
+    on Saturdays during the fall term: Youth Choir (ages 11 and under) at 11:15 am and Chorale (ages 12
+    and up) at 12:30 pm.'
   days:
   - tue
+  - sat
   times:
   - evening
+  - daytime
   recurring: true
   season: null
 locations:
@@ -57,8 +60,8 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Temple Music Prep (youth program)
-  address: null
+- label: Presser Hall (youth program)
+  address: 2001 N 13th Street
   neighborhood: null
   planning_district: null
   zip: null
@@ -69,8 +72,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The audition page lists no membership fee. It lists parking at Friends Center at $24 with a validation
-    sticker, or $12 for evening parking two blocks away.
+  text: The youth program is free. The site lists no adult membership or audition fee. Parking near Friends
+    Center is $24 with a validation from the front desk, or $12 for evening parking two blocks away. Concert
+    tickets are sold through Humanitix, and the concerts page does not list prices.
 commitment: weekly
 group_size: null
 access:
@@ -82,19 +86,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: 'Youth: sign up for Next Generation through the Temple link on the site. Adults: send the audition
-    request form linked on the audition page. That page says the 2026 to 2027 season was taking tenor
-    and bass singers.'
+  how: 'Adults: send the audition request form linked on the auditions page, since auditions are by invitation.
+    Young singers: register for Next Generation through the link on the site, with no audition needed.'
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Adult auditions are by invitation after a request form, which closes the adult route to walk-ins.
-    The youth program has open registration.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The adult choir is by invitation after a request form, and the site lists sight-reading and prior
+    choral experience as things that help. The youth program has open registration and no audition.
+  what_to_expect: Adults send a request form, then audition with one solo of their own choice, sight-reading,
+    tonal memory checks, and vocal range exercises. Adult rehearsals are on Tuesday evenings at Friends
+    Center. Youth singers join Saturday sessions with no audition, the program is free, and the young
+    singers perform in a concert.
+  first_visit_tips:
+  - Bring a copy of your audition solo for the music director, who plays the accompaniment.
+  - Get Friends Center parking validated at the front desk for $24, or use evening parking two blocks
+    away for $12.
 contacts:
   website: https://www.singingcity.org/
   email: info@singingcity.org
@@ -102,9 +111,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://singingcity.org/auditions
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.singingcity.org/concerts
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=10
   seen: '2026-10-04'
@@ -155,7 +164,21 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+  - audience
+  - cost
+- url: https://www.singingcity.org/youth
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - locations
+  - requirements
+- url: https://www.singingcity.org/concerts
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -3,16 +3,18 @@ name: Safe-Hub Philadelphia
 aka: []
 leads: []
 ein: null
-summary: A soccer-based youth development program in the Kensington and Harrowgate area. It teaches life
-  skills through soccer with its PlayMaker and EduSoccer programs.
-what_you_do: Young people take part in soccer and life-skills sessions at the Safe-Hub campus beside Scanlon
-  Playground. The group also runs community events and outreach.
+summary: Soccer and life skills for young people in Kensington and Harrowgate. EduSoccer teams for ages
+  4 to 18 and the PlayMaker program for high school students help kids build teamwork and career skills.
+what_you_do: Young people train with EduSoccer teams twice a week and build life skills along the way.
+  High school students can apply to PlayMaker, which includes a stipend. The Collective Impact program
+  connects families to housing and utility help, food distribution and mental health support.
 kind: program
 categories:
 - sports-teams
 - kids-youth-mentoring
 interests:
 - soccer
+- youth_leadership
 motives:
 - values
 - social
@@ -21,25 +23,30 @@ formats:
 - learn_skill
 roles:
 - hands_on
-crowd: []
+- help_teach
+crowd:
+- kids
+- teens
+- families
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 4
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Program days and times are not stated on the site.
+  text: EduSoccer teams train twice a week. Session days, times and the program location's street address
+    are not published on the group's site.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Safe-Hub campus beside Scanlon Playground, Kensington and Harrowgate area (street address not
+- label: Safe-Hub Community campus, indoor soccer field beside Scanlon Playground (street address not
     published)
   address: null
   neighborhood: null
@@ -49,10 +56,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Philadelphia office (listed on the contact page, not a program site)
+  address: 3525 I St, Suite 103
+  neighborhood: null
+  planning_district: null
+  zip: '19134'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: No participant fee is stated. The site has a donate button.
+  text: The site does not show an EduSoccer fee. PlayMaker participants receive a stipend. The site has
+    a donate button, and donations are optional.
 commitment: null
 group_size: null
 access:
@@ -64,26 +81,41 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: null
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register a child for EduSoccer through the online registration link on the programs page, which
+    is open for fall. Teens ages 14 to 18 who want PlayMaker can contact Andalyn Young at andalyn.young@safe-hub.org,
+    since PlayMaker requires an application and an interview.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Open to the public, with an online registration for EduSoccer for ages 4 to 18. The site does
+    not show the cost, the session times or whether teams have spots left.
+  what_to_expect: EduSoccer teams train twice a week and mix soccer with lessons on respect, teamwork,
+    handling emotions and perseverance. Ages 4 to 7 can join FUNdamentals for kids new to soccer, and
+    ages 8 to 18 choose Recreational or Footskills FC. Coach roles require attending coach training. The
+    site does not show session times, locations or fees, so ask before you register.
+  first_visit_tips:
+  - 'Pick the level that fits your child: FUNdamentals for ages 4 to 7, Recreational for newer players
+    ages 8 to 18, or Footskills FC for players with experience.'
+  - Call 610-233-7368 for session times and the campus address, since the site does not publish them.
+  - The campus is an indoor soccer field beside Scanlon Playground in Kensington.
+  - PlayMaker is for ages 14 to 18 and needs an application and an interview.
 contacts:
   website: https://usa.safe-hub.org/
   email: philly@safe-hub.org
   phone: 610-233-7368
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/safehubphilly/
+  - https://www.instagram.com/safehub_philly/
+  - https://www.linkedin.com/company/safe-hub-philly
+  - https://www.tiktok.com/@safehubphilly
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://usa.safe-hub.org/
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://6abc.com/amp/post/local-kids-set-escort-world-cup-players-field-rare-opportunity/19354209/
 sources:
 - url: https://usa.safe-hub.org/
   seen: '2026-10-08'
@@ -98,8 +130,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://usa.safe-hub.org/program/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - schedule
+  - cost
+- url: https://usa.safe-hub.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+- url: https://usa.safe-hub.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+- url: https://6abc.com/amp/post/local-kids-set-escort-world-cup-players-field-rare-opportunity/19354209/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

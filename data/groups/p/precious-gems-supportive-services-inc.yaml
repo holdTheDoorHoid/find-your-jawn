@@ -32,7 +32,7 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: null
+  text: Meeting times for the children's and teen programs are not posted on the site.
   days: []
   times: []
   recurring: null
@@ -50,13 +50,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site.
+  text: Cost is not stated on the site.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The office is on the second floor of the Glenside building. The site does not say whether there
+    is an elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -65,13 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-224-5655 or email info@preciousgems.org to ask about the teen and children's programs.
+  how: Call 215-224-5655 or email info@preciousgems.org to ask about the teen and children's programs
+    and how to enroll.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site describes the programs but does not say how to enroll or who is eligible.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site names the teen and children's programs and gives a phone number and email, but it does
+    not say how to enroll, which ages are served, or whether there is a fee.
+  what_to_expect: The site does not describe a first session, group size, or where youth groups meet.
+    Call the office to ask about age ranges, how a group meets, and what it costs. The wider services
+    include time-limited support groups led by grief professionals and referrals to counseling and community
+    groups.
+  first_visit_tips:
+  - Call before you visit, since the site does not list office hours.
+  - Ask on the first call about age ranges, meeting times and cost, because the site does not state them.
+  - The office is on the second floor, so ask ahead about stairs or an elevator if that matters.
 contacts:
   website: https://www.preciousgems.org
   email: info@preciousgems.org
@@ -110,7 +119,18 @@ sources:
   - contacts
   - locations
   - status
-research_tier: 1
+- url: https://preciousgems.org/our-work/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_to_expect
+- url: https://preciousgems.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

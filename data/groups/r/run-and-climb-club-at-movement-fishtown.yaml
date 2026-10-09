@@ -5,9 +5,10 @@ aka:
 - BIPOC Night at Movement Fishtown
 leads: []
 ein: null
-summary: A monthly climbing night for women and nonbinary climbers at Movement. The page says it suits
-  people who feel most at home in women's spaces.
-what_you_do: Climb with other women and nonbinary climbers on a set monthly evening.
+summary: A monthly evening of climbing for women and nonbinary climbers at the Movement gym in Fishtown,
+  held on the second Wednesday at 6 pm.
+what_you_do: Climb with other women and nonbinary climbers on a set monthly evening. Book a spot through
+  the gym's events calendar and pay the listed price, or go free as a member.
 kind: club
 categories:
 - outdoors-adventure
@@ -42,11 +43,11 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Movement Callowhill
-  address: 1010 Callowhill St
+- label: Movement Fishtown
+  address: 1700 N American St
   neighborhood: null
   planning_district: null
-  zip: '19123'
+  zip: '19122'
   lat: null
   lng: null
   in_city: true
@@ -54,28 +55,43 @@ locations:
 online_ok: false
 cost:
   level: low
-  text: $15 per person, free for Movement members
+  text: $15 per person for the night, free for members. A day pass at the Fishtown location is listed
+    at $28.
 commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: 'The Fishtown page describes the building as ADA accessible, including its restrooms and climbing
+    areas. A step-free entrance and an elevator are not stated. Free parking lots are on the north and
+    south sides of the building. Nearest SEPTA: the 57 bus, which stops on N. American Street right at
+    the entrance.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Rental shoes, harnesses and belay devices are on site at Fishtown.
 first_step:
-  how: Check the Movement Fishtown events page for the current listing and price
-  drop_in: null
-  sign_up_needed: null
+  how: Book a spot for the next second Wednesday night on the Movement Fishtown calendar, sign the participant
+    agreement online before you go, and watch the bouldering orientation video. If you are new to climbing,
+    start with the Introduction to Rope Climbing class.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to the listed audience for a posted price
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open to women and nonbinary climbers with a posted date, price and booking link. The page does
+    not say beginners are welcome at the night, though the gym runs intro classes for people new to climbing.
+  what_to_expect: Each night starts at 6 pm on the second Wednesday of the month at Movement Fishtown.
+    Everyone signs the participant agreement and watches a bouldering orientation video before climbing.
+    The night costs $15 per person, or nothing for members, and the page does not say how many people
+    attend or whether you need belaying skills to join.
+  first_visit_tips:
+  - Sign the participant agreement online before you arrive to speed up check-in.
+  - Watch the bouldering orientation video, which everyone must do.
+  - Park in the free lots on the north or south side of the building, or take the 57 bus to the entrance.
+  - If you are new, the Introduction to Rope Climbing class (about 1 hour, $39) is for people with little
+    or no experience.
 contacts:
   website: https://www.movementgyms.com/fishtown/events
   email: null
@@ -95,6 +111,8 @@ sources:
   - cost
   - audience
   - status
+  - what_you_do
+  - first_step
 - url: https://www.movementgyms.com/fishtown/
   seen: '2026-10-08'
   fields:
@@ -103,7 +121,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
+- url: https://movementgyms.com/fishtown/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+- url: https://movementgyms.com/first-visit/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+- url: https://movementgyms.com/fishtown/climbing/classes/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://movementgyms.com/memberships-passes/
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

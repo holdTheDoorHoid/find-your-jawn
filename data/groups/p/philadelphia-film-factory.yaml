@@ -5,10 +5,10 @@ leads:
 - irs_990n:881318508
 - irs_bmf:881318508
 ein: '881318508'
-summary: A film education group for local independent filmmakers. It offers classes and workshops on making
-  films, writing scripts, and acting on camera, plus a free youth filmmaking program for teens.
+summary: A film education group for local independent filmmakers. It runs beginner classes on making films,
+  writing scripts and acting on camera, plus Take One, a youth film program that offers paid internships.
 what_you_do: Take a beginner class such as Intro to Filmmaking or Intro to Screenwriting, come to a networking
-  event, or ask about the Take One program for teens.
+  event, or ask about Take One, the youth program with paid internships.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -39,13 +39,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 2026 classes and workshops are listed on the site. Check the class list for dates and times.
-  days: []
-  times: []
+  text: Beginner classes run about six weeks and usually meet on weeknight evenings, for example Monday
+    and Wednesday from 6 to 9 pm. Each round's dates are posted on its class page.
+  days:
+  - mon
+  - wed
+  times:
+  - evening
   recurring: null
   season: null
 locations:
-- label: Office
+- label: Office and classes
   address: 3675 Market St
   neighborhood: null
   planning_district: null
@@ -54,10 +58,21 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Studio days (students arrange their own travel)
+  address: 525 Mildred Ave, Clifton Heights, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19018'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Class fees are not listed in the text read. The Take One youth program is described as free.
+  level: paid
+  text: Beginner classes are paid courses, and each round sets its own price. The 2026 Intro to Filmmaking
+    page listed $1,250, or $1,000 for paying in full early, and the Intro to Screenwriting page listed
+    $500. Take One offers paid internships.
 commitment: null
 group_size: null
 access:
@@ -69,17 +84,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Binder or folders, pens and a notepad. A laptop or tablet is highly recommended for the intro
+    course.
 first_step:
-  how: Browse the 2026 class list on philmfactory.org, sign up for the newsletter, or email info@philmfactory.org
-    to ask about the Take One program for teens
-  drop_in: null
-  sign_up_needed: null
+  how: Email info@philmfactory.org to ask when the next beginner class opens. The spring 2026 applications
+    were due by March 24, 2026.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Introductory classes are listed for beginners and the site says how to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Beginner classes are written for total beginners, and each class page has an application form
+    to fill in before you start.
+  what_to_expect: Each beginner course runs about six weeks in weeknight sessions, and students make a
+    short film or script as a group. Payment is due up front or on an installment plan, and the intro
+    film course starts with a mandatory orientation. Studio days happen in Clifton Heights, so plan your
+    own ride, and the adult courses are for people 18 and older.
+  first_visit_tips:
+  - Bring a laptop or tablet if you have one, since the intro course calls it highly recommended.
+  - Bring a notebook, folders and pens.
+  - Plan your own ride to the studio days in Clifton Heights, PA.
+  - Plan to attend the mandatory orientation at the Cambridge Innovation Center, 3675 Market St, 8th floor.
 contacts:
   website: https://philmfactory.org
   email: info@philmfactory.org
@@ -122,7 +146,34 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://philmfactory.org/philm-factory-classes/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://philmfactory.org/intro-to-filmmaking-class-2026/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+  - first_step
+  - requirements
+  - first_visit_tips
+- url: https://philmfactory.org/intro-to-screenwriting/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - audience
+- url: https://philmfactory.org/take-one-youth-film-program-2025/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+  - requirements
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

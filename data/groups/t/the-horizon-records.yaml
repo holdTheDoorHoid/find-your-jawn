@@ -5,8 +5,7 @@ leads: []
 ein: null
 summary: A nonprofit record label that helps emerging artists record and release music. It runs studio
   time, community recording jams for solo artists, and a spoken word recording program.
-what_you_do: Book a studio session, join a community recording jam, or give time to help other artists
-  record.
+what_you_do: Book a studio session, join a community recording jam, or give time to help other artists.
 kind: nonprofit
 categories:
 - music
@@ -33,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No set schedule is posted. Studio sessions and recording jams are booked through the site.
+  text: No set schedule is posted. Studio sessions and recording jams are arranged by contacting the team.
   days: []
   times: []
   recurring: null
@@ -66,24 +65,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the take action page to book a studio session or give time, or sign up for the newsletter.
+  how: Send an email through the Contact Us page to ask about studio time or volunteering. The site does
+    not describe a booking process.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Public sign-up routes for studio sessions and jams are listed on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Studio time and jams are arranged through an email or contact form, and the site does not say
+    how sessions are booked or what one involves, so the way in is unclear.
+  what_to_expect: The site does not say how long a session runs, who attends, or where the studio is.
+    It describes studio time and community recording jams as free, so email the team before you go to
+    ask what to bring and where to meet.
+  first_visit_tips:
+  - Email first, since the site lists no studio address or city.
+  - Ask about step-free entry and other access details, since the site does not give any.
 contacts:
   website: https://thehorizonrecords.org
-  email: null
+  email: gabriella@thehorizonrecords.org
   phone: null
-  contact_name: null
+  contact_name: Gabriella
   social:
   - https://www.instagram.com/thehorizonrecordsglobal
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://thehorizonrecords.org/
+status: dormant
+last_sign_of_life: 2023-10
+sign_of_life_url: https://thehorizonrecords.org/sessions
 sources:
 - url: https://thehorizonrecords.org/
   seen: '2026-10-08'
@@ -99,8 +104,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://thehorizonrecords.org/initiatives
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://thehorizonrecords.org/sessions
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://thehorizonrecords.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

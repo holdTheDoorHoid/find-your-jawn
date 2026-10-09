@@ -21,7 +21,8 @@ formats:
 roles:
 - help_teach
 - hands_on
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -33,7 +34,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Teams meet at four Philadelphia locations. Ask the group for each team's days and times.
   days: []
   times: []
   recurring: null
@@ -51,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the page read.
+  text: The national site lists no player fees, only donation options.
 commitment: null
 group_size: null
 access:
@@ -66,24 +67,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: To join a team, email taz@streetsoccerusa.org. Coaches and volunteers can use the apply form on
-    the page.
+  how: Email Taz McDermott at taz@streetsoccerusa.org to join a team. Coaches and volunteers can use the
+    Apply to be a Volunteer or Coach form on the page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The page names a contact to join a team and a form for coaches and volunteers.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Philadelphia page names a contact to join a team and a public form for coaches and volunteers.
+    It does not describe a newcomer program or drop-in sessions.
+  what_to_expect: The national group says it serves youth ages 4 and up, and also adults, homeless families
+    and people in recovery. The Philadelphia page does not say what a team session looks like or how often
+    teams meet, so ask Taz before the first visit.
+  first_visit_tips:
+  - Email first to confirm the team, day and place you will attend.
+  - Ask what to bring and whether the team has openings.
+  - If you want to help rather than play, the coach and volunteer form is the direct route.
 contacts:
   website: https://www.streetsoccerusa.org/cities/philadelphia/
   email: taz@streetsoccerusa.org
   phone: null
-  contact_name: null
+  contact_name: Taz McDermott
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.streetsoccerusa.org/cities/philadelphia/
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://www.streetsoccerusa.org/2026/05/28/visa-and-street-soccer-usa-join-forces-to-uplift-local-communities-through-soccer-copy
 sources:
 - url: https://www.streetsoccerusa.org/cities/philadelphia/
   seen: '2026-10-08'
@@ -95,12 +102,26 @@ sources:
   - first_step
   - contacts
   - status
+  - schedule
 - url: https://www.pysc.org/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.streetsoccerusa.org/about/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - cost
+  - what_to_expect
+- url: https://www.streetsoccerusa.org/2026/05/28/visa-and-street-soccer-usa-join-forces-to-uplift-local-communities-through-soccer-copy
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

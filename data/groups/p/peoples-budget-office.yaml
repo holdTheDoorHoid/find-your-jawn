@@ -6,8 +6,8 @@ ein: null
 summary: A Philadelphia group that helps residents understand the city budget and push for public money
   for the services people need. Anyone can attend a Budget 101 or Budget 201 workshop or monthly office
   hours, take the budget survey, or join the newsletter.
-what_you_do: Attend a Budget 101 or Budget 201 workshop, drop in to monthly office hours, take the budget
-  survey, or sign up for the newsletter.
+what_you_do: Attend a Budget 101 or Budget 201 workshop (most ask you to RSVP), join the monthly office
+  hours, take the budget survey, or sign up for the newsletter.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -30,14 +30,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly office hours and Budget 101 and 201 workshops. Dates are not shown on the homepage, and
-    the events page is linked without details.
+  text: Budget 101 and 201 workshops move around the city, usually on weeknight evenings with some weekend
+    afternoons, and most ask you to RSVP. The group also says it holds monthly office hours.
   days: []
-  times: []
-  recurring: null
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
-locations: []
-online_ok: null
+locations:
+- label: Office
+  address: 1909 S 9th Street, Room 209
+  neighborhood: null
+  planning_district: null
+  zip: '19148'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
   text: The site does not state fees for workshops or office hours.
@@ -55,14 +66,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend a Budget 101 workshop or a monthly office hours session listed on the programming pages
+  how: RSVP for a Budget 101 workshop listed on the events page. Most sessions ask for an RSVP.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Budget 101 is a beginner workshop and office hours are a drop in, so newcomers have a clear first
-    step.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Budget 101 is a beginner workshop on how the city budget works, and the events page gives a clear
+    way to attend (an RSVP for most sessions). Office hours are listed, but the page does not say whether
+    they are drop-in.
+  what_to_expect: Budget 101 sessions run about two hours in neighborhood venues across the city and explain
+    how the city budget works. Most ask you to RSVP, and some have offered food and childcare. The site
+    does not state a fee for any session, and some sessions are held online.
+  first_visit_tips:
+  - RSVP on the events page before you go, since most sessions ask for one.
+  - 'Check the events page for newer dates: the 2026 sessions listed run from April 6 to June 2.'
+  - Some sessions are online, so you can join from home.
 contacts:
   website: https://peoplesbudgetoffice.org
   email: info@peoplesbudgetoffice.org
@@ -70,9 +87,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://peoplesbudgetoffice.org
+status: active
+last_sign_of_life: 2026-06
+sign_of_life_url: https://peoplesbudgetoffice.org/events
 sources:
 - url: https://peoplesbudgetoffice.org
   seen: '2026-10-08'
@@ -84,11 +101,20 @@ sources:
   - first_step
   - contacts
   - status
+  - locations
 - url: https://www.buildingbok.com/directory
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://peoplesbudgetoffice.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - online_ok
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

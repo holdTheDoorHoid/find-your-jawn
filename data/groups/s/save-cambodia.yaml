@@ -7,8 +7,8 @@ leads:
 ein: '461177794'
 summary: A nonprofit advocacy group that aims to unite Cambodians around the world and push for accountability
   and reform in Cambodia, through volunteer reporting, campaigns and advocacy at the United Nations.
-what_you_do: Join the community through the group's Join Now page, watch or attend its community briefings
-  and discussions, and volunteer for reporting and campaign work.
+what_you_do: Sign up on the Join Now page to get its news and urgent alerts, watch or join its community
+  briefings (mostly online), and take action by writing letters when it asks.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -39,10 +39,12 @@ audience:
   support_group: false
 schedule:
   text: Community briefings and discussions are listed on the group's calendar, usually on Saturday afternoons
-    and often held online. The most recent listed briefing was in April 2026.
+    and often held online.
   days:
   - sat
-  times: []
+  times:
+  - daytime
+  - evening
   recurring: true
   season: event_only
 locations:
@@ -58,13 +60,14 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: No fee is listed on the join page
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - km
+  notes: Several listed briefings are in Khmer, and some stream live on YouTube.
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,15 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the community through the group's Join Now page, then watch for the next community briefing
-    on its calendar.
+  how: Sign up on the Join Now page with your first name, last name and email, then watch the calendar
+    for the next online briefing.
   drop_in: true
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Briefings are announced on a public calendar and the community join page is open to anyone, but
-    the site does not describe a volunteer onboarding.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The join form and the public calendar are open to anyone, but the site does not describe a volunteer
+    orientation or a welcome for new members.
+  what_to_expect: Briefings on the calendar usually run about an hour to an hour and a half, often on
+    a Saturday afternoon, and many are held online in Khmer. The join form asks only for a name and an
+    email address, and no fee is listed. The site does not describe any volunteer training.
+  first_visit_tips:
+  - Check the language on each calendar entry, since many briefings are in Khmer.
+  - Look for the YouTube link on the event listing, since some briefings stream live there.
+  - Most in-person events on the calendar were held out of state or abroad, so online is the usual way
+    to take part.
 contacts:
   website: https://savecambodia.org
   email: hello@savecambodia.org
@@ -129,7 +138,18 @@ sources:
   fields:
   - schedule
   - status
-research_tier: 1
+  - access
+  - first_visit_tips
+- url: https://savecambodia.org/kcjoin
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://savecambodia.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

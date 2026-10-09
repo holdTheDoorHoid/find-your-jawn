@@ -50,8 +50,9 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: The event page gives no notes on captions, ASL or interpreters for the meeting. The group's site
-    has an accessibility statement and names the Mid-Atlantic ADA Center for ADA help.
+  notes: The meeting page says nothing about captions or ASL. The host organization's accessibility statement
+    says its virtual events include live captions or transcripts, with ASL on request, and asks for accommodation
+    requests seven days ahead at Access@DisabilityPridePA.org.
 requirements:
   act153_clearances: null
   background_check: null
@@ -60,22 +61,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the short Google sign-up form linked from the event page, then join the next monthly Zoom
-    meeting.
+  how: Fill in the short sign-up form linked from the event page, then join the next monthly Zoom meeting.
   drop_in: true
   sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The event page says the meeting is open to anyone interested in change for people with disabilities
-    and seniors in Philadelphia, and it gives a clear sign-up form. It does not say newcomers are specifically
-    welcome, so the rating stays at 3.
+  basis: The meeting is open to anyone interested in disability and senior issues in Philadelphia and
+    links a sign-up form, but it does not say newcomers are specifically welcome.
   what_to_expect: The meeting is a video call on Zoom that runs about an hour and a half on a Wednesday
     afternoon. Residents, workers and organizations share ideas for changes that matter to people with
-    disabilities and seniors in the city. The event page does not describe the agenda in detail.
+    disabilities and seniors in the city. The page does not describe the agenda in detail and mentions
+    no fees or dues.
   first_visit_tips:
   - Fill in the sign-up form on the event page before the meeting.
   - You need a computer, tablet or phone with internet access to join the Zoom call.
-  - The coalition has its own join page on the group's site, for people who want to take part beyond one
-    meeting.
+  - Ask for any accommodation at least seven days ahead by emailing Access@DisabilityPridePA.org.
 contacts:
   website: https://www.disabilitypridepa.org/calendar/rev-up-philly
   email: info@DisabilityPridePA.org
@@ -98,6 +97,7 @@ sources:
   - commitment
   - access.notes
   - contacts.calendar_feed
+  - last_sign_of_life
 - url: https://www.disabilitypridepa.org/calendar/rev-up-philly?format=ical
   seen: '2026-10-08'
   fields:
@@ -108,6 +108,15 @@ sources:
   fields:
   - contacts.email
   - first_step
+  - summary
+  - what_you_do
+  - audience
+  - what_to_expect
+- url: https://www.disabilitypridepa.org/accessibility-statement
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - first_visit_tips
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

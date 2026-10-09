@@ -4,18 +4,29 @@ aka: []
 leads:
 - irs_990n:262249796
 ein: '262249796'
-summary: null
-what_you_do: null
+summary: A foster-based rescue for dogs and puppies. Foster homes care for the animals until they are
+  adopted, and the rescue also welcomes volunteers and holds public events such as a pet fair.
+what_you_do: Foster a dog or puppy at home, sign up as a volunteer through the rescue's volunteer page,
+  or come to a pet fair.
 kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- animals
+interests:
+- animal_fostering
+- shelter_volunteering
+motives:
+- values
+formats:
+- side_by_side
+- one_off_event
+roles:
+- hands_on
+crowd:
+- all_adults
+- neighbors
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,16 +35,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The adoption center is open by appointment only. Its pet fair is listed for a Saturday, October
+    10 (no year shown), from 10 am to 3 pm, at a Warminster park in Bucks County.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Address on the rescue's website
   address: 14425 Bustleton Ave
   neighborhood: null
-  planning_district: upper_far_northeast
+  planning_district: null
   zip: '19116'
   lat: null
   lng: null
@@ -43,7 +55,7 @@ online_ok: null
 cost:
   level: null
   text: null
-commitment: null
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Fill in the foster application on the rescue's site, or start from its volunteer page under How
+    To Help.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Fostering starts with an application, and the site shows no walk-in time, so the way in is not
+    open to drop-ins.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: www.wetnoserescue.org
+  website: https://wetnoserescue.org
   email: null
   phone: null
   contact_name: Stephen or Kim Leslie
   social: []
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://wetnoserescue.org
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -83,8 +97,21 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://wetnoserescue.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - status
+- url: https://thephiladelphiacitizen.org/help-shelter-animals-philly/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

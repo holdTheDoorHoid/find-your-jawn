@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public shows, comedy nights, open mics and readings run through October and November, most at
-    8 pm, many at Quig's Pub. The site lists each date.
+  text: Monday Night Jazz and Caked-Up Comedy repeat about every two weeks. Many events start at 8 pm,
+    often at Quig's Pub. The site lists each date.
   days: []
   times:
   - evening
@@ -53,8 +53,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Ticket prices vary by event and are sold through links on the site. No general price is given.
+  level: paid
+  text: Tickets vary by show and are sold through links on the site. Yearly membership is $50 (Social),
+    $100 (Artistic) or $250 (Cornerstone).
 commitment: drop_in
 group_size: null
 access:
@@ -69,13 +70,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a public event on the site and buy a ticket, or follow the membership info link to join
+  how: Buy a ticket through the link on a public show, comedy night or open mic listing on the site. To
+    join as a member, fill out the membership application linked from the membership page.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows, open mics and readings are open to anyone with a posted date and a ticket link
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows, comedy nights and open mics are open to the public with posted dates and ticket links,
+    and membership applications are reviewed by a committee each month.
+  what_to_expect: Many nights start at 8 pm at Quig's Pub, which is part of the building at 1714 Delancey
+    Place, and shows are ticketed through links on the site. The site does not say how long a night runs,
+    what the seating is like, or what to wear. Membership gives access to the pub and to member events.
+  first_visit_tips:
+  - Buy your ticket through the link on the event listing before you arrive.
+  - The site does not give parking, transit or step-free access details, so plan your route to 1714 Delancey
+    Place ahead of time.
+  - If you want to join, compare the three membership tiers on the membership page first.
 contacts:
   website: https://www.playsandplayerstheatre.org/
   email: pandptheatre@gmail.com
@@ -99,7 +108,21 @@ sources:
   - first_step
   - contacts
   - commitment
-research_tier: 1
+  - last_sign_of_life
+  - what_to_expect
+- url: https://www.playsandplayerstheatre.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - requirements
+- url: https://www.playsandplayerstheatre.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

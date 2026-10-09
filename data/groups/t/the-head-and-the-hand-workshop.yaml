@@ -61,11 +61,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Valerio Coffee Roasters, where the writing group and book club meet
+  address: 2331 Frankford Avenue
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: 'The events page gives no price for the writing group or the book club, and registration is usually
-    required. Author events vary: some are free or pay what you can, and others are ticketed.'
+  text: 'The events page gives no price for the writing group or the book club. Registration is required
+    for the writing group. Author events vary: some are free or pay what you can, and others are ticketed.'
 commitment: null
 group_size: null
 access:
@@ -86,17 +95,17 @@ first_step:
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The writing group is open to writers of any genre and career stage, and the book club reads one
-    poetry book at each meeting. Both say to register on each event page, so the way in is clear.
+  basis: The writing group is open to writers in any genre and at any stage, and the events page says
+    to register for each session. It does not allow drop-ins, so the way in is registration. The events
+    page does not say who can join the book club.
   what_to_expect: The writing group meets for about 90 minutes with writers at any stage. The poetry book
     club meets for an hour, and members read and discuss one book at each meeting. Prices are not listed
-    for these meetings, and registration is usually needed.
+    for these meetings, and registration is required for the writing group.
   first_visit_tips:
-  - Register through the event page before you go, since registration is required for the writing group.
+  - Register on the event page before you go, since the writing group does not take drop-ins.
   - Call 267-702-6744 or email info@theheadandthehand.com for directions, parking or transit, since the
-    site gives none.
-  - Check the events page for changes, because one book club meeting was rescheduled and its new date
-    is still to be set.
+    site gives none. The contact page also lists (267) 465-1784.
+  - Check the events page for changes, since meetings are sometimes rescheduled.
 contacts:
   website: https://www.theheadandthehand.com
   email: info@theheadandthehand.com
@@ -155,6 +164,18 @@ sources:
   fields:
   - kind
   - summary
+- url: https://www.theheadandthehand.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - drop_in
+- url: https://www.theheadandthehand.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_visit_tips
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

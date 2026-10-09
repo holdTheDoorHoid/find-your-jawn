@@ -3,11 +3,11 @@ name: St. Paul's Episcopal Church
 aka: []
 leads: []
 ein: null
-summary: An Episcopal parish in Chestnut Hill with several Sunday services and an intergenerational choir
-  of almost 80 people. Its site also lists a youth program and outreach drives such as a Thanksgiving
-  turkey drive.
-what_you_do: Sit in on a Sunday service, ask about the choir, or ask about the youth program or the outreach
-  drives named on the site.
+summary: An Episcopal parish in Chestnut Hill with three Sunday services and choirs of almost 80 singers
+  across adults and children. It also runs a youth program and a monthly collection for local partner
+  agencies.
+what_you_do: Sit in on a Sunday service, ask about the choirs or the youth program (S.P.Y.), or bring
+  an item to the monthly collection for a partner agency.
 kind: congregation
 categories:
 - faith-community
@@ -19,6 +19,7 @@ interests:
 - faith_youth_programs
 motives:
 - values
+- social
 formats:
 - conversation
 - perform_make_together
@@ -37,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday services at 8 am, 9 am (family service on the labyrinth) and 11 am (choral Eucharist),
-    plus Sunday evening services at 5 or 7 pm as scheduled.
+  text: Sunday services at 8 am (quiet spoken Eucharist), 9 am (family service on the labyrinth) and 11
+    am (choral Eucharist), plus Sunday evening services at 5 or 7 pm as scheduled.
   days:
   - sun
   times:
@@ -49,7 +50,7 @@ schedule:
 locations:
 - label: Church
   address: 22 East Chestnut Hill Avenue
-  neighborhood: null
+  neighborhood: chestnut_hill
   planning_district: null
   zip: '19118'
   lat: null
@@ -65,23 +66,35 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: the Chestnut Hill East or Chestnut Hill West Regional Rail station, each about
+    one block away. The number 23 bus ends about a half block away.'
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday service, or call 215-242-2055 to ask about the choir or the youth program.
+  how: Come to a Sunday service and pick up a visitor card at the registration table in the narthex, or
+    call 215-242-2055 to ask about the choirs or the youth program.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has contact, directions and hospitality pages, but it does not describe a newcomer program
-    or say whether beginners may join the choir.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says all are welcome, encourages visitors to try more than one service, and has visitor
+    cards at the narthex table. The choir page also lists steps for getting started. It has no formal
+    newcomer class.
+  what_to_expect: Services are open to anyone of any age, and the site suggests trying a few to find the
+    one that suits you. The 8 am service is quiet and spoken, with no hymns. The 9 am service is informal
+    and aimed at families, and the 11 am service has hymns, choral anthems and a sermon. Coffee hour follows
+    the 11 am service in Dixon House, and from September to May a Sunday breakfast runs from 8:30 to 9:30
+    am in the Parish Hall for a small donation.
+  first_visit_tips:
+  - Pick up a visitor card at the registration table in the narthex.
+  - Parking is in the driveway lot, the stone lot behind Dixon House, or on the street along Bethlehem
+    Pike and Chestnut Hill Avenue.
+  - Stay for coffee hour in Dixon House after the 11 am service.
+  - Call 215-242-2055 with questions about accessibility, since the site does not describe it.
 contacts:
   website: https://stpaulschestnuthill.org/
   email: null
@@ -108,7 +121,28 @@ sources:
   fields:
   - schedule
   - summary
-research_tier: 1
+  - audience
+  - first_step
+- url: https://stpaulschestnuthill.org/choirs
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+- url: https://stpaulschestnuthill.org/hospitality
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://stpaulschestnuthill.org/directions
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+- url: https://stpaulschestnuthill.org/outreach
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

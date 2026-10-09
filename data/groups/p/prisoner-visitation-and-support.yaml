@@ -5,7 +5,7 @@ leads:
 - irs_bmf:231985076
 ein: '231985076'
 summary: A volunteer group that visits people held in federal and military prisons across the United States,
-  a service it says it has provided since 1968. Trained volunteers visit about once a month, keep in brief
+  a service it says it has provided since 1968. Trained volunteers visit about once a month, keep up brief
   correspondence, and write a short report after each visit.
 what_you_do: Become a volunteer visitor and commit to at least two years of visits, or give money to help
   recruit and train volunteers.
@@ -34,11 +34,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Visitors visit about once a month and write a short report after each visit. Training comes before
-    the first visit. Visits take place at federal and military prisons across the United States.
+  text: Visitors see the person they are matched with about once a month, keep up brief correspondence
+    in between, and file a short online report after each visit. Training comes before the first visit.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Friends Center office
@@ -50,10 +50,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: The site does not state a fee.
+  text: The site does not state a volunteer fee; it asks for donations to recruit and train volunteers.
 commitment: ongoing_role
 group_size: null
 access:
@@ -62,20 +62,30 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Read the become a visitor page on the site, then apply. Training comes before the first visit.
+  how: Download the fillable visitor application from the Become a Visitor page, then talk with PVS staff,
+    complete training and wait for facility approval before your first visit.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Training comes first and the commitment is at least two years, and the homepage does not describe
-    the sign-up step.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The way in is a written application, a staff conversation, training and facility approval with
+    fingerprinting and a background check, then a match. The group asks for at least two years, so it
+    is not a drop-in group.
+  what_to_expect: After approval, you are matched with one person from a waiting list and visit that same
+    person about once a month for at least two years. Visits are face to face inside federal or military
+    prisons; the person sets the agenda, and you listen with respect without preaching. Between visits
+    you send brief correspondence and file a short online report.
+  first_visit_tips:
+  - Expect fingerprinting and a background check before you can visit anyone.
+  - Use the Bureau of Prisons facility locator the group recommends to see whether a federal prison is
+    near you.
+  - Plan for a two year commitment, and tell PVS early if you need to stop so it can notify the prison
+    and the person.
 contacts:
   website: https://www.prisonervisitation.org/
   email: PVS@prisonervisitation.org
@@ -85,7 +95,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.prisonervisitation.org/
+sign_of_life_url: https://prisonervisitation.org/visiting-with-us/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -108,7 +118,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://prisonervisitation.org/become-a-visitor/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - commitment
+- url: https://prisonervisitation.org/visiting-with-us/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

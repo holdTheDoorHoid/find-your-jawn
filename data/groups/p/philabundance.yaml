@@ -36,10 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Packing, sorting and community kitchen shifts are offered each week. The volunteer pages do not
-    list set days or times.
+  text: Shifts are offered each week, and warehouse repacking runs in the morning or afternoon. The volunteer
+    pages do not list set days or hours.
   days: []
-  times: []
+  times:
+  - morning
+  - daytime
   recurring: true
   season: null
 locations:
@@ -48,6 +50,15 @@ locations:
   neighborhood: null
   planning_district: null
   zip: '19148'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Hunger Relief Center, South Philadelphia (warehouse repacking shifts)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -70,14 +81,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for a shift on the volunteer portal at philabundance.volunteerhub.com/vv2/, or email volunteer@philabundance.org
-  drop_in: null
-  sign_up_needed: null
+  how: Sign up for a shift on the VolunteerHub portal linked from the volunteer page, or make Notes of
+    Sunshine cards at home and mail them to 3616 S. Galloway Street.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open sign-up on a public portal and by email; the page does not describe training or a first-visit
-    step
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shift sign-up is public online and by email, and the cards can be made from home. The volunteer
+    pages do not describe an orientation before a first shift.
+  what_to_expect: A warehouse repacking shift means packing and sorting food at the Hunger Relief Center
+    in South Philadelphia, in the morning or afternoon. Friends, family and coworkers can sign up as a
+    group through a separate form. The pages do not say how long a shift runs, what to wear, or whether
+    there is training before a first shift.
+  first_visit_tips:
+  - Sign up through VolunteerHub before you come, since shifts are booked online.
+  - Groups of friends, family or coworkers can book together through the group form.
+  - The pages do not list parking or entry details, so call (215) 339-0900 before a first shift.
 contacts:
   website: https://www.philabundance.org
   email: volunteer@philabundance.org
@@ -103,6 +121,7 @@ sources:
   - schedule
   - first_step
   - contacts
+  - locations
 - url: https://www.philabundance.org/
   seen: '2026-10-08'
   fields:
@@ -113,7 +132,12 @@ sources:
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+- url: https://www.philabundance.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

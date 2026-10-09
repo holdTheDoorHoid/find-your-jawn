@@ -36,12 +36,24 @@ schedule:
   text: A season of concerts, mostly from fall to spring. Several each season are in Philadelphia and
     Chestnut Hill, and others are in other cities.
   days:
+  - fri
+  - sat
   - sun
   times:
+  - daytime
   - evening
   recurring: true
   season: null
-locations: []
+locations:
+- label: Mailing address (office)
+  address: 8855 Germantown Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19118'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
@@ -61,16 +73,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to one of the upcoming concerts, starting with a Philadelphia date, or join the email
-    list to hear about new dates.
+  how: Buy a ticket to one of the upcoming concerts, starting with a Philadelphia date, using the link
+    on that concert's own page, or join the email list to hear about new dates.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
   basis: Concerts are open to the public, and each date has its own ticket page. The site does not describe
     any way to sing with the choir, so this rating covers attending only.
-  what_to_expect: A concert is a seated performance by a professional choir, often in a church. The program
-    is new music, and some concerts include other musicians or staging. The season page does not give
-    the length of a concert, so check the event page before you buy.
+  what_to_expect: A concert is a seated performance by a professional choir, often in a church such as
+    St. Mark's in Center City or the Presbyterian Church of Chestnut Hill. The program is new music, and
+    some concerts include other musicians or staging, such as an installation at the Fabric Workshop and
+    Museum. The upcoming page does not give the length of a concert, so check the event page before you
+    buy.
   first_visit_tips:
   - Use the ticket link on the concert's own page, since prices and seating are set per event.
   - Check the start time on your event page, because the season ranges from afternoon to evening starts.
@@ -100,6 +114,7 @@ sources:
   - status
   - first_step
   - contacts
+  - first_step.how
 - url: https://crossingchoir.org/upcoming
   seen: '2026-10-08'
   fields:
@@ -108,6 +123,8 @@ sources:
   - first_step
   - last_sign_of_life
   - sign_of_life_url
+  - first_step.what_to_expect
+  - first_visit_tips
 - url: https://crossingchoir.org/about
   seen: '2026-10-08'
   fields:
@@ -118,6 +135,7 @@ sources:
   fields:
   - contacts
   - what_you_do
+  - locations
 - url: https://crossingchoir.org/news
   seen: '2026-10-08'
   fields:

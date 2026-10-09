@@ -36,17 +36,90 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site names the 2026 season and has fall 2026 football registration open. Practice and game
-    locations are on a separate page that was not read.
+  text: Fall football season, with practice sites set by each team's coach. The site lists eight practice
+    sites and two home game sites, but no season start or end dates.
   days: []
   times: []
   recurring: true
   season: fall
-locations: []
+locations:
+- label: Vare Rec Center (practice site)
+  address: 2600 Morris, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Chew Rec Center (practice site)
+  address: 1800 Washington Ave, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19146'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Donald Finnegan Rec Center (practice site)
+  address: 1231 S. 30th St, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19146'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Lanier Playground (practice site)
+  address: 2900 Tasker St, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Smith Playground (practice site and home games)
+  address: 2100 S. 24th St, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: F.D.R. Park (practice site)
+  address: 1500 Pattison Ave, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19145'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: 48th St. Playground (practice site)
+  address: 1414 S. 47th St, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19143'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: James Finnegan Playground (practice site and home games)
+  address: 6801 Grovers Ave, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19142'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Fees are not stated on the site. The site links to financial QR codes and a donation form.
+  text: The site does not list fee amounts. After registering, families pay through Cash App as the site
+    describes, then email the club the child's details and receive a reply with any balance left.
 commitment: seasonal
 group_size: null
 access:
@@ -61,15 +134,18 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the registration link for the sport you want on the site (fall football and girls flag football
-    forms are linked).
+  how: Fill in the football or girls flag football registration form linked from the club's Register page,
+    then pay as the page describes.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Registration is open to the public through linked forms, but the site does not describe tryouts
-    or what a first practice is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Registration is open to the public through linked forms, and the FAQ and volunteer pages are
+    public, but the site does not describe tryouts or a first practice.
+  what_to_expect: The site does not describe a first practice or tryouts. Each team's coach tells families
+    which of the listed South Philadelphia rec centers and playgrounds the team uses.
+  first_visit_tips:
+  - Ask the coach which practice site your team uses, since the sites vary by team.
+  - Read the refund rules on the FAQ page before you pay, because refunds are limited to a few cases.
 contacts:
   website: https://www.southphillysigmasharks.org/
   email: null
@@ -97,7 +173,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.southphillysigmasharks.org/register
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://www.southphillysigmasharks.org/register/football
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.southphillysigmasharks.org/register/faq
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.southphillysigmasharks.org/register/volunteers
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+- url: https://www.southphillysigmasharks.org/games-events/practice-sites-game-locations
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

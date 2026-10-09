@@ -57,7 +57,7 @@ schedule:
   - morning
   - daytime
   recurring: true
-  season: null
+  season: event_only
 locations:
 - label: Estate
   address: 5001 Grant Avenue
@@ -68,7 +68,7 @@ locations:
   lng: -74.98053550436948
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: free
   text: Grounds and mansion visits are free. Guided mansion tours on the second Saturday cost $10, and
@@ -115,6 +115,8 @@ contacts:
   social:
   - http://www.facebook.com/glenfoerd
   - https://www.instagram.com/glenfoerd/
+  - https://www.facebook.com/glenfoerd
+  - https://www.instagram.com/glenfoerd
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -174,6 +176,16 @@ sources:
   fields:
   - kind
   - what_you_do
+- url: https://glenfoerd.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - status
+  - audience
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

@@ -5,7 +5,10 @@ leads: []
 ein: null
 summary: A Catholic parish at 2nd and Jefferson Streets with an English Mass and a Spanish Mass on Sundays,
   and a weekday Mass in English.
-what_you_do: Come to Mass in English or Spanish. Confession is by appointment.
+what_you_do: Come to Mass in English or Spanish, or join a ministry. The parish lists a Welcoming and
+  Hospitality ministry, CCD teaching on Tuesdays at 6:30 pm, flower and altar server ministries, and Mission
+  in the Streets on Saturdays. A Legion of Mary group meets Mondays from 6 to 7 pm. Most ministry pages
+  send you to the parish office for details.
 kind: congregation
 categories:
 - faith-community
@@ -31,7 +34,8 @@ audience:
   support_group: false
 schedule:
   text: Sunday Masses at 9:30 am in English and 11:30 am in Spanish. Weekday Mass Monday to Friday at
-    8:30 am in English.
+    8:30 am. Confession Sundays 10:30 to 11:20 am and Thursdays 5 to 6:30 pm, or by appointment. Thursday
+    adoration runs 9 am to 8 pm.
   days:
   - sun
   - mon
@@ -41,11 +45,13 @@ schedule:
   - fri
   times:
   - morning
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Church (2nd and Jefferson Sts.)
-  address: 2nd and Jefferson Sts.
+  address: 1445 N. 2nd St.
   neighborhood: null
   planning_district: null
   zip: '19122'
@@ -71,23 +77,31 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to the Sunday Mass in your language, or call the rectory
+  how: Come to the 9:30 am English or 11:30 am Spanish Sunday Mass, then call the parish office at 215-739-2358
+    about joining a ministry such as Welcoming and Hospitality or CCD teaching.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the parish lists an office phone and address that its ministry pages
+    point people to.
+  what_to_expect: Mass is free and open to anyone, and you can attend without signing up. Sunday Masses
+    are at 9:30 am in English and 11:30 am in Spanish, and weekday Mass is at 8:30 am. Ministry pages
+    send new people to the parish office rather than to a sign-up form, so calling or visiting the office
+    is the next step.
+  first_visit_tips:
+  - Confession is Sunday 10:30 to 11:20 am and Thursday 5 to 6:30 pm, or by appointment.
+  - The parish office address is 1445 N. 2nd St.
+  - The Legion of Mary meets Mondays from 6 to 7 pm, according to the parish announcements page.
 contacts:
   website: https://stmichaelsphiladelphia.com/
-  email: null
+  email: saintmichaelcc1831@aol.com
   phone: 215-739-2358
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://stmichaelsphiladelphia.com/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://stmichaelsphiladelphia.com/announcements/
 sources:
 - url: https://archphila.org/parish/st-michael-philadelphia/
   seen: '2026-10-08'
@@ -103,7 +117,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://stmichaelsphiladelphia.com/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://stmichaelsphiladelphia.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://stmichaelsphiladelphia.com/ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://stmichaelsphiladelphia.com/announcements/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

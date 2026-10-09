@@ -5,18 +5,24 @@ leads: []
 ein: null
 summary: A Catholic parish at 47th Street and Springfield Avenue in West Philadelphia with Sunday Masses,
   a Saturday evening Vigil, and weekday morning Mass.
-what_you_do: Come to Mass, or call the rectory to ask about parish groups. The Archdiocese page lists
-  no other public programs.
+what_you_do: 'Come to Mass, or join a parish group: altar servers, the parish choir, liturgical ministers,
+  reading groups, the Legion of Mary (weekly after the 10:15 am Mass in the lower church), or Family Faith
+  Formation for parents who teach their children. Call the rectory at 215-222-5819 to ask how to join.'
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- worship_music
+- scripture_study
+- faith_youth_programs
 motives:
 - values
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
+- help_teach
 crowd:
 - all_ages
 bridging: null
@@ -30,17 +36,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 7 and 10:15 am, Saturday Vigil Mass at 5 pm, and weekday Mass Monday to Friday
-    at 7 am. Saturday and national holiday Mass at 8:30 am. Confession Saturdays 4:15 to 4:45 pm and Sundays
-    9:30 to 10 am.
+  text: Sunday Masses at 7 am and 10:15 am, with the 10:15 Mass as the main Mass, sung with choir and
+    organ. Saturday vigil Mass at 5 pm. Weekday Mass at 7 am Monday to Friday. Saturday and national holiday
+    Mass at 8:30 am. Confession Saturdays 9 to 10 am and Sundays 9:30 to 10 am, or by appointment.
   days:
-  - sat
-  - sun
   - mon
   - tue
   - wed
   - thu
   - fri
+  - sat
+  - sun
   times:
   - morning
   - evening
@@ -74,13 +80,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about parish groups
+  how: Come to the 10:15 am Sunday Mass, then call the rectory at 215-222-5819 to ask about a parish group
+    or about becoming a member.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone. The site says to call the rectory to become a member and offers Flocknote
+    email updates. No newcomer program is described.
+  what_to_expect: Mass is free and open to anyone. The 10:15 am Sunday Mass is the main one, with choir
+    and organ. If you are not yet Catholic, or you are coming back to the Church, the rectory can tell
+    you about the adult catechism sessions.
+  first_visit_tips:
+  - Call the rectory at 215-222-5819 with questions about groups or membership, since the site lists no
+    office hours.
+  - Sign up for Flocknote email updates on the site if you want parish news.
 contacts:
   website: https://desalesphilly.com
   email: null
@@ -105,7 +118,34 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://desalesphilly.com
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://desalesphilly.com/organizations/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - categories
+  - interests
+  - roles
+  - first_step
+- url: https://desalesphilly.com/mass-times/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+- url: https://desalesphilly.com/register/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://desalesphilly.com/prep/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

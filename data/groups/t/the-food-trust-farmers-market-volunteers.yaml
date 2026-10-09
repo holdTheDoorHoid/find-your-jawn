@@ -33,13 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly help at a farmers market or program office. Shift lengths and hours are not listed.
+  text: Volunteers help at a farmers market each week, or in the program office. Shift lengths and hours
+    are not published.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Philadelphia farmers markets and program office
+- label: Philadelphia farmers markets
   address: null
   neighborhood: null
   planning_district: null
@@ -48,10 +49,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Program office
+  address: One Penn Center, Suite 900, 1617 John F. Kennedy Blvd
+  neighborhood: null
+  planning_district: null
+  zip: '19103'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: The cost of volunteering is not stated
+  text: The page does not state a cost for volunteering.
 commitment: weekly
 group_size: null
 access:
@@ -66,13 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the individual volunteer interest form on The Food Trust's site
+  how: Fill out the individual volunteer interest form on The Food Trust's site. Groups use the separate
+    interest form for groups.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to individuals and groups through a public form; the site describes no beginner program
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The only way in that the site names is an interest form. The page does not say what happens after
+    you submit it or describe a first shift, so a newcomer cannot see what the work is like before applying.
+  what_to_expect: Volunteers help at a farmers market each week or support a program from the office.
+    The site does not say how long a shift runs, whether there is training, or what a first day looks
+    like. Expect to fill in the interest form first.
+  first_visit_tips:
+  - Fill out the individual interest form before you plan a visit, since it is the only route the site
+    describes.
+  - Call 215-575-0444 to ask what happens after you submit the form, because the site does not say.
+  - Groups should use the separate interest form for groups.
 contacts:
   website: https://thefoodtrust.org
   email: contact@thefoodtrust.org
@@ -93,11 +111,23 @@ sources:
   - first_step
   - commitment
   - contacts
+  - what_to_expect
+  - first_visit_tips
 - url: https://thefoodtrust.org/wp-content/uploads/2026/06/Philly-Farmers-Market-Press-Release-FINAL.pdf
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://thefoodtrust.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://thefoodtrust.org/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

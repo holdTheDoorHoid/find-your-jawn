@@ -9,8 +9,9 @@ ein: '800855616'
 summary: A Philadelphia association for firefighters and EMS workers that promotes Hispanic and Latino
   representation in emergency services. It also gives out free smoke detectors, teaches CPR and first
   aid, and hosts family events for neighbors.
-what_you_do: Neighbors can take part in free smoke detector days, CPR and first aid training, and family
-  events such as the Halloween party. Fire and EMS personnel can join through the membership sign-up page.
+what_you_do: Neighbors can take part in smoke detector giveaways, CPR and first aid classes, and family
+  events. Fire and EMS personnel can join through the membership sign-up page, and friends and supporters
+  can join as honorary members.
 kind: nonprofit
 categories:
 - emergency-disaster
@@ -26,7 +27,8 @@ motives:
 formats:
 - learn_skill
 - one_off_event
-roles: []
+roles:
+- hands_on
 crowd:
 - families
 - neighbors
@@ -41,17 +43,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Community events through the year. Upcoming: a Halloween party on Sunday, November 1, 2026, a
-    Thanksgiving food drive on Saturday, November 21, and a La Navidad party on Saturday, December 19.'
+  text: Smoke detector giveaways, CPR and first aid classes, and drives and cultural events run through
+    the year. The outreach page gives no dates or places for them, and one-time events are listed separately
+    on the events page.
   days:
   - sat
   - sun
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: SAPFA Lounge
-  address: 7100 Tulip St
+  address: 7100 Tulip St, Philadelphia, PA
   neighborhood: null
   planning_district: null
   zip: null
@@ -61,9 +64,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: paid
-  text: Smoke detectors are free. Party tickets are $30 for the Halloween party and $75 for La Navidad.
-    Other costs are not listed.
+  level: low
+  text: Smoke detectors are free. Honorary membership for friends and supporters lists no dues. Some events
+    sell tickets, and the site does not list prices for CPR classes.
 commitment: one_off
 group_size: null
 access:
@@ -75,7 +78,7 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
   how: Join the email list on sapfa911.org to hear about the next smoke detector day, CPR class or family
@@ -83,8 +86,11 @@ first_step:
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Community events are open to neighbors, and the site has a clear sign up for event and news emails.
-  what_to_expect: null
+  basis: Programs are open to neighbors, and the site has a clear email sign-up and a public volunteer
+    form, but the outreach page gives no dates or sign-up steps for classes.
+  what_to_expect: Smoke detector days give out free detectors along with fire-safety education. CPR and
+    first aid classes are hands-on and taught by association members, and the site does not give their
+    length or cost.
   first_visit_tips: []
 contacts:
   website: https://sapfa911.org
@@ -125,7 +131,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://sapfa911.org/outreach
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - schedule
+  - requirements
+- url: https://sapfa911.org/membership
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+- url: https://sapfa911.org/about
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -3,22 +3,31 @@ name: Philly Youth Inc.
 aka: []
 leads: []
 ein: null
-summary: A youth development group that runs a book club, self-care Saturdays, a young influencer feature,
-  and global travel for teens.
-what_you_do: Young people can join the book club, the self-care sessions, the Top Influencers feature
-  for ages 12 to 25, or the global tours for teens. The site has a Volunteer With Us section.
+summary: A Philadelphia youth development group. It runs a youth program with self-care, book club discussions
+  and leadership, a monthly virtual book club, a feature that shares young people's stories, and trips
+  abroad for teens.
+what_you_do: Teens ages 12 to 17 can register for the youth program, which covers self-care, book club
+  discussions, leadership, college and career readiness, and travel. Teens ages 13 to 17 can join the
+  monthly virtual book club. Young people can apply to be featured in the Top Influencers stories, which
+  the feature page says is for ages 25 and under. Volunteers can help with travel recruiting, the app,
+  outreach, fundraising or marketing.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - books-writing
+- culture-language-heritage-groups
 interests:
 - youth_leadership
 - book_club
+- cultural_exchange
 motives:
 - values
 - enhancement
-formats: []
-roles: []
+formats:
+- conversation
+roles:
+- hands_on
+- organize
 crowd:
 - teens
 - young_adults
@@ -33,18 +42,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The virtual book club meets online once a month. The site gives no meeting days or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
-locations: []
-online_ok: null
+locations:
+- label: Philadelphia (no street address published)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: No program fees are listed. Donations cover travel and scholarships for teens who could not otherwise
-    take part.
-commitment: null
+  text: The site lists no program fees. Donations help pay for trips, cultural activities and scholarships
+    for teens who need help to take part. The book club page does not say whether donating is required
+    to join.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -55,27 +74,33 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Volunteer With Us section or the support page. Ages 12 to 25 can apply for the Top Influencers
-    feature.
+  how: Sign up for the youth program through the Register Today form on the Events page, or for the virtual
+    book club through the sign-up form on its page. Email info@phillyyouthinc.com with questions.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer and application routes are listed, though the steps are not spelled out.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The youth program and the book club both have open online sign-up forms with no tryout or approval
+    step listed. The site does not describe what a meeting is like or give meeting times.
+  what_to_expect: After you sign up for the virtual book club, you get a welcome kit with the book of
+    the month and login details. Meetings are online once a month, with a facilitator, discussion of the
+    book and challenges tied to it. The site gives no meeting times and no fee for the book club.
+  first_visit_tips:
+  - Read the month's book before the online meeting, since the discussion is about the book.
+  - Have a device with internet access for the online meetings.
+  - Ask whether donating is required to join, since the book club page does not say.
 contacts:
   website: https://www.phillyyouthinc.com/
-  email: null
-  phone: null
+  email: info@phillyyouthinc.com
+  phone: 484-466-6397
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.phillyyouthinc.com/
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.phillyyouthinc.com/events
 sources:
 - url: https://www.phillyyouthinc.com/
   seen: '2026-10-08'
@@ -90,8 +115,36 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.phillyyouthinc.com/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+- url: https://www.phillyyouthinc.com/general-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - schedule
+  - online_ok
+  - first_step
+  - what_to_expect
+- url: https://www.phillyyouthinc.com/stories
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+- url: https://www.phillyyouthinc.com/support-us
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - contacts
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

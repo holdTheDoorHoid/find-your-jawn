@@ -5,58 +5,59 @@ leads:
 - city_senior:pca:26
 - city_senior:sites:13
 ein: null
-summary: A community center for adults 50 and older in West Philadelphia, run as part of Liberty Lutheran's
-  family services. Members use the computer and fitness rooms, take exercise and dance classes, and join
-  clubs such as quilting and sewing.
-what_you_do: Take exercise, dance or pottery classes, join the quilting and sewing club, use the computers,
-  or attend financial and retirement planning seminars.
+summary: A senior community center on North 41st Street in West Philadelphia where adults 60 and up can
+  eat a weekday lunch at no cost.
+what_you_do: Eat a weekday lunch, join the social and activity programs, and ask staff which classes and
+  trips are running.
 kind: program
 categories:
 - seniors-intergenerational
 interests:
 - senior_centers
-- senior_activities
 motives:
 - social
-- enhancement
 formats:
-- learn_skill
-- side_by_side
+- conversation
 roles:
 - hands_on
 crowd:
 - seniors
 bridging: null
 audience:
-  open_to: residents
+  open_to: public
   school: null
-  min_age: 50
+  min_age: 60
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Activities run during scheduled hours. The page does not list specific days or times.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Lunch Monday to Friday. Activities vary by site, so call to confirm times.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: West Philadelphia Senior Community Center
-  address: 1016 N. 41st Street
+- label: Center
+  address: 1016-26 N. 41st St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19104'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: low
-  text: Free for people 60 and older, who also get a free hot lunch. Ages 50 to 59 pay a small fee, with
-    no amount listed.
+  level: free
+  text: Lunch at no cost. Donations are suggested but not required.
 commitment: null
 group_size: null
 access:
@@ -68,16 +69,14 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Stop by the center at 1016 N. 41st Street with ID showing your age and Philadelphia address, or
-    call to ask about membership
-  drop_in: null
+  how: Call the center to reserve a lunch and ask about activities. Bring proof of age.
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Open to Philadelphia residents 50 and older who can show ID, and the page invites visitors to
-    stop by and become a member, but it does not describe a first visit.
+  basis: The 2024 PCA brochure says anyone 60 or older can come for lunch, with proof of age and a reservation.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -119,8 +118,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
+- url: https://www.pcacares.org/wp-content/uploads/2024/08/2024-All-in-one-Brochure-update.pdf
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - locations
+  - contacts
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://pcacares.org/services/community-connection/senior-centers/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

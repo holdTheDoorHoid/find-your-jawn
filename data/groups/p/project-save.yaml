@@ -8,8 +8,8 @@ leads:
 ein: '822164896'
 summary: A Philadelphia-area nonprofit that supports people affected by sexual violence, partner violence,
   and trauma with advocacy, counseling, peer support, and wellness groups.
-what_you_do: Join a drop-in healing and wellness group, a virtual peer support group for survivors, or
-  a teen group, or text the support line to ask about services.
+what_you_do: Join a drop-in healing and wellness group, a survivor support group, or a youth program,
+  or call or text the support line to ask about services.
 kind: nonprofit
 categories:
 - support-recovery
@@ -24,7 +24,8 @@ formats:
 - conversation
 roles:
 - figure_out
-crowd: []
+crowd:
+- all_ages
 bridging: null
 audience:
   open_to: public
@@ -36,8 +37,9 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Drop-in Creative Healing and Community Wellness Group, 6 to 7:15 pm, June to November 2026; a
-    teen group and a virtual 13-week support network ran in summer 2026
+  text: A drop-in Creative Healing and Community Wellness Group meets in the evening, 6 to 7:15 pm, at
+    the Henry Avenue office. Youth programs have run during the day. Support groups run in cycles, so
+    check the events page for the current run.
   days: []
   times:
   - evening
@@ -54,7 +56,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: low
   text: Many services are free for eligible people, with sliding-scale fees for others
@@ -72,15 +74,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Text 215-703-8441 to ask for support, or come to the drop-in Creative Healing and Community Wellness
-    Group at 3300 Henry Ave
+  how: Email referrals@projectsavephilly.com with 'Referral Request' in the subject line, or call or text
+    215-703-8441, and ask about the drop-in Creative Healing and Community Wellness Group or other support.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: A drop-in group and a text line make the first step simple, though the site does not describe
-    intake for counseling.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The drop-in group and a referral email or call or text line give a clear way in, and education,
+    advocacy and community events do not need eligibility. The site does not describe what a first session
+    or intake looks like, so it does not reach a 4.
+  what_to_expect: The drop-in Creative Healing and Community Wellness Group meets in the evening, 6 to
+    7:15 pm, at the Henry Avenue office, with creative and wellness activities. The page does not say
+    how many people attend, whether you must register, or what it costs. Some direct services have eligibility
+    rules, while education, advocacy, wellness and community events are open to anyone.
+  first_visit_tips:
+  - The suite number differs between pages (227 on the events page, 354 on the contact page), so confirm
+    the room when you call.
+  - Ask about virtual options when you call; the site says some services are offered online depending
+    on staff availability.
+  - Direct services have eligibility rules, so ask which services fit you before you come.
 contacts:
   website: https://www.projectsavephilly.com
   email: info@projectsavephilly.com
@@ -89,7 +100,7 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-04
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.projectsavephilly.com/events-workshops
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -121,7 +132,26 @@ sources:
   - status
   - first_step
   - audience
-research_tier: 1
+  - last_sign_of_life
+  - what_to_expect
+- url: https://www.projectsavephilly.com/programs
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - what_you_do
+- url: https://www.projectsavephilly.com/contact-1
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+  - first_visit_tips
+- url: https://www.projectsavephilly.com/survivorprograms
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

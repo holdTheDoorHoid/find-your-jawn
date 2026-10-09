@@ -83,17 +83,17 @@ first_step:
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: 'The course page says a club member is usually on site to answer questions and show newcomers
-    around. It names two easy ways in: a monthly workday or an email. The tags and monthly events are
-    described as casual.'
+  basis: The About page says someone from the club will be there to answer questions and show you around,
+    and the workdays page invites anyone to pitch in. The tags and monthly events are described as casual.
   what_to_expect: 'A workday is a few hours of outdoor work: mowing, weed-whacking, picking up sticks
     and trash, and course projects. Weekend tags start at 11 am, so arrive early to check in. Discs are
     usually sold at the course on Thursdays, Saturdays and Sundays, and play is free.'
   first_visit_tips:
-  - Check the group's Facebook page or email before a workday, because workdays are sometimes moved or
-    canceled.
+  - Check the group's calendar or its Facebook events page before a workday, since workdays are sometimes
+    moved or canceled.
   - For a weekend tag, arrive early to check in.
-  - Ask a club member on site where to start, since the page says one is usually around to help newcomers.
+  - Ask a club member on site where to start, since the About page says someone from the club will be
+    there to answer questions.
 contacts:
   website: https://www.sedgleywoods.com
   email: friendsofsedgleywoods@gmail.com
@@ -146,6 +146,7 @@ sources:
   - schedule
   - what_you_do
   - first_step
+  - first_visit_tips
 - url: https://www.sedgleywoods.com/course-info
   seen: '2026-10-08'
   fields:
@@ -160,11 +161,16 @@ sources:
   seen: '2026-10-08'
   fields:
   - summary
+  - first_step
 - url: https://www.sedgleywoods.com/events
   seen: '2026-10-08'
   fields:
   - schedule
   - cost
+- url: https://www.sedgleywoods.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

@@ -5,17 +5,28 @@ leads: []
 ein: null
 summary: A Catholic parish with Sunday Masses at 8, 10 and 11:30 am, some Masses said in Polish, and a
   Saturday evening vigil.
-what_you_do: Come to Mass, and ask which Masses are in Polish. The page lists no community programs.
+what_you_do: Come to Mass, and ask which Masses are in Polish. The parish lists about 17 ministries and
+  groups, including greeters, ushers, lectors, altar servers, a boys' Scout troop on Tuesday evenings
+  at 7 pm, senior groups, and Aid for Friends, which cooks and delivers meals for homebound and older
+  neighbors. For children and adults preparing for the sacraments, call the parish office at 215-535-6667.
 kind: congregation
 categories:
 - faith-community
+- seniors-intergenerational
+- kids-youth-mentoring
 interests:
 - worship_community
+- worship_music
+- senior_activities
+- scouts_youth_clubs
+- faith_service_projects
 motives:
 - values
+- social
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
 crowd:
 - all_ages
 bridging: null
@@ -31,19 +42,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am, 10 am and 11:30 am (in Polish). Saturday vigil at 4:30 pm. Weekday Mass
-    Monday to Friday at 8 am in English, and Saturday at 8 am in Polish. Saturday confession 3:30 to 4:15
-    pm.
+  text: Sunday Masses at 8 am (quiet, with no organ music), 10 am (with organ music) and 11:30 am (in
+    Polish). Saturday vigil at 4:30 pm. Weekday Mass at 8 am Monday to Friday, and at 8 am on Saturday
+    in Polish. First Friday Mass at 7 pm in Polish. Confessions Saturdays 3:30 to 4:15 pm, before the
+    vigil or by appointment. Eucharistic exposition Wednesdays 4 to 7 pm from October to June, with a
+    Polish rosary at 6:30 pm.
   days:
-  - sat
-  - sun
   - mon
   - tue
   - wed
   - thu
   - fri
+  - sat
+  - sun
   times:
   - morning
+  - daytime
   - evening
   recurring: true
   season: year_round
@@ -74,8 +88,10 @@ commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - pl
+  notes: The 8 am Sunday Mass is a quiet Mass with no organ music, as the site describes it.
 requirements:
   act153_clearances: null
   background_check: null
@@ -84,13 +100,18 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about Polish-language Masses
+  how: Come to the 10 am Sunday Mass in English or the 11:30 am Mass in Polish, then call the parish office
+    at 215-535-6667 to ask about the Scouts, the senior groups, or the faith formation classes.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the parish lists a phone line and a ministries page that says to
+    call to join. No newcomer program is described.
+  what_to_expect: Mass is free to attend, and you can come and sit without signing up. The 8 am Sunday
+    Mass is quiet with no organ music, and the 10 am Mass has organ music. The 11:30 am Mass is in Polish.
+  first_visit_tips:
+  - Call 215-535-6667 to confirm times, because a parish notice says some Mass times differ from the website.
+  - Confessions are on Saturdays from 3:30 to 4:15 pm, before the vigil Mass or by appointment.
 contacts:
   website: https://www.stjohncantiusparish.org
   email: null
@@ -121,7 +142,23 @@ sources:
   fields:
   - schedule
   - status
-research_tier: 1
+  - last_sign_of_life
+  - access
+  - first_visit_tips
+  - first_step
+- url: https://www.stjohncantiusparish.org/ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - categories
+  - interests
+  - roles
+- url: https://www.stjohncantiusparish.org/religious-education/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

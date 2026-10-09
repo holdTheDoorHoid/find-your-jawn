@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A men's choral group in Northwest Philadelphia, founded in 1922, that gives two seasonal concerts
   a year and sings at veterans, church, and community events.
-what_you_do: Come to the spring or Christmas concert, or use the Contact Us link on the site to ask about
-  joining. The site does not describe auditions.
+what_you_do: Sing in the chorus at its spring and Christmas concerts and at veterans, church, and community
+  events. Ask about joining through the Contact Us link on the site.
 kind: club
 categories:
 - music
@@ -34,11 +34,11 @@ audience:
   support_group: false
 schedule:
   text: Two seasonal concerts a year, a spring concert and a Christmas concert, plus performances at veterans,
-    church, and community events. Rehearsal times are not published.
+    church, and community events. The site does not show rehearsal times.
   days: []
   times: []
   recurring: true
-  season: null
+  season: event_only
 locations: []
 online_ok: null
 cost:
@@ -58,12 +58,15 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a spring or Christmas concert, or use the Contact Us link on the site to ask how to join
+  how: Come to a spring or Christmas concert, or use the Contact Us link on the site to ask how to join.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site does not say how to join or audition, so the way in is unclear.
-  what_to_expect: null
+  basis: The FAQ says reading music is not required, but the site gives no way to join or audition, and
+    the FAQ join answer is placeholder text, so the way in is unclear.
+  what_to_expect: Most people first see the chorus at a concert, and the calendar lists its concerts at
+    Ridge Avenue United Methodist Church. The site does not give ticket prices or rehearsal details, so
+    use the Contact Us link to ask before you go.
   first_visit_tips: []
 contacts:
   website: https://roxmalechorus.wixsite.com/home
@@ -72,9 +75,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://roxmalechorus.wixsite.com/home
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://roxmalechorus.wixsite.com/home/calendar
 sources:
 - url: https://roxmalechorus.wixsite.com/home
   seen: '2026-10-08'
@@ -85,7 +88,18 @@ sources:
   - first_step
   - status
   - audience
-research_tier: 1
+  - contacts
+- url: https://roxmalechorus.wixsite.com/home/faqs
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://roxmalechorus.wixsite.com/home/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

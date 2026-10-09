@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: A Philadelphia area group for bluegrass and roots music players and fans, with shows and open
   jams. It runs a newsletter and sells merch, and its Center City jam welcomes beginners.
-what_you_do: Go to a jam or show, play at a jam, or subscribe to the newsletter.
+what_you_do: Join the monthly Center City jam after an RSVP to play or listen, go to a show, or join the
+  mailing list for news about jams and shows.
 kind: nonprofit
 categories:
 - music
@@ -31,8 +32,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Center City jam is on the second Thursday of the month, 7 to 9 pm. The location is sent after
-    an RSVP. Other jams and shows in the region are on the calendar.
+  text: Center City jam on the second Thursday of each month, 7 to 9 pm. The location is sent after you
+    RSVP. Other jams and shows in the region are listed on the calendar.
   days:
   - thu
   times:
@@ -52,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Jam cost is not stated.
+  text: No admission fee is listed for the jam. The group takes optional donations, which are tax deductible.
 commitment: monthly
 group_size: null
 access:
@@ -67,13 +68,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: RSVP for the Center City jam using the details on the site, then go along to play or listen.
-  drop_in: null
-  sign_up_needed: null
+  how: Email the RSVP contact listed on the group's FAQ page to get the jam location, then go on the second
+    Thursday to play or listen.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The Center City jam says beginners are welcome and has a clear RSVP route.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The FAQ says beginners are welcome and encouraged at the Center City jam and gives a clear RSVP
+    route. The venue is shared only after an RSVP, so you cannot just show up.
+  what_to_expect: The jam runs two hours, 7 to 9 pm, on the second Thursday of the month. You get the
+    venue only after you RSVP. The group welcomes beginners, but the pages do not say whether you need
+    your own instrument or whether there is any charge.
+  first_visit_tips:
+  - RSVP ahead of time, since the venue is shared only after you reply.
+  - Ask when you RSVP whether to bring an instrument, because the pages do not say.
+  - If the Center City date does not suit you, the calendar lists other jams and shows across the region.
 contacts:
   website: https://phillybluegrass.com
   email: null
@@ -82,8 +90,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-09
-sign_of_life_url: https://phillybluegrass.com/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://phillybluegrass.com/about/get-involved/
 sources:
 - url: https://phillybluegrass.com/
   seen: '2026-10-08'
@@ -96,11 +104,26 @@ sources:
   - first_step
   - contacts
   - status
+  - last_sign_of_life
 - url: https://www.cultureworksphila.org/fiscal-sponsorship/fiscally-sponsored-projects
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://phillybluegrass.com/about/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://phillybluegrass.com/frequently-asked-questions/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

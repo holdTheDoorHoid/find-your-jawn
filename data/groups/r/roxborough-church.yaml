@@ -6,8 +6,8 @@ leads: []
 ein: null
 summary: A church on Ridge Avenue with a 10:30 am Sunday service, children and youth programs, a preschool
   and after-school care, and a food pantry called The Table.
-what_you_do: Attend Sunday service, join a kids or youth group, a small group, or ask about The Table
-  through the Connect page.
+what_you_do: Attend the Sunday service and the fellowship lunch after it, join Roxy Kids (infant to grade
+  5), RUSH (grades 3 to 5) or ROX Youth (grades 6 to 12), or get food at The Table on Thursday mornings.
 kind: congregation
 categories:
 - faith-community
@@ -41,9 +41,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday service at 10:30 am. The Table food pantry hours are not shown on the site.
+  text: Sunday service at 10:30 am, in person and streamed on YouTube, followed by a fellowship lunch.
+    The Table food pantry is open Thursdays from 10 am to noon. The site lists nursery, children's church,
+    and youth groups with no set times.
   days:
   - sun
+  - thu
   times:
   - morning
   recurring: true
@@ -76,13 +79,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Visit Us page or the Connect Card form to get started
+  how: Come to the 10:30 am Sunday service at 8230 Ridge Avenue, or fill in the Connect Card form on the
+    church website.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site has a visit page and a connect form, but no explicit visitor welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The visit page gives a service time, an address, a phone line and a Connect form, and describes
+    a fellowship lunch after the service. It has no explicit welcome for first-time guests.
+  what_to_expect: Sunday worship starts at 10:30 am at 8230 Ridge Avenue, and the service is also streamed
+    on YouTube if you want to watch first. A fellowship hour with lunch follows the service, a casual
+    time to talk with others. The site does not give the service length, what to wear, or whether children's
+    programs run during the service.
+  first_visit_tips:
+  - Plan to stay for the fellowship lunch that follows the service.
+  - Call (215) 483-2762 or email office@roxboroughchurch.org about parking, entry, and children's programs,
+    since the site does not describe them.
+  - If you would rather watch first, the service is streamed on YouTube.
 contacts:
   website: https://www.roxboroughchurch.org
   email: office@roxboroughchurch.org
@@ -109,7 +121,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.roxboroughchurch.org/visit
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - contacts
+- url: https://www.roxboroughchurch.org/the-table/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

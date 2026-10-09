@@ -9,8 +9,10 @@ ein: '233097692'
 summary: The Philadelphia chapter of the Slow Food movement. It runs social and learning dinners and gives
   a Snail of Approval award to local food businesses that meet its standards for good, clean, and fair
   food.
-what_you_do: Buy a ticket to a chapter dinner, such as the banquet on October 22, 2026 in Queen Village.
-  Join as a member to get the chapter's seasonal recipes, or volunteer through the get involved pages.
+what_you_do: Buy a ticket to a chapter dinner or workshop, or join as a member for $60 a year to get discounts
+  on some events and early notice of new ones. Volunteers can help through partner programs, such as Sunday
+  Suppers, Greensgrow Farm (which asks new volunteers to attend an orientation first), or a hoop house
+  project that grows food for seniors' meals.
 kind: nonprofit
 categories:
 - food-drink
@@ -21,6 +23,7 @@ motives:
 - values
 formats:
 - one_off_event
+- learn_skill
 roles:
 - hands_on
 crowd:
@@ -36,8 +39,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Chapter dinners and events, posted on the website as they are planned. The next one listed is
-    a banquet on Thursday, October 22, 2026, 6 to 9 pm.
+  text: Dinners, tastings, cooking workshops and book groups are posted on the events page as they are
+    planned, so check there for the next one.
   days:
   - thu
   times:
@@ -45,7 +48,7 @@ schedule:
   recurring: false
   season: fall
 locations:
-- label: Queen Village (venue address not on the event page)
+- label: Queen Village (address not on the event listing)
   address: null
   neighborhood: queen_village
   planning_district: null
@@ -57,8 +60,8 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: $30 per adult ticket for the October 22, 2026 banquet. $5 of each ticket goes to the chapter.
-    The event page also shows a Free label in one place, which conflicts.
+  text: Membership is $60 a year and includes discounts on select events. Event tickets are set one event
+    at a time, and recent listings range from free to $95.
 commitment: one_off
 group_size: null
 access:
@@ -73,15 +76,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register through the register button on the banquet's event page, or use the join page to become
-    a member
+  how: Buy a ticket from an event listing, or join as a member for $60 a year through the join page. Questions
+    go through the contact form on the Contact Us page, since no email address is published.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public ticketed events with a clear register button and a membership page; the page does not
-    say that beginners are specifically welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are public and ticketed, and the join page is open to anyone. The site does not say that
+    beginners are specifically welcome.
+  what_to_expect: Chapter dinners are social evenings for members and friends, with a set menu and a limited
+    number of seats. The banquet listing says the meal is gluten free, that guests bring their own drinks,
+    and that allergies cannot be accommodated. The listing does not say how the meal is served, so ask
+    the chapter before you buy if that matters to you.
+  first_visit_tips:
+  - If a listing says BYOB, bring your own drinks.
+  - Tell the chapter about any food allergy before you buy, because the banquet listing says allergies
+    cannot be accommodated.
+  - The event listing does not give the venue address, so ask through the contact form before the night.
 contacts:
   website: https://www.slowfoodphilly.org/
   email: null
@@ -143,6 +153,7 @@ sources:
   - what_you_do
   - kind
   - status
+  - first_step
 - url: https://www.slowfoodphilly.org/events/convivium-banquet-on-3rd-street/
   seen: '2026-10-08'
   fields:
@@ -151,7 +162,32 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - what_to_expect
+  - first_visit_tips
+  - last_sign_of_life
+- url: https://www.slowfoodphilly.org/become-a-member-join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_you_do
+- url: https://www.slowfoodphilly.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.slowfoodphilly.org/events-2/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - status
+- url: https://www.slowfoodphilly.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

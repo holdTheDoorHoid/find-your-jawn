@@ -1,14 +1,16 @@
 id: seger-park-dog-owners-association
 name: Seger Park Dog Owners Association
-aka: []
+aka:
+- Seger Dog Park (Seger Park Dog Owners Association)
 leads:
 - irs_990n:233088624
 - irs_bmf:233088624
 ein: '233088624'
 summary: Volunteers who look after the off-leash dog park in Seger Park. They run the dog run, organize
   neighborhood cleanups, and host community events with local businesses and musicians.
-what_you_do: Dog owners use the park and can join as members. Volunteers can help with cleanups and events
-  by emailing the president.
+what_you_do: Dog owners use the park under posted rules and can join the association as members, which
+  helps pay for upkeep. The association handles turf care, litter and trash removal, and restocks waste
+  bags. Its site does not say how to sign up for a cleanup, so ask by email first.
 kind: nonprofit
 categories:
 - animals
@@ -35,15 +37,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The park runs around the clock, every day of the week.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  - night
+  recurring: true
+  season: year_round
 locations:
 - label: Seger Dog Park
   address: 1001 Rodman St
-  neighborhood: null
+  neighborhood: washington_square
   planning_district: null
   zip: null
   lat: null
@@ -52,8 +65,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The membership page exists, but dues are not printed on the home page
+  level: low
+  text: 'Membership is a suggested yearly donation: $50 for a household, or $25 for students and seniors.
+    The site describes no fee for using the park itself.'
 commitment: null
 group_size: null
 access:
@@ -66,17 +80,26 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: A dog that is licensed and vaccinated, a collar for use in the run, and a leash of 6 feet or less
+    outside the run.
 first_step:
-  how: Read the park rules on segerdogpark.org, then use the Become a Member link. To volunteer, email
-    president.spdoa@gmail.com.
+  how: Read the park rules on segerdogpark.org, then use the membership page if you want to join for a
+    suggested $50 a year, or $25 for students and seniors.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Anyone who follows the park rules can use the park, and the site links a membership page and
-    a volunteer email, though no dues are printed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The rules apply to everyone who enters, and the site names no membership requirement to use the
+    park. Joining is through a donation page with no step-by-step sign-up, so the way in is simple but
+    not spelled out.
+  what_to_expect: 'Bring your dog and follow the posted rules: stay inside the park, keep your dog in
+    view and under voice control, and clean up after it. The site does not say how long visits last or
+    who usually comes. Membership is a suggested yearly donation that helps pay for upkeep.'
+  first_visit_tips:
+  - Your dog must be licensed and vaccinated, and the site points to ACCT Philly for licensing.
+  - Kids aged 10 or younger are not allowed in the dog run, and those aged 11 to 15 need an adult with
+    them.
+  - Dogs must wear collars in the run, and leashes must be 6 feet or shorter outside it.
+  - The park supplies biodegradable waste bags, and shovels and rakes are kept by the shed.
 contacts:
   website: https://segerdogpark.org
   email: president.spdoa@gmail.com
@@ -84,9 +107,9 @@ contacts:
   contact_name: Andrew Freedman
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://segerdogpark.org
+status: dormant
+last_sign_of_life: 2023-12
+sign_of_life_url: https://segerdogpark.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,7 +136,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://segerdogpark.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://segerdogpark.org/rules
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - first_visit_tips
+- url: https://segerdogpark.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - summary
+- url: https://segerdogpark.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://segerdogpark.org/calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,8 +5,10 @@ leads: []
 ein: null
 summary: A United Methodist church on Bustleton Avenue with a weekly Tuesday food bank, a volunteer choir
   that welcomes new singers, and space for community recovery groups.
-what_you_do: Donate non-perishable food before or after services, volunteer at the food bank, join the
-  choir, or ask the church office about starting or joining a group.
+what_you_do: Drop off non-perishable food at the church before or after services. To volunteer at the
+  food bank or ask about getting help, use the Somerton Foodbank website, which the church names. You
+  can also join the volunteer choir, which has no auditions, or ask the church office about groups and
+  ministries.
 kind: congregation
 categories:
 - faith-community
@@ -16,6 +18,7 @@ interests:
 - food_pantry
 - choir_singing
 - worship_music
+- worship_community
 motives:
 - values
 - social
@@ -38,9 +41,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Food bank every Tuesday, 10 am to 1 pm. The choir sings during worship and at events; no rehearsal
-    schedule is listed.
+  text: Sunday worship at 10:45 am, with children taking part in the regular service. Food distribution
+    runs every Tuesday from 10 am to 1 pm. The choir sings during worship and at events, and the church
+    office can tell you about rehearsals. Recovery groups meet in the church building on their own schedules.
   days:
+  - sun
   - tue
   times:
   - morning
@@ -50,7 +55,7 @@ schedule:
 locations:
 - label: Church building
   address: 13073 Bustleton Avenue
-  neighborhood: null
+  neighborhood: somerton
   planning_district: null
   zip: '19116'
   lat: null
@@ -72,17 +77,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Go to the Tuesday food bank, or ask the church office about joining the choir
-  drop_in: null
-  sign_up_needed: null
+  how: Come to Sunday worship at 10:45 am, or call the church office at 215-673-2745 to ask about joining
+    the choir.
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The choir has no auditions and welcomes singers of any experience, and the church office is named
-    as the way to ask
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says visitors are warmly invited whether they are lifelong Methodists or new to faith,
+    and the choir needs no audition and takes singers of any experience. The church office is named as
+    the place to ask.
+  what_to_expect: Sunday worship starts at 10:45 am, and children stay in the regular service with some
+    moments made just for them. The pages read do not describe what happens after the service or a first-visit
+    routine. The church office is the best place to ask about the choir, volunteering or recovery groups.
+  first_visit_tips:
+  - Bring a non-perishable food donation if you want, and drop it off before or after the service.
+  - From I-95 south, the directions end with about 2 miles south on Bustleton Avenue, with the church
+    on your right.
+  - For a choir visit, call the office first, since rehearsal days and times are not published on the
+    site.
 contacts:
   website: https://www.somerton-umc.org
   email: null
@@ -109,8 +123,19 @@ sources:
   - lead
   - locations
   - contacts.phone
-research_tier: 1
-confidence: low
+- url: https://www.somerton-umc.org/worship/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - requirements.kids_ok
+- url: https://www.somerton-umc.org/contact-directions/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

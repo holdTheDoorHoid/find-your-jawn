@@ -15,6 +15,7 @@ categories:
 - faith-community
 interests:
 - meditation_mindfulness
+- tai_chi_qigong
 - humanist_spiritual
 motives:
 - values
@@ -37,11 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Online meditation sessions and discussion groups are on a calendar the site links. Six in-person
-    gatherings are listed for August to December 2026, mostly at Philadelphia venues, plus a residential
-    retreat outside the city.
-  days: []
-  times: []
+  text: Regular online sessions run on Sundays (7 am, 8 am and 7 pm), Tuesdays (8 am, noon and 7 pm),
+    Thursdays (8 am) and Fridays (11 am), with a monthly Zoom book group on second Fridays. Select Sunday
+    mornings are in person at the Unitarian Society of Germantown.
+  days:
+  - sun
+  - tue
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -64,7 +72,7 @@ locations:
   in_city: true
   transit: null
 - label: Pendle Hill Retreat Center (residential retreat)
-  address: null
+  address: Wallingford, PA
   neighborhood: null
   planning_district: null
   zip: '19086'
@@ -74,8 +82,9 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Online offerings are free and open to the public. The site gives no fee for in-person gatherings.
+  level: free
+  text: Online sessions are free and open to the public. The site lists no fee for in-person gatherings
+    and links to a donation page with no amounts.
 commitment: null
 group_size: null
 access:
@@ -90,15 +99,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Zoom link on the group's schedule page to join an online session, or email info@springboardsangha.org
-    to ask about an in-person gathering.
+  how: Join a free online session through the Zoom link on the group's schedule page, or email info@springboardsangha.org
+    about the beginner orientation class.
   drop_in: true
   sign_up_needed: false
-  newcomer_friendliness: 3
-  basis: Online sessions are open to the public and the site has a page describing each practice, but
-    it does not say beginners are specially welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 5
+  basis: A beginner orientation class exists (it runs once five people register), and the free online
+    sessions are open to the public.
+  what_to_expect: The online schedule lists meditation sits and discussion or study groups, all free and
+    open to the public. The pages we read do not say how long each session runs, so check the schedule
+    page before you join.
+  first_visit_tips:
+  - Ask by email about the beginner orientation class before you come, since it runs only when enough
+    people sign up.
+  - 'For an in-person gathering, email first: the listings give dates and places but not parking, access
+    or what to bring.'
 contacts:
   website: https://www.springboardsangha.org
   email: info@springboardsangha.org
@@ -139,13 +154,26 @@ sources:
   fields:
   - what_you_do
   - first_step
+  - schedule
+  - online_ok
 - url: https://www.springboardsangha.org
   seen: '2026-10-08'
   fields:
   - summary
   - cost
   - contacts
-research_tier: 1
+- url: https://www.springboardsangha.org/meditation-periods/descriptions
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - interests
+- url: https://www.springboardsangha.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

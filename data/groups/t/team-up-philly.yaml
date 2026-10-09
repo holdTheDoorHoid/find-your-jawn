@@ -3,20 +3,29 @@ name: Team Up Philly
 aka: []
 leads: []
 ein: null
-summary: A free program for girls in under-served Philadelphia communities that offers sports and enrichment,
-  including tutoring and academic help.
-what_you_do: Girls can join free sports and enrichment programs, including tutoring. Volunteers can use
-  the volunteer link, and the group also runs summer scholarships and events.
+summary: A nonprofit that runs free sports and enrichment programs for girls in Philadelphia, including
+  tutoring, an after-school Girls Club and a leadership academy for high school girls.
+what_you_do: Girls join a free after-school Girls Club for grades 4 to 8, a free summer camp for grades
+  4 to 12, or the G.I.R.L.S. Leadership Academy for grades 9 to 12. Volunteers can coach, tutor or speak
+  to the girls, and the group also runs summer scholarships and events.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
+- sports-teams
 interests:
 - tutoring
+- mentoring
+- after_school_camps
+- youth_leadership
+- youth_coaching
 motives:
 - values
 formats:
 - team_play
-roles: []
+- learn_skill
+roles:
+- help_teach
+- hands_on
 crowd:
 - kids
 - teens
@@ -31,17 +40,48 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Girls Club meets Mondays and Wednesdays from 3:30 to 5:15 pm, fall through spring. Other programs
+    run on their own schedules, which the site does not list.
+  days:
+  - mon
+  - wed
+  times:
+  - daytime
+  recurring: true
   season: null
-locations: []
+locations:
+- label: Girls Club at Bluford Elementary
+  address: 5630 Vine Street
+  neighborhood: null
+  planning_district: null
+  zip: '19139'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Girls Club at John Barry Elementary
+  address: 5900 Race Street
+  neighborhood: null
+  planning_district: null
+  zip: '19139'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Office (in Narberth, outside Philadelphia)
+  address: 111 Forrest Avenue, 3rd Floor, Narberth, PA 19072
+  neighborhood: null
+  planning_district: null
+  zip: '19072'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: free
-  text: Programs are described as free on the site.
-commitment: null
+  text: Programs are free, per the program pages.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -49,23 +89,33 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Contact the group through its website. The sign-up steps were not on the page read.
+  how: Register your girl through the TeamSnap form linked from the Team Up Philly programs page; the
+    programs are free.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Programs are free, but the page does not explain how a girl or a volunteer signs up.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Programs are free and open to girls in the listed grades through a clear registration button,
+    though the site does not describe a first day or a welcome for newcomers.
+  what_to_expect: Girls Club meets twice a week after school at Bluford or John Barry Elementary, or at
+    the Daroff Rec Center during the Rebuild construction, and Team Up Philly provides rides to Daroff
+    at dismissal. Sessions mix fitness drills, basketball basics, tennis and yoga with talks on teamwork,
+    goal-setting and self-care, and the girls complete a community service project. The program is free,
+    and the site does not list start or end dates for the season.
+  first_visit_tips:
+  - Register through the TeamSnap form on the programs page; the site lists no deadline, so register early.
+  - Be ready at dismissal on Monday or Wednesday, since pick-up is by 5:30 pm.
+  - If your school is under construction, ask which site your girl goes to, since some girls attend Daroff.
+  - Ask about gear and any forms before the first day, since the page does not list them.
 contacts:
   website: https://www.teamupphilly.org/
-  email: null
-  phone: null
+  email: info@teamupphilly.org
+  phone: 484-270-8779
   contact_name: null
   social: []
   calendar_feed: null
@@ -81,12 +131,46 @@ sources:
   - cost
   - first_step
   - status
+  - contacts
+  - locations
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.teamupphilly.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - crowd
+  - formats
+  - first_step
+  - commitment
+- url: https://www.teamupphilly.org/girls-club
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://www.teamupphilly.org/girls-leadership-academy
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - cost
+  - first_step
+- url: https://www.teamupphilly.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - requirements
+  - first_step
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -34,9 +34,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Summer cruise nights on Thursdays from April to November, weather permitting, starting around
-    5 pm; monthly membership meetings on the second Wednesday at 7 pm; a spring show on May 16, 2026 and
-    a Toys for Tots show on Nov 7, 2026
+  text: Thursday cruise nights run from mid April to the end of September, weather permitting, starting
+    around 5 pm at Ivy Ridge Shopping Center. Monthly membership meetings are on the second Wednesday
+    at 7 pm at Adam Kowalski Post 1 Polish. The club also holds yearly car shows, including a spring show.
   days:
   - thu
   - wed
@@ -45,7 +45,7 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Adam Kowalski Post (monthly meetings)
+- label: Adam Kowalski Post 1 Polish (monthly meetings)
   address: 504 Hermit St
   neighborhood: null
   planning_district: null
@@ -54,7 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Ivy Ridge Shopping Center (summer cruise nights)
+- label: Ivy Ridge Shopping Center (Thursday cruise nights)
   address: null
   neighborhood: null
   planning_district: null
@@ -66,7 +66,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost stated for cruises or shows; membership terms not found
+  text: No fee is stated for cruise nights or shows. Membership dues are not shown on the site.
 commitment: drop_in
 group_size: null
 access:
@@ -81,25 +81,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a Thursday cruise night at Ivy Ridge Shopping Center, where no sign-up is mentioned, or
-    to the second Wednesday meeting at 7 pm at Adam Kowalski Post, 504 Hermit St
+  how: Come to a Thursday cruise night at Ivy Ridge Shopping Center, starting around 5 pm, or to the second
+    Wednesday meeting at 7 pm at 504 Hermit St. To join the club, use the Contact Us link on the website.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site mentions no registration for cruises or shows, so a newcomer can simply come along;
-    membership details were not found.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The club says it welcomes new members and invites people to come to a cruise, meeting or event
+    first. Cruise nights need no sign up. Joining the club means an application, so membership is not
+    drop in.
+  what_to_expect: Cruise nights are casual gatherings where members bring classic, muscle and newer cars,
+    line up and drive together, and people come to look as well. Monthly meetings open with socializing
+    and event planning, and the club says every idea is welcome. Dues and the application steps are not
+    on the site.
+  first_visit_tips:
+  - You can come to look without bringing a car.
+  - Check the events calendar before a cruise night, since dates depend on the weather.
+  - Meetings are on the second Wednesday at 7 pm at the Adam Kowalski Post on Hermit Street.
+  - Email chris@roxrigrun.org or use the Contact Us link for membership questions.
 contacts:
   website: https://www.roxrigrun.org
   email: chris@roxrigrun.org
   phone: null
   contact_name: Donald Shields
-  social: []
+  social:
+  - https://www.facebook.com/share/g/1B67g8o3zj/
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-05
-sign_of_life_url: https://www.roxrigrun.org
+last_sign_of_life: 2026-08
+sign_of_life_url: https://roxrigrun.org/events-calendar/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -127,7 +136,31 @@ sources:
   - contacts
   - status
   - cost
-research_tier: 1
+- url: https://roxrigrun.org/events-calendar/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://roxrigrun.org/membership-and-meetings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - requirements
+  - first_step
+- url: https://roxrigrun.org/top-5-reasons-to-join-the-roxborough-ridge-runners/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

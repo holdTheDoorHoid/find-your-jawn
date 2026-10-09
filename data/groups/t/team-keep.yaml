@@ -6,9 +6,9 @@ leads:
 - irs_bmf:851899918
 ein: '851899918'
 summary: A nonprofit that helps Philadelphia residents get back the ID papers they need for housing, jobs,
-  benefits, and health care. It runs weekly clinics at Free Library branches.
+  benefits, and health care. It holds ID clinics at Free Library branches and works with partner sites.
 what_you_do: Bring a mailing address to a clinic, where staff help you request birth certificates, photo
-  IDs, and Social Security cards. Staff also run a phone and text hotline.
+  IDs, and Social Security cards. Staff also run a phone and text line.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -31,10 +31,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly community clinics at six Free Library of Philadelphia branches. The clinic calendar on
-    keep.id lists the days and places.
-  days: []
-  times: []
+  text: Clinics run at Free Library of Philadelphia branches. The Parkway Central clinic meets on the
+    first and third Thursday of each month, 12 to 4 pm, and the clinic calendar on keep.id lists other
+    branch dates.
+  days:
+  - thu
+  times:
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -50,13 +53,13 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated in the page text.
+  text: The site does not state a fee for clinic help. It asks for donations.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site says its help is available at accessible places, but gives no specifics.
 requirements:
   act153_clearances: null
   background_check: null
@@ -65,14 +68,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Find a clinic date on the keep.id clinic calendar and bring a mailing address, or call 1-844-KEEPID
-    with questions.
+  how: Call the hotline at 1-844-KEEPID to confirm the next clinic date, and bring a mailing address.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The clinics are open to the public, and the site gives a phone line to ask questions.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The clinics are open to the public, and the site gives a phone line and a clinic calendar. It
+    does not say whether you can walk in or need an appointment.
+  what_to_expect: At a clinic, staff help you request a birth certificate, photo ID, or Social Security
+    card, and you bring a mailing address. The site does not say how long a visit takes or whether you
+    need an appointment. It asks for donations and does not state a fee.
+  first_visit_tips:
+  - Call 1-844-KEEPID before you go to confirm the clinic date and what papers to bring.
+  - Bring a mailing address, since the site lists one as a clinic requirement.
+  - If you have no ID or no address, ask the hotline first, since the site says help is still available
+    for people with missing IDs or no address.
 contacts:
   website: https://team.keep.id
   email: null
@@ -113,7 +122,16 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://team.keep.id/outreach
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+  - cost
+  - access
+  - requirements
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

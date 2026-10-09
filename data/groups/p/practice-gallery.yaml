@@ -5,10 +5,11 @@ leads:
 - irs_990n:933059816
 - irs_bmf:933059816
 ein: '933059816'
-summary: A contemporary art gallery that puts up a new show about once a month, with opening nights open
-  to visitors.
-what_you_do: See the shows and come to the opening nights, or follow the site's New Member Call link to
-  ask about joining.
+summary: An artist-run contemporary art gallery at 319 North 11th Street. Members choose the shows together,
+  and the space is open to visitors on First Fridays, on Saturdays and Sundays from 2 to 6 pm, and by
+  appointment.
+what_you_do: See the shows during public hours or at a First Friday opening. Artists who want to join
+  the governing group can follow the New Member Call page and apply.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -18,7 +19,9 @@ motives:
 - enhancement
 formats:
 - one_off_event
-roles: []
+- lead_organize
+roles:
+- organize
 crowd: []
 bridging: null
 audience:
@@ -31,10 +34,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: New shows about once a month, with opening nights posted on the site (one was a First Friday,
-    6 to 9 pm)
-  days: []
-  times: []
+  text: Open to visitors on First Fridays, on Saturdays and Sundays from 2 to 6 pm, and by appointment.
+    New shows are posted on the site as they open.
+  days:
+  - sat
+  - sun
+  times:
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -50,7 +57,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Admission is not stated on the site. Members of the governing group share rent and utilities,
+    usually about $100 a month.
 commitment: drop_in
 group_size: null
 access:
@@ -65,18 +73,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Go to the next opening listed on the Practice Gallery site and see the show. To ask about membership,
-    use the New Member Call page.
+  how: Visit during public hours or at a First Friday opening, or email info@practicegallery.org to book
+    another time. To ask about joining the governing group, send the email described on the New Member
+    Call page with a letter of intent.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows and openings are open to the public, and the site has a membership call, though its terms
-    are not printed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public hours and openings are open to anyone, and the site lists how to book a visit. Joining
+    the governing group takes a written application.
+  what_to_expect: During public hours you can look at the current show at your own pace. On First Fridays
+    the gallery holds openings. The site does not say how long a visit takes or whether staff are on hand.
+  first_visit_tips:
+  - Check the site for the current show and its run dates before you go.
+  - Go during public hours, or email ahead to book a time on other days.
+  - The site does not describe stairs, an elevator or step-free access, so email ahead if access matters
+    to you.
+  - The New Member Call page lists an October 25 deadline with no year printed, so confirm the current
+    round before you apply.
 contacts:
   website: https://www.practicegallery.org
-  email: null
+  email: info@practicegallery.org
   phone: null
   contact_name: gerald P Kaba II
   social: []
@@ -107,7 +123,23 @@ sources:
   - schedule
   - status
   - first_step
-research_tier: 1
+  - last_sign_of_life
+- url: https://www.practicegallery.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - locations
+  - first_step
+  - first_visit_tips
+- url: https://www.practicegallery.org/new-member-call
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - commitment
+  - first_step
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -7,8 +7,8 @@ leads:
 ein: '394724458'
 summary: A Philadelphia nonprofit that collects and shares the stories of the city's Puerto Rican community
   through films and recorded conversations. Anyone can watch, listen, or add a story of their own.
-what_you_do: Watch its documentary films, listen to the Domino Dialogues podcast, and share a personal
-  story for the community collection. The site also lists screening events.
+what_you_do: Watch its documentary films, listen to the Domino Dialogues podcast, or share a personal
+  story for the community collection. Groups can also request a screening of one of its documentaries.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -39,10 +39,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The site does not publish a regular schedule. New films, podcast conversations and archive stories
+    are added as they are ready.
   days: []
   times: []
-  recurring: null
+  recurring: false
   season: null
 locations:
 - label: Somos Society office
@@ -57,7 +58,8 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Cost is not stated on the site
+  text: The site does not mention a fee for watching films, listening to the podcast or sharing a story.
+    Story contributors receive no payment.
 commitment: null
 group_size: null
 access:
@@ -72,14 +74,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the interest form for the Domino Dialogues podcast, or share a personal story through La
-    Historia Colectiva
-  drop_in: null
-  sign_up_needed: null
+  how: Watch a film or listen to the Domino Dialogues podcast, or share a story through the La Historia
+    Colectiva form, which asks for a written memory and an optional photo or video. Questions go to info@somossociety.org.
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Open to the public, and the site gives two clear ways to take part
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The films, podcast and archive are open to the public, and the site gives two clear ways to take
+    part. It does not describe a newcomer program or a first-visit routine.
+  what_to_expect: 'A first visit is mostly online: you can watch the films, listen to the Domino Dialogues
+    podcast, and browse the archive. To take part, you can submit a story, which the team reviews before
+    it is posted, or open the Join the Conversation page. The site does not list office hours, so email
+    first if you plan to stop by.'
+  first_visit_tips:
+  - 'Read the release terms before you send a story: the team may edit it, and your name may be published
+    unless you ask to stay anonymous.'
+  - Use the newsletter sign-up on the home page to hear about new films and conversations.
 contacts:
   website: https://www.somossociety.org
   email: info@somossociety.org
@@ -120,7 +129,18 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.somossociety.org/la-historia-colectiva
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - cost
+  - first_visit_tips
+- url: https://www.somossociety.org/screening-events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

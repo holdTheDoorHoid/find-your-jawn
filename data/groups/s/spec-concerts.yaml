@@ -36,13 +36,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Spring Fling concert is held each April. The committee holds weekly or biweekly general meetings.
+  text: The committee holds general meetings through the school year, and the Spring Fling concert is
+    held each April. The site does not list meeting times or places.
   days: []
   times: []
   recurring: true
   season: spring
 locations:
-- label: Penn campus
+- label: SPEC office (200 Houston Hall)
+  address: 200 Houston Hall, 3417 Spruce Street, Philadelphia, PA 19104
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Penn Park (April concert site)
   address: null
   neighborhood: null
   planning_district: null
@@ -69,12 +79,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the Concerts Committee listserv or email the committee, then come to a general meeting.
+  how: Email concerts@specevents.net to ask about the next general meeting, or join the committee's listserv
+    if you are a Penn student.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The committee is open to students of all years, and the site describes no application.
-  what_to_expect: null
+  basis: The committees take no application and students can join at any point in the semester, but the
+    site does not say newcomers are specially welcomed and gives no meeting times.
+  what_to_expect: General meetings are held weekly during the year, where the committee talks about event
+    ideas, listens to music and socializes. Members also get perks such as free entry to the April concert
+    and a chance to meet artists backstage.
   first_visit_tips: []
 contacts:
   website: https://www.specevents.net/spring-fling-concerts/get-involved
@@ -105,7 +119,22 @@ sources:
   - what_you_do
   - audience
   - first_step
-research_tier: 1
+  - schedule
+  - contacts
+- url: https://www.specevents.net/aboutspec
+  seen: '2026-10-08'
+  fields:
+  - audience
+- url: https://www.specevents.net/ourcommittees
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.specevents.net/contactus
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

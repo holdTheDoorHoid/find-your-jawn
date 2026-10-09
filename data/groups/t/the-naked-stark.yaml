@@ -42,15 +42,6 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Mailing address (mail only)
-  address: P.O. Box 30794
-  neighborhood: null
-  planning_district: null
-  zip: '19104'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 - label: Mascher Space Cooperative (weekly drop-in and Falling Up workshop)
   address: 1170 S Broad St
   neighborhood: null
@@ -69,19 +60,29 @@ locations:
   lng: null
   in_city: null
   transit: null
+- label: Mailing address (mail only)
+  address: P.O. Box 30794
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: low
-  text: Show tickets are $5 to $50. The Creative Movement Workshop asks for a sliding scale of $5 to $25,
-    and the group says cost should not stop anyone. Prices for the weekly drop-in and the fall Sunday
-    class are not on the site.
+  text: The Creative Movement Workshop uses a sliding scale of $5 to $25, and the group says no one is
+    turned away for lack of funds. Prices for the weekly drop-in and the fall Sunday class are not on
+    the site.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: The Creative Movement Workshop page lists its space as ADA accessible. Elevator and ASL details
-    are not on the site.
+  notes: The Creative Movement Workshop page says its space at The Cedar Works is ADA accessible, and
+    elevator and ASL details are not on the site. The group's 'more' page says the Mascher Space entry
+    has three steps, with no ramp and no elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -90,22 +91,23 @@ requirements:
   kids_ok: true
   gear: Wear long pants, or sleeves and knee pads, if you will move on the floor.
 first_step:
-  how: Email thenakedstark@gmail.com to ask when the Creative Movement Workshop dates are posted, since
-    the site lists 2026 dates as coming soon.
+  how: Email thenakedstark@gmail.com or join the mailing list to hear when the Creative Movement Workshop
+    dates are posted.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The Creative Movement Workshop says it is all levels and welcomes beginners, and the weekly drop-in
-    is open to the public. The fall Sunday class is for intermediate and advanced movers, and the workshop
-    dates are not yet posted, so the way in is not yet clear.
+  basis: The Creative Movement Workshop welcomes people with no dance background, and the weekly drop-in
+    is open to the public. Neither has a posted day, time or date yet, so the next step is to ask by email.
   what_to_expect: The Creative Movement Workshop is a series of four Sundays at The Cedar Works on Pentridge
-    Street. It is open to all ages, with and without disabilities, and to people with no dance background.
-    The site lists the space as ADA accessible and asks for a sliding scale of $5 to $25. The site does
-    not say how long each session runs.
+    Street, ending with an informal showing for family and friends. It is open to all ages, with or without
+    disabilities, and to people with no dance background. The site does not give session start times or
+    length, and the group asks for a sliding scale of $5 to $25.
   first_visit_tips:
   - Wear long pants, or sleeves and knee pads, if you will be moving on the floor.
-  - Ask by email for the session start time, since the site does not give one yet.
-  - Pay what you can within the $5 to $25 sliding scale.
+  - Email for the session start time, since the site does not give one yet.
+  - Pay what you can within the $5 to $25 sliding scale; the group says no one is turned away.
+  - If you use a wheelchair, the Mascher Space entry has three steps and no ramp, so ask about access
+    before you come to a class there.
 contacts:
   website: https://www.thenakedstark.com/
   email: thenakedstark@gmail.com
@@ -148,16 +150,24 @@ sources:
   - first_visit_tips
   - what_to_expect
   - locations
+  - schedule
 - url: https://thenakedstark.com/more
   seen: '2026-10-08'
   fields:
   - schedule
   - locations
   - what_you_do
+  - access
 - url: https://www.thenakedstark.com/contact
   seen: '2026-10-08'
   fields:
   - contacts
+- url: https://thenakedstark.com/falling-up-workshop
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_you_do
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

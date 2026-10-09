@@ -37,14 +37,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Leagues run in seasons, with sign ups before each season. The pages checked do not list league
-    days or times.
+  text: Leagues run in seasons, with sign-ups before each season. Kickball plays in spring and fall. New
+    member calls and mixers run each season.
   days: []
   times: []
   recurring: true
   season: null
 locations:
-- label: Marconi Plaza (kickball)
+- label: Marconi Plaza, South Philadelphia (kickball games)
   address: null
   neighborhood: null
   planning_district: null
@@ -57,8 +57,8 @@ online_ok: false
 cost:
   level: null
   text: The league pages do not list fees. The Player Assistance Fund can waive league registration fees
-    in full or in part for people facing financial hardship, and it takes applications before each season's
-    registration.
+    in full or in part for people facing financial hardship. Applications open three weeks before each
+    season's general registration.
 commitment: seasonal
 group_size: null
 access:
@@ -73,20 +73,21 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Subscribe to the monthly updates, then register for a league through the league registration page
-    when a season opens. Winter 2027 sign ups are expected in mid-November.
+  how: Subscribe to the newsletter or follow the group on social media, then register for a league on
+    the league registration page when a season opens. Winter 2027 registration is expected to open in
+    mid-November.
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site runs new member calls and mixers each season, offers free agent teams for first-time
-    league players, and says no athletic experience is needed. Drop in is not described, so the group
-    is not rated higher.
-  what_to_expect: The group says no athletic experience is needed. New players can register as free agents,
-    and free agent teams are made up of other new players, so everyone starts at the same point. New member
-    calls and mixers each season help people meet others and learn how the leagues run.
+  basis: The group runs new member calls and mixers each season and offers free agent teams for people
+    new to its leagues. It does not describe drop-in or first-visit rules, so it is not rated 5.
+  what_to_expect: New players can register as free agents, and free agent teams are made up of other new
+    players, so no one arrives with a team. Each season has new member calls to ask questions and learn
+    how leagues run, plus mixers where newcomers can meet people. The site does not list league fees on
+    its pages, so ask before you register.
   first_visit_tips:
-  - If you do not have a team, pick the free agent option so the group can match you by skill and interest.
-  - Subscribe to the monthly updates so you hear when registration opens.
+  - If you do not have a team, pick the free agent option so the group can help match you to one.
+  - Sign up for the newsletter or follow social media so you hear when registration opens.
   - Email info@stonewallphilly.org with questions about fees or a specific league.
   - If cost is a concern, look into the Player Assistance Fund before you register.
 contacts:
@@ -118,6 +119,8 @@ sources:
   - status
   - last_sign_of_life
   - sign_of_life_url
+  - what_to_expect
+  - first_visit_tips
 - url: https://www.stonewallphilly.org/leagues
   seen: '2026-10-08'
   fields:
@@ -127,9 +130,17 @@ sources:
   fields:
   - first_step
   - newcomer_friendliness
+  - what_to_expect
 - url: https://www.stonewallphilly.org/registration/player-assistance-fund
   seen: '2026-10-08'
   fields:
+  - cost
+  - first_visit_tips
+- url: https://www.stonewallphilly.org/leagues/kickball
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
   - cost
 research_tier: 2
 confidence: medium

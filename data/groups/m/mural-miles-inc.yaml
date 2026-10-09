@@ -23,7 +23,8 @@ formats:
 - side_by_side
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -51,9 +52,9 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
+  level: free
   text: The site does not list a fee or waiver for the runs.
 commitment: monthly
 group_size: null
@@ -71,7 +72,7 @@ requirements:
 first_step:
   how: Follow the group's Instagram account for the next monthly date, route, and meeting spot. The site
     does not describe a sign-up form.
-  drop_in: null
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 2
   basis: The runs suit all fitness levels and move at a casual pace, but the group's pages do not say
@@ -91,10 +92,11 @@ contacts:
   contact_name: Craig Oppenheimer
   social:
   - https://www.instagram.com/muralmiles/
+  - https://www.instagram.com/muralmiles
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.muralmiles.org
+last_sign_of_life: 2025-04
+sign_of_life_url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -132,6 +134,20 @@ sources:
   fields:
   - status
   - contacts
+- url: https://www.muralmiles.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
+  seen: '2026-10-08'
+  fields:
+  - lead
+  - schedule
+  - cost
+  - status
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

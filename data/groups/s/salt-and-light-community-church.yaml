@@ -4,9 +4,9 @@ aka: []
 leads: []
 ein: null
 summary: A church with two Philadelphia locations, Southwest and Mount Airy, with Sunday services, family
-  Bible study, and a holiday food giveaway.
+  Bible study, and food giveaways.
 what_you_do: Join Sunday worship, a family Bible study on Wednesday evenings or Friday afternoons, or
-  help with the holiday giveaway.
+  help with the food giveaway on Saturday mornings or the holiday giveaway.
 kind: congregation
 categories:
 - faith-community
@@ -38,11 +38,16 @@ audience:
   support_group: false
 schedule:
   text: Sunday services at 8 am in Mount Airy and at 9:30 am and 11:30 am in Southwest. Family Bible study
-    on Wednesdays at 7 pm (Southwest) and Fridays at 1:30 pm (Mount Airy).
+    on Wednesdays at 7 pm (Southwest) and Fridays at 1:30 pm (Mount Airy). The church calendar also lists
+    other weekly groups on Tuesdays, Wednesdays, Thursdays and Fridays, a community meal on Wednesdays
+    at 5:30 pm, and a food giveaway on Saturdays at 9:30 am.
   days:
   - sun
+  - tue
   - wed
+  - thu
   - fri
+  - sat
   times:
   - morning
   - daytime
@@ -71,7 +76,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not listed on the site
 commitment: drop_in
 group_size: null
 access:
@@ -86,13 +91,18 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Attend Sunday worship at either location; the site has directions and a new members page
+  how: 'Come to Sunday worship at either location: Mount Airy at 8 am, or Southwest at 9:30 or 11:30 am.'
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site invites people to worship and gives directions, but does not state a visitor welcome
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The church has a New Members class and a page that lists next steps, and Sunday worship is open
+    to the public. The site does not say whether visitors may sit in on the class.
+  what_to_expect: The site does not say how long a Sunday service runs or describe a greeting for visitors.
+    The site lists no cost for worship or for the groups it names.
+  first_visit_tips:
+  - Check the address before you go, since the Mount Airy map link points to a different place than the
+    street address on the site.
+  - Watch past services on the church's YouTube channel to see what worship is like.
 contacts:
   website: https://www.snlphilly.com
   email: hello@snlphilly.com
@@ -101,8 +111,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2025-12
-sign_of_life_url: https://www.snlphilly.com/
+last_sign_of_life: 2026-10
+sign_of_life_url: https://snlphilly.com/live
 sources:
 - url: https://www.snlphilly.com/
   seen: '2026-10-08'
@@ -115,8 +125,34 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+- url: https://snlphilly.com/live
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://snlphilly.com/newmembers/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://snlphilly.com/ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+  - first_step
+- url: https://snlphilly.com/calendar/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://snlphilly.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

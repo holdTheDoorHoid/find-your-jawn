@@ -9,8 +9,8 @@ leads:
 ein: '202968106'
 summary: A school where students learn at their own pace and help govern it through a direct democracy,
   with tuition and open houses for families.
-what_you_do: Families can RSVP for an Open House or fill out the interest form to learn about admissions.
-  The school also rents its space and takes gifts to its annual appeal.
+what_you_do: Families can fill out the interest form, come to an Open House, or book a virtual Q and A
+  to learn about admissions. The school also rents its space and takes gifts to its annual appeal.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -21,7 +21,8 @@ motives:
 - values
 formats: []
 roles: []
-crowd: []
+crowd:
+- kids
 bridging: null
 audience:
   open_to: public
@@ -33,11 +34,19 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: School hours are 8:30 am to 4 pm, Monday through Friday, and the school enrolls students all year.
+    Extended care before or after school may be offered for an extra fee.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: School
   address: 4950 Springfield Ave
@@ -51,28 +60,40 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Tuition applies. Amounts are on the school's Tuition page, which was not read.
+  text: Tuition is a sliding scale set through a third party called FACTS. For 2025 to 2026 the range
+    was $1,800 to $17,800 a year, and a $50 application fee applies. The school says scholarships and
+    programs help families for whom the lower end is still hard to pay.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The school says outside organizations that offer special needs support can deliver those services
+    at the school.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Fill out the interest form on phillyfreeschool.org or RSVP for an Open House.
+  how: Fill out the interest form on phillyfreeschool.org, then come to an Open House (children are welcome)
+    or book a virtual Q and A.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: 'The site says how to start: an interest form and Open House RSVPs.'
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'The site lays out the steps for new families: an interest form, an Open House, an application
+    with a $50 fee, a conversation with the family, and a trial week at the school.'
+  what_to_expect: The first conversation is an informal talk with the parents or guardians and the prospective
+    student, not a typical school interview. It is followed by a full trial week at the school so both
+    sides can check the fit. The school day runs 8:30 am to 4 pm, Monday to Friday, and tuition is set
+    on a sliding scale by family finances.
+  first_visit_tips:
+  - Bring your child to the Open House, since children are welcome there.
+  - If you cannot visit in person, ask about a virtual Q and A session.
+  - Apply for tuition help through FACTS, since the scale depends on family finances.
+  - Plan transport for the 8:30 am to 4 pm school day, and ask about extended care if you need it.
 contacts:
   website: https://phillyfreeschool.org
   email: learn@phillyfreeschool.org
@@ -111,7 +132,22 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+  - requirements
+- url: https://phillyfreeschool.org/tuition
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://phillyfreeschool.org/faq
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - access
+- url: https://phillyfreeschool.org/how-to-apply
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

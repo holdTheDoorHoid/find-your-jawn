@@ -57,7 +57,7 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
+  level: free
   text: The page lists no membership or program fees. Ask when you call.
 commitment: null
 group_size: null
@@ -70,7 +70,7 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
   how: Call (215) 831-2926 to ask about membership, or stop by during open hours and ask for a guided
@@ -119,6 +119,21 @@ sources:
   - last_sign_of_life
   - cost
   - access
+- url: https://www.pcacares.org/wp-content/uploads/2024/08/2024-All-in-one-Brochure-update.pdf
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - locations
+  - contacts
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://pcacares.org/services/community-connection/senior-centers/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

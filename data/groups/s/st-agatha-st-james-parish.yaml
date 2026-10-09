@@ -6,9 +6,9 @@ ein: null
 summary: A Catholic parish at 38th and Chestnut streets that serves students and young adults through
   the Newman Center on its campus. It offers Mass, adult and young adult groups, Bible studies and a homeless
   outreach team.
-what_you_do: Come to Sunday or weekday Mass, join the young adults or grad student group, take a FOCUS
-  Bible study, or sign up for the homeless outreach team or other service. Adults who want to become Catholic
-  can join the OCIA program.
+what_you_do: Come to Sunday or weekday Mass, join the Wednesday young adults and grad students group,
+  take a FOCUS Bible study, or sign up for the homeless outreach team or other service. Adults over 16
+  who want to become Catholic can join the OCIA program, which meets on Tuesday evenings from 6 to 8 pm.
 kind: congregation
 categories:
 - faith-community
@@ -44,7 +44,8 @@ audience:
   support_group: false
 schedule:
   text: Sunday Masses at 9 am, 11:30 am and 5:30 pm. Weekday Mass in the Newman Chapel at 12:05 pm, plus
-    5:30 pm Tuesday to Friday during the school year.
+    5:30 pm Tuesday to Friday during the school year. The young adults and grad students group meets every
+    Wednesday at 6:30 pm, and OCIA classes meet on Tuesdays from 6 to 8 pm during the 2026 to 2027 year.
   days:
   - mon
   - tue
@@ -72,7 +73,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend. The site does not list a fee for its groups.
+  text: Mass is free to attend. The site does not list a fee for its groups, and parish membership has
+    no dues.
 commitment: drop_in
 group_size: null
 access:
@@ -87,15 +89,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a Sunday Mass, then call the parish office at 267-787-5000 or use the I'm new here page
-    to ask about groups.
+  how: Come to a Sunday Mass, then join the Wednesday 6:30 pm young adults and grad students group at
+    the Newman Center, 111 South 38th Street.
   drop_in: true
   sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The site has a page for new parishioners and a phone line for questions, and it lists a young
-    adult group and an adult initiation program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a page for new parishioners with an email list and no dues, a phone line for questions,
+    a weekly young adult group open to all, and an adult initiation program for people still deciding.
+    The full steps on the new parishioner page were not readable, so the rating rests on these named routes.
+  what_to_expect: Mass is free and open to anyone, with Sunday Masses at 9 am, 11:30 am and 5:30 pm. The
+    young adults and grad students group meets each Wednesday at 6:30 pm at the Newman Center, where the
+    site says members grow in faith and serve others together. The page does not say whether you need
+    to register before you attend, so ask the group's contact at your first visit.
+  first_visit_tips:
+  - If you want the young adult group, come on a Wednesday at 6:30 pm.
+  - Sign up for the parish email list if you want news; the form asks for a permanent mailing address,
+    not a dorm address.
+  - The Newman Center and the parish office both use the 111 South 38th Street address, and the church
+    is at 38th and Chestnut.
+  - Call the parish office at 267-787-5000 if you have questions about groups before you come.
 contacts:
   website: https://www.saintsaj.org
   email: null
@@ -103,9 +115,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.saintsaj.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.saintsaj.org/becomecatholic
 sources:
 - url: https://www.saintsaj.org/
   seen: '2026-10-08'
@@ -122,8 +134,41 @@ sources:
   - name
   - locations
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://www.saintsaj.org/welcome
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - contacts
+- url: https://www.saintsaj.org/young-adults-grad
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://www.saintsaj.org/becomecatholic
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.saintsaj.org/focus-bible-studies
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.saintsaj.org/service-opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://drexelnewman.com/small-group
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,7 +7,8 @@ ein: '231583643'
 summary: An Episcopal parish on Locust Street that serves a Saturday meal called the Soup Bowl to about
   140 guests each week. It also runs a food cupboard and a choir with public concerts, and holds a Newcomer
   Brunch.
-what_you_do: Come to the Saturday Soup Bowl, sit in on a Sunday service, or attend the Newcomer Brunch.
+what_you_do: Come to the Saturday Soup Bowl (6 to 8 am), sit in on a Sunday service, or attend the Newcomer
+  Brunch. Volunteers help make the soup, set tables, serve, and clean up.
 kind: congregation
 categories:
 - food-drink
@@ -24,7 +25,8 @@ motives:
 formats:
 - side_by_side
 - perform_make_together
-roles: []
+roles:
+- hands_on
 crowd:
 - neighbors
 - newcomers
@@ -39,13 +41,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Saturday Soup Bowl (the site gives no time). Saturday Low Mass at 10 am. Sunday Masses at 8, 9
-    and 11 am, and Choral Evensong on the first Sunday of the month, October through June.
+  text: 'Saturday Soup Bowl from 6 to 8 am. Saturday Low Mass at 10 am. Sunday: 8 am Low Mass, 9 am Family
+    Mass, 10 am Christian Formation (September to June), and 11 am Choral High Mass. Choral Evensong and
+    Benediction at 4 pm on the first Sunday of the month, October to June. Monday to Friday: 9 am Morning
+    Prayer, 12:10 pm Low Mass, and 5:30 pm Evening Prayer.'
   days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
   - sat
   - sun
   times:
   - morning
+  - daytime
   - evening
   recurring: true
   season: year_round
@@ -54,7 +64,7 @@ locations:
   address: 1625 Locust Street
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19103'
   lat: null
   lng: null
   in_city: true
@@ -62,7 +72,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the site
+  text: Not listed on the site.
 commitment: drop_in
 group_size: null
 access:
@@ -74,17 +84,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to the Newcomer Brunch (listed for Sunday, October 11 at 12:30 pm), or attend a Sunday service.
-    Call 215-735-1416 for more.
+  how: Come to the Newcomer Brunch on Sunday, October 11 at 12:30 pm, or sit in on any Sunday service.
+    Call 215-735-1416 with questions.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site lists a Newcomer Brunch with a way to sign up, and Sunday services are open to visitors.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The home page lists a Newcomer Brunch, and Sunday services are open to visitors; the membership
+    page explains how to join but lists no newcomer classes.
+  what_to_expect: The parish says its church is for all people. Communion is normally for people who are
+    baptized, and others can ask for a blessing at the altar rail instead. Coffee and snacks come after
+    the 9 and 11 am services, a good place to meet people. The site does not say how long services last
+    or what they cost.
+  first_visit_tips:
+  - On Sundays you may park on the side of the street that is normally off limits if you display an Attending
+    Saint Mark's permit. Ushers hand them out, and they also sit on shelves just inside the main doors.
+  - The FAQ says the church is near several public transit options, but the site does not name the lines
+    or stops.
+  - The site does not explain the Soup Bowl guest rules, so call 215-735-1416 before you come if you want
+    to know them.
 contacts:
   website: https://saintmarksphiladelphia.org/
   email: null
@@ -112,8 +132,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://saintmarksphiladelphia.org/soupbowl
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - roles
+- url: https://saintmarksphiladelphia.org/hospitality
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://saintmarksphiladelphia.org/membership
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://saintmarksphiladelphia.org/faq
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

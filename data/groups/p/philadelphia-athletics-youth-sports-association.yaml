@@ -32,20 +32,20 @@ audience:
   open_to: public
   school: null
   min_age: 3
-  max_age: null
+  max_age: 12
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: 'Fall 2026 in-house baseball: practices began in late August, games run on Friday evenings or
-    Saturdays, and games are scheduled through November 1, 2026. The age cutoff is May 1.'
+  text: 'Fall in-house season: one weekday evening practice a week (about 6 to 8:45 pm, depending on division),
+    one game a week on a Friday evening or Saturday, and a Saturday morning session for the youngest group.'
   days:
   - fri
   - sat
   times:
-  - evening
   - morning
+  - evening
   recurring: true
   season: fall
 locations:
@@ -61,8 +61,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: The registration fee is not shown on the page. The league says it will not turn away a family
-    who cannot pay the full fee, if the family contacts it before registering.
+  text: The registration fee is not shown on the page. The league will not turn away a family that cannot
+    pay the full fee, if the family emails the commissioner before registering. Those talks are confidential.
 commitment: seasonal
 group_size: null
 access:
@@ -71,21 +71,29 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: The fall 2026 sign-up deadline was August 15. Email the commissioner to ask about the next season
-    or fee help, and check the site for the next sign-up link.
+  how: Email PAYSACommissioner@gmail.com to ask about the next season and fee help before you register,
+    then watch the site for the next sign-up form. The fall 2026 sign-up closed on August 15.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Any child in the age divisions can sign up through a public form each season, though nothing
-    on the page is newcomer specific.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Any child in an age division can sign up through a public form each season, but the page does
+    not describe a program for first-time players.
+  what_to_expect: Kids play one weekday evening practice and one game a week. Practices run about 6 to
+    8:45 pm depending on division, and the youngest group meets on Saturday mornings. Adult volunteers
+    coach, umpire and help keep the fields ready, and every volunteer must pass background checks. The
+    page does not give time commitments for volunteers.
+  first_visit_tips:
+  - 'Check the age cutoff: divisions use age as of May 1.'
+  - If the fee is a problem, email the commissioner before you register.
+  - Volunteers need a Pennsylvania State Police criminal history report and a Child Abuse History certification.
+    Coaches and volunteers also take an online abuse-reporting course, though sign-up for it was not open
+    when the page was read.
 contacts:
   website: https://www.phillyathletics.org/
   email: PAYSACommissioner@gmail.com
@@ -94,7 +102,7 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-08
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.phillyathletics.org/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -120,11 +128,13 @@ sources:
   seen: '2026-10-08'
   fields:
   - requirements
+  - first_step
+  - what_you_do
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

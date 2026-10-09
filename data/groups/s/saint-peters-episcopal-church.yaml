@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: An Episcopal parish at Third and Pine streets with a food cupboard open Saturday mornings. No
   eligibility rules are listed, and the choir welcomes amateur and skilled singers.
-what_you_do: Get food at the cupboard on a Saturday from 8 to 10 am, sign up to volunteer there, or sing
-  with the choir, which rehearses on Sunday mornings.
+what_you_do: Get food at the Saturday morning cupboard, sign up to volunteer there, sing with the choir
+  on Sunday mornings, or join one of the church's groups, such as the churchyard gardeners or the book
+  group.
 kind: congregation
 categories:
 - hunger-housing-basic-needs
@@ -36,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Food cupboard on Saturdays from 8 to 10 am. Sunday services at 9 am (family and spoken) and 11
-    am (choral with organ). Choir rehearses Sunday mornings.
+  text: Food cupboard on Saturday mornings, with donations taken from 8 to 10 am. Sunday services at 9
+    am (family and spoken) and 11 am (choral with organ). Choir rehearses Sundays from 9:30 to 10:45 am.
   days:
   - sat
   - sun
@@ -55,38 +56,53 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Church, across from the Parish House
+  address: Third and Pine Streets
+  neighborhood: null
+  planning_district: null
+  zip: '19106'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: free
-  text: The food cupboard is free, per the PA 211 listing
+  text: The food cupboard is free, per the PA 211 listing and the parish food cupboard page
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Ushers will help families with strollers, per the FAQ.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to the Saturday cupboard between 8 and 10 am, call 215-925-5968, or fill out the parish online
-    welcome form.
+  how: Come to the 11 am Sunday service, or fill out the parish online welcome form and the parish will
+    add you to its email list.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site has an online welcome form and invites visitors to its 11 am Sunday service, and the
-    choir welcomes anyone to sing.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The parish has an online welcome form and holds a Welcome Coffee and Conversation several times
+    a year, and its FAQ says you do not need to be Episcopalian to attend.
+  what_to_expect: The 11 am service has the choir and organ, and there are 9 am family and spoken services
+    as well. The FAQ describes readings and a sermon, then Communion, and it does not say how long a service
+    runs. Dress is up to you, and children are invited to join in. The site lists no cost for worship.
+  first_visit_tips:
+  - On Sundays, park in the church lot at 315 Lombard Street, and move your car after the service because
+    the lot locks on Sunday afternoons.
+  - SEPTA bus routes 12, 40 and 57 stop at the church.
+  - Call the parish office at 215-925-5968 on a weekday, 8:30 am to 4 pm, with questions.
 contacts:
   website: https://stpetersphila.org/
   email: null
   phone: 215-925-5968
-  contact_name: null
+  contact_name: Kate Randall
   social: []
   calendar_feed: null
 status: active
@@ -104,12 +120,42 @@ sources:
   - contacts
   - status
   - cost
+  - last_sign_of_life
 - url: https://search.pa211.org/search/679833d5-4672-556b-9342-f1010463b516
   seen: '2026-10-08'
   fields:
   - schedule
   - cost
-research_tier: 1
+- url: https://www.stpetersphila.org/about-st-peters/welcome/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.stpetersphila.org/about-st-peters/welcome/faq/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - access
+  - requirements
+- url: https://www.stpetersphila.org/social-justice/food-cupboard/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+- url: https://www.stpetersphila.org/music/choir/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://www.stpetersphila.org/community/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

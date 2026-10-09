@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Virtual meetings and webinars are listed on the events page with their dates, for example an October
-    21, 2026 virtual meeting. No regular weekly or monthly time is stated.
+  text: Virtual meetings and webinars are posted on the events page as they are scheduled. No regular
+    weekly or monthly meeting time is stated.
   days: []
   times: []
   recurring: false
@@ -53,8 +53,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Event costs are not stated. The group also takes donations and sustaining memberships, which are
-    optional.
+  text: Event costs are not stated on the events page. Donations and sustaining memberships are optional.
 commitment: null
 group_size: null
 access:
@@ -69,13 +68,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the newsletter, or pick a public event from the events page and register for it.
+  how: Sign up for the newsletter, or register for a virtual meeting listed on the events page.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Events and meetings are open to the public with a clear way to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The group describes its webinars and virtual meetings as public, each listed event has a sign-up
+    button, and the site lists several ways to take part.
+  what_to_expect: Its events include online meetings and webinars, and some are in person. The listed
+    Environmental Movement Community meeting on October 21, 2026 is online from 7 to 8 pm. The site does
+    not say how many people attend or how long a typical event lasts.
+  first_visit_tips:
+  - Click the sign-up button on an event page, and check whether the event is online or in person before
+    you register.
+  - The events page has a Load More button, so click it to see later listings.
 contacts:
   website: https://www.psrpa.org/
   email: info@psrpa.org
@@ -107,7 +112,24 @@ sources:
   - status
   - last_sign_of_life
   - schedule
-research_tier: 1
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.psrpa.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - contacts
+  - status
+- url: https://www.psrpa.org/concerned-health-professionals
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

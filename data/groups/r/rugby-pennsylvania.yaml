@@ -6,8 +6,8 @@ ein: null
 summary: Rugby Pennsylvania runs an Emerging Girls Rugby effort that helps high schools add girls' rugby
   teams. It also lists clinics, sevens tournaments, and team, player and coach registration.
 what_you_do: Anyone, including a teacher, parent or player, can help start a school team using the group's
-  prospect form. Players, coaches and teams register through links on the site, and clinics are booked
-  through SportsEngine.
+  prospect form. Players, coaches and teams register through links on the site, and team sign-up runs
+  on a SportsEngine form.
 kind: nonprofit
 categories:
 - sports-teams
@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Spring sevens season and tournaments. The site names a spring 2025 season and a May tournament
-    in State College, PA (the year is not written with the tournament date). Current dates are not shown.
+  text: A yearly spring sevens season and tournaments. Players register for a season or for an annual
+    registration. Season start and end dates are not shown.
   days: []
   times: []
   recurring: true
@@ -46,8 +46,10 @@ schedule:
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: Costs are not stated. The page lists low-cost access as a benefit but gives no figures.
+  level: paid
+  text: 'Yearly player registration: $75 for under 12 and under 14, $115 for under 16, and $230 for high
+    school. Season registration is lower, from $30 to $90. A $41 USA Rugby fee is paid once a year on
+    top of these prices.'
 commitment: seasonal
 group_size: null
 access:
@@ -59,23 +61,31 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Fill out the prospect form to start or join a team, or register as a player or coach through the
-    links on the site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Registration links for players, coaches and teams are public, but the page gives no beginner
-    or intro information.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register as a player at https://www.rugbypa.org/registration-player for a season or the annual
+    registration. A parent or guardian sets up the account for a minor, pays, and verifies age with an
+    official ID. To start a team at a school, fill out the Emerging Girls Rugby prospect form.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: A player must make an account, pay a season or annual fee, and upload an ID before taking part.
+    The site lists no open practice, try-out or intro day for newcomers.
+  what_to_expect: The site does not describe practices, the first session, or what coaches expect. Player
+    registration is done online, and the page suggests asking your coach which registration type to choose.
+    The $41 USA Rugby fee is paid on top of the listed prices.
+  first_visit_tips:
+  - Have an official ID ready for age verification, such as a birth certificate, passport or driver's
+    license.
+  - Ask your coach which registration type to choose before you pay.
+  - Plan for the $41 USA Rugby fee on top of the team prices.
+  - For help, email dhamilton@rugbypa.org.
 contacts:
   website: http://www.rugbypa.org
   email: dhamilton@rugbypa.org
   phone: null
-  contact_name: null
+  contact_name: Dylan Hamilton
   social: []
   calendar_feed: null
 status: probably_active
@@ -100,8 +110,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.rugbypa.org/registration-player
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - status
+  - schedule
+- url: http://www.rugbypa.org/girlsrugby
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+  - schedule
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

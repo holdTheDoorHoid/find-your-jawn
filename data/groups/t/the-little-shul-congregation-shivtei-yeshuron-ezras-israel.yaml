@@ -34,8 +34,7 @@ audience:
   support_group: false
 schedule:
   text: Shabbos services on the first Saturday of each month at 10 am. On holiday weekends they move to
-    the second Saturday. The site lists upcoming services on Saturday, October 3, Saturday, November 7,
-    and Saturday, December 5, printed without a year.
+    the second Saturday.
   days:
   - sat
   times:
@@ -54,8 +53,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: No tickets are needed for services. Membership and donation options exist. Amounts are not printed.
+  level: free
+  text: No tickets are needed to attend services. Membership is optional, and the membership page prints
+    individual $36, family $72, and lifetime options at $180 and $360. Donations are also accepted.
 commitment: null
 group_size: null
 access:
@@ -70,17 +70,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a monthly service. No tickets or reservations are needed.
+  how: Come to a monthly Shabbos service at 10 am on the first Saturday. No tickets or reservations are
+    needed.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says everyone is welcome and that no reservations are needed for services.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says everyone is welcome and that no reservations are needed for services. It does not
+    name a separate newcomer program.
+  what_to_expect: Services are held at 10 am on the first Saturday of the month, and the site says no
+    tickets or reservations are needed. The site does not say how long a service runs, what the format
+    is, or what to wear, so call or write to ask before your first visit.
+  first_visit_tips:
+  - Call 215-839-6018 before you come, since the site does not describe the service format.
+  - Ask whether visitors who are not members may attend, since the site does not say.
+  - The site gives no directions or accessibility details, so ask about the entrance before you visit.
 contacts:
   website: https://www.thelittleshul.org/
   email: null
-  phone: null
+  phone: 215-839-6018
   contact_name: null
   social: []
   calendar_feed: null
@@ -99,7 +106,12 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.thelittleshul.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

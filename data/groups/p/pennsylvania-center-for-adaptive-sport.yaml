@@ -1,26 +1,35 @@
 id: pennsylvania-center-for-adaptive-sport
-name: Pennsylvania Center for Adaptive Sport
-aka: []
+name: Pennsylvania Center for Adapted Sports (PCAS)
+aka:
+- Pennsylvania Center for Adaptive Sport
+- Pennsylvania Center for Adapted Sport
 leads:
 - manual_seeds:schuylkill-navy-pennsylvania-center-for-adaptive-sport
 ein: null
 summary: A nonprofit that runs sports, recreation and wellness programs for people with disabilities,
   from rowing and kayaking to yoga and skiing, plus youth camps and volunteer days.
 what_you_do: People with disabilities can join listed programs such as rowing, cycling, climbing, yoga
-  or pickleball. Volunteers help with the adaptive rowing program and with spring cleanups at the garden.
+  or pickleball. Volunteers help with cycling and the adaptive rowing program, and with a spring garden
+  cleanup.
 kind: nonprofit
 categories:
-- sports-teams
 - water-rowing
+- sports-teams
+- running-cycling-fitness
+- outdoors-adventure
 interests:
 - adaptive_sports
 - rowing
+- youth_rowing
+- group_bike_rides
+- kayaking
+- yoga_movement
 motives:
 - values
 - enhancement
 formats:
-- team_play
 - learn_skill
+- team_play
 roles:
 - hands_on
 - help_teach
@@ -38,14 +47,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Volunteer shifts repeat each season from April to October, weather permitting: cycling on Saturdays
+    (9 am to 1 pm) and Sundays (1 to 3 pm, on a Chester County trail), and rowing Monday to Thursday (5
+    pm to dusk), mostly at the boathouse. Program times for athletes are not listed on the site.'
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Office on Boathouse Row
-  address: 4 Boathouse Row, Kelly Drive, Philadelphia, PA 19130
+- label: Office
+  address: 4 Boathouse Row, Kelly Drive
   neighborhood: null
   planning_district: null
   zip: '19130'
@@ -53,43 +73,62 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: PCAS Boathouse (rowing and cycling)
+  address: 1233 Martin Luther King Drive
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
   level: null
-  text: null
-commitment: null
+  text: Program fees are not stated. The site says equipment, venues, instruction and training are provided
+    to participants.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The group says its programs are held in barrier-free and supportive settings. Venue access details
+    are not listed.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: The group says it provides equipment to participants.
 first_step:
-  how: Pick a program from the adult or youth list on the site, then use the contact page to ask about
-    it. Registration steps are not on the home page.
+  how: Use the Learn More form on the contact page to ask about a program, or sign up for an adaptive
+    rowing volunteer training through the form on the rowing volunteer page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Programs are listed openly, but eligibility, cost and registration steps are not shown on the
-    home page.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The rowing volunteer page says no rowing experience is needed, that training and orientation
+    are provided for new volunteers, and that sign-up is by a linked form. Participant eligibility is
+    in a document the page links to but does not show, so the athlete route is less clear.
+  what_to_expect: Volunteers greet athletes and sign them in, ride or row alongside them, and help set
+    up equipment and adaptations. The 2026 rowing volunteer training sessions were listed for April 21,
+    22, 28 and 29, 5:30 pm to dusk, and no minimum volunteer hours are required. Participant fees are
+    not listed on the site.
+  first_visit_tips:
+  - The boathouse at 1233 Martin Luther King Drive has free parking and cycle access, according to the
+    rowing page.
+  - Ask through the form about the next training date, since the 2026 sessions were held in April and
+    no 2027 dates are posted.
 contacts:
   website: http://www.centeronline.com/
   email: null
-  phone: null
+  phone: 215-765-5118
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://www.centeronline.com/
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: http://www.centeronline.com/par-training
 sources:
 - url: https://boathouserow.org/members/
   seen: '2026-10-04'
@@ -104,7 +143,30 @@ sources:
   - locations
   - first_step
   - status
-research_tier: 1
+  - cost
+  - requirements
+  - contacts
+- url: http://www.centeronline.com/pcas-volunteer
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - commitment
+  - roles
+  - first_step
+  - requirements
+- url: http://www.centeronline.com/par-training
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - status
+  - schedule
+  - requirements
+- url: http://www.centeronline.com/contact-pcas
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

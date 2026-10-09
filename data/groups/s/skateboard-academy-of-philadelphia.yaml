@@ -5,8 +5,10 @@ leads: []
 ein: null
 summary: A skateboarding school that offers private and group lessons, camps and community sessions for
   all levels. It also runs Open World Skate, a skateboarding program built on ABA therapy.
-what_you_do: Book a lesson or community session through the contact form. For Open World Skate, the site
-  says coaches are certified ABA therapists or are in RBT training.
+what_you_do: Book a lesson or community session through the contact form on the website. For Open World
+  Skate, a program built on ABA therapy, the site says to contact the partner behavioral service named
+  on the page to start intake. It also says coaches are certified ABA therapists or are training to become
+  one.
 kind: program
 categories:
 - sports-teams
@@ -32,7 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Community sessions run on Saturdays and Sundays at the D Street location. Times are not stated.
+  text: Community sessions run on Saturdays and Sundays at the D Street location, and the site does not
+    publish times. Private lessons, group lessons, and camps are also offered, with prices not listed.
   days:
   - sat
   - sun
@@ -43,7 +46,8 @@ locations: []
 online_ok: null
 cost:
   level: null
-  text: Prices are not stated. The site mentions a membership but gives no amount.
+  text: Prices are not on the site. A membership is advertised to save money, but no amount is listed.
+    Camp and community session prices are not stated.
 commitment: null
 group_size: null
 access:
@@ -58,14 +62,18 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the contact form on the site to book. Online booking is listed as coming soon.
+  how: Use the contact form on the website to request a lesson or community session.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says all levels are welcome and gives a booking form, though it does not describe what
-    a first visit is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says all levels and abilities are welcome and gives a booking form, though it does not
+    describe a first visit.
+  what_to_expect: The site does not describe a first visit. It says the school teaches people of all ages
+    and levels, and that its lessons use ABA methods such as set routines, positive feedback, and progress
+    tracking. Open World Skate is a separate program with its own intake.
+  first_visit_tips:
+  - Book through the contact form, since online booking is still listed as coming soon.
+  - The site links a waiver page, so read and sign it before your first session.
 contacts:
   website: https://theskateboardacademy.com/
   email: null
@@ -92,12 +100,18 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
+  - name
+  - contacts.website
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://radworldnj.com/lessons
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

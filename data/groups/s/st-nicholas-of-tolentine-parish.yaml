@@ -5,8 +5,11 @@ leads: []
 ein: null
 summary: A Catholic parish at 9th and Watkins Streets in South Philadelphia with Sunday Masses at 9 and
   11 am and daily morning Mass.
-what_you_do: Come to Mass. The page lists a religious education coordinator and a business office but
-  no community programs.
+what_you_do: Come to Mass, or ask the rectory about the parish's food cupboard, which takes donations
+  at the rectory office, or about Aid for Friends, where volunteers prepare meals that are picked up and
+  delivered to homebound neighbors. The choir rehearses Wednesdays at 7:45 pm, and a Morning Prayer group
+  meets Monday to Friday at 7:45 am before the 8 am Mass. RCIA for adults and adult Bible study are listed
+  on the parish website.
 kind: congregation
 categories:
 - faith-community
@@ -31,7 +34,8 @@ audience:
   support_group: false
 schedule:
   text: Sunday Masses at 9 and 11 am. Weekday and Saturday Mass at 8 am. Saturday Vigil Mass at 5 pm,
-    and a 7 pm vigil for holydays. Holyday Masses at 8 am, 9 am and 7 pm. Saturday confession 4 to 5 pm.
+    and a 7 pm vigil for holy days. Holy day Masses at 8 am, noon and 7 pm. Saturday confession 4 to 5
+    pm.
   days:
   - sat
   - sun
@@ -47,10 +51,10 @@ schedule:
   season: year_round
 locations:
 - label: Church (9th and Watkins Sts.)
-  address: 9th and Watkins Sts.
+  address: 910 Watkins St.
   neighborhood: null
   planning_district: null
-  zip: '19147'
+  zip: '19148'
   lat: null
   lng: null
   in_city: true
@@ -73,13 +77,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about groups
+  how: Come to the 9 am or 11 am Sunday Mass, then call the parish at 215-463-1326 about the RCIA program
+    for adults or the adult Bible study.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the parish lists a phone number and separate pages for RCIA and adult
+    faith formation, but it does not say what a first meeting is like.
+  what_to_expect: Mass is free and open to anyone, so you can come and sit without signing up. The parish
+    offers Sunday Masses at 9 and 11 am and a weekday Mass at 8 am. The parish also runs RCIA for adults
+    and an adult Bible study and faith formation program, so ask the office which one fits you.
+  first_visit_tips:
+  - Call the parish at 215-463-1326 to ask about groups; the site lists committees but few contact details.
+  - Morning Prayer meets Monday to Friday at 7:45 am, before the 8 am Mass.
+  - The Choir rehearses Wednesdays at 7:45 pm if you sing.
 contacts:
   website: https://www.stnicksphila.com
   email: null
@@ -87,8 +98,8 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.stnicksphila.com
 sources:
 - url: https://archphila.org/parish/st-nicholas-of-tolentine-philadelphia/
@@ -104,7 +115,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.stnicksphila.com
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+  - contacts
+  - locations
+- url: https://www.stnicksphila.com/social-services
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.stnicksphila.com/organizations
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.stnicksphila.com/parish-calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

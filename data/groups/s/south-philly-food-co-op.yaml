@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteering starts with an online sign-up form. The events calendar did not load for us, so no
-    event dates are listed here.
+  text: The events page lists the co-op's community events, but its calendar did not load when we checked,
+    so no dates are listed here.
   days: []
   times: []
   recurring: null
@@ -52,9 +52,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: The member equity amount is not confirmed. The join page blocked our reader, and the news articles
-    we read did not state it. The co-op says non-members can shop.
+  level: paid
+  text: Anyone can shop without joining. Member-owners buy a $300 per household equity share, paid in
+    full or in monthly installments over 2 to 12 months. The Community Equity Fund helps people who cannot
+    pay the $300 at once.
 commitment: null
 group_size: null
 access:
@@ -69,15 +70,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer form on the co-op's site, pick the roles you like, and choose email or text
-    updates. Anyone can shop in the store.
+  how: Fill in the volunteer form on the co-op's website, pick the roles you like, and choose whether
+    to get email or text updates.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Open to the public with a clear online sign-up for volunteering, and shoppers do not need to
-    be members.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'Open to the public: anyone can shop, and the volunteer form is public, though the site does
+    not describe a volunteer orientation.'
+  what_to_expect: Shopping needs no membership, so you can stop in at the store on South Juniper Street.
+    The volunteer form asks for your name, email and an optional phone number, and the site does not say
+    what a first shift looks like.
+  first_visit_tips:
+  - Email the address listed on the volunteer page with questions about a first shift.
 contacts:
   website: https://www.southphillyfood.coop/
   email: null
@@ -102,6 +106,7 @@ sources:
   - locations
   - contacts
   - status
+  - summary
 - url: https://www.southphillyfood.coop/events
   seen: '2026-10-08'
   fields:
@@ -125,7 +130,16 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.southphillyfood.coop/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+- url: https://www.southphillyfood.coop/why-become-member-owner
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

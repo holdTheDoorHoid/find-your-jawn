@@ -5,7 +5,9 @@ leads: []
 ein: null
 summary: A Catholic parish in Manayunk with Sunday Masses at 9 and 11 am and 6 pm, and a weekday Mass
   at 7 am.
-what_you_do: Come to Mass. The page names an adult faith formation director but lists no programs.
+what_you_do: Come to Mass. Once you are registered as a parishioner, you can serve in a ministry such
+  as ushering or greeting. Adults who are curious about Catholicism can join the Tuesday evening adult
+  class (OCIA).
 kind: congregation
 categories:
 - faith-community
@@ -15,7 +17,8 @@ motives:
 - values
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
 crowd:
 - all_ages
 bridging: null
@@ -29,9 +32,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 9 am, 11 am and 6 pm. Weekday Mass Monday to Friday at 7 am in the All Saints
-    rectory chapel. Saturday confession 3 to 3:45 pm, and Sunday confession 8 to 8:45 am and 5 to 5:45
-    pm.
+  text: Saturday vigil Mass at 4 pm. Sunday Masses at 9 am, 11 am and 6 pm. Weekday Mass Monday to Friday
+    at 7 am in the chapel at 146 Rector St. Saturday confession 3 to 3:45 pm, and Sunday confession 8
+    to 8:45 am and 5 to 5:45 pm.
   days:
   - sun
   - mon
@@ -55,6 +58,15 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: All Saints' Chapel and Parish Center
+  address: 146 Rector St.
+  neighborhood: null
+  planning_district: null
+  zip: '19127'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: free
@@ -62,34 +74,46 @@ cost:
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The church and Parish Center are wheelchair accessible, with ramps at the Rector Street entrance
+    and the rear parking lot entrance. Van accessible spaces are in front of the school on Rector Street.
+    The site does not say whether the restroom in the church vestibule is accessible.
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about parish groups
+  how: Come to a Sunday Mass at 9 am, 11 am or 6 pm. To start the adult class, register for the session
+    that begins Sept. 22, 2026.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The adult class page welcomes adults who are only curious and explains how to sign up; Mass is
+    open to anyone. No beginner day or orientation is listed.
+  what_to_expect: Mass is free and open to anyone, and the site does not say how long it runs. The adult
+    class is a small, informal Tuesday evening group from 6:30 to 8 pm in the Parish Center, where you
+    can ask questions about the Catholic faith. You can attend as a curious adult without joining; full
+    attendance is required only for adults preparing to become Catholic.
+  first_visit_tips:
+  - Park in the church lot at the Cresson Street entrance near Pensdale, or use on-street parking on Mass
+    days.
+  - For the adult class, register through the parish registration page or call the office.
+  - Call 215-482-4600 with questions. The office is open Monday to Thursday, 9 am to 4 pm, and Friday
+    until 3 pm.
 contacts:
   website: https://stjohnmanayunk.org
   email: null
   phone: 215-482-4600
-  contact_name: null
+  contact_name: Kristi Bushner, Adult Faith Formation Director
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://stjohnmanayunk.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://stjohnmanayunk.org/RCIA
 sources:
 - url: https://archphila.org/parish/st-john-the-baptist-philadelphia/
   seen: '2026-10-08'
@@ -104,8 +128,40 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://stjohnmanayunk.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts
+- url: https://stjohnmanayunk.org/RCIA
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - status
+  - contacts
+- url: https://stjohnmanayunk.org/accessibility
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+- url: https://stjohnmanayunk.org/register
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - contacts
+- url: https://stjohnmanayunk.org/ministries-groups
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - requirements
+- url: https://stjohnmanayunk.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - requirements
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

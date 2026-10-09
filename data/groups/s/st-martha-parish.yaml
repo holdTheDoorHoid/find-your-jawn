@@ -5,13 +5,14 @@ leads: []
 ein: null
 summary: A Catholic parish on Academy Road in the Northeast with three Sunday Masses, daily morning Mass,
   and a parish school.
-what_you_do: Come to Mass, or call the parish about the school. The Archdiocese page lists no other public
-  programs.
+what_you_do: Come to Mass, meet with the parish after Sunday Mass to register, or ask about children's
+  religious education (PREP) or adult faith formation (RCIA).
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- faith_youth_programs
 motives:
 - values
 formats:
@@ -30,8 +31,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 and 10 am and at noon. Weekday and Saturday Mass at 8:15 am. Holyday Masses
-    at 8:15 am, noon and 7 pm. Saturday confession 2:30 to 3:30 pm.
+  text: Sunday Masses at 8 am, 10 am and noon. Saturday vigil Mass at 4 pm. Weekday and Saturday Mass
+    at 8:15 am. Holy Day Masses at 8:15 am, noon and 7 pm. Saturday confession 2:30 to 3:30 pm. Religious
+    education (PREP) runs Sunday mornings from 8 to 9:45 am during the school year.
   days:
   - sat
   - sun
@@ -47,8 +49,8 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Church
-  address: 11321 Academy Rd.
+- label: Church and rectory
+  address: 11301 Academy Rd.
   neighborhood: null
   planning_district: null
   zip: '19154'
@@ -58,8 +60,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: free
-  text: Mass is free to attend.
+  level: low
+  text: 'Mass is free to attend. Children''s religious education (PREP) has a yearly registration fee
+    per child: $125 for one child, $100 each for two, and $90 each for three or more (2025 to 2026 rates).'
 commitment: drop_in
 group_size: null
 access:
@@ -74,13 +77,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about parish groups
+  how: Come to any Sunday Mass, including the Saturday 4 pm vigil, then meet with the parish after Mass
+    to register.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The FAQ says staff meet people after any Sunday Mass to register, and Mass is open to anyone;
+    no newcomer program is described.
+  what_to_expect: Registration is a meeting with the parish after Mass, which is how new parishioners
+    start. The site does not describe a typical Sunday visit, how long Mass runs, or what to wear. Children
+    must be registered before the first day of religious education class, and the site says children are
+    not registered on the first day.
+  first_visit_tips:
+  - The rectory is open Monday to Thursday, 9 am to 4 pm, and Friday, 9 am to 1 pm. It is closed on weekends;
+    the FAQ says Saturdays are by appointment, which the footer does not match.
+  - Register children for PREP before the first class, since the site says no child is registered on the
+    first day.
 contacts:
   website: https://www.stmarthachurch.com
   email: null
@@ -88,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.stmarthachurch.com
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://www.stmarthachurch.com/religious-education
 sources:
 - url: https://archphila.org/parish/st-martha-philadelphia/
   seen: '2026-10-08'
@@ -105,7 +117,35 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.stmarthachurch.com
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - schedule
+  - status
+- url: https://www.stmarthachurch.com/frequently-asked-questions
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - schedule
+- url: https://www.stmarthachurch.com/directions
+  seen: '2026-10-08'
+  fields:
+  - locations
+- url: https://www.stmarthachurch.com/religious-education
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - status
+  - interests
+- url: https://www.stmarthachurch.com/rcia
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

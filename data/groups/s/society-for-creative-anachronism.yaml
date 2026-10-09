@@ -7,7 +7,8 @@ ein: null
 summary: Penn's student chapter of a volunteer group that recreates crafts, music, dance and combat from
   before the 1600s. Members practice these skills and show them at events and demonstrations.
 what_you_do: Members meet for period dance practice, craft nights and workshops. Guests without a PennCard
-  are asked to RSVP to the chatelaine the Friday before an event.
+  must email the chatelaine at least 24 hours before a practice to be added to a name list, and the name
+  must match the photo ID shown at the door.
 kind: student_org
 categories:
 - history-heritage-preservation
@@ -39,17 +40,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are listed on the chapter site. A European dance practice is listed for Monday, Oct 12,
-    2026, 7 to 9 pm.
-  days: []
+  text: A European dance practice aims to meet every other Monday from 7 to 9 pm in a campus library room.
+    Some sessions run 7:30 to 9:30 pm instead. Craft nights, demonstrations and Arts and Sciences hangouts
+    are listed on the chapter's event pages.
+  days:
+  - mon
   times:
   - evening
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Varies by event
+- label: Van Pelt Library, Class of '55 Room (Room 241), 2nd floor, University of Pennsylvania
   address: null
-  neighborhood: null
+  neighborhood: university_city
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Fisher Fine Arts Library, Davis Seminar Room, University of Pennsylvania
+  address: null
+  neighborhood: university_city
   planning_district: null
   zip: null
   lat: null
@@ -65,7 +77,7 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The dance practice room is on the 2nd floor of Van Pelt Library, reached by elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -74,14 +86,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email the chatelaine or use the contact page on the chapter site, then come to a listed event.
-    Guests without a PennCard should RSVP first.
-  drop_in: null
-  sign_up_needed: null
+  how: Email the chatelaine at chatelaine@ivyeinrust.eastkingdom.org at least 24 hours before a practice
+    so your name goes on the list, then come to the European dance practice. Guests who have a PennCard
+    do not need the list.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The chapter site names the chatelaine as the first contact for newcomers and lists events publicly.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The chapter's page says the chatelaine welcomes newcomers and is their first contact. The dance
+    page does not say whether beginners are welcome, so this rating rests on the newcomer note.
+  what_to_expect: Practices run about two hours in a campus library room, where a teacher leads 15th and
+    16th century European dances with live musicians. Anyone without a PennCard must be on the name list,
+    and the name must match the photo ID shown at the door. The chapter does not publish a cost or a dress
+    code, so ask the chatelaine before your first visit.
+  first_visit_tips:
+  - Bring a photo ID that matches the name you sent to the chatelaine.
+  - Enter Van Pelt Library, take the elevators to the 2nd floor, and follow the hallway to the room just
+    before the arched entry to Lippincott Library.
+  - Send your email at least 24 hours before the practice.
 contacts:
   website: https://ivyeinrust.eastkingdom.org
   email: chatelaine@ivyeinrust.eastkingdom.org
@@ -91,7 +112,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://ivyeinrust.eastkingdom.org
+sign_of_life_url: https://ivyeinrust.eastkingdom.org/events/european-dance-practice/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -113,7 +134,29 @@ sources:
   - status
   - first_step
   - last_sign_of_life
-research_tier: 1
+- url: https://ivyeinrust.eastkingdom.org/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - status
+  - what_you_do
+- url: https://ivyeinrust.eastkingdom.org/events/european-dance-practice/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - access
+  - first_step
+  - what_you_do
+  - status
+  - last_sign_of_life
+- url: https://ivyeinrust.eastkingdom.org/events/a-s-hangouts/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

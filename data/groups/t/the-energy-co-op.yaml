@@ -32,9 +32,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events on the site include an energy choice overview on October 2, 2026, a fall 2026 member happy
-    hour, and the annual member meeting on June 23, 2026. Several spring and summer fairs and expos are
-    listed without a year.
+  text: Member happy hours, fairs, expos, and talks are posted on the co-op's events page, with dates
+    set one event at a time.
   days: []
   times: []
   recurring: null
@@ -52,7 +51,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: No sign-up, membership, or cancellation fees, according to the co-op's membership page.
+  text: No enrollment, membership, or cancellation fees for residential members, according to the co-op's
+    FAQ. Your utility may still charge its own customer and delivery fees.
 commitment: null
 group_size: null
 access:
@@ -67,14 +67,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the sign-up link on the co-op's site or call the office. Joining means switching your power
-    to the co-op.
+  how: Enroll online, by email, or by phone at 215-413-2122 on a weekday. Enrolling makes you a member
+    of the co-op.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to any home or business in its service area, with a clear way to sign up and no fees.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Any home or business in the service area can sign up through several clear routes, with no fees,
+    so the way in is clear. The site describes no welcome or orientation beyond the enrollment steps.
+  what_to_expect: Joining means switching your electricity supplier, which usually takes 3 to 5 days.
+    Home members pay no enrollment, membership, or cancellation fee, though your utility may still charge
+    its own fees. You can leave at any time by telling the co-op or your utility.
+  first_visit_tips:
+  - If you are moving, confirm your start date with your utility before you enroll.
+  - Customers on PECO's Customer Assistance Program cannot choose a third-party supplier, so check that
+    first.
+  - If you would rather talk to someone, the office is open weekdays 9 am to 5 pm.
 contacts:
   website: https://theenergy.coop/
   email: info@theenergy.coop
@@ -92,6 +99,8 @@ sources:
   - summary
   - what_you_do
   - locations
+  - contacts
+  - first_visit_tips
 - url: https://theenergy.coop/about/membership/
   seen: '2026-10-08'
   fields:
@@ -108,7 +117,14 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://theenergy.coop/faq/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

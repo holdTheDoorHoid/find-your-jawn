@@ -2,14 +2,16 @@ id: seamaac
 name: SEAMAAC
 aka:
 - Southeast Asian Mutual Assistance Associations Coalition
+- SEAMAAC (Southeast Asian Mutual Assistance Associations Coalition)
 leads: []
 ein: null
 summary: A nonprofit that has helped immigrant and refugee families in Greater Philadelphia since 1984.
-  Teens can join an afternoon arts program at Furness High School, and volunteers can use the group's
-  volunteer page.
-what_you_do: Join the Urban Arts Entrepreneurship program after school at Furness High School, with classes
-  in breakdancing, deejaying, music production and visual arts. Volunteer through the volunteer page.
-  Health and social services and a Mifflin Square Park project are also listed, with no join steps shown.
+  Young people can join an afternoon arts program at Furness High School, and adults can volunteer by
+  phone.
+what_you_do: Young people can join the Urban Arts Entrepreneurship Program after school at Furness High
+  School, with classes in breakdancing, deejaying, music production and visual arts, and summer sessions
+  too. Adults can call the main line to talk about volunteering. The group's volunteer teams cover health
+  and social services, education, community development and hunger relief.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -42,8 +44,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Urban Arts Entrepreneurship program at Furness High School, Monday to Friday, 2:30 to 5 pm. Summer
-    dates and sign-up are not shown.
+  text: The Urban Arts Entrepreneurship afterschool program at Furness High School runs Monday to Friday,
+    2:30 to 5 pm, with summer sessions as well.
   days:
   - mon
   - tue
@@ -55,11 +57,20 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Furness High School (afterschool program)
-  address: null
+- label: Furness High School (Urban Arts afterschool program)
+  address: 1900 S 3rd St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19148'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: SEAMAAC main office
+  address: 1711 S Broad St
+  neighborhood: null
+  planning_district: null
+  zip: '19148'
   lat: null
   lng: null
   in_city: true
@@ -67,7 +78,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Cost not stated
+  text: The site does not list program fees.
 commitment: null
 group_size: null
 access:
@@ -79,21 +90,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Youth can join through the program page linked from the home page; volunteers use the volunteer
-    page
+  how: Call SEAMAAC at 215-467-0690 and ask how a young person joins the Urban Arts afterschool program
+    at Furness High School.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The join route is linked, but the home page shows no steps or dates
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The program page names the program and a phone route, but does not say how a young person enrolls
+    or who qualifies.
+  what_to_expect: Youth meet at Furness High School on weekday afternoons, from 2:30 to 5 pm, and take
+    arts classes in breakdancing, deejaying, music production and visual arts. The site does not say how
+    many young people attend or what to bring, so ask when you call.
+  first_visit_tips:
+  - Ask on the call what paperwork is needed before the first day, since the site does not list it.
+  - Plan the trip for the 2:30 to 5 pm window, since that is when the program runs.
+  - Ask about summer dates on the call, because the site does not print them.
 contacts:
   website: https://www.seamaac.org/
   email: null
-  phone: null
+  phone: 215-467-0690
   contact_name: null
   social:
   - https://www.facebook.com/SEAMAAC/
@@ -113,8 +130,31 @@ sources:
   - contacts
   - first_step
   - locations
-research_tier: 1
-confidence: low
+- url: https://seamaac.org/education/urban-arts-entrepreneurship-program/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - cost
+  - requirements
+- url: https://seamaac.org/education/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://seamaac.org/volunteer-6964/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://seamaac.org/contact-and-support/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

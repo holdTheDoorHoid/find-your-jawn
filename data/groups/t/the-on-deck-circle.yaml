@@ -5,8 +5,10 @@ leads: []
 ein: null
 summary: A baseball and softball program for kids that runs a beginner program, a four-week clinic called
   Bagels and Baseball, summer camps, and school and community days.
-what_you_do: Kids join beginner and clinic sessions, camps, and school or community days. The group lists
-  service areas in Norristown, Ambler, Willow Grove, Fort Washington, Philadelphia and Glenside.
+what_you_do: Kids ages 7 to 12 can join the Saturday Bagels and Baseball program in Brewerytown, with
+  no gear or experience needed. The group also runs an entry level program, summer camps, and school and
+  community days. Its listed service areas are Norristown, Ambler, Willow Grove, Fort Washington, Philadelphia
+  and Glenside.
 kind: nonprofit
 categories:
 - sports-teams
@@ -33,18 +35,30 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Days and times are not stated. The newest listed program is the Quickball Community Play Days
-    partnership, labeled summer 2025.
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: Bagels and Baseball in Brewerytown meets on Saturday mornings, 10 to 11:30 am, in the fall. The
+    Entry Level Program, camps and school days have no days or times published.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
+  season: fall
+locations:
+- label: Athletic Recreation Center, Brewerytown (Bagels and Baseball)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: The Willard after-school program was free in spring 2024. Fees for other programs are not stated.
-commitment: null
+  level: low
+  text: Bagels and Baseball in Brewerytown is pay what you can, capped at $25 per family. Fees for the
+    Entry Level Program, camps and school days are not stated.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -55,28 +69,35 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: No gear needed for Brewerytown Bagels and Baseball; the four-week clinic provides equipment.
 first_step:
-  how: Sign up for the group's newsletter, or email admin@ondeckcircle.org to ask about upcoming programs
-    and registration.
+  how: Register online for Bagels and Baseball in Brewerytown (the programs page links the sign-up), or
+    email admin@ondeckcircle.org about the other programs.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The Entry Level Program is described as a welcoming intro to baseball, but the way to register
-    is not published.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Brewerytown program says no gear or experience is needed, and the programs page gives a sign-up
+    route for it.
+  what_to_expect: Brewerytown sessions are Saturday mornings from 10 to 11:30 am for kids ages 7 to 12.
+    The four-week Bagels and Baseball clinic described on the site includes coaching, breakfast and snacks,
+    and all equipment. Pay what you can, capped at $25 per family.
+  first_visit_tips:
+  - Plan the morning around the 10 am Saturday start and the 11:30 am finish.
+  - No gear is needed for Brewerytown, so you do not need to buy a bat or glove first.
+  - The Entry Level Program needs a parent to take part, so plan to come along.
+  - For other programs, email admin@ondeckcircle.org, since no other sign-up route is listed.
 contacts:
-  website: http://ondeckcircle.org
+  website: https://ondeckcircle.org
   email: admin@ondeckcircle.org
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/the_ondeckcircle
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://ondeckcircle.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://ondeckcircle.org/programs
 sources:
 - url: http://ondeckcircle.org
   seen: '2026-10-08'
@@ -93,8 +114,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://ondeckcircle.org/programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - requirements
+  - locations
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://ondeckcircle.org/backyard-baseball-program
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

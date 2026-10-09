@@ -8,7 +8,7 @@ ein: '474069303'
 summary: A nonprofit of young transit riders in Southeastern Pennsylvania. Members give feedback to SEPTA,
   educate riders, and push for student transit passes on campuses.
 what_you_do: Apply online to join. Members give SEPTA input, table on college campuses, track transit
-  laws and run trainings, such as a UPass training.
+  laws, and run trainings such as a UPass training. The council also publishes a quarterly newsletter.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -30,7 +30,7 @@ audience:
   open_to: public
   school: null
   min_age: 18
-  max_age: null
+  max_age: 25
   community: []
   faith: null
   partisan: false
@@ -69,15 +69,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Create an account on septayac.org, then complete the application on the Apply page. Questions go
-    to contact@septayac.org.
+  how: Create an account on septayac.org, then complete the application on the Apply page. You must be
+    18 to 25 and live or go to school in Philadelphia, Bucks, Chester, Delaware or Montgomery county.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Members apply online, and selection runs on a rolling basis with earlier applicants first, so
-    the way in needs an application.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Members must apply online, review runs on a rolling basis with earlier applicants first, and
+    the council only contacts applicants it wants to move forward with.
+  what_to_expect: Members give SEPTA input on transit, table on campuses, track transit law, and run trainings.
+    The site does not say how often members meet, how much time it takes, or whether members are paid.
+    It notes that members often juggle full-time jobs or school alongside the council.
+  first_visit_tips:
+  - Apply early, since review is rolling and earlier applicants get looked at first.
+  - Check your age and where you live or study before you start, since both are rules for joining.
+  - Send questions to contact@septayac.org before you apply.
+  - The events page lists trainings such as the UPass training, a good sample of what members do.
 contacts:
   website: https://septayac.org
   email: contact@septayac.org
@@ -114,11 +120,22 @@ sources:
   fields:
   - what_you_do
   - status
+  - first_visit_tips
 - url: https://septayac.org
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+  - what_you_do
+  - contacts
+  - status
+- url: https://www.septayac.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: A public art and oral history project for the South 9th Street Curb Market. It records stories
   from vendors, workers and neighbors, and offers public art and market tours.
-what_you_do: Take a market tour, read the market stories, or check the opportunities page.
+what_you_do: Take a walking tour of the market with a community guide, read the market stories, or ask
+  about helping with the social media work.
 kind: program
 categories:
 - history-heritage-preservation
@@ -13,6 +14,7 @@ categories:
 interests:
 - oral_history
 - mural_public_art
+- walking_tours
 motives:
 - understanding
 - values
@@ -31,14 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tours and events are on separate pages. No dates appear on the home page.
+  text: Walking tours run from June through the fall. Events are listed on the group's Events page.
   days: []
   times: []
   recurring: null
   season: event_only
 locations:
-- label: South 9th Street Curb Market
-  address: South 9th Street
+- label: South 9th Street Curb Market (tours start at 9th and Christian)
+  address: South 9th Street, from Christian to Federal Streets
   neighborhood: null
   planning_district: null
   zip: null
@@ -48,14 +50,19 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not stated. The home page has only a donate link.
-commitment: null
+  level: paid
+  text: Tours are sold as tickets through Beyond the Bell Tours. The price is not shown on the group's
+    site or on the booking page.
+commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
-  languages: []
-  notes: null
+  wheelchair: partial
+  languages:
+  - en
+  - es
+  - vi
+  notes: Sidewalk ramps run along 9th Street, and the route has a managed street crossing at Washington
+    Avenue. Some storefront entrances have steps.
 requirements:
   act153_clearances: null
   background_check: null
@@ -64,23 +71,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Book a market tour from the tours page, or ask through the contact page.
+  how: Book a tour from the Book Your Tour button on the group's tours page. Bookings run through Beyond
+    the Bell Tours.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Tours are listed, but sign-up details are on pages not read.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Tours are open to the public with a clear booking button, though the price is not shown on the
+    page.
+  what_to_expect: The group's tour page says a tour takes two hours and covers less than a mile on South
+    9th Street, led by a local community guide. The booking page lists 90 minutes, so check the length
+    when you book. You hear the market's history and stories, use a free digital tour app with old photos,
+    and see murals, updated produce stands, and light boxes.
+  first_visit_tips:
+  - Tours are offered in English, Spanish, and Vietnamese.
+  - The route starts at 9th and Christian Streets and ends at 9th and Federal Streets.
+  - Some storefront entrances have steps, so ask about the route before you book if you need step-free
+    access.
 contacts:
   website: https://www.ourmarketproject.com
-  email: null
+  email: admin@ourmarketproject.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.instagram.com/ourmarketproject
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.ourmarketproject.com/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.ourmarketproject.com/events
 sources:
 - url: https://www.ourmarketproject.com/
   seen: '2026-10-08'
@@ -97,8 +114,36 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.ourmarketproject.com/tours
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - access
+  - first_step
+  - first_visit_tips
+  - schedule
+- url: https://www.ourmarketproject.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.ourmarketproject.com/opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.ourmarketproject.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://beyondthebelltours.com/tours/our-market-tour
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

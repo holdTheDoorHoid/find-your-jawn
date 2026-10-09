@@ -4,22 +4,19 @@ aka: []
 leads:
 - city_senior:pca:9
 ein: null
-summary: An older adult center in the Lower North part of the city, Martin Luther King Older Adult Center
-  is on the City's list of senior centers and sites where people can meet, take part in activities and
-  find services.
-what_you_do: Drop in to meet other older adults and join the center's activities.
+summary: An older adult center on West Cecil B. Moore Avenue that serves a weekday lunch to adults 60
+  and up at no cost.
+what_you_do: Eat a weekday lunch, join the social and activity programs, and ask staff which classes and
+  trips are running.
 kind: program
 categories:
 - seniors-intergenerational
 interests:
 - senior_centers
-- senior_activities
 motives:
 - social
-- protective
 formats:
 - conversation
-- side_by_side
 roles:
 - hands_on
 - help_teach
@@ -29,32 +26,38 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 60
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Lunch Monday to Friday. Activities vary by site, so call to confirm times.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
-- label: Senior center
-  address: 2100 W. Cecil B. Moore Avenue
+- label: Center
+  address: 2100 W. Cecil B. Moore Ave
   neighborhood: null
-  planning_district: lower_north
+  planning_district: null
   zip: '19121'
-  lat: 39.97991899479612
-  lng: -75.16957202705443
+  lat: null
+  lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
+  level: free
+  text: Lunch at no cost. Donations are suggested but not required.
 commitment: null
 group_size: null
 access:
@@ -66,14 +69,14 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Call the center to reserve a lunch and ask about activities. Bring proof of age.
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 3
+  basis: The 2024 PCA brochure says anyone 60 or older can come for lunch, with proof of age and a reservation.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -93,8 +96,23 @@ sources:
   - name
   - locations
   - contacts.phone
+- url: https://www.pcacares.org/wp-content/uploads/2024/08/2024-All-in-one-Brochure-update.pdf
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - locations
+  - contacts
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://pcacares.org/services/community-connection/senior-centers/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 1
-confidence: medium
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A Presbyterian church on Germantown Avenue with Sunday worship, children and youth programs,
   a Wednesday Bible study, and music events.
-what_you_do: Join Sunday worship at 10 am, the Wednesday Bible study, a weekend of service, or one of
-  the music events on the calendar.
+what_you_do: Join Sunday worship at 10 am, the Wednesday morning Bible study, a weekend of service, or
+  one of the music events on the calendar.
 kind: congregation
 categories:
 - faith-community
@@ -37,12 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10 am, with church school and fellowship time after. Wednesday Bible study weekly.
+  text: Sunday worship at 10 am, with Church School at 10:20 and fellowship at 11:15. Bible study on Wednesday
+    mornings at 10:30 am, and a Thursday evening faith conversation called Theology on Tap.
   days:
   - sun
   - wed
+  - thu
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -55,7 +58,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -73,14 +76,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship, or use the contact page to ask about visiting
+  how: Come to Sunday worship at 10 am at 8855 Germantown Avenue, or call 215-247-8855 or email info@chestnuthillpres.org
+    first to ask about visiting.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site has a warm welcome section inviting people to worship, music and fellowship, and a contact
-    page
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A Warm Welcome page says all are welcome and invites people to visit, with a phone line, an email
+    address and a contact page for questions. There is no newcomer class or first-timer event, so it does
+    not reach a 5.
+  what_to_expect: A Sunday visit starts with worship at 10 am, with scripture, preaching and music. Children
+    through grade 5 leave for church school before the sermon, while youth and adults stay in worship.
+    Coffee and fellowship follow around 11:15, and an adult education hour called Second Hour runs at
+    11:30. The site does not say how long the service lasts or what to wear.
+  first_visit_tips:
+  - Children through grade 5 go to church school before the sermon; sixth graders can choose church school
+    or staying in worship.
+  - Coffee is served after worship, and fellowship starts at 11:15.
+  - The weekly bulletin shows the week's service, and a livestream is offered if you want to watch first.
 contacts:
   website: https://www.chestnuthillpres.org
   email: info@chestnuthillpres.org
@@ -88,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.chestnuthillpres.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.chestnuthillpres.org/worship/when-we-worship/
 sources:
 - url: https://www.chestnuthillpres.org/
   seen: '2026-10-08'
@@ -101,8 +113,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.chestnuthillpres.org/warm-welcome/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - schedule
+- url: https://www.chestnuthillpres.org/worship/when-we-worship/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+- url: https://www.chestnuthillpres.org/education/adults/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

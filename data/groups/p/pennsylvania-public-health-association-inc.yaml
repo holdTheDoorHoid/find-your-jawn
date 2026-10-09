@@ -8,7 +8,7 @@ ein: '237360170'
 summary: A statewide membership group for people who work in public health. It shares a free newsletter,
   posts action alerts and events, and works to advance public health policy in Pennsylvania.
 what_you_do: Read the free newsletter, follow the action alerts and events, or join as a member to take
-  part in the work.
+  part in the work, including topic subcommittees and work groups.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -22,7 +22,8 @@ motives:
 formats:
 - learn_skill
 roles: []
-crowd: []
+crowd:
+- professionals
 bridging: null
 audience:
   open_to: public
@@ -49,10 +50,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: Membership fees are not listed on the page we read.
+  level: low
+  text: The newsletter is free. Membership is $75 a year for individuals and $50 a year for students,
+    early-career professionals and retirees. Organizations pay $500 a year. Dues renew automatically.
 commitment: null
 group_size: null
 access:
@@ -67,15 +69,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the free newsletter on the site, or email contact@pa-pha.org to ask how to become a
-    member
+  how: Subscribe to the free newsletter on the site, or email contact@pa-pha.org to ask whether an event
+    is open to non-members.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The newsletter sign-up is open to anyone, but the page does not describe membership steps or
-    fees, and it does not say whether events are open to non-members.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can subscribe to the free newsletter, so you can see the work before paying dues. The
+    site does not say whether non-members can attend events.
+  what_to_expect: A first step is reading the free newsletter, which covers events, announcements and
+    analysis, and the membership pages describe training, policy and funding topics. Membership is a yearly
+    subscription with automatic renewal, and members get conference discounts and a chance to join work
+    groups. The site does not say how events run or whether non-members can attend, so ask before you
+    register.
+  first_visit_tips:
+  - Subscribe to the newsletter first to see what is coming up.
+  - Membership is handled on a separate sign-up site linked from the Membership page, so check the fee
+    for your situation before you sign up.
+  - Ask contact@pa-pha.org whether an event you want is open to non-members before you pay.
 contacts:
   website: https://pa-pha.phmc.org
   email: contact@pa-pha.org
@@ -83,9 +93,9 @@ contacts:
   contact_name: Johanna Dunleavy
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://pa-pha.phmc.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://pa-pha.phmc.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,7 +123,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - online_ok
+- url: https://pa-pha.phmc.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_you_do
+- url: https://pa-pha.phmc.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - online_ok
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

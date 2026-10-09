@@ -3,23 +3,31 @@ name: St. Cyprian Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at Cobbs Creek Parkway and Cedar Avenue in West Philadelphia. It runs religious
-  education, parish outreach and a chaplaincy for Francophone African Catholics.
-what_you_do: Come to a Sunday Mass at 8 am or 11 am, or a holy day Mass. Families can ask about religious
-  education, and newcomers can ask about the outreach work or the Francophone African chaplaincy. The
-  site links a parish ministries page.
+summary: A Catholic parish at Cobbs Creek Parkway and Cedar Avenue in West Philadelphia. Its ministries
+  include religious education, a food pantry and clothes room, and a Bible study. It also offers an African
+  French Mass on Sunday afternoons.
+what_you_do: 'Come to a Sunday Mass: English at 8 am or 11 am, Nigerian at 1 pm, or African French at
+  3:30 pm. Ask the office about joining a ministry, such as greeting, the choir, religious education,
+  or the food pantry and clothes room.'
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
+- worship_music
 - faith_youth_programs
 - faith_service_projects
+- scripture_study
+- food_pantry
+- goods_closets
 motives:
 - values
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
+- help_teach
 crowd:
 - all_ages
 bridging: null
@@ -33,8 +41,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 am and 11 am. Weekday Mass at 8 am. Holy days at 7 am and 7 pm. Confessions
-    15 minutes before Mass or by appointment.
+  text: Sunday Masses at 8 am and 11 am in English, a Nigerian Mass at 1 pm, and an African French Mass
+    at 3:30 pm. Weekday Mass at 8 am. Holy days at 7 am and 7 pm. Confessions 15 minutes before Mass or
+    by appointment.
   days:
   - mon
   - tue
@@ -45,12 +54,22 @@ schedule:
   - sun
   times:
   - morning
+  - daytime
   - evening
   recurring: true
   season: year_round
 locations:
 - label: Parish church
-  address: Cobbs Creek Pkwy. and Cedar Ave. (rectory at 525 Cobbs Creek Pkwy.)
+  address: Cobbs Creek Pkwy. and Cedar Ave.
+  neighborhood: null
+  planning_district: null
+  zip: '19143'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Parish office
+  address: 525 S. 63rd St.
   neighborhood: null
   planning_district: null
   zip: '19143'
@@ -66,8 +85,10 @@ commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - fr
+  notes: The 11 am Sunday Mass and daily Mass can be viewed on the parish's YouTube page.
 requirements:
   act153_clearances: null
   background_check: null
@@ -76,18 +97,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the 11 am Sunday Mass, then call the rectory at 215-747-3250 to ask about the outreach
-    work or the chaplaincy.
+  how: Come to the 11 am Sunday Mass, then email or call the parish office between 8 am and 3 pm on weekdays
+    to ask about joining a ministry.
   drop_in: true
   sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The site links a ministries page and the archdiocesan page gives a rectory phone line, but the
-    newcomer steps are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the contact page lists office hours, a phone line and an email. The
+    site does not describe a newcomer program.
+  what_to_expect: Mass is free and open to anyone, so you can come and sit. The parish lists ministries
+    for greeting, hospitality and outreach, and the office can point you to the one that fits. The Nigerian
+    and African French Masses are on Sunday afternoons if you want a Mass in another language.
+  first_visit_tips:
+  - 'Call or email the office first: it is open 8 am to 3 pm, and evening visits are by appointment.'
 contacts:
   website: https://saintcyprianchurch.org/
-  email: null
+  email: stcyprianparish8@gmail.com
   phone: 215-747-3250
   contact_name: null
   social: []
@@ -110,7 +134,26 @@ sources:
   - schedule
   - locations
   - contacts
-research_tier: 1
+- url: https://saintcyprianchurch.org/parish-ministries/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - categories
+  - interests
+  - roles
+- url: https://saintcyprianchurch.org/schedule-of-masses/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://saintcyprianchurch.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_step
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -7,13 +7,17 @@ leads:
 ein: '471537305'
 summary: A free, volunteer-run dog park in Fishtown. The New Kensington Community Development Corporation
   built it at the Shissler Recreation Center, and it asks visitors for donations to keep it open.
-what_you_do: Help keep the park running as a volunteer. The site links to two sign-up pages, Join Our
-  Pack and Join the Bark Rangers, which were not read, so the roles are unknown.
+what_you_do: Visit with your dog after reading the park rules. To help, email palmerdoggiedepot@gmail.com
+  about clean-ups, event setup, grant writing, or board committees. You can also join as a Bark Ranger
+  supporter.
 kind: friends_group
 categories:
 - animals
+- nature-environment
 interests:
 - dog_owner_groups
+- friends_of_park
+- park_cleanup
 motives:
 - values
 - social
@@ -33,7 +37,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The site does not list the park's hours. Events are posted on Instagram.
   days: []
   times: []
   recurring: null
@@ -51,7 +55,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free for all dogs and their owners. Donations are requested to keep the park open.
+  text: Free for all dogs and their owners. Donations are requested. Bark Ranger supporter memberships
+    cost $144 a year or $12 a month.
 commitment: null
 group_size: null
 access:
@@ -66,14 +71,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Join Our Pack or Join the Bark Rangers link on the website, or email the group.
-  drop_in: null
-  sign_up_needed: null
+  how: Read the park rules, then visit with your dog. To volunteer, email palmerdoggiedepot@gmail.com.
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The park is free and open to the public, and the site has sign-up links and an email, but those
-    pages were not read.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The park is free and open to dogs and owners who follow the rules, and the volunteer and Bark
+    Ranger pages give a clear way to get in touch or sign up.
+  what_to_expect: The park is run by volunteers, with no attendant on duty, so visitors use it at their
+    own risk. Owners must keep dogs supervised at all times, and leashes come off when you enter. Children
+    10 and under may not come in, and children 11 to 15 must have an adult with them.
+  first_visit_tips:
+  - Dogs must be licensed and vaccinated under city law. Puppies under 4 months, unneutered males, females
+    in heat, and sick dogs are not allowed in.
+  - Collars must stay on, and prong, choke, heavy chain link, and spike collars are banned.
+  - Only standard tennis balls are allowed as toys, and owners must dispose of dog waste properly.
+  - No smoking, food, or alcohol is allowed in the park.
 contacts:
   website: https://palmerdoggiedepot.org
   email: palmerdoggiedepot@gmail.com
@@ -112,8 +124,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
-confidence: low
+- url: https://palmerdoggiedepot.org/join-our-pack
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://palmerdoggiedepot.org/join-bark-rangers
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://palmerdoggiedepot.org/parkrules
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_visit_tips
+- url: https://palmerdoggiedepot.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://palmerdoggiedepot.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

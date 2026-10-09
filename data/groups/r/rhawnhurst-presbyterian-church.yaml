@@ -67,16 +67,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Plan a Visit or Get In Touch page to arrange a visit
-  drop_in: null
+  how: Come to the 11 am Sunday service at 7701 Loretto Avenue, or email the church first to talk with
+    a pastor or elder before your visit.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has visit and contact pages and a mailing list sign up, but few details on programs
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The church says visitors can talk with a pastor or elder through its contact page, greeters welcome
+    people, and the homepage invites visitors to Sunday worship, though no newcomer class is described.
+  what_to_expect: Sunday worship is at 11 am in the main sanctuary, with hymn singing, prayer, and Bible-centered
+    preaching from rotating guest pastors. The site does not say how long the service runs. Children from
+    infancy through age 5 can go to nursery, and children ages 5 through fifth grade attend junior church
+    during the service.
+  first_visit_tips:
+  - Come as you are; the about page says dress is not a concern.
+  - The site gives no parking or entrance details, so email rpc19111@gmail.com or call 215-342-2112 before
+    a first visit.
+  - Ask a greeter about nursery or junior church for children.
 contacts:
   website: https://www.rhawnhurstpc.org
   email: rpc19111@gmail.com
@@ -84,8 +93,8 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.rhawnhurstpc.org/
 sources:
 - url: https://www.rhawnhurstpc.org/
@@ -95,14 +104,22 @@ sources:
   - schedule
   - first_step
   - status
+  - last_sign_of_life
 - url: https://presbyphl.org/our-churches/
   seen: '2026-10-08'
   fields:
   - lead
   - contacts.email
   - contacts.phone
-research_tier: 1
-confidence: low
+- url: https://www.rhawnhurstpc.org/index.php/about-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - requirements.kids_ok
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

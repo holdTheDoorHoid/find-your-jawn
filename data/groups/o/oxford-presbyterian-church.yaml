@@ -3,20 +3,23 @@ name: Oxford Presbyterian Church
 aka: []
 leads: []
 ein: null
-summary: A Presbyterian church on Stenton Avenue with Sunday worship, an adult program called Literacy
-  ED on weekday mornings, and a Wednesday evening prayer and Bible study.
-what_you_do: Join Sunday worship in person or on Zoom, the Wednesday prayer and Bible study, or the adult
-  program on Tuesday or Thursday mornings.
+summary: A Presbyterian church on Stenton Avenue with Sunday worship in person and online, a weekday morning
+  adult program called Literacy ED, and a Wednesday prayer time.
+what_you_do: Join Sunday worship in person or online, the Wednesday prayer time, the Literacy ED adult
+  program on Tuesday or Thursday mornings, or the Tuesday evening line dance class.
 kind: congregation
 categories:
 - faith-community
 - books-writing
+- theater-dance-performance
 interests:
 - worship_community
 - literacy_tutoring
+- social_dance
 motives:
 - values
 - understanding
+- social
 formats:
 - learn_skill
 - side_by_side
@@ -35,8 +38,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 11 am. Literacy ED adult program on Tuesdays and Thursdays at 10 am. Wednesday
-    prayer and Bible study at 7 pm.
+  text: Sunday worship at 11 am, in person and online. Literacy ED adult program on Tuesdays and Thursdays
+    at 10 am. Line dance classes on Tuesdays, 7 to 9 pm. Wednesday prayer is listed at two different times,
+    so call to confirm.
   days:
   - sun
   - tue
@@ -44,6 +48,7 @@ schedule:
   - thu
   times:
   - morning
+  - daytime
   - evening
   recurring: true
   season: year_round
@@ -60,7 +65,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: No fee is listed for worship or Literacy ED. The calendar lists $8 for line dance classes.
 commitment: weekly
 group_size: null
 access:
@@ -75,14 +80,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Contact Us page to ask about the adult program or visiting a service
-  drop_in: null
-  sign_up_needed: null
+  how: Come to Sunday worship at 11 am at 8501 Stenton Avenue, or call 215-247-9487 or email oxpc19150@verizon.net
+    to ask about the adult program.
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The site has several ways to reach the church and a clear schedule, but it does not state a visitor
-    welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Worship is public, in person and online, and the site lists a phone, an email and a contact form,
+    but it does not state a visitor welcome or describe the Literacy ED program.
+  what_to_expect: Sunday worship is at 11 am at the church on Stenton Avenue, and you can also join online.
+    The site does not describe the order of worship or whether children have their own program. Literacy
+    ED meets Tuesday and Thursday mornings at 10 am, but the site does not explain what happens there;
+    the line dance class is for adults only.
+  first_visit_tips:
+  - The site does not give parking or entrance details, so ask the office before you come.
+  - Use the contact form or call 215-247-9487 to ask about Literacy ED before your first visit.
+  - Line dance is listed at $8 and is for adults only, on Tuesday evenings from 7 to 9 pm.
+  - Wednesday prayer is listed at two different times, so call first.
 contacts:
   website: https://www.oxfordpc.org
   email: oxpc19150@verizon.net
@@ -90,9 +103,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.oxfordpc.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://oxfordpc.org/calendar/
 sources:
 - url: https://www.oxfordpc.org/
   seen: '2026-10-08'
@@ -102,7 +115,33 @@ sources:
   - schedule
   - first_step
   - contacts
-research_tier: 1
+- url: https://oxfordpc.org/ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://oxfordpc.org/calendar/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://oxfordpc.org/worship/
+  seen: '2026-10-08'
+  fields:
+  - online_ok
+  - first_step
+- url: https://oxfordpc.org/map/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://oxfordpc.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -34,7 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: About once a month at Indy Hall, most often on a Thursday. The events page lists the dates.
+  text: Usually once a month, most often on the second Thursday, at Indy Hall for a talk, hack night or
+    showcase. The events page lists the dates.
   days:
   - thu
   times: []
@@ -53,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The events page does not list a cost
+  text: The events page does not list a cost, and the About page does not mention fees.
 commitment: monthly
 group_size: null
 access:
@@ -68,18 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the sign-up form linked from the Join Us page (the link is labeled Slack), or come to a
-    public meeting at Indy Hall
+  how: Pick the next talk or hack night on the events page and go; if its listing has an RSVP link, use
+    it first. You can also fill in the sign-up form linked from the Join Us page.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Meetings are posted with open dates and the Join Us page has a sign-up link, but the page does
-    not say what the form asks
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The About page says the club is for developers of all skill and experience levels, and the Join
+    Us page links a sign-up form. Some listings link to RSVP pages.
+  what_to_expect: Meetings are usually once a month, most often on a Thursday, at Indy Hall. Expect a
+    short talk on a web tool or framework, time to meet other developers, and, at some meetings, a hack
+    night or a showcase of what members built. The events page does not give start times, and some listings
+    use RSVP pages.
+  first_visit_tips:
+  - Check the events page for the date, and whether the listing asks you to RSVP.
+  - If you go to a hack night, bring a project or idea you want to work on.
+  - The events page does not give street addresses or start times, so email organizers@phillyjs.com before
+    you go if you need them.
 contacts:
   website: https://phillyjs.com
-  email: null
+  email: organizers@phillyjs.com
   phone: null
   contact_name: null
   social:
@@ -99,6 +107,8 @@ sources:
   - schedule
   - locations
   - status
+  - last_sign_of_life
+  - cost
 - url: https://phillyjs.com/join-us
   seen: '2026-10-08'
   fields:
@@ -108,7 +118,14 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
+- url: https://phillyjs.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

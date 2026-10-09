@@ -3,14 +3,17 @@ name: St. Jerome Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at Holme Avenue and Stamford Street in Northeast Philadelphia with four Sunday
-  Masses and weekday Mass at 8 am.
-what_you_do: Come to Mass. The page lists St. Jerome School but no other public programs.
+summary: A Catholic parish at Holme Avenue and Stamford Street in Northeast Philadelphia with several
+  Sunday Masses, a Saturday vigil, and weekday Mass at 8 am.
+what_you_do: Come to Sunday Mass or the Saturday vigil. Children can join PREP, the parish religious education
+  program, and the 9:30 am Sunday Mass has a Children's Liturgy of the Word. Adults who are becoming Catholic
+  can ask about OCIA. The site also lists a food assistance phone line at 215-805-8479.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- faith_youth_programs
 motives:
 - values
 formats:
@@ -29,22 +32,37 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 6:30, 8, 9:30 and 11 am. Weekday Mass Monday to Friday at 8 am. Saturday confession
-    3:30 to 4:15 pm.
+  text: Sunday Masses at 7:30 am, 9:30 am (with Children's Liturgy of the Word) and 11 am, according to
+    the parish website. An Archdiocese listing also shows 6:30 am and 8 am, so call to confirm. Saturday
+    vigil at 4:30 pm. Weekday Mass at 8 am Monday to Friday. Holy days at 8 am, 10 am, 12 pm and 7 pm.
+    Confessions Saturdays 3:30 to 4:15 pm. The church is open for private prayer 9 am to noon daily except
+    Saturday.
   days:
-  - sun
   - mon
   - tue
   - wed
   - thu
   - fri
+  - sat
+  - sun
   times:
   - morning
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Church (Holme Ave. and Stamford St.)
   address: Holme Ave. and Stamford St.
+  neighborhood: null
+  planning_district: null
+  zip: '19136'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Rectory and parish office
+  address: 8100 Colfax St.
   neighborhood: null
   planning_district: null
   zip: '19136'
@@ -70,13 +88,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory to ask about parish groups
+  how: Come to a Sunday Mass, then call the parish office at 215-333-4461 to ask how to register or about
+    PREP or OCIA.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the office phone is listed. The site has a 'Register with us' page,
+    which we could not open. No newcomer program is described.
+  what_to_expect: Mass is free and open to anyone, so you can come and sit. The 9:30 am Sunday Mass has
+    a Children's Liturgy of the Word for younger children. The church is also open for quiet prayer from
+    9 am to noon, daily except Saturday.
+  first_visit_tips:
+  - Call 215-333-4461 to confirm Sunday times, because the parish site and the Archdiocese listing do
+    not match.
+  - Confessions are on Saturdays from 3:30 to 4:15 pm.
 contacts:
   website: https://stjeromechurchphila.org
   email: null
@@ -101,7 +126,16 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://stjeromechurchphila.org
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - first_step
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

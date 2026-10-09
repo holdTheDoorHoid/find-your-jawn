@@ -4,10 +4,11 @@ aka: []
 leads: []
 ein: null
 summary: A partnership that gets more people onto the water in Philadelphia and nearby, especially in
-  communities that have had little access. Free Thursday sunset paddles at Cherry Street Pier are open
-  to the public, and it runs youth camps and boat building.
-what_you_do: Register for a free Thursday sunset paddle, sign a young person up for a camp or boat build,
-  or check the water access map.
+  communities that have had little access. Its Thursday sunset paddles at Cherry Street Pier in October
+  cost only a $10 seat donation, refunded on arrival, and it lists youth camps and boat building run by
+  partner groups.
+what_you_do: Register for a Thursday sunset paddle (ages 12 and up), sign a young person up for a camp
+  or boat build with a partner group, or check the water access map.
 kind: network
 categories:
 - outdoors-adventure
@@ -33,14 +34,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free Sunset Paddles every Thursday evening at Cherry Street Pier. Summer camps and after-school
-    programs are listed separately.
+  text: Free Sunset Paddles on Thursday evenings in October at Cherry St Pier, 4:30 to 7 pm, with registration.
+    Camps and after-school programs are listed separately.
   days:
   - thu
   times:
+  - daytime
   - evening
   recurring: true
-  season: null
+  season: fall
 locations:
 - label: Cherry Street Pier (address not listed)
   address: null
@@ -54,7 +56,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Sunset paddles are free. Other program costs are not listed.
+  text: Paddles are free to join, with a $10 seat donation refunded when you arrive. Other program costs
+    are not listed.
 commitment: weekly
 group_size: null
 access:
@@ -69,23 +72,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a free Thursday sunset paddle through the link on the site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Free, open paddles with online registration.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for a Thursday sunset paddle through the Zeffy link on the events calendar, paying the
+    $10 seat donation, which is refunded when you arrive.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The page says no paddling or swim experience is needed, equipment and instruction are provided,
+    and it links a registration form, so the way in is clear for beginners.
+  what_to_expect: Paddles are single-seat kayaks, about 2 to 3 miles round trip on the Delaware River,
+    from 4:30 to 7 pm on Thursdays in October. Equipment and instruction are provided, and no paddling
+    or swim experience is needed. Paddlers must be 12 or older.
+  first_visit_tips:
+  - Pay the $10 seat donation when you register; it is refunded when you arrive.
+  - Paddlers must be 12 or older.
+  - If you bring your own boat, you still need to register.
 contacts:
   website: https://riverways.org
-  email: null
+  email: mayci@riverways.org
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://riverways.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://riverways.org/events-calendar/
 sources:
 - url: https://riverways.org/
   seen: '2026-10-08'
@@ -102,7 +112,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://riverways.org/events-calendar/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - first_visit_tips
+  - contacts.email
+  - last_sign_of_life
+  - status
+- url: https://riverways.org/camps-education/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://riverways.org/boatbuilding/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

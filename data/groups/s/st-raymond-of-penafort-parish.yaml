@@ -3,18 +3,25 @@ name: St. Raymond of Penafort Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at Williams Avenue and Vernon Road with Sunday Masses at 8 and 10 am and a
-  weekday Mass at 8 am.
-what_you_do: Come to Mass. The page lists outreach and youth ministry roles but gives no program details.
+summary: A Catholic parish at Williams Avenue and Vernon Road with Sunday Masses at 8 and 10 am and weekday
+  Masses at 8 am. Its ministries include altar servers, readers, a Bethany welcome team, and outreach
+  to people who are hungry or are refugees.
+what_you_do: Come to Mass, join the Bethany welcome team or a life group, or sign up for a ministry such
+  as altar serving, reading, or music. Outreach includes Feed The Hungry and Refugee Support.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
+- worship_music
+- scripture_study
+- faith_service_projects
 motives:
 - values
+- social
 formats:
 - side_by_side
+- conversation
 roles: []
 crowd:
 - all_ages
@@ -29,23 +36,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 and 10 am. Weekday Mass at 8 am. Saturday confession 4:30 to 4:50 pm, and Sunday
-    confession 9:30 to 9:50 am.
+  text: Saturday Masses at 5 pm and 8 am. Sunday Masses at 8 am and 10 am. Weekday Mass at 8 am on Monday,
+    Tuesday, Thursday, Friday and Saturday (the site lists no Wednesday Mass). Saturday confession 4 to
+    4:45 pm or by appointment, and Sunday confession 9:30 to 9:50 am.
   days:
   - sat
   - sun
   - mon
   - tue
-  - wed
   - thu
   - fri
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Church (Williams Ave. and Vernon Rd.)
   address: Williams Ave. and Vernon Rd.
+  neighborhood: null
+  planning_district: null
+  zip: '19150'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Parish office and rectory
+  address: 1350 East Vernon Road
   neighborhood: null
   planning_district: null
   zip: '19150'
@@ -71,13 +88,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory
+  how: Come to the 10 am Sunday Mass, then call the rectory at 215-549-3760 to ask about a life group
+    or the Bethany team, or use the parish volunteer form.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site has an I'm New section, the Bethany team helps make weekend Mass welcoming, and the
+    life groups page invites newcomers to join a group and says how to ask. The welcome and join pages
+    did not open, so the rating rests on the pages that did.
+  what_to_expect: Mass is free and open to anyone, with Sunday Masses at 8 and 10 am and a Saturday Mass
+    at 5 pm. Life groups are small groups of about 5 to 12 people who read the coming Sunday's Scriptures
+    together and get to know one another; they form a few times a year. The site does not say whether
+    groups take drop-ins, so ask first.
+  first_visit_tips:
+  - Call the rectory at 215-549-3760 to ask about life groups and the Bethany team, since the site does
+    not say whether groups take drop-ins.
+  - Saturday confession runs 4 to 4:45 pm, and you can also book a time by appointment.
+  - The site does not describe parking or wheelchair access, so ask before you come if you need those
+    details.
 contacts:
   website: https://www.saintraymond.net
   email: null
@@ -98,6 +126,7 @@ sources:
   - locations
   - contacts
   - status
+  - cost
 - url: https://archphila.org/parish_vicariat/philadelphia-north/
   seen: '2026-10-08'
   fields:
@@ -106,7 +135,27 @@ sources:
   seen: '2026-10-08'
   fields:
   - notes
-research_tier: 1
+- url: https://www.saintraymond.net
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - contacts
+  - locations
+  - status
+- url: https://www.saintraymond.net/life-groups
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+  - what_to_expect
+- url: https://www.saintraymond.net/ministries
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

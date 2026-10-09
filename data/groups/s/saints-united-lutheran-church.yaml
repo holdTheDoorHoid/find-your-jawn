@@ -6,17 +6,23 @@ leads:
 ein: '320256666'
 summary: A Lutheran congregation on Ryan Avenue in the Northeast with Sunday worship at 10 am, in person
   and online. Its site has a worship bulletin dated October 2026.
-what_you_do: Come to Sunday worship in person, or watch it online on Facebook or YouTube.
+what_you_do: 'Come to Sunday worship at 10 am, in person or online. The church also runs three outreach
+  ministries: Feed the Hungry (members make casseroles and bagged sandwiches), Feast of Justice (food
+  gifts for families), and Aid for Friends (cooking meals for homebound older adults). The site does not
+  say how to join them.'
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
+- food_pantry
 motives:
 - values
 formats:
 - conversation
-roles: []
+roles:
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -65,13 +71,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to Sunday worship at 10 am, or use the contact page to ask questions first.
+  how: Come to Sunday worship at 10 am, or watch the live service on the church's YouTube or Facebook
+    page first.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site invites questions and has a contact page, but describes no newcomer program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites questions and has a contact form, but it describes no newcomer program or welcome
+    class.
+  what_to_expect: The site does not describe what a first visit is like, how long the service runs, or
+    whether there is a children's program. The Sunday service is at 10 am and is streamed live, so you
+    can watch it before you go.
+  first_visit_tips:
+  - Watch a Sunday service online first to get a feel for the church.
+  - Send questions through the contact form, or call 215-624-6446 before you come.
 contacts:
   website: http://www.saintsunitedlutheranchurch.org/
   email: saintsunited@saintsunited.comcastbiz.net
@@ -98,13 +110,32 @@ sources:
   - schedule
   - first_step
   - status
+  - last_sign_of_life
 - url: https://www.sepa.org/_files/ugd/6750c7_016223f99ae44b8780c2e8db3e12ea90.pdf
   seen: '2026-10-08'
   fields:
   - lead
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://saintsunitedlutheranchurch.org/service-times/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://saintsunitedlutheranchurch.org/live-worship-service/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://saintsunitedlutheranchurch.org/about-us/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://saintsunitedlutheranchurch.org/our-ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

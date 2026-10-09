@@ -34,15 +34,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Meets weekly. The 2026 news reports did not give a day or time. The August 2026 report says the
-    weekly meetups happen at board game cafes, and the club also has a clubhouse at 2nd and Chestnut Streets
-    in Old City.
-  days: []
-  times: []
+  text: Weekly play. A July 2025 news report listed clubhouse sessions on Friday evenings (7 to 11 pm),
+    Saturdays (noon to 8 pm) and Sundays (2 to 8 pm), plus Wednesday evenings (6:30 to 10 pm) at the King
+    of Prussia Bridge Club. Times may have changed, and 2026 reports say weekly meetups also happen at
+    board game cafes.
+  days:
+  - fri
+  - sat
+  - sun
+  - wed
+  times:
+  - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
-- label: Clubhouse, Old City
+- label: Clubhouse, second floor of the Corn Exchange Building, Old City
   address: 2nd and Chestnut Streets, Philadelphia
   neighborhood: null
   planning_district: null
@@ -60,11 +67,23 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: King of Prussia Bridge Club (Wednesday sessions)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: false
 cost:
-  level: null
-  text: Dues and drop-in costs were not stated in the sources we read.
-commitment: null
+  level: low
+  text: An introductory membership is $20 for the year. Members then pay $10 for each day they play, and
+    non-members pay the $10 day fee at the Saturday teaching block. A $60 yearly membership adds a stamp
+    card that makes the 10th visit free and access to members-only tournaments. Figures are from a July
+    2025 news report.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
@@ -78,14 +97,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Go to a weekly meetup and ask for a lesson, or check the club's website for how to join.
+  how: Go to a session and ask for a lesson. A 2025 news report named a walk-in teaching block on Saturdays
+    from noon to 2 pm, so check the club's website for current times first.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: A May 2026 news report says newcomers are welcome, lessons are held, and volunteers teach first-time
-    visitors at meetups.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 5
+  basis: Recent news says volunteers teach brand-new visitors at meetups and the club holds lessons, and
+    a 2025 news report describes a weekly Saturday walk-in teaching block for players of all levels. The
+    article does not say whether you must reserve a spot.
+  what_to_expect: Newcomers can take part with volunteers or officers teaching the game to walk-in visitors.
+    The club holds lessons, and some members enter club tournaments. Non-members pay a $10 day fee at
+    the Saturday teaching block, according to the 2025 report. The news reports do not say how long a
+    visit lasts.
+  first_visit_tips:
+  - Ask for a lesson as soon as you arrive, since volunteers teach first-time visitors.
+  - Expect a $10 day fee if you are not a member, according to the 2025 report.
+  - The clubhouse is on the second floor, and the reports do not say whether there is an elevator, so
+    ask before you go.
+  - Check the club's website first, because the 2025 hours may have changed and 2026 reports name board
+    game cafes as meetup places.
 contacts:
   website: https://www.phillymahjong.com
   email: null
@@ -113,11 +143,24 @@ sources:
   - last_sign_of_life
   - schedule
   - summary
+  - locations
 - url: https://www.phillymahjong.com
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
+- url: https://billypenn.com/2025/07/29/philly-mah-jawn-mahjong-club-news-clubhouse-old-city-riichi-japanese-game/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+- url: https://www.phillymag.com/?p=4157657
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

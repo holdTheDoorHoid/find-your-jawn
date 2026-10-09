@@ -40,8 +40,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The helpline takes calls and texts, but its hours are not stated on the site. Press statements
-    and advocacy actions are posted as they happen.
+  text: The helpline takes calls and texts. The site does not list its hours.
   days: []
   times: []
   recurring: true
@@ -64,7 +63,9 @@ commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -78,10 +79,15 @@ first_step:
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The helpline is aimed at people who need help understanding and enrolling in coverage, and a
-    phone call or text is the clear first step.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The main action on the site is a helpline for people who need help understanding and enrolling
+    in coverage. It offers Spanish help and a language line, so a call or text is a clear first step.
+  what_to_expect: Your first contact is a call or text to the helpline about health coverage, food assistance,
+    or a problem with coverage. The site does not say how long a call takes or what hours the line keeps.
+    Spanish is offered, and a language line covers other languages.
+  first_visit_tips:
+  - 'Save the helpline number before you call: (877) 570-3642.'
+  - Keep any letters or notices about your coverage nearby, since the site does not say what to bring.
+  - Ask for Spanish or the language line if English is hard for you.
 contacts:
   website: https://www.pahealthaccess.org/
   email: null
@@ -120,6 +126,7 @@ sources:
   - status
   - last_sign_of_life
   - schedule
+  - access
 - url: https://friendscentercorp.org/about/directory-of-tenant-organizations/
   seen: '2026-10-08'
   fields:
@@ -133,7 +140,13 @@ sources:
   seen: '2026-10-08'
   fields:
   - what_you_do
-research_tier: 1
+- url: https://www.pahealthaccess.org/get-help/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - access.languages
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

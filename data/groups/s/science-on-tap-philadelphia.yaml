@@ -32,7 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly talk on the second Monday of the month, 6 to 7 pm for most talks (per the 2026 event listings)
+  text: Monthly talk on the second Monday of the month, starting at 6 pm.
   days:
   - mon
   times:
@@ -42,7 +42,7 @@ schedule:
 locations:
 - label: National Mechanics bar and restaurant, Old City
   address: null
-  neighborhood: null
+  neighborhood: old_city
   planning_district: null
   zip: null
   lat: null
@@ -67,13 +67,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a monthly talk, or write to the series email with questions
+  how: Come to a monthly talk on the second Monday, or write to the series email with questions first.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public talks that need no membership. The series has no beginner program, but anyone can attend.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Talks are open to the public and need no membership. The site describes welcoming, accessible
+    programming, but has no beginner program.
+  what_to_expect: Expect one expert talking about one topic, usually for about an hour, then time to mix
+    with the crowd. The site says events usually draw about 100 people. Admission is free or low cost,
+    and the site does not print a price for each talk.
+  first_visit_tips:
+  - Check the events page for the venue before you go, since special editions can move. The August 2026
+    talk was held at Benjamin Franklin Hall.
+  - Arrive a little early, since events usually draw about 100 people.
+  - The site does not describe step-free access, so email the series ahead of time with any access questions.
 contacts:
   website: https://www.scienceontapphilly.com/
   email: scienceontapphilly@gmail.com
@@ -93,6 +100,9 @@ sources:
   - summary
   - schedule
   - status
+  - last_sign_of_life
+  - locations
+  - first_visit_tips
 - url: https://www.scienceontapphilly.com/
   seen: '2026-10-08'
   fields:
@@ -100,12 +110,28 @@ sources:
   - cost
   - locations
   - contacts
+  - summary
+  - audience
 - url: https://whyy.org/articles/philadelphia-science-on-tap-lessons-for-curious-adults
   seen: '2026-10-08'
   fields:
   - summary
   - audience
-research_tier: 1
+- url: https://www.scienceontapphilly.com/mission
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+- url: https://www.scienceontapphilly.com/getin-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.scienceontapphilly.com/nationalmechanics
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

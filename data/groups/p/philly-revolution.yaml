@@ -3,9 +3,11 @@ name: Philly Revolution
 aka: []
 leads: []
 ein: null
-summary: An AAU basketball club that holds tryouts, camps and clinics. The site lists 2027 tryouts but
-  does not say which teams or ages it has.
-what_you_do: Players register for tryouts through a link on the site. The club also lists camps and clinics.
+summary: An AAU basketball club with tryouts for boys and girls in grades 4 to 11, plus camps and clinics
+  for younger players in grades 1 to 8.
+what_you_do: Players register through the online forms on the site, pick Boys or Girls and a grade, and
+  pay the fee. The club runs weekly camps and one-day and two-day clinics at gyms it lists, one in Philadelphia
+  and two outside the city.
 kind: team
 categories:
 - sports-teams
@@ -33,17 +35,46 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site lists 2027 tryouts, camps and clinics. Dates, days, times and locations are not shown
-    on the home page.
+  text: Weekly camps and one-day or two-day clinics run at the listed gyms. The site does not post session
+    dates or times.
   days: []
   times: []
   recurring: false
   season: event_only
-locations: []
+locations:
+- label: John Marynowitz Gym
+  address: 9945 President St., Philadelphia, PA 19115
+  neighborhood: null
+  planning_district: null
+  zip: '19115'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Assumption BVM gym
+  address: 1900 Meadowbrook Rd, Feasterville-Trevose, PA 19053
+  neighborhood: null
+  planning_district: null
+  zip: '19053'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+- label: Byrne Community Center
+  address: 406 W. Youngs Ave, Wildwood, NJ 08260
+  neighborhood: null
+  planning_district: null
+  zip: 08260
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Fees are not stated on the site.
+  level: paid
+  text: Tryouts cost $10 for grade school teams and $20 for high school teams, paid at tryout. One-day
+    clinics are $70, two-day clinics are $100, and a weekly camp is $175. Camp and clinic fees can be
+    paid by Venmo, or in cash or by check at the door.
 commitment: seasonal
 group_size: null
 access:
@@ -58,14 +89,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the click-to-register link for 2027 tryouts on the site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Tryouts are the entry step, and the site does not explain what they involve, so the way in is
-    unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Fill out the online 2027 tryout form on the Tryouts page, or the camp and clinic form for a session.
+    Choose Boys or Girls and the grade, then pay the fee.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Camps and clinics take online registration with listed prices, so a newcomer can join without
+    a tryout. Team places come through 2027 tryouts, and the site does not explain what tryouts involve.
+  what_to_expect: The site does not describe a session day, the coaches or start times. The registration
+    forms ask for the player's grade and school, and a parent's name, phone and email. Tryouts cost $10
+    or $20, and camps and clinics cost $70 to $175.
+  first_visit_tips:
+  - Register online before the session, with a parent's phone and email ready, since the forms ask for
+    them.
+  - Ask which gym hosts your session, since the site does not say which gym hosts which session.
+  - Pay by Venmo to @PhillyRevHoops with the player's name and session in the memo, or bring cash or a
+    check to the door.
 contacts:
   website: https://www.phillyrevolutionhoops.com/
   email: null
@@ -73,9 +112,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.phillyrevolutionhoops.com/
+status: active
+last_sign_of_life: 2026-02
+sign_of_life_url: https://www.phillyrevolutionhoops.com/camps--clinics.html
 sources:
 - url: https://www.phillyrevolutionhoops.com/
   seen: '2026-10-08'
@@ -90,7 +129,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.phillyrevolutionhoops.com/2027-tryouts.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - first_step
+- url: https://www.phillyrevolutionhoops.com/camps--clinics.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - locations
+  - cost
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

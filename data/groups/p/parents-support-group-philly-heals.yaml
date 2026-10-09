@@ -27,13 +27,14 @@ audience:
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - parents
   faith: null
   partisan: false
   support_group: true
 schedule:
-  text: 'Online sessions, 6:30 to 8 pm Eastern, on Zoom. Listed dates: Oct 7 and Oct 21, Nov 4 and Nov
-    18, and Dec 2, 2026. The event page itself names Nov 4.'
+  text: Online sessions on Wednesday evenings, 6:30 to 8 pm Eastern, on Zoom. The calendar lists them
+    about two weeks apart.
   days:
   - wed
   times:
@@ -59,13 +60,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up with the city's online form to get the Zoom link.
+  how: Fill in the city's sign-up survey, linked from the group's event page, to get the Zoom link before
+    the session.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Open to parents with this kind of loss, with a clear sign-up form and no screening described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The group is free and open to parents who lost a child to a drug-related loss, and the way in
+    is a clear online sign-up. The city pages do not say what a first session is like or whether new people
+    can join partway through a series.
+  what_to_expect: Each session runs an hour and a half on Zoom on Wednesday evenings, starting at 6:30
+    pm Eastern. The group is for parents who have lost a child to a drug-related loss, and the sessions
+    are a place to talk about that loss with other parents. Nothing is charged to take part.
+  first_visit_tips:
+  - Sign up before the session so the Zoom link reaches you in time.
+  - The sessions run in Eastern time, so check the start time if you are in another time zone.
 contacts:
   website: https://www.phila.gov/griefsupport/
   email: null
@@ -86,6 +94,7 @@ sources:
   - first_step
   - contacts
   - status
+  - schedule
 - url: https://healthymindsphilly.org/events/month/2026-11/
   seen: '2026-10-08'
   fields:
@@ -96,7 +105,7 @@ sources:
   fields:
   - summary
   - contacts
-research_tier: 1
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

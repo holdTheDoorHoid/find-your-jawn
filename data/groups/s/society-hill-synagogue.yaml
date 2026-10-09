@@ -7,9 +7,10 @@ ein: '232119868'
 summary: A congregation at 418 Spruce Street in Society Hill with Friday evening and Saturday morning
   services, a weekly Monday evening minyan on Zoom, a playschool for children ages 18 months to 5, and
   a Hebrew school.
-what_you_do: Join Shabbat services and the meals after them, take an adult education class, enroll a child
-  in the playschool or Hebrew school, or join the Monday evening minyan on Zoom. Membership renewals are
-  done through an online form.
+what_you_do: Join Friday evening or Saturday morning Shabbat services and the meals after them, take an
+  adult education course (the Nuts and Bolts introduction to Judaism is written for people new to the
+  faith), enroll a child in the playschool or Hebrew school, or join the Monday evening minyan on Zoom.
+  Membership and renewals are handled through an online form.
 kind: congregation
 categories:
 - faith-community
@@ -39,16 +40,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Friday evening and Saturday morning Shabbat services in the sanctuary, a weekly Monday evening
-    minyan on Zoom, and Shabbat and holiday meals after services. The site does not print times.
-  days: []
-  times: []
-  recurring: null
+  text: Shabbat services are held on Friday evenings and Saturday mornings in the sanctuary, and a Monday
+    evening minyan meets on Zoom. Meals follow Shabbat and holiday services. The site does not print service
+    times, and adult education runs as multi-week courses through the year.
+  days:
+  - fri
+  - sat
+  - mon
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Synagogue
   address: 418 Spruce Street
-  neighborhood: null
+  neighborhood: society_hill
   planning_district: null
   zip: '19106'
   lat: null
@@ -58,39 +65,55 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Dues and school tuition are paid through a link on the site. Amounts are not listed.
+  text: Membership dues and school tuition are paid through an online link on the site, and the amounts
+    are not listed. Adult education courses have a member price and a general public price, such as $18
+    for members and $108 for the public on a nine-session course.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: Wheelchair users can enter through the Paula Kline Learning Center door on Spruce Street. An
+    elevator serves the first and second floors and the rear courtyard. Accessibility requests go to Executive
+    Director Sahar Oz at soz@societyhillsynagogue.org or 215-922-6590 extension 3.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call 215-922-6590 or join through the membership form on the site
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all are welcome, and it has a membership form. It does not describe a first visit
-    or guest policy.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call the office at 215-922-6590 Monday to Friday, 9 am to 5 pm, or join through the membership
+    form on the site. For a first class, register for the Nuts and Bolts course, which is written for
+    people new to Judaism and those coming back to it.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The site has a beginner course for people new to Judaism, says all are welcome, and tells visitors
+    to call or use the membership form. It does not describe a formal guest or first-visit policy, so
+    it stops short of a top rating.
+  what_to_expect: Shabbat services are held in the sanctuary on Friday evenings and Saturday mornings,
+    and the Saturday service includes a discussion of the week's Torah portion. Adult courses run for
+    several sessions, mostly in person, with a Zoom option on some. The site does not describe a guest
+    policy or dress code, so ask the office what a first visit looks like.
+  first_visit_tips:
+  - Free street parking for Friday evening and Saturday morning services is on west 5th Street (Lombard
+    to Walnut) and east 6th Street (Spruce to Pine). Those spots are No Stopping lanes, so pick up the
+    parking placard in the lobby first.
+  - Register ahead for an adult course, which the site recommends. Zoom links and passcodes go to registrants.
+  - If you use a wheelchair, enter through the Paula Kline Learning Center door on Spruce Street, and
+    use the elevator to reach the first or second floor.
 contacts:
   website: https://www.societyhillsynagogue.org/
-  email: null
+  email: soz@societyhillsynagogue.org
   phone: 215-922-6590
-  contact_name: null
+  contact_name: Sahar Oz, Executive Director
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.societyhillsynagogue.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.societyhillsynagogue.org/adult-education/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -109,8 +132,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - requirements.kids_ok
+  - audience
+- url: https://www.societyhillsynagogue.org/adult-education/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - contacts
+- url: https://www.societyhillsynagogue.org/directions-parking-accessibility/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

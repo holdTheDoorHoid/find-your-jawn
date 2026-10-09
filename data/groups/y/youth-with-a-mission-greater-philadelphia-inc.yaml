@@ -8,8 +8,8 @@ leads:
 ein: '843440535'
 summary: A Christian mission group that offers free prayer in public places each week and does street
   outreach in the city. It also hosts short mission teams and helps churches take part.
-what_you_do: Pray with people at the weekly prayer stations, join an outreach team, or bring a church
-  team to serve in the city.
+what_you_do: Pray with people at the Thursday Center City outreach, join an outreach team, bring a church
+  team to serve in the city, or take evangelism training at the Messenger School.
 kind: nonprofit
 categories:
 - faith-community
@@ -36,9 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free prayer stations in public places every week; the page does not list days or hours
-  days: []
-  times: []
+  text: Prayer outreach in Center City every Thursday, 11 am to 2 pm; prayer stations also run at churches
+    across Greater Philadelphia.
+  days:
+  - thu
+  times:
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -51,10 +54,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Thursday prayer outreach, Center City
+  address: null
+  neighborhood: center_city
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: free
-  text: Prayer at the stations is free; no fees for ministry programs are listed
+  text: No fee is listed for joining the prayer outreach or the volunteer teams.
 commitment: null
 group_size: null
 access:
@@ -69,20 +81,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email connect@ywamphiladelphia.org to ask how to join a weekly prayer station or an outreach team
+  how: Fill in the Volunteer Sign-Up form for the Thursday Center City outreach, or email connect@ywamphiladelphia.org
+    to ask how to join.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Prayer stations are open to anyone in public spaces, and the site gives a contact address for
-    joining teams
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites people to join the Thursday outreach, links a volunteer sign-up form, and gives
+    an email address. It does not say beginners are welcome or whether a single visit is fine, so the
+    rating stays at 3.
+  what_to_expect: On a Thursday in Center City, volunteers work a table under a recognizable banner, listen
+    to people who stop by, ask how they can pray for them, and pray with them. Volunteers come from many
+    churches, and talk about faith often grows out of these conversations. The page does not say how long
+    a shift runs or what to wear, so ask the team before your first Thursday.
+  first_visit_tips:
+  - Look for the recognizable banner at the Thursday Center City table.
+  - When you reach out, send your name, your church or group if you have one, and the outreach you want
+    to join.
+  - Photos on the site show volunteers in red vests, but the page does not say that is required.
+  - Call (412) 600-1096 or email connect@ywamphiladelphia.org with questions before you come.
 contacts:
   website: https://www.ywamphiladelphia.org
   email: connect@ywamphiladelphia.org
   phone: (412) 600-1096
   contact_name: Debra Tunney
-  social: []
+  social:
+  - https://www.instagram.com/ywamphiladelphia
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -113,7 +136,35 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://ywamphiladelphia.org/index.php/prayer-station-2/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - locations
+  - status
+- url: https://ywamphiladelphia.org/index.php/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://ywamphiladelphia.org/index.php/hosting-teams/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://ywamphiladelphia.org/index.php/messenger-school-of-evangelism/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://ywamphiladelphia.org/index.php/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

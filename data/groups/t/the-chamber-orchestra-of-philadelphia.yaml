@@ -55,7 +55,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Kimmel Center for the Performing Arts (venue named on the Getting Here page)
+- label: Kimmel Center for the Performing Arts
   address: 300 S. Broad Street
   neighborhood: null
   planning_district: null
@@ -64,10 +64,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Philadelphia Ethical Society (lectures)
+  address: 1906 Rittenhouse Square
+  neighborhood: null
+  planning_district: null
+  zip: '19103'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: true
 cost:
   level: paid
-  text: Tickets are sold per concert, and single ticket prices are not listed on the site. Subscribers
+  text: Single ticket prices are not listed on the site, so check each concert's ticket page. Subscribers
     get 20 percent off single tickets when they call the box office. Lectures at the Philadelphia Ethical
     Society cost $25 per person.
 commitment: null
@@ -75,8 +84,9 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: The Getting Here page says the Walnut-Locust station on the Market-Frankford Line is about two
-    blocks from the Kimmel Center. Buses 9, 21, 32 and 42 are listed as accessible.
+  notes: The Walnut-Locust station on the Broad Street Line is about two blocks from the Kimmel Center.
+    Buses 9, 21, 32 and 42 are listed as wheelchair accessible. The site does not describe step-free entry
+    or elevators at the Kimmel Center, so ask the box office.
 requirements:
   act153_clearances: null
   background_check: null
@@ -99,7 +109,8 @@ first_step:
   - Check the venue on your ticket before you go, since concerts move between halls, churches and museums.
   - If you drive to the Kimmel Center, the garage entrance is just south of the Broad Street entrance,
     and you can only reach it by driving south on Broad Street.
-  - Walnut-Locust station is about two blocks away, and buses 9, 21, 32 and 42 run nearby.
+  - The Walnut-Locust station on the Broad Street Line is about two blocks away, and buses 9, 21, 32 and
+    42 run nearby.
   - Call the box office at (215) 545-1739 to ask about seating or access, since the site does not describe
     them.
 contacts:
@@ -107,7 +118,9 @@ contacts:
   email: info@chamberorchestra.org
   phone: (215) 545-5451
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/ChamberOrch/
+  - https://www.instagram.com/chamber.orchestra.phila/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-06
@@ -134,6 +147,8 @@ sources:
   fields:
   - cost
   - first_step
+  - first_step.how
+  - access
 - url: https://chamberorchestra.org/getting-here/
   seen: '2026-10-08'
   fields:
@@ -144,6 +159,13 @@ sources:
   seen: '2026-10-08'
   fields:
   - what_you_do
+- url: https://chamberorchestra.org/home/lecture-series/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+  - schedule
+  - first_step.what_to_expect
 research_tier: 2
 confidence: high
 last_checked: '2026-10-08'

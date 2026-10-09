@@ -5,18 +5,23 @@ leads: []
 ein: null
 summary: A Lutheran congregation on Fillmore Street in Fox Chase with a Sunday 9:15 am service that includes
   Holy Communion. Its site has a section for newcomers.
-what_you_do: Attend the Sunday 9:15 am service, read the newcomer section of the site, or stop by the
-  office on a Tuesday or Thursday morning.
+what_you_do: Attend the Sunday 9:15 am service and stay for coffee hour, read the newcomer page, or stop
+  by the office on a Tuesday or Thursday morning. Members also serve through ministries such as a monthly
+  free community lunch (Hope's Table) and a group that cooks meals for homebound neighbors.
 kind: congregation
 categories:
 - faith-community
+- food-drink
 interests:
 - worship_community
+- congregation_social
+- community_meals
 motives:
 - values
 formats:
 - conversation
-roles: []
+roles:
+- hands_on
 crowd:
 - neighbors
 bridging: null
@@ -30,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday service at 9:15 am, with Holy Communion. The office is open Tuesday and Thursday, 9 am
-    to noon.
+  text: Sunday worship from 9:15 am to 10:15 am, with Holy Communion and a coffee hour afterward. The
+    office is open Tuesday and Thursday, 9 am to noon.
   days:
   - sun
   - tue
@@ -53,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the site
+  text: The site does not mention dues or fees for worship or the ministries.
 commitment: drop_in
 group_size: null
 access:
@@ -65,17 +70,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Attend the 9:15 am Sunday service, or call or email the church and ask about joining.
+  how: Come to the 9:15 am Sunday service, stay for coffee hour, and ask to meet the pastor or a member.
+    You can also call the office on a Tuesday or Thursday morning.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has an I'm New section and a phone and email for questions, but no newcomer class is
-    described on the home page.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site has an I'm New page that invites newcomers to come to a service, talk with members at
+    coffee hour, or call the office. It does not describe a welcome class.
+  what_to_expect: The service runs one hour, from 9:15 am to 10:15 am, and includes Holy Communion, music,
+    and a short message for children told as a story by the pastor. Afterward, a coffee hour with bakery
+    treats gives you a chance to talk with members. The site does not mention dues or fees.
+  first_visit_tips:
+  - Park in the large lot across from the Fillmore Street entrance.
+  - Dress however you feel comfortable; the site says plenty of people wear business casual, jeans or
+    team hoodies, and that showing up matters most.
+  - Stay for coffee hour to meet people.
+  - Call the office on a Tuesday or Thursday between 9 am and noon if you have questions first.
 contacts:
   website: https://www.sttimsfoxchase.org/
   email: sttimothyfoxchase@comcast.net
@@ -83,9 +96,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.sttimsfoxchase.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.sttimsfoxchase.org/events
 sources:
 - url: https://www.sttimsfoxchase.org/
   seen: '2026-10-08'
@@ -100,8 +113,27 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.sttimsfoxchase.org/about/im-new
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.sttimsfoxchase.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.sttimsfoxchase.org/ministries
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - categories
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

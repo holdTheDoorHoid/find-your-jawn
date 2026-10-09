@@ -6,28 +6,34 @@ leads:
 - irs_990n:204984694
 - irs_bmf:204984694
 ein: '204984694'
-summary: A faith-based nonprofit in the Oxford Circle neighborhood. It runs an after-school and summer
-  camp, adult education and job training, family resource centers, and food distribution.
-what_you_do: Enroll a child in the after-school or summer camp, take an adult education or workforce class,
-  get help at a family resource center, or volunteer through the Volunteer Today page.
+summary: A faith-based nonprofit in the Oxford Circle neighborhood. It runs an after-school program at
+  Carnell Elementary, adult English and job training classes, family resource centers at two schools,
+  and a regular food distribution.
+what_you_do: Get free food on a distribution Thursday, enroll a child in the after-school program, take
+  an adult English or job training class, or ask about the family resource centers.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - hunger-housing-basic-needs
 - careers-skills-professional
 - faith-community
+- culture-language-heritage-groups
 interests:
 - after_school_camps
+- tutoring
 - food_pantry
 - job_clubs
+- esl_conversation
 - faith_service_projects
 motives:
 - values
+- career
 formats:
 - learn_skill
 roles: []
 crowd:
 - all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -39,13 +45,24 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'The after-school program runs Monday to Friday, 3:30 to 6 pm, during the school year. Adult English
+    classes run each semester: beginners meet Monday and Wednesday mornings, and intermediate students
+    meet Tuesday and Thursday evenings. Food distribution is on Thursdays, except the second Thursday
+    of the month.'
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Oxford Circle CCDA office
+- label: Oxford Circle CCDA office and food distribution site
   address: 900 E Howell St
   neighborhood: null
   planning_district: null
@@ -54,33 +71,74 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: M&T Bank (food distribution, 4th Thursday)
+  address: 6500 Castor Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19149'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Carnell Family Resource Center, at Laura H. Carnell Elementary School
+  address: 1100 Devereaux Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19111'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Fels Oasis, at Samuel Fels High School
+  address: 5500 Langdon Street
+  neighborhood: null
+  planning_district: null
+  zip: '19124'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Program costs are not listed on the site.
+  text: Food distribution is free. The site does not list costs for the after-school program or the adult
+    classes.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - es
+  - ht
+  - ru
+  notes: The after-school registration form is also offered in Haitian Creole and Russian. The adult intake
+    forms are in English and Spanish.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call (215) 288-8504 or email contact@occcda.org to ask about after-school or summer camp enrollment,
-    or use the Volunteer Today page to help out.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site lists programs but gives no eligibility, enrollment steps, or hours, so you have to
-    call or email to find out.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Walk up to the food distribution at 900 E Howell St on a 1st, 3rd, or 5th Thursday, 1 to 4 pm.
+    No registration is needed.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 3
+  basis: Food needs no registration or prerequisites, and the adult English classes list a beginner level
+    with an intake form, but the after-school program is only for Carnell students.
+  what_to_expect: Food is handed out as free grocery bags, about 400 households a week. The site says
+    no registration or prerequisites are required for food. For adult classes, you fill out an intake
+    form first, and then the class meets at its set time; the site does not list costs or who qualifies.
+  first_visit_tips:
+  - Walk-up runs 1 to 4 pm and drive-up runs 10 am to 1:30 pm on the 1st, 3rd, and 5th Thursdays at 900
+    E Howell St.
+  - On the 4th Thursday, people line up at 10 am at M&T Bank, 6500 Castor Avenue, until supplies run out.
+  - For adult classes, use the Student Intake Form on the adult education page, in English or Spanish.
+  - The after-school office is at (215) 400-3150, option 6, and is open Monday to Wednesday, 8:45 am to
+    2:45 pm.
 contacts:
   website: https://www.occcda.org/
   email: contact@occcda.org
@@ -88,9 +146,9 @@ contacts:
   contact_name: Anita Lyndaker
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.occcda.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://occcda.org/adulted/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -121,8 +179,40 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+- url: https://occcda.org/programs/afterschool/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://occcda.org/adulted/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_visit_tips
+  - access
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://occcda.org/programs/frc/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - locations
+  - first_step
+- url: https://occcda.org/programs/food/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

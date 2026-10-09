@@ -3,23 +3,24 @@ name: T3 Philly Multisport
 aka: []
 leads: []
 ein: null
-summary: A Philadelphia triathlon and multisport club founded in 2003. It offers group workouts, clinics,
-  coaching and social events for members of many abilities.
-what_you_do: Join as a member to take part in group workouts, clinics and social events with people of
-  many abilities.
+summary: A Philadelphia multisport club for swimming, cycling, running and triathlon athletes at every
+  level. Members train together in group workouts and clinics.
+what_you_do: Join group training and clinics with other members, and take part in club social events.
 kind: club
 categories:
 - running-cycling-fitness
 interests:
 - running
+- group_bike_rides
 motives:
-- social
 - enhancement
+- social
 formats:
 - team_play
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: members
@@ -31,17 +32,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Tuesdays at 6 pm, alternating between the Temple track and Penn Park, per the April 2025 Billy
+    Penn guide
+  days:
+  - tue
+  times:
+  - evening
+  recurring: true
   season: null
-locations: []
-online_ok: null
+locations:
+- label: Temple Sports Complex or Penn Park (alternating)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: false
 cost:
-  level: null
-  text: Membership price not shown on the site
-commitment: null
+  level: paid
+  text: $60 to join, per the April 2025 Billy Penn guide
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -55,24 +68,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Become a T3 Philly Member button to reach the membership page
-  drop_in: null
+  how: Use the member sign-up page on the club's site
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all levels are welcome and that it is always looking for new members, with a sign
-    up page.
+  newcomer_friendliness: 2
+  basis: Joining needs a paid membership, although the club says it is always looking for new members
+    of all levels
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://t3philly.org
+  website: https://www.t3philly.org
   email: null
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://t3philly.org
+last_sign_of_life: 2025-04
+sign_of_life_url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
 sources:
 - url: https://t3philly.org
   seen: '2026-10-08'
@@ -80,6 +93,21 @@ sources:
   - summary
   - audience
   - first_step
+  - status
+- url: https://www.t3philly.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+- url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
+  seen: '2026-10-08'
+  fields:
+  - lead
+  - schedule
+  - cost
   - status
 research_tier: 1
 confidence: low

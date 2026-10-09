@@ -41,13 +41,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The first Short Shots session ran six weeks, and a session starts October 24 (no year written).
-    Playmakers holds application days and open houses in September and October (no year written). Other
-    programs do not list days or times.
-  days: []
-  times: []
+  text: Short Shots runs in six-week sessions, once a week for an hour, on Saturdays from 11 am to noon,
+    all year. Playmakers is a six-month program for students in grades 9 to 12 and takes applications
+    at application days and open houses.
+  days:
+  - sat
+  times:
+  - daytime
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: 4015 Main Street, Philadelphia PA 19127
   address: 4015 Main Street, Philadelphia PA 19127
@@ -61,7 +63,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Program fees are not stated on the site. The site has a donate button.
+  text: Program fees are not listed on the site. The Short Shots page says financial help is available
+    for families who need it.
 commitment: seasonal
 group_size: null
 access:
@@ -76,14 +79,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: For Short Shots, use the registration link on the site. For Playmakers, RSVP for an application
-    day through the link on the site.
+  how: For Short Shots (ages 2 to 6), register through the registration link on the Short Shots page.
+    For Playmakers, RSVP for an application day or open house through the link on the site.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: Playmakers says all skill levels are welcome, and the site gives a sign-up link for each program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Playmakers page says all skill levels are welcome, and each program has a sign-up link on
+    the site.
+  what_to_expect: Short Shots is a 60-minute class once a week for six weeks, held on Saturdays from 11
+    am to noon. Each class is an hour of active play, skill building and games for children ages 2 to
+    6. The site does not name the class location or say whether parents may stay, so ask when you register.
+  first_visit_tips:
+  - Register through the Short Shots link before you come, since sign-up is needed.
+  - Ask where the class meets when you register, because the site does not name the field.
+  - Ask about financial help when you register if cost is a concern.
+  - For Playmakers, the fall application days and open houses are listed without a year, so confirm the
+    current dates when you RSVP.
 contacts:
   website: https://starfinderfoundation.org/
   email: programs@starfinderfoundation.org
@@ -92,8 +103,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://starfinderfoundation.org/
+last_sign_of_life: 2025-01
+sign_of_life_url: https://starfinderfoundation.org/news/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +131,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://starfinderfoundation.org/short-shots/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - what_to_expect
+  - first_visit_tips
+  - requirements
+- url: https://starfinderfoundation.org/news/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

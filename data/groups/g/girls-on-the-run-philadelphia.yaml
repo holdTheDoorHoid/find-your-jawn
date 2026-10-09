@@ -54,7 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: paid
   text: Registration is $225 per girl each season. Families with household income under $100,000 a year
@@ -76,7 +76,7 @@ requirements:
 first_step:
   how: Apply through the coach sign-up link on the program's coach page, or sign up on the volunteer page
     to help at the 5K.
-  drop_in: null
+  drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 3
   basis: No running experience is needed to coach, and the 5K volunteer sign-up is open to anyone. Coaches
@@ -162,6 +162,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
+- url: https://www.gotrphiladelphia.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+  - contacts
+  - locations
+- url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
+  seen: '2026-10-08'
+  fields:
+  - lead
+  - status
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

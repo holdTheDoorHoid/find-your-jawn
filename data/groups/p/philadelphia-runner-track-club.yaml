@@ -3,10 +3,10 @@ name: Philadelphia Runner Track Club
 aka: []
 leads: []
 ein: null
-summary: A competitive training club for post-collegiate runners, founded in 2000, with coaching, training
-  groups and sponsorship support. It has over 200 runners.
-what_you_do: Train in groups on Tuesday track workouts and Sunday long runs, split by distance and pace,
-  after the club accepts you.
+summary: A post-collegiate running club founded in 2000 that trains runners for track, road, cross country
+  and trail races. Members join through an application, and workouts are run in groups.
+what_you_do: After you are accepted, join the Tuesday track workout or the Sunday long run from Lloyd
+  Hall.
 kind: club
 categories:
 - running-cycling-fitness
@@ -16,10 +16,10 @@ motives:
 - enhancement
 formats:
 - team_play
-- learn_skill
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: members
@@ -31,8 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Track Tuesday at 6:30 pm, at Franklin Field or the Temple Sports Complex. Sunday long run at 9
-    am from Lloyd Hall, earlier in summer.
+  text: Track workouts on Tuesdays at 6:30 pm at Franklin Field or Temple Sports Complex, and Sunday long
+    runs at 9 am (earlier in summer) from Lloyd Hall
   days:
   - tue
   - sun
@@ -42,7 +42,7 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Franklin Field or Temple Sports Complex
+- label: Franklin Field or Temple Sports Complex (Tuesday track)
   address: null
   neighborhood: null
   planning_district: null
@@ -51,20 +51,20 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Lloyd Hall
-  address: null
-  neighborhood: null
+- label: Lloyd Hall, Boathouse Row (Sunday long run)
+  address: 1 Boathouse Row
+  neighborhood: fairmount
   planning_district: null
-  zip: null
+  zip: '19130'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: null
-  text: Not stated on the site, including any dues
-commitment: null
+  text: The site does not mention dues or fees
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -78,25 +78,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply through the Apply or Run With Us page. Applications are closed until the next round opens
-    on January 1, 2027.
-  drop_in: null
+  how: Apply through the Run With Us page during an enrollment window. Applications are closed now, and
+    the next window opens January 1, 2027.
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Membership needs an application and a set time standard, and applications are closed until January
-    2027.
+  basis: Entry needs an application and a minimum race time standard, and the next round is not open until
+    2027
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: https://philadelphiarunnertrackclub.com
+  website: https://www.philadelphiarunnertrackclub.com
   email: philadelphiarunnertc@gmail.com
   phone: null
   contact_name: null
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://philadelphiarunnertrackclub.com
+last_sign_of_life: 2025-04
+sign_of_life_url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
 sources:
 - url: https://philadelphiarunnertrackclub.com
   seen: '2026-10-08'
@@ -106,6 +106,20 @@ sources:
   - locations
   - first_step
   - contacts
+  - status
+- url: https://www.philadelphiarunnertrackclub.com
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - locations
+  - first_step
+  - contacts
+- url: https://billypenn.com/2025/04/28/running-groups-guide-list-philadelphia-area/
+  seen: '2026-10-08'
+  fields:
+  - lead
   - status
 research_tier: 1
 confidence: medium

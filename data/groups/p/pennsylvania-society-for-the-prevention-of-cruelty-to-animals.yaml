@@ -1,15 +1,16 @@
 id: pennsylvania-society-for-the-prevention-of-cruelty-to-animals
-name: Pennsylvania SPCA
+name: Pennsylvania SPCA (PSPCA)
 aka:
 - Pennsylvania Society for the Prevention of Cruelty to Animals
-- Pennsylvania SPCA (PSPCA)
+- Pennsylvania SPCA
 leads:
 - irs_bmf:231352269
 ein: '231352269'
-summary: The Pennsylvania SPCA's Philadelphia headquarters on East Erie Avenue offers hands-on volunteer
-  work with dogs, cats and adoption events, plus a foster program.
-what_you_do: Walk dogs, socialize cats and kittens, help at off-site adoption events, plan fundraisers,
-  do office work, or foster an animal at home.
+summary: A large animal shelter and rescue with a Philadelphia headquarters on Erie Avenue. It places
+  animals in foster homes and welcomes adult volunteers for animal care, adoption events and special events.
+what_you_do: Volunteers socialize dogs and cats, help at adoption and special events, or support office
+  work. Foster homes care for animals until they are adopted, and the shelter provides food, supplies
+  and vet care at no cost.
 kind: nonprofit
 categories:
 - animals
@@ -23,7 +24,6 @@ formats:
 - side_by_side
 roles:
 - hands_on
-- organize
 crowd:
 - all_adults
 bridging: null
@@ -54,8 +54,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: null
+  level: free
+  text: Fostering costs the foster home nothing. The shelter provides food, crates, litter, medication
+    and free veterinary care.
 commitment: null
 group_size: null
 access:
@@ -70,15 +71,21 @@ requirements:
   kids_ok: false
   gear: null
 first_step:
-  how: Choose the program you want on the volunteer page, then use its Apply link for the Philadelphia
-    location.
+  how: Choose the Philadelphia headquarters on the volunteer page and apply online through Volgistics.
+    You must be 18 or older.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Each location has its own application, and volunteers are trained before they work with little
-    supervision.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The volunteer application is online, and the shelter holds public adoption and fundraising events
+    where you can see the work first. The page does not state how long training lasts.
+  what_to_expect: Expect an online application for the location you pick, then training. Once trained,
+    volunteers must work with minimal supervision, and the roles include dog or cat socialization, adoption
+    and special events, and office support. The pages do not state training length or hours per week.
+  first_visit_tips:
+  - Expect animal dander and cleaning chemicals in the work areas, and be ready for an emotionally charged
+    setting, as the volunteer page warns.
+  - Public adoption and special events are a way to see the shelter before you apply.
+  - Volunteers must be 18 or older.
 contacts:
   website: https://www.pspca.org
   email: foster@pspca.org
@@ -87,7 +94,7 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-09
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.pspca.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
@@ -104,6 +111,8 @@ sources:
   - status
   - last_sign_of_life
   - contacts
+  - what_you_do
+  - access.languages
 - url: https://pspca.org/volunteer/
   seen: '2026-10-08'
   fields:
@@ -111,11 +120,13 @@ sources:
   - audience
   - locations
   - first_step
+  - requirements.kids_ok
 - url: https://pspca.org/foster/
   seen: '2026-10-08'
   fields:
   - what_you_do
   - interests
+  - cost
 - url: https://www.pspca.org/volunteer
   seen: '2026-10-08'
   fields:
@@ -133,8 +144,8 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
-confidence: medium
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: A Catholic parish in Center City on South 13th Street, with Sunday Masses, a Saturday vigil,
   and weekday lunchtime Masses.
-what_you_do: Come to a weekday lunchtime Mass or a Sunday Mass. The page lists no community programs.
+what_you_do: Come to Mass, on a weekday at lunchtime or on a Sunday. The parish site links to a young
+  adult group (Jack's YACs) but does not describe what it does.
 kind: congregation
 categories:
 - faith-community
@@ -30,9 +31,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8:30 am, 10:30 am, 12:30 pm and 6 pm. Saturday vigil at 5:15 pm. Weekday Masses
-    at 7:45 am, 8:30 am, 12:05 pm, 1:05 pm and 5:15 pm. Confession Wednesday to Saturday, 3:30 to 4:45
-    pm.
+  text: Sunday Masses at 8:30 am, 10:30 am (also streamed online), 12:30 pm and 6 pm. Saturday vigil Mass
+    at 5:15 pm. Monday to Saturday Masses at 7:45 am, 12:05 pm and 5:15 pm. Confession Wednesday to Saturday,
+    3:30 to 4:45 pm. Eucharistic adoration Monday to Saturday, 12:45 to 4:50 pm.
   days:
   - sun
   - mon
@@ -50,6 +51,15 @@ schedule:
 locations:
 - label: Church
   address: 21 S. 13th St.
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Parish office
+  address: 1212 Ludlow St. (adjacent to the friary)
   neighborhood: null
   planning_district: null
   zip: '19107'
@@ -75,22 +85,31 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Drop in at any listed Mass, or call the Mass information line
+  how: Drop in at a weekday lunchtime Mass or any Sunday Mass. To join the parish, fill in the online
+    registration form on the parish website, or call the office at 215-563-4145.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and a Mass information line is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to the public, and the parish has an online registration form and a phone line;
+    no newcomer program is listed.
+  what_to_expect: Mass is free and open to the public. The site does not describe what a visit is like
+    or how long Mass runs. Several Masses are offered each day, so visitors can pick a time that suits
+    them.
+  first_visit_tips:
+  - Go to the church at 21 S. 13th St. for Mass. The parish office is a separate address, 1212 Ludlow
+    St.
+  - The online registration form has five sections and asks about your household and whether you want
+    offering envelopes. A printable PDF is available.
+  - The site lists no office hours or parish email address, only a contact form and the phone line.
 contacts:
   website: https://www.stjohnsphilly.org
   email: null
-  phone: 215-563-5432
+  phone: 215-563-4145
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-06
 sign_of_life_url: https://www.stjohnsphilly.org
 sources:
 - url: https://archphila.org/parish/st-john-the-evangelist-philadelphia/
@@ -106,7 +125,27 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.stjohnsphilly.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts
+  - status
+- url: https://www.stjohnsphilly.org/parish-registration/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - contacts
+- url: https://www.stjohnsphilly.org/register
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://stjohnsphilly.org/jacksyacs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

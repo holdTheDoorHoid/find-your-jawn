@@ -1,21 +1,23 @@
 id: phillymesh-philly-mesh
-name: PhillyMesh
+name: PhillyMesh (Philly Mesh)
 aka:
-- PhillyMesh (Philly Mesh)
+- PhillyMesh
 leads: []
 ein: null
-summary: A Philadelphia-area group of people who experiment with mesh networking, using small radio nodes
-  called Meshtastic and MeshCore.
-what_you_do: Chat with local members on the group's Discord, learn to set up and flash mesh radio nodes,
-  and try out decentralized networks.
+summary: Hobbyists who build and run Meshtastic and MeshCore radio nodes across the Philadelphia area,
+  and who share how-to guides for newcomers. They also experiment with AREDN mesh networks.
+what_you_do: Join the Philly Radio and Mesh Discord to ask questions and meet local people, follow the
+  Getting Started guides to set up a node, and try mesh experiments with other members. Local meetups
+  are announced in the Discord.
 kind: network
 categories:
 - making-tech
 interests:
 - electronics_robotics
+- ham_radio
 motives:
-- understanding
 - enhancement
+- understanding
 formats:
 - learn_skill
 - team_play
@@ -35,7 +37,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No meeting schedule is listed. Community chat runs in a Discord linked from the site.
+  text: No regular meeting is listed. The 2025 Getting Started guide says local meetups happen a few times
+    a year and are announced in the Discord's meetups channel. The same guide says Iffy Books hosts Meshtastic
+    101 events on a regular basis.
   days: []
   times: []
   recurring: null
@@ -43,8 +47,9 @@ schedule:
 locations: []
 online_ok: true
 cost:
-  level: null
-  text: Cost is not shown. The site lists affiliate links to hardware and battery vendors.
+  level: free
+  text: No membership fee is mentioned. Radio hardware is an extra cost, and the guide suggests starting
+    with an inexpensive device.
 commitment: null
 group_size: null
 access:
@@ -59,25 +64,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the group's Discord to talk with local members, or use the Contact page
+  how: Join the Philly Radio and Mesh Discord, with the invite link on phillymesh.net, then start with
+    the Getting Started guide and ask questions in the chat.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: An open invitation to the Discord with no meeting schedule shown, so the first step is online
-    chat.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The Getting Started guide is written for people setting up their first node and gives step-by-step
+    starts, and the MeshCore intro is aimed at people new to it. The public Discord is open to chat. The
+    site does not say that meetups welcome newcomers.
+  what_to_expect: Most of the activity happens in the Discord, where local Meshtastic and MeshCore users
+    answer questions. The guide walks you through a cheap starter node set up by a window for several
+    hours, then a battery node later. The site lists no membership fee, but you will need to buy radio
+    hardware.
+  first_visit_tips:
+  - Read the Getting Started guide first, and check its date, since the guide says some parts may be out
+    of date.
+  - Ask questions in the Discord before you buy hardware.
+  - Watch the Discord meetups channel for the next local event.
 contacts:
-  website: https://phillymesh.net/
-  email: null
+  website: https://phillymesh.net
+  email: hello@phillymesh.net
   phone: null
   contact_name: null
   social:
   - https://discord.gg/MWWbAkRR9v
-  calendar_feed: null
+  calendar_feed: https://phillymesh.net/post/index.xml
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://phillymesh.net/
+sign_of_life_url: https://phillymesh.net/2026/09/02/meshcore-intro
 sources:
 - url: https://phillymesh.net
   seen: '2026-10-08'
@@ -89,6 +103,8 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - contacts
+  - online_ok
 - url: https://phillymesh.net/
   seen: '2026-10-08'
   fields:
@@ -99,7 +115,23 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://phillymesh.net/getting-started
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://phillymesh.net/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://phillymesh.net/2026/09/02/meshcore-intro
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -6,10 +6,11 @@ leads:
 - irs_990n:232285209
 - irs_bmf:232285209
 ein: '232285209'
-summary: A club for anyone who loves plants, founded in 1891. It holds free talks on botany at monthly
-  meetings from September to May, and it also runs field trips, workshops and a yearly journal.
-what_you_do: Come to a free monthly talk, go on a field trip or workshop, or join for the journal Bartonia
-  and member events.
+summary: Plant lovers who have met since 1891 to learn about the region's plants. The club hosts free
+  botany talks at monthly meetings from September to May, and it also runs volunteer-led field trips and
+  publishes a yearly journal.
+what_you_do: Come to a free monthly talk, join a volunteer-led field trip, or join as a member for the
+  journal Bartonia and member events.
 kind: club
 categories:
 - science-learning
@@ -56,14 +57,14 @@ locations:
 online_ok: true
 cost:
   level: free
-  text: Monthly meetings are free and open to the public. Membership, field trip and workshop prices are
-    not listed on the page we read.
+  text: Monthly meetings and most field trips are free and open to the public. Membership is $20 a year,
+    or $10 for students.
 commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The meeting room is wheelchair accessible, according to the club's meetings page.
 requirements:
   act153_clearances: null
   background_check: null
@@ -72,15 +73,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a monthly meeting at the McLean Library, doors open at 6 pm. For a Zoom-only meeting, email
-    philbotclub@gmail.com the week before to get the link.
+  how: Come to a monthly meeting at the McLean Library, doors open at 6 pm. For a Zoom meeting, email
+    philbotclub@gmail.com by 10 pm the day before to get the link.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says anyone with an interest in plants is welcome, and it explains how a non-member
-    can attend, including by Zoom.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The meetings page says the talks are open to the public and that all are welcome, and it explains
+    how a non-member can request the Zoom link.
+  what_to_expect: Doors open at 6 pm, and a short business meeting comes first. A guest speaker gives
+    the talk from about 6:30 pm, and the room closes around 7:30 pm. Some people stay on for an optional
+    dinner at a restaurant across the street.
+  first_visit_tips:
+  - Check the meetings page first, since some evenings are Zoom only or hybrid.
+  - To join, pay online or mail the membership form to the club's mailing address, which the membership
+    page gives.
+  - Arrive around 6 pm, when doors open.
 contacts:
   website: https://www.philbotclub.org
   email: philbotclub@gmail.com
@@ -88,9 +95,9 @@ contacts:
   contact_name: Academy of Natural Sciences
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.philbotclub.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.philbotclub.org/meetings
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,8 +127,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://www.philbotclub.org/meetings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - online_ok
+  - access
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.philbotclub.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - commitment
+  - first_step
+- url: https://www.philbotclub.org/field-trips-workshops
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

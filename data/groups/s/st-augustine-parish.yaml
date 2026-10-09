@@ -5,9 +5,10 @@ leads: []
 ein: null
 summary: A Catholic parish near 4th and Vine streets in Old City with Filipino and young adult community
   groups, Sunday Socials and a History Fair. Its ministries include liturgy, music and outreach.
-what_you_do: Join the young adult community or the Filipino community, come to Sunday Socials, or volunteer
-  through the outreach, liturgy or music ministries. Adults who want to become Catholic can join the Becoming
-  Catholic program.
+what_you_do: Join the young adult community or the Filipino community, come to Sunday Socials after Mass,
+  or volunteer. Volunteer roles include lectors, communion ministers, music, gardening and cleaning, and
+  food prep and service for the Gift of Life Family House on Sundays and Tuesdays, offsite. Adults who
+  want to become Catholic can join the Becoming Catholic program.
 kind: congregation
 categories:
 - faith-community
@@ -17,6 +18,7 @@ interests:
 - worship_music
 - young_adult_social
 - congregation_social
+- faith_service_projects
 motives:
 - values
 - social
@@ -41,7 +43,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 9 am, 11 am and 7 pm. Weekday Mass at 12:05 pm.
+  text: Sunday Masses at 9 am, 11 am and 7 pm. Weekday Mass at 12:05 pm. Coffee and donuts follow the
+    9 am and 11 am Masses in the parish hall. The young adult group mostly gathers at the 7 pm Mass.
   days:
   - mon
   - tue
@@ -68,13 +71,14 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend.
+  text: Mass is free to attend. The socials page does not mention a cost.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The church has a wheelchair-accessible entrance by ramp and a wheelchair-accessible restroom.
+    The Rev. Matthew Carr, OSA Parish Hall is also wheelchair accessible.
 requirements:
   act153_clearances: null
   background_check: null
@@ -83,14 +87,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Join the Parish form on the site or call 215.627.1838 to register.
+  how: Come to a Sunday Mass, then download the Registration Form from the parish website and drop it
+    in the Sunday basket or email it to the parish office.
   drop_in: true
   sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The site has a Join the Parish form, a Becoming Catholic page for adults, and several named community
-    groups, and it says how to register.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a registration form, a Becoming Catholic page for adults, and a young adult gathering
+    that invites newcomers to join in. It names the parish phone and email. It does not describe an orientation.
+  what_to_expect: Sunday Mass is free and open to anyone, at 9 am, 11 am or 7 pm. Coffee and donuts follow
+    the 9 am and 11 am Masses in the parish hall. The young adult group is for adults from about 24 into
+    their thirties, mostly gathers at the 7 pm Mass, and invites newcomers to join in with whatever they
+    bring to the conversation.
+  first_visit_tips:
+  - If you want the young adult group, plan on the 7 pm Mass.
+  - Stay after the 9 am or 11 am Mass for coffee and donuts in the parish hall to meet people.
+  - The church has a ramp entrance and an accessible restroom if you use a wheelchair.
+  - Ask the parish office about the 7 pm socials, since the site does not list them.
 contacts:
   website: http://www.st-augustinechurch.com
   email: staugustineparish09@gmail.com
@@ -111,6 +123,9 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - schedule
+  - cost
+  - access
 - url: https://archphila.org/parish/st-augustine-philadelphia/
   seen: '2026-10-08'
   fields:
@@ -118,7 +133,27 @@ sources:
   - locations
   - schedule
   - ministries
-research_tier: 1
+- url: http://www.st-augustinechurch.com/join-the-parish
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: http://www.st-augustinechurch.com/our-young-adult-community
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: http://www.st-augustinechurch.com/sunday-socials
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - contacts
+- url: http://www.st-augustinechurch.com/ministry-at-st-augustine
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -55,7 +55,7 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free. The site also takes donations to pay live bands.
+  text: Free. Donations help cover tech costs and pay for live bands.
 commitment: drop_in
 group_size: null
 access:
@@ -75,10 +75,17 @@ first_step:
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Free and open to anyone who shows up. The site does not say whether lessons or dance experience
-    are needed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free and open to anyone who shows up, and the about page sets no experience requirement, but
+    formal lessons at the dance are rare, so the rating stays at 3.
+  what_to_expect: Expect a free, DJ'd swing dance on the square's brick surface, mostly Lindy Hop and
+    Charleston, with all jazz dance styles welcome. Formal lessons are rare at the Sunday dance, though
+    some regulars may show newcomers a few basics. The dance runs rain or shine, and it is sometimes held
+    in the center of the park instead of the southwest corner.
+  first_visit_tips:
+  - Check the website and Discord around 1 pm on the day, since weather or venue changes are posted there.
+  - Wear shoes you can dance in, since the square's surface is brick.
+  - For a lesson first, the about page points to a Thursday beginner class across the street run by Jazz
+    Attack. Check its time and price with them, since listings differ.
 contacts:
   website: https://www.rittenhop.org
   email: null
@@ -88,7 +95,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.rittenhop.org
+sign_of_life_url: https://rittenhop.org/updates/jam-session-at-liberty-garden/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,7 +121,20 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://www.rittenhop.org/about/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - first_step
+  - first_visit_tips
+  - audience.open_to
+- url: https://www.rittenhop.org/events/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

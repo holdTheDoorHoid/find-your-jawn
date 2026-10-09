@@ -5,18 +5,28 @@ leads: []
 ein: null
 summary: A Catholic parish near Fifth Street and Godfrey Avenue with Masses in English, Vietnamese and
   Spanish.
-what_you_do: Come to Mass in English, Vietnamese or Spanish. The Archdiocese page lists no other public
-  programs.
+what_you_do: Come to Mass in English, Vietnamese or Spanish. The parish lists ministries you can join,
+  including lector, usher, choir, guitar group, catechist for grades 1 to 8, food bank volunteer, and
+  volunteer cook for homebound neighbors. Adults who are not yet Catholic can call the rectory about the
+  RCIA sessions.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
+- worship_music
+- faith_youth_programs
+- faith_service_projects
+- food_pantry
 motives:
 - values
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
+- help_teach
+- organize
 crowd:
 - all_ages
 bridging: null
@@ -32,24 +42,26 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8 and 11:15 am, at 9:30 am in Vietnamese, and at 12:30 pm in Spanish. Weekday
-    Mass at 8 am. Saturday confession 4 to 4:30 pm.
+  text: Saturday vigil Mass at 4:30 pm. Sunday Masses at 8 am, 9:30 am (Vietnamese), 11:15 am and 12:30
+    pm (Spanish). Weekday Mass at 8 am Monday to Saturday. First Fridays at 8 am and 7 pm. Holy days at
+    8 am and 9 am, plus a 7 pm Mass in three languages. Saturday confession 4 to 4:30 pm.
   days:
-  - sun
   - mon
   - tue
   - wed
   - thu
   - fri
   - sat
+  - sun
   times:
   - morning
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Church (5th St. and Godfrey Ave.)
-  address: 5th St. and Godfrey Ave.
+  address: 6161 N. 5th St.
   neighborhood: null
   planning_district: null
   zip: '19120'
@@ -65,7 +77,10 @@ commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - vi
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -75,16 +90,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory to ask about parish groups
+  how: Come to a Sunday Mass (8 am, 9:30 am in Vietnamese, 11:15 am, or 12:30 pm in Spanish), then call
+    the office at 215-424-1300 to ask about a ministry or the RCIA sessions.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone. The site lists a phone line and an email, and the ministries page says
+    to contact the parish to join. No newcomer program is described.
+  what_to_expect: Mass is free, and it is offered in English, Vietnamese and Spanish, so you can pick
+    the time that fits your language. A guitar group plays at the 11:15 am Mass twice a month. The rectory
+    is open 9 am to 5 pm on weekdays, closed noon to 1 pm, if you want to ask about joining.
+  first_visit_tips:
+  - Rectory hours are Monday to Friday, 9 am to 5 pm, closed noon to 1 pm, so call before you come by.
 contacts:
   website: https://www.sainthelenaparish.net
-  email: null
+  email: office@sainthelenaparish.net
   phone: 215-424-1300
   contact_name: null
   social: []
@@ -107,8 +127,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.sainthelenaparish.net
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - locations
+  - contacts
+  - access
+- url: https://www.sainthelenaparish.net/ministries/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - categories
+  - roles
+  - first_step
+- url: https://www.sainthelenaparish.net/becoming-catholic/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

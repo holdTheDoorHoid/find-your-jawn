@@ -5,10 +5,11 @@ leads:
 - irs_990n:842117685
 - irs_bmf:842117685
 ein: '842117685'
-summary: A West Philadelphia nonprofit that offers mentoring, life skills and grocery help to youth, families
-  and older adults, with a focus on young people affected by violence.
-what_you_do: Find a program through the Get Help page; services run at partner sites such as recreation
-  centers and libraries. Volunteers can use the Volunteer page, though the steps are not described there.
+summary: A West Philadelphia nonprofit that offers mentoring, tutoring, food help and life skills to youth,
+  families and older adults, with a focus on young people affected by violence.
+what_you_do: Pick a program from the Get Help page, or call to ask which one fits. Services run at partner
+  sites such as recreation centers and libraries. Volunteers sign up through a form on the Volunteer page,
+  which lists about 40 roles from event helpers to youth mentors and grant writers.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -17,14 +18,19 @@ categories:
 interests:
 - violence_prevention
 - mentoring
+- tutoring
 - food_pantry
 motives:
 - values
 - protective
 formats:
 - learn_skill
-roles: []
+roles:
+- hands_on
+- help_teach
+- organize
 crowd:
+- kids
 - teens
 - families
 - seniors
@@ -39,8 +45,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site lists hours of 4:00 to 7:30 pm on Tuesdays, Wednesdays and Thursdays. The page does not
-    say which services these hours cover.
+  text: Office hours are Tuesday to Thursday, 4:00 to 7:30 pm. Programs run at partner sites, so each
+    program sets its own days and times.
   days:
   - tue
   - wed
@@ -48,7 +54,7 @@ schedule:
   times:
   - daytime
   - evening
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: West Philadelphia, at partner sites such as recreation centers and libraries
@@ -62,8 +68,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Food giveaways are free. PJ and Pages costs $20 per child per year. Career coaching asks for a
+    small donation when possible. The site gives no fee for other programs.
 commitment: null
 group_size: null
 access:
@@ -75,18 +82,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call (445) 208-0177 or use the Contact page on the website to ask which program fits you, or start
-    on the Get Help page.
+  how: Call (445) 208-0177, use the Contact Now button or the form on the Contact page to ask which program
+    fits, or use the Sign Up to Volunteer form on the Volunteer page.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site has a Get Help page for finding programs and a phone number to call. Volunteer steps
-    are not explained.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Programs are open to the public, and the site gives a phone number, a contact form and a sign-up
+    route for volunteers. It does not say whether walk-ins are welcome.
+  what_to_expect: The page does not describe a first visit. Programs meet at partner sites, so the place
+    and time depend on the program, and the office keeps hours on Tuesday to Thursday, 4:00 to 7:30 pm.
+    Food giveaways are free, and the group also holds events such as a 2026 holiday event for families.
+  first_visit_tips:
+  - Call (445) 208-0177 before you go to ask which program fits.
+  - Ask whether walk-ins are welcome, since the page does not say.
+  - Check the Events page, but note that many listed events do not print a date.
 contacts:
   website: https://phillypeaceinprogress.org
   email: null
@@ -127,7 +139,25 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://phillypeaceinprogress.org/get-help.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: https://phillypeaceinprogress.org/volunteer.html
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - first_step
+- url: https://phillypeaceinprogress.org/events.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - sign_of_life_url
+  - what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -4,15 +4,17 @@ aka: []
 leads: []
 ein: null
 summary: A Catholic parish near 43rd and Wallace Streets in West Philadelphia with a 10 am Sunday Mass
-  and a weekday Mass at 9:30 am. A food cupboard is also listed at the parish address.
-what_you_do: Come to the Sunday 10 am Mass or a weekday Mass. A St. Ignatius Food Cupboard at 636 N. 43rd
-  St., 19104 is named on the Archdiocese July 3, 2026 day of service list, with no hours shown.
+  and a Tuesday food pantry for people who live in the 19104 zip code.
+what_you_do: Come to the Sunday 10 am Mass. Children can join PREP on Sundays after Mass, or sacramental
+  preparation on Saturday mornings, through the religious education office. People who live in the 19104
+  zip code can apply to the Tuesday food pantry at 636 N. 43rd St., and should bring identification.
 kind: congregation
 categories:
 - faith-community
 - hunger-housing-basic-needs
 interests:
 - worship_community
+- faith_youth_programs
 - food_pantry
 motives:
 - values
@@ -32,17 +34,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Mass at 10 am. Weekday Mass Monday to Friday at 9:30 am at the St. Ignatius nursing home
-    chapel, 4401 Haverford Ave. Sunday confession 7:45 to 8:45, and by appointment.
+  text: Sunday Mass at 10 am. Weekday Mass on the first Wednesday of the month at 9:30 am at West Park
+    Nursing Home. Holy days at 10 am and 7 pm. Reconciliation before Sunday Mass, 9:15 to 9:45 am, or
+    by appointment. The food pantry committee meets Tuesdays 10 am to noon, and the pantry is closed on
+    holidays and the fifth Tuesday of the month.
   days:
   - sun
-  - mon
   - tue
   - wed
-  - thu
-  - fri
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -55,7 +57,16 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Nursing home chapel (weekday Mass)
+- label: Food pantry and parish office
+  address: 636 N. 43rd St.
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Weekday Mass (first Wednesday, West Park Nursing Home)
   address: 4401 Haverford Ave.
   neighborhood: null
   planning_district: null
@@ -82,13 +93,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to the Sunday 10 am Mass, or call the rectory to ask about the weekday Mass
+  how: Come to the Sunday 10 am Mass at the church at 43rd and Wallace Streets. To ask about religious
+    education or the food pantry, call the parish at 215-386-5065.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Sunday Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Sunday Mass is open to anyone. The site has a register option and a phone line, and the food
+    pantry page explains how to apply. No newcomer program is described.
+  what_to_expect: Mass is free and open to anyone, so you can come and sit. For food help, the pantry
+    asks you to show identification and apply before you get a bag of groceries, and pickups happen once
+    a month. Children's religious education meets on Sundays after Mass for PREP, with Saturday morning
+    classes for sacramental preparation.
+  first_visit_tips:
+  - Bring identification if you are applying for food help.
+  - The parish office is open 9 am to 4 pm, Monday to Thursday, and closed on Fridays.
 contacts:
   website: https://www.stignatiuswestphilly.org
   email: null
@@ -96,8 +114,8 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.stignatiuswestphilly.org
 sources:
 - url: https://archphila.org/parish/st-ignatius-of-loyola-philadelphia/
@@ -118,7 +136,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.stignatiuswestphilly.org
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - contacts
+  - status
+  - last_sign_of_life
+  - first_visit_tips
+- url: https://www.stignatiuswestphilly.org/outreach/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - first_step
+  - cost
+- url: https://www.stignatiuswestphilly.org/religious-education/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - interests
+- url: https://www.stignatiuswestphilly.org/register/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

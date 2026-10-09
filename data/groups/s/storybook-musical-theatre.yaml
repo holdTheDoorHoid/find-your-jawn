@@ -19,7 +19,9 @@ formats:
 - one_off_event
 - learn_skill
 roles: []
-crowd: []
+crowd:
+- families
+- kids
 bridging: null
 audience:
   open_to: public
@@ -31,50 +33,77 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'The 2026 to 2027 season runs in short runs: December 17 to 30, 2026; March 9 to 20, 2027; May
-    4 to 16, 2027; and July 13 to 24, 2027. Class and audition dates are on the linked pages.'
+  text: Runs a short season of family musicals in several runs from winter to summer. Theatre classes
+    are offered in sessions with their own registration windows.
   days: []
   times: []
   recurring: true
   season: event_only
-locations: []
+locations:
+- label: Mandell Campus Theater, Melrose Park (formerly Gratz College Theater)
+  address: 7605 Old York Rd
+  neighborhood: null
+  planning_district: null
+  zip: '19027'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+- label: Giant Community Rooms, Willow Grove (theatre classes)
+  address: 315 York Road
+  neighborhood: null
+  planning_district: null
+  zip: '19090'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Prices are not on the page. Tickets are sold through a linked ticket page.
+  text: Theatre class tuition for a ten-session fall class is $155 to $180, plus a $20 registration fee
+    that season subscribers skip. Show tickets are sold through the ticket pages linked from the site.
 commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site describes sensory friendly performances, with low lighting, reduced sudden sounds, earplugs
+    and noise-cancelling headphones available, a quiet lobby area, and the option to leave and return
+    during the show.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Buy tickets through the site's ticket link, or check the Theater Classes and 2026 to 2027 Auditions
-    pages
+  how: Register for a theatre class by sending the registration form and emergency contact form with payment,
+    or buy show tickets through the site's ticket link.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Classes and auditions are linked, but the pages I could read gave no dates, fees or requirements,
-    so the way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Classes are open to the public by age, with a clear registration step and tuition listed. The
+    audition page linked from the site gave no dates or requirements when read.
+  what_to_expect: The fall class meets on Mondays for ten sessions, split into two age groups, and ends
+    with a student showcase at the Mandell Campus Theater in Melrose Park. Registration is not complete
+    until both forms and payment arrive. The site does not describe a trial class.
+  first_visit_tips:
+  - Early registration costs less, according to the class page.
+  - Free parking is available on the theatre grounds and on Melrose Avenue.
+  - Turn into the first driveway on the left off Melrose Avenue, then use the door in the middle of the
+    building.
 contacts:
   website: https://storybookmusical.org
-  email: null
+  email: classes@storybookmusical.org
   phone: 215-659-8550
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://storybookmusical.org
+sign_of_life_url: https://storybookmusical.org/classes
 sources:
 - url: https://storybookmusical.org
   seen: '2026-10-08'
@@ -86,8 +115,29 @@ sources:
   - first_step
   - contacts
   - commitment
-research_tier: 1
+- url: https://storybookmusical.org/classes
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - schedule
+  - cost
+  - first_step
+  - requirements.kids_ok
+  - contacts
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_to_expect
+- url: https://storybookmusical.org/directions-parking
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+- url: https://storybookmusical.org/sensory-friendly
+  seen: '2026-10-08'
+  fields:
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
-hidden: false
-hidden_reason: null
+hidden: true
+hidden_reason: out_of_scope

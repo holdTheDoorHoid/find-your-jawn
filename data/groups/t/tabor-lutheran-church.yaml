@@ -5,10 +5,9 @@ leads:
 - irs_bmf:231365233
 ein: '231365233'
 summary: A Lutheran congregation in North Philadelphia with Sunday worship at 10:30 am, in person and
-  online. The church runs Katie's Cupboard, a food pantry at its building, but the site does not list
-  its hours.
-what_you_do: Attend Sunday worship in person or watch the virtual service, or call or email to ask about
-  the pantry.
+  online. The church runs Katie's Cupboard, a food pantry at its building that is open Thursday mornings.
+what_you_do: Visit Katie's Cupboard on a Thursday morning for food, or attend Sunday worship at 10:30
+  am in person or watch the virtual service.
 kind: congregation
 categories:
 - hunger-housing-basic-needs
@@ -34,10 +33,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10:30 am in person, with a virtual service posted on Sundays. Katie's Cupboard
-    hours are not listed.
+  text: Sunday worship at 10:30 am in person, with a virtual service usually posted by 6 pm on Sundays.
+    Communion on the first and third Sundays. Katie's Cupboard food pantry is open Thursdays, 10 am to
+    noon.
   days:
   - sun
+  - thu
   times:
   - morning
   recurring: true
@@ -52,7 +53,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Katie's Cupboard food pantry
+- label: Katie's Cupboard food pantry (back door of the church)
   address: 4860 N Howard Street
   neighborhood: null
   planning_district: null
@@ -64,13 +65,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the site
+  text: Not listed on the site.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'no'
   languages: []
-  notes: null
+  notes: The church says the sanctuary is not wheelchair accessible. The site does not say whether the
+    pantry entrance is step-free.
 requirements:
   act153_clearances: null
   background_check: null
@@ -79,20 +81,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend Sunday worship at 10:30 am, or call or email to ask about the pantry.
+  how: Go to Katie's Cupboard on a Thursday between 10 am and noon, using the back door of the church
+    at 4860 N Howard Street.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site invites visitors to Sunday worship and gives a phone and email, but describes no newcomer
-    program.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The pantry is open to anyone facing food insecurity on set Thursday hours, and the church invites
+    visitors to Sunday worship. The site lists no newcomer program.
+  what_to_expect: The pantry is open Thursdays from 10 am to noon at the back door of the church. Most
+    of its food comes from SHARE, and you fill in a registration form for that food. Masks are required
+    in the pantry, and bringing your own bags helps because the pantry hands out bags to people.
+  first_visit_tips:
+  - Wear a mask, which the pantry asks everyone to do.
+  - Bring your own bags to take food home, if you have them.
+  - Call the church office at 215-455-1706 before you come if you need step-free entry, since the site
+    says the sanctuary is not wheelchair accessible.
+  - Ask the office what food is available to people who do not register, since the pantry says some food
+    can still be given out.
 contacts:
   website: http://www.taborphila.org/
   email: taborphila@gmail.com
   phone: 215-455-1706
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/taborphila/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -114,11 +126,20 @@ sources:
   - first_step
   - contacts
   - status
+  - access
 - url: https://www.sepa.org/_files/ugd/6750c7_016223f99ae44b8780c2e8db3e12ea90.pdf
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: http://www.taborphila.org/katies-cupboard
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - requirements
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

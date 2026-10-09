@@ -7,8 +7,9 @@ leads:
 ein: '364678622'
 summary: A Philadelphia dog rescue that cares for overlooked dogs in a kennel facility, places them in
   adoptive homes, and asks for foster homes and adult volunteers.
-what_you_do: The website has a Foster Application and an Adult Volunteer Application. The page did not
-  describe the roles, so ask what the work involves.
+what_you_do: Volunteers walk dogs, help at events, clean kennels, and help with transport. You can also
+  foster a dog, help with events and fundraising, or do photography or content work. Start with the Adult
+  Volunteer Application or the Foster Application on the website.
 kind: nonprofit
 categories:
 - animals
@@ -21,7 +22,8 @@ formats:
 - side_by_side
 roles:
 - hands_on
-crowd: []
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -33,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Office hours are Tuesday to Saturday 11 am to 5 pm and Sunday noon to 5 pm. Closed Monday. Visits
-    to dogs are by appointment only.
+  text: Office hours are Tuesday to Saturday 11 am to 5 pm and Sunday noon to 5 pm, closed Monday. Visits
+    to dogs are by appointment only, and walk-ins are not accepted.
   days:
   - tue
   - wed
@@ -59,8 +61,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
-commitment: null
+  text: The FAQ lists no fees for visiting, volunteering or fostering.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -74,15 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply through the Foster Application or Adult Volunteer Application on the website, or call or
-    email the rescue.
+  how: Submit the Adult Volunteer Application on the website, or the Foster Application if you want to
+    foster, then attend the mandatory 60-minute orientation.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Public foster and volunteer applications are listed, but the page does not explain the steps
-    or time commitment.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers and fosters must apply before they can see the work, and every role starts with a
+    mandatory orientation. Visits to dogs are only for approved applicants.
+  what_to_expect: Volunteers commit to at least two shifts or one event each month, and shift lengths
+    are not listed. Volunteers must be 18 or older, have a current tetanus vaccine, and have no history
+    of animal cruelty charges or violent crime convictions.
+  first_visit_tips:
+  - Check that you are 18 or older and have a current tetanus vaccine before you apply.
+  - Plan for the 60-minute orientation, which every role requires.
+  - Visits to the dogs are by appointment only, so call or email before you come.
+  - The page gives no orientation dates, so ask when the next one is.
 contacts:
   website: https://streettails.org
   email: info@streettails.org
@@ -110,8 +118,27 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
-confidence: low
+- url: https://streettails.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - commitment
+  - first_step
+  - first_visit_tips
+  - requirements
+  - what_to_expect
+- url: https://streettails.org/faq
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+  - first_visit_tips
+- url: https://streettails.org/foster-application
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

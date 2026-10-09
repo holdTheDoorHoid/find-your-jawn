@@ -30,8 +30,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The 11th annual awards were on Oct 3, 2026. Dinners and historic tours are listed on the site
-    with their own dates.
+  text: The main awards gala is held once a year. Networking dinners and historic tours are posted on
+    the site with their own dates.
   days: []
   times: []
   recurring: null
@@ -40,7 +40,8 @@ locations: []
 online_ok: null
 cost:
   level: paid
-  text: Tickets are sold. No base ticket price is shown on the page, though a discount code is promoted.
+  text: Tickets are sold for the awards gala, dinners and tours. Prices were not shown on the pages read,
+    which mention a ticket donation amount without a figure.
 commitment: null
 group_size: null
 access:
@@ -55,14 +56,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket on the site, or use the Get Involved link on the contact page.
-  drop_in: null
-  sign_up_needed: null
+  how: Buy a ticket to the next awards gala, a dinner or a tour on the Buy Tickets page, or use the Get
+    Involved link on the contact page to ask about events.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Events are open to the public but ticketed, and the page does not describe a route for newcomers
-    beyond tickets.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are open to the public but sold as tickets, prices are not shown on the pages read, and
+    the Get Involved path leads mostly to sponsors and donors.
+  what_to_expect: The awards gala is an evening event at the Restaurant School at Walnut Hill College,
+    where community leaders receive commissioned portraits and awards. Single tickets and tables are sold,
+    and the ticket page offers tables of ten. Historic tours cover sites in Germantown, Center City and
+    South Philadelphia, and Wynnefield and West Philadelphia, but the tour pages give no dates, meeting
+    places or prices.
+  first_visit_tips:
+  - Check the Buy Tickets page for current prices before you plan.
+  - Plan for a long evening, since the gala runs from late afternoon into the night.
+  - Ask through the contact page about tour dates and meeting places, since they are not posted.
+  - Decide between a single ticket and a table, since both are sold.
 contacts:
   website: https://philadelphialegacy.org
   email: null
@@ -72,7 +82,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://philadelphialegacy.org/
+sign_of_life_url: https://philadelphialegacy.org/buy-tickets
 sources:
 - url: https://philadelphialegacy.org/
   seen: '2026-10-08'
@@ -88,7 +98,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://philadelphialegacy.org/buy-tickets
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://philadelphialegacy.org/legacy-tours
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

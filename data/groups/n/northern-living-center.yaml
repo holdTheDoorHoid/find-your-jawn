@@ -27,7 +27,7 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 60
   max_age: null
   community: []
   faith: null
@@ -60,7 +60,7 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
+  level: free
   text: No membership or program fee is listed. The page invites tax-deductible donations.
 commitment: null
 group_size: null
@@ -73,12 +73,12 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
   how: Call (215) 978-1300 or complete the senior application online, then schedule a tour to meet staff
     and see the activities.
-  drop_in: null
+  drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 3
   basis: 'Older adults are welcome and the site gives a clear way in: call, apply online, or book a tour.
@@ -130,6 +130,21 @@ sources:
   - cost
   - first_step
   - status
+- url: https://www.pcacares.org/wp-content/uploads/2024/08/2024-All-in-one-Brochure-update.pdf
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - locations
+  - contacts
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://pcacares.org/locations/northern-living-center/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'

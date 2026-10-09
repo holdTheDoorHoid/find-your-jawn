@@ -1,0 +1,81 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-111",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 0,
+  "fetches_used": 7,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["irs_990n:843440535", "irs_bmf:843440535"],
+        "group_id": "youth-with-a-mission-greater-philadelphia-inc",
+        "ein": "843440535",
+        "website": "https://www.ywamphiladelphia.org"
+      },
+      "verdict": "publish",
+      "name": "Youth With a Mission Greater Philadelphia",
+      "summary": "A Christian mission group that offers free prayer in public places each week and does street outreach in the city. It also hosts short mission teams and helps churches take part.",
+      "what_you_do": "Pray with people at the Thursday Center City outreach, join an outreach team, bring a church team to serve in the city, or take evangelism training at the Messenger School.",
+      "kind": "nonprofit",
+      "categories": ["faith-community"],
+      "interests": ["faith_service_projects"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Prayer outreach in Center City every Thursday, 11 am to 2 pm; prayer stations also run at churches across Greater Philadelphia.",
+        "days": ["thu"],
+        "times": ["daytime"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Office (as published)", "address": "7500 Germantown Avenue", "zip": "19119", "in_city": true},
+        {"label": "Thursday prayer outreach, Center City", "neighborhood": "center_city", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "No fee is listed for joining the prayer outreach or the volunteer teams."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Fill in the Volunteer Sign-Up form for the Thursday Center City outreach, or email connect@ywamphiladelphia.org to ask how to join.",
+        "newcomer_friendliness": 3,
+        "basis": "The site invites people to join the Thursday outreach, links a volunteer sign-up form, and gives an email address. It does not say beginners are welcome or whether a single visit is fine, so the rating stays at 3.",
+        "what_to_expect": "On a Thursday in Center City, volunteers work a table under a recognizable banner, listen to people who stop by, ask how they can pray for them, and pray with them. Volunteers come from many churches, and talk about faith often grows out of these conversations. The page does not say how long a shift runs or what to wear, so ask the team before your first Thursday.",
+        "first_visit_tips": [
+          "Look for the recognizable banner at the Thursday Center City table.",
+          "When you reach out, send your name, your church or group if you have one, and the outreach you want to join.",
+          "Photos on the site show volunteers in red vests, but the page does not say that is required.",
+          "Call (412) 600-1096 or email connect@ywamphiladelphia.org with questions before you come."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.ywamphiladelphia.org",
+        "email": "connect@ywamphiladelphia.org",
+        "phone": "(412) 600-1096",
+        "contact_name": "Debra Tunney",
+        "social": ["https://www.instagram.com/ywamphiladelphia"]
+      },
+      "status": "probably_active",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.ywamphiladelphia.org", "seen": "2026-10-08", "fields": ["summary", "contacts"]},
+        {"url": "https://ywamphiladelphia.org/index.php/prayer-station-2/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "locations", "status"]},
+        {"url": "https://ywamphiladelphia.org/index.php/get-involved/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://ywamphiladelphia.org/index.php/hosting-teams/", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://ywamphiladelphia.org/index.php/messenger-school-of-evangelism/", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://ywamphiladelphia.org/index.php/contact/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Deep pass on the group's own site. Prayer stations page gives the Thursday Center City outreach (11 am to 2 pm), added as a location with no street address published; the 7500 Germantown Avenue office is kept. The site does not say whether a first visit needs a sign-up, so drop_in and sign_up_needed are left out. The site does not clearly say the prayer outreach is free: it lists no fee for joining, and the cost level free is carried over from tier 1 (flag for review). Status stays probably_active: the only dated item is a 2025 yearly statistic (year only, so no YYYY-MM month for last_sign_of_life). The contact name Debra Tunney is carried over from the IRS and NCCS sources; the site does not name her. The Instagram URL is built from the @ywamphiladelphia handle shown on the contact page. Nearest SEPTA stop is not stated, so it is left out. The Messenger School page gives no length, schedule, cost or application steps, so it is mentioned only in what_you_do. The site has no access, language or calendar information. Joshua Generation is named as a partner, see leads_only."
+    }
+  ],
+  "leads_only": [
+    {"name": "Joshua Generation", "url": "https://www.joshuagenerationofficial.com/", "note": "Teen missions summer program (2027 session listed) named on the YWAM Philadelphia site, and it uses the same Germantown Avenue address. Application and fee information exist. Fetched once; not checked whether it runs separately from YWAM Philadelphia, so it needs its own record in a later pass."}
+  ],
+  "blocked": [],
+  "notes": "One group in this batch. Searches: 0, because the group's site has join, volunteer and outreach pages. Fetches: 6 on the group's own site (the per-group cap) plus 1 on the Joshua Generation lead, which is one over the cap, to meet the rule that leads with websites be checked. No blocks or rate limits. Items flagged for review: the free cost level (carried over from tier 1, not stated outright on the detailed page), and the Instagram URL built from the handle."
+}

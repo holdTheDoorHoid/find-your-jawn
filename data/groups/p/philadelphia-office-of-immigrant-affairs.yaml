@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: The City of Philadelphia office that creates programs for immigrant residents and helps them
   connect to city services and civic life. Each September it runs Welcoming Week, a set of public events.
-what_you_do: Attend a Welcoming Week event or sign up for the office newsletter.
+what_you_do: Attend a Welcoming Week event in September, come to the yearly Welcoming Awards, or sign
+  up for the office newsletter.
 kind: civic
 categories:
 - culture-language-heritage-groups
@@ -34,12 +35,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Welcoming Week runs each September with public events across the city.
+  text: Welcoming Week is a yearly series of community events each September across the city, and some
+    events need you to register. The office also holds an annual Welcoming Awards ceremony.
   days: []
   times: []
   recurring: true
   season: fall
-locations: []
+locations:
+- label: Office
+  address: City Hall, Room 162, Philadelphia, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -58,18 +69,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a Welcoming Week event, or sign up for the newsletter
+  how: Sign up for the office newsletter, then register for a Welcoming Week event that interests you
+    (some events need registration).
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events are open to the public with registration links, and the office has a newsletter sign up.
-    No volunteer sign up was found.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are open to the public, several have registration links, and the office has a newsletter
+    sign up. The site names no volunteer sign up.
+  what_to_expect: Welcoming Week events are public sessions across the city, such as exhibits, civic resource
+    workshops, arts festivals and a wellness workshop. They are aimed at immigrants and the wider community,
+    and the office's pages do not give event prices. Check each listing for the time, place and whether
+    you need to register.
+  first_visit_tips:
+  - Pick an event from the Welcoming Week list and check whether it asks you to register.
+  - Sign up for the newsletter to hear about new events as they are posted.
+  - Call (215) 686-0876 or email OIA@phila.gov if you have questions about city services.
 contacts:
   website: https://www.phila.gov/departments/office-of-immigrant-affairs/
-  email: null
-  phone: null
+  email: OIA@phila.gov
+  phone: (215) 686-0876
   contact_name: null
   social: []
   calendar_feed: null
@@ -86,6 +104,7 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - locations
 - url: https://www.phila.gov/spotlight/welcoming-week-2020/
   seen: '2026-10-08'
   fields:
@@ -95,8 +114,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
-confidence: medium
+- url: https://www.phila.gov/welcoming-week/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.phila.gov/2025-12-04-celebrating-community-and-belonging-highlights-from-philadelphias-2025-welcoming-awards
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

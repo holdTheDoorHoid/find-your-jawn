@@ -3,10 +3,11 @@ name: St. Vincent de Paul Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish at Price and Lena Streets with Sunday Masses at 9 and 10:30 am and weekday
-  Masses at 7 am.
-what_you_do: Come to Mass. The page lists a parish outreach staff member and a St. Vincent de Paul Youth
-  and Young Adult Center at 49 W. Logan St., with no program details.
+summary: A Catholic parish at Price and Lena Streets in Germantown with Sunday Masses at 9 and 10:30 am
+  and weekday Masses at 7 am. It lists nearly 75 ministries.
+what_you_do: Come to Mass, then look at the ministries list. Several groups meet on set days, such as
+  a weekly food pantry on Tuesday mornings, a Wednesday evening Bible study, a Thursday evening choir,
+  and a monthly Centering Prayer group, and most list a contact.
 kind: congregation
 categories:
 - faith-community
@@ -30,8 +31,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 9 am (livestreamed) and 10:30 am. Weekday Mass Monday to Saturday at 7 am. Confession
-    by appointment.
+  text: Sunday Masses at 9 am and 10:30 am; the 10:30 am Mass is livestreamed. Weekday Mass Monday to
+    Saturday at 7 am. Saturday vigil Mass at 4 pm. Adoration follows the first Saturday 7 am Mass until
+    9 am in the rectory chapel. Confession by appointment.
   days:
   - sat
   - sun
@@ -42,6 +44,7 @@ schedule:
   - fri
   times:
   - morning
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -72,13 +75,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory
+  how: Come to the 9 am or 10:30 am Sunday Mass, then call the parish office at 215-438-2925 to ask about
+    the New Parishioner Orientation, which the site says is just getting started.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone and the office phone is listed. The site mentions a new parishioner orientation
+    that is just starting, but gives no date or sign-up steps.
+  what_to_expect: Sunday Mass is at 9 am or 10:30 am, and the 10:30 am Mass is livestreamed. Children
+    have their own Liturgy of the Word at both Sunday Masses, so families can bring kids. Mass is free,
+    and the site does not say how long a Mass runs or what happens afterward.
+  first_visit_tips:
+  - Families can ask about the children's Liturgy of the Word at the 9 am and 10:30 am Masses.
+  - Watch the 10:30 am Mass livestream on the parish website or YouTube first if you want a preview.
+  - Look at the ministries list to find a group that meets on a day that works for you.
+  - Ask the office about the New Parishioner Orientation before you start.
 contacts:
   website: https://www.saint-vincent-church.org
   email: null
@@ -86,8 +97,8 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.saint-vincent-church.org
 sources:
 - url: https://archphila.org/parish/st-vincent-de-paul-philadelphia/
@@ -103,8 +114,23 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.saint-vincent-church.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+- url: https://www.saint-vincent-church.org/ministries
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

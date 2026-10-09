@@ -35,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events come up through the year. Past ones include a back to school giveaway and a health and
-    wellness fair in August, and an open mic night in May.
+  text: Community events come up through the year, such as back to school giveaways, health and wellness
+    fairs and open mic nights. The site lists no regular weekly schedule.
   days: []
   times: []
   recurring: null
@@ -78,14 +78,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch the events page for the next event and come by, or fill out the volunteer form on the group's
-    site
+  how: Email Projectalwaysreceiving@gmail.com, or send an inquiry through the general volunteer form on
+    the Volunteers page, to ask about the next event.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events are open to the public, and the site has a volunteer form and a contact email
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are public, and the Volunteers page welcomes volunteers of any background and offers a
+    form and an email. No upcoming events were listed when checked and the last one was in August 2025,
+    so the way in is currently a form or email.
+  what_to_expect: Past events ran as afternoon community gatherings, from noon to 3 pm or from noon to
+    7 pm, with giveaways, a health and wellness fair and an open mic night. Open mic performers signed
+    up through a form. The page does not say whether events cost money or need registration.
+  first_visit_tips:
+  - Check the events page before you go; no upcoming events were listed when we checked.
+  - Open mic performers sign up through a linked form, so plan ahead if you want to perform.
+  - Past venues have street addresses on the site, but no transit or parking details are given.
 contacts:
   website: https://projectalwaysreceiving.org/
   email: Projectalwaysreceiving@gmail.com
@@ -97,7 +104,7 @@ contacts:
   calendar_feed: null
 status: probably_active
 last_sign_of_life: 2025-08
-sign_of_life_url: https://projectalwaysreceiving.org/events
+sign_of_life_url: https://projectalwaysreceiving.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -128,7 +135,28 @@ sources:
   fields:
   - summary
   - contacts
-research_tier: 1
+  - what_you_do
+- url: https://projectalwaysreceiving.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - locations
+  - first_step
+  - what_to_expect
+- url: https://projectalwaysreceiving.org/volunteers/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://projectalwaysreceiving.org/event/back-to-school-giveaway/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

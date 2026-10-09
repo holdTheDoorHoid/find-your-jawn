@@ -4,17 +4,21 @@ aka: []
 leads:
 - penn_clubs:the-christian-association
 ein: null
-summary: An ecumenical Christian campus ministry for students. It offers weekly meals and discussion,
-  service projects, and faith conversations, and it welcomes people of any religious background.
-what_you_do: Come to the Wednesday dinner and discussion, the monthly Night Church gathering, or another
-  weekly group.
+summary: A Christian community at Penn, open to students, staff and neighbors. It offers a weekly Wednesday
+  dinner and discussion, a free online English class, a mentoring program for West Philadelphia high school
+  students, and a monthly Night Church gathering.
+what_you_do: Come to the Wednesday dinner and discussion, the Thursday English class on Zoom, the Tuesday
+  grad book group, or the monthly Night Church gathering. Ask about the mentoring program if you want
+  to work with high school students.
 kind: student_org
 categories:
 - faith-community
+- culture-language-heritage-groups
 interests:
 - worship_community
 - congregation_social
 - faith_service_projects
+- esl_conversation
 motives:
 - values
 - social
@@ -36,10 +40,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Wednesday dinner and discussion, 6:30 to 8 pm, starting in early September 2026
+  text: Wednesday dinner and discussion, 6:30 to 8 pm. Other weekly groups meet on Tuesdays and Thursdays,
+    and Night Church meets on the first Sunday evening of each month.
   days:
+  - tue
   - wed
+  - thu
+  - sun
   times:
+  - morning
+  - daytime
   - evening
   recurring: true
   season: fall
@@ -53,10 +63,20 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+- label: Most programs (SPARC building)
+  address: 118 S. 37th St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: Slanguage, the English class on Zoom, is free. The site gives no price for the dinner or the other
+    groups.
 commitment: null
 group_size: null
 access:
@@ -71,14 +91,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Wednesday dinner or join the mailing list on the group's site
+  how: Fill in the visit form on upennca.org or email upennca@gmail.com, and the group will contact you
+    to set a time. You can also join the mailing list.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The group says it welcomes every person regardless of religious background and lists a simple
-    way to start
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites visitors to stop in for a visit through a short form and describes a hospitable
+    community where people can come as they are. It does not say whether belief is required, so this rating
+    covers the first visit only.
+  what_to_expect: The Wednesday dinner is a shared meal followed by a discussion of faith and Scripture,
+    from 6:30 to 8 pm. The page does not say where the dinner is held, what it costs, or whether you should
+    bring anything, so ask before you come. Most programs take place at the SPARC building on South 37th
+    Street, so confirm the room first.
+  first_visit_tips:
+  - Send the visit form first, since the group contacts you to set a time.
+  - Ask which room you will meet in, because most programs are at 118 S. 37th St. and the club address
+    is 3637 Chestnut St.
+  - Slanguage meets on Zoom, so you need a phone or computer with internet, and the site points to the
+    group's Facebook page for details.
 contacts:
   website: https://upennca.org/
   email: upennca@gmail.com
@@ -108,6 +138,8 @@ sources:
   - first_step
   - status
   - contacts
+  - last_sign_of_life
+  - first_step.how
 - url: https://pennclubs.com/api/clubs/the-christian-association/?format=json
   seen: '2026-10-08'
   fields:
@@ -115,8 +147,26 @@ sources:
   - what_you_do
   - first_step
   - contacts
-research_tier: 1
-confidence: high
+- url: http://upennca.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - interests
+  - first_visit_tips
+- url: http://upennca.org/who-we-are
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step.basis
+- url: http://upennca.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - first_step.how
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

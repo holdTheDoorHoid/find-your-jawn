@@ -4,18 +4,27 @@ aka: []
 leads:
 - irs_bmf:232240224
 ein: '232240224'
-summary: null
-what_you_do: null
-kind: nonprofit
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+summary: An all-volunteer nonprofit club that promotes cycling in the Philadelphia area. It runs many
+  free group rides each week, sorted by pace, plus social events and bike advocacy.
+what_you_do: Pick a ride by its pace letter (D is the easiest, B+ the fastest), sign up for it on the
+  ride calendar, and ride with the group. Come to the monthly meeting if you want to get involved.
+kind: club
+categories:
+- running-cycling-fitness
+interests:
+- group_bike_rides
+motives:
+- social
+- enhancement
+formats:
+- team_play
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
-  open_to: null
+  open_to: public
   school: null
   min_age: null
   max_age: null
@@ -24,26 +33,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Free group rides most weeks: Tuesdays 9 to 10 am, Fridays and Saturdays about 9:30 am, and Sundays
+    at noon. Each ride lists its own pace.'
+  days:
+  - tue
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: Po Box 30235
-  neighborhood: null
-  planning_district: central
-  zip: '19103'
+- label: Monthly club meeting, Roxborough Memorial Hospital
+  address: 5800 Ridge Ave
+  neighborhood: roxborough
+  planning_district: null
+  zip: '19128'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Group rides are free. The site does not state membership fees.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -57,23 +73,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Pick a ride on the ride calendar and preregister, since most rides need it, or use the Join BCP
+    link
+  drop_in: false
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 4
+  basis: The site says all speeds are welcome, and its calendar describes one slow Sunday ride as suitable
+    for newcomers
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.phillybikeclub.org/newbcp/
   email: null
   phone: null
   contact_name: Robert Doyle
   social: []
   calendar_feed: null
-status: unknown
-last_sign_of_life: null
-sign_of_life_url: null
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.phillybikeclub.org/newbcp/rides/calendar
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -82,8 +100,27 @@ sources:
   - locations
   - contacts.contact_name
   - ein
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://www.phillybikeclub.org/newbcp/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+  - locations
+  - contacts
+- url: https://www.phillybikeclub.org/newbcp/rides/calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+- url: https://bicyclecoalition.org/resources/bike-clubs/
+  seen: '2026-10-08'
+  fields:
+  - lead
+research_tier: 1
+confidence: high
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

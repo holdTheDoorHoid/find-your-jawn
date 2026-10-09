@@ -5,14 +5,17 @@ leads: []
 ein: null
 summary: A program that pairs squash with fitness training, school help, leadership work and long-term
   mentoring. It is based at the Lenfest Center in North Philadelphia.
-what_you_do: Young players take part in squash, fitness, academic support and leadership work. The site
-  also has volunteer and job pages.
+what_you_do: Young players take part in squash, fitness, academic support and leadership work. Adults
+  can volunteer as tutors or squash coaches on weekday afternoons once their clearances are done, or join
+  the Young Friends Network, a group of college students and young professionals who mentor and help out.
 kind: nonprofit
 categories:
 - sports-teams
 - kids-youth-mentoring
 interests:
 - tennis_pickleball
+- youth_coaching
+- tutoring
 - mentoring
 motives:
 - enhancement
@@ -37,12 +40,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Practice days and times are not published. Dated events on the site: SquashSmarts Night at the
-    Phillies on September 22, 2026, and a V.I.P. Night at the U.S. Open Squash Championships on November
-    2, 2026.'
-  days: []
-  times: []
-  recurring: null
+  text: Tutoring and squash coaching happen on weekday afternoons, most often 4 to 6 pm during practice
+    hours, with times worked out one on one. The site does not publish a student practice schedule.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Lenfest Center, 3890 N 10th Street
@@ -54,32 +62,51 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Arlen Specter US Squash Center (SquashSmarts West Philadelphia)
+  address: 25 N 33rd Street, Philadelphia PA 19104
+  neighborhood: null
+  planning_district: null
+  zip: '19104'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Program cost is not stated. The site names two scholarships (Clif Wright and Carols Kids) with
-    no amounts or eligibility.
+  text: The site does not state a program fee. It names two scholarships, the Clif Wright and Carols Kids
+    scholarships, without amounts or eligibility rules.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The contact page names the Broad Street Line, Erie Avenue stop, and the 53 bus from Broad and
+    Erie to the Lenfest Center. The West Philadelphia site is reached from the Market Frankford Line at
+    34th Street, with a trolley connection to 33rd Street, and visitors check in at the front desk.
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call 215-221-6860 to ask how to enroll. The site does not describe an enrollment process.
+  how: Call 215-221-6860 to ask how a young player enrolls. To volunteer as a tutor or coach, fill in
+    the volunteer form and finish the clearances first.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site gives a phone line for questions but does not describe how a new player or family joins.
+    Volunteers need a form, three clearances and a shift sign up before they can start.
+  what_to_expect: Volunteer tutors and coaches work with young players most weekday afternoons, from 4
+    to 6 pm, and the schedule is set one on one. Before a first shift you need a child abuse clearance,
+    a State Police check and an FBI check, and the site says these last five years. The site does not
+    describe what a family does on a first visit, so ask by phone first.
+  first_visit_tips:
+  - Start the clearances early, since they must be finished before you can volunteer.
+  - Call 215-221-6860 before you go, because the site does not describe enrollment steps.
+  - Plan around weekday afternoons, when most tutoring and coaching happens.
 contacts:
   website: http://www.squashsmarts.org/
   email: null
@@ -103,11 +130,29 @@ sources:
   - first_step
   - contacts
   - status
+  - last_sign_of_life
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: http://www.squashsmarts.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - access
+- url: http://www.squashsmarts.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - requirements
+  - first_step
+- url: http://www.squashsmarts.org/young-friends/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

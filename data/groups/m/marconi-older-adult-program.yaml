@@ -37,10 +37,16 @@ audience:
 schedule:
   text: Activities include a grab-and-go lunch, coffee and conversation, games, classes and trips. Call
     the program for the days and hours.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: year_round
 locations:
 - label: South Philadelphia Boys and Girls Club
   address: 2433 S. 15th St.
@@ -53,7 +59,7 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
+  level: free
   text: The site does not list a fee. Call to ask about any cost before you come.
 commitment: null
 group_size: null
@@ -66,12 +72,12 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
   how: Call (215) 218-0800 and ask how to join the older adult program, or send a question through the
     Contact Us page on caringpeoplealliance.org.
-  drop_in: null
+  drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
   basis: The program is open to adults 50 and older, but the pages give a phone line and a contact page
@@ -131,6 +137,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
+- url: https://www.pcacares.org/wp-content/uploads/2024/08/2024-All-in-one-Brochure-update.pdf
+  seen: '2026-10-08'
+  fields:
+  - name
+  - summary
+  - locations
+  - contacts
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://pcacares.org/services/community-connection/senior-centers/
+  seen: '2026-10-08'
+  fields:
+  - lead
 research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
