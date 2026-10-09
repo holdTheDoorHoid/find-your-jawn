@@ -45,7 +45,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Club mailing address
   address: 3341 Sheffield Ave
   neighborhood: null
   planning_district: north_delaware
@@ -56,8 +56,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: free
-  text: Meetings and the net appear to be free. Dues are not listed on the site.
+  level: low
+  text: Meetings and the Thursday net are free. Membership dues are $20 for a full member, and $5 for
+    each family member after the first full member. Associate membership, for people without a license,
+    is $5. The site does not say how often dues are paid.
 commitment: monthly
 group_size: null
 access:
@@ -72,15 +74,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a third Wednesday meeting at 7:30 pm (check the club page for the current month), or check
-    into the Thursday 8 pm net on 146.685 MHz.
+  how: Email wm3pen@arrl.net to ask where the next meeting is held, then come to the third Wednesday meeting
+    at 7:30 pm.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The club says its meetings are open to all and visitors are welcome, and anyone can join the
-    weekly net by radio.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says meetings are open to anyone interested in learning about amateur radio, and it
+    lists a membership form and an email address.
+  what_to_expect: Meetings are open to anyone interested in amateur radio, and visitors are welcome. The
+    site does not say how long a meeting runs or where it meets in person, so ask first. The Thursday
+    net is a radio gathering where participants bring questions, news, and stories from their hobby.
+  first_visit_tips:
+  - The site gives only a mailing address, so email before you go to confirm the meeting place.
+  - The homepage has noted months with a restaurant meeting or a Zoom meeting, so check it first.
+  - Full and family members must hold an amateur license. Associate membership ($5) is open to people
+    without one.
+  - To join, print the membership form from the club's membership page and bring it to a meeting or mail
+    it to the club.
 contacts:
   website: https://wm3pen.org/
   email: wm3pen@arrl.net
@@ -119,7 +129,24 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - audience
+- url: https://wm3pen.org/member-app.htm
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - requirements
+- url: https://wm3pen.org/clubinfo.htm
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://austinseraphin.net/harcnet/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

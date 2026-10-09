@@ -9,7 +9,7 @@ ein: '825434996'
 summary: A nonprofit that encourages women going through life changes. It runs virtual gatherings and
   empowerment events, and offers one-on-one and group coaching.
 what_you_do: Join a Single By Design virtual gathering on Zoom (held every third Thursday), attend an
-  empowerment event, or sign up for the mailing list.
+  empowerment event, or ask about one-on-one or group coaching.
 kind: nonprofit
 categories:
 - social-meetups
@@ -37,11 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Single By Design virtual gathering on Zoom every third Thursday. The time is not given on the
-    events page.
+  text: Single By Design virtual gathering on Zoom every third Thursday of the month.
   days:
   - thu
-  times: []
+  times:
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -54,19 +54,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6006 Frontenac
-  neighborhood: null
-  planning_district: north_delaware
-  zip: '19149'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
   level: null
-  text: Event prices are not listed on the events page.
+  text: Prices are not listed on the events pages.
 commitment: null
 group_size: null
 access:
@@ -81,25 +72,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the Details link for the next Single By Design gathering on the events page, or email info@iamshenikita.org
-    to ask for the next date and time.
+  how: Email info@iamshenikita.org or call 215-839-8165 to ask for the next Single By Design date, since
+    registration for the August 2025 gathering was closed.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Events have a Details link for registration, so the way in is clear, but the site does not say
-    who the gatherings are for beyond women in transition.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events have a Details link or a registration step, and the site gives an email and a phone number,
+    so the way in is clear. The August 2025 page says the gathering is for women going through relationship
+    changes, such as divorce, widowhood, or separation.
+  what_to_expect: The Single By Design gathering is on Zoom, starts at 7:30 pm, and runs every third Thursday
+    of the month. The August 2025 page describes personal stories and lessons from other women's experiences
+    of relationship change, with support and encouragement. The site does not say how long it lasts or
+    whether it costs anything.
+  first_visit_tips:
+  - Ask by email or phone before the date, because the page does not state a time zone.
+  - You need a computer or phone with internet to join the Zoom gathering.
+  - Check the events page for the next date, since past gatherings show registration as closed.
 contacts:
   website: https://www.iamshenikita.org/
   email: info@iamshenikita.org
   phone: 215-839-8165
-  contact_name: Nikita Mckenzie
-  social: []
+  contact_name: Nikita McKenzie
+  social:
+  - https://www.facebook.com/IamSheincNikita
+  - https://twitter.com/IamSheNikita
+  - https://www.instagram.com/iamsheinc_nikita
   calendar_feed: null
 status: probably_active
-last_sign_of_life: 2024-12
-sign_of_life_url: https://www.iamshenikita.org/events
+last_sign_of_life: 2025-08
+sign_of_life_url: https://www.iamshenikita.org/events-1/single-by-design-virtual-gathering-2025-08-21-19-30
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -130,8 +131,29 @@ sources:
   fields:
   - contacts
   - audience
-research_tier: 1
-confidence: low
+  - summary
+  - what_you_do
+- url: https://www.iamshenikita.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+- url: https://www.iamshenikita.org/events-1/single-by-design-virtual-gathering-2025-08-21-19-30
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://www.iamshenikita.org/contact-1
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

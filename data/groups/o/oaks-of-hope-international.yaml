@@ -52,16 +52,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 814 Seffert Street
-  neighborhood: null
-  planning_district: lower_northwest
-  zip: '19128'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -79,15 +70,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer form on the group's volunteer page with your name, email and the areas you
-    are interested in.
+  how: Fill in the Hope Pillar volunteer form on the volunteer page, with your name, email and the ways
+    you want to help.
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
   basis: The form is the only public way in, and the page does not say how volunteers are matched or what
     a first task looks like.
-  what_to_expect: null
-  first_visit_tips: []
+  what_to_expect: The volunteer page is mostly about the roles. You pick the ways you want to help from
+    a list, send the form, and the page shows a confirmation if it went through. The page does not say
+    whether roles are in person or online, how long a commitment lasts, or whether there is training.
+  first_visit_tips:
+  - Look at the Worthy! Workshops page first to see what the work looks like.
+  - Ask through the site's general question form what a first task would involve, since the volunteer
+    page does not say.
+  - Check whether a role is virtual or in person before you agree to it.
 contacts:
   website: https://www.oaksofhopeinternational.org
   email: null
@@ -123,14 +120,27 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - what_to_expect
+  - first_visit_tips
+  - online_ok
 - url: https://www.oaksofhopeinternational.org/
   seen: '2026-10-08'
   fields:
   - summary
   - status
   - contacts
-research_tier: 1
-confidence: low
+- url: https://oaksofhopeinternational.org/worthy-workshops/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+- url: https://oaksofhopeinternational.org/events/
+  seen: '2026-10-08'
+  fields:
+  - online_ok
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

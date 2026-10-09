@@ -35,13 +35,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Studio open weekly: Monday to Wednesday 3 to 8 pm, Friday 6 to 8 pm for adults, and Saturday
+    11 am to 5 pm.'
+  days:
+  - mon
+  - tue
+  - wed
+  - fri
+  - sat
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Studio (second floor)
   address: 6508 Woodland Ave
   neighborhood: null
   planning_district: lower_southwest
@@ -53,14 +61,15 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Registration fee is $30 online, or $20 for early bird registration by September 1 (2026 to 2027
-    season). A sibling discount of $20 is offered. Monthly tuition is not listed on the page.
+  text: Registration is $30 online, or $20 if you register early, by September 1, for the 2026 to 2027
+    season. A $20 sibling discount is available by contacting the school. Paying for the year up front
+    takes $40 off each child. Monthly tuition is not listed on the site.
 commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The studio is on the second floor of the building.
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,18 +78,24 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Sign Up Now link on the price list page at trinitykschoolofarts.org/price-list, or ask
-    through Contact Us about a trial class
+  how: Register through the Sign Up Now button on the price list page, or call 267-736-1738 with questions
+    before you pay.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The school says no prior experience is needed and lists a sign-up link; no trial class is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The school says no experience is needed, offers a sign up button, and lists a phone line. The
+    site does not describe a trial class.
+  what_to_expect: The school describes its classes as nurturing and not competitive. Kids and teens choose
+    from ballet, hip-hop, tap, jazz or modern, and adults can pick from several styles. The site does
+    not say how long a class runs or what a first class looks like, so call before you sign up.
+  first_visit_tips:
+  - The studio is on the second floor of 6508 Woodland Ave.
+  - Friday evening hours are for adults only, so check which class fits before you come.
+  - The site does not list a dress code or shoes, so ask what to wear before the first class.
 contacts:
   website: https://trinitykschoolofarts.org
   email: null
-  phone: null
+  phone: 267-736-1738
   contact_name: null
   social:
   - https://www.instagram.com/trinityksoarts
@@ -120,7 +135,18 @@ sources:
   - commitment
   - first_step
   - status
-research_tier: 1
+- url: https://trinitykschoolofarts.org/hours
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_visit_tips
+- url: https://trinitykschoolofarts.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

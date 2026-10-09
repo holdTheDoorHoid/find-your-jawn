@@ -6,10 +6,12 @@ leads:
 - irs_990n:394147282
 - irs_bmf:394147282
 ein: '394147282'
-summary: An arts and healing group led by Philadelphia artist Terrence Gore. It has a workshop section,
-  posts about its events, and takes donations.
-what_you_do: Take part in the group's workshops or events, which are named on its site. Use the contact
-  form there to ask how to join a workshop.
+summary: An arts and healing workshop run by the artist Terrence Gore. The Art of Healing workshop mixes
+  art-making with dance, music, and nutrition education, and it can be held for groups of any size in
+  places such as hospitals, public spaces, or homes.
+what_you_do: Take part in a workshop session. The Art of Healing mixes art-making with dance, music, and
+  nutrition education, and the site also lists a Rehabilitation workshop. Use the contact form to ask
+  about upcoming sessions.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -36,11 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The site lists no regular meeting times. Sessions can be run for groups of any size in other venues.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 4050 Haverford Ave Apt 101
@@ -54,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state a fee for the workshops.
 commitment: null
 group_size: null
 access:
@@ -69,13 +71,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Send a message through the contact form on terrencelgore.com to ask about upcoming workshops.
+  how: Use the contact form at terrencelgore.com/contact, or email aneye4it64@gmail.com, to ask which
+    workshop sessions are coming up and whether an individual can join one.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Workshops are named on the site, but no dates or sign-up steps are shown, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says the workshop can be run for groups in other venues, and it shows no dates, prices,
+    or sign-up steps, so the way in is unclear.
+  what_to_expect: The Art of Healing combines interactive art-making with dance, music, and nutrition
+    education, and it is run for groups. The site does not say how long a session lasts, how many people
+    attend, or what it costs, so ask first.
+  first_visit_tips:
+  - Name the workshop you are interested in when you write, The Art of Healing or Rehabilitation.
+  - Ask for the next session date and place, since the site lists no upcoming sessions.
 contacts:
   website: https://terrencelgore.com
   email: aneye4it64@gmail.com
@@ -84,8 +92,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2025-10
-sign_of_life_url: https://terrencelgore.com/rehabilitation
+last_sign_of_life: 2026-04
+sign_of_life_url: https://terrencelgore.com/exhibitions/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,7 +124,28 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
+- url: https://terrencelgore.com/the-art-of-healing/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - what_to_expect
+- url: https://terrencelgore.com/rehabilitation/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://terrencelgore.com/exhibitions/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://terrencelgore.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

@@ -7,8 +7,9 @@ leads:
 ein: '934116790'
 summary: A literacy nonprofit that tutors children ages 3 to 10 one on one and coaches families on reading
   at home. It also works with schools.
-what_you_do: Families book one on one tutoring with a plan made for each child, or join family literacy
-  sessions. Schools can book teacher training and small group sessions for students.
+what_you_do: Families book one on one tutoring with a learning plan made for each child, or join family
+  literacy sessions one on one or in groups. Schools can book teacher training and small group sessions
+  for students.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -44,7 +45,7 @@ schedule:
   season: null
 locations:
 - label: Mailing address (IRS)
-  address: 4953 N Hutchinson St
+  address: 4953 N Hutchinson St, Philadelphia, PA 19141
   neighborhood: null
   planning_district: upper_north
   zip: '19141'
@@ -55,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The site does not say whether tutoring is free or paid, and lists no prices.
+  text: The site lists no prices or fees, and does not say whether tutoring is free or paid.
 commitment: null
 group_size: null
 access:
@@ -70,14 +71,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Book a consultation through the appointments page on the website, or send the contact form, and
-    ask about one on one tutoring for a child ages 3 to 10
+  how: Book a consultation on the Appointments page, or send the contact form, and ask about one on one
+    tutoring for a child ages 3 to 10.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Families start with a booked consultation, and the site lists no prices or class times.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Families start with a booked consultation, and the site lists no prices, class times or session
+    locations.
+  what_to_expect: The first step is a booked consultation, where the team offers tailored guidance on
+    educational goals. Tutoring for ages 3 to 10 is one on one and starts from a learning plan made for
+    the child. The site does not give the length of a consultation, the cost, or where sessions are held.
+  first_visit_tips:
+  - Have your child's age and reading goals in mind before you book.
+  - Ask whether sessions are in person or online, since the site does not say.
+  - Ask about fees before you book, since none are listed.
 contacts:
   website: https://www.curriculaforthecommunity.org
   email: Contact@curriculaforthecommunity.org
@@ -112,8 +119,21 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - crowd
+  - contacts.email
+- url: https://www.curriculaforthecommunity.org/appointments
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - contacts.email
+- url: https://www.curriculaforthecommunity.org/about
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts.email
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

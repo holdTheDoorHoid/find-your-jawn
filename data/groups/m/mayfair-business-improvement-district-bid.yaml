@@ -5,22 +5,21 @@ leads:
 - city_rco:243
 - city_rco_points:243
 ein: null
-summary: If you care about what gets built near you, Mayfair Business Improvement District (BID) is a
-  City registered community organization in the North Delaware part of the city that hears about zoning
-  and development proposals.
-what_you_do: Members follow zoning and development plans in the area and meet to talk them over.
+summary: The business improvement district for the Mayfair shopping streets along Frankford, Cottman,
+  Ryan, and Robbins Avenues. Commercial property owners fund it, and it runs public events such as the
+  Third Thursday Night Market.
+what_you_do: Come to the Third Thursday Night Market on Frankford and Cottman Avenues, sign up for the
+  newsletter, or send a question through the contact form.
 kind: civic
 categories:
 - neighborhood-civic
 interests:
-- civic_association
 - community_development
 motives:
 - values
 - social
 formats:
-- conversation
-- lead_organize
+- one_off_event
 roles:
 - organize
 - figure_out
@@ -37,14 +36,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Third Thursday Night Market on Frankford and Cottman Avenues, 6 to 9:30 pm, on third Thursdays
+    through the season.
+  days:
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Meeting place
-  address: 2990 St. Vincent St. , 2nd. Floor, Philadelphia, PA 19149
+- label: Office
+  address: 2990 St. Vincent St, 2nd Floor
   neighborhood: null
   planning_district: north_delaware
   zip: '19149'
@@ -52,13 +54,13 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Contact address (City list)
-  address: 2990 St. Vincent St. , 2nd. Floor, Philadelphia, PA 19149
+- label: Third Thursday Night Market
+  address: Frankford Ave and Cottman Ave
   neighborhood: null
-  planning_district: north_delaware
-  zip: '19149'
-  lat: 40.0329588430855
-  lng: -75.0486063347821
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
   in_city: true
   transit: null
 online_ok: null
@@ -79,19 +81,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
-  drop_in: null
+  how: Come to the Third Thursday Night Market at Frankford and Cottman Avenues, or sign up for the newsletter
+    at mayfairphilly.com.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The market is a public street event, and the site lists a newsletter sign-up and a contact form.
+    It does not describe how residents take part in the organization itself.
+  what_to_expect: 'The site lists the Third Thursday Night Market as an evening event from 6 to 9:30 pm
+    on Frankford and Cottman Avenues. It does not say what vendors or activities you will find there,
+    or whether it is free. The district''s own work is mostly about the shops: cleaning, public safety,
+    marketing, and building improvements.'
+  first_visit_tips:
+  - Check the site for the next market date, since the events list changes over time.
+  - The site lists no office hours or public meetings, so call (267) 538-4668 before you visit the office
+    at 2990 St. Vincent St, 2nd Floor.
+  - If you want to attend a meeting, ask by email, since none are listed on the site.
 contacts:
   website: https://mayfairphilly.com/
-  email: Donny@MayfairBID.org
-  phone: '2675384668'
+  email: donny@mayfairbid.org
+  phone: 267-538-4668
   contact_name: Donny Smith
-  social: []
+  social:
+  - https://www.facebook.com/mayfairbid
+  - https://www.instagram.com/mayfairbid/
+  - https://www.linkedin.com/company/mayfair-business-improvement/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -114,7 +128,26 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+- url: https://mayfairphilly.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://mayfairphilly.com/about-mayfair-business-improvement-district/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - contacts.contact_name
+- url: https://mayfairphilly.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

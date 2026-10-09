@@ -8,8 +8,8 @@ ein: '232820194'
 summary: A business council that links Mid-Atlantic companies with partners in Eurasia, mostly through
   trade events, seminars and delegations. It also holds public cultural and remembrance events, including
   programs about people who rescued Jews during the Holocaust.
-what_you_do: Attend a public seminar or commemoration event, register for a trade event, or apply for
-  membership as a business. The site also lists internships.
+what_you_do: Attend a Carl Lutz event (the site invites the public to some of them), register for a seminar
+  or trade event, or apply for a company membership by mail. The site also lists internships.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -23,7 +23,8 @@ motives:
 formats:
 - one_off_event
 roles: []
-crowd: []
+crowd:
+- professionals
 bridging: null
 audience:
   open_to: public
@@ -35,7 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Seminars, roundtables, trade events and commemorations are posted on the site as each one is planned,
+    so dates vary from year to year.
   days: []
   times: []
   recurring: null
@@ -50,10 +52,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Some events are free and others use registration. Prices are not stated on the pages we read.
+  text: Company membership dues run from $250 to $950 a year depending on company revenue, with a $2,000
+    sponsorship level and a $100 yearly rate for nonprofits. Members get 20 percent off the council's
+    events. Some public events are free and others need a paid registration.
 commitment: null
 group_size: null
 access:
@@ -68,24 +72,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a public event on the site, such as the October 26, 2026 Carl Lutz event that has
-    a Zoom registration link, or use the Contact Us page to ask about attending
+  how: Register for a public Carl Lutz event on the site, or call 484-467-7444 or email info@ma-rbc.org
+    to ask about attending a seminar.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public events have registration links, but membership is an application aimed at businesses.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public events have registration links and the council lists a phone and email, but membership
+    is an application aimed at companies.
+  what_to_expect: Public events are mostly talks, seminars and commemorations rather than hands-on activities.
+    The October 2026 Carl Lutz program lists remarks by a speaker and a film screening, and many listings
+    leave out the time or fee. Read the linked flyer before you go.
+  first_visit_tips:
+  - Register from the event listing when one is given, since some events use a Zoom sign-up link.
+  - Look in the linked flyers for the start time and fee, because the event pages often leave them out.
+  - Ask the council before you apply for membership, since the form is for companies and is mailed with
+    a check.
 contacts:
   website: http://www.ma-rbc.org
-  email: null
-  phone: null
+  email: info@ma-rbc.org
+  phone: 484-467-7444
   contact_name: Val Kogan
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-06
-sign_of_life_url: http://www.ma-rbc.org
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.ma-rbc.org/Carl_Lutz.html
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -105,7 +116,36 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - schedule
+- url: https://www.ma-rbc.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://www.ma-rbc.org/apply.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - audience
+  - first_step
+- url: https://www.ma-rbc.org/benefit.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.ma-rbc.org/events.html
+  seen: '2026-10-08'
+  fields:
+  - formats
+  - what_you_do
+- url: https://www.ma-rbc.org/Carl_Lutz.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - online_ok
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -7,15 +7,17 @@ leads:
 ein: '845064408'
 summary: A Philadelphia nonprofit that rescues homeless and unwanted cats and places them in permanent
   homes, with help from volunteers and donors.
-what_you_do: Adopt a cat or kitten through the adoption page, donate, or send items from the wish lists.
-  The volunteer, foster, and membership steps are not described on the pages read, so ask the rescue how
-  to help.
+what_you_do: Volunteers can foster cats and kittens, help with transport, help with fundraising or social
+  media, or join a street team that asks shops to host a cat in the window. You can also adopt a cat or
+  kitten, donate, or send items from the wish lists. The Get Involved page lists the volunteer and foster
+  steps.
 kind: nonprofit
 categories:
 - animals
 interests:
 - cat_rescue_tnr
 - shelter_volunteering
+- animal_fostering
 motives:
 - values
 - social
@@ -35,7 +37,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No events are listed. The upcoming events section was empty when checked.
+  text: No events are listed. The events page says no current events were found when checked.
   days: []
   times: []
   recurring: null
@@ -43,15 +45,6 @@ schedule:
 locations:
 - label: Mailing address (IRS)
   address: 1529 Reed St Frnt
-  neighborhood: null
-  planning_district: south
-  zip: '19146'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1529 Reed St Front
   neighborhood: null
   planning_district: south
   zip: '19146'
@@ -77,17 +70,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Read the adoption info page to start an adoption, or use the contact page to ask how to volunteer
+  how: Send the volunteer or foster application from the Get Involved page at herekittykitty.org, or email
+    info@herekittykitty.org, which the rescue says it usually answers within 24 hours.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Adopting needs an application first, and the way to volunteer or foster is not described on the
-    pages read.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteering and fostering both start with an application form, and the site lists no orientation
+    or meeting times, so the way in needs a step first.
+  what_to_expect: The site does not describe an orientation, shift times, or a visiting day. Listed roles
+    include fostering, where the rescue covers medical care, food and litter as needed, plus fundraising,
+    social media, transport, and a street team that asks shops to host a cat in their window.
+  first_visit_tips:
+  - Email info@herekittykitty.org if the form is unclear, since the rescue usually replies within 24 hours.
+  - Ask about shelter hours and any visiting rules before you travel, because the site does not list them.
 contacts:
   website: https://herekittykitty.org
-  email: null
+  email: info@herekittykitty.org
   phone: null
   contact_name: Lianne Barnard
   social:
@@ -124,7 +122,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://herekittykitty.org/info/display?PageID=21409
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - interests
+- url: https://herekittykitty.org/info/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://herekittykitty.org/info/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

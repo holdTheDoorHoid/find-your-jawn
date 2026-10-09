@@ -5,10 +5,10 @@ leads:
 - irs_990n:263284218
 - irs_bmf:263284218
 ein: '263284218'
-summary: A Philadelphia music nonprofit for children and teens. It offers in-person and online music classes,
-  plus recitals, workshops and student CD releases.
-what_you_do: Take a music class in person on a Tuesday or Wednesday afternoon, or online. Ask the studio
-  how to enroll, and come to workshops and recitals.
+summary: A Philadelphia music nonprofit for children, teens and adults. It offers in-person and online
+  music classes, plus recitals, workshops and student CD releases.
+what_you_do: Take an in-person or online music class, ask the studio how to enroll, and come to recitals,
+  workshops and student CD releases.
 kind: nonprofit
 categories:
 - music
@@ -27,6 +27,7 @@ roles:
 crowd:
 - kids
 - teens
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -38,8 +39,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: In-person classes on Tuesday and Wednesday, 12 to 7 pm, as listed on the site. Event months are
-    listed but no full dates are written.
+  text: In-person classes run on Tuesday and Wednesday, 12 to 7 pm, as listed on the site.
   days:
   - tue
   - wed
@@ -61,7 +61,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: No tuition is listed. The site takes donations through PayPal.
 commitment: null
 group_size: null
 access:
@@ -73,18 +73,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the contact form on simplymusicinc.com, or call (267) 701-2359, to ask about enrolling in a
-    Tuesday or Wednesday class
+  how: Call (267) 701-2359 or use the contact form on simplymusicinc.com to ask about enrolling in a Tuesday
+    or Wednesday class, in person or online.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Classes and recitals are listed, but the site does not explain how to sign up, what classes cost,
-    or who they are for, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Classes and online options are listed, but the site does not explain how to enroll, how long
+    classes run, what they cost, or who they suit, so the way in is unclear.
+  what_to_expect: In-person classes meet on weekday afternoons and evenings, and online classes are marked
+    as available. The studio also holds recitals, workshops and events for students. The site does not
+    say how long a class lasts, what it costs, or how new students are placed.
+  first_visit_tips:
+  - 'Call before you come: office hours are listed as Monday to Friday, 11 am to 6 pm, with Saturdays
+    by appointment and Sundays closed.'
+  - If travel is hard, ask about an online class; the site marks online classes as available.
 contacts:
   website: https://simplymusicinc.com
   email: Simplymusic1@verizon.net
@@ -127,7 +132,17 @@ sources:
   - kind
   - audience
   - contacts
-research_tier: 1
+  - schedule
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://simplymusicinc.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - crowd
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

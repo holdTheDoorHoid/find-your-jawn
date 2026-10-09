@@ -5,11 +5,12 @@ leads:
 - irs_990n:393339175
 - irs_bmf:393339175
 ein: '393339175'
-summary: A community outreach nonprofit based in Harrisburg that says it serves Harrisburg, Philadelphia
-  and nearby counties. It runs workshops, support groups, and community events, and helps people find
-  resources.
-what_you_do: Use the contact form on the group's site to ask about workshops, support groups, and events.
-  The site does not describe a volunteer process.
+summary: A community outreach nonprofit with its office in Harrisburg. It says it serves Harrisburg, Philadelphia,
+  and nearby tri-county areas, and it describes workshops, support groups, community events, and help
+  finding resources.
+what_you_do: Contact the group by its contact form or email to ask about workshops, support groups, and
+  events, and what is running in Philadelphia. The site says people can reach out to get help, volunteer,
+  or partner, but does not describe how volunteering works.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -40,10 +41,19 @@ schedule:
   recurring: null
   season: null
 locations:
+- label: Office (per website)
+  address: 1821 Fulton Street, Harrisburg, PA 17102
+  neighborhood: null
+  planning_district: null
+  zip: '17102'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 - label: Mailing address (IRS)
   address: 5249 Addison St
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19143'
   lat: null
   lng: null
@@ -52,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The site lists no cost for its programs.
+  text: The site does not state a cost for its programs.
 commitment: null
 group_size: null
 access:
@@ -67,16 +77,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact form on the group's site to ask how to join a workshop or support group.
+  how: Email backontrack.comserv@gmail.com or use the contact form to ask which workshops, support groups,
+    or events are running in Philadelphia, and how to join one.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site gives no sign-up steps, so the way in is unclear.
+  basis: The site names workshops and support groups but gives no sign-up steps, schedule, or Philadelphia
+    meeting place, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://backontrackcommunityoutreach.org/
-  email: null
+  email: backontrack.comserv@gmail.com
   phone: null
   contact_name: Terrence Lewis
   social:
@@ -112,7 +124,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - contacts.social
+- url: https://backontrackcommunityoutreach.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.email
+  - first_step
+- url: https://backontrackcommunityoutreach.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

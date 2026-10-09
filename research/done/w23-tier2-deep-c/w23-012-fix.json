@@ -1,0 +1,342 @@
+{
+ "wave": "w23-tier2-deep-c",
+ "agent": "w23-012-fix",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 40,
+ "leads_only": [
+  {
+   "name": "Haddington Participatory Defense Hub",
+   "url": "https://www.ardellashouse.org/haddington-participatory-defense-hub.html",
+   "note": "named as a program on Ardella's House site, not checked"
+  },
+  {
+   "name": "Joy in the City",
+   "url": "https://clcphila.org/get-help/legal-clinics/",
+   "note": "hosts the Hunting Park legal clinic on the Christian Legal Clinics site, not checked"
+  },
+  {
+   "name": "Canaan Baptist Church (Germantown)",
+   "url": "https://clcphila.org/get-help/legal-clinics/",
+   "note": "hosts the Germantown legal clinic on the Christian Legal Clinics site, not checked"
+  },
+  {
+   "name": "Philadelphia Access Center",
+   "url": "https://clcphila.org/get-help/legal-clinics/",
+   "note": "hosts a South Philadelphia legal clinic on the Christian Legal Clinics site, not checked"
+  },
+  {
+   "name": "Salvation Army (West Philadelphia and Philadelphia Central Corps)",
+   "url": "https://clcphila.org/get-help/legal-clinics/",
+   "note": "hosts two legal clinics on the Christian Legal Clinics site, not checked"
+  },
+  {
+   "name": "First Redemption Evangelical Church",
+   "url": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/get-help",
+   "note": "hosts Mission of Hope's Thursday pantry at 4400 N Broad St, not checked"
+  }
+ ],
+ "blocked": [],
+ "notes": "Budget: 1 of 1 WebSearch used; 40 WebFetch used (cap 60, max 6 per group, every group within its cap). No page was blocked and no rate limiting was seen. Verdicts: 7 publish, 0 hide. Two items need a reviewer's call: (1) Ian-Yae's in Touch keeps tier 1's probably_active, but its only dated item is a 2023 news item, which by the status rule would be dormant (see that record's notes); (2) Ardella's House lists two different phone numbers on two pages; I recorded the contact page number. Christian Legal Clinics' status is carried from tier 1 and was not re-checked. Process note: early in the run I made one accidental call to a browser tool (mcp__Claude_Browser__browser_batch) with an empty action list; it returned an error and did nothing. No other tools outside the allowed set were used.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:272496591",
+     "irs_bmf:272496591"
+    ],
+    "group_id": "ardellas-house-inc",
+    "ein": "272496591",
+    "website": "https://www.ardellashouse.org"
+   },
+   "verdict": "publish",
+   "name": "Ardella's House",
+   "summary": "A nonprofit that helps women and girls with criminal justice histories find work, housing, and health care, and rebuild family life. It runs housing for women coming home from incarceration, job training, mentoring, and reentry classes.",
+   "what_you_do": "Fill out the Volunteer Interest Survey to offer time, or ask for a guest speaker for your group. Women who want housing ask for the application packet by phone or email, then send a questionnaire and a short letter and complete a virtual interview.",
+   "kind": "nonprofit",
+   "categories": [
+    "hunger-housing-basic-needs",
+    "advocacy-rights"
+   ],
+   "interests": [
+    "housing_help",
+    "justice_reform_reentry"
+   ],
+   "motives": [
+    "values"
+   ],
+   "formats": [
+    "side_by_side"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "all_adults"
+   ],
+   "audience": {
+    "open_to": "public",
+    "community": [
+     "women",
+     "returning_citizens"
+    ],
+    "support_group": false
+   },
+   "locations": [
+    {
+     "label": "Office",
+     "address": "2428 N 33rd St",
+     "neighborhood": "strawberry_mansion",
+     "zip": "19132",
+     "planning_district": "north",
+     "in_city": true
+    },
+    {
+     "label": "Mailing address (IRS)",
+     "address": "1615 West End Dr",
+     "zip": "19151",
+     "planning_district": "west_park",
+     "in_city": true
+    }
+   ],
+   "cost": {
+    "level": "unknown",
+    "text": "The site does not list any fees for volunteering, guest speakers or housing."
+   },
+   "access": {
+    "wheelchair": "unknown"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Fill out the Volunteer Interest Survey linked on the site, or call 267-249-3642 to ask how you can help.",
+    "sign_up_needed": true,
+    "newcomer_friendliness": 3,
+    "basis": "The volunteer survey is public and easy to find, but the site does not say what happens after you send it. The housing route is longer: a questionnaire, a letter and a required virtual interview.",
+    "what_to_expect": "The site does not describe a volunteer shift or how long a visit takes. Housing works as an application, not a walk in: you request the packet, send it back, and complete a virtual interview before any acceptance. Staff review each application for fit, and accepted women may get help planning their release if they need it.",
+    "first_visit_tips": [
+     "For housing, have your questionnaire and a short letter about your goals ready before you contact staff.",
+     "The site lists two phone numbers, 267-249-3642 on the contact page and 267-228-4169 for requesting housing materials. Ask which one fits your question."
+    ]
+   },
+   "contacts": {
+    "website": "https://www.ardellashouse.org",
+    "phone": "267-249-3642",
+    "contact_name": "Anita S Willis"
+   },
+   "status": "probably_active",
+   "sources": [
+    {
+     "url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "contacts.contact_name",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "contacts.website",
+      "contacts.contact_name",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://www.ardellashouse.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "audience"
+     ]
+    },
+    {
+     "url": "https://www.ardellashouse.org/housing-referrals--admissions.html",
+     "seen": "2026-10-08",
+     "fields": [
+      "audience",
+      "first_step",
+      "what_to_expect",
+      "first_visit_tips",
+      "requirements"
+     ]
+    },
+    {
+     "url": "https://www.ardellashouse.org/contact-us.html",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts",
+      "locations"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "Housing eligibility from the housing page: women returning from incarceration in the Philadelphia area. No age limit, sobriety rule or required referral source is stated on that page. Two phone numbers are published: 267-249-3642 on the contact page (recorded as phone) and 267-228-4169 under Request Materials on the housing page. A reviewer should confirm which is current. The contact page email is hidden behind protected text, so no email is recorded. The Sisters Empowerment Circle is a monthly donor group, not a program for women served, so it is left out of what_you_do. The annual report link was not opened. The newcomer rating of 3 applies to volunteering; the housing route would rate lower."
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:331926398",
+     "irs_bmf:331926398"
+    ],
+    "group_id": "mission-of-hope-and-redemption",
+    "ein": "331926398",
+    "website": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/home"
+   },
+   "verdict": "publish",
+   "name": "Mission of Hope and Redemption",
+   "summary": "A volunteer-run food pantry in Philadelphia where families choose their own groceries. It serves about 200 families a week and also runs outreach with essential supplies and school support.",
+   "what_you_do": "Register in person at the Thursday pantry, then shop for your own food. Volunteers help run the pantry, and the group asks people to reach out through its contact page to join.",
+   "kind": "nonprofit",
+   "categories": [
+    "hunger-housing-basic-needs"
+   ],
+   "interests": [
+    "food_pantry",
+    "goods_closets"
+   ],
+   "motives": [
+    "values"
+   ],
+   "formats": [
+    "side_by_side"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "families"
+   ],
+   "audience": {
+    "open_to": "public",
+    "community": [],
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Food pantry every Thursday from 11 am to 1:30 pm.",
+    "days": [
+     "thu"
+    ],
+    "times": [
+     "daytime"
+    ],
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Food pantry (First Redemption Evangelical Church)",
+     "address": "4400 N Broad St",
+     "zip": "19140",
+     "in_city": true
+    },
+    {
+     "label": "Mailing address (IRS)",
+     "address": "4648 N 12th St",
+     "zip": "19140",
+     "planning_district": "north",
+     "in_city": true
+    }
+   ],
+   "cost": {
+    "level": "free",
+    "text": "The site lists no fee for the pantry."
+   },
+   "access": {
+    "wheelchair": "unknown"
+   },
+   "requirements": {
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Go to the pantry on a Thursday between 11 am and 1:30 pm and register in person with your name, address and phone number.",
+    "drop_in": true,
+    "newcomer_friendliness": 3,
+    "basis": "The pantry has a set day, hours and address, and registration happens when you arrive. The site does not list eligibility rules or a phone line.",
+    "what_to_expect": "You register when you arrive, giving your name, address and phone number. Then you pick the foods that fit your household's needs, a shopping style the group calls client choice. The site does not say how long a visit takes, whether bags are given, or what else happens there.",
+    "first_visit_tips": [
+     "Have your name, address and phone number ready for registration.",
+     "Bring your own bags, since the site does not say whether bags are provided.",
+     "The site does not list eligibility, so ask at the door if you are not sure you qualify."
+    ]
+   },
+   "contacts": {
+    "website": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/home",
+    "contact_name": "Kenneth Jones"
+   },
+   "status": "probably_active",
+   "sources": [
+    {
+     "url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "contacts.contact_name",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "contacts.website",
+      "contacts.contact_name",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/home",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "kind",
+      "audience",
+      "status"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/get-help",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "locations",
+      "first_step",
+      "what_to_expect",
+      "first_visit_tips"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/about",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary"
+     ]
+    },
+    {
+     "url": "https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/contact",
+     "seen": "2026-10-08",
+     "fields": [
+      "contacts"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "Pantry day, hours and church address come from the Get Help page. The 200 families a week and 15 volunteers come from the About page, which dates neither figure. The About page gives December 2023 as the founding date; that is an origin date, not dated activity, so it did not change status. The contact page has only a Google form, so no phone or email is recorded. The events page lists three event names (a painting event and a back to school giveaway) with no dates, so none was used. The pantry is hosted in a church, and the site does not say whether that matters for who attends. Eligibility is not stated."
+  }
+ ]
+}

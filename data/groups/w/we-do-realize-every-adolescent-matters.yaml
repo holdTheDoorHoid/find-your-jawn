@@ -6,16 +6,19 @@ leads:
 - irs_990n:463040935
 - irs_bmf:463040935
 ein: '463040935'
-summary: A youth development nonprofit for young people and adolescents. It runs a summer camp, a youth
-  program called TGIF, and a boys' program called Boys Dream, with the goal of helping young people build
-  confidence and pursue their goals.
-what_you_do: Young people take part in the summer camp and the group's other youth programs. The site
-  does not say what each program involves.
+summary: A youth nonprofit that runs a summer day camp for children and TGIF, a mentoring program for
+  female college students of color. Its website lists a boys' program too, but the page for it gave no
+  details.
+what_you_do: Children can sign up for the summer day camp, which the site calls affordable and which covers
+  reading, arts and crafts, teamwork, and community service. Female college students of color can sign
+  up for TGIF mentoring as mentees, and mentors can sign up too. The site does not say what the boys'
+  program involves.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 interests:
 - after_school_camps
+- mentoring
 - youth_leadership
 motives:
 - values
@@ -25,6 +28,7 @@ roles: []
 crowd:
 - kids
 - teens
+- students
 bridging: null
 audience:
   open_to: public
@@ -63,7 +67,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Costs are not stated on the site.
+  text: The camp is called affordable, but the site shows no fee amounts. The fee is only in a downloadable
+    document that the page text does not include.
 commitment: null
 group_size: null
 access:
@@ -75,17 +80,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Follow the group on Instagram, or use the Connect page on wedreamdoyou.com to ask about the summer
-    camp.
+  how: Send a message through the Connect form on wedreamdoyou.com and ask whether the summer camp is
+    running this year and what it costs.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site has no sign-up steps, dates or costs, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has forms and a camp registration document, but no current dates, prices, or locations,
+    so the way in is unclear.
+  what_to_expect: The camp is described as an affordable day camp for children, with reading, arts and
+    crafts, public speaking, and team building. The site gives no current camp dates, hours, location,
+    or price, so ask before you plan a visit. TGIF mentors and mentees sign up through forms on its page.
+  first_visit_tips:
+  - Ask whether the camp runs this year before you download the registration form.
+  - Ask where the camp meets, since the site does not name a location.
+  - For TGIF on another campus, use the contact address listed on the TGIF page.
 contacts:
   website: https://wedreamdoyou.com
   email: null
@@ -94,9 +105,9 @@ contacts:
   social:
   - https://www.instagram.com/we__dream/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://wedreamdoyou.com
+status: dormant
+last_sign_of_life: 2020-12
+sign_of_life_url: https://wedreamdoyou.com/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -123,7 +134,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://wedreamdoyou.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://wedreamdoyou.com/tgif
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - interests
+  - first_step
+- url: https://wedreamdoyou.com/copy-of-we-dream-summer-camp
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: https://wedreamdoyou.com/connect
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

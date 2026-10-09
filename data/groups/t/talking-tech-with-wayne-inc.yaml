@@ -6,10 +6,11 @@ leads:
 - irs_990n:853807406
 - irs_bmf:853807406
 ein: '853807406'
-summary: 'A nonprofit that offers free tech help, especially to older adults: a helpline staffed by trained
-  technicians, in-person discussion groups, a newsletter, a TV show and a podcast.'
-what_you_do: Join a discussion group, start one at a church or community center, or sign up for the newsletter.
-  Tech questions can go through the contact form on the site.
+summary: 'A nonprofit that offers free tech help, especially to older adults: a free helpline, in-person
+  discussion groups, a newsletter, a TV show and a podcast.'
+what_you_do: Call the helpline for tech questions, join a discussion group through the home-page form,
+  or ask Wayne to set up a group at a church or community center. Its senior courses teach smartphones,
+  email, video calls, online health tools, scam safety, and how to spot misinformation.
 kind: nonprofit
 categories:
 - making-tech
@@ -37,7 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Senior courses run for 16 weeks and mix in-person workshops with Zoom sessions. The site does
+    not list meeting days or times for the discussion groups.
   days: []
   times: []
   recurring: null
@@ -52,19 +54,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 8616 Thouron Avenue
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19150'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
   level: free
-  text: The helpline is free. Fees for groups or Zoom sessions are not stated.
+  text: The helpline and information are free. The site does not state fees for groups, courses, or Zoom
+    sessions.
 commitment: drop_in
 group_size: null
 access:
@@ -79,15 +73,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact form on ttwwlabs.org, or the Schedule a Call link there, to ask about joining or
-    starting a discussion group.
+  how: Fill in the short form on ttwwlabs.org (first and last name and email, with an optional mobile
+    number) to ask about joining a discussion group.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone can use the free helpline or sign up for the newsletter, though the site does not say
-    beginners are specifically welcomed.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site describes beginner-style digital skills courses for seniors and gives a home-page form
+    and a booking option to start.
+  what_to_expect: Joining a discussion group starts with the home-page form. Senior courses last 16 weeks
+    and mix in-person workshops, Zoom sessions, and helpline support, with take-home guides. The site
+    does not say how long a discussion lasts or what it costs.
+  first_visit_tips:
+  - Have your email address ready before you fill in the home-page form.
+  - You can book a phone call or a Zoom call with Wayne before you join.
+  - The helpline runs around the clock, so you can call at any hour.
 contacts:
   website: https://ttwwlabs.org
   email: null
@@ -122,12 +121,25 @@ sources:
   - cost
   - first_step
   - contacts
+  - first_visit_tips
+  - commitment
 - url: https://www.podscan.fm/podcasts/talking-tech-w-wayne
   seen: '2026-10-08'
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://ttwwlabs.org/our-initiatives/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - what_to_expect
+  - first_step
+- url: https://ttwwlabs.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

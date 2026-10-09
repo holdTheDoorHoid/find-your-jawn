@@ -8,22 +8,32 @@ ein: '471586879'
 summary: A Philadelphia nonprofit that helps people and families dealing with addiction, housing loss
   and money hardship. Its services include housing help, health care, job and reentry help, and youth
   programs.
-what_you_do: Ask for help with recovery, housing, health, jobs or reentry. The site does not explain intake
-  steps, so call or email first.
+what_you_do: Call or email to ask for help with recovery, housing, health, jobs, or reentry. Youth programs
+  serve ages 7 to 16, and the group runs a weekly Monday food giveaway and a support group.
 kind: nonprofit
 categories:
 - support-recovery
 - hunger-housing-basic-needs
+- health-wellness
+- kids-youth-mentoring
 interests:
 - addiction_recovery
 - housing_help
+- homeless_outreach
+- food_pantry
+- health_outreach
+- mentoring
 motives:
 - protective
 - values
 formats:
 - conversation
 roles: []
-crowd: []
+crowd:
+- all_adults
+- families
+- kids
+- teens
 bridging: null
 audience:
   open_to: public
@@ -35,13 +45,19 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Weekly food giveaway every Monday, noon to 2 pm, while supplies last, at 2532 N Broad St. A support
+    group for men and women meets every other Monday, noon to 1 pm, at the same address. Morning Motivation
+    meets every other Friday, 10 to 11 am, at 2432 W Lehigh Ave.
+  days:
+  - mon
+  - fri
+  times:
+  - daytime
+  - morning
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Monday giveaway and IRS mailing address
   address: 2532 N Broad St
   neighborhood: null
   planning_district: north
@@ -50,10 +66,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Morning Motivation gathering
+  address: 2432 W Lehigh Ave
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not list a fee for any service or for the food giveaway. Ask when you call.
 commitment: null
 group_size: null
 access:
@@ -65,16 +90,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call (215) 226-7860 or email info@odaatphilly.org. The site does not describe intake or eligibility.
+  how: Call (215) 226-7860 and say whether you need help for yourself, a family member, or a youth. You
+    can also use the contact form on odaatphilly.org.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Services are named, but the site does not say how someone enrolls, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The Monday giveaway and the Friday gathering have set times and addresses and are open to individuals,
+    families, and community members, and each service lists a phone line, though the site does not say
+    whether you must register.
+  what_to_expect: The Monday food giveaway runs noon to 2 pm at the Broad Street address and hands out
+    fresh produce and groceries while supplies last. The site does not say whether any service costs money
+    or how intake works for recovery, housing, or youth programs, so ask on the phone what happens next.
+  first_visit_tips:
+  - Arrive early in the noon to 2 pm window, since the giveaway runs while supplies last.
+  - Call (215) 226-7860 before you come to ask about intake, costs, and what to bring.
+  - Ask which services are open to people who do not live in a recovery house, because the site ties some
+    support to house residents.
 contacts:
   website: https://odaatphilly.org
   email: info@odaatphilly.org
@@ -107,7 +141,36 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://odaatphilly.org/services-community-youth
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - interests
+  - first_step
+- url: https://odaatphilly.org/services-health
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+- url: https://odaatphilly.org/services-employment
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+- url: https://odaatphilly.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://odaatphilly.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

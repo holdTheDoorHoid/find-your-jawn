@@ -8,8 +8,10 @@ leads:
 ein: '822347115'
 summary: A youth organization that pairs young people with mentors for school, leadership and career planning.
   It also offers educational opportunities, arts and culture activities, and trips.
-what_you_do: Families or youth can email to request a mentor. People who want to help can email the development
-  team. The site lists leadership, academic and career mentoring tracks.
+what_you_do: Families can email mentoring@luckymp.org with the subject 'Mentoring Request' to ask for
+  a mentor. People who want to help can email development@luckymp.org with the subject 'Volunteer Opportunities',
+  and volunteers upload child abuse and criminal clearances on the Volunteer Corner page. Mentoring tracks
+  cover leadership, academics and career planning.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -32,16 +34,17 @@ audience:
   open_to: public
   school: null
   min_age: 5
-  max_age: null
+  max_age: 24
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Mentoring runs monthly or weekly, according to the group's site. The site lists no set days or
+    times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -53,11 +56,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1860 Nedro Avenue
+- label: Service areas named on the About page
+  address: null
   neighborhood: null
-  planning_district: upper_north
-  zip: '19141'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -65,7 +68,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no fee for families or volunteers.
 commitment: null
 group_size: null
 access:
@@ -73,21 +76,29 @@ access:
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email mentoring@luckymp.org to request a mentor, or development@luckymp.org to ask about volunteering
+  how: 'Families: email mentoring@luckymp.org with the subject ''Mentoring Request''. Volunteers: email
+    development@luckymp.org, and upload your child abuse and criminal clearances on the Volunteer Corner
+    page.'
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The email address is published as the way in, but the page does not say what intake or matching
-    involves.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Families can email to request a mentor, but the site does not explain intake or matching. Volunteers
+    are asked to upload child abuse and criminal clearances.
+  what_to_expect: The site does not describe a mentoring session or how often a mentor and young person
+    meet. It says mentoring is offered monthly and weekly, and names service areas in Germantown, North
+    Philadelphia, Kensington and East Falls. Families start by emailing the mentoring address, and the
+    site lists no fee for families or volunteers.
+  first_visit_tips:
+  - 'Check the age track first: leadership and academic mentoring is for ages 5 to 15, and career path
+    mentoring is for ages 16 to 24.'
+  - Volunteers should expect to upload child abuse and criminal clearances.
 contacts:
   website: https://www.luckymp.org
   email: mentoring@luckymp.org
@@ -122,7 +133,18 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.luckymp.org/meet-the-mentors
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - audience
+- url: https://www.luckymp.org/contact-6
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

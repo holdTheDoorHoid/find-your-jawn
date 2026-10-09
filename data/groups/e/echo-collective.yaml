@@ -7,8 +7,10 @@ leads:
 ein: '815069824'
 summary: A collective that pairs political education with organizing, helping people make sense of the
   world and work toward change together.
-what_you_do: Email the collective to ask about its gatherings and how to take part. Its calendar page
-  listed no dated events when checked.
+what_you_do: Runs political education workshops and trainings, often built with partner organizations
+  and groups, using games, storytelling, and small group work. It also offers facilitation help to groups
+  that want to work in a more shared way. Its listed trainings give no dates, audience, or cost on the
+  pages we read, so email to ask about the next one.
 kind: civic
 categories:
 - neighborhood-civic
@@ -50,15 +52,6 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 701 East Cathedral Road Suite 45
-  neighborhood: null
-  planning_district: lower_northwest
-  zip: '19128'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
@@ -77,13 +70,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email echocollective@proton.me and ask how to join the next gathering.
+  how: Email echocollective@proton.me and ask how to join the next workshop or training. The agenda page
+    showed no dated sessions when we checked.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The only public way in is an email, and the site does not say what a gathering looks like or
-    who attends.
-  what_to_expect: null
+  basis: The only public way in is an email, and the offers listed are mostly trainings and programs built
+    with organizations and groups, with no open sessions named.
+  what_to_expect: The site describes its sessions as hands on and participatory, with people learning
+    through games, storytelling, small group work, and shared reflection. The listed trainings run one
+    week or three days on topics such as ecological breakdown and utopian thinking, but the pages do not
+    say who can attend or what a first session is like.
   first_visit_tips: []
 contacts:
   website: https://www.echocollective.org
@@ -124,8 +121,24 @@ sources:
   fields:
   - what_you_do
   - status
-research_tier: 1
-confidence: low
+  - first_step
+- url: https://www.echocollective.org/our-approach/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+- url: https://www.echocollective.org/our-work/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.echocollective.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

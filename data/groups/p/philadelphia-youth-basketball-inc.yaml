@@ -4,17 +4,22 @@ aka: []
 leads:
 - irs_bmf:473758442
 ein: '473758442'
-summary: A basketball group for young people from kindergarten through high school in Philadelphia, with
-  programs that include mentorship, summer offerings, and holiday clinics.
-what_you_do: Kids join basketball programs, clinics, and summer offerings, and older teens can get mentorship
-  and internship chances. The group has a volunteer page.
+summary: Basketball, learning and mentoring programs for children and young people in Philadelphia, from
+  kindergarten up to age 29, with summer camps, holiday clinics and job skills training for older teens
+  and young adults.
+what_you_do: Kids join basketball academies, camps and clinics, and teens can take part in recreation
+  nights, business workshops or trades training. Older teens and young adults can also get mentoring and
+  work-based learning. Volunteers can help at cleanups, speak as guests, keep score or referee, or serve
+  on a planning committee.
 kind: nonprofit
 categories:
 - sports-teams
 - kids-youth-mentoring
+- careers-skills-professional
 interests:
 - basketball
 - mentoring
+- trades_training
 motives:
 - values
 - enhancement
@@ -25,6 +30,7 @@ roles: []
 crowd:
 - kids
 - teens
+- young_adults
 bridging: null
 audience:
   open_to: public
@@ -36,13 +42,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Teen Rec Night meets Monday and Wednesday evenings from 5 to 8 pm, year round. Summer camps run
+    weekdays from 8 am to 5 pm.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
-- label: Mailing address (IRS)
+- label: Alan Horwitz Sixth Man Center
   address: 4250 Wissahickon Ave
   neighborhood: null
   planning_district: lower_northwest
@@ -53,14 +68,16 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Fees are not stated on the home page. The group links a scholarships page.
+  level: paid
+  text: Summer camp fees are set per week and reduced by a sliding scale based on household income. Some
+    teen and young adult programs are free.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The lot behind the building has designated ADA accessible parking spaces. The page does not say
+    whether the building has an elevator or step-free entry.
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,18 +86,27 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the volunteer link to offer help. Program pages list the enrollment steps.
+  how: Use the Register button on the Programs page to sign up for a program that fits your child's age,
+    or email info@phillyyouthbasketball.org with questions first.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Program listings and a volunteer link are on the home page, but the sign-up steps were not read.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Programs are open to the public and each one has a registration path on the site, but the page
+    does not say beginners are welcome or describe a first session.
+  what_to_expect: Kids and teens join a program at the Sixth Man Center on Wissahickon Avenue, such as
+    a basketball academy, a camp, a clinic or a recreation night. Summer camps run weekdays from 8 am
+    to 5 pm and are priced by the week, with scholarships available. The site does not describe what a
+    first practice or rec night is like, so ask the staff before the first day.
+  first_visit_tips:
+  - Check the Programs page for the age or grade range, since each program lists its own.
+  - Ask about the sliding scale before you register, because fees depend on household income.
+  - The site does not name a nearby SEPTA stop, so check a transit map before you go.
+  - Use the accessible spaces in the lot behind the building if you need them.
 contacts:
   website: https://phillyyouthbasketball.org/
-  email: null
-  phone: null
-  contact_name: Kenneth - Ceo Holdsman
+  email: info@phillyyouthbasketball.org
+  phone: 267-519-9209
+  contact_name: Kenny Holdsman, Co-Founder & CEO
   social: []
   calendar_feed: null
 status: active
@@ -102,12 +128,48 @@ sources:
   - cost
   - first_step
   - status
+  - contacts
+  - last_sign_of_life
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://phillyyouthbasketball.org/programs
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+- url: https://phillyyouthbasketball.org/summer2026programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - crowd
+- url: https://phillyyouthbasketball.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+- url: https://phillyyouthbasketball.org/scholarships
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://phillyyouthbasketball.org/sixthmancenter
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access.notes
+- url: https://phillyyouthbasketball.org/ourleaders
+  seen: '2026-10-08'
+  fields:
+  - contacts.contact_name
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,10 +5,11 @@ leads:
 - irs_990n:260906131
 - irs_bmf:260906131
 ein: '260906131'
-summary: A Christian nonprofit in Philadelphia that teaches Bible lessons and helps churches and small
-  nonprofits with the paperwork for tax-exempt status.
-what_you_do: Call the number on the website to get help with a tax-exempt application. The site does not
-  list regular services, classes or meeting times.
+summary: A Christian nonprofit in Philadelphia that teaches biblical lessons, helps churches and small
+  nonprofits with tax-exempt paperwork, and is planning a community center.
+what_you_do: Call (215) 474-2717 to ask for help with a tax-exempt application. The site lists no regular
+  classes or meeting times. The ministry is also readying a donated building as a community center, and
+  it asks for donations and help with the renovation.
 kind: nonprofit
 categories:
 - faith-community
@@ -18,7 +19,8 @@ interests:
 motives:
 - values
 formats: []
-roles: []
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
@@ -49,7 +51,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No fee for tax help is listed; the site asks for donations
 commitment: null
 group_size: null
 access:
@@ -64,14 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call (215) 474-2717, the number the site lists for help with tax-exempt applications, and ask what
-    the ministry offers.
+  how: Call (215) 474-2717 and ask about tax-exempt application help, or ask what the ministry is offering
+    right now.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The only clear way in is a phone call for tax help. The site lists no classes, meetings, or events
+    in use, and the community center is still described as planned.
+  what_to_expect: The site describes help filing for tax-exempt status, aimed at churches and nonprofits,
+    and it does not describe a class or meeting for individuals. The community center is described as
+    planned, with study space, computer training, and food, but no opening date is given. Ask what is
+    running before you plan a visit.
+  first_visit_tips:
+  - Ask whether the community center is open to visitors yet
+  - Ask whether any classes or events are running now
+  - Ask about cost, since the site lists no fee
 contacts:
   website: https://www.wesleyproctorministries.org
   email: null
@@ -81,9 +90,9 @@ contacts:
   - https://www.facebook.com/WesleyProctorMinistries
   - https://twitter.com/wtpministries
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.wesleyproctorministries.org
+status: dormant
+last_sign_of_life: 2020-04
+sign_of_life_url: https://www.wesleyproctorministries.org/calendar.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -109,7 +118,23 @@ sources:
   - contacts
   - status
   - audience
-research_tier: 1
+- url: https://www.wesleyproctorministries.org/community-center.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+- url: https://www.wesleyproctorministries.org/calendar.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.wesleyproctorministries.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

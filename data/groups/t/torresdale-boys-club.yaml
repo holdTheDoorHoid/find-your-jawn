@@ -7,7 +7,8 @@ ein: '231709258'
 summary: A Northeast Philadelphia club with baseball, softball, soccer, and basketball teams for boys
   and girls, with in-house and travel teams sorted by age.
 what_you_do: Kids join in-house or travel teams by age and can take part in neighborhood social and community
-  service events. Current updates are sent to a Facebook group.
+  service events. Parents are encouraged to volunteer as coaches. Current updates are sent to a Facebook
+  group.
 kind: club
 categories:
 - sports-teams
@@ -19,23 +20,31 @@ motives:
 - social
 formats:
 - team_play
-roles: []
-crowd: []
+roles:
+- help_teach
+crowd:
+- kids
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 3
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: 'Teams practice about once a week and play games mostly on Saturdays, with Friday night games
+    for some boys'' basketball teams. Seasons differ by sport: soccer starts in September, basketball
+    runs from mid-November to mid-March, and in-house baseball starts after Easter.'
+  days:
+  - sat
+  - fri
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -49,9 +58,11 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Fees and scholarships are not stated on the site.
-commitment: null
+  level: low
+  text: Soccer and in-house baseball are $80 per child. Soccer and baseball travel teams cost $165 for
+    the first child and $125 for each more. Basketball is $90 for Little Hoopers and $150 for Developmental,
+    with travel at $165. The family cap is $325. Scholarship help is not stated.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -62,14 +73,17 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: The site sends families to its Facebook group for current information.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site gives no sign-up steps and points to a Facebook group.
+  how: Sign your child up online during a sport's registration window. The soccer page gives April 1 to
+    June 30, and the baseball page says registration is closed for 2026. Travel teams also need a copy
+    of the child's birth certificate and a headshot.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Sign-up is online and open to any family during a set window, and the club says travel teams
+    can fill or hold tryouts; the basketball page does not say how to sign up.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -77,11 +91,12 @@ contacts:
   email: null
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/groups/74453598256
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.torresdaleboysclub.net/
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://www.torresdaleboysclub.net/page/show/6615195-baseball
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -97,12 +112,44 @@ sources:
   - cost
   - first_step
   - status
+  - contacts
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.torresdaleboysclub.net/page/show/6615193-soccer
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+  - first_step
+  - requirements
+  - first_visit_tips
+- url: https://www.torresdaleboysclub.net/page/show/6615191-basketball
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+  - first_step
+- url: https://www.torresdaleboysclub.net/page/show/6615195-baseball
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.torresdaleboysclub.net/page/show/6615197-softball
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

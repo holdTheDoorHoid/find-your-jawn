@@ -5,10 +5,10 @@ leads:
 - irs_990n:334215104
 - irs_bmf:334215104
 ein: '334215104'
-summary: A nonprofit that teaches basic computer and online skills and gives donated laptops and computers
+summary: A nonprofit that teaches basic computer and online skills at no cost and passes donated computers
   to people who need them.
 what_you_do: Take a basic computer class (email, web browsing, job search help), donate a device, or volunteer
-  through the Volunteer page on the site.
+  in computer training, device donation or community outreach.
 kind: nonprofit
 categories:
 - making-tech
@@ -21,8 +21,10 @@ formats:
 - learn_skill
 roles:
 - figure_out
+- help_teach
 crowd:
 - all_ages
+- families
 bridging: null
 audience:
   open_to: public
@@ -49,19 +51,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6512 Saybrook Avenue
-  neighborhood: null
-  planning_district: lower_southwest
-  zip: '19142'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Free computer training, according to the group's site.
 commitment: null
 group_size: null
 access:
@@ -76,14 +69,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Email info@comnetworkservices.org or call (267) 881-6553 to ask about the next computer class
+  how: Call (267) 881-6553 or email info@comnetworkservices.org to ask when the next computer class meets
+    and where.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Training is open to all ages and backgrounds, but the site lists no sign-up steps, only contact
-    details
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Training is described as free and open to all ages, but the site lists no class times, places
+    or sign up steps, only contact details and a general form, so the way in is unclear.
+  what_to_expect: The site describes hands-on workshops and personal instruction in basic computer skills,
+    such as email, web browsing and job searching. It does not say how long classes last, which days they
+    meet or where they are held, so ask before you go.
+  first_visit_tips:
+  - Ask for the class address, because the site does not show one.
+  - Say which skill you want to start with, such as email or job applications.
+  - Ask whether you need to bring your own device.
 contacts:
   website: https://comnetworkservices.org
   email: info@comnetworkservices.org
@@ -122,7 +121,18 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://comnetworkservices.org/about
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - cost
+  - crowd
+- url: https://comnetworkservices.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,382 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-033",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 22,
+  "records": [
+    {
+      "match": {"lead_ids": [], "group_id": "audubon-mid-atlantic", "website": "https://www.audubon.org/mid-atlantic"},
+      "verdict": "publish",
+      "name": "Audubon Mid-Atlantic",
+      "summary": "The Mid-Atlantic office of the National Audubon Society. In Philadelphia it runs the Discovery Center in the Strawberry Mansion neighborhood and leads public bird walks and tours in city parks.",
+      "what_you_do": "Join a public birding walk or tour, borrow the binoculars the Discovery Center lends for free, and sign up for event updates.",
+      "kind": "nonprofit",
+      "categories": ["outdoors-adventure"],
+      "interests": ["birding"],
+      "motives": ["values", "understanding"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": [], "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Public bird walks and tours in Philadelphia parks, usually on weekend mornings, listed on the events calendar.",
+        "days": ["sat", "sun"],
+        "times": ["morning"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Discovery Center", "address": "3401 Reservoir Drive", "zip": "19121", "in_city": true},
+        {"label": "FDR Park", "in_city": true},
+        {"label": "The Woodlands", "in_city": true},
+        {"label": "East Fairmount Park", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {"level": "unknown", "text": "Admission to the Discovery Center is free, and binoculars can be borrowed at no charge. The page does not say what each walk costs."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown", "kids_ok": true},
+      "access": {"wheelchair": "yes", "notes": "The Discovery Center is listed as wheelchair accessible, and restrooms are available. A walking trail of about three quarters of a mile runs along the reservoir. The page does not describe the trail surface."},
+      "first_step": {
+        "how": "Pick a Philadelphia walk or tour on the events page and register through the link on its listing.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Walks are open to the public with a registration link on each listing, but the page does not say whether beginners are welcome or whether walks are drop-in.",
+        "what_to_expect": "Walks listed for Philadelphia run about two hours, usually on weekend mornings. The page does not say how many people come or what gear to bring, so check the listing before you go. Entry to the Discovery Center itself is free.",
+        "first_visit_tips": [
+          "The Discovery Center is closed on Mondays. Its summer hours run through October 15, and winter hours start October 16.",
+          "A free parking lot sits at the center, and bike racks are at the front walk.",
+          "The Route 32 bus stop at 33rd and Oxford is about a 4 minute walk away, and the Route 3 stop at 33rd and Cecil B. Moore is about 5 minutes.",
+          "Binoculars, bird guides, and historical information can be borrowed free of charge."
+        ]
+      },
+      "contacts": {"website": "https://www.audubon.org/mid-atlantic", "phone": "(610) 990-3431"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.audubon.org/mid-atlantic",
+      "sources": [
+        {"url": "https://www.audubon.org/mid-atlantic", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "first_step", "status", "last_sign_of_life"]},
+        {"url": "https://www.audubon.org/discovery/visit", "seen": "2026-10-08", "fields": ["locations", "access", "cost", "first_step", "contacts.phone"]},
+        {"url": "https://www.audubon.org/discovery", "seen": "2026-10-08", "fields": ["summary", "first_step", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Discovery Center address, hours, phone, and free binocular loan come from audubon.org/discovery/visit. Tier 1 had no address for the center; the Discovery Center page now gives 3401 Reservoir Drive, in the Strawberry Mansion neighborhood. The 2026 year on the October 10 and 11 walks appears only in the event link, so last_sign_of_life keeps the tier 1 value of 2026-10. The phone number is the one listed on the Discovery Center page; confirm it is the Philadelphia desk. One search result pointed to an older Audubon Pennsylvania page with different hours; it was not used. The /mid-atlantic/events path returned 404, so walk listings come from the homepage."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:992151249", "irs_bmf:992151249"], "group_id": "autistic-art-coalition-of-philadelphia", "ein": "992151249", "website": "https://aacophilly.org/"},
+      "verdict": "publish",
+      "name": "Autistic Art Coalition of Philadelphia",
+      "summary": "An autistic-led group that runs free art classes, exhibitions, and community events for autistic, neurodivergent, and disabled artists in the Delaware Valley.",
+      "what_you_do": "Take a free art class, show your work in an exhibition, or come to a community event such as the Community Paint Day or The Infinity Ball. Ask about volunteer roles through the mailing list.",
+      "kind": "nonprofit",
+      "categories": ["arts-crafts"],
+      "interests": ["painting_drawing"],
+      "motives": ["enhancement", "social"],
+      "formats": ["learn_skill", "one_off_event"],
+      "roles": ["create"],
+      "audience": {"open_to": "public", "community": ["neurodivergent", "disability"], "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Studio hours: Monday and Friday noon to 5 pm, Tuesday 3:30 to 8 pm, and Thursday 11 am to 5 pm. Closed Wednesday and Sunday, and Saturday is by appointment. Express Yourself meets Thursdays 1 to 2:30 pm with Liberty Resources; its meeting place is not published.",
+        "days": ["mon", "tue", "thu", "fri"],
+        "times": ["daytime", "evening"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Studio", "address": "112 North 8th Street, Suite 206", "zip": "19107", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "Classes are free for eligible artists in the Delaware Valley. Donations are accepted."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown", "notes": "Past exhibits included a sensory-friendly quiet area with headphones that play white noise, plus touch and sensory artwork. The group is working on screen reader support for people with vision impairments. Wheelchair access and ASL are not stated, so ask before you visit."},
+      "first_step": {
+        "how": "Use the sign-up form on aacophilly.org, join the mailing list, or call the hotline at 215-934-2116 to ask about the next free class.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The page says no art experience is needed for the free classes, and it gives a sign-up form and a phone line to start.",
+        "what_to_expect": "You can work at your own pace, and no art background is needed. The page does not say how long a class runs, what supplies are provided, or what each session covers, so call the hotline before your first visit.",
+        "first_visit_tips": [
+          "Check the studio hours first: open Monday, Tuesday, Thursday, and Friday, and closed Wednesday and Sunday.",
+          "Find the studio at 112 North 8th Street, Suite 206, and look for the suite number on the building directory.",
+          "If you need a quiet space, ask ahead, since the page describes a quiet area only at past exhibits.",
+          "Ask what supplies to bring, since the page does not list them."
+        ]
+      },
+      "contacts": {"website": "https://aacophilly.org/", "phone": "215-934-2116", "contact_name": "Colleen R Ott"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://aacophilly.org/",
+      "sources": [
+        {"url": "https://aacophilly.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "access", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Studio hours, the free class sign-up route, and access notes come from aacophilly.org. The /classes, /programs, /events and /about paths returned 404 and were not used. The homepage lists Community Paint Day as August 14, 2026 and The Infinity Ball on October 10, 2026. The August date reads as past, so the homepage may be out of date. Class length, schedule and supplies are not published. Express Yourself (Thursdays, run with Liberty Resources) is carried over from tier 1 and was not re-checked. Eventbrite was not read because it is a lead platform."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "batona-hiking-club", "website": "https://batona.wildapricot.org/"},
+      "verdict": "publish",
+      "name": "BATONA Hiking Club",
+      "summary": "A long-running hiking club that leads weekend hikes of about 5 to 15 miles at parks and trails around the region. Members also help maintain sections of the Batona, Horseshoe and Appalachian Trails.",
+      "what_you_do": "Join a hike with a listed leader and check its length and difficulty before you go. Members can also join trail maintenance days, the annual dinner and a yearly hike and picnic.",
+      "kind": "club",
+      "categories": ["outdoors-adventure", "nature-environment"],
+      "interests": ["hiking", "trail_building"],
+      "motives": ["social", "enhancement"],
+      "formats": ["team_play", "side_by_side"],
+      "roles": ["hands_on", "lead"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "community": [], "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Hikes most weekends, each with its own date, meeting time, length and description on the club's site.",
+        "days": ["sat", "sun"],
+        "times": ["morning"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Hikes at parks and trails in Pennsylvania, New Jersey, Delaware and Maryland, outside Philadelphia", "in_city": false}
+      ],
+      "online_ok": false,
+      "cost": {"level": "low", "text": "Most hikes list a $1 fee. The annual dinner is $25 a person."},
+      "commitment": "drop_in",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a hike on the club's calendar whose distance and description suit you, then RSVP through Meetup or the leader's contact, as each listing says.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Hikes are listed publicly with a leader, a distance, and an RSVP route, but the club does not say in plain words whether non-members may come along.",
+        "what_to_expect": "Each hike has its own leader, meeting spot, distance, and description, and most cost $1. Some hikes cap the group at about 15 people including the leader, so RSVP early. Listings often suggest water, snacks, lunch, and hiking boots, and some warn about muddy or strenuous stretches.",
+        "first_visit_tips": [
+          "The club uses no formal difficulty scale, so read the distance and the description to judge whether a hike fits you.",
+          "Bring water, snacks, lunch, and sturdy hiking boots, since listings often ask for them.",
+          "Ask the leader before you RSVP whether a first-time hiker or non-member may join.",
+          "Most hikes are outside the city, so plan your ride from the meeting spot on the listing."
+        ]
+      },
+      "contacts": {"website": "https://batona.wildapricot.org/"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://batona.wildapricot.org/",
+      "sources": [
+        {"url": "https://batona.wildapricot.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "status", "last_sign_of_life"]},
+        {"url": "https://batona.wildapricot.org/faq", "seen": "2026-10-08", "fields": ["first_step", "what_to_expect"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The site does not say whether non-members can join a hike, so drop_in was removed from first_step (each hike asks for an RSVP). The commitment value drop_in is carried over from tier 1. The membership application link exists, but its terms were not shown. The homepage read was cut at 100,000 characters, so older listings past that point were not read. Upcoming hikes on the page have zip codes outside Philadelphia. The tier 1 publish verdict was kept on a regional basis; a reviewer should confirm that this counts as serving Philadelphia. The /faq path is the club's event calendar, not an FAQ."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "beacon-church", "website": "https://www.thewordatbeacon.org"},
+      "verdict": "publish",
+      "name": "Beacon Church",
+      "summary": "A Presbyterian congregation on East Cumberland Street that describes itself as LGBTQIA+ affirming and family-friendly. It holds a worship service and a free community dinner on the first Sunday of each month.",
+      "what_you_do": "Come to the first-Sunday service and stay for the free dinner, volunteer through the Get Involved form, or ask about membership by email.",
+      "kind": "congregation",
+      "categories": ["faith-community"],
+      "interests": ["worship_community"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "community": [], "faith": "protestant", "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Worship on the first Sunday of each month at 5 pm, with a free community dinner that same day.",
+        "days": ["sun"],
+        "times": ["evening"],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Church building", "address": "2364 East Cumberland Street", "zip": "19125", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "The first-Sunday community dinner is free. The page lists no fee for worship."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to the 5 pm service on the first Sunday of the month, or email info@thewordatbeacon.org to ask about a visit before you come.",
+        "drop_in": true,
+        "sign_up_needed": false,
+        "newcomer_friendliness": 4,
+        "basis": "The church says visitors are welcome and explains what a first visit looks like, including a bulletin handed out on arrival.",
+        "what_to_expect": "The service runs about an hour and ten minutes and includes songs, Bible readings, a sermon, prayer, and weekly communion. The room is medium-sized, with pews in a half circle around the altar, and usually 10 to 15 people attend. Children stay for the whole service, with a children's lesson, activity bags, a playroom, and a nursery available. The dinner is free, and you may bring a dish to share if you like.",
+        "first_visit_tips": [
+          "When you arrive, you will be handed a bulletin that outlines the service.",
+          "Dress however you are comfortable, from formal to casual.",
+          "Bring a dish to share for the dinner if you like.",
+          "Children have their own lesson, a playroom, and a nursery, so families can plan around them."
+        ]
+      },
+      "contacts": {"website": "https://www.thewordatbeacon.org", "email": "info@thewordatbeacon.org"},
+      "status": "active",
+      "last_sign_of_life": "2026",
+      "sign_of_life_url": "https://www.thewordatbeacon.org/",
+      "sources": [
+        {"url": "https://www.thewordatbeacon.org/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "contacts.email"]},
+        {"url": "https://www.thewordatbeacon.org/worship", "seen": "2026-10-08", "fields": ["schedule", "cost", "requirements", "first_step", "what_to_expect", "first_visit_tips"]},
+        {"url": "https://www.thewordatbeacon.org/get-involved", "seen": "2026-10-08", "fields": ["what_you_do"]},
+        {"url": "https://presbyphl.org/our-churches/", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Service time and first-visit steps come from the worship page. Homepage banners read Worship Summer 2026 and Tie Dye 2026, but the footer reads 2024 and no month is given, so last_sign_of_life keeps the tier 1 value of 2026. Parking, transit, and wheelchair access are not stated, and the contact page was linked but not read. The Get Involved page says volunteers fill in a form and a coordinator follows up."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:822662383"], "group_id": "beat-the-streets-inc", "ein": "822662383", "website": "https://btsphilly.org/"},
+      "verdict": "publish",
+      "name": "Beat the Streets Philadelphia",
+      "summary": "A sports and learning group that uses wrestling, mentoring, and tutoring to help student athletes in under-served parts of Philadelphia do well in school.",
+      "what_you_do": "Students can join a wrestling team or use the Mentoring Center for school help. Mentors are often college student athletes from Drexel and Penn, and the group is also recruiting coaches.",
+      "kind": "nonprofit",
+      "categories": ["sports-teams", "kids-youth-mentoring"],
+      "interests": ["youth_coaching", "mentoring", "tutoring"],
+      "motives": ["values"],
+      "formats": ["team_play"],
+      "roles": ["help_teach"],
+      "crowd": ["students"],
+      "audience": {"open_to": "public", "community": [], "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Year-round wrestling training at the Wrestling Center at 37th and Market Streets, plus winter team seasons from November to March with high school, middle school, and K-8 teams.",
+        "days": [],
+        "times": [],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Mentoring Center and headquarters", "address": "3700 Market Street, Suite 300", "zip": "19104", "in_city": true},
+        {"label": "Wrestling Center at 37th and Market Streets", "in_city": true}
+      ],
+      "cost": {"level": "unknown", "text": "The site lists no program fees and asks for donations."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Students: find a team near you with the location map on the Wrestling page. Parents or students who want school help: email btsphilly@btsphilly.org to set up a first visit to the Mentoring Center.",
+        "newcomer_friendliness": 3,
+        "basis": "A first visit to the Mentoring Center is offered by email, and the site has a team finder, but the wrestling sign-up steps are not described.",
+        "what_to_expect": "The Mentoring Center pairs student athletes with near-peer role models, often from Drexel and Penn, for school help. The site does not say how long a first visit lasts or who attends it, so ask when you email.",
+        "first_visit_tips": [
+          "Email or call (215) 454-2255 before you come, since the Mentoring Center's hours are not posted.",
+          "Sign up for the Mentoring Center list to hear about closures and schedule changes.",
+          "Ask the team or the office for practice times, since the site does not list them.",
+          "The main office and the Mentoring Center are at 3700 Market Street, Suite 300."
+        ]
+      },
+      "contacts": {"website": "https://btsphilly.org/", "email": "btsphilly@btsphilly.org", "phone": "(215) 454-2255", "contact_name": "Ben Reiter"},
+      "status": "active",
+      "last_sign_of_life": "2026-02",
+      "sign_of_life_url": "https://btsphilly.org/",
+      "sources": [
+        {"url": "https://btsphilly.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "roles", "cost", "contacts", "status", "last_sign_of_life", "first_step"]},
+        {"url": "https://btsphilly.org/mentoring", "seen": "2026-10-08", "fields": ["what_you_do", "what_to_expect", "first_step", "locations"]},
+        {"url": "https://btsphilly.org/wrestling", "seen": "2026-10-08", "fields": ["schedule", "locations", "requirements", "first_step"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://www.pysc.org/", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Wrestling sign-up steps, practice times, and fees are not published on the pages read. The mentoring page does not say how to become a mentor, so the first step there is the office contact. Mentoring Center hours are not posted. The Instagram feed on the site shows error messages and was not used. The newest dated item is a benefit on February 19, 2026, which supports last_sign_of_life. Schools named on the wrestling page (Central and Frankford high schools) and PAL Wrestling Club are partners; they are not in this batch and are not listed as leads because no page for them was read."
+    },
+    {
+      "match": {"lead_ids": ["city_programs:become-a-block-captain", "city_volunteer_pages:services-trash-recycling-city-upkeep-become-a-block-captain"], "group_id": "become-a-block-captain", "website": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/"},
+      "verdict": "publish",
+      "name": "Philadelphia Block Captain Program",
+      "summary": "Any Philadelphia resident can become captain of their own block. You collect signatures from neighbors on a petition, then organize block cleanups and help with the street's upkeep with the Philadelphia More Beautiful Committee.",
+      "what_you_do": "Keep sidewalks and gutters clear, plant flowers and new street trees, help neighbors with fix-up projects, host block parties, and remind people about pickup days.",
+      "kind": "program",
+      "categories": ["neighborhood-civic"],
+      "interests": ["block_captain", "clean_blocks"],
+      "motives": ["values", "social"],
+      "formats": ["lead_organize", "side_by_side"],
+      "roles": ["organize", "lead"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "residents", "community": [], "partisan": false, "support_group": false},
+      "schedule": {
+        "text": "Participating blocks hold three organized cleanups during the summer months, with the Philadelphia More Beautiful Committee.",
+        "days": [],
+        "times": [],
+        "recurring": true,
+        "season": "year_round"
+      },
+      "locations": [
+        {"label": "Your own block", "in_city": true}
+      ],
+      "cost": {"level": "unknown", "text": "The page lists no fee. The Philadelphia More Beautiful Committee can provide tools, supplies, and street cleaning for participating blocks."},
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call the Philadelphia More Beautiful Committee at (215) 685-3971, or use its online form, to ask for a clean block petition, which is mailed to you.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Any resident can start, and the city lays out a clear sequence: request the petition, collect signatures, then mail it back.",
+        "what_to_expect": "Expect paperwork first. You need signatures from at least 51 percent of the residents on your block, with one adult signature per household, and then you mail the completed petition back. A clean block officer then contacts you to get started. You can also ask whether your block already has a captain.",
+        "first_visit_tips": [
+          "Call before you collect signatures to find out whether your block already has a captain.",
+          "Start talking to neighbors early, since the petition needs at least 51 percent of residents to sign.",
+          "Leave time for the petition to be mailed back and reach the committee.",
+          "Plan on three organized cleanups over the summer, with tools and supplies from the committee."
+        ]
+      },
+      "contacts": {"website": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/", "phone": "(215) 685-3971"},
+      "status": "probably_active",
+      "last_sign_of_life": "2024-08",
+      "sign_of_life_url": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/",
+      "sources": [
+        {"url": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "cost", "schedule", "contacts.phone", "requirements", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Renamed from 'Become a block captain', which reads as an instruction rather than a name; the group_id is unchanged. The audience was changed from public to residents, since the city page says any resident can start. The city page carries no date or year, so status and last_sign_of_life keep the tier 1 values (2024-08). The page names the Philadelphia More Beautiful Committee as the cleanup partner, which is listed in leads_only."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "bel-arbor-community-garden", "website": "https://www.belarbor.org"},
+      "verdict": "publish",
+      "name": "Bel Arbor Community Garden",
+      "summary": "Neighbors who share a food-growing garden on Kimball Street, started in 1995 and preserved by the Neighborhood Gardens Trust in 1999. Members compost, grow vegetables and flowers, and look after a beehive.",
+      "what_you_do": "Turn the compost piles, keep the watering system running, grow vegetables and flowers, plant trees with the Tree Tenders, and help care for the bee hive.",
+      "kind": "garden",
+      "categories": ["gardening-greening"],
+      "interests": ["community_garden", "pollinators_bees"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "community": [], "partisan": false, "support_group": false},
+      "locations": [
+        {"label": "Garden", "address": "1012-1026 Kimball Street", "zip": "19147", "in_city": true}
+      ],
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Email the garden at belarborgarden@gmail.com to ask about joining, and ask in the same message about any waitlist, dues, or work days.",
+        "newcomer_friendliness": 2,
+        "basis": "Neither the garden's own site nor the Trust's page for it says how to join, whether there is a waitlist, or what work is expected, so the way in is unclear.",
+        "what_to_expect": "Gardeners share the common work: they turn the compost piles, keep the watering system going, and grow vegetables and flowers, some of them for the City Harvest program. The site lists no open days or work days, so ask by email before you come.",
+        "first_visit_tips": [
+          "Email before you visit, since the garden does not post open hours.",
+          "Break down large plant material to about a foot long or less before it goes on the compost.",
+          "Keep diseased or bug-infested plants out of the compost.",
+          "Shut the water off at the blue pump once you are done, since some connections leak while the pump runs."
+        ]
+      },
+      "contacts": {"website": "https://www.belarbor.org", "email": "belarborgarden@gmail.com"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.belarbor.org",
+      "sources": [
+        {"url": "https://www.belarbor.org/content.html", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "status"]},
+        {"url": "https://ngtrust.org/bel-arbor", "seen": "2026-10-08", "fields": ["summary", "locations", "first_step", "status"]},
+        {"url": "https://ngtrust.org/gardens/", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The garden site is built from frames, and its join page returned 404, so the only join route is the email address. The newest dated items are a 2012 Keystone Gardens honor and a 2006 contest win, plus undated November and October event notes. last_sign_of_life is left out because no dated item from the last two years was found. probably_active rests on present-tense content and a working site with no dates; a reviewer may want to downgrade to dormant if no newer evidence turns up. Trust contact details on the Trust page are for the Trust, not the garden, and are not recorded here."
+    }
+  ],
+  "leads_only": [
+    {"name": "Philadelphia More Beautiful Committee", "url": "https://www.phila.gov/services/trash-recycling-city-upkeep/become-a-block-captain/", "note": "named on the city's block captain page as the cleanup partner that supplies tools and street cleaning; its own site was not found, so it was not checked"},
+    {"name": "Neighborhood Gardens Trust", "url": "https://ngtrust.org/", "note": "preserved the Bel Arbor garden in 1999 and runs the gardens listing; named on the garden's pages, not checked as its own record"},
+    {"name": "Pennsylvania Horticultural Society", "url": "https://pennhort.org", "note": "named on the Bel Arbor garden's page for city gardening contests and awards; not checked"},
+    {"name": "Bel Arbor Tree Tenders", "url": "https://www.belarbor.org", "note": "the garden's tree planting group, named on its page; a separate group, not checked"}
+  ],
+  "blocked": [],
+  "notes": "Seven groups, all publish at tier 2. Searches: 1 of 1 used. Fetches: 22. No 403s, bot checks, or blocked pages. Several guessed paths returned 404 and are listed in each group's notes; no page was invented. Main changes from tier 1: the Audubon Discovery Center now has a confirmed address (3401 Reservoir Drive); the Batona drop_in value was removed because the site asks for RSVPs and does not say non-members may come; the block captain record was renamed from an instruction-style title and its audience changed to residents; Beacon's service time is now the first Sunday at 5 pm; the Bel Arbor garden's status rests on undated content, so a reviewer may want to downgrade it. The Batona publish verdict was kept on a regional basis, and a reviewer should confirm that it serves Philadelphia. Liberty Resources and PAL Wrestling Club are named partners with no URL seen, so they are noted in the records rather than in leads_only."
+}

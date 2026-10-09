@@ -8,8 +8,9 @@ ein: '832060896'
 summary: A nonprofit offering online study help for the GED, HiSET, and TABE tests, plus literacy, math,
   digital skills, and job readiness courses. The classes are open to adults across the country who did
   not finish high school or have low reading skills, and they run online at any hour.
-what_you_do: Enroll in an online class from the Enroll Here page and study on your own schedule. Adults
-  can also join the mailing list for updates.
+what_you_do: Start with a free practice test or enroll in an online course from the Enroll Here page,
+  then study on your own schedule. The Next Step program can help with college applications, financial
+  aid and job skills.
 kind: program
 categories:
 - science-learning
@@ -36,7 +37,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Online courses are open around the clock, so you study when it suits you.
   days: []
   times: []
   recurring: null
@@ -51,19 +52,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 8122 Buist Avenue
-  neighborhood: null
-  planning_district: lower_southwest
-  zip: '19153'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
   level: null
-  text: Fees are not shown on the home page
+  text: Free practice tests are offered, and the site says testing fees can be reimbursed up to 100 percent.
+    Course fees are not listed on the site.
 commitment: null
 group_size: null
 access:
@@ -78,14 +71,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the Enroll Here page on yourpathforadultlearners.com to sign up for an online class
+  how: Take one of the free practice tests the site offers, then open the Enroll Here page and fill out
+    the enrollment form linked there.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Courses are open to adults through a clear enroll page, but the home page does not list prices
-    or how long courses run.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Adults can start through a public enroll page and free practice tests, with no in person step
+    listed. The site gives no prices, course length or start dates.
+  what_to_expect: Courses are self-paced and run online on a computer, tablet or phone at any hour. The
+    site describes tutoring, progress checks and one on one guidance. It does not say how long a course
+    takes or what it costs, so check before you enroll.
+  first_visit_tips:
+  - Have a computer, tablet or phone with internet access ready before you start.
+  - Take a free practice test first to see where you stand.
+  - Ask about course length and fees before you enroll, since the site does not list them.
 contacts:
   website: https://yourpathforadultlearners.com/
   email: null
@@ -126,8 +125,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - schedule
+- url: https://yourpathforadultlearners.com/enroll-here
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_to_expect
+  - first_visit_tips
+- url: https://yourpathforadultlearners.com/the-next-step
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://yourpathforadultlearners.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

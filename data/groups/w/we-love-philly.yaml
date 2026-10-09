@@ -8,7 +8,8 @@ ein: '842858502'
 summary: A nonprofit that works to transform education for Philadelphia students through paid digital
   marketing and cybersecurity pre-apprenticeships. Adults can volunteer, join a committee, or mentor.
 what_you_do: Students gain hands-on work experience in the classroom and earn wages through the pre-apprenticeships.
-  Volunteers, board or committee members, and mentors join through the site's survey.
+  Adults can start on the Get Involved page by taking the volunteer survey, booking a tour, or signing
+  up through the Become a Mentor page.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -55,10 +56,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Office (contact page)
+  address: 6006 W. Girard Avenue
+  neighborhood: null
+  planning_district: null
+  zip: '19151'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Donations are accepted. The site lists no fee to join, and apprentices earn wages.
+  text: The pages we read do not say whether volunteering or mentoring costs anything. Donations are accepted,
+    and apprentices earn wages.
 commitment: null
 group_size: null
 access:
@@ -73,17 +84,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Take the volunteer survey on the website to say you want to volunteer, join a committee, or mentor
-    a student
+  how: Take the volunteer survey on the Get Involved page, or book a tour through the Volunteer or Schedule
+    a Tour page. Mentors can start from the Become a Mentor page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The way in is a survey, and the site does not describe what volunteers do or how students apply
+  basis: The way in is a survey or a tour booking, and the pages we read do not say what a volunteer does
+    or what a first visit is like.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.welovephilly.org
-  email: null
+  email: info@welovephilly.org
   phone: null
   contact_name: Carlos Aponte
   social:
@@ -92,9 +104,9 @@ contacts:
   - https://www.facebook.com/welovephillyorg
   - https://www.tiktok.com/@welovephilly_
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.welovephilly.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.welovephilly.org/pages/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -122,8 +134,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.welovephilly.org/pages/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.welovephilly.org/pages/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.welovephilly.org/pages/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

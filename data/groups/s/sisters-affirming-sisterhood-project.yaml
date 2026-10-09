@@ -8,8 +8,9 @@ leads:
 ein: '883627569'
 summary: Gives away gender-affirming clothing for free to trans and queer adults, and offers community
   care and mutual aid.
-what_you_do: Donate through the Givebutter or GoFundMe pages, team up on a collaboration or event, or
-  sign up for the monthly newsletter.
+what_you_do: Ask for clothing or community resources through the online Get Support form, drop off clean
+  donated clothing at 3675 Market St on weekdays, or sign up to help through the Volunteer Interest Form,
+  for example by sorting clothes or setting up events. The group also runs pop-up closets and workshops.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -20,8 +21,10 @@ interests:
 motives:
 - values
 formats: []
-roles: []
-crowd: []
+roles:
+- hands_on
+crowd:
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -35,13 +38,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Donation drop-off at 3675 Market St is Monday to Friday, 9 am to 5 pm. Weekends are by appointment
+    only.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Donation drop-off and mailing address
   address: 3675 Market St
   neighborhood: null
   planning_district: university_southwest
@@ -52,8 +62,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Clothing is free, and pop-up closets use a sliding scale.
 commitment: null
 group_size: null
 access:
@@ -65,18 +75,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
-  how: Open the Get Support page on sasproject.org to learn how to ask for clothing, or sign up for the
-    monthly newsletter.
+  how: Fill in the online Get Support form on sasproject.org to ask for affirming clothing or help finding
+    community resources. It takes about 3 to 5 minutes.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has public support and newsletter sign-ups, but it does not describe the steps to get
-    clothing or to volunteer.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Help starts with a form that the team reviews before offering anything, and the page says a request
+    does not guarantee help. The volunteer route also starts with a form and a reply, and no open drop-in
+    time is listed.
+  what_to_expect: A request is a short online form, and the team reviews it and replies later, not right
+    away. Help depends on stock, funding, program availability and team capacity. The group also holds
+    pop-up closets and workshops, but the site gives no dates and does not describe what a visit is like.
+  first_visit_tips:
+  - 'Send only what the form needs: the group asks you not to include ID, Social Security numbers, medical
+    records, immigration papers or financial account details.'
+  - Expect a reply later; the form is not watched around the clock.
+  - For donations, bring clean, gently used clothing only. Undergarments and heavily worn items are not
+    accepted.
 contacts:
   website: https://www.sasproject.org
   email: thesasprojectinfo@gmail.com
@@ -116,7 +134,28 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+  - cost
+- url: https://www.sasproject.org/get-support
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.sasproject.org/faqs
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - requirements
+  - cost
+  - what_you_do
+- url: https://www.sasproject.org/givesupport
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

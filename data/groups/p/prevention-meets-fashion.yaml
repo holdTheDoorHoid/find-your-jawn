@@ -7,8 +7,9 @@ leads:
 ein: '851713521'
 summary: Uses fashion, advocacy and public education to share sexual and menstrual health information
   with Black, LGBTQIA and non-binary communities.
-what_you_do: Attend the group's events, such as its condom fashion show and thrift days, or ask about
-  joining the volunteer team.
+what_you_do: Come to a yearly public event such as the February condom fashion show, the April 30 Denim
+  Day, or the free December wreath-making and toy drive. Volunteers aged 14 and up help run programs and
+  events, and the group also runs free support groups for adults 18 and older.
 kind: nonprofit
 categories:
 - health-wellness
@@ -37,11 +38,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Signature events repeat each year: a February condom fashion show, an April 30 Denim Day, an
+    HIV and AIDS panel and brunch during Women''s History Month, and a free December wreath-making and
+    toy drive.'
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 105 Wentz St
@@ -52,19 +55,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 105 Wentz Street
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19120'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The December wreath event and the support groups are free. The site lists no fee to volunteer
+    and no price for the other events.
 commitment: null
 group_size: null
 access:
@@ -79,15 +74,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@preventionmeetsfashion.org to ask about volunteering, or sign up for the newsletter
-    on the website
+  how: Fill in the Volunteer Interest form on the group's volunteer page, or email info@preventionmeetsfashion.org
+    to ask about volunteering.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site has a team page and an event calendar, but it does not describe how volunteers join
-    or when events happen.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The yearly events are open to the community, and volunteering takes a short form and a one-hour
+    training for people 14 and older.
+  what_to_expect: Volunteers must be at least 14, give about 4 hours a week including some evenings and
+    weekends, and complete a one-hour training first. Past volunteer work includes the condom fashion
+    show, Menstrual Health Day, and PRIDE Month.
+  first_visit_tips:
+  - Expect a one-hour volunteer training before your first shift.
+  - Check the Upcoming Events calendar on the site for dated opportunities.
 contacts:
   website: https://www.preventionmeetsfashion.org
   email: info@preventionmeetsfashion.org
@@ -97,9 +96,9 @@ contacts:
   - https://www.instagram.com/preventionmeetsfashion
   - https://www.linkedin.com/company/prevention-meets-fashion-inc
   calendar_feed: null
-status: probably_active
-last_sign_of_life: 2024-10
-sign_of_life_url: https://www.preventionmeetsfashion.org/events
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.preventionmeetsfashion.org/join-our-team
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -131,8 +130,36 @@ sources:
   - status
   - last_sign_of_life
   - what_you_do
-research_tier: 1
-confidence: low
+- url: https://www.preventionmeetsfashion.org/join-our-team
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - first_step
+  - what_to_expect
+- url: https://www.preventionmeetsfashion.org/programs/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.preventionmeetsfashion.org/pmf-signature-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://www.preventionmeetsfashion.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.preventionmeetsfashion.org/programs/support-groups
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,9 +7,11 @@ leads:
 - irs_bmf:822880213
 ein: '822880213'
 summary: A charity that brings healthy food to Philadelphia schoolchildren and their families. It runs
-  a pantry for about forty families at one city school, and volunteers pack and deliver meals each week.
-what_you_do: Volunteers pack and deliver meals weekly. Families can ask about joining the pantry, and
-  anyone can give through the donate page.
+  a pantry for about forty member families, and volunteers pick up produce, pack meals and deliver them
+  each week.
+what_you_do: Volunteers can pick up produce on Friday mornings, or pack meals and drive deliveries on
+  Saturday mornings. Families can ask about joining the pantry, and anyone can give through the donate
+  page.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -35,9 +37,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteers pack and deliver meals each week. The page gives no days or times.
-  days: []
-  times: []
+  text: 'Morning volunteer shifts: produce pickup on Fridays, and pantry packing and deliveries on Saturdays.'
+  days:
+  - fri
+  - sat
+  times:
+  - morning
   recurring: true
   season: null
 locations:
@@ -62,8 +67,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated for volunteers or families; online donations are accepted
-commitment: null
+  text: No fee for families or volunteers is listed on the pages read. Online donations are accepted.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
@@ -75,22 +80,31 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Your own vehicle for the Friday pickup and the Saturday delivery shifts.
 first_step:
-  how: Use the Volunteer With Us page on ziafood.org, or send a message through Contact Us
+  how: Fill in the form on the Volunteer With Us page at ziafood.org with your name, phone and email,
+    then pick a Friday or Saturday shift.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a clear volunteer page and invites new volunteers, but it does not describe what
-    a first shift is like
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page has a clear form and posted shift times, and it allows as little as one shift
+    a month, but it does not say whether new volunteers get training.
+  what_to_expect: Volunteers pick up produce, pack meals, or drive deliveries in short morning shifts.
+    The volunteer page says the work is run out of First Presbyterian Church in Philadelphia, and it gives
+    no street address.
+  first_visit_tips:
+  - Pickup and delivery volunteers need their own vehicle.
+  - Shift times are 9 to 11:30 am Friday for produce, 9 to 11 am Saturday for packing, and 10 am to noon
+    Saturday for deliveries.
+  - Ask for the street address before your first shift, since the site gives none.
 contacts:
   website: https://www.ziafood.org/
   email: null
   phone: null
   contact_name: Paula M Jones
-  social: []
+  social:
+  - https://www.facebook.com/Ziafoodphilly/
+  - https://www.instagram.com/ziafoodyoucancounty/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -121,7 +135,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.ziafood.org/volunteer-with-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - commitment
+  - requirements
+  - first_step
+- url: https://www.ziafood.org/program-information
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

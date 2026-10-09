@@ -8,8 +8,9 @@ leads:
 ein: '854079774'
 summary: A volunteer-run Philadelphia rescue that takes in stray cats and kittens and places them in foster
   homes until they are adopted.
-what_you_do: Foster a cat in your home while it waits for adoption, offer temporary hosting, adopt through
-  the online application, or donate.
+what_you_do: Foster a cat in your home while it waits for adoption, or offer temporary hosting. Adopt
+  through the online application, or donate. The rescue has no shelter building, so cats live with volunteer
+  fosters.
 kind: nonprofit
 categories:
 - animals
@@ -35,8 +36,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No recurring events are listed. The Clear the Shelters adoption promotion ran from August 1 to
-    31, 2026, with reduced adoption fees.
+  text: No recurring events or hours are listed on the site.
   days: []
   times: []
   recurring: null
@@ -51,19 +51,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 164 Sigel Street
-  neighborhood: null
-  planning_district: south
-  zip: '19148'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Adoption has a fee, reduced during the August 2026 promotion. Amounts were not recorded.
+  level: paid
+  text: Adoption fees are $155 for cats over 1 year, $180 for cats under 1 year, and $500 for purebreds,
+    which the site says include tax. The site says the fee covers spay or neuter, medical care, and foster
+    care, and it lists no fee for fostering.
 commitment: null
 group_size: null
 access:
@@ -78,21 +71,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the foster form or the temporary host form linked on the site, or use the contact page
-    to ask questions
+  how: Fill in the foster application or the temporary host form linked on the site, or email cats@kittensnatchers.org
+    with questions.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Fostering and adopting both start with an application. The site does not describe orientation,
-    volunteer shifts, or events.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Fostering, hosting and adopting all start with a form, and the site lists no orientation, volunteer
+    shifts, or events, so the way in is a form first.
+  what_to_expect: Adopters apply online, and approval can take up to 5 days. The rescue then connects
+    you with the foster caring for the cat, you meet by video or in person, and kittens go home only after
+    spay or neuter surgery. The pages read do not describe foster duties, supplies, orientation, or hours.
+  first_visit_tips:
+  - Pick at least two cats you like, since the adoption page advises it in case another adopter gets the
+    first one.
+  - Expect the foster to ask about your home life and what you want in a cat.
 contacts:
   website: https://kittensnatchers.godaddysites.com
-  email: null
+  email: cats@kittensnatchers.org
   phone: null
   contact_name: Katrin Ferge
-  social: []
+  social:
+  - https://www.facebook.com/kittensnatchersphilly/
+  - https://www.instagram.com/kitten_snatchers/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-08
@@ -134,7 +134,25 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://kittensnatchers.godaddysites.com/adoption-process
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+  - first_step
+  - first_visit_tips
+  - cost
+- url: https://kittensnatchers.godaddysites.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - what_to_expect
+- url: https://kittensnatchers.godaddysites.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

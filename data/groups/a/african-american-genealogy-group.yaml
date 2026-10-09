@@ -6,9 +6,10 @@ leads:
 - irs_bmf:232823485
 ein: '232823485'
 summary: A nonprofit that helps people trace African American family history. It holds free public meetings
-  with a speaker most months, and members can also join workshops and state group meetings.
+  with a speaker most months, and members can also join members-only workshops and interest group meetings.
 what_you_do: Come to a free general meeting on the second Tuesday of the month, except July and August.
-  There is a social hour at 6 pm, and the talk starts at 6:30 pm. Registration is on the group's site.
+  The social hour is at 6 pm and the talk starts at 6:30 pm. The meeting is on Zoom, so register on the
+  group's site to get the link. Membership is optional and unlocks members-only workshops.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -50,10 +51,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: free
-  text: Free and open to the public
+  text: 'Meetings are free. Membership is optional: yearly dues are $25 (student, 26 and under), $40 (regular)
+    or $75 (family), or $500 once for lifetime membership.'
 commitment: drop_in
 group_size: null
 access:
@@ -68,17 +70,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for the next general meeting through the registration page on aagg.org, then arrive for
-    the 6 pm social hour.
+  how: Register for the next monthly meeting on the group's registration page to get the Zoom link, then
+    join for the 6 pm social hour or the 6:30 pm talk.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: General meetings are free and open to the public, and registration is the stated way in. The
-    next talk is aimed at beginners.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The October 2026 talk is titled Beginning Your Genealogy, the page calls it a free event that
+    welcomes visitors, and it links to a registration page. Other monthly talks are not described for
+    beginners.
+  what_to_expect: Meetings are free and held on Zoom, so you can join from home after you register. A
+    social hour starts at 6 pm and the speaker talk starts at 6:30 pm. The October 2026 talk covers genealogy
+    tools and techniques, with some attention to Southern and African American records.
+  first_visit_tips:
+  - Register ahead on the group's site to get the Zoom link.
+  - Members-only workshops need a membership; the monthly talk is open to visitors.
+  - Joining online is immediate, while a mailed membership form takes 5 to 7 business days.
 contacts:
-  website: https://www.aagg.org
+  website: https://aagg.org
   email: null
   phone: null
   contact_name: Velinda D Banks
@@ -87,7 +95,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://aagg.org/
+sign_of_life_url: https://aagg.org/general-meeting-registration/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,7 +125,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
+- url: https://aagg.org/general-meeting-registration/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - online_ok
+  - cost
+- url: https://aagg.org/join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

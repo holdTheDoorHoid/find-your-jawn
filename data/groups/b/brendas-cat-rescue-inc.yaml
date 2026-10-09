@@ -5,10 +5,11 @@ leads:
 - irs_990n:464986604
 - irs_bmf:464986604
 ein: '464986604'
-summary: An all-volunteer nonprofit that rescues stray and abandoned cats, works to have them sterilized,
-  and finds them homes. It serves Philadelphia, according to its Petfinder listing.
-what_you_do: Foster a cat, adopt from the adoptable list, or help through the How to Help page. Donations
-  go through PayPal or Venmo, and the site also lists a barn cat program.
+summary: An all-volunteer rescue for stray and abandoned cats. Cats live in foster homes until they are
+  adopted, and the rescue also traps, neuters and returns feral cats from colonies.
+what_you_do: Foster a cat, adopt from the adoptable list, or help by socializing shy cats, driving cats
+  to vet visits, or working at adoption events. Donations go through PayPal or Venmo, and the site also
+  lists a barn cat program.
 kind: nonprofit
 categories:
 - animals
@@ -48,19 +49,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 8505 Chippewa Road
-  neighborhood: null
-  planning_district: lower_northwest
-  zip: '19128'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Donations are accepted through PayPal and Venmo. Adoption fees are not stated on the page.
+  level: low
+  text: The pages we read list no fee to volunteer. Foster homes pay for food, litter, and daily care,
+    and the rescue covers vet costs for problems. Adoption fees are $150 for one adult cat, $225 for two
+    adult cats, $175 for one kitten, and $275 for a pair of kittens, and they are not refundable.
 commitment: null
 group_size: null
 access:
@@ -75,17 +69,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Read the Foster and How to Help pages on brendascatrescue.org, then message the rescue through
-    its Facebook or Instagram page to ask how to volunteer or foster
-  drop_in: null
-  sign_up_needed: null
+  how: Fill out the online foster application linked from the Foster page, or the online adoption application
+    if you want to adopt. To ask about volunteering, use the contact form or email brendasrescues@gmail.com.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The foster and help pages it links to were not read, and no email or phone is published
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Fostering and adopting both need a written application, and meeting cats happens only after approval;
+    the volunteer roles are listed, but the way to start them is a contact form or email.
+  what_to_expect: After an adoption application is approved, the rescue arranges a meet and greet with
+    the cat at the foster home. A foster keeps a cat for several weeks to several months, provides food,
+    litter and daily care, and has vet costs covered for any problems.
+  first_visit_tips:
+  - Foster applicants must be at least 25 to be the main caretaker.
+  - Adopters must be at least 21 and employed, self-employed or retired, and need a veterinarian reference
+    and three personal references; incomplete applications are not processed.
+  - Adoption preference goes to people living within one hour of Philadelphia.
 contacts:
   website: https://www.brendascatrescue.org
-  email: null
+  email: brendasrescues@gmail.com
   phone: null
   contact_name: Debra E Welter
   social:
@@ -123,8 +124,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.brendascatrescue.org/foster
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - cost
+- url: https://www.brendascatrescue.org/adoption-process
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - requirements
+  - first_visit_tips
+- url: https://www.brendascatrescue.org/donate
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+- url: https://www.brendascatrescue.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.brendascatrescue.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

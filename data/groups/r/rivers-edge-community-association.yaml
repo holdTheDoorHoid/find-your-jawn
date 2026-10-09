@@ -70,13 +70,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call or email the contact listed with the City to ask where and when the next zoning meeting is
-    held.
+  how: Call or email the group's contact on the City list (see contacts) to ask where and when its next
+    open meeting is held. If that does not work, email the City's RCO office at rco@phila.gov.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  newcomer_friendliness: 2
+  basis: City rules say registered community groups must hold regularly scheduled open meetings, but this
+    group's meeting dates and place were not found, and its own website could not be opened.
+  what_to_expect: The City requires these groups to hold regularly scheduled open meetings, so a neighbor
+    can attend one. This group's meeting dates, times and place were not found on any page we could open.
+    Expect a meeting where neighbors look at nearby zoning and building proposals.
   first_visit_tips: []
 contacts:
   website: www.recaphilly.com
@@ -98,7 +101,14 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.contact_name
-research_tier: 1
+  - contacts
+  - status
+- url: https://www.phila.gov/programs/registered-community-organizations-rcos/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

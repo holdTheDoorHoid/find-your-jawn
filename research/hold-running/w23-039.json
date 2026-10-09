@@ -1,0 +1,450 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-039",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 28,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["irs_990n:862318673", "irs_bmf:862318673"],
+        "group_id": "city-athletics-community-partners",
+        "ein": "862318673",
+        "website": "https://www.cityathleticsphilly.com"
+      },
+      "verdict": "publish",
+      "name": "City Athletics Community Partners",
+      "summary": "A nonprofit in North and Northwest Philadelphia that gets kids and families into sports and fitness, with youth soccer, uniform giveaways, and a Juneteenth event.",
+      "what_you_do": "Kids can sign up for the spring soccer program. Families of students at two partner elementary schools can request free uniforms, picked up at 1901 W Tioga St. The site does not list volunteer roles.",
+      "kind": "nonprofit",
+      "categories": ["sports-teams"],
+      "interests": ["soccer", "youth_coaching"],
+      "motives": ["enhancement", "values"],
+      "formats": ["team_play"],
+      "crowd": ["kids", "families"],
+      "audience": {"open_to": "public", "min_age": 4, "support_group": false},
+      "schedule": {
+        "text": "A spring soccer development program for boys and girls ages 4 to 12. The site lists a 2025 spring program and a 2026 poster, but no current dates or times.",
+        "season": "spring"
+      },
+      "locations": [
+        {"label": "Uniform pickup site", "address": "1901 W Tioga St", "zip": "19140", "in_city": true}
+      ],
+      "cost": {
+        "level": "low",
+        "text": "The site says programs cost little or nothing. Donations are accepted, and no program fee is posted."
+      },
+      "commitment": "seasonal",
+      "requirements": {
+        "kids_ok": true,
+        "court_ordered_ok": "unknown",
+        "service_hours_letter": "unknown"
+      },
+      "first_step": {
+        "how": "Call (215) 650-7499 to ask when the next spring soccer sign-up opens, because the Register Now link on the activities page returned an error when checked.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Soccer for ages 4 to 12 is open to the public and asks families to register, but the sign-up link is broken and no current dates are posted, so the way in is unclear.",
+        "what_to_expect": "The 2025 spring program focused on skill building, short games, and awareness of space on the field, for boys and girls ages 4 to 12. The site does not list times, length, fees, or what to bring, so ask before the first session.",
+        "first_visit_tips": [
+          "Ask for the start date, the fee, and what to bring when you call.",
+          "Uniform pickup is at 1901 W Tioga St, 19140, for the school uniform giveaway.",
+          "The site lists no parking or transit details."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.cityathleticsphilly.com",
+        "phone": "(215) 650-7499",
+        "contact_name": "Janea Jordon"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://cityathleticsphilly.com/activities/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.cityathleticsphilly.com", "seen": "2026-10-08", "fields": ["summary", "kind", "contacts", "cost"]},
+        {"url": "https://cityathleticsphilly.com/activities/", "seen": "2026-10-08", "fields": ["schedule", "status", "first_step", "locations", "what_you_do"]},
+        {"url": "https://cityathleticsphilly.com/youth-soccer/", "seen": "2026-10-08", "fields": ["schedule", "status", "first_step"]},
+        {"url": "https://cityathleticsphilly.com/contact/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The Register Now link on the activities page (the spring 2025 soccer page) returned HTTP 404 when fetched, so no current registration page was found. The youth soccer page names a Youth Soccer 2026 poster but shows no dates, times, fees, or sign-up link; its donation button is not a registration link. The uniform request closes July 30 with no year shown, so it is not recorded as dated. The contact email is hidden on the site, so it is not recorded. One WebSearch found nothing about City Athletics spring 2026 registration, and its results were not used. Status stays probably_active because the newest year on the site is 2025 or 2026 with no dates."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:205763523", "irs_bmf:205763523"],
+        "group_id": "cma-philly",
+        "ein": "205763523",
+        "website": "https://www.phillycma.org/"
+      },
+      "verdict": "publish",
+      "name": "CMA Philly (Crystal Meth Anonymous)",
+      "summary": "A peer fellowship for people who want to stop using crystal meth. Members meet every day of the week in Center City and Fishtown, and anyone can come to a meeting.",
+      "what_you_do": "Come to any meeting to listen or share. The group follows the Twelve Step model, and newcomers can start with the Wednesday Beginner's Meeting.",
+      "kind": "support_group",
+      "categories": ["support-recovery"],
+      "interests": ["addiction_recovery"],
+      "motives": ["protective", "social"],
+      "formats": ["conversation"],
+      "audience": {"open_to": "public", "support_group": true},
+      "schedule": {
+        "text": "Meetings run every day of the week in Philadelphia, most at 7:15 pm. Center City meetings are at The Hart of Catering, 2101 Sansom St. Fishtown meetings are at Hope on Girard, 126 W Girard Ave, on Tuesday at 8:30 pm and Friday at 9:30 pm. The Saturday 5 pm speaker meeting is online.",
+        "days": ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
+        "times": ["evening", "night"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "The Hart of Catering (Center City meetings)", "address": "2101 Sansom St", "zip": "19103", "in_city": true},
+        {"label": "Hope on Girard (Fishtown meetings)", "address": "126 W Girard Ave", "zip": "19104", "in_city": true}
+      ],
+      "online_ok": true,
+      "cost": {
+        "level": "free",
+        "text": "No dues or fees. Each meeting passes a basket for rent and literature, and giving is optional."
+      },
+      "commitment": "drop_in",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Come to the Wednesday 7:15 pm Beginner's Meeting at The Hart of Catering, 2101 Sansom St, or call the 24-hour helpline at 855-638-4373 with questions.",
+        "drop_in": true,
+        "newcomer_friendliness": 5,
+        "basis": "A weekly Beginner's Meeting is built for newcomers, anyone can attend, and no dues are charged.",
+        "what_to_expect": "The Wednesday Beginner's Meeting is built for newcomers, and people who have been clean for less than a year get preference when sharing. The fellowship follows the Twelve Step model, so meetings center on sharing and listening. The newcomer page suggests going to many meetings early on and finding a sponsor. The site does not say how long a meeting lasts.",
+        "first_visit_tips": [
+          "Go to The Hart of Catering, 2101 Sansom St, in Center City for the Wednesday 7:15 pm Beginner's Meeting.",
+          "Call the 24-hour helpline at 855-638-4373 if you want to ask questions first.",
+          "Attending is free. There are no dues or fees, and the basket is optional.",
+          "The only online meeting is the Saturday 5 pm speaker meeting, which runs on Zoom."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.phillycma.org/",
+        "phone": "855-638-4373",
+        "contact_name": "Cory Bortnicker"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.phillycma.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.phillycma.org/", "seen": "2026-10-08", "fields": ["summary", "audience", "cost", "contacts", "status"]},
+        {"url": "https://www.phillycma.org/meetings", "seen": "2026-10-08", "fields": ["schedule", "locations", "first_step", "online_ok"]},
+        {"url": "https://www.phillycma.org/meeting-times", "seen": "2026-10-08", "fields": ["schedule", "locations", "online_ok", "first_step"]},
+        {"url": "https://www.phillycma.org/newcomers", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "cost", "audience"]},
+        {"url": "https://www.phillycma.org/faqs", "seen": "2026-10-08", "fields": ["cost"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Meeting list checked: Philadelphia meetings run every day (Center City at The Hart of Catering, Fishtown at Hope on Girard), and only the Saturday 5 pm speaker meeting is online. The meeting list also shows meetings in Bucks County, Scranton and Lemoyne, which are out of area and not recorded. The locations page names a Walnut Street church meeting (7:15 pm, Sunday to Friday) that does not appear on the Philadelphia meeting list, so it was not added. Years on the site (2024 and 2025) appear only in link names, so no meeting month was recorded."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:223857591", "irs_bmf:223857591"],
+        "group_id": "coalition-of-africian-communities-philadelphia",
+        "ein": "223857591",
+        "website": "https://www.africom-philly.org"
+      },
+      "verdict": "publish",
+      "name": "Coalition of African Communities Philadelphia",
+      "summary": "A Philadelphia nonprofit working with African and Caribbean immigrants and refugees on health connections, immigration and legal help, education and culture programs, and community organizing.",
+      "what_you_do": "Ask about volunteering or services by phone or email, or take part in the organizing and civic engagement work. Services cover health connections, immigration and legal help, and education and culture programs.",
+      "kind": "nonprofit",
+      "categories": ["culture-language-heritage-groups", "advocacy-rights"],
+      "interests": ["immigrant_welcome", "immigrant_rights"],
+      "motives": ["values", "understanding"],
+      "roles": ["hands_on"],
+      "audience": {
+        "open_to": "public",
+        "community": ["immigrants", "refugees"],
+        "support_group": false
+      },
+      "locations": [
+        {"label": "Office", "address": "6328 Paschall Ave Suite B", "zip": "19142", "in_city": true}
+      ],
+      "cost": {
+        "level": "unknown",
+        "text": "The site does not state fees for services. Donations are optional and tax deductible."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 267-787-1302 or email info@africom-philly.org to ask about volunteering or services. The office is at 6328 Paschall Ave, Suite B.",
+        "newcomer_friendliness": 3,
+        "basis": "The site says services are open to everyone and gives a phone number, an email and an office address to ask, but it lists no hours, vacancies or intake steps.",
+        "what_to_expect": "The site does not say what happens after you reach out, how long it takes, or whether a fee applies. It lists no office hours or staff languages, so ask those on your first call. Services cover health connections, immigration and legal help, and education and culture programs.",
+        "first_visit_tips": [
+          "The site lists no office hours, so call or email before you visit.",
+          "Staff languages are not listed, so ask on your first call.",
+          "The site lists no parking or transit details."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.africom-philly.org",
+        "phone": "267-787-1302",
+        "email": "info@africom-philly.org",
+        "contact_name": "Coalition of African Communities"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.africom-philly.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.africom-philly.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "locations", "first_step", "contacts", "status", "audience"]},
+        {"url": "https://africom-philly.org/get-involved/", "seen": "2026-10-08", "fields": ["first_step", "what_you_do"]},
+        {"url": "https://africom-philly.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://africom-philly.org/services/", "seen": "2026-10-08", "fields": ["summary"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The services page has one line of placeholder filler text under the services heading, so the site may be unfinished. The Get Involved page points to an older mailing list address for joining the list, which was not recommended as a first step and not used. The Vacancies section lists no positions, dates or year. The phone number 267-787-1302 comes from the contact page and was not on the tier 1 record."
+    },
+    {
+      "match": {
+        "lead_ids": [],
+        "group_id": "collins-smith-barrick-play-garden",
+        "website": "https://www.thecollinssmithbarrickplaygarden.com/"
+      },
+      "verdict": "publish",
+      "name": "Collins Smith Barrick Play Garden",
+      "summary": "A neighborhood garden on East Hagert Street, founded in 2001, where neighbors grow food and play. Neighbors can email the garden or use its sign-up form to ask about joining.",
+      "what_you_do": "Use the garden's sign-up form or email to ask about joining. The site does not describe work days or open hours, so ask what membership involves before you come.",
+      "kind": "garden",
+      "categories": ["gardening-greening"],
+      "interests": ["community_garden"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Garden", "address": "2046-2052 E. Hagert St.", "in_city": true}
+      ],
+      "commitment": "ongoing_role",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Use the garden's sign-up form or email csbplaygarden@gmail.com to ask about joining.",
+        "newcomer_friendliness": 2,
+        "basis": "The site invites neighbors to join and links a membership sign-up form, but the form page did not show its questions when checked, and the site lists no open hours, work days, or dues, so you cannot see what joining involves first.",
+        "what_to_expect": "The site does not say how long a visit lasts, what you do there, or what it costs. The Neighborhood Gardens Trust profile describes the garden as food producing, so ask the garden by email what it is like to take part before you go.",
+        "first_visit_tips": [
+          "The site lists no open hours, so email before you come.",
+          "The garden's Facebook group and Instagram are linked from its site if you want to see recent posts first."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.thecollinssmithbarrickplaygarden.com/",
+        "email": "csbplaygarden@gmail.com",
+        "social": [
+          "https://www.facebook.com/groups/CSBplaygarden/",
+          "https://www.instagram.com/csbplaygarden"
+        ]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.thecollinssmithbarrickplaygarden.com/",
+      "sources": [
+        {"url": "https://ngtrust.org/collins-smith-barrick", "seen": "2026-10-08", "fields": ["summary", "locations", "contacts", "first_step", "status"]},
+        {"url": "https://ngtrust.org/gardens/", "seen": "2026-10-08", "fields": ["lead"]},
+        {"url": "https://thecollinssmithbarrickplaygarden-com.l.ink/", "seen": "2026-10-08", "fields": ["first_step", "what_you_do"]},
+        {"url": "https://sites.google.com/view/collinssmithbarrickplaygarden/volunteer-form", "seen": "2026-10-08", "fields": ["first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The group's home page redirects to a link page on the same domain, which links to the membership sign-up form. The form page showed no questions, work day schedule, dues or age limits when read, and was not submitted. The Neighborhood Gardens Trust profile gives the founding year as 2001 and a preservation year of 2018, and its footer copyright is not evidence of activity. The Facebook group and Instagram were not read. Open membership for neighbors is based on the group's own invitation to join, not on a stated rule."
+    },
+    {
+      "match": {
+        "lead_ids": [],
+        "group_id": "community-and-economic-development-ced",
+        "website": "https://cedphilly.org"
+      },
+      "verdict": "publish",
+      "name": "Community & Economic Development (CED)",
+      "summary": "A department of the Urban Affairs Coalition that helps lower and moderate income families with homebuying, foreclosure prevention and money skills. It offers free financial education workshops that groups can request, and a free hotline for homeowners who are behind on payments.",
+      "what_you_do": "Ask for a free money workshop for your group by email or through the online request form. If you are behind on a mortgage or property tax, call the homeowner hotline. Homebuyer seminars and fairs are registered through Eventbrite.",
+      "kind": "program",
+      "categories": ["careers-skills-professional", "hunger-housing-basic-needs"],
+      "interests": ["money_skills", "housing_help"],
+      "motives": ["protective", "enhancement"],
+      "formats": ["learn_skill", "one_off_event"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Office hours are Monday to Friday, 9 am to 5 pm. Money workshops are booked on request, and the group chooses the dates. Hotline hours are not listed.",
+        "days": ["mon", "tue", "wed", "thu", "fri"],
+        "times": ["daytime"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Office (UAC, 1650 Arch St)", "address": "1650 Arch Street, Suite 2701", "zip": "19103", "in_city": true}
+      ],
+      "cost": {
+        "level": "free",
+        "text": "Financial education workshops and the hotline are free, per the site"
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call the hotline at 215-334-4663 if you are behind on a mortgage or property tax, or email cedphilly@uac.org to ask for a free money workshop for your group.",
+        "drop_in": false,
+        "newcomer_friendliness": 3,
+        "basis": "The hotline and free workshops are open to the public, and the group request route is clear, but the site lists no workshop dates or hotline hours.",
+        "what_to_expect": "The hotline is for homeowners who are behind on a mortgage or property tax, facing foreclosure, or dealing with a tangled title. The site does not say what happens after the call, beyond pointing to an online intake form at Philadelphia Legal Assistance. A money workshop is set up for a group, which picks the topic and dates and provides the room. Individuals who need one-on-one help are referred to other services.",
+        "first_visit_tips": [
+          "The office is at 1650 Arch Street, Suite 2701, open 9 am to 5 pm, Monday to Friday.",
+          "Workshops are for groups such as organizations, churches, clubs, and schools.",
+          "The site lists no parking, transit, or accessibility details, so ask before you visit."
+        ]
+      },
+      "contacts": {
+        "website": "https://cedphilly.org",
+        "phone": "215-851-1738",
+        "email": "cedphilly@uac.org",
+        "social": [
+          "https://www.facebook.com/CEDphilly/",
+          "https://www.instagram.com/cedphilly_uac/"
+        ]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-05",
+      "sign_of_life_url": "https://cedphilly.org",
+      "sources": [
+        {"url": "https://cedphilly.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "first_step", "locations", "contacts", "status"]},
+        {"url": "https://uac.org/partners/", "seen": "2026-10-08", "fields": ["lead"]},
+        {"url": "https://cedphilly.org/financial-advancement-network", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "cost", "audience"]},
+        {"url": "https://cedphilly.org/philly-save-your-home-free-hotline", "seen": "2026-10-08", "fields": ["summary", "first_step", "audience"]},
+        {"url": "https://cedphilly.org/contact", "seen": "2026-10-08", "fields": ["contacts", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "The hotline number is printed as 215-334-HOME on the site, which matches 215-334-4663. The hotline page lists no hours, so only the office hours are recorded. The Eventbrite homebuyer seminar and fair is a dated event and is not in the schedule. The site lists a staff member's personal email, which was not published here; the general CED address was used instead."
+    },
+    {
+      "match": {
+        "lead_ids": [],
+        "group_id": "community-board-game-night-at-philly-game-shop",
+        "website": "https://www.phillygameshop.com/events"
+      },
+      "verdict": "publish",
+      "name": "D&D 101 and One-Shot D&D Sessions at Philly Game Shop",
+      "summary": "Dungeons and Dragons games on Sunday afternoons at Philly Game Shop, including a D&D 101 beginner session and one-shot games. Players sign up ahead on the shop's Discord.",
+      "what_you_do": "Join a Dungeons and Dragons table for a single game or a beginner session. Sign up ahead on the shop's Discord, and ask staff for help if you have trouble.",
+      "kind": "program",
+      "categories": ["games-puzzles"],
+      "interests": ["tabletop_rpg"],
+      "motives": ["social"],
+      "formats": ["learn_skill", "team_play"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Sundays, 12:30 to 3 pm, every week. The store is open on Sundays from 11 am to 9 pm.",
+        "days": ["sun"],
+        "times": ["daytime"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Philly Game Shop", "address": "521 to 525 South 5th Street", "zip": "19147", "in_city": true}
+      ],
+      "online_ok": false,
+      "cost": {
+        "level": "unknown",
+        "text": "The page lists no price for D&D sessions. Walk-in seating is free in general, and main hall table reservations are $30 per table, subject to availability."
+      },
+      "commitment": "weekly",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Join the shop's free Discord server, open its Events tab, and click the green check box on a D&D session to save your seat.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The events page lists a D&D 101 beginner session and one-shot games, and the sign-up guide explains how to get a seat, so newcomers have a clear way in.",
+        "what_to_expect": "Each D&D session runs from 12:30 to 3 pm on Sunday, so a visit is about two and a half hours. Sessions include a D&D 101 beginner session and one-shot games, so you can play a single game without joining a longer campaign. The page does not list a price for D&D, so ask staff when you sign up.",
+        "first_visit_tips": [
+          "Sign up for a seat ahead of time on the shop's Discord, since the page asks players to do this so games have enough people.",
+          "To give up a seat, remove your green check box and message the staff on Discord so someone else can take it.",
+          "If Discord is a problem, call (215) 305-9230 or stop by the shop for help.",
+          "The store is open 11 am to 9 pm on Sundays."
+        ]
+      },
+      "contacts": {
+        "website": "https://www.phillygameshop.com/events",
+        "email": "staff@phillygameshop.com",
+        "phone": "(215) 305-9230"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.phillygameshop.com/events",
+      "sources": [
+        {"url": "https://www.phillygameshop.com/events", "seen": "2026-10-08", "fields": ["name", "summary", "schedule", "cost", "locations", "commitment", "first_step", "status", "audience", "contacts"]},
+        {"url": "https://www.phillygameshop.com/how-to-sign-up-for-events", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://www.phillygameshop.com/contact", "seen": "2026-10-08", "fields": ["contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page also lists a Sunday 5 pm Sungayz! Queer Game Night and a Saturday Community Board Game Night as separate events. The LGBTQ audience tag from tier 1 was removed from this record because it belonged to the separate Sungayz event, not to the D&D sessions. The sign-up guide says sign-up runs through Discord and that email is not part of it, though the events page still lists the staff email for D&D availability. No D&D price is posted, so the cost level is unknown."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:464221578", "irs_bmf:464221578"],
+        "group_id": "community-helping-all-needing-growth-everywhere-inc",
+        "ein": "464221578",
+        "website": "https://change-community.org"
+      },
+      "verdict": "publish",
+      "name": "C.H.A.N.G.E.",
+      "summary": "Mental health counseling and community workshops for youth, adults, and families, run by a nonprofit from an office on Lancaster Avenue.",
+      "what_you_do": "Ask about counseling or a workshop through the contact form on the website or by phone. Workshop topics listed include youth drug and alcohol prevention, job and career skills, and reentry support.",
+      "kind": "nonprofit",
+      "categories": ["health-wellness"],
+      "interests": ["mental_health_awareness"],
+      "motives": ["protective", "understanding"],
+      "formats": ["conversation"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Office hours are 9 am to 5 pm. The site does not list the days."
+      },
+      "locations": [
+        {"label": "Office", "address": "3855 Lancaster Ave", "zip": "19104", "in_city": true}
+      ],
+      "cost": {
+        "level": "unknown",
+        "text": "The site does not say whether services are free or have a fee. Donations are accepted."
+      },
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call +1 (856) 298-1178 or use the contact form on the website to ask about counseling or a workshop.",
+        "newcomer_friendliness": 2,
+        "basis": "The site names counseling and workshops and gives a phone number and a contact form, but it gives no intake steps, service days, or fees, so the way in is unclear.",
+        "what_to_expect": "The site does not say how counseling starts, whether there is a referral or insurance question, or how long a session runs. Workshops are listed with a topic and sometimes a month, but the listings do not show how to sign up or what they cost. Call during office hours to ask what the first step is.",
+        "first_visit_tips": [
+          "Call during office hours, 9 am to 5 pm, to ask about intake.",
+          "The office is at 3855 Lancaster Ave.",
+          "The site does not say about parking, transit, or accessibility, so ask on the phone before you go."
+        ]
+      },
+      "contacts": {
+        "website": "https://change-community.org",
+        "phone": "+1 (856) 298-1178",
+        "contact_name": "Change"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://change-community.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]},
+        {"url": "https://change-community.org", "seen": "2026-10-08", "fields": ["summary", "categories", "contacts", "first_step", "cost", "locations", "status"]},
+        {"url": "https://change-community.org/services", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://change-community.org/workshop-programs", "seen": "2026-10-08", "fields": ["what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The services page shows one blog post and no service list. Intake, fees, days, languages and accessibility are not stated on any page checked. The workshop page lists a workforce workshop on August 12 (12 to 3 pm at 3675 Market Street, with no year shown), a housing and jobs series that starts in September, a youth prevention series and a reentry series. These are dated or one-off listings, so they are not in the schedule. The donation link names a 2026 fundraising initiative, which is not a dated sign of life, so last_sign_of_life was left out."
+    }
+  ],
+  "leads_only": [
+    {"name": "Urban Affairs Coalition", "url": "https://uac.org", "note": "Parent organization named on the CED site, not checked"},
+    {"name": "Philadelphia Legal Assistance", "url": "https://cedphilly.org/philly-save-your-home-free-hotline", "note": "Named as the provider of the online intake form on the CED hotline page, its own site not checked"},
+    {"name": "Neighborhood Gardens Trust", "url": "https://ngtrust.org", "note": "Publishes the garden profile used for the founding year and location, not in this batch, not checked beyond that profile"}
+  ],
+  "blocked": [],
+  "notes": "Tier 2 deep pass on seven groups. 28 WebFetch calls and 1 WebSearch (budget 1, no useful result for City Athletics). The City Athletics spring soccer page linked from its activities page returned HTTP 404. The Collins Smith Barrick home page redirects to a link page on its own domain, which was read. No 403s or bot checks were met. Facebook and Instagram were not read. The Game Shop events page lists many other weekly events (Magic, Yu-Gi-Oh, mahjong and others) that are not part of the D&D record. Each record is marked research_tier 2 with a first visit guide. Two groups (City Athletics, Collins Smith Barrick) have no working sign-up page on their own sites, so their first_step rating was lowered to 2."
+}

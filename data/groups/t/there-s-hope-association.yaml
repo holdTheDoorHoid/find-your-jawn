@@ -6,19 +6,22 @@ leads:
 - irs_990n:833700231
 - irs_bmf:833700231
 ein: '833700231'
-summary: A volunteer group in Philadelphia that helps people in the community, with a volunteer section
-  and an events calendar on its website.
-what_you_do: Sign up through the Volunteer section of the website, or message the group on Instagram to
-  ask how to help.
+summary: A Philadelphia volunteer group that cooks and serves meals, hosts fundraisers, and gives out
+  school supplies and winter coats, hats, and gloves.
+what_you_do: Fill out the volunteer form on the website with your name, phone, and email (email is required).
+  Volunteers cook, serve meals, take donations, and help at fundraisers.
 kind: nonprofit
 categories:
+- food-drink
 - neighborhood-civic
 interests:
+- community_meals
 - community_development
 motives:
 - values
 formats: []
-roles: []
+roles:
+- hands_on
 crowd: []
 bridging: null
 audience:
@@ -46,15 +49,6 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 415 south 56th st
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19143'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
@@ -73,26 +67,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the Volunteer section on theresh0pe.org, or message the group on Instagram, to ask how to
-    sign up.
+  how: Fill out the volunteer form on theresh0pe.org, or email mmaples@theresh0pe.org, and say which kind
+    of help you want.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: A volunteer section exists, but the page read did not give the steps to sign up.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can ask to volunteer through a public form, email, or phone line, so the way in is clear.
+    The newest calendar entry is from April 2024, so confirm the group is still active before you go.
+  what_to_expect: The site does not say how long a volunteer shift runs, what day it happens, or where
+    it takes place. Expect the group to match you to a role such as cooking, serving meals, or helping
+    at a fundraiser, and ask for the details on your first call or email. The site does not mention a
+    cost.
+  first_visit_tips:
+  - Have a phone number and an email ready, since the form asks for both
+  - Call or email during office hours, Monday to Friday, 9 am to 5 pm
+  - Ask where and when the role takes place
 contacts:
   website: https://www.theresh0pe.org
-  email: null
-  phone: null
+  email: mmaples@theresh0pe.org
+  phone: 267-684-8377
   contact_name: Makesha Maples
   social:
   - https://www.facebook.com/109667053835260
   - https://www.instagram.com/Theresh0pe__/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.theresh0pe.org
+status: dormant
+last_sign_of_life: 2024-04
+sign_of_life_url: https://www.theresh0pe.org/calendar
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,8 +117,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.theresh0pe.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - roles
+  - interests
+- url: https://www.theresh0pe.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.theresh0pe.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

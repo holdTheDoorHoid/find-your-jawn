@@ -5,10 +5,11 @@ leads:
 - irs_990n:814947345
 - irs_bmf:814947345
 ein: '814947345'
-summary: Runs Greentool, an online tool for tracking the environmental effects of products, services,
-  and companies. Volunteer analysts research and edit the data through its portal.
-what_you_do: Apply for a volunteer analyst role through the careers listings on greenest.org to help with
-  the data. Anyone can also suggest a business or product for review without doing research.
+summary: Runs Greentool, an online tool for finding products, services, and companies that help or harm
+  the environment. Volunteers research and edit its data through an online portal.
+what_you_do: Volunteers apply for remote roles on greenest.org, such as Environmental Analyst or Citizen
+  Scientist, to research and edit the data in the portal. Anyone can also submit a business or product
+  for review through the review request form.
 kind: nonprofit
 categories:
 - nature-environment
@@ -16,6 +17,7 @@ categories:
 interests:
 - climate_action
 - digital_skills
+- citizen_science
 motives:
 - values
 formats:
@@ -53,7 +55,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: The listed roles are unpaid volunteer positions. The site does not say whether there is any fee.
 commitment: null
 group_size: null
 access:
@@ -68,13 +70,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply for a volunteer analyst role through the careers listings on greenest.org.
-  drop_in: null
-  sign_up_needed: null
+  how: Open greenest.org/careers/all and apply for a remote analyst role, or send a business or product
+    to the review request form.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Volunteers apply for a role, so the way in is an application step rather than an open drop in.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Portal editing requires a volunteer application, so the way in is an application step. The public
+    review forms are open to anyone but ask for business details.
+  what_to_expect: The site does not say how much time a volunteer role takes, what training is given,
+    or how long an application takes. The public review form asks for a business name, a website, and
+    a description, and the site does not say how long a review takes.
+  first_visit_tips:
+  - If no role matches your skills, the careers page says you can send a resume through the Contact Us
+    page.
+  - The review request form is a way to help without applying for a role.
 contacts:
   website: https://greentool.org
   email: null
@@ -112,8 +121,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+- url: https://www.greenest.org/careers/all
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - cost
+  - sign_up_needed
+- url: https://www.greenest.org/review-request
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

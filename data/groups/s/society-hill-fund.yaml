@@ -7,8 +7,9 @@ leads:
 ein: '237113442'
 summary: A nonprofit that manages money raised for Society Hill neighborhood projects, such as historic
   streetlights, Washington Square plantings and a town watch.
-what_you_do: Give to one of the neighborhood projects the fund manages, or use its contact page to ask
-  how to help with one.
+what_you_do: Give to one of the neighborhood projects the fund manages, or send a project idea through
+  the contact form to start a new one. The fund's focus areas include safety, education, culture, civic
+  engagement, beautification and green work.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -74,13 +75,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact page on the fund's site to ask how to give to, or help with, a neighborhood project
+  how: Send a project idea through the contact form on societyhillfund.org. A board member then emails
+    you the application, and proposals are reviewed on a rolling basis all year.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Starting a project means sending an idea and then filling in a board application, and the site
+    gives no steps for volunteering or donating.
+  what_to_expect: The site does not list meetings or events. Projects are run by their leaders, who handle
+    fundraising, records and spending under the fund's name, and the board of trustees reviews each proposal
+    for mission fit, impact and budget.
+  first_visit_tips:
+  - 'Have a short project plan ready: a description, goals, a timeline, a budget, expected results, and
+    the people who would lead it.'
+  - Expect the first reply to come by email from a board member, after you use the contact form.
 contacts:
   website: https://societyhillfund.org
   email: null
@@ -107,13 +115,25 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://societyhillfund.org
   seen: '2026-10-08'
   fields:
   - summary
   - what_you_do
   - status
-research_tier: 1
+- url: https://societyhillfund.org/about/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://societyhillfund.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

@@ -5,9 +5,11 @@ leads:
 - irs_990n:880674967
 - irs_bmf:880674967
 ein: '880674967'
-summary: Gives socks and other basic supplies to people facing homelessness or addiction, and helps connect
-  them to other services. Most people take part by donating, and sock drives are how the group began.
-what_you_do: Donate socks or money, or submit the contact form to learn about volunteer opportunities.
+summary: Gives socks, hygiene items, clothing and snacks to people facing homelessness or addiction, and
+  helps connect them to shelters, treatment and other services. Most people take part by donating, and
+  the group began with a sock drive.
+what_you_do: Donate socks, hygiene items, food, clothing or money. Volunteers help at the group's resource
+  fairs, giveaways and other events; to ask about shifts, fill in the contact form on the website.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -73,13 +75,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Submit the form on the Contact Us page of socksforthestreets.org to learn about volunteer opportunities,
-    or donate socks or money through the Donate button
+  how: Fill in the contact form on socksforthestreets.org to ask about volunteer opportunities. The form
+    asks for your name, email and a message.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site asks people to submit its form to learn about volunteer opportunities, which is an open
-    way in.
+  basis: A public form invites people to ask about volunteering, but the site names no shifts, roles,
+    training or age limits.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -89,9 +91,9 @@ contacts:
   contact_name: Jennifer Malazita
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.socksforthestreets.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.socksforthestreets.org/in-the-news/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,7 +120,23 @@ sources:
   fields:
   - contacts
   - first_step
-research_tier: 1
+- url: https://www.socksforthestreets.org/what-we-do/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.socksforthestreets.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.socksforthestreets.org/in-the-news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

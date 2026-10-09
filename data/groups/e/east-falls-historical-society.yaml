@@ -8,8 +8,8 @@ ein: '341998024'
 summary: A society that records and shares the history of the East Falls neighborhood in Philadelphia
   through lectures, walking tours, oral histories, and an online archive. Its talks and tours are announced
   on the site.
-what_you_do: Attend a lecture or a walking tour, or read the archive and oral histories online. The site
-  also links a Join page for membership.
+what_you_do: Attend a talk, a Zoom lecture, or a walking tour, or explore the archive, photos, and oral
+  histories online. Members can also volunteer for committees by emailing the society.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -39,11 +39,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Lectures and walking tours on the 2026 to 2027 program. Recent dates: a Zoom lecture on Wednesday,
-    September 23, 2026 at 7:00 PM, and a walking tour on Saturday, October 31, 2026.'
+  text: Holds Zoom lectures, in person talks, and walking tours through the year, including an annual
+    winter Zoom program and an annual meeting. Each one is announced on the events page.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: event_only
 locations:
 - label: Mailing address (IRS)
@@ -55,10 +55,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 2911 D Woodpipe Lane
+- label: Falls of Schuylkill Library meeting room
+  address: 3501 Midvale Ave
   neighborhood: null
-  planning_district: lower_northwest
+  planning_district: null
   zip: '19129'
   lat: null
   lng: null
@@ -66,8 +66,10 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: Cost is not stated on the site
+  level: low
+  text: Many talks are free. Walking tours have usually cost $15, or $10 for members, paid at the start.
+    Membership can be joined online or by mailed form; the dues amounts were not shown on the page we
+    read.
 commitment: null
 group_size: null
 access:
@@ -82,15 +84,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email eastfallshistory@gmail.com to ask for details of the October 31, 2026 walking tour, and check
-    the site for the lecture schedule
-  drop_in: null
+  how: Pick a talk from the events page and use its Zoom link, or go to an in person talk at the Falls
+    of Schuylkill Library meeting room. For the October 31, 2026 walking tour, email eastfallshistory@gmail.com,
+    since the page gives no meeting place or sign-up steps.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Talks and tours are announced publicly with dates and a listed email, though the site does not
-    say what a first visit involves
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Talks and tours are open to the public with dates on the events page and a way to join by email
+    or mail, though the site does not say it welcomes newcomers; some past tours needed booking ahead.
+  what_to_expect: Talks are given by a speaker, either on Zoom or at the library meeting room, and many
+    are free. Walking tours run about an hour and a half to two hours in the morning, and members present
+    their research on the places you visit.
+  first_visit_tips:
+  - Bring cash for a walking tour, since past tours were paid in cash at the start.
+  - Email the society before the October 31, 2026 tour to learn the meeting place and time.
 contacts:
   website: https://www.eastfallshistoricalsociety.org
   email: eastfallshistory@gmail.com
@@ -100,7 +107,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.eastfallshistoricalsociety.org
+sign_of_life_url: https://www.eastfallshistoricalsociety.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -128,7 +135,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.eastfallshistoricalsociety.org/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.eastfallshistoricalsociety.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - cost
+  - first_step
+- url: https://www.eastfallshistoricalsociety.org/join/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+- url: https://www.eastfallshistoricalsociety.org/about/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

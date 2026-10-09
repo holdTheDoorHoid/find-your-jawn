@@ -5,16 +5,18 @@ leads:
 - irs_990n:233039667
 - irs_bmf:233039667
 ein: '233039667'
-summary: A community group for young people that runs programs such as an after school program, a chess
-  program, and a youth-led online talk show.
-what_you_do: Join an after school or chess program, or take part in the youth-led talk show. Use the contact
-  form to ask which program fits and how to sign up.
+summary: A community group for young people that runs an after school homework program, a youth program
+  called Lady BET, a chess program, and a youth-led online talk show.
+what_you_do: Join the after school program at the Logan PAL Center, apply to Lady BET with a recommendation
+  letter, or ask about the chess program or the youth-led talk show. Use the contact form to ask which
+  program fits and how to sign up.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - games-puzzles
 interests:
 - after_school_camps
+- tutoring
 - chess
 motives:
 - social
@@ -42,6 +44,15 @@ schedule:
   recurring: null
   season: null
 locations:
+- label: After school program (Logan PAL Center)
+  address: 1100 W Rockland St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 4809 N 18th St
   neighborhood: null
@@ -78,15 +89,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Contact Us form on mybetfamily.com to ask which youth program is running and how to sign
-    up
+  how: Use the Contact Us form on mybetfamily.com to ask which after school or youth program has openings
+    now, and how to sign up.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site lists programs but gives no dates, times, or sign-up steps, and the only contact route
-    is a form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The after school program is described in plain terms, but the site gives no days, times, ages
+    or sign-up steps, Lady BET needs an application and a recommendation letter, and the only contact
+    route is a form.
+  what_to_expect: The after school program offers homework help, tutoring, computer access, and a set
+    place to study. It also gives a supervised place for kids to wait until a parent gets home, and students
+    can bring a friend. Teachers can refer students who are struggling or need to stay after school, and
+    they can ask for proof of attendance.
+  first_visit_tips:
+  - Ask the contact form for days, times and cost before you go, since the site does not list them.
+  - For Lady BET, ask how to get the BET youth application and the adult recommendation letter form.
 contacts:
   website: https://mybetfamily.com/
   email: null
@@ -125,7 +142,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://mybetfamily.com/after-school
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step.what_to_expect
+  - first_visit_tips
+- url: https://mybetfamily.com/lady-bet
+  seen: '2026-10-08'
+  fields:
+  - first_step.basis
+  - first_visit_tips
+- url: https://mybetfamily.com/royal-t-chess
+  seen: '2026-10-08'
+  fields:
+  - interests
+- url: https://mybetfamily.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

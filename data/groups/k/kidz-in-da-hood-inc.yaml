@@ -6,9 +6,10 @@ leads:
 - irs_bmf:844552666
 ein: '844552666'
 summary: A Philadelphia nonprofit that mentors young people, runs after-school enrichment, and helps families
-  in need through community outreach.
-what_you_do: Sign up for youth mentorship, leadership training, or after-school enrichment through the
-  Register Now form, or call to ask about a start date.
+  in need through community outreach. It also runs First Teachers, a parent support community.
+what_you_do: Sign up for youth mentorship (including The Bloom Project), Kidz Corner play stations, or
+  First Teachers through the Register Now form. You can also volunteer, which requires a background check,
+  or call to ask about a start date.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -16,6 +17,7 @@ interests:
 - mentoring
 - after_school_camps
 - youth_leadership
+- parent_playgroups
 motives:
 - values
 formats:
@@ -24,6 +26,7 @@ roles: []
 crowd:
 - kids
 - teens
+- families
 bridging: null
 audience:
   open_to: public
@@ -53,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No program fees or donation amounts are listed on the site.
+  text: The site lists no program fees. Donations are taken through a Zeffy form on the site.
 commitment: null
 group_size: null
 access:
@@ -62,26 +65,35 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Register Now form on the homepage, or call 267-768-7738 to ask when sessions start.
+  how: Fill in the Register Now form on kidzindahood.org for the program you want, or call 267-768-7738
+    to ask when sessions start.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Joining means filling in a registration form, and the site gives no schedule, age range, or description
-    of a session.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining means filling in a registration form, and the site gives no schedule, age range, start
+    date, or description of a session, so the way in is unclear.
+  what_to_expect: The site does not say how long a session lasts, where it meets, or what a session looks
+    like. Mentoring is described as one-on-one guidance plus group sessions. Kidz Corner play stations
+    run in small groups of 6 to 8 children at community events, with licensed caregivers and trained parent
+    volunteers. Ask about start dates before you plan around a program.
+  first_visit_tips:
+  - Ask by phone or email about start dates and where sessions meet, because the site does not list them.
+  - Volunteers must complete a state background check at epatch.pa.gov and upload it on the volunteer
+    form.
+  - The contact form has a menu that lets you pick Volunteer, Registration, Sponsorship, or General.
 contacts:
   website: https://www.kidzindahood.org/
   email: info@kidzindahoodinc.com
   phone: 267-768-7738
-  contact_name: Lafleur Brown
-  social: []
+  contact_name: LaFleur D. Brown
+  social:
+  - https://www.facebook.com/kidzindahoodinc
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -112,7 +124,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.kidzindahood.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - crowd
+  - first_step
+  - what_to_expect
+- url: https://www.kidzindahood.org/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.kidzindahood.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+- url: https://www.kidzindahood.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+  - cost
+- url: https://www.kidzindahood.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

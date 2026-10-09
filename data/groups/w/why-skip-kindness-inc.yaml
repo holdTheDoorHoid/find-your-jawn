@@ -8,8 +8,10 @@ ein: '870999910'
 summary: A Philadelphia nonprofit that spreads small acts of kindness through pop-up events, community
   projects and a scholarship program. It also recruits volunteer Kindness Ambassadors who can help mostly
   from home.
-what_you_do: Volunteer as a Kindness Ambassador, mostly from home, by sharing kindness projects online
-  and suggesting ideas. The group runs its own pop-up events and community projects.
+what_you_do: Kindness Ambassadors are volunteers who do a fixed number of kind acts each month and spread
+  the group's projects online, by email, or by text. Most of the work can be done from home, and volunteering
+  is optional. The group also runs seasonal donation drives, a Christmas breakfast project for families
+  in need, and a book scholarship (a bookstore gift card) for college students.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -32,11 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Why Skip Coffee Day runs each September, and the group runs a Christmas breakfast project each
+    December.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 1723 E Mayland St
@@ -47,19 +50,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1723 E Mayland street
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19138'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
-  level: null
-  text: null
+  level: free
+  text: Taking part in the drives is free. Donations go through PayPal or an Amazon wish list.
 commitment: ongoing_role
 group_size: null
 access:
@@ -77,10 +71,12 @@ first_step:
   how: Email whyskipkindness@gmail.com with the subject line 'Volunteer Kindness Ambassador Interest'
     to ask about the volunteer role.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can email to volunteer, and most ambassador duties can be done online.
-  what_to_expect: null
+  basis: Anyone can email to volunteer, and most ambassador tasks can be done online.
+  what_to_expect: Ambassadors carry out kind acts each month and share projects online, by email, or by
+    text. They can also suggest projects, and the group offers recognition and a reference after three
+    months of service. The site does not list hours or a time commitment.
   first_visit_tips: []
 contacts:
   website: https://www.whyskipkindness.org
@@ -90,9 +86,9 @@ contacts:
   social:
   - https://www.instagram.com/whyskipkindnessinc
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.whyskipkindness.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.whyskipkindness.org/programs
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +116,24 @@ sources:
   - first_step
   - commitment
   - contacts
-research_tier: 1
+  - what_to_expect
+- url: https://www.whyskipkindness.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://www.whyskipkindness.org/programs-2
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.whyskipkindness.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

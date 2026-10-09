@@ -5,10 +5,10 @@ leads:
 - irs_990n:331926398
 - irs_bmf:331926398
 ein: '331926398'
-summary: A volunteer-run group with a community food pantry where families choose their own groceries.
-  It also offers outreach with essential supplies and school support for families across Philadelphia.
-what_you_do: Ask for help through the Get Help section, or offer to volunteer through the Contact page.
-  The group says it runs on volunteers.
+summary: A volunteer-run food pantry in Philadelphia where families choose their own groceries. It serves
+  about 200 families a week and also runs outreach with essential supplies and school support.
+what_you_do: Register in person at the Thursday pantry, then shop for your own food. Volunteers help run
+  the pantry, and the group asks people to reach out through its contact page to join.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -21,7 +21,8 @@ formats:
 - side_by_side
 roles:
 - hands_on
-crowd: []
+crowd:
+- families
 bridging: null
 audience:
   open_to: public
@@ -33,12 +34,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Food pantry every Thursday from 11 am to 1:30 pm.
+  days:
+  - thu
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
+- label: Food pantry (First Redemption Evangelical Church)
+  address: 4400 N Broad St
+  neighborhood: null
+  planning_district: null
+  zip: '19140'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 4648 N 12th St
   neighborhood: null
@@ -48,19 +60,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 4648 North 12th Street
-  neighborhood: null
-  planning_district: north
-  zip: '19140'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The site lists no fee for the pantry.
 commitment: null
 group_size: null
 access:
@@ -75,14 +78,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Contact page on the group's site to ask how to volunteer at the pantry or how to request
-    help
-  drop_in: null
+  how: Go to the pantry on a Thursday between 11 am and 1:30 pm and register in person with your name,
+    address and phone number.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Help and volunteer links exist, but the page posts no sign-up steps
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: The pantry has a set day, hours and address, and registration happens when you arrive. The site
+    does not list eligibility rules or a phone line.
+  what_to_expect: You register when you arrive, giving your name, address and phone number. Then you pick
+    the foods that fit your household's needs, a shopping style the group calls client choice. The site
+    does not say how long a visit takes, whether bags are given, or what else happens there.
+  first_visit_tips:
+  - Have your name, address and phone number ready for registration.
+  - Bring your own bags, since the site does not say whether bags are provided.
+  - The site does not list eligibility, so ask at the door if you are not sure you qualify.
 contacts:
   website: https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/home
   email: null
@@ -118,8 +127,24 @@ sources:
   - audience
   - first_step
   - status
-research_tier: 1
-confidence: low
+- url: https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/get-help
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://sites.google.com/missionofhopeandredemption.org/missionofhopeandredemption/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

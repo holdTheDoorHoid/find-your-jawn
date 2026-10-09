@@ -6,8 +6,9 @@ leads:
 ein: '821439459'
 summary: A nonprofit started by parents to raise awareness, fund research and work toward a cure for STXBP1-related
   disorder. It gives families information, resources and a contact list.
-what_you_do: Families can sign up for the contact list, use the family resources and newly diagnosed pages,
-  and volunteer for the foundation's cause.
+what_you_do: Parents can join the Contact List and other relatives can join the Mail List. Everyone can
+  use the family resources and newly diagnosed pages, and volunteer in roles such as events, fundraising,
+  outreach and social media.
 kind: nonprofit
 categories:
 - support-recovery
@@ -33,10 +34,11 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: null
+  text: The foundation holds a family summit each July, and posts other events and webinars on its events
+    page.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -66,21 +68,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register on the contact list on the foundation's site, or email info@stxbp1disorders.org to ask
-    how to get involved
+  how: 'Parents and primary caregivers: register on the Contact List at stxbp1disorders.org/contact-list.
+    Other relatives and community members: join the Mail List instead (grandparents can join the Grands
+    Society). To volunteer, fill in the volunteer form or email info@stxbp1disorders.org with the subject
+    Volunteer.'
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Families can register on a public contact list and the volunteer page is open, with no application
-    listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Parents and caregivers can join a public Contact List, and the volunteer page invites people
+    to sign up by form or email. The page does not state time commitments or any requirements for volunteers.
+  what_to_expect: The Contact List is a form, and the page says the information is used to share research,
+    trial and resource news and to help families connect. The foundation's 2026 family summit ran July
+    16 to 19 in Philadelphia, with a family meeting July 17 to 19. Volunteers can choose from ten roles,
+    including events, fundraising, graphic design, grant writing, social media and outreach to families.
+  first_visit_tips:
+  - Use the Contact List only if you are a parent or primary caregiver; other relatives should use the
+    Mail List.
+  - If the volunteer form does not work, email info@stxbp1disorders.org with the subject Volunteer.
 contacts:
   website: https://stxbp1disorders.org/
   email: info@stxbp1disorders.org
   phone: null
   contact_name: Anne Johnson
-  social: []
+  social:
+  - https://www.facebook.com/stxdisorders/
+  - http://instagram.com/stxbp1_foundation
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
@@ -94,6 +106,7 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://stxbp1disorders.org/
   seen: '2026-10-08'
   fields:
@@ -102,7 +115,36 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://www.stxbp1disorders.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - what_to_expect
+  - status
+- url: https://www.stxbp1disorders.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+- url: https://www.stxbp1disorders.org/volunteer-roles
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+- url: https://www.stxbp1disorders.org/contact-list
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - what_to_expect
+- url: https://www.stxbp1disorders.org/diagnosed
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

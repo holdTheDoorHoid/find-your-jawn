@@ -7,8 +7,9 @@ leads:
 ein: '900629503'
 summary: A nonprofit that stocks diapers and passes them to partner charities that work with families
   facing emergencies. It runs diaper drives and volunteer work to keep supplies coming.
-what_you_do: Volunteer through the Heart 2 Heart page, join a diaper drive, or follow the group's Instagram
-  for pop-up events. Diapers go to partner nonprofits, not to individual families.
+what_you_do: Ask about Heart 2 Heart volunteering through the Contact Us page, join a diaper drive, or
+  follow the group's Instagram for pop-up events. Diapers go only to partner nonprofits, not to individual
+  families, so a family in need cannot request diapers here directly.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -65,18 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the Heart 2 Heart Volunteer page at padmb.org/volunteer or use the Contact Us page to ask
-    how to help
+  how: Use the Contact Us page at padmb.org/contact-us, or email padmbitems@gmail.com, to ask how to join
+    Heart 2 Heart volunteering or a diaper drive.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The volunteer page is linked, but the site does not explain how to sign up or when volunteers
-    are needed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page says to contact the group to sign up. It does not say what volunteers do,
+    when help is needed, or whether drives are open to the public.
+  what_to_expect: The site does not describe what a volunteer does on a shift or how long it takes. Drives
+    and pop-up events are announced on social media, and the events page lists no dated events right now.
+  first_visit_tips:
+  - Follow the group's Instagram for pop-up dates, since the events page points there.
+  - If you give items and want a tax receipt, use the contact form and name the items you donated.
 contacts:
   website: https://www.padmb.org
-  email: null
+  email: padmbitems@gmail.com
   phone: null
   contact_name: Doris Washington
   social:
@@ -113,7 +117,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+  - what_you_do
+- url: https://www.padmb.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.padmb.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -7,14 +7,17 @@ leads:
 ein: '871934091'
 summary: A Philadelphia charity that works against hunger, low literacy, and poor access to hygiene supplies
   among low-income families. Its site names a holiday celebration and a summer basketball month.
-what_you_do: The site asks visitors to donate, join its network, or get in touch through a contact form.
-  It does not describe volunteer shifts or list dates for its events.
+what_you_do: You can donate, join the foundation's network of supporters, or email it to ask about helping.
+  Each August, Philly Legendary Summer Hoops Month brings basketball events, including a youth camp and
+  the Chosen League, where spectators can get wristbands.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
+- sports-teams
 interests:
 - food_pantry
 - goods_closets
+- basketball
 motives:
 - values
 formats: []
@@ -31,11 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Philly Legendary Summer Hoops Month is an annual August event. The site gives no dates for it
+    or for the holiday celebration.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: summer
 locations:
 - label: Mailing address (IRS)
   address: 5602 N Sydenham St
@@ -46,19 +50,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 5602 North Sydenham Street
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19141'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state event prices. It mentions spectator wristbands for one league but gives
+    no price.
 commitment: null
 group_size: null
 access:
@@ -73,17 +69,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact form on the group's site to ask how to join its network or help with its holiday
-    or summer events.
+  how: Email Unity@teamthompsonfamilyfoundation.org and ask how to join the network or help at the summer
+    basketball month.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: The site invites people to email, but it does not say what joining the network involves or when
+    events happen.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.teamthompsonfamilyfoundation.org
-  email: null
+  email: Unity@teamthompsonfamilyfoundation.org
   phone: null
   contact_name: Tanisha Singleton
   social:
@@ -115,7 +112,23 @@ sources:
   - what_you_do
   - contacts
   - status
-research_tier: 1
+  - schedule
+- url: https://www.teamthompsonfamilyfoundation.org/general-2
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - what_you_do
+- url: https://www.teamthompsonfamilyfoundation.org/our-network
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.teamthompsonfamilyfoundation.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

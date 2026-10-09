@@ -77,12 +77,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the Get involved form on the Contact Us page of sergiofoundation.com to ask about volunteering
+  how: Fill in the Get involved form on the Contact Us page of sergiofoundation.com to ask about volunteer
+    opportunities. It asks for your name, email and where you heard about the group.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site invites people to reach out about volunteering through a public form, and it shows volunteers
-    at work.
+  basis: A public Get involved form invites anyone to ask about volunteering, but the site names no shifts,
+    age limits or training.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -119,12 +120,17 @@ sources:
   - what_you_do
   - contacts
   - status
+  - what_to_expect
 - url: https://sergiofoundation.com/contact-us
   seen: '2026-10-08'
   fields:
   - first_step
   - contacts
-research_tier: 1
+- url: https://sergiofoundation.com/how-to-help
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

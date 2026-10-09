@@ -7,20 +7,25 @@ leads:
 - irs_bmf:834094344
 ein: '834094344'
 summary: A Philadelphia nonprofit whose board is made up of Black scientists and science supporters. It
-  makes a science podcast and a magazine, and holds photo and story contests on everyday science.
-what_you_do: Listen to the B-Scientists podcast or read the magazine. The 2026 photo and story contest
-  took entries until Sept. 25, 2026, and the page says that deadline may be extended.
+  makes a science podcast and a magazine, holds photo and story contests on everyday science, and runs
+  science journalism workshops.
+what_you_do: Listen to the B-Scientists podcast or read the magazine on B-Scientists.com. The 2026 photo
+  and story contest had entries due Sept. 25, 2026; the page says that deadline may be extended, and winners
+  are announced in November.
 kind: nonprofit
 categories:
 - science-learning
 - arts-crafts
+- books-writing
 interests:
 - stem_outreach
 - photography
+- zines_media
 motives:
 - understanding
 formats:
 - conversation
+- learn_skill
 roles: []
 crowd: []
 bridging: null
@@ -61,7 +66,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: Free to browse. Donating is optional, and the shop sells merchandise.
 commitment: null
 group_size: null
 access:
@@ -76,15 +81,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Listen to the B-Scientists podcast or follow the group on Instagram to hear about the next photo
-    contest.
+  how: Listen to the B-Scientists podcast, then email contactus@thebsci.org to ask about the next online
+    workshop or info session.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: No membership or volunteer route is described; the public way in is the podcast and a contest
-    limited to U.S.-based scientists, storytellers and journalists.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The public way in is listening, reading and attending events, but the site does not say how to
+    join a chapter or take part as a member.
+  what_to_expect: 'Most of the group is online: a podcast, a magazine on B-Scientists.com, and workshops
+    on science journalism and video, some held online and at least one listed in Philadelphia. The events
+    page lists dates without years and gives no times, costs or sign-up steps, so email before you plan
+    to attend. The 2026 photo and story contest, now past its entry deadline, was open only to U.S.-based
+    scientists, storytellers and journalists.'
+  first_visit_tips:
+  - Email contactus@thebsci.org for event times, costs and how to register, since the events page does
+    not list them.
+  - Start with the podcast to get a feel for the group before you attend an event.
 contacts:
   website: https://www.b-sci.org/
   email: contactus@thebsci.org
@@ -122,14 +134,34 @@ sources:
   - kind
   - contacts
   - audience
+  - cost.text
+  - contacts.email
+  - contacts.social
+  - contacts.website
+  - online_ok
 - url: https://www.b-sci.org/2026-photo-competition
   seen: '2026-10-08'
   fields:
   - what_you_do
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+  - audience
+- url: https://www.b-sci.org/b-scientistspod
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.b-sci.org/b-sci-chapters
+  seen: '2026-10-08'
+  fields:
+  - first_step.basis
+- url: https://www.b-sci.org/events
+  seen: '2026-10-08'
+  fields:
+  - first_step.what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

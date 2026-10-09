@@ -6,25 +6,36 @@ leads:
 - irs_990n:881151326
 - irs_bmf:881151326
 ein: '881151326'
-summary: Community leaders and neighbors in Philadelphia who want to reduce violence, teach money skills
-  and job readiness, support health and well-being, and make streets and playgrounds feel safe. Many of
-  these goals are written as plans, not as running programs.
-what_you_do: Neighbors who need help or want to help someone else can reach out through the contact page.
-  The site does not describe volunteer tasks or sign-up steps.
+summary: Neighbors and community leaders who run a weekly food pantry and shower service, hold block cleanups,
+  ran a holiday toy drive, and offer mental health first aid training. Their work on violence prevention
+  and job readiness is still mostly in planning.
+what_you_do: Help pack and hand out food at the Wednesday evening pantry, help guests use the showers,
+  deliver food on Monday mornings, teach English or GED classes on weekday evenings, or pick up litter
+  on block cleanups. The group also hosts events and runs community drives.
 kind: nonprofit
 categories:
 - neighborhood-civic
+- hunger-housing-basic-needs
 - advocacy-rights
 - careers-skills-professional
+- culture-language-heritage-groups
 interests:
+- food_pantry
+- clean_blocks
 - community_development
 - violence_prevention
 - money_skills
+- esl_conversation
 motives:
 - values
-formats: []
-roles: []
-crowd: []
+formats:
+- team_play
+roles:
+- hands_on
+- help_teach
+crowd:
+- neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,13 +47,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Food pantry every Wednesday, 6 to 8 pm, and showers every Wednesday, 5:30 to 7:30 pm, both at
+    True Vine Church Community on Devereaux Street. Volunteer food deliveries run on Monday mornings,
+    and ESL and GED classes meet on weekday evenings.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Pantry, showers and trainings (True Vine Church Community)
   address: 4610 Devereaux St
   neighborhood: null
   planning_district: north_delaware
@@ -51,8 +64,8 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6035 Walker Street
+- label: Mercy Gate Church (hosted Financial Peace classes)
+  address: 6035 Walker St
   neighborhood: null
   planning_district: north_delaware
   zip: '19135'
@@ -63,7 +76,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No costs are stated. The site says donations are tax deductible.
+  text: The food pantry and showers are free. The group asks for donations, which are tax deductible.
 commitment: null
 group_size: null
 access:
@@ -78,15 +91,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Send a message through the contact page on blessphiladelphia.com to ask how to volunteer or get
-    help.
+  how: Use the 'I'm interested' button on the volunteer page, or send a message on the Contact page, and
+    name the role you want, such as the Wednesday pantry or the ESL classes.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site invites people to reach out and links a volunteer page, but gives no sign-up steps or
-    dates.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Five volunteer roles are listed, the pantry and showers run on set weeknight hours, and free
+    events list a registration form, though the sign-up form itself did not appear in the text I read.
+  what_to_expect: A volunteer might pack and hand out food at the Wednesday pantry, help guests use the
+    showers, or teach English or GED classes on weekday evenings. The site does not give shift lengths
+    or how many hours a month volunteers give, so ask about that first. Pantry food and showers are free
+    for people who come to them.
+  first_visit_tips:
+  - Ask which shift fits, since the site does not list hours for each volunteer role.
+  - Expect Monday morning deliveries and weekday evening classes if you pick those roles.
+  - Watch the events list for free sessions, which give a registration link.
 contacts:
   website: https://www.blessphiladelphia.com
   email: null
@@ -96,9 +115,9 @@ contacts:
   - https://www.facebook.com/blessphiladelphia
   - https://www.instagram.com/bless_philadelphia
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.blessphiladelphia.com
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.blessphiladelphia.com/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -123,8 +142,40 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.blessphiladelphia.com/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+- url: https://www.blessphiladelphia.com/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://www.blessphiladelphia.com/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - cost
+  - locations
+  - first_step
+- url: https://www.blessphiladelphia.com/programs/block-cleanups
+  seen: '2026-10-08'
+  fields:
+  - status
+  - what_you_do
+  - interests
+- url: https://www.blessphiladelphia.com/programs/food-pantry
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,11 +5,11 @@ aka:
 leads:
 - irs_990n:562494545
 ein: '562494545'
-summary: A parent-led nonprofit that helps families get the school support their children with disabilities
+summary: A nonprofit, founded in 2000, that helps families get the school support children with disabilities
   need. It offers free help with IEPs, runs networks for parents and self advocates, and works for children
   to learn in their neighborhood schools.
-what_you_do: Come to a free IEP clinic, join the Parent Consultant Network or the Self Advocate Network,
-  use the free education modules, or sign up for updates.
+what_you_do: Register for a free IEP clinic session online, use the free education modules, or ask about
+  becoming a Parent Consultant, a trained parent who gives free peer support to families.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -23,8 +23,10 @@ motives:
 formats:
 - learn_skill
 - one_off_event
-roles: []
-crowd: []
+roles:
+- help_teach
+crowd:
+- families
 bridging: null
 audience:
   open_to: public
@@ -38,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free IEP Clinic on October 17, 2026, 12:30 to 3 pm. An Annual Inclusion Conference is listed for
-    November 7, 9:30 am to 3:30 pm, with no year shown.
+  text: The group holds free IEP clinics and an annual inclusion conference. Dates are posted on its events
+    calendar as they are set.
   days: []
   times:
   - daytime
@@ -55,16 +57,19 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: free
-  text: IEP support and the education modules are listed as free. Donations are optional.
+  text: IEP clinic support, Parent Consultant help, and the education modules are free, and parent consultants
+    may ask to be repaid for mileage and tolls. Donations and sponsorships are optional. The annual inclusion
+    conference charges a fee, which was $10 to $30 for most attendees in 2026.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The clinic page asks families who need accommodations to contact the group by phone or email.
+    The clinic is listed in English and Spanish, with a Spanish-language registration form.
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,14 +78,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the free IEP Clinic on October 17, 2026, or email info@paedforall.org to ask about joining
-    the Parent Consultant Network
-  drop_in: null
-  sign_up_needed: null
+  how: Register for a free IEP clinic session through the online form, or email info@paedforall.org to
+    ask about joining the Parent Consultant Network.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site explains its free IEP support and how to join its parent and self advocate networks.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site explains its free IEP support, how to register for a clinic, and how a parent can ask
+    about joining its network.
+  what_to_expect: An IEP clinic session is a 60-minute video call with two IEP consultants. Before it,
+    families send the student's IEP to the group, and the consultants talk through concerns, review the
+    plan, and finish with advice and suggested next steps. The clinic is free and open to families across
+    Pennsylvania.
+  first_visit_tips:
+  - Join the video call 15 minutes before your session time.
+  - Send the IEP ahead of time and confirm the deadline, since one flyer shows an older date.
+  - Write your top questions down, because the session is only an hour long.
+  - Ask the group about interpreters or captioning before the session, since the clinic page does not
+    say.
 contacts:
   website: https://www.paedforall.org
   email: info@paedforall.org
@@ -90,7 +104,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.paedforall.org
+sign_of_life_url: https://paedforall.org/event/iep-clinic-2/
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -110,8 +124,40 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://paedforall.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+- url: https://paedforall.org/parent-consultant-network/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - roles
+  - cost
+  - first_step
+- url: https://paedforall.org/event/iep-clinic-2/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - online_ok
+  - access
+- url: https://paedforall.org/event/peacs-annual-conference/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+- url: https://paedforall.org/san/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

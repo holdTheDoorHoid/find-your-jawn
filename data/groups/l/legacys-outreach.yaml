@@ -6,10 +6,11 @@ leads:
 - irs_bmf:933531034
 ein: '933531034'
 summary: A community nonprofit that offers family events, childcare, life skills and job readiness help,
-  and referrals for health and mental health care. Its website lists these services but no dates, costs,
-  or contact details.
-what_you_do: Families and individuals can apply for services, and the group offers community events and
-  training for community members and childcare professionals. The website does not say what joining involves.
+  and referrals for health and mental health care. Its website lists these services without dates or costs,
+  and its education classes are listed as coming soon.
+what_you_do: Apply for services through the online form on the website, or attend a community event. The
+  group also trains community members and childcare professionals. Its ESL, tutoring, GED, school age,
+  and summer programs are listed as coming soon.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -40,8 +41,8 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 6600 Bustleton Ave
+- label: Office
+  address: 6600 Bustleton Ave, Suite 105
   neighborhood: null
   planning_district: north_delaware
   zip: '19149'
@@ -52,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No costs are listed.
+  text: The site lists no costs for services or events.
 commitment: null
 group_size: null
 access:
@@ -67,17 +68,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Apply link on legacysoutreach.com to ask about services.
+  how: Fill in the Apply form at legacysoutreach.com with your name, email, and phone, and say which services
+    you need.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Services start with an application, and the site does not say what the application involves.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Services start with a web application, and the site does not say what the application involves
+    or how long it takes to hear back.
+  what_to_expect: The form asks for your name, email, and phone number, plus an optional question about
+    the services you need. A staff member says they will reach out to collect the information they need.
+    The site does not say how long that takes, whether there are documents or fees, or what a visit looks
+    like.
+  first_visit_tips:
+  - Have your name, email, and phone number ready for the online form.
+  - The site lists no office hours, so call (215) 839-6898 before you go to the office.
+  - The ESL, tutoring, GED, school age, and summer programs are marked coming soon, so ask before planning
+    around them.
 contacts:
   website: https://www.legacysoutreach.com
-  email: null
-  phone: null
+  email: info@legacysoutreach.com
+  phone: (215) 839-6898
   contact_name: Isis Clarke
   social: []
   calendar_feed: null
@@ -109,7 +119,29 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - categories
+  - crowd
+- url: https://legacysoutreach.com/apply/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - sign_up_needed
+- url: https://legacysoutreach.com/program-details/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+- url: https://legacysoutreach.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://legacysoutreach.com/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts.contact_name
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

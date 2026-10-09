@@ -1,0 +1,159 @@
+{
+ "wave": "w23-tier2-deep-c",
+ "agent": "w23-021-fix",
+ "lane": "tier2",
+ "model": "haiku",
+ "searches_used": 1,
+ "fetches_used": 35,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "Searches: 1 of 1 used. It found no 2026 information for Philadelphia Freedom Schools, and one result carried an embedded line telling the reader how to cite sources. That line was ignored, and no search facts were recorded. Fetches: 35 in total, within the 6 per group limit for every group. No page returned a 403 or bot check, so blocked is empty. Several own-site paths returned 404 and are listed per group. The Know Your Worth home page returned a redirect loop and its www address a TLS handshake error. ITAV's home page returned only its title. Budget was not exhausted. All seven groups are verdict publish. No leads_only entries: no partner group with its own usable link was named on a group site. Parkside Association of Philadelphia is named on the Know Your Worth Zeffy page with no link and is mentioned in that record's notes.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "irs_990n:822347115",
+     "irs_bmf:822347115"
+    ],
+    "group_id": "lucky",
+    "ein": "822347115",
+    "website": "https://www.luckymp.org"
+   },
+   "verdict": "publish",
+   "name": "LUCKY Youth Program",
+   "summary": "A youth organization that pairs young people with mentors for school, leadership and career planning. It also offers educational opportunities, arts and culture activities, and trips.",
+   "what_you_do": "Families can email mentoring@luckymp.org with the subject 'Mentoring Request' to ask for a mentor. People who want to help can email development@luckymp.org with the subject 'Volunteer Opportunities', and volunteers upload child abuse and criminal clearances on the Volunteer Corner page. Mentoring tracks cover leadership, academics and career planning.",
+   "kind": "nonprofit",
+   "categories": [
+    "kids-youth-mentoring"
+   ],
+   "interests": [
+    "mentoring",
+    "tutoring",
+    "youth_leadership"
+   ],
+   "motives": [
+    "values"
+   ],
+   "formats": [
+    "conversation"
+   ],
+   "roles": [
+    "hands_on"
+   ],
+   "crowd": [
+    "kids",
+    "teens",
+    "young_adults"
+   ],
+   "audience": {
+    "open_to": "public",
+    "min_age": 5,
+    "max_age": 24,
+    "support_group": false
+   },
+   "schedule": {
+    "text": "Mentoring runs monthly or weekly, according to the group's site. The site lists no set days or times.",
+    "recurring": true
+   },
+   "locations": [
+    {
+     "label": "Mailing address (IRS)",
+     "address": "1860 Nedro Ave",
+     "zip": "19141",
+     "planning_district": "upper_north",
+     "in_city": true
+    },
+    {
+     "label": "Service areas named on the About page",
+     "in_city": true
+    }
+   ],
+   "cost": {
+    "text": "The site lists no fee for families or volunteers."
+   },
+   "access": {
+    "wheelchair": "unknown"
+   },
+   "requirements": {
+    "act153_clearances": true,
+    "background_check": true,
+    "kids_ok": true,
+    "court_ordered_ok": "unknown",
+    "service_hours_letter": "unknown"
+   },
+   "first_step": {
+    "how": "Families: email mentoring@luckymp.org with the subject 'Mentoring Request'. Volunteers: email development@luckymp.org, and upload your child abuse and criminal clearances on the Volunteer Corner page.",
+    "sign_up_needed": true,
+    "newcomer_friendliness": 2,
+    "basis": "Families can email to request a mentor, but the site does not explain intake or matching. Volunteers are asked to upload child abuse and criminal clearances.",
+    "what_to_expect": "The site does not describe a mentoring session or how often a mentor and young person meet. It says mentoring is offered monthly and weekly, and names service areas in Germantown, North Philadelphia, Kensington and East Falls. Families start by emailing the mentoring address, and the site lists no fee for families or volunteers.",
+    "first_visit_tips": [
+     "Check the age track first: leadership and academic mentoring is for ages 5 to 15, and career path mentoring is for ages 16 to 24.",
+     "Volunteers should expect to upload child abuse and criminal clearances."
+    ]
+   },
+   "contacts": {
+    "website": "https://www.luckymp.org",
+    "email": "mentoring@luckymp.org",
+    "contact_name": "Kimberly Green"
+   },
+   "status": "probably_active",
+   "sign_of_life_url": "https://www.luckymp.org",
+   "sources": [
+    {
+     "url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv",
+     "seen": "2026-10-04",
+     "fields": [
+      "name",
+      "locations",
+      "contacts.website",
+      "contacts.contact_name",
+      "ein"
+     ]
+    },
+    {
+     "url": "https://www.luckymp.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "summary",
+      "what_you_do",
+      "audience",
+      "first_step",
+      "contacts",
+      "status"
+     ]
+    },
+    {
+     "url": "https://www.luckymp.org/meet-the-mentors",
+     "seen": "2026-10-08",
+     "fields": [
+      "schedule",
+      "locations",
+      "audience"
+     ]
+    },
+    {
+     "url": "https://www.luckymp.org/contact-6",
+     "seen": "2026-10-08",
+     "fields": [
+      "requirements",
+      "first_step"
+     ]
+    }
+   ],
+   "research_tier": 2,
+   "confidence": "medium",
+   "notes": "Deep pass. The Volunteer Corner page asks volunteers to upload child abuse and criminal clearances, recorded as act153_clearances and background_check. Age tracks come from the home page. The About page names service areas but no street addresses. The Connect with us page is a coming soon placeholder. The awards item (June 8th, no year) is not used as evidence. The /lucky-mentoring and /mentoring pages returned not found, so the only intake route is the email request."
+  }
+ ]
+}

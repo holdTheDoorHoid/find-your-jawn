@@ -6,10 +6,11 @@ leads:
 - irs_bmf:412641082
 ein: '412641082'
 summary: A community nonprofit that helps families and individuals in hardship with food boxes, clothing,
-  and hygiene kits. It also runs summer lunch help and a youth summer program, and it offers scholarships
-  to high school seniors.
-what_you_do: Volunteers help with summer lunch support (meal help, set-up, and clean-up) and with the
-  youth summer enrichment program for 4th to 6th graders. Donors can give through the donate page.
+  and hygiene kits. In the summer it sponsors lunches for local kids and runs a youth enrichment program
+  for 4th to 6th graders, and it offers scholarships to high school seniors.
+what_you_do: Volunteers can help at food distributions and community events, pack and sort food boxes,
+  clothing, and hygiene kits, deliver groceries to older neighbors, and help with summer meals (meal help,
+  set-up, and clean-up). Donors can give through the donate page.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -39,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Summer lunch support and youth summer enrichment run in the summer, but the page gives no exact
-    dates. Scholarships and prom help are yearly.
+  text: Summer lunch support and the youth summer enrichment program run during the summer, and the site
+    gives no exact dates.
   days: []
   times: []
   recurring: true
@@ -49,7 +50,7 @@ locations:
 - label: Mailing address (IRS)
   address: 5428 Florence Ave
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19143'
   lat: null
   lng: null
@@ -58,7 +59,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Help is free; donations are welcome
+  text: Help is free; donations are welcome.
 commitment: seasonal
 group_size: null
 access:
@@ -73,15 +74,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email kera@chloesway.org to ask how to volunteer for summer lunch or the youth summer enrichment
-    program.
+  how: Email kera@chloesway.org or call (215) 316-4450 to ask how to volunteer for the summer lunch or
+    the youth summer enrichment program.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site invites volunteers and gives a contact email, although its volunteer button is still
-    a placeholder.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The get-involved page invites volunteers and gives a phone number and email to ask. The homepage
+    join button is still a placeholder, so the first step is a message.
+  what_to_expect: Volunteer jobs include meal help, set-up, and clean-up at summer lunches, and packing
+    and sorting food boxes, clothing, and hygiene kits. The site does not say how long a shift lasts,
+    whether there is training, or who you would work with, so ask when you make contact.
+  first_visit_tips:
+  - Email before you come, since the site does not list volunteer shift times or places.
+  - Ask whether the summer lunch shifts are in Philadelphia, since the site also names Richmond, Virginia.
 contacts:
   website: https://chloesway.org/
   email: kera@chloesway.org
@@ -119,7 +124,21 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - last_sign_of_life
+- url: https://chloesway.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - sign_up_needed
+  - contacts.email
+  - contacts.phone
+- url: https://chloesway.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - crowd
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

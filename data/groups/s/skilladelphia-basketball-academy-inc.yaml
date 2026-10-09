@@ -8,8 +8,9 @@ leads:
 ein: '990763856'
 summary: A basketball and lacrosse academy for girls and nonbinary players ages 6 to 14. It runs skills
   clinics, aftercare, summer camps and a fitness class for kids.
-what_you_do: Players attend clinics, aftercare and summer camps. To hear about sessions, sign up for the
-  group's distribution list.
+what_you_do: Players join skills clinics, aftercare, summer camps, or the Fit Fun fitness classes for
+  kids. Clinics and camps are signed up for on the site, and families can join its mailing list for news
+  about sessions.
 kind: program
 categories:
 - sports-teams
@@ -36,23 +37,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Clinics, aftercare and summer camps. Dates, days and times are not stated on the site.
+  text: After-school clinics run 3:30 to 5:30 pm, and summer camps run for several weeks each summer.
   days: []
-  times: []
+  times:
+  - daytime
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 766 S 7th St
+- label: Clinics at Old Pine Community Center
+  address: Corner of 4th and Lombard Streets, Philadelphia
   neighborhood: null
-  planning_district: central
-  zip: '19147'
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Outdoor lacrosse at Penn Park
+  address: Penn Park (Ace Adams Field), Philadelphia
+  neighborhood: null
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
 - label: Mailing address (IRS)
-  address: 766 S 7th Street
+  address: 766 S 7th St
   neighborhood: null
   planning_district: central
   zip: '19147'
@@ -63,8 +74,8 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: The site describes low-cost or no-cost training with a family-friendly price. No dollar amounts
-    are shown.
+  text: The site describes its training as low-cost or no-cost. No dollar amounts are shown for clinics
+    or camps.
 commitment: null
 group_size: null
 access:
@@ -76,16 +87,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Join the distribution list on the site, then email or call to ask how enrollment works.
+  how: For a clinic, use the sign-up details on the site. For a summer camp or fall program, use its register
+    button. For news about sessions, sign up for the mailing list through the contact page.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site does not describe how to enroll, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The FAQ says coaches welcome all skill levels and that clinics are low-stress, and the site has
+    register buttons for camps and fall programs. Spots are limited, so sign up early.
+  what_to_expect: A clinic runs about an hour, with a coach showing a skill or drill and then players
+    working in small groups in a relaxed, fun style. An open shootaround follows, and afternoon sessions
+    run from 3:30 to 5:30 pm. Each clinic is limited to 25 to 30 players and is first come, first served.
+  first_visit_tips:
+  - Bring sneakers and a water bottle.
+  - Bring your own ball or lacrosse stick if you have one. Basketballs are provided if needed.
+  - Lacrosse players need a mouthguard and goggles, which the FAQ lists for lacrosse only.
+  - Indoor clinics are at Old Pine Community Center, on the corner of 4th and Lombard Streets.
 contacts:
   website: https://www.skilladelphiabasketballacademy.org/
   email: mac@skilladelphia.org
@@ -111,6 +130,7 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://www.skilladelphia.org
   seen: '2026-10-08'
   fields:
@@ -139,7 +159,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.skilladelphia.org/basketball-faq
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - locations
+  - cost
+- url: https://www.skilladelphia.org/home
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - status
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

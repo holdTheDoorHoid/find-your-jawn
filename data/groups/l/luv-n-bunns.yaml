@@ -57,8 +57,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Adoption fee not stated on the site
-commitment: null
+  text: Adoption fee not stated on the site. Each surrender asks for a $65 donation.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -70,23 +70,32 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Pet carrier for adoption day
 first_step:
-  how: Email bunnies@luvnbunns.org to ask for an adoption application, or use the volunteer application
-    linked from the site
-  drop_in: null
-  sign_up_needed: null
+  how: Email volunteer@luvnbunns.org to ask about volunteer roles, or email bunnies@luvnbunns.org to ask
+    for a foster or adoption application
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Adoption and volunteering both start with an application that is screened before you can meet
-    the animals or start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Adoption and fostering start with an application that is reviewed before you can meet any rabbit,
+    and the site describes no public visiting day.
+  what_to_expect: The rabbits live in private foster homes, so there is no public place to visit them,
+    and the first contact is by email. Adoption happens on a weekend adoption day after your application
+    is approved, and you take your rabbit home that same day. The rescue says fostering is its biggest
+    need, and it also asks for help with vet transport, events, and care at its adoption center.
+  first_visit_tips:
+  - Have a pet carrier and your home set up before adoption day, since you take the rabbit home the same
+    day.
+  - Expect email replies to take a few days, so start early.
+  - If you plan to bring a child under 18 to the adoption center, tell the rescue first.
 contacts:
   website: https://www.luvnbunns.org
   email: bunnies@luvnbunns.org
   phone: null
   contact_name: Melanie Smith
-  social: []
+  social:
+  - https://www.facebook.com/LuvNBunns
+  - https://www.instagram.com/luvnbunns
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -122,8 +131,40 @@ sources:
   - schedule
   - first_step
   - contacts
-research_tier: 1
-confidence: low
+- url: https://luvnbunns.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - status
+- url: https://luvnbunns.org/bunnies/adoptables/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - first_step.what_to_expect
+- url: https://luvnbunns.org/bunnies/intake/
+  seen: '2026-10-08'
+  fields:
+  - cost.text
+- url: https://luvnbunns.org/bunnies/fostering/
+  seen: '2026-10-08'
+  fields:
+  - commitment
+  - requirements.gear
+  - first_step.what_to_expect
+- url: https://luvnbunns.org/support/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step.how
+  - first_visit_tips
+- url: https://luvnbunns.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step.drop_in
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

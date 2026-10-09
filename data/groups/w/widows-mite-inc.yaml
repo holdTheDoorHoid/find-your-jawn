@@ -9,7 +9,7 @@ ein: '822179025'
 summary: A nonprofit that offers grief support, counseling resources and an online community for people
   who have lost a spouse or family member.
 what_you_do: Join the online community for people with similar losses, register for the Celebrating You
-  social event, or use the resource pages on the website.
+  event through the website, or use the resource pages on financial and social help.
 kind: nonprofit
 categories:
 - support-recovery
@@ -48,19 +48,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 656 N 39th Street
-  neighborhood: null
-  planning_district: university_southwest
-  zip: '19104'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: Not stated on the site
 commitment: null
 group_size: null
 access:
@@ -75,24 +66,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Ask about the online community through the link on the group's website, or register for the Celebrating
-    You social event listed there.
+  how: Email info@widowsmitefoundationinc.org or call (215) 796-7616 to ask about the online community,
+    or register for Celebrating You through the link on the website.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The online community link is public, but the event pages show no current dates and the site lists
+    no support group schedule, so the path from first click to a meeting is unclear.
+  what_to_expect: The site does not describe a first support session, meeting, or counseling intake, or
+    how long one lasts. Its online community connects people who have had similar losses, but the event
+    listings show no current dates. Ask whether any meetings or events are running before you plan to
+    attend.
+  first_visit_tips:
+  - Ask whether the online community is still active
+  - Ask whether any support sessions or events are scheduled
+  - Ask what Celebrating You costs, since the site does not say
 contacts:
   website: https://www.widowsmitefoundationinc.org
   email: info@widowsmitefoundationinc.org
   phone: (215) 796-7616
   contact_name: Tondaleya S Robinson
-  social: []
+  social:
+  - https://fb.me/healingishope
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.widowsmitefoundationinc.org
+status: dormant
+last_sign_of_life: 2017-07
+sign_of_life_url: https://www.widowsmitefoundationinc.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,8 +117,24 @@ sources:
   - contacts
   - status
   - audience
-research_tier: 1
-confidence: medium
+- url: https://www.widowsmitefoundationinc.org/social-events/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.widowsmitefoundationinc.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.widowsmitefoundationinc.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -8,8 +8,8 @@ ein: '731698840'
 summary: A grassroots group run by people in prison and their families. It campaigns against solitary
   confinement and harsh prison conditions, pushes for fairer sentencing and release, and helps people
   inside prepare for life after prison.
-what_you_do: Join a campaign or volunteer through the Get Involved form on the site, write letters through
-  its letter-writing work, or read its quarterly magazine, The MOVEMENT.
+what_you_do: Sign up for a campaign through the Get Involved form, come to the monthly Toxic Prisons Campaign
+  meetings or a Thursday letter-writing night, or read its quarterly magazine, The MOVEMENT.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -36,10 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Monthly Toxic Prisons Campaign meetings on Mondays, 6 to 7 pm, and monthly letter-writing nights
+    on Thursdays, 6 to 8 pm, as listed on the events page.
+  days:
+  - mon
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -63,7 +67,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No event fee is listed. The site asks for donations.
 commitment: null
 group_size: null
 access:
@@ -78,14 +82,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the Get Involved form on hrcoalition.org to say you want to help with a campaign.
+  how: Use the RSVP form linked on hrcoalition.org/events to sign up for the next Monday Toxic Prisons
+    meeting or Thursday letter-writing night, or fill in the Get Involved form to join a campaign.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a clear public sign-up form for campaigns and volunteering, and no application is
-    mentioned.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Both event series use public sign-up forms, and the Get Involved form is open to anyone. The
+    page does not say the meetings are open to the public, so the rating stays at 3 instead of 4.
+  what_to_expect: A Thursday letter-writing night runs 6 to 8 pm, with snacks and drinks provided, and
+    you sign up through a form to get the location. The Monday Toxic Prisons Campaign meetings run 6 to
+    7 pm, you RSVP through a form first, and the group's program director leads them. The site does not
+    say how many people usually come.
+  first_visit_tips:
+  - 'RSVP first: the Monday meetings use an RSVP form, and the letter-writing location is sent only after
+    you sign up.'
+  - Snacks and drinks are provided at letter-writing nights.
 contacts:
   website: https://www.hrcoalition.org
   email: info@hrcoalition.org
@@ -93,9 +104,9 @@ contacts:
   contact_name: Walidah Imarisha
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.hrcoalition.org
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.hrcoalition.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +131,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.hrcoalition.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://www.hrcoalition.org/reentry-support
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.hrcoalition.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

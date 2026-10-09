@@ -5,8 +5,9 @@ leads:
 - irs_990n:853454980
 - irs_bmf:853454980
 ein: '853454980'
-summary: A youth nonprofit that runs school-based mentoring, a program for young women ages 12 to 21,
-  and a gaming and esports program for youth affected by gun violence.
+summary: A youth nonprofit that runs a school-based mentoring program and works with partners on a gaming
+  and esports program for youth affected by gun violence. Its site also lists a partner program for young
+  women ages 12 to 21.
 what_you_do: Young people take part in mentoring at schools, gaming and esports activities, and life skills
   or career exploration. Volunteers sign up through the group's volunteer page.
 kind: nonprofit
@@ -42,17 +43,8 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 3228 W Cheltenham Ave
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19150'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 3228 West Cheltenham Ave
+- label: Office
+  address: 3228 W Cheltenham Ave, Suite H
   neighborhood: null
   planning_district: upper_north
   zip: '19150'
@@ -78,20 +70,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up through the volunteer page at afjcollective.org/become-a-volunteer, then ask which youth
-    program needs help.
+  how: Fill in the volunteer application at afjcollective.org/become-a-volunteer or email volunteers@afjcollective.org,
+    and say which youth program you want to help.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: A volunteer page exists, but no events, dates or program schedule are published, so the way in
-    is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteers apply, the team reviews the application, and then calls for an interview before any
+    work starts. No schedule or sign-up steps for young people are posted.
+  what_to_expect: The page says anyone from any background or experience level can apply to volunteer,
+    and that the group provides the training volunteers need. Before you start, you apply, the team reviews
+    the application, and you are contacted for an interview. The site does not say how long a first shift
+    lasts, where volunteers serve, or what a typical week looks like.
+  first_visit_tips:
+  - Be ready for an interview after you apply, and think about which kind of help you would like to give.
+  - Email volunteers@afjcollective.org with questions about where you would serve, since the site does
+    not say.
 contacts:
   website: https://afjcollective.org
-  email: null
-  phone: null
-  contact_name: Michael a Brown
+  email: support@afjcollective.org
+  phone: (215) 931-8512
+  contact_name: Michael Brown
   social:
   - https://www.instagram.com/afjcollective
   - https://www.facebook.com/afjcollective
@@ -123,7 +121,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - contacts.social
+- url: https://www.afjcollective.org/who-we-are
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.afjcollective.org/become-a-volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_step.what_to_expect
+  - first_visit_tips
+  - requirements
+- url: https://www.afjcollective.org/copy-of-our-team
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.email
+  - contacts.phone
+  - contacts.contact_name
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

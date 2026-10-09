@@ -7,14 +7,17 @@ leads:
 ein: '232945377'
 summary: An afterschool learning center in the Strawberry Mansion neighborhood that helps local kids and
   teens with homework and offers mentoring.
-what_you_do: Kids and teens get homework help and mentorship at the center. Ask the center how adults
-  can mentor or help out.
+what_you_do: Kids and teens ages 10 to 17 join after-school tutoring Monday to Thursday, 3:30 to 6 pm.
+  College students and volunteers help with math, civics, and science, and each student gets a snack.
+  The center also runs field trips, speaker visits, and a reading camp in July and August. Adults who
+  want to mentor or help can ask the center how to get involved.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 interests:
 - tutoring
 - mentoring
+- after_school_camps
 motives:
 - values
 formats: []
@@ -33,23 +36,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: After-school tutoring runs Monday to Thursday, 3:30 to 6 pm, for ages 10 to 17. A summer reading
+    camp runs in July and August.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Learning center (IRS and contact page address)
   address: 2946 W Dauphin St
-  neighborhood: null
-  planning_district: north
-  zip: '19132'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 2946 W Dauphin Street
   neighborhood: null
   planning_district: north
   zip: '19132'
@@ -60,7 +61,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no program fees. It asks for donations and links to a fundraiser for a building
+    renovation.
 commitment: null
 group_size: null
 access:
@@ -72,22 +74,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact Us page on strawberrymansionlearningcenter.com to ask how to sign a child up for
-    homework help
+  how: Call (267) 639-4613 or email Strawberrymansionlearningctr@gmail.com to ask about joining tutoring
+    for ages 10 to 17.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site describes the programs but gives no schedule, enrollment steps or start dates, so the
-    way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The tutoring program lists its ages and weekday hours, but the site gives no enrollment steps,
+    start dates, or fees, so the way in is unclear until you ask.
+  what_to_expect: Tutoring runs Monday to Thursday from 3:30 to 6 pm. Students work with college students
+    and volunteers, get a snack, and sometimes go on trips or hear from speakers. The site does not list
+    fees or start dates.
+  first_visit_tips:
+  - Call before you come, since the site lists no start dates or enrollment steps.
+  - Ask about fees and any forms, because the site lists none.
+  - Ask how adults can mentor or volunteer, since the site does not explain it.
 contacts:
   website: http://strawberrymansionlearningcenter.com/
-  email: null
-  phone: null
+  email: Strawberrymansionlearningctr@gmail.com
+  phone: (267) 639-4613
   contact_name: Kevin Upshur
   social: []
   calendar_feed: null
@@ -119,8 +126,21 @@ sources:
   - audience
   - first_step
   - status
-research_tier: 1
-confidence: low
+  - cost
+- url: http://strawberrymansionlearningcenter.com/smlc-programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - schedule
+  - first_step
+- url: http://strawberrymansionlearningcenter.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

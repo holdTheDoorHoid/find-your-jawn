@@ -6,7 +6,9 @@ leads:
 ein: null
 summary: A Community School partnership between the City, the School District and neighbors, Franklin
   S. Edmonds School welcomes volunteers through the City's volunteer portal.
-what_you_do: Help with school based programs for students and families.
+what_you_do: Volunteers help with the school's programs for students and families, such as weekly grocery
+  handouts for families and help at special events. The school also runs family forums, adult education
+  classes, parent cafes, and after school and summer programs for young people.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -43,7 +45,7 @@ schedule:
   season: null
 locations:
 - label: School
-  address: 8025 Thouron Ave Philadelphia , PA 19150
+  address: 8025 Thouron Ave, Philadelphia, PA 19150
   neighborhood: null
   planning_district: upper_north
   zip: '19150'
@@ -69,16 +71,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Sign up through the city's volunteer portal, or ask the school's community school coordinator,
+    Oanye Sims (oanye.sims@phila.gov, (215) 400-3370), about open shifts.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: 'Volunteers are asked for: (CS Volunteers ONLY) School District of Philadelphia (SDP)
-    Code of Conduct; (CS Volunteers ONLY) School District of Philadelphia (SDP) Volunteer Certificate;
-    FBI Waiver or Fingerprinting; PA Child Abuse History Clearance; PA State Criminal Background Check;
-    Volunteer City Release Waiver.'
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteers must clear background and child abuse checks before they work at the school, and the
+    city page does not say what a first shift looks like.
+  what_to_expect: 'Before any shift, volunteers sign the district''s code of conduct, get a district volunteer
+    certificate, and complete clearance checks: the state child abuse history check, the state criminal
+    background check, a city release waiver, and either an FBI waiver or fingerprinting. Open roles have
+    included weekly help with grocery handouts for families and occasional help at special events.'
+  first_visit_tips:
+  - Start the clearance paperwork early, because it has to be finished before your first shift.
+  - Ask the coordinator which day and time the grocery handouts run.
+  - Ask the coordinator where to check in on your first day.
 contacts:
   website: https://communityschools.galaxydigital.com/agency/detail/?agency_id=186397
   email: Madeline.Cerulli@phila.gov
@@ -98,7 +105,19 @@ sources:
   - contacts.email
   - contacts.phone
   - contacts.website
-research_tier: 1
+  - requirements
+  - first_step.what_to_expect
+  - status
+  - last_sign_of_life
+- url: https://www.phila.gov/programs/community-schools/f-s-edmonds-elementary-school/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts.email
+  - contacts.phone
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

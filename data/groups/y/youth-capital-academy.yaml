@@ -7,9 +7,9 @@ leads:
 ein: '334804069'
 summary: A Philadelphia nonprofit started in 2025 that teaches kids and teens money skills, business building,
   and leadership. It has worked with high schools and held a youth business fair.
-what_you_do: Young people learn money skills, entrepreneurship and leadership, with mentoring; the group
-  reports helping more than 15 young people start businesses in 2025. Families and students can use the
-  contact form on the site to get involved or ask about enrollment.
+what_you_do: Young people learn money skills, entrepreneurship and leadership through hands-on lessons
+  and mentoring. The group reports helping more than 15 young people start businesses in 2025. Youth and
+  families can use the Enroll Now form on the group's site, or email to ask about enrollment.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -32,17 +32,18 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 8
+  max_age: 23
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Programs meet one to two days a week, for about one to two hours a session, as workshops or multi-week
+    series. Purpose to Profit is a 14-week program.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -65,8 +66,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Programs are free, and meals and snacks are provided. Selected Purpose to Profit students may
+    receive up to $500 in startup funding.
 commitment: null
 group_size: null
 access:
@@ -78,17 +80,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the contact form on the group's site, or email info@youthcapitalacademy.org, to ask how to
-    enroll.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  how: Click Enroll Now on youthcapitalacademy.org to open the enrollment form, or email info@youthcapitalacademy.org
+    to ask about times and places.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can use the public enrollment form, but the site says spots are limited and does not say
+    how they are filled.
+  what_to_expect: Sessions are hands-on, with games, mentoring and business-building activities, and meals
+    and snacks are served. Most programs meet one to two days a week for one to two hours at a time, and
+    Purpose to Profit runs for 14 weeks. The site does not list meeting places or times, so ask before
+    the first session.
+  first_visit_tips:
+  - Fill in the enrollment form early, since spots are limited.
+  - Ask about times and the meeting place by email before you come.
+  - Youth Diversion sessions take youth referred by schools, community groups or justice partners, so
+    ask whether a referral is needed.
 contacts:
   website: https://youthcapitalacademy.org
   email: info@youthcapitalacademy.org
@@ -123,8 +133,23 @@ sources:
   - what_you_do
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://youthcapitalacademy.org/new-page
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://youthcapitalacademy.org/new-page-2
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - requirements
+- url: https://youthcapitalacademy.org/about
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

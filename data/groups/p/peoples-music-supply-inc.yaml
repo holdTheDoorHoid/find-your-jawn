@@ -5,10 +5,12 @@ leads:
 - irs_990n:994102018
 - irs_bmf:994102018
 ein: '994102018'
-summary: A Philadelphia nonprofit built around collective improvised music. It runs open improvisation
-  labs, a concert series and monthly events, and it hosts members' shows at local venues.
-what_you_do: Musicians can join the open improvisation labs, held on Tuesday evenings. Listeners can attend
-  the concerts and events, which each link to a registration page.
+summary: A Philadelphia nonprofit for collectively improvised music. It runs open improvisation labs on
+  Tuesday evenings and a concert series on Wednesdays, and its events page also lists shows by members
+  that the group does not run.
+what_you_do: Musicians can take part in the open improvisation labs on Tuesday evenings. Listeners can
+  come to the Wednesday concerts. Some events link to a registration page, but the events page does not
+  say whether signing up is needed.
 kind: nonprofit
 categories:
 - music
@@ -34,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open Improvisation Labs on Tuesday evenings at 7 pm, and World to Come concerts on Wednesdays
-    at 5:30 pm, running through October and November 2026. Other events run to December 2026.
+  text: Open improvisation labs run on Tuesday evenings at 7 pm, and the World to Come concert series
+    is on Wednesdays at 5:30 pm.
   days:
   - tue
   - wed
@@ -47,16 +49,7 @@ locations:
 - label: Mailing address (IRS)
   address: 1543 S Mole St
   neighborhood: null
-  planning_district: south
-  zip: '19146'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 1543 South Mole St
-  neighborhood: null
-  planning_district: south
+  planning_district: null
   zip: '19146'
   lat: null
   lng: null
@@ -65,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the events page
+  text: Costs are not listed on the events page.
 commitment: drop_in
 group_size: null
 access:
@@ -80,18 +73,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for the Open Improvisation Lab at The Living Signal on Tuesday, Oct 13 at 7 pm, using
-    the More info link on the group's events page
+  how: Email the group to ask about the next Tuesday open improvisation lab at The Living Signal, or join
+    the monthly mailing list from the contact page.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events are posted publicly with registration links, but the page does not say whether the labs
-    suit beginners
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The contact page invites people to email about open sessions and the labs are listed publicly,
+    but the events page does not say who the labs are for or whether beginners fit.
+  what_to_expect: The Tuesday labs take place at The Living Signal at 7 pm, and each one has its own listing
+    on the events page. The page does not say how long a lab runs, who attends, or what it costs, so ask
+    the group before you go.
+  first_visit_tips:
+  - Email the group first to ask whether you need to register.
+  - The next Tuesday lab on the events page is on October 13, 2026.
 contacts:
   website: https://www.peoplesmusicsupply.org/
-  email: null
+  email: PeoplesMusicSupply@gmail.com
   phone: null
   contact_name: Aaron Pond
   social: []
@@ -126,12 +123,24 @@ sources:
   - first_step
   - status
   - last_sign_of_life
+  - first_visit_tips
 - url: https://www.peoplesmusicsupply.org/
   seen: '2026-10-08'
   fields:
   - summary
   - contacts
-research_tier: 1
+  - contacts.website
+- url: https://www.peoplesmusicsupply.org/contact
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts.email
+- url: https://www.peoplesmusicsupply.org/members
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts.contact_name
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

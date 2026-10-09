@@ -5,10 +5,11 @@ aka:
 leads:
 - irs_990n:300216697
 ein: '300216697'
-summary: A group that puts on Pride celebrations for LGBTQ people of color in Philadelphia. Its site also
-  has a Pride 365 section and a fund that takes donations.
-what_you_do: Attend the PRIDE 2026 celebration, book through the 2026 host hotel link, or sign up for
-  monthly updates.
+summary: A group that puts on Pride celebrations for LGBTQ people of color in Philadelphia. Its main festival
+  is held during the Penn Relays Carnival at the University of Pennsylvania, and it also runs year-round
+  programs and a fund that takes donations.
+what_you_do: Attend the PRIDE 2026 celebration (workshops, seminars, awards and nightlife events), book
+  through the official host hotel link, or sign up for monthly updates.
 kind: nonprofit
 categories:
 - social-meetups
@@ -36,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The signature festival is held during the Penn Relays Carnival at the University of Pennsylvania
+    each year. Other events are announced on the site as they are planned.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -51,16 +53,27 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Mailing address (group contact page)
+  address: P.O. Box 22515
+  neighborhood: null
+  planning_district: null
+  zip: '19110'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Event admission and registration fees are not stated on the page we read. Donations are requested.
+  text: Event admission and registration fees are not stated on the pages we read. The group asks for
+    donations through its PayPal donate button and its Michael Hinson Mission Fund page.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The accessibility statement covers the group's website only and does not describe event access,
+    interpreting or accommodation requests.
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,19 +83,26 @@ requirements:
   gear: null
 first_step:
   how: Sign up for the monthly updates on the site, or email info@phillyblackpride.org to ask how to attend
-    PRIDE 2026
+    PRIDE 2026 or how to volunteer.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events and updates are public, but the page does not describe how to attend or volunteer.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events and updates are public and there is a clear contact, but the pages do not describe how
+    to attend events or how to volunteer.
+  what_to_expect: The celebration has an events program of workshops, seminars and awards, and a nightlife
+    program of parties. The pages we read did not list 2026 dates, venues or ticket prices, so ask the
+    group before you plan. The official host hotel is booked through a link on the PRIDE page.
+  first_visit_tips:
+  - Ask the group for the PRIDE 2026 dates and ticket prices before you book travel.
+  - If you plan to stay over, use the official host hotel link on the PRIDE page.
 contacts:
   website: https://www.phillyblackpride.org
   email: info@phillyblackpride.org
   phone: null
   contact_name: Chris Alston
-  social: []
+  social:
+  - https://www.instagram.com/phillyblkpride/
+  - https://www.facebook.com/phillyblackpride
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -106,7 +126,32 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.phillyblackpride.org/pride
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - sign_of_life_url
+- url: https://www.phillyblackpride.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.phillyblackpride.org/accessibility-statement
+  seen: '2026-10-08'
+  fields:
+  - access
+- url: https://www.phillyblackpride.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - audience
+- url: https://www.phillyblackpride.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

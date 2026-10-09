@@ -5,10 +5,11 @@ leads:
 - irs_990n:933251021
 - irs_bmf:933251021
 ein: '933251021'
-summary: A family-led nonprofit that supports breast cancer warriors and survivors. It shares education
-  about preventive care, wellness resources, and compassionate outreach.
-what_you_do: Ask the group how to join its community or attend an event. The site does not explain how
-  to attend or volunteer.
+summary: A family-led nonprofit that supports people with breast cancer, survivors, and their families
+  with education, emotional support, and events such as an annual tea party for survivors.
+what_you_do: Take part in the group's events, such as My Day, a self-care day with guided workshops and
+  mindfulness activities for people in treatment, or the annual tea party for survivors. The site does
+  not explain how to join the community or volunteer.
 kind: nonprofit
 categories:
 - health-wellness
@@ -32,16 +33,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: There is no regular meeting schedule. The group holds events from time to time, including an annual
+    tea party for survivors.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: false
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 6131 Webster St
   neighborhood: null
-  planning_district: university_southwest
+  planning_district: null
   zip: '19143'
   lat: null
   lng: null
@@ -50,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The site lists no event or membership fees. Its only money option is a donate button.
+  text: The site lists no membership fees. Its only money option is a donate button.
 commitment: null
 group_size: null
 access:
@@ -65,24 +67,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email asistersheartinfo@gmail.com to ask how to join A Sisters Community or attend an upcoming
-    event.
+  how: Email asistersheartinfo@gmail.com to ask about the next event, or how to join A Sisters Community,
+    since the site does not explain joining.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site names a community and events but does not say how to join or what to expect.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The most recent event listed asked people to RSVP by phone, and a luncheon was invite only. The
+    site does not say how to join the group or when the next open event is.
+  what_to_expect: The My Day event is a self-care day with guided workshops and mindfulness activities
+    for people in treatment. The site does not say how long it runs or who leads it, so ask by email before
+    you go.
+  first_visit_tips:
+  - Ask by email for the date of the next event, since the events page lists only past events.
+  - Plan to RSVP ahead, because the most recent community day asked for RSVPs by phone.
 contacts:
   website: https://asistersheart.org/
   email: asistersheartinfo@gmail.com
   phone: null
-  contact_name: Rae a Royster
+  contact_name: Rae Royster
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://asistersheart.org/
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://asistersheart.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -108,8 +115,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - contacts.email
+  - contacts.website
+- url: https://asistersheart.org/ourstory
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - crowd
+  - schedule
+  - contacts.contact_name
+- url: https://asistersheart.org/events
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - cost
+  - status
+  - last_sign_of_life
+- url: https://asistersheart.org/asisterscmmunity
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

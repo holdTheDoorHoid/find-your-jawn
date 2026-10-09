@@ -7,15 +7,20 @@ leads:
 ein: '474400699'
 summary: A Philadelphia nonprofit for youth and families. It runs a summer basketball camp for kids, a
   yearly turkey drive, and a Martin Luther King Jr. speech contest that gives college scholarships.
-what_you_do: Kids sign up for the summer basketball camp through the site's form. The group also runs
-  a turkey drive for families each November and awards college scholarships through its speech contest.
+what_you_do: Kids ages 6 to 16 can register for the annual summer basketball camp, which pairs basketball
+  with workshops and a guest speaker. High school students can enter the MLK Day speech contest, where
+  the top three win scholarships, or join Basketball Beyond Buckets for Sunday practices, SAT tutoring,
+  and college visits. The group also gives Thanksgiving food to low-income families each November.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - sports-teams
+- hunger-housing-basic-needs
 interests:
 - after_school_camps
 - basketball
+- tutoring
+- food_pantry
 motives:
 - values
 formats:
@@ -35,12 +40,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: A summer basketball camp (the site has a 2026 sign-up form) and an annual turkey drive held in
-    November. The page gives no event dates for either.
-  days: []
-  times: []
+  text: The annual summer basketball camp runs in August on weekdays from 8:30 am to 3 pm. The group also
+    holds a Thanksgiving food giveaway each November.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
   recurring: true
-  season: null
+  season: summer
 locations:
 - label: Mailing address (IRS)
   address: 6625 N 11th St
@@ -51,19 +62,28 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6625 N 11th Street
+- label: Mast Community Charter School II (2026 camp, week 1)
+  address: 6501 New State Road
   neighborhood: null
-  planning_district: upper_north
-  zip: '19126'
+  planning_district: null
+  zip: '19135'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: The Alan Horwitz Sixth Man Center (2026 camp, week 2)
+  address: 4250 Wissahickon Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19129'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: A $25 registration fee per family for the camp, with drinks, snacks, and a camp t-shirt included.
 commitment: seasonal
 group_size: null
 access:
@@ -78,23 +98,30 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Fill in the 2026 basketball camp sign-up form on the group's site.
+  how: Email twbasketballcamp@gmail.com to ask when the next camp sign-up opens. The most recent sign-up
+    form on the site is for the 2026 camp.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The camp sign-up form is public on the site, which is a clear way to join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The camp sign-up form and a camp email address are public, and the camp takes Philadelphia kids
+    ages 6 to 16.
+  what_to_expect: The camp runs Monday to Friday from 8:30 am to 3 pm for two weeks in August at two Philadelphia
+    sites. Campers play basketball and take workshops in yoga, coding, physical education, and arts and
+    crafts, with a guest speaker after lunch.
+  first_visit_tips:
+  - Pack lunch, a filled water bottle, and any medicine your camper needs.
+  - Check which site your camper's week uses, since the two weeks are held at different places.
+  - Watch for the confirmation email, which carries the details after you register.
 contacts:
   website: https://www.thomasandwoodsfoundation.org
-  email: null
+  email: twbasketballcamp@gmail.com
   phone: null
   contact_name: Isaiah Thomas
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.thomasandwoodsfoundation.org
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://www.thomasandwoodsfoundation.org/services-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,8 +147,30 @@ sources:
   - status
   - first_step
   - requirements
-research_tier: 1
-confidence: medium
+  - contacts
+- url: https://www.thomasandwoodsfoundation.org/services-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+  - locations
+  - status
+  - last_sign_of_life
+  - requirements
+  - audience
+- url: https://www.thomasandwoodsfoundation.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.thomasandwoodsfoundation.org/articlesandpress
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

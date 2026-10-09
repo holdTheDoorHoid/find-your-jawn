@@ -7,8 +7,8 @@ leads:
 ein: '863858693'
 summary: A small Philadelphia rescue that takes in stray and abandoned cats and kittens, gets them medical
   care, and finds them homes. It depends on foster homes, adopters and donors.
-what_you_do: Foster a cat or kitten until it is ready for adoption, help with transport, or donate. You
-  can also adopt an animal from the rescue.
+what_you_do: Foster a cat or kitten at home until it is adopted, or drive animals to clinics and vet visits
+  if you have a vehicle. You can also donate or apply to adopt a cat that is listed as available.
 kind: nonprofit
 categories:
 - animals
@@ -60,7 +60,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Adoption fees, donation amounts and volunteer requirements were not shown on the page.
+  text: The site does not state an adoption fee or donation amounts. For foster parents, the rescue covers
+    medical costs and can provide supplies.
 commitment: ongoing_role
 group_size: null
 access:
@@ -75,18 +76,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer link on charliesarmy.com to ask about fostering or transport, since the site
-    lists those roles.
+  how: 'Start the application for the role you want on the website: charliesarmy.com/foster for fostering,
+    charliesarmy.com/transport for driving, or charliesarmy.com/apply to adopt a cat listed as available.'
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site lists volunteer roles and a clear Volunteer link, though it does not explain the Apply
-    link or what the rescue requires.
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Fostering, transport and adoption each start with a written application, the site says approval
+    is not guaranteed, and it does not give a review time.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://charliesarmy.com
-  email: null
+  email: info@charliesarmy.com
   phone: null
   contact_name: Marie Gutshall
   social:
@@ -120,7 +121,35 @@ sources:
   - contacts
   - status
   - cost
-research_tier: 1
+- url: https://www.charliesarmy.com/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://www.charliesarmy.com/foster
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+  - first_visit_tips
+- url: https://www.charliesarmy.com/transport
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+- url: https://www.charliesarmy.com/adopt
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+- url: https://www.charliesarmy.com/apply
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

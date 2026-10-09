@@ -5,9 +5,9 @@ leads:
 - irs_990n:882435236
 - irs_bmf:882435236
 ein: '882435236'
-summary: A Philadelphia nonprofit that offers women affordable, non-clinical support through monthly peer
-  groups for mothers, married women, singles, single mothers, and parents of autistic children. Some groups
-  meet online and some in person.
+summary: A Philadelphia nonprofit that offers women affordable, non-clinical support through monthly groups
+  for mothers, married women, singles, single mothers, and mothers of children with disabilities or illnesses.
+  Some groups meet online.
 what_you_do: Pick the monthly group that fits your life stage, such as motherhood or singles, and sign
   up through its register link to talk with other women in a supportive circle.
 kind: nonprofit
@@ -33,14 +33,16 @@ audience:
   school: null
   min_age: null
   max_age: null
-  community: []
+  community:
+  - women
+  - parents
   faith: null
   partisan: false
   support_group: true
 schedule:
   text: 'Monthly groups on set days: Motherhood on the first Monday, Marriage on the second Tuesday, Singles
     on the third Wednesday, Single Mama on the fourth Thursday, and ASD Parenting on the fifth Friday.
-    The dates on the site are listed inconsistently.'
+    The site lists some dates in more than one way, so check the register link.'
   days:
   - mon
   - tue
@@ -63,7 +65,8 @@ locations:
 online_ok: true
 cost:
   level: low
-  text: Most events are $25 or less. Some free healing sessions are offered, capped at 10 people.
+  text: Events, services and programs are $25 or less. A free healing session is offered and capped at
+    10 people.
 commitment: monthly
 group_size: null
 access:
@@ -78,17 +81,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a group on the community page and use its Register link, which goes to the scheduling page
+  how: Pick a monthly group on the Community page and use its Register link, which opens an online scheduling
+    page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Each group has a published sign up page and the groups are open to women and parents.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Each group has a Register link, and the groups are open to women and parents. The site does not
+    say whether you must attend every month.
+  what_to_expect: Each monthly group is built around a discussion topic set for that group. The site presents
+    them as relaxed sessions where you can talk, raise questions and lean on other women. Events cost
+    $25 or less, and the site does not say how long a meeting runs.
+  first_visit_tips:
+  - Read the discussion topic on the Community page for the group you pick, so you know what the conversation
+    covers.
+  - Check the date on the register link, since the site lists some dates in more than one way.
+  - Some groups are virtual gatherings, so check the format on the register link before you sign up.
 contacts:
   website: https://www.unorthodoxtherapy.org
   email: info@unorthodoxtherapy.org
-  phone: null
+  phone: 310-746-5471
   contact_name: MonyChann McCarty
   social: []
   calendar_feed: null
@@ -119,12 +130,25 @@ sources:
   - cost
   - first_step
   - status
+  - commitment
+  - first_visit_tips
+  - what_to_expect
+  - last_sign_of_life
 - url: https://www.unorthodoxtherapy.org
   seen: '2026-10-08'
   fields:
   - summary
   - contacts
-research_tier: 1
+- url: https://www.unorthodoxtherapy.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+- url: https://www.unorthodoxtherapy.org/faq
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

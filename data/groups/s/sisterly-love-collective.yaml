@@ -6,8 +6,9 @@ leads:
 ein: '991592134'
 summary: A Philadelphia group for women who work in food and hospitality. They offer mentoring, networking,
   food fairs, happy hours and workshops.
-what_you_do: Join as a member to use the member resources, or come to the food fairs, happy hours and
-  workshops the group lists on its site.
+what_you_do: Women who run or work in food and hospitality can pay yearly dues to join as members, which
+  brings monthly meet-ups and question sessions with experts. The group also runs a yearly business and
+  leadership day called the Work Shop, with ticket links on its site.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -38,10 +39,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Members are invited to monthly meet-ups and monthly question sessions with experts. The Work Shop
+    is the group's yearly event.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -55,8 +57,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: 'Yearly membership dues: $100 for a standard member, $75 for owners of businesses under three
+    years old, $35 for people under 30, and $250 to $1,000 for company memberships.'
 commitment: null
 group_size: null
 access:
@@ -71,14 +74,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the membership page on the group's site to join, or look for a food fair, happy hour or workshop
-    on its site and come along
+  how: Pick a membership tier on the membership page and click Join Now to pay in the online store. To
+    see the group first, check its Work Shop page for a ticket link; the page does not say whether non-members
+    can buy tickets.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Membership and donations look like the main way in, and the page does not say whether events
-    are open to people who are not members
-  what_to_expect: null
+  basis: Joining means paying yearly dues and meeting an eligibility rule (women working in food and hospitality),
+    and the site does not say whether food fairs, happy hours or workshops are open to non-members.
+  what_to_expect: Membership is for women, or people who identify as women, who run or work in food and
+    hospitality. Members get emails about events, invitations to monthly meet-ups and expert question
+    sessions, and discounts on workshops. The Work Shop is a day of panels on running a business, and
+    the most recent one listed was on Monday, July 27, 2026 at Fitler Club in Philadelphia.
   first_visit_tips: []
 contacts:
   website: https://www.sisterlylovephilly.com
@@ -87,9 +94,9 @@ contacts:
   contact_name: Ellen Yin
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.sisterlylovephilly.com
+status: active
+last_sign_of_life: 2026-07
+sign_of_life_url: https://www.sisterlylovephilly.com/workshop2024-1/
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -99,6 +106,7 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://www.sisterlylovephilly.com
   seen: '2026-10-08'
   fields:
@@ -108,7 +116,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - schedule
+- url: https://www.sisterlylovephilly.com/memberships/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - audience
+  - what_you_do
+- url: https://www.sisterlylovephilly.com/workshop2024-1/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_to_expect
+- url: https://www.sisterlylovephilly.com/sisterly-love-upcoming/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

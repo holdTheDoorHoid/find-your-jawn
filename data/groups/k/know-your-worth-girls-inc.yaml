@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events several times a year, including a family skate night, money skills workshops and a spring
-    empowerment day. The event list is on the Zeffy page.
+  text: Several public events a year, such as a family skate night, money skills workshops and pop-up
+    events. Dates are posted on the Zeffy page.
   days: []
   times: []
   recurring: null
@@ -53,11 +53,20 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1954 Georgian Road
+- label: Pop-up venue (HOPE-ISH events on Zeffy)
+  address: 4865 Market St
   neighborhood: null
-  planning_district: upper_north
-  zip: '19138'
+  planning_district: null
+  zip: '19139'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Family skate night venue (Rolling Thunder Skate Center)
+  address: 7017 Roosevelt Blvd
+  neighborhood: null
+  planning_district: null
+  zip: '19149'
   lat: null
   lng: null
   in_city: true
@@ -77,18 +86,22 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email knowyourworthgirlsinc@gmail.com or use the Subscribe option on the group's Zeffy page to
-    get notice of the next event
+  how: Email knowyourworthgirlsinc@gmail.com about mentoring, or use the Subscribe button on the group's
+    Zeffy page to get notice of the next event and buy tickets through that event's link.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Public events are listed with dates, places and a sign-up for notices, but the page does not
-    say how mentoring places are filled.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public events list dates and places with ticket links, and a Subscribe button sends event notices.
+    The page does not say how mentoring places are filled.
+  what_to_expect: Public events include family skate nights, money skills workshops and pop-ups, and most
+    listings give a date, time and place. The page does not say what tickets cost, so check the event
+    link before you go. Mentoring is described only in general terms, so ask by email how it works.
+  first_visit_tips:
+  - The program serves girls ages 8 to 17, so check who an event is for before you sign up a child.
+  - Use the link on each event page for tickets and registration.
 contacts:
   website: https://knowyourworthgirlsinc.org
   email: knowyourworthgirlsinc@gmail.com
@@ -127,7 +140,9 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - locations
+  - requirements
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

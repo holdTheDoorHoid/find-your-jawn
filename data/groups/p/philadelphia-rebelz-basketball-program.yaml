@@ -8,8 +8,9 @@ leads:
 ein: '334554907'
 summary: A North Philadelphia basketball program for young players. It fields teams, runs coaching, hosts
   clinics and tournaments, and gives away gear to the community.
-what_you_do: Register for a team or a community event such as the 3v3 tournament, or come to a gear giveaway.
-  Some events are 18 and over or invitation only.
+what_you_do: Try out for an AAU team (16U for players born in 2008, 17U for players born in 2007), play
+  in the Grindhouse League, or come to a free gear giveaway, clinic, or 3v3 tournament. Some events are
+  for 18 and over or invitation only.
 kind: team
 categories:
 - sports-teams
@@ -39,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Teams, clinics and tournaments are posted on the site when announced. No regular weekly schedule
-    was published.
+  text: Teams, clinics and tournaments are announced on the site. No regular weekly practice schedule
+    is published.
   days: []
   times: []
   recurring: null
@@ -58,7 +59,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The register page lists no fee. Payment is requested only after a coach selects you.
 commitment: null
 group_size: null
 access:
@@ -70,17 +71,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Register Now form on rebelz.club to sign up for a team or an event
+  how: Fill in the registration form at rebelz.club/register for the 16U or 17U AAU team, then attend
+    the tryout when the dates are sent to you.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The register form is public, but the site does not say who may join, whether teams hold tryouts,
-    or what they cost, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Team places need a registration, a tryout and a coach's selection before payment, so this is
+    not a drop-in. The register form itself is public.
+  what_to_expect: Coaches teach the basics of the game and focus on teamwork and discipline, and the teams
+    play in competitive events. The site does not say how often teams practice, where they meet, or what
+    a tryout involves.
+  first_visit_tips:
+  - 'Check your birth year first: the AAU teams are 16U (born 2008) and 17U (born 2007).'
+  - Ask where practices and tryouts are held, since the site gives only a mailing address.
+  - Tryout dates are sent to you after you register, so watch for a message.
 contacts:
   website: https://rebelz.club
   email: null
@@ -120,7 +127,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://rebelz.club/register/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - requirements
+- url: https://rebelz.club/about/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+- url: https://rebelz.club/stem/
+  seen: '2026-10-08'
+  fields:
+  - notes
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

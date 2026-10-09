@@ -5,15 +5,19 @@ leads:
 - irs_990n:884052435
 - irs_bmf:884052435
 ein: '884052435'
-summary: A sports-based youth development group for Philadelphia youth from low-income families, with
-  flag football, a girls program, a summer camp, and a community league.
-what_you_do: Youth can join flag football, the girls program, the summer camp, or the community league.
-  The stated goals include healthy living, graduation, and job and college readiness.
+summary: A sports-based youth development group for Philadelphia kids from low-income families. It mixes
+  football drills with academic enrichment, mentoring, and a summer camp.
+what_you_do: Youth can join the after-school and summer camp program, the community league, or the girls
+  program. The programs pair football with academic enrichment, mentoring, and healthy meals, and the
+  stated goals include graduation and job and college readiness.
 kind: nonprofit
 categories:
 - sports-teams
+- kids-youth-mentoring
 interests:
 - football_rugby
+- youth_coaching
+- mentoring
 motives:
 - values
 - enhancement
@@ -34,12 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The after-school and summer camp program runs yearly. Schedules for the other programs are not
-    shown on the pages read.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: The summer camp runs on weekdays from 9 am to 3 pm, and the after-school and camp program is offered
+    yearly.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
+  season: summer
 locations:
 - label: Mailing address (IRS)
   address: Po Box 14234
@@ -50,11 +60,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: Box 14234
+- label: Morris Estates Recreation Center (2026 league site)
+  address: 1610 W. Chelten Avenue
   neighborhood: null
-  planning_district: upper_north
-  zip: '19138'
+  planning_district: null
+  zip: '19126'
   lat: null
   lng: null
   in_city: true
@@ -62,8 +72,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Fees, scholarships, and free programs are not stated on the site.
-commitment: null
+  text: Fees, fee waivers, and scholarships are not stated on the site.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -77,13 +87,16 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Programs page for current options. The Programs page content was not captured, so sign-up
-    steps are not recorded.
+  how: Message the group through pyfa215.org to ask when registration opens for the next season, since
+    its 2026 spring sign-up windows closed by March 20, 2026.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site lists program names, but the sign-up steps were not read.
-  what_to_expect: null
+  basis: The programs are named publicly, but the site gives no sign-up steps, fees, or current dates,
+    so the way in is unclear.
+  what_to_expect: The summer camp runs on weekdays from 9 am to 3 pm with football drills, academic enrichment,
+    mentoring, and meals that come with nutrition information. The camp page still shows 2024 dates, so
+    ask about this year's camp before you plan around it.
   first_visit_tips: []
 contacts:
   website: https://www.pyfa215.org/
@@ -92,9 +105,9 @@ contacts:
   contact_name: Eugene Pough
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.pyfa215.org
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://leaguefinder.usafootball.com/leagues/philadelphia-youth-football-academy
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -131,12 +144,39 @@ sources:
   - cost
   - first_step
   - status
+  - contacts
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.pyfa215.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://www.pyfa215.org/summer-camp/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - what_to_expect
+  - cost
+  - first_step
+  - status
+- url: https://www.pyfa215.org/community-league-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://leaguefinder.usafootball.com/leagues/philadelphia-youth-football-academy
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - status
+  - last_sign_of_life
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

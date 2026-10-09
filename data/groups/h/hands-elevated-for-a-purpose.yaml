@@ -5,11 +5,12 @@ leads:
 - irs_990n:822672317
 - irs_bmf:822672317
 ein: '822672317'
-summary: Neighbors who provide personal care products to students in underserved parts of Philadelphia.
-  They also share a list of free places for food and basic supplies and give children chances to explore
-  beyond their neighborhood.
-what_you_do: Fill in the volunteer form on the website to help with the personal care and youth programs.
-  Check the events page for job fairs and other dates.
+summary: Neighbors who share personal care products with students in underserved parts of Philadelphia,
+  keep a list of free places for food and basic supplies, and give children chances to explore beyond
+  their neighborhood.
+what_you_do: Fill in the group's volunteer form to help with the personal care and youth programs, and
+  check the events page for job fairs and other dated events. To ask about personal care products or help,
+  use the contact page; the site does not say how those requests are handled.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -35,15 +36,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are posted on the events page, such as a spring job fair on May 16, 2026. The site lists
-    no weekly schedule.
+  text: The site lists no weekly schedule. Events, such as job fairs, are posted on the events page as
+    they come up.
   days: []
   times: []
   recurring: null
   season: null
 locations:
 - label: Mailing address (IRS)
-  address: 1116 E Mount Airy Ave Apt C24
+  address: 1116 E Mount Airy Ave Apt C24, Philadelphia, PA 19150
   neighborhood: null
   planning_district: upper_north
   zip: '19150'
@@ -51,11 +52,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 1116 E Mount Airy Ave C24
+- label: Address on contact page
+  address: '1500 Chestnut Street, Suite 2 #2344, Philadelphia, PA'
   neighborhood: null
-  planning_district: upper_north
-  zip: '19150'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
@@ -63,7 +64,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Donations go through PayPal. The site does not say what, if anything, recipients pay.
+  text: Donations go through PayPal. The site does not say whether any program has a fee.
 commitment: null
 group_size: null
 access:
@@ -78,18 +79,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer form linked on the website, or use the contact page to ask about the personal
-    care products
+  how: Ask through the contact page what volunteers do and how to sign up, then fill in the volunteer
+    form linked from the site menu.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The volunteer form is open to anyone, but the site gives no details on what volunteering involves.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The volunteer form returned a sign-in error when we read it, and the site does not say what volunteering
+    involves, so the way in is unclear.
+  what_to_expect: The site does not say what volunteers do, how long a shift runs, or how often help is
+    needed. The group works on personal care products and youth programs, so ask on the contact page what
+    the current need is before you plan a visit.
+  first_visit_tips:
+  - If the volunteer form asks you to sign in, ask the group for another way to sign up.
+  - Check the events page for job fairs and other dated events before you plan a visit.
 contacts:
   website: https://www.help17.org
-  email: null
-  phone: null
+  email: info@help17.org
+  phone: (267) 288-3142
   contact_name: Tanika D McRae
   social: []
   calendar_feed: null
@@ -118,13 +124,23 @@ sources:
   - schedule
   - status
   - last_sign_of_life
+  - first_visit_tips
 - url: https://www.help17.org
   seen: '2026-10-08'
   fields:
   - summary
   - first_step
   - contacts
-research_tier: 1
+  - what_you_do
+  - status
+- url: https://help17.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - locations
+  - first_step.how
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

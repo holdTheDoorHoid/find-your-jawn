@@ -5,19 +5,29 @@ leads:
 - irs_990n:884187079
 - irs_bmf:884187079
 ein: '884187079'
-summary: A nonprofit that runs life skills workshops for young adults ages 17 to 25 who identify as a
-  minority, and shares resources to help them prepare for adult life.
-what_you_do: Attend a life skills workshop listed on the Events or Programs pages, or sign up for the
-  mailing list to hear about new ones.
+summary: A nonprofit that offers life skills workshops, career coaching, low-cost therapy, and wellness
+  workshops for young adults. The site says these programs serve people ages 17 to 25 who identify as
+  a minority, and it shares resources to help them prepare for adult life.
+what_you_do: Request a life skills or wellness workshop through the site's forms, book a career coaching
+  session through a calendar link, or ask about low-cost therapy. You can also refer a young adult you
+  know, or join the mailing list. A mentorship program that pairs young people with adults is listed as
+  coming soon.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
+- careers-skills-professional
+- health-wellness
 interests:
 - youth_leadership
+- job_clubs
+- money_skills
+- mental_health_awareness
 motives:
 - enhancement
+- career
 formats:
 - learn_skill
+- conversation
 roles: []
 crowd:
 - young_adults
@@ -26,7 +36,7 @@ audience:
   open_to: public
   school: null
   min_age: 17
-  max_age: null
+  max_age: 25
   community: []
   faith: null
   partisan: false
@@ -38,17 +48,8 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 7201 Frankford Ave
-  neighborhood: null
-  planning_district: north_delaware
-  zip: '19135'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 7201 Frankford Avenue PO Box 990
+- label: Mailing address (IRS) and contact page address
+  address: '7201 Frankford Ave #990'
   neighborhood: null
   planning_district: north_delaware
   zip: '19135'
@@ -59,7 +60,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no fees for workshops or coaching. It describes its therapy as low-cost but gives
+    no price. The group is a 501(c)(3), and donations are tax deductible.
 commitment: null
 group_size: null
 access:
@@ -74,17 +76,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the mailing list from the homepage, then check the Events page for the next workshop.
+  how: Request a workshop through the form on findmywayfoundation.org, or book an interest meeting through
+    the calendar link, and ask about the next workshop.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: No workshop dates appear on the pages I could read, so the way in is the mailing list.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Workshops are requested through forms and the pages list no dates or formats, so the way in is
+    unclear until you ask.
+  what_to_expect: The site does not describe a typical workshop, its length, or its group size, so ask
+    before you request one. Topics include financial literacy, career planning, wellness and stress management,
+    and a small-group book club. Coaching is booked as a session through a calendar link.
+  first_visit_tips:
+  - 'Call or email during office hours: Monday to Thursday noon to 8 pm, Friday 9 am to 3 pm, Saturday
+    11 am to 3 pm.'
+  - Give your age when you ask, since the young adult programs are for ages 17 to 25.
+  - Ask whether a workshop is in person or online, because the site does not say.
 contacts:
   website: https://www.findmywayfoundation.org/
-  email: null
-  phone: null
+  email: tmaddox@findmywayfoundation.org
+  phone: 267-433-8325
   contact_name: Tysheira Maddox
   social: []
   calendar_feed: null
@@ -119,8 +129,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+- url: https://www.findmywayfoundation.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - interests
+  - audience
+  - first_step
+  - cost
+- url: https://www.findmywayfoundation.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.findmywayfoundation.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.findmywayfoundation.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

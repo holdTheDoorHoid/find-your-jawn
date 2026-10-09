@@ -5,16 +5,20 @@ leads:
 - irs_990n:830473312
 - irs_bmf:830473312
 ein: '830473312'
-summary: Volunteer attorneys give legal help on housing, child custody, domestic abuse, wills and record
-  clearing at clinics around the region. The group calls itself an urban legal ministry.
-what_you_do: Lawyers can sign up on the Volunteer Opportunities page. People who need legal help can schedule
-  a consultation from the Get Help page.
+summary: Volunteer lawyers give free first consultations and legal help on housing, child custody, domestic
+  abuse, wills, estates, and clearing criminal records, at clinics across the region. The group is a Christian
+  legal ministry, and its clinics also have volunteers who offer prayer and chaplain support.
+what_you_do: Get legal help by calling 215-399-0064 or filling out the consultation form, and the clinic
+  calls you back. Lawyers can volunteer at a clinic once a month for three to four hours, and non-lawyers
+  can help with prayer, hospitality or chaplain work.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
 - faith-community
+- advocacy-rights
 interests:
 - housing_help
+- tenant_rights
 - faith_service_projects
 motives:
 - protective
@@ -39,7 +43,7 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Hunting Park clinic (Joy in the City)
   address: 4455 N 6th St Ste 100
   neighborhood: null
   planning_district: north
@@ -48,19 +52,65 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 4455 N 6th Street
+- label: West Philadelphia clinic (Salvation Army)
+  address: 5501 Market St
   neighborhood: null
-  planning_district: north
-  zip: '19140'
+  planning_district: null
+  zip: null
   lat: null
   lng: null
   in_city: true
   transit: null
+- label: South Philadelphia West clinic (Salvation Army Central Corps)
+  address: 3225 Reed St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: South Philadelphia East clinic (Philadelphia Access Center)
+  address: 1832 S 11th St
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Germantown clinic (Canaan Baptist Church)
+  address: 5430 Pulaski Ave
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: New Hope Philly clinic
+  address: 5520 Woodland Ave
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Chester clinic (Delaware County)
+  address: 151 West 15th St, Chester
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The first consultation is free. If a volunteer lawyer cannot take your case, the clinic can sometimes
+    arrange a low cost referral.
 commitment: null
 group_size: null
 access:
@@ -75,15 +125,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Schedule a consultation from the Get Help page for legal help, or sign up on the Volunteer Opportunities
-    page to give help
+  how: Call 215-399-0064 and choose the clinic nearest you, or fill out the Schedule a Consultation form
+    on the site and describe your legal problem.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The consultation and volunteer sign-up links are public, but the site does not say who qualifies
-    for help
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can ask for a consultation by phone or online, and the first one is free. The page does
+    not say who qualifies, and it reports a wait of one to three months.
+  what_to_expect: After you send the form, the clinic says it will call you. The site does not say how
+    long that call takes or whether the first meeting is in person. The group describes itself as Christian,
+    and clinic volunteers include chaplains and people who pray. The clinic reports waits of one to three
+    months, and for urgent problems the site suggests other legal aid groups.
+  first_visit_tips:
+  - If you have a pending case, have your household size, income, and the other side's name and contact
+    information ready for the call.
+  - Pick the clinic closest to you when you call, since each clinic has its own phone extension.
+  - If your problem is urgent, ask about other legal aid groups while you wait; the site suggests this
+    itself.
 contacts:
   website: https://clcphila.org/
   email: null
@@ -124,12 +182,31 @@ sources:
   - requirements
   - first_step
   - contacts
+  - cost
 - url: https://clcphila.org/news-events/news-events/
   seen: '2026-10-08'
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://clcphila.org/get-help/legal-clinics/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+- url: https://clcphila.org/get-help/schedule-consultation/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+- url: https://clcphila.org/give-help/volunteer-opportunities/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://clcphila.org/who-we-are/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

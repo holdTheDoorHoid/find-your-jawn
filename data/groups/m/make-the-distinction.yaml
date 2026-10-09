@@ -6,9 +6,9 @@ leads:
 - irs_bmf:823483063
 ein: '823483063'
 summary: A nonprofit that builds personal and professional skills in girls ages 11 to 17 so they can lead
-  in their communities. The site describes its mission but does not say how to sign up.
-what_you_do: Girls take part in the group's personal and professional development programs. The site links
-  to program and event pages.
+  in their communities. Its leadership program takes sign-ups through a link on the programs page.
+what_you_do: Girls take part in the group's leadership and personal development programs, such as the
+  Leaders of Distinction program. The group also runs trips and retreats, some by invitation only.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -30,7 +30,7 @@ audience:
   open_to: public
   school: null
   min_age: 11
-  max_age: null
+  max_age: 17
   community: []
   faith: null
   partisan: false
@@ -69,12 +69,13 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Email contact@makethedistinction.org, or use the contact form on the site, to ask how a girl aged
-    11 to 17 can join a program
+  how: Register for the Leaders of Distinction program with the REGISTER HERE link on the programs page.
+    The page lists 10/8 (October 8) as the deadline. For questions, email contact@makethedistinction.org.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site describes the program but does not say how to join, so the way in is unclear
+  basis: The only way in is a registration form with a deadline, and the page does not say what the program
+    involves, who is accepted or what it costs.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -88,9 +89,9 @@ contacts:
   - https://www.youtube.com/@Mtdistinction
   - https://www.instagram.com/mtdistinction
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.makethedistinction.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.makethedistinction.org/programs
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,8 +118,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - kids_ok
+- url: https://www.makethedistinction.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.makethedistinction.org/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+- url: https://www.makethedistinction.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

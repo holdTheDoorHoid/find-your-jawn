@@ -14,10 +14,12 @@ kind: nonprofit
 categories:
 - kids-youth-mentoring
 - careers-skills-professional
+- books-writing
 interests:
 - mentoring
 - youth_leadership
 - job_clubs
+- literacy_tutoring
 motives:
 - values
 - career
@@ -26,6 +28,7 @@ formats:
 roles:
 - help_teach
 crowd:
+- kids
 - teens
 - young_adults
 bridging: null
@@ -54,11 +57,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 6009 n 13th street
+- label: Mailing address (group website)
+  address: P.O. Box 27607
   neighborhood: null
-  planning_district: upper_north
-  zip: '19141'
+  planning_district: null
+  zip: '19118'
   lat: null
   lng: null
   in_city: true
@@ -81,15 +84,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the Become a Volunteer page on the site, or email attract.philly@gmail.com to ask about
-    the next program
+  how: 'Email attract.philly@gmail.com and ask which program has open registration now: Born to Lead (boys
+    ages 10 to 16), Queen''s Code (girls ages 10 to 16), or Literacy for Leaders (Pre-K through fifth
+    grade).'
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Volunteer sign-up and a Request Program page are public, but program ages, dates, and sign-up
-    steps are not posted.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The program pages give ages and a 10-week format, but the registration and history dates we found
+    are from 2016 and 2019 and no current sign-up dates are posted, so the way in for a young person is
+    unclear.
+  what_to_expect: Born to Lead and Queen's Code are 10-week mentoring programs for boys and girls ages
+    10 to 16. Queen's Code adds information sessions on life skills and service projects. Literacy for
+    Leaders is a reading program for children from Pre-K through fifth grade. The site does not say where
+    or when sessions meet, or what they cost now, so ask before you plan a visit.
+  first_visit_tips:
+  - Ask for the meeting place and times before you go, since the program pages do not list them.
+  - If you want to volunteer instead, use the volunteer form on the site, which asks for your contact
+    details and a position.
 contacts:
   website: https://www.attractmentors.org
   email: attract.philly@gmail.com
@@ -128,7 +139,35 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - locations
+  - contacts.email
+  - contacts.phone
+- url: https://attractmentors.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_visit_tips
+- url: https://attractmentors.org/programs/born-to-lead/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - first_step.what_to_expect
+  - first_step.basis
+- url: https://attractmentors.org/programs/queens-code/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - first_step.what_to_expect
+- url: https://attractmentors.org/programs/literacy-for-leaders/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - first_step.what_to_expect
+- url: https://attractmentors.org/request-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

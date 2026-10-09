@@ -5,10 +5,10 @@ leads:
 - irs_990n:933727005
 - irs_bmf:933727005
 ein: '933727005'
-summary: A book club in Philadelphia run by its own nonprofit. Its website gives an email contact and
-  a newsletter sign-up, but no meeting dates or book list are posted yet.
-what_you_do: Read and talk about books with the club. The site does not say how meetings work yet, so
-  email to ask how to attend.
+summary: A Philadelphia book club run by its own nonprofit. It hosts author talks, book events, dinners
+  and essay club nights, but its website does not post regular meeting dates or a book list.
+what_you_do: Takes part in the club's author talks, book events, dinners and essay club, which the events
+  page lists. The site does not say how the club's own meetings work, so email to ask how to attend.
 kind: club
 categories:
 - books-writing
@@ -64,13 +64,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email hello@harriettsbook.club to ask when and where the club meets and how to join
+  how: Email hello@harriettsbook.club to ask when the next book club meeting or event is, where it meets,
+    and whether new people can come.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: No meeting details are posted, so the way in is an email to ask
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The events page lists many public events, but it does not say when or where the book club meets
+    or who can attend, so the way in is an email first.
+  what_to_expect: The site does not describe a first visit. Its events page lists past author talks, book
+    events, a dinner tied to a book, and an essay club held on February 18, 2026, with no prices or meeting
+    times shown. Ask by email what the next event is and whether it is open to people new to the club.
+  first_visit_tips:
+  - Email rather than using the newsletter sign up, which the site says is not set up yet.
 contacts:
   website: https://www.harriettsbook.club
   email: hello@harriettsbook.club
@@ -78,9 +83,9 @@ contacts:
   contact_name: Jeannine A Cook
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.harriettsbook.club
+status: active
+last_sign_of_life: 2026-02
+sign_of_life_url: https://www.harriettsbook.club/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -104,8 +109,20 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.harriettsbook.club/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - status
+  - last_sign_of_life
+- url: https://www.harriettsbook.club/our-vision
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

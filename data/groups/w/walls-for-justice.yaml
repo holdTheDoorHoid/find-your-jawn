@@ -7,9 +7,9 @@ leads:
 ein: '851523710'
 summary: A nonprofit that paints murals and beautifies public walls with neighbors, artists, and businesses.
   Its work centers on giving voice to communities that are often left out.
-what_you_do: Ask about the free mural program, which takes open requests for murals from communities.
-  Volunteers can join group painting events, and artists can ask about paid work and the group's social
-  justice network.
+what_you_do: Community groups can request a mural through the Free Mural Program, which takes open calls.
+  Anyone can stop by a paint day to help, artists can join the free network and look for paid mural projects,
+  and businesses can commission team-building painting.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -35,7 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Volunteers can stop by group paint days, but the site lists no dates for them.
   days: []
   times: []
   recurring: null
@@ -50,19 +50,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 248 E Eleanor Street
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19120'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The Free Mural Program and the artist network cost nothing to join. Donations are optional, and
+    the site lists no fee for paint days.
 commitment: null
 group_size: null
 access:
@@ -77,14 +69,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email the group at the address on its site to ask about volunteering at a painting event or applying
-    to the free mural program.
-  drop_in: null
+  how: Use the contact form at wallsforjustice.org/contact to ask about the next paint day, since the
+    events page lists no upcoming events.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The join page says anyone can help paint regardless of art experience and gives a contact form
+    to ask about the next paint day.
+  what_to_expect: A paint day is open to anyone, and you help paint a mural alongside the group's volunteers.
+    The site does not say how long a paint day runs or what to wear.
+  first_visit_tips:
+  - No art experience is needed, according to the join page.
+  - Confirm the next paint day with the group before you travel, since none is posted.
 contacts:
   website: https://www.wallsforjustice.org
   email: Samuel.Rodriguez@Wallsforjustice.org
@@ -120,8 +116,29 @@ sources:
   - contacts
   - status
   - first_step
-research_tier: 1
-confidence: low
+- url: https://www.wallsforjustice.org/join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://www.wallsforjustice.org/services-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+- url: https://www.wallsforjustice.org/events-1
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://www.wallsforjustice.org/about-8
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -64,7 +64,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site
+  text: Not stated on the site; the group asks for donations.
 commitment: null
 group_size: null
 access:
@@ -79,14 +79,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call (844) 533-3362 to ask about the next town watch or information meeting
+  how: Call (844) 533-3362 and ask when the next town watch patrol or information meeting is, and where
+    it meets.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A public phone number and a stated focus on welcoming residents, though the site posts no meeting
-    schedule.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site welcomes people of any background, but it gives no meeting dates, places or join steps;
+    the way in is a phone call, a Facebook group, or a website account form.
+  what_to_expect: The site does not describe a first visit. From the About page, the core work is a town
+    watch in which volunteers patrol streets, check on local businesses, and share information. The group
+    also holds information meetings on local programs and laws and helps residents with limited English
+    reach local services. The site does not say what taking part costs, though it asks for donations.
+  first_visit_tips:
+  - Call first, since the site lists no meeting times or places.
+  - Ask whether a town watch patrol or an information meeting is the best first step for you.
 contacts:
   website: https://www.nephila.org
   email: null
@@ -94,6 +100,8 @@ contacts:
   contact_name: Roman Zhukov
   social:
   - https://www.facebook.com/groups/nephila
+  - https://twitter.com/philaconnected
+  - https://www.instagram.com/philaconnected/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -124,7 +132,21 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - contacts.phone
+  - contacts.social
+  - first_step.how
+- url: https://nephila.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step.what_to_expect
+  - first_step.basis
+- url: https://nephila.org/register/
+  seen: '2026-10-08'
+  fields:
+  - first_step.basis
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

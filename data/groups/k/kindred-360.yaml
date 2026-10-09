@@ -5,10 +5,11 @@ leads:
 - irs_990n:990481852
 - irs_bmf:990481852
 ein: '990481852'
-summary: A nonprofit that runs virtual support groups and webinars for Black parents and caregivers, with
-  an online library of webinars, workouts and mindfulness tools.
-what_you_do: Sign up for a virtual support group or webinar, or become a free Changemaker member to use
-  the online library.
+summary: A nonprofit that runs virtual peer support groups and webinars for Black parents and caregivers.
+  Its free Changemaker membership adds on-demand wellness content, such as movement sessions and recipes.
+what_you_do: Sign up for a virtual support group through its Join Us link (most groups are marked coming
+  soon), or join the free Changemaker membership for on-demand content. You can also email changemaker@kindred360.org
+  to ask when a group opens.
 kind: nonprofit
 categories:
 - support-recovery
@@ -16,6 +17,8 @@ categories:
 interests:
 - parenting_support
 - caregiver_support
+- grief_support
+- mental_health_support
 - meditation_mindfulness
 motives:
 - social
@@ -38,9 +41,8 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: 'Virtual support groups and webinars. The support groups page gives one dated session: a doula
-    and birth worker group on October 28, 2026 at 7 pm Eastern. Most other groups are listed as coming
-    soon, with no day or time.'
+  text: Virtual peer support groups and webinars held on Zoom. Most groups are marked coming soon, with
+    no set day or time yet.
   days: []
   times:
   - evening
@@ -56,25 +58,17 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 5114 North Broad Street
-  neighborhood: null
-  planning_district: upper_north
-  zip: '19141'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
   level: null
-  text: The Changemaker membership is free. Support group costs are not stated.
+  text: The Changemaker membership is free. The page states no fee for support groups, and it describes
+    the P.I.E.S. workshop as free.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Groups meet on Zoom.
 requirements:
   act153_clearances: null
   background_check: null
@@ -83,15 +77,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Click Sign Up on kindred360.org to request a virtual support group, or join the free Changemaker
-    membership to use the online library
+  how: Pick a group and use its Join Us link to register on Zoom. For the online library, sign up for
+    the free Changemaker membership.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Support groups and the library are listed on the public site with a clear sign-up step, though
-    most groups are marked coming soon.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Sign-up is free and clearly marked, and the groups are open to parents and caregivers. The page
+    limits the resources to Black parents, and most groups are still coming soon.
+  what_to_expect: Support groups are peer groups held on Zoom, led by hosts who are not licensed therapists
+    and who do not replace professional care. The page does not say how long a session lasts or how many
+    people attend. Most groups are marked coming soon, so a group may not be open to join yet.
+  first_visit_tips:
+  - Confirm which group you are registering for, since the page notes that the High-Risk Pregnancy link
+    goes to the same Zoom page as NICU Parents.
+  - Have a device ready with audio and video, since the groups meet on Zoom.
 contacts:
   website: https://www.kindred360.org
   email: changemaker@kindred360.org
@@ -135,7 +134,21 @@ sources:
   - status
   - schedule
   - last_sign_of_life
-research_tier: 1
+  - first_step
+  - access
+- url: https://www.kindred360.org/oxygen-self-care-wellness
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - audience
+  - first_step
+- url: https://www.kindred360.org/contact-1
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

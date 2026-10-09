@@ -5,15 +5,15 @@ leads:
 - irs_990n:830861340
 - irs_bmf:830861340
 ein: '830861340'
-summary: A friends group that hosts community socials and keeps people posted through a mailing list.
-  Its listed 2026 fall social is at a Philadelphia brewery, and people RSVP through a form on the site.
+summary: A friends group that supports Bodine school and its students through community socials and fundraising.
+  People can keep up with events through a mailing list.
 what_you_do: Come to the socials, RSVP through the site, or sign up for the mailing list to hear about
   the next event.
 kind: friends_group
 categories:
-- neighborhood-civic
+- kids-youth-mentoring
 interests:
-- civic_association
+- school_parent_groups
 motives:
 - social
 formats:
@@ -31,7 +31,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 2026 fall social at Philadelphia Brewing Company. The site does not give the day or month.
+  text: Socials are held as one-off events and announced one at a time on the events page.
   days: []
   times: []
   recurring: null
@@ -42,6 +42,15 @@ locations:
   neighborhood: null
   planning_district: lower_north
   zip: '19122'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Contact page address
+  address: 1001 N 4th Street
+  neighborhood: null
+  planning_district: null
+  zip: '19123'
   lat: null
   lng: null
   in_city: true
@@ -64,21 +73,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: RSVP for the 2026 fall social with the RSVP form on friendsofbodine.org, and sign up for the mailing
-    list there
+  how: Use the RSVP HERE link on the events page to RSVP for the 2026 fall social, and sign up for the
+    mailing list to hear about the next event.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Events are posted publicly with an RSVP form and a mailing list sign-up, but the site does not
-    say whether events are members only.
+  basis: Socials are posted publicly with an RSVP form and a mailing list sign-up, but the site does not
+    say whether they are members only.
   what_to_expect: null
   first_visit_tips: []
 contacts:
   website: https://www.friendsofbodine.org
-  email: null
+  email: friendsofbodine@gmail.com
   phone: null
   contact_name: David Bungard
-  social: []
+  social:
+  - https://www.instagram.com/bodinehsphila
+  - https://www.facebook.com/share/2ARdBvMdUxVeHMwE
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -110,8 +121,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
-confidence: low
+- url: https://www.friendsofbodine.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://www.friendsofbodine.org/meet-the-board
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - categories
+  - interests
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

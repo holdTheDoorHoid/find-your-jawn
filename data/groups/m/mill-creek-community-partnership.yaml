@@ -7,8 +7,8 @@ leads:
 ein: '201893842'
 summary: Neighbors working to strengthen the Mill Creek area of West Philadelphia through free art and
   education programs, community events, and voter information.
-what_you_do: Come to a free art class, workshop, or community event, or send the partner and volunteer
-  form on the site to ask how to help.
+what_you_do: Come to a free art class, workshop, festival, or community meal, volunteer through the Join
+  Our Mission form, or book the Art Bus for a block party or community event.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -26,6 +26,7 @@ roles:
 crowd:
 - all_ages
 - neighbors
+- seniors
 bridging: null
 audience:
   open_to: public
@@ -37,11 +38,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free events and workshops are announced on the website; no regular weekly schedule was listed.
+  text: Over 30 free community events a year, according to the group's site. The Art Bus runs pop-up art
+    activities from early April through late October, and the F.A.T.O.E. art programming runs year-round
+    at host sites.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 4234 Ogden St
@@ -64,30 +67,36 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Most programs and events are free
+  text: Programs and community events are free, and donations are optional.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: A past event page (Kwanzaa FEST 2025) says it is handicap accessible and has free street parking.
+    The venue is not named, and the site gives no other access details.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Fill out the partner or volunteer inquiry form on mccpcommunity.com, or email mccpcommunity@gmail.com
-    to ask about the next free event
+  how: RSVP through the form on the upcoming events page for a free workshop such as the Survival Training
+    series, or send the Volunteer or partner inquiry form at mccpcommunity.com/get-involved.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Free public events are listed and there is a clear way to get in touch, but no open calendar
-    with dates was posted.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Free events are open to the public, the group lists a volunteer inquiry form, an email and a
+    phone number, but the site does not post a regular schedule or say what a first event is like.
+  what_to_expect: Most events are free workshops, festivals, meals, or community days, and some ask you
+    to RSVP first. The site does not say how long events run, who usually attends, or what you do at them,
+    so check the listing or call before you come.
+  first_visit_tips:
+  - Call 267.225.7351 or email mccpcommunity@gmail.com for the time and place, since some event listings
+    show neither.
+  - Ask about physical access before you go; the site notes handicap accessibility for only one past event.
 contacts:
   website: https://www.mccpcommunity.com
   email: mccpcommunity@gmail.com
@@ -128,7 +137,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.mccpcommunity.com/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://www.mccpcommunity.com/upcomingevents
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - access
+  - cost
+- url: https://www.mccpcommunity.com/fatoeartbus
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - crowd
+- url: https://www.mccpcommunity.com/inthecommunity
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - audience
+  - crowd
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
