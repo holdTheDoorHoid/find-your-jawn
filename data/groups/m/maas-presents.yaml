@@ -6,11 +6,12 @@ leads:
 - irs_990n:992085783
 - irs_bmf:992085783
 ein: '992085783'
-summary: An arts venue in North Philadelphia that runs the MAAS Presents concert series, rents its spaces,
-  and runs resident artist and community programs. The public can attend shows, take classes, and perform
-  there.
-what_you_do: Buy tickets to a MAAS Presents show, or sign up for the newsletter. To take a class, perform,
-  or rehearse at the venue, check the Rates page.
+summary: An arts venue in North Philadelphia that presents the MAAS Presents concert series, public nights
+  such as monthly Jazz Nights, and a summer outdoor Garden Bars series. It also rents rooms for rehearsals
+  and classes and offers no-cost residencies to artists.
+what_you_do: Buy a ticket to a MAAS Presents show, or go to a monthly Jazz Night or a summer Garden Bars
+  concert. Artists can ask about the no-cost January to March residencies. To rent a room for a rehearsal,
+  performance or class, email booking@maasbuilding.com.
 kind: program
 categories:
 - theater-dance-performance
@@ -36,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concerts and events are posted on the site. Listed dates include October 22 and October 25, 2026,
-    and a MAAS Presents show on December 9, 2026.
+  text: Concerts are posted as dated events on the site. Jazz Nights run monthly, and Garden Bars is a
+    summer outdoor concert series. Rooms rent by the hour for rehearsals and classes.
   days: []
   times: []
   recurring: true
@@ -54,9 +55,10 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Ticket prices vary by show and were not shown on the page. Rental and class rates are on the Rates
-    page.
+  level: paid
+  text: 'Show tickets are sold for each event, and prices are not on the pages we read. Room rental: rehearsals
+    $15 an hour; classes open to the public $20 an hour for up to 12 people, and $25 an hour for 12 or
+    more.'
 commitment: one_off
 group_size: null
 access:
@@ -71,25 +73,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick an upcoming show on the site, such as the October 22 or October 25 events, and buy a ticket.
-    To take a class or perform, check the Rates page.
+  how: Pick an upcoming show on the events page, such as the October 22 or October 25 concerts, and buy
+    a ticket. To rehearse, perform or teach at the venue, email booking@maasbuilding.com.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public events are listed for anyone to attend, and the site invites people to perform or take
-    classes.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows are open to the public and you can buy a ticket, and the site invites people to book the
+    space. It does not describe the audience, age limits, or what a first show is like.
+  what_to_expect: MAAS Presents shows are ticketed and listed with dates. For the October 25 show by GQ,
+    doors open at 6:30 pm and the show starts at 7 pm. Other start times, ticket prices and age limits
+    are not listed on the pages we read.
+  first_visit_tips:
+  - Check the event page for the start time and ticket price before you go.
+  - Email booking@maasbuilding.com to ask about wheelchair access and accessible entrances, since the
+    site does not say.
+  - 'Plan your trip: the site does not name a SEPTA stop or parking.'
 contacts:
   website: https://maasbuilding.com
-  email: null
+  email: booking@maasbuilding.com
   phone: null
   contact_name: Benjamin Riesman
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://maasbuilding.com
+sign_of_life_url: http://www.maasbuilding.com/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,7 +126,27 @@ sources:
   - audience
   - status
   - contacts
-research_tier: 1
+- url: http://www.maasbuilding.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - first_step
+- url: http://www.maasbuilding.com/rates
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: http://www.maasbuilding.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: http://www.maasbuilding.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

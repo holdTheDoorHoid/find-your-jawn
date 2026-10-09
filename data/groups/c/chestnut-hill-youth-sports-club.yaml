@@ -39,18 +39,27 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Travel basketball has two tryout sessions; the dates are on the registration link. Travel soccer
-    moves to school-year age bands starting with the 2026 to 27 season. Intramural basketball dates are
-    not yet listed.
+  text: Travel basketball teams are formed through tryouts each season. Intramural basketball is listed
+    as coming soon, with no dates yet.
   days: []
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Tryouts at Norwood Fontbonne Academy (Sister James Anthony Hall)
+  address: 8891 Germantown Ave
+  neighborhood: null
+  planning_district: null
+  zip: '19118'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Travel basketball tryouts cost $10. Team and program fees are not stated.
+  level: paid
+  text: Travel basketball tryouts cost $10. A selected travel player's team fee is listed at $400, plus
+    uniform fees and a family membership fee if the family is not already a club member.
 commitment: seasonal
 group_size: null
 access:
@@ -59,25 +68,35 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: Register for travel basketball and attend one of two tryout sessions. To hear about other programs,
-    join the club's contact list.
+  how: Sign up on the travel basketball tryout form and attend at least one tryout session for your child's
+    age group.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Travel teams need a tryout and intramural basketball is not open yet, so the way in is limited.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Travel teams are reached through tryouts that need an online sign-up, and intramural basketball
+    has no dates yet. A contact list is the only other way in.
+  what_to_expect: Tryout sessions are split by age group, with two dates for each group on the tryout
+    page, and players must attend at least one session to be considered. The tryout table lists boys'
+    age groups for grades 4 to 8. The tryout fee is $10, and the page lists a $400 team fee for a selected
+    team, plus uniform fees and a family membership fee if the family is not a member.
+  first_visit_tips:
+  - Enter at Door B2 at Sister James Anthony Hall, or at Door B3, which is down the hill by the outdoor
+    basketball court.
+  - Plan for the $10 tryout fee.
+  - Coaches need Pennsylvania clearances first. The FBI check costs $22.95 for volunteers if you have
+    not lived in Pennsylvania for the last 10 years, and clearances last 5 years.
+  - Use the inquiries option on the tryout page to reach the coach with questions.
 contacts:
   website: https://www.chysc.org/
   email: ttommymac@aol.com
   phone: null
-  contact_name: null
+  contact_name: Tom McLaughlin
   social: []
   calendar_feed: null
 status: active
@@ -101,8 +120,20 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.chysc.org/clearances
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - cost
+  - first_visit_tips
+- url: https://chysc.sportngin.com/register/form/154329851
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

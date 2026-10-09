@@ -8,8 +8,8 @@ leads:
 ein: '465470055'
 summary: A horse stable in Fairmount Park run by a nonprofit that cares for horses and protects the Wissahickon
   Valley. People can take riding lessons, ride the trails, and join monthly volunteer days.
-what_you_do: Take horseback riding lessons in the lighted outdoor ring or ride the trails, or come to
-  a monthly Volunteer Day to help beautify the parks and the stable. Boarding is also offered.
+what_you_do: Take private or semi-private riding lessons in the lighted outdoor ring, or ride the trails.
+  Come to a monthly Volunteer Day to help beautify the parks and the stable. Boarding is also offered.
 kind: nonprofit
 categories:
 - animals
@@ -30,18 +30,19 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 8
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Monthly Volunteer Days, per the site. Lesson times are not published.
+  text: Lessons run year round and are booked as slots open. Monthly Volunteer Days help the parks and
+    the barn, but the site does not give their day or time.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Courtesy Stable
   address: 901 East Cathedral Road
@@ -55,7 +56,9 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Fees are not published. Contact the stable for prices.
+  text: Lesson prices are not printed. The site says to contact the stable for current pricing. Barn Days
+    group events cost $50 per person, and lesson payment is due the day of the lesson unless paid in advance
+    by cash or check.
 commitment: null
 group_size: null
 access:
@@ -67,17 +70,27 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
-  gear: null
+  kids_ok: true
+  gear: Hard-soled shoes with a heel, and a riding helmet whenever you are mounted. The stable provides
+    a helmet if you do not have one.
 first_step:
-  how: Call 215.482.8108 or email the stable to ask about lessons, then come to a monthly Volunteer Day
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all levels are welcome and gives a phone number and email, though fees and sign-up
-    steps are not published
-  what_to_expect: null
-  first_visit_tips: []
+  how: Email barnmanager@courtesystable.org to ask for a first lesson, or call 215.482.8108. The stable
+    keeps your email until a slot opens and then contacts you.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site says all levels are welcome, the first lesson includes an evaluation, and there is a
+    clear email route. Lessons are booked as slots open, so the wait time is not stated.
+  what_to_expect: The first lesson includes an evaluation and covers grooming, tacking, mounting, and
+    walking. Private and semi-private lessons run one hour with one instructor, and students must be at
+    least 8 years old. Riders under 15 need a parent or guardian on the premises, and adults stay for
+    the whole lesson.
+  first_visit_tips:
+  - Fill out the Rider Release Form, a PDF on the site, and bring it with you. Riding requires it.
+  - Wear hard-soled shoes with a heel, and bring your own helmet with a harness and chin strap if you
+    have one.
+  - Leave pets at home, and do not smoke in or around the barn.
+  - Ask about the price before you book, because lesson rates are not printed.
 contacts:
   website: https://courtesystable.org
   email: cynbarn0421@gmail.com
@@ -120,7 +133,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://courtesystable.org/riding
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - audience
+  - requirements
+  - first_visit_tips
+- url: https://courtesystable.org/events
+  seen: '2026-10-08'
+  fields:
+  - requirements
+- url: https://courtesystable.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

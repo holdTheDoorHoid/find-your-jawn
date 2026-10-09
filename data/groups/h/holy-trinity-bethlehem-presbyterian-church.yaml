@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 11 am, also streamed. Wednesday prayer and Bible study at 4 pm. Friday morning
-    prayer at 10:45 am, about 15 minutes.
+  text: Sunday worship at 11 am, also streamed live on YouTube, Facebook and Zoom. Wednesday prayer and
+    Bible study at 4 pm. Friday morning prayer at 10:45 am, about 15 minutes.
   days:
   - sun
   - wed
@@ -73,17 +73,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend in person or join online, then use the Contact Us page to get in touch
+  how: Attend Sunday worship at 11 am in person or online, or join the Wednesday 4 pm prayer and Bible
+    study. Use the contact form on the church website to ask anything first.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says all are welcome to come as they are and gives a contact page and several ways to
-    join
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The church says all are welcome to come as they are, and its site has a visit page and a contact
+    form for people who want to ask first.
+  what_to_expect: Sunday worship is at 11 am in the sanctuary, and it is also streamed live on YouTube,
+    Facebook and Zoom, so you can watch from home first. The site does not say how long the service runs,
+    what to bring, or whether you need to sign up. The Friday morning prayer is about 15 minutes, and
+    the site says all are welcome to pray with the church.
+  first_visit_tips:
+  - The church is at 1100 W. Rockland Street in the Logan neighborhood.
+  - The church says to come as you are.
+  - The church office is open Monday to Thursday, 9 am to 5 pm, if you want to call before you come.
 contacts:
   website: https://htbpresbyterian.org
-  email: htbpres@verizon.net
+  email: info@htbpresbyterian.org
   phone: 215-329-3710
   contact_name: null
   social: []
@@ -106,7 +113,22 @@ sources:
   - lead
   - contacts.email
   - contacts.phone
-research_tier: 1
+  - contacts
+- url: https://htbpresbyterian.org/info.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://htbpresbyterian.org/mission.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+- url: https://htbpresbyterian.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

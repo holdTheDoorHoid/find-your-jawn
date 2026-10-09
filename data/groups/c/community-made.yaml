@@ -8,17 +8,19 @@ ein: '334855891'
 summary: Neighbors in East Oak Lane who connect residents, local businesses, and groups to help the area
   live and work well together. Volunteers and youth prepare and deliver meals to older neighbors each
   week, and the group runs weekly wellness check-ins.
-what_you_do: Help prepare and deliver meals to older neighbors, take part in weekly wellness check-ins,
-  or come to porch conversations, pop-up events, and seasonal festivals.
+what_you_do: Help prepare and deliver meals to older neighbors, do wellness check-ins, stock and check
+  the community fridges, or help at porch conversations, pop-up events, and festivals.
 kind: nonprofit
 categories:
 - seniors-intergenerational
 - food-drink
 - neighborhood-civic
+- hunger-housing-basic-needs
 interests:
 - friendly_visiting
 - community_meals
 - community_development
+- community_fridge
 motives:
 - values
 - social
@@ -40,8 +42,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Meals are delivered to older neighbors each week, and weekly wellness check-ins happen. Pop-up
-    events and festivals are announced on the site.
+  text: Volunteers prepare and deliver meals to older neighbors each week, and the team runs weekly wellness
+    check-ins. Porch conversations, pop-up events, and seasonal festivals are posted on the site when
+    they are scheduled.
   days: []
   times: []
   recurring: true
@@ -59,7 +62,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The volunteer page lists no fee. The site also takes donations and lists a membership option it
+    calls a support plan.
 commitment: null
 group_size: null
 access:
@@ -74,15 +78,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email Hello@CommunityMadePhilly.org or use the volunteer page at communitymadephilly.org/volunteer
-    to ask how to help with the weekly meal deliveries
+  how: Use the contact form on the volunteer page, or email Hello@CommunityMadePhilly.org, and ask about
+    the Neighbor Companion role (meal delivery and check-ins).
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: A public volunteer page and an email contact are listed, but the site does not describe what
-    a first shift looks like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page has a contact form and an email address, and the FAQ says anyone can get involved
+    by sending a message. The site does not describe what a first shift looks like.
+  what_to_expect: The site does not say how long a first shift runs or who you would work with. The listed
+    roles include delivering meals and doing check-ins with homebound older neighbors, helping at festivals,
+    and stocking and checking community fridges.
+  first_visit_tips:
+  - Email before you come to ask which role suits a first-timer.
+  - Watch the event list for porch conversations and festivals, which are a way to meet the team in person.
 contacts:
   website: https://www.communitymadephilly.org
   email: Hello@CommunityMadePhilly.org
@@ -94,8 +102,8 @@ contacts:
   - https://x.com/CommMadePhilly
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.communitymadephilly.org
+last_sign_of_life: 2025-08
+sign_of_life_url: https://www.communitymadephilly.org/all-posts
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,11 +128,28 @@ sources:
   - first_step
   - contacts
   - status
+  - cost
 - url: https://www.communitymadephilly.org/event-list
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.communitymadephilly.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - interests
+- url: https://www.communitymadephilly.org/faq
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+- url: https://www.communitymadephilly.org/all-posts
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

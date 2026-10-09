@@ -5,10 +5,11 @@ leads:
 - irs_990n:843288555
 - irs_bmf:843288555
 ein: '843288555'
-summary: A classical chamber music group based in Philadelphia that gives public concerts, most of them
-  in other towns or online. Tickets for its concerts are sold through its website.
-what_you_do: Buy a ticket to a concert or watch a livestream, or donate to support the group. The site
-  does not list volunteer, audition, or membership options.
+summary: A classical music ensemble with a Philadelphia mailing address. It gives public concerts, and
+  the one currently listed is in Devon, PA, on the Main Line. It also posts recordings of past concerts
+  online.
+what_you_do: Buy a ticket to a live concert, watch recorded concerts on the group's YouTube or Facebook
+  pages, or donate to support the group. The site does not list volunteer, audition, or membership options.
 kind: nonprofit
 categories:
 - music
@@ -32,15 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concerts happen a few times a year. The next listed concert is Sunday, January 31, 2027, at 3:00
-    pm at Main Line Unitarian Church in Devon, PA. The most recent Philadelphia event listed is a virtual
-    house concert on Sunday, February 1, 2026.
+  text: Concerts are posted on the group's upcoming events page. The current listing is in Devon, PA,
+    not in Philadelphia.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Group address (from donation page)
+- label: Mailing address (not a concert venue)
   address: 1331 W Porter St
   neighborhood: null
   planning_district: null
@@ -67,20 +67,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the upcoming events page and buy a ticket for a concert or livestream
+  how: Check the upcoming events page and buy a ticket for the next concert you want to hear.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts are open to the public with tickets sold online, but the site does not describe auditions,
+  basis: Concerts are open to the public and tickets are sold online, but the site describes no auditions,
     volunteer roles, or membership.
-  what_to_expect: null
-  first_visit_tips: []
+  what_to_expect: The site does not say how long a concert runs, how the seating works, or what tickets
+    cost, so check the event listing before you buy. The current listing is at Main Line Unitarian Church
+    in Devon, PA, so plan the trip before you commit.
+  first_visit_tips:
+  - Check the venue address on the listing before you buy, since the current concert is outside Philadelphia.
+  - Buy tickets online ahead of time, because the site does not show prices.
+  - Watch a recorded concert on YouTube or Facebook first to hear the group.
 contacts:
   website: https://www.halcyonconsort.org
-  email: null
-  phone: null
+  email: halcyonconsort@gmail.com
+  phone: 267-879-3763
   contact_name: Eve Friedman
-  social: []
+  social:
+  - https://www.instagram.com/halcyonconsort
+  - https://www.facebook.com/halcyonconsort
+  - https://www.youtube.com/channel/UCWt600-S_Nu6o4NHKppJZ0Q/videos
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-02
@@ -109,6 +117,7 @@ sources:
   - last_sign_of_life
   - cost
   - first_step
+  - locations
 - url: https://www.halcyonconsort.org
   seen: '2026-10-08'
   fields:
@@ -116,7 +125,27 @@ sources:
   - what_you_do
   - audience
   - contacts
-research_tier: 1
+- url: https://www.halcyonconsort.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+- url: https://www.halcyonconsort.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.halcyonconsort.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.halcyonconsort.org/listen
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

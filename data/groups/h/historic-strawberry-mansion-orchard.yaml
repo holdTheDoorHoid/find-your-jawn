@@ -6,8 +6,9 @@ ein: null
 summary: The orchard and kitchen garden at Historic Strawberry Mansion in East Fairmount Park, planted
   with the Philadelphia Orchard Project. Community members are welcome to pick fruit from the orchard
   trees, and the mansion hosts workshops on using the fruit.
-what_you_do: Pick fruit from the orchard trees as a community member, take a walk-in mansion tour, or
-  email the mansion or the Orchard Project about volunteering in the gardens.
+what_you_do: Pick fruit from the orchard trees as a community member (call first, since the site gives
+  no picking rules), take a walk-in mansion tour, or email the mansion about volunteering in the gardens
+  and orchard.
 kind: garden
 categories:
 - gardening-greening
@@ -35,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Walk-in mansion tours Thursday through Sunday, 10 am to 3 pm. The page gives no separate hours
-    for the grounds.
+  text: Walk-in mansion tours run Thursday through Sunday, 10 am to 3 pm, with guided tours starting on
+    the hour. The site gives no separate hours for the grounds.
   days:
   - thu
   - fri
@@ -49,7 +50,7 @@ schedule:
 locations:
 - label: Historic Strawberry Mansion
   address: 2450 Strawberry Mansion Drive
-  neighborhood: null
+  neighborhood: strawberry_mansion
   planning_district: null
   zip: '19132'
   lat: null
@@ -58,14 +59,17 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: null
+  level: low
+  text: Walk-in tours cost $8 for general admission, $5 for students, youth and seniors, and are free
+    for veterans and active-duty military. Groups of 10 or more pay $5 each with advance registration.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'The first floor is ADA compliant. Upper floors are reached only by stairs, and the site offers
+    virtual tours for visitors who cannot climb them. Nearest SEPTA stop named on the site: the Route
+    32 bus at 33rd Street near Dauphin Street, a short walk away.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -74,15 +78,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a walk-in tour Thursday to Sunday, or email the mansion to ask about volunteering in the
-    gardens
+  how: Come to a walk-in tour Thursday to Sunday, 10 am to 3 pm, or call 215-228-8364 to ask about picking
+    fruit or volunteering in the gardens.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Tours are walk-in and open to the public. Volunteer sign-up is by email only, and the page gives
-    no online form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Tours are walk-in and open to the public, and volunteer questions go to an email address, with
+    no online form described.
+  what_to_expect: Tours are guided and start on the hour, taking you through rooms of antiques, fine art
+    and collectibles from the 18th and 19th centuries. The site does not say how long a tour takes. Volunteers
+    work in the gardens and orchard, and the site describes no training or set hours.
+  first_visit_tips:
+  - Bring cash or a check, since the mansion does not take cards.
+  - Ask about virtual tour options before you come if you cannot use the stairs.
+  - Parking is free and off-street for up to 50 vehicles.
+  - Take SEPTA bus Route 32 to the stop on 33rd Street near Dauphin Street.
 contacts:
   website: https://www.historicstrawberrymansion.org/
   email: strawberrymansion@me.com
@@ -90,9 +100,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.historicstrawberrymansion.org/the-grounds/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.historicstrawberrymansion.org/
 sources:
 - url: https://www.historicstrawberrymansion.org/the-grounds/
   seen: '2026-10-08'
@@ -112,8 +122,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.historicstrawberrymansion.org/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+- url: https://www.historicstrawberrymansion.org/plan-your-visit
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - access
+  - first_step
+  - schedule
+- url: https://www.historicstrawberrymansion.org/the-grounds
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.historicstrawberrymansion.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

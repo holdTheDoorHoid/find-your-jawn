@@ -4,17 +4,20 @@ aka: []
 leads: []
 ein: null
 summary: A Center City congregation on North Broad Street with Friday evening and Saturday morning services,
-  Saturday Torah study, and a weekly Wednesday morning gathering called Breaking Bread on Broad.
-what_you_do: Come to Friday evening or Saturday morning services, join Saturday Torah study or the Wednesday
-  morning gathering, or watch services by livestream. The site has a New to Judaism page for people new
-  to the faith.
+  Saturday Torah study, and a Wednesday morning food and supply distribution called Breaking Bread on
+  Broad.
+what_you_do: Come to Friday evening or Saturday morning services, or join Saturday Torah study. Newcomers
+  can take one of two introductory courses on Judaism. Services are also livestreamed for people who would
+  rather watch from home.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
 - scripture_study
 - congregation_social
+- food_pantry
 motives:
 - values
 - understanding
@@ -36,8 +39,8 @@ audience:
   support_group: false
 schedule:
   text: Friday pre-oneg at 5:30 pm, Friday Shabbat evening service at 6:00 pm, Saturday Torah study at
-    9:15 am, Saturday morning service at 10:45 am, and Breaking Bread on Broad on Wednesday mornings.
-    Holiday services are on the full calendar.
+    9:15 am, and Saturday morning service at 10:45 am. Breaking Bread on Broad distributes food and supplies
+    on Wednesday mornings. Holiday services follow the full calendar.
   days:
   - wed
   - fri
@@ -48,7 +51,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Congregation building
+- label: Congregation building (enter at 1339 Green St.)
   address: 615 N. Broad St.
   neighborhood: null
   planning_district: null
@@ -57,38 +60,47 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Membership and dues are not stated on the page. Online donations are accepted.
+  text: The Introduction to Judaism course is $250 per person or couple, and the three-session Taste of
+    Judaism course is $36. Both are free for members. Membership dues and visitor fees for services are
+    not stated on the site.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The website has a toolbar for text size, contrast and underlined links. Wheelchair access, elevators
+    and hearing help are not described on the site.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the New to Judaism page or the Join Our Community page linked on the site, or call the office
-    at 215.627.6747
-  drop_in: null
+  how: Come to the Friday 6 pm Shabbat evening service or the Saturday 10:45 am morning service at 615
+    N. Broad St., entering at 1339 Green St.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site has a page for people new to Judaism and a join page, plus office hours, so a newcomer
-    knows how to start. The guest policy is not stated.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The New to Judaism page lists two beginner courses and names a membership contact for newcomers,
+    and the site invites everyone to Friday and Saturday services with no sign-up listed.
+  what_to_expect: Friday evening starts with a social gathering at 5:30 pm, followed by a 6 pm service.
+    Saturday has Torah study at 9:15 am before the 10:45 am service, and the choir sings at some Friday
+    services. The site does not say how long services last or what to wear.
+  first_visit_tips:
+  - Arrive by 5:30 pm if you want the pre-Shabbat gathering before the 6 pm service.
+  - Use the Green Street entrance at 1339 Green St., as the site directs.
+  - Watch the livestream first if you would like to see a service before going in person.
+  - Office hours are weekdays 8:30 am to 5 pm, if you want to ask questions by phone at 215.627.6747.
 contacts:
   website: https://rodephshalom.org/
   email: info@rodephshalom.org
   phone: 215.627.6747
-  contact_name: null
+  contact_name: Steven Share, membership and community
   social: []
   calendar_feed: null
 status: probably_active
@@ -106,8 +118,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - access
+  - online_ok
+- url: https://rodephshalom.org/new-to-judaism/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - contacts
+- url: https://rodephshalom.org/join-our-community/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://rodephshalom.org/our-services/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - kids_ok
+- url: https://rodephshalom.org/breaking-bread-on-broad/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

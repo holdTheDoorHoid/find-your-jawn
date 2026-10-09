@@ -9,8 +9,8 @@ ein: '274200974'
 summary: Volunteers and supporters developing the Rail Park, a three-mile greenway on old rail tracks
   from Northern Liberties to Fairmount Park. Phase One is already open, and the group runs clean-ups,
   green-ups and guided tours.
-what_you_do: Join the October 14 volunteer clean-up or the October 21 green-up, or book a guided tour
-  of the park.
+what_you_do: Sign up for a volunteer clean-up or green-up (each event page has its own registration),
+  book a small-group tour, or come to a park event.
 kind: friends_group
 categories:
 - nature-environment
@@ -38,14 +38,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'October 2026 events: a park tour and a hip hop dance event on Saturday Oct 10, a volunteer clean-up
-    on Wednesday Oct 14, a volunteer green-up on Wednesday Oct 21, and a Furry Friends tour on Saturday
-    Oct 24. The park is open daily, 7 am to 10 pm.'
+  text: Volunteer clean-ups are held monthly at the park and nearby, and green-ups are posted as separate
+    events. Guided tours are booked through the site. The park is open daily from 7 am to 10 pm.
   days:
   - wed
   - sat
   times: []
-  recurring: null
+  recurring: true
   season: fall
 locations:
 - label: Rail Park, Noble Street entrance
@@ -60,13 +59,17 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: The park is free to visit. Donations are tax-deductible, and the site also offers membership.
-commitment: null
+  text: The park and volunteer clean-ups are free. Guided tours have a fee the site does not list. Residents
+    of Pennsylvania and Delaware who hold a qualifying ACCESS or EBT card may book a tour at no cost by
+    contacting the group.
+commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: Broad Street Line to Spring Garden station, about a five minute walk. Bus routes
+    2, 4, 16, 23, 45 and 61 also serve the area. The Noble Street entrance is step-free with an accessible
+    slope, while the Callowhill Street entrance has stairs only. The park has no restrooms.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,25 +78,34 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email friends@therailpark.org or call 215-485-2221 to ask how to join the October 14 clean-up or
-    the October 21 green-up.
-  drop_in: null
-  sign_up_needed: null
+  how: Register on the event page for a clean-up or green-up, which includes agreeing to a volunteer waiver.
+    To ask about joining the volunteer list, email friends@therailpark.org or call 215-485-2221.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer days and tours are posted publicly with a clear contact, and the park is free and open
-    daily.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Clean-ups are open to the public with a sign-up on each event page, and supplies and light refreshments
+    are provided. The site does not say the events suit first timers specifically, so this is not rated
+    higher.
+  what_to_expect: A clean-up means picking up litter, removing graffiti and helping with general upkeep
+    alongside other volunteers. Supplies are provided and light refreshments are served. Each event page
+    lists its own start and end time, so check it before you sign up.
+  first_visit_tips:
+  - Register on the event page first, since signing up includes the waiver.
+  - Enter by the Noble Street entrance, which is step-free. The Callowhill Street side has stairs.
+  - There are no restrooms in the park, so plan ahead.
+  - Pets are welcome in the open park, but non-service pets are not allowed on guided tours.
 contacts:
   website: https://www.therailpark.org
   email: friends@therailpark.org
   phone: 215-485-2221
   contact_name: Leah Murphy
-  social: []
+  social:
+  - https://www.instagram.com/therailpark
+  - https://www.facebook.com/friendsoftherailpark
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.therailpark.org
+sign_of_life_url: https://www.therailpark.org/event/2026-october-clean-up/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +132,35 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
+- url: https://www.therailpark.org/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.therailpark.org/event/2026-october-clean-up/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.therailpark.org/visit/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - locations
+- url: https://www.therailpark.org/faqs/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - commitment
+  - cost
+  - access
+  - first_visit_tips
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

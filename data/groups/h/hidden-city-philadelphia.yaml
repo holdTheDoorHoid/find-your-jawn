@@ -7,7 +7,8 @@ leads:
 ein: '830427255'
 summary: An online publication about Philadelphia's buildings, design, history and development. It also
   runs walking tours and sells memberships to support its work.
-what_you_do: Read the articles, sign up for the newsletter, take a walking tour, or become a member.
+what_you_do: Read the articles, sign up for the newsletter, ask about one of its four walking tours, or
+  become a member.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -33,14 +34,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Tours are on the tours page, but tour dates are not on the home page. Latest article is dated
-    Oct 5, 2026.
+  text: The tours page lists four walking tours, which it books as private group tours for up to 30 people.
+    The page does not list public tour dates.
   days: []
   times: []
   recurring: null
   season: event_only
 locations:
-- label: Walking tours of Philadelphia (meeting point listed per tour)
+- label: Walking tours (meeting place not listed on the tours page)
   address: null
   neighborhood: null
   planning_district: null
@@ -52,7 +53,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Tour prices are not shown on the home page.
+  text: Membership costs $35 a year (Curious), $75 (Adventurous) or $150 (Intrepid), and each level can
+    be a sustaining membership. The tours page does not list tour prices.
 commitment: one_off
 group_size: null
 access:
@@ -67,19 +69,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a tour from the tours page or sign up for the newsletter.
+  how: Read the articles on the home page, then email the tours coordinator, Alison Zeidman, at azeidman@hiddencityphila.org
+    to ask which walking tour fits you and whether an individual can join one.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public articles and tours, with membership as an option.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The articles are public and membership is optional, but the tours page describes group bookings
+    and gives no public tour dates.
+  what_to_expect: The tours page names four walking tours and says they can be booked as private tours
+    for groups of up to 30, but it gives no meeting place, length, or price. The simplest start is the
+    publication itself, whose articles cover preservation, architecture, development, and city history.
+  first_visit_tips:
+  - Ask the coordinator for the meeting place, length, and price before you plan the trip.
+  - Members get 40% off Hidden City events and tours, and invitations to members-only tours.
+  - Membership questions go to the program director listed on the contact page.
 contacts:
   website: https://hiddencityphila.org
   email: null
   phone: null
   contact_name: Thaddeus Squire
-  social: []
+  social:
+  - https://www.facebook.com/hiddencityphila
+  - https://twitter.com/HiddenCityPhila
+  - https://www.instagram.com/hiddencityphila
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -110,11 +122,33 @@ sources:
   - first_step
   - contacts
   - status
+  - last_sign_of_life
+  - sign_of_life_url
 - url: https://www.cultureworksphila.org/fiscal-sponsorship/fiscally-sponsored-projects
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://hiddencityphila.org/tours/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - first_visit_tips
+- url: https://hiddencityphila.org/support/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+- url: https://hiddencityphila.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://hiddencityphila.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

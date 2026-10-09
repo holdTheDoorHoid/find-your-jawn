@@ -7,8 +7,9 @@ leads:
 ein: '383920088'
 summary: A nonprofit wig shop in Queen Village. It gives wigs to people who have lost their hair to illness,
   and it sells wigs and head coverings to everyone else.
-what_you_do: Book a free consultation to be fitted for a wig or learn wig care, or shop in person. The
-  free wig program ships wigs to people who qualify. Donations keep the free program running.
+what_you_do: Book a consultation to be fitted for a wig or learn wig care, or shop in person. The free
+  wig program ships wigs after a hospital doctor or social worker signs the program's patient form. Donations
+  keep the free program running.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -34,16 +35,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site does not publish regular hours. A 2020 article said appointments can be set before or
-    after normal hours. Book a consultation to confirm a time.
-  days: []
-  times: []
-  recurring: false
+  text: 'Shop hours: Wednesday and Thursday 10:30 am to 5:30 pm, Friday 10:30 am to 6 pm, Saturday 10
+    am to 5 pm. Closed Sunday to Tuesday.'
+  days:
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: year_round
 locations:
 - label: Shop, Queen Village
-  address: null
-  neighborhood: null
+  address: 616 S 4th St
+  neighborhood: queen_village
   planning_district: null
   zip: '19147'
   lat: null
@@ -53,7 +59,8 @@ locations:
 online_ok: true
 cost:
   level: low
-  text: Wigs in the free program are listed at $1 each, plus shipping. Shop wigs are sold at regular prices.
+  text: Wigs in the free program are listed at $1 each, plus shipping. Best-selling shop wigs run from
+    about $205 to $3,700 before sale discounts.
 commitment: one_off
 group_size: null
 access:
@@ -68,19 +75,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Book a consultation at hairs2u.org/consultations. For the free wig program, ask your hospital doctor
-    or social worker to complete the program's patient form first.
+  how: Book a consultation at hairs2u.org/consultations. For the free wig program, have your hospital
+    doctor or social worker complete the program's patient form and add the hospital stamp first.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The shop and consultations are open to anyone, but the free wig program needs a form signed by
-    a hospital doctor or social worker.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The shop and consultations are open to anyone, and the site lists hours and an address. The free
+    wig program needs a patient form signed by a hospital doctor or social worker.
+  what_to_expect: 'A consultation is a fitting: the shop says a good fit matters most, and wig sizes run
+    from extra petite to extra large. The shop also offers custom wig making and sells wigs, hats, turbans,
+    and jewelry. The site does not say how long a consultation takes or what it costs, so ask when you
+    book.'
+  first_visit_tips:
+  - Book a consultation first, since the site does not say whether walk-ins are welcome.
+  - The shop is closed Sunday to Tuesday, so plan a visit for Wednesday through Saturday.
+  - For the free wig program, get the patient form completed by your doctor or social worker and stamped
+    by the hospital before you contact the shop.
 contacts:
   website: https://hairs2u.org
   email: hairs2uwb@yahoo.com
-  phone: null
+  phone: 267-518-9387
   contact_name: Lois M Arnold
   social:
   - https://www.instagram.com/hairs2uwigbank
@@ -126,7 +140,13 @@ sources:
   - audience
   - locations
   - schedule
-research_tier: 1
+- url: https://hairs2u.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - schedule
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

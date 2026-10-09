@@ -5,8 +5,10 @@ leads: []
 ein: null
 summary: A nonprofit that works to save healthy and treatable pets in Philadelphia shelters. It runs free
   community pet food pantries and helps owners find rescues instead of surrendering pets.
-what_you_do: Help at pet pantry and community outreach events. The site lists no volunteer roles or sign-up
-  steps, so ask the group how to help.
+what_you_do: Donate pet food or supplies at a pantry event, or email info@phillynokill.org to ask how
+  to help. The site does not list volunteer roles, so ask first. The free pet pantry serves low-income
+  households with pets, and the help desk can point owners to help with stray or lost pets, or to a rescue
+  for a pet they can no longer keep.
 kind: nonprofit
 categories:
 - animals
@@ -29,7 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The free pet pantry moves to a different Philadelphia neighborhood each month. Dates are on the
+    monthly calendar on the pantry page.
   days: []
   times: []
   recurring: null
@@ -47,7 +50,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: The community pet pantries are listed as free.
+  text: Food and supplies from the pet pantry are free. Donations are taken at pantry events, by email,
+    or through the group's wishlists.
 commitment: null
 group_size: null
 access:
@@ -62,13 +66,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@phillynokill.org to ask about volunteering or the next pet pantry.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A public email is listed, but the site does not describe volunteer roles or sign-up.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Email info@phillynokill.org to ask about the next pet pantry or how to volunteer.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The pantry needs an application and agreement before a first visit, and the site describes no
+    volunteer steps, so the way in is unclear.
+  what_to_expect: The pantry gives free food and supplies for cats and dogs kept mainly indoors, at monthly
+    events in different Philadelphia neighborhoods. Before the first visit you complete an application
+    and a pet pantry agreement, and bring a valid ID, proof of residency such as a utility bill or lease,
+    and proof of your pets such as vaccination records or photos. To become a repeat participant, owners
+    must agree to spay or neuter their pets.
+  first_visit_tips:
+  - Bring a valid ID or driver's license, proof of residency, and proof of how many pets you have.
+  - Breeding households are not eligible, and community cat feeding is not covered.
+  - The help desk handles stray or lost pets and rehoming questions, and the same email address can answer
+    them.
 contacts:
   website: https://www.phillynokill.org
   email: info@phillynokill.org
@@ -90,7 +103,36 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://www.phillynokill.org/petpantry
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - schedule
+  - locations
+  - audience
+- url: https://www.phillynokill.org/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.phillynokill.org/community-pet-help-desk
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+- url: https://www.phillynokill.org/pet-pantry-eligibility
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - audience
+  - what_you_do
+- url: https://www.phillynokill.org/post/cnkp-launches-help-desk-at-acct
+  seen: '2026-10-08'
+  fields:
+  - status
+  - what_you_do
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

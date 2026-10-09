@@ -5,10 +5,11 @@ leads:
 - irs_990n:825271570
 - irs_bmf:825271570
 ein: '825271570'
-summary: Helps parents and caregivers keep their families steady. It offers parenting classes, essential
-  goods, family wellness programs, and a mobile care unit.
-what_you_do: Take a parenting class, ask about the essential goods available to you, or volunteer through
-  the group's volunteer page.
+summary: Helps families in Philadelphia County who are pregnant or raising a child aged 0 to 8. It offers
+  diapers and other basic goods, parenting classes, family support, and events.
+what_you_do: Join the waitlist for the basic goods program, which is full right now, or ask the office
+  when the next parenting class opens. Volunteer through the group's volunteer page or by calling the
+  office.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -24,7 +25,7 @@ crowd:
 - families
 bridging: null
 audience:
-  open_to: public
+  open_to: residents
   school: null
   min_age: null
   max_age: null
@@ -34,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Office hours: Monday and Thursday 12 to 7 pm, Friday 10 am to 3 pm (program times not listed)'
+  text: Office hours are Monday and Thursday 12 to 7 pm and Friday 10 am to 3 pm. Program times are not
+    listed.
   days:
   - mon
   - thu
@@ -56,14 +58,15 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: Services are free and no insurance is needed. Goods depend on donations and stock on hand.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The parenting class program offers SEPTA transportation help if you need it, according to its
+    page.
 requirements:
   act153_clearances: null
   background_check: null
@@ -72,15 +75,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-703-7756 during office hours and ask about the next parenting class and which essential
-    goods you can get
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site lists a phone number and office hours and welcomes parents and caregivers, though it
-    does not describe what a first visit is like.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call 215-703-7756 during office hours to ask about the waitlist for basic goods and the next parenting
+    class. You need to be pregnant or raising a child aged 0 to 8, and live in Philadelphia County.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The goods program is full with a waitlist, the parenting class cohort that was open has closed,
+    and new families start with a referral form and an in-person intake, so there is no walk-in step.
+  what_to_expect: After you send the online Referral and Interest Form, a Care Coordinator contacts you
+    to set up an in-person intake, where eligibility is decided. The parenting class page says it suits
+    caregivers who self-refer or are referred by an agency, including families involved with child welfare
+    or family court. It does not say how long a class runs or whether children come along.
+  first_visit_tips:
+  - Have your child's age and your Philadelphia address ready, since eligibility depends on both.
+  - 'Call during office hours: Monday and Thursday 12 to 7 pm, Friday 10 am to 3 pm.'
+  - The page does not say how to get there by bus or where to park, so ask when you call.
 contacts:
   website: https://www.linkedfamily.org/
   email: admin@linkedfamily.org
@@ -117,7 +126,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.linkedfamily.org/essentialsaccess
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - cost
+  - first_step
+- url: https://www.linkedfamily.org/parentingclass
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - access
+- url: https://www.linkedfamily.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

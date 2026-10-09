@@ -10,17 +10,23 @@ summary: The cathedral of the Episcopal Diocese of Pennsylvania in Center City. 
   service and noonday services on Wednesdays and Fridays, and it has a newcomers form and a survey to
   help people find a ministry.
 what_you_do: Come to Sunday Eucharist at 10 am or a noon Eucharist on a Wednesday or Friday, fill out
-  the newcomers form, or take the survey to find a ministry.
+  the newcomers form, or take the survey to find a ministry. Volunteers can also help with the food pantry
+  and other Cathedral Table Ministries.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
 interests:
 - worship_community
+- food_pantry
 motives:
 - values
+- social
 formats:
 - conversation
-roles: []
+- side_by_side
+roles:
+- hands_on
 crowd:
 - neighbors
 - newcomers
@@ -35,15 +41,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Holy Eucharist at 10 am. Noonday Eucharist on Wednesdays and Fridays (the time is not stated
-    on the page).
+  text: Sunday Holy Eucharist at 10 am. Noonday Eucharist on Wednesdays and Fridays (the page does not
+    give the time). The Cathedral Table Ministries food pantry runs Mondays from 9:30 to 11 am, and a
+    community dinner is listed for Wednesdays at 6 pm with a partner group.
   days:
   - sun
+  - mon
   - wed
   - fri
   times:
   - morning
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -58,14 +67,15 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not listed on the site
+  level: free
+  text: Services and Evensong are free. Members are encouraged to give, with no amount set.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site names the Blue Line to 40th Street, then a walk east to 38th Street, and the Green Line
+    streetcar to 36th Street.
 requirements:
   act153_clearances: null
   background_check: null
@@ -74,13 +84,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend the Sunday 10 am service, or fill out the newcomers form on the site.
+  how: Attend the 10 am Sunday Holy Eucharist, or fill out the newcomers form linked on the site.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The site has a newcomers form and a ministry survey, and it invites visitors to services.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites newcomers to fill out a newcomers form, has a ministry survey to help people
+    find a place to serve, and says everyone is welcome at coffee hour.
+  what_to_expect: The Sunday service is a Holy Eucharist at 10 am that follows an ancient order of worship.
+    The music for each Sunday is listed on the site, and a service leaflet is available as a download.
+    The site does not give the length of the service, and coffee hour and adult formation follow.
+  first_visit_tips:
+  - Download the service leaflet from the site before you come.
+  - On Sundays, street parking near the Cathedral needs a permit from the ushers or the printable link
+    on the site. The LAZ lot at 39th and Market is not available for worship.
+  - If you take transit, ride the Blue Line to 40th Street and walk to 38th Street.
+  - Stay for coffee hour after the 10 am service.
 contacts:
   website: http://www.philadelphiacathedral.org/
   email: info@philadelphiacathedral.org
@@ -117,12 +135,28 @@ sources:
   - first_step
   - contacts
   - status
+  - cost
 - url: https://www.interfaithphiladelphia.org/location/philadelphia-cathedral-episcopal/
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://www.philadelphiacathedral.org/worship
+  seen: '2026-10-08'
+  fields:
+  - first_step.what_to_expect
+- url: https://www.philadelphiacathedral.org/directions
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - first_visit_tips
+- url: https://www.philadelphiacathedral.org/community
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - roles
+  - schedule
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

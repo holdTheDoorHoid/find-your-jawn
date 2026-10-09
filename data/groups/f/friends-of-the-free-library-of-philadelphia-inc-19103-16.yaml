@@ -30,13 +30,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The Book Corner is open Monday to Saturday, 10 am to 6 pm. The site lists no Sunday hours and
+    no regular events.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
-- label: Address as published
+- label: Book Corner
   address: 311 N. 20th Street
   neighborhood: null
   planning_district: null
@@ -48,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Membership fees are not stated on the site
+  text: Membership fees are not stated on the site. Books at the Book Corner are sold at reduced prices.
 commitment: null
 group_size: null
 access:
@@ -63,20 +71,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email freelibraryfriends@gmail.com or call (215) 567-0527 and ask how to join or find your neighborhood
-    Friends group
-  drop_in: null
+  how: Visit the Book Corner at 311 N. 20th Street during shop hours and ask a bookseller about volunteering,
+    or call (215) 567-0527 or email freelibraryfriends@gmail.com to ask how to join a neighborhood Friends
+    group.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site names a contact route but not how to join, and it lists no events
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Book Corner is open to walk in during posted hours, but the site does not say how to volunteer
+    or join, so the way into the group is unclear.
+  what_to_expect: The Book Corner is a bookshop with new, rare and used books at low prices, staffed by
+    paid and volunteer booksellers. The site does not describe a volunteer shift or a membership process,
+    so a first visit is mostly browsing and asking questions.
+  first_visit_tips:
+  - Shop hours are Monday to Saturday, 10 am to 6 pm.
+  - Look for the shop on Wood Street, a short walk north of the Parkway, near the Central Library.
+  - Call (215) 567-0527 first to ask about volunteering, since the site does not say how.
 contacts:
   website: https://libraryfriends.info
   email: freelibraryfriends@gmail.com
   phone: (215) 567-0527
   contact_name: Amy Dougherty
-  social: []
+  social:
+  - https://www.instagram.com/bookcornerphilly
+  - https://www.facebook.com/bookcornerphilly
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -107,7 +124,19 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://libraryfriends.info/bookcorner
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - contacts
+- url: https://libraryfriends.info/branches
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

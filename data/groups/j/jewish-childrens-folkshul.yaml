@@ -38,7 +38,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday school meets on Sundays from 10 am to 12:30 pm.
+  text: Sunday school meets most Sundays from 10 am to 12:30 pm, September through May.
   days:
   - sun
   times:
@@ -57,8 +57,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Tuition and dues not stated; donations are invited for the High Holidays
+  level: paid
+  text: Yearly membership and Sunday school tuition, paid in full or in installments. Tuition assistance
+    can be requested. The amounts are in a linked PDF.
 commitment: null
 group_size: null
 access:
@@ -73,14 +74,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register for Sunday school through the site, or email the group for location and visit details
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Families and adults can register or email for a visit, but the page does not say newcomers are
-    welcomed by name.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Email Folkshul@folkshul.org for the meeting address and to ask about a visit. The calendar also
+    lists an adult introduction session that is open to new people.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site says it wants new families and adults, and the calendar lists an adult introduction
+    session that is open to new people, with an email address for questions.
+  what_to_expect: Sunday school runs about 10 am to 12:30 pm on most Sundays from September through May,
+    with classes by grade and a free Sunday Fundays program for children ages 0 to 4 and their caregivers
+    on select Sundays. Adults can join study groups, a restaurant club, local outings, film screenings
+    and a speakers series, and the adult community gathers during Sunday school hours. Families register
+    for membership first, then enroll each child and pay tuition, with tuition help available on request.
+  first_visit_tips:
+  - Email for the meeting address before you come, since it is not published on the website.
+  - Membership comes before Sunday school enrollment, so ask about the steps early.
+  - Most calendar items are for members, so ask whether a specific event is open to visitors.
 contacts:
   website: https://www.folkshul.org/
   email: Folkshul@folkshul.org
@@ -88,9 +97,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.folkshul.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://folkshul.org/events
 sources:
 - url: https://www.folkshul.org/
   seen: '2026-10-08'
@@ -104,8 +113,34 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://folkshul.org/sunday-school/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - first_step
+  - first_visit_tips
+- url: https://folkshul.org/join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - requirements
+  - first_step
+  - contacts
+- url: https://folkshul.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://folkshul.org/adult-community/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

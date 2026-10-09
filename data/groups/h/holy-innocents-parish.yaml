@@ -3,15 +3,21 @@ name: Holy Innocents Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish in Hunting Park with Masses in English, Spanish and Vietnamese, and a second
-  set of Masses at a worship site at St. Joan of Arc Church.
-what_you_do: Come to Mass in English, Spanish or Vietnamese. The Archdiocese page lists no other public
-  programs.
+summary: A Catholic parish in Hunting Park with Masses in English, Spanish and Vietnamese. It also runs
+  a food pantry and a Monday afternoon group for seniors.
+what_you_do: Come to Mass in English, Spanish or Vietnamese. The parish also runs a food pantry (last
+  Thursday and Friday of the month), a senior group that meets Monday afternoons, and religious education
+  for children and youth. Adults who want to join the Catholic Church can ask about OCIA classes.
 kind: congregation
 categories:
 - faith-community
+- hunger-housing-basic-needs
+- seniors-intergenerational
 interests:
 - worship_community
+- faith_youth_programs
+- food_pantry
+- senior_activities
 motives:
 - values
 formats:
@@ -19,6 +25,8 @@ formats:
 roles: []
 crowd:
 - all_ages
+- families
+- seniors
 bridging: null
 audience:
   open_to: public
@@ -32,10 +40,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 7:30 and 10 am in English, noon in Spanish, and 5 pm in Vietnamese. The St. Joan
-    of Arc worship site has Masses at 9 am in English and 11:30 am in Spanish. Weekday Mass at 6:30 and
-    8 am, or 8 am only in summer. Confession Saturdays 3:30 to 4:30 pm.
+  text: Saturday vigil Mass at 4:30 pm in English and 6:30 pm in Spanish. Sunday Masses at 7:30 and 10
+    am in English, noon in Spanish, and 5 pm in Vietnamese. Weekday Mass at 6:30 and 8 am, or 8 am only
+    in summer. Confession Saturdays from 3:30 to 4:30 pm. The St. Joan of Arc worship site has Sunday
+    Masses at 9 am in English and 11:30 am in Spanish.
   days:
+  - sat
   - sun
   - mon
   - tue
@@ -70,12 +80,15 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend.
+  text: Mass is free to attend. The site does not list fees for religious education.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
+  - vi
   notes: null
 requirements:
   act153_clearances: null
@@ -85,19 +98,30 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the rectory to ask about parish groups
+  how: Come to any listed Mass, or call the rectory at 215-743-2600 or email holyinnocents@comcast.net
+    to ask about religious education, youth groups, the food pantry, or OCIA.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the parish publishes a phone number and an email. The adult faith
+    classes page is dated 2024, so those details may be out of date.
+  what_to_expect: Mass is free and open to anyone. Sunday Masses run at 7:30 and 10 am in English, noon
+    in Spanish and 5 pm in Vietnamese, so choose the one in your language. The site does not say how long
+    Mass takes or what happens afterward, so call the rectory with questions before you go.
+  first_visit_tips:
+  - Weekday Mass in summer is at 8 am only.
+  - The Saturday vigil is at 4:30 pm in English and 6:30 pm in Spanish. Confession is Saturdays from 3:30
+    to 4:30 pm.
+  - The church is at L Street and Hunting Park Avenue. The rectory is at 1337 E. Hunting Park Avenue.
 contacts:
   website: https://www.holyinnocentsrc.org
-  email: null
+  email: holyinnocents@comcast.net
   phone: 215-743-2600
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/HolyInnocentsParish
+  - https://www.instagram.com/holyinnocents_parish/
+  - https://www.youtube.com/channel/UCYquAEBK6ACcg2kPwL7XR1g
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -117,7 +141,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.holyinnocentsrc.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - audience
+- url: https://www.holyinnocentsrc.org/massschedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.holyinnocentsrc.org/organizations
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - categories
+  - interests
+  - crowd
+- url: https://www.holyinnocentsrc.org/faithformation
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

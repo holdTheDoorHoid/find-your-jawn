@@ -8,8 +8,8 @@ ein: '743242364'
 summary: A Philadelphia nonprofit that works on safe water, sanitation and hygiene around the world. It
   runs field projects and education programs, mentors young water professionals, and hosts talks and an
   annual conference.
-what_you_do: Become a member, attend an event or the annual conference, or donate. The page does not list
-  volunteer roles.
+what_you_do: Volunteer on field projects, blog writing, events or fundraising, help plan the annual conference,
+  or apply to the board. You can also become a member, attend talks, or donate.
 kind: nonprofit
 categories:
 - science-learning
@@ -20,7 +20,9 @@ motives:
 - understanding
 formats:
 - one_off_event
-roles: []
+roles:
+- hands_on
+- organize
 crowd:
 - all_adults
 - professionals
@@ -35,7 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events and the annual conference through the year. The site gives no dates for upcoming events.
+  text: Talks and events are posted with their own dates on the events page. The group holds a one-day
+    annual conference in Philadelphia.
   days: []
   times: []
   recurring: null
@@ -52,8 +55,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership and donations are offered. Prices were not shown on the page read.
+  level: low
+  text: Professional membership is $50 a year and student membership is $20 a year. Members get half off
+    annual conference admission. Donations are optional.
 commitment: null
 group_size: null
 access:
@@ -68,24 +72,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the events page on globalwateralliance.net for the next talk, or become a member through
-    the Become a Member page.
+  how: 'Use the Get Involved form on the website to say whether you want to volunteer, write for the journal,
+    join the conference, or help another way. Or become a member: $50 a year for professionals, $20 a
+    year for students.'
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Membership, events and a donation route are listed publicly, but volunteer roles are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Membership, volunteer and newsletter routes are listed publicly with a sign up form, and the
+    group describes itself as mostly volunteer run. Talks are listed, but the page does not say which
+    are open to the public.
+  what_to_expect: Most of the group is volunteers, so newcomers usually take part by helping with a project,
+    writing for the blog, or helping run an event. The 18th annual conference was a one-day event on March
+    26, 2026, from 8:30 am to 4 pm, with breakfast and lunch provided and a reception afterward. The conference
+    page does not state the ticket cost.
+  first_visit_tips:
+  - Check the events page for the next talk and whether it is open to the public.
+  - Say which area you want to help with in the Get Involved form, so the group knows where to place you.
 contacts:
   website: https://www.globalwateralliance.net
-  email: null
+  email: info@globalwateralliance.net
   phone: null
   contact_name: Stanley L Laskowski
-  social: []
+  social:
+  - https://www.facebook.com/GWA.Philadelphia/
+  - https://www.linkedin.com/company/global-water-alliance/
+  - https://www.instagram.com/gwaphilly/
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-02
-sign_of_life_url: https://www.globalwateralliance.net
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.globalwateralliance.net/event/18th-annual-conference/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -110,7 +125,37 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
+- url: https://www.globalwateralliance.net/get-involved/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - first_step
+- url: https://www.globalwateralliance.net/become-a-member/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - contacts
+- url: https://www.globalwateralliance.net/get-involved/connect-with-gwa/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - first_step
+  - cost
+- url: https://www.globalwateralliance.net/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://www.globalwateralliance.net/event/18th-annual-conference/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - what_to_expect
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -1,0 +1,353 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-060",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 0,
+  "fetches_used": 34,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_990n:825271570", "irs_bmf:825271570"], "group_id": "linked-family-services", "ein": "825271570", "website": "https://www.linkedfamily.org/"},
+      "verdict": "publish",
+      "name": "Linked Family Services",
+      "summary": "Helps families in Philadelphia County who are pregnant or raising a child aged 0 to 8. It offers diapers and other basic goods, parenting classes, family support, and events.",
+      "what_you_do": "Join the waitlist for the basic goods program, which is full right now, or ask the office when the next parenting class opens. Volunteer through the group's volunteer page or by calling the office.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs", "kids-youth-mentoring"],
+      "interests": ["goods_closets", "parent_playgroups"],
+      "motives": ["values"],
+      "crowd": ["families"],
+      "audience": {"open_to": "residents", "community": ["parents"], "support_group": false},
+      "schedule": {"text": "Office hours are Monday and Thursday 12 to 7 pm and Friday 10 am to 3 pm. Program times are not listed.", "days": ["mon", "thu", "fri"], "times": ["daytime", "evening"], "recurring": true},
+      "locations": [{"label": "Office", "address": "4244 Lancaster Ave Unit 1", "zip": "19104", "in_city": true}],
+      "cost": {"level": "free", "text": "Services are free and no insurance is needed. Goods depend on donations and stock on hand."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown", "notes": "The parenting class program offers SEPTA transportation help if you need it, according to its page."},
+      "first_step": {
+        "how": "Call 215-703-7756 during office hours to ask about the waitlist for basic goods and the next parenting class. You need to be pregnant or raising a child aged 0 to 8, and live in Philadelphia County.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "The goods program is full with a waitlist, the parenting class cohort that was open has closed, and new families start with a referral form and an in-person intake, so there is no walk-in step.",
+        "what_to_expect": "After you send the online Referral and Interest Form, a Care Coordinator contacts you to set up an in-person intake, where eligibility is decided. The parenting class page says it suits caregivers who self-refer or are referred by an agency, including families involved with child welfare or family court. It does not say how long a class runs or whether children come along.",
+        "first_visit_tips": [
+          "Have your child's age and your Philadelphia address ready, since eligibility depends on both.",
+          "Call during office hours: Monday and Thursday 12 to 7 pm, Friday 10 am to 3 pm.",
+          "The page does not say how to get there by bus or where to park, so ask when you call."
+        ]
+      },
+      "contacts": {"website": "https://www.linkedfamily.org/", "email": "admin@linkedfamily.org", "phone": "215-703-7756", "contact_name": "Vonee Hill"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.linkedfamily.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]},
+        {"url": "https://www.linkedfamily.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "contacts", "status"]},
+        {"url": "https://www.linkedfamily.org/essentialsaccess", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "cost", "first_step"]},
+        {"url": "https://www.linkedfamily.org/parentingclass", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "access"]},
+        {"url": "https://www.linkedfamily.org/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "As read on 2026-10-08: enrollment for the basic goods program is full (waitlist) and parenting class cohort 3 registration is closed. Eligibility per the goods page: pregnant or parenting a child aged 0 to 8, Philadelphia County residents, free, no insurance needed. Audience changed from public to residents to match that eligibility. The volunteer and events pages display admin@linkedfamily.org but link to contact@linkedfamily.org; the displayed address is kept, so verify before publishing. The fall family event on the site has no date. The tier 1 mention of a mobile care unit was not seen on the pages read today, so it is left out of the summary. Budget: 5 of 6 fetches, 0 searches."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:274446369", "irs_bmf:274446369"], "group_id": "literacy-nation", "ein": "274446369", "website": "https://literacynationinc.org"},
+      "verdict": "publish",
+      "name": "Literacy Nation",
+      "summary": "Helps independent authors and readers. It runs a yearly indie author book fair, offers free masterclasses, and gives awards for independent books.",
+      "what_you_do": "Visit the book fair when it is held, register for a free masterclass on the website, or join one of seven standing volunteer committees, such as library, marketing or fundraising.",
+      "kind": "nonprofit",
+      "categories": ["books-writing"],
+      "interests": ["zines_media"],
+      "motives": ["enhancement", "social"],
+      "formats": ["one_off_event", "learn_skill"],
+      "roles": ["hands_on", "organize"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "The indie author book fair is held yearly. The 2026 fair was listed for Saturday, August 8. Free masterclasses can be registered for on the website.", "recurring": true, "season": "summer"},
+      "locations": [{"label": "Book fair venue, Fourth District Container Village", "address": "4862 to 4870 Parkside Ave", "zip": "19131", "in_city": true}],
+      "cost": {"level": "free", "text": "The book fair and masterclasses are free to attend. Membership is $49 for 12 months. Authors and vendors pay a table fee: $50 for members and $125 for non-members."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown"},
+      "first_step": {
+        "how": "Register for a free masterclass on the group's website, or visit the next book fair. To volunteer, use the Join a Committee link for the committee you want.",
+        "drop_in": true,
+        "newcomer_friendliness": 3,
+        "basis": "The book fair is free and open to the public, masterclass registration is free on the website, and each committee has a join link. The site does not say what a masterclass is like or whether you can attend a committee meeting first.",
+        "what_to_expect": "At the book fair, independent authors sell their own books at tables, and a few vendors sell book accessories, literary merchandise, educational products, and art or crafts. The pages we read do not give public hours, parking, or accessibility details, and the masterclass page does not describe topics or format, so ask when you register.",
+        "first_visit_tips": [
+          "Email contact@literacynationinc.org or call (646) 721-1358 to confirm the fair's hours and entrance before you go.",
+          "When you register for a masterclass, ask how long it runs and whether it is in person or online.",
+          "Ask a committee chair how much time a member is expected to give."
+        ]
+      },
+      "contacts": {"website": "https://literacynationinc.org", "email": "contact@literacynationinc.org", "phone": "(646) 721-1358", "contact_name": "Richard Ashby", "social": ["https://facebook.com/profile.php?id=100057126713923", "https://instagram.com/literacynation_ala"]},
+      "status": "active",
+      "last_sign_of_life": "2026-08",
+      "sign_of_life_url": "https://literacynationinc.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://literacynationinc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "kind", "categories", "interests", "schedule", "cost", "first_step", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://literacynationinc.org/event-details", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]},
+        {"url": "https://literacynationinc.org/about-us", "seen": "2026-10-08", "fields": ["schedule", "locations"]},
+        {"url": "https://literacynationinc.org/standing-committees", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Saturday, August 8, 2026 book fair is in the past as of 2026-10-08. Tier 1 told visitors to come to it, so the first step now points to free masterclass registration and the next fair, whose date is not posted. Free public admission comes from the home page; the event-details and about pages do not state admission or public hours. The masterclass page gives no topics, cost, format, or schedule, so only the home page statement that registration is free is recorded. The home page volunteer form was a placeholder, so the committee Join links are used instead. Budget: 6 of 6 fetches, 0 searches."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:800858432", "irs_bmf:800858432"], "group_id": "live-to-serve-foundation", "ein": "800858432", "website": "https://live2servepa.com"},
+      "verdict": "publish",
+      "name": "Live to Serve",
+      "summary": "A Philadelphia nonprofit that helps low-income neighbors with everyday needs such as food, back to school supplies and footwear, and runs volunteer service days.",
+      "what_you_do": "Sign up to serve on a service project, such as the Hope Lodge volunteer evenings in Cheltenham, or offer a skill such as photography, social media, website help or grant writing.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs", "careers-skills-professional"],
+      "interests": ["goods_closets", "skills_volunteering"],
+      "motives": ["values"],
+      "formats": ["side_by_side", "one_off_event"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {"text": "Service projects are posted on the group's site as they come up. Hope Lodge volunteer evenings run on Tuesdays from 5 to 8 pm, with dates shown on the site.", "days": ["tue"], "times": ["evening"], "recurring": false, "season": "event_only"},
+      "locations": [
+        {"label": "Office", "address": "5009 Rosehill St", "zip": "19120", "in_city": true},
+        {"label": "Hope Lodge, service site for volunteer evenings", "address": "110 W. Laurel Avenue, Cheltenham, PA", "zip": "19012", "in_city": false}
+      ],
+      "cost": {"level": "free", "text": "The site lists no cost to volunteer. Donations are optional and go through a PayPal fundraiser."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown"},
+      "first_step": {
+        "how": "Fill in the 'Sign up to serve today' form on the group's website with your name, phone, email and a short message. Then watch the site for the next Hope Lodge evening.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "The site has a public sign-up form and lists specific service events, so the way in is clear. It does not describe training or requirements.",
+        "what_to_expect": "A Hope Lodge evening runs from 5 to 8 pm at Hope Lodge in Cheltenham, Pennsylvania, outside the city. Volunteers cook and serve a home-cooked dinner for patients receiving treatment at Fox Chase and their families, then talk and listen with them. The site does not describe training, a first shift, or a dress code.",
+        "first_visit_tips": [
+          "Confirm the date with the group before you go, since events are posted as they come up.",
+          "Hope Lodge is outside the city, and the site gives no transit or parking details, so plan your ride.",
+          "Ask the group what to bring or wear when you sign up; the site does not say."
+        ]
+      },
+      "contacts": {"website": "https://live2servepa.com", "phone": "267-585-4457", "contact_name": "Leonard Jay Kennedy", "social": ["https://www.facebook.com/livetoservePA/", "https://www.instagram.com/livetoservepa/"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://live2servepa.com/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://live2servepa.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "locations", "cost", "first_step", "contacts", "status"]},
+        {"url": "https://live2servepa.com/projects/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Hope Lodge evening dates (Tuesday September 22, October 13 and October 27) are shown without a year, so they are not used as evidence of current activity. Hope Lodge is in Cheltenham, Pennsylvania, outside the city, and is listed as a second location. The projects page also mentions Philly Youth Day, an annual youth event that needs help packing school backpacks; it gives no year, dates or sign-up steps, so it is not recorded. The projects page names Kensington Engagement Project (Serve Team); not checked, see leads_only. The events page returned 404, so events come from the home page only. The Serve Team sign-up is not described on the pages read. Budget: 3 fetches (one 404), 0 searches."
+    },
+    {
+      "match": {"lead_ids": [], "group_id": "living-with-cancer-support-groups-cancer-support-community", "ein": null, "website": "https://cancersupportphiladelphia.org/"},
+      "verdict": "publish",
+      "name": "Living With Cancer Support Groups (Cancer Support Community Greater Philadelphia)",
+      "summary": "Free, closed peer support groups for adults in cancer treatment or up to 18 months after treatment, run by Cancer Support Community Greater Philadelphia. Members meet weekly to share what daily life with cancer is like.",
+      "what_you_do": "Join as a member, have a short talk with a program staff member, then attend a weekly peer support session. Sign up for each session in the group's online calendar.",
+      "kind": "support_group",
+      "categories": ["support-recovery"],
+      "interests": ["chronic_illness_support"],
+      "motives": ["social", "understanding"],
+      "formats": ["conversation"],
+      "crowd": ["all_adults"],
+      "audience": {"open_to": "public", "support_group": true},
+      "schedule": {"text": "Weekly sessions: Tuesdays at 11 am at the Suzanne Morgan Center at Ridgeland, and Thursdays at 11:30 am at St. Mary Medical Center in Langhorne, Bucks County, outside the city.", "days": ["tue", "thu"], "times": ["morning"], "recurring": true, "season": "year_round"},
+      "locations": [
+        {"label": "Suzanne Morgan Center at Ridgeland", "address": "4100 Chamounix Drive", "zip": "19131", "in_city": true},
+        {"label": "St. Mary Medical Center (Thursday session)", "address": "1201 Langhorne-Newtown Road, Langhorne, PA", "zip": "19047", "in_city": false}
+      ],
+      "cost": {"level": "free", "text": "Free. The group's programs are free for anyone affected by cancer, and becoming a member is free too."},
+      "commitment": "weekly",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown", "notes": "The site asks you to call 215-879-7733 for information about public transit to the Ridgeland center."},
+      "first_step": {
+        "how": "Fill out the free New Member Information Profile on the center's website. Then attend a new member orientation, in person or online, or call 215-879-7733 to schedule a New Member Meeting. After that, sign up for a session in the online calendar.",
+        "drop_in": false,
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "The groups are closed, you need a member profile, and you talk with program staff before attending, so you cannot just walk in. The steps are clear and membership is free.",
+        "what_to_expect": "Expect a short talk with a program staff member before your first group, then weekly peer support sessions. The page asks members to commit to attending regularly. Family members or friends may come with you to a new member meeting.",
+        "first_visit_tips": [
+          "Finish the member profile first, since orientation details are emailed after you complete it.",
+          "Pick the location that fits you, since the Tuesday and Thursday sessions meet in different places.",
+          "Bring a friend or family member to the new member meeting if you want support, since the page says they may come along."
+        ]
+      },
+      "contacts": {"website": "https://cancersupportphiladelphia.org/", "phone": "215-879-7733"},
+      "status": "probably_active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://cancersupportphiladelphia.org/",
+      "sources": [
+        {"url": "https://cancersupportphiladelphia.org/", "seen": "2026-10-08", "fields": ["summary", "schedule", "locations", "contacts", "status", "last_sign_of_life"]},
+        {"url": "https://cancersupportphiladelphia.org/how-to-join/", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "first_step", "audience"]},
+        {"url": "https://cancersupportphiladelphia.org/ourprograms2025/", "seen": "2026-10-08", "fields": ["summary", "audience", "first_step"]},
+        {"url": "https://cancersupportphiladelphia.org/our-locations/", "seen": "2026-10-08", "fields": ["locations", "access"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Our Programs page limits Living With Cancer groups to people in treatment or up to 18 months after treatment, so tier 1 eligibility was narrowed. The rating drops from 3 to 2 because the groups are closed and need a staff conversation before the first session. The Living After Cancer Networking Group covers people beyond 18 months and was not researched in detail. The St. Mary Medical Center Thursday session is in Langhorne, Bucks County, outside the city. The online calendar needs JavaScript and did not load, so session times come from the home page only. The center also runs Cafecito y Conexión (Spanish and English), men's, women's and other networking groups, which are programs of this same organization. The info@ email on the home page sits in an older COVID-era section, so it is left out. Budget: 5 of 6 fetches, 0 searches."
+    },
+    {
+      "match": {"lead_ids": ["irs_bmf:273983692"], "group_id": "lubavitch-center-for-russian-jewry", "ein": "273983692", "website": "https://www.lubavitchbustleton.org/"},
+      "verdict": "publish",
+      "name": "Lubavitch Center for Russian Jewry (Bustleton)",
+      "summary": "A Chabad center on Byberry Road in Bustleton with its own shul, a Hebrew school, a Sunday program, a teen club, and women's gatherings.",
+      "what_you_do": "Come to Friday evening or Shabbat morning services, enroll children in the Hebrew school, ask about the teen club or women's circle, or send a question through the site.",
+      "kind": "congregation",
+      "categories": ["faith-community"],
+      "interests": ["worship_community", "faith_youth_programs", "scripture_study", "congregation_social"],
+      "motives": ["values", "social"],
+      "formats": ["conversation"],
+      "crowd": ["families", "kids", "teens", "all_adults"],
+      "audience": {"open_to": "public", "faith": "jewish", "support_group": false},
+      "schedule": {"text": "Friday evening services are listed at 6:30 to 7 pm. Shabbat morning services begin at 10 am, followed by kiddush at 12:30 pm. The school's Location and Tuition page lists Sunday hours of 11 am to 2 pm.", "days": ["fri", "sat", "sun"], "times": ["evening", "morning", "daytime"], "recurring": true},
+      "locations": [{"label": "Center", "address": "725 Byberry Road", "zip": "19116", "in_city": true}],
+      "cost": {"level": "low", "text": "Hebrew school tuition is $300 per child; the page does not say whether that is per year. No child is turned away for lack of funds, and families can call to talk about costs. The pages read do not list a charge for services."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown"},
+      "first_step": {
+        "how": "Come to the Friday evening service at 6:30 pm or the Shabbat morning service from 10 am, or call 215-514-0729 first to ask about Hebrew school, the teen club or the women's circle. You can also send a question through the site's form.",
+        "newcomer_friendliness": 4,
+        "basis": "The site says the congregation welcomes all people regardless of level of religious practice or background, and gives a phone number and a question form to start. It does not describe what a first service is like.",
+        "what_to_expect": "Services are led by Rabbi Sholom Goldshmid. The Friday service is listed as 6:30 to 7 pm, and Shabbat morning services start at 10 am and are followed by kiddush at 12:30 pm. The site does not describe seating, dress, or how guests are greeted, so ask when you call.",
+        "first_visit_tips": [
+          "Call 215-514-0729 before you come to ask about dress and seating, which the site does not cover.",
+          "Plan your ride: the site does not mention parking or transit.",
+          "Arrive a few minutes before the service starts."
+        ]
+      },
+      "contacts": {"website": "https://www.lubavitchbustleton.org/", "phone": "215-514-0729"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.lubavitchbustleton.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://www.lubavitchbustleton.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "contacts", "status"]},
+        {"url": "https://lubavitchbustleton.org/1635995", "seen": "2026-10-08", "fields": ["schedule", "first_step", "locations"]},
+        {"url": "https://lubavitchbustleton.org/1698679", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]},
+        {"url": "https://lubavitchbustleton.org/templates/articlecco_cdo/aid/6380175/jewish/Location-Tuition.htm", "seen": "2026-10-08", "fields": ["cost", "schedule", "locations"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Service times: Friday 6:30 to 7 pm; Shabbat morning from 10 am, kiddush 12:30 pm. Weekday and holiday services are not stated. Hebrew school: ages, class days and enrollment deadline are not stated; tuition is $300 per child and the school says no child is turned away for lack of funds. A second school phone, 215-514-1037, is also listed. The Sunday program and the Cteen teen club have no ages, days, times or sign-up steps on their pages. The women's circle has no dates. Status is probably_active, not active: the candle-lighting listing for Friday, October 9 does not print a year on the page, so 2026 is not written there, and the tier 1 last_sign_of_life of 2026-10 could not be confirmed. The rabbi's name is from the services page. Budget: 6 of 6 fetches, 0 searches."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:992085783", "irs_bmf:992085783"], "group_id": "maas-presents", "ein": "992085783", "website": "https://maasbuilding.com"},
+      "verdict": "publish",
+      "name": "MAAS Building",
+      "summary": "An arts venue in North Philadelphia that presents the MAAS Presents concert series, public nights such as monthly Jazz Nights, and a summer outdoor Garden Bars series. It also rents rooms for rehearsals and classes and offers no-cost residencies to artists.",
+      "what_you_do": "Buy a ticket to a MAAS Presents show, or go to a monthly Jazz Night or a summer Garden Bars concert. Artists can ask about the no-cost January to March residencies. To rent a room for a rehearsal, performance or class, email booking@maasbuilding.com.",
+      "kind": "program",
+      "categories": ["theater-dance-performance"],
+      "interests": ["variety_cabaret"],
+      "motives": ["values", "social"],
+      "formats": ["one_off_event"],
+      "roles": ["create"],
+      "audience": {"open_to": "public", "community": ["lgbtq"], "support_group": false},
+      "schedule": {"text": "Concerts are posted as dated events on the site. Jazz Nights run monthly, and Garden Bars is a summer outdoor concert series. Rooms rent by the hour for rehearsals and classes.", "recurring": true, "season": "event_only"},
+      "locations": [{"label": "MAAS Building", "address": "1325 N Randolph St", "zip": "19122", "in_city": true}],
+      "online_ok": false,
+      "cost": {"level": "paid", "text": "Show tickets are sold for each event, and prices are not on the pages we read. Room rental: rehearsals $15 an hour; classes open to the public $20 an hour for up to 12 people, and $25 an hour for 12 or more."},
+      "commitment": "one_off",
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown"},
+      "first_step": {
+        "how": "Pick an upcoming show on the events page, such as the October 22 or October 25 concerts, and buy a ticket. To rehearse, perform or teach at the venue, email booking@maasbuilding.com.",
+        "drop_in": false,
+        "newcomer_friendliness": 3,
+        "basis": "Shows are open to the public and you can buy a ticket, and the site invites people to book the space. It does not describe the audience, age limits, or what a first show is like.",
+        "what_to_expect": "MAAS Presents shows are ticketed and listed with dates. For the October 25 show by GQ, doors open at 6:30 pm and the show starts at 7 pm. Other start times, ticket prices and age limits are not listed on the pages we read.",
+        "first_visit_tips": [
+          "Check the event page for the start time and ticket price before you go.",
+          "Email booking@maasbuilding.com to ask about wheelchair access and accessible entrances, since the site does not say.",
+          "Plan your trip: the site does not name a SEPTA stop or parking."
+        ]
+      },
+      "contacts": {"website": "https://maasbuilding.com", "email": "booking@maasbuilding.com", "contact_name": "Benjamin Riesman"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "http://www.maasbuilding.com/events",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://maasbuilding.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "status", "contacts"]},
+        {"url": "http://www.maasbuilding.com/events", "seen": "2026-10-08", "fields": ["schedule", "status", "first_step"]},
+        {"url": "http://www.maasbuilding.com/rates", "seen": "2026-10-08", "fields": ["cost"]},
+        {"url": "http://www.maasbuilding.com/contact", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "http://www.maasbuilding.com/about", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Ticket prices and age limits are not shown on any page read. Garden Bars and Jazz Nights are music events; no music tag fits exactly, so the closest tag, variety_cabaret, is used. The rates page prices room rental for classes open to the public; MAAS lists no classes of its own, so the tier 1 wording that the public can take classes was changed. Accessibility, parking and transit are not stated on any page read. The contact page gives booking@maasbuilding.com for general enquiries and no phone number. The contact name is from tier 1. Partner organizations named on the about page are in leads_only. Budget: 5 of 6 fetches, 0 searches."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:233029582", "irs_bmf:233029582"], "group_id": "mahdieh-inc", "ein": "233029582", "website": "https://www.mahdieh.org/"},
+      "verdict": "publish",
+      "name": "Mahdieh",
+      "summary": "A nonprofit Islamic educational center on Haverford Avenue, founded in 2000, that serves Iranian American Muslims. Its Friday night program includes prayers, a lecture and a shared dinner.",
+      "what_you_do": "Come to the Friday night program, which starts at 7 pm with prayers, a talk and a meal. The imam is at the center in person on Fridays and on special occasions, and you can email info@mahdieh.org with questions.",
+      "kind": "congregation",
+      "categories": ["faith-community", "food-drink"],
+      "interests": ["worship_community", "congregation_social", "community_meals"],
+      "motives": ["values", "social"],
+      "formats": ["side_by_side", "conversation"],
+      "roles": ["hands_on"],
+      "crowd": ["all_adults", "families"],
+      "audience": {"open_to": "public", "community": ["heritage:iranian"], "faith": "muslim", "support_group": false},
+      "schedule": {"text": "The Friday night program starts at 7 pm with the evening prayers, then a talk, then a meal that continues after the program.", "days": ["fri"], "times": ["night"], "recurring": true, "season": "year_round"},
+      "locations": [{"label": "Mahdieh", "address": "6502 Haverford Ave", "zip": "19151", "in_city": true}],
+      "cost": {"text": "Not stated. The center is funded by donations and takes monthly giving through PayPal."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "access": {"wheelchair": "unknown"},
+      "first_step": {
+        "how": "Come to the Friday night program at 7 pm, or email info@mahdieh.org before you visit to ask about visitors and what to expect.",
+        "newcomer_friendliness": 2,
+        "basis": "The site describes the Friday program and says the imam is there in person on Fridays, but it does not say whether visitors are welcome or how a newcomer should start.",
+        "what_to_expect": "The Friday program starts at 7 pm with the call to prayer and the evening prayer, then a reading of a traditional prayer and a talk. A meal follows and continues after the program. The site does not say whether visitors join the prayers, what to wear, or how long the evening runs.",
+        "first_visit_tips": [
+          "Email info@mahdieh.org before you come, since the site does not say how visitors are welcomed.",
+          "Arrive by 7 pm, when the program starts.",
+          "Ask the imam, who is at the center in person on Fridays, about dress and seating."
+        ]
+      },
+      "contacts": {"website": "https://www.mahdieh.org/", "email": "info@mahdieh.org", "phone": "215-871-7656", "contact_name": "Steven Saeed Moazamian"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.mahdieh.org/events/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://www.mahdieh.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "contacts", "first_step"]},
+        {"url": "https://www.mahdieh.org/about-us/", "seen": "2026-10-08", "fields": ["summary", "audience", "first_step"]},
+        {"url": "https://www.mahdieh.org/events/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://www.mahdieh.org/contact-us/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://pa.cair.com/directory/mosques/eastern/", "seen": "2026-10-08", "fields": ["lead"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The site does not say whether visitors or non-Muslims are welcome and gives no dress or first-visit guidance, so the newcomer rating stays at 2. The events page lists only one-time observance dates from October 16 to December 20, 2026, which is the source for last_sign_of_life; the Friday program is the only recurring program found. The contact page read did not show the organization phone 215-871-7656, which is kept from tier 1 but should be verified before publishing. The contact name is also from tier 1; the home page names Imam H. I. Sayeed R. Wahidi as the in-person contact on Fridays, and his personal contact details are deliberately not recorded. Parking and transit are not stated. Budget: 4 of 6 fetches, 0 searches."
+    }
+  ],
+  "leads_only": [
+    {"name": "Kensington Engagement Project", "url": "https://live2servepa.com/projects/", "note": "Named on Live to Serve's projects page with a Serve Team and donations. Unclear whether it is a separate group. Not checked."},
+    {"name": "Pig Iron Theatre", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "Almanac Dance Circus", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page, and runs the Cannonball Festival with MAAS. No link was read. Not checked."},
+    {"name": "The Painted Bride", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "Fire Museum Presents", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "PHonk! Festival", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "Ars Nova Workshop", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "Lightning Rod Special", "url": "http://www.maasbuilding.com/about", "note": "Named as a MAAS partner on its about page. No link was read. Not checked."},
+    {"name": "Chabad International Hebrew Education Network", "url": "https://lubavitchbustleton.org/1698679", "note": "Named as the network the Lubavitch Hebrew school is affiliated with. Not checked."}
+  ],
+  "blocked": [
+    {"url": "https://live2servepa.com/events/", "status": 404, "note": "Page not found. Event listings are only on the home page."}
+  ],
+  "notes": "Wave w23-tier2-deep-c, batch of 7 groups. 34 WebFetch calls in total (5 or 6 per group, including the home page), 0 WebSearch calls because each group had its own pages to read. No rate limiting was seen. Corrections to tier 1: Living With Cancer groups are limited to people in treatment or up to 18 months after treatment and are closed groups, so the rating drops to 2; Literacy Nation's Aug 8, 2026 book fair is past, so the first step now points to masterclass registration; Linked Family's goods program is full with a waitlist and its parenting class cohort is closed; MAAS classes are rentals, not MAAS-run classes; Lubavitch status drops from active to probably_active because the dated listing shows no year. Verify before publishing: the Mahdieh organization phone, and the Linked Family email (admin@ displayed, contact@ linked). Live to Serve's Hope Lodge is in Cheltenham, outside the city."
+}

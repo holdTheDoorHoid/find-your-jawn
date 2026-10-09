@@ -35,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site lists no dated events. It has pages for visiting the boathouse and for volunteering.
+  text: The boathouse is open to visitors on set days, with informal tours that the group arranges with
+    Sedgeley Club members. The site does not list upcoming open days, so check the blog or email for dates.
   days: []
   times: []
   recurring: null
@@ -68,14 +69,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@friendsofhistoricsedgeley.org to ask how to start volunteering at the boathouse.
+  how: Fill in the volunteer form on the Volunteer page (name, address, phone and email are required),
+    or email info@friendsofhistoricsedgeley.org to ask about visiting or volunteering.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site has a volunteer page and a listed email, but the volunteer steps on that page were not
-    read, so the way in is not confirmed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public visits on set days let a newcomer see the boathouse first. The volunteer form is the only
+    listed way in, and the site does not describe roles or an orientation, so the way in is not clear.
+  what_to_expect: Open days are set by the group and include informal tours with Sedgeley Club members.
+    The site does not say how long a visit takes, whether volunteer shifts have set hours, or what roles
+    exist. No visit fee is listed.
+  first_visit_tips:
+  - Check the blog or email for the next open day, since none are listed on the visit page.
+  - Use the contact address to ask what a volunteer does before you fill in the form.
 contacts:
   website: https://www.friendsofhistoricsedgeley.org
   email: info@friendsofhistoricsedgeley.org
@@ -84,8 +90,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.friendsofhistoricsedgeley.org
+last_sign_of_life: 2025-08
+sign_of_life_url: https://www.friendsofhistoricsedgeley.org/blog/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -109,12 +115,33 @@ sources:
   - status
   - locations
   - schedule
+  - what_you_do
 - url: https://www.friendsofhistoricsedgeley.org/contact-us
   seen: '2026-10-08'
   fields:
   - contacts
   - first_step
-research_tier: 1
+- url: https://www.friendsofhistoricsedgeley.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.friendsofhistoricsedgeley.org/come-visit-us/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - cost
+- url: https://www.friendsofhistoricsedgeley.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.friendsofhistoricsedgeley.org/blog/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

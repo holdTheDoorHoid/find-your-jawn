@@ -4,10 +4,10 @@ aka: []
 leads: []
 ein: null
 summary: Drexel's physics department opens its rooftop observatory to the public on the first Wednesday
-  of most months during the school year, weather permitting. Everyone is invited, and the night starts
-  about 30 minutes after sunset.
-what_you_do: Go up to the observatory roof at a listed time and look through the telescope when the sky
-  is clear. Check the status page first.
+  of most months during the school year, weather permitting. Everyone is invited, but the telescope is
+  being replaced, so no public night is set right now.
+what_you_do: Go up to the observatory roof at a listed night and look through the telescope when the sky
+  is clear. Check the status page first, since no night is listed while the upgrade is under way.
 kind: program
 categories:
 - science-learning
@@ -31,8 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: First Wednesday of most months during the school year, about 30 minutes after sunset. No public
-    nights July to September. Each night is listed on the status page.
+  text: First Wednesday of most months during the school year, about 30 minutes after sunset, weather
+    permitting. Usually no public nights from July to September, and each night runs about two hours.
   days:
   - wed
   times:
@@ -40,7 +40,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Roof of the Main Building, 32nd and Chestnut Streets, Drexel University
+- label: Roof of the Main Building, Drexel University, entered at 32nd and Chestnut Streets
   address: null
   neighborhood: null
   planning_district: null
@@ -52,13 +52,14 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Cost is not stated on the pages checked.
+  text: No fee is listed on the pages checked.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The route to the roof is up several flights of stairs, and no elevator is mentioned. The physics
+    department at physics@drexel.edu handles accommodation questions.
 requirements:
   act153_clearances: null
   background_check: null
@@ -67,15 +68,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the observatory status page for a listed night, then follow the directions on Drexel's physics
-    page
+  how: Check the status page at drexel-observatory.vercel.app for a listed night, since none is set while
+    the telescope is replaced. When one is listed, enter the Main Building at 32nd and Chestnut Streets
+    and follow the stair directions on Drexel's physics page.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to everyone, but the status page says a telescope upgrade is under way and a November night
-    depends on it.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Anyone can come, but no night is scheduled while the telescope is replaced, so the way in is
+    unclear until dates return.
+  what_to_expect: A public night is a session on the Main Building roof, run by a physics professor with
+    graduate and undergraduate helpers. Guests look through the observatory telescope at objects such
+    as planets, star clusters, nebulae and comets, when the sky is clear. The route up is several flights
+    of stairs, so plan for the climb.
+  first_visit_tips:
+  - 'Check the status page the day of: the night is cancelled or moved if it rains or the sky is not clear.'
+  - Expect several flights of stairs, since the site mentions no elevator.
+  - Email physics@drexel.edu before you come if you have an access need.
 contacts:
   website: https://drexel.edu/coas/academics/departments-centers/physics/lynch-observatory
   email: physics@drexel.edu
@@ -95,13 +103,25 @@ sources:
   - locations
   - contacts
   - cost
+  - access.notes
+  - first_step
 - url: https://drexel-observatory.vercel.app
   seen: '2026-10-08'
   fields:
   - schedule
   - status
-research_tier: 1
-confidence: low
+- url: https://drexel-observatory.vercel.app/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_step
+- url: https://drexel-observatory.vercel.app/nights
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

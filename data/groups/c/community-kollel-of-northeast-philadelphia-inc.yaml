@@ -6,10 +6,12 @@ leads:
 - irs_990n:472389086
 - irs_bmf:472389086
 ein: '472389086'
-summary: A Torah study center in Rhawnhurst that offers classes and weekly Torah talks to community members.
-  It says it welcomes Jews whatever their learning, observance, or affiliation.
-what_you_do: Attend classes, read the weekly Torah insights and newsletter, or watch recorded talks on
-  the site.
+summary: A Torah study center in Rhawnhurst that offers classes, a weekly newsletter of Torah insights,
+  and study sessions. Its Wednesday evening class on Jewish law is live on Zoom, with a join link on the
+  site.
+what_you_do: Join the Wednesday Zoom class, read the weekly newsletter, or watch recorded talks on the
+  site. Two other listed programs are for teen boys and for businessmen, and the site gives no times or
+  costs for most programs.
 kind: nonprofit
 categories:
 - faith-community
@@ -35,10 +37,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: A live class on Halacha (Jewish law) every Wednesday at 8:30 on Zoom. The site also lists a Tuesday
+    night program for teen boys held at the Kollel.
+  days:
+  - wed
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Rhawnhurst, Northeast Philadelphia
@@ -50,10 +55,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: No fee is listed for the Wednesday class. The site asks for donations on its Support Us page.
 commitment: null
 group_size: null
 access:
@@ -68,14 +73,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@northeastkollel.org to ask about classes
-  drop_in: null
+  how: Use the join link on the shiur page for the Wednesday 8:30 Zoom class, or email info@northeastkollel.org
+    with questions first.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Classes are for community members and the site welcomes Jews of any background, but the only
-    published way in is an email
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Wednesday class has a direct Zoom join link, and the site says it welcomes Jews of any education
+    or observance. It does not say whether beginners get their own class.
+  what_to_expect: The Wednesday class is a live Halacha (Jewish law) session on Zoom at 8:30. The site
+    does not say how long it runs, who usually attends, or what the format looks like.
+  first_visit_tips:
+  - Install Zoom before 8:30 so the join link works the first time.
+  - Email info@northeastkollel.org before you come to ask whether the class suits someone new to the material.
 contacts:
   website: https://northeastkollel.org/
   email: info@northeastkollel.org
@@ -83,9 +92,9 @@ contacts:
   contact_name: Ruvane Ribiat
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://northeastkollel.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://us14.campaign-archive.com/home/?u=3bc30cb6c184f05aff0e66480&id=220616cba9
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -111,8 +120,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+  - cost
+- url: https://www.northeastkollel.org/shiur
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step
+  - cost
+- url: https://www.northeastkollel.org/programs
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+- url: https://us14.campaign-archive.com/home/?u=3bc30cb6c184f05aff0e66480&id=220616cba9
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

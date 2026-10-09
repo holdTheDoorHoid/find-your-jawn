@@ -16,7 +16,8 @@ motives:
 - social
 formats:
 - learn_skill
-roles: []
+roles:
+- organize
 crowd:
 - kids
 bridging: null
@@ -30,8 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Camps, after-school programs and education offerings are on their own pages. No dates on the home
-    page.
+  text: Summer camps run each year, and the site keeps a list of past camps. The site gives no days or
+    times for camps or after-school programs.
   days: []
   times: []
   recurring: null
@@ -40,7 +41,8 @@ locations: []
 online_ok: null
 cost:
   level: null
-  text: Not shown on the home page.
+  text: The site does not show prices. Summer camp registration is handled through Lower Merion Township's
+    registration page.
 commitment: null
 group_size: null
 access:
@@ -55,17 +57,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Look at the camps and after-school pages, or the volunteer page.
+  how: Use the inquiry form on the site (it asks for your name, email and a comment) to ask about camps
+    and after-school programs, or fill in the volunteer form to join the volunteer list.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Programs are described, but sign-up details and dates are on linked pages.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Camps register through another township's page, after-school programs go by email through a link,
+    and the site lists no ages, dates or prices, so the way in is unclear.
+  what_to_expect: 'The site does not describe a typical session or a first day. The current summer camp
+    is run with Lower Merion Township, so sign-up happens on that township''s page. Volunteers who fill
+    in the form are added to a list for events and programs, and the site names two volunteer roles: a
+    manager for RPG business development and an administrative coordinator.'
+  first_visit_tips:
+  - Ask for ages, dates and prices before you register, since the site does not list them.
+  - For camp registration, use the Lower Merion Township page that the site links to.
+  - The email address on the connect page is hidden, so call (267) 289-2098 or use the inquiry form.
 contacts:
   website: https://www.gameonphilly.org
   email: null
-  phone: null
+  phone: (267) 289-2098
   contact_name: null
   social: []
   calendar_feed: null
@@ -86,7 +96,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.gameonphilly.org/camps.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - schedule
+  - cost
+  - first_step
+- url: https://www.gameonphilly.org/after-school-programs.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+- url: https://www.gameonphilly.org/volunteer-with-us.html
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - first_step
+  - what_you_do
+- url: https://www.gameonphilly.org/connect-with-us.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

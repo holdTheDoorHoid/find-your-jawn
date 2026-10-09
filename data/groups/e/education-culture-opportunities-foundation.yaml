@@ -7,17 +7,19 @@ leads:
 - irs_bmf:824746672
 ein: '824746672'
 summary: A Philadelphia nonprofit with creative learning, cultural activities, and healthy food programs
-  for young people and their neighbors. It runs a youth cohort and community dinners, and it takes volunteers
-  through an online form.
-what_you_do: Apply to the youth cohort, sign up to volunteer through the online form, or come to a community
-  dinner.
+  for young people and their neighbors. It runs a youth leadership cohort and community dinners, and it
+  takes volunteers through an online form.
+what_you_do: Apply to the Young B.U.L. youth cohort when a sign-up window opens, sign up to volunteer
+  through the online form, or come to a community dinner.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
 - food-drink
+- arts-crafts
 interests:
 - youth_leadership
 - community_meals
+- film_video
 motives:
 - values
 - social
@@ -27,6 +29,7 @@ formats:
 roles:
 - hands_on
 crowd:
+- kids
 - teens
 - young_adults
 - neighbors
@@ -41,12 +44,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Young B.U.L. fall 2026 cohort, listed with a start of Wednesday, September 9, 2026. A community
-    dinner is posted for Wednesday 9/9 with no year
+  text: Young B.U.L. runs three cohorts a year, with sign-up in December to January, May to June, and
+    August to September. Edutainment sessions and workshops are booked by request.
   days: []
   times: []
-  recurring: false
-  season: fall
+  recurring: true
+  season: year_round
 locations:
 - label: Office (as published)
   address: 5411 Market Street
@@ -60,7 +63,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not list fees for most programs.
 commitment: null
 group_size: null
 access:
@@ -75,20 +78,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the Volunteer With ECO form linked on theecofoundation.com, or email contact@theecofoundation.com
-    to ask about the next youth cohort
+  how: Fill in the Volunteer With ECO form linked on the website, or email contact@theecofoundation.com
+    to ask when the next Young B.U.L. sign-up window opens.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer sign-up is open to anyone through a public form; the youth cohort needs an application
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Volunteer sign-up is open to anyone through a public form. The Young B.U.L. cohort needs an application
+    and runs only three sign-up windows a year.
+  what_to_expect: Young B.U.L. is a leadership program for elementary, middle and high school students,
+    with community service, mentorship and time with peers. The site does not say how many hours it takes
+    or how long a session runs. Fees are not listed for most programs.
+  first_visit_tips:
+  - Call (267) 999-9901 before you come, since the site lists no office hours.
+  - Watch for the December to January sign-up window if you want to join Young B.U.L.
 contacts:
   website: https://www.theecofoundation.com
   email: contact@theecofoundation.com
   phone: (267) 999-9901
   contact_name: Kyle Morris
-  social: []
+  social:
+  - https://www.instagram.com/theecofoundation/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
@@ -120,7 +129,26 @@ sources:
   - contacts
   - locations
   - last_sign_of_life
-research_tier: 1
+- url: https://theecofoundation.com/education/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - crowd
+  - cost
+  - first_step
+  - summary
+- url: https://theecofoundation.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+- url: https://theecofoundation.com/culture/
+  seen: '2026-10-08'
+  fields:
+  - categories
+  - interests
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

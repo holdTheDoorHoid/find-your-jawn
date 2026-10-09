@@ -38,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: About four to six cleanups a year, with dates passed to volunteers. The Garden Club's date and
-    time were still to be set on the site.
+  text: About four to six cleanups a year, with dates passed to volunteers. The Garden Club has no meeting
+    day or time posted yet.
   days: []
   times: []
   recurring: null
@@ -57,7 +57,8 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: A 2026 garden party ticket was $25 and had to be reserved ahead. Other costs are not stated.
+  text: The site lists no fee for cleanups or the Garden Club. Some events, such as the garden party,
+    charge a ticket.
 commitment: seasonal
 group_size: null
 access:
@@ -69,18 +70,24 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact Us page on the group's site to ask about the next cleanup or the Garden Club start
-    date
+  how: Send a question through the Contact Us form on mantuaworldwide.com about the next cleanup and the
+    Garden Club start date.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Cleanups are announced by email and word of mouth, and the Garden Club start date is not yet
-    set, so the way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Garden Club welcomes youth and adults and takes RSVPs, but its start date is not set yet,
+    and cleanup dates go only to volunteers. The way in is unclear.
+  what_to_expect: The Garden Club is described as a place to plant flowers, herbs and vegetables and learn
+    about gardening, and youth and adults are welcome. Its date, time and place were still to be set when
+    we checked, so the site cannot yet say what a visit involves. Cleanups work the streets and gardens
+    of Mantua, and the site does not say how long they run or what volunteers should bring.
+  first_visit_tips:
+  - Ask which cleanup comes next and where volunteers meet, since the site gives no address for cleanups.
+  - Watch the Garden Club page for a start date, because none is set yet.
+  - Use the Contact Us form, since the site lists no general phone number or email.
 contacts:
   website: https://www.mantuaworldwide.com
   email: null
@@ -125,7 +132,30 @@ sources:
   - first_step
   - contacts.website
   - schedule
-research_tier: 1
+- url: https://www.mantuaworldwide.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.mantuaworldwide.com/event-details/garden-club
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - schedule
+- url: https://www.mantuaworldwide.com/event-list
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://www.mantuaworldwide.com/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -34,23 +34,62 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Classes are ongoing, and the site gives no days or times. Community Health Days are held in Philadelphia
-    and in West Grove, PA, with no dates shown.
-  days: []
-  times: []
-  recurring: null
+  text: IDIOMA English and digital skills classes run in 10-week terms, with weekday morning and evening
+    options. Community Health Days are held on Saturdays about every two months, from 9 am to 3 pm.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
-locations: []
-online_ok: null
+locations:
+- label: IDIOMA classes and office (BOK Building)
+  address: 1901 South 9th Street, Room 205
+  neighborhood: null
+  planning_district: null
+  zip: '19148'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Community Health Days, Philadelphia (Race Street Dental)
+  address: 212 Race Street, Suite 1A
+  neighborhood: null
+  planning_district: null
+  zip: '19106'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Community Health Days, West Grove (Laurel Dental of West Grove)
+  address: 20 Prospect Ave, West Grove, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19390'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
+online_ok: true
 cost:
-  level: null
-  text: Health days are free. The site does not state fees for classes or dental care.
-commitment: null
+  level: low
+  text: Community Health Days are free. IDIOMA English classes have a $60 course fee, with need-based
+    scholarships and payment plans available.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - es
+  notes: The website is also available in French, Chinese, Arabic, Portuguese and Spanish.
 requirements:
   act153_clearances: null
   background_check: null
@@ -59,13 +98,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the IDIOMA page on the site to enroll in English classes, or use the volunteer page
+  how: Submit the IDIOMA registration form, pay the $60 course fee (or ask about a scholarship or payment
+    plan), then take the online English placement test on your phone.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says it is continually enrolling new students and has a page for English classes.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The IDIOMA page lays out each step to enroll, a placement test sets the level, and the site says
+    it keeps enrolling new students. It is not a drop-in class, and there is a fee.
+  what_to_expect: Your first step is an English placement test on your phone, which sets your level. Classes
+    last 10 weeks and meet on weekday mornings or evenings. You can attend online or at the BOK Building
+    office in South Philadelphia. The course fee is $60, and scholarships are available. For health days,
+    you call the number for your location to book an appointment, and the care is free.
+  first_visit_tips:
+  - Have your phone ready for the English placement test, since it is taken there.
+  - Ask about a scholarship or payment plan before you pay the course fee.
+  - Call (267) 648-1398 or message that number on WhatsApp with questions about enrolling.
 contacts:
   website: https://www.comunidadgarces.org/
   email: info@comunidadgarces.org
@@ -73,9 +120,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.comunidadgarces.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.comunidadgarces.org/idioma
 sources:
 - url: https://www.comunidadgarces.org/
   seen: '2026-10-08'
@@ -87,12 +134,44 @@ sources:
   - first_step
   - contacts
   - status
+  - audience
 - url: https://www.buildingbok.com/directory
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.comunidadgarces.org/idioma
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - locations
+  - online_ok
+  - schedule
+  - status
+  - commitment
+- url: https://www.comunidadgarces.org/community-health-days
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+  - first_step
+- url: https://www.comunidadgarces.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+- url: https://www.comunidadgarces.org/who-we-serve
+  seen: '2026-10-08'
+  fields:
+  - audience
+- url: https://www.comunidadgarces.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

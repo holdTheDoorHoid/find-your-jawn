@@ -3,10 +3,11 @@ name: Epiphany of Our Lord Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish in South Philadelphia, at 11th and Jackson Streets, with Sunday Masses and
-  daily Mass, and liturgies interpreted in American Sign Language.
-what_you_do: Come to Mass. Some liturgies are interpreted in American Sign Language, and the parish links
-  to an ASL Mass schedule.
+summary: A Catholic parish at 11th and Jackson Streets in South Philadelphia. It holds Sunday and weekday
+  Masses, and some of its Masses have sign language interpreting, including a hearing-impaired Mass on
+  the second and fourth Sundays.
+what_you_do: Come to Mass, which is free and open to all. Sign language interpreting is used at some weekly
+  or monthly liturgies, so ask the parish which Mass has it that week.
 kind: congregation
 categories:
 - faith-community
@@ -31,8 +32,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8:30 and 11 am. Weekday Mass Monday to Saturday at 8 am, and at 8:30 am on Tuesdays.
-    Confession Saturdays 4:15 to 4:45 pm.
+  text: Sunday Masses at 8:30 am in the Lower Church and 11 am in the Upper Church. Saturday Mass at 5
+    pm. Weekday Masses at 8 am or 8:30 am, depending on the day; the parish site and the archdiocese page
+    list the weekday days differently, so call ahead. Confession Saturdays 4:15 to 4:45 pm.
   days:
   - sun
   - mon
@@ -43,11 +45,12 @@ schedule:
   - sat
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
-- label: Church (11th and Jackson Sts.)
-  address: 11th and Jackson Sts.
+- label: Church
+  address: 1121 Jackson St
   neighborhood: null
   planning_district: null
   zip: '19148'
@@ -64,7 +67,9 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Sign language interpreting is provided at some weekly or monthly liturgies, per the archdiocese
+    parish page. The parish site calls the 11 am Sunday Mass in the Upper Church on the second and fourth
+    Sundays the hearing-impaired Mass.
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,13 +78,19 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the rectory and ask which Masses use ASL interpreting
+  how: Come to the 11 am Sunday Mass in the Upper Church on the second or fourth Sunday, the hearing-impaired
+    Mass, or call 215-334-1035 to ask which Mass has interpreting that week.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and the rectory phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone and the parish phone line is listed, but the site has no page for newcomers
+    or visitors.
+  what_to_expect: Mass is free and anyone can attend. The 11 am Sunday Mass in the Upper Church, on the
+    second and fourth Sundays, is the one the parish calls its hearing-impaired Mass. Interpreting at
+    other Masses varies by week, so call the parish before you come.
+  first_visit_tips:
+  - Call 215-334-1035 to confirm which Mass has sign language interpreting that week.
+  - Use the How to get here map on the parish website for directions.
 contacts:
   website: https://epiphanychurch.church/
   email: null
@@ -101,11 +112,31 @@ sources:
   - contacts
   - status
   - audience
+  - access
 - url: https://archphila.org/parish_vicariat/philadelphia-south/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+  - name
+- url: https://epiphanychurch.church/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - contacts
+  - access
+- url: https://epiphanychurch.church/bulletin/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_step
+  - locations
+- url: https://archphila.org/parish_access/american-sign-language/
+  seen: '2026-10-08'
+  fields:
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

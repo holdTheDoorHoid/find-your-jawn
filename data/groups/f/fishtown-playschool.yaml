@@ -7,8 +7,8 @@ leads:
 ein: '464081952'
 summary: A cooperatively run playschool in Fishtown where young children learn through play, using ideas
   from Reggio Emilia, emergent curriculum and Montessori.
-what_you_do: Children attend classes at the playschool and learn through play. Families apply online,
-  and tours are open only to families who have applied.
+what_you_do: Children attend a play-based class three mornings a week. Families apply online and pay a
+  fee, and each family takes part in running the cooperative.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -21,6 +21,7 @@ formats:
 - side_by_side
 roles:
 - hands_on
+- organize
 crowd:
 - kids
 - families
@@ -28,17 +29,22 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 2
+  max_age: 5
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Classes meet Monday, Wednesday and Friday from 9 am to 12:30 pm. An extended day for pre-K children
+    costs extra.
+  days:
+  - mon
+  - wed
+  - fri
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
 - label: Playschool
@@ -52,9 +58,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: A $30 application fee per family. Tuition is not published.
-commitment: null
+  level: paid
+  text: A $30 application fee per family, plus a $250 membership fee for new families before enrollment.
+    Tuition is not published. The extended day for pre-K costs extra.
+commitment: ongoing_role
 group_size: null
 access:
   wheelchair: unknown
@@ -65,18 +72,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Complete the online application and pay the $30 family fee at jovial.org/fishtown/register, the
-    link from the playschool's apply page.
-  drop_in: null
-  sign_up_needed: null
+  how: Complete the online application and pay the $30 family fee through the link on the apply page.
+    Applications are taken all year.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: A submitted application and a fee come before a family can see the school, and classes fill on
-    a first come basis.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A family must apply and pay a fee before the class list, and new families then pay a $250 membership
+    fee. The pages disagree on whether tours are open before applying, so the way in is not clear
+  what_to_expect: Children aged two to five attend Monday, Wednesday and Friday mornings in two age groups,
+    2 to 3 and 3 to 5, each with a lead teacher. Each family commits to at least 20 hours a month, including
+    classroom helper shifts, a committee, and All Hands meetings. Each child brings a packed lunch, and
+    the school has no outdoor play area, so classes walk the neighborhood when the weather allows.
+  first_visit_tips:
+  - Pack a lunch your child can open alone, since the school asks for containers and packaging that kids
+    can manage
+  - Plan for classroom helper shifts several times a month, and a committee role for at least one parent
+  - Potty training is not required
+  - Email info@fishtownplayschool.org to ask whether a tour is open before you apply
 contacts:
   website: https://www.fishtownplayschool.org
   email: info@fishtownplayschool.org
@@ -117,7 +132,26 @@ sources:
   - cost
   - audience
   - status
-research_tier: 1
+- url: https://www.fishtownplayschool.org/faq
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - requirements
+  - roles
+  - first_step
+  - what_to_expect
+- url: https://www.fishtownplayschool.org/program
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+- url: https://www.fishtownplayschool.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

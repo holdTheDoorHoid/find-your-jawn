@@ -7,8 +7,9 @@ leads:
 ein: '882653510'
 summary: A nonprofit that works with churches and Christian groups on mental health, with training for
   church and community leaders and a page of local and online help options.
-what_you_do: Attend a training for church or community leaders, use the group's mental health resources
-  page, or follow its newsletter for updates.
+what_you_do: Watch the three recorded seminars on the services page, use the mental health resources page,
+  or subscribe to the newsletter. Churches and organizations can ask for a training or a mental health
+  response team by email or the contact form.
 kind: nonprofit
 categories:
 - health-wellness
@@ -55,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site lists no prices for trainings or services. It has a donation link.
 commitment: null
 group_size: null
 access:
@@ -70,15 +71,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Subscribe to the newsletter on the group's website, or email the team to ask about a training for
-    your church or group.
+  how: Subscribe to the newsletter on the group's website, or send a question to team@christianmentalhealthinitiative.org
+    about a seminar for your church or group.
   drop_in: false
   sign_up_needed: false
   newcomer_friendliness: 3
-  basis: The newsletter and contact email are open to anyone, but the site does not describe a training
-    schedule or how individuals take part.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can subscribe to the newsletter or watch the recorded seminars. Trainings are requested
+    by a church or group, so the way in for an individual is limited.
+  what_to_expect: 'For an individual, most of what the site offers is online: three recorded seminars,
+    a resource page of hotlines, finding-help sites and faith-based reading, and a newsletter. Live trainings
+    and response team setup are aimed at churches and organizations, which request them by email or the
+    contact form.'
+  first_visit_tips:
+  - If you need help right away, call 988, the Suicide and Crisis Lifeline listed on the resources page.
+  - The resources page also lists the Crisis Text Line for people who prefer texting.
 contacts:
   website: https://www.christianmentalhealthinitiative.org
   email: team@christianmentalhealthinitiative.org
@@ -116,7 +122,25 @@ sources:
   - contacts
   - locations
   - status
-research_tier: 1
+  - cost
+- url: https://christianmentalhealthinitiative.org/services/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - audience
+- url: https://christianmentalhealthinitiative.org/mental-health-resources/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_visit_tips
+- url: https://christianmentalhealthinitiative.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

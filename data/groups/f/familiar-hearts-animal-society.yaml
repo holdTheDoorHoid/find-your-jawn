@@ -7,8 +7,8 @@ leads:
 ein: '882236824'
 summary: A small rescue in Mt. Airy that cares for animals until they find homes, using foster families,
   adoption, and a pet pantry program.
-what_you_do: Volunteer through the volunteer page, foster animals in your home through the foster application,
-  or donate items from the wish lists.
+what_you_do: Volunteer through the volunteer application, foster animals in your home through the foster
+  application, or adopt through the adoption application. Donations from the wish lists are welcome.
 kind: nonprofit
 categories:
 - animals
@@ -33,14 +33,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Volunteer and foster sign-ups are on the website. The events calendar did not load during research,
-    so no event dates are listed.
+  text: No set weekly schedule is listed. Volunteer and foster sign-ups happen through the website forms,
+    and adoption visits are arranged through foster caregivers.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mt. Airy headquarters
+- label: Registered address in Mt. Airy (no public shelter to visit)
   address: 6915 Greene St
   neighborhood: null
   planning_district: null
@@ -51,8 +51,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: 'Adoption fees: dogs $475, puppies up to 12 months $600, cats $150 or $225 for a pair, kittens
+    up to 12 months $200 or $350 for a pair. Foster homes receive supplies and veterinary care. The page
+    does not list volunteer costs.'
 commitment: null
 group_size: null
 access:
@@ -67,14 +69,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Apply through the foster application, or sign up on the volunteer page on the website.
+  how: Fill in the Volunteer Application on the volunteer page, or the Foster Application if you can take
+    an animal into your home.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Volunteer and foster sign-ups are published on the website, though the page does not describe
-    the process step by step.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Volunteering, fostering, and adopting each start with an application form, and adopters meet
+    animals only after approval. The site does not say whether anyone can visit before applying.
+  what_to_expect: The site lists volunteer roles such as dog walking, cat socialization, animal transport,
+    photography, writing pet bios, fundraising events, and grant research. It does not say how long a
+    shift runs or whether training is given. There is no shelter to walk into, because the group works
+    through foster homes.
+  first_visit_tips:
+  - Read the foster guide on preparing for a foster dog before you apply to foster
+  - Expect the adoption steps to start with an application and reference checks
+  - Check your email and spam folder often after you apply, since the adoption steps run by email
 contacts:
   website: https://www.familiarhearts.org/
   email: null
@@ -108,12 +117,31 @@ sources:
   - what_you_do
   - first_step
   - status
+  - locations
+  - cost
 - url: https://www.familiarhearts.org/events
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+- url: https://www.familiarhearts.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+- url: https://www.familiarhearts.org/foster
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+  - cost
+- url: https://www.familiarhearts.org/adoption-process
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

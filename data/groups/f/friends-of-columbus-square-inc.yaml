@@ -38,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Cleanups, outdoor movies, and neighborhood events. The site lists no dates; they are announced
-    through the mailing list and social media.
+  text: Park cleanups, outdoor movie nights, neighborhood events and public meetings. The site lists no
+    dates; the group announces them through its mailing list and social media.
   days: []
   times: []
   recurring: null
@@ -72,18 +72,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the group's mailing list (http://eepurl.com/hSrJxH) to hear about the next cleanup
-    or movie night.
-  drop_in: null
+  how: Join the group's mailing list (the sign-up link on columbussquare.org) to hear about the next cleanup,
+    movie night or public meeting.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Cleanups and events are public and the mailing list is a clear way to join, though the site does
-    not describe what a first cleanup involves.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The calendar page says visitors are welcome at public meetings and volunteer events, and the
+    mailing list is the clear way to hear about them. The site does not describe what a first cleanup
+    involves.
+  what_to_expect: Cleanups, movie nights and public meetings are open to visitors, and the site invites
+    new people to join. Dates are not posted on the site, so the mailing list or social media is where
+    to check. The site does not say how long a cleanup runs or what to bring.
+  first_visit_tips:
+  - Sign up for the mailing list first, since the website does not post dates.
+  - Email friends@columbussquare.org before you come if you want to know what to bring.
 contacts:
   website: https://www.columbussquare.org
-  email: null
+  email: friends@columbussquare.org
   phone: null
   contact_name: Ilene Wilder
   social:
@@ -120,8 +125,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - contacts.social
+- url: https://www.columbussquare.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.columbussquare.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - drop_in
+  - schedule
+- url: https://www.columbussquare.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

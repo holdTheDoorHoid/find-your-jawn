@@ -8,8 +8,8 @@ ein: '272901461'
 summary: A nonprofit that brings together Philadelphia's international community. It runs a World Heritage
   City project, a global directory, a program for emerging international journalists, and a young professionals
   network.
-what_you_do: Attend the public talks, artist panels, and town halls the group hosts, or join its Young
-  Professionals Network. Internship and volunteer openings are listed on the site.
+what_you_do: Attend the public talks, artist panels, and town halls the group hosts, join its Young Professionals
+  Network, or become a member. The group also lists unpaid internship and volunteer roles.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -39,8 +39,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public events are listed on the homepage with their own dates. No weekly or monthly meeting is
-    shown.
+  text: Public events are posted with their own dates on the upcoming events page. The Young Professionals
+    group holds networking events in April, June and November, and its service days and tours are listed
+    without set dates.
   days: []
   times: []
   recurring: false
@@ -58,7 +59,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Event prices and membership dues are not listed on the homepage.
+  text: Public event prices are not listed on the pages read. Membership levels run from $100 to $2,500,
+    and the page does not say over what period.
 commitment: null
 group_size: null
 access:
@@ -73,23 +75,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the newsletter from the site footer, then come to the next public event you can make.
+  how: Pick a public event from the upcoming events page and go, or sign up for the newsletter from the
+    site footer to hear about the next one.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Public events are open to anyone, and the site has a clear sign up path for news and membership.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events are listed publicly with dates, and the newsletter sign up is clear. The event pages were
+    not opened, so it is not confirmed whether each event is open to anyone.
+  what_to_expect: Public events include talks, artist panels, town halls and community celebrations. The
+    listings do not say how long events last or what they cost, so check each event page before you go.
+    Young Professionals take part in service days, guided tours and networking events at museums and historic
+    venues.
+  first_visit_tips:
+  - Check each event page for cost and registration before you go.
+  - The office is at Two Logan Square, 100 to 120 N 18th St, Suite 530.
 contacts:
   website: https://www.globalphiladelphia.org
   email: null
   phone: (215) 563-2482
   contact_name: John F Smith III
-  social: []
+  social:
+  - https://facebook.com/GlobalPhiladelphiaAssociation
+  - https://www.instagram.com/globalphiladelphia/
+  - https://www.linkedin.com/groups/4416737/profile
+  - https://twitter.com/GlobalPhila
+  - https://www.youtube.com/@globalphiladelphiaassociation
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.globalphiladelphia.org
+sign_of_life_url: https://globalphiladelphia.org/upcoming-events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,8 +130,34 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: high
+- url: https://globalphiladelphia.org/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://globalphiladelphia.org/what-we-do/young-professional-network
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://globalphiladelphia.org/get-involved/become-member
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts
+- url: https://globalphiladelphia.org/get-involved/internship-opportunities
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+- url: https://globalphiladelphia.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

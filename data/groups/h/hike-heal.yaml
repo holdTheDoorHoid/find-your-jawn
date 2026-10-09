@@ -38,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Healing hikes, weekday happy hour hikes, wellness events and retreats, listed on the group's calendar.
-    The website shows no dates.
+  text: Healing hikes, weekday happy hour hikes, wellness events and retreats, posted on its calendar
+    as they are planned.
   days: []
   times: []
   recurring: null
@@ -57,29 +57,36 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Price not shown on the website. Check each event listing.
+  text: The yearly Hive membership is $350, and enrollment is closed for now with a waitlist. Event prices
+    are not shown on the website, so check each listing.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site calls its wellness events accessible and body inclusive, but gives no details on trails,
+    mobility help or getting there.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
-  gear: null
+  gear: Sneakers
 first_step:
-  how: Sign up for an event on the group's calendar, or use the 'join our next hike' button on the website.
+  how: Sign up for the next hike through the 'join our next hike' link on the website, which goes to its
+    Luma calendar.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says women of all fitness levels are welcome, that no experience is needed, and it has
-    a clear sign-up path for the next hike.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says women of all fitness levels and no experience are welcome and links straight to
+    sign-up, but it does not say whether non-members can join events.
+  what_to_expect: The site describes its events as welcoming and focused on meeting other women and spending
+    time outdoors. Hike length, difficulty and price are not on the website, so read the event page before
+    you go.
+  first_visit_tips:
+  - Wear sneakers, which the site lists as what to bring.
+  - Check the event page for the meeting place and price before you sign up.
 contacts:
   website: https://www.hikeandhealwellness.org/
   email: null
@@ -101,13 +108,24 @@ sources:
   - first_step
   - cost
   - status
+  - access
 - url: https://luma.com/hikeandheal
   seen: '2026-10-08'
   fields:
   - locations
   - schedule
-research_tier: 1
-confidence: low
+  - first_step
+- url: https://www.hikeandhealwellness.org/hive-membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://www.hikeandhealwellness.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

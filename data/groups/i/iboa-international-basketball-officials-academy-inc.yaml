@@ -9,7 +9,8 @@ summary: A Philadelphia program that teaches FIBA 3x3 basketball to young people
   and tournaments, including sessions at city recreation centers. It also trains and mentors basketball
   referees.
 what_you_do: Kids and teens can take part in 3x3 clinics, camps and tournaments when they run. Adults
-  can volunteer through the volunteer form on the site.
+  can volunteer for check-in, court setup, scoring, youth support or media through the volunteer form
+  on the site.
 kind: nonprofit
 categories:
 - sports-teams
@@ -39,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Clinics, camps and tournaments are announced through the newsletter. The page gives no days, times
-    or dates.
+  text: Youth 3x3 clinics, camps and tournaments run when they are announced. The site does not publish
+    fixed days or times.
   days: []
   times: []
   recurring: null
@@ -58,7 +59,7 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Prices are not published on the page
+  text: No clinic or camp prices are published on the site. The site asks for donations.
 commitment: null
 group_size: null
 access:
@@ -73,15 +74,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Sign up for the newsletter on iboa3x3.com to hear when the next youth clinic or camp opens, or
-    send the volunteer form from the Become a Volunteer page
+  how: Join the mailing list on the Contact page for notices about youth clinics and tournaments, or send
+    the volunteer form from the Become a Volunteer page.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Youth programs are for young people and there is a clear sign-up for the newsletter and for volunteering,
-    but registration steps for clinics are not published
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Youth programs are open to kids and teens, and the site has a mailing list and a volunteer form,
+    but the steps to sign up for a clinic are not published.
+  what_to_expect: Volunteers can help for a few hours or a full day. Roles include check-in, court setup,
+    scoring, youth support and media, and the site says no experience is needed. Past tournaments were
+    held at Pelbano Recreation Center, but the site does not say when clinics meet.
+  first_visit_tips:
+  - Ask whether volunteers who work with young people need background clearances, since the site does
+    not say.
+  - Email info@iboa3x3.com or call 267-268-9022 to ask about the next clinic or camp.
+  - The academy office is at 2650 Welsh Road, and the site gives no bus, train or parking details.
 contacts:
   website: https://www.iboa3x3.com
   email: info@iboa3x3.com
@@ -89,9 +96,9 @@ contacts:
   contact_name: Mark Lewis
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.iboa3x3.com/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.iboa3x3.com/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,7 +127,32 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.iboa3x3.com
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - contacts
+  - status
+- url: https://www.iboa3x3.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.iboa3x3.com/become-a-volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://www.iboa3x3.com/nacla-cup
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

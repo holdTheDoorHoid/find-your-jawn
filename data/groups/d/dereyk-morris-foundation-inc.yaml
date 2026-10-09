@@ -5,11 +5,11 @@ leads:
 - irs_990n:612043152
 - irs_bmf:612043152
 ein: '612043152'
-summary: A Philadelphia foundation that says it supports incarcerated people through education. The office
-  on South Broad Street welcomes visits on weekdays, and the site calls for volunteers, but it does not
-  describe its programs.
-what_you_do: Ask about volunteering by phone or on a visit to the office. The site links to events and
-  personal training pages, but it does not say what either involves.
+summary: A Philadelphia foundation whose site says it supports incarcerated people through education.
+  Its office on South Broad Street is open on weekdays, and the site asks for volunteers, but it does
+  not describe its programs. The site also sells paid personal training.
+what_you_do: Ask about volunteering by phone or on a weekday visit to the office. The site has a 'We need
+  Volunteers' heading and a team application form, but it does not say what volunteers do.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -30,7 +30,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Office hours are 9 am to 5 pm on weekdays. Program times are not listed on the site.
+  text: Office hours are 9 am to 5 pm, Monday to Friday. The site does not list program times.
   days:
   - mon
   - tue
@@ -54,7 +54,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site
+  text: 'The site does not state a fee for volunteering. Paid training is sold on the site: one-on-one
+    at $600, bootcamp classes at $180, and a 12-week program at $950. The page does not say whether the
+    first two are per session or per package.'
 commitment: null
 group_size: null
 access:
@@ -69,14 +71,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the office at 123 South Broad Street on a weekday, or call 267-325-1686, and ask how to volunteer
+  how: Call 267-325-1686 on a weekday between 9 am and 5 pm and ask what volunteer roles are open and
+    how to start.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The office welcomes visits and the site calls for volunteers, but it does not say how to sign
-    up or what the programs involve
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site asks for volunteers and has a team form, but it does not say what volunteers do, how
+    to start, or whether training or a background check is needed.
+  what_to_expect: The site does not describe what a volunteer shift or program session involves, how long
+    it lasts, or who takes part. The team application form asks for a resume, and the page does not say
+    whether it is for volunteers or staff.
+  first_visit_tips:
+  - Ask on the phone what a first volunteer role involves before you visit.
+  - Ask whether a background check or orientation is needed before you commit.
+  - The Upcoming Events page lists no events, so ask whether any programs are running now.
 contacts:
   website: https://dmfphilly.org
   email: info@dmfphilly.org
@@ -102,6 +110,7 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://dmfphilly.org
   seen: '2026-10-08'
   fields:
@@ -110,12 +119,22 @@ sources:
   - locations
   - contacts
   - status
+  - what_you_do
 - url: https://dmfphilly.org/contact
   seen: '2026-10-08'
   fields:
   - contacts
   - first_step
-research_tier: 1
+  - schedule
+- url: https://dmfphilly.org/personal-training
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://dmfphilly.org/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

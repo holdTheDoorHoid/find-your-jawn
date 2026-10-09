@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A golf program for young people in the Philadelphia area. It runs First Tee programs, girls'
   golf, a caddie academy, and Down the Shore programs, and it offers scholarships for participants.
-what_you_do: Kids join golf programs, camps, and the caddie academy. Adults can apply through the volunteer
-  page to help as coaches.
+what_you_do: Kids ages 5 to 18 join golf sessions that build golf skills and life skills, and can take
+  part in girls golf and other programs. Adults can volunteer as coaches after a background check and
+  SafeSport training.
 kind: program
 categories:
 - sports-teams
@@ -30,17 +31,18 @@ bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
-  max_age: null
+  min_age: 5
+  max_age: 18
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Season, days, and times are not stated on the home page. Program locations are on a separate page.
+  text: Sessions run through the year. Each class lasts one hour. Session dates change, so check the registration
+    page.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Main site
@@ -52,11 +54,39 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: John F. Byrne Golf Club
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Walnut Lane Golf Club
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Topgolf Northeast Philadelphia
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not stated. The site links to a participant scholarships section.
-commitment: null
+  level: low
+  text: A $20 yearly membership per child covers registration for any program during the year. Financial
+    aid can be requested when you sign up.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -64,25 +94,32 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Water bottle, comfortable clothes and closed-toe shoes. Coaches and volunteers supply the golf
+    equipment, and labeled personal clubs are welcome.
 first_step:
-  how: Use the Register page, or the contact form if you have questions
+  how: 'For kids: create an account on the Register page, buy the $20 yearly membership, and sign up for
+    a session. For adult coaches: contact Jake Ruane, Program Manager, and fill out the information form.'
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Registration is public and clear, but the home page does not say what a first-time player does
-    first.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The FAQ says no experience is needed and walks through registration, and the volunteer page says
+    all experience levels are welcome with training provided
+  what_to_expect: Each class lasts one hour and opens with a warm up, then moves into activities that
+    build golf skills and life skills. Coaches and volunteers supply the equipment, so kids only need
+    comfortable clothes and closed-toe shoes. Adult volunteers observe a class before they start coaching.
+  first_visit_tips:
+  - Bring a water bottle, comfortable clothes and closed-toe shoes
+  - If you bring your own clubs, label them with first and last name
+  - Watch for the confirmation email after you register, and a reminder the day before class
 contacts:
   website: https://firstteephiladelphia.org/
   email: null
   phone: 215-482-3370
-  contact_name: null
+  contact_name: Jake Ruane, Program Manager (volunteer contact)
   social: []
   calendar_feed: null
 status: active
@@ -105,8 +142,38 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://firstteephiladelphia.org/faq/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - requirements
+- url: https://firstteephiladelphia.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+- url: https://firstteephiladelphia.org/programs/register/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - schedule
+- url: https://firstteephiladelphia.org/programs/locations/
+  seen: '2026-10-08'
+  fields:
+  - locations
+- url: https://firstteephiladelphia.org/coach-volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+  - roles
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

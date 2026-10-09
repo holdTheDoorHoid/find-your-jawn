@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A Presbyterian congregation in Olney with Sunday worship, a weekly Wednesday Bible study, and
   a women's group that is collecting clothing and supplies for a foster family closet.
-what_you_do: Join Sunday worship or the Wednesday Bible study, both at 11 am, or donate to a drive. The
-  gym and kitchen are open for regular church activities.
+what_you_do: Join Sunday worship or the Wednesday Bible study, both at 11 am, take part in the women's
+  circle groups or the men's Bible study, or donate to a drive. Youth and senior groups also meet through
+  the church.
 kind: congregation
 categories:
 - faith-community
@@ -15,9 +16,11 @@ interests:
 - worship_community
 - scripture_study
 - goods_closets
+- congregation_social
 motives:
 - values
 - understanding
+- social
 formats:
 - conversation
 - side_by_side
@@ -37,8 +40,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 11 am, with a summer worship in the air-conditioned chapel. Wednesday Bible
-    study at 11 am.
+  text: Sunday worship at 11 am year round, Sunday School for all ages at 10 am, and Wednesday Bible study
+    at 11 am. In summer, worship moves to the air-conditioned chapel.
   days:
   - sun
   - wed
@@ -59,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No cost is listed for worship or activities. Giving is by donation.
 commitment: drop_in
 group_size: null
 access:
@@ -71,16 +74,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship, or call the church office to ask about the Wednesday Bible study
+  how: Come to Sunday worship at 11 am, or call the church office (Wednesday to Friday, 12:40 to 6 pm)
+    to ask about the Wednesday Bible study or a women's or men's group
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Worship is public and the office can be called, but the site has no visitor welcome message
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Worship is public with a clear time and office contact, and the activities page says you do not
+    need to be a member and that all are welcome, but no page describes what a first visit is like
+  what_to_expect: Worship starts at 11 am on Sunday. A children's program for kindergarten to 5th grade
+    runs during the sermon, and nursery care is offered during the service. The site does not say how
+    long the service lasts or whether visitors are greeted, so the office is the best place to ask.
+  first_visit_tips:
+  - Call the office to ask about parking and wheelchair access, which the site does not describe
+  - Sunday School for all ages meets at 10 am, before worship
+  - Children can go to the nursery or to Children's Church during the service
 contacts:
   website: https://www.fpcolney.org
   email: office@fpcolney.org
@@ -105,8 +115,29 @@ sources:
   fields:
   - lead
   - contacts.email
-research_tier: 1
-confidence: medium
+- url: https://www.fpcolney.org/services.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - requirements
+  - first_step
+- url: https://www.fpcolney.org/activities.html
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - first_step
+- url: https://www.fpcolney.org/location.html
+  seen: '2026-10-08'
+  fields:
+  - locations
+- url: https://www.fpcolney.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

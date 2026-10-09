@@ -8,8 +8,8 @@ leads:
 ein: '472762190'
 summary: A network for women that runs peer advisory groups, a members' circle, and grant programs for
   women's ideas. Members meet, learn together and support each other.
-what_you_do: Join the members' circle, attend listed events such as the virtual pitch event, or ask through
-  the contact page about other ways to take part.
+what_you_do: Join the Circle, apply to an online peer advisory group, or attend public events such as
+  the virtual pitch events and open mic nights.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -39,12 +39,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are listed on the site by date, but the pages read showed no dates for the peer groups
-    or the virtual pitch event.
+  text: Peer advisory groups of about 10 to 12 women meet online once a month. Public events are listed
+    by date on the events page.
   days: []
   times: []
-  recurring: false
-  season: event_only
+  recurring: true
+  season: year_round
 locations:
 - label: Address on IRS filing
   address: 318 Queen St
@@ -58,7 +58,8 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Membership fees and event prices are not shown on the pages read.
+  text: Joining the Circle is done through a PayPal donation link, and no set dues are listed. Peer group
+    fees are not shown.
 commitment: null
 group_size: null
 access:
@@ -73,13 +74,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the join link on greatdames.com to look at the members' circle, or attend a listed event.
+  how: Apply to a peer advisory group through the online form on the peer groups page, or sign up for
+    a public virtual event listed on the events page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Most events are open to anyone, and the site has a clear join link, though fees are not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Most events are open to anyone, and the site has a clear join link. Peer groups need an online
+    application, and no Circle fee is listed.
+  what_to_expect: Public events are mostly online, usually on weekday evenings starting at 5:30 pm Eastern,
+    and include pitch events and open mic nights where people share stories. Peer advisory groups meet
+    online each month with about 10 to 12 women and a facilitator, and talk about work, family, and personal
+    growth. Circle members get a vote on the yearly grant and early access to some programs.
+  first_visit_tips:
+  - Check the events page for the date, since many listings do not say whether an event is online or in
+    person.
+  - The Nov. 4, 2026 celebration is in person in Greenville, Delaware, not Philadelphia, and tickets are
+    reserved through a link on the join page.
+  - The peer groups page asks you to confirm cost and availability before you apply, because parts of
+    it may be out of date.
 contacts:
   website: https://www.greatdames.com
   email: null
@@ -88,8 +100,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2025-11
-sign_of_life_url: https://www.greatdames.com
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.greatdames.com/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -119,8 +131,33 @@ sources:
   seen: '2026-10-08'
   fields:
   - summary
-research_tier: 1
-confidence: low
+- url: https://www.greatdames.com/join
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - what_you_do
+  - first_step
+- url: https://www.greatdames.com/programs/peer-advisory-groups
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://www.greatdames.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_visit_tips
+- url: https://www.greatdames.com/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

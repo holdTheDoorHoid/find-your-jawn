@@ -6,9 +6,9 @@ leads: []
 ein: null
 summary: A Quaker meeting in Chestnut Hill with Sunday worship in its meetinghouse and on Zoom, a Sunday
   School, hymn singing, and adult classes. The site invites anyone to join.
-what_you_do: Join Sunday worship at 10:30 am, a hymn sing on the third, fourth, and fifth Sundays at 9:30
-  am, or an adult class on most first and second Sundays from September to May. Children join Sunday School
-  at 10:45 am. Email the worship contact to get the Zoom link.
+what_you_do: Join Sunday worship from 10:30 to 11:45 am, a hymn sing on the third, fourth, and fifth Sundays
+  at 9:30 am, or an adult class on most first and second Sundays from September through June. Children
+  start in worship, then go to Sunday School at 10:45 am. To get the Zoom link, email the worship contact.
 kind: congregation
 categories:
 - faith-community
@@ -38,13 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10:30 am in the meetinghouse or on Zoom. Sunday School runs from 10:45 to 11:30
-    am, hymn singing is at 9:30 am on the third to fifth Sundays, and adult classes meet most first and
-    second Sundays from September to May.
+  text: Sunday worship from 10:30 to 11:45 am in the meetinghouse or on Zoom, with Sunday School from
+    10:45 to 11:30 am. Hymn singing runs from 9:30 to 10:30 am on the third to fifth Sundays. Midweek
+    worship is on Zoom on Tuesdays from 9 to 10 am, and Spanish language worship is on Zoom on Mondays
+    from 6:30 to 7:30 pm. Adult classes meet on most first and second Sundays from 9 to 10:15 am, September
+    through June.
   days:
+  - mon
+  - tue
   - sun
   times:
   - morning
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -60,13 +65,17 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: No cost is listed.
+  text: No fee is listed. Giving is by donation through a link on the site.
 commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - es
+  notes: Parking lot beside the building on East Mermaid Lane. The page names the Wyndmoor station on
+    SEPTA's Chestnut Hill East line, about a 10 minute walk away. For step-free entry, call the office
+    at 215-247-3553.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,14 +84,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship at 10:30 am, or email the worship contact for the Zoom link.
+  how: Come to Sunday worship at 10:30 am, or email worship@chestnuthillquakers.org for the Zoom link.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: 'The site says the meeting welcomes everyone to join and gives a clear way in: attend Sunday
-    worship or request the Zoom link.'
-  what_to_expect: null
-  first_visit_tips: []
+  basis: 'The site invites anyone to join and says how to start: come to Sunday worship or email for the
+    Zoom link. It has no separate new visitor page.'
+  what_to_expect: Sunday worship runs from 10:30 to 11:45 am, including announcements, in the meetinghouse
+    or on Zoom. Children start in worship, then leave for their classes at 10:45 am and come back around
+    11:30, so parents can stay for the whole time. Year-round nursery care is offered for the youngest
+    children, and after worship families can share food in the social room. No fee is listed, and giving
+    is by donation.
+  first_visit_tips:
+  - Park in the lot beside the meetinghouse on East Mermaid Lane.
+  - On some Sundays there is outdoor worship from 9 to 10 am, so bring your own chair.
+  - The Wyndmoor station on SEPTA's Chestnut Hill East line is about a 10 minute walk from the meetinghouse.
 contacts:
   website: https://www.chestnuthillquakers.org
   email: secretary@chestnuthillquakers.org
@@ -110,7 +126,28 @@ sources:
   - lead
   - contacts
   - requirements
-research_tier: 1
+- url: https://chestnuthillquakers.org/service-schedule/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_you_do
+- url: https://chestnuthillquakers.org/childrens_program/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - crowd
+- url: https://chestnuthillquakers.org/adult-classes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://chestnuthillquakers.org/contact__directions/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

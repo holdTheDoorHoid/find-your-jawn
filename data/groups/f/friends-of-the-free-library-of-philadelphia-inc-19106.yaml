@@ -8,8 +8,8 @@ leads:
 ein: '912115356'
 summary: Volunteers who raise money, speak up for, and build community around the Independence Branch
   Library at 18 South 7th Street.
-what_you_do: Support the branch through fundraising, advocacy and neighborhood ties. Sign up for the mailing
-  list to hear how to help.
+what_you_do: Support the branch through fundraising, advocacy and neighborhood ties. Pay yearly dues to
+  become a member, or sign up for the mailing list to hear how to help.
 kind: friends_group
 categories:
 - books-writing
@@ -32,7 +32,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: No dated events are published. News and announcements go out by mailing list and newsletter.
+  text: No meetings or events are posted. Membership dues are paid once a year, and renewal notices are
+    sent by letter.
   days: []
   times: []
   recurring: null
@@ -49,8 +50,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Membership dues are at least $10 a year. Extra gifts are welcome and help fund the branch's work.
 commitment: null
 group_size: null
 access:
@@ -65,14 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the mailing list on the group's website to get newsletters and announcements about how to
-    help
+  how: Mail a membership form with a check for dues to the Friends at 18 South 7th Street, or join online
+    through the Donate button on the group's site. Email friendsindependencebranch@gmail.com first to
+    ask whether the group is meeting now.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone can join the mailing list. Volunteer steps and events are not published.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Joining needs annual dues before you learn what the group does day to day, and the site posts
+    no events or volunteer steps.
+  what_to_expect: The site does not describe a typical visit, since it posts no meetings or events. Members
+    whose dues are paid up can vote at meetings and elections. The newest news post is from 2023, so ask
+    the group what is happening before you pay.
+  first_visit_tips:
+  - Email the group before you pay to ask what is going on at the branch now.
+  - If you pay by Venmo, use the group's charity profile and put your contact details in the memo.
+  - Expect renewal notices by letter when your dues come due.
 contacts:
   website: https://www.indyfriends.net
   email: friendsindependencebranch@gmail.com
@@ -80,9 +88,9 @@ contacts:
   contact_name: Friends of the Free Library
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.indyfriends.net
+status: dormant
+last_sign_of_life: 2023-09
+sign_of_life_url: https://indyfriends.net/blog/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -108,7 +116,20 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://indyfriends.net/membership/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_you_do
+- url: https://indyfriends.net/blog/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

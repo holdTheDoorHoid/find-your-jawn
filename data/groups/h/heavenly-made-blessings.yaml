@@ -8,8 +8,8 @@ ein: '833043624'
 summary: A Philadelphia charity that supports families, children and childcare providers through mentoring,
   coaching, training workshops and scholarships for childcare tuition. It also holds community drives
   and fundraisers.
-what_you_do: Ask about a mentoring or coaching spot, a training workshop, a childcare scholarship, or
-  a volunteer shift, or give a donation.
+what_you_do: Ask about mentoring or coaching, a training workshop, or a childcare tuition scholarship,
+  or give a donation. The volunteer page says the site is still being updated and lists no roles yet.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -38,14 +38,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The group holds quarterly events and annual fundraisers. The site does not list dates, times,
+    or whether programs meet in person or online.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Mailing address (P.O. Box)
-  address: P.O. Box 33034, Philadelphia, PA
+- label: Mailing address (P.O. Box), no office or meeting place listed
+  address: P.O. Box 33034, Philadelphia, PA 19142
   neighborhood: null
   planning_district: null
   zip: '19142'
@@ -56,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Program costs are not listed. Scholarships and donations are offered.
+  text: The site lists no program fees. Childcare scholarships are partial and depend on available funds.
 commitment: null
 group_size: null
 access:
@@ -71,15 +72,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 267-237-0706 or email heavenlymadeblessings@gmail.com to ask which mentoring, workshop or
-    volunteer spots are open
+  how: Call 267-237-0706 or email heavenlymadeblessings@gmail.com to ask which program fits you and, for
+    a childcare scholarship, which documents to send.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone can reach the group by phone or email, and the site lists mentoring, workshop and volunteer
-    pages.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Scholarships need proof of income, Pennsylvania residency, a financial literacy workshop and
+    five volunteer hours a month, and the site does not explain how newcomers sign up for mentoring or
+    workshops.
+  what_to_expect: The site does not describe a first visit or give dates, times, or formats for its programs.
+    Scholarship help is partial, first come first served, and is for families with children ages 0 to
+    5 who cannot afford full child care and do not qualify for free or subsidized care.
+  first_visit_tips:
+  - Have proof of income and proof of Pennsylvania residency ready before you apply for a scholarship.
+  - Confirm that the child's child care program is state-licensed and will work with the group.
+  - Ask about the financial literacy workshop and the five hours a month of volunteering before you apply.
 contacts:
   website: https://www.heavenlymadeblessings.com
   email: heavenlymadeblessings@gmail.com
@@ -115,7 +122,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.heavenlymadeblessings.com/charity-organization-programs-and-campaigns
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - first_step
+- url: https://www.heavenlymadeblessings.com/charity-organization-scholarship
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://www.heavenlymadeblessings.com/charity-organization-volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.heavenlymadeblessings.com/charity-organization-contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+- url: https://www.heavenlymadeblessings.com/charity-organization-media
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

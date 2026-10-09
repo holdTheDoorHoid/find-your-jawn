@@ -35,11 +35,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Davening times and High Holiday schedules are on separate pages that the homepage does not show.
+  text: Daily davening (prayer) services, with times posted on the synagogue's online portal rather than
+    on the center's pages. Youth, women's, and men's programs meet on schedules the site does not print.
+    The Pesach food drive runs once a year.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Community center
   address: 198 Tomlinson Rd
@@ -53,7 +55,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No fees are printed on the homepage. Donations are invited.
+  text: No program fees are printed on the pages read. Donations are invited, and the site does not describe
+    membership or dues.
 commitment: null
 group_size: null
 access:
@@ -68,13 +71,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email or call the office to ask how to join a program
+  how: Email info@cbscommunitycenter.com or call 215.671.1981 and ask how to join a program. Sign up for
+    weekly updates with the form on the homepage.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Programs are listed, but the site does not say whether visitors can join or how a newcomer starts.
+  basis: Programs are listed, and some have contacts, but the site does not say whether visitors can attend
+    a service or class or how a newcomer starts.
   what_to_expect: null
-  first_visit_tips: []
+  first_visit_tips:
+  - Check the synagogue's online portal for davening times, since the center's pages do not print them.
+  - For High Holiday services, reserve a seat with the online form or the paper form on the site.
+  - Call the office before you come to ask whether visitors can join.
 contacts:
   website: https://www.cbscommunitycenter.com/
   email: info@cbscommunitycenter.com
@@ -98,7 +106,23 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://cbscommunitycenter.com/programming/
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - schedule
+  - first_step
+- url: https://cbscommunitycenter.com/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+- url: https://cbscommunitycenter.com/programming/high-holidays/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - first_visit_tips
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

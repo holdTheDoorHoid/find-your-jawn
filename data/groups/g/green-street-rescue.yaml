@@ -7,8 +7,9 @@ leads:
 ein: '204575651'
 summary: A nonprofit cat rescue in Brewerytown that runs Le Cat Café, where visitors can spend time with
   adoptable cats, and places cats with foster homes until they are adopted.
-what_you_do: Foster a cat until it is adopted, or visit the cafe to meet the cats. The site says many
-  people volunteer but does not list volunteer roles.
+what_you_do: Foster a cat until it is adopted, or visit Le Cat Café to meet the cats. Volunteers work
+  from their own homes on trapping, vetting, and fostering, but the site does not list volunteer roles
+  or a sign-up step.
 kind: nonprofit
 categories:
 - animals
@@ -34,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Cafe hours: Sunday 10 am to 6 pm, Monday, Tuesday and Thursday 11 am to 6 pm, Friday 11 am to
-    7 pm, Saturday 10 am to 7 pm. Closed Wednesday.'
+  text: 'Le Cat Café hours: Sunday 10 am to 6 pm, Monday, Tuesday, and Thursday 11 am to 6 pm, Friday
+    11 am to 7 pm, Saturday 10 am to 7 pm. Closed Wednesday.'
   days:
   - sun
   - mon
@@ -50,7 +51,7 @@ schedule:
 locations:
 - label: Le Cat Café
   address: 2713 W. Girard Avenue
-  neighborhood: null
+  neighborhood: brewerytown
   planning_district: null
   zip: '19130'
   lat: null
@@ -60,8 +61,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Adoption is $140 for one cat or $200 for two. Volunteer and cafe visit costs are not shown on
-    the site.
+  text: Adoption is $140 for one cat or $200 for two. The site does not show a cafe visit fee or any foster
+    costs.
 commitment: null
 group_size: null
 access:
@@ -76,14 +77,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the foster application linked on the site. The rescue checks references and your vet before
-    approving, then connects approved fosters with a cat, usually picked up at the cafe.
+  how: Fill out the foster application linked on the site. Rescue staff check your references, your landlord,
+    and your vet, then email you when you are approved.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone can book a cafe visit to meet the cats, while fostering needs an approved application.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The home page says cafe visits are by appointment, and the foster page names a clear first step.
+    Fostering needs an approved application.
+  what_to_expect: 'Le Cat Café is the rescue''s adoption program, where you can spend time with adoptable
+    cats on Girard Avenue. The rescue calls itself not a shelter: its cats live with volunteer foster
+    homes, and the cafe is where you meet them. The site does not give the visit length or fee, so ask
+    before you go.'
+  first_visit_tips:
+  - Street parking is on Girard Avenue, so bring quarters for the meter or use the meterUP app.
+  - The cafe is closed on Wednesdays, so check the hours before you go.
+  - The site does not say whether children are welcome at the cafe, so ask before you go.
 contacts:
   website: https://www.greenstreetrescue.org
   email: null
@@ -118,13 +126,20 @@ sources:
   - cost
   - contacts
   - status
+  - first_step
 - url: https://www.greenstreetrescue.org/foster/
   seen: '2026-10-08'
   fields:
   - first_step
   - what_you_do
-research_tier: 1
-confidence: low
+- url: https://www.greenstreetrescue.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - what_to_expect
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

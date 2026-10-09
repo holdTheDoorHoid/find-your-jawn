@@ -29,7 +29,7 @@ audience:
   open_to: public
   school: null
   min_age: 13
-  max_age: null
+  max_age: 35
   community:
   - men
   faith: null
@@ -54,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free to take part. Mentees are paid a stipend, listed on the site as $15 an hour.
+  text: Free to take part. Participants receive a stipend of $15 an hour and a free meal each day.
 commitment: ongoing_role
 group_size: null
 access:
@@ -69,15 +69,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: 'Young men: use the Help Now request form on the site. Volunteer mentors: call 267-748-7818, email
-    info@manupphl.org, or use the volunteer form.'
+  how: 'Young men: send a request through the Help Now form on manupphl.org. Volunteer mentors: call 267-748-7818
+    or fill in the volunteer form on the site.'
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Mentees go through a request form, and the site does not describe what a first meeting looks
-    like. Mentors reach out by phone, email or form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Participants and mentors both start with a form or a call. The site does not describe what happens
+    after the form or what a first meeting looks like.
+  what_to_expect: Participants apply, then get a mentor and a support team. The programs page describes
+    sessions on the causes of gun violence, life skills, money management and job readiness, plus a group
+    session led by a licensed therapist. It does not say how long the program runs or what the first session
+    is like.
+  first_visit_tips:
+  - Have your questions ready for the first call, since the site does not describe the first meeting.
+  - Mentor applicants choose a volunteer type and the areas they can help with, such as jobs, education,
+    or family support.
+  - The site lists no walk-in hours, so start with the form or a phone call.
 contacts:
   website: https://www.manupphl.org
   email: info@manupphl.org
@@ -86,9 +93,9 @@ contacts:
   social:
   - https://instagram.com/manupphl/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.manupphl.org
+status: dormant
+last_sign_of_life: 2023-10
+sign_of_life_url: https://www.manupphl.org/events/list/
 sources:
 - url: https://www.manupphl.org
   seen: '2026-10-08'
@@ -106,7 +113,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.manupphl.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://www.manupphl.org/volunteer-form/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.manupphl.org/events/list/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.manupphl.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

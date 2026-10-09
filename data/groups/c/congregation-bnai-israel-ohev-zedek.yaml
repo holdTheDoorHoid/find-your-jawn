@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A Northeast Philadelphia synagogue with daily prayer services, weekly Torah classes, and youth
   groups on Shabbat. The site has a page for visitors who want to spend a Shabbos there.
-what_you_do: Pray at Shabbat or weekday services, attend the Torah classes, bring children to the youth
-  groups, or sponsor a kiddush or a Shalosh Seudos meal. The membership form is online.
+what_you_do: Pray at Shabbat or weekday services, attend a Torah class, bring young children to Moms &
+  Tots on Shabbos and Yom Tov mornings, or bring older children to the Shabbos morning groups. You can
+  also sponsor a kiddush or Shalosh Seudos meal, or fill in the online membership form.
 kind: congregation
 categories:
 - faith-community
@@ -36,9 +37,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shabbat services on Saturday morning with Shacharis at 9:00 am, Friday evening candle lighting
-    with Mincha and Maariv, and weekday Shacharis each morning. The times printed on the site were for
-    the Ha'azinu weekend, so confirm before you go.
+  text: Shabbat morning services begin at 9 am, after a parsha class at 8:30 am. Moms & Tots runs every
+    Shabbos and Yom Tov morning, and children's groups meet on select Shabbos mornings. Weekday morning
+    minyanim are around 6:20 to 6:45 am, and Mincha and Maariv are in the evening. The site posted these
+    times for a September week, so confirm before you go.
   days:
   - mon
   - tue
@@ -64,7 +66,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Membership and donation options are listed. Amounts are not printed.
+  text: Membership and donation options are listed on the site, but no amounts are printed.
 commitment: null
 group_size: null
 access:
@@ -76,16 +78,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Visit for a Shabbos, using the site's visiting page, or contact the shul by email
+  how: Fill in the short Visit for a Shabbos form on the site, which asks for a name and email, or email
+    info@biozshul.org to ask about visiting.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site has a page for visiting on Shabbos and a contact route, so a newcomer knows how to start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a Visit for a Shabbos form and an email address, and the contact page says the shul
+    warmly welcomes inquiries. It does not describe what a first visit is like.
+  what_to_expect: Shabbos morning services start at 9 am after a parsha class at 8:30, and children have
+    their own groups on select Shabbos mornings. The Visit for a Shabbos page does not describe hosting,
+    meals, or sleeping, so ask the shul by email first.
+  first_visit_tips:
+  - Email info@biozshul.org with your questions before you come.
+  - Check the posted times against the current schedule, since the site's times were printed for a September
+    week.
 contacts:
   website: https://www.biozshul.org/
   email: info@biozshul.org
@@ -95,7 +104,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.biozshul.org/
+sign_of_life_url: https://www.biozshul.org/programming/
 sources:
 - url: https://www.biozshul.org/
   seen: '2026-10-08'
@@ -110,7 +119,32 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.biozshul.org/shabbos_visit/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+- url: https://www.biozshul.org/programming/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+- url: https://www.biozshul.org/programming/youth-programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+- url: https://www.biozshul.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.biozshul.org/contact/contact-the-shul/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

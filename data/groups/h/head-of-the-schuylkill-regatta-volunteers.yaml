@@ -5,7 +5,7 @@ leads: []
 ein: null
 summary: The volunteer crew that runs Philadelphia's Head of the Schuylkill Regatta, now in its 56th year.
   Volunteers help with timing, docks, registration, parking and more.
-what_you_do: Work half day shifts around lunchtime in timing, docks, registration, parking, hospitality
+what_you_do: Work half-day shifts around lunchtime in timing, docks, registration, parking, hospitality
   or the zero waste team. Timing volunteers get training.
 kind: program
 categories:
@@ -33,11 +33,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shifts run in half days around lunchtime on regatta weekend. Volunteer sign ups open after August
-    1, 2026. A general information session on Zoom is set for Tuesday, October 20, 2026.
+  text: Volunteers work half-day shifts around lunchtime on regatta weekend, which falls in October. Sign-up
+    opens after August 1 on SignUpGenius.
   days:
-  - tue
-  times: []
+  - sat
+  - sun
+  times:
+  - daytime
   recurring: true
   season: fall
 locations:
@@ -59,7 +61,7 @@ group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: Golf carts help people who have trouble walking between parking and the course.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,15 +70,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a shift on SignUpGenius after August 1, 2026, or email volunteers@hosr.org. Attend the October
-    20, 2026 Zoom information session.
-  drop_in: null
-  sign_up_needed: null
+  how: Pick a half-day shift on SignUpGenius once sign-ups open after August 1, or email volunteers@hosr.org
+    to ask for help choosing one.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The page welcomes new volunteers, timing needs no rowing experience, training is provided, and
-    it says how to start.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The page says timing needs no rowing experience, training is given to timing volunteers, and
+    it lists the sign-up steps and an information session.
+  what_to_expect: Shifts are half days that break around lunchtime, and a captain contacts you after you
+    sign up to confirm your shift and location. Roles range from docks and registration to hospitality
+    and the zero waste team, and golf cart drivers must be 18 or older with a driver's license. Area prep
+    meetings are usually held on Zoom.
+  first_visit_tips:
+  - Join the Zoom information session on Tuesday, October 20 for the 2026 regatta, or use the recording
+    if you cannot attend.
+  - If you are volunteering, park in Area 2, the Grandstand Parking Lot, shown on the on-site map. Your
+    HOSR volunteer ID tag is not a parking permit.
+  - Kelly Drive has restricted traffic over regatta weekend, so read the traffic and parking page before
+    you drive.
+  - If you will be around young athletes, take the brief U.S. Center for SafeSport volunteer course first.
 contacts:
   website: https://hosr.org
   email: volunteers@hosr.org
@@ -84,9 +96,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://hosr.org/volunteers/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://hosr.org/news/
 sources:
 - url: https://hosr.org/volunteers/
   seen: '2026-10-08'
@@ -98,7 +110,23 @@ sources:
   - first_step
   - status
   - contacts
-research_tier: 1
+  - access
+  - first_visit_tips
+- url: https://hosr.org/traffic-flow-parking/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://hosr.org/news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://hosr.org/schedule-of-events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

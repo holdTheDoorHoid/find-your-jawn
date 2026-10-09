@@ -30,8 +30,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Baking shifts are posted and signed up for on PlanHero. A fall fundraiser has an Oct 31 deadline,
-    with no year shown.
+  text: Baking shifts for events, partner groups and community fridges are posted on a scheduling site.
+    Volunteers pick the shifts that fit their week and can help as often or as rarely as they like.
   days: []
   times: []
   recurring: null
@@ -39,8 +39,10 @@ schedule:
 locations: []
 online_ok: null
 cost:
-  level: free
-  text: Volunteering appears to be free. Donations are optional.
+  level: low
+  text: Joining the scheduling site is free and volunteering is unpaid. Volunteers usually cover their
+    own ingredients. The RISE Fund can reimburse up to $25 per event per month, while funds last, if the
+    request is sent before you sign up for an event.
 commitment: drop_in
 group_size: null
 access:
@@ -52,17 +54,28 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the volunteer to bake page, then sign up for a shift on PlanHero. Email inkindbakingphl@gmail.com
-    with questions.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A volunteer route is posted, and an info session recording is on YouTube.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Fill out the Baker Intake Form linked from the Become a Baker page, then accept the scheduling
+    site invite and sign up for a baking shift.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: 'The Become a Baker page welcomes new bakers and lays out a two step way in: an intake form,
+    then an invite to the scheduling site. A steering committee member reviews each form by hand, so the
+    invite can take a day or two, sometimes longer.'
+  what_to_expect: 'Before your first bake, expect a short sign up: the intake form, then an invite to
+    the scheduling site. Bakers can be professionals or people baking at home, and every item must be
+    labeled with its ingredients and allergens and a note that it was prepared in a home kitchen. The
+    pages I could read do not say how long a shift takes, so ask the project before your first one.'
+  first_visit_tips:
+  - Watch the info session video on the project's website before you sign up for a shift.
+  - 'Plan your own drop-off: the project does not arrange transport, though the RISE Fund may help with
+    drop-off costs.'
+  - If you cannot make a shift, cancel on the scheduling site and email the project. Within 2 weeks, find
+    a replacement first and give at least 72 hours' notice.
+  - Ask the project where and when to bring the goods, since the pages do not say.
 contacts:
   website: https://www.inkindbakingproject.org
   email: inkindbakingphl@gmail.com
@@ -88,7 +101,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.inkindbakingproject.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+  - requirements
+- url: https://www.inkindbakingproject.org/faqs
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+  - schedule
+  - requirements
+- url: https://www.inkindbakingproject.org/bake-with-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.inkindbakingproject.org/baker-resources
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://www.inkindbakingproject.org/rise
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

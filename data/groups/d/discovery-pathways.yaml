@@ -5,10 +5,11 @@ leads:
 - irs_990n:850979344
 - irs_bmf:850979344
 ein: '850979344'
-summary: A South Philadelphia nonprofit that teaches nature and environmental skills to young people and
-  adults through boating, fishing, leadership, and greening projects.
-what_you_do: Join free boating and fishing sessions at FDR Park, take part in youth leadership or community
-  greening work, paddle with the dragon boat team, or volunteer through the site's volunteer page.
+summary: A South Philadelphia nonprofit that teaches outdoor and environmental skills to young people
+  and adults. Its programs include boating, fishing, youth leadership, dragon boating and greening work
+  in parks and along waterways.
+what_you_do: Join a free boating or fishing day at FDR Park, take part in youth leadership or community
+  greening work, paddle with the dragon boat team, or sign up to volunteer through the volunteer form.
 kind: nonprofit
 categories:
 - water-rowing
@@ -41,8 +42,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Programs run through the year. The home page lists no specific dates, and the events list it links
-    to was not read.
+  text: Free family fishing on Wednesdays, 4 to 6:30 pm, and free boating days on select Saturdays, 10
+    am to 1:30 pm, at FDR Park. The events calendar lists the specific dates.
   days:
   - sat
   - wed
@@ -61,11 +62,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Boathouse at FDR Park (boating and fishing days)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: free
-  text: Some programs are free, including FDR Park boating and fishing and school field trips. Other programs
-    were not checked for cost.
+  text: Boating days and family fishing at FDR Park are free, and field trips are free for grades K to
+    12 public school classes. The site did not state prices for its other programs.
 commitment: drop_in
 group_size: null
 access:
@@ -80,25 +90,29 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Pick a program from the Explore Program links on the site, or use the volunteer page to sign up
-    to help
+  how: Come to a free boating day at FDR Park on a Saturday from 10 am to 1:30 pm. Boating needs no registration
+    and no experience.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says its free boating and fishing programs are for all ages and skill levels and explains
-    how to start, with a separate youth application.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The FDR boating and fishing programs are free and open to all ages, boating needs no experience,
+    and the site says no pre-registration is needed for boating.
+  what_to_expect: Boating days provide rowboats, kayaks and canoes with instruction, and children must
+    come with a guardian. Family fishing on Wednesdays from 4 to 6:30 pm teaches people how to fish, with
+    rods and bait provided.
+  first_visit_tips:
+  - The site does not say whether life jackets are provided, so ask the group before you go.
+  - The site gives no parking or transit details for FDR Park, so check the route in advance.
 contacts:
   website: https://www.discoverypathways.org/
   email: adam@discoverypathways.org
   phone: 215-219-3007
   contact_name: Adam J Forbes
   social: []
-  calendar_feed: null
+  calendar_feed: https://discoverypathways.org/events/list/?ical=1
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.discoverypathways.org/fdr-boating-and-fishing/
+sign_of_life_url: https://discoverypathways.org/events/list/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -124,6 +138,7 @@ sources:
   - requirements
   - status
   - last_sign_of_life
+  - what_to_expect
 - url: https://www.discoverypathways.org/
   seen: '2026-10-08'
   fields:
@@ -137,8 +152,20 @@ sources:
   - requirements
   - first_step
   - status
-research_tier: 1
-confidence: medium
+- url: https://discoverypathways.org/events/list/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - contacts.calendar_feed
+  - cost
+- url: https://discoverypathways.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

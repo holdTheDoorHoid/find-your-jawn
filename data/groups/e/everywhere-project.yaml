@@ -7,8 +7,9 @@ leads:
 ein: '863635473'
 summary: A Philadelphia harm reduction group that hands out food, clothing, and safer use supplies, teaches
   overdose reversal, and works to lower stigma against people who use drugs.
-what_you_do: Volunteer through the volunteer survey or the cooking interest form, or drop off clothing
-  donations. The outreach sites are at Love Park in Center City and in Kensington.
+what_you_do: Help on the Wednesday and Saturday outreach, cook meals from home for the outreach, make
+  harm reduction kits on Thursday evenings, or drop off gently used clothing. The volunteer survey is
+  now closed, so questions go through the contact form.
 kind: nonprofit
 categories:
 - health-wellness
@@ -34,15 +35,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Two outreach sites each week, one at Love Park in Center City and one in Kensington. The site
-    does not list days or hours.
-  days: []
-  times: []
+  text: Love Park outreach on Wednesday evenings, Kensington outreach on Saturday afternoons, and kit
+    making on Thursday evenings.
+  days:
+  - wed
+  - thu
+  - sat
+  times:
+  - daytime
+  - evening
   recurring: true
   season: null
 locations:
-- label: Outreach sites (Love Park and Kensington)
-  address: null
+- label: Love Park outreach site
+  address: 1501 JFK Blvd, Center City, Philadelphia PA
+  neighborhood: center_city
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Kensington outreach site
+  address: Ruth St and Clearfield St, Kensington, Philadelphia PA
   neighborhood: null
   planning_district: null
   zip: null
@@ -53,7 +68,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: The services are described as no-barrier, and no fee is mentioned.
+  text: The outreach services are described as no-barrier, and no fee is listed for them or for donating
+    clothing.
 commitment: null
 group_size: null
 access:
@@ -68,12 +84,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer survey on the group's website, or the cooking interest form if you can cook
-    for the outreach.
+  how: Send a question through the contact form at everywhereproject.org, under Questions about volunteering,
+    asking about the next Wednesday or Saturday outreach shift.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site offers a clear online way to offer help and does not describe an application or screening.
+  newcomer_friendliness: 2
+  basis: The public volunteer survey is closed, and the site does not describe volunteer training, screening,
+    or a first shift. Questions go through a contact form, so the way in is unclear.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -83,9 +100,9 @@ contacts:
   contact_name: Galen Pugh
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.everywhereproject.org
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://www.everywhereproject.org/services
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -112,7 +129,32 @@ sources:
   - first_step
   - contacts.email
   - status
-research_tier: 1
+  - schedule
+  - contacts
+- url: https://www.everywhereproject.org/services
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://www.everywhereproject.org/volunteersurvey
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://www.everywhereproject.org/cook
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.everywhereproject.org/donate
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

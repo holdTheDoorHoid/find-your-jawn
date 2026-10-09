@@ -51,7 +51,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: No cost, as the group describes its meals and programs
+  text: The group describes its meals and programs as no cost.
 commitment: null
 group_size: null
 access:
@@ -66,14 +66,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-375-4558 or email info@jsjfoodbank.org to ask how to get meals or sign up for the after
-    school programs
+  how: Call 215-375-4558 to ask about free meals for students or adults 55 and older, or email info@jsjfoodbank.org
+    about the youth after school programs.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site lists the services but no sign up steps, dates or hours, so the way in is unclear
+  basis: The site lists free meals and youth programs and gives a phone and email, but no sign-up steps,
+    hours or meal times, so the way in is unclear.
   what_to_expect: null
-  first_visit_tips: []
+  first_visit_tips:
+  - Call before you go, since the site lists no office hours.
+  - Ask whether any meal site is running now; the group ran free summer meals for kids under 18 in 2025.
+  - The site also names a peer-led STEM program for youth, so ask about it if that interests your child.
 contacts:
   website: https://www.jsjfoodbank.org
   email: info@jsjfoodbank.org
@@ -82,8 +86,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.jsjfoodbank.org
+last_sign_of_life: 2025-06
+sign_of_life_url: https://www.cbsnews.com/philadelphia/news/philadelphia-summer-meals-program-cherelle-parker
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,8 +118,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+  - what_you_do
+  - first_step
+  - cost
+- url: https://www.jsjfoodbank.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_visit_tips
+- url: https://www.cbsnews.com/philadelphia/news/philadelphia-summer-meals-program-cherelle-parker
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

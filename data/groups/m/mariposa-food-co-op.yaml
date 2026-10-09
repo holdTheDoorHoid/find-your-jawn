@@ -6,8 +6,9 @@ ein: null
 summary: A member-owned natural foods store on Baltimore Avenue in West Philadelphia. Members buy in with
   a one-time equity payment, get a vote in the co-op's decisions, and can give a few hours a month as
   working members.
-what_you_do: Work shifts and committee service, such as governance, policy, or education and outreach
-  committees. Working members get a 10 percent discount.
+what_you_do: Members buy in with equity and vote on co-op decisions. Working members help run the store
+  through shifts or committee service on governance, policy, or education and outreach, and get a 10 percent
+  discount. The co-op says it is restarting the working-member program, so ask before you plan on shifts.
 kind: civic
 categories:
 - food-drink
@@ -36,7 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Working members give at least four hours a month. The site does not list public events or dates.
+  text: Working members are asked to give at least four hours a month. The store is open every day from
+    8 am to 9 pm.
   days: []
   times: []
   recurring: true
@@ -50,18 +52,19 @@ locations:
   lat: null
   lng: null
   in_city: true
-  transit: null
+  transit: Served by the 34 trolley and the 64 bus. The site does not name stops.
 online_ok: false
 cost:
   level: low
   text: One-time $200 member equity, refundable when you leave (the co-op may hold back refunds to protect
-    its finances). You can pay $25 every three months instead of all at once.
+    its finances). You can start with $50, $75 or more and pay $25 or more every three months until you
+    reach $200. People who qualify can join through Food For All.
 commitment: monthly
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The site says the store is handicap accessible. It gives no details on ramps, aisles or doors.
 requirements:
   act153_clearances: null
   background_check: null
@@ -70,16 +73,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join in the store, online, or with a printed application, and pay the $200 equity in one payment
-    or in $25 installments. Ask about the open Working-Member Coordinator role or the Diversity, Equity
-    and Inclusion Committee.
-  drop_in: null
-  sign_up_needed: null
+  how: Visit the store at 4824 Baltimore Avenue or join online, then pay the $200 equity in one payment
+    or in installments.
+  drop_in: true
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The store is open to the public and the join steps are published, but a vote or a working role
-    needs the equity payment first.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can shop in the store, and the join steps and payment plans are published. Voting and
+    working roles need membership first.
+  what_to_expect: Stop by to look around and ask a staff member how joining works. Joining means filling
+    out an application, either in the store, online, or on a printed form, and paying the member equity.
+    Working members are asked to give at least four hours a month and get training before their first
+    shifts, but the co-op says it is restarting that program.
+  first_visit_tips:
+  - The store is open every day from 8 am to 9 pm, so you can visit at most times.
+  - Ask whether the working-member program is taking new people right now.
+  - If the $200 is hard to pay at once, ask about the installment plan or the Food For All option.
 contacts:
   website: https://mariposa.coop/
   email: ownership@mariposa.coop
@@ -106,6 +114,7 @@ sources:
   fields:
   - locations
   - contacts
+  - summary
 - url: https://mariposa.coop/join
   seen: '2026-10-08'
   fields:
@@ -125,7 +134,14 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://mariposa.coop/location
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - access
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

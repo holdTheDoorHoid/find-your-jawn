@@ -40,11 +40,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Friday night services, weekday services, weekly Torah study, adult learning, a religious school,
-    and programs for children and teens. Most pages read do not print days or times.
-  days: []
-  times: []
-  recurring: null
+  text: Friday night services at 6 pm. Saturday morning services, with separate adult services and children's
+    programs, run from 10 am to about 12:30 pm. Weekday services are Monday and Thursday at 7:15 am and
+    Sunday at 9 am. Weekly Torah Study with Rabbi Fredi Cooper meets Mondays at 1 pm on Zoom. Adult classes
+    run each term, and about half are online.
+  days:
+  - mon
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Congregation
@@ -59,29 +69,39 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Membership information is on the site. Dues are not stated.
+  text: Membership dues are set in a conversation with each household, and the congregation says no one
+    is turned away for money reasons. Adult classes are open to anyone, each class lists its non-member
+    rate on its registration page, and scholarships are available to members on request.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The adult classes page says to contact the associate rabbi about accommodations or access needs.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Join the Community page, or register for the weekly Torah study
+  how: Call the office at 215.844.1507 or email office@germantownjewishcentre.org before you come, and
+    ask to attend a Friday night service or a class. To start membership, use the online membership form.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Join and registration pages are public. The site does not say whether non-members can attend
-    programs.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The join page says prospective members are welcome at a service or program after a call or email,
+    and the adult classes page says anyone may take a class and gives a registration link for each.
+  what_to_expect: Friday night services start at 6 pm. Adult classes each have their own registration
+    page, and about half of the fall classes are online, so you can try one from home. The site does not
+    say what dress is expected or how long a service runs, so ask the office before your first visit.
+  first_visit_tips:
+  - Call the office before you come, since the site does not say whether non-members may attend Friday
+    night services.
+  - Saturday has separate adult services and children's programs, which run at different times.
+  - The congregation is at 400 West Ellet Street, Philadelphia 19119.
+  - If you sing, the all-volunteer choir rehearses Wednesdays from 7 to 9 pm and welcomes new members.
 contacts:
   website: http://germantownjewishcentre.org/
   email: office@germantownjewishcentre.org
@@ -90,8 +110,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-02
-sign_of_life_url: http://germantownjewishcentre.org/
+last_sign_of_life: 2026-06
+sign_of_life_url: https://germantownjewishcentre.shulcloud.com/torah-study-5786
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -115,8 +135,37 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://germantownjewishcentre.org/prayer-service-times/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://germantownjewishcentre.org/join-gjc/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - contacts
+- url: https://germantownjewishcentre.org/koleinu-beit-midrash/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - access
+  - first_step
+  - what_to_expect
+  - status
+- url: https://germantownjewishcentre.org/community/gjc-choir/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: https://germantownjewishcentre.shulcloud.com/torah-study-5786
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

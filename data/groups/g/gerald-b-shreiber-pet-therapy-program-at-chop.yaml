@@ -31,10 +31,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Each volunteer team visits patients in two-hour shifts, with at least one shift a month.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: CHOP main campus
@@ -49,32 +49,40 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: CHOP Volunteer Services covers health clearances and background checks, and dog screening is free
-    to the owner. Other costs are not stated.
-commitment: null
+  text: CHOP Volunteer Services covers the health clearances and background checks, and the dog screening
+    at Penn's veterinary hospital is free to the owner. The page does not say whether routine vaccines,
+    vet visits or registration fees are covered.
+commitment: monthly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
   notes: null
 requirements:
-  act153_clearances: null
-  background_check: null
+  act153_clearances: true
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: false
-  gear: null
+  gear: A registered therapy dog aged 1 to 10 on a leash. CHOP provides the bandana the dog wears.
 first_step:
-  how: Send the program's interview request through the web form on its page. Applicants have an in-person
-    interview without the dog, then dog screening, health clearances, background checks and a two-hour
-    orientation.
-  drop_in: null
-  sign_up_needed: null
+  how: Read the program's requirements, then send the Application of Interest from its page. The coordinator
+    emails within 5 to 7 business days to set an in-person interview, which you attend without your dog.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: An interview, dog screening, clearances, background checks and an orientation all come before
-    the first visit, and the page says no exemptions are offered.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: An application, an interview, dog screening, health clearances, background checks and an orientation
+    all come before the first visit, and the page offers no exemptions.
+  what_to_expect: 'The steps run in order: an in-person interview, dog screening at Penn''s veterinary
+    hospital, health clearances and background checks, then a two-hour orientation. On your first three
+    visits the program coordinator goes with you. Each visit is a two-hour shift in which you and your
+    dog go room to room to see children in a calmer, more homelike setting.'
+  first_visit_tips:
+  - Wash your dog within 24 hours of a visit, and bring it in dry.
+  - Skip flea and tick topical treatments for two days before a visit.
+  - Keep your dog on a leash and out of strollers or carriers. It wears a CHOP bandana, which the program
+    provides.
+  - The page has no parking or check-in details, so ask the coordinator where to go on your first visit.
 contacts:
   website: https://www.chop.edu/services/gerald-b-shreiber-pet-therapy-program
   email: null
@@ -98,12 +106,19 @@ sources:
   - first_step
   - locations
   - status
+  - schedule
+  - commitment
+  - first_visit_tips
 - url: https://chop.edu/news/day-life-therapy-dog-chop
   seen: '2026-10-08'
   fields:
   - summary
   - status
-research_tier: 1
+- url: https://www.chop.edu/services/gerald-b-shreiber-pet-therapy-program/contact
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

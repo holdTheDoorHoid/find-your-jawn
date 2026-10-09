@@ -6,21 +6,25 @@ ein: null
 summary: A small Reconstructionist congregation that meets mostly at the Ethical Society building near
   Rittenhouse Square. Members take part in worship, holiday events, adult classes, social justice work,
   and the choir.
-what_you_do: Join worship services and holiday events, sign up for adult education or social justice projects,
-  or sing in the choir. The congregation offers lower-cost dues options.
+what_you_do: Join Friday services and holiday events, take part in adult education (mostly on Zoom), sing
+  in the Kol Ha'Leyv choir, or join a social justice project. The congregation says it has affordable
+  dues options.
 kind: congregation
 categories:
 - faith-community
+- music
 interests:
 - worship_community
 - scripture_study
 - faith_service_projects
 - worship_music
+- choir_singing
 motives:
 - values
 - social
 formats:
 - conversation
+- perform_make_together
 roles: []
 crowd:
 - all_adults
@@ -35,10 +39,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site does not print service times. Check the events calendar for dates.
-  days: []
-  times: []
-  recurring: null
+  text: Monthly Friday evening Kabbalat Shabbat with a community dinner before, a monthly Shabbat morning
+    service, and a monthly Rosh Chodesh gathering for women. Shamanu Sessions meet online each week for
+    members. Exact dates and times are on the event calendar.
+  days:
+  - fri
+  - sat
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Ethical Society building (most activities)
@@ -50,10 +60,12 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: Membership and dues options exist. Amounts are not printed on the site.
+  level: paid
+  text: Suggested yearly dues are $650 to $1,200 for a single membership and $975 to $1,700 for a family
+    membership. Membership includes access to all programs, and the site says no one is turned away for
+    money reasons.
 commitment: null
 group_size: null
 access:
@@ -68,14 +80,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Browse the events calendar and register for an event, or contact the congregation about joining
+  how: Email info@leyvhair.org or call 215.629.1995 to ask whether a guest can come to a Friday service
+    before joining, or use the Click To Join form on the site.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Events are listed publicly and there is a clear way to join, but the site does not say whether
-    guests may attend services.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events and a join form are listed publicly, but the site does not say whether guests may attend
+    before joining, and membership is described as including access to programs.
+  what_to_expect: Friday services are monthly and include a community dinner before and a community social
+    hour (oneg) after, led by the rabbi and one other spiritual leader. The site does not say how long
+    a service runs, what to wear, or whether guests pay anything.
+  first_visit_tips:
+  - Ask the office whether a guest can come to a Friday service before you join.
+  - Most programs also run on Zoom, so ask about joining online if that is easier.
 contacts:
   website: http://www.leyvhair.org/
   email: info@leyvhair.org
@@ -105,7 +122,28 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: http://www.leyvhair.org/index.cfm?fuseaction=Page.ViewPage&pageId=492
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: http://www.leyvhair.org/index.cfm?fuseaction=Page.ViewPage&pageId=478
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: http://www.leyvhair.org/index.cfm?fuseaction=Page.ViewPage&pageId=494
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - online_ok
+- url: http://www.leyvhair.org/index.cfm?fuseaction=Page.ViewPage&pageId=501
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - formats
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

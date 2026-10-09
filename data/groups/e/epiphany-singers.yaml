@@ -36,11 +36,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Auditions, Open Sing-Ins, and concerts each have a dated event page on the site. Rehearsal days
-    and times are not published.
-  days: []
-  times: []
-  recurring: null
+  text: Rehearsals are on Saturdays from 1 to 3 pm at the Cathedral Basilica of Saints Peter and Paul.
+    Small ensembles may add extra rehearsals and performances.
+  days:
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Mailing address
@@ -52,7 +54,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Concert and Open Sing-In venue
+- label: Rehearsals, concerts and Open Sing-Ins
   address: 1723 Race St (Cathedral Basilica of Saints Peter and Paul)
   neighborhood: null
   planning_district: null
@@ -64,8 +66,9 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Concert ticket prices and the Open Sing-In fee are not shown on the site.
-commitment: null
+  text: Concert tickets are sold for some concerts. Audition and Open Sing-In fees are not shown on the
+    site.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
@@ -79,14 +82,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the audition page on their website to sign up for the next audition or Open Sing-In.
+  how: Complete the audition form on the audition page (name, age, voice part, email, and phone are required),
+    or watch the events list for an Open Sing-In and sing with the choir for a day.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open Sing-Ins let people sing with the choir for a day and are listed publicly, but ongoing membership
-    is by audition.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The audition page says singers at any level are welcome and explains how to sign up. Membership
+    is by audition, but Open Sing-Ins are a public one-day way to sing with the choir.
+  what_to_expect: 'The audition has five parts: a warm-up, a piece you choose, sight reading, pitch memory,
+    and quartet singing, with the quartet scores and tracks provided before the audition. Members rehearse
+    on Saturdays from 1 to 3 pm at the Cathedral Basilica. The site lists past audition dates but not
+    the next one, and it gives no fee for auditions or Open Sing-Ins.'
+  first_visit_tips:
+  - Prepare a piece that shows your best choral singing, since you choose it for the audition.
+  - Watch the events list for the next Open Sing-In, since the site does not say what to bring.
+  - Email epiphanysingersphila@gmail.com with questions about Open Sing-Ins or auditions.
 contacts:
   website: https://www.epiphanysingers.org
   email: epiphanysingersphila@gmail.com
@@ -127,7 +137,19 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://www.epiphanysingers.org/audition
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+  - first_visit_tips
+- url: https://www.epiphanysingers.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

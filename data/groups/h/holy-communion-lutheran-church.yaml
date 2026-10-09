@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A Lutheran congregation downtown with Sunday worship, a food pantry on the second Wednesday of
   each month, and a 150th anniversary dinner planned for November 7, 2026.
-what_you_do: Come to Sunday worship at 11 am, visit the food pantry on the second Wednesday of the month,
-  or come to the anniversary dinner.
+what_you_do: Come to Sunday worship at 11 am, join the Monday Welcome Church Bible study at 11 am, or
+  visit the food pantry on the second Wednesday of the month. Senior food boxes are handed out on the
+  third Wednesday.
 kind: congregation
 categories:
 - hunger-housing-basic-needs
@@ -32,12 +33,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 11 am. Food pantry on the second Wednesday of the month. The site does not list
-    the pantry hours.
+  text: Sunday worship at 11 am. Food pantry (Food Cabinet) on the second Wednesday of the month, with
+    distribution from 11 am to 1 pm according to the October 2026 calendar. Senior food boxes on the third
+    Wednesday. Welcome Church Bible study on Mondays at 11 am.
   days:
   - sun
+  - mon
   - wed
-  times: []
+  times:
+  - morning
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -53,7 +58,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not listed on the site
+  text: Not listed on the site.
 commitment: drop_in
 group_size: null
 access:
@@ -68,14 +73,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit on a Sunday at 11 am, or call or email the office to ask about the pantry.
+  how: Come to Sunday worship at 11 am, or contact Pastor Terri at info@lc-hc.org or 215-567-3668 to ask
+    how to join the congregation.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has a visitor page, a contact page and an eNews sign-up, but no newcomer program is
-    described.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says the church is open to all, invites newcomers to join, and tells visitors to contact
+    the pastor to learn how to become part of the congregation.
+  what_to_expect: Sunday worship at 11 am includes Communion. The site says the service is live-streamed
+    on Facebook and posted to YouTube, so you can watch first. It does not describe the service in more
+    detail or say whether there is a welcome table.
+  first_visit_tips:
+  - Enter the Sanctuary from 2110 Chestnut Street; the church office door is at 2111 Sansom Street.
+  - Parking and transit are not listed on the site, so call the office first.
 contacts:
   website: https://www.lc-hc.org/
   email: info@lc-hc.org
@@ -85,7 +95,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.lc-hc.org/
+sign_of_life_url: https://www.lc-hc.org/calendar
 sources:
 - url: https://www.lc-hc.org/
   seen: '2026-10-08'
@@ -101,7 +111,28 @@ sources:
   fields:
   - lead
   - contacts
-research_tier: 1
+- url: https://www.lc-hc.org/visitor
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - access
+- url: https://www.lc-hc.org/involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.lc-hc.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://www.lc-hc.org/content.cfm?page_content=announcement_include.cfm&announcement_id=112
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -8,9 +8,9 @@ leads:
 ein: '872734808'
 summary: A community group in Olney that uses sports to help kids grow. It runs seasonal baseball, softball,
   soccer, flag football, and basketball teams, plus a garden club and community center activities.
-what_you_do: Families register kids for seasonal teams in several sports, or take part in garden club
-  and community center activities. The site does not describe volunteer roles or a public event schedule,
-  so ask by email.
+what_you_do: Families register kids for seasonal teams in several sports, or take part in the garden club
+  and community center activities. Each season has its own registration page, and questions go to the
+  group by email.
 kind: nonprofit
 categories:
 - sports-teams
@@ -42,14 +42,28 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Seasonal leagues. Fall baseball began in late August and runs into mid-November playoffs, and
-    fall soccer started in September.
-  days: []
-  times: []
+  text: Soccer practices on Mondays and Wednesdays, 4:45 to 6 pm. Garden club on Mondays and Wednesdays,
+    4:15 to 5 pm. Baseball, basketball, and flag football run in their own seasons, each with its own
+    sign-up page.
+  days:
+  - mon
+  - wed
+  times:
+  - daytime
+  - evening
   recurring: true
   season: fall
 locations:
-- label: Olney
+- label: Community center in Olney
+  address: 5999 Hammond Ave, Philadelphia, PA 19120
+  neighborhood: olney
+  planning_district: null
+  zip: '19120'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Hammond Fields (soccer practice and sign-up)
   address: null
   neighborhood: null
   planning_district: null
@@ -61,7 +75,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No fee is listed on the registration pages read. Ask by email before you sign up.
 commitment: seasonal
 group_size: null
 access:
@@ -76,14 +90,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Open the registration page on felizfiladelfia.org to see which sports are signing up now, or email
-    info@felizfiladelfia.org with questions
+  how: Fill in the online soccer registration form, or sign up in person at Hammond Fields. The fall baseball
+    sign-up closed August 23, 2026, so email info@felizfiladelfia.org about other seasons.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Sign-up pages and an email contact are public, but the site does not list fees or age groups.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Sign-up pages are public, soccer takes online or in-person registration, and the group lists
+    an email contact. The baseball window has closed for the season, and the site describes no volunteer
+    or coaching route.
+  what_to_expect: Soccer practices meet on Mondays and Wednesdays from 4:45 to 6 pm at Hammond Fields.
+    The registration form asks for the child's details, school, medical concerns, pickup people, and a
+    waiver, and the page does not describe tryouts or the first practice.
+  first_visit_tips:
+  - Have the child's birth date, school, and grade ready for the form
+  - Be ready to list who can pick the child up
+  - Accept the waiver and photo release, which the form requires
+  - Ask by email which team or age group your child fits
 contacts:
   website: https://felizfiladelfia.org
   email: info@felizfiladelfia.org
@@ -123,7 +145,35 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+  - locations
+- url: https://felizfiladelfia.org/baseball-registration/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - status
+  - first_step
+  - audience
+- url: https://felizfiladelfia.org/soccer-registration/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - locations
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://felizfiladelfia.org/garden-club/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+- url: https://felizfiladelfia.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

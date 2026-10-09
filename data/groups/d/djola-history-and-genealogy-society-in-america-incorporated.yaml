@@ -8,8 +8,8 @@ leads:
 ein: '874279186'
 summary: A history and genealogy society for people whose African ancestry DNA results link them to the
   Djola family. It shares Djola history, oral histories, and research on DNA, places, and language.
-what_you_do: Join as a member through the society's Become a Member page, or sign up for its newsletter
-  to hear about news and events.
+what_you_do: Join as a member to get help researching your family history and to take part in workshops,
+  tours and events. You can also sign up for the newsletter to hear about news and events.
 kind: nonprofit
 categories:
 - history-heritage-preservation
@@ -38,8 +38,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Listed hours: Monday to Friday, 6:30 to 9 pm, and Saturday and Sunday, 8 am to 6 pm (Eastern
-    time). No events are dated on the page.'
+  text: 'The site lists general hours: Monday to Friday, 6:30 to 9 pm, and Saturday and Sunday, 8 am to
+    6 pm, Eastern time. It does not say what these hours are for. The membership page says the society
+    hosts Zoom meetings every other week, with no days or times given.'
   days:
   - mon
   - tue
@@ -64,10 +65,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: Dues and membership costs are not stated on the page.
+  level: low
+  text: Membership is $25 a year or $250 for life, paid by Zelle or Cash App as the site lists. Donations
+    are also accepted.
 commitment: null
 group_size: null
 access:
@@ -82,14 +84,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for the newsletter on djola.org, or use the Become a Member page to ask how to join.
+  how: Send the society a message through the Become a Member page with your full name, email and phone
+    number, and ask how to join.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site has a membership page and a newsletter form, but it does not explain what membership
-    involves or whether visits are open.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining means paying dues and then being given a password after you message the society, and
+    the site does not say whether non-members can visit or attend events.
+  what_to_expect: The site does not describe a visit. Members are promised help with family research,
+    hard to find information on Djola history, and invitations to workshops, tours and events.
+  first_visit_tips:
+  - The site gives no street address, only a city and ZIP code, so ask where any gathering takes place
+    before you go.
 contacts:
   website: https://www.djola.org
   email: djolahistoricalsociety21@yahoo.com
@@ -97,9 +103,9 @@ contacts:
   contact_name: Jewel Y Felder James
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.djola.org
+status: dormant
+last_sign_of_life: 2021-08
+sign_of_life_url: https://www.djola.org/news
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -126,7 +132,22 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - locations
+- url: https://www.djola.org/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.djola.org/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+  - online_ok
+  - schedule
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

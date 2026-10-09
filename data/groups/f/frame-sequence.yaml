@@ -31,8 +31,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Issue 4 submissions are open Sept 15 to Nov 15, 2026. The March 2027 issue theme is on the submissions
-    page.
+  text: Published twice a year as a print magazine, with an open call for each issue.
   days: []
   times: []
   recurring: true
@@ -40,8 +39,9 @@ schedule:
 locations: []
 online_ok: null
 cost:
-  level: null
-  text: Submission fee and issue prices are not stated on the home page.
+  level: low
+  text: New applicants pay a $25 submission fee, while previously featured artists and DVAA members pay
+    nothing. Past issues cost $20 to $25 each in the shop, with local pickup available.
 commitment: one_off
 group_size: null
 access:
@@ -56,23 +56,31 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Start a submission through the submissions page before Nov 15, 2026, or sign up for the newsletter.
+  how: Start a submission on the submissions page before the issue 4 window closes on Nov 15, 2026
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The open call for work is for artists and writers from any background, per the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The open call is public, has a clear deadline and form, and is open to any artist or writer,
+    but acceptance is by review and the selection criteria are not stated
+  what_to_expect: Submissions go through an external online form, and photo or art work is limited to
+    5 to 10 images per edition. Accepted pieces earn a one-time cash payment plus a share of royalties,
+    and artists keep ownership of their work. The site does not describe selection criteria or when decisions
+    are made.
+  first_visit_tips:
+  - Read the issue theme on the submissions page before you choose work to send
+  - Use JPEG or PNG files at 300 dpi if you can, since 240 dpi is the minimum accepted, each under 10
+    MB
+  - Buy a past issue in the shop first to see the magazine, with local pickup available
 contacts:
   website: https://www.frame-sequence.com
   email: lcphoto@lilycolman.com
   phone: null
-  contact_name: null
+  contact_name: Lily Colman, founder
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.frame-sequence.com/
+sign_of_life_url: https://www.frame-sequence.com/submissions
 sources:
 - url: https://www.frame-sequence.com/
   seen: '2026-10-08'
@@ -88,7 +96,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.frame-sequence.com/submissions
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+  - what_to_expect
+  - first_visit_tips
+  - requirements
+  - status
+- url: https://www.frame-sequence.com/shop
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: https://www.frame-sequence.com/eventspage
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.frame-sequence.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

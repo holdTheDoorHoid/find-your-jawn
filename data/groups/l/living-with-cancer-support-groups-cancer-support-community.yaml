@@ -3,11 +3,11 @@ name: Living With Cancer Support Groups (Cancer Support Community Greater Philad
 aka: []
 leads: []
 ein: null
-summary: Free support groups for adults living with any kind of cancer, run by Cancer Support Community
-  Greater Philadelphia. Members meet weekly to talk about what daily life with cancer is like and to support
-  one another.
-what_you_do: Come to a weekly session, talk about treatment, work, family, and feelings, and hear what
-  other members are dealing with. Sign up for each session in the online calendar.
+summary: Free, closed peer support groups for adults in cancer treatment or up to 18 months after treatment,
+  run by Cancer Support Community Greater Philadelphia. Members meet weekly to share what daily life with
+  cancer is like.
+what_you_do: Join as a member, have a short talk with a program staff member, then attend a weekly peer
+  support session. Sign up for each session in the group's online calendar.
 kind: support_group
 categories:
 - support-recovery
@@ -32,8 +32,8 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Tuesdays at 11 am at the Suzanne Morgan Center at Ridgeland. A second weekly session meets Thursdays
-    at 11:30 am at St. Mary Medical Center.
+  text: 'Weekly sessions: Tuesdays at 11 am at the Suzanne Morgan Center at Ridgeland, and Thursdays at
+    11:30 am at St. Mary Medical Center in Langhorne, Bucks County, outside the city.'
   days:
   - tue
   - thu
@@ -51,16 +51,27 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: St. Mary Medical Center (Thursday session)
+  address: 1201 Langhorne-Newtown Road, Langhorne, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19047'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: free
-  text: Free. Programs are free for anyone affected by cancer, and a free member profile is needed.
+  text: Free. The group's programs are free for anyone affected by cancer, and becoming a member is free
+    too.
 commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The site asks you to call 215-879-7733 for information about public transit to the Ridgeland
+    center.
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,14 +80,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the free member profile, then attend an orientation or a new member meeting. After that,
+  how: Fill out the free New Member Information Profile on the center's website. Then attend a new member
+    orientation, in person or online, or call 215-879-7733 to schedule a New Member Meeting. After that,
     sign up for a session in the online calendar.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone affected by cancer can join for free, but there is a short sign-up process first.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The groups are closed, you need a member profile, and you talk with program staff before attending,
+    so you cannot just walk in. The steps are clear and membership is free.
+  what_to_expect: Expect a short talk with a program staff member before your first group, then weekly
+    peer support sessions. The page asks members to commit to attending regularly. Family members or friends
+    may come with you to a new member meeting.
+  first_visit_tips:
+  - Finish the member profile first, since orientation details are emailed after you complete it.
+  - Pick the location that fits you, since the Tuesday and Thursday sessions meet in different places.
+  - Bring a friend or family member to the new member meeting if you want support, since the page says
+    they may come along.
 contacts:
   website: https://cancersupportphiladelphia.org/
   email: null
@@ -85,7 +104,7 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
+last_sign_of_life: 2026-10
 sign_of_life_url: https://cancersupportphiladelphia.org/
 sources:
 - url: https://cancersupportphiladelphia.org/
@@ -95,13 +114,33 @@ sources:
   - schedule
   - locations
   - contacts
+  - status
+  - last_sign_of_life
 - url: https://cancersupportphiladelphia.org/how-to-join
   seen: '2026-10-08'
   fields:
   - cost
   - first_step
   - audience
-research_tier: 1
+- url: https://cancersupportphiladelphia.org/how-to-join/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - first_step
+  - audience
+- url: https://cancersupportphiladelphia.org/ourprograms2025/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+- url: https://cancersupportphiladelphia.org/our-locations/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

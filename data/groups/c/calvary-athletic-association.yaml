@@ -38,11 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Seasons are listed as Spring 2026 and Fall 2026, with June 2026 games on the calendar. Practice
-    days and times are not published.
+  text: Teams play in seasons, spring and fall, with games at sites across the city. The club does not
+    publish practice days or times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Calvary Athletic Association
@@ -83,14 +83,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Registration page on the club's site. In-house programs start at age 3.
-  drop_in: null
-  sign_up_needed: null
+  how: Choose your child's program on the club's Registration page and fill out the form. A confirmation
+    email follows. In-house programs start at age 3.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Registration is public and the club lists beginner programs for young kids, but tryout rules
-    are not stated.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Registration is open online and in-house programs take young children, but the site does not
+    give practice times, tryout rules, or a welcome page for new families.
+  what_to_expect: Kids play in-house or on travel teams at home sites and other fields across the city.
+    Practice days and times are not published, so ask the club when the first practice is. Fees vary by
+    program, and the fee page does not say which year it covers.
+  first_visit_tips:
+  - 'Read the Code of Conduct before you register: it sets sportsmanship rules for parents at games.'
+  - Ask the club when practices start, since the site does not post them.
+  - Ask how travel team tryouts or evaluations work, because the site does not explain them.
+  - Check which year the fee page covers with the club before you pay.
 contacts:
   website: http://www.calvaryaa.org/
   email: null
@@ -113,6 +120,7 @@ sources:
   - roles
   - interests
   - crowd
+  - audience
 - url: https://www.calvaryaa.org/teams/default.asp?u=CALVARYAA&s=org&p=schedule
   seen: '2026-10-08'
   fields:
@@ -133,7 +141,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: http://www.calvaryaa.org/teams/default.asp?u=CALVARYAA&s=org&p=registration
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - audience
+- url: http://www.calvaryaa.org/teams/default.asp?u=CALVARYAA&s=org&p=custom&pagename=Code+of+Conduct
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+- url: http://www.calvaryaa.org/teams/default.asp?u=CALVARYAA&s=org&p=schedule
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: http://www.calvaryaa.org/teams/default.asp?u=CALVARYAA&s=org&p=custom&pagename=Registration+Fee+Breakdown
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

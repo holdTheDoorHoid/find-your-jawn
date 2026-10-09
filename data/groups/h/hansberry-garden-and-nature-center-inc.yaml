@@ -7,8 +7,8 @@ leads:
 ein: '200255533'
 summary: A community garden and environmental education center in Southwest Germantown that grows food
   and runs classes and public events for children and adults.
-what_you_do: Volunteer in the garden and report your hours, join as a member (a waiting list form is available),
-  or come to a public event on the calendar.
+what_you_do: Fill out the volunteer questionnaire and report your hours, join as a member through the
+  waiting list, or come to a public event on the calendar.
 kind: garden
 categories:
 - gardening-greening
@@ -37,26 +37,33 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public events are on the calendar linked from the News menu. A benefit took place on Saturday,
-    October 3, 2026, from 5 to 8 pm. The next event date is not shown.
-  days: []
-  times: []
-  recurring: false
+  text: Garden Collective work sessions for members run on Tuesday evenings (5:30 to 7:30 pm), Saturday
+    mornings (10 am to 1 pm, except the second Saturday of the month), and the second Sunday evening of
+    the month (5:30 to 7:30 pm). Public events are posted on the calendar. Check the collective's Signal
+    group before you come, since a session may not happen.
+  days:
+  - tue
+  - sat
+  - sun
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Garden
   address: 5150 Wayne Ave
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19144'
   lat: null
   lng: null
   in_city: true
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Membership is a $40 fee, plus a $5 key fee for new members.
 commitment: null
 group_size: null
 access:
@@ -71,25 +78,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the calendar on the website for the next event, and use the volunteer page to sign up to
-    help in the garden.
+  how: Fill out the short volunteer questionnaire linked from the Volunteer page, saying what work interests
+    you and when you are free.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Events are on a public calendar and volunteer sign-up is published, though membership has a waiting
-    list form.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public events are on the calendar and the volunteer page starts with a short questionnaire, but
+    membership runs through a waiting list and the site does not say whether it is open.
+  what_to_expect: Volunteers help with grounds work, the garden's performance and education programs,
+    and keeping volunteers connected, and the site does not list set volunteer days. Membership includes
+    a first year in the Garden Collective, where work sessions are led by two experienced volunteer gardeners.
+  first_visit_tips:
+  - Collective work sessions are for members, so ask about the waiting list before you plan on a regular
+    shift.
+  - Membership is $40 plus a $5 key fee for new members, and new members attend an orientation before
+    they get free garden access.
+  - In 2026, members were asked to attend a spring gathering and log at least 10 hours of garden volunteer
+    work.
 contacts:
   website: https://www.hansberrygarden.org/
-  email: null
+  email: info@hansberrygarden.org
   phone: null
   contact_name: Leonard Darville Jones
-  social: []
+  social:
+  - https://www.facebook.com/HansberryGardenNatureCenter/
+  - https://www.instagram.com/hgnc/
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.hansberrygarden.org/
+sign_of_life_url: https://hansberrygarden.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,7 +133,41 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://hansberrygarden.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+- url: https://hansberrygarden.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+- url: https://hansberrygarden.org/what-we-do/garden-membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - first_visit_tips
+- url: https://hansberrygarden.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://hansberrygarden.org/collective/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - first_visit_tips
+- url: https://hansberrygarden.org/what-we-do-before/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

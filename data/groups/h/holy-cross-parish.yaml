@@ -5,9 +5,9 @@ leads: []
 ein: null
 summary: A Catholic parish in Mount Airy with Sunday Masses, a Saturday evening Vigil Mass, and a parish
   school on East Mount Airy Avenue. A food pantry on East Mount Airy Avenue is also listed.
-what_you_do: Come to Mass, or call the parish office to ask about groups and volunteer work. A Holy Cross
-  Food Pantry at 140 E. Mt. Airy Ave. is named on the Archdiocese July 3, 2026 day of service list, with
-  no hours shown.
+what_you_do: Come to Mass, or call the parish office to ask about groups such as the Legion of Mary, Stewards
+  of Our Earth, the greeters and ushers team, or the Ladies Guild. The parish's HOPE Food Pantry serves
+  neighbors, but the site gives no hours.
 kind: congregation
 categories:
 - faith-community
@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 9 and 11 am, Saturday Vigil Mass at 5 pm, and weekday Mass Tuesday to Friday
-    at 8 am.
+  text: Saturday Vigil Mass at 5 pm. Sunday Masses at 9 am (livestreamed), 11 am and 6 pm. Weekday Mass
+    Tuesday to Friday at 8 am. Confession Saturdays 4 to 4:30 pm or by appointment.
   days:
   - sat
   - sun
@@ -48,9 +48,18 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Parish office and church
+- label: Church
+  address: 140 E. Mt. Airy Ave.
+  neighborhood: mount_airy_east
+  planning_district: null
+  zip: '19119'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Parish office
   address: 154 E. Mt. Airy Ave.
-  neighborhood: null
+  neighborhood: mount_airy_east
   planning_district: null
   zip: '19119'
   lat: null
@@ -64,9 +73,10 @@ cost:
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The site says the church is wheelchair accessible. It does not describe the entrance or whether
+    there is an elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,23 +85,29 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to any listed Mass, or call the parish office to ask how to join a group
+  how: Come to any Mass listed above, then register online or pick up a paper form at the parish office
+    to join Holy Cross.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Mass is open to anyone and the parish office phone is listed
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says all are welcome and invites visitors to come and see, and it offers an online form
+    and paper forms for joining the parish.
+  what_to_expect: Mass is free and open to anyone. The site does not describe what a first visit is like
+    or how long Mass runs, but the 9 am Sunday Mass is livestreamed if you want to watch first. Ask the
+    parish office how to join a group if you want to volunteer.
+  first_visit_tips:
+  - The parish office is open Monday to Friday, 9 am to 3 pm, at 154 E. Mt. Airy Ave.
+  - Paper join forms are at the parish office, and the online form is linked from the site.
 contacts:
   website: https://www.holycrossphl.org
-  email: null
+  email: secretary@holycrossphl.org
   phone: 215-438-2921
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.holycrossphl.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://holycrossphl.org/category/flocknotes/
 sources:
 - url: https://archphila.org/parish/holy-cross-philadelphia/
   seen: '2026-10-08'
@@ -111,8 +127,27 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://holycrossphl.org/mass-times-confession/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://holycrossphl.org/register-online/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://holycrossphl.org/directions/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - contacts
+- url: https://holycrossphl.org/category/flocknotes/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

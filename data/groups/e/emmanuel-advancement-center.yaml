@@ -5,17 +5,21 @@ leads:
 - irs_990n:471538358
 - irs_bmf:471538358
 ein: '471538358'
-summary: Nonprofit offering tutoring, adult education, career planning and job placement, mentoring, and
-  health and wellness help, started through a request form.
+summary: A Philadelphia nonprofit that offers one-on-one reading and math tutoring, adult education, career
+  planning and job placement, mentoring, and health and wellness help. You start each one with a request
+  form or a phone call.
 what_you_do: Request tutoring, adult education, career planning, mentoring, or wellness help through the
-  site's forms, or learn about volunteering on the volunteer page.
+  site's request forms or by phone. You can also fill in the volunteer form on the volunteer page.
 kind: nonprofit
 categories:
 - careers-skills-professional
 - kids-youth-mentoring
+- science-learning
 interests:
 - job_clubs
 - tutoring
+- mentoring
+- adult_learning
 motives:
 - career
 - values
@@ -40,11 +44,11 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Philadelphia (street address not published)
-  address: null
+- label: Center (as published)
+  address: 5132 N 4th St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19120'
   lat: null
   lng: null
   in_city: true
@@ -67,18 +71,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the Request More Information form on the site for tutoring, career planning, mentoring,
-    or health and wellness.
+  how: Fill in the Request More Information form for Education or Career Planning & Placement, or call
+    215-874-3282 or toll-free 800-322-6942 to ask about tutoring or career help.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Starts with a request form, and the site lists no dates, eligibility or fees, so the way in is
-    unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Each program starts with a request form. The site gives no eligibility rules, fees, or steps
+    after a request, so the way in is unclear, although phone lines are listed.
+  what_to_expect: Tutoring is one-on-one with a certified instructor, with a personal assessment plan
+    and progress reports, focused on reading and math. Career help includes planning, resume writing,
+    mentoring, job search help and workshops. The site does not say how long sessions last, where they
+    happen, or what they cost.
+  first_visit_tips:
+  - Ask on the phone whether sessions are in person or online, since the site does not say.
+  - The office is at 5132 N 4th St., and the site does not describe parking or transit.
 contacts:
   website: https://www.emmanueladvancementcenter.org
-  email: null
+  email: info@emmanueladvancementcenter.org
   phone: 215-874-3282
   contact_name: Ryakkia Johnson
   social:
@@ -111,8 +120,33 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.emmanueladvancementcenter.org/tutoring/3068758
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - what_to_expect
+  - interests
+- url: https://www.emmanueladvancementcenter.org/career-planning-placement/3069026
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+- url: https://www.emmanueladvancementcenter.org/volunteer/3127276
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.emmanueladvancementcenter.org/news-events/5313247
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.emmanueladvancementcenter.org/contact/3068760
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

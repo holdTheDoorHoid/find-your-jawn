@@ -7,8 +7,9 @@ leads:
 ein: '233029582'
 summary: A nonprofit Islamic educational center on Haverford Avenue, founded in 2000, that serves Iranian
   American Muslims. Its Friday night program includes prayers, a lecture and a shared dinner.
-what_you_do: Come to the Friday night program, which starts at 7 pm with prayers, a lecture and dinner.
-  The imam is available in person on Fridays and on special occasions.
+what_you_do: Come to the Friday night program, which starts at 7 pm with prayers, a talk and a meal. The
+  imam is at the center in person on Fridays and on special occasions, and you can email info@mahdieh.org
+  with questions.
 kind: congregation
 categories:
 - faith-community
@@ -40,9 +41,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Friday night program starts at 7 pm with the call to prayer and the Maghrib and Isha prayers,
-    then a lecture and dinner. Religious observance dates are posted as all day events with month and
-    day only.
+  text: The Friday night program starts at 7 pm with the evening prayers, then a talk, then a meal that
+    continues after the program.
   days:
   - fri
   times:
@@ -62,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated; the center takes donations through PayPal
+  text: Not stated. The center is funded by donations and takes monthly giving through PayPal.
 commitment: null
 group_size: null
 access:
@@ -77,14 +77,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Friday night program, or email info@mahdieh.org
+  how: Come to the Friday night program at 7 pm, or email info@mahdieh.org before you visit to ask about
+    visitors and what to expect.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site describes the Friday program but does not say how a newcomer should start or whether
-    visitors are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site describes the Friday program and says the imam is there in person on Fridays, but it
+    does not say whether visitors are welcome or how a newcomer should start.
+  what_to_expect: The Friday program starts at 7 pm with the call to prayer and the evening prayer, then
+    a reading of a traditional prayer and a talk. A meal follows and continues after the program. The
+    site does not say whether visitors join the prayers, what to wear, or how long the evening runs.
+  first_visit_tips:
+  - Email info@mahdieh.org before you come, since the site does not say how visitors are welcomed.
+  - Arrive by 7 pm, when the program starts.
+  - Ask the imam, who is at the center in person on Fridays, about dress and seating.
 contacts:
   website: https://www.mahdieh.org/
   email: info@mahdieh.org
@@ -94,7 +100,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.mahdieh.org/
+sign_of_life_url: https://www.mahdieh.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,11 +126,28 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - first_step
 - url: https://pa.cair.com/directory/mosques/eastern/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.mahdieh.org/about-us/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - first_step
+- url: https://www.mahdieh.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.mahdieh.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

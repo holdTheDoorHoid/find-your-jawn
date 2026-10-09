@@ -31,8 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workshops and events are listed on an online calendar. A Business of Art session is set for November
-    18, 2026, 6:30 to 7:30 pm.
+  text: Workshops, short business events, and coaching sessions are listed on the events calendar. Coaching
+    is by application, and availability changes through the year.
   days: []
   times:
   - evening
@@ -60,7 +60,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: Not stated on the site; check each event page
+  text: Not stated on the site. Check each event page.
 commitment: null
 group_size: null
 access:
@@ -75,24 +75,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a workshop on the events calendar and register on its page, or use the Contact Us page.
+  how: Pick a workshop on the upcoming events calendar and register on its page, or call the Philadelphia
+    office at 215.545.3100 to ask about the Start It Grow It program.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Workshops and events are open to the public with registration on each event page. Loan and grant
-    eligibility is not listed.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site says it meets people where they are in experience, and its Start It Grow It program
+    is aimed at people starting a business, with a clear way to register or call.
+  what_to_expect: Most sessions are short workshops on topics such as online marketing, managing money,
+    and getting a loan, and you register on each event page. One-on-one coaching needs an application
+    and depends on availability. The site does not give the length or cost of most sessions, so ask before
+    you come.
+  first_visit_tips:
+  - Register on the event page before you go, since walk-ins are not described.
+  - Call 215.545.3100 to ask the cost and the room for the session you want.
+  - The contact page lists a second Philadelphia address, 400 Market Street, Suite 210, with no note on
+    which is current, so confirm before you visit.
 contacts:
   website: https://myentrepreneurworks.org
-  email: null
+  email: info@entrepreneurworks.org
   phone: 215.545.3100
   contact_name: null
   social: []
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://myentrepreneurworks.org
+sign_of_life_url: https://myentrepreneurworks.org/workshops-business-coaching-and-events/upcoming-events/
 sources:
 - url: https://myentrepreneurworks.org
   seen: '2026-10-08'
@@ -109,7 +117,31 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://myentrepreneurworks.org/workshops-business-coaching-and-events/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+- url: https://myentrepreneurworks.org/workshops-business-coaching-and-events/upcoming-events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://myentrepreneurworks.org/start-it-grow-it/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://myentrepreneurworks.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

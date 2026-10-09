@@ -19,7 +19,8 @@ formats:
 - learn_skill
 roles:
 - figure_out
-crowd: []
+crowd:
+- professionals
 bridging: null
 audience:
   open_to: public
@@ -31,18 +32,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Virtual workshops and a 6-session cohort. Next listed: Nov 19, 2026, 12 to 3 pm ET. Cohort starts
-    Jan 27, 2027 (Wednesdays through Mar 3, 12 to 2 pm ET).'
+  text: Intro workshops are virtual, 90 minutes long, and held on several dates a year. The Foundation
+    Program is a six week virtual cohort with two hour sessions on Wednesdays.
   days: []
   times:
   - daytime
-  recurring: false
+  - evening
+  recurring: true
   season: event_only
 locations: []
 online_ok: true
 cost:
   level: null
-  text: No program prices are listed on the site.
+  text: No prices are listed for the workshops, the cohort, or the training. The brain pattern self-assessment
+    is free, and so is a short summary guide that you get by filling out a form.
 commitment: one_off
 group_size: null
 access:
@@ -57,13 +60,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a virtual intro workshop through the events page, or email info@calmclarity.org.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: A 90 minute intro workshop is open to anyone, and the site says how to register.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for an intro workshop from the events page, or email info@calmclarity.org with questions.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Intro workshops have open public registration and the site lays out the steps to start, but the
+    site is written for organizations and does not say beginners are welcome.
+  what_to_expect: The 90 minute virtual intro workshop introduces the group's brain pattern framework.
+    The site aims its training at leaders, managers, and HR or learning staff, so expect a room of working
+    professionals. The site lists no price for the workshop.
+  first_visit_tips:
+  - Listings show Eastern Time, so work out the start time in your own zone before you register.
+  - Take the free brain pattern self-assessment first if you want a taste of the material.
 contacts:
   website: https://www.calmclarity.org
   email: info@calmclarity.org
@@ -89,7 +97,24 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.calmclarity.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+  - cost
+- url: https://www.calmclarity.org/training
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - first_step
+- url: https://www.calmclarity.org/foundationprogram
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step.what_to_expect
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

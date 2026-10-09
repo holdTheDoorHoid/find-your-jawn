@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: The mother church of the Catholic Archdiocese of Philadelphia, open to anyone who wants to pray
   or attend Mass. Its website lists weekend and weekday Mass times and a public phone line.
-what_you_do: Attend Mass at the Cathedral Basilica or in the Cathedral Chapel, including a Spanish Mass
-  on Sunday. The site does not list other groups or service programs.
+what_you_do: Attend Mass in the Basilica or the Cathedral Chapel, including a Spanish Mass on Sunday.
+  The site also lists nine volunteer ministries, from greeters and lectors to music and visits to the
+  sick.
 kind: congregation
 categories:
 - faith-community
@@ -17,7 +18,8 @@ motives:
 - social
 formats:
 - side_by_side
-roles: []
+roles:
+- hands_on
 crowd:
 - all_ages
 bridging: null
@@ -32,9 +34,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 8, 9:30 and 11 am (11 am livestreamed), a Spanish Mass at 12:30 pm, and 6:30
-    pm. Weekday Masses at 7:15 am and 12:05 pm, a Saturday Mass at 12:05 pm, and an anticipated Saturday
-    Mass at 5:15 pm.
+  text: Sunday Masses at 8, 9:30 and 11 am (the 11 am Mass is livestreamed), a Spanish Mass at 12:30 pm
+    in the Cathedral Chapel, and a 6:30 pm Mass. Weekday Masses at 7:15 am and 12:05 pm, a Saturday Mass
+    at 12:05 pm, and an anticipated Saturday Mass at 5:15 pm.
   days:
   - mon
   - tue
@@ -50,7 +52,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Cathedral Basilica (mailing address as printed on the site)
+- label: Cathedral Basilica (at 18th Street and the Benjamin Franklin Parkway)
   address: 1723 Race Street
   neighborhood: null
   planning_district: null
@@ -62,15 +64,17 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Mass is free to attend.
+  text: The site lists no fee to attend Mass, and it does not ask for a donation at Mass.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages:
   - en
   - es
-  notes: null
+  notes: Three outside doors have ramps. Only the door off the main parking lot has an automatic push
+    button, and the other doors need someone to open them. The site describes the building as limited
+    for wheelchair access.
 requirements:
   act153_clearances: null
   background_check: null
@@ -79,14 +83,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to any Mass listed on the site. For other questions, call the cathedral at (215) 561-1313.
+  how: Come to any Mass on the schedule. To ask about joining or registering, call the parish office at
+    (215) 561-1313 or talk with a priest after Mass.
   drop_in: true
   sign_up_needed: false
-  newcomer_friendliness: 3
-  basis: Mass times are posted publicly and the site gives a public phone line, but it describes no newcomer
-    program.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site has a Welcoming Committee that calls newly registered families, a clear way to register,
+    and Mass open to anyone. It describes no separate class for visitors.
+  what_to_expect: Mass is held in the Basilica or the Cathedral Chapel at set times, and a Spanish Mass
+    is offered on Sunday. The site does not say how long Mass runs or where to sit, but greeters are there
+    to welcome and seat people. You do not need to sign up to attend.
+  first_visit_tips:
+  - On Saturdays, Sundays, and Holy Days, visitors can park in the parish lot at 222 North 17th Street.
+  - Use the door off the main parking lot, which has the automatic push button.
+  - The 11 am Sunday Mass is livestreamed if you cannot come in person.
+  - Call the parish office at (215) 561-1313 with questions before you come.
 contacts:
   website: https://cathedralphila.org
   email: null
@@ -106,6 +117,9 @@ sources:
   - first_step
   - contacts
   - status
+  - schedule
+  - cost
+  - access
 - url: https://archphila.org/parish/cathedral-basilica-of-ss-peter-paul-philadelphia/
   seen: '2026-10-08'
   fields:
@@ -120,7 +134,22 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+- url: https://cathedralphila.org/visitor-information/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - locations
+  - first_visit_tips
+- url: https://cathedralphila.org/ministry-and-volunteer-opportunities/
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - what_you_do
+- url: https://cathedralphila.org/join-the-cathedral/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

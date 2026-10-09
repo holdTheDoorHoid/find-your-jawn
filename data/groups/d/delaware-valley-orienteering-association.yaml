@@ -32,11 +32,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: About 45 events a year at parks and environmental centers, typically 10 am to 1 pm, with registration
-    until 1 pm. Dates are on the club's event schedule.
+  text: About 45 events a year at parks and environmental centers. Most start between 10 am and 1 pm,
+    with registration until 1 pm and courses closing around 3:30 or 4 pm.
   days: []
   times:
   - morning
+  - daytime
   recurring: true
   season: null
 locations:
@@ -53,7 +54,9 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Members pay reduced event fees. Map and event prices are on the club's pricing sheet.
+  text: Members pay reduced event fees and get a quarterly newsletter and library checkout. Event and
+    map prices are in a Google Doc linked from the club's info page, so check it before you go. You can
+    join or renew online.
 commitment: drop_in
 group_size: null
 access:
@@ -68,23 +71,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick an event from the club's schedule and come on the day, or join online at dvoa.org/join.
+  how: Pick an event on the club's Event Schedule and arrive before 1 pm to register.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The club says events are open to the public and beginners always get instruction.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Learn section is the club's starting point for new people, and the club says beginners always
+    get instruction at events.
+  what_to_expect: An event runs about 10 am to 1 pm, and you walk or jog a course with a map and compass.
+    Courses are printed on the map in colors from White to Red, and the White course is the beginner level
+    that several events offer. Some events run a beginners clinic that starts at 10 am.
+  first_visit_tips:
+  - Arrive before 1 pm, because the last start is at 1 pm.
+  - Look for a White course or a beginners clinic in the event listing.
+  - Check the linked price sheet before you go, since prices are not on the main pages.
+  - The events listed from October 2026 to May 2027 are all outside Philadelphia city, so plan on a drive.
 contacts:
   website: https://www.dvoa.org/
   email: frankdvoa@aol.com
   phone: null
-  contact_name: null
+  contact_name: Mary Frank, club secretary
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-03
-sign_of_life_url: https://www.dvoa.org/download/DVOA_Event_Schedule_2026-03-25.pdf
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.dvoa.org/events/sked
 sources:
 - url: https://www.dvoa.org/info
   seen: '2026-10-08'
@@ -100,7 +110,18 @@ sources:
   seen: '2026-10-08'
   fields:
   - last_sign_of_life
-research_tier: 1
+- url: https://www.dvoa.org/learn
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.dvoa.org/events/sked
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - last_sign_of_life
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

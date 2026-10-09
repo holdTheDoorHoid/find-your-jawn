@@ -37,14 +37,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: School celebrations and fundraisers through the school year. The newest listed event is Fun Day,
-    held May 29, 2026. No meeting times are shown on the site.
+  text: The board meets monthly, and each board member is expected to serve on at least one committee.
+    Committees take new members at any point in the school year. Volunteers also help with recurring school
+    events such as Movie Night and the Back to School Jam.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: School (address listed on the group's site)
+- label: Marian Anderson Neighborhood Academy
   address: 2000 Catharine St
   neighborhood: null
   planning_district: null
@@ -71,25 +72,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer or board interest form linked from the group's website. Some school jobs,
-    such as chaperoning field trips, need school district clearances.
+  how: Fill in the Volunteer/Board Interest form linked from the Connect page, or help at a school event
+    such as Movie Night or the Back to School Jam.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site links a public interest form for volunteers and board members. It does not say whether
-    membership needs approval or dues.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Connect page links a public interest form, and people can join a committee at any point in
+    the school year. No dues or approval step is stated.
+  what_to_expect: Committees and events run through the school year. The board meets monthly, and each
+    board member is expected to serve on at least one committee. The site does not give meeting times,
+    a time commitment or dues, so ask when you fill in the form.
+  first_visit_tips:
+  - Ask about school district clearances before you sign up for classroom, field trip or after-school
+    club help.
+  - Subscribe to the MANAS newsletter, or follow the group on Facebook or Instagram, to hear about events.
 contacts:
   website: https://www.manasupporters.org/
   email: null
   phone: null
   contact_name: Matthew Olesh
-  social: []
+  social:
+  - https://www.instagram.com/manas_philly
+  - https://www.facebook.com/MANASphilly
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-05
-sign_of_life_url: https://www.manasupporters.org/
+sign_of_life_url: https://www.manasupporters.org/wildcatden/fun-day-2026-celebrating-another-great-year
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,13 +126,31 @@ sources:
   - last_sign_of_life
   - locations
   - contacts.website
+  - contacts.social
 - url: https://www.manasupporters.org/connect
   seen: '2026-10-08'
   fields:
   - first_step
   - what_you_do
-research_tier: 1
-confidence: medium
+  - contacts
+- url: https://www.manasupporters.org/who-we-are
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.manasupporters.org/about
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.manasupporters.org/wildcatden/fun-day-2026-celebrating-another-great-year
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

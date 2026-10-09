@@ -5,11 +5,11 @@ aka:
 leads:
 - irs_990n:232755161
 ein: '232755161'
-summary: A member-run rowing club on the Schuylkill River at Boathouse Row. Adults can join and row at
-  any level, and young people can take part in summer and junior rowing programs.
-what_you_do: Members row the club's boats on the river, from a first outing up to masters racing. The
-  club also runs junior and summer rowing programs. Anyone can walk the public riverfront path, which
-  is open year round.
+summary: A member-run rowing club on the Schuylkill River at Boathouse Row. Adults join through member
+  sponsorship and can row at any level, and young people can take part in summer and junior rowing programs.
+what_you_do: Members row the club's boats on the river at any level, from novice to masters. The club
+  also runs youth summer and junior rowing programs. The riverfront path in front of the boathouses is
+  public and free year round.
 kind: club
 categories:
 - water-rowing
@@ -38,9 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Membership runs year round, with summer coaching and junior programs
+  text: Membership runs year round. Summer programs run on the river, and novice sessions usually run
+    8 to 11 am, Monday to Thursday.
   days: []
-  times: []
+  times:
+  - morning
   recurring: true
   season: year_round
 locations:
@@ -56,7 +58,8 @@ locations:
 online_ok: false
 cost:
   level: paid
-  text: Membership dues apply. Amounts were not read.
+  text: Adult membership dues are $550 a year, plus $150 per seat for boat storage. Summer youth programs
+    are $800 each, and the club confirms fees each season at registration.
 commitment: ongoing_role
 group_size: null
 access:
@@ -69,20 +72,28 @@ requirements:
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: Racing uniforms are not included in the development and junior programs.
 first_step:
-  how: Send an inquiry through the membership form on crescentboatclub.org, or apply to a summer or junior
-    rowing program from the youth rowing page.
+  how: Send the membership inquiry form on crescentboatclub.org, or apply to a summer youth program through
+    RegattaCentral. Questions go to board@crescentboatclub.org.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The club says no rowing experience is needed and points newcomers to a membership inquiry form
-    and beginner-friendly youth and summer programs.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Adult membership needs two member sponsors and annual dues before a first row. The youth Novice
+    program is written for people who have never rowed, but it also needs an application and a fee.
+  what_to_expect: Adult members can row at any level, but coaching is not part of membership, so people
+    who have never rowed arrange their own coaching, and several members coach privately. Summer youth
+    programs include a Novice program that teaches boat handling and crew rowing, and parents attend an
+    organizational meeting. The page does not describe a first outing for adults.
+  first_visit_tips:
+  - Read the By-laws, Rules and Safety page before your first practice, since the club requires athletes
+    and parents to read it.
+  - Racing uniforms are not included in the development and junior programs, so plan for that cost.
+  - Walk the public riverfront path in front of the boathouses to see the setting before you apply.
+  - Contact board@crescentboatclub.org before you pay if you are not sure which summer program fits.
 contacts:
   website: https://crescentboatclub.org
-  email: null
+  email: board@crescentboatclub.org
   phone: null
   contact_name: William Shea
   social: []
@@ -99,6 +110,7 @@ sources:
   - contacts.website
   - contacts.contact_name
   - ein
+  - contacts
 - url: https://crescentboatclub.org/news/
   seen: '2026-10-08'
   fields:
@@ -114,7 +126,21 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+- url: https://crescentboatclub.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - audience
+- url: https://crescentboatclub.org/youth-rowing/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - requirements
+  - contacts
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -41,11 +41,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekly tafsir and hadith circles, and Quran classes. Prayer times are shown as images that could
-    not be read. No class days or times are in readable text.
+  text: Weekly tafsir and hadith circles and Quran classes are listed, but the site gives no days or times
+    for them. Friday prayer with a sermon is held weekly. Prayer times appear only in images on the site.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Masjid al-Jamia
@@ -65,8 +65,10 @@ commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - ar
+  notes: Sermons are given in Arabic with an English translation.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,14 +77,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Call (267) 275-8087 or use the contact form on the site
+  how: Call (267) 275-8087 to ask about the next tafsir or hadith circle and the children's Islamic school,
+    since the site gives no class times.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Classes are said to be open to all ages, and the site lists a phone number and a contact form,
-    but it does not say how to register or whether classes cost money.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says its programs are for all ages and gives a phone line and a contact form. It does
+    not give class times, costs or registration steps, and two of its forms link nowhere.
+  what_to_expect: The mosque is in the former Commodore Theatre building on Walnut Street. It was founded
+    in 1988 by members of a university Muslim students group and serves a diverse congregation. The circles
+    cover Quran commentary and the Prophet's sayings, and the children's school teaches Quran, Arabic
+    and Islamic character. The site does not say how long sessions run or what they cost, so the phone
+    call is the best first step.
+  first_visit_tips:
+  - Call (267) 275-8087 before you come, because the site gives no visiting hours.
+  - The Friday sermon is given in Arabic with an English translation.
+  - The mosque is at 4228 Walnut Street in West Philadelphia.
 contacts:
   website: https://masjidaljamia.com/
   email: null
@@ -92,8 +102,8 @@ contacts:
   - https://www.youtube.com/channel/UCcseT0PPYzv8MH-z02IZvSw
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://masjidaljamia.com/
+last_sign_of_life: 2025-08
+sign_of_life_url: https://masjidaljamia.com/announcement/
 sources:
 - url: https://masjidaljamia.com/
   seen: '2026-10-08'
@@ -110,7 +120,26 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://masjidaljamia.com/services/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - first_step
+  - access
+- url: https://masjidaljamia.com/announcement/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+- url: https://masjidaljamia.com/about/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_step
+  - access
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

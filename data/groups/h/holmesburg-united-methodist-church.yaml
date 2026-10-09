@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A United Methodist church on Frankford Avenue with Sunday worship at 10:30 am, a Tuesday food
   pantry open to the community, and a community program called Ann's Attic.
-what_you_do: Attend Sunday worship, use the Tuesday food pantry, or visit Ann's Attic during its set hours.
-  Other ministries are listed on the site for members and visitors.
+what_you_do: Attend Sunday worship, use the Tuesday food pantry, or shop at Ann's Attic, the church's
+  thrift shop, during its set hours. Teen Bible meets on Tuesday evenings.
 kind: congregation
 categories:
 - faith-community
@@ -37,7 +37,8 @@ audience:
   support_group: false
 schedule:
   text: Sunday worship at 10:30 am. Food pantry on Tuesdays, 10 am to 2 pm. Ann's Attic on Mondays noon
-    to 2 pm, Wednesdays 10 am to 2 pm, and the first and third Saturdays 10 am to 2 pm.
+    to 2 pm, Wednesdays 10 am to 2 pm, and the first and third Saturdays 10 am to 2 pm. Teen Bible on
+    Tuesdays at 7 pm.
   days:
   - sun
   - mon
@@ -47,12 +48,13 @@ schedule:
   times:
   - morning
   - daytime
+  - evening
   recurring: true
   season: year_round
 locations:
 - label: Church building
   address: 8118 Frankford Avenue
-  neighborhood: null
+  neighborhood: holmesburg
   planning_district: null
   zip: '19136'
   lat: null
@@ -77,14 +79,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to Sunday worship at 10:30 am, or use the site's contact form or call the church
+  how: Come to Sunday worship at 10:30 am, or call 215-624-6900 or email holmesburgumc@gmail.com before
+    a first visit.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site invites friends, family and neighbors to worship and gives a contact form and phone
-    number
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site invites friends, family and neighbors to worship and gives a phone number, an email
+    and a contact form, but it does not describe a welcome process.
+  what_to_expect: Sunday worship starts at 10:30 am at the church on Frankford Avenue. The site calls
+    the congregation inclusive and welcoming, but it does not describe the service, how long it runs or
+    what to wear. Calling ahead is the best way to learn what a first visit is like.
+  first_visit_tips:
+  - Call or email ahead to ask what the service is like.
+  - The site does not list parking or transit, so ask when you call.
 contacts:
   website: https://holmesburgumc.com
   email: holmesburgumc@gmail.com
@@ -105,8 +112,19 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - access
+- url: https://holmesburgumc.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: https://holmesburgumc.com
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

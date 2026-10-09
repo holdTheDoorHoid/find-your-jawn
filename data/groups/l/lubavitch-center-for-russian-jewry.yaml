@@ -7,8 +7,8 @@ leads:
 ein: '273983692'
 summary: A Chabad center on Byberry Road in Bustleton with its own shul, a Hebrew school, a Sunday program,
   a teen club, and women's gatherings.
-what_you_do: Attend services at the shul, enroll children in the Hebrew school or Sunday program, join
-  the teen club or a women's circle, or ask the rabbi a question online.
+what_you_do: Come to Friday evening or Shabbat morning services, enroll children in the Hebrew school,
+  ask about the teen club or women's circle, or send a question through the site.
 kind: congregation
 categories:
 - faith-community
@@ -39,11 +39,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Shabbat services, Hebrew school, and a Sunday program. The site does not print regular days or
-    times.
-  days: []
-  times: []
-  recurring: null
+  text: Friday evening services are listed at 6:30 to 7 pm. Shabbat morning services begin at 10 am, followed
+    by kiddush at 12:30 pm. The school's Location and Tuition page lists Sunday hours of 11 am to 2 pm.
+  days:
+  - fri
+  - sat
+  - sun
+  times:
+  - evening
+  - morning
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Center
@@ -57,8 +63,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: The Hebrew school has tuition. Amounts are on its registration page, which was not read.
+  level: low
+  text: Hebrew school tuition is $300 per child; the page does not say whether that is per year. No child
+    is turned away for lack of funds, and families can call to talk about costs. The pages read do not
+    list a charge for services.
 commitment: null
 group_size: null
 access:
@@ -73,14 +81,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Ask the rabbi through the site's question form, or call 215-514-0729
+  how: Come to the Friday evening service at 6:30 pm or the Shabbat morning service from 10 am, or call
+    215-514-0729 first to ask about Hebrew school, the teen club or the women's circle. You can also send
+    a question through the site's form.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Clear ways to ask questions and join the mailing list are listed, but the site does not say how
-    visitors are welcomed at services.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says the congregation welcomes all people regardless of level of religious practice
+    or background, and gives a phone number and a question form to start. It does not describe what a
+    first service is like.
+  what_to_expect: Services are led by Rabbi Sholom Goldshmid. The Friday service is listed as 6:30 to
+    7 pm, and Shabbat morning services start at 10 am and are followed by kiddush at 12:30 pm. The site
+    does not describe seating, dress, or how guests are greeted, so ask when you call.
+  first_visit_tips:
+  - Call 215-514-0729 before you come to ask about dress and seating, which the site does not cover.
+  - 'Plan your ride: the site does not mention parking or transit.'
+  - Arrive a few minutes before the service starts.
 contacts:
   website: https://www.lubavitchbustleton.org/
   email: null
@@ -110,7 +126,25 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://lubavitchbustleton.org/1635995
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - locations
+- url: https://lubavitchbustleton.org/1698679
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - contacts
+- url: https://lubavitchbustleton.org/templates/articlecco_cdo/aid/6380175/jewish/Location-Tuition.htm
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

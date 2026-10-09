@@ -38,15 +38,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Classes run during the school year. The site lists a Fall 2026 JA Finance Park program and a 2026
-    to 2027 after-school company program. Class times are set between each volunteer and a program manager,
-    and no fixed weekly time is given.
+  text: Classes run during the school year. Times are set between each volunteer and a program manager,
+    with no fixed weekly time.
   days: []
   times: []
   recurring: true
   season: fall
 locations:
-- label: Office, Friends Center (listed as a tenant)
+- label: Mailing address, Friends Center building (mail only, no visitors)
   address: 1501 Cherry Street
   neighborhood: null
   planning_district: null
@@ -58,8 +57,8 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: No volunteer fee is listed. Participant costs are not stated on the pages read, and the group
-    offers sponsorships.
+  text: No volunteer fee is listed. Programs are funded by Impact Partners, and the pages list no participant
+    fee.
 commitment: seasonal
 group_size: null
 access:
@@ -74,13 +73,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer sign-up form, then attend the short training with a program manager.
+  how: Fill in the volunteer sign-up form on the Volunteer page. A program manager then contacts you to
+    pick a grade range and schedule, and you attend a short training.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The sign-up steps are spelled out and a short training comes before teaching.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The sign-up steps are spelled out in order, and a short training with a program manager comes
+    before teaching. The page does not say whether teaching experience is needed.
+  what_to_expect: Expect a short training with a program manager, who answers your questions before you
+    teach. You then choose a grade range from K to 12 and a schedule together, often at a class near your
+    home or work. Classes can be in person or virtual.
+  first_visit_tips:
+  - 'Do not come to 1501 Cherry Street expecting an office: the address is for mail, and the office does
+    not take visitors.'
+  - Call 267-519-5307 with questions before you fill in the form.
+  - Think about the grade range you would like before the program manager calls you.
 contacts:
   website: https://southeasternpa.ja.org/
   email: null
@@ -88,9 +95,9 @@ contacts:
   contact_name: The Organization
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://southeasternpa.ja.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://southeasternpa.ja.org/events/index
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -105,6 +112,7 @@ sources:
   - summary
   - status
   - contacts
+  - cost
 - url: https://southeasternpa.ja.org/volunteer/index
   seen: '2026-10-08'
   fields:
@@ -126,8 +134,19 @@ sources:
   - schedule
   - cost
   - contacts
-research_tier: 1
-confidence: medium
+- url: https://southeasternpa.ja.org/events/index
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://southeasternpa.ja.org/about/contact-us
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

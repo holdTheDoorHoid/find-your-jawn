@@ -34,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open Tuesdays 11 am to 4 pm, or by appointment. Email to book a guided visit, which needs seven
-    days notice. Children under 14 must come with an adult.
+  text: Open Tuesdays 11 am to 4 pm, or by appointment. Guided visits are booked by email at least seven
+    days ahead. Children under 14 must come with an adult.
   days:
   - tue
   times:
@@ -43,9 +43,9 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Museum
+- label: Museum, Lewis-Pattison House
   address: 8110 Frankford Ave
-  neighborhood: null
+  neighborhood: holmesburg
   planning_district: null
   zip: '19136'
   lat: null
@@ -55,7 +55,8 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: No admission fee. Membership or a donation is suggested, with no amounts given.
+  text: 'Touring is free. A membership or donation is suggested: $25 a year for an individual, $35 for
+    a family, and higher levels up to $250. Research requests need a membership or donation.'
 commitment: drop_in
 group_size: null
 access:
@@ -67,17 +68,25 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come on a Tuesday between 11 am and 4 pm, or email garmuslib1866@gmail.com to book a guided visit.
+  how: Come on a Tuesday between 11 am and 4 pm, or email garmuslib1866@gmail.com at least seven days
+    ahead to book a guided visit.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Open to the public with no admission fee and a clear way to visit, but the volunteer process
-    is not described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The museum is open to the public on Tuesdays with no admission fee, and the website says how
+    to visit. The volunteer process is not described.
+  what_to_expect: Guided visits are set up in advance with a volunteer guide, so the museum confirms the
+    date after you email. The collection includes Civil War relics, documents and photographs, with displays
+    on Lincoln and on Old Baldy, General George Meade's warhorse. Touring is free, and a membership or
+    donation is suggested.
+  first_visit_tips:
+  - Email at least seven days before a guided visit, with the date, arrival time, number of people, and
+    a contact name and phone number.
+  - Children under 14 must come with an adult.
+  - The site does not describe stairs, an elevator, or parking, so call (215) 613-0350 before you come.
 contacts:
   website: https://garmuslib.org
   email: garmuslib1866@gmail.com
@@ -117,7 +126,21 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://garmuslib.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - contacts
+- url: https://garmuslib.org/visit-the-museum
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_to_expect
+- url: https://garmuslib.org/research-library
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

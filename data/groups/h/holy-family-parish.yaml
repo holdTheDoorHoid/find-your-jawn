@@ -3,15 +3,17 @@ name: Holy Family Parish
 aka: []
 leads: []
 ein: null
-summary: A Catholic parish on Hermitage Street with Sunday and weekday Masses, and a child care and summer
-  camp program that runs from 6 am to 6 pm.
-what_you_do: Come to Mass, or call the child care line about the child care and summer camp program.
+summary: A Catholic parish in Manayunk on Hermitage Street with Sunday and weekday Masses and a Religious
+  Education program for children.
+what_you_do: Come to Mass, or call the parish office at 215-482-0450 to ask about Religious Education
+  or the summer camp. Confirm the camp is running before you plan on it.
 kind: congregation
 categories:
 - faith-community
 - kids-youth-mentoring
 interests:
 - worship_community
+- faith_youth_programs
 - after_school_camps
 motives:
 - values
@@ -32,8 +34,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday Masses at 9 and 11 am, Saturday Vigil Mass at 4 pm, and weekday Mass Monday to Friday at
-    8 am. Holyday Vigil at 7 pm. Confession Saturdays 3 to 3:45 pm.
+  text: Sunday Masses at 9 and 11 am, Saturday vigil Mass at 4 pm, and Monday to Friday Mass at 9 am.
+    Confession is Saturdays at 3 pm and Sundays at 8:30 and 10:30 am. The 9 am Sunday Mass is livestreamed.
   days:
   - sat
   - sun
@@ -59,14 +61,15 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Mass is free to attend. The page does not show child care or camp fees.
+  level: free
+  text: Mass is free to attend. The site does not list fees for Religious Education or the summer camp.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The Hermitage Street entrance is not wheelchair accessible. The parking lot entrance has one
+    step. Handicap parking is in the Fowler Street lot.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,19 +78,29 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to a Sunday Mass, or call the child care line to ask about the camp
+  how: Come to a Sunday Mass at 9 or 11 am, or call the parish office at 215-482-0450 to ask about Religious
+    Education.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Mass is open to anyone and phone numbers are listed
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Mass is open to anyone, and the parish lists a phone number and an email. Its online form is
+    for becoming a registered parishioner.
+  what_to_expect: Mass is free and open to anyone. The 9 am Sunday Mass is livestreamed on the parish
+    website, so you can watch before you come. The site does not say how long Mass lasts or what happens
+    after it, so call ahead with questions.
+  first_visit_tips:
+  - Park in the Fowler Street lot, where the handicap spaces are, or on Hermitage Street.
+  - Use the parking lot entrance. The Hermitage Street door is not wheelchair accessible, and the lot
+    entrance has one step.
+  - The rectory office is open Monday to Thursday, 8:30 am to 3 pm, if you have questions.
 contacts:
   website: https://www.holyfamilychurch.org
-  email: null
+  email: contact@holyfamilychurch.org
   phone: 215-482-0450
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/holyfamilyphilly/
+  - https://www.youtube.com/channel/UCgkURacJELydjErPw9yik3g
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -107,7 +120,36 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.holyfamilychurch.org
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - contacts
+- url: https://www.holyfamilychurch.org/welcome/about-us/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.holyfamilychurch.org/welcome/hours-and-directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - first_step
+  - contacts
+- url: https://www.holyfamilychurch.org/programs/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - interests
+  - what_you_do
+- url: https://www.holyfamilychurch.org/welcome/online-parish-registration/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

@@ -6,15 +6,18 @@ ein: null
 summary: An adult literacy center that supports immigrants' inclusion in American society. It teaches
   English and basic computer use, and it takes volunteer tutors and new students through a phone line
   and online forms.
-what_you_do: Students build English, reading and computer skills. Volunteers tutor adult learners. Both
-  paths start with a form or a phone call.
+what_you_do: Students build English, reading and computer skills, and can also get citizenship classes
+  and help with job, school and immigration forms. Volunteers tutor adult learners. Both paths start with
+  a form or a phone call.
 kind: nonprofit
 categories:
 - books-writing
 - making-tech
+- culture-language-heritage-groups
 interests:
 - literacy_tutoring
 - digital_skills
+- esl_conversation
 motives:
 - values
 - enhancement
@@ -24,7 +27,9 @@ formats:
 roles:
 - help_teach
 - hands_on
-crowd: []
+crowd:
+- all_adults
+- newcomers
 bridging: null
 audience:
   open_to: public
@@ -36,17 +41,32 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The class schedule was not found on the pages checked. The registration pages are labeled for
-    the 2025 to 2026 year.
-  days: []
-  times: []
-  recurring: null
+  text: Classes meet Monday to Thursday in two morning sessions (9 to 10:30 am and 10:45 am to 12:15 pm)
+    and one evening session (6:45 to 8:15 pm).
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - morning
+  - evening
+  recurring: true
   season: null
-locations: []
+locations:
+- label: IHM Center for Literacy
+  address: 4251 L Street
+  neighborhood: null
+  planning_district: null
+  zip: '19124'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated on the pages checked
+  text: Tuition and fees are not stated on the site. Ask when you call.
 commitment: null
 group_size: null
 access:
@@ -61,14 +81,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-338-3120, or use the student interest form or the volunteer form linked from the site.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A phone line and two interest forms are published, but eligibility, class levels and fees are
-    not stated.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call 215-338-3120 or fill out the Student Interest Form on the website. New students then take
+    a placement test and book an in-person appointment.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: 'The about page says learners at every stage of English are welcome, and the classes page lays
+    out the steps: an interest form or a call, a placement test, then an in-person appointment.'
+  what_to_expect: New students take a placement test that sets a level from Basic up to Intermediate.
+    Classes are small, with 5 to 20 students, and meet on weekday mornings or evenings. The site does
+    not say what the placement test covers, how long it takes, or what classes cost.
+  first_visit_tips:
+  - 'Call during office hours: Monday to Thursday, 8:30 am to 1 pm, or 6:15 to 8 pm. The office is closed
+    Friday to Sunday.'
+  - Ask about fees and the placement test on the phone, since the website does not state them.
+  - The site gives no bus, train or parking details, so ask about getting there when you call.
 contacts:
   website: https://ihmcenterforliteracy.com
   email: admin@ihmcenterforliteracy.com
@@ -77,8 +104,8 @@ contacts:
   social: []
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://ihmcenterforliteracy.com
+last_sign_of_life: 2025-09
+sign_of_life_url: https://ihmcenterforliteracy.com/classes-and-registration-info.html
 sources:
 - url: https://ihmcenterforliteracy.com
   seen: '2026-10-08'
@@ -93,7 +120,28 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
+- url: https://ihmcenterforliteracy.com/classes-and-registration-info.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - requirements
+  - status
+  - last_sign_of_life
+- url: https://ihmcenterforliteracy.com/about-us.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - crowd
+  - first_step
+- url: https://www.nld.org/ihm-center-for-literacy
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,18 +5,24 @@ leads:
 - irs_990n:832207843
 - irs_bmf:832207843
 ein: '832207843'
-summary: Nonprofit that supports families after a hit and run crash, with help for funeral and medical
-  costs, family advocates for court hearings, and a push for safer neighborhoods.
-what_you_do: Call or text to volunteer, or ask for help through the contact form. The group also runs
-  a crisis response team that meets with families after a hit and run.
+summary: A nonprofit that supports families after a hit and run crash, with help for funeral and medical
+  costs, family advocates for court hearings, and a crisis team that meets with families. It also lists
+  a push for safer neighborhoods.
+what_you_do: Call or text to volunteer, or email to set up an appointment for help. A crisis response
+  team meets with families after a hit and run. Start your own online fundraiser for the group, or join
+  the Women of Strength money and business workshops.
 kind: nonprofit
 categories:
 - advocacy-rights
+- careers-skills-professional
 interests:
 - street_safety_transit
+- money_skills
+- entrepreneurs
 motives:
 - values
 - protective
+- career
 formats: []
 roles: []
 crowd: []
@@ -52,10 +58,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Help is based on criteria and no fee is stated. Donations are optional.
+  text: Help is based on criteria, and the site states no fee. Donations are optional.
 commitment: null
 group_size: null
 access:
@@ -70,13 +76,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call or text 267-732-5955 to volunteer, or use the contact form to ask for help.
-  drop_in: null
-  sign_up_needed: null
+  how: Email to set up an appointment for help, or call or text 267-732-5955 to volunteer.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site lists a phone and text line for volunteers and describes the help offered to families.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists a phone and text line for volunteers and an email for appointments. Visits need
+    an appointment, and the site does not describe volunteer training.
+  what_to_expect: The site does not describe a first visit or how long a meeting lasts. Visits are held
+    at an office in Philadelphia, and help depends on set criteria with no fee stated.
+  first_visit_tips:
+  - Email first to set an appointment, since visits are by appointment only.
+  - Ask for the office address when you email, because the site does not publish a street address.
 contacts:
   website: https://embracinggodsangels.org
   email: d.l.dominique@embracinggodsangels.org
@@ -84,9 +94,9 @@ contacts:
   contact_name: Dominique Lockwood
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://embracinggodsangels.org
+status: dormant
+last_sign_of_life: 2023-01
+sign_of_life_url: https://www.embracinggodsangels.org/blog-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,7 +123,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.embracinggodsangels.org/blog-1
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://www.embracinggodsangels.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.embracinggodsangels.org/projects-6
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - categories
+  - interests
+  - first_step
+- url: https://www.embracinggodsangels.org/yearly-flower-fundraiser
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

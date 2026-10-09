@@ -3,19 +3,19 @@ name: Eastwick United Methodist Church
 aka: []
 leads: []
 ein: null
-summary: A United Methodist church on Lindbergh Boulevard with a weekday food bank and mission house,
-  a men's and a women's prayer ministry, and a Girl Scout group.
-what_you_do: Visit the food bank on weekday mornings, join a monthly men's or women's ministry, or call
-  the church line to ask about the Girl Scout group.
+summary: A United Methodist church on Lindbergh Boulevard with a Sunday service, a weekday food bank and
+  mission house, a men's and a women's prayer ministry, and a Girl Scout group.
+what_you_do: Join the Sunday service, visit the food bank on weekday mornings, join a monthly men's or
+  women's ministry, or call the church line to ask about the Girl Scout group.
 kind: congregation
 categories:
 - faith-community
 - hunger-housing-basic-needs
 - kids-youth-mentoring
 interests:
+- worship_community
 - food_pantry
 - scouts_youth_clubs
-- worship_community
 motives:
 - values
 - social
@@ -38,9 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Food bank Monday to Wednesday, 10 am to 1 pm. Men's ministry on the first Saturday of the month,
-    women's prayer ministry on the second Saturday, and Girl Scouts every other Friday (times not listed).
+  text: Sunday worship at 10:45 am. Food bank Monday to Wednesday, 10 am to 1 pm. Men's ministry on the
+    first Saturday of the month, women's prayer ministry on the second Saturday, and Girl Scouts every
+    other Friday (times not listed). Church office Wednesdays, 10 am to 2 pm.
   days:
+  - sun
   - mon
   - tue
   - wed
@@ -70,7 +72,7 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
   text: null
@@ -88,21 +90,27 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Go to the food bank during its weekday hours, or leave a message on the church ministry line to
-    ask about a ministry
+  how: Join the Sunday 10:45 am service through the church's live-stream page, or call the food bank at
+    215-365-6352 about its Monday to Wednesday hours.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The food bank hours and phone are posted, but the site does not describe registration or a newcomer
-    welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site posts a Sunday service time, food bank hours and a phone line for each ministry. It
+    does not say that newcomers are welcome or what a first visit is like.
+  what_to_expect: The site does not say how long a visit takes or what a first Sunday is like in person,
+    so call the church office to ask. The food bank runs weekday mornings, and each monthly ministry meets
+    once on a Saturday.
+  first_visit_tips:
+  - Call (215) 365-1810 before you come, since the site does not describe parking or transit.
+  - 'Confirm the address first: the food bank is listed at 8325 Lindbergh Boulevard and the church at
+    8321.'
 contacts:
   website: https://eastwickumc.org
   email: eastwickunitedmethodist@gmail.com
   phone: 215-365-1810
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/eastwickum.churchsw
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -122,7 +130,21 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.eastwickumc.org/live-stream
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - first_step
+- url: https://www.eastwickumc.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.eastwickumc.org/events-media
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

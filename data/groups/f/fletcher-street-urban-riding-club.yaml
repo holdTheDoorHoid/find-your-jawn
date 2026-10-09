@@ -8,7 +8,7 @@ ein: '463515556'
 summary: A nonprofit riding club in North Philadelphia that teaches young people to ride and care for
   horses, with life skills and school support built in. Riding is free for kids and families.
 what_you_do: Learn to ride, groom and care for horses, and take part in club life that centers on school
-  and goals.
+  and goals. Families can also sign up to volunteer.
 kind: nonprofit
 categories:
 - animals
@@ -37,17 +37,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Riding and stable work happen on a regular weekly schedule set by the club
+  text: Riding and stable work happen on a regular weekly schedule set by the club.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
-- label: Strawberry Mansion area, North Philadelphia
-  address: null
+- label: Club address (contact page), Strawberry Mansion area
+  address: 2607-11 West Fletcher Street
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19132'
   lat: null
   lng: null
   in_city: true
@@ -55,7 +55,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Riding is free for kids and families
+  text: Riding is free for kids and families, according to a 2025 news report. The club's own site lists
+    no fees, only a donate button.
 commitment: weekly
 group_size: null
 access:
@@ -70,18 +71,26 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Fill out the member request form on the group's site
+  how: Send the member request form on the club's site, which asks for your child's birth date and grade.
+    Email info@fsurc.com for membership questions.
   drop_in: false
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to the public through a member request form, and riding is free; the site does not state
-    an age minimum
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Families send a request and wait for the club to review it, and under-18 applicants also meet
+    by video with a parent and board members. The page does not promise approval or describe a visit,
+    so the way in is not clear
+  what_to_expect: The club reviews each request and says it follows up within about a week. Children under
+    18 meet by video with a parent or guardian and board members before membership is decided. The club
+    does not treat verbal membership agreements as binding, so any agreement is put in writing.
+  first_visit_tips:
+  - Plan for a parent or guardian to come along while the application is pending, since minors may only
+    be at the stables with one
+  - Weekday hours are by appointment, and weekend hours are 8 am to 2 pm
+  - Get any membership agreement in writing
 contacts:
   website: https://fsurc.com/
-  email: null
-  phone: null
+  email: info@fsurc.com
+  phone: 800-484-1930
   contact_name: Fletcher Street Urban Riding Club
   social: []
   calendar_feed: null
@@ -116,7 +125,18 @@ sources:
   fields:
   - first_step
   - contacts
-research_tier: 1
+- url: https://fsurc.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_step
+- url: https://form.jotform.com/FSURC/MemberINFOrequest
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - requirements
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

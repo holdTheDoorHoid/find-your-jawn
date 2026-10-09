@@ -6,9 +6,11 @@ ein: null
 summary: A Catholic parish at Morrell Avenue and Chesterfield Road in Northeast Philadelphia. It runs
   CYO sports for children, religious education and adult faith formation, and sends parish news through
   Flocknote.
-what_you_do: Join the parish news list on Flocknote, come to a Sunday Mass, sign children up for CYO soccer
-  or religious education, or take part in adult faith formation. The parish also holds a Blue Army Fatima
-  Holy Hour for world peace.
+what_you_do: Register as a new parishioner at the rectory, come to a Sunday Mass, or join the parish news
+  list on Flocknote. Children ages 3 to 8 can join Little Peoples' Church at the 10 am Mass. Religious
+  education for grades 1 to 6 is for children who attend public or charter school. CYO soccer is for grades
+  5 to 7, and adults can join faith formation such as marriage preparation (Pre-Cana), the Lenten program,
+  or parish missions. CYO questions go to christthekingcyoathletics@gmail.com.
 kind: congregation
 categories:
 - faith-community
@@ -39,7 +41,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Saturday vigil at 5 pm. Sunday Masses at 8 am, 10 am and noon. Weekday Mass at 8 am.
+  text: Saturday vigil Mass at 5 pm. Sunday Masses at 8 am and 10 am; the archdiocese listing also shows
+    a noon Mass, so confirm with the parish. Weekday Mass at 8 am, Monday to Saturday. Confession on Saturdays
+    from 3:30 to 4:30 pm. Religious education for grades 1 to 6 meets on Sunday mornings from 11:15 am
+    to 12:30 pm, September through May. Little Peoples' Church meets at the 10 am Mass on Sundays.
   days:
   - mon
   - tue
@@ -67,7 +72,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Mass is free to attend. The site does not list CYO soccer fees.
+  text: Mass is free to attend. The site does not list fees for CYO soccer or religious education, so
+    ask the parish office.
 commitment: drop_in
 group_size: null
 access:
@@ -79,28 +85,33 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Join the parish news list on Flocknote, then come to a Sunday Mass. Children's CYO sports sign
-    ups go through the CYO email on the site.
+  how: Come to a Sunday Mass, then stop by the rectory Monday to Thursday, 8 am to 3 pm, to register as
+    a new parishioner.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The parish news sign up and the Mass schedule are public, but the site does not describe a newcomer
-    program.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: 'The parish has a set newcomer step: a rectory visit that gives a New Parishioner Welcome Packet
+    on getting involved, and Masses open to all. No separate newcomer program is described.'
+  what_to_expect: Mass is open to all visitors. Families with children ages 3 to 8 can come to the 10
+    am Mass, where children go to the school for a child-focused Liturgy of the Word led by catechists.
+    Newcomers who register at the rectory receive a welcome packet about getting involved in parish life.
+  first_visit_tips:
+  - The rectory is at 3252 Chesterfield Road, across from the church's front door.
+  - Children ages 3 to 8 can join Little Peoples' Church at the 10 am Mass.
+  - Religious education is for children in grades 1 to 6 who attend public or charter school.
 contacts:
   website: https://www.christthekingparish.net
   email: null
   phone: 215-632-1144
   contact_name: null
   social: []
-  calendar_feed: null
+  calendar_feed: https://app.flocknote.com/group/145191/rss
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.christthekingparish.net
+sign_of_life_url: https://new.flocknote.com/note/38399305
 sources:
 - url: https://www.christthekingparish.net
   seen: '2026-10-08'
@@ -111,13 +122,46 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - schedule
 - url: https://archphila.org/parish/christ-the-king-philadelphia/
   seen: '2026-10-08'
   fields:
   - locations
   - schedule
   - contacts
-research_tier: 1
+- url: https://christthekingparish.net/registration-info/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - first_visit_tips
+- url: https://christthekingparish.net/religious-education/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - what_you_do
+- url: https://christthekingparish.net/adult-faith-formation/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://christthekingparish.net/little-peoples-church/
+  seen: '2026-10-08'
+  fields:
+  - crowd
+  - schedule
+  - first_visit_tips
+  - what_you_do
+- url: https://new.flocknote.com/note/38399305
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://new.flocknote.com/note/38102655
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

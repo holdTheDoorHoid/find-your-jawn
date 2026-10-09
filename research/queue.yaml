@@ -481,5 +481,41 @@ waves:
     brief: penn_clubs
     batch_files: research/batches/w22-penn-clubs/
     searches_per_agent: 0
-    status: running
+    status: done
     note: "476 Penn Clubs entries, 24 batches of 20, all launched 2026-10-08 evening. About half are marked INACTIVE in the directory and were held back; the brief was changed midway so a club's own dated activity outweighs that flag. Follow up: recheck held Penn clubs that link their own site."
+  - id: w23-tier2-deep-c
+    lane: tier2
+    kind: batches
+    brief: tier2
+    batch_files: research/batches/w23-tier2-deep-c/
+    searches_per_agent: 1
+    status: running
+    note: "First visit guides for the 771 groups published on 2026-10-08 evening (111 batches of 7). Ids in research/batches/w23-tier2-deep-c-ids.json."
+  - id: w24-lists-thin
+    lane: Q
+    kind: slices
+    brief: lists
+    searches_per_agent: 3
+    status: running
+    note: "List pages for the thinnest interest families on 2026-10-08 evening (published groups: emergency and disaster 14, water and rowing 30, games and puzzles 31, outdoors 34, animals 36, food and drink 48, running and cycling 56, Philly traditions 56, seniors 62, making and tech 68). Find the current list page with a search when a starting point is named without a URL."
+    slices:
+    - agent: x-emergency
+      text: 'Emergency and disaster volunteering in Philadelphia: Philadelphia Community Emergency Response Teams (CERT) run by the Office of Emergency Management, the Philadelphia Medical Reserve Corps, American Red Cross Southeastern Pennsylvania volunteer roles, amateur radio emergency groups (ARES and RACES for Philadelphia County, and ham radio clubs that train for emergencies), the Southeastern Pennsylvania VOAD member list, and disaster relief groups that recruit city residents. One record per team or organization.'
+    - agent: x-water
+      text: 'Rowing, paddling and sailing in Philadelphia: the Schuylkill Navy member clubs on Boathouse Row (each club is a record when it takes members or runs learn to row), community and masters rowing programs, dragon boat teams, the Philadelphia Canoe Club, community boating at Bartram''s Garden and on the Delaware, Independence Seaport Museum''s Workshop on the Water volunteers, kayak and sailing clubs that sail from Philadelphia, and regatta volunteer programs.'
+    - agent: x-games
+      text: 'Games and puzzles in Philadelphia: chess clubs (Franklin Mercantile Chess Club and others, plus free chess at libraries and rec centers listed by a club), Go clubs, duplicate bridge clubs listed by the American Contract Bridge League for Philadelphia, Scrabble clubs, mahjong groups, puzzle hunts, trivia leagues run by nonprofits, and tabletop or role playing game groups that meet in public places. Skip game stores and cafes that are businesses unless a free club meets there under its own name.'
+    - agent: x-outdoors
+      text: 'Outdoor clubs in Philadelphia: the Philadelphia Trail Club, the Appalachian Mountain Club Delaware Valley Chapter, Outdoor Afro and Latino Outdoors Philadelphia chapters, Delaware Valley geocaching groups, the Philadelphia Grotto caving club, climbing community groups, camping and backpacking clubs, and stargazing groups that observe outdoors. Record each club with its trips or meetups and how a beginner joins.'
+    - agent: x-animals
+      text: 'Animal volunteering in Philadelphia: shelter and rescue volunteer programs (ACCT Philly, PAWS, the Pennsylvania SPCA, Morris Animal Refuge, smaller cat and dog rescues with foster programs), trap neuter return groups, the Schuylkill Center wildlife clinic, Philadelphia Zoo volunteers, birding clubs (Delaware Valley Ornithological Club, Audubon chapters with Philadelphia walks), and therapy dog groups. Record each program a resident can join.'
+    - agent: x-food
+      text: 'Food and drink groups in Philadelphia: homebrew and home winemaking clubs, Slow Food Philadelphia, community cooking classes run by nonprofits, community meals and supper clubs with open seats, heritage cooking groups, food co op member committees (Weavers Way, Mariposa, South Philly Food Co op), and urban farm volunteer days not already covered by gardens. Skip restaurants and businesses.'
+    - agent: x-running-cycling
+      text: 'Running, walking and cycling clubs in Philadelphia: running clubs listed by the Road Runners Club of America for Philadelphia, Philly Front Runners, Black Men Run and Black Girls Run Philadelphia chapters, November Project Philadelphia, the Bicycle Club of Philadelphia, Gearing Up, Cadence Youth Cycling, Neighborhood Bike Works volunteers and open shop, community bike rides, and walking groups for older adults. Record each club with its weekly run or ride.'
+    - agent: x-traditions
+      text: 'Philadelphia parades, festivals and traditions that take volunteers or members: the Odunde Festival, the Puerto Rican Day Parade, the Pulaski Day Parade, the Columbus Day Parade, the Steuben Parade, the St. Patrick''s Day Parade, the Chinese New Year and Mid Autumn celebrations in Chinatown, the Philly Pride march, Juneteenth celebrations, block party and neighborhood festival committees, and historic reenactment groups. Record the committee or organizing group and how to volunteer or march.'
+    - agent: x-seniors
+      text: 'Older adult groups in Philadelphia: senior community centers listed by the Philadelphia Corporation for Aging (each center with public programs is a record), aging in place villages that use neighbor volunteers (Penn''s Village, Northwest Village Network, East Falls Village and others), retired volunteer programs (RSVP and similar), intergenerational programs that pair students and elders, and nursing home or hospice volunteer programs open to the public.'
+    - agent: x-making
+      text: 'Making and tech groups in Philadelphia: hackerspaces and community makerspaces (Hive76 and others), Code for Philly, repair cafes and fix it clinics, bike repair co ops, FIRST robotics teams that take community mentors, Linux and programming user groups, ham radio clubs, woodworking and metalworking guilds, knitting, quilting and fiber arts guilds, and model railroad clubs. Skip paid classes at businesses.'

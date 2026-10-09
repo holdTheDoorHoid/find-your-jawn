@@ -6,14 +6,15 @@ leads:
 ein: '233005174'
 summary: A shul in Northeast Philadelphia with about 100 member families. It holds daily prayer services
   and regular Torah classes (shiurim) led by its rav.
-what_you_do: Join a daily minyan or a shiur, take part in the Shabbos hospitality program for visitors,
-  or apply for membership through the membership page.
+what_you_do: Attend daily prayer services or a Torah class, ask one of the listed hosts to arrange a Shabbos
+  stay with meals, or check the membership page for dues and seating.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
 - scripture_study
+- faith_youth_programs
 motives:
 - values
 - understanding
@@ -34,11 +35,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site says there are daily minyanim and links to an external davening schedule and a separate
-    shiur schedule. Times are not printed on the pages read.
-  days: []
-  times: []
-  recurring: null
+  text: Daily minyanim, with times on an external davening schedule linked from the site. Evening Torah
+    classes run most nights, including Daf Yomi on Sunday to Wednesday at 8:15 pm and Thursday at 7:15
+    pm. Some classes are for women only, and the site says class times may change.
+  days:
+  - sun
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Synagogue
@@ -50,10 +58,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Women's classes
+  address: 8032 Dorcas Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: null
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership is listed. Dues are not printed on the pages read.
+  level: paid
+  text: 'Dues listed on the renewal page: $900 for a family, $450 for a single member, $250 for an associate,
+    and $0 for a first-year member. The site does not say whether visitors pay to attend services.'
 commitment: null
 group_size: null
 access:
@@ -68,13 +86,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Shabbos hospitality page or the Contact Us page
+  how: Contact one of the Shabbos hospitality hosts listed on the Shabbos Hospitality page to arrange
+    a place to stay and meals for Shabbos.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Hospitality and contact pages are listed, but the site does not describe how visitors are welcomed.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Shabbos hospitality page says visitors are welcome and names who to contact to arrange a
+    stay and meals. It does not describe what a visitor should expect at services or classes.
+  what_to_expect: The site says visitors are hosted for Shabbos or other times, with a place to stay and
+    meals arranged by a host. It does not describe sleeping arrangements, how long a stay lasts, or what
+    it costs, so ask your host.
+  first_visit_tips:
+  - Check the daily minyan times on the external davening schedule, since the site does not print them.
+  - Confirm class times before you go, because the site says they may change.
 contacts:
   website: http://www.ahavas-torah.org/index.html
   email: null
@@ -106,7 +130,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
+- url: http://www.ahavas-torah.org/shabHosp.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: http://www.ahavas-torah.org/shiurschedule.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - interests
+- url: http://www.ahavas-torah.org/membership.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: http://www.ahavas-torah.org/cont.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

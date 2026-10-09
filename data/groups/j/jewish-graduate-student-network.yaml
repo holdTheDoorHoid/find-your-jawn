@@ -6,8 +6,8 @@ ein: null
 summary: A Jewish community network for graduate students and young professionals in Philadelphia, run
   as a program of Philly Hillel. It lists programs named Shabbat Across Philly and Philly Jewish Community,
   along with student associations.
-what_you_do: Sign up for the e-newsletter and check the site for upcoming programs. The site does not
-  say how membership works.
+what_you_do: Sign up for the weekly e-newsletter, attend a home Shabbat dinner or holiday meal, or come
+  to a lunch and learn or networking event. The site does not say how membership works.
 kind: program
 categories:
 - faith-community
@@ -36,11 +36,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: 'Programs run through the academic year and over the summer: home Shabbat dinners, holiday dinners,
+    lunch and learns and networking events. No fixed weekly time is listed.'
   days: []
   times: []
   recurring: null
-  season: null
+  season: year_round
 locations:
 - label: Philly Hillel
   address: 215 S. 39th Street
@@ -51,10 +52,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Home Shabbat dinners and events across the city
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No program fees are listed. The group asks for donations and corporate sponsorships.
 commitment: null
 group_size: null
 access:
@@ -69,13 +79,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@phillyhillel.org or call 267.229.1451 to ask how to get involved
+  how: Sign up for the weekly e-newsletter from the site, then email info@phillyhillel.org to ask how
+    a newcomer can join a home Shabbat dinner or an event.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Sign up is an e-newsletter form, but the site does not say how membership or events work
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can sign up for the weekly newsletter and email to ask questions, and the FAQ says young
+    professionals can take part as well as grad students, but the site does not say newcomers get a special
+    welcome.
+  what_to_expect: 'Most events are meals or discussions: home Shabbat dinners hosted by a grad student
+    or young professional, holiday dinners, lunch and learns, and networking nights. The group says most
+    participants are grad students, usually aged 22 to 35, and young professionals are welcome too. The
+    site does not list costs or how long events last, and its calendar showed no upcoming events when
+    we checked.'
+  first_visit_tips:
+  - Sign up for the weekly e-newsletter so you hear about upcoming events.
+  - Email info@phillyhillel.org before you come, since the site does not explain how guests join home
+    dinners.
+  - If the calendar is empty, call 267.229.1451 to ask about the next program.
 contacts:
   website: https://jewishgrads.org/
   email: info@phillyhillel.org
@@ -97,7 +118,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://jewishgrads.org/what-we-do/our-programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - audience
+  - first_step
+- url: https://jewishgrads.org/what-we-do/shabbat-across-philly/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+- url: https://jewishgrads.org/who-we-are/faqs/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - first_step
+- url: https://jewishgrads.org/what-we-do/jewish-student-associations/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

@@ -36,9 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Service projects and events are announced on the group's site as they come up. The Hope Lodge
-    volunteer evenings are listed on Tuesdays from 5 to 8 pm in September and October, with no year written
-    on the page.
+  text: Service projects are posted on the group's site as they come up. Hope Lodge volunteer evenings
+    run on Tuesdays from 5 to 8 pm, with dates shown on the site.
   days:
   - tue
   times:
@@ -46,7 +45,7 @@ schedule:
   recurring: false
   season: event_only
 locations:
-- label: Address on the group's site
+- label: Office
   address: 5009 Rosehill St
   neighborhood: null
   planning_district: null
@@ -55,10 +54,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Hope Lodge, service site for volunteer evenings
+  address: 110 W. Laurel Avenue, Cheltenham, PA
+  neighborhood: null
+  planning_district: null
+  zip: '19012'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: free
-  text: Volunteering is free. Donations are optional.
+  text: The site lists no cost to volunteer. Donations are optional and go through a PayPal fundraiser.
 commitment: one_off
 group_size: null
 access:
@@ -73,15 +81,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the Sign up to serve form on the group's website with your name, phone, email and a short
-    message
+  how: Fill in the 'Sign up to serve today' form on the group's website with your name, phone, email and
+    a short message. Then watch the site for the next Hope Lodge evening.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a public volunteer sign-up form and lists specific service events, so the way in
-    is clear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a public sign-up form and lists specific service events, so the way in is clear.
+    It does not describe training or requirements.
+  what_to_expect: A Hope Lodge evening runs from 5 to 8 pm at Hope Lodge in Cheltenham, Pennsylvania,
+    outside the city. Volunteers cook and serve a home-cooked dinner for patients receiving treatment
+    at Fox Chase and their families, then talk and listen with them. The site does not describe training,
+    a first shift, or a dress code.
+  first_visit_tips:
+  - Confirm the date with the group before you go, since events are posted as they come up.
+  - Hope Lodge is outside the city, and the site gives no transit or parking details, so plan your ride.
+  - Ask the group what to bring or wear when you sign up; the site does not say.
 contacts:
   website: https://live2servepa.com
   email: null
@@ -122,7 +136,12 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://live2servepa.com/projects/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

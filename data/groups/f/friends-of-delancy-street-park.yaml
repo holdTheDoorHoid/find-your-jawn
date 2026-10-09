@@ -38,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Clean-ups and park events through the year, including a spring Love Your Park clean-up, a fall
-    festival, Park after Dark, a Halloween event and an Easter egg hunt. The page lists no exact dates.
+  text: 'Clean-ups and park events through the year: a spring Love Your Park clean-up, a fall festival,
+    Park after Dark, a Halloween event, and an Easter egg hunt. The events page lists no exact dates.'
   days: []
   times: []
   recurring: true
@@ -56,9 +56,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: The page lists no fees for events or volunteering. The group pays for upkeep through its own annual
-    fundraisers.
+  level: free
+  text: Events and volunteering have no listed fees. The group invites donations at giving levels from
+    $150 to $500 on its membership page, and it pays for upkeep through its own fundraisers.
 commitment: seasonal
 group_size: null
 access:
@@ -73,13 +73,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email threebearspark@gmail.com to ask about the next clean-up or park event and how to join in.
+  how: Email threebearspark@gmail.com to ask about the next clean-up or park event and how to help.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Events and clean-ups are public, but the page does not say how to sign up to volunteer.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Events and clean-ups are public and an email address is listed, but the site does not say how
+    to volunteer or what a clean-up involves.
+  what_to_expect: The site does not describe a clean-up or event in detail, or say how long one lasts.
+    Events are community days and fundraisers held through the year. The park is open every day from dawn
+    to dusk, and no dates are posted, so ask by email before you come.
+  first_visit_tips:
+  - Email ahead, since the site does not post dates for clean-ups.
+  - The park is open from dawn to dusk, every day of the year.
 contacts:
   website: https://www.threebearspark.org
   email: threebearspark@gmail.com
@@ -115,7 +120,26 @@ sources:
   - contacts
   - locations
   - first_step
-research_tier: 1
+- url: https://www.threebearspark.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://www.threebearspark.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - first_step
+- url: https://www.threebearspark.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.threebearspark.org/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

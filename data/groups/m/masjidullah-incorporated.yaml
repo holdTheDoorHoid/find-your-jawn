@@ -7,16 +7,19 @@ ein: '222525050'
 summary: A mosque on Limekiln Pike with Friday prayer and programs for families. The site also lists health
   and human services and Ramadan programs, and links to a child care center and a learning institute on
   their own sites.
-what_you_do: Attend Friday prayer at 1:15 pm, sign up to volunteer through the site, or ask the office
-  about the child care center and the New Medina Institute.
+what_you_do: Attend Friday prayer at 1:15 pm, sign up to volunteer through the site, ask the office about
+  the child care center and the New Medina Institute, or ask about the free grocery bags through Health
+  and Human Services for people with low or no income.
 kind: congregation
 categories:
 - faith-community
 - kids-youth-mentoring
+- hunger-housing-basic-needs
 interests:
 - worship_community
 - faith_service_projects
 - faith_youth_programs
+- food_pantry
 motives:
 - values
 - social
@@ -39,11 +42,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Friday prayer service at 1:15 pm. Other class and program times are not on the site.
+  text: Friday prayer is held every week at 1:15 pm. The site also lists a Sunday Islam 101 class at 10
+    am and a Monday evening Seerah series from Maghrib to Isha. Cost and enrollment for the classes are
+    not stated.
   days:
   - fri
+  - sun
+  - mon
   times:
   - daytime
+  - morning
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -59,7 +68,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site gives no fee for Friday prayer or the listed classes. The grocery bags from Health and
+    Human Services are free.
 commitment: null
 group_size: null
 access:
@@ -74,21 +84,30 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the office at 215-621-7800 or email inquiries@masjidullah.org. Membership and volunteer sign-up
-    forms are on the site.
+  how: Call the office at 215-621-7800 or email inquiries@masjidullah.org to ask whether visitors can
+    join Friday prayer or the Sunday Islam 101 class.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site asks people to sign up for membership or volunteering, and it does not say whether visitors
-    are welcome at Friday prayer.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site sends people to membership and volunteer forms and does not say whether visitors can
+    attend Friday prayer or the classes. A phone line and an email address are listed.
+  what_to_expect: Friday prayer is held every week at 1:15 pm at the mosque on Limekiln Pike, and the
+    site lists a Sunday Islam 101 class and a Monday evening Seerah series. The site does not describe
+    what visitors should do, how long sessions last, or what they cost. The office can answer those questions
+    before you come.
+  first_visit_tips:
+  - The business office is open Monday to Thursday, 10 am to 4 pm, and Friday, 9 am to 1 pm, so call during
+    those hours.
+  - Ask about the Islam 101 class cost and sign-up before you come, since the site lists neither.
+  - The grocery program lists no application steps, so call the office to ask how to get a bag.
 contacts:
   website: https://www.masjidullah.org/
   email: inquiries@masjidullah.org
   phone: 215-621-7800
   contact_name: Mikal Shabazz
-  social: []
+  social:
+  - https://www.facebook.com/masjidullah/
+  - https://www.instagram.com/masjidullah/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -119,7 +138,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.masjidullah.org/services
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - first_step
+  - cost
+- url: https://www.masjidullah.org/healthandhumanservices
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - what_you_do
+  - cost
+  - first_step
+- url: https://www.masjidullah.org/groups
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

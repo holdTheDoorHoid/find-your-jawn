@@ -5,7 +5,8 @@ leads: []
 ein: null
 summary: A large food-growing garden on Glenwood Avenue with 102 individual plots on about 3.67 acres,
   founded in 1983 and preserved in 1997. Neighbors can email the garden to ask about joining.
-what_you_do: Grow food in an individual plot.
+what_you_do: Grow food in an individual plot, or help with shared upkeep such as weeding, watering, planting
+  and grounds work.
 kind: garden
 categories:
 - gardening-greening
@@ -31,10 +32,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Monthly meetings on the second Tuesday of each month from April through October. The page gives
+    no meeting time or place. Neighborhood work days are held, but no dates are listed.
+  days:
+  - tue
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Garden
@@ -49,7 +52,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The page does not state plot fees or dues.
 commitment: ongoing_role
 group_size: null
 access:
@@ -64,13 +67,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email 1801glenwoodgreenacres@gmail.com to ask about joining
+  how: Email 1801glenwoodgreenacres@gmail.com to ask about a plot, or to offer help with grounds work.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The page gives no waitlist, open-day schedule or volunteer sign-up, so the way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Anyone can email to ask about a plot or to help with upkeep. The page says plots depend on availability
+    and gives no waitlist or open-day details.
+  what_to_expect: Volunteers help with weeding, watering, planting and general grounds upkeep. Visitors
+    can come to the monthly meetings on the second Tuesday in season, but the page gives no meeting time
+    or place and no work-day dates, so the email is the place to ask. The page does not cover plot fees
+    or gardener rules.
+  first_visit_tips:
+  - Email first, since meeting times and place are not on the website.
+  - Ask about the next work day if you want to help out before getting a plot.
 contacts:
   website: https://glenwoodgreenacres.wixsite.com/home
   email: 1801glenwoodgreenacres@gmail.com
@@ -95,7 +104,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://glenwoodgreenacres.wixsite.com/home
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - contacts
+  - status
+- url: https://glenwoodgreenacres.wixsite.com/home/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - schedule
+  - roles
+- url: https://glenwoodgreenacres.wixsite.com/home/giving-back-to-philly
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+- url: https://glenwoodgreenacres.wixsite.com/home/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

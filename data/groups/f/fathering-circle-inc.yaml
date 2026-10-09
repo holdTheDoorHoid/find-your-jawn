@@ -7,7 +7,9 @@ leads:
 ein: '861337966'
 summary: A peer support group for men who are raising a young person. Men 17 and older meet every Monday
   evening to talk with other men in the same position.
-what_you_do: Come to the Monday evening circle and talk with other men who are raising a young person.
+what_you_do: Come to the Monday evening circle at the Philip E. Lindy House and talk with other men who
+  are raising a young person. Anyone who identifies as a male caregiver or parent can join, whether or
+  not they are a biological father.
 kind: support_group
 categories:
 - support-recovery
@@ -34,7 +36,7 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Peer support circle every Monday, 6 to 7:30 pm
+  text: Peer support circle every Monday, 6 to 7:30 pm.
   days:
   - mon
   times:
@@ -69,19 +71,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact page on thefatheringcircle.com to ask how to sign up for the Monday circle before
-    you come
+  how: Register for a Monday circle through its Eventbrite listing, or email info@thefatheringcircle.com
+    to ask about joining before you come.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Sessions are for eligible men, and the site does not say how to sign up or what a first visit
-    is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The 2024 join post names Eventbrite, email, and phone as ways in, but the group's own contact
+    page is a form with no join steps, and the post does not say whether a first visit is drop in. Attendance
+    is limited to men 17 and older raising a young person.
+  what_to_expect: The circle is a peer support group where men talk with each other about raising a young
+    person. The group does not describe its session format or activities on its pages.
+  first_visit_tips:
+  - Ask first whether a new man can drop in or must register
+  - If email does not get a reply, call 215-487-5918, the number in the 2024 join post
+  - Check the Facebook group for news about upcoming circles
 contacts:
   website: https://www.thefatheringcircle.com
-  email: null
-  phone: null
+  email: info@thefatheringcircle.com
+  phone: 215-487-5918
   contact_name: Eric Marsh
   social:
   - https://www.facebook.com/groups/thefatherscircle/
@@ -89,7 +96,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-06
-sign_of_life_url: https://www.thefatheringcircle.com
+sign_of_life_url: https://thefatheringcircle.com/2026/06/07/tfc-partners-with-the-wilma-theater/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,8 +125,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: high
+- url: https://thefatheringcircle.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://thefatheringcircle.com/2024/10/06/join-the-circle/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - contacts
+  - schedule
+  - locations
+- url: https://thefatheringcircle.com/2026/06/07/tfc-partners-with-the-wilma-theater/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

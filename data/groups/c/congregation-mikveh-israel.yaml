@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: A historic congregation at 44 North Fourth Street. It offers weekday morning and afternoon prayer
   services with a free breakfast or lunch, Shabbat services, public tours, and a museum exhibit.
-what_you_do: Join the weekday morning Shaharit or the afternoon Minha minyan, take the historic synagogue
-  tour, see the Faith and Freedom exhibition, or join the WhatsApp group for a minyan.
+what_you_do: Join the weekday morning Shacharit or the afternoon Minha minyan, book the historic synagogue
+  tour, see the Faith and Freedom exhibition, join the Thursday evening Zoom class, or sign a child up
+  for the Monday after-school class.
 kind: congregation
 categories:
 - faith-community
@@ -14,6 +15,7 @@ interests:
 - worship_community
 - scripture_study
 - congregation_social
+- faith_youth_programs
 motives:
 - values
 - understanding
@@ -23,6 +25,7 @@ formats:
 roles: []
 crowd:
 - all_adults
+- kids
 bridging: null
 audience:
   open_to: public
@@ -34,8 +37,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Weekday Shaharit at 7:15 am on Mondays and Thursdays and on Rosh Chodesh. Minha at 2 pm, Monday
-    to Thursday. This week''s Shabbat times: Friday 6:15 pm and Saturday 9 am (Shabbat Bereishit).'
+  text: 'Weekday Shacharit at 7:15 am on Mondays, Thursdays, and Rosh Chodesh, and Minha at 2 pm Monday
+    to Thursday. Shabbat services are weekly, so check the site for the current Friday evening and Saturday
+    morning times. Also weekly: a Thursday 7:30 pm Zoom class and a Monday 4 to 5 pm after-school class
+    for children ages 5 to 12.'
   days:
   - mon
   - tue
@@ -59,10 +64,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: free
-  text: The site lists free breakfast or lunch and free parking with the weekday minyanim.
+  text: Weekday breakfast or lunch with the minyanim is free, and parking is free with the weekday minyanim.
+    Shabbat and holiday meals have prices, but the amounts are not printed on the site.
 commitment: null
 group_size: null
 access:
@@ -77,13 +83,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the WhatsApp group for the weekday minyan, sign up for the newsletter, or book a public tour
-  drop_in: null
+  how: Come to the 7:15 am weekday minyan on a Monday or Thursday, where breakfast is free afterward,
+    or call the office at 215-922-5446 to book a public tour.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Public tours and group chats are listed. The site does not say that newcomers are welcomed directly.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The Rabbis' Welcome page invites visitors to come in person to Shabbat, a daily minyan, or the
+    exhibits, and the site lists how to book a tour and how to join the WhatsApp group for the minyan.
+  what_to_expect: Services follow the congregation's Spanish-Portuguese tradition, which the site describes
+    as formal and orderly, with careful Hebrew pronunciation. Members often attend the morning service
+    so there is a minyan for those saying Kaddish, and free breakfast or lunch follows the weekday minyanim.
+    The site does not say how long services run or what to wear.
+  first_visit_tips:
+  - Call or email the office first, since it is open Monday to Thursday 9 am to 5 pm and Friday 9 am to
+    3 pm.
+  - Parking is free with the weekday minyanim.
+  - Arrive a few minutes before 7:15 am for the morning minyan.
 contacts:
   website: http://www.mikvehisrael.org/
   email: info@mikvehisrael.org
@@ -111,7 +126,32 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+  - summary
+- url: https://www.mikvehisrael.org/tour-our-historic-synagogue
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.mikvehisrael.org/classes
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - online_ok
+  - crowd
+- url: https://www.mikvehisrael.org/rabbis-welcome
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+- url: https://www.mikvehisrael.org/meals
+  seen: '2026-10-08'
+  fields:
+  - cost
+- url: https://www.mikvehisrael.org/musem-self-guided-tour
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

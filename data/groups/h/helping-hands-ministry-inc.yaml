@@ -7,8 +7,9 @@ leads:
 ein: '342017151'
 summary: Faith-based ministry that helps seniors and their caregivers with eldercare information, referrals,
   and a benevolence fund, mostly in Southwest and West Philadelphia.
-what_you_do: Call the 24-hour prayer line or use the contact page to ask for caregiver help or a referral.
-  The site says services are free.
+what_you_do: Call the 24-hour prayer line or use the request form to ask for caregiver help or a referral.
+  Seniors aged 60 and older in crisis can apply to the Benevolence Fund online. The site says services
+  are free.
 kind: nonprofit
 categories:
 - faith-community
@@ -33,13 +34,23 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 24-hour prayer line. The benevolence fund is offered as funds are available.
+  text: The 24-hour prayer line takes calls around the clock. The Benevolence Fund is offered while funds
+    last, first come, first served.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: Southwest and West Philadelphia
+- label: Office (Monday to Friday, 8:30 am to 3:30 pm)
+  address: 5926 Webster Street
+  neighborhood: null
+  planning_district: null
+  zip: '19143'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Southwest and West Philadelphia (service area)
   address: null
   neighborhood: null
   planning_district: null
@@ -51,7 +62,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Services are free. The benevolence fund depends on available funds.
+  text: Services are free. Benevolence Fund help depends on available funds.
 commitment: null
 group_size: null
 access:
@@ -66,13 +77,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the 24-hour prayer line at 1-480-553-0487 to ask about caregiver help.
+  how: Call the 24-hour prayer line at 1-480-553-0487, or use the request form on the How Can We Serve
+    You page, to ask for caregiver help or a referral.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Anyone can ask for help, but no volunteer or membership path is described on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: There is no group to join, since the site describes no meetings or volunteer roles. Help is by
+    request, and the Benevolence Fund needs an online application and is for people 60 and older.
+  what_to_expect: You ask for help rather than attend anything, and the ministry follows up on your request.
+    If a Benevolence Fund request is approved, you are contacted within three business days of submitting
+    it about what help is possible, and the help is mainly gift cards for food or personal care items,
+    or a utility bill.
+  first_visit_tips:
+  - Benevolence Fund requests must be submitted online, since the site says verbal requests are not accepted.
+  - A senior can apply to the Benevolence Fund only once a year, and for a different kind of help each
+    time.
+  - 'Gifts are picked up: the senior signs for them, or a designee with a photo ID signs on their behalf.'
+  - The Philadelphia office is open Monday to Friday, 8:30 am to 3:30 pm, and is closed on weekends and
+    holidays. The contact page lists 267-595-9000 as its telephone.
 contacts:
   website: https://www.helpinghandsministryinc.com
   email: hhmglobal8@gmail.com
@@ -80,9 +102,9 @@ contacts:
   contact_name: Marietta Melton
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.helpinghandsministryinc.com
+status: active
+last_sign_of_life: 2025-11
+sign_of_life_url: https://helpinghandsministryinc.com/general-6/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -110,8 +132,37 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://helpinghandsministryinc.com/how-can-we-serve-you/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://helpinghandsministryinc.com/benelovence-fund-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - first_visit_tips
+- url: https://helpinghandsministryinc.com/general-6/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://helpinghandsministryinc.com/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_visit_tips
+- url: https://helpinghandsministryinc.com/about-hhmi/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - interests
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -36,8 +36,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Trash pickups, tree plantings and community events through the year. The site has a community
-    events page and a volunteer page, but lists no dates.
+  text: Group leaders host work days through the year. Neighbor Nights run on the last Thursday of the
+    month from May to September, a casual family night outdoors with food, music and games. Treecycling,
+    a holiday tree drop-off, runs on the first two weekends of January. The site shows no dates for the
+    work days.
   days: []
   times: []
   recurring: true
@@ -54,8 +56,9 @@ locations:
   transit: null
 online_ok: false
 cost:
-  level: null
-  text: Donations and sponsorships are invited. The page lists no fees for volunteering.
+  level: free
+  text: Volunteering and events have no listed fees. Garden plot holders renew a $50 membership each year,
+    and financial help is available.
 commitment: null
 group_size: null
 access:
@@ -70,20 +73,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer link on fespp.org, or email fespp19130@gmail.com to ask about the next trash
-    pickup or planting day.
+  how: Email Corinthiangardens19130@gmail.com or fespp19130@gmail.com to ask about the next work day or
+    volunteer opening.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The volunteer link and a listed email make the way in clear, and the group posts volunteer days.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page is public and gives email addresses to ask. It does not say whether work days
+    need approval, orientation or dues.
+  what_to_expect: Group leaders run work days through the year, and the tasks listed include weeding shared
+    beds and mulching paths. The volunteer page does not give dates, orientation, or what to wear. Volunteering
+    has no listed fee.
+  first_visit_tips:
+  - Email before you come, because work day dates are not posted.
+  - To get a garden plot, plan on 15 volunteer hours and one FESPP event the year before. Plots are assigned
+    in March.
 contacts:
   website: https://www.fespp.org
   email: fespp19130@gmail.com
   phone: null
   contact_name: Kyle Haines
-  social: []
+  social:
+  - https://www.facebook.com/FESPP19130/
+  - https://www.instagram.com/fespp19130/
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -113,7 +124,27 @@ sources:
   - contacts
   - first_step
   - locations
-research_tier: 1
+- url: https://www.fespp.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - contacts.email
+  - schedule
+- url: https://www.fespp.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.fespp.org/garden
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+- url: https://www.fespp.org/get-involved-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

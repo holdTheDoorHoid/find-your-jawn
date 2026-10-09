@@ -10,7 +10,8 @@ summary: A Philadelphia nonprofit that promotes gratitude and appreciation. It r
   two weeks, an arts and crafts workshop for ages 9 and up, and a recognition program at participating
   venues.
 what_you_do: Join the Women's Circle by RSVP email, or ask about the arts and crafts workshop through
-  the contact form.
+  the contact form. You can also volunteer, with roles such as community workshops, event coordination,
+  youth mentorship and social media work.
 kind: nonprofit
 categories:
 - social-meetups
@@ -18,7 +19,9 @@ categories:
 interests:
 - conversation_circles
 - craft_circle
-motives: []
+motives:
+- social
+- values
 formats:
 - conversation
 - perform_make_together
@@ -35,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Women's Circle meets every two weeks. Dates and times are not published on the site; RSVP
-    by email. The workshop has no published schedule.
+  text: The Women's Circle meets every two weeks. Dates and times are not published on the site, so RSVP
+    by email to ask.
   days: []
   times: []
   recurring: true
@@ -54,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site
+  text: The site does not list a fee for the circle or the workshop. It has a general donation link.
 commitment: null
 group_size: null
 access:
@@ -69,25 +72,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@GiveMeMyRoses.org to RSVP for the Women's Circle, or use the contact form to ask about
-    the arts and crafts workshop
+  how: Email info@GiveMeMyRoses.org to RSVP for the Women's Circle, or use the contact form and pick Arts
+    & Crafts Motivation to ask about the workshop.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The Women's Circle takes RSVPs by email from the public; the site does not say whether it has
-    openings
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The circle takes RSVPs by email from the public. The site does not say whether it has openings
+    or who the circle is for beyond its name.
+  what_to_expect: The Women's Circle is a regular meetup for planning, support and personal growth. The
+    site does not say how long a session lasts, where it meets or what happens on a first visit, so ask
+    when you RSVP. The arts and crafts workshop, for ages 9 and up, has people make a rose collage on
+    canvas with their own methods, plus verbal rose exchanges and Q&A sessions about healing and equal
+    rights.
+  first_visit_tips:
+  - Email before you come, since the site does not list a meeting place.
+  - Ask about the workshop schedule and cost when you reach out, because neither is published.
 contacts:
   website: http://givememyroses.org/
   email: info@GiveMeMyRoses.org
   phone: null
   contact_name: Lonnie summers
-  social: []
+  social:
+  - https://www.instagram.com/givememyrosess
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: http://givememyroses.org/
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://givememyroses.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,7 +123,41 @@ sources:
   - contacts
   - first_step
   - status
-research_tier: 1
+- url: https://givememyroses.org/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - first_step
+  - contacts
+- url: https://givememyroses.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://givememyroses.org/experience/arts-crafts-motivation/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+  - what_you_do
+  - first_step
+  - what_to_expect
+- url: https://givememyroses.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://givememyroses.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://givememyroses.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

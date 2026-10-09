@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A congregation whose website is in Japanese and English, with Sunday worship in the building
   and on Zoom, and coffee and sometimes lunch afterward.
-what_you_do: Attend Sunday worship in person or on Zoom, stay for coffee or lunch, or ask about the Bible
-  study group.
+what_you_do: Attend Sunday worship in person or on Zoom, stay for coffee or lunch, or join the online
+  Bible study that meets on the second and fourth Mondays.
 kind: congregation
 categories:
 - faith-community
@@ -65,7 +65,8 @@ access:
   languages:
   - ja
   - en
-  notes: null
+  notes: The directions page names Overbrook station on the SEPTA R5 line, one stop past 30th Street Station,
+    as the nearest stop, then gives walking directions to the church.
 requirements:
   act153_clearances: null
   background_check: null
@@ -74,15 +75,22 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Visit a Sunday service in person or by Zoom, or reach the church by phone, contact form or email
-    link
+  how: Come to the 11 am Sunday service at 6301 Drexel Road, in person or on Zoom, or call 215-473-1910
+    with questions before a first visit.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says visitors of any faith are welcome, children too, and gives several ways to get
-    in touch
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says visitors of any faith and families with children are welcome, and it lists several
+    ways to get in touch.
+  what_to_expect: Sunday worship starts at 11 am in the church building, and a Zoom service runs alongside
+    it. The church mainly serves Japanese speakers, and the website is in Japanese and English. Coffee
+    follows worship, and some Sundays also have a meal or lunch.
+  first_visit_tips:
+  - Parking is available, and the entrance is from Drexel Road.
+  - Plan to stay for coffee, and for lunch on Sundays when a meal is listed.
+  - From the 69th Street Terminal, take Bus 65 to 63rd Street and Sherwood Avenue, as the directions page
+    explains.
+  - Call 215-473-1910 before you come if you have questions.
 contacts:
   website: https://www.japanesechristianchurch.org
   email: null
@@ -91,8 +99,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: '2026'
-sign_of_life_url: https://www.japanesechristianchurch.org/
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.japanesechristianchurch.org/お知らせ-news/
 sources:
 - url: https://www.japanesechristianchurch.org/
   seen: '2026-10-08'
@@ -108,8 +116,32 @@ sources:
   fields:
   - lead
   - contacts.phone
-research_tier: 1
-confidence: medium
+- url: https://www.japanesechristianchurch.org/集会案内-schedule/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - first_step
+  - status
+- url: https://www.japanesechristianchurch.org/教会への行き方-directions/
+  seen: '2026-10-08'
+  fields:
+  - access.notes
+  - first_visit_tips
+  - locations
+- url: https://www.japanesechristianchurch.org/お問い合わせ-contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.japanesechristianchurch.org/お知らせ-news/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -5,11 +5,12 @@ leads:
 - irs_990n:932753376
 - irs_bmf:932753376
 ein: '932753376'
-summary: A young nonprofit that wants to make intermediate and advanced circus arts easier to reach in
-  Philadelphia. It is still in early planning, and its site lists no classes of its own yet.
-what_you_do: For now, follow the group by joining its mailing list or its Discord server. Flying trapeze
-  classes are sold by Wahoo Trapeze, a separate business that works out of the group's space at 700 East
-  Johnson St.
+summary: A nonprofit working to make intermediate and advanced circus arts easier to reach in Philadelphia.
+  It has hosted community flow arts jams and offers memberships, and flying trapeze classes are taught
+  by a partner business.
+what_you_do: Come to a community flow arts jam when one is announced, follow the mailing list or Discord
+  for news, or apply for a membership at $10 a month. Flying trapeze classes are booked directly with
+  Wahoo Trapeze, a separate company that offers classes at the group's East Johnson Street space.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -34,7 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: The site mentions a weekly Circus Jam, but no day or time is listed.
   days: []
   times: []
   recurring: null
@@ -51,8 +52,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: No Circus Forge classes or prices are listed yet
+  level: low
+  text: Membership is $10 a month, which the group says covers upkeep of its outdoor space. Flying trapeze
+    classes are booked directly with Wahoo Trapeze.
 commitment: null
 group_size: null
 access:
@@ -67,18 +69,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the mailing list from circusforge.org, or the Discord server linked there, to hear about its
-    plans
+  how: Join the mailing list at circusforge.org to hear about the next public jam, then attend one before
+    you apply for membership.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Only a mailing list and Discord are offered, and no classes or events are listed yet, so the
-    way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Public jams are open to visitors, but none is listed as upcoming, and membership needs an application
+    and monthly dues before you see the full group.
+  what_to_expect: Public jams are evening sessions, and one listing ran from 6:30 to 11 pm. The join page
+    says no high level of skill is required and that the group is looking for artists who want to build
+    community. Membership starts with an application form on the site, and dues are $10 a month.
+  first_visit_tips:
+  - Check the events page or the mailing list for the next jam, since the site currently lists no upcoming
+    events.
+  - Past jams asked people to RSVP so the group could estimate attendance, so RSVP if a listing asks.
+  - Membership starts with the Apply Now form on the join page.
 contacts:
   website: https://circusforge.org
-  email: null
+  email: info@circusforge.org
   phone: null
   contact_name: Alexander McCraw
   social:
@@ -86,9 +94,9 @@ contacts:
   - https://www.instagram.com/circusforge
   - https://discord.gg/wZaAe23HTj
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://circusforge.org
+status: active
+last_sign_of_life: 2026-08
+sign_of_life_url: https://circusforge.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -119,8 +127,33 @@ sources:
   fields:
   - locations
   - what_you_do
-research_tier: 1
-confidence: low
+- url: https://circusforge.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_visit_tips
+- url: https://circusforge.org/category/programs/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - locations
+- url: https://circusforge.org/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts
+  - what_you_do
+- url: https://wp.circusforge.org/join/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - what_you_do
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

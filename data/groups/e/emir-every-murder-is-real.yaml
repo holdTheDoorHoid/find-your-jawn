@@ -6,16 +6,18 @@ leads:
 - irs_990n:232990505
 - irs_bmf:232990505
 ein: '232990505'
-summary: A Philadelphia nonprofit that supports people and families affected by homicide and violence,
-  with restorative circles, violence prevention work, and a list of healing resources.
-what_you_do: Call or email to ask for support, or sign up as a volunteer through the Become a Volunteer
-  page. Restorative circle practices are one of its listed services.
+summary: A Philadelphia nonprofit that supports people and families affected by homicide and violence.
+  It offers case help for families, grief and support groups, restorative justice work, and violence prevention
+  programs.
+what_you_do: Call or email to ask for support, join a support group such as When Brothers Speak or Sister
+  to Sister, or sign up to volunteer through the Become a Volunteer page.
 kind: nonprofit
 categories:
 - support-recovery
 - advocacy-rights
 interests:
 - grief_support
+- survivor_support
 - violence_prevention
 motives:
 - values
@@ -55,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Cost of services is not listed on the site
+  text: The site lists no fees for its services.
 commitment: null
 group_size: null
 access:
@@ -70,14 +72,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-848-4068 (the site says call any time) or sign up through emirphilly.org/become-a-volunteer.
+  how: Call 215-848-4068, which the site says is open any time, and ask about the support group or case
+    help you need.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Support and volunteering are open to the public, with a listed phone line and an online volunteer
-    page.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Support and volunteering are open to the public, with a listed phone line and a volunteer page.
+    The site does not say whether support groups take new people or how a first call works.
+  what_to_expect: The site does not describe a first visit or what a support group is like. It names case
+    help for families, help with a victim compensation application, court accompaniment, grief support
+    groups and individual counseling.
+  first_visit_tips:
+  - Call first to confirm the office address, since the site lists two addresses.
+  - Ask on the phone whether the support group you want is open to new people.
 contacts:
   website: https://www.emirphilly.org
   email: info@emirphilly.org
@@ -89,8 +96,8 @@ contacts:
   - https://twitter.com/EmirHealing
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.emirphilly.org
+last_sign_of_life: 2025-09
+sign_of_life_url: https://emirphilly.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,7 +124,29 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://emirphilly.org/services/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - cost
+  - first_step
+- url: https://emirphilly.org/become-a-volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://emirphilly.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://emirphilly.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

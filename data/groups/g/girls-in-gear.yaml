@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A cycling program for girls of all ages and abilities, with coaches who run group sessions to
   build confidence.
-what_you_do: Girls can join a session or find a ride near them. Coaches receive training in safety and
-  the group's curriculum, and volunteers can use the coach link on the site.
+what_you_do: Girls can join a clinic or Club GiG, or find a ride near them. Coaches receive training in
+  safety and the group's curriculum, and volunteers can use the coach link on the site.
 kind: nonprofit
 categories:
 - running-cycling-fitness
@@ -34,18 +34,29 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Glide to Ride clinics run about two hours each for first-time two-wheel riders, on set dates listed
+    on the Greater Philadelphia page. Club GiG is an eight week club for confident riders that meets on
+    Saturday afternoons at various locations.
   days: []
   times: []
   recurring: null
   season: null
-locations: []
+locations:
+- label: Chamounix Tennis Courts, Fairmount Park (Glide to Ride clinics)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: '19131'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Fees, scholarships, and whether programs are free are not stated on the home page. A registration
-    page is linked.
-commitment: null
+  text: The Greater Philadelphia page does not state fees or scholarships. The registration page says
+    the group wants every girl to be able to join regardless of money, but it does not say how that works.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
@@ -59,23 +70,32 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Register through the register page, or sign up as a coach through the coach page.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Both a registration page and a coach page are linked from the home page.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Choose a Glide to Ride clinic date on the Greater Philadelphia page and register through its link.
+    To coach instead, email info@girlsingear.org.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Greater Philadelphia page lists a two hour clinic for first-time two-wheel riders with registration
+    links, and the coach page says no cycling expertise is needed to coach.
+  what_to_expect: Glide to Ride is about two hours and is aimed at riders who are new to two-wheel cycling.
+    Coaches run each group session with a focus on confidence and safety. The group's pages do not say
+    what to bring, whether you need your own bike or helmet, or what the fee is, so check the registration
+    page before you sign up.
+  first_visit_tips:
+  - Pick a clinic date on the Greater Philadelphia page; each date has its own registration link.
+  - Check the registration page for fees and scholarship options before you sign up.
+  - Ask the program director by email whether girls need their own bike or helmet, since the site does
+    not say.
 contacts:
   website: https://www.girlsingear.org/
-  email: null
+  email: nikki@girlsingear.org
   phone: null
-  contact_name: null
+  contact_name: Nikki Spector, Greater Philadelphia Program Director
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.girlsingear.org/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.girlsingear.org/philadelphia
 sources:
 - url: https://www.girlsingear.org/
   seen: '2026-10-08'
@@ -90,8 +110,29 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.girlsingear.org/philadelphia
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - contacts
+  - cost
+- url: https://www.girlsingear.org/coach
+  seen: '2026-10-08'
+  fields:
+  - roles
+  - requirements
+  - commitment
+  - first_step
+- url: https://www.girlsingear.org/register
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

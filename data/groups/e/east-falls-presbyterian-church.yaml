@@ -37,8 +37,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10:30 am. Monday evening Bible study, and Thursday small groups at 7 pm in person
-    or 7:30 pm online.
+  text: 'Sunday worship at 10:30 am, with Sunday School for children from September to June. Small Bible
+    study groups meet in series: Monday evenings at 7:30 pm in person, and Thursday evenings at 7 pm in
+    person or 7:30 pm online.'
   days:
   - sun
   - mon
@@ -61,13 +62,14 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: The site does not list costs for worship, Sunday School or the small groups.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: A ramp leads into the building and the sanctuary. The hall, which has the bathroom and nursery,
+    is up three steps with a chair lift, and a chair lift also serves the basement fellowship hall.
 requirements:
   act153_clearances: null
   background_check: null
@@ -76,14 +78,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship; for the Thursday groups, sign up through the linked form
+  how: Come to Sunday worship at 10:30 am at 3800 Vaux Street. For the Thursday small groups, sign up
+    through the linked form on the site.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site invites all visitors to worship and to the All Saints event, and links a sign up form
-    for small groups
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The worship page says visitors are glad to be there, and the All Saints event says non-religious
+    visitors are welcome; the Thursday groups have a clear sign-up form.
+  what_to_expect: Sunday worship starts at 10:30 am in the sanctuary, with traditional hymns, choral music,
+    printed liturgy and prayer. Dress ranges from Sunday best to jeans, and children may stay in the sanctuary
+    or go to Sunday School after the children's sermon. Communion is served on the first Sunday of each
+    month, and servers bring it to people who cannot come forward. The nursery is staffed by two background-checked
+    adult caregivers.
+  first_visit_tips:
+  - Online worship is also available; the site has a sign-up link at the top of the page.
+  - The site gives no parking or transit details, so check the route before you go.
 contacts:
   website: https://eastfallspres.org
   email: efpcoffice@gmail.com
@@ -110,7 +119,24 @@ sources:
   - lead
   - contacts.email
   - contacts.phone
-research_tier: 1
+- url: https://eastfallspres.org/worship
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - access
+  - first_step
+  - online_ok
+- url: https://eastfallspres.org/childrensministry
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - what_you_do
+- url: https://eastfallspres.org/who-we-are
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

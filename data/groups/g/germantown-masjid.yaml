@@ -8,14 +8,16 @@ leads:
 ein: '251874440'
 summary: A mosque on Germantown Avenue that runs free classes from Wednesday to Sunday, open to brothers
   and sisters. It also has an academy, an enrichment program and a weekly outreach booth downtown.
-what_you_do: Come to a free class on any day from Wednesday to Sunday, or ask about the academy and the
-  enrichment program. The mosque also runs an outreach booth in Downtown Philadelphia.
+what_you_do: Come to a free class on any day from Wednesday to Sunday. The Sunday 10 am New Muslim class
+  is for men and women. Ask about the youth enrichment program for ages 6 to 16 and the academy, a school
+  next to the mosque. The mosque also runs an outreach booth in Downtown Philadelphia.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
 - scripture_study
+- faith_youth_programs
 motives:
 - understanding
 - values
@@ -38,15 +40,20 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free classes Wednesday to Sunday, taught by qualified students of knowledge. Class times are on
-    a separate schedule page that could not be read. Office hours are 10 am to sunset every day.
+  text: Free classes Wednesday to Sunday, taught by named teachers. Most classes start after one of the
+    daily prayers, such as after Fajr, Asr, Maghrib or Isha. The New Muslim class meets Sundays at 10
+    am for men and women. Office hours are 10 am to sunset every day.
   days:
   - wed
   - thu
   - fri
   - sat
   - sun
-  times: []
+  times:
+  - morning
+  - daytime
+  - evening
+  - night
   recurring: true
   season: year_round
 locations:
@@ -62,7 +69,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Classes are free
+  text: Classes are free.
 commitment: null
 group_size: null
 access:
@@ -77,14 +84,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Go to a class, or call 267-900-5371 to ask about the schedule
+  how: Go to the Sunday 10 am New Muslim class, or call 267-900-5371 to ask about the schedule and whether
+    you need to register.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Classes are free and open to brothers and sisters, and the site has material for new Muslims,
-    but it does not say how a newcomer should start.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: A New Muslim class for men and women runs on Sundays at 10 am, and the classes are free and open
+    to everyone, but the site does not say whether registration is needed.
+  what_to_expect: Classes are taught by named teachers, and each one is free. The New Muslim class meets
+    Sundays at 10 am for men and women. The site does not say how long a class lasts, which room it uses
+    or the language of instruction, so call ahead.
+  first_visit_tips:
+  - Call before you come, since the classes page lists no rooms, end times or language of instruction.
+  - Office hours run from 10 am to sunset every day, so the office can answer questions during the day.
+  - The site does not cover dress or parking, so ask about both when you call.
 contacts:
   website: https://germantownmasjid.com/
   email: null
@@ -119,6 +132,7 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - schedule
 - url: https://germantownmasjid.com/classes-at-germantown-masjid/
   seen: '2026-10-08'
   fields:
@@ -128,7 +142,26 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://germantownmasjid.com/classes/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+  - what_to_expect
+- url: https://germantownmasjid.com/masjid-academy/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://germantownmasjid.com/masjid-enrichment/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://germantownmasjid.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

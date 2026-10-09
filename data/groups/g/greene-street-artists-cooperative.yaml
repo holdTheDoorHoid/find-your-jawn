@@ -31,14 +31,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open studios and events happen through the year. The site did not list dates when we read it.
+  text: Open studios and events happen through the year. The site does not post dates, so the mailing
+    list is the way to hear about them.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
-- label: Germantown, Philadelphia
-  address: null
+- label: Co-op building on Greene Street
+  address: 5225 Greene St
   neighborhood: null
   planning_district: null
   zip: null
@@ -49,8 +50,8 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Membership means buying a live and work unit and its co-op shares. The listing we read was a $130,000
-    unit that was under contract.
+  text: Membership means buying a live and work unit and taking over its co-op shares. The only unit listed
+    for sale when we read the site was $130,000 and under contract, and another listing is marked sold.
 commitment: null
 group_size: null
 access:
@@ -65,15 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the mailing list on the site for event news. To become a member, watch for a unit for sale
-    and apply through the to-join page, or ask to be put on the waiting list through the contact form.
+  how: Sign up for the mailing list on the co-op website to hear about open studios and events, or email
+    greenestreetinfo@gmail.com to ask about the next one.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Membership needs an artist application and a unit purchase. The public entry points are the mailing
-    list and events, and their dates are not posted.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Membership needs an artist application and a unit purchase. The public way in is the mailing
+    list and events, but the site posts no dates, so the way in is unclear.
+  what_to_expect: The co-op is a converted warehouse with 15 live and work units on about 1.5 acres, with
+    yards, trees, a garden, and a parking lot. Residents are visual artists, theater artists, and writers,
+    and they share their work through open studios, events, classes, and workshops. Public dates are not
+    posted, so check the mailing list before you plan a trip.
+  first_visit_tips:
+  - Join the mailing list first, since the site does not post dates for open studios.
+  - The site we read does not give a street address or parking details, so ask when you get a date.
+  - If no unit is for sale, you can ask to join the waiting list through the co-op's contact form.
 contacts:
   website: https://www.greenestreetartists.org/
   email: greenestreetinfo@gmail.com
@@ -93,13 +100,19 @@ sources:
   - contacts
   - status
   - schedule
+  - first_step
 - url: https://www.greenestreetartists.org/to-join
   seen: '2026-10-08'
   fields:
   - first_step
   - cost
   - requirements
-research_tier: 1
+  - first_visit_tips
+- url: https://observatory.wiki/wiki/Brief:Greene_Street_Artists_Coop_Is_a_Haven_for_Philadelphia_Creatives
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

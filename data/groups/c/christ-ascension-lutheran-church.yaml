@@ -5,8 +5,8 @@ leads: []
 ein: null
 summary: A Lutheran congregation on Germantown Avenue with Sunday worship and a short weekday noon prayer
   that neighbors are invited to join.
-what_you_do: Sit in on Sunday worship, or drop in on the Wednesday noon prayer for scripture, prayer and
-  meditation.
+what_you_do: Sit in on Sunday worship at 9:30 am, stay for fellowship with conversation and snacks afterward,
+  or drop in on the Wednesday noon prayer for scripture, prayer and meditation.
 kind: congregation
 categories:
 - faith-community
@@ -18,6 +18,7 @@ formats:
 - conversation
 roles: []
 crowd:
+- all_ages
 - neighbors
 bridging: null
 audience:
@@ -30,7 +31,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 9:30 am. Noonday Prayer on Wednesdays from 12:15 to 12:45 pm.
+  text: Sunday worship at 9:30 am with Holy Communion at each service. Noonday Prayer on Wednesdays from
+    12:15 to 12:45 pm, with scripture, prayer and meditation.
   days:
   - sun
   - wed
@@ -52,35 +54,50 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: The site does not list a cost
+  text: No fee is listed for worship or prayer. Giving is by donation through the church's donate page.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The sanctuary is not fully wheelchair accessible. Kimes Hall, the parish hall, is fully accessible.
+    The small lot holds about 10 cars, and there is a driveway between the sanctuary and Kimes Hall. Free
+    street parking is on Southampton and in front of Jenks School on Germantown, but only when school
+    is not in session. A pay lot is up Germantown.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to the 9:30 am Sunday service in the sanctuary to the left of the driveway, or call the church
-    first.
+  how: Come to the 9:30 am Sunday service in the sanctuary to the left of the driveway, or call the office
+    on a weekday morning first.
   drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all are welcome and explains where to sit, but describes no newcomer program.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The site says all are welcome, explains what a first visit is like, and says fellowship follows
+    worship. It has no separate newcomer program.
+  what_to_expect: Sunday worship starts at 9:30 am with Holy Communion, piano and organ music, and an
+    adult choir during the program year. Visitors can join in as much or as little as they like, and the
+    site suggests arriving between 30 minutes early and just before the start. Fellowship with conversation
+    and snacks follows, and it is fine to leave early.
+  first_visit_tips:
+  - The lot holds about 10 cars, so plan for street parking or the pay lot up Germantown.
+  - Communion is open to all Christians, and gluten-free bread and grape juice are offered.
+  - Keep your phone on silent, and ask permission before taking photos.
+  - Ushers can give you a children's bulletin, and there is a quiet space with toys and books for young
+    children.
 contacts:
   website: https://www.christascension.org/
   email: office@christascension.org
   phone: 215-247-4233
   contact_name: null
-  social: []
+  social:
+  - https://www.facebook.com/683169018495273
+  - https://www.instagram.com/calcphilly
+  - https://www.x.com/calcphilly
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -95,12 +112,30 @@ sources:
   - first_step
   - contacts
   - status
+  - requirements
 - url: https://www.sepa.org/_files/ugd/6750c7_016223f99ae44b8780c2e8db3e12ea90.pdf
   seen: '2026-10-08'
   fields:
   - lead
   - contacts
-research_tier: 1
+- url: https://www.christascension.org/we-gather
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - access
+  - requirements
+  - crowd
+- url: https://www.christascension.org/faith-formation
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://www.christascension.org/contact-and-connect
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

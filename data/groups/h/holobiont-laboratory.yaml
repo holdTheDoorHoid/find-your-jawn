@@ -39,16 +39,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Events are posted as they are planned. Dated items seen: a zine launch party on Feb 28, 2026,
-    and a Lab Notes entry for a May 6 papermaking workshop with no year given. An off-grid solar session
-    is listed with no date.'
+  text: Events are added to the lab's events page as they are planned. No regular weekly or monthly meeting
+    is listed.
   days: []
   times: []
   recurring: false
   season: event_only
 locations:
 - label: Karakung Reef (West Philadelphia)
-  address: null
+  address: 6009 Cedarhurst
   neighborhood: null
   planning_district: null
   zip: null
@@ -74,13 +73,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Subscribe to email updates through the link on holobiontlab.org, then come to the next open event.
+  how: Subscribe to the email updates through the link on holobiontlab.org, then come to the next open
+    event, such as the off-grid solar workshop once its date is set.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Events are listed publicly and an email update sign-up is offered; no application is mentioned.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: Events are listed publicly and an email sign-up is offered, but the site does not say how to
+    register for an event or what one costs.
+  what_to_expect: Events are one-off, hands-on sessions. The off-grid solar workshop covers the basics
+    of how a small solar system works, and you build a small working system yourself. The site gives no
+    cost or length for events, so ask through the contact page before you come.
+  first_visit_tips:
+  - Subscribe to the email list so you hear when the solar workshop date is set.
+  - The solar workshop is at Karakung Reef, which the event page says is reachable on the 34 trolley.
 contacts:
   website: https://holobiontlab.org/
   email: null
@@ -91,7 +96,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-02
-sign_of_life_url: https://holobiontlab.org/
+sign_of_life_url: https://holobiontlab.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -119,7 +124,28 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://holobiontlab.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://holobiontlab.org/events/off_grid_solar
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - locations
+  - first_visit_tips
+- url: https://holobiontlab.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://holobiontlab.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

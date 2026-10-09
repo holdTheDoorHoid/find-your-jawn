@@ -36,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are listed on the group's calendar. The newest dated event on the site is the 2026 Annual
-    Christmas Party on December 18, 2026, at the Ashburner Inn.
+  text: Most years the group holds a Toast to Saint Patrick in March, a summer happy hour, a fall general
+    meeting, a Christmas party in December and an awards dinner. Events are posted on the group's calendar.
   days: []
   times: []
   recurring: true
@@ -54,8 +54,10 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Membership dues and event prices were not shown on the page.
+  level: paid
+  text: Membership is a $100 lifetime fee, paid with the application. Public dinners and happy hours have
+    tickets or a donation at the door, and prices change from year to year. Christmas parties are for
+    members and a guest.
 commitment: one_off
 group_size: null
 access:
@@ -70,21 +72,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Check the calendar for an event, then use the Contact link on the site to ask about attending.
-    The Apply Now link starts membership.
+  how: Buy a ticket to a public event on the calendar, such as the Toast to Saint Patrick or the awards
+    dinner, which were open to the public. To ask about attending as a non-member, or to join, email info@theirishsociety.com.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Calendar events are listed for the public, though the site does not say whether non-members can
-    attend.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Several events are open to the public with a ticket, and membership has a clear application.
+    The site does not say whether non-members can attend general meetings, and new members need a sponsor
+    from a current member.
+  what_to_expect: Events are mostly dinners, speaker meetings and happy hours, many held at the Ashburner
+    Inn. Public dinners such as the Toast to Saint Patrick and the awards dinner need a ticket, while
+    Christmas parties are for members and one guest. The pages do not say how long events run, so ask
+    before you go.
+  first_visit_tips:
+  - Check the calendar for public events, since the Christmas party is limited to members and a guest.
+  - Email the group before the event to ask whether a non-member can attend.
 contacts:
   website: https://www.theirishsociety.com
-  email: null
+  email: info@theirishsociety.com
   phone: null
   contact_name: Joseph Cleary
-  social: []
+  social:
+  - https://www.facebook.com/irishsociety
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
@@ -116,8 +125,33 @@ sources:
   - status
   - contacts
   - cost
-research_tier: 1
-confidence: medium
+- url: https://www.theirishsociety.com/become-a-member
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - requirements
+- url: https://www.theirishsociety.com/calendar
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - status
+  - first_step
+- url: https://www.theirishsociety.com/friends
+  seen: '2026-10-08'
+  fields:
+  - lead
+- url: https://www.theirishsociety.com/the-irish-society
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.theirishsociety.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

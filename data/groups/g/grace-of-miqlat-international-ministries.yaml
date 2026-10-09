@@ -8,8 +8,8 @@ leads:
 ein: '271310145'
 summary: A church that calls itself a place of refuge. It holds worship and Bible study, runs a children's
   Bible group, and welcomes visitors from the neighborhood.
-what_you_do: Visit for worship, come to the Thursday adult Bible study, or join a Tuesday or Saturday
-  class, online or at Tacony Library.
+what_you_do: Visit for worship, come to the Thursday adult Bible study, or join a Tuesday online class
+  or a Saturday children's class. The church also offers notary and tax-filing help.
 kind: congregation
 categories:
 - faith-community
@@ -35,8 +35,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Adult Bible study on Thursdays, 6 to 7 pm. A Tuesday Bible training class, 6 to 7 pm, meets online.
-    Saturday children's classes, 3:30 to 4:30 pm, meet on Zoom at Tacony Library.
+  text: Adult Bible study on Thursdays, 6 to 7 pm. An online Tuesday Bible training class, 6 to 7 pm.
+    The church home page lists Saturday children's classes at 3:30 to 4:30 pm. The children's Bible group
+    is for ages 3 to 16 and meets weekly for about an hour.
   days:
   - tue
   - thu
@@ -47,7 +48,7 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Tacony Library (Saturday children's classes, per the church site)
+- label: Tacony Library (listed for Saturday children's classes; confirm with the church)
   address: null
   neighborhood: null
   planning_district: null
@@ -59,7 +60,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: No fee is listed. The site invites donations to a literacy fund.
+  text: No fee is listed for classes. The site has donation buttons for a literacy fund.
 commitment: weekly
 group_size: null
 access:
@@ -74,14 +75,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-780-0633 or email gracemiqlat@live.com to confirm the times, then come in for a visit.
+  how: Call 215-780-0633 or email gracemiqlat@live.com to confirm the times and where to meet, then come
+    in for a visit.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The church says visitors are welcome to come in for a visit and lists its weekly classes with
-    times.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The church says visitors are welcome to come in for a visit and gives a phone number and email
+    to arrange one.
+  what_to_expect: The website does not describe a first visit in detail. The church says its services
+    are held at the main church, but it does not publish that street address, so ask for it when you call.
+    The Thursday Bible study and the Tuesday online class each run one hour in the evening, and the children's
+    group is for ages 3 to 16.
+  first_visit_tips:
+  - Call 215-780-0633 to confirm the time and place before you come.
+  - Ask whether the Saturday children's class is on Zoom or in person at Tacony Library.
+  - No fee is listed for classes, and donations are optional.
 contacts:
   website: https://www.gracemiqlat.org/
   email: gracemiqlat@live.com
@@ -117,11 +125,28 @@ sources:
   - cost
   - first_step
   - status
+  - locations
+  - online_ok
 - url: https://www.gracemiqlat.org/visit_us
   seen: '2026-10-08'
   fields:
   - contacts
-research_tier: 1
+  - first_step
+- url: https://www.gracemiqlat.org/services
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.gracemiqlat.org/bible_groups
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - commitment
+  - cost
+- url: https://www.gracemiqlat.org/about_us
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
