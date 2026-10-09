@@ -6,8 +6,9 @@ ein: null
 summary: A department of the Urban Affairs Coalition that helps lower and moderate income families with
   homebuying, foreclosure prevention and money skills. It offers free financial education workshops that
   groups can request, and a free hotline for homeowners who are behind on payments.
-what_you_do: Request a free money workshop for your group through the site's form, call the homeowner
-  hotline, or sign up for a homebuyer seminar through Eventbrite.
+what_you_do: Ask for a free money workshop for your group by email or through the online request form.
+  If you are behind on a mortgage or property tax, call the homeowner hotline. Homebuyer seminars and
+  fairs are registered through Eventbrite.
 kind: program
 categories:
 - careers-skills-professional
@@ -34,10 +35,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workshops are booked on request. Homebuyer seminars and fairs are registered through Eventbrite.
-  days: []
-  times: []
-  recurring: null
+  text: Office hours are Monday to Friday, 9 am to 5 pm. Money workshops are booked on request, and the
+    group chooses the dates. Hotline hours are not listed.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Office (UAC, 1650 Arch St)
@@ -67,18 +75,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the hotline at 215-334-4663 if you are behind on a mortgage or property tax, or request a
-    workshop through the site's form.
+  how: Call the hotline at 215-334-4663 if you are behind on a mortgage or property tax, or email cedphilly@uac.org
+    to ask for a free money workshop for your group.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The hotline and free workshops are open to the public. Groups request a workshop, and no workshop
-    dates are listed.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The hotline and free workshops are open to the public, and the group request route is clear,
+    but the site lists no workshop dates or hotline hours.
+  what_to_expect: The hotline is for homeowners who are behind on a mortgage or property tax, facing foreclosure,
+    or dealing with a tangled title. The site does not say what happens after the call, beyond pointing
+    to an online intake form at Philadelphia Legal Assistance. A money workshop is set up for a group,
+    which picks the topic and dates and provides the room. Individuals who need one-on-one help are referred
+    to other services.
+  first_visit_tips:
+  - The office is at 1650 Arch Street, Suite 2701, open 9 am to 5 pm, Monday to Friday.
+  - Workshops are for groups such as organizations, churches, clubs, and schools.
+  - The site lists no parking, transit, or accessibility details, so ask before you visit.
 contacts:
   website: https://cedphilly.org
-  email: null
+  email: cedphilly@uac.org
   phone: 215-851-1738
   contact_name: null
   social:
@@ -104,7 +119,25 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://cedphilly.org/financial-advancement-network
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - audience
+- url: https://cedphilly.org/philly-save-your-home-free-hotline
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - audience
+- url: https://cedphilly.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - schedule
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

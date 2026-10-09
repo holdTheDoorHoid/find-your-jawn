@@ -7,8 +7,9 @@ leads:
 ein: '833184649'
 summary: A West Philadelphia nonprofit that works to lift families out of poverty through education, affordable
   housing, and support services. It runs family programs and invites volunteers.
-what_you_do: Volunteer through the group's site, ask about its family programs such as Family Self-Sufficiency
-  and WorkSmart West Philly, or attend a public event.
+what_you_do: Volunteer for office support, skills workshops, tax help, resume feedback, house makeovers,
+  block cleanups or donation drives. You can also ask about its family programs, such as the Family Self-Sufficiency
+  Program, which has strict eligibility rules.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -16,6 +17,9 @@ categories:
 interests:
 - housing_help
 - job_clubs
+- home_repair
+- money_skills
+- skills_volunteering
 motives:
 - values
 - career
@@ -33,10 +37,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The main office is open Monday to Thursday, 9 am to 5 pm. Community events are on hold for now,
+    so ask about volunteer roles by email or phone.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Main office
@@ -51,7 +61,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No program or volunteer fees are listed on the pages read. The site takes donations.
 commitment: null
 group_size: null
 access:
@@ -66,14 +76,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@achieve-ability.org or call 215-748-8800 to ask how to volunteer or join a family program
+  how: Email development@achieve-ability.org or call 215-748-8800 to ask which volunteer role fits your
+    schedule, such as front desk help, a skills workshop or a block cleanup.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Volunteer and event links exist, but the sign-up steps and program eligibility are not explained
-    on the pages read.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Volunteer roles are listed with a phone number, an email and an office address, and no application
+    or fee is named. The pages do not state a time commitment or whether training is given.
+  what_to_expect: The site does not say how long a volunteer shift lasts or whether training is given.
+    Roles range from answering calls and running the front desk to leading workshops on budgeting or parenting,
+    helping prepare tax returns, and joining house makeovers or block cleanups.
+  first_visit_tips:
+  - Call before you go on a Friday, because the site lists different Friday hours in two places.
 contacts:
   website: https://www.achieveability.org
   email: info@achieve-ability.org
@@ -81,9 +95,9 @@ contacts:
   contact_name: Chip Darling
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.achieveability.org
+status: active
+last_sign_of_life: 2026-04
+sign_of_life_url: https://achieveability.org/events
 sources:
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
   seen: '2026-10-04'
@@ -101,7 +115,28 @@ sources:
   - locations
   - contacts
   - status
-research_tier: 1
+  - cost
+- url: https://achieveability.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://achieveability.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://achieveability.org/fssp
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://achieveability.org/wswp
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

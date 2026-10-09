@@ -6,16 +6,19 @@ leads:
 ein: '331018550'
 summary: A mosque and community center in Kensington with a Youth Club, an Interfaith program and an Outreach
   program. The society has been operating since 1989.
-what_you_do: The site names an Interfaith program, an Outreach program and a Youth Club but gives no details.
-  Call the office to ask how to join each one and whether visitors are welcome at prayer.
+what_you_do: Kids ages 7 to 16 can join the Youth Club for service projects, art and trips. The Outreach
+  program works with partners on arts, service and planting projects, including free mural workshops open
+  to the public. The Interfaith program has helped host the Interfaith Peacewalk for about 20 years.
 kind: congregation
 categories:
 - faith-community
 - kids-youth-mentoring
+- arts-crafts
 interests:
 - worship_community
 - interfaith
 - faith_youth_programs
+- mural_public_art
 motives:
 - values
 - social
@@ -26,6 +29,7 @@ roles:
 - hands_on
 crowd:
 - families
+- kids
 - teens
 bridging: null
 audience:
@@ -38,11 +42,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The site has a prayer times heading but no times in the text we could read. The events calendar
-    and announcements had no items.
+  text: Youth Club meets on club days, but the days and times are not posted. The events calendar had
+    no items when checked, so ask the office for current times.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Al-Aqsa Islamic Society
@@ -57,28 +61,37 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site
+  text: The site does not state fees for the Youth Club or the Interfaith program. Mural Arts workshops
+    are described as free.
 commitment: null
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The conference room used for elections is wheelchair accessible, and parking is available, according
+    to the Outreach page. The site gives no other accessibility details.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Call (215) 765-2743 or use the contact form on the site
+  how: Call the mosque at (215) 765-2743 to ask about joining. For the Youth Club, call the youth coordinator
+    at (215) 765-0607 and ask about open spots, since spaces are limited.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site names programs but gives no dates, costs or sign-up steps, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: The free mural workshops are open to the public, and the Youth Club has a named coordinator to
+    contact. Youth Club spots are limited, and the site does not describe visitor steps for the other
+    programs.
+  what_to_expect: For kids, the Youth Club mixes service projects, such as making care packages and visiting
+    senior homes, with art and fun activities. Parents are invited to help on trips and service days.
+    The Peacewalk provides shuttle buses, so walkers can park and ride to the start.
+  first_visit_tips:
+  - Parking is available, according to the Outreach page.
+  - Call ahead, since the site does not post program times or visiting hours.
 contacts:
   website: https://alaqsaislamicsociety.com/
   email: null
@@ -114,7 +127,37 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://alaqsaislamicsociety.com/wp/outreach-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - cost
+  - access
+  - first_step
+  - contacts
+- url: https://alaqsaislamicsociety.com/wp/al-aqsa-youth-club/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - requirements
+  - first_step
+  - what_you_do
+- url: https://alaqsaislamicsociety.com/wp/interfaith-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+  - first_step
+- url: https://alaqsaislamicsociety.com/wp/events-calendar/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://alaqsaislamicsociety.com/wp/al-aqsa-islamic-society-in-the-news/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -3,9 +3,12 @@ name: Chester Avenue Community Garden
 aka: []
 leads: []
 ein: null
-summary: A neighborhood garden on Chester Avenue with its own website and Instagram. Neighbors can email
-  the garden to ask about joining.
-what_you_do: null
+summary: A shared neighborhood garden on Chester Avenue, run by its gardeners. Gardeners work together
+  on monthly work days and on volunteer teams for compost, herbs, mowing, orchard, flowers and more. Neighbors
+  can email the garden to ask about joining.
+what_you_do: Come to the monthly work day, usually a Saturday morning, to help with tasks that benefit
+  the whole garden. The site also lists volunteer teams with named members, such as compost, herbs, lawn
+  mowing, orchard and CSA pickups.
 kind: garden
 categories:
 - gardening-greening
@@ -31,10 +34,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Work days on the third Saturday of each month, about 9 am to noon, or 8 am to 11 am when it is
+    very hot.
+  days:
+  - sat
+  times:
+  - morning
+  recurring: true
   season: null
 locations:
 - label: Garden
@@ -64,13 +70,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email chester.ave.garden@gmail.com to ask about joining
+  how: Come to a work day on the third Saturday of the month, and email chester.ave.garden@gmail.com to
+    ask about joining.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The page gives no waitlist, open days or volunteer steps, so the way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Work days are posted with set times, but the site only invites gardeners to come help. It does
+    not say whether non-gardeners can join a work day or how to become a gardener.
+  what_to_expect: A work day runs about three hours in the morning. Teams work on shared tasks such as
+    compost, herbs, mowing, shoveling and pest care, and the site asks gardeners to help with tasks that
+    serve the whole garden.
+  first_visit_tips:
+  - Check the site's 2026 work day list for the coordinator who leads that month.
+  - On very hot days the work day starts at 8 am and ends at 11 am.
+  - Hours are logged in a shared Google Sheet linked from the volunteer hours page.
 contacts:
   website: https://www.chesteravegarden.com/
   email: chester.ave.garden@gmail.com
@@ -79,8 +92,8 @@ contacts:
   social:
   - https://www.instagram.com/chesteravegarden/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
+status: active
+last_sign_of_life: 2026-10
 sign_of_life_url: https://www.chesteravegarden.com/
 sources:
 - url: https://ngtrust.org/chester-avenue
@@ -95,7 +108,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.chesteravegarden.com/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://www.chesteravegarden.com/volunteer-hours
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

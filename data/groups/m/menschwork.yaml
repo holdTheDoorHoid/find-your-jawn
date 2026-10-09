@@ -38,12 +38,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Annual men''s retreat October 16 to 18, 2026, in Falls Village, Connecticut. Online MenschGroups
-    and workshops: meeting times not shown on the pages read.'
+  text: Online MenschGroups meet about twice a month for 90 minutes, at a time set by each group. The
+    Jewish Men's Retreat is held once a year.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: Po Box 4020
@@ -66,8 +66,9 @@ locations:
 online_ok: true
 cost:
   level: paid
-  text: 'Retreat: a $250 deposit reserves a spot, full payment was due September 1, and first-time attendees
-    get $50 off. Online group costs not shown.'
+  text: MenschGroups cost $150 for a six-month period, and limited financial help is available through
+    a confidential request form. The yearly retreat asks for a $250 deposit, and first-time attendees
+    get $50 off.
 commitment: null
 group_size: null
 access:
@@ -82,15 +83,26 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@menschwork.org to ask about joining an online MenschGroup, or register for the October
-    retreat at register.menschwork.org.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Groups and the retreat have a public sign up path, though the retreat asks for a deposit and
-    a separate fellowship is for ages 18 to 35.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for a MenschGroup on the Register for a Program page, or email menschgroups@menschwork.org
+    with questions first.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Joining a MenschGroup costs $150 for six months before you meet the group, and the retreat asks
+    for a deposit, so a paid step comes first.
+  what_to_expect: A MenschGroup is a confidential online group for personal sharing that meets about twice
+    a month for 90 minutes. Members listen without giving advice or feedback, and the facilitator may
+    open with a prompt tied to the weekly Torah portion. The retreat in Falls Village, Connecticut starts
+    around 4:30 pm on a Friday and ends by 2 pm on Sunday, with prayer services and small groups of 5
+    to 8 men that meet three times.
+  first_visit_tips:
+  - The Fall 2026 MenschGroup period runs July 1 to December 31, 2026, and the site says new groups are
+    forming now.
+  - Retreat roommates are assigned unless you name one, and a single room costs extra only when one is
+    open.
+  - Wassaic station on the Metro-North Harlem line is about a 30 minute taxi ride from the retreat center.
+  - The fellowship for men aged 18 to 35 attending their first or second retreat has its own application
+    page.
 contacts:
   website: https://www.menschwork.org
   email: info@menschwork.org
@@ -102,8 +114,8 @@ contacts:
   - https://www.instagram.com/menschwork/
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-01
-sign_of_life_url: https://www.menschwork.org
+last_sign_of_life: 2026-07
+sign_of_life_url: https://menschwork.org/register-for-a-program/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -130,8 +142,36 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+- url: https://menschwork.org/menschwork-programs/menschgroups-2/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+  - formats
+- url: https://menschwork.org/register-for-a-program/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+  - last_sign_of_life
+  - status
+- url: https://menschwork.org/menschwork-programs/jewish-mens-retreat/jmr35/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - first_visit_tips
+  - status
+- url: https://menschwork.org/menschwork-programs/jewish-mens-retreat/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

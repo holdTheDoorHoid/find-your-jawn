@@ -8,8 +8,8 @@ leads:
 ein: '933557339'
 summary: A group working to make Pennsylvania's fiber and textile trade fairer and more sustainable. It
   connects fiber growers, makers and businesses, runs a book club, and hosts the Philly Fiber Fest.
-what_you_do: Read along in the book club, come to Philly Fiber Fest to shop, meet makers and learn, or
-  sign up to volunteer or become a member.
+what_you_do: Join the online book club, come to Philly Fiber Fest to shop, learn and meet makers, volunteer
+  on research, admin, events, social media or marketing through a form on the site, or become a member.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -37,51 +37,58 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Book club meeting listed for November 10, 2026. Philly Fiber Fest listed for Saturday, December
-    5, 2026.
+  text: The online book club meets for about an hour and picks new books regularly. The page does not
+    post a meeting schedule.
   days: []
   times: []
-  recurring: false
+  recurring: true
   season: event_only
 locations:
-- label: Village of Industry & Art, Philadelphia
-  address: null
+- label: Philly Fiber Fest venue (Village of Industry & Art)
+  address: 320 S Broad St
   neighborhood: null
   planning_district: null
-  zip: null
+  zip: '19102'
   lat: null
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Ticket prices for the Fest are not listed on the page
+  text: The book club page lists no fee. Individual membership is $72 a year or $10 a month. Fest visitor
+    prices are not posted yet.
 commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The Fest has a sensory-friendly space with calming natural textures, and a Kids' Corner with
+    hands-on fiber crafts. The Fest page does not describe wheelchair access or parking.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Come to Philly Fiber Fest on Saturday, December 5, 2026 at the Village of Industry & Art, or sign
-    up for the book club on the group's Book Club page
+  how: Sign up for the book club through the Join here form on the book club page, and sign up for updates
+    through the Fest page to hear when visitor tickets open.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The Fest is open to the public, and the book club and mailing list have sign-up pages
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The book club is open to anyone who fills in its sign-up form, the Fest is open to visitors,
+    and there is a mailing list. The site does not say whether one book club session is a fine first step.
+  what_to_expect: The book club meets online for about an hour and talks about each pick. The Fest is
+    a one day fair with more than 30 vendors, a fiber art show, demonstrations, and optional paid workshops.
+    Visitor tickets are not posted yet, so check the Fest page before the day.
+  first_visit_tips:
+  - Sign up for event updates, since visitor tickets are not posted yet.
+  - Ask by email about parking and transit, since the Fest page does not mention them.
 contacts:
   website: https://pafibershed.org
-  email: null
+  email: Programs@pafibershed.org
   phone: null
   contact_name: Leslie Davidson
   social:
@@ -89,7 +96,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://pafibershed.org
+sign_of_life_url: https://pafibershed.org/phillyfiberfest
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,7 +124,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://pafibershed.org/book-club
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://pafibershed.org/phillyfiberfest
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - cost
+  - access
+  - requirements
+  - last_sign_of_life
+  - what_to_expect
+- url: https://pafibershed.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://pafibershed.org/membership
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

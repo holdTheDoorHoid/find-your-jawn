@@ -6,10 +6,10 @@ leads:
 - irs_990n:994517708
 - irs_bmf:994517708
 ein: '994517708'
-summary: A nonprofit that raises money so children and youth can afford to go to school. It also names
-  programs for education, skills, and community work, though the site gives few details.
-what_you_do: Ask the foundation how to help a student, volunteer, or join a program, since the site does
-  not explain these steps. You can also donate.
+summary: A nonprofit that raises money so children and youth can pay for school costs such as tuition,
+  uniforms, and books. The one program its site describes is school technology in Jamaica.
+what_you_do: Donate to the foundation's education fund, or ask by phone or through the contact form whether
+  a volunteer or student role is open. The site does not describe volunteer roles.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -48,10 +48,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Mailing address (contact page)
+  address: P.O. Box 14254, Philadelphia, PA 19138
+  neighborhood: null
+  planning_district: null
+  zip: '19138'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not described on the site. The site asks for donations.
+  text: No fee is described on the site. The donation page suggests $10, $50, or $100, and says gifts
+    go to students' school costs such as tuition, uniforms, and books.
 commitment: null
 group_size: null
 access:
@@ -66,13 +76,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-760-6190 or email sharon@pmwrescue.org to ask how to volunteer or help a student.
+  how: Use the Get in touch form on pmwrescue.org, or call 215-760-6190, to ask how to help a student
+    or volunteer.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site does not say how to join, volunteer, or take part, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site does not describe a volunteer role, a program session, or a way to join, so the way
+    in is unclear.
+  what_to_expect: The site does not describe a visit, a volunteer shift, or a program session. Its one
+    named office address is a P.O. Box, so a first step is a phone call or a message through the contact
+    form.
+  first_visit_tips:
+  - Ask which programs take volunteers in Philadelphia, since the one program the site describes is in
+    Jamaica.
+  - Ask how a donation reaches a student, since the site does not explain how funds are allocated.
 contacts:
   website: https://pmwrescue.org
   email: sharon@pmwrescue.org
@@ -109,7 +126,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.pmwrescue.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+- url: https://www.pmwrescue.org/donate
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - summary
+- url: https://www.pmwrescue.org/impact-in-actions
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.pmwrescue.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

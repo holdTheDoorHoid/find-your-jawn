@@ -497,7 +497,7 @@ def coerce_record(raw: dict[str, Any], vocab: Vocab, today: str | None = None) -
                 cleaned[key] = coerced
         if cleaned:
             rec[block] = cleaned
-    rec["locations"] = _coerce_locations(raw.get("locations"), out)
+    rec["locations"] = _coerce_locations(raw.get("locations"), out, vocab)
     if not rec["locations"]:
         del rec["locations"]
 
@@ -693,7 +693,22 @@ _OUR_WORDS = {
 }
 
 
-def _coerce_locations(value: Any, out: Coerced) -> list[dict[str, Any]]:
+def _coerce_neighborhood(value: Any, out: Coerced, vocab: Vocab | None) -> str | None:
+    """Agents often write a neighborhood's name ("Old City") where its id belongs."""
+    text = _text(value)
+    if text is None or vocab is None or not vocab.neighborhoods or text in vocab.neighborhoods:
+        return text
+    slug = _slug(text).replace("-", "_")
+    if slug in vocab.neighborhoods:
+        return slug
+    for hood_id, attrs in vocab.neighborhoods.items():
+        if attrs.get("name", "").strip().lower() == text.strip().lower():
+            return hood_id
+    out.warnings.append(f"neighborhood {text!r} is not in the vocabulary, dropped")
+    return None
+
+
+def _coerce_locations(value: Any, out: Coerced, vocab: Vocab | None = None) -> list[dict[str, Any]]:
     if value is None:
         return []
     if isinstance(value, (dict, str)):
@@ -709,7 +724,7 @@ def _coerce_locations(value: Any, out: Coerced) -> list[dict[str, Any]]:
         loc = {
             "label": _our_text(item.get("label")),
             "address": _text(item.get("address")),
-            "neighborhood": _text(item.get("neighborhood")),
+            "neighborhood": _coerce_neighborhood(item.get("neighborhood"), out, vocab),
             "planning_district": _text(item.get("planning_district")),
             "zip": _zip(item.get("zip")),
             "lat": _float(item.get("lat")),

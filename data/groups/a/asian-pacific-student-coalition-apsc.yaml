@@ -6,8 +6,9 @@ leads:
 ein: null
 summary: A student coalition that brings together Asian and Pacific Islander student groups at Penn, speaks
   to the university on their shared interests, and promotes API culture.
-what_you_do: The coalition holds general body meetings every other Tuesday for its member groups. Events
-  are open to all students, and committees take applications at the start of the spring semester.
+what_you_do: Ask the board by email for the time and place of the next general body meeting, which the
+  coalition holds every other Tuesday. The site lists events and an annual festival but gives no dates.
+  Committee applications open at the start of the spring semester.
 kind: student_org
 categories:
 - advocacy-rights
@@ -61,14 +62,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Attend an event that is open to all students, or email the board to ask about joining. Committee
-    applications open at the start of the spring semester.
+  how: Email the board to ask for the time and place of the next general body meeting, since the site
+    does not list them
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Events are open to all students, and only committee roles need an application
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The site names a meeting schedule but gives no time, place, or joining steps, so a new student
+    has to email the board first. The directory listing says events are open to all students.
+  what_to_expect: The coalition is run by an executive board and representatives of its member groups,
+    and it describes itself as a space for discussion and action. The site does not say how long a meeting
+    runs or what a first visit involves, so ask the board what the next general body meeting covers.
+  first_visit_tips:
+  - Ask the board for the room and start time before you go.
+  - Check the coalition's Instagram or Facebook for event posts, since the website lists events without
+    dates.
 contacts:
   website: https://www.upennapsc.com/
   email: upennapscboard@gmail.com
@@ -79,8 +86,8 @@ contacts:
   - https://facebook.com/upennapsc
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.upennapsc.com/
+last_sign_of_life: 2025-03
+sign_of_life_url: https://www.upennapsc.com/campus-organizations
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
@@ -102,7 +109,23 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+  - what_you_do
+  - what_to_expect
+  - contacts
+- url: https://www.upennapsc.com/events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.upennapsc.com/for-students
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.upennapsc.com/campus-organizations
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - contacts.email
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

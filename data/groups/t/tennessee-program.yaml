@@ -5,21 +5,29 @@ leads:
 - irs_990n:851759830
 - irs_bmf:851759830
 ein: '851759830'
-summary: A registered nonprofit that works with young people on skills, school enrichment, character and
-  mentoring. Programs include auto technician training, photography, fitness, a lifestyle course, and
-  a music and engineering program.
-what_you_do: Join one of the youth programs, or help with community service days such as neighborhood
-  cleanups and gardening.
+summary: A nonprofit that works with young people on skills, character, and mentoring. Its programs include
+  auto technician training, photography, fitness, a lifestyle course, and a music and engineering class.
+  It has also run book bag drives and food giveaways for people experiencing homelessness.
+what_you_do: Contact the group to ask about joining a youth program or helping on a service day. Past
+  service days include book bag drives and food and supply giveaways.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
+- making-tech
+- arts-crafts
 interests:
 - mentoring
 - youth_leadership
+- cars_motorcycles
+- photography
 motives:
 - values
-formats: []
-roles: []
+- enhancement
+formats:
+- learn_skill
+- side_by_side
+roles:
+- hands_on
 crowd:
 - kids
 - teens
@@ -49,11 +57,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 430 w bringhurst st qpt 3
+- label: Address on contact page
+  address: 5518 Upland St
   neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
+  planning_district: null
+  zip: '19143'
   lat: null
   lng: null
   in_city: true
@@ -73,29 +81,33 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Volunteer link on tennesseeprogram.com (it opens the contact page) to ask how to join a
-    program or help on a service day. The site does not publish enrollment rules.
+  how: Call (267) 670-5098 or email info@tennesseeprogram.com, and ask about the program you want. The
+    contact page says to contact the group to sign up.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The site asks people to contact the group to sign up but does not describe enrollment steps,
+    ages, or start dates, so the way in is unclear. The music class says no prior experience is needed.
+  what_to_expect: The auto class has students do hands-on work on vehicles of many makes and models. The
+    basics the site lists include changing tires and oil and working on brakes. The music class covers
+    recording, mixing, and production with studio equipment. The site does not say how long a session
+    runs, what it costs, or where most classes meet.
   first_visit_tips: []
 contacts:
   website: https://tennesseeprogram.com
-  email: null
-  phone: null
+  email: info@tennesseeprogram.com
+  phone: (267) 670-5098
   contact_name: Cclanus Tennessee
   social:
   - https://www.facebook.com/Tennesseeprogram
   - https://www.instagram.com/tennesseeprogram/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://tennesseeprogram.com
+status: dormant
+last_sign_of_life: 2023-08
+sign_of_life_url: https://tennesseeprogram.com/new-page
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,12 +132,45 @@ sources:
   - first_step
   - contacts
   - status
+  - contacts.social
 - url: https://tennesseeprogram.com/events
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: medium
+- url: https://tennesseeprogram.com/contact-1
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+  - first_step.sign_up_needed
+  - contacts.email
+  - contacts.phone
+  - locations
+- url: https://tennesseeprogram.com/communitysupport
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://tennesseeprogram.com/autotechclass
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - formats
+  - roles
+  - first_step.what_to_expect
+- url: https://tennesseeprogram.com/introduction-to-engineering-music
+  seen: '2026-10-08'
+  fields:
+  - formats
+  - first_step.basis
+  - first_step.what_to_expect
+- url: https://tennesseeprogram.com/new-page
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_you_do
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

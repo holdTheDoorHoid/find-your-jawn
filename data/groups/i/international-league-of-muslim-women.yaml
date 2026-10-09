@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Annual Grandmother, Mother, Daughter Luncheon (listed as 2025) and a 31st Annual Convention. The
-    page gives no dates
+  text: 'Yearly gatherings: a membership tea, a grandmother, mother and daughter luncheon, a winter coat
+    drive and a convention. The events page lists dates.'
   days: []
   times: []
   recurring: true
@@ -56,7 +56,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: The site does not state fees for events or membership.
 commitment: null
 group_size: null
 access:
@@ -71,25 +71,28 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Join our community link on tilmwpa.org to reach the contact page and ask about the next
-    luncheon or convention
+  how: Subscribe for updates on tilmwpa.org or send a message through the contact page, and ask whether
+    the next membership tea or luncheon is open to newcomers.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site has a clear join link to a contact page, but event dates and volunteer steps are not
-    listed
-  what_to_expect: null
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The site invites people to subscribe or contact the group, but it does not say how membership
+    or volunteering works or whether events are open to non-members.
+  what_to_expect: The site does not describe what a visit is like. Its events are listed with dates but
+    without times, places or prices, so ask the group before you go.
   first_visit_tips: []
 contacts:
   website: https://tilmwpa.org
   email: null
   phone: null
   contact_name: Varsty Muhammad
-  social: []
+  social:
+  - https://www.instagram.com/phillytilmw
+  - https://facebook.com/groups/414972328694296/
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://tilmwpa.org
+status: active
+last_sign_of_life: 2026-05
+sign_of_life_url: https://tilmwpa.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -114,7 +117,27 @@ sources:
   - schedule
   - status
   - first_step
-research_tier: 1
+  - contacts
+- url: https://tilmwpa.org/what-we-do/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+- url: https://tilmwpa.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://tilmwpa.org/31-annual-convention/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://tilmwpa.org/annual-grandmother-mother-daughter-luncheon-2025/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

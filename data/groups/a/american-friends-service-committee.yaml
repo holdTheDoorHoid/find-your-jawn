@@ -5,10 +5,10 @@ leads:
 - irs_bmf:231352010
 ein: '231352010'
 summary: A Quaker peace and service organization with its main office in Philadelphia. It works on peace
-  and justice issues and runs projects across the country and abroad. Its home page lists no Philadelphia-only
-  programs.
-what_you_do: Take action on current campaigns, sign up for updates, or look at the volunteer and careers
-  pages.
+  and justice issues and runs projects across the country and abroad. Its website does not list programs
+  that are only for Philadelphia.
+what_you_do: Join a listed public event, take part in the weekly Friday Action Hour, sign up for updates,
+  or look at the volunteer and careers pages.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -34,7 +34,7 @@ audience:
   support_group: false
 schedule:
   text: Action Hour every Friday at 12 p.m. Eastern time, online. Other events are listed on the events
-    page, and some show no year.
+    page.
   days:
   - fri
   times:
@@ -69,14 +69,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up for AFSC news and actions through the website.
+  how: Sign up for AFSC news and actions on the website, then register for a public event listed on the
+    events page.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Sign-ups and actions are open to anyone, but the site lists no Philadelphia volunteer shift,
-    event or open meeting.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The events page lists events with sign-up links, but it does not say which are in Philadelphia,
+    whether they are online, or what a first event is like.
+  what_to_expect: The website does not describe a first visit to the Cherry Street office, and it lists
+    no open house or Philadelphia volunteer shift. The weekly Friday Action Hour starts at noon Eastern
+    time, and the events list links each event to its own page or a sign-up page. Ask the office at 215-241-7000
+    what an event involves and whether it costs anything before you register.
+  first_visit_tips:
+  - The Action Hour starts at noon Eastern time, which is 9 a.m. Pacific.
+  - Ask whether an event is online or in person before you sign up.
+  - The office does not list walk-in hours, so call before you come to 1501 Cherry Street.
 contacts:
   website: https://www.afsc.org/
   email: null
@@ -117,8 +124,22 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://afsc.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://afsc.org/events/action-hour-palestine
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://afsc.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

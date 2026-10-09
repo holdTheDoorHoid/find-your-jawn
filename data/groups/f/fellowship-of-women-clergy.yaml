@@ -5,10 +5,10 @@ leads:
 - irs_990n:842384240
 - irs_bmf:842384240
 ein: '842384240'
-summary: A Christian network based in Philadelphia that supports women in ministry with leadership training
-  and peer support.
-what_you_do: Join the monthly online gatherings or the in-person gatherings in Philadelphia, which are
-  held quarterly, and sign up for the mailing list to hear about them.
+summary: A national network of Christian women in ministry. It offers leadership training, peer support,
+  and fellowship, with monthly online gatherings and quarterly in-person gatherings in Philadelphia.
+what_you_do: Join a monthly Zoom gathering or a quarterly in-person gathering in Philadelphia. RSVP using
+  the form for the next gathering, then sign up for the mailing list to hear about the rest.
 kind: network
 categories:
 - faith-community
@@ -37,10 +37,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: An online gathering every month and an in-person gathering every quarter in Philadelphia. Dates
-    are posted on the group's upcoming gatherings page.
-  days: []
-  times: []
+  text: A monthly online gathering on Zoom and quarterly in-person gatherings in Philadelphia. Listings
+    show the second Friday at 7 pm in October and November.
+  days:
+  - fri
+  times:
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -56,7 +58,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: null
+  text: No fees or dues are listed on the site. It has a donate link.
 commitment: monthly
 group_size: null
 access:
@@ -71,15 +73,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: RSVP for the next gathering using the form on fellowshipofwomenclergy.org, then sign up for the
-    mailing list
+  how: Fill in the RSVP form for the next gathering on the Upcoming Gatherings page, then sign up for
+    the mailing list
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Gatherings are announced publicly with an RSVP form, though the page does not say whether women
-    who are not clergy may attend.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Gatherings are announced publicly and use an RSVP form, but the site does not say who may attend,
+    and one event is listed as members only, so the way in is unclear.
+  what_to_expect: The group describes its gatherings as a place for leadership training, support, and
+    fellowship among women in ministry. Monthly gatherings happen on Zoom, and in-person ones are held
+    in Philadelphia four times a year. The site does not say how long a gathering lasts, what it costs,
+    or whether women who are not clergy may come, so ask before you RSVP.
+  first_visit_tips:
+  - Email info@fellowshipofwomenclergy.org to ask who may attend before you RSVP.
+  - Check whether an event is marked Members Only before you RSVP.
 contacts:
   website: https://www.fellowshipofwomenclergy.org
   email: info@fellowshipofwomenclergy.org
@@ -117,7 +124,18 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.fellowshipofwomenclergy.org/upcoming-gatherings
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+- url: https://www.fellowshipofwomenclergy.org/leadership
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

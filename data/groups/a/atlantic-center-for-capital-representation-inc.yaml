@@ -7,8 +7,9 @@ leads:
 ein: '814656775'
 summary: A Philadelphia legal group that fights death sentences and other extreme punishments. It represents
   people directly, brings test cases, and trains lawyers on the same work.
-what_you_do: Use the volunteer sign-up form on the site to offer help; the page does not describe the
-  roles. Training is offered with a registration link, and donations are accepted.
+what_you_do: Use the volunteer form on the site to offer help. The center says any skill can help and
+  especially needs attorneys for post-conviction appeals and compassionate release cases in Pennsylvania
+  prisons. Internships apply by email, and training webinars and donations are also available.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -33,10 +34,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: A recurring series of webinars for capital defense teams, with 2026 sessions held on Wednesdays
+  days:
+  - wed
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Office
@@ -51,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No fees for training or events are listed on the page.
+  text: No fee is listed for volunteering or the training webinars. Donations are accepted.
 commitment: null
 group_size: null
 access:
@@ -66,14 +69,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the volunteer sign-up form linked from atlanticcenter.org. The page does not say what a
-    first task looks like.
+  how: Fill in the volunteer form linked from the Volunteer button on the center's site, and list the
+    skills you can offer
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a clear public volunteer sign-up, and no application is described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a public volunteer form, says any skill can help, and describes no application or
+    interview for volunteers.
+  what_to_expect: The site does not say what a first volunteer task looks like or how much time it takes.
+    Its training is mostly online webinars of about 90 minutes for defense professionals, and the volunteer
+    work it names is legal help such as post-conviction appeals.
+  first_visit_tips:
+  - List the skills you have on the volunteer form, since the center says any skill can help.
+  - Interns apply by email with a resume and cover letter, not through the volunteer form.
 contacts:
   website: https://www.atlanticcenter.org/
   email: contact@atlanticcenter.org
@@ -81,9 +89,9 @@ contacts:
   contact_name: Marc Bookman
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.atlanticcenter.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.atlanticcenter.org/2026-fall-gala
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,7 +121,30 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.atlanticcenter.org/2026-fall-gala
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+  - status
+  - cost
+- url: https://www.atlanticcenter.org/work-with-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://www.atlanticcenter.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.atlanticcenter.org/training
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_to_expect
+  - cost
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

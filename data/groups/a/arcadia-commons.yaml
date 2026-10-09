@@ -7,13 +7,15 @@ leads:
 ein: '454553633'
 summary: 'Neighbors who look after three green spaces in East Kensington so people have places to gather:
   Kern Park, The Huntingdon Emerald and the Emerald Wildflower Garden.'
-what_you_do: Volunteer to help keep the green spaces going, or join the mailing list to hear what is happening.
-  Donations are also accepted.
+what_you_do: Sign up to water Kern Park or help tend its garden beds, join the mailing list, or give a
+  donation. The group also runs free BBQs and workshops at its green spaces.
 kind: nonprofit
 categories:
 - nature-environment
+- gardening-greening
 interests:
 - friends_of_park
+- community_garden
 motives:
 - values
 - social
@@ -32,15 +34,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Volunteer shifts, such as watering Kern Park, are posted on sign-up sheets. The website lists
+    no fixed weekly work days or times.
   days: []
   times: []
   recurring: null
   season: null
 locations:
-- label: 'East Kensington green spaces: Kern Park, The Huntingdon Emerald, Emerald Wildflower Garden'
+- label: Kern Park
+  address: Kern Street, between E. Huntingdon and E. Sergeant Streets
+  neighborhood: east_kensington
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: The Huntingdon Emerald and Emerald Wildflower Garden
   address: null
-  neighborhood: null
+  neighborhood: east_kensington
   planning_district: null
   zip: null
   lat: null
@@ -50,8 +62,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost is stated for volunteering or joining. The site only has donation links.
-commitment: null
+  text: The website lists no fee for volunteering or joining, and it accepts donations.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -65,14 +77,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@arcadiacommons.us or call 267.908.9038 to ask about volunteering, or join the mailing
-    list on the website
-  drop_in: null
-  sign_up_needed: null
+  how: Sign up for a watering shift at Kern Park through the group's sign-up link, or email info@arcadiacommons.us
+    to ask about other volunteering.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site invites visitors to volunteer and to join the mailing list, though it gives no set times
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page invites neighbors to take part and posts a sign-up link. It does not describe
+    what a volunteer shift is like.
+  what_to_expect: Watering Kern Park is the only task the volunteer page names. The site does not say
+    how long a shift runs, what to bring, or whether children can help, so ask before you go. No fee is
+    listed for volunteering.
+  first_visit_tips:
+  - Kern Park is on Kern Street between East Huntingdon and East Sergeant streets.
+  - Ask the group what to bring, since the site lists no gear or age rules.
+  - Confirm the shift time and place by phone or email, because the sign-up page did not show a readable
+    sheet on this visit.
 contacts:
   website: https://www.arcadiacommons.us/
   email: info@arcadiacommons.us
@@ -80,9 +99,9 @@ contacts:
   contact_name: Jeff Carpenter
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.arcadiacommons.us/
+status: dormant
+last_sign_of_life: 2024-06
+sign_of_life_url: https://www.arcadiacommons.us/news
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -108,7 +127,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.arcadiacommons.us/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - commitment
+  - cost
+- url: https://www.arcadiacommons.us/kern-park
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - what_you_do
+  - schedule
+- url: https://www.arcadiacommons.us/news
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

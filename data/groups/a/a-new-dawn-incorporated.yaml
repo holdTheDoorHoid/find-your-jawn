@@ -8,9 +8,9 @@ ein: '881455888'
 summary: A Mill Creek-Parkside nonprofit that turns vacant lots into gardens, greenhouses and gathering
   places. It grows food through farming and hydroponics and runs wellness and hands-on STEAM skill building
   for youth, families and seniors.
-what_you_do: Ask about the garden plots (see Plot Information on the site), or join a listed session such
-  as the Saturday noon session at Tiffany Fletcher Recreation Center. The events page does not name session
-  topics.
+what_you_do: Join one of the listed sessions, such as a Saturday midday session at the Tiffany Fletcher
+  Recreation Center, or email support@anewdawnincorporated.org to ask about the garden and programs. Donations
+  are accepted.
 kind: nonprofit
 categories:
 - gardening-greening
@@ -38,12 +38,18 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Several recurring sessions are listed, including Saturdays noon to 2 pm from October 3 to November
-    21 (no year shown on the page)
+  text: Sessions repeat through the week at the Tiffany Fletcher Recreation Center, the Lucien E. Blackwell
+    Center and a site on Wyalusing Avenue. They run on several weekdays and Saturdays, mostly in the afternoon
+    and evening. The events page does not say what each session covers or whether registration is needed.
   days:
+  - tue
+  - wed
+  - thu
+  - fri
   - sat
   times:
   - daytime
+  - evening
   recurring: true
   season: fall
 locations:
@@ -74,6 +80,15 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Aspen Farms (Aspen Street)
+  address: 4837 Aspen Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -92,18 +107,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a listed session on the events page and go to that center. The page does not say whether you
-    need to register, so check the group's site before you go.
+  how: Pick a session on the events page and go to that center. The page does not say whether you need
+    to register, so email support@anewdawnincorporated.org or call 267-277-3069 before your first visit.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  newcomer_friendliness: 2
+  basis: Sessions are listed publicly with days, times and places, but the page does not say who each
+    one is for or whether you must register, so the way in is unclear.
+  what_to_expect: The site does not say how long a session runs, what it costs, or what a newcomer does
+    first. Its about page describes hands-on farming and hydroponics, wellness and skill building for
+    youth, families and seniors, and canning and nutrition workshops taught by the group's president.
   first_visit_tips: []
 contacts:
   website: https://www.anewdawnincorporated.org
-  email: null
-  phone: null
+  email: support@anewdawnincorporated.org
+  phone: 267-277-3069
   contact_name: Dawn Wilkerson
   social: []
   calendar_feed: null
@@ -132,6 +150,7 @@ sources:
   - locations
   - first_step
   - status
+  - sign_of_life_url
 - url: https://www.anewdawnincorporated.org
   seen: '2026-10-08'
   fields:
@@ -139,7 +158,18 @@ sources:
   - what_you_do
   - crowd
   - contacts
-research_tier: 1
+- url: https://www.anewdawnincorporated.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+- url: https://www.anewdawnincorporated.org/blog
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

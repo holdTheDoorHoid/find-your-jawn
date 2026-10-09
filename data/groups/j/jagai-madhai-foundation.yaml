@@ -8,8 +8,9 @@ leads:
 ein: '332291471'
 summary: A 12-step recovery fellowship for people working on addiction and related struggles. It adds
   bhakti yoga, a devotional practice, to the steps, and the only membership requirement is a wish to recover.
-what_you_do: Go to a recovery meeting that follows the 12 steps and includes bhakti yoga. The site also
-  has pages on how the program works and on working the steps.
+what_you_do: Join one of the about 20 Zoom meetings on the Meetings page, most of them open to anyone.
+  Most meetings draw on Bhakti texts such as the Bhagavad Gita or Prabhupada's writings. Men's meetings
+  are closed to others, and the one in-person meeting listed is in Mayapur, India.
 kind: support_group
 categories:
 - support-recovery
@@ -33,10 +34,22 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: The Meetings page lists about 20 Zoom meetings by day of the week, with times mostly in Eastern
+    time and a few in other time zones. Several are men's meetings only. Times are as posted on the group's
+    site.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -48,24 +61,17 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 616 W Johnson Street
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: null
+  text: No meeting fee is listed. The site has donation and support pages.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
+  - es
   notes: null
 requirements:
   act153_clearances: null
@@ -75,17 +81,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Meetings link on bhaktirecoverygroup.com to find a meeting time and go to one.
-  drop_in: null
+  how: Open the Meetings page on bhaktirecoverygroup.com, pick an open meeting that fits your time zone,
+    and join it on Zoom with the link listed there.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site says the only requirement is wanting recovery and links to meetings, but no meeting
-    times were readable in our fetch.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open meetings are listed with a join link, and the site says the only requirement is wanting
+    recovery. The pages read do not say newcomers are welcomed by name, so the rating is 3.
+  what_to_expect: Meetings follow the 12 steps, and most draw on Bhakti texts such as the Bhagavad Gita
+    or Prabhupada's writings, so expect a spiritual element. The listed times show when each meeting starts
+    and ends, but the pages do not say whether you will be asked to speak.
+  first_visit_tips:
+  - Convert the Eastern time to your own time zone before you join, since most listings use Eastern time.
+  - Join a few minutes early to check your audio and video, since meetings are on Zoom.
+  - Pick an open meeting; men's meetings are for men only.
 contacts:
   website: https://www.bhaktirecoverygroup.com
-  email: null
+  email: info@bhaktirecoverygroup.com
   phone: null
   contact_name: Gwenyth Hammond
   social:
@@ -119,8 +131,35 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://www.bhaktirecoverygroup.com/general-6
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://www.bhaktirecoverygroup.com/online-meeting-list
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - online_ok
+  - access
+  - cost
+  - first_step
+  - what_to_expect
+  - audience
+- url: https://www.bhaktirecoverygroup.com/in-person-meeting-list
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+- url: https://www.bhaktirecoverygroup.com/event-list
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://www.bhaktirecoverygroup.com/contacts
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

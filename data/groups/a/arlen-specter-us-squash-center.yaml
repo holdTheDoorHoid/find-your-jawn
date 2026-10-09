@@ -5,13 +5,15 @@ leads: []
 ein: null
 summary: A squash center that runs junior programs, a summer squash camp for players of every skill level,
   lessons, and club events.
-what_you_do: Kids and teens can join junior programs, lessons, and the summer squash camp. The site also
-  lists memberships and venue rentals. Volunteer coach or mentor roles are not listed.
+what_you_do: Kids and teens can join junior programs, lessons, and the summer squash camp, and adults
+  can take lessons too. You can book a court online. The site also lists memberships and venue rentals,
+  and it does not list volunteer coach or mentor roles.
 kind: nonprofit
 categories:
 - sports-teams
 interests:
 - youth_coaching
+- tennis_pickleball
 motives:
 - enhancement
 formats:
@@ -20,6 +22,7 @@ roles: []
 crowd:
 - kids
 - teens
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -31,22 +34,44 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
-  season: null
-locations: []
+  text: Open every day. Weekday hours close at 8 or 9 pm (the site lists both), and weekends run 9 am
+    to 5 pm. Junior programs and lessons are scheduled on the online calendar.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
+locations:
+- label: Center on the Drexel campus, University City
+  address: null
+  neighborhood: university_city
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Memberships, lessons, and camps are offered, but prices are not on the home page.
+  text: Prices for lessons, junior programs, and memberships are not published on the pages read. Summer
+    camp is paid in full at sign-up to reserve a spot.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'Nearest SEPTA: 30th Street Station (regional rail), about two blocks away, as named on the center''s
+    visit page.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -55,19 +80,27 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Membership or Squash Lessons links on the site. The site welcomes players of any experience
-    level.
+  how: Browse the online calendar, choose a junior program, lesson, or adult class, and register online.
+    Contact the team for help, especially if it is your first time.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says it welcomes players and families regardless of experience, and it lists a camp
-    for every skill level.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says all levels are welcome, the summer camp takes beginners, and it invites first-timers
+    to contact the team for help.
+  what_to_expect: Players are grouped by age and skill, from beginners up to competitive juniors. Summer
+    camp runs 9 am to 3 pm for full days or 9 am to noon for half days, with lunch provided and optional
+    care until 5 pm. Prices are not listed on the pages read, so ask before you book.
+  first_visit_tips:
+  - Plan on non-marking sneakers and eyewear; the center lists both among the items you can borrow or
+    buy.
+  - Summer camp drop-off can start at 8:30 am.
+  - 30th Street Station is about two blocks away, according to the visit page.
+  - Metered street parking is nearby, and the visit page lists garages at 3440 Market Street and 3386
+    Chestnut Street.
 contacts:
   website: https://spectercenter.org/
   email: null
-  phone: null
+  phone: 267-969-3275
   contact_name: null
   social: []
   calendar_feed: null
@@ -83,11 +116,37 @@ sources:
   - cost
   - first_step
   - status
+  - last_sign_of_life
 - url: https://www.pysc.org/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://spectercenter.org/junior-programs/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - what_to_expect
+  - requirements
+- url: https://spectercenter.org/summer-squash-camp/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - what_to_expect
+- url: https://spectercenter.org/visit/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+  - locations
+- url: https://spectercenter.org/contact-us/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - schedule
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

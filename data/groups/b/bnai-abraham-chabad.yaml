@@ -4,9 +4,9 @@ aka: []
 leads: []
 ein: null
 summary: A Chabad congregation at 527 Lombard Street that invites Jews of all backgrounds to study, pray,
-  and make friends. It offers adult Torah study, a preschool, and a Hebrew school.
-what_you_do: Join a season of Torah studies, a weekly class, a High Holiday or minyan service, a Kiddush,
-  or a Mitzvah opportunity. Membership details are on a separate page.
+  and make friends. It offers adult Torah study and links to a preschool and a Hebrew school.
+what_you_do: Join a Torah studies season or the Sunday morning Talmud class, or come to a morning, Shabbat,
+  or High Holiday service. Membership details are on a separate page.
 kind: congregation
 categories:
 - faith-community
@@ -36,12 +36,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Service, class, and event times are not printed on the homepage. It links to pages for High Holidays,
-    minyans, weekly and upcoming classes, and events.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Weekday morning prayers at 7:15 am, Saturday services at 9:30 am, and Sunday and holiday services
+    at 8:30 am. A Talmud class meets Sunday mornings from 9:30 to 10:30 am. Friday night services begin
+    10 minutes before sundown, or at 7 pm in summer. Weekday evening services need a phone call to confirm.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  - sun
+  times:
+  - morning
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Synagogue
   address: 527 Lombard Street
@@ -55,7 +65,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Membership is listed on a separate page. Amounts were not read.
+  text: 'Membership dues: individual $480 a year, family $720 a year, student $180 a year. The site does
+    not say whether non-members pay for services or classes.'
 commitment: null
 group_size: null
 access:
@@ -70,14 +81,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the office at 215-238-2100, or use the site's contact route
+  how: Register for a Torah studies session through the site's Register Here form, or call the office
+    at 215-238-2100 to ask about attending services.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site invites people of all backgrounds to join and lists a phone number. It does not describe
-    a first visit.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The Torah studies page says classes are open to everyone of all abilities and gives a register
+    form, and the membership page invites new people to join. The site does not describe a first visit.
+  what_to_expect: Services are designed to make everyone feel welcome, and the prayers use Hebrew and
+    English prayer books. The Sunday morning Talmud class runs from 9:30 to 10:30 am and uses an English
+    translation. The site does not say whether non-members can attend services, how a first visit works,
+    or what a service involves.
+  first_visit_tips:
+  - Call (215) 238-2100 before you come, since the site does not describe a first visit.
+  - Evening minyan times are not fixed, so call to confirm before coming in the evening.
+  - The site lists no parking or transit details, so ask when you call.
 contacts:
   website: https://www.phillyshul.com/
   email: null
@@ -100,7 +118,26 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://phillyshul.com/weeklyclasses/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://phillyshul.com/minyans/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://phillyshul.com/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://phillyshul.com/directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

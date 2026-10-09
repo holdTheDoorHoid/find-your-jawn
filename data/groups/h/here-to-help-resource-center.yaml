@@ -7,8 +7,9 @@ leads:
 ein: '932882289'
 summary: A help center for neighbors who need a hand with basic needs. It offers food, clothing, back-to-school
   supplies, help applying for grants and aid, job search support, and referrals to other services.
-what_you_do: Ask for help with food, clothing, school supplies, aid applications, or job searching. The
-  site also mentions daily workshops but gives no times.
+what_you_do: Ask for help with food, clothing, school supplies, aid applications, shelter, or job searching
+  by phone, email, or the contact form. Volunteers and people joining programs use the Get involved page
+  to apply.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -16,6 +17,7 @@ categories:
 interests:
 - food_pantry
 - goods_closets
+- housing_help
 - job_clubs
 motives:
 - values
@@ -35,23 +37,22 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Office hours are Monday to Thursday 9 am to 4 pm, Friday and Saturday 9 am to 3 pm, and closed
+    on Sunday.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+  - sat
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
   address: 5647 Heiskell St
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19144'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 5647 Heiskell Street
   neighborhood: null
   planning_district: upper_northwest
   zip: '19144'
@@ -71,24 +72,32 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Visit heretohelpresourcecenter.com and use the Contact page to ask what help is open to you.
+  how: Call +1 267-344-8376 during office hours, or send the contact form on the Contact page and choose
+    Use Program, Volunteer, or Donate.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site has Sign Up buttons that do not show a form, and no phone, email or address was shown,
-    so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Phone, email, a contact form and weekday hours are all listed on the contact page, so the way
+    in is clear. Volunteers and people joining programs fill in an application first, so this is not rated
+    4.
+  what_to_expect: 'Tell the staff which help you need: food, clothing, school supplies, an aid application,
+    or job search support. The site does not say what paperwork a service needs, how long it takes, or
+    whether children can come without an adult, so ask those questions when you call.'
+  first_visit_tips:
+  - Call during the posted hours, which end at 3 pm on Fridays and Saturdays and at 4 pm on other weekdays.
+  - If you want to volunteer or join a program, have photo ID, emergency contact details, and a signed
+    background check authorization ready, since the application lists them.
+  - Sunday is closed, so plan around the weekday hours.
 contacts:
   website: https://heretohelpresourcecenter.com
-  email: null
-  phone: null
+  email: info@heretohelpresourcecenter.com
+  phone: +1 267-344-8376
   contact_name: Margarita Marshall
   social: []
   calendar_feed: null
@@ -119,8 +128,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://heretohelpresourcecenter.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - schedule
+  - first_step
+- url: https://heretohelpresourcecenter.com/admission/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+  - first_visit_tips
+- url: https://heretohelpresourcecenter.com/about/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - interests
+  - what_you_do
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,10 +7,12 @@ leads:
 - irs_990n:473603645
 - irs_bmf:473603645
 ein: '473603645'
-summary: A neighborhood garden in Brewerytown on Master Street and North 27th Street. Neighbors can email
-  the garden to ask about joining.
-what_you_do: Gardeners share the season's work, at least about half a day a month per household. Plots
-  are full for 2026, and a wait list is open to residents of zip code 19121 and nearby Fairmount.
+summary: Neighbors who share the work of a community garden at Master Street and North 27th Street. Members
+  tend plots and help with the season's work, and the garden also runs free family programs on Sundays
+  in summer.
+what_you_do: Gardeners share the season's work, about half a day a month per household. Plots are full
+  for the 2026 season, and the wait list is open to residents of 19121 and nearby Fairmount. The garden
+  also runs family programs on Sundays from June through September.
 kind: garden
 categories:
 - gardening-greening
@@ -25,6 +27,7 @@ roles:
 - hands_on
 crowd:
 - neighbors
+- families
 bridging: null
 audience:
   open_to: public
@@ -36,12 +39,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday events are listed on the garden's site. Event times were not found.
+  text: Free family programs on Sundays from June through September. Start times are not listed on the
+    site.
   days:
   - sun
   times: []
   recurring: true
-  season: null
+  season: summer
 locations:
 - label: Garden
   address: 2634-2644 Master St
@@ -64,7 +68,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No cost listed.
+  text: No garden dues are listed on the pages we read. The Sunday family programs are described as free.
+    Members give about half a day of work a month.
 commitment: ongoing_role
 group_size: null
 access:
@@ -79,14 +84,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email brewerytown.garden@gmail.com to ask about joining
+  how: Come to a Sunday family program at the garden (June through September), and confirm the start time
+    with the garden first, since the site does not list one.
   drop_in: null
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The page gives no waitlist or open days, and the join section was not on the page read, so the
-    way in is unclear
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Sunday family programs are described as free and for families, but the site gives no start
+    times or sign-up steps. Plot membership has a wait list of more than 160 households.
+  what_to_expect: 'The Sunday programs are described as health and wellness activities for families, but
+    the site does not describe the activities or list start times. Plot membership is a different path:
+    the wait list is long, and the site does not describe what a first work day looks like.'
+  first_visit_tips:
+  - The garden is at North 27th and Master Streets, and the site also lists a Master Street address.
+  - Confirm the start time by phone or email before you go.
+  - Plots are full for the 2026 season, so a first visit will not get you a plot this year.
 contacts:
   website: https://www.brewerytowngarden.com/
   email: brewerytown.garden@gmail.com
@@ -114,6 +125,7 @@ sources:
   - locations
   - contacts.website
   - contacts.email
+  - status
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
   fields:
@@ -135,12 +147,14 @@ sources:
   - audience
   - first_step
   - status
+  - commitment
 - url: https://www.brewerytowngarden.com/
   seen: '2026-10-08'
   fields:
   - summary
   - schedule
   - contacts.social
+  - contacts
 - url: https://ngtrust.org/brewerytown
   seen: '2026-10-08'
   fields:
@@ -153,7 +167,19 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.brewerytowngarden.com/sundays.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - crowd
+  - first_step
+  - summary
+- url: https://www.brewerytowngarden.com/events.html
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

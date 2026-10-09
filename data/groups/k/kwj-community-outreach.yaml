@@ -6,10 +6,11 @@ leads:
 - irs_990n:223532087
 - irs_bmf:223532087
 ein: '223532087'
-summary: A Philadelphia group that helps families build self-sufficiency. Its youth program, running since
-  1997, works to keep students in school, and it runs a 2026 voter engagement effort.
-what_you_do: Volunteers can reach out through the site's Volunteer link to help with the youth program
-  or the voter work. The site lists no meeting times or event dates.
+summary: A Philadelphia group that helps whole families build self-sufficiency and learn about services
+  they can use. Its YES youth program, running since 1997, works to keep students in school, and its site
+  has voter pages for 2026.
+what_you_do: Ask how to help with the youth program or voter work through the contact form or email. The
+  site lists no meeting times, youth sign-up steps, or voter events.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -45,17 +46,17 @@ schedule:
   recurring: null
   season: null
 locations:
-- label: Mailing address (IRS)
-  address: 3900 City Ave Apt M420
+- label: Mailing address (website)
+  address: P.O. Box 28157
   neighborhood: null
-  planning_district: west_park
+  planning_district: null
   zip: '19131'
   lat: null
   lng: null
   in_city: true
   transit: null
 - label: Mailing address (IRS)
-  address: 3900 City Ave M420
+  address: 3900 City Ave Apt M420
   neighborhood: null
   planning_district: west_park
   zip: '19131'
@@ -81,13 +82,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@ceo1.org or use the Volunteer link on ceo1.org to ask how to help
+  how: Send a message through the contact form at ceo1.org/contact to ask how to help with the youth program
+    or the voter work
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The site gives a plain contact route for volunteers, though it lists no schedule or sign-up steps.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Volunteer button leads to a contact form, which is a clear way to ask, but the site lists
+    no volunteer steps, schedule, or youth sign-up.
+  what_to_expect: The site does not describe what a volunteer does day to day, how long a shift lasts,
+    or where it happens. It lists no fees for its programs. Put those questions in your first message,
+    since the site does not answer them.
+  first_visit_tips:
+  - The contact form asks for a first and last name, an email, and a message.
+  - Ask in your first message about times and place, since the site lists neither.
 contacts:
   website: https://www.ceo1.org
   email: info@ceo1.org
@@ -95,9 +102,9 @@ contacts:
   contact_name: Lillie Coley
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.ceo1.org
+status: active
+last_sign_of_life: 2025-10
+sign_of_life_url: https://www.ceo1.org/blog
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -122,7 +129,23 @@ sources:
   - status
   - first_step
   - contacts
-research_tier: 1
+- url: https://www.ceo1.org/contact
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+  - first_step
+- url: https://www.ceo1.org/single-project
+  seen: '2026-10-08'
+  fields:
+  - interests
+  - first_step
+- url: https://www.ceo1.org/blog
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

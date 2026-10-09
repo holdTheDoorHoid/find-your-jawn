@@ -8,7 +8,8 @@ ein: '921375642'
 summary: Helps LGBTQIA+ asylum seekers and immigrants with transitional housing, case help, legal support,
   and donated supplies. Volunteers and supporters can take part through volunteer calls, events, and trainings.
 what_you_do: Join the email list for volunteer calls, donate supplies through the group's registry, or
-  come to a public event such as the Welcome Walk. Groups can also ask for a speaker or a tabling event.
+  come to a public event such as the Welcome Walk. Community groups can ask for a one hour education session,
+  a speaker, or a tabling event by email.
 kind: nonprofit
 categories:
 - advocacy-rights
@@ -39,13 +40,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Welcome Walk on Saturday, October 24, 9 to 11 am at the Ott Center. Rainbow Ribbons holiday gift
-    drive in November, date to be announced.
+  text: A yearly Welcome Walk on a Saturday morning, and the annual Rainbow Ribbons holiday gift drive
   days:
   - sat
   times:
   - morning
-  recurring: false
+  recurring: true
   season: event_only
 locations:
 - label: Mailing address
@@ -59,9 +59,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Transitional housing is described as no cost. Fees for events and trainings are not listed. Donations
-    are welcome.
+  level: low
+  text: No fee is listed for volunteering, the email list, or community education. The yearly Welcome
+    Walk has a registration fee.
 commitment: null
 group_size: null
 access:
@@ -76,15 +76,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the email list on asylumpridehouse.org for volunteer calls, or register for the Welcome Walk
-    through the link on the site.
+  how: Sign up for the email list on the group's site to get volunteer calls, or register for the Welcome
+    Walk through the link on the site
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site has a clear public way in through an email list and public events, and no application
-    is described for volunteers.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a clear public way in through an email list and open public events, and it describes
+    no application or background check for volunteers.
+  what_to_expect: Volunteer calls come by email, and the group also needs help with supply drives and
+    public events. The Welcome Walk is a public morning event that you register for in advance through
+    a link on the site.
+  first_visit_tips:
+  - Register for the Welcome Walk ahead of time, since it has a registration deadline.
+  - Join the email list first so you hear about volunteer calls as they go out.
 contacts:
   website: https://asylumpridehouse.org/
   email: contact@asylumpridehouse.org
@@ -94,7 +98,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://asylumpridehouse.org/
+sign_of_life_url: https://runsignup.com/Race/PA/Philadelphia/AsylumPrideHouseWelcomeWalk
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -125,7 +129,27 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://asylumpridehouse.org/community-education
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.asylumpridehouse.org/newsletter
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://asylumpridehouse.org/rainbow-ribbons
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://runsignup.com/Race/PA/Philadelphia/AsylumPrideHouseWelcomeWalk
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - status
+  - last_sign_of_life
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

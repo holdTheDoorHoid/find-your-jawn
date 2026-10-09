@@ -8,7 +8,7 @@ ein: '811780362'
 summary: A youth basketball organization offering skill training, team training, competitive leagues and
   tournaments, and an AAU travel basketball program. Players enroll through the website's contact form.
 what_you_do: Youth athletes train with the team, play in leagues and tournaments, or join the AAU travel
-  program. The site mentions experienced coaches and staff.
+  program. The site lists six coaches by first name.
 kind: club
 categories:
 - sports-teams
@@ -36,7 +36,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Days, times, and game dates are not stated. The blog has no dated entries.
+  text: Practice days, times, and game dates are not listed on the site.
   days: []
   times: []
   recurring: null
@@ -54,7 +54,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated. Fees and fee assistance are not listed.
+  text: Fees and fee assistance are not listed on the site. A sponsor and donations page exists, with
+    no amounts shown.
 commitment: null
 group_size: null
 access:
@@ -69,14 +70,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill in the contact form on the website (name, email, and phone)
-  drop_in: null
-  sign_up_needed: null
+  how: Fill in the contact form on the website with your name, email, and phone, and ask about enrolling.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Enrollment is by contact form only, and the page does not say how new players are placed or whether
-    tryouts apply.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Enrollment runs through a contact form, and the site does not say whether there are tryouts or
+    how players are placed.
+  what_to_expect: The site does not say what a first practice looks like, how long it runs, or where it
+    meets. Enrollment starts with the contact form. Ask about tryouts, placement, practice times, and
+    fees before you commit.
+  first_visit_tips:
+  - Ask where practices are held and how often they meet, since the site does not say.
+  - Ask about fees and fee help, since none are listed.
 contacts:
   website: https://mtairyairmen.com/services/youth-basketball-organization/basketball-team-150378191
   email: null
@@ -84,9 +89,9 @@ contacts:
   contact_name: Jeffrey P Lee
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://mtairyairmen.com/services/youth-basketball-organization/basketball-team-150378191
+status: dormant
+last_sign_of_life: 2023-07
+sign_of_life_url: https://mtairyairmen.com/services
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,11 +118,27 @@ sources:
   - contacts
   - status
   - interests
+  - categories
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://mtairyairmen.com/contact-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://mtairyairmen.com/coaches
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://mtairyairmen.com/services
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

@@ -7,8 +7,9 @@ leads:
 ein: '851124462'
 summary: A nonprofit that runs music and arts workshops for kids, including DJ, beatmaking and music production
   camps, and pairs young people with one-on-one mentors. It also connects artists who want to mentor.
-what_you_do: Kids and families can join workshops. Kids who have attended one can be matched with online
-  one-on-one mentoring. Artists can join the Creative Network after mentor training.
+what_you_do: Kids can join the NoChaser Kidz DJ Cafe, a Wednesday workshop in music and art, or ask about
+  the summer music camps. Kids who have attended a workshop can be matched with online one-on-one mentoring,
+  and artists can join the Creative Network after mentor training.
 kind: nonprofit
 categories:
 - music
@@ -38,16 +39,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Camps and workshops are listed by date. The newest listed DJ Cafe sessions were in late 2024,
-    and no current dates appear on the pages read. Music camps for ages 8 to 16 are listed for July, with
-    no year on the page.
-  days: []
+  text: The NoChaser Kidz DJ Cafe meets on Wednesdays. The site lists music camps for ages 8 to 16 in
+    July, with no year shown, and no current session dates are posted.
+  days:
+  - wed
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
-- label: DJ Cafe site (as listed for 2024 sessions)
-  address: 5901-05 Lancaster Ave, Philadelphia, PA
+- label: Lancaster Avenue site (listed for DJ Cafe sessions)
+  address: 5901-05 Lancaster Ave
   neighborhood: null
   planning_district: null
   zip: '19151'
@@ -58,7 +59,7 @@ locations:
 online_ok: true
 cost:
   level: null
-  text: No prices are listed on the pages read
+  text: No prices are listed on the pages read.
 commitment: null
 group_size: null
 access:
@@ -73,13 +74,17 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Ask about the next DJ Cafe, BeatCamp or mentoring spot through the contact page at aftershockfam.org/contact-us/
+  how: Use the online registration form on the NoChaser website, or contact the NoChaser team, and confirm
+    the current session dates before you sign up.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Kids can join workshops, but the listed dates are from 2024 and the page does not say how to
-    sign up
-  what_to_expect: null
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The DJ Cafe is open to kids interested in music and art regardless of experience, and families
+    are told to register online. The only dated sessions shown are from 2024, so check that it is running.
+  what_to_expect: Sessions are on Wednesdays, and the page gives no start or end times. Kids learn the
+    basics of DJing, such as mixing, scratching and beat juggling, and work on music and art projects.
+    The page lists no fee, and sessions may be held at community centers or schools instead of the Lancaster
+    Avenue address.
   first_visit_tips: []
 contacts:
   website: https://aftershockfam.org
@@ -90,7 +95,7 @@ contacts:
   calendar_feed: null
 status: probably_active
 last_sign_of_life: 2024-12
-sign_of_life_url: https://aftershockfam.org/
+sign_of_life_url: https://aftershockfam.org/programs/nochaser-kidz-dj-cafe
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -117,7 +122,21 @@ sources:
   - locations
   - first_step
   - status
-research_tier: 1
+- url: https://aftershockfam.org/programs/nochaser-kidz-dj-cafe
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - cost
+  - first_step
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://aftershockfam.org/services/beatcamp-the-camp-for-young-gifted-and-aspiring-music-producers
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

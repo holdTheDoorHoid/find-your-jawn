@@ -5,10 +5,10 @@ leads:
 - irs_990n:831518882
 - irs_bmf:831518882
 ein: '831518882'
-summary: Free, volunteer-led coding clubs for young people ages 7 to 17. The clubs meet online in terms,
-  and kids choose what they want to build while learning from each other and from mentors.
-what_you_do: Kids bring their own ideas and work through them at their own pace with volunteer mentors.
-  Adults can sign up to mentor after a short onboarding step.
+summary: Free, volunteer-led coding clubs for young people ages 7 to 17. Sessions meet on Zoom on Saturday
+  mornings, and kids choose what to build while learning from each other and from mentors.
+what_you_do: Kids register once, then join Saturday Zoom sessions to build projects with volunteer mentors.
+  Adults sign up through the volunteer form and then complete an onboarding step.
 kind: program
 categories:
 - making-tech
@@ -34,17 +34,20 @@ audience:
   open_to: public
   school: null
   min_age: 7
-  max_age: null
+  max_age: 17
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Coding dojos run in terms over Zoom, and the site lists the 2025 to 2026 term
-  days: []
-  times: []
+  text: Saturday sessions at 11 am on Zoom, about every other Saturday during the school year and monthly
+    in summer. Each session runs about an hour.
+  days:
+  - sat
+  times:
+  - morning
   recurring: true
-  season: null
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 5532 Pearl St
@@ -55,19 +58,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 5532 Pearl Street
-  neighborhood: null
-  planning_district: west
-  zip: '19139'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
   level: free
-  text: Free
+  text: Free. Donations are optional and accepted through a PayPal link.
 commitment: seasonal
 group_size: null
 access:
@@ -76,21 +70,28 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
-  gear: null
+  gear: A charged laptop, plus the free software the site lists for setup
 first_step:
-  how: Parents or the young person fill in the student registration form linked as Dojo Registration on
-    phillycoderdojo.com
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Anyone ages 7 to 17 can register through a public form, though the site does not say what a first
-    session is like.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Fill in the one-time Dojo Registration form for the young person, linked from phillycoderdojo.com.
+    After that, Zoom links for upcoming sessions arrive by email.
+  drop_in: true
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site says beginners often start with Scratch or with a simple website, and one registration
+    covers all upcoming sessions.
+  what_to_expect: Sessions run for about an hour on Zoom, from 11 am to noon on Saturdays. Each dojo picks
+    its own topic, kids work through projects with volunteer mentors and each other, and parents may observe
+    or help, especially with younger kids. Sessions are free.
+  first_visit_tips:
+  - Have a charged laptop ready before the session
+  - Create a Unity account and verify its email before anything else
+  - Install Unity Hub and Unity 2022.3.51f1, plus Visual Studio Community 2022 (or Visual Studio Code
+    on a Mac)
+  - Read the Ninja Registration attendee agreement before joining
 contacts:
   website: https://phillycoderdojo.com/
   email: phlcoderdojo@gmail.com
@@ -98,9 +99,9 @@ contacts:
   contact_name: Nefertiti Stanford
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://phillycoderdojo.com/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://phillycoderdojo.com/dates-faqs/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -130,8 +131,32 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: medium
+- url: https://phillycoderdojo.com/youth-parents/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - first_step
+  - what_to_expect
+- url: https://phillycoderdojo.com/youth-parents/for-ninjas/
+  seen: '2026-10-08'
+  fields:
+  - first_visit_tips
+  - gear
+- url: https://phillycoderdojo.com/dates-faqs/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - first_step
+- url: https://phillycoderdojo.com/volunteers/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - first_step
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

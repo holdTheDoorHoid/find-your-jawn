@@ -6,14 +6,16 @@ leads:
 - irs_bmf:273971272
 ein: '273971272'
 summary: Helps veterans and their families with housing and support services. It runs a yearly Veteran
-  Stand Down, and volunteers are needed to help at it.
-what_you_do: Sign up to volunteer at the Veteran Stand Down, point veterans to the Get Help page, or support
-  the group with a donation.
+  Stand Down, where community volunteers help alongside government agencies and nonprofits.
+what_you_do: Volunteer at the Veteran Stand Down, which offers screenings, legal help, meals, and referrals
+  to veterans. Veterans who need help can start on the Services page. The group also takes donations and
+  sponsorships.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
 interests:
 - housing_help
+- homeless_outreach
 motives:
 - values
 - protective
@@ -35,7 +37,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Annual Veteran Stand Down, 2026. The site lists it as upcoming but gives no date
+  text: The Veteran Stand Down is held once a year. No date for a future Stand Down is posted.
   days: []
   times: []
   recurring: true
@@ -46,6 +48,15 @@ locations:
   neighborhood: null
   planning_district: null
   zip: '19139'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Philadelphia Convention Center, Hall B (2026 Stand Down site)
+  address: 1101 Arch St
+  neighborhood: null
+  planning_district: null
+  zip: '19107'
   lat: null
   lng: null
   in_city: true
@@ -68,14 +79,18 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Volunteer link on aharihomes.org, or email ahari.at.work@gmail.com, to sign up to help
-    at the 2026 Veteran Stand Down
+  how: Email ahari.at.work@gmail.com, or send a General Inquiry through the Send a Message form on the
+    Contact Us page, to ask how to volunteer at the next Veteran Stand Down.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Volunteer sign-up is public and linked from the site; event details are not listed yet
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 2
+  basis: The 2026 Stand Down sign-up was posted, but that date has passed and the site lists no later
+    date or volunteer steps, so the way in is unclear beyond contacting the office.
+  what_to_expect: The 2026 event was set for 10 am to 6:30 pm at the Philadelphia Convention Center, with
+    screenings, legal and benefits help, meals, clothing, and referrals for veterans. The site does not
+    list specific volunteer roles, so ask which jobs need help before you come.
+  first_visit_tips:
+  - Ask by email about volunteer roles and arrival time, since the site does not post them.
 contacts:
   website: https://www.aharihomes.org
   email: ahari.at.work@gmail.com
@@ -83,9 +98,9 @@ contacts:
   contact_name: Stephanie Booker
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.aharihomes.org
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.aharihomes.org/events/stand-down-2026
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -112,7 +127,25 @@ sources:
   - first_step
   - contacts
   - locations
-research_tier: 1
+- url: https://www.aharihomes.org/events/stand-down-2026
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://www.aharihomes.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+- url: https://www.aharihomes.org/services
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

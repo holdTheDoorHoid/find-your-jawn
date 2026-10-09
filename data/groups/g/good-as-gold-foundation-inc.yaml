@@ -5,10 +5,11 @@ leads:
 - irs_990n:881414656
 - irs_bmf:881414656
 ein: '881414656'
-summary: A Philadelphia nonprofit that teaches families money skills and homebuying readiness, with workshops,
-  a nine-month homebuying program, and small grants for people facing hardship.
-what_you_do: Attend a financial workshop, register for the Golden Keys homebuying cohort, or join the
-  email list. Volunteers, partners, and speakers can apply through the Get Involved page.
+summary: A Philadelphia nonprofit that teaches money skills and homebuying readiness through workshops
+  and a nine-month cohort, and gives grants to families facing hardship.
+what_you_do: Attend a financial workshop, apply to the Golden Keys homebuying cohort, or join the email
+  list. Volunteers can fill in the volunteer interest form, and partners and speakers have their own sign-up
+  pages.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -35,14 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: The Golden Keys homebuying program is a nine-month cohort for 2026 to 2027, held virtually and
-    in person. Workshop dates are on the website.
+  text: Golden Keys is a nine-month cohort of 13 to 16 sessions, each 1 to 2 hours, offered virtually
+    and in person. Golden Workshops run in person or online, as single events or as a series.
   days: []
   times: []
   recurring: false
   season: null
 locations:
-- label: Mailing address (IRS)
+- label: Office (per contact page)
   address: 441 E High Street Suite 8B
   neighborhood: null
   planning_district: upper_northwest
@@ -78,24 +79,33 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for the Golden Keys 2026 to 2027 cohort through the online form linked from the website.
+  how: Use the Apply Here form on the Golden Keys page to apply for the homebuying cohort, or attend a
+    Golden Workshop listed on the events page.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Registration is an online form on the public site, but the page does not say whether the cohort
-    screens people.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The events page lists a public interest meeting before the cohort application, and workshops
+    link to sign up on the events page. The cohort needs an application and holds 25 people, and the site
+    does not say who may attend workshops, so the rating is 3.
+  what_to_expect: Golden Workshops cover money topics such as budgeting, taxes, credit, and homeownership,
+    in person or online. The Golden Keys cohort meets in 13 to 16 sessions of 1 to 2 hours over about
+    nine months, with budgeting, credit education, savings guidance, and one-on-one counseling. The site
+    does not say what either one costs, so ask before you sign up.
+  first_visit_tips:
+  - Email programs@goodasgoldfoundation.org about cost, eligibility, and location before you apply.
+  - Choose in person or virtual when you sign up, since the cohort and the workshops are offered both
+    ways.
+  - Watch the events page for the interest meeting, which lets you learn about the cohort before you apply.
 contacts:
   website: https://www.goodasgoldfoundation.org
-  email: null
+  email: support@goodasgoldfoundation.org
   phone: null
   contact_name: Janee Sanders
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2026-01
-sign_of_life_url: https://www.goodasgoldfoundation.org
+last_sign_of_life: 2026-10
+sign_of_life_url: https://goodasgoldfoundation.org/events/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -120,8 +130,37 @@ sources:
   - first_step
   - status
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+- url: https://goodasgoldfoundation.org/events/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+- url: https://goodasgoldfoundation.org/golden-keys-homeownership-readiness-program/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+  - audience
+- url: https://goodasgoldfoundation.org/golden-workshops/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - what_to_expect
+- url: https://goodasgoldfoundation.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://goodasgoldfoundation.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

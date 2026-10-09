@@ -6,10 +6,12 @@ leads:
 - irs_990n:832762074
 - irs_bmf:832762074
 ein: '832762074'
-summary: A local news organization made for Philadelphia neighborhoods. It sends free text updates in
-  English and Spanish, runs a Germantown news hub, and holds community workshops and townhalls.
-what_you_do: Text EQUAL INFO to 215-910-4040 for free updates, sign up for the Germantown newsletter,
-  or come to a G-Town Beat workshop or townhall.
+summary: A local news group for Philadelphia neighborhoods. It sends free text updates in English and
+  Spanish, runs a Germantown news site, and publishes G-Town Beat, a series of community briefings on
+  topics like property rights.
+what_you_do: Text EQUAL INFO to 215-910-4040 for free updates, subscribe to the Germantown newsletter,
+  share a story or resource for the Equally Informed newsletter, ask about becoming an Info Hub Captain,
+  or come to a G-Town Beat briefing.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -36,8 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Text updates any time. Workshops, townhalls, and Germantown events are announced on the site,
-    such as an October 2026 Germantown townhall update.
+  text: Text updates and newsletters go out on an ongoing basis. Briefings are posted on the Germantown
+    news site as they are scheduled.
   days: []
   times: []
   recurring: null
@@ -61,10 +63,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: free
-  text: The text service and newsletters are free.
+  text: The text service is free. The site does not state a cost for the newsletters or briefings.
 commitment: null
 group_size: null
 access:
@@ -81,12 +83,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Text EQUAL INFO to 215-910-4040 to start getting free updates in English or Spanish.
+  how: Text EQUAL INFO to 215-910-4040 to start getting free updates in English or Spanish. To attend
+    a briefing, check the Germantown Info Hub for the next one.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Anyone can sign up for the free text service or newsletters, and the site says how.
-  what_to_expect: null
+  basis: Anyone can join the free text service or a newsletter in one step, and the site says how. It
+    does not say how a first briefing works or whether a reservation is needed.
+  what_to_expect: The one briefing we read about ran from 6 to 8:30 pm in person at The Braid Mill in
+    Germantown, with speakers from city offices and a legal services group on property and estate topics.
+    The site does not say whether it cost money or needed a reservation.
   first_visit_tips: []
 contacts:
   website: https://www.resolvephilly.org
@@ -97,7 +103,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.resolvephilly.org
+sign_of_life_url: https://resolvephilly.org/gih/g-town-beat-property-rights/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -125,7 +131,36 @@ sources:
   - contacts
   - status
   - last_sign_of_life
-research_tier: 1
+- url: https://resolvephilly.org/equal-info-text-line/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - access.languages
+  - first_step.how
+  - first_step.basis
+- url: https://resolvephilly.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://resolvephilly.org/gih/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - status
+- url: https://resolvephilly.org/gih/g-town-beat-property-rights/
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - last_sign_of_life
+  - sign_of_life_url
+  - status
+- url: https://resolvephilly.org/equally-informed-community-newsletter/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

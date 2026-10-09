@@ -9,7 +9,8 @@ ein: '831391181'
 summary: A Germantown neighborhood group that shares seeds and tools, runs a mutual aid fund and time
   bank, and works on housing and emergency preparedness so current residents can stay.
 what_you_do: Get on the email list, attend learning circles and events, and take part in projects such
-  as the seed library, canning club, and housing outreach.
+  as the seed library, canning club, and housing outreach. Volunteers can also fill in the volunteer form
+  on the site.
 kind: civic
 categories:
 - neighborhood-civic
@@ -41,8 +42,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events and projects are posted on the website and on social media. An upcoming Germantown Visioning
-    and Collective Action Assembly has no date shown.
+  text: No regular meeting time is published. Learning circles run as short series of about 3 to 5 meetings,
+    and events are posted on the events page.
   days: []
   times: []
   recurring: false
@@ -75,25 +76,35 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Join the email list from the website, then register for the Germantown Visioning and Collective
-    Action Assembly through the register link on the events page.
+  how: Join the email list on the website, then attend an event you hear about, or fill in the volunteer
+    form on the Get involved page.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The email list and event registration are public, and the site shows no membership step. The
-    assembly date is not shown.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The email list, the volunteer form and the event register links are all public, and the site
+    suggests attending an event as a first step. No event times or places are posted and no membership
+    step is shown, so the rating stays at 3.
+  what_to_expect: The events page and newsletter are where activity is posted, and the site does not say
+    how long events run, who attends, or what they cost. The group says many members first came through
+    a learning circle, an event, or volunteering. Email greatgtown@gmail.com to ask about the next event
+    before you go.
+  first_visit_tips:
+  - Ask by email for the time and place of the next event, since the events page does not show them.
+  - The group's address is a post office box, so the meeting place will come from the event notice or
+    the reply to your email.
+  - Follow the group on Facebook or Instagram, where event posts go up.
 contacts:
   website: https://greatgtown.org
   email: greatgtown@gmail.com
   phone: null
   contact_name: Lindsay Stolkey
-  social: []
+  social:
+  - https://www.facebook.com/GREATgtown
+  - https://www.instagram.com/greatgtown
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://greatgtown.org
+status: dormant
+last_sign_of_life: 2024-08
+sign_of_life_url: https://www.greatgtown.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -121,7 +132,25 @@ sources:
   fields:
   - status
   - schedule
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+- url: https://www.greatgtown.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - first_visit_tips
+- url: https://www.greatgtown.org/learningcircles
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+- url: https://www.greatgtown.org/members
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

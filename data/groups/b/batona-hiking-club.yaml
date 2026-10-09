@@ -36,8 +36,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Hikes most weekends, each with its own date, meeting time, length and difficulty on the club's
-    site. Listed hikes run from October through mid-November 2026.
+  text: Hikes most weekends, each with its own date, meeting time, length and description on the club's
+    site.
   days:
   - sat
   - sun
@@ -46,7 +46,7 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Hikes at parks and trails in Pennsylvania, New Jersey, Delaware and Maryland
+- label: Hikes at parks and trails in Pennsylvania, New Jersey, Delaware and Maryland, outside Philadelphia
   address: null
   neighborhood: null
   planning_district: null
@@ -58,7 +58,7 @@ locations:
 online_ok: false
 cost:
   level: low
-  text: Hikes list a $1 cost. The annual dinner is $25 a person.
+  text: Most hikes list a $1 fee. The annual dinner is $25 a person.
 commitment: drop_in
 group_size: null
 access:
@@ -73,15 +73,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a hike on the club's site and RSVP through Meetup or the hike leader, as each listing says.
-    Membership has an application form on the site.
+  how: Pick a hike on the club's calendar whose distance and description suit you, then RSVP through Meetup
+    or the leader's contact, as each listing says.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Hikes are listed publicly with leaders and difficulty, but the site does not plainly say whether
-    non-members can join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Hikes are listed publicly with a leader, a distance, and an RSVP route, but the club does not
+    say in plain words whether non-members may come along.
+  what_to_expect: Each hike has its own leader, meeting spot, distance, and description, and most cost
+    $1. Some hikes cap the group at about 15 people including the leader, so RSVP early. Listings often
+    suggest water, snacks, lunch, and hiking boots, and some warn about muddy or strenuous stretches.
+  first_visit_tips:
+  - The club uses no formal difficulty scale, so read the distance and the description to judge whether
+    a hike fits you.
+  - Bring water, snacks, lunch, and sturdy hiking boots, since listings often ask for them.
+  - Ask the leader before you RSVP whether a first-time hiker or non-member may join.
+  - Most hikes are outside the city, so plan your ride from the meeting spot on the listing.
 contacts:
   website: https://batona.wildapricot.org/
   email: null
@@ -103,7 +110,13 @@ sources:
   - schedule
   - cost
   - first_step
-research_tier: 1
+  - last_sign_of_life
+- url: https://batona.wildapricot.org/faq
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

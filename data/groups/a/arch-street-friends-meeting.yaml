@@ -5,11 +5,11 @@ aka:
 - Arch Street Meeting House
 leads: []
 ein: null
-summary: A Quaker meeting in Old City where people sit together in silent worship on Sunday mornings,
-  in person or on Zoom. Families can use a children's program during the school year.
-what_you_do: Join Sunday worship, the monthly adult education series, or the Wednesday evening worship
-  on Zoom. Greeters welcome newcomers on Sundays, and refreshments follow worship. Ask the office how
-  to get involved in the meeting's committee and outreach work.
+summary: A Quaker meeting in Old City where people sit together in silent worship on Sunday mornings and
+  on Wednesday evenings on Zoom. Families can use a children's program during the school year.
+what_you_do: Join Sunday worship in person, the Wednesday evening worship on Zoom, or the adult education
+  series on fourth Sundays. Greeters welcome newcomers on Sundays, and refreshments follow worship. Ask
+  the office how to get involved in committee and outreach work.
 kind: congregation
 categories:
 - faith-community
@@ -39,9 +39,9 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship from 10:30 to 11:30 am, in person or on Zoom as a separate session, plus Wednesday
-    worship from 5:30 to 6:30 pm on Zoom. A children's meeting runs on the first to third Sundays from
-    September to June, 10:30 to 11:15 am.
+  text: Sunday worship from 10:30 to 11:30 am at the meetinghouse. Wednesday worship from 5:30 to 6:30
+    pm on Zoom. A children's meeting runs on the first to third Sundays from September to June, 10:30
+    to 11:15 am.
   days:
   - sun
   - wed
@@ -53,7 +53,7 @@ schedule:
 locations:
 - label: Meetinghouse
   address: 320 Arch Street
-  neighborhood: null
+  neighborhood: old_city
   planning_district: null
   zip: '19106'
   lat: null
@@ -62,14 +62,15 @@ locations:
   transit: null
 online_ok: true
 cost:
-  level: null
-  text: No cost is listed on the meeting's site.
+  level: free
+  text: No dues or fees are stated. The children's program and childcare are free.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The entrance and restroom are wheelchair accessible, and a hearing loop is available. The children's
+    room is on the second floor, and the pages read do not mention an elevator.
 requirements:
   act153_clearances: null
   background_check: null
@@ -78,15 +79,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship at 10:30 am. Free childcare is available on site for younger children during
-    worship.
+  how: Come to Sunday worship at 10:30 am, where a greeter will meet you. Children from Pre-K through
+    8th grade can join the Children's Meeting on the first to third Sundays.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: false
   newcomer_friendliness: 4
-  basis: The site says newcomers are welcome, greeters meet people on Sundays, and it describes adult
-    education and a children's program open to families.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site has a Newcomer Resources page, greeters meet visitors on Sundays, and visitors are invited
+    to attend. It has no orientation or first-timers event on the pages read.
+  what_to_expect: Sunday worship lasts an hour, from 10:30 to 11:30 am, and it is held in silence with
+    no leader or planned program, though someone may speak. A greeter meets you, the hour ends with a
+    handshake, and a social time with refreshments follows. On the first to third Sundays, children can
+    join the free Children's Meeting, and younger children can use free childcare during worship.
+  first_visit_tips:
+  - Free, limited parking is on site during worship. The lot entrance is on 4th Street, halfway down the
+    block from Arch Street.
+  - Check septa.org for current transit routes, since the pages do not name a stop.
+  - The website suggests watching an introductory video about Quakerism before a first visit.
+  - The Wednesday Zoom link is in the weekly bulletin and the calendar, not on the pages read.
 contacts:
   website: https://www.archstreetfriends.org
   email: office@archstreetfriends.org
@@ -114,7 +123,30 @@ sources:
   - lead
   - schedule
   - contacts
-research_tier: 1
+- url: https://www.archstreetfriends.org/worship/
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+- url: https://www.archstreetfriends.org/getting-here/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - first_visit_tips
+- url: https://www.archstreetfriends.org/childrens-meeting/
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - schedule
+  - cost
+  - first_step
+- url: https://www.archstreetfriends.org/resources/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

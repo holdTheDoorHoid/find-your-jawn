@@ -7,8 +7,8 @@ leads:
 ein: '862318673'
 summary: A nonprofit in North and Northwest Philadelphia that gets kids and families into sports and fitness,
   with youth soccer, uniform giveaways, and a Juneteenth event.
-what_you_do: Kids can sign up for the spring soccer program, and families can register for uniform giveaways.
-  The site does not list volunteer roles.
+what_you_do: Kids can sign up for the spring soccer program. Families of students at two partner elementary
+  schools can request free uniforms, picked up at 1901 W Tioga St. The site does not list volunteer roles.
 kind: nonprofit
 categories:
 - sports-teams
@@ -35,8 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Spring soccer development program for boys and girls ages 4 to 12, listed as CA Spring Soccer
-    2025. No current dates are posted.
+  text: A spring soccer development program for boys and girls ages 4 to 12. The site lists a 2025 spring
+    program and a 2026 poster, but no current dates or times.
   days: []
   times: []
   recurring: null
@@ -54,7 +54,7 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: The homepage says programs typically cost little or nothing.
+  text: The site says programs cost little or nothing. Donations are accepted, and no program fee is posted.
 commitment: seasonal
 group_size: null
 access:
@@ -69,14 +69,20 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Open the Activities page on the website and use the Register Now link for the next soccer program.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Programs are open to the public with online sign-up, but the page names no tryout and gives no
-    current dates.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call (215) 650-7499 to ask when the next spring soccer sign-up opens, because the Register Now
+    link on the activities page returned an error when checked.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Soccer for ages 4 to 12 is open to the public and asks families to register, but the sign-up
+    link is broken and no current dates are posted, so the way in is unclear.
+  what_to_expect: The 2025 spring program focused on skill building, short games, and awareness of space
+    on the field, for boys and girls ages 4 to 12. The site does not list times, length, fees, or what
+    to bring, so ask before the first session.
+  first_visit_tips:
+  - Ask for the start date, the fee, and what to bring when you call.
+  - Uniform pickup is at 1901 W Tioga St, 19140, for the school uniform giveaway.
+  - The site lists no parking or transit details.
 contacts:
   website: https://www.cityathleticsphilly.com
   email: null
@@ -116,8 +122,20 @@ sources:
   - status
   - first_step
   - locations
-research_tier: 1
-confidence: medium
+  - what_you_do
+- url: https://cityathleticsphilly.com/youth-soccer/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - first_step
+- url: https://cityathleticsphilly.com/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
+confidence: low
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

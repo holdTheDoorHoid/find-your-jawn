@@ -7,8 +7,8 @@ leads: []
 ein: null
 summary: The local service office for Alcoholics Anonymous groups in five southeastern Pennsylvania counties,
   Philadelphia included. Volunteer members answer a 24-hour help line and help newcomers find a meeting.
-what_you_do: Call the help line to talk with a local member, or use the meeting finder on the website
-  to pick a meeting. Members can also take service roles through the office.
+what_you_do: Call the 24-hour help line to talk with a local member, or use the meeting finder to pick
+  a meeting. Members can also take service roles, such as committee and 12-step volunteer work.
 kind: support_group
 categories:
 - support-recovery
@@ -33,15 +33,15 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: The help line answers 24 hours a day, every day. Meeting times vary by group and are listed in
-    the meeting finder.
+  text: The help line answers 24 hours a day, every day. Meeting times vary by group, so check the meeting
+    finder for each one.
   days: []
   times: []
   recurring: true
   season: year_round
 locations:
 - label: Intergroup office
-  address: 1903 South Broad Street, 2nd Floor, Philadelphia, PA 19148
+  address: 1903 South Broad Street, 2nd Floor
   neighborhood: null
   planning_district: null
   zip: '19148'
@@ -49,16 +49,19 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
-  level: null
-  text: null
-commitment: null
+  level: free
+  text: Free to attend. AA is supported by member contributions.
+commitment: drop_in
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  notes: The site links to Deaf and ASL-interpreted meetings and to an online meeting list. A Spanish-language
+    helpline is listed, but the site shows two different numbers for it, so confirm the number before
+    you call.
 requirements:
   act153_clearances: null
   background_check: null
@@ -67,15 +70,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call the 24-hour help line at 215-923-7900, or pick a meeting in the meeting finder and go to see
-    what it is like.
-  drop_in: null
+  how: Call the 24-hour help line at 215-923-7900, or find a beginners' meeting in the meeting finder
+    and go to see what it is like.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 4
-  basis: The site lists beginners' meetings and explains what to expect at a meeting, and its help line
-    connects callers with a local member.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 5
+  basis: The site runs a beginners' meeting finder and a 12-Step Call that connects newcomers with a local
+    member, and newcomers may attend meetings for free without having to share.
+  what_to_expect: Newcomers can attend meetings for free and listen without speaking. If you want to share,
+    you may tell your own story or read from AA literature, and nothing is required. The site does not
+    say how long meetings last or how many people attend.
+  first_visit_tips:
+  - Check the meeting finder for the address, format and time before you go, since times vary by group.
+  - If you would like to talk first, call the help line to speak with a local member.
 contacts:
   website: https://aasepia.org
   email: null
@@ -85,8 +92,8 @@ contacts:
   - https://aasepia.org/meetings/
   calendar_feed: null
 status: active
-last_sign_of_life: '2026'
-sign_of_life_url: https://aasepia.org/
+last_sign_of_life: 2026-09
+sign_of_life_url: https://aasepia.org/event/2026-gratitude-breakfast/
 sources:
 - url: https://aasepia.org/
   seen: '2026-10-08'
@@ -99,17 +106,29 @@ sources:
   - contacts.phone
   - status
   - last_sign_of_life
+  - cost
+  - access
+  - contacts
 - url: https://aasepia.org/contact-us
   seen: '2026-10-08'
   fields:
   - locations
   - contacts.phone
+  - schedule
 - url: https://aasepia.org/meetings/
   seen: '2026-10-08'
   fields:
   - summary
   - contacts.social
-research_tier: 1
+- url: https://aasepia.org/meetings/?type=newcomer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+- url: https://aasepia.org/event/2026-gratitude-breakfast/
+  seen: '2026-10-08'
+  fields:
+  - last_sign_of_life
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

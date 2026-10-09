@@ -42,12 +42,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Community events: Mid Atlantic Day on August 1, 2026 (school supplies, food, clothes and services;
-    location to be announced), and a fundraising gala in November 2026 in Germantown. Regular meeting
-    times are not shown on the pages read.'
+  text: Full members get monthly social events, quarterly round tables, and monthly community giveback
+    volunteer events. Meeting times are not listed on the site.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -71,8 +70,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Membership is by form, and the club reaches out after you apply. Gala tickets are sold through
-    the site; prices not shown.
+  text: The site does not list membership dues. Gala tickets for the November fundraiser are sold online,
+    and the price is not shown.
 commitment: null
 group_size: null
 access:
@@ -87,15 +86,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email josh@midatlanticsocialclub.com to join the youth group or volunteer, or fill in the membership
-    form on midatlanticsocialclub.com.
+  how: Fill in the membership application on the Membership page, then wait for the club to be in touch.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The youth group and volunteering invite people by email, and the membership form is open, though
-    the club contacts you before you join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Community days are open to the public and the club has a clear membership form, but the club
+    contacts you after you apply.
+  what_to_expect: The site does not describe a typical meeting or volunteer shift. Full members get monthly
+    social events, quarterly round tables, and monthly community giveback events, and the community days
+    hand out school supplies, food, and clothes with games and raffles. The site does not say how long
+    these run or who usually attends.
+  first_visit_tips:
+  - Check the Events page for an RSVP link before a community day, since the site shows an RSVP button
+    for them.
+  - The site does not list meeting times, so ask the club for the youth group schedule before you apply.
 contacts:
   website: https://www.midatlanticsocialclub.com
   email: info@midatlanticsocialclub.com
@@ -130,6 +134,8 @@ sources:
   - schedule
   - status
   - last_sign_of_life
+  - what_to_expect
+  - first_visit_tips
 - url: https://www.midatlanticsocialclub.com
   seen: '2026-10-08'
   fields:
@@ -138,7 +144,23 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+  - categories
+- url: https://www.midatlanticsocialclub.com/membership
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - cost
+  - first_step
+  - schedule
+- url: https://www.midatlanticsocialclub.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.midatlanticsocialclub.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

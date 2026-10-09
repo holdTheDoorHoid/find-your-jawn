@@ -6,8 +6,8 @@ leads:
 ein: '822662383'
 summary: A sports and learning group that uses wrestling, mentoring, and tutoring to help student athletes
   in under-served parts of Philadelphia do well in school.
-what_you_do: Students can join a wrestling team or use the Mentoring Center for school help. The group
-  is recruiting coaches, and mentors are often college student athletes from Drexel and Penn.
+what_you_do: Students can join a wrestling team or use the Mentoring Center for school help. Mentors are
+  often college student athletes from Drexel and Penn, and the group is also recruiting coaches.
 kind: nonprofit
 categories:
 - sports-teams
@@ -35,11 +35,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Year-round wrestling training at the Wrestling Center at 37th and Market Streets, plus winter
+    team seasons from November to March with high school, middle school, and K-8 teams.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: year_round
 locations:
 - label: Mentoring Center and headquarters
   address: 3700 Market Street, Suite 300
@@ -50,10 +51,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Wrestling Center at 37th and Market Streets
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated on the pages read.
+  text: The site lists no program fees and asks for donations.
 commitment: null
 group_size: null
 access:
@@ -68,15 +78,21 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: 'Coaches: use the resources page to apply. Mentors: use the mentoring page. Parents and students
-    seeking academic help: contact the Mentoring Coordinator to set a first visit. Wrestlers: find a team
-    near you on the site.'
+  how: 'Students: find a team near you with the location map on the Wrestling page. Parents or students
+    who want school help: email btsphilly@btsphilly.org to set up a first visit to the Mentoring Center.'
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Each role has a stated way in, and a first visit to the Mentoring Center is offered.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: A first visit to the Mentoring Center is offered by email, and the site has a team finder, but
+    the wrestling sign-up steps are not described.
+  what_to_expect: The Mentoring Center pairs student athletes with near-peer role models, often from Drexel
+    and Penn, for school help. The site does not say how long a first visit lasts or who attends it, so
+    ask when you email.
+  first_visit_tips:
+  - Email or call (215) 454-2255 before you come, since the Mentoring Center's hours are not posted.
+  - Sign up for the Mentoring Center list to hear about closures and schedule changes.
+  - Ask the team or the office for practice times, since the site does not list them.
+  - The main office and the Mentoring Center are at 3700 Market Street, Suite 300.
 contacts:
   website: https://btsphilly.org/
   email: btsphilly@btsphilly.org
@@ -103,17 +119,29 @@ sources:
   - roles
   - status
   - contacts
+  - cost
+  - last_sign_of_life
+  - first_step
 - url: https://btsphilly.org/mentoring
   seen: '2026-10-08'
   fields:
   - what_you_do
   - first_step
   - roles
+  - what_to_expect
+  - locations
 - url: https://www.pysc.org/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://btsphilly.org/wrestling
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - requirements
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

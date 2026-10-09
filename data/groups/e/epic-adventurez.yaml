@@ -5,10 +5,11 @@ leads:
 - irs_990n:871320268
 - irs_bmf:871320268
 ein: '871320268'
-summary: A live action roleplay group that plays cooperative stories together, with weekly play events
-  and seasonal adventures. Members also learn acting, costume making, and prop building.
-what_you_do: Play a character in cooperative games and stories, and help with costumes and props if you
-  enjoy making things.
+summary: A live action roleplay group that plays costumed games with foam gear. Its core event is a Saturday
+  afternoon Capture the Flag game at Clark Park, and it also runs camps and teaches members to craft foam
+  swords and props.
+what_you_do: Join the Saturday Capture the Flag game at Clark Park, try one of the camps, or learn to
+  craft foam props with the group.
 kind: club
 categories:
 - theater-dance-performance
@@ -26,21 +27,28 @@ formats:
 roles:
 - create
 - hands_on
-crowd: []
+crowd:
+- kids
+- teens
+- young_adults
+- all_adults
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 7
   max_age: null
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Weekly play events and seasonal adventures, according to the group's site
-  days: []
-  times: []
+  text: Weekly Capture the Flag game on Saturdays, 1 to 4 pm, at Clark Park. Camps and seasonal events
+    are announced separately.
+  days:
+  - sat
+  times:
+  - daytime
   recurring: true
   season: null
 locations:
@@ -53,10 +61,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Clark Park (Capture the Flag)
+  address: 43rd and Baltimore Ave
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: low
+  text: Returning players are invited to donate about $10 on a sliding scale. The site gives no first-visit
+    price.
 commitment: null
 group_size: null
 access:
@@ -68,23 +86,32 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Click the Join us button on epicadventurez.org, then read the Programs page to pick a first event
+  how: Sign the participant waiver linked on the Our Programs page, then come to a Saturday Capture the
+    Flag game at Clark Park. Games start at 1 pm.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says it serves people who are new to live action roleplay and links its Join us button
-    to a Programs page.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says it serves people new to live action roleplay, trains new recruits, and asks for
+    a signed waiver before the weekly game.
+  what_to_expect: A game runs about three hours on Saturday afternoon. Players form teams and try to take
+    each other's flag using foam play gear, with no referees, so players are trusted to play fair. The
+    group supplies equipment, but the site does not say what a first-timer pays.
+  first_visit_tips:
+  - Sign the waiver before you come, since every player needs one
+  - Bring yourself; the group supplies the foam equipment
+  - Follow the group on Facebook or Discord for game updates
 contacts:
   website: https://www.epicadventurez.org/
   email: epicadventurez@gmail.com
   phone: null
   contact_name: Nicholas Pegues
-  social: []
+  social:
+  - https://www.facebook.com/EpicAdven
+  - https://www.instagram.com/epic.adventurez/
+  - https://discord.gg/SjwxqVgerV
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -114,7 +141,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - crowd
+- url: https://www.epicadventurez.org/programing
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - requirements
+  - locations
+- url: https://www.epicadventurez.org/how-to-craft
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.epicadventurez.org/calendar
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

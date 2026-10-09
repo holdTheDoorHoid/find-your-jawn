@@ -5,10 +5,11 @@ leads:
 - irs_990n:871314144
 - irs_bmf:871314144
 ein: '871314144'
-summary: A Philadelphia group that encourages young people to make healthy, respectful choices. It offers
-  tutoring and reading help, and it teaches skills such as conflict resolution and leadership.
-what_you_do: Ask by email about tutoring or youth programs. The site does not describe a sign-up process
-  or volunteer roles.
+summary: A youth development group for Philadelphia young people ages 6 to 24. It offers tutoring and
+  educational support, mentoring, and leadership workshops on creative expression, money habits, mental
+  health, and civic life.
+what_you_do: 'Email the group to ask about tutoring or a youth program. The site lists four leadership
+  workshop topics: creative expression, money habits, mental health and consumer choices, and civic leadership.'
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -16,6 +17,7 @@ categories:
 interests:
 - tutoring
 - literacy_tutoring
+- youth_leadership
 motives:
 - values
 formats:
@@ -24,6 +26,7 @@ roles: []
 crowd:
 - kids
 - teens
+- young_adults
 bridging: null
 audience:
   open_to: public
@@ -50,6 +53,15 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Mailing address (group contact page)
+  address: PO Box 48174
+  neighborhood: null
+  planning_district: null
+  zip: '19144'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: null
 cost:
   level: null
@@ -65,15 +77,18 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Email rollwithrespect@gmail.com to ask how students join the tutoring and youth programs
+  how: Email rollwithrespect@gmail.com and ask how a young person joins tutoring or a youth program. The
+    site does not describe an enrollment step.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site names tutoring and youth programs but does not say how to join, so the way in is unclear
-  what_to_expect: null
+  basis: The site names tutoring and youth programs and gives an email address, but it does not say how
+    to join, where programs meet, or when they run, so the way in is unclear.
+  what_to_expect: The site describes the work in general terms but does not say how a session runs, how
+    long it lasts, who leads it, or what it costs. Ask those questions when you email.
   first_visit_tips: []
 contacts:
   website: https://www.rollwithrespect.org
@@ -109,7 +124,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.rollwithrespect.org/our-work
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - crowd
+  - formats
+  - requirements.kids_ok
+- url: https://www.rollwithrespect.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts.contact_name
+- url: https://www.rollwithrespect.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - locations
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

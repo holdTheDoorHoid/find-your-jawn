@@ -8,8 +8,9 @@ leads:
 ein: '232894709'
 summary: A parenting group in Fishtown that runs open playgroups, so families with babies and young children
   can play, learn and meet other parents.
-what_you_do: Bring your little one to the Monday baby group or the Wednesday and Friday morning playgroup
-  to play and talk with other families. A small donation is suggested.
+what_you_do: Bring your little one to the Monday baby group (for children 12 months and under, older siblings
+  welcome) or the Wednesday or Friday morning playgroup (for children birth to five, older siblings welcome)
+  to play and talk with other families. The playgroup asks for a suggested $5 donation.
 kind: program
 categories:
 - kids-youth-mentoring
@@ -35,15 +36,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Baby Group on Mondays, 12 to 1 pm. All-ages Morning Playgroup on Wednesdays and Fridays, 10 to
-    11:30 am.
+  text: Baby group on Mondays, 12 to 1 pm, for children 12 months and under. Morning playgroup on Wednesdays
+    and Fridays, 10 to 11:30 am, for children birth to five.
   days:
   - mon
   - wed
   - fri
   times:
-  - morning
   - daytime
+  - morning
   recurring: true
   season: null
 locations:
@@ -59,14 +60,16 @@ locations:
 online_ok: null
 cost:
   level: low
-  text: A $5 donation is suggested for the morning playgroup. The page does not say whether the baby group
-    has a fee.
+  text: The playgroup page asks for a suggested $5 donation per session and says no one is turned away
+    for lack of money. It does not list a separate price for the Monday baby group.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: 'The playgroup space is up a flight of stairs; the page does not mention an elevator or stroller
+    access. Nearest SEPTA stop named on the directions page: the Berks Street El stop, a few blocks away.
+    Buses 5 and 25 stop at Frankford and Montgomery.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,14 +78,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to the Wednesday or Friday morning playgroup at 10 am. Use the alley entrance with the white
-    doors and go up the stairs to the playgroup space.
-  drop_in: null
+  how: Come to the Wednesday or Friday 10 am playgroup at 1542 E Montgomery Ave, using the alley entrance
+    and then the stairs.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Programs are open to all on posted weekly times, and the page describes no sign-up step.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The playgroups are open to all families on posted weekly times with no registration listed, and
+    the page says to come as you are. It does not say newcomers are specifically welcomed.
+  what_to_expect: Playgroup is loosely planned, with free play, circle time, and a snack, and adults can
+    get coffee or tea. Parents, grandparents, and caregivers come along, and the sessions last about an
+    hour and a half. Staff and other parents share parenting tips while the children play.
+  first_visit_tips:
+  - Bring a $5 donation if you can; it is suggested, not required.
+  - Walk down the alley, go through the white doors, and climb the stairs to the playgroup space.
+  - Street parking is usually available during the day.
 contacts:
   website: https://www.bymysideparenting.org
   email: null
@@ -124,7 +133,18 @@ sources:
   seen: '2026-10-08'
   fields:
   - locations
-research_tier: 1
+  - first_step
+  - access
+- url: https://www.bymysideparenting.org/playgroup
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - cost
+  - first_step
+  - what_you_do
+  - crowd
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

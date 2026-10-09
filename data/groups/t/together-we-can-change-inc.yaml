@@ -51,15 +51,6 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 5016 Chestnut Street
-  neighborhood: null
-  planning_district: west
-  zip: '19139'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: free
@@ -78,15 +69,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-398-2917 and ask about volunteering at the next event, or use the How can I help page
-    on the group's website
+  how: 'Call 215-398-2917 or email togetherwecanchange22@gmail.com and say how you would like to help:
+    volunteering at an event, donating food or clothes, speaking in the Speaker Series, or sponsoring.'
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer, donation and speaker options are listed on the group's own page, with a phone number
-    and an email address.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The How can I help page lists several ways in, with a phone number and an email address, but
+    it gives no sign-up form and no event-day details.
+  what_to_expect: The site does not describe what a volunteer does on event day, where it happens or how
+    long it runs, so ask when you call. The group lists a fundraising gala and ticket sales, but the pages
+    read for this check give no date for either.
+  first_visit_tips:
+  - Call or email before you come, since the site has no sign-up form
+  - Ask the time and place of the event you want to join; the site does not list them
 contacts:
   website: https://www.together-we-can-change.org
   email: togetherwecanchange22@gmail.com
@@ -125,7 +120,20 @@ sources:
   - what_you_do
   - first_step
   - contacts
-research_tier: 1
+  - cost
+- url: https://together-we-can-change.org/upcoming-events/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://together-we-can-change.org/upcoming-events-2/
+  seen: '2026-10-08'
+  fields:
+  - status
+- url: https://together-we-can-change.org/gala-brochure/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

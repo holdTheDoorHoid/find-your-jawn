@@ -5,15 +5,17 @@ leads:
 - irs_990n:232052455
 - irs_bmf:232052455
 ein: '232052455'
-summary: A United Methodist church in Bridesburg with a Tuesday food pantry for families in the 19137
-  and 19134 ZIP codes and a music ministry.
-what_you_do: Come to the Tuesday pantry during its hours, or call on a Tuesday morning to make an appointment.
-  The site has a schedule page for worship times.
+summary: A United Methodist church in Bridesburg that holds a weekly Sunday service and runs a Tuesday
+  food pantry for families in the 19137 and 19134 ZIP codes. The church describes itself as small and
+  friendly.
+what_you_do: Visitors can join the 9:30 am Sunday worship service. The food pantry runs Tuesdays from
+  11 am to 2 pm, and families register by calling on a Tuesday morning.
 kind: congregation
 categories:
 - faith-community
 - hunger-housing-basic-needs
 interests:
+- worship_community
 - food_pantry
 - worship_music
 motives:
@@ -39,10 +41,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Food pantry on Tuesdays, 11 am to 2 pm. Register by calling on Tuesday morning.
+  text: Food pantry on Tuesdays, 11 am to 2 pm. Register by calling on Tuesday morning. Worship service
+    on Sundays at 9:30 am.
   days:
   - tue
+  - sun
   times:
+  - morning
   - daytime
   recurring: true
   season: year_round
@@ -74,20 +79,29 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-288-7505 on a Tuesday morning to make an appointment, then come to the pantry during its
-    hours
-  drop_in: false
+  how: Come to the 9:30 am Sunday service as a visitor. The church says visitors are welcome. For the
+    food pantry, call 215-288-7505 on a Tuesday morning.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site says everyone is welcome and gives a phone number and a set morning to register
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The church says visitors are welcome at its weekly Sunday service, and the pantry page says everyone
+    is welcome and gives a phone number and a set morning to register.
+  what_to_expect: The church describes itself as a small, friendly congregation with a weekly service
+    at 9:30 on Sunday. The site does not say whether the service is in person or online, what happens
+    during it, or where it meets. The food pantry runs Tuesdays from 11 am to 2 pm, and the site does
+    not describe what a pantry visit is like.
+  first_visit_tips:
+  - Call 215-288-7505 to confirm whether the Sunday service meets in person and where.
+  - For the pantry, call on a Tuesday morning and ask whether your ZIP code is served, since the page
+    names 19137 and 19134 but also says everyone is welcome.
+  - The site does not list parking, transit, or accessibility details, so ask when you call.
 contacts:
   website: https://bridesburgmethodist.com
   email: null
   phone: 215-288-7505
   contact_name: Anthony Velazquez
-  social: []
+  social:
+  - https://www.facebook.com/bridesburg.umc.1
   calendar_feed: null
 status: probably_active
 last_sign_of_life: null
@@ -116,12 +130,20 @@ sources:
   - first_step
   - contacts.phone
   - status
+  - contacts
 - url: https://www.epaumc.org/food-ministry-map/
   seen: '2026-10-08'
   fields:
   - lead
   - locations
-research_tier: 1
+- url: https://bridesburgmethodist.com/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - contacts
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

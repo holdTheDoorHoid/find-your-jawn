@@ -38,11 +38,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Weekday full time and weekend part time schools. Days and times are on separate school pages that
-    were not read. Dated events on the site have no years.
+  text: Weekday full time and weekend part time TIES schools, each with a Philadelphia school page on
+    the site
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: AICP
@@ -57,7 +57,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated on the homepage
+  text: Tuition is not stated on the school pages read. Ask the office.
 commitment: null
 group_size: null
 access:
@@ -72,13 +72,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-387-8888 or read the TIES contacts page
+  how: Call the Philadelphia office at 215-387-8888 and ask which weekday or weekend school fits your
+    child
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site lists schools but not enrollment steps, dates or costs.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site lists schools and city pages, but the pages we could read give no enrollment steps,
+    dates, or costs.
+  what_to_expect: The school pages we could read do not give class times, ages served, or tuition, so
+    ask the office about these before a visit. The TIES overview says the academic schools are registered
+    with their state's education department.
+  first_visit_tips:
+  - Call ahead, since the site does not list an open house or visit day.
+  - Ask which city school page applies to you, since each city lists its own details.
 contacts:
   website: http://www.aicp.org/
   email: info@aicp.org
@@ -111,8 +117,32 @@ sources:
   - contacts
   - first_step
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.aicp.org/index.php/ties-the-islamic-education-schools
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+  - summary
+- url: https://www.aicp.org/index.php/weekday-full-time-schools
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.aicp.org/index.php/weekend-part-time-schools
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://www.aicp.org/index.php/ties-contacts
+  seen: '2026-10-08'
+  fields:
+  - contacts.phone
+  - locations
+  - first_step
+- url: https://www.aicp.org/index.php/announcements/events
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

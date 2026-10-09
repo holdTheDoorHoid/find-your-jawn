@@ -69,7 +69,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Each garden sets its own days. The site lists no work days or meetings.
+  text: Each garden sets its own days. The network lists no shared work days or meetings.
   days: []
   times: []
   recurring: null
@@ -84,10 +84,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Aspen Farms garden
+  address: 4837 to 4859 Aspen Street
+  neighborhood: mill_creek
+  planning_district: null
+  zip: '19139'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: false
 cost:
   level: null
-  text: Plot fees not shown
+  text: Plot fees are not shown on the site. Ask the garden's contact.
 commitment: ongoing_role
 group_size: null
 access:
@@ -102,14 +111,17 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Open the garden map on the site, find a garden, and click More Info for its contact; or email ngt@pennhort.org
-    for help
+  how: Open the garden map on the site, pick a garden near you, click More Info, and contact the garden's
+    listed person about a plot
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The steps are clear, but many gardens have waitlists
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The steps are clear and anyone can ask, but the site says many gardens have waiting lists.
+  what_to_expect: Each garden lists its own contact person, who is the one to ask about plots, waitlists,
+    and fees. The site does not describe a first visit, work days, or plot costs.
+  first_visit_tips:
+  - Pick two or three gardens from the map, since many have waiting lists.
+  - Ask the garden contact about plot fees and any work days before you sign up.
 contacts:
   website: https://ngtrust.org/
   email: ngt@pennhort.org
@@ -150,6 +162,7 @@ sources:
   - what_you_do
   - first_step
   - status
+  - cost
 - url: https://ngtrust.org/bouvier-street
   seen: '2026-10-08'
   fields:
@@ -438,8 +451,14 @@ sources:
   - summary
   - contacts
   - locations
-research_tier: 1
-confidence: low
+- url: https://ngtrust.org/contact/
+  seen: '2026-10-08'
+  fields:
+  - contacts.email
+  - contacts.phone
+  - locations
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

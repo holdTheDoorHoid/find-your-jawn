@@ -5,11 +5,11 @@ leads:
 - irs_990n:263846075
 - irs_bmf:263846075
 ein: '263846075'
-summary: A theatre company that puts on plays. Its current show is a modern take on A Midsummer Night's
-  Dream, presented with Hedgerow Theatre. Audiences buy tickets, and actors audition for specific shows
-  when a call goes out.
-what_you_do: Buy tickets to the current show through the site, or watch for an audition notice for a specific
-  production.
+summary: A Philadelphia theatre company that stages affordable plays with LGBTQ themes. The site lists
+  A Midsummer Night's Dream, presented with Hedgerow Theatre, as its current show, and actors audition
+  for each show when a call is posted.
+what_you_do: Buy tickets to the current show through the ticket link on the homepage, or watch the Opportunities
+  page for an actor call for a specific production.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -34,8 +34,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Dates for the current production were not shown when checked. Actor calls are posted for specific
-    shows.
+  text: Productions run for set dates, and actor calls are posted for specific shows only.
   days: []
   times: []
   recurring: null
@@ -50,10 +49,19 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Hedgerow Theatre (current show venue)
+  address: 64 Rose Valley Rd
+  neighborhood: null
+  planning_district: null
+  zip: '19063'
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: paid
-  text: Tickets are sold through the site. Prices were not shown when checked.
+  text: Tickets are sold online through the ticket link on the homepage. The pages read did not show prices.
 commitment: one_off
 group_size: null
 access:
@@ -68,13 +76,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy tickets to the current production through the Tickets link on the homepage
+  how: Buy tickets to the current production through the Tickets link on the homepage, or watch the Opportunities
+    page for an open call for a specific show.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Shows are open to the public with online tickets, and actor calls are open when posted
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Shows are open to the public with online tickets. Actor submissions are taken only for specific
+    shows when a call is posted, so acting depends on the next call.
+  what_to_expect: The current show is staged at Hedgerow Theatre in Rose Valley, outside Philadelphia,
+    so plan the trip. The pages read did not give performance dates, times, or prices, so check the ticket
+    page before you travel. If an audition call is posted, the notice sets out how to apply.
+  first_visit_tips:
+  - Check the ticket page for dates and times before you travel, since the company's own pages did not
+    show them.
+  - Plan travel for Rose Valley, which is outside the city.
+  - The company's Facebook and Instagram pages are linked from the homepage, so follow them for updates.
 contacts:
   website: https://www.mauckingbird.org
   email: null
@@ -84,9 +100,9 @@ contacts:
   - https://www.facebook.com/mauckingbird
   - https://www.instagram.com/mauckingbirdtheatre
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.mauckingbird.org
+status: dormant
+last_sign_of_life: 2016-08
+sign_of_life_url: https://www.mauckingbird.org/opportunities.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -116,7 +132,26 @@ sources:
   fields:
   - status
   - first_step
-research_tier: 1
+- url: https://www.mauckingbird.org/opportunities.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - first_step
+  - what_to_expect
+- url: https://www.mauckingbird.org/about.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - locations
+- url: https://app.arts-people.com/index.php?show=241103
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - what_to_expect
+  - cost
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

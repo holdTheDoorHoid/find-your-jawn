@@ -5,20 +5,22 @@ leads: []
 ein: null
 summary: A downtown Presbyterian congregation on Arch Street with Sunday worship, a music ministry, small
   groups and outreach to partner missions.
-what_you_do: Come to Sunday worship, which has a Zoom option, or join a small group, the music ministry
-  or a family program.
+what_you_do: Come to Sunday worship at 10:45 am, which has a Zoom option, or join the choir, a small group
+  such as the Wednesday Zoom Good Book Club, or a family program.
 kind: congregation
 categories:
 - faith-community
 interests:
 - worship_community
 - worship_music
+- scripture_study
 motives:
 - values
 - social
 formats:
 - side_by_side
 - conversation
+- perform_make_together
 roles:
 - hands_on
 crowd:
@@ -35,11 +37,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Sunday worship at 10:45 am
+  text: Sunday worship at 10:45 am. The Good Book Club meets every Wednesday from 12:10 to 1 pm on Zoom.
+    The choir rehearses before and after worship each week and sings at least three Sundays a month.
   days:
   - sun
+  - wed
   times:
   - morning
+  - daytime
   recurring: true
   season: year_round
 locations:
@@ -70,14 +75,25 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Come to Sunday worship, then use the contact page to ask about small groups or the music ministry
+  how: Come to Sunday worship at 10:45 am, then email info@archstreetpres.org to ask about a small group,
+    the choir, or family programs.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Worship is public with a Zoom option and a contact page, but the site does not spell out a visitor
-    welcome
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Worship is public with a Zoom option, and the choir and the Zoom Bible group say everyone is
+    welcome and give a way in. The site has no page that spells out a visitor welcome.
+  what_to_expect: The pages do not describe a Sunday service, but children are welcome in the 10:45 am
+    worship and a nursery is available. The Good Book Club is a Zoom session every Wednesday from 12:10
+    to 1 pm, and the choir welcomes anyone who wants to learn, with no audition mentioned. The pages read
+    give no cost for worship, groups, or the choir.
+  first_visit_tips:
+  - Free street parking on the west side of 18th Street, between Arch and Cherry, is for Sundays from
+    9 am to 6 pm only, and you need a placard from the sanctuary or the website.
+  - The home page links a childcare registration form, so register ahead if you need the nursery.
+  - The office is open Monday to Thursday, 8 am to 4 pm, at 215-563-3763. The pages do not cover accessibility,
+    so ask there.
+  - The directions page recommends SEPTA, including Suburban Station and the City Hall stops, with a short
+    walk to the church.
 contacts:
   website: https://archstreetpres.org
   email: info@archstreetpres.org
@@ -85,9 +101,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://archstreetpres.org/
+status: active
+last_sign_of_life: 2025-12
+sign_of_life_url: https://archstreetpres.org/membership/small-groups/
 sources:
 - url: https://archstreetpres.org/
   seen: '2026-10-08'
@@ -99,12 +115,40 @@ sources:
   - first_step
   - contacts.phone
   - status
+  - contacts
 - url: https://presbyphl.org/our-churches/
   seen: '2026-10-08'
   fields:
   - lead
   - contacts.email
-research_tier: 1
+- url: https://archstreetpres.org/membership/small-groups/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+- url: https://archstreetpres.org/membership/music-ministry/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://archstreetpres.org/membership/family-ministry/
+  seen: '2026-10-08'
+  fields:
+  - requirements
+  - what_you_do
+- url: https://archstreetpres.org/welcome/times-and-location/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts
+- url: https://archstreetpres.org/welcome/driving-directions/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

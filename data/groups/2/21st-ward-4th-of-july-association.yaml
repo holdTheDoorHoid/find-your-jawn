@@ -5,8 +5,9 @@ leads: []
 ein: null
 summary: Runs a neighborhood Independence Day parade in Northwest Philadelphia that the group says dates
   back to 1831, with a park party and veterans events through the year.
-what_you_do: Watch the July 4 parade or join a park event. To march in a parade unit, read the Participants
-  and Parade Rules pages on the site first.
+what_you_do: 'Watch the July 4 parade or join the veterans concert and picnic at Gorgas Park. To march,
+  email the association first: the participants listed on the site are churches, veterans and Masonic
+  groups, among others, and special units need advance approval.'
 kind: civic
 categories:
 - philly-traditions
@@ -33,15 +34,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Independence Day parade each July 4, with a veterans tribute and picnic and a Gorgas Park party.
-    2027 dates are not posted yet.
+  text: The parade runs each July 4, starting at 9 a.m. The association also holds a park party in Gorgas
+    Park and a yearly veterans concert and picnic there.
   days: []
-  times: []
+  times:
+  - morning
   recurring: true
-  season: null
+  season: summer
 locations:
 - label: Gorgas Park (park party and veterans events)
-  address: null
+  address: 6300 Ridge Ave
   neighborhood: null
   planning_district: null
   zip: null
@@ -51,8 +53,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: Not stated on the page
+  level: free
+  text: The veterans concert and picnic is free to attend. The site lists no fee for the parade or the
+    park party, and merchandise is sold at the park party.
 commitment: null
 group_size: null
 access:
@@ -67,15 +70,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch the July 4 parade, or email 21stward4thjuly@gmail.com to ask how to join a parade unit after
-    reading the Participants and Parade Rules pages
-  drop_in: null
+  how: Watch the July 4 parade, or come to the veterans concert and picnic at Gorgas Park. To march, email
+    21stward4thjuly@gmail.com after reading the Participants and Parade Rules pages.
+  drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site has participant and rules pages, but their contents were not in the page read, so the
-    steps to march are unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Watching the parade and the public park events is open to anyone. The pages give no steps for
+    joining a parade unit beyond an email, and special units need advance approval, so the way in to marching
+    is unclear.
+  what_to_expect: The parade starts at 9 a.m. on July 4. The veterans concert and picnic features a concert
+    band, classic cars, a costumed mascot and a live bald eagle, food for sale, and activities for children
+    on the Gorgas Park playground. Anyone can attend, and the page does not say how long the parade lasts.
+  first_visit_tips:
+  - If you are a veteran, arrive before 10 a.m. at the veterans event.
+  - 'Marchers: bicycles, motor vehicles and special units need advance approval, and throwing candy or
+    other items to the crowd is banned.'
+  - Email the association with questions at 21stward4thjuly@gmail.com.
 contacts:
   website: https://21stward4thjuly.wixsite.com/home
   email: 21stward4thjuly@gmail.com
@@ -97,7 +107,35 @@ sources:
   - contacts
   - status
   - locations
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://21stward4thjuly.wixsite.com/home/participants
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://21stward4thjuly.wixsite.com/home/parade-rules
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - status
+- url: https://21stward4thjuly.wixsite.com/home/parade-details
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: https://21stward4thjuly.wixsite.com/home/gorgas
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+- url: https://21stward4thjuly.wixsite.com/home/veterans-concert-picnic
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - locations
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

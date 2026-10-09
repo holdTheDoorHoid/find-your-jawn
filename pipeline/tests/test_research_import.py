@@ -413,6 +413,20 @@ def test_community_faith_and_languages_are_mapped_through_the_vocabulary(layout,
     assert group["access"]["languages"] == ["es", "en"]
 
 
+def test_neighborhood_names_become_ids_and_unknown_ones_are_dropped(layout, vocab):
+    rec = good_record(
+        locations=[
+            {"label": "Hall", "zip": "19104", "neighborhood": "University City"},
+            {"label": "Annex", "zip": "19104", "neighborhood": "Germantown and East Falls"},
+        ]
+    )
+    write_inbox(layout, "w1", "a1", [rec])
+    summary = run(layout, vocab)
+    assert summary.created == 1
+    group = GroupStore(layout.groups_dir).read("philadelphia-grotto")
+    assert [loc.get("neighborhood") for loc in group["locations"]] == ["university_city", None]
+
+
 def test_a_support_recovery_group_is_flagged_as_a_support_group(layout, vocab):
     rec = good_record(
         name="Tuesday Recovery Circle",

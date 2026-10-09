@@ -3,10 +3,11 @@ name: Beacon Church
 aka: []
 leads: []
 ein: null
-summary: An inclusive church on East Cumberland Street that holds worship services and invites people
-  to get involved and to join as members.
-what_you_do: Attend worship, get involved through the Get Involved page, or ask about membership through
-  the contact page.
+summary: A Presbyterian congregation on East Cumberland Street that describes itself as LGBTQIA+ affirming
+  and family-friendly. It holds a worship service and a free community dinner on the first Sunday of each
+  month.
+what_you_do: Come to the first-Sunday service and stay for the free dinner, volunteer through the Get
+  Involved form, or ask about membership by email.
 kind: congregation
 categories:
 - faith-community
@@ -32,9 +33,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Worship services run through the summer; the page does not list days or times
-  days: []
-  times: []
+  text: Worship on the first Sunday of each month at 5 pm, with a free community dinner that same day.
+  days:
+  - sun
+  times:
+  - evening
   recurring: true
   season: year_round
 locations:
@@ -49,8 +52,8 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: free
+  text: The first-Sunday community dinner is free. The page lists no fee for worship.
 commitment: null
 group_size: null
 access:
@@ -62,17 +65,26 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the contact page to ask about visiting a worship service
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A public church with a contact page and an open invitation to get involved, but no visit details
-    are posted
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to the 5 pm service on the first Sunday of the month, or email info@thewordatbeacon.org to
+    ask about a visit before you come.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The church says visitors are welcome and explains what a first visit looks like, including a
+    bulletin handed out on arrival.
+  what_to_expect: The service runs about an hour and ten minutes and includes songs, Bible readings, a
+    sermon, prayer, and weekly communion. The room is medium-sized, with pews in a half circle around
+    the altar, and usually 10 to 15 people attend. Children stay for the whole service, with a children's
+    lesson, activity bags, a playroom, and a nursery available. The dinner is free, and you may bring
+    a dish to share if you like.
+  first_visit_tips:
+  - When you arrive, you will be handed a bulletin that outlines the service.
+  - Dress however you are comfortable, from formal to casual.
+  - Bring a dish to share for the dinner if you like.
+  - Children have their own lesson, a playroom, and a nursery, so families can plan around them.
 contacts:
   website: https://www.thewordatbeacon.org
   email: info@thewordatbeacon.org
@@ -91,12 +103,26 @@ sources:
   - schedule
   - contacts.email
   - status
+  - last_sign_of_life
 - url: https://presbyphl.org/our-churches/
   seen: '2026-10-08'
   fields:
   - lead
   - contacts.phone
-research_tier: 1
+- url: https://www.thewordatbeacon.org/worship
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - requirements
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.thewordatbeacon.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

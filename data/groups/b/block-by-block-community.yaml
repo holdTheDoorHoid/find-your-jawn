@@ -8,8 +8,8 @@ leads:
 ein: '853586682'
 summary: A volunteer-run nonprofit that organizes cleanups against litter and illegal dumping across Philadelphia.
   It also hosts block parties and works with schools and businesses on clean streets.
-what_you_do: Join a listed cleanup, organize a cleanup with your own group, or clean your own block and
-  submit your bags through the site's trash form.
+what_you_do: Sign up for a listed cleanup on the Get Involved page, start a group cleanup of your own,
+  or clean your own block and submit your bags through the trash form.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -37,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Organized cleanups are listed on the site. The 4th Annual Train Tracks Cleanup is Saturday, October
-    10, 10 am to 12 noon, meeting at 30th and Pennsylvania Ave.
+  text: Cleanups are posted on the Get Involved page as they are scheduled, so check there for the next
+    date.
   days:
   - sat
   times:
@@ -46,7 +46,7 @@ schedule:
   recurring: true
   season: event_only
 locations:
-- label: Train Tracks cleanup meeting point
+- label: Meeting point for a listed cleanup (varies by event)
   address: 30th and Pennsylvania Ave
   neighborhood: null
   planning_district: null
@@ -73,19 +73,25 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Show up at 30th and Pennsylvania Ave on Saturday, October 10 at 10 am for the Train Tracks Cleanup,
-    or pick another cleanup from the site's event list. The group recommends 18 and up for the train tracks
-    work.
+  how: Pick a listed cleanup on the Get Involved page, RSVP through the link on its event page, and meet
+    at the posted spot.
   drop_in: true
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 4
-  basis: The site says volunteers of all ages and abilities are welcome at most events and explains how
-    to join a listed cleanup.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says events are family-friendly and welcoming to all, and it explains how to join a
+    listed cleanup, with an RSVP link on each event page.
+  what_to_expect: A cleanup is a group outing at a posted spot and time. Organizers provide vests, gloves,
+    tools, and water, and the group gives guidance on the work. The site does not say how long each cleanup
+    lasts, so check the event page.
+  first_visit_tips:
+  - The site says you only need to bring your energy and commitment, since the group supplies vests, gloves,
+    tools, and water.
+  - The train tracks cleanup recommends ages 18 and up, so check each event page for age guidance.
+  - The site gives no parking or transit details, so check the event page or ask the group before you
+    go.
 contacts:
   website: https://www.blockbyblockphilly.org
-  email: null
+  email: community@blockbyblockphilly.org
   phone: null
   contact_name: David Evans
   social:
@@ -93,7 +99,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.blockbyblockphilly.org
+sign_of_life_url: https://www.blockbyblockphilly.org/cleanoff
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -123,7 +129,24 @@ sources:
   - status
   - contacts
   - requirements
-research_tier: 1
+- url: https://www.blockbyblockphilly.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+  - requirements
+- url: https://www.blockbyblockphilly.org/cleanoff
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - what_you_do
+- url: https://www.blockbyblockphilly.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

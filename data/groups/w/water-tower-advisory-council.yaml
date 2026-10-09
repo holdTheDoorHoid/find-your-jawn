@@ -5,13 +5,19 @@ leads:
 - irs_990n:834537377
 - irs_bmf:834537377
 ein: '834537377'
-summary: A nonprofit that guides how the Water Tower Recreation Center is developed and used.
-what_you_do: The site does not describe a way to join or help. The contact page is the only listed step.
+summary: A 501(c)(3) nonprofit that guides how the Water Tower Recreation Center is developed and used,
+  working with Philadelphia Parks & Recreation and the local community. The center has gyms, courts, ball
+  fields, a playground, and classrooms.
+what_you_do: The main way to take part is to join the Advisory Council. The site says council meetings
+  are open to the public and listed on its calendar, but the calendar showed no meetings when we checked.
+  The center's programs page lists an after school program, pickleball, gymnastics, and a youth sport
+  club, with details on linked pages.
 kind: nonprofit
 categories:
 - neighborhood-civic
 interests:
 - rec_center_council
+- community_development
 motives: []
 formats: []
 roles: []
@@ -27,7 +33,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Council meetings are open to the public. The site does not give a regular meeting day or time.
   days: []
   times: []
   recurring: null
@@ -35,15 +41,6 @@ schedule:
 locations:
 - label: Mailing address (IRS)
   address: 209 E Hartwell Ln
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19118'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 209 East Hartwell Lane
   neighborhood: null
   planning_district: upper_northwest
   zip: '19118'
@@ -69,12 +66,16 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the contact page at wtrec.org/contact to ask how to take part in the council or its programs.
-  drop_in: null
+  how: Use the Contact page at wtrec.org/contact to ask how to take part in the council, and ask when
+    the next open meeting is, since the site does not list one.
+  drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  newcomer_friendliness: 2
+  basis: The site says council meetings are open to the public, but gives no meeting dates, times, or
+    address, and the only step listed is the contact page, so the way in is unclear.
+  what_to_expect: The site does not describe what a council meeting is like, how long it lasts, or where
+    it is held. It names the council's officers and says the council works with the parks department and
+    the community toward shared goals.
   first_visit_tips: []
 contacts:
   website: https://www.wtrec.org
@@ -112,11 +113,32 @@ sources:
   - first_step
   - contacts
   - status
+  - contacts.social
 - url: https://www.wtrec.org/calendar
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.wtrec.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - contacts.contact_name
+- url: https://www.wtrec.org/faq
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step.drop_in
+  - locations
+- url: https://www.wtrec.org/programs-and-events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.wtrec.org/contact
+  seen: '2026-10-08'
+  fields:
+  - first_step.how
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

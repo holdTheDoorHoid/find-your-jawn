@@ -35,7 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Adult Sunday school at 9:30 am and worship at 11 am on Sundays
+  text: Adult Sunday school at 9:30 am and worship at 11 am on Sundays. The worship service is also livestreamed.
   days:
   - sun
   times:
@@ -70,13 +70,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to worship on a Sunday, or email the church office
+  how: Come to 11 am worship on a Sunday, or email or call the church office to ask about joining a group.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 4
-  basis: The site invites visitors to attend in person and has a contact page with office hours
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The site says visitors are welcome to join its activities and events, invites people to visit
+    in person, and gives a contact route for questions.
+  what_to_expect: Sunday starts with adult Sunday school at 9:30 am, and worship is at 11 am. The site
+    describes the church as a safe place to ask questions. It does not list costs, a children's program,
+    or how long services last.
+  first_visit_tips:
+  - The office is open Tuesday to Friday, 9 am to 3:30 pm, so call or email then if you have questions
+    before you visit.
+  - The site lists no parking or transit details, so check the route to 808 Red Lion Road before you go.
+  - Worship is livestreamed from 11 am on Sundays, if you want to try it from home first.
 contacts:
   website: https://www.bethesdapc.com
   email: info@bethesdapc.com
@@ -96,7 +103,27 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+  - what_you_do
+- url: https://www.bethesdapc.com/copy-of-worship
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.bethesdapc.com/live-stream-1
+  seen: '2026-10-08'
+  fields:
+  - online_ok
+  - schedule
+- url: https://www.bethesdapc.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.bethesdapc.com/ministries
+  seen: '2026-10-08'
+  fields:
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

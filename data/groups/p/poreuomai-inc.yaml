@@ -6,8 +6,9 @@ leads:
 - irs_990n:853736929
 - irs_bmf:853736929
 ein: '853736929'
-summary: A faith-based missions group. It sends people on short and long mission trips, offers missions
-  internships, and runs an academy with a course catalog.
+summary: A faith-based missions group that sends people on short and long mission trips, offers a missions
+  internship, and runs an academy with a course catalog. The trips listed on the site go to Jamaica and
+  Tobago.
 what_you_do: Join a short-term or long-term mission trip, apply for a missions internship, take a course,
   or sign up to volunteer.
 kind: nonprofit
@@ -34,7 +35,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Mission trips are scheduled trip by trip, with dates posted on the short-term trips page. The
+    site lists no regular meeting times.
   days: []
   times: []
   recurring: null
@@ -58,10 +60,20 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Office (per website)
+  address: P.O. Box 37, Highgate, St. Mary, Jamaica
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: false
+  transit: null
 online_ok: null
 cost:
   level: null
-  text: Not stated on the site.
+  text: Trip and internship costs are not stated on the site. The course Demystifying Discipleship costs
+    $59 as a one-time payment.
 commitment: null
 group_size: null
 access:
@@ -76,14 +88,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the volunteer sign-up on poreuomai.org, or call (301) 518-3856 to ask about trips and internships.
+  how: Fill out the volunteer sign-up form on poreuomai.org and wait for the group to contact you, or
+    call (301) 518-3856.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: A volunteer sign-up and an internship application are listed, but the site does not say what
-    either involves or who can apply.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer and internship routes both start with a form and a review or contact step, and
+    the site does not say what the work involves or who can apply.
+  what_to_expect: The site does not describe a typical volunteer shift or how long one lasts. Hands-on
+    work is described as serving churches, schools, and communities, and the listed trips go to partner
+    churches in Jamaica and Tobago. The group contacts you after you send the form.
+  first_visit_tips:
+  - Ask about cost, trip length, and who can go before you apply, since the site does not list them.
+  - The site also lists a WhatsApp number, (876) 471-1808, for questions.
 contacts:
   website: https://www.poreuomai.org/
   email: null
@@ -92,9 +109,9 @@ contacts:
   social:
   - https://instagram.com/poreuomai
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.poreuomai.org/
+status: active
+last_sign_of_life: 2026-03
+sign_of_life_url: https://www.poreuomai.org/current-issue
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -123,8 +140,33 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
-confidence: low
+- url: https://www.poreuomai.org/volunteer-sign-up
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.poreuomai.org/missions-internships
+  seen: '2026-10-08'
+  fields:
+  - what_to_expect
+- url: https://www.poreuomai.org/short-term-trips
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - summary
+- url: https://www.poreuomai.org/course-catalog
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: https://www.poreuomai.org/current-issue
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

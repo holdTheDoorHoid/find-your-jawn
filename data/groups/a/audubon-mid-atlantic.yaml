@@ -4,9 +4,9 @@ aka: []
 leads: []
 ein: null
 summary: The Mid-Atlantic office of the National Audubon Society. In Philadelphia it runs the Discovery
-  Center at the Strawberry Mansion Reservoir and leads public bird walks and tours in city parks.
-what_you_do: Join a public birding walk or tour, use the binoculars the Discovery Center lends, and sign
-  up for event updates.
+  Center in the Strawberry Mansion neighborhood and leads public bird walks and tours in city parks.
+what_you_do: Join a public birding walk or tour, borrow the binoculars the Discovery Center lends for
+  free, and sign up for event updates.
 kind: nonprofit
 categories:
 - outdoors-adventure
@@ -33,8 +33,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public birding tours and walks in Philadelphia parks on weekend mornings, including Philly Birding
-    Weekend tours on Oct 10 and Oct 11, 2026.
+  text: Public bird walks and tours in Philadelphia parks, usually on weekend mornings, listed on the
+    events calendar.
   days:
   - sat
   - sun
@@ -43,8 +43,34 @@ schedule:
   recurring: true
   season: year_round
 locations:
-- label: Discovery Center at Strawberry Mansion Reservoir, plus FDR Park, The Woodlands and East Fairmount
-    Park
+- label: Discovery Center
+  address: 3401 Reservoir Drive
+  neighborhood: null
+  planning_district: null
+  zip: '19121'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: FDR Park
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: The Woodlands
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: East Fairmount Park
   address: null
   neighborhood: null
   planning_district: null
@@ -56,33 +82,44 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: null
+  text: Admission to the Discovery Center is free, and binoculars can be borrowed at no charge. The page
+    does not say what each walk costs.
 commitment: one_off
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: 'yes'
   languages: []
-  notes: null
+  notes: The Discovery Center is listed as wheelchair accessible, and restrooms are available. A walking
+    trail of about three quarters of a mile runs along the reservoir. The page does not describe the trail
+    surface.
 requirements:
   act153_clearances: null
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Find a walk on the events calendar and sign up through its listing
+  how: Pick a Philadelphia walk or tour on the events page and register through the link on its listing.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Walks are open to the public with a published sign-up, but the page does not say what a first
-    walk is like.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Walks are open to the public with a registration link on each listing, but the page does not
+    say whether beginners are welcome or whether walks are drop-in.
+  what_to_expect: Walks listed for Philadelphia run about two hours, usually on weekend mornings. The
+    page does not say how many people come or what gear to bring, so check the listing before you go.
+    Entry to the Discovery Center itself is free.
+  first_visit_tips:
+  - The Discovery Center is closed on Mondays. Its summer hours run through October 15, and winter hours
+    start October 16.
+  - A free parking lot sits at the center, and bike racks are at the front walk.
+  - The Route 32 bus stop at 33rd and Oxford is about a 4 minute walk away, and the Route 3 stop at 33rd
+    and Cecil B. Moore is about 5 minutes.
+  - Binoculars, bird guides, and historical information can be borrowed free of charge.
 contacts:
   website: https://www.audubon.org/mid-atlantic
   email: null
-  phone: null
+  phone: (610) 990-3431
   contact_name: null
   social: []
   calendar_feed: null
@@ -101,7 +138,21 @@ sources:
   - status
   - last_sign_of_life
   - contacts
-research_tier: 1
+- url: https://www.audubon.org/discovery/visit
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - cost
+  - first_step
+  - contacts.phone
+- url: https://www.audubon.org/discovery
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

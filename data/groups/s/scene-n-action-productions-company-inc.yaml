@@ -6,19 +6,25 @@ leads:
 - irs_990n:464730387
 - irs_bmf:464730387
 ein: '464730387'
-summary: A 501(c)(3) nonprofit that offers classes and programs. Registration for fall 2026 is open, and
-  the site does not say what the classes cover.
-what_you_do: Sign up for a class through the Classes/Register page. The site does not list class topics
-  on that page; the Programs page is the place to check what is offered.
+summary: A nonprofit that runs dance and theater classes for children and adults, plus performance companies.
+  Classes include ballet, jazz, tap, hip-hop, creative theater, a toddler movement class, and adult dance.
+what_you_do: Sign up for a class through the Classes/Register page. The site also names several performance
+  companies, listed on the Creative Directors page with the classes each director leads.
 kind: nonprofit
 categories:
 - theater-dance-performance
 interests:
 - community_theater
-motives: []
-formats: []
+- dance_company
+motives:
+- enhancement
+formats:
+- learn_skill
+- perform_make_together
 roles: []
-crowd: []
+crowd:
+- kids
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -30,22 +36,14 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall 2026 class registration is open; the page does not list class days or times
+  text: Class terms run from fall 2026 into 2027. Days and times are not on the public pages we could
+    read.
   days: []
   times: []
   recurring: null
   season: fall
 locations:
-- label: Mailing address (IRS)
-  address: 7942 Germantown Ave
-  neighborhood: null
-  planning_district: upper_northwest
-  zip: '19118'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
+- label: Address on contact page
   address: 7942 Germantown Avenue
   neighborhood: null
   planning_district: upper_northwest
@@ -56,8 +54,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: Prices are in a linked fall 2026 price list, and the site says pricing may change in January 2027.
+    Monthly fees are paid through a separate online payment page.
 commitment: null
 group_size: null
 access:
@@ -69,27 +68,31 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Open the Classes/Register page on snapcompany.org to sign up, or call (267) 420-2810 with questions.
+  how: Open the Classes/Register page on snapcompany.org and use the fall 2026 registration link, or call
+    (267) 420-2810 with questions before you sign up.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
-  what_to_expect: null
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The site lists beginner tap and a toddler movement class and gives a clear registration link,
+    so beginners are welcome to sign up.
+  what_to_expect: The site lists classes for toddlers, beginners, and adults, plus ballet, jazz, hip-hop,
+    and tap groups. It does not say how long a class runs, what a single class costs, or whether a first
+    class can be tried before paying.
   first_visit_tips: []
 contacts:
   website: https://www.snapcompany.org
-  email: snap2times@gmail.com
+  email: info@snapcompany.org
   phone: (267) 420-2810
   contact_name: Lydia Robinson
   social:
   - https://www.instagram.com/snapcompany_inc
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.snapcompany.org
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://www.snapcompany.org/classesregister.html
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -115,8 +118,38 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - first_step.how
+  - first_step.sign_up_needed
+  - contacts.phone
+- url: https://www.snapcompany.org/classesregister.html
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - schedule
+  - cost
+  - first_step.how
+  - first_step.sign_up_needed
+- url: https://www.snapcompany.org/creative-directors.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - interests
+  - crowd
+  - requirements.kids_ok
+  - first_step.newcomer_friendliness
+  - first_step.basis
+  - first_step.what_to_expect
+  - contacts.contact_name
+- url: https://www.snapcompany.org/contact-donate.html
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - contacts.email
+  - contacts.phone
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -35,7 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: An annual gala (the 2025 gala was on Sunday, November 2). Other events are listed on the upcoming
+  text: One big event each year, a gala with a silent auction. Other events are listed on the upcoming
     events page.
   days: []
   times: []
@@ -54,7 +54,8 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: Gala tickets start at $125 for the 2026 event (early bird pricing)
+  text: Gala tickets start at $125 for early-bird pricing. Party 29 is an optional monthly gift of $29
+    or $124.
 commitment: one_off
 group_size: null
 access:
@@ -69,15 +70,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to the 2026 Celebrations for Freedom Gala at The Arts Ballroom, or click I'm Interested
-    on the Opportunities page
+  how: Buy a ticket to the 2026 gala through the group's ticket page, or use the I'm Interested button
+    on the Opportunities page to ask about a board or council seat.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Galas and events are open to the public for purchase; board and council roles need an interest
-    form
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone can buy a gala ticket, and board and council roles have a clear interest button. The pages
+    do not describe what a first board meeting or council event is like.
+  what_to_expect: The 2026 gala is a gala and silent auction at The Arts Ballroom, 1324 Locust Street,
+    with thanks to its sponsors. The page gives no start time, no program details, and no list of who
+    attends, and it shows photos from the 2025 event. Board members meet about six times a year, including
+    a retreat, and are asked to make a personal gift.
+  first_visit_tips:
+  - Early-bird gala pricing ends October 8, so buy before prices rise.
+  - The gala page has no accessibility details, so contact the group about wheelchair access, quiet space,
+    or ASL before you go.
+  - The board and council use the same I'm Interested button, and no deadline is listed.
 contacts:
   website: https://www.andreecollective.org
   email: null
@@ -113,6 +121,8 @@ sources:
   - cost
   - locations
   - first_step
+  - what_to_expect
+  - first_visit_tips
 - url: https://www.andreecollective.org/upcoming-events
   seen: '2026-10-08'
   fields:
@@ -124,13 +134,19 @@ sources:
   fields:
   - what_you_do
   - first_step
+  - commitment
+  - schedule
 - url: https://www.andreecollective.org/
   seen: '2026-10-08'
   fields:
   - summary
   - locations
   - contacts
-research_tier: 1
+- url: https://www.andreecollective.org/party29
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -34,11 +34,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Museum visits by appointment. A free family festival in Germantown is held by the museum; its
-    date is not shown on the site.
+  text: Museum visits are by appointment, and the museum is closed on major holidays. The free family
+    festival in Vernon Park is a summer event.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Historic Vernon House, Vernon Park
@@ -53,7 +53,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Festival is free. Visit fees are not stated.
+  text: The festival is free. The site does not list a fee for visits.
 commitment: null
 group_size: null
 access:
@@ -68,13 +68,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 267-297-3078 about volunteering, or come to a public event. Visits need an appointment.
+  how: Call 267-297-3078 to arrange a visit or ask about volunteering, or fill in the volunteer form on
+    the museum's site.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The volunteer page and the free festival are open to anyone. Museum visits need an appointment.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The festival is free and open to all ages. Visits need an appointment, and the volunteer form
+    is a clear way in. The site does not describe a first visit.
+  what_to_expect: Visits are by appointment, so you call or use the contact form first. The site does
+    not say how long a visit takes or whether tours are offered. Volunteers fill in a form with their
+    name, phone, email, and address, and the free summer festival is a family event with music, spoken
+    word, and vendors.
+  first_visit_tips:
+  - Call 267-297-3078 before you come, since visits need an appointment.
+  - The site does not mention parking, transit, or wheelchair access, so ask when you call.
+  - The museum is in the Historic Vernon House inside Vernon Park.
 contacts:
   website: https://www.thebwm.org
   email: null
@@ -103,7 +111,30 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.thebwm.org/volunteer-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://www.thebwm.org/ppjf-1
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+  - cost
+  - status
+- url: https://www.thebwm.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - locations
+  - first_step
+- url: https://www.thebwm.org/about-the-museum
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - schedule
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
