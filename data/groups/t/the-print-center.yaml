@@ -8,9 +8,10 @@ ein: '230988930'
 summary: A free museum of printmaking and photography in Center City, founded in 1915. It shows changing
   exhibitions and runs a yearly competition for artists, and paid memberships bring member events and
   shop discounts.
-what_you_do: Visit the free galleries during open hours, or join one of its exhibition tours (listed for
-  Oct 23 and Nov 13, 2026). Artists can enter The ANNUAL competition. Individual members and up get invitations
-  to members-only events.
+what_you_do: Visit the free galleries during open hours, or book a guided tour, which the site offers
+  for each exhibition and by appointment. Artists can enter The ANNUAL competition. Membership starts
+  at $30 for students and $40 for artists, and the $50 individual level and up includes invitations to
+  members-only events.
 kind: nonprofit
 categories:
 - arts-crafts
@@ -37,9 +38,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Open Tuesday to Saturday, 11 am to 6 pm, with free admission. Exhibition tours are listed for
-    Friday Oct 23, 2026 and Friday Nov 13, 2026, both 5:30 to 6 pm. A tour on Wednesday Oct 7, 2026 at
-    noon has already passed.
+  text: Open Tuesday to Saturday, 11 am to 6 pm, with free admission. Each exhibition has guided tours,
+    and tours can also be booked by appointment.
   days:
   - tue
   - wed
@@ -50,7 +50,7 @@ schedule:
   - daytime
   - evening
   recurring: true
-  season: fall
+  season: year_round
 locations:
 - label: The Print Center
   address: 1614 Latimer St
@@ -64,14 +64,16 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Admission to exhibitions and education programs is free. Membership is optional and costs $30
-    (student) to $500 (benefactor) a year. The tour cost is not listed.
+  text: Admission is free. Memberships are optional, from $30 a year for students up to $500 for benefactors.
+    The site does not give a fee for tours.
 commitment: drop_in
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: The entry has a step of about 6 inches through a doorway about 31 inches wide. The second floor
+    galleries are reached only by stairs. The first floor restroom is not wheelchair accessible. Seating
+    is limited on both floors. Elevator, sensory options and ASL are not stated.
 requirements:
   act153_clearances: null
   background_check: null
@@ -80,14 +82,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come during open hours, or join the Oct 23 exhibition tour. Call the Center at 215.735.6090 first
-    to confirm the tour cost.
+  how: Come during open hours to see the free galleries, or call 215.735.6090 ext. 1 to book a guided
+    tour by appointment.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: The galleries are free and open to the public with no sign-up. Tours need a listed time.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The galleries are free, open to the public, and need no sign-up. The site lists no beginner classes,
+    and tours need a call to book by appointment.
+  what_to_expect: A visit is a walk through the current exhibition, with no sign-up and no admission fee.
+    Listed exhibition tours run about 30 minutes, and the events page gives their times. If you use a
+    wheelchair, plan around the entry step and the stairs to the second floor.
+  first_visit_tips:
+  - 'Parking: the museum points to the Academy House Parking Garage at 251 S. 15th Street, about one block
+    away.'
+  - Expect limited seating on both floors.
+  - Call 215.735.6090 ext. 1 if you need access details or tour times before you come.
 contacts:
   website: http://printcenter.org
   email: null
@@ -117,6 +126,7 @@ sources:
   - locations
   - cost
   - contacts
+  - what_you_do
 - url: https://printcenter.org/membership
   seen: '2026-10-08'
   fields:
@@ -128,7 +138,27 @@ sources:
   - schedule
   - first_step
   - status
-research_tier: 1
+- url: https://printcenter.org/visit-us/
+  seen: '2026-10-08'
+  fields:
+  - access
+  - first_visit_tips
+  - first_step
+  - what_to_expect
+  - schedule
+- url: https://printcenter.org/membership/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: https://printcenter.org/events/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

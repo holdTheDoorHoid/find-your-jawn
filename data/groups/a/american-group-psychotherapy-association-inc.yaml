@@ -8,8 +8,8 @@ leads:
 ein: '232940260'
 summary: A membership society for people who lead therapy groups in the Philadelphia region. Its monthly
   Consultation Group gives clinicians a place to talk through their group work.
-what_you_do: Bring your group clinical work to the monthly Consultation Group, or join the society for
-  member rates and benefits.
+what_you_do: Bring your group clinical work to the monthly online Consultation Group, or join the society
+  for member rates and benefits.
 kind: nonprofit
 categories:
 - careers-skills-professional
@@ -35,10 +35,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly Consultation Group, with a 2026 to 2027 schedule running from September 9, 2026 to May
-    12, 2027
-  days: []
-  times: []
+  text: Monthly on the second Wednesday, 7:00 to 8:30 pm, online. Sessions run September through May.
+  days:
+  - wed
+  times:
+  - evening
   recurring: true
   season: null
 locations:
@@ -51,10 +52,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: low
-  text: $15 for members and $25 for non-members for the Consultation Group, as listed on the group's site
+  text: $15 per monthly session for members and $25 for non-members, as listed on the group's home page.
 commitment: monthly
 group_size: null
 access:
@@ -69,18 +70,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for a Consultation Group session at pagps.org/consultation-group, or join the society
-    through pagps.org/join.
+  how: Use the Reserve Your Spot button on the Consultation Group page (pagps.org/consultation-group)
+    to book a session.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The Consultation Group is open to anyone who works with groups and has a clear register link,
-    but the page does not mention beginners.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The session is open to anyone who wants to talk through their clinical group work and has a clear
+    reserve button, but the page gives no first-visit or new-here guidance.
+  what_to_expect: Each session runs an hour and a half online, once a month on the second Wednesday evening.
+    The page does not say how a session is run or how many people attend. The fee is $15 for members and
+    $25 for non-members, according to the home page.
+  first_visit_tips:
+  - Reserve your spot ahead of time through the Consultation Group page.
+  - Plan to join online from a device with internet access.
 contacts:
   website: https://pagps.org
-  email: null
+  email: pagpsgroup@gmail.com
   phone: null
   contact_name: Elsa R Efran
   social:
@@ -90,7 +95,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://pagps.org/upcoming-events
+sign_of_life_url: https://pagps.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -122,7 +127,29 @@ sources:
   - kind
   - name
   - contacts
-research_tier: 1
+  - schedule
+  - cost
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://pagps.org/consultation-group
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - online_ok
+  - cost
+  - first_step
+- url: https://pagps.org/join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+- url: https://pagps.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

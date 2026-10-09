@@ -7,8 +7,9 @@ leads:
 ein: '844440248'
 summary: Stylists give free haircuts and styling to people who cannot get to a salon because of illness,
   disability or displacement, including at hospitals, rehab centers and at home.
-what_you_do: Clients ask for a visit through the request form. Helpers and sponsors can start from the
-  Join Our Village page, which the site links to but does not describe in detail.
+what_you_do: Licensed stylists visit clients at homes, hospitals, rehab centers and skilled nursing facilities.
+  Clients ask for a visit through the request form on the services page. Stylists, volunteers and sponsors
+  can sign up on the Join Our Village page.
 kind: nonprofit
 categories:
 - health-wellness
@@ -16,8 +17,10 @@ interests:
 - health_outreach
 motives:
 - values
-formats: []
-roles: []
+formats:
+- side_by_side
+roles:
+- hands_on
 crowd:
 - all_ages
 bridging: null
@@ -31,9 +34,10 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free services at the Hospital of the University of Pennsylvania every Monday, at Jefferson Moss-Magee
+  text: Free visits at the Hospital of the University of Pennsylvania every Monday, at Jefferson Moss-Magee
     Rehabilitation on the third Sunday of each month, and in weekly three-hour sessions at Ronald McDonald
-    House Charities in Philadelphia
+    House Charities in Philadelphia. Home visits are also offered, and the site does not give set times
+    for them.
   days:
   - mon
   - sun
@@ -62,7 +66,7 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Free
+  text: Free for clients. Donations are taken through the Circle of Care page, by card or by Venmo.
 commitment: null
 group_size: null
 access:
@@ -71,21 +75,30 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: If you need a visit, use the Join the Circle of Care form on restoresalonservices.org. To help,
-    start with the Join Our Village page.
-  drop_in: null
-  sign_up_needed: null
+  how: If you need a visit, fill out the request form linked from restoresalonservices.org/services, and
+    expect a team member to reach out after you submit it.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Anyone who needs a visit can sign up through a public form. Volunteer steps are not described
-    on the site.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Anyone who needs a visit can use a public request form and the page says staff will follow up,
+    though the site does not describe volunteer training or what happens after a volunteer signs up.
+  what_to_expect: A licensed stylist comes to you at a home, hospital, rehab center or care facility,
+    and can cut, style, blow-dry, do up-dos, buzz cuts, wig styling and barber work for all hair types,
+    starting in infancy. Caregivers and family members are also served. The site does not say how long
+    a visit lasts or how soon one can be booked, though testimonials on the site mention private rooms
+    and gentle handling.
+  first_visit_tips:
+  - Expect a call or email from the team after you submit the request form, since the site does not say
+    how soon.
+  - Ask about parking or transit before a visit, because the site lists neither.
+  - Use the services request form for a visit; the Circle of Care page is a donation form.
+  - 'Helpers: the stylist form asks for the days you can work from Monday to Saturday and a short bio.'
 contacts:
   website: https://www.restoresalonservices.org
   email: info@restoresalonservices.org
@@ -100,14 +113,14 @@ last_sign_of_life: null
 sign_of_life_url: https://www.restoresalonservices.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.contact_name
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -124,7 +137,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.restoresalonservices.org/services
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - cost
+- url: https://www.restoresalonservices.org/join-our-village
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - requirements
+  - first_visit_tips
+- url: https://www.restoresalonservices.org/circle-of-care-form
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_visit_tips
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

@@ -5,10 +5,13 @@ leads:
 - irs_990n:873455809
 - irs_bmf:873455809
 ein: '873455809'
-summary: Online tutoring for K-12 students in Philadelphia and South Jersey, paired one on one with graduate
-  student tutors. Also offers college application help for high school students.
-what_you_do: Graduate students tutor students one on one, online. Families sign up with the participation
-  form, and tutors apply through the tutor interest inquiry.
+summary: Online one-on-one tutoring for students from kindergarten through 12th grade in Philadelphia
+  and South Jersey, matched with graduate student tutors. Also offers college application help for high
+  school students.
+what_you_do: Graduate students tutor students one on one, online, in subjects such as math, science, English,
+  social studies and world languages. Families start with a participation form that parents and students
+  both sign, and tutors apply through an interest form on the site. The team also offers college prep
+  help, such as AP courses, SAT and ACT prep, Common App help, and financial aid.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -76,15 +79,24 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: 'Families: use the I need a tutor option on risephiladelphia.com to sign the participation form.
-    Tutors: use the I want to tutor button to send an interest inquiry.'
-  drop_in: null
-  sign_up_needed: null
+  how: 'Families: use the I need a tutor option on risephiladelphia.com to start the participation form,
+    which parents and students both sign.'
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Families and tutors each have a public sign-up form. The site says the team will reach out up
-    to three times to make a pairing, and does not describe screening.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Families and tutors each have a public sign-up route, and the site says the team will reach out
+    up to three times to make a match, but the pages do not describe screening, session details or cost.
+  what_to_expect: After you sign the participation form, the team tries to match your student with a graduate
+    tutor and contacts you up to three times to do it. Sessions are one on one and online, and the team
+    picks tutors with each student's needs and academic background in mind. The pages do not say how long
+    a session lasts, how often it happens, or what it costs.
+  first_visit_tips:
+  - Have your student's grade and the subjects you need ready, since the site covers kindergarten through
+    12th grade.
+  - Watch the email address you give, because the team reaches out to arrange the match.
+  - For college help, pick a specific area from the list, such as AP courses, SAT or ACT, or financial
+    aid.
+  - Ask about session length and cost before you commit, since the pages do not state them.
 contacts:
   website: https://www.risephiladelphia.com
   email: rise.philly.2020@gmail.com
@@ -99,13 +111,13 @@ last_sign_of_life: 2026-08
 sign_of_life_url: https://www.risephiladelphia.com/blog
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -125,7 +137,19 @@ sources:
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+  - sign_of_life_url
+- url: https://www.risephiladelphia.com/services
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+- url: https://www.risephiladelphia.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

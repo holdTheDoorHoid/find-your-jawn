@@ -6,13 +6,17 @@ ein: null
 summary: A nonprofit community for people in recovery, the people who love them, and anyone who wants
   friends without alcohol or drugs. Its Philadelphia programs include workouts, art, social meetups and
   other free events.
-what_you_do: Go to free sober activities led by volunteers, such as fitness sessions, art, or social meetups.
-  A sober community center is planned for North Philadelphia.
+what_you_do: Go to free sober activities led by volunteers, such as weekly chair yoga, weekly community
+  yoga, fitness sessions, art, or social meetups. The listings checked have a Reserve Spot button. To
+  volunteer, the site describes a short process that starts with its NewForm app and includes attending
+  two events first. A sober community center is planned for North Philadelphia, with no opening date given.
 kind: nonprofit
 categories:
 - social-meetups
+- running-cycling-fitness
 interests:
 - sober_social
+- yoga_movement
 motives:
 - social
 - values
@@ -35,14 +39,36 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events are posted on the website; the page checked lists no weekly schedule or dates
-  days: []
-  times: []
-  recurring: false
+  text: Weekly chair yoga on Fridays at 10:30 am at Fox Chase Library, and weekly community yoga on Saturdays
+    at 11 am, weather permitting. Other events are posted on the website.
+  days:
+  - fri
+  - sat
+  times:
+  - morning
+  recurring: true
   season: year_round
 locations:
-- label: Philadelphia, PA (addresses not published on the page checked)
+- label: Other Philadelphia events (addresses not published on the pages checked)
   address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Fox Chase Library (weekly chair yoga)
+  address: 501 Rhawn Street
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Community yoga, weekly on Saturdays (in partnership with Historic Fairhill)
+  address: 2901 Germantown Avenue
   neighborhood: null
   planning_district: null
   zip: null
@@ -53,13 +79,14 @@ locations:
 online_ok: null
 cost:
   level: free
-  text: Programs are free, according to the website
+  text: The website says its programs are free. The yoga listings checked do not name a fee.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The chair yoga listing is titled as chair based, but it gives no wheelchair, quiet space, parking
+    or transit details.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,14 +95,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Download The Phoenix app or use the Contact Us page on the website
+  how: Reserve a spot on the Friday chair yoga listing (Fox Chase Library, 10:30 am), or send a question
+    through the Contact Us page on thephoenix.org.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to people in recovery, families, and anyone seeking connection, with a clear way to contact
-    or join; no beginner program is described
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: The site says people seeking connection are welcome, whether or not they are in recovery, and
+    the Friday chair yoga is listed for all levels with a Reserve Spot button.
+  what_to_expect: The Friday chair yoga is 60 minutes, listed for all levels, with 15 spots per listing.
+    The Saturday community yoga is a 60 minute gentle, slow flow class, and mats are provided. The site
+    describes its activities as led by volunteers.
+  first_visit_tips:
+  - Reserve your spot on the listing first, since each class lists a limited number of places.
+  - Check the listing before the Saturday class, since it is held weather permitting.
+  - You do not need to bring a mat to the Saturday class, because the listing says mats are provided.
 contacts:
   website: https://thephoenix.org/philadelphia
   email: null
@@ -99,7 +132,31 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://thephoenix.org/events/accessible-for-every-body-chair-yoga-and-meditation-philadelphia/01a104d0-31f3-7bc6-9edd-b5a856c7924f
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - access
+- url: https://thephoenix.org/events/community-yoga-philadelphia/01a104cd-ff30-7006-80c6-b1a123441fc2
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - locations
+  - first_step
+  - first_visit_tips
+  - what_to_expect
+- url: https://thephoenix.org/volunteer
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://thephoenix.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

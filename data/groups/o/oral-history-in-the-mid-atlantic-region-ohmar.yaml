@@ -7,8 +7,8 @@ leads:
 ein: '521103821'
 summary: A network that supports people who record life stories as oral historians across the Mid-Atlantic
   region. It runs workshops and local meetups, holds an annual conference, and gives awards.
-what_you_do: Sign up for a workshop, such as the October 2026 online session on interviewing New Americans,
-  or join a local meetup. Membership and volunteer roles are listed on the site.
+what_you_do: Sign up for a workshop (the fall 2026 one is online), or join a local meetup or social. Membership
+  and volunteer roles are listed on the site. The 2026 annual conference was held in Alexandria, Virginia.
 kind: network
 categories:
 - history-heritage-preservation
@@ -32,8 +32,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Fall workshop on Zoom on Wednesday, October 21, 2026, 6 to 7:30 pm Eastern. Other workshops and
-    meetups are listed on the site.
+  text: Workshops, socials, and meetups are posted on the site as they are scheduled.
   days:
   - wed
   times:
@@ -50,19 +49,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 315 Chestnut Street
-  neighborhood: null
-  planning_district: central
-  zip: '19106'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
-  level: null
-  text: Cost not listed on the workshop page
+  level: low
+  text: Membership dues are listed at $35 for individuals and $20 for students. The page does not say
+    the period these cover. Workshop prices are not listed on the workshop page.
 commitment: one_off
 group_size: null
 access:
@@ -77,16 +68,25 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Register for the October 21, 2026 Zoom workshop through the registration link on ohmar.org
+  how: Register for the fall workshop through the ticket page linked on ohmar.org, or email ohmar.contact@gmail.com
+    to ask about the next local meetup or social.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: An open workshop with a public sign-up link; membership details were not read in full
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Open workshops are open to the public with a sign-up link on the site, and membership and volunteering
+    are by email. The page does not say whether non-members can attend socials or meetups.
+  what_to_expect: Workshops are live classes on oral history skills. The fall 2026 workshop, Interviewing
+    New Americans, is a 90 minute Zoom class led by Alana Gomez on Wednesday, October 21, from 6 to 7:30
+    pm Eastern. The page does not list its price, so check the ticket page first.
+  first_visit_tips:
+  - Check the price on the ticket page before you register, since the workshop page does not list one.
+  - Members get discounted registration for OHMAR events, so compare the member price if you plan to attend
+    more than one.
+  - Email ohmar.contact@gmail.com for questions. The site also links to contact@ohmar.org, so check which
+    one replies.
 contacts:
   website: https://ohmar.org
-  email: null
+  email: ohmar.contact@gmail.com
   phone: null
   contact_name: David Caruso
   social: []
@@ -117,7 +117,28 @@ sources:
   - cost
   - first_step
   - status
-research_tier: 1
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://ohmar.org/local-meetups-and-offerings/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+- url: https://ohmar.org/volunteer/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - contacts
+- url: https://ohmar.org/become-a-member/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://ohmar.org/annual-conference/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

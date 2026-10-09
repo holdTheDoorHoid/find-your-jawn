@@ -9,9 +9,10 @@ ein: '853960380'
 summary: A Philadelphia group that mentors young musicians toward top music schools and careers, and helps
   students with the cost of study. It runs free career sessions for young musicians and keeps an instrument
   library.
-what_you_do: Attend one of its free virtual career sessions for young musicians, or ask about its artist
-  mentoring program. The site has a page explaining what a Primavera Artist is, but its application steps
-  were not readable.
+what_you_do: Join one of the free virtual career sessions for young musicians, or ask about the Primavera
+  Artist program. That program requires financial need and at least a year of playing your instrument,
+  and the site does not say how to apply. Spring 2026 applications are closed, and the page does not say
+  when the next round opens.
 kind: nonprofit
 categories:
 - music
@@ -42,8 +43,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Free virtual career sessions were listed for March 11, 18 and 25. The page gives no year and no
-    session times.
+  text: The group runs free virtual career sessions for young musicians, with a registration link posted
+    on the homepage on the day of each one. Session times are not on the site.
   days: []
   times: []
   recurring: false
@@ -61,7 +62,7 @@ locations:
 online_ok: true
 cost:
   level: free
-  text: Free.
+  text: The career sessions are free. The site does not state a cost to artists in the mentoring program.
 commitment: one_off
 group_size: null
 access:
@@ -76,15 +77,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Watch the homepage for the link to the next free virtual career session, or email the group to
-    ask how to apply to the mentoring program.
+  how: Watch the homepage for the link to the next free virtual career session, or email rachel@primaverafund.org
+    to ask how to apply to the Primavera Artist program.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
   basis: The career sessions are free and open to young musicians, with a link posted for each one. The
-    mentoring application steps are not shown.
-  what_to_expect: null
-  first_visit_tips: []
+    mentoring program has entry rules and no posted application steps, so it is not an easy first step.
+  what_to_expect: Each career session is virtual and free, with presentations from music professionals
+    and time for questions. Session times are not on the site. The Primavera Artist program expects weekly
+    private lessons, at least one weekly orchestra program and one smaller ensemble, at least two hours
+    of practice a day, and summer music activities.
+  first_visit_tips:
+  - Know how long you have played your instrument, since the program asks for at least one year.
+  - If you do not own an instrument, ask about the instrument library, since the site does not say who
+    can borrow one.
+  - Use the email on the site to ask about the application, since the steps are not posted.
 contacts:
   website: http://www.primaverafund.org
   email: rachel@primaverafund.org
@@ -129,8 +137,28 @@ sources:
   - cost
   - first_step
   - audience
-research_tier: 1
-confidence: low
+- url: https://primaverafund.org/upcoming-events
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+  - audience
+- url: https://primaverafund.org/apply-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+  - what_to_expect
+- url: https://primaverafund.org/what-we-do
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_to_expect
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

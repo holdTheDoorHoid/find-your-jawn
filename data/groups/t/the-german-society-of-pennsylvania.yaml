@@ -4,10 +4,11 @@ aka: []
 leads:
 - cultural_fund:the-german-society-of-pennsylvania-3
 ein: null
-summary: A heritage society founded in 1764 to help German immigrants. It now runs German language classes,
-  a public library, monthly events and cultural programs for Germans and German lovers in Philadelphia.
-what_you_do: Take an evening German class, join a conversation evening or film night, come to a concert
-  or book club, or sign up to volunteer through the online form. Membership is the main way to join.
+summary: A heritage society founded in 1764 to help German immigrants. It now runs German classes, a public
+  library, and monthly conversation evenings, film nights and book clubs for anyone who wants to learn
+  German or enjoy German culture.
+what_you_do: Take a German class, join the monthly conversation evening or a film night, or join a book
+  club. Members get library borrowing and invitations to special events.
 kind: nonprofit
 categories:
 - culture-language-heritage-groups
@@ -37,11 +38,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Monthly events include a Konversationsabend, a Friday film night, a concert series and book clubs.
-    Yearly events include Stiftungsfest, a youth music festival, a Christkindlmarkt, St. Martin's Parade
-    and Bierfest. Dates are on the calendar, not on the page we read.
-  days: []
-  times: []
+  text: The monthly Konversationsabend, a German conversation evening, is on the second Wednesday from
+    6 to 8 pm, February to May and September to December. Friday film nights start at 6:30 pm during the
+    film season. German classes run in terms of about 8 to 12 weeks. Yearly events include the Stiftungsfest
+    gala, a Christkindlmarkt, and St. Martin's Parade.
+  days:
+  - wed
+  - fri
+  times:
+  - evening
   recurring: true
   season: null
 locations:
@@ -54,17 +59,23 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: false
+online_ok: true
 cost:
-  level: null
-  text: Membership and class fees are on the membership and class pages, not read. The 2025 gala was $195,
-    or $95 for guests 35 and under.
-commitment: null
+  level: paid
+  text: Regular 10-week classes cost $360, and the 8-week online classes cost $180 to $240. Textbooks
+    cost about $30 to $70 extra, and private tutoring is $45 an hour. Membership dues start at $30 for
+    students and $60 for individuals. The membership page does not say which year these apply to.
+commitment: seasonal
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
-  notes: null
+  languages:
+  - en
+  - de
+  notes: 'The main entry is through the parking lot door on the east side. An elevator entrance is on
+    the Spring Garden side, so call ahead during business hours so staff can unlock the gate. Nearest
+    SEPTA: the Frankford Elevated (''the El''), at the Spring Garden Street stop about five blocks east
+    of the building.'
 requirements:
   act153_clearances: null
   background_check: null
@@ -73,15 +84,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up as a member through the membership page, then join an evening German class or a Konversationsabend.
-    Or email info@germansociety.org to ask about the next event.
+  how: Sign up for the mailing list, then come to the second-Wednesday Konversationsabend from 6 to 8
+    pm.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Events and classes are offered to the public with a clear way to join, but the site does not
-    say beginners are welcome.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The conversation evening page says newcomers from any background are welcome, from beginner to
+    advanced speakers, and it explains how to sign up. The class page offers courses from beginner to
+    advanced, with a free level change in the first three weeks.
+  what_to_expect: About 20 people meet around a set theme. A speaker gives a short talk, then the group
+    talks it over, with refreshments. The page does not list a price for the conversation evening, and
+    classes are paid per term.
+  first_visit_tips:
+  - Sign up for the mailing list first, since that is how the group announces the evening.
+  - Park only in the Society's own lot behind the black gate, not under the mural, because cars there
+    risk being towed.
+  - The library is open Tuesday and Thursday from 10 am to 4 pm, and the offices are open weekdays from
+    9 am to 5 pm.
 contacts:
   website: http://www.germansociety.org
   email: info@germansociety.org
@@ -90,8 +109,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2025-11
-sign_of_life_url: http://www.germansociety.org
+last_sign_of_life: 2026-10
+sign_of_life_url: http://www.germansociety.org/monthly-events
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -109,8 +128,41 @@ sources:
   - first_step
   - contacts
   - last_sign_of_life
-research_tier: 1
-confidence: medium
+- url: http://www.germansociety.org/german-classes
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - commitment
+  - first_step
+  - online_ok
+- url: http://www.germansociety.org/membership-signup
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - what_you_do
+- url: http://www.germansociety.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+- url: http://www.germansociety.org/monthly-events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: http://www.germansociety.org/contact-and-directions
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - contacts
+  - first_visit_tips
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

@@ -7,9 +7,9 @@ leads:
 ein: '811962970'
 summary: A youth-run healthy food business where high school students develop healthy food products, sell
   them to schools, and work with kids on cooking and hands-on learning.
-what_you_do: Volunteers can offer help in the kitchen or office, and the team says roles can be shaped
-  around what a person can add. High school students can look at job openings, and adults can apply to
-  mentor.
+what_you_do: Volunteers can help with branding and graphic design, video documentation, or in-person kitchen
+  and office work, and the team says roles can be shaped around what a person can add. High school students
+  can check the jobs page for openings, and adults can apply to mentor through a form on the mentor page.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -53,15 +53,6 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: '8381'
-  neighborhood: null
-  planning_district: central
-  zip: '19101'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: null
 cost:
   level: null
@@ -80,14 +71,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email rebelventures215@gmail.com with what you can offer, or read the volunteer page at rvcrew.com/volunteer.
-    High school students can check the high school entrepreneur page.
+  how: Email rebelventures215@gmail.com with the help you can offer, such as design, video, or kitchen
+    and office work.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: The site invites volunteers and gives a contact, but sets no sign-up process or start dates.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The volunteer page welcomes all volunteers and gives an email to start, but it sets no sign-up
+    steps, start dates or training.
+  what_to_expect: The volunteer page describes design, video, and in-person kitchen and office work, with
+    roles shaped around what you can add. It does not describe shifts, a time commitment, training, or
+    background checks. Your first contact is an email about your skills, so expect that conversation before
+    any placement.
+  first_visit_tips:
+  - Say in your first email what you can offer, such as design, video, or kitchen and office help.
+  - High school students who need service hours can say so, since the page welcomes them.
+  - Ask about time commitment and training, which the pages do not describe.
+  - Check the jobs page again before applying for paid work, because it said the team was not hiring when
+    we checked on 2026-10-08.
 contacts:
   website: https://www.rvcrew.com
   email: rebelventures215@gmail.com
@@ -101,13 +101,13 @@ last_sign_of_life: null
 sign_of_life_url: https://www.rvcrew.com/volunteer/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -126,8 +126,20 @@ sources:
   fields:
   - what_you_do
   - first_step
-research_tier: 1
-confidence: low
+  - what_to_expect
+- url: https://www.rvcrew.com/high-school-entrepreneur/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - status
+- url: https://www.rvcrew.com/mentor/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+  - first_step
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

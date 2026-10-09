@@ -1,26 +1,35 @@
 id: the-head-and-the-hand-workshop
-name: The Head & The Hand Workshop
-aka: []
+name: The Head & The Hand
+aka:
+- The Head & The Hand Workshop
 leads:
 - cultural_fund:the-head-and-the-hand-workshop-3
 ein: null
-summary: A nonprofit bookstore and small publisher on Frankford Avenue. It hosts events and classes, and
-  runs a book donation program and a community care calendar.
-what_you_do: Visit the store, go to an event or class, donate books, or join the email list.
+summary: A nonprofit independent publisher and community bookstore on Frankford Avenue. It runs a writing
+  group, a poetry book club, author events and readings, and it lets community groups book its lower-level
+  workshop for free.
+what_you_do: Join the writing group or the Poetry is for Everyone book club, go to an author event or
+  reading, donate books for store credit, or book the workshop for a community meeting.
 kind: nonprofit
 categories:
 - books-writing
 interests:
+- writing_group
 - book_club
+- poetry
 motives:
 - social
 - enhancement
 formats:
+- conversation
+- learn_skill
 - one_off_event
 roles:
 - figure_out
+- create
 crowd:
 - all_adults
+- kids
 bridging: null
 audience:
   open_to: public
@@ -32,10 +41,15 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Events and classes are on the events page. No dates appear on the home page.
-  days: []
-  times: []
-  recurring: false
+  text: A writing group about once a month on a Saturday or Sunday afternoon, 2 to 3:30 pm. The Poetry
+    is for Everyone book club meets monthly on Sunday afternoons, 2 to 3 pm. Both meet at Valerio Coffee
+    Roasters. The store also hosts author events and a children's story time.
+  days:
+  - sat
+  - sun
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
 - label: Bookstore
@@ -50,13 +64,15 @@ locations:
 online_ok: false
 cost:
   level: null
-  text: Event prices are not shown on the home page.
+  text: 'The events page gives no price for the writing group or the book club, and registration is usually
+    required. Author events vary: some are free or pay what you can, and others are ticketed.'
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The lower-level community workshop is reached by a stairwell, according to the group's booking
+    page.
 requirements:
   act153_clearances: null
   background_check: null
@@ -65,13 +81,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Visit the store or check the events page, and join the email list.
-  drop_in: true
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: A public bookstore with events and classes. The home page lists no membership.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register on the events page for the next writing group session or Poetry is for Everyone book club
+    meeting, then go to the venue named on that listing.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The writing group is open to writers of any genre and career stage, and the book club reads one
+    poetry book at each meeting. Both say to register on each event page, so the way in is clear.
+  what_to_expect: The writing group meets for about 90 minutes with writers at any stage. The poetry book
+    club meets for an hour, and members read and discuss one book at each meeting. Prices are not listed
+    for these meetings, and registration is usually needed.
+  first_visit_tips:
+  - Register through the event page before you go, since registration is required for the writing group.
+  - Call 267-702-6744 or email info@theheadandthehand.com for directions, parking or transit, since the
+    site gives none.
+  - Check the events page for changes, because one book club meeting was rescheduled and its new date
+    is still to be set.
 contacts:
   website: https://www.theheadandthehand.com
   email: info@theheadandthehand.com
@@ -79,9 +104,9 @@ contacts:
   contact_name: null
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.theheadandthehand.com/
+status: active
+last_sign_of_life: 2026-09
+sign_of_life_url: https://www.theheadandthehand.com/events-and-programs
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=12
   seen: '2026-10-04'
@@ -103,8 +128,35 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.theheadandthehand.com/events-and-programs
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.theheadandthehand.com/book-bank
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+- url: https://www.theheadandthehand.com/community-care-calendar
+  seen: '2026-10-08'
+  fields:
+  - access
+  - what_you_do
+- url: https://www.theheadandthehand.com/bookstore-1
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.theheadandthehand.com/about-us
+  seen: '2026-10-08'
+  fields:
+  - kind
+  - summary
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

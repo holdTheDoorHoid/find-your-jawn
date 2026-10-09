@@ -39,16 +39,7 @@ schedule:
   season: null
 locations:
 - label: Mailing address (IRS)
-  address: 8212 Buist Ave
-  neighborhood: null
-  planning_district: lower_southwest
-  zip: '19153'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 8212 buist avenue
+  address: 8212 Buist Ave, Philadelphia, PA 19153
   neighborhood: null
   planning_district: lower_southwest
   zip: '19153'
@@ -59,7 +50,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: null
+  text: No program fees are listed on the website. The site asks visitors to donate.
 commitment: null
 group_size: null
 access:
@@ -74,12 +65,13 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact page on the club's site, or message its Instagram account, to ask how a young person
-    or an officer can take part
+  how: Use the Contact page on the club's website to ask how a young person or an officer can take part,
+    or message the club's Instagram account.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: The site does not say how people join, and its email address is hidden behind protection code
+  basis: The Contact page has a web form and the site has a newsletter sign up, but the site does not
+    say how a young person or an officer joins, and no program dates are listed.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -119,11 +111,17 @@ sources:
   - first_step
   - contacts
   - status
+  - cost
 - url: https://www.lawenforcementmentoring.org/news--upcoming-events.html
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.lawenforcementmentoring.org/contact.html
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

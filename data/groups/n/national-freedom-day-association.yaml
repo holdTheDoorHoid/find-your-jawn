@@ -8,8 +8,9 @@ ein: '232155843'
 summary: Promotes February 1 as National Freedom Day, a day meant to honor freedom for all Americans.
   The group works through education, civic programs, and community events, and its site lists ways to
   join, volunteer, or give.
-what_you_do: Look through the events page, use the Get Involved page to join or volunteer, or email the
-  group with questions.
+what_you_do: Join as a member through the Sign up now link on the site, or volunteer to help plan local
+  events, write educational content, or mentor young people. Members get updates, event invitations, and
+  a voice in programs.
 kind: nonprofit
 categories:
 - neighborhood-civic
@@ -31,11 +32,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Holds an anniversary luncheon each year on a Saturday in late January.
+  days:
+  - sat
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: winter
 locations:
 - label: Mailing address (IRS)
   address: Po Box 7452
@@ -64,14 +66,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email nfda1941@gmail.com to ask about membership, volunteering, or upcoming events
+  how: Email nfda1941@gmail.com or use the contact form on the website to ask about membership, volunteering,
+    or the next luncheon. To join, use the Sign up now link, which uses a passwordless login.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: Membership and volunteering are listed with a contact email, but no events or meeting times are
-    shown, so what a newcomer would attend is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 3
+  basis: Anyone can sign up on the site or email to volunteer, and the page lists volunteer roles and
+    member benefits. The site does not say whether the luncheon is open to the public or what it costs.
+  what_to_expect: The main public event is an anniversary luncheon held on a Saturday in late January,
+    with a noon start. The 2026 luncheon was at a hotel on City Avenue in Philadelphia. The 2027 luncheon
+    is planned for Springfield, in Delaware County.
+  first_visit_tips:
+  - Email nfda1941@gmail.com to ask whether the luncheon is open to the public and what it costs. The
+    site does not say.
+  - If you are going to the 2027 luncheon, plan for a trip to Springfield, Pennsylvania.
+  - Members get updates and event invitations, so joining is the easiest way to hear about the next event.
 contacts:
   website: https://nationalfreedomdayassociation.org/
   email: nfda1941@gmail.com
@@ -79,9 +88,9 @@ contacts:
   contact_name: James Spruill
   social: []
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://nationalfreedomdayassociation.org/
+status: active
+last_sign_of_life: 2026-01
+sign_of_life_url: https://nationalfreedomdayassociation.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -106,8 +115,21 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+- url: https://nationalfreedomdayassociation.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - contacts
+- url: https://nationalfreedomdayassociation.org/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

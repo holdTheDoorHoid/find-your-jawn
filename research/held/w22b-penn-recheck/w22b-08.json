@@ -1,0 +1,493 @@
+{
+ "wave": "w22b-penn-recheck",
+ "agent": "w22b-08",
+ "lane": "B",
+ "model": "haiku",
+ "searches_used": 0,
+ "fetches_used": 23,
+ "leads_only": [],
+ "blocked": [],
+ "notes": "All 13 Penn clubs in the batch were checked: one directory fetch each (13 fetches) plus one fetch of each club's own website where the directory entry links one (10 fetches). Two clubs have full records based on dated 2026 items on their own sites: Wharton Undergraduate Aerospace Club (February 2026 symposium) and the Wharton-Weitzman Future of Cities Forum (conference on February 20, 2026). The other 11 are held back with status unknown. Items for the owner to decide: (1) Wharton Undergraduates in Public Policy: the directory says applications re-open in Fall 2026, but the club site does not confirm it, so it is held back. (2) Wharton Women: the directory mentions a 2026 award that the site does not show, so it is held back. (3) Wharton Undergraduate Sports Business Club: newest dated item is Fall 2024, about two years old, so it is held back. (4) Wharton Undergraduate Consulting Club: only the home page was fetched; /events and /joinus may hold fall 2026 recruiting. (5) Wharton Undergraduate Real Estate Club: its website returned HTTP 404 (not a block). No WebSearch was used and no pages were blocked. Individual student emails, co-president emails and roster emails from the directory were not recorded.",
+ "records": [
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wucc"
+    ],
+    "group_id": "wharton-undergraduate-consulting-club-wucc",
+    "ein": null,
+    "website": "https://www.wuccpenn.org/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Consulting Club (WUCC)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://www.wuccpenn.org/",
+    "email": "wucc.consulting@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wucc/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://www.wuccpenn.org/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The club home page has no dated item, only a 2026 copyright footer, so no activity within 12 months was found. It links to an events page and a membership page. Neither was fetched, because the brief allows one site fetch per club. Re-check /events and /joinus for fall 2026 recruiting before deciding.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-undergraduate-real-estate-club"
+    ],
+    "group_id": "wharton-undergraduate-real-estate-club",
+    "ein": null,
+    "website": "http://wurec.info/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Real Estate Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "http://wurec.info/",
+    "email": "ask.wurec@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-undergraduate-real-estate-club/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "http://wurec.info/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The listed website returned HTTP 404 when fetched (not a block), so no dated item could be checked. The directory says committee applications open each fall and spring, but that line is undated. Facebook, Instagram, LinkedIn and Twitter were not read because social platforms are lead sources only. Co-president emails in the directory were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:sports-business"
+    ],
+    "group_id": "wharton-undergraduate-sports-business-club",
+    "ein": null,
+    "website": "https://wusbc.weebly.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduate Sports Business Club",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://wusbc.weebly.com/",
+    "email": "usbcupenn@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/sports-business/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://wusbc.weebly.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The newest dated item on the club site is a heading reading Fall 2024 Recruitment Timeline, with no month written. That is about two years old, so it misses the 12 month rule. The March 2005 founding date is not activity, and the 2023 Summit appears only in a link address. The owner or orchestrator could treat the fall 2024 recruiting page as probably_active.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wupp"
+    ],
+    "group_id": "wharton-undergraduates-in-public-policy",
+    "ein": null,
+    "website": "https://wupp.org"
+   },
+   "verdict": "publish",
+   "name": "Wharton Undergraduates in Public Policy",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://wupp.org",
+    "email": "pennwupp@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wupp/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status",
+      "first_step"
+     ]
+    },
+    {
+     "url": "https://wupp.org",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back, but worth a decision. The directory entry (not the club site) says applications will re-open in the Fall 2026 Semester. That is undated club text, and the club site does not confirm it. The club site shows only 2023, 2024 and 2025 case competition photo captions (year only) and a 2026 copyright footer. If the owner counts directory text as dated activity, this record can be published as active using that line as the source.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-wellness-board"
+    ],
+    "group_id": "wharton-wellness-board",
+    "ein": null,
+    "website": "https://groups.wharton.upenn.edu/wwb/home/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Wellness Board",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://groups.wharton.upenn.edu/wwb/home/",
+    "email": "whartonwellness@wharton.upenn.edu"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-wellness-board/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://groups.wharton.upenn.edu/wwb/home/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The club home page has no dated events or posts. Its only 2026 text is a copyright footer, which does not count. The page says all Wharton undergraduates may apply. Its Recruiting and Contact pages were not fetched, because the brief allows one site fetch per club. Directory co-chair emails were conflicting and belong to individual students, so they were not recorded.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:wharton-women"
+    ],
+    "group_id": "wharton-women",
+    "ein": null,
+    "website": "http://www.whartonwomen-penn.com/"
+   },
+   "verdict": "publish",
+   "name": "Wharton Women",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "http://www.whartonwomen-penn.com/",
+    "email": "whwomen.admin@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/wharton-women/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "http://www.whartonwomen-penn.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The directory text mentions a 2026 Culture of Care award and a 2021 vote, but the club site does not show either and has no dated events or posts. Its only date-like text is a 2025 to 2026 sponsors navigation label, which is not an event. Directory says board positions open each December, which is undated. Owner may decide whether the directory's 2026 award line counts; it is not a site event.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:women-in-life-sciences-wils"
+    ],
+    "group_id": "women-in-life-sciences-wils",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Women in Life Sciences (WILS)",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "upenn.wilsciences@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/women-in-life-sciences-wils/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status UNDER REVIEW, which is a registration state and not proof either way. The directory says the club accepts members and asks students to fill out an interest form, which was not opened or submitted. No website is listed, so there was no club site to check. Instagram and Facebook were not read because social platforms are lead sources only. No dated activity found.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:women-in-physics"
+    ],
+    "group_id": "women-in-physics",
+    "ein": null,
+    "website": "https://womeninphysicsupenn.substack.com/"
+   },
+   "verdict": "publish",
+   "name": "Women in Physics",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://womeninphysicsupenn.substack.com/",
+    "email": "penn.wip@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/women-in-physics/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://womeninphysicsupenn.substack.com/",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The club Substack has no dated posts or events. Its only time reference reads Launched a year ago, with no year, so it was not used. Directory says the club accepts members and lists an interest form, which was not opened or submitted. No dated activity within 12 months was found.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:womens-club-lacrosse"
+    ],
+    "group_id": "womens-club-lacrosse",
+    "ein": null,
+    "website": "https://pennclubwlax.wixsite.com/clublacrosse"
+   },
+   "verdict": "publish",
+   "name": "Women's Club Lacrosse",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "website": "https://pennclubwlax.wixsite.com/clublacrosse",
+    "email": "pennclubwlax@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/womens-club-lacrosse/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    },
+    {
+     "url": "https://pennclubwlax.wixsite.com/clublacrosse",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The club site has no schedule, tryout or event dates. Its only date is a 2023 copyright footer, which does not count. Directory says the club accepts members and asks students to email for tryout information, which is undated. No dated activity within 12 months was found.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:pwrfc"
+    ],
+    "group_id": "womens-club-rugby",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Women's Club Rugby",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "contacts": {
+    "email": "upennwrfc@gmail.com"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/pwrfc/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status UNDER REVIEW, which is a registration state. The directory says the club accepts members and lists no events. No website is listed. Its only link is an Instagram page, which was not read because social platforms are lead sources only. No dated activity was verified.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  },
+  {
+   "match": {
+    "lead_ids": [
+     "penn_clubs:penn-womens-club-soccer"
+    ],
+    "group_id": "womens-club-soccer-at-penn",
+    "ein": null,
+    "website": null
+   },
+   "verdict": "publish",
+   "name": "Women’s Club Soccer at Penn",
+   "kind": "student_org",
+   "audience": {
+    "school": "penn",
+    "open_to": "students"
+   },
+   "status": "unknown",
+   "sources": [
+    {
+     "url": "https://pennclubs.com/api/clubs/penn-womens-club-soccer/?format=json",
+     "seen": "2026-10-08",
+     "fields": [
+      "status"
+     ]
+    }
+   ],
+   "research_tier": 1,
+   "confidence": "low",
+   "notes": "Held back. Directory status INACTIVE, active flag true. The directory says the club does not accept members right now and lists no events. No website is listed. Its only link is an Instagram page, which was not read because social platforms are lead sources only. The club email is hidden in the directory, and roster and officer emails were not recorded. No dated activity was verified.",
+   "_held_reasons": [
+    "summary is required to publish",
+    "categories needs at least one value from the vocabulary",
+    "interests needs at least one value from the vocabulary"
+   ]
+  }
+ ]
+}

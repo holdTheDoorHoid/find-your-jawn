@@ -7,8 +7,8 @@ leads:
 ein: '236428245'
 summary: A community chorus founded in 1951 that holds auditions by appointment and is marking its 75th
   anniversary with a concert on December 5, 2026.
-what_you_do: Audition by appointment, then sing with the chorus in rehearsals and concerts. Singers must
-  be 18 or older.
+what_you_do: Book an audition by appointment, then sing with the chorus in Monday evening rehearsals and
+  in its concerts. Singers must be 18 or older.
 kind: nonprofit
 categories:
 - music
@@ -35,9 +35,7 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'Rehearsals on Mondays in University City, per a third-party directory listing (the chorus''s
-    own site gives no rehearsal times). 75th anniversary concert: Saturday, December 5, 2026, at 4 pm
-    at the Philadelphia Episcopal Cathedral.'
+  text: Rehearsals are on Monday evenings in University City.
   days:
   - mon
   times:
@@ -45,7 +43,16 @@ schedule:
   recurring: true
   season: null
 locations:
-- label: Philadelphia Episcopal Cathedral (75th anniversary concert)
+- label: Rehearsals in University City (exact address not on the pages checked)
+  address: null
+  neighborhood: null
+  planning_district: null
+  zip: null
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
+- label: Philadelphia Episcopal Cathedral (concert venue)
   address: 19 S. 38th Street
   neighborhood: null
   planning_district: null
@@ -57,7 +64,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: No dues or fees are stated on the chorus's own site.
+  text: The chorus site states no dues or fees, and the auditions page gives no audition fee.
 commitment: weekly
 group_size: null
 access:
@@ -69,17 +76,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: false
   gear: null
 first_step:
   how: Call 215-995-3118 or email thephiladelphiachorus@gmail.com to book an audition by appointment.
-    The audition has scales and warm-ups, one piece of the singer's choice, and sight-reading.
   drop_in: false
   sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Joining takes an audition by appointment, though the audition steps and contact details are published.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining starts with an audition by appointment, which needs a booked slot and a sung test. The
+    steps and contacts are published, so the way in is clear, but a newcomer cannot watch a rehearsal
+    first.
+  what_to_expect: The audition asks you to sing scales and warm-ups and one song of your choice, and to
+    sight-read a short excerpt. The site does not say how long it takes. Once you join, you rehearse on
+    Monday evenings in University City and sing in concerts each season.
+  first_visit_tips:
+  - Choose a song you know well, and plan on accompaniment, which the chorus prefers.
+  - When you book, ask how long the audition runs and where rehearsals meet, since the site does not say.
+  - Do not come without booking, since auditions are by appointment only.
 contacts:
   website: https://www.thephiladelphiachorus.org/
   email: thephiladelphiachorus@gmail.com
@@ -89,7 +102,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://www.thephiladelphiachorus.org/
+sign_of_life_url: https://www.thephiladelphiachorus.org/copy-of-events-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -127,12 +140,26 @@ sources:
   - audience
   - first_step
   - contacts
+  - schedule
+  - requirements
+  - first_visit_tips
 - url: https://portal.philaculture.org/members?page=6
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: medium
+- url: https://www.thephiladelphiachorus.org/copy-of-events-1
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - last_sign_of_life
+  - sign_of_life_url
+  - locations
+- url: https://www.thephiladelphiachorus.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+research_tier: 2
+confidence: high
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

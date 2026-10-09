@@ -70,18 +70,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Contact page on the website to ask about joining the next small group, then sign up for
-    the newsletter.
+  how: Email mindonfireinstitute@gmail.com to ask about joining the next small group, or use the Want
+    to learn more form on the homepage.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Groups are capped at eight people and the site does not describe how to register, so the way
-    in is not clear yet.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Groups are capped at eight people. The contact page gives an email to ask about joining, but
+    the site does not say whether seats are open or how a newcomer is placed.
+  what_to_expect: Each session is a discussion, not a lecture, and runs 90 minutes to 2 hours. Past sessions
+    have covered more than 100 texts, from classical philosophy to modern science fiction. The site does
+    not list a price.
+  first_visit_tips:
+  - Email early, since each group is capped at eight people.
+  - Ask whether your group meets online or in person, and where, because the site does not say.
 contacts:
   website: https://www.mindonfireinstitute.com
-  email: null
+  email: mindonfireinstitute@gmail.com
   phone: null
   contact_name: Elias Brockman
   social: []
@@ -119,7 +123,23 @@ sources:
   fields:
   - summary
   - status
-research_tier: 1
+  - first_step
+- url: https://www.mindonfireinstitute.com/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+- url: https://www.mindonfireinstitute.com/past-sessions
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - first_step
+- url: https://www.mindonfireinstitute.com/our-mission
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

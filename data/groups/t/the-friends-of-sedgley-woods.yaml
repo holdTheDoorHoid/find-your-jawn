@@ -7,10 +7,10 @@ leads:
 - irs_990n:455301806
 - irs_bmf:455301806
 ein: '455301806'
-summary: Volunteers who maintain Sedgley Woods, a 27-hole disc golf course in Fairmount Park. The group
-  was founded in 1977 and runs the course's tournaments and weekly organized rounds.
-what_you_do: Help with course upkeep at the second Saturday workday, or play in the monthly pro/am singles
-  tournaments and the weekly tags. Play is free and the course is open to the public.
+summary: Volunteers who look after Sedgley Woods, a 27-hole disc golf course in Fairmount Park. They run
+  monthly workdays, weekly rounds, and monthly singles tournaments, and playing the course is always free.
+what_you_do: Help with course upkeep at the second Saturday workday, or play the weekly rounds and the
+  monthly singles tournaments.
 kind: friends_group
 categories:
 - nature-environment
@@ -36,14 +36,17 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workdays on the second Saturday of each month, 9 am to noon. Weekly tags on Thursday, Saturday,
-    and Sunday, with start times set by sunset on Thursday and at 11 am on Saturday and Sunday. Monthly
-    pro/am singles tournaments. The course is open from sunup to sundown.
+  text: 'Workdays on the second Saturday of each month, 9 am to noon, with tag results at 1 pm. Weekly
+    tags on Thursdays, Saturdays and Sundays all year: Saturday and Sunday start at 11 am, and Thursday
+    start times are set by sunset. Monthly pro/am singles tournaments. The course is open from sunup to
+    sundown.'
   days:
   - thu
   - sat
   - sun
-  times: []
+  times:
+  - morning
+  - daytime
   recurring: true
   season: null
 locations:
@@ -59,7 +62,8 @@ locations:
 online_ok: false
 cost:
   level: free
-  text: Free to play
+  text: Playing the course is always free. The monthly singles events are described as low cost, and the
+    site does not give an entry fee.
 commitment: monthly
 group_size: null
 access:
@@ -74,15 +78,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Come to a second Saturday workday, 9 am to noon, at the course, or email the group at friendsofsedgleywoods@gmail.com
+  how: Come to the second Saturday workday, 9 am to noon, at the course, or email friendsofsedgleywoods@gmail.com
     to ask how to join.
   drop_in: true
   sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Workdays are open to volunteers and the site invites people to get in touch. No membership process
-    is described.
-  what_to_expect: null
-  first_visit_tips: []
+  newcomer_friendliness: 4
+  basis: 'The course page says a club member is usually on site to answer questions and show newcomers
+    around. It names two easy ways in: a monthly workday or an email. The tags and monthly events are
+    described as casual.'
+  what_to_expect: 'A workday is a few hours of outdoor work: mowing, weed-whacking, picking up sticks
+    and trash, and course projects. Weekend tags start at 11 am, so arrive early to check in. Discs are
+    usually sold at the course on Thursdays, Saturdays and Sundays, and play is free.'
+  first_visit_tips:
+  - Check the group's Facebook page or email before a workday, because workdays are sometimes moved or
+    canceled.
+  - For a weekend tag, arrive early to check in.
+  - Ask a club member on site where to start, since the page says one is usually around to help newcomers.
 contacts:
   website: https://www.sedgleywoods.com
   email: friendsofsedgleywoods@gmail.com
@@ -129,7 +140,32 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.sedgleywoods.com/workdays
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - what_you_do
+  - first_step
+- url: https://www.sedgleywoods.com/course-info
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - cost
+- url: https://www.sedgleywoods.com/tag-times
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - first_step
+- url: https://www.sedgleywoods.com/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+- url: https://www.sedgleywoods.com/events
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

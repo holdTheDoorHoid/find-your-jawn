@@ -1,0 +1,323 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-011",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 20,
+  "records": [
+    {
+      "match": {
+        "lead_ids": ["city_volunteer_portal:186412"],
+        "group_id": "community-schools-william-t-tilden-middle-school",
+        "website": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186412"
+      },
+      "verdict": "publish",
+      "name": "Community Schools @William T. Tilden Middle School",
+      "summary": "William T. Tilden Middle School is one of the City's Community Schools, where volunteers help with after school and family programs. Open shifts are listed on the City's volunteer portal.",
+      "what_you_do": "Help with school based programs for students and families, such as handing out weekly groceries and helping at resource fairs.",
+      "kind": "program",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["after_school_camps", "tutoring", "mentoring"],
+      "motives": ["values", "protective"],
+      "formats": ["side_by_side", "conversation"],
+      "roles": ["help_teach", "hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {"label": "School", "address": "6601 Elmwood Ave, Philadelphia, PA 19142", "zip": "19142", "planning_district": "lower_southwest", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Open the school's listing on the City volunteer portal and pick an open shift, such as weekly grocery distribution or a resource fair.",
+        "newcomer_friendliness": 3,
+        "basis": "The City portal lists open volunteer roles for the school to the public, but the tier 2 read of the listing was blocked, so the sign up steps could not be checked today."
+      },
+      "contacts": {"website": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186412"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186412",
+      "sources": [
+        {"url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186412", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "first_step", "what_you_do", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Tier 2 read blocked. The City portal listing returned HTTP 403 Forbidden, so no deeper page was read and the sign up steps, schedule, cost and status could not be re-checked today. Status, last sign of life, the what you do wording and the first step come from the tier 1 read of the same listing and are carried over unverified. The newcomer rating is from that tier 1 description of open roles, not a tier 2 page."
+    },
+    {
+      "match": {
+        "lead_ids": ["city_nac:3", "city_rco:179", "city_rco_points:179"],
+        "group_id": "empowered-cdc",
+        "website": "https://www.empoweredcdc.com"
+      },
+      "verdict": "publish",
+      "name": "Empowered CDC",
+      "summary": "Empowered CDC is one of the City's Neighborhood Advisory Committees in Southwest Philadelphia. Residents can get help finding City services and ways to get more involved in their neighborhood.",
+      "what_you_do": "Help neighbors find City services and bring local needs to the City.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["community_development", "civic_association"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {"label": "Office", "address": "7410 Buist Ave, Philadelphia, PA 19153", "zip": "19153", "planning_district": "lower_southwest", "in_city": true, "lat": 39.90296548001584, "lng": -75.24918145614329}
+      ],
+      "first_step": {
+        "how": "Call the office at 215-278-9782 and ask for help with a City service.",
+        "newcomer_friendliness": 2,
+        "basis": "The City's neighborhood advisory listing and flyer give a phone number and office address, but the group's own website returned a not found error, so meeting times and a clear way to join are not known."
+      },
+      "contacts": {
+        "website": "https://www.empoweredcdc.com",
+        "email": "Staff@empoweredcdc.com",
+        "phone": "215-278-9782",
+        "contact_name": "Karen Small"
+      },
+      "status": "probably_active",
+      "last_sign_of_life": "2025-06",
+      "sign_of_life_url": "https://www.phila.gov/media/20250826144452/NAC-flyer-English-and-Chinese-2-26-2025-edit-6-13-25-for-print.pdf",
+      "sources": [
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/NeighborhoodAdvisoryCommittees/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts.website", "contacts.email", "contacts.phone", "contacts.contact_name"]},
+        {"url": "https://www.phila.gov/media/20250826144452/NAC-flyer-English-and-Chinese-2-26-2025-edit-6-13-25-for-print.pdf", "seen": "2026-10-08", "fields": ["last_sign_of_life", "sign_of_life_url", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Both https://www.empoweredcdc.com and http://empoweredcdc.com returned HTTP 404 Not Found, so the website field is kept as published but does not load. A web search found the same office address, phone and website in City Neighborhood Advisory Committee flyers, with no meeting times, hours or service area. The flyer PDF could not be read by the fetch tool. The 2025 date comes only from the flyer's file title (edit 6 13 25), not from visible text, so last_sign_of_life was changed from the tier 1 value of 2026-10, which the ArcGIS listing does not show. The older name Empowered Community Development Corporation stays in aka. The tier 1 zoning review list reference was not re-checked."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:862481909", "irs_bmf:862481909"],
+        "group_id": "law-enforcement-mentor-club-corporation",
+        "ein": "862481909",
+        "website": "https://www.lawenforcementmentoring.org/"
+      },
+      "verdict": "publish",
+      "name": "Law Enforcement Mentor Club",
+      "summary": "A mentoring club for at-risk young people that uses sports, music and art to help build trust between young people and law enforcement officers.",
+      "what_you_do": "Take part in mentoring activities built around sports, music and art. The site also asks visitors to donate or sign up for its newsletter.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["mentoring"],
+      "motives": ["values", "social"],
+      "formats": ["team_play"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "8212 Buist Ave, Philadelphia, PA 19153", "zip": "19153", "planning_district": "lower_southwest", "in_city": true}
+      ],
+      "cost": {"text": "No program fees are listed on the website. The site asks visitors to donate."},
+      "first_step": {
+        "how": "Use the Contact page on the club's website to ask how a young person or an officer can take part, or message the club's Instagram account.",
+        "newcomer_friendliness": 2,
+        "basis": "The Contact page has a web form and the site has a newsletter sign up, but the site does not say how a young person or an officer joins, and no program dates are listed."
+      },
+      "requirements": {"kids_ok": true},
+      "contacts": {
+        "website": "https://www.lawenforcementmentoring.org/",
+        "contact_name": "Kiana Farlow",
+        "social": ["https://www.instagram.com/le_mentorclub"]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.lawenforcementmentoring.org/",
+      "sources": [
+        {"url": "https://www.lawenforcementmentoring.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "cost", "first_step", "contacts", "status"]},
+        {"url": "https://www.lawenforcementmentoring.org/news--upcoming-events.html", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://www.lawenforcementmentoring.org/contact.html", "seen": "2026-10-08", "fields": ["first_step", "contacts"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Home, news and contact pages read on 2026-10-08. Home page: mission and sports, music and art mentoring described, with no program dates, ages or fees and a donate request. News page: four articles, none with a visible date. Contact page: a web form only, with no visible email or phone and no steps for joining. The only years on the site are a 2020 founding reference and a copyright footer, which do not count as recent evidence, so status stays probably_active on a working site with no dated activity. Confidence is low. Tier 1 listed two identical IRS mailing addresses; they are merged into one."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:853873899", "irs_bmf:853873899"],
+        "group_id": "minority-center-for-participation-and-empowerment",
+        "ein": "853873899",
+        "website": "https://www.minoritycenterpe.com"
+      },
+      "verdict": "publish",
+      "name": "Minority Center for Participation and Empowerment",
+      "summary": "A community organization that works to reduce violence and poverty and to improve living conditions for underserved communities. Its listed programs include literacy, after school, mentorship, vocational training and youth services.",
+      "what_you_do": "Ask for services through the intake form on the website, or contact the group to ask about its after school and mentoring programs.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring", "careers-skills-professional"],
+      "interests": ["after_school_camps", "mentoring", "trades_training"],
+      "motives": ["values"],
+      "formats": ["learn_skill"],
+      "roles": ["figure_out"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "2511 S 73rd St, Philadelphia, PA 19142", "zip": "19142", "planning_district": "lower_southwest", "in_city": true}
+      ],
+      "cost": {"text": "No program cost listed on the website. The site has a Donate button."},
+      "first_step": {
+        "how": "Fill out the intake form linked from the website to ask for services, or use the Contact page to ask about the after school or mentoring program.",
+        "newcomer_friendliness": 2,
+        "basis": "The site links an intake form and a Contact page, but the program names appear only in the menu, and the pages read do not explain how to join or what a visit is like."
+      },
+      "contacts": {"website": "https://www.minoritycenterpe.com", "contact_name": "Alascal Wisner"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.minoritycenterpe.com",
+      "sources": [
+        {"url": "https://www.minoritycenterpe.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "first_step", "status"]},
+        {"url": "https://www.minoritycenterpe.com/copy-of-about-us", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "status"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Home page and About Us page read on 2026-10-08. Program names (literacy, after school, mentorship, sports and recreation, employment, addiction and mental health, social services, violence prevention, immigration, summer camp) appear as menu labels only, with no descriptions, ages, schedules or costs. The intake form linked from the menu was not reached: a guessed address returned HTTP 404 and the real link was not located. No dated items were found, and the photo captions carry no years. Tier 1 listed two identical IRS mailing addresses; they are merged into one."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:863013181", "irs_bmf:863013181"],
+        "group_id": "muslim-youth-of-philadelphia",
+        "ein": "863013181",
+        "website": "https://www.muslimyouthofphiladelphia.com"
+      },
+      "verdict": "publish",
+      "name": "Muslim Youth of Philadelphia",
+      "summary": "A youth-led group that gives young Muslims a faith-based place to learn and grow. Its Weekend Islamic School teaches children Quran memorization, Arabic, and Islamic studies, and the group also runs mentoring, service, and sports activities.",
+      "what_you_do": "The weekend Islamic school says it has reached capacity and cannot take new students. The group also names community service, mentorship, sports and leisure, and life preparation programs, and it asks for support for a youth center campaign.",
+      "kind": "nonprofit",
+      "categories": ["faith-community", "kids-youth-mentoring"],
+      "interests": ["faith_youth_programs", "tutoring"],
+      "motives": ["values"],
+      "formats": ["learn_skill"],
+      "crowd": ["kids", "teens"],
+      "audience": {"open_to": "public", "faith": "muslim"},
+      "schedule": {"text": "A weekend Islamic school for children. The site does not list days or times, and the school is not taking new students."},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "6634 Woodland Ave, Philadelphia, PA 19142", "zip": "19142", "planning_district": "lower_southwest", "in_city": true}
+      ],
+      "cost": {"text": "Tuition is not stated on the website. The site has a Donate button."},
+      "first_step": {
+        "how": "Use the Contact Us page on the group's website to ask whether a spot opens in any of its youth programs, since the weekend school says it is full.",
+        "newcomer_friendliness": 2,
+        "basis": "The Islamic School page says the school has reached capacity and cannot take new students, and the other programs are named on the home page without a described way to join."
+      },
+      "contacts": {"website": "https://www.muslimyouthofphiladelphia.com", "contact_name": "Najah Siddiq"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.muslimyouthofphiladelphia.com",
+      "sources": [
+        {"url": "https://www.muslimyouthofphiladelphia.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule", "cost", "status"]},
+        {"url": "https://www.muslimyouthofphiladelphia.com/islamic-school", "seen": "2026-10-08", "fields": ["first_step", "schedule", "what_you_do"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Home page and Islamic School page read on 2026-10-08. Correction to tier 1: the Islamic School page says the school has reached capacity and is not accepting new students, and it invites support for a Muslim Youth Center campaign. The tier 1 step to ask how to enroll a child was replaced. The school page gives no days, times, ages or tuition. Program areas are named on the home page without descriptions. Visible text has no dated items: the founding year (2019) and a 2022 date that appears only in an image filename are not counted, so status stays probably_active."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:822603957", "irs_bmf:822603957"],
+        "group_id": "rising-hope-for-change-inc",
+        "ein": "822603957",
+        "website": "https://www.rhfc.info"
+      },
+      "verdict": "publish",
+      "name": "Rising Hope for Change",
+      "summary": "A nonprofit that offers humanitarian help, plus education and training programs, for people in need who want to reach their goals.",
+      "what_you_do": "Ask for help through the site's Beneficiary Application page, or get involved through the inquiry form on the Get Involved page. The group says it offers educational services, programs and training.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs"],
+      "interests": ["mutual_aid"],
+      "motives": ["values"],
+      "audience": {"open_to": "public"},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "6101 Grays Ave, Philadelphia, PA 19142", "zip": "19142", "planning_district": "lower_southwest", "in_city": true}
+      ],
+      "first_step": {
+        "how": "Fill out the inquiry form on the Get Involved page (name, phone and email), or call 267-969-8729 or email info@rhfc.info to ask about getting involved.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Joining starts with a form and a reply from the group. The Get Involved page says there are many ways to be involved but lists no volunteer roles, time commitment or description of a first visit."
+      },
+      "contacts": {
+        "website": "https://www.rhfc.info",
+        "email": "info@rhfc.info",
+        "phone": "267-969-8729",
+        "contact_name": "Daniel Lendeh"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.rhfc.info",
+      "sources": [
+        {"url": "https://www.rhfc.info", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "https://www.rhfc.info/get-involved", "seen": "2026-10-08", "fields": ["first_step", "sign_up_needed", "what_you_do"]},
+        {"url": "https://www.rhfc.info/news", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://www.rhfc.info/events-and-promo", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Home, Get Involved, Events, News and Beneficiary Application pages read on 2026-10-08. The Beneficiary Application page loaded with navigation and contact details only, so eligibility and what the form asks are not recorded. The News page has no entries, and the Events page lists no dated events; its only item is an undated COVID-19 vaccine flyer image. The News page intro names program areas (leadership and advocacy, gun violence prevention, community outreach, trauma awareness, racial equity) that the summary does not use; they were not added to interests and are left for review."
+    },
+    {
+      "match": {
+        "lead_ids": ["irs_990n:862161466", "irs_bmf:862161466"],
+        "group_id": "sharing-excess",
+        "ein": "862161466",
+        "website": "https://www.sharingexcess.com"
+      },
+      "verdict": "publish",
+      "name": "Sharing Excess",
+      "summary": "A food rescue nonprofit that collects surplus food from businesses and passes it on to communities in need. It is rooted in Philadelphia and now works in many states.",
+      "what_you_do": "Volunteer on food rescue pickups, produce sorting at produce markets, pop-up food distribution events, or Sharehouse Saturdays at the West Philly Sharehouse. You can also donate money or food, or, if you run a community group, request food through the Find Food page.",
+      "kind": "nonprofit",
+      "categories": ["hunger-housing-basic-needs"],
+      "interests": ["food_rescue", "food_pantry"],
+      "motives": ["values"],
+      "formats": ["side_by_side"],
+      "roles": ["hands_on"],
+      "audience": {"open_to": "public"},
+      "schedule": {
+        "text": "Sharehouse Saturdays are weekend shifts at the West Philly Sharehouse. The volunteer page lists no other shift times.",
+        "days": ["sat"]
+      },
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "6700 Essington Ave Ste E207, Philadelphia, PA 19153", "zip": "19153", "planning_district": "lower_southwest", "in_city": true},
+        {"label": "Mailing address (IRS)", "address": "4942 Chancellor St, Philadelphia, PA 19139", "zip": "19139", "planning_district": "west", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "Volunteering costs nothing. Donations are optional and start at $5."},
+      "first_step": {
+        "how": "On the Volunteer page, click Sign Up to Volunteer, then choose an opening such as Sharehouse Saturdays or Food Rescue. Each opening has its own Sign Up button.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Sign up is open to the public through the Volunteer page and several roles are listed, but the page does not say first timers are welcome and does not give shift times.",
+        "what_to_expect": "Most roles are hands on. Food Rescue drivers pick up donated food from stores and restaurants with their own vehicle, guided by a mobile app. Sharehouse Saturdays are weekend shifts packing home deliveries, moving pallets and loading partner pickups at the West Philly Sharehouse. The volunteer page does not say how long a shift lasts, and volunteering is free.",
+        "first_visit_tips": [
+          "Food Rescue asks volunteers to have their own vehicle.",
+          "Pick the opening you want first, since each one has its own Sign Up button.",
+          "Apart from weekend Sharehouse Saturdays, the page lists no shift times, so ask which shifts are open before you plan a trip."
+        ]
+      },
+      "contacts": {"website": "https://www.sharingexcess.com", "contact_name": "Evan Ehlers"},
+      "status": "active",
+      "last_sign_of_life": "2026-08",
+      "sign_of_life_url": "https://www.sharingexcess.com/news",
+      "sources": [
+        {"url": "https://www.sharingexcess.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "first_step", "contacts"]},
+        {"url": "https://www.sharingexcess.com/get-involved/volunteer", "seen": "2026-10-08", "fields": ["first_step", "what_you_do", "schedule", "sign_up_needed", "what_to_expect", "first_visit_tips"]},
+        {"url": "https://www.sharingexcess.com/news", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "ein"]}
+      ],
+      "research_tier": 2,
+      "confidence": "high",
+      "notes": "Home, Volunteer and News pages read on 2026-10-08. The News page lists ten dated items, the newest dated August 11, 2026, so last_sign_of_life is 2026-08 from the group's own news list. Volunteer sign up runs on a third party volunteer platform reached from the Volunteer page. Not stated on the pages read: minimum age, waiver, what to wear, and shift length. The News list has a second page that was not read. Added the food_pantry interest for the pop-up distribution role."
+    }
+  ],
+  "leads_only": [],
+  "blocked": [
+    {"url": "https://communityschools.galaxydigital.com/agency/detail/?agency_id=186412", "status": 403, "note": "City volunteer portal listing for the Tilden school. HTTP 403 Forbidden on the tier 2 pass, reason not stated. Not retried or worked around. Tier 1 values carried over unverified."},
+    {"url": "https://www.empoweredcdc.com", "status": 404, "note": "Site not found. http://empoweredcdc.com also returned 404."},
+    {"url": "https://www.minoritycenterpe.com/intake-form", "status": 404, "note": "Guessed address, not found. The real intake form link was not located."}
+  ],
+  "notes": "Seven records, all research_tier 2, all verdict publish. Budget: 1 WebSearch of 1 allowed (used on Empowered CDC), 20 WebFetch of up to 60 (no more than 6 per group). Errors: before correcting course I made three calls to tools the brief does not allow (two guide calls and one browser navigate). The navigate call was denied; the guide calls returned a denial and a menu. No document or browser action was completed. Unreachable: the Tilden portal (403) and both Empowered CDC site addresses (404). Muslim Youth's Islamic School page says the school is full, which changes that record's first step and what you do. Status for Empowered CDC was corrected from the tier 1 value because its date is not visible on the cited page. No leads_only items: the pages read named no partner organizations outside this batch."
+}

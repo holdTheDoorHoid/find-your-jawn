@@ -4,22 +4,34 @@ aka: []
 leads:
 - penn_clubs:umoja
 ein: null
-summary: null
-what_you_do: null
+summary: The umbrella group for Black student organizations at Penn. It brings member groups together
+  on shared goals and a common calendar.
+what_you_do: Coordinates its member groups and runs programs open to the whole Penn community. Students
+  usually get involved by joining a member group's executive board, and UMOJA's own board applications
+  open each late November.
 kind: student_org
-categories: []
-interests: []
-motives: []
-formats: []
-roles: []
-crowd: []
+categories:
+- advocacy-rights
+interests:
+- racial_equity
+motives:
+- values
+- social
+formats:
+- lead_organize
+roles:
+- organize
+- lead
+crowd:
+- students
 bridging: null
 audience:
   open_to: students
   school: penn
   min_age: null
   max_age: null
-  community: []
+  community:
+  - black
   faith: null
   partisan: false
   support_group: false
@@ -48,31 +60,45 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: null
+  how: Join a member group's executive board. UMOJA's board applications open in late November.
   drop_in: null
   sign_up_needed: null
-  newcomer_friendliness: null
-  basis: null
+  newcomer_friendliness: 2
+  basis: Board seats need an application, though the group's programs are open to Penn students.
   what_to_expect: null
   first_visit_tips: []
 contacts:
-  website: null
+  website: https://www.umojaupenn.com/
   email: up.umoja@gmail.com
   phone: null
   contact_name: null
-  social: []
+  social:
+  - https://instagram.com/umoja_penn/
+  - https://linkedin.com/company/upenn-umoja/posts/?feedView=all
   calendar_feed: null
-status: unknown
+status: probably_active
 last_sign_of_life: null
-sign_of_life_url: null
+sign_of_life_url: https://www.umojaupenn.com/
 sources:
 - url: https://pennclubs.com/api/clubs/?format=json
   seen: '2026-10-04'
   fields:
   - name
   - contacts.email
-research_tier: 0
-confidence: null
-last_checked: null
+- url: https://pennclubs.com/api/clubs/umoja/?format=json
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+  - contacts
+- url: https://www.umojaupenn.com/
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 1
+confidence: medium
+last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

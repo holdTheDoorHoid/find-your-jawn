@@ -7,8 +7,8 @@ leads:
 ein: '994000931'
 summary: A nonprofit run by volunteers and paid for by donations, working toward better treatment for
   dogs with cancer.
-what_you_do: Volunteers run the group. You can donate, sign up for email updates, or write to the group
-  to ask how to volunteer.
+what_you_do: Become a Friend of Lola through the annual membership, give a donation, or buy tickets to
+  fundraising events such as a silent auction and a holiday party. The site does not list volunteer roles.
 kind: nonprofit
 categories:
 - animals
@@ -18,6 +18,7 @@ motives:
 - values
 formats:
 - behind_the_scenes
+- one_off_event
 roles: []
 crowd: []
 bridging: null
@@ -31,11 +32,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Fundraising events come up through the year, such as a silent auction, a holiday party, a dinner,
+    and a raffle. Dates are on the events page.
   days: []
   times: []
-  recurring: null
-  season: null
+  recurring: true
+  season: event_only
 locations:
 - label: Mailing address (IRS)
   address: 3019 Cambridge St
@@ -46,10 +48,10 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 3019 Cambridge Street
+- label: Holiday party venue (The Boozy Mutt)
+  address: 2639 Poplar Street
   neighborhood: null
-  planning_district: central
+  planning_district: null
   zip: '19130'
   lat: null
   lng: null
@@ -57,8 +59,9 @@ locations:
   transit: null
 online_ok: null
 cost:
-  level: null
-  text: null
+  level: paid
+  text: The Friends of Lola membership has an annual fee, and the amount is not listed. Event tickets
+    are sold separately. Donations are tax deductible.
 commitment: null
 group_size: null
 access:
@@ -73,14 +76,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email gia@lolasophiaproject.org and ask how volunteers can help right now. The site does not list
-    volunteer roles.
+  how: Click Become a Friend on the Get Involved page to join the Friends of Lola membership, or email
+    gia@lolasophiaproject.org with questions first.
   drop_in: false
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Volunteer roles are not listed on the pages we could read, so the way in is an email.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Joining means paying an annual membership fee, and the site lists no volunteer roles or sign-up
+    steps, so the way in is a paid membership or an email.
+  what_to_expect: The site does not describe a first visit or a volunteer shift. Public events are fundraisers,
+    such as a silent auction and a holiday party, and tickets are sold online. Friends get discounted
+    tickets to the annual event and a welcome bag, according to the page.
+  first_visit_tips:
+  - Ask gia@lolasophiaproject.org whether volunteer roles are open before you pay a membership fee.
+  - Check the events page for each event's date and location, since several listings do not give a time.
 contacts:
   website: https://lolasophiaproject.org/
   email: gia@lolasophiaproject.org
@@ -89,9 +97,9 @@ contacts:
   social:
   - https://www.instagram.com/lolasophiaproject
   calendar_feed: null
-status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://lolasophiaproject.org/
+status: active
+last_sign_of_life: 2026-10
+sign_of_life_url: https://lolasophiaproject.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -118,8 +126,26 @@ sources:
   seen: '2026-10-08'
   fields:
   - first_step
-research_tier: 1
-confidence: low
+- url: https://lolasophiaproject.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - schedule
+  - locations
+  - cost
+- url: https://lolasophiaproject.org/get-involved-1
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - cost
+- url: https://lolasophiaproject.org/donate
+  seen: '2026-10-08'
+  fields:
+  - cost
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

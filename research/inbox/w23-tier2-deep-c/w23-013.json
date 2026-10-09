@@ -1,0 +1,402 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-013",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 38,
+  "records": [
+    {
+      "match": {"lead_ids": ["irs_bmf:471586879"], "group_id": "one-day-at-a-time-inc", "ein": "471586879", "website": "https://odaatphilly.org"},
+      "verdict": "publish",
+      "name": "One Day at a Time (ODAAT)",
+      "summary": "A Philadelphia nonprofit that helps people and families dealing with addiction, housing loss and money hardship. Its services include housing help, health care, job and reentry help, and youth programs.",
+      "what_you_do": "Call or email to ask for help with recovery, housing, health, jobs, or reentry. Youth programs serve ages 7 to 16, and the group runs a weekly Monday food giveaway and a support group.",
+      "kind": "nonprofit",
+      "categories": ["support-recovery", "hunger-housing-basic-needs", "health-wellness", "kids-youth-mentoring"],
+      "interests": ["addiction_recovery", "housing_help", "homeless_outreach", "food_pantry", "health_outreach", "mentoring"],
+      "motives": ["protective", "values"],
+      "formats": ["conversation"],
+      "crowd": ["all_adults", "families", "kids", "teens"],
+      "audience": {"open_to": "public", "support_group": true},
+      "schedule": {
+        "text": "Weekly food giveaway every Monday, noon to 2 pm, while supplies last, at 2532 N Broad St. A support group for men and women meets every other Monday, noon to 1 pm, at the same address. Morning Motivation meets every other Friday, 10 to 11 am, at 2432 W Lehigh Ave.",
+        "days": ["mon", "fri"],
+        "times": ["daytime", "morning"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Monday giveaway and IRS mailing address", "address": "2532 N Broad St", "zip": "19132", "planning_district": "north", "in_city": true},
+        {"label": "Morning Motivation gathering", "address": "2432 W Lehigh Ave", "in_city": true}
+      ],
+      "cost": {"text": "The site does not list a fee for any service or for the food giveaway. Ask when you call."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call (215) 226-7860 and say whether you need help for yourself, a family member, or a youth. You can also use the contact form on odaatphilly.org.",
+        "newcomer_friendliness": 3,
+        "basis": "The Monday giveaway and the Friday gathering have set times and addresses and are open to individuals, families, and community members, and each service lists a phone line, though the site does not say whether you must register.",
+        "what_to_expect": "The Monday food giveaway runs noon to 2 pm at the Broad Street address and hands out fresh produce and groceries while supplies last. The site does not say whether any service costs money or how intake works for recovery, housing, or youth programs, so ask on the phone what happens next.",
+        "first_visit_tips": [
+          "Arrive early in the noon to 2 pm window, since the giveaway runs while supplies last.",
+          "Call (215) 226-7860 before you come to ask about intake, costs, and what to bring.",
+          "Ask which services are open to people who do not live in a recovery house, because the site ties some support to house residents."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://odaatphilly.org",
+        "email": "info@odaatphilly.org",
+        "phone": "(215) 226-7860",
+        "social": ["https://instagram.com/originalodaat", "https://facebook.com/originalodaat"]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://odaatphilly.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://uac.org/fiscal-sponsorship/", "seen": "2026-10-08", "fields": ["lead"]},
+        {"url": "https://odaatphilly.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "https://odaatphilly.org/services-community-youth", "seen": "2026-10-08", "fields": ["what_you_do", "audience", "interests", "first_step"]},
+        {"url": "https://odaatphilly.org/services-health", "seen": "2026-10-08", "fields": ["interests", "first_step"]},
+        {"url": "https://odaatphilly.org/services-employment", "seen": "2026-10-08", "fields": ["interests", "first_step"]},
+        {"url": "https://odaatphilly.org/contact-us", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://odaatphilly.org/events", "seen": "2026-10-08", "fields": ["schedule", "locations", "cost", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Events page lists recurring items with no year, so no dated evidence is recorded and status stays probably_active. The homepage summary said there were no upcoming events, which conflicts with the events page; the events page was used. Other contacts from the site: homeless outreach phone (215) 232-1984 and shelter services email shelterservices@odaatphilly.org, not recorded because the contact fields hold one phone and one email. Thanksgiving and December events on the events page have no year and no location, so they are left out. Eligibility for some support is tied to recovery house residence, and the site does not say whether non-residents qualify for every service."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:232945377", "irs_bmf:232945377"], "group_id": "strawberry-mansion-learning-center", "ein": "232945377", "website": "http://strawberrymansionlearningcenter.com/"},
+      "verdict": "publish",
+      "name": "Strawberry Mansion Learning Center",
+      "summary": "An afterschool learning center in the Strawberry Mansion neighborhood that helps local kids and teens with homework and offers mentoring.",
+      "what_you_do": "Kids and teens ages 10 to 17 join after-school tutoring Monday to Thursday, 3:30 to 6 pm. College students and volunteers help with math, civics, and science, and each student gets a snack. The center also runs field trips, speaker visits, and a reading camp in July and August. Adults who want to mentor or help can ask the center how to get involved.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["tutoring", "mentoring", "after_school_camps"],
+      "motives": ["values"],
+      "crowd": ["kids", "teens"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "After-school tutoring runs Monday to Thursday, 3:30 to 6 pm, for ages 10 to 17. A summer reading camp runs in July and August.",
+        "days": ["mon", "tue", "wed", "thu"],
+        "times": ["daytime", "evening"],
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Learning center (IRS and contact page address)", "address": "2946 W Dauphin St", "zip": "19132", "planning_district": "north", "in_city": true}
+      ],
+      "cost": {"text": "The site lists no program fees. It asks for donations and links to a fundraiser for a building renovation."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call (267) 639-4613 or email Strawberrymansionlearningctr@gmail.com to ask about joining tutoring for ages 10 to 17.",
+        "newcomer_friendliness": 2,
+        "basis": "The tutoring program lists its ages and weekday hours, but the site gives no enrollment steps, start dates, or fees, so the way in is unclear until you ask.",
+        "what_to_expect": "Tutoring runs Monday to Thursday from 3:30 to 6 pm. Students work with college students and volunteers, get a snack, and sometimes go on trips or hear from speakers. The site does not list fees or start dates.",
+        "first_visit_tips": [
+          "Call before you come, since the site lists no start dates or enrollment steps.",
+          "Ask about fees and any forms, because the site lists none.",
+          "Ask how adults can mentor or volunteer, since the site does not explain it."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "http://strawberrymansionlearningcenter.com/",
+        "email": "Strawberrymansionlearningctr@gmail.com",
+        "phone": "(267) 639-4613",
+        "contact_name": "Kevin Upshur"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "http://strawberrymansionlearningcenter.com/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "http://strawberrymansionlearningcenter.com/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost"]},
+        {"url": "http://strawberrymansionlearningcenter.com/smlc-programs/", "seen": "2026-10-08", "fields": ["what_you_do", "interests", "schedule", "first_step"]},
+        {"url": "http://strawberrymansionlearningcenter.com/contact-us/", "seen": "2026-10-08", "fields": ["contacts", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page had no readable event listings, and the copyright footer (2021) is not used as evidence, so status stays probably_active. Mentoring trips are listed for 10 am to 1 pm with no days given, so no mentoring schedule is recorded. The reading camp is listed for July and August with no year. Two identical address entries from tier 1 are merged into one. The About page link returned 404 and is listed under blocked."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:332364710", "irs_bmf:332364710"], "group_id": "vacetime-foundation", "ein": "332364710", "website": "https://www.vacetimefoundation.org"},
+      "verdict": "publish",
+      "name": "Vacetime Foundation",
+      "summary": "A nonprofit that turns vacant lots and shared spaces into green space, and gives young people hands-on training in landscaping and environmental work. Its three program areas are Youth Development, Creative Environment Learning, and Community Greening.",
+      "what_you_do": "Teens can join a Saturday landscaping academy, a paid summer lawn care job, or a semester or summer internship. Kids can join art and plant workshops. Neighbors can help turn vacant lots into gardens through monthly cleanups and planting days.",
+      "kind": "nonprofit",
+      "categories": ["gardening-greening", "kids-youth-mentoring", "science-learning"],
+      "interests": ["community_garden", "vacant_lot_greening", "youth_leadership", "stem_outreach"],
+      "motives": ["values", "career"],
+      "formats": ["side_by_side", "learn_skill"],
+      "roles": ["hands_on"],
+      "crowd": ["kids", "teens", "neighbors"],
+      "audience": {"open_to": "public"},
+      "schedule": {
+        "text": "Programs run on their own schedules. The Green Trades Youth Academy meets on Saturdays for 8 to 10 weeks, and Adopt-A-Lot groups hold monthly cleanups and planting days.",
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "2534 N Broad St", "zip": "19132", "planning_district": "north", "in_city": true}
+      ],
+      "cost": {"text": "Most programs do not list a fee on the site. Summer Lawncare pays teens, the Eco-Leader Fellowship includes a stipend, and the group accepts donations and sponsorships."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a program on the Programs page and use its Learn More link or the Join A Program form. To volunteer, use the sign-up form on the Get Involved page.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The volunteer page says people with or without gardening experience are welcome and gives a sign-up form to start.",
+        "what_to_expect": "Volunteers help with youth skills, neighborhood projects, and senior care, and the site welcomes people with or without gardening experience. The site does not describe an orientation or a time commitment, so ask staff what a first shift looks like. Most programs do not list a fee, and some pay teens or give fellows a stipend.",
+        "first_visit_tips": [
+          "Choose one program first, since age ranges differ, such as kids 5 to 13 and teens 13 to 18.",
+          "Dress for outdoor work, because most programs are hands-on gardening.",
+          "Ask whether a background check applies to volunteers, since the site does not say."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://www.vacetimefoundation.org",
+        "contact_name": "Jovace Nelson",
+        "social": ["https://www.instagram.com/vacetime_foundation_/", "https://www.facebook.com/profile.php?id=61570054243460"]
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.vacetimefoundation.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.vacetimefoundation.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "https://www.vacetimefoundation.org/blank-1", "seen": "2026-10-08", "fields": ["what_you_do", "interests", "schedule", "cost", "first_step"]},
+        {"url": "https://www.vacetimefoundation.org/blank-2", "seen": "2026-10-08", "fields": ["first_step", "what_you_do"]},
+        {"url": "https://www.vacetimefoundation.org/blank-5", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://www.vacetimefoundation.org/blank", "seen": "2026-10-08", "fields": ["summary"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The contact page has a contact form and a newsletter sign-up but no phone or email, so none is recorded. The privacy text on the contact page uses a different spelling of the group's name, probably a typo. The About page gives 2018 as the start of the garden project and says the group became a nonprofit in 2024. Copyright footers (2024) are not used as evidence. Program sites are not named, so the mailing address is the only location."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:463040935", "irs_bmf:463040935"], "group_id": "we-do-realize-every-adolescent-matters", "ein": "463040935", "website": "https://wedreamdoyou.com"},
+      "verdict": "publish",
+      "name": "We DREAM",
+      "summary": "A youth nonprofit that runs a summer day camp for children and TGIF, a mentoring program for female college students of color. Its website lists a boys' program too, but the page for it gave no details.",
+      "what_you_do": "Children can sign up for the summer day camp, which the site calls affordable and which covers reading, arts and crafts, teamwork, and community service. Female college students of color can sign up for TGIF mentoring as mentees, and mentors can sign up too. The site does not say what the boys' program involves.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring"],
+      "interests": ["after_school_camps", "mentoring", "youth_leadership"],
+      "motives": ["values", "social"],
+      "crowd": ["kids", "teens", "students"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "3139 N 32nd St", "zip": "19132", "planning_district": "north", "in_city": true},
+        {"label": "Mailing address (IRS)", "address": "154 Linton Street", "zip": "19120", "planning_district": "upper_north", "in_city": true}
+      ],
+      "cost": {"text": "The camp is called affordable, but the site shows no fee amounts. The fee is only in a downloadable document that the page text does not include."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Send a message through the Connect form on wedreamdoyou.com and ask whether the summer camp is running this year and what it costs.",
+        "newcomer_friendliness": 2,
+        "basis": "The site has forms and a camp registration document, but no current dates, prices, or locations, so the way in is unclear.",
+        "what_to_expect": "The camp is described as an affordable day camp for children, with reading, arts and crafts, public speaking, and team building. The site gives no current camp dates, hours, location, or price, so ask before you plan a visit. TGIF mentors and mentees sign up through forms on its page.",
+        "first_visit_tips": [
+          "Ask whether the camp runs this year before you download the registration form.",
+          "Ask where the camp meets, since the site does not name a location.",
+          "For TGIF on another campus, use the contact address listed on the TGIF page."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://wedreamdoyou.com",
+        "contact_name": "Kimberly Abney",
+        "social": ["https://www.instagram.com/we__dream/"]
+      },
+      "status": "dormant",
+      "last_sign_of_life": "2020-12",
+      "sign_of_life_url": "https://wedreamdoyou.com/events",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://wedreamdoyou.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts"]},
+        {"url": "https://wedreamdoyou.com/events", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life"]},
+        {"url": "https://wedreamdoyou.com/tgif", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "interests", "first_step"]},
+        {"url": "https://wedreamdoyou.com/copy-of-we-dream-summer-camp", "seen": "2026-10-08", "fields": ["what_you_do", "cost", "first_step"]},
+        {"url": "https://wedreamdoyou.com/connect", "seen": "2026-10-08", "fields": ["contacts", "first_step"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Status set to dormant because the only dated items are 2020 events on the events page: a Father's Day brunch on June 21, 2020, a Black Tie Affair on August 8, 2020, and a family holiday program on Dec. 24, 2020. The volunteer page has no details at all. The TGIF page describes a mentoring program for female college students of color, with sign-ups pointing to Bloomsburg University, so the tier 1 description of TGIF as a youth program was wrong. The Boys Dream menu link points to the TGIF address, so the boys' program could not be checked. The contact form shows no phone or email. One WebSearch for We DREAM and Boys Dream returned only The DREAM Program (dreamprogram.org), a different organization, and it was not used. The publish verdict is kept, but no evidence after 2020 was found, so the orchestrator should review before this goes live."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:463522780", "irs_bmf:463522780"], "group_id": "beyond-the-exterior", "ein": "463522780", "website": "https://beyondtheexteriorinc.org"},
+      "verdict": "publish",
+      "name": "Beyond the Exterior",
+      "summary": "An advocacy group that offers support, education, and workshops for people of all ages. Its programs cover mental health and well-being, life skills, leadership, and money skills, and it says it has served communities for more than 20 years.",
+      "what_you_do": "Use the Register Now button or the workshop form on beyondtheexteriorinc.org, or call 267-270-5609, to ask which workshop fits you. Workshop topics include mental health first aid, financial literacy, trauma awareness, and a teen session that sorts facts from myths about health and relationships.",
+      "kind": "nonprofit",
+      "categories": ["health-wellness", "advocacy-rights", "careers-skills-professional"],
+      "interests": ["mental_health_awareness", "violence_prevention", "money_skills"],
+      "motives": ["values", "enhancement"],
+      "formats": ["learn_skill"],
+      "crowd": ["all_ages"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "4812 E Howell St", "zip": "19135", "planning_district": "north_delaware", "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call 267-270-5609 or use the Register Now button on beyondtheexteriorinc.org, and name the workshop you want.",
+        "newcomer_friendliness": 2,
+        "basis": "There is a sign-up form, but the pages show no dates, prices, or group sizes for workshops, so it is hard to tell what a visit is like.",
+        "what_to_expect": "Workshops and trainings are group sessions on topics such as mental health first aid, financial literacy, and life skills, and some are built for schools or agencies. The site does not give session lengths, group sizes, dates, or prices, so ask before you sign up.",
+        "first_visit_tips": [
+          "Name the workshop you want when you call, since the site lists most of them by title only.",
+          "Ask how long a session runs, whether it is in person, and whether there is a fee.",
+          "Ask who a workshop is for, since the site gives few age ranges."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://beyondtheexteriorinc.org",
+        "email": "tcrum@beyondtheexteriorinc.org",
+        "phone": "267-270-5609",
+        "contact_name": "Teyne Crum"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://beyondtheexteriorinc.org",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://beyondtheexteriorinc.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "contacts", "status"]},
+        {"url": "https://beyondtheexteriorinc.org/institution-of-learning", "seen": "2026-10-08", "fields": ["what_you_do", "interests", "first_step"]},
+        {"url": "https://beyondtheexteriorinc.org/programs-at-work", "seen": "2026-10-08", "fields": ["interests"]},
+        {"url": "https://beyondtheexteriorinc.org/about-us", "seen": "2026-10-08", "fields": ["summary", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "No dated program, workshop, or event appears on the pages. The 2024 copyright footer is not used as evidence. The About page gives no founding year and says services have run for more than 20 years. The accessibility statement is unfinished template text with no physical access details, so wheelchair stays unknown. Two unlabeled phone numbers (844-799-2462 and 215-948-6733) appear on the institution page and are not recorded because their purpose is not stated. The social links on the site point to a web builder's accounts, not this group, so none are recorded. The Programs at Work page names a partner, R.A.W. Kingdom Inc., which is in leads_only."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:881151326", "irs_bmf:881151326"], "group_id": "bless-philadelphia-corporation", "ein": "881151326", "website": "https://www.blessphiladelphia.com"},
+      "verdict": "publish",
+      "name": "Bless Philadelphia",
+      "summary": "Neighbors and community leaders who run a weekly food pantry and shower service, hold block cleanups, ran a holiday toy drive, and offer mental health first aid training. Their work on violence prevention and job readiness is still mostly in planning.",
+      "what_you_do": "Help pack and hand out food at the Wednesday evening pantry, help guests use the showers, deliver food on Monday mornings, teach English or GED classes on weekday evenings, or pick up litter on block cleanups. The group also hosts events and runs community drives.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic", "hunger-housing-basic-needs", "advocacy-rights", "careers-skills-professional", "culture-language-heritage-groups"],
+      "interests": ["food_pantry", "clean_blocks", "community_development", "violence_prevention", "money_skills", "esl_conversation"],
+      "motives": ["values"],
+      "formats": ["team_play"],
+      "roles": ["hands_on", "help_teach"],
+      "crowd": ["neighbors", "families"],
+      "audience": {"open_to": "public", "support_group": false},
+      "schedule": {
+        "text": "Food pantry every Wednesday, 6 to 8 pm, and showers every Wednesday, 5:30 to 7:30 pm, both at True Vine Church Community on Devereaux Street. Volunteer food deliveries run on Monday mornings, and ESL and GED classes meet on weekday evenings.",
+        "recurring": true
+      },
+      "locations": [
+        {"label": "Pantry, showers and trainings (True Vine Church Community)", "address": "4610 Devereaux St", "zip": "19135", "planning_district": "north_delaware", "in_city": true},
+        {"label": "Mercy Gate Church (hosted Financial Peace classes)", "address": "6035 Walker St", "zip": "19135", "planning_district": "north_delaware", "in_city": true}
+      ],
+      "cost": {"text": "The food pantry and showers are free. The group asks for donations, which are tax deductible."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Use the 'I'm interested' button on the volunteer page, or send a message on the Contact page, and name the role you want, such as the Wednesday pantry or the ESL classes.",
+        "newcomer_friendliness": 3,
+        "basis": "Five volunteer roles are listed, the pantry and showers run on set weeknight hours, and free events list a registration form, though the sign-up form itself did not appear in the text I read.",
+        "what_to_expect": "A volunteer might pack and hand out food at the Wednesday pantry, help guests use the showers, or teach English or GED classes on weekday evenings. The site does not give shift lengths or how many hours a month volunteers give, so ask about that first. Pantry food and showers are free for people who come to them.",
+        "first_visit_tips": [
+          "Ask which shift fits, since the site does not list hours for each volunteer role.",
+          "Expect Monday morning deliveries and weekday evening classes if you pick those roles.",
+          "Watch the events list for free sessions, which give a registration link."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://www.blessphiladelphia.com",
+        "contact_name": "Jason Davis",
+        "social": ["https://www.facebook.com/blessphiladelphia", "https://www.instagram.com/bless_philadelphia"]
+      },
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://www.blessphiladelphia.com/events",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.blessphiladelphia.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost"]},
+        {"url": "https://www.blessphiladelphia.com/programs", "seen": "2026-10-08", "fields": ["what_you_do", "interests"]},
+        {"url": "https://www.blessphiladelphia.com/volunteer", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "requirements"]},
+        {"url": "https://www.blessphiladelphia.com/events", "seen": "2026-10-08", "fields": ["status", "schedule", "cost", "locations", "first_step"]},
+        {"url": "https://www.blessphiladelphia.com/programs/block-cleanups", "seen": "2026-10-08", "fields": ["status", "what_you_do", "interests"]},
+        {"url": "https://www.blessphiladelphia.com/programs/food-pantry", "seen": "2026-10-08", "fields": ["schedule", "locations", "cost", "what_you_do"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page lists a free Spanish-language mental health first aid training on Saturday, Oct. 3, 2026, at True Vine Church Community. An older notice on the same page says that training was postponed for too few volunteers, so confirm it is still on before sharing. The block cleanup page names a cleanup on May 16, 2026 in Tacony and Mayfair; the page summary called it upcoming, which conflicts with its date, so recheck it. The volunteer page says to sign up below, but no form appeared in the text. The food pantry page says it has served the neighborhood since 2010. The Financial Peace classes (2025, $25) and the Angel Tree toy drive (2024) are past, not current. The group works out of partner churches, and the site names no faith affiliation, so none is recorded. The pantry page also names The Clay Studio and PhilAbundance, and the events page names Vetri Community Partnership; these are in leads_only."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:884187079", "irs_bmf:884187079"], "group_id": "finding-my-way-foundation", "ein": "884187079", "website": "https://www.findmywayfoundation.org/"},
+      "verdict": "publish",
+      "name": "Finding My Way Foundation",
+      "summary": "A nonprofit that offers life skills workshops, career coaching, low-cost therapy, and wellness workshops for young adults. The site says these programs serve people ages 17 to 25 who identify as a minority, and it shares resources to help them prepare for adult life.",
+      "what_you_do": "Request a life skills or wellness workshop through the site's forms, book a career coaching session through a calendar link, or ask about low-cost therapy. You can also refer a young adult you know, or join the mailing list. A mentorship program that pairs young people with adults is listed as coming soon.",
+      "kind": "nonprofit",
+      "categories": ["kids-youth-mentoring", "careers-skills-professional", "health-wellness"],
+      "interests": ["youth_leadership", "job_clubs", "money_skills", "mental_health_awareness"],
+      "motives": ["enhancement", "career"],
+      "formats": ["learn_skill", "conversation"],
+      "crowd": ["young_adults"],
+      "audience": {"open_to": "public", "min_age": 17, "max_age": 25, "support_group": false},
+      "locations": [
+        {"label": "Mailing address (IRS) and contact page address", "address": "7201 Frankford Ave #990", "zip": "19135", "planning_district": "north_delaware", "in_city": true}
+      ],
+      "cost": {"text": "The site lists no fees for workshops or coaching. It describes its therapy as low-cost but gives no price. The group is a 501(c)(3), and donations are tax deductible."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Request a workshop through the form on findmywayfoundation.org, or book an interest meeting through the calendar link, and ask about the next workshop.",
+        "newcomer_friendliness": 2,
+        "basis": "Workshops are requested through forms and the pages list no dates or formats, so the way in is unclear until you ask.",
+        "what_to_expect": "The site does not describe a typical workshop, its length, or its group size, so ask before you request one. Topics include financial literacy, career planning, wellness and stress management, and a small-group book club. Coaching is booked as a session through a calendar link.",
+        "first_visit_tips": [
+          "Call or email during office hours: Monday to Thursday noon to 8 pm, Friday 9 am to 3 pm, Saturday 11 am to 3 pm.",
+          "Give your age when you ask, since the young adult programs are for ages 17 to 25.",
+          "Ask whether a workshop is in person or online, because the site does not say."
+        ]
+      },
+      "access": {"wheelchair": "unknown"},
+      "contacts": {
+        "website": "https://www.findmywayfoundation.org/",
+        "email": "tmaddox@findmywayfoundation.org",
+        "phone": "267-433-8325",
+        "contact_name": "Tysheira Maddox"
+      },
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.findmywayfoundation.org/",
+      "sources": [
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.contact_name", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts.website", "contacts.contact_name", "ein"]},
+        {"url": "https://www.findmywayfoundation.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "first_step"]},
+        {"url": "https://www.findmywayfoundation.org/programs", "seen": "2026-10-08", "fields": ["what_you_do", "interests", "audience", "first_step", "cost"]},
+        {"url": "https://www.findmywayfoundation.org/events", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://www.findmywayfoundation.org/contact", "seen": "2026-10-08", "fields": ["contacts", "first_step"]},
+        {"url": "https://www.findmywayfoundation.org/about-us", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://findmywayfoundation.org/sitemap.website.xml", "seen": "2026-10-08", "fields": ["status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page lists no dated workshops or events. The About page gives no founding year, and the copyright footer (2022) is not used. The About page names the founder as Tysheira D. Wanser, while the contact page shows Tysheira (Maddox) Wanser; the tier 1 name Tysheira Maddox is kept. The contact email and phone are as published on the contact page. Referral, coaching, and interest meeting use third-party forms and calendars (a Google Form and Calendly) that were not used. The mailing list sign-up is an external page that was not visited. The site says its young adult programs serve ages 17 to 25 who identify as a minority; no vocabulary id fits that, so community is left empty. The therapy and book club are described without schedules or prices, so only the site's own wording is recorded."
+    }
+  ],
+  "leads_only": [
+    {"name": "Strawberry Mansion Tennis Association", "url": "http://strawberrymansionlearningcenter.com/smlc-programs/", "note": "Named on the programs page as running youth tennis camps at the center. Not fetched in this pass."},
+    {"name": "R.A.W. Kingdom Inc.", "url": "https://beyondtheexteriorinc.org/programs-at-work", "note": "Named as the partner for the Blessing Baskets program. Not fetched in this pass."},
+    {"name": "PhilAbundance", "url": "https://www.blessphiladelphia.com/programs/food-pantry", "note": "Named as a food source for the Bless Philadelphia pantry. Not fetched in this pass."},
+    {"name": "The Clay Studio", "url": "https://www.blessphiladelphia.com/programs/food-pantry", "note": "Named for family art activities at the pantry. Not fetched in this pass."},
+    {"name": "Vetri Community Partnership", "url": "https://www.blessphiladelphia.com/events", "note": "Named for a mobile teaching kitchen at the pantry. Not fetched in this pass."},
+    {"name": "True Vine Church Community", "url": "https://www.blessphiladelphia.com/events", "note": "Host site for the pantry, showers, and trainings. Not fetched in this pass."},
+    {"name": "Mercy Gate Church", "url": "https://www.blessphiladelphia.com/events", "note": "Host site for Financial Peace classes. Not fetched in this pass."}
+  ],
+  "blocked": [
+    {"url": "http://strawberrymansionlearningcenter.com/about-2/", "status": 404, "note": "Link from the homepage returned not found."}
+  ],
+  "notes": "Tier 2 deep pass on all 7 batch groups: 38 page fetches, 1 WebSearch (cap reached). Verdicts: 7 publish, 0 hide. Status changes from tier 1: Bless Philadelphia moved to active (2026 dated events on its events page). We DREAM moved to dormant (newest dated evidence is 2020). We DREAM's TGIF was corrected: it is a mentoring program for female college students of color, not a youth program. The single WebSearch for We DREAM and Boys Dream returned only a different organization (The DREAM Program, dreamprogram.org), so nothing from it was used. Leads in leads_only were not fetched because the tier 2 brief routes partner organizations to a later wave. No rate limiting or refusals were seen. The Bless Philadelphia block cleanup date and the Oct. 3, 2026 training should be rechecked before the site shows them."
+}

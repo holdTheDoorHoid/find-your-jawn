@@ -8,8 +8,10 @@ leads:
 ein: '463479809'
 summary: Working since 2011, this group matches high school students with mentors and runs workshops,
   seminars and youth conferences.
-what_you_do: Students in grades 9 to 12 apply to the mentoring program. Adults can sign up to be mentors
-  on the group's site. The group also holds workshops and a youth conference.
+what_you_do: Students in grades 9 to 12 can apply to the mentoring program. Adults who want to mentor
+  pass a background check, child abuse clearances and fingerprinting, then keep in touch with their student
+  at least once a week. The group also offers workshops on topics such as public speaking and conflict
+  resolution, and it holds a youth conference.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -35,10 +37,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Student mentoring registration is announced each school year. The youth conference is an event;
-    the most recent one announced was for Friday, December 19.
+  text: Mentoring days run during the school year from 5 to 7:30 pm and include dinner. The group posts
+    sign-up for each program year, so check the current year's registration before you plan to join.
   days: []
-  times: []
+  times:
+  - evening
   recurring: true
   season: null
 locations:
@@ -72,20 +75,27 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@influencingaction.org to ask about the next student registration, or use the Become
-    a Mentor page on the group's site if you want to mentor.
+  how: Email info@influencingaction.org to ask about the current student registration, or to ask how to
+    become a mentor. Mentors finish their clearances before they are matched.
   drop_in: false
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: Students must apply and mentors must sign up, so the way in is clear but not drop in.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Students apply for a program year, and mentors must clear background and child abuse checks and
+    fingerprinting before they are matched, so the way in is an application rather than a drop in.
+  what_to_expect: A mentoring day runs from 5 to 7:30 pm and starts with dinner and networking. Students
+    introduce themselves, write a short journal reflection, take a lesson, and fill in a feedback survey.
+    Mentors keep in touch with their student at least once a week. The page lists no program fee.
+  first_visit_tips:
+  - 'Students: arrive by 6 pm, since arrivals after 6:01 pm are marked late.'
+  - 'Mentors: start the clearances early, because they come before any match.'
+  - Ask for the current year's registration, since the application link on the high school page is for
+    an older year.
 contacts:
   website: https://www.influencingaction.org
   email: info@influencingaction.org
@@ -98,7 +108,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2025-12
-sign_of_life_url: https://www.influencingaction.org
+sign_of_life_url: https://influencingaction.org/iam-mentoring-2025-youth-conference/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -124,7 +134,28 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://influencingaction.org/become-a-mentor/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - first_step
+  - requirements
+- url: https://influencingaction.org/highschoolprogram/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+- url: https://influencingaction.org/iam-mentoring-2025-youth-conference/
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+- url: https://influencingaction.org/seminars-and-workshops/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

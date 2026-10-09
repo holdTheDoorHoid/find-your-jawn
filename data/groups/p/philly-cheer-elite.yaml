@@ -7,8 +7,9 @@ leads:
 ein: '834510129'
 summary: An all-volunteer cheerleading team in Philadelphia that uses cheer to raise awareness of LGBTQIA+
   equality.
-what_you_do: Volunteer members cheer as a team. Sign up on the group's form to hear about recruitment
-  events.
+what_you_do: Volunteer members join either as performing members, who cheer and stunt, or as production
+  members, who handle behind the scenes logistics. The team raises funds and donates to organizations
+  that support LGBTQ+ people.
 kind: team
 categories:
 - theater-dance-performance
@@ -24,12 +25,13 @@ formats:
 - perform_make_together
 roles:
 - hands_on
+- organize
 crowd: []
 bridging: null
 audience:
   open_to: public
   school: null
-  min_age: null
+  min_age: 18
   max_age: null
   community:
   - lgbtq
@@ -37,10 +39,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Practices are on Monday evenings from 7:30 to 10:30 pm at a practice location in North Philadelphia.
+    The site does not give a street address for it.
+  days:
+  - mon
+  times:
+  - evening
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -64,7 +69,7 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated. The site has a donation link and no membership or tuition fee.
+  text: The join page does not list dues or fees. The team takes donations through a PayPal fundraiser.
 commitment: null
 group_size: null
 access:
@@ -79,13 +84,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Fill out the general interest form on the join page to be told about recruitment events.
+  how: Fill out the interest form linked from the join page to be added to the recruitment list for upcoming
+    recruitment events.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Open to new volunteers with a clear sign-up. The site does not describe tryout requirements.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: The only published way in is an interest form that adds you to a list, and the pages do not describe
+    tryouts or what happens after the form, so the way in is unclear.
+  what_to_expect: The team describes its members as LGBTQIA+ and ally adults, and calls itself all-volunteer.
+    Practices run Monday evenings from 7:30 to 10:30 pm, and the team says it will tell people about recruitment
+    events. The pages do not describe tryouts, skill requirements, dues, or time commitment, so ask before
+    you commit.
+  first_visit_tips:
+  - Fill out the interest form first, since it is the only route the site publishes.
+  - Email info@phillycheerelite.org to ask whether a tryout or skills check comes before the first practice.
+  - Ask for the exact practice address, because the site gives only a mailing address.
+  - Plan for three hours on Monday evenings, since practice runs 7:30 to 10:30 pm.
 contacts:
   website: https://www.phillycheerelite.org
   email: info@phillycheerelite.org
@@ -98,14 +112,14 @@ last_sign_of_life: null
 sign_of_life_url: https://www.phillycheerelite.org
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.contact_name
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -122,8 +136,27 @@ sources:
   - contacts
   - status
   - audience
-research_tier: 1
-confidence: low
+- url: https://www.phillycheerelite.org/join
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - cost
+- url: https://www.phillycheerelite.org/about-us
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - what_you_do
+  - locations
+- url: https://www.phillycheerelite.org/our-mission
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - cost
+  - audience
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

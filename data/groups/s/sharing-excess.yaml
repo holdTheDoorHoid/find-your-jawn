@@ -7,13 +7,15 @@ leads:
 ein: '862161466'
 summary: A food rescue nonprofit that collects surplus food from businesses and passes it on to communities
   in need. It is rooted in Philadelphia and now works in many states.
-what_you_do: Volunteer through the site's Volunteer page, donate money or food, or, if you run a community
-  group, request food through the Find Food page.
+what_you_do: Volunteer on food rescue pickups, produce sorting at produce markets, pop-up food distribution
+  events, or Sharehouse Saturdays at the West Philly Sharehouse. You can also donate money or food, or,
+  if you run a community group, request food through the Find Food page.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
 interests:
 - food_rescue
+- food_pantry
 motives:
 - values
 formats:
@@ -32,14 +34,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
+  text: Sharehouse Saturdays are weekend shifts at the West Philly Sharehouse. The volunteer page lists
+    no other shift times.
+  days:
+  - sat
   times: []
   recurring: null
   season: null
 locations:
 - label: Mailing address (IRS)
-  address: 6700 Essington Ave Ste E207
+  address: 6700 Essington Ave Ste E207, Philadelphia, PA 19153
   neighborhood: null
   planning_district: lower_southwest
   zip: '19153'
@@ -48,7 +52,7 @@ locations:
   in_city: true
   transit: null
 - label: Mailing address (IRS)
-  address: 4942 Chancellor St
+  address: 4942 Chancellor St, Philadelphia, PA 19139
   neighborhood: null
   planning_district: west
   zip: '19139'
@@ -74,14 +78,22 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Sign up through the Volunteer page at sharingexcess.com, then ask which shifts are open, since
-    the site lists no shift dates
+  how: On the Volunteer page, click Sign Up to Volunteer, then choose an opening such as Sharehouse Saturdays
+    or Food Rescue. Each opening has its own Sign Up button.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Volunteer sign-up is open on the site, but the page does not list shifts or event dates
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Sign up is open to the public through the Volunteer page and several roles are listed, but the
+    page does not say first timers are welcome and does not give shift times.
+  what_to_expect: Most roles are hands on. Food Rescue drivers pick up donated food from stores and restaurants
+    with their own vehicle, guided by a mobile app. Sharehouse Saturdays are weekend shifts packing home
+    deliveries, moving pallets and loading partner pickups at the West Philly Sharehouse. The volunteer
+    page does not say how long a shift lasts, and volunteering is free.
+  first_visit_tips:
+  - Food Rescue asks volunteers to have their own vehicle.
+  - Pick the opening you want first, since each one has its own Sign Up button.
+  - Apart from weekend Sharehouse Saturdays, the page lists no shift times, so ask which shifts are open
+    before you plan a trip.
 contacts:
   website: https://www.sharingexcess.com
   email: null
@@ -122,7 +134,17 @@ sources:
   fields:
   - status
   - last_sign_of_life
-research_tier: 1
+  - sign_of_life_url
+- url: https://www.sharingexcess.com/get-involved/volunteer
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_you_do
+  - schedule
+  - sign_up_needed
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

@@ -4,10 +4,10 @@ aka: []
 leads:
 - cultural_fund:the-chamber-orchestra-of-philadelphia-2
 ein: null
-summary: A 33 musician chamber orchestra that plays more than 30 concerts a season in concert halls, churches
-  and museums, along with talks led by its music director. The public takes part as audience members.
+summary: A 33 musician chamber orchestra that gives over 30 concerts each season in halls, churches and
+  museums, with talks led by its music director. The public takes part as audience members.
 what_you_do: Buy tickets to a concert or a lecture, subscribe to a season, or watch select performances
-  live. The site lists an auditions page but does not say how auditions work.
+  live. The jobs and auditions page has no openings right now and does not describe how auditions work.
 kind: nonprofit
 categories:
 - music
@@ -33,11 +33,16 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Subscription, neighborhood and education concerts run through the season. Holiday Brandenburg
-    concerts are in December 2026, and a Brandenburg lecture is in December 2026. More concerts run January
-    to May 2027.
-  days: []
-  times: []
+  text: The orchestra gives more than 30 subscription, neighborhood and education concerts each season,
+    from fall into late spring. Concerts are often weekend pairs at 4 pm, with some Friday evening shows.
+    Lectures are on Sunday afternoons.
+  days:
+  - fri
+  - sat
+  - sun
+  times:
+  - daytime
+  - evening
   recurring: true
   season: null
 locations:
@@ -50,16 +55,28 @@ locations:
   lng: null
   in_city: true
   transit: null
+- label: Kimmel Center for the Performing Arts (venue named on the Getting Here page)
+  address: 300 S. Broad Street
+  neighborhood: null
+  planning_district: null
+  zip: '19102'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 online_ok: true
 cost:
   level: paid
-  text: Tickets are sold per concert. Lectures at the Philadelphia Ethical Society cost $25 per person.
+  text: Tickets are sold per concert, and single ticket prices are not listed on the site. Subscribers
+    get 20 percent off single tickets when they call the box office. Lectures at the Philadelphia Ethical
+    Society cost $25 per person.
 commitment: null
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The Getting Here page says the Walnut-Locust station on the Market-Frankford Line is about two
+    blocks from the Kimmel Center. Buses 9, 21, 32 and 42 are listed as accessible.
 requirements:
   act153_clearances: null
   background_check: null
@@ -68,15 +85,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a single ticket to a December Holiday Brandenburg concert, or sign up on the site for concert
-    news and offers.
+  how: Buy a single ticket to any concert online or by calling the box office at (215) 545-1739, or sign
+    up on the site for news and offers.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts and lectures are open to the public with tickets, and the site has a clear way to buy
-    in.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts and lectures are open to the public with a ticket, and the site has a clear way to buy
+    in, though it has no first-timer guide.
+  what_to_expect: Concerts are given in different places, including halls, churches, museums and cloisters,
+    so check the venue on your ticket. Weekend concerts listed on the site start at 4 pm. Lectures at
+    the Philadelphia Ethical Society run on Sunday afternoons at 2:30 pm and cost $25 per person.
+  first_visit_tips:
+  - Check the venue on your ticket before you go, since concerts move between halls, churches and museums.
+  - If you drive to the Kimmel Center, the garage entrance is just south of the Broad Street entrance,
+    and you can only reach it by driving south on Broad Street.
+  - Walnut-Locust station is about two blocks away, and buses 9, 21, 32 and 42 run nearby.
+  - Call the box office at (215) 545-1739 to ask about seating or access, since the site does not describe
+    them.
 contacts:
   website: https://chamberorchestra.org/
   email: info@chamberorchestra.org
@@ -103,7 +128,23 @@ sources:
   - cost
   - first_step
   - contacts
-research_tier: 1
+  - what_to_expect
+- url: https://chamberorchestra.org/single-tickets/
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - first_step
+- url: https://chamberorchestra.org/getting-here/
+  seen: '2026-10-08'
+  fields:
+  - locations
+  - access
+  - first_visit_tips
+- url: https://chamberorchestra.org/employment-and-auditions/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

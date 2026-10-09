@@ -5,10 +5,12 @@ leads:
 - irs_990n:275382996
 - irs_bmf:275382996
 ein: '275382996'
-summary: A jazz charity serving the Philadelphia region. It holds public concerts at churches and venues
-  and runs Sanctuary Jam and a Jazz Master Class for music students.
-what_you_do: Go to a public concert on the schedule. Music students can join Sanctuary Jam or the Jazz
-  Master Class. The site does not list volunteer roles, so ask the group about volunteering.
+summary: A jazz charity serving the Philadelphia region. It holds public concerts at churches and other
+  community venues, and it offers music lessons for young people who cannot afford them.
+what_you_do: Go to a public concert on the schedule page. Children and young adults who cannot afford
+  lessons can ask about the music education program, where teachers come to students. The site also describes
+  a Jazz Master Class for musicians of all levels, though it lists no current dates for it. The site lists
+  no volunteer roles.
 kind: nonprofit
 categories:
 - music
@@ -35,8 +37,8 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Public and charitable concerts are listed by date on the schedule page, which was updated September
-    28, 2026. Listed dates are October 8, October 22 and October 26. Event times are not published.
+  text: Public concerts are listed by date on the schedule page, which is updated weekly. Times and ticket
+    details are on each event's own page. Music lessons are arranged by email rather than on a set timetable.
   days: []
   times: []
   recurring: null
@@ -78,14 +80,19 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a concert on the schedule page and go, or email music@thejazzsanctuary.com to ask about joining
-    Sanctuary Jam or the Jazz Master Class.
+  how: Pick a public concert on the schedule page and go, or email music@thejazzsanctuary.com to ask about
+    lessons or the Jazz Master Class.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts on the schedule are public, and an email address for the music programs is published.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts are public and listed by date with venue names. Lessons and the class are arranged by
+    email, and the site gives no start steps for them.
+  what_to_expect: A concert is a public show held in a church or community venue. The schedule page does
+    not list start times or ticket prices, so check each event's own page first. When lessons are arranged,
+    teachers go to houses of worship or community houses close to the student.
+  first_visit_tips:
+  - Check the event page for the start time and whether tickets are needed.
+  - Email the group if you or a young person wants lessons; the site does not say what they cost.
 contacts:
   website: https://www.thejazzsanctuary.com
   email: music@thejazzsanctuary.com
@@ -97,7 +104,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-09
-sign_of_life_url: https://www.thejazzsanctuary.com/schedule-of-events
+sign_of_life_url: https://thejazzsanctuary.com/schedule-of-events-updated-weekly/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -126,7 +133,29 @@ sources:
   - what_you_do
   - first_step
   - contacts
-research_tier: 1
+- url: https://thejazzsanctuary.com/schedule-of-events-updated-weekly/
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - status
+  - last_sign_of_life
+- url: https://thejazzsanctuary.com/education/
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - audience
+  - first_step
+- url: https://thejazzsanctuary.com/jazz-master-class/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - audience
+- url: https://thejazzsanctuary.com/sanctuary-jam-a-philadelphia-first/
+  seen: '2026-10-08'
+  fields:
+  - audience
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

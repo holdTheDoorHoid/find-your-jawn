@@ -4,17 +4,18 @@ aka: []
 leads:
 - irs_bmf:232727877
 ein: '232727877'
-summary: A nonprofit that works to get Black women and girls into sport. Its youth work includes after-school
-  sports programming, and the group also lists triathlon activity and a scholarship program.
-what_you_do: Youth take part in after-school sports, such as fencing and lacrosse, according to a November
-  2025 news item. The site also has a volunteer page, but the roles on it are not stated.
+summary: A nonprofit that works to get Black women and girls into sport. Its youth program offers after-school
+  sports and academic enrichment for girls, and it gives college scholarships each year.
+what_you_do: Girls take part in after-school and summer sports such as fencing, tennis, lacrosse, and
+  soccer, at schools and recreation centers. Volunteers can coordinate a local activity, help run a fundraiser,
+  staff an event table, or mentor, tutor, or coach in a program.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
-- running-cycling-fitness
+- sports-teams
 interests:
 - after_school_camps
-- running
+- youth_coaching
 motives:
 - values
 - enhancement
@@ -23,7 +24,11 @@ formats:
 - learn_skill
 roles:
 - hands_on
-crowd: []
+- help_teach
+- organize
+crowd:
+- kids
+- teens
 bridging: null
 audience:
   open_to: public
@@ -37,10 +42,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Days, times, and months are not stated. The most recent program item is from November 2025.
+  text: After-school programs at Philadelphia schools and recreation centers, with summer programming.
+    Days and times vary by location and are not posted.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -55,7 +61,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated. A scholarships page is listed but its details were not readable.
+  text: The site does not state what the youth program costs. Families are asked to contact the group
+    for enrollment details.
 commitment: null
 group_size: null
 access:
@@ -67,16 +74,23 @@ requirements:
   background_check: null
   court_ordered_ok: unknown
   service_hours_letter: unknown
-  kids_ok: null
+  kids_ok: true
   gear: null
 first_step:
-  how: Use the Contact Us page on the website. Registration and drop-in steps are not published.
+  how: Send a message through the Contact Us page on blackwomeninsport.org to ask how to enroll in the
+    youth program.
   drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 2
-  basis: The site lists a youth program but no sign-up steps, so the way in is unclear.
-  what_to_expect: null
-  first_visit_tips: []
+  sign_up_needed: true
+  newcomer_friendliness: 3
+  basis: Families are asked to contact the group directly to enroll, a clear first step, but the site
+    gives no forms, fees, age ranges, or first-session details.
+  what_to_expect: Youth sessions mix sports such as fencing, field hockey, golf, and softball with academic
+    enrichment, and they focus on confidence and healthy habits. The group provides equipment to students.
+    The site does not say how long a session lasts, how many girls attend, or what it costs, so ask when
+    you get in touch.
+  first_visit_tips:
+  - Ask about enrollment steps, forms, and fees through the Contact Us page before the first day.
+  - Ask which school or recreation center a session meets at, since days and times vary by location.
 contacts:
   website: https://www.blackwomeninsport.org/
   email: null
@@ -109,12 +123,41 @@ sources:
   - status
   - interests
   - categories
+  - last_sign_of_life
+  - sign_of_life_url
+  - contacts.website
 - url: https://pysc.org/community-of-practice/
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
-confidence: low
+- url: https://www.blackwomeninsport.org/youth
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+  - schedule
+  - cost
+  - audience
+  - crowd
+  - requirements.kids_ok
+  - first_step
+  - what_to_expect
+- url: https://www.blackwomeninsport.org/new-page
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - roles
+  - first_step
+- url: https://www.blackwomeninsport.org/contact-us
+  seen: '2026-10-08'
+  fields:
+  - contacts
+- url: https://www.blackwomeninsport.org/scholarships
+  seen: '2026-10-08'
+  fields:
+  - summary
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

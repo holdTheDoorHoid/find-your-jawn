@@ -1,0 +1,316 @@
+{
+  "wave": "w23-tier2-deep-c",
+  "agent": "w23-006",
+  "lane": "tier2",
+  "model": "haiku",
+  "searches_used": 1,
+  "fetches_used": 26,
+  "records": [
+    {
+      "match": {"lead_ids": ["city_rco:455"], "group_id": "rivers-edge-community-association", "ein": null, "website": "https://www.recaphilly.com"},
+      "verdict": "publish",
+      "name": "River's Edge Community Association",
+      "summary": "One of the neighborhood groups the City has registered to review nearby zoning and building proposals in the Central part of the city. Neighbors can follow what is planned and speak up.",
+      "what_you_do": "Neighbors come together to review nearby building and zoning proposals and share the group's view with the City and developers.",
+      "kind": "civic",
+      "categories": ["neighborhood-civic"],
+      "interests": ["civic_association", "community_development"],
+      "motives": ["values", "social"],
+      "formats": ["conversation", "lead_organize"],
+      "roles": ["organize", "figure_out"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Meeting place (City list)", "address": "Pier 3 Condominium Association (Member or RECA), 3 N Christopher Columbus Blvd, Philadelphia, PA 19106", "planning_district": "central", "zip": "19106", "lat": 39.95349512376859, "lng": -75.13969418726377, "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Call or email the group's contact on the City list (see contacts) to ask where and when its next open meeting is held. If that does not work, email the City's RCO office at rco@phila.gov.",
+        "newcomer_friendliness": 2,
+        "basis": "City rules say registered community groups must hold regularly scheduled open meetings, but this group's meeting dates and place were not found, and its own website could not be opened.",
+        "what_to_expect": "The City requires these groups to hold regularly scheduled open meetings, so a neighbor can attend one. This group's meeting dates, times and place were not found on any page we could open. Expect a meeting where neighbors look at nearby zoning and building proposals."
+      },
+      "contacts": {"website": "www.recaphilly.com", "email": "john@solareamerica.com", "phone": "215-888-6755", "contact_name": "John Scorsone"},
+      "status": "active",
+      "last_sign_of_life": "2026-10",
+      "sign_of_life_url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0",
+      "sources": [
+        {"url": "https://www.phila.gov/programs/registered-community-organizations-rcos/", "seen": "2026-10-08", "fields": ["first_step", "what_to_expect"]},
+        {"url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Zoning_RCO/FeatureServer/0", "seen": "2026-10-08", "fields": ["name", "locations", "contacts", "status"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Could not open recaphilly.com: the fetch tool returned a self-signed certificate error on both attempts (www and bare domain). One web search found no public page for a group under this name, and the City's RCO page does not name it either. Status and last_sign_of_life are carried from tier 1 (the City registry layer) and no meeting notice or news item was found, so the reviewer should decide whether to downgrade to probably_active. The contact email is a company domain from tier 1 and is carried unchanged. The City's list of accepted RCOs is linked from its page but was not opened."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:850755632", "irs_bmf:850755632"], "group_id": "she-is-u", "ein": "850755632", "website": "https://www.sheisu.org"},
+      "verdict": "publish",
+      "name": "She Is U",
+      "summary": "Support for people who have survived domestic violence, sexual abuse or sexual assault. Programs include transitional housing, transportation help, bereavement support, a family bonding program and a scholarship for survivors.",
+      "what_you_do": "Survivors reach the group through its contact form or email, then ask about the programs listed on the site. Donors can give through the site's Givebutter page, and the Volunteer button opens the same contact form.",
+      "kind": "nonprofit",
+      "categories": ["advocacy-rights", "hunger-housing-basic-needs"],
+      "interests": ["violence_prevention", "housing_help"],
+      "motives": ["values"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "1500 Walnut Street", "planning_district": "central", "zip": "19102", "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Survivors: send a message through the contact form on sheisu.org, or email info@sheisu.org. Volunteers: the Volunteer button opens the same contact form. Scholarship: use the application form linked from the site.",
+        "newcomer_friendliness": 2,
+        "basis": "The site has a contact form, an email address and a scholarship form, but it does not describe volunteer roles, sign-up steps or what happens after a first message.",
+        "what_to_expect": "The site does not describe an in-person visit, an intake meeting or hours, and it does not state what the programs cost. Reaching out is by form or email, so the first step is a message rather than a visit. Ask the group directly what comes after you reach out."
+      },
+      "contacts": {"website": "https://www.sheisu.org", "email": "info@sheisu.org", "contact_name": "Shakina Rush"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.sheisu.org",
+      "sources": [
+        {"url": "https://www.sheisu.org/contact-8", "seen": "2026-10-08", "fields": ["first_step", "contacts"]},
+        {"url": "https://www.sheisu.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "first_step", "status"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "Programs named on the homepage: an intimate partner violence program, a domestic and sexual abuse prevention program, victim bereavement support, a family bonding program, transportation assistance, transitional housing and the survivors scholarship. The footer shows only a 2024 copyright, which is not used as evidence. The social links on the contact page point to Wix's own accounts, not this group, so none are recorded. Tier 1 said volunteers start from the Volunteer button, which is still true, but it opens the contact form rather than a volunteer sign-up. No phone number, hours or accessibility details were stated."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:991592134"], "group_id": "sisterly-love-collective", "ein": "991592134", "website": "https://www.sisterlylovephilly.com"},
+      "verdict": "publish",
+      "name": "Sisterly Love Collective",
+      "summary": "A Philadelphia group for women who work in food and hospitality. They offer mentoring, networking, food fairs, happy hours and workshops.",
+      "what_you_do": "Women who run or work in food and hospitality can pay yearly dues to join as members, which brings monthly meet-ups and question sessions with experts. The group also runs a yearly business and leadership day called the Work Shop, with ticket links on its site.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional", "food-drink", "social-meetups"],
+      "interests": ["professional_associations", "foodie_meetups", "affinity_social"],
+      "motives": ["career", "social"],
+      "formats": ["one_off_event", "learn_skill"],
+      "crowd": ["professionals"],
+      "audience": {"open_to": "public", "community": ["women"], "support_group": false},
+      "schedule": {"text": "Members are invited to monthly meet-ups and monthly question sessions with experts. The Work Shop is the group's yearly event.", "recurring": true},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "101 S 9th St", "planning_district": "central", "zip": "19107", "in_city": true}
+      ],
+      "cost": {"level": "paid", "text": "Yearly membership dues: $100 for a standard member, $75 for owners of businesses under three years old, $35 for people under 30, and $250 to $1,000 for company memberships."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Pick a membership tier on the membership page and click Join Now to pay in the online store. To see the group first, check its Work Shop page for a ticket link; the page does not say whether non-members can buy tickets.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 2,
+        "basis": "Joining means paying yearly dues and meeting an eligibility rule (women working in food and hospitality), and the site does not say whether food fairs, happy hours or workshops are open to non-members.",
+        "what_to_expect": "Membership is for women, or people who identify as women, who run or work in food and hospitality. Members get emails about events, invitations to monthly meet-ups and expert question sessions, and discounts on workshops. The Work Shop is a day of panels on running a business, and the most recent one listed was on Monday, July 27, 2026 at Fitler Club in Philadelphia."
+      },
+      "contacts": {"website": "https://www.sisterlylovephilly.com", "email": "hello@sisterlylovephilly.com", "contact_name": "Ellen Yin"},
+      "status": "active",
+      "last_sign_of_life": "2026-07",
+      "sign_of_life_url": "https://www.sisterlylovephilly.com/workshop2024-1/",
+      "sources": [
+        {"url": "https://www.sisterlylovephilly.com/memberships/", "seen": "2026-10-08", "fields": ["cost", "first_step", "audience", "what_you_do"]},
+        {"url": "https://www.sisterlylovephilly.com/workshop2024-1/", "seen": "2026-10-08", "fields": ["status", "last_sign_of_life", "sign_of_life_url", "what_to_expect"]},
+        {"url": "https://www.sisterlylovephilly.com/sisterly-love-upcoming/", "seen": "2026-10-08", "fields": ["status"]},
+        {"url": "https://www.sisterlylovephilly.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "schedule"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The Work Shop page gives Monday, July 27, 2026 at Fitler Club in Philadelphia, and status moved from probably_active to active on that dated 2026 event. Its text is written in the past tense, so the event may already have happened; the reviewer can downgrade if they disagree. Cost and attendance rules for the Work Shop are not stated, and its ticket page is on Eventbrite, a lead-only platform, which was not opened. The upcoming events page lists no dated events. Membership eligibility: Industry Debut is for businesses under three years old, and Younger Sister is for people under 30. Cookbooks and Convos is linked from the Events menu and is in leads_only."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:990763856", "irs_bmf:990763856"], "group_id": "skilladelphia-basketball-academy-inc", "ein": "990763856", "website": "https://www.skilladelphiabasketballacademy.org/"},
+      "verdict": "publish",
+      "name": "Skilladelphia Basketball Academy",
+      "summary": "A basketball and lacrosse academy for girls and nonbinary players ages 6 to 14. It runs skills clinics, aftercare, summer camps and a fitness class for kids.",
+      "what_you_do": "Players join skills clinics, aftercare, summer camps, or the Fit Fun fitness classes for kids. Clinics and camps are signed up for on the site, and families can join its mailing list for news about sessions.",
+      "kind": "program",
+      "categories": ["sports-teams"],
+      "interests": ["basketball"],
+      "motives": ["enhancement", "social"],
+      "formats": ["learn_skill", "team_play"],
+      "roles": ["hands_on"],
+      "crowd": ["kids"],
+      "audience": {"open_to": "public", "min_age": 6, "support_group": false},
+      "schedule": {"text": "After-school clinics run 3:30 to 5:30 pm, and summer camps run for several weeks each summer.", "times": ["daytime"]},
+      "locations": [
+        {"label": "Clinics at Old Pine Community Center", "address": "Corner of 4th and Lombard Streets, Philadelphia", "in_city": true},
+        {"label": "Outdoor lacrosse at Penn Park", "address": "Penn Park (Ace Adams Field), Philadelphia", "in_city": true},
+        {"label": "Mailing address (IRS)", "address": "766 S 7th St", "planning_district": "central", "zip": "19147", "in_city": true}
+      ],
+      "cost": {"level": "low", "text": "The site describes its training as low-cost or no-cost. No dollar amounts are shown for clinics or camps."},
+      "requirements": {"kids_ok": true, "court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "For a clinic, use the sign-up details on the site. For a summer camp or fall program, use its register button. For news about sessions, sign up for the mailing list through the contact page.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 4,
+        "basis": "The FAQ says coaches welcome all skill levels and that clinics are low-stress, and the site has register buttons for camps and fall programs. Spots are limited, so sign up early.",
+        "what_to_expect": "A clinic runs about an hour, with a coach showing a skill or drill and then players working in small groups in a relaxed, fun style. An open shootaround follows, and afternoon sessions run from 3:30 to 5:30 pm. Each clinic is limited to 25 to 30 players and is first come, first served.",
+        "first_visit_tips": [
+          "Bring sneakers and a water bottle.",
+          "Bring your own ball or lacrosse stick if you have one. Basketballs are provided if needed.",
+          "Lacrosse players need a mouthguard and goggles, which the FAQ lists for lacrosse only.",
+          "Indoor clinics are at Old Pine Community Center, on the corner of 4th and Lombard Streets."
+        ]
+      },
+      "contacts": {"website": "https://www.skilladelphiabasketballacademy.org/", "email": "mac@skilladelphia.org", "phone": "347.213.7202", "contact_name": "Michael Casey"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.skilladelphia.org/home",
+      "sources": [
+        {"url": "https://www.skilladelphiabasketballacademy.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "audience", "cost", "contacts"]},
+        {"url": "https://www.skilladelphia.org/basketball-faq", "seen": "2026-10-08", "fields": ["first_step", "schedule", "locations", "cost"]},
+        {"url": "https://www.skilladelphia.org/home", "seen": "2026-10-08", "fields": ["first_step", "schedule", "status"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "Two domains are used for this group (skilladelphiabasketballacademy.org and skilladelphia.org). The first says ages 6 to 14, the second says 5 to 14, and the FAQ gives no ages, so the minimum age is kept at 6 from tier 1 pending a check. The two pages show different Instagram handles, so no social link is recorded. The contact email domain differs from the site's mailto link, so the tier 1 address is carried with that caveat. The academy's own pages mention a spring 2026 donation and a summer 2026 session with pre-registration open, but without a month, so last_sign_of_life was not set and status stays probably_active. Fundraiser events (Baskets and Bubbles, a 3-on-3 tournament) are one-time and left out. Old Pine Community Center is a partner named on the site and is in leads_only. Drop-in is not stated, so it is left out."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:237113442", "irs_bmf:237113442"], "group_id": "society-hill-fund", "ein": "237113442", "website": "https://societyhillfund.org"},
+      "verdict": "publish",
+      "name": "Society Hill Fund",
+      "summary": "A nonprofit that manages money raised for Society Hill neighborhood projects, such as historic streetlights, Washington Square plantings and a town watch.",
+      "what_you_do": "Give to one of the neighborhood projects the fund manages, or send a project idea through the contact form to start a new one. The fund's focus areas include safety, education, culture, civic engagement, beautification and green work.",
+      "kind": "nonprofit",
+      "categories": ["neighborhood-civic"],
+      "interests": ["community_development"],
+      "motives": ["values"],
+      "formats": ["behind_the_scenes"],
+      "crowd": ["neighbors"],
+      "audience": {"open_to": "public", "support_group": false},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "C/o Joe Dain 250 Delancey St", "planning_district": "central", "zip": "19106", "in_city": true},
+        {"label": "Mailing address (IRS)", "address": "215 Spruce St", "planning_district": "central", "zip": "19106", "in_city": true}
+      ],
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Send a project idea through the contact form on societyhillfund.org. A board member then emails you the application, and proposals are reviewed on a rolling basis all year.",
+        "newcomer_friendliness": 2,
+        "basis": "Starting a project means sending an idea and then filling in a board application, and the site gives no steps for volunteering or donating.",
+        "what_to_expect": "The site does not list meetings or events. Projects are run by their leaders, who handle fundraising, records and spending under the fund's name, and the board of trustees reviews each proposal for mission fit, impact and budget.",
+        "first_visit_tips": [
+          "Have a short project plan ready: a description, goals, a timeline, a budget, expected results, and the people who would lead it.",
+          "Expect the first reply to come by email from a board member, after you use the contact form."
+        ]
+      },
+      "contacts": {"website": "https://societyhillfund.org", "contact_name": "Joseph Mazulla"},
+      "status": "probably_active",
+      "sign_of_life_url": "https://societyhillfund.org",
+      "sources": [
+        {"url": "https://societyhillfund.org/about/", "seen": "2026-10-08", "fields": ["what_you_do", "first_step", "first_visit_tips", "what_to_expect"]},
+        {"url": "https://societyhillfund.org/contact/", "seen": "2026-10-08", "fields": ["first_step"]},
+        {"url": "https://societyhillfund.org", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "low",
+      "notes": "The about page names a board of trustees, describes the fund as a 501(c)(3) founded in 1971 that accepts tax-deductible gifts, and says projects are approved after a rolling application. Projects it lists are Delancey Square Town Watch, Franklin Lights, the McCall School Cyber-Library, Washington Square plantings, the Washington Square fountain sculpture, Penn's Village aging program, and an anti-casino advocacy and litigation project. These are shown as past projects with no dates, and the footer's 2023 copyright is not evidence, so status stays probably_active on the basis of a working site with no dated items. The contact name carried from tier 1 is not on the trustee list on the about page; kept, not disproved. The contact page shows a form only and publishes no email address. The fund accepts public gifts and project applications, so it stays publish rather than the private foundation hide. McCall School and Penn's Village are named partners and are in leads_only."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:331953817", "irs_bmf:331953817"], "group_id": "steps-to-new-horizons-corp", "ein": "331953817", "website": "https://www.stnhorizons.com"},
+      "verdict": "publish",
+      "name": "Steps to New Horizons",
+      "summary": "Free money skills workshops and coaching for immigrants, newcomers, young adults and people going through a loss or another big change in life.",
+      "what_you_do": "Join a free workshop such as Financial Foundations, or book one-on-one coaching through the site. Donors can give on the site or through workplace giving.",
+      "kind": "nonprofit",
+      "categories": ["careers-skills-professional"],
+      "interests": ["money_skills"],
+      "motives": ["enhancement"],
+      "formats": ["learn_skill"],
+      "crowd": ["newcomers", "young_adults"],
+      "audience": {"open_to": "public", "community": ["immigrants"], "support_group": false},
+      "schedule": {"text": "Financial Foundations courses are six weeks long, with one online session a week."},
+      "online_ok": true,
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "30 S 15th St Ste 1550 PMB 968114", "planning_district": "central", "zip": "19102", "in_city": true}
+      ],
+      "cost": {"level": "free", "text": "Workshops and programs are free to participants."},
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Use the Subscribe for Updates form on stnhorizons.com, or email info@stnhorizons.com, to ask about the next Financial Foundations session. The events page lists free online sessions, each with a link to more details or to register.",
+        "newcomer_friendliness": 2,
+        "basis": "The site lists free online money courses for newcomers, but its pages do not say how to sign up for them, and only two listed sessions say registration is required.",
+        "what_to_expect": "The courses run on Zoom, and the Financial Foundations course meets once a week for six weeks. Age limits differ by session: Financial Foundations is for adults 18 and up, Money Journey for ages 16 and up, and Coaching for ages 21 and up, while Financial Voice is for ages 14 to 18.",
+        "first_visit_tips": [
+          "Check the age limit for the session you want, since it differs by program.",
+          "Coaching is one-on-one, so the appointment button on the coaching page is the place to start."
+        ]
+      },
+      "contacts": {"website": "https://www.stnhorizons.com", "email": "info@stnhorizons.com", "phone": "+1 (302) 409-0816", "contact_name": "Iryna Kirieieva", "social": ["https://www.facebook.com/StepsToNewHorizons"]},
+      "status": "probably_active",
+      "sign_of_life_url": "https://www.stnhorizons.com/events",
+      "sources": [
+        {"url": "https://www.stnhorizons.com", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "cost", "audience", "first_step", "contacts"]},
+        {"url": "https://www.stnhorizons.com/financial-foundations-for-newcomers", "seen": "2026-10-08", "fields": ["schedule", "first_step", "what_you_do"]},
+        {"url": "https://www.stnhorizons.com/events", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "what_to_expect", "first_step", "status"]},
+        {"url": "https://www.stnhorizons.com/coaching", "seen": "2026-10-08", "fields": ["first_visit_tips", "what_you_do"]},
+        {"url": "https://www.stnhorizons.com/contact", "seen": "2026-10-08", "fields": ["contacts"]},
+        {"url": "https://www.irs.gov/pub/irs-soi/eo_pa.csv", "seen": "2026-10-04", "fields": ["name", "locations", "ein"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page lists five items: Life Insurance Masterclass (Dec 3, no year shown, 18 and up), Financial Voice (Sep 26 to Nov 14, no year shown, ages 14 to 18), Financial Foundations for a New Life in the U.S. (Jan 7 to Feb 11, 2027, six weeks on Zoom, 18 and up), Money Journey (16 and up, registration required) and Coaching (21 and up, registration required). All five are listed as free. The coaching page gives no age range. Two Learn more buttons on the coaching and just-starting pages point to each other's pages, so one link may be wrong. The homepage course Financial Foundations for Newcomers and the events course Financial Foundations for a New Life in the U.S. may be the same program under two names; not confirmed. Status stays probably_active: the newest dated item is a 2027 course, and the undated listings cannot be placed in the last 12 months. The Find Out If You're Ready link goes to a third-party readiness form, which was not used."
+    },
+    {
+      "match": {"lead_ids": ["irs_990n:821439459"], "group_id": "stxbp1-foundation", "ein": "821439459", "website": "https://stxbp1disorders.org/"},
+      "verdict": "publish",
+      "name": "STXBP1 Foundation",
+      "summary": "A nonprofit started by parents to raise awareness, fund research and work toward a cure for STXBP1-related disorder. It gives families information, resources and a contact list.",
+      "what_you_do": "Parents can join the Contact List and other relatives can join the Mail List. Everyone can use the family resources and newly diagnosed pages, and volunteer in roles such as events, fundraising, outreach and social media.",
+      "kind": "nonprofit",
+      "categories": ["support-recovery"],
+      "interests": ["chronic_illness_support"],
+      "motives": ["values", "understanding"],
+      "formats": ["conversation"],
+      "roles": ["hands_on"],
+      "crowd": ["families"],
+      "audience": {"open_to": "public", "support_group": true},
+      "schedule": {"text": "The foundation holds a family summit each July, and posts other events and webinars on its events page.", "recurring": true},
+      "locations": [
+        {"label": "Mailing address (IRS)", "address": "2001 Hamilton St Suite 917", "planning_district": "central", "zip": "19130", "in_city": true}
+      ],
+      "online_ok": true,
+      "requirements": {"court_ordered_ok": "unknown", "service_hours_letter": "unknown"},
+      "first_step": {
+        "how": "Parents and primary caregivers: register on the Contact List at stxbp1disorders.org/contact-list. Other relatives and community members: join the Mail List instead (grandparents can join the Grands Society). To volunteer, fill in the volunteer form or email info@stxbp1disorders.org with the subject Volunteer.",
+        "sign_up_needed": true,
+        "newcomer_friendliness": 3,
+        "basis": "Parents and caregivers can join a public Contact List, and the volunteer page invites people to sign up by form or email. The page does not state time commitments or any requirements for volunteers.",
+        "what_to_expect": "The Contact List is a form, and the page says the information is used to share research, trial and resource news and to help families connect. The foundation's 2026 family summit ran July 16 to 19 in Philadelphia, with a family meeting July 17 to 19. Volunteers can choose from ten roles, including events, fundraising, graphic design, grant writing, social media and outreach to families.",
+        "first_visit_tips": [
+          "Use the Contact List only if you are a parent or primary caregiver; other relatives should use the Mail List.",
+          "If the volunteer form does not work, email info@stxbp1disorders.org with the subject Volunteer."
+        ]
+      },
+      "contacts": {"website": "https://stxbp1disorders.org/", "email": "info@stxbp1disorders.org", "contact_name": "Anne Johnson", "social": ["https://www.facebook.com/stxdisorders/", "http://instagram.com/stxbp1_foundation"]},
+      "status": "active",
+      "last_sign_of_life": "2026-09",
+      "sign_of_life_url": "https://stxbp1disorders.org/",
+      "sources": [
+        {"url": "https://stxbp1disorders.org/", "seen": "2026-10-08", "fields": ["summary", "what_you_do", "status", "last_sign_of_life"]},
+        {"url": "https://www.stxbp1disorders.org/events", "seen": "2026-10-08", "fields": ["schedule", "online_ok", "what_to_expect", "status"]},
+        {"url": "https://www.stxbp1disorders.org/volunteer", "seen": "2026-10-08", "fields": ["first_step", "first_visit_tips"]},
+        {"url": "https://www.stxbp1disorders.org/volunteer-roles", "seen": "2026-10-08", "fields": ["what_you_do", "what_to_expect"]},
+        {"url": "https://www.stxbp1disorders.org/contact-list", "seen": "2026-10-08", "fields": ["first_step", "audience", "what_to_expect"]},
+        {"url": "https://www.stxbp1disorders.org/diagnosed", "seen": "2026-10-08", "fields": ["what_you_do", "contacts"]},
+        {"url": "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv", "seen": "2026-10-04", "fields": ["name", "locations", "contacts"]}
+      ],
+      "research_tier": 2,
+      "confidence": "medium",
+      "notes": "The events page lists 30 items from August 2023 to July 2026. The 2026 ones are the Million Dollar Bike Ride (June 13, 2026, University of Pennsylvania campus, for cyclists and volunteers) and the Summit+ (July 16 to 19, 2026, Hilton Penn's Landing, with a family meeting July 17 to 19). Multi-day times on that page look wrong (many show 9 PM starts), so no times were recorded. The newest dated evidence is the September 2026 news on the homepage, which sets last_sign_of_life. The volunteer page also links to a second copy of the volunteer form on a Squarespace address, which was not used. The Mail List page exists but its form was not opened. No fees were stated for the Contact List or for volunteering."
+    }
+  ],
+  "leads_only": [
+    {"name": "Old Pine Community Center", "url": "https://oldpinecommunitycenter.org/", "note": "named on the Skilladelphia academy site as the partner that receives its proceeds and hosts indoor clinics; not checked"},
+    {"name": "Cookbooks and Convos", "url": "https://www.cookbooksandconvos.com/", "note": "linked from the Sisterly Love Collective Events menu; may be a separate group; not checked"},
+    {"name": "McCall School", "url": "https://mccallschool.org/", "note": "named as a project partner on the Society Hill Fund site (Cyber-Library project); not checked"},
+    {"name": "Penn's Village", "url": "https://www.pennsvillage.org/", "note": "named as a project partner on the Society Hill Fund site (aging-in-place program); not checked"}
+  ],
+  "blocked": [
+    {"url": "https://www.recaphilly.com", "status": null, "note": "Fetch tool returned a self-signed certificate error on both the www and bare domain (two attempts). Group site not read."}
+  ],
+  "notes": "Seven groups. Searches used: 1 of 1. Fetches used: 26 (24 read, 2 failed on the River's Edge certificate error). Verdicts: 7 publish. Status changes: Sisterly Love Collective moved to active on a dated July 27, 2026 event; Steps to New Horizons and Skilladelphia stay probably_active; River's Edge keeps its tier 1 status, which rests on the City registry alone (see its notes). Where a group's own page gave 2026 facts without an exact month, last_sign_of_life was left unchanged. Eventbrite, Zeffy, Facebook and Instagram pages were not used as fact sources. Skilladelphia's two domains disagree on ages and social handles, and the record flags both. Budget was not exhausted; no group needed a second search."
+}

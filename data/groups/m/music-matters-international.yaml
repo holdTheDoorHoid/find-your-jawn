@@ -36,12 +36,25 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
-  days: []
-  times: []
-  recurring: null
+  text: Rehearses in person on Mondays from 2 to 4 pm, and on Zoom every other Wednesday from 12:45 to
+    2:15 pm.
+  days:
+  - mon
+  - wed
+  times:
+  - daytime
+  recurring: true
   season: null
 locations:
+- label: Monday rehearsals at Congregation Rodeph Shalom
+  address: 1339 Green Street
+  neighborhood: null
+  planning_district: null
+  zip: '19123'
+  lat: null
+  lng: null
+  in_city: true
+  transit: null
 - label: Mailing address (IRS)
   address: 2120 Green St
   neighborhood: null
@@ -51,16 +64,17 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: true
 cost:
   level: null
-  text: Not listed on the site
-commitment: null
+  text: The join page does not list dues or fees.
+commitment: weekly
 group_size: null
 access:
   wheelchair: unknown
   languages: []
-  notes: null
+  notes: The join page calls the rehearsal site accessible and says parking is free. It does not say more
+    about step-free entry.
 requirements:
   act153_clearances: null
   background_check: null
@@ -69,27 +83,32 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Use the Join the Choir link on parkinsingers.org, or email parkinsingers@gmail.com to ask how to
-    take part
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: The site says all musical levels are welcome and has a join link, but the join page did not load
-    during the check
-  what_to_expect: null
-  first_visit_tips: []
+  how: Come to a Monday in-person rehearsal at Congregation Rodeph Shalom, 1339 Green Street, or ask for
+    the weekly Zoom link by email or phone.
+  drop_in: true
+  sign_up_needed: false
+  newcomer_friendliness: 4
+  basis: The join page says no audition, prior experience, or music reading is needed, and it names attending
+    a rehearsal as the way in.
+  what_to_expect: A Monday rehearsal runs from 2 to 4 pm in person at Congregation Rodeph Shalom. Zoom
+    sessions run every other Wednesday from 12:45 to 2:15 pm. No audition or music reading is needed,
+    and care partners and caregivers are welcome.
+  first_visit_tips:
+  - Parking at the rehearsal site is free, according to the join page.
+  - If you would rather join online first, ask Marjorie Samoff for the Zoom link by phone at 215-668-0116
+    or by email at parkinsingers@gmail.com.
 contacts:
   website: https://www.parkinsingers.org
   email: parkinsingers@gmail.com
-  phone: null
+  phone: 215-668-0116
   contact_name: Marjorie Samoff
   social:
   - https://www.youtube.com/channel/UCy7Hk1J_1uLrToUU6RS9Uqg
   - https://www.facebook.com/parkinsingers/
   calendar_feed: null
 status: probably_active
-last_sign_of_life: null
-sign_of_life_url: https://www.parkinsingers.org
+last_sign_of_life: 2025-03
+sign_of_life_url: https://www.parkinsingers.org/images-1
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -113,8 +132,25 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
-confidence: low
+  - what_you_do
+- url: https://www.parkinsingers.org/new-page-1
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - schedule
+  - locations
+  - online_ok
+  - cost
+  - access
+  - contacts
+- url: https://www.parkinsingers.org/images-1
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+research_tier: 2
+confidence: medium
 last_checked: '2026-10-08'
 hidden: false
 hidden_reason: null

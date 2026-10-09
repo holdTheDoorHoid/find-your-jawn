@@ -7,8 +7,8 @@ leads:
 ein: '822603957'
 summary: A nonprofit that offers humanitarian help, plus education and training programs, for people in
   need who want to reach their goals.
-what_you_do: Apply for help through the Beneficiary Application page, or find out how to get involved
-  through the Get Involved page.
+what_you_do: Ask for help through the site's Beneficiary Application page, or get involved through the
+  inquiry form on the Get Involved page. The group says it offers educational services, programs and training.
 kind: nonprofit
 categories:
 - hunger-housing-basic-needs
@@ -37,7 +37,7 @@ schedule:
   season: null
 locations:
 - label: Mailing address (IRS)
-  address: 6101 Grays Ave
+  address: 6101 Grays Ave, Philadelphia, PA 19142
   neighborhood: null
   planning_district: lower_southwest
   zip: '19142'
@@ -63,12 +63,13 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Email info@rhfc.info or call 267-969-8729 to ask about help or about getting involved
+  how: Fill out the inquiry form on the Get Involved page (name, phone and email), or call 267-969-8729
+    or email info@rhfc.info to ask about getting involved.
   drop_in: null
-  sign_up_needed: null
+  sign_up_needed: true
   newcomer_friendliness: 2
-  basis: The site has an application for people who need help and a Get Involved page, but does not say
-    what joining looks like
+  basis: Joining starts with a form and a reply from the group. The Get Involved page says there are many
+    ways to be involved but lists no volunteer roles, time commitment or description of a first visit.
   what_to_expect: null
   first_visit_tips: []
 contacts:
@@ -110,7 +111,17 @@ sources:
   seen: '2026-10-08'
   fields:
   - status
-research_tier: 1
+- url: https://www.rhfc.info/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - sign_up_needed
+  - what_you_do
+- url: https://www.rhfc.info/events-and-promo
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: low
 last_checked: '2026-10-08'
 hidden: false

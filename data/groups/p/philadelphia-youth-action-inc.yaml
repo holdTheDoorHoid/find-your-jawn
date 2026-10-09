@@ -8,8 +8,8 @@ ein: '830446293'
 summary: A youth leadership group for middle and high school students in Philadelphia. It trains students
   in civic leadership, pairs them with mentors and funds student civic projects.
 what_you_do: 'Students join one of three programs: Junior Youth Action for 7th and 8th graders, Inspiring
-  Leaders for 9th and 10th graders (a two-year program), and Service Leader for graduates of the first
-  two.'
+  Leaders for 9th and 10th graders (a two-year program), and Service Leaders for graduates of the first
+  two. Adults can apply to be facilitators, who get training to coach and mentor students.'
 kind: program
 categories:
 - kids-youth-mentoring
@@ -38,10 +38,12 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: null
+  text: Junior Youth Action holds leadership sessions about twice a month, and Inspiring Leaders holds
+    bimonthly training sessions with mentor check-ins at least every two weeks. Volunteer trips happen
+    about once a quarter. Meeting days and times are not published.
   days: []
   times: []
-  recurring: null
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -65,8 +67,8 @@ locations:
 online_ok: null
 cost:
   level: null
-  text: Not stated. The page mentions scholarship funds for members and asks for donations, but names
-    no membership fee.
+  text: No student fee is named on the program pages. The Inspiring Leaders program funds a student service
+    project of up to $5,000.
 commitment: null
 group_size: null
 access:
@@ -81,15 +83,23 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Call 215-867-9464 or email inspire@youthactionteam.org to ask how to join a program, or use the
-    Join the Movement link on the website.
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Each program is described with its grades, and there is a clear way to ask about joining. The
-    page does not describe an application.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Call 215-867-9464 or email inspire@youthactionteam.org to ask whether applications for your grade
+    are open this school year.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 2
+  basis: Each program asks students to apply through an online form, and the pages do not describe the
+    selection or confirm that applications are open for the current year.
+  what_to_expect: The pages do not describe a first session or an information night. Once in, students
+    attend leadership sessions about twice a month, meet a mentor one on one, and help plan events, and
+    Junior Youth Action students can log up to 20 hours of service. Volunteer trips to help local organizations
+    happen about once a quarter.
+  first_visit_tips:
+  - Ask which program and application round are open, since the program pages still name the 2024 to 2025
+    service year.
+  - Ask where sessions meet, because the pages list only a P.O. Box.
+  - Ask about costs and scholarship help, which the pages mention without amounts.
+  - Ask whether a parent or guardian needs to take part in the application.
 contacts:
   website: https://www.youthactionteam.org
   email: inspire@youthactionteam.org
@@ -99,16 +109,16 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-01
-sign_of_life_url: https://www.youthactionteam.org
+sign_of_life_url: https://youthactionteam.org/meeting-the-moment-2026-mlk-day-of-service/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -126,7 +136,32 @@ sources:
   - status
   - last_sign_of_life
   - audience
-research_tier: 1
+  - sign_of_life_url
+- url: https://youthactionteam.org/junior-youth-action-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - first_step
+  - what_to_expect
+- url: https://youthactionteam.org/inspiring-leaders-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+  - schedule
+  - cost
+  - first_step
+- url: https://youthactionteam.org/get-involved
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - contacts
+  - what_you_do
+- url: https://youthactionteam.org/service-leaders-program/
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

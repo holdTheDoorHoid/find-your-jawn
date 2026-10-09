@@ -7,8 +7,9 @@ leads:
 ein: '920965820'
 summary: A nonprofit all-girls baseball program in Philadelphia for players ages 8 to 18, with teams,
   tournaments, and a need for volunteer coaches.
-what_you_do: Girls join teams and play in outdoor-season tournaments, March through October. The group
-  is adding volunteer coaches and asks applicants to email the program.
+what_you_do: Girls join teams called the Philly Flames, practice in the spring and summer, and play tournaments
+  through the fall. The group is adding volunteer coaches, who must complete a background check, abuse
+  awareness training and Pitch Smart training.
 kind: nonprofit
 categories:
 - sports-teams
@@ -30,16 +31,20 @@ audience:
   open_to: public
   school: null
   min_age: 8
-  max_age: null
+  max_age: 18
   community: []
   faith: null
   partisan: false
   support_group: false
 schedule:
-  text: Outdoor season March through October, with tournaments through the fall. The 2026 DMV Series is
-    October 10 to 11, 2026, in Maryland.
-  days: []
-  times: []
+  text: The outdoor season runs March through October. Sunday afternoon practices run from late March
+    through June, and weekday evening practices happen one or two times a week in summer, with off weeks
+    during tournaments.
+  days:
+  - sun
+  times:
+  - daytime
+  - evening
   recurring: true
   season: null
 locations:
@@ -64,8 +69,9 @@ locations:
 online_ok: null
 cost:
   level: paid
-  text: 2026 packages were $180 per player (instructional) and $600 per player (all-inclusive), plus tournament
-    fees. Scholarships are available by request.
+  text: The 2026 instructional package is $180 per player and the all-inclusive package is $600 per player,
+    both payable in installments. Instructional players pay extra for tournaments, and scholarships are
+    available on request.
 commitment: seasonal
 group_size: null
 access:
@@ -74,23 +80,31 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: true
   gear: null
 first_step:
-  how: 'Coaches: email info@phillygirlsbaseball.com with the subject Coaching at PGB. Families seeking
-    help with cost can use the scholarship contact form.'
-  drop_in: null
-  sign_up_needed: null
-  newcomer_friendliness: 3
-  basis: Coach applications and scholarship requests each have a clear contact route, though 2026 all-inclusive
-    registration closed May 31.
-  what_to_expect: null
-  first_visit_tips: []
+  how: Register for the instructional package through the group's LeagueApps registration page, which
+    takes sign-ups on a rolling basis.
+  drop_in: false
+  sign_up_needed: true
+  newcomer_friendliness: 4
+  basis: The instructional package says all experience levels are welcome, registration is rolling, and
+    the site gives a clear route for coaches and for scholarship requests.
+  what_to_expect: The instructional package covers practices, clinics and scrimmages, plus a jersey, a
+    hat and a team weekend called Big Baseball Weekend with DC Girls Baseball. Tournaments cost extra
+    for instructional players, so ask about the fees before you sign up. Practices fall on Sunday afternoons
+    from late March through June, and on weekday evenings in summer.
+  first_visit_tips:
+  - Bring your own glove, cleats, helmet and equipment bag, since helmets are not shared.
+  - Wear baseball or athletic pants that allow sliding, with no shorts or leggings, and a forward facing
+    cap.
+  - Families provide the pants, belts and socks; the group provides the jerseys and hats.
+  - Ask in advance for a team bat if you do not have one.
 contacts:
-  website: http://phillygirlsbaseball.com/
+  website: https://www.phillygirlsbaseball.com/
   email: info@phillygirlsbaseball.com
   phone: null
   contact_name: Erin Cooper
@@ -101,14 +115,14 @@ last_sign_of_life: 2026-10
 sign_of_life_url: https://www.phillygirlsbaseball.com/
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
   - contacts.contact_name
   - ein
 - url: https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2026-07-E-POSTCARD.csv
-  seen: '2026-10-04'
+  seen: '2026-10-08'
   fields:
   - name
   - locations
@@ -128,6 +142,7 @@ sources:
   - contacts
   - status
   - last_sign_of_life
+  - sign_of_life_url
 - url: http://phillygirlsbaseball.com/
   seen: '2026-10-08'
   fields:
@@ -143,7 +158,13 @@ sources:
   seen: '2026-10-08'
   fields:
   - lead
-research_tier: 1
+- url: https://www.phillygirlsbaseball.com/faqs
+  seen: '2026-10-08'
+  fields:
+  - first_step
+  - what_to_expect
+  - first_visit_tips
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

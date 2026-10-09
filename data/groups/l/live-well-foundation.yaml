@@ -6,11 +6,11 @@ leads:
 - irs_990n:814711726
 - irs_bmf:814711726
 ein: '814711726'
-summary: A peer-led, volunteer-run nonprofit for people living with depression. It runs free online support
-  groups, workshops, and public events, and it lists groups for the Philadelphia area.
+summary: A peer-led, volunteer-run nonprofit for people living with depression. Its free online peer support
+  groups meet on Zoom, and its in person Philadelphia groups are paused for now.
 what_you_do: Join a free online peer support group for adults, people in recovery, teens, or seniors,
-  or come to a public talk or workshop. Volunteers and partners can use the Partner and Volunteer page
-  on the site.
+  or come to a public talk or workshop when one is scheduled. Volunteers with lived experience can train
+  as peer facilitators to run the groups.
 kind: support_group
 categories:
 - support-recovery
@@ -37,23 +37,22 @@ audience:
   partisan: false
   support_group: true
 schedule:
-  text: Group times are published on the site, but the page read did not show dates or times.
-  days: []
-  times: []
-  recurring: null
-  season: null
+  text: Online peer support groups meet every week at set times in Eastern time, most for about 75 minutes.
+    Groups are for adults 19 and up, teens 14 to 18, and seniors 65 and up.
+  days:
+  - mon
+  - tue
+  - wed
+  - thu
+  - sun
+  times:
+  - daytime
+  - evening
+  recurring: true
+  season: year_round
 locations:
 - label: Mailing address (IRS)
   address: 250 S 17th St Apt 1400
-  neighborhood: null
-  planning_district: central
-  zip: '19103'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
-- label: Mailing address (IRS)
-  address: 250 South 17th Street
   neighborhood: null
   planning_district: central
   zip: '19103'
@@ -69,7 +68,8 @@ commitment: null
 group_size: null
 access:
   wheelchair: unknown
-  languages: []
+  languages:
+  - en
   notes: null
 requirements:
   act153_clearances: null
@@ -79,16 +79,21 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Pick a free online peer support group from the site (adults in English or Spanish, people in recovery,
-    teens 14 to 18, or seniors 65 and up), or email contact@livewell-foundation.org to ask about Philadelphia-area
-    groups.
-  drop_in: null
-  sign_up_needed: null
+  how: Pick an online group on the support groups page and join it through the Zoom link at its listed
+    time. The FAQ says no registration is needed.
+  drop_in: true
+  sign_up_needed: false
   newcomer_friendliness: 3
-  basis: Groups are free and open to the public, and each one is listed by who it is for, with a clear
-    way to join.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The FAQ says the groups are open to the public with no registration, insurance or diagnosis needed,
+    and each group is listed by who it is for. The page does not say newcomers are specifically welcomed.
+  what_to_expect: Groups are run by trained peer facilitators, and most last about 75 minutes. You can
+    join by Zoom or by phone, and latecomers can enter for up to 15 minutes after the start. The groups
+    are free and confidential. LiveWell does not provide emergency services, so in a crisis, call or text
+    988.
+  first_visit_tips:
+  - Use the Zoom link or phone line listed for the group, and join a few minutes early.
+  - Check the age range on the group page, since adult groups start at 19 and teens and seniors have their
+    own groups.
 contacts:
   website: https://www.livewell-foundation.org
   email: contact@livewell-foundation.org
@@ -129,7 +134,24 @@ sources:
   - first_step
   - contacts
   - status
-research_tier: 1
+- url: https://www.livewell-foundation.org/supportgroups
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - cost
+  - first_step
+  - online_ok
+- url: https://www.livewell-foundation.org/philadelphia
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: https://www.livewell-foundation.org/partner-with-us
+  seen: '2026-10-08'
+  fields:
+  - what_you_do
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false

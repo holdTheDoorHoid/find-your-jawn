@@ -6,10 +6,11 @@ leads:
 - irs_bmf:462763618
 - manual_seeds:lady-hoofers-tap-ensemble
 ein: '462763618'
-summary: A Philadelphia tap nonprofit that creates its own tap work, teaches classes and runs a youth
-  ensemble. It stages a yearly holiday show.
-what_you_do: Take a class in the Class Series, join the Youth Ensemble, or see The Tapcracker holiday
-  show. The group also does performance and education outreach in the community.
+summary: A Philadelphia tap company, founded in 2011, that makes its own tap work and stages a holiday
+  show each December. It runs a Class Series, a Youth Ensemble for young women ages 9 to 18, and free
+  tap lessons for students at a Philadelphia elementary school.
+what_you_do: Take a Class Series session at the intermediate or advanced level, audition for the Youth
+  Ensemble each spring, see The Tapcracker holiday show, or ask about the company's free school tap programs.
 kind: nonprofit
 categories:
 - theater-dance-performance
@@ -24,7 +25,10 @@ formats:
 roles:
 - hands_on
 - create
-crowd: []
+crowd:
+- kids
+- teens
+- all_adults
 bridging: null
 audience:
   open_to: public
@@ -36,15 +40,13 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: 'The Tapcracker holiday show, now in its 10th year: Saturday, Dec. 12, 2026 at 11 am, 3 pm and
-    7:30 pm, and Sunday, Dec. 13, 2026 at 3 pm. Class and ensemble times are not posted on the site.'
+  text: 'Class Series sessions run on Sunday afternoons, in two four-week sessions: 3 to 4 pm for teens
+    and adults ages 15 and up, and 4 to 5 pm for youth ages 9 and up. The Youth Ensemble rehearses on
+    Sundays through the fall and holds auditions each spring. The Tapcracker holiday show runs each December.'
   days:
-  - sat
   - sun
   times:
-  - morning
   - daytime
-  - evening
   recurring: true
   season: winter
 locations:
@@ -57,16 +59,18 @@ locations:
   lng: null
   in_city: true
   transit: null
-online_ok: null
+online_ok: false
 cost:
   level: paid
-  text: Tapcracker tickets are $35 to $65 on the group's site. Class prices are not published.
-commitment: null
+  text: Tapcracker tickets run $35 to $65 by seat section. The site does not list fees for the Class Series,
+    the Youth Ensemble, or school programs, so ask through the website contact form.
+commitment: seasonal
 group_size: null
 access:
-  wheelchair: unknown
+  wheelchair: partial
   languages: []
-  notes: null
+  notes: At the Tapcracker venue, the orchestra and mezzanine seats can be reached without stairs. Accessible
+    seating can be requested by emailing the box office.
 requirements:
   act153_clearances: null
   background_check: null
@@ -75,15 +79,23 @@ requirements:
   kids_ok: true
   gear: null
 first_step:
-  how: Buy a ticket for The Tapcracker on Dec. 12 or 13, 2026, or use the Email Us page on ladyhoofers.org
-    to ask about the Class Series.
+  how: Buy a ticket to The Tapcracker, the December holiday show, to see the company before you take a
+    class.
   drop_in: null
   sign_up_needed: null
   newcomer_friendliness: 2
-  basis: Classes and a youth ensemble exist, but the site does not explain how to join, audition or pay
-    for classes.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: The Class Series is listed only at intermediate and advanced levels. The Youth Ensemble is by
+    audition, and most successful applicants have at least three years of training. No beginner class
+    is listed, so the way in for a true beginner is unclear.
+  what_to_expect: The Tapcracker is a ticketed holiday show with four performances over one December weekend.
+    A Class Series session is one hour on a Sunday afternoon, for four weeks. The Youth Ensemble is pre-professional,
+    so expect serious training rather than a casual class.
+  first_visit_tips:
+  - Sign up for the newsletter through the site's sign-up link to hear when Class Series registration
+    opens on December 2.
+  - Everyone needs a ticket to The Tapcracker, and children under three are not admitted.
+  - All sales are final, and the show goes on rain or shine with no weather refunds.
+  - For accessible seating, email the box office, since the orchestra and mezzanine seats avoid stairs.
 contacts:
   website: https://www.ladyhoofers.org
   email: null
@@ -119,6 +131,7 @@ sources:
   - what_you_do
   - kind
   - first_step
+  - contacts
 - url: https://www.ladyhoofers.org/the-tapcracker.html
   seen: '2026-10-08'
   fields:
@@ -127,7 +140,33 @@ sources:
   - locations
   - status
   - last_sign_of_life
-research_tier: 1
+  - access
+  - requirements
+- url: https://www.ladyhoofers.org/class-series.html
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - audience
+  - first_step
+- url: https://www.ladyhoofers.org/youth-ensemble.html
+  seen: '2026-10-08'
+  fields:
+  - audience
+  - first_step
+  - schedule
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://www.ladyhoofers.org/outreach.html
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - what_you_do
+- url: https://www.ladyhoofers.org/email-us.html
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

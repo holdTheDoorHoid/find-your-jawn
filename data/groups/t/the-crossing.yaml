@@ -4,10 +4,10 @@ aka: []
 leads:
 - cultural_fund:the-crossing
 ein: null
-summary: A professional chamber choir that commissions and premieres new choral music. The public takes
-  part by attending its concerts and recordings.
-what_you_do: Attend a concert, buy a ticket, or join the email list. The site does not describe auditions,
-  volunteering, classes or community programs.
+summary: A professional chamber choir that sings only new music, commissioning and premiering new works.
+  Most people take part by attending its concerts or buying its recordings.
+what_you_do: Go to a concert, buy a ticket for the date you pick, or join the email list. The site does
+  not describe auditions, volunteering, classes or community programs.
 kind: nonprofit
 categories:
 - music
@@ -33,20 +33,21 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Concerts are listed by date. The next Philadelphia concert is Sunday, October 25, 2026, at 5 pm
-    at The Presbyterian Church of Chestnut Hill. Other dates run to April 2027.
+  text: A season of concerts, mostly from fall to spring. Several each season are in Philadelphia and
+    Chestnut Hill, and others are in other cities.
   days:
   - sun
   times:
   - evening
-  recurring: false
+  recurring: true
   season: null
 locations: []
 online_ok: false
 cost:
   level: null
-  text: Ticket prices are on each event listing, not read.
-commitment: null
+  text: Tickets are sold for each concert. The season page gives no prices, so check each concert's own
+    ticket page.
+commitment: one_off
 group_size: null
 access:
   wheelchair: unknown
@@ -60,14 +61,20 @@ requirements:
   kids_ok: null
   gear: null
 first_step:
-  how: Buy a ticket to the October 25, 2026 concert at The Presbyterian Church of Chestnut Hill, or sign
-    up for the email newsletter.
+  how: Buy a ticket to one of the upcoming concerts, starting with a Philadelphia date, or join the email
+    list to hear about new dates.
   drop_in: true
   sign_up_needed: null
   newcomer_friendliness: 3
-  basis: Concerts are public, with tickets and a newsletter sign up. Auditions are not described.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Concerts are open to the public, and each date has its own ticket page. The site does not describe
+    any way to sing with the choir, so this rating covers attending only.
+  what_to_expect: A concert is a seated performance by a professional choir, often in a church. The program
+    is new music, and some concerts include other musicians or staging. The season page does not give
+    the length of a concert, so check the event page before you buy.
+  first_visit_tips:
+  - Use the ticket link on the concert's own page, since prices and seating are set per event.
+  - Check the start time on your event page, because the season ranges from afternoon to evening starts.
+  - Email info@crossingchoir.org with access questions, since the site lists no access details.
 contacts:
   website: https://crossingchoir.org/
   email: info@crossingchoir.org
@@ -77,7 +84,7 @@ contacts:
   calendar_feed: null
 status: active
 last_sign_of_life: 2026-10
-sign_of_life_url: https://crossingchoir.org/
+sign_of_life_url: https://crossingchoir.org/upcoming
 sources:
 - url: https://philaculturalfund.org/grantee-directory?2e1ab49c_page=11
   seen: '2026-10-04'
@@ -93,7 +100,29 @@ sources:
   - status
   - first_step
   - contacts
-research_tier: 1
+- url: https://crossingchoir.org/upcoming
+  seen: '2026-10-08'
+  fields:
+  - schedule
+  - cost
+  - first_step
+  - last_sign_of_life
+  - sign_of_life_url
+- url: https://crossingchoir.org/about
+  seen: '2026-10-08'
+  fields:
+  - summary
+  - first_step
+- url: https://crossingchoir.org/connect
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - what_you_do
+- url: https://crossingchoir.org/news
+  seen: '2026-10-08'
+  fields:
+  - status
+research_tier: 2
 confidence: high
 last_checked: '2026-10-08'
 hidden: false

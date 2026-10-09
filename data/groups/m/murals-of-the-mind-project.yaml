@@ -9,8 +9,9 @@ ein: '900622536'
 summary: A youth group in Philadelphia that runs workshops and mentoring for kids and teens ages 10 to
   17. Workshops cover essay and creative writing, creative performance, college and career exploration,
   and high school readiness.
-what_you_do: Youth join short workshop terms, in person or online. Parents can ask about the next start
-  date, and adults can apply to volunteer through the site.
+what_you_do: Youth join set workshop terms, in person or online. Families sign up during open enrollment
+  on the website or by email. Volunteers and staff who work directly with youth must pass an FBI and state
+  background check and be fingerprinted.
 kind: nonprofit
 categories:
 - kids-youth-mentoring
@@ -40,11 +41,11 @@ audience:
   partisan: false
   support_group: false
 schedule:
-  text: Workshops run for set terms, such as six weeks one day a week, or a one week intensive. The site
-    lists no start dates.
+  text: Most workshops meet one or two days a week for six weeks. Summer bootcamps and one-week intensives
+    are also offered.
   days: []
   times: []
-  recurring: false
+  recurring: true
   season: null
 locations:
 - label: Mailing address (IRS)
@@ -56,19 +57,11 @@ locations:
   lng: null
   in_city: true
   transit: null
-- label: Mailing address (IRS)
-  address: 100 S Broad Street Box 22663
-  neighborhood: null
-  planning_district: central
-  zip: '19110'
-  lat: null
-  lng: null
-  in_city: true
-  transit: null
 online_ok: true
 cost:
-  level: null
-  text: null
+  level: free
+  text: Most workshops are free for youth. Summer bootcamps and intensives are low cost. Scholarships
+    are limited and go first come, first served.
 commitment: null
 group_size: null
 access:
@@ -77,21 +70,27 @@ access:
   notes: null
 requirements:
   act153_clearances: null
-  background_check: null
+  background_check: true
   court_ordered_ok: unknown
   service_hours_letter: unknown
   kids_ok: null
   gear: null
 first_step:
-  how: Call (215) 825-3300 or email the group to ask about the next workshop for your child's age, then
-    pick from the list on the Workshops page.
-  drop_in: null
-  sign_up_needed: null
+  how: Register on the website or social media pages during open enrollment, or email contactmom@muralsofthemind.org.
+    You can also call (215) 825-3300 and leave a message. Replies take 24 to 48 hours.
+  drop_in: false
+  sign_up_needed: true
   newcomer_friendliness: 3
-  basis: Workshops are open to the public for ages 10 to 17 and the site gives clear contact details,
-    though it does not list dates.
-  what_to_expect: null
-  first_visit_tips: []
+  basis: Workshops are open to the public for youth, most are free, and the site gives several clear ways
+    to sign up. Spots are limited and filled first come, first served.
+  what_to_expect: Youth join a set workshop term, usually six weeks with one or two meetings a week. Attendance
+    is not required, but coming often helps because each week builds on the last. A 2025 college and career
+    series met from 4 to 5 pm on Tuesdays at Baldi Middle School.
+  first_visit_tips:
+  - Watch for open enrollment, since spots are limited and go first come, first served.
+  - If a workshop is full, ask to go on the waitlist. Applicants are emailed as spots open.
+  - After you enroll, expect a confirmation email and a reminder one week before the start date.
+  - Use contactmom@muralsofthemind.org, since the site also lists other email addresses.
 contacts:
   website: https://www.muralsofthemind.org
   email: contactmom@muralsofthemind.org
@@ -100,8 +99,8 @@ contacts:
   social: []
   calendar_feed: null
 status: active
-last_sign_of_life: 2025-11
-sign_of_life_url: https://www.muralsofthemind.org
+last_sign_of_life: 2025-12
+sign_of_life_url: https://www.muralsofthemind.org/events
 sources:
 - url: https://www.irs.gov/pub/irs-soi/eo_pa.csv
   seen: '2026-10-04'
@@ -125,6 +124,7 @@ sources:
   - status
   - last_sign_of_life
   - contacts
+  - audience
 - url: https://www.muralsofthemind.org/workshops/
   seen: '2026-10-08'
   fields:
@@ -133,7 +133,27 @@ sources:
   - schedule
   - online_ok
   - first_step
-research_tier: 1
+- url: https://www.muralsofthemind.org/faqs
+  seen: '2026-10-08'
+  fields:
+  - cost
+  - schedule
+  - first_step
+  - requirements
+  - what_you_do
+- url: https://www.muralsofthemind.org/events
+  seen: '2026-10-08'
+  fields:
+  - status
+  - last_sign_of_life
+  - sign_of_life_url
+  - what_you_do
+- url: https://www.muralsofthemind.org/contact
+  seen: '2026-10-08'
+  fields:
+  - contacts
+  - first_step
+research_tier: 2
 confidence: medium
 last_checked: '2026-10-08'
 hidden: false
